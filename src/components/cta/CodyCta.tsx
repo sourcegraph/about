@@ -47,7 +47,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
 
                 <Heading
                     size="h3"
-                    className={classNames('mt-4 max-w-[413.5px] font-sans text-[18px]', {
+                    className={classNames('mt-4 max-w-[413.5px] text-[18px]', {
                         'leading-[27px] !tracking-[-0.25px]': isCodyPage,
                         'text-gray-500': !isLight,
                         'text-[#343A4D]': isLight,
@@ -96,7 +96,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
                 </Heading>
                 <Heading
                     size="h3"
-                    className={classNames('font-sans text-[18px] text-white text-opacity-80', {
+                    className={classNames('text-[18px] text-white text-opacity-80', {
                         'leading-[27px] -tracking-[0.25px]': isCodyPage,
                     })}
                 >

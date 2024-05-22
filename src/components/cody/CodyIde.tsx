@@ -32,7 +32,8 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                     size="h6"
                     className={classNames('whitespace-nowrap !text-lg', {
                         'text-gray-200': !isLight,
-                        'pb-[48px] !font-semibold !leading-[27px] !tracking-[0.54px] text-[#0F111A] md:pb-0': isLight,
+                        '  pb-[48px] !font-systemSans !font-semibold !leading-[27px] !tracking-[0.54px] text-[#0F111A] md:pb-0':
+                            isLight,
                     })}
                 >
                     Cody is available for:
@@ -49,7 +50,7 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                     <div className={classNames({ 'w-[110px]': isLight })}>
                         <Heading
                             size="h4"
-                            className={classNames('!text-2xl', {
+                            className={classNames('font-systemSans !text-2xl', {
                                 'text-gray-200': !isLight,
                                 '!font-normal !leading-[30px] !tracking-[-0.25px] text-[#0F111A]': isLight,
                             })}
@@ -71,7 +72,7 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                     <div className={classNames({ 'w-[110px]': isLight })}>
                         <Heading
                             size="h4"
-                            className={classNames('!text-2xl', {
+                            className={classNames('font-systemSans !text-2xl', {
                                 'text-gray-200': !isLight,
                                 '!font-normal !leading-[30px] !tracking-[-0.25px] text-[#0F111A]': isLight,
                             })}
@@ -93,7 +94,7 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                     <div className={classNames({ 'w-[110px]': isLight })}>
                         <Heading
                             size="h4"
-                            className={classNames('!text-2xl', {
+                            className={classNames('font-systemSans !text-2xl', {
                                 'text-gray-200': !isLight,
                                 '!font-normal !leading-[30px] !tracking-[-0.25px] text-[#0F111A]': isLight,
                             })}

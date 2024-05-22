@@ -21,7 +21,7 @@ export const HowCodyWorks: FunctionComponent<{ isLight: boolean }> = ({ isLight 
         >
             <Heading
                 size="h2"
-                className={classNames("pb-4 !font-['Source_Sans_Pro'] !text-[40px] !leading-10 !-tracking-[1px]", {
+                className={classNames('pb-4 !text-[40px] !leading-10 !-tracking-[1px]', {
                     'text-white': !isLight,
                     'text-[#000]': isLight,
                 })}
@@ -29,7 +29,7 @@ export const HowCodyWorks: FunctionComponent<{ isLight: boolean }> = ({ isLight 
                 Works with your existing code hosts and IDEs
             </Heading>
             <p
-                className={classNames('!font-sans text-2xl leading-[30px] -tracking-[0.25px]', {
+                className={classNames('text-2xl leading-[30px] -tracking-[0.25px]', {
                     'text-gray-200': !isLight,
                     'text-[#000]': isLight,
                 })}
@@ -37,7 +37,7 @@ export const HowCodyWorks: FunctionComponent<{ isLight: boolean }> = ({ isLight 
                 Cody lives in VS Code and JetBrains IDEs and works with code from any code host.
             </p>
             <p
-                className={classNames('!font-sans text-2xl leading-[30px] -tracking-[0.25px]', {
+                className={classNames('text-2xl leading-[30px] -tracking-[0.25px]', {
                     'text-gray-200': !isLight,
                     'text-[#000]': isLight,
                 })}

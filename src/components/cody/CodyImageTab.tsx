@@ -91,9 +91,10 @@ export const CodyImageTab: FunctionComponent<{
                         ))}
                     </div>
                     <div
-                        className={classNames('bottom-0 h-auto w-full md:ml-[-24px] md:mr-0 md:h-[426px] md:w-auto', {
-                            'max-w-[800px] md:absolute md:top-0 md:right-[-50px]': isSmallTablet,
-                            'flex max-w-[800px] pb-16': !isSmallTablet && !isLight,
+                        className={classNames('bottom-0 h-auto w-full md:ml-[-24px] md:mr-0 md:h-auto md:w-auto', {
+                            'max-w-[800px] md:absolute md:top-0 md:right-[-24px]': isSmallTablet && !isLight,
+                            'max-w-[800px] md:absolute md:top-0 md:right-[0px]': isSmallTablet && isLight,
+                            'flex max-w-full pb-16': !isSmallTablet && !isLight,
                             'pb-0': !isSmallTablet && isLight,
                         })}
                     >
@@ -102,7 +103,7 @@ export const CodyImageTab: FunctionComponent<{
                                 key={index}
                                 className={classNames({
                                     hidden: selectedContentIndex !== index,
-                                    'h-full w-full md:h-auto md:w-auto': isLight,
+                                    'h-full w-full': isLight,
                                 })}
                                 src={!isSmallTablet ? content.imageSrc.mobile : content.imageSrc.desktop}
                                 alt={content.header}

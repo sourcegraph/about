@@ -29,7 +29,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
             <h1
                 className={classNames('mx-auto w-full text-[48px] font-semibold', {
                     'pt-6 leading-[48px] text-white md:text-[72px] md:leading-[86px]': !isLight,
-                    'pt-[50px] leading-[58px] !tracking-[-1px] text-[#0F111A] md:pt-0 md:text-[52px] md:leading-[62px]':
+                    'pt-[50px] font-systemSans leading-[58px] !tracking-[-1px] text-[#0F111A] md:pt-0 md:text-[52px] md:leading-[62px]':
                         isLight,
                 })}
             >
@@ -39,7 +39,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                 size="h3"
                 className={classNames('mx-auto mb-8 mt-6 max-w-[700px] leading-[30px] !tracking-[-0.25px]', {
                     'text-[#FFFFFF]': !isLight,
-                    '!font-sans text-[#343A4D]': isLight,
+                    'text-[#343A4D]': isLight,
                 })}
             >
                 Cody is a coding AI assistant that uses AI and a deep understanding of your codebase to help you write

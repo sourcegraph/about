@@ -43,6 +43,7 @@ func (opts UpdateCustomerOptions) Validate() error {`,
 
 export const CodyAnimation: FunctionComponent<{ className?: string; isLight?: boolean }> = ({ className, isLight }) => {
     const [startAnimation, setStartAnimation] = useState(false)
+    const [initialAnimationRun, setInitialAnimationRun] = useState(true)
     const [nextLine, setNextLine] = useState(false)
     const [showSuggestion, setShowSuggestion] = useState(false)
     const [applySuggestion, setApplySuggestion] = useState(false)
@@ -68,9 +69,19 @@ export const CodyAnimation: FunctionComponent<{ className?: string; isLight?: bo
     const acceptHandler = (): void => {
         setTimeout(() => setApplySuggestion(true), timingFrames.frame3)
     }
+    useEffect(() => {
+        if (initialAnimationRun) {
+            const animationTimeoutId = setTimeout(() => {
+                setStartAnimation(true)
+            }, 500)
+            setInitialAnimationRun(false)
+            return () => clearTimeout(animationTimeoutId)
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
     useEffect(() => {
-        if (isCodyAnimationRefInView && !applySuggestion) {
+        if (isCodyAnimationRefInView && !applySuggestion && !initialAnimationRun) {
             setStartAnimation(true)
         }
 
@@ -80,7 +91,7 @@ export const CodyAnimation: FunctionComponent<{ className?: string; isLight?: bo
             setShowSuggestion(false)
             setApplySuggestion(false)
         }
-    }, [isCodyAnimationRefInView, applySuggestion])
+    }, [isCodyAnimationRefInView, applySuggestion, initialAnimationRun])
 
     const lineNumbers = countTotalLines(codes) + 2
     const activeLine = showSuggestion || applySuggestion ? lineNumbers : startAnimation ? typingCodeLines + 1 : 1

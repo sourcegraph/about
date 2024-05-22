@@ -77,7 +77,7 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
                     reverseQuote && 'flex h-full flex-col-reverse items-start !py-0 md:h-auto md:min-h-[554px]'
                 )}
             >
-                <div className={classNames(reverseQuote && "pt-[118px] !font-['SF_Pro']")}>
+                <div className={classNames(reverseQuote && 'pt-[118px]')}>
                     <p className="mb-0 leading-6 tracking-[-0.25px] opacity-80">
                         {article?.author ?? 'Satish Surapaneni'}
                     </p>
@@ -87,7 +87,7 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
                 </div>
                 <p
                     className={classNames('mb-0 pt-6 text-[35px] font-normal leading-[43.75px] md:max-w-[468px]', {
-                        '!font-sans -tracking-[0.25px]': reverseQuote,
+                        '-tracking-[0.25px]': reverseQuote,
                         '-tracking-[2px]': !reverseQuote,
                     })}
                 >
@@ -99,7 +99,7 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
             <div
                 className={classNames(
                     'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 pt-[71px] md:py-[71px] md:pb-10',
-                    reverseQuote ? '!font-sans md:min-h-[554px]' : 'sm:min-h-[558px] md:min-h-[700px]',
+                    reverseQuote ? 'md:min-h-[554px]' : 'sm:min-h-[558px] md:min-h-[700px]',
                     modelCardClassName
                 )}
             >

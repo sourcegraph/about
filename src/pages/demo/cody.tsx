@@ -135,7 +135,7 @@ const DemoCodyPage: FunctionComponent = () => {
 
             <CodyChat />
 
-            <CodyPartners />
+            <CodyPartners isLight={false} />
 
             <CodyTestimonials />
 

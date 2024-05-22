@@ -50,7 +50,7 @@ export const CodyChat: FunctionComponent<CodyChatProps> = ({ isLight = false }) 
                     </Heading>
                     <h3
                         className={classNames('m-0 text-left md:text-2xl', {
-                            'font-sans text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
+                            'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
                             'text-lg text-gray-200': !isLight,
                         })}
                     >
@@ -71,7 +71,7 @@ export const CodyChat: FunctionComponent<CodyChatProps> = ({ isLight = false }) 
                         <p
                             className={classNames('px-6 leading-[27px] md:px-[9px]', {
                                 'text-sm font-[590] uppercase text-gray-200': !isLight,
-                                'font-sans text-[18px] font-normal tracking-[-0.25px] text-[#0F111A]  md:pb-[8px] md:text-sm md:font-[600] md:uppercase md:text-[#343A4D]':
+                                'text-[18px] font-normal tracking-[-0.25px] text-[#0F111A]  md:pb-[8px] md:text-sm md:font-[600] md:uppercase md:text-[#343A4D]':
                                     isLight,
                             })}
                         >
@@ -84,8 +84,7 @@ export const CodyChat: FunctionComponent<CodyChatProps> = ({ isLight = false }) 
                                 className={classNames(
                                     'font-lg m-0 px-6 py-2 font-[590] leading-[25px] tracking-[-0.25px] md:px-2.5 md:font-normal md:leading-[27px]',
                                     {
-                                        'ml-[10px] font-sans text-[18px] text-[#0F111A] md:ml-0 md:text-[18px]':
-                                            isLight,
+                                        'ml-[10px] text-[20px] text-[#0F111A] md:ml-0 md:text-[18px]': isLight,
                                         'text-white': !isLight,
                                     }
                                 )}

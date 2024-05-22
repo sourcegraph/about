@@ -50,7 +50,12 @@ const TESTIMONIALS = [
 
 export const CodyTestimonials: FunctionComponent<CodyTestimonialsProps> = ({ isLight = false }) => (
     <ContentSection parentClassName="!py-0" className="w-full py-16 pb-24 md:pb-8 md:pt-24 ">
-        <div className="flex w-full flex-col items-stretch justify-between gap-x-0 gap-y-[30px] pt-6 md:flex-row md:gap-x-[30px] md:py-6">
+        <div
+            className={classNames(
+                'flex w-full flex-col items-stretch justify-between gap-x-0 gap-y-[30px] md:flex-row md:gap-x-[30px] md:py-6',
+                { 'pt-6': !isLight }
+            )}
+        >
             {TESTIMONIALS.map(testimonial => (
                 <div
                     key={testimonial.name}
@@ -91,7 +96,7 @@ export const CodyTestimonials: FunctionComponent<CodyTestimonialsProps> = ({ isL
                     <div
                         className={classNames('text-lg font-normal leading-[27px] tracking-[-0.25px]', {
                             'text-gray-700': !isLight,
-                            'font-sans text-[#0F111A]': isLight,
+                            'text-[#0F111A]': isLight,
                         })}
                     >
                         <p className="m-0 p-0">{testimonial.comment}</p>

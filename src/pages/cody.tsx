@@ -13,11 +13,11 @@ import {
     CodyAutocomplete,
     CodyChat,
     CodyImageTab,
+    CodyPartners,
     CodyTestimonials,
 } from '../components'
 import { CodyChooseLlmDualTheme } from '../components/cody/dual-theme/CodyChooseLlmDualTheme'
 import { CodyIntroDualTheme } from '../components/cody/dual-theme/CodyIntroDualTheme'
-import { CodyPartnersLight } from '../components/cody/dual-theme/CodyPartnersLight'
 import { SourcePoweredDualTheme } from '../components/cody/dual-theme/SourcePoweredDualTheme'
 import { HowCodyWorks } from '../components/cody/HowCodyWorks'
 import { useAuthModal } from '../context/AuthModalContext'
@@ -94,7 +94,7 @@ const CodyPage: FunctionComponent = () => {
             </div>
             <CodyIde isLight={true} />
             <CodyChat isLight={true} />
-            <CodyPartnersLight />
+            <CodyPartners isLight={true} />
             <CodyTestimonials isLight={true} />
             <CodyImageTab
                 icon="/cody/commands-brand-icon.svg"

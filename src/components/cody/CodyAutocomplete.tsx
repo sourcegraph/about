@@ -58,7 +58,7 @@ export const CodyAutocomplete: FunctionComponent<CodyAutocompleteProps> = ({
                     }
                 )}
             >
-                <div className="mb-[24px] flex w-full flex-col px-6 md:my-[65px] md:mb-0 md:w-[543px]">
+                <div className="mb-[24px] flex w-full flex-col px-6 md:my-[65px] md:mb-0 md:w-[543px] md:pl-[56px]">
                     <img className="h-[46px] w-[46px]" src="/cody/completions-brand-icon.svg" alt="Cody Icon" />
                     <Heading
                         size="h2"
@@ -72,9 +72,9 @@ export const CodyAutocomplete: FunctionComponent<CodyAutocompleteProps> = ({
                     <Heading
                         size="h3"
                         className={classNames(
-                            'max-w-[510px] pt-4 text-left !text-lg !tracking-[-0.25px] md:!text-2xl md:!leading-[30px]',
+                            'max-w-[510px] pt-4 text-left font-systemSans !text-lg !tracking-[-0.25px] md:!text-2xl md:!leading-[30px]',
                             {
-                                'pb-[32px] !font-sans !font-normal !leading-[30px] text-[#343A4D]': isLight,
+                                'pb-[32px] !font-normal !leading-[30px] text-[#343A4D]': isLight,
                                 'pb-5 !leading-[27px] text-gray-200': !isLight,
                             }
                         )}
@@ -87,7 +87,7 @@ export const CodyAutocomplete: FunctionComponent<CodyAutocompleteProps> = ({
                             size="h5"
                             className={classNames(
                                 'font-[590px] mb-0 w-full text-center !text-xl font-semibold !leading-[25px] !tracking-[-0.25px] md:w-[313px]',
-                                { 'text-gray-500': !isLight, '!font-sans text-[#343A4D]': isLight }
+                                { 'text-gray-500': !isLight, 'text-[#343A4D]': isLight }
                             )}
                         >
                             Every day, Cody helps developers write &gt; 150,000 lines of code
