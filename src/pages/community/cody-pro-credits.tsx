@@ -5,7 +5,7 @@ import { ContentSection, Layout } from '../../components'
 const WebinarsPage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph Webinars',
+            title: 'Sourcegraph Open',
             description: 'Join us for live events and webinars on coding with AI.',
             image: 'https://sourcegraph.com/assets/webinars/webinar-og.png',
         }}
