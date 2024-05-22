@@ -73,7 +73,7 @@ const events = {
     ],
 }
 
-const EventsList = () => (
+const EventsList = (): JSX.Element => (
     <ContentSection parentClassName="md:pt-16" className="lg:px-6">
         <div className="flex flex-col justify-between md:flex-row">
             <div className="max-w-lg pt-16 pb-[52px] md:py-0">
