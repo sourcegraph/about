@@ -16,6 +16,24 @@ const socialMediaStyles = 'text-xl text-gray-400 hover:text-gray-300 transition-
 const events = {
     upcoming: [
         {
+            title: 'Collision',
+            location: 'Toronto',
+            date: 'Jun 17-20, 2024',
+            link: 'https://collisionconf.com/',
+        },
+        {
+            title: 'AI Dev Tools Night',
+            location: 'San Francisco, CA',
+            date: 'Jun 24, 2024',
+            link: 'https://lu.ma/ai-devtools-night',
+        },
+        {
+            title: 'AI Engineer World’s Fair',
+            location: 'San Francisco, CA',
+            date: 'Jun 25-27, 2024',
+            link: 'https://www.ai.engineer/worldsfair',
+        },
+        {
             title: 'designFAO',
             location: 'Portugal',
             date: 'Oct 11, 2024',
