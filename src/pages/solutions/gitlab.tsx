@@ -5,10 +5,10 @@ import Link from 'next/link'
 
 import { ContentSection, Heading, InfiniteCarousel, Layout } from '../../components'
 import { ContactUsCta } from '../../components/cta/ContactUsCta'
-import { AutomationSection } from '../../components/solutions/AutomationSection'
-import { IntroCard } from '../../components/solutions/IntroCard'
-import { SearchDescriptionSection } from '../../components/solutions/SearchDescriptionSection'
-import { SolutionExplanationSection } from '../../components/solutions/SolutionExplanationSection'
+import { AutomationSection } from '../../components/Solutions/AutomationSection'
+import { IntroCard } from '../../components/Solutions/IntroCard'
+import { SearchDescriptionSection } from '../../components/Solutions/SearchDescriptionSection'
+import { SolutionExplanationSection } from '../../components/Solutions/SolutionExplanationSection'
 import { carouselImages } from '../code-search'
 
 const explanationCardData = [

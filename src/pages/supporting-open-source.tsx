@@ -5,7 +5,6 @@ import Link from 'next/link'
 
 import { ContentSection, Layout, Heading } from '../components'
 import { PostsList } from '../components/Blog/PostsList'
-
 import { useLoadMoreAndSearch } from '../hooks/loadMoreAndSearch'
 import { Post, PostIndexComponentProps } from '../interfaces/posts'
 import { getAllPublishedBlogPosts } from '../lib'
