@@ -74,7 +74,9 @@ export const CodyAnimation: FunctionComponent<{ className?: string; isLight?: bo
             const animationTimeoutId = setTimeout(() => {
                 setStartAnimation(true)
             }, 500)
+
             setInitialAnimationRun(false)
+
             return () => clearTimeout(animationTimeoutId)
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -83,15 +85,14 @@ export const CodyAnimation: FunctionComponent<{ className?: string; isLight?: bo
     useEffect(() => {
         if (isCodyAnimationRefInView && !applySuggestion && !initialAnimationRun) {
             setStartAnimation(true)
-        }
-
-        if (!isCodyAnimationRefInView && applySuggestion) {
+        } else if (!isCodyAnimationRefInView && applySuggestion && !initialAnimationRun) {
             setStartAnimation(false)
             setNextLine(false)
             setShowSuggestion(false)
             setApplySuggestion(false)
         }
-    }, [isCodyAnimationRefInView, applySuggestion, initialAnimationRun])
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [isCodyAnimationRefInView, initialAnimationRun])
 
     const lineNumbers = countTotalLines(codes) + 2
     const activeLine = showSuggestion || applySuggestion ? lineNumbers : startAnimation ? typingCodeLines + 1 : 1
