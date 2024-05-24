@@ -8,7 +8,6 @@ import { useRouter } from 'next/router'
 
 import { useAuthModal } from '../../../context/AuthModalContext'
 import { buttonLocation } from '../../../data/tracking'
-import { Banner } from '../../Banner'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
 
 import { NavItems } from './NavItems'
