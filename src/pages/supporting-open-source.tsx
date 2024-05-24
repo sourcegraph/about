@@ -23,7 +23,7 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
             }}
             className="community-page bg-gray-50"
         >
-            <ContentSection parentClassName="md:!py-24" className="py-4 md:py-0 lg:px-6">
+            <ContentSection parentClassName="md:!pt-24 md:!pb-8" className="py-4 md:py-0 lg:px-6">
                 <div className="flex flex-col">
                     <Heading size="h1" className="mb-6 text-center md:text-left">
                         Supporting open source
@@ -38,14 +38,14 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
                 </div>
             </ContentSection>
 
-            <ContentSection parentClassName="mt-6 md:mt-0 md:pt-8 md:pb-0" className="lg:px-6">
-                <Heading size="h2" className="text-center !leading-[40px] !tracking-[-1px] md:text-left">
+            <ContentSection parentClassName="md:mt-0 md:pt-8 md:pb-0" className="lg:px-6">
+                <Heading size="h2" className="text-center !leading-[40px] !tracking-[-1px] md:text-center">
                     Cody Pro credits
                 </Heading>
-                <div className="flex-1 p-4 sm:pt-sm">
+                <div className="mt-2 flex-1 sm:pt-sm">
                     <iframe
                         src="https://docs.google.com/forms/d/e/1FAIpQLSfMHmJrqpg0SNpMxNyxUi2VPbGUBwvkrET1oLZun-bojaxrPA/viewform?embedded=true"
-                        width="640"
+                        width="100%"
                         height="1252"
                         title="Cody Pro credits form"
                     >
