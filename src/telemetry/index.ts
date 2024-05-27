@@ -28,11 +28,9 @@ export class TelemetryRecorderProvider extends BaseTelemetryRecorderProvider<'',
             [new MarketingTrackingTelemetryProcessor(new TrackingMetadataProvider())],
             {
                 /**
-                 * Use buffer time of 100ms - some existing buffering uses
-                 * 1000ms, but we use a more conservative value.
+                 * Disable buffering for now
                  */
-                bufferTimeMs: 100,
-                bufferMaxSize: 10,
+                bufferTimeMs: 0,
                 errorHandler: error => {
                     throw new Error(error)
                 },
