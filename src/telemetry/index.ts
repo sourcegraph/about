@@ -31,6 +31,7 @@ export class TelemetryRecorderProvider extends BaseTelemetryRecorderProvider<'',
                  * Disable buffering for now
                  */
                 bufferTimeMs: 0,
+                bufferMaxSize: 1,
                 errorHandler: error => {
                     throw new Error(error)
                 },
