@@ -20,8 +20,9 @@ export function useRecordPageViews(telemetryRecorder: TelemetryRecorder<'', ''>)
 export function useRecordLinkClicks(telemetryRecorder: TelemetryRecorder<'', ''>): void {
     useEffect(() => {
         const links = document.querySelectorAll('a')
+        const eventListeners: Map<HTMLAnchorElement, () => void> = new Map()
         for (const link of links) {
-            link.addEventListener('click', () => {
+            const listener = (): undefined => {
                 telemetryRecorder.recordEvent('aboutPage.button', 'click', { privateMetadata: {
                     textContent: link.textContent,
                     eventKey: link.dataset.rrUiEventKey,
@@ -30,7 +31,16 @@ export function useRecordLinkClicks(telemetryRecorder: TelemetryRecorder<'', ''>
                     buttonType: link.dataset.buttonType,
                     buttonLocation: link.dataset.buttonLocation,
                 } })
-            })
+                return
+            }
+            eventListeners.set(link, listener)
+            link.addEventListener('click', listener)
         }
-    })
+
+        return () => {
+            for (const [link, listener] of eventListeners) {
+                link.removeEventListener('click', listener)
+            }
+        }
+    }, [telemetryRecorder])
 }
