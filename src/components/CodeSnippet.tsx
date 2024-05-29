@@ -4,16 +4,18 @@ import classNames from 'classnames'
 import CheckCircleIcon from 'mdi-react/CheckCircleIcon'
 import ContentCopyIcon from 'mdi-react/ContentCopyIcon'
 
-import { logCodeSnippetCopied } from '../hooks/eventLogger'
+import { TelemetryRecorder } from '@sourcegraph/telemetry'
+
 import { copy } from '../lib/utils'
 
 interface CodeSnippetProps {
     code: string
     snippetName?: string
     className?: string
+    telemetryRecorder: TelemetryRecorder<'', ''>
 }
 
-export const CodeSnippet: FunctionComponent<CodeSnippetProps> = ({ snippetName, code, className }) => {
+export const CodeSnippet: FunctionComponent<CodeSnippetProps> = ({ snippetName, code, className, telemetryRecorder }) => {
     const [copied, setCopied] = useState(false)
     const handleCopy = (): void => {
         copy(code)
@@ -21,7 +23,7 @@ export const CodeSnippet: FunctionComponent<CodeSnippetProps> = ({ snippetName, 
             .catch(() => setCopied(false))
 
         if (snippetName) {
-            logCodeSnippetCopied(snippetName)
+            telemetryRecorder.recordEvent('codeSnippet', 'copy', { privateMetadata: { snippetName } })
         }
     }
 

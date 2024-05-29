@@ -16,3 +16,21 @@ export function useRecordPageViews(telemetryRecorder: TelemetryRecorder<'', ''>)
         telemetryRecorder.recordEvent('aboutPage', 'view', {privateMetadata})
     })
 }
+
+export function useRecordLinkClicks(telemetryRecorder: TelemetryRecorder<'', ''>): void {
+    useEffect(() => {
+        const links = document.querySelectorAll('a')
+        for (const link of links) {
+            link.addEventListener('click', () => {
+                telemetryRecorder.recordEvent('aboutPage.button', 'click', { privateMetadata: {
+                    textContent: link.textContent,
+                    eventKey: link.dataset.rrUiEventKey,
+                    id: link.id,
+                    buttonStyle: link.dataset.buttonStyle,
+                    buttonType: link.dataset.buttonType,
+                    buttonLocation: link.dataset.buttonLocation,
+                } })
+            })
+        }
+    })
+}
