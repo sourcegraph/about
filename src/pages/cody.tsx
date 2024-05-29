@@ -86,7 +86,7 @@ const CodyPage: FunctionComponent = () => {
                 <div className="sg-bg-gradient-cody-light-mobile-hero !absolute top-[310px] z-[10] h-[650px] w-[1000px] md:relative md:hidden md:bg-none" />
                 <CodyIntroDualTheme
                     isLight={true}
-                    title="Write less, ship more"
+                    title="Code more, type less"
                     handleOpenModal={handleOpenModal}
                     wrapperClassName="relative z-[20] md:z-0"
                 />
