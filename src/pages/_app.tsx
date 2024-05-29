@@ -12,6 +12,8 @@ import { PostHogProvider } from 'posthog-js/react'
 import { AuthModalProvider } from '../context/AuthModalContext'
 import { useEventLogger, useLogAllLinkClicks } from '../hooks/eventLogger'
 import { useLandingSource } from '../hooks/landingSource'
+import { useRecordPageViews } from '../hooks/telemetry'
+import { TelemetryRecorderProvider, noOpTelemetryRecorder } from '../telemetry'
 import 'prism-themes/themes/prism-one-light.css'
 
 // Check that PostHog is client-side (used to handle Next.js SSR)
@@ -28,6 +30,13 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
     useEventLogger()
     useLandingSource()
     useLogAllLinkClicks()
+
+    let telemetryRecorder = noOpTelemetryRecorder
+    if (typeof window !== 'undefined') {
+      const telemetryRecorderProvider = new TelemetryRecorderProvider()
+      telemetryRecorder = telemetryRecorderProvider.getRecorder()
+    }
+    useRecordPageViews(telemetryRecorder)
 
     const router = useRouter()
 
