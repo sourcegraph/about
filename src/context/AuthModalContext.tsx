@@ -81,12 +81,12 @@ export const AuthModalProvider: FunctionComponent<{ children: ReactNode, telemet
 
                 {isSignUpModalOpen && (
                     <Modal open={isSignUpModalOpen} handleClose={closeModal}>
-                        <AuthenticateModalContent source={source} plan={plan} />
+                        <AuthenticateModalContent source={source} plan={plan} telemetryRecorder={telemetryRecorder} />
                     </Modal>
                 )}
                 {isControlModalOpen && (
                     <Modal open={isControlModalOpen} handleClose={closeModal}>
-                        <IdeModalContent source={source} plan={plan} disablePlanParam={disablePlanParam} />
+                        <IdeModalContent source={source} plan={plan} disablePlanParam={disablePlanParam} telemetryRecorder={telemetryRecorder} />
                     </Modal>
                 )}
             </>

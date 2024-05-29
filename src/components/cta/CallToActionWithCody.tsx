@@ -3,12 +3,14 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
+import { TelemetryRecorder } from '@sourcegraph/telemetry'
+
 import { GITHUB, GITLAB, GOOGLE } from '../../pages/constants'
 import { Heading } from '../Heading'
 
 import { ExternalProvider } from './ExternalProvider'
 
-export const CallToActionWithCody: FunctionComponent<{ className?: string }> = ({ className }) => (
+export const CallToActionWithCody: FunctionComponent<{ className?: string, telemetryRecorder: TelemetryRecorder<'',''> }> = ({ className, telemetryRecorder }) => (
     <div
         className={classNames(
             'relative flex max-w-full flex-col overflow-hidden py-[96px] px-sm md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px]',
@@ -43,18 +45,21 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string }> = (
                         providerType={GITHUB}
                         label="GitHub"
                         source="about-home"
+                        telemetryRecorder={telemetryRecorder}
                     />
                     <ExternalProvider
                         className="w-fit flex-1 justify-center !font-normal"
                         providerType={GITLAB}
                         label="GitLab"
                         source="about-home"
+                        telemetryRecorder={telemetryRecorder}
                     />
                     <ExternalProvider
                         className="w-fit flex-1 justify-center !font-normal"
                         providerType={GOOGLE}
                         label="Google"
                         source="about-home"
+                        telemetryRecorder={telemetryRecorder}
                     />
                 </div>
                 <p className="mt-4 mb-0 text-[14px] text-white opacity-70">
