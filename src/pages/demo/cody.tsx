@@ -15,7 +15,6 @@ import {
 } from '../../components'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
-import { EventName, getEventLogger } from '../../hooks/eventLogger'
 import { useWindowWidth } from '../../hooks/windowWidth'
 
 declare global {
@@ -54,15 +53,6 @@ const DemoCodyPage: FunctionComponent = () => {
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (): void => openModal('cody')
-
-    useEffect(() => {
-        const eventArguments = {
-            description: 'About - Cody page view',
-            source: 'about-cody',
-        }
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger()?.log(EventName.VIEW_ABOUT_CODY, eventArguments, eventArguments)
-    }, [])
 
     return (
         <Layout

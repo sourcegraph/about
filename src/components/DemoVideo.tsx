@@ -3,7 +3,7 @@ import React, { useCallback, useRef, useState } from 'react'
 import classNames from 'classnames'
 import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
 
-import { EventName, getEventLogger } from '../hooks/eventLogger'
+import { TelemetryRecorder } from '@sourcegraph/telemetry'
 
 const VIDEOS: Record<
     'homepage-demo-202301' | 'cody-demo-202305' | 'cody-promo-202306',
@@ -42,7 +42,8 @@ export const DemoVideo: React.FunctionComponent<{
     splashClassName?: string
     playButton?: React.ReactNode
     scrollIntoViewOnPlay?: boolean
-}> = ({ video, splash = false, className, splashClassName, playButton, scrollIntoViewOnPlay = false }) => {
+    telemetryRecorder: TelemetryRecorder<'', ''>
+}> = ({ video, splash = false, className, splashClassName, playButton, scrollIntoViewOnPlay = false, telemetryRecorder }) => {
     const videoRef = useRef<HTMLVideoElement>(null)
     const [isShowing, setIsShowing] = useState(false)
     const onPlayClick = useCallback(() => {
@@ -69,7 +70,7 @@ export const DemoVideo: React.FunctionComponent<{
             ref={videoRef}
             // eslint-disable-next-line react/forbid-dom-props
             style={{ aspectRatio: videoInfo.dimensions }}
-            onPlay={() => getEventLogger().log(EventName.STATIC_VIDEO_PLAYED, { title, video }, { title, video })}
+            onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 5 }, privateMetadata: { title } })}
         >
             <track
                 default={true}

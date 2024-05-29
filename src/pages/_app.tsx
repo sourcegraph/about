@@ -53,7 +53,7 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
       <PostHogProvider client={posthog}>
         <AuthModalProvider>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <Component {...pageProps} />
+            <Component {...pageProps} telemetryRecorder={telemetryRecorder} />
         </AuthModalProvider>
       </PostHogProvider>
     )

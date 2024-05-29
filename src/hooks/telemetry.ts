@@ -14,5 +14,5 @@ export function useRecordPageViews(telemetryRecorder: TelemetryRecorder<'', ''>)
             }
         }
         telemetryRecorder.recordEvent('aboutPage', 'view', {privateMetadata})
-    }, [])
+    })
 }

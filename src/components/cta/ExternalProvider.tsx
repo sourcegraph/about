@@ -1,15 +1,25 @@
-import { FunctionComponent, PropsWithChildren, ReactNode, useEffect } from 'react'
+import { FunctionComponent, PropsWithChildren, Provider, ReactNode, useEffect } from 'react'
 
 import classNames from 'classnames'
 import Cookies from 'js-cookie'
 import GithubIcon from 'mdi-react/GithubIcon'
 import Link from 'next/link'
 
-import { EventName, getEventLogger } from '../../hooks/eventLogger'
+import { TelemetryRecorder } from '@sourcegraph/telemetry'
+
 import { getProviderButtonsTracker } from '../../lib/utils'
 import { GITHUB, GITLAB, GOOGLE, VSCODE, JETBRAINS } from '../../pages/constants'
 
 export type ProviderType = typeof GITHUB | typeof GITLAB | typeof GOOGLE | typeof VSCODE | typeof JETBRAINS
+
+export const telemetryProviderTypes: { [key in ProviderType | string]: number } = {
+    github: 1,
+    gitlab: 2,
+    google: 3,
+    vscode: 4,
+    jetbrains: 5,
+    form: 6,
+}
 
 interface ExternalProviderProps {
     label: string
@@ -19,6 +29,7 @@ interface ExternalProviderProps {
     className?: string
     plan?: 'pro' | 'free'
     disablePlanParam?: boolean
+    telemetryRecorder: TelemetryRecorder<'', ''>
 }
 
 interface ExternalLinkProps {
@@ -158,17 +169,7 @@ const ExternalLink: FunctionComponent<ExternalLinkProps> = ({
         {label}
     </Link>
 )
-const logEvent = (
-    eventArguments: {
-        type: string
-        source: string
-        description: string
-    },
-    eventName: string
-): void => {
-    // eslint-disable-next-line @typescript-eslint/no-floating-promises
-    getEventLogger().log(eventName, eventArguments, eventArguments)
-}
+
 export const ExternalProvider: FunctionComponent<ExternalProviderProps> = ({
     label,
     providerType = GITHUB,
@@ -176,7 +177,8 @@ export const ExternalProvider: FunctionComponent<ExternalProviderProps> = ({
     dark,
     className,
     plan = 'free',
-    disablePlanParam
+    disablePlanParam,
+    telemetryRecorder,
 }) => {
     useEffect(() => {
         const { buttonId, conversionId } = getProviderButtonsTracker(providerType)
@@ -215,9 +217,9 @@ export const ExternalProvider: FunctionComponent<ExternalProviderProps> = ({
             description: '',
         }
         if (providerType === VSCODE || providerType === JETBRAINS) {
-            logEvent(eventArguments, EventName.INSTALLATION)
+            telemetryRecorder.recordEvent('codyExtension', 'initiateInstall', { metadata: { editorType: telemetryProviderTypes[providerType] }, privateMetadata: eventArguments })
         } else {
-            logEvent(eventArguments, EventName.AUTH_INITIATED)
+            telemetryRecorder.recordEvent('auth', 'initiate', { metadata: { authType: telemetryProviderTypes[providerType] }, privateMetadata: eventArguments })
             Cookies.set('cody.survey.show', JSON.stringify(true), {
                 expires: 365,
                 domain: 'sourcegraph.com',

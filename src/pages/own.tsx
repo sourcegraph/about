@@ -3,10 +3,11 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
+import { TelemetryRecorder } from '@sourcegraph/telemetry';
+
 import { Badge, ContentSection, FeatureRoadMap, Heading, Layout } from '../components'
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { buttonLocation } from '../data/tracking'
-import { EventName, getEventLogger } from '../hooks/eventLogger'
 
 interface OwnContentProps {
     title: string
@@ -43,7 +44,7 @@ const roadMapSteps = [
     },
 ]
 
-const OwnPage: FunctionComponent = () => (
+const OwnPage: FunctionComponent<{telemetryRecorder: TelemetryRecorder<'',''>}> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Code Ownership',
@@ -108,13 +109,7 @@ const OwnPage: FunctionComponent = () => (
                     playsInline={true}
                     controls={false}
                     data-cookieconsent="ignore"
-                    onPlay={() =>
-                        getEventLogger().log(
-                            EventName.STATIC_VIDEO_PLAYED,
-                            { title: 'Own vulnerabilities' },
-                            { title: 'Own vulnerabilities' }
-                        )
-                    }
+                    onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 1 }, privateMetadata: { title: 'Own vulnerabilities' } })}
                 >
                     <source
                         type="video/webm"
@@ -140,13 +135,7 @@ const OwnPage: FunctionComponent = () => (
                     playsInline={true}
                     controls={false}
                     data-cookieconsent="ignore"
-                    onPlay={() =>
-                        getEventLogger().log(
-                            EventName.STATIC_VIDEO_PLAYED,
-                            { title: 'Own knowledge sharing' },
-                            { title: 'Own knowledge sharing' }
-                        )
-                    }
+                    onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 2 }, privateMetadata: { title: 'Own knowledge sharing' } })}
                 >
                     <source
                         type="video/webm"

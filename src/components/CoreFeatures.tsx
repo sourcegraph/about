@@ -3,8 +3,9 @@ import { FunctionComponent, ReactNode, useEffect } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
+import { TelemetryRecorder } from '@sourcegraph/telemetry'
+
 import { buttonLocation, buttonStyle } from '../data/tracking'
-import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { startCase } from '../lib/utils'
 
 interface Video {
@@ -97,7 +98,7 @@ export const features: Features[] = [
     },
 ]
 
-export const CoreFeatures: FunctionComponent = () => {
+export const CoreFeatures: FunctionComponent<{telemetryRecorder: TelemetryRecorder<'',''>}> = ({telemetryRecorder}) => {
     useEffect(() => {
         const videos = features.map(
             (vid, index): VideoElement => ({
@@ -193,13 +194,7 @@ export const CoreFeatures: FunctionComponent = () => {
                             playsInline={true}
                             controls={false}
                             data-cookieconsent="ignore"
-                            onPlay={() =>
-                                getEventLogger().log(
-                                    EventName.STATIC_VIDEO_PLAYED,
-                                    { productFeature: feature.productFeature, title: feature.title },
-                                    { productFeature: feature.productFeature, title: feature.title }
-                                )
-                            }
+                            onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 4 }, privateMetadata: { title: feature.title, productFeature: feature.productFeature } })}
                         >
                             <source type="video/webm" src={feature.video.webm} data-cookieconsent="ignore" />
                             <source type="video/mp4" src={feature.video.mp4} data-cookieconsent="ignore" />

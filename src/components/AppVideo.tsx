@@ -3,7 +3,7 @@ import React, { useCallback, useRef, useState } from 'react'
 import classNames from 'classnames'
 import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
 
-import { getEventLogger, EventName } from '../hooks/eventLogger'
+import { TelemetryRecorder } from '@sourcegraph/telemetry'
 
 const VIDEOS: Record<'app-demo-202304', { poster: string; mp4: string; webm: string; dimensions: number }> = {
     'app-demo-202304': {
@@ -20,7 +20,8 @@ export const DemoVideo: React.FunctionComponent<{
     splash?: boolean
     className?: string
     splashClassName?: string
-}> = ({ video, splash = false, className, splashClassName }) => {
+    telemetryRecorder: TelemetryRecorder<'',''>
+}> = ({ video, splash = false, className, splashClassName, telemetryRecorder }) => {
     const videoRef = useRef<HTMLVideoElement>(null)
 
     const [isShowing, setIsShowing] = useState(false)
@@ -47,7 +48,7 @@ export const DemoVideo: React.FunctionComponent<{
             ref={videoRef}
             // eslint-disable-next-line react/forbid-dom-props
             style={{ aspectRatio: videoInfo.dimensions }}
-            onPlay={() => getEventLogger().log(EventName.STATIC_VIDEO_PLAYED, { title }, { title })}
+            onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 3 }, privateMetadata: { title } })}
         >
             <source type="video/webm" src={videoInfo.webm} data-cookieconsent="ignore" />
             <source type="video/mp4" src={videoInfo.mp4} data-cookieconsent="ignore" />
