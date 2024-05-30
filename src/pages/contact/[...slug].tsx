@@ -46,7 +46,8 @@ const ContactPage: NextPage<ContactPageProps> = ({
                             <HubSpotForm
                                 masterFormName={masterFormName}
                                 formId={formId}
-                                chiliPiper={true}
+                                chiliPiper={false}
+                                bookIt={true}
                                 {...(form_submission_source && { form_submission_source })}
                                 onFormSubmitted={() => setFormSubmitted(true)}
                             />
