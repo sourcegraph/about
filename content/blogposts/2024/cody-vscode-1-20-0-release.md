@@ -5,6 +5,8 @@ authors:
     url: https://handbook.sourcegraph.com/team/#alex-isken
   - name: Justin Dorfman
     url: https://x.com/jdorfman
+  - name: Chris Sev
+    url: https://x.com/chris__sev
 publishDate: 2024-05-31T10:00-01:00
 description: "Cody for VS Code v1.20 is now available and includes big updates to the chat sidebar, including a new UX, more user-friendly context retrieval, and retry buttons for quickly re-running prompts with new context."
 tags: [blog]
@@ -15,6 +17,12 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 ---
 
 [Cody for VS Code v1.20](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) is now available. This update makes big updates to Cody’s chat sidebar with a new UX, smarter context retrieval, and more intuitive ways to retry prompts with different contexts to get the results you’re looking for. We’re also introducing experimental support for OpenCtx context providers.
+
+If you want to watch a walkthrough of the new features, check out our new YouTube video:
+
+<YouTube
+  id="W_wjCwbxjX4"
+/>
 
 ## New chat UX
 
