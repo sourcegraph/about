@@ -5,7 +5,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 const nextConfig = {
-  output: 'next start',
+  output: 'standalone',
   productionBrowserSourceMaps: true,
   reactStrictMode: true,
   pageExtensions: ['tsx'],
