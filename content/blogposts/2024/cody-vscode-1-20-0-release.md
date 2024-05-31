@@ -89,9 +89,19 @@ Today, we’re releasing experimental functionality to use OpenCtx context provi
 * [Google docs](https://openctx.org/docs/providers/google-docs)
 * [Sourcegraph code search](https://openctx.org/docs/providers/sourcegraph-search)
 
-Note that this is early and experimental functionality. If you have feedback or questions, please [visit our support forum](https://community.sourcegraph.com/c/openctx/10).
+To begin, please ensure that you uninstall OpenCtx from VS Code extensions. Then, configure your context providers in settings. For instance, to utilize the [DevDocs provider](https://openctx.org/docs/providers/devdocs), add the following to your `settings.json`:
 
-To get started, install OpenCtx for VS Code and configure your context providers. [Read the docs](https://openctx.org/docs/start) for more instructions.
+```javascript
+"openctx.providers": {
+    "https://openctx.org/npm/@openctx/provider-devdocs": {
+        "urls": ["https://devdocs.io/go/", "https://devdocs.io/angular~16/"]
+    }
+},
+```
+
+<Badge text="EXPERIMENTAL" color="vermillion" size="large" />
+
+Note that this is early and experimental functionality. If you have any OpenCtx feedback or questions, please [visit our support forum](https://community.sourcegraph.com/c/openctx/10).
 
 <Video
   source={{
