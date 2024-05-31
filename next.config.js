@@ -5,6 +5,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 const nextConfig = {
+  output: 'next start',
   productionBrowserSourceMaps: true,
   reactStrictMode: true,
   pageExtensions: ['tsx'],
@@ -33,7 +34,15 @@ const nextConfig = {
       }
     )
     return config
-  }
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/.api/graphql',
+        destination: 'https://sourcegraph.com/.api/graphql', // Proxy to Backend
+      },
+    ]
+  },
 }
 
 module.exports = withBundleAnalyzer(nextConfig)

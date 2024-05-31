@@ -31,6 +31,7 @@ import { Dropdown } from '../components/Dropdown'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { buttonLocation, buttonStyle } from '../data/tracking'
+import { useFeatureFlag } from '../hooks/useFeatureFlag'
 import { useWindowWidth } from '../hooks/windowWidth'
 
 interface Tab {
@@ -83,7 +84,7 @@ const GetProButton: FunctionComponent<{ className?: string; title?: string }> = 
 }) => {
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal('cody', 'pro',true)
+    const handleOpenModal = (): void => openModal('cody', 'pro', true)
     return (
         <button
             title={title}
@@ -252,6 +253,7 @@ const PricingPage: FunctionComponent = () => {
     const isWindowWidthBelowLg = windowWidth < breakpoints.mdi
     const router = useRouter()
     const faqDataToRender: FAQItem[] = faqData[selectedOption] || []
+    const [isEnabled, status, error] = useFeatureFlag('ab-shortened-install-first-signup-flow-cody-2024-04')
 
     // check to see if the url params has a product
     useEffect(() => {
@@ -260,12 +262,29 @@ const PricingPage: FunctionComponent = () => {
         }
     }, [router.query.product])
 
+    useEffect(() => {
+        if (status === 'loaded') {
+            const eventArguments = {
+                testName: 'Increase Free user chat limit experiment',
+                group: isEnabled ? 'control' : 'treatment',
+            }
+            // eslint-disable-next-line no-console
+            console.log('eventArguments', eventArguments)
+        } else {
+            // eslint-disable-next-line no-console
+            console.log(isEnabled, status, error)
+        }
+    }, [error, isEnabled, status])
+
     // choose a product and update the url param
     const chooseProduct = (option: string): void => {
         router.query.product = option
         router.push(router)
         setSelectedOption(option)
     }
+    // eslint-disable-next-line no-console
+    console.log({ isEnabled, status, error })
+
     const currentTab = TABS.find(tab => tab.key === selectedOption)
     return (
         <Layout
