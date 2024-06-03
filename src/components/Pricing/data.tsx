@@ -400,7 +400,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     contextFilters: {
         label: 'Context Filters',
-        description: "Prevent sensitive files from being sent to third-party LLM providers",
+        description: 'Prevent sensitive files from being sent to third-party LLM providers',
     },
     freeLLMsupport: {
         label: 'Default LLMs for chat, commands, and autocomplete',
