@@ -8,7 +8,7 @@ authors:
   - name: Chris Sev
     url: https://x.com/chris__sev
 publishDate: 2024-06-04T10:00-01:00
-description: "Cody for JetBrains is now generally available. The extension has improved performance, plus new commands and inline edits to help you stay in flow while writing code in any JetBrains IDE."
+description: "The extension has been refreshed with improved performance, an inline code edit function, and new commands to help you stay in flow while writing code in any JetBrains IDE."
 tags: [blog]
 slug: 'cody-for-jetbrains-is-generally-available'
 published: true
