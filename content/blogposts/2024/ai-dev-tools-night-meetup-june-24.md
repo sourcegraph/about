@@ -3,6 +3,8 @@ title: "AI Dev Tools Night: Come to our upcoming meetup in SF!"
 authors:
   - name: Justin Dorfman
     url: https://x.com/jdorfman
+   - name: YK
+    url: https://x.com/ykdojo
 publishDate: 2024-06-03T10:00-01:00
 description: "Join us on June 24th for an exciting meetup exploring the latest advancements in AI and their impact on dev tools. Industry experts will share insights on AI coding engines, embedding search, debugging with AI, and more. "
 tags: [blog]
