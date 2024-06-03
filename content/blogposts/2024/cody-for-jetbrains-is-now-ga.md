@@ -38,7 +38,7 @@ We’ve also added new hotkeys for using autocomplete:
 
 <Video
   source={{
-    mp4: 'blog/cody-for-jetbrains-is-generally-available/jetbrains-cody-autocomplete-ga.mp4'
+    mp4: 'blog/cody-for-jetbrains-is-generally-available/jetbrains-cody-autocomplete-ga'
   }}
   loop={true}
 />
@@ -53,7 +53,7 @@ If you’re a Cody Enterprise user, you will also have the option of adding remo
 
 <Video
   source={{
-    mp4: 'blog/cody-for-jetbrains-is-generally-available/jetbrains-cody-multi-repo-chat-ga.mp4'
+    mp4: 'blog/cody-for-jetbrains-is-generally-available/jetbrains-cody-multi-repo-chat-ga'
   }}
   loop={true}
 />
@@ -66,23 +66,23 @@ Cody Pro users can hot-swap between multiple of the latest models from the exten
 
 <Video
   source={{
-    mp4: 'blog/cody-for-jetbrains-is-generally-available/jetbrains-cody-llm-switching-ga.mp4'
+    mp4: 'blog/cody-for-jetbrains-is-generally-available/jetbrains-cody-llm-switching-ga'
   }}
   loop={true}
 />
 
-## Refreshed Chat and Edit commands to keep you in flow
+## Refreshed commands to keep you in flow
 
 Cody has grown beyond the chat window and can now edit code directly in your files. We’ve used this functionality to rebuild Cody’s commands and split them into two categories: **edit commands** and **chat commands**.
 
 Chat commands are the commands you are already using. They return outputs from Cody in the chat window. These are:
 
-- Explain Code: explains a code snippet or file at a high level, including key properties, arguments, and algorithms.
-- Smell Code: analyzes a selected code snippet and provides suggestions for how to improve quality.
+- **Explain Code**: Explains a code snippet or file at a high level, including key properties, arguments, and algorithms
+- **Smell Code**: Analyzes a selected code snippet and provides suggestions for how to improve quality
 
 Edit commands are new and trigger code edits directly in your files (and sometimes in net-new files). These commands are new in this release and include:
 
-- Edit Code
+- Edit code
 - Document code
 - Generate unit tests
 
@@ -98,7 +98,7 @@ You can also place the cursor on a blank line in your file without highlighting 
 
 <Video
   source={{
-    mp4: 'blog/cody-for-jetbrains-is-generally-available/jetbrains-cody-edit-code-ga.mp4'
+    mp4: 'blog/cody-for-jetbrains-is-generally-available/jetbrains-cody-edit-code-ga'
   }}
   loop={true}
 />
@@ -125,7 +125,7 @@ You can trigger the documentation command with the <kbd>Shift + Ctrl + H</kbd> h
 
 <Video
   source={{
-    mp4: 'blog/cody-for-jetbrains-is-generally-available/jetbrains-cody-document-code-ga.mp4'
+    mp4: 'blog/cody-for-jetbrains-is-generally-available/jetbrains-cody-document-code-ga'
   }}
   loop={true}
 />
@@ -147,8 +147,8 @@ You can also try it in our [LLM Litmus Test](https://s0.dev/) at Sourcegraph Lab
 
 For anyone who missed it, we rolled out new context windows for Cody Free and Cody Pro users in [v5.5.8](https://sourcegraph.com/blog/cody-jetbrains-5-5-8-release). Cody now supports _way more context_ when used with Claude 3 models. This means a few things:
 
-- You send more context to Cody when asking questions. You can `@-mention` more and larger files that would’ve previously gone over the context limit.
-- You can have far longer back-and-forth chats with Cody before it forgets the context from earlier in the conversation. Previously, Cody would tend to “forget” context early in a conversation when the total amount of context was too large.
+- You send more context to Cody when asking questions. You can `@-mention` more and larger files that would’ve previously gone over the context limit
+- You can have far longer back-and-forth chats with Cody before it forgets the context from earlier in the conversation. Previously, Cody would tend to “forget” context early in a conversation when the total amount of context was too large
 
 We’ve also expanded Cody’s output token limit, meaning answers won’t get cut off mid-text anymore. You can read more about [context token limits in the docs](https://sourcegraph.com/docs/cody/core-concepts/token-limits).
 
@@ -160,10 +160,10 @@ We’ve squashed some bugs and significantly improved the JetBrains extension's 
 
 **Thank you** to all of our JetBrains beta users. Your feedback has allowed us to bring JetBrains to GA. We appreciate all of your thoughtful insights, requests, and support. 
 
-If you’re new to Cody, we’d love your feedback too! You can submit feedback along with questions and comments to [our support forum](community.sourcegraph.com).
+If you’re new to Cody, we’d love your feedback too! You can submit feedback along with questions and comments to [our support forum](https://community.sourcegraph.com).
 
 ## Get started with Cody
 
-Users with existing Free, Pro, or Enterprise accounts can [install Cody for JetBrains here](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat). 
+If you have an existing Free, Pro, or Enterprise account, you can [install Cody for JetBrains here](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat). 
 
 If you don’t yet have a Cody account, [create one for free](https://sourcegraph.com/cody).
