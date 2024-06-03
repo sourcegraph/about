@@ -8,8 +8,8 @@ description: "Cody Enterprise is getting an upgrade, making it more secure for s
 tags: [blog]
 slug: 'cody-enterprise-june-2024'
 published: true
-heroImage: 
-socialImage: 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-enterprise-june-2024/cody-enterprise-june-2024-hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-enterprise-june-2024/cody-enterprise-june-2024-hero.png
 ---
 
 This week, we’re rolling out several improvements to Cody Enterprise, making it more secure for sensitive code and improving its use of context.
