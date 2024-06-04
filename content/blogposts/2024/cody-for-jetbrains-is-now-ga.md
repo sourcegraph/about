@@ -170,6 +170,6 @@ If you’re new to Cody, we’d love your feedback too! You can submit feedback 
 
 ## Get started with Cody
 
-If you have an existing Free, Pro, or Enterprise account, you can [install Cody for JetBrains here](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat). 
+If you have an existing Free, Pro, or Enterprise account, you can [install Cody for JetBrains](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat). 
 
 If you don’t yet have a Cody account, [create one for free](https://sourcegraph.com/cody).
