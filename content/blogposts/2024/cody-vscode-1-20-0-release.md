@@ -97,7 +97,7 @@ Today, we’re releasing experimental functionality to use OpenCtx context provi
 * [Google docs](https://openctx.org/docs/providers/google-docs)
 * [Sourcegraph code search](https://openctx.org/docs/providers/sourcegraph-search)
 
-To begin, please ensure that you uninstall OpenCtx from VS Code extensions. Then, configure your context providers in settings. For instance, to utilize the [DevDocs provider](https://openctx.org/docs/providers/devdocs), add the following to your `settings.json`:
+To try it out, add context providers to your VS Code settings. For example, to use the [DevDocs provider](https://openctx.org/docs/providers/devdocs), add the following to your `settings.json`:
 
 ```javascript
 "openctx.providers": {
@@ -110,6 +110,8 @@ To begin, please ensure that you uninstall OpenCtx from VS Code extensions. Then
 <Badge text="EXPERIMENTAL" color="vermillion" size="large" />
 
 Note that this is early and experimental functionality. If you have any OpenCtx feedback or questions, please [visit our support forum](https://community.sourcegraph.com/c/openctx/10).
+
+This functionality is also _not_ dependent on the separate OpenCtx VS Code extension, which adds inline context from providers to your code. We recommend uninstalling the OpenCtx extension before trying this feature in Cody.
 
 <Video
   source={{
