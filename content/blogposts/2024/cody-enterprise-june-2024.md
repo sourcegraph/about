@@ -52,15 +52,15 @@ Context Filters are available for Cody Enterprise customers in JetBrains, VS Cod
 
 You can find more information on Context Filters and requirements [in the docs](https://sourcegraph.com/docs/cody/capabilities/ignore-context).
 
-## ChatGPT-4o is now available for Cody Enterprise
+## GPT-4o is now available for Cody Enterprise
 
 In a fast-moving field like LLMs, it’s important to have access to the latest and greatest on the market. This access to LLMs is core to how we build Cody, and for security-conscious enterprises, we provide the same data privacy and protections regardless of the LLM you use.
 
-Hot on the heels of our [support for Claude 3](https://sourcegraph.com/blog/claude-3-now-available-in-cody), Cody Enterprise now supports [ChatGPT-4o](https://openai.com/index/hello-gpt-4o/). ChatGPT-4o is OpenAI’s latest model. It’s two times faster than GPT-4 Turbo and performs better than its general reasoning benchmark score.
+Hot on the heels of our [support for Claude 3](https://sourcegraph.com/blog/claude-3-now-available-in-cody), Cody Enterprise now supports [GPT-4o](https://openai.com/index/hello-gpt-4o/). GPT-4o is OpenAI’s latest model. It’s two times faster than GPT-4 Turbo and performs better than its general reasoning benchmark score.
 
-ChatGPT-4o will be available in the Sourcegraph release coming later this week, and admins can [configure their instance](https://sourcegraph.com/docs/cody/core-concepts/cody-gateway#configuring-custom-models) to use it once they’ve upgraded. You can also try it out and compare it against other models today in our [LLM Litmus Test](https://s0.dev/) at Sourcegraph Labs.
+GPT-4o will be available in the Sourcegraph release coming later this week, and admins can [configure their instance](https://sourcegraph.com/docs/cody/core-concepts/cody-gateway#configuring-custom-models) to use it once they’ve upgraded. You can also try it out and compare it against other models today in our [LLM Litmus Test](https://s0.dev/) at Sourcegraph Labs.
 
-## Smarter and larger context windows for Claude 3 Opus, Sonnet, and ChatGPT-4o
+## Smarter and larger context windows for Claude 3 Opus, Sonnet, and GPT-4o
 
 We [recently announced](https://sourcegraph.com/blog/cody-vscode-1-14-0-release) larger context windows for Cody Free and Cody Pro users, and we’re bringing these updated context windows to Cody Enterprise in this week’s Sourcegraph release.
 
