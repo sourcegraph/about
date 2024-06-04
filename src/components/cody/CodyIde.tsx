@@ -20,7 +20,7 @@ export const CodyIde: FunctionComponent = () => (
                         <Heading size="h4" className="!text-2xl text-gray-200">
                             VS Code
                         </Heading>
-                        <span className="text-sm text-white text-opacity-80">GA</span>
+
                     </div>
                 </div>
                 <div className="flex items-center gap-x-4 md:px-6">
@@ -29,7 +29,7 @@ export const CodyIde: FunctionComponent = () => (
                         <Heading size="h4" className="!text-2xl text-gray-200">
                             JetBrains IDEs
                         </Heading>
-                        <span className="text-sm text-white text-opacity-80">BETA</span>
+
                     </div>
                 </div>
                 <div className="flex items-center  gap-x-4 md:px-6">
