@@ -14,7 +14,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-enterpr
 
 This week, we’re rolling out several improvements to Cody Enterprise, making it more secure for sensitive code and improving its use of context.
 
-We’re introducing Context Filters, safeguards to prevent sensitive code from being sent to third-party LLM providers. We’re also increasing the amount of context that can be passed into Cody, so users can ask questions about larger files (or larger portions of their codebase) that previously exceeded Cody’s context limit. The JetBrains IDE extension has also been significantly upgraded and [is now generally available](sourcegraph.com/blog/cody-for-jetbrains-is-generally-available).
+We’re introducing Context Filters, safeguards to prevent sensitive code from being sent to third-party LLM providers. We’re also increasing the amount of context that can be passed into Cody, so users can ask questions about larger files (or larger portions of their codebase) that previously exceeded Cody’s context limit. The JetBrains IDE extension has also been significantly upgraded and is now generally available.
 
 ## Safeguard your code with Cody Context Filters
 
@@ -89,7 +89,7 @@ Another core philosophy behind building Cody is ensuring it works where you work
 
 The GA extension brings a long list of updates to JetBrains, including all-new commands, inline code editing, multi-repo context search, and many improvements to performance and stability. We’ve also added proxy support for enterprise environments.
 
-For more information about all of the updates to the JetBrains extension, [read our announcement blog](sourcegraph.com/blog/cody-for-jetbrains-is-generally-available).
+For more information about all of the updates to the JetBrains extension, [read our announcement blog](https://sourcegraph.com/blog/cody-for-jetbrains-is-generally-available).
 
 ## Get started with Cody Enterprise
 
