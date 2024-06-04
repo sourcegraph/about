@@ -20,7 +20,7 @@ Cody for JetBrains IDEs is now generally available for all users. It offers bett
 
 The JetBrains extension now supports new commands, inline code edits, and all of Cody’s staple features like multi-line autocomplete, hot-swappable LLMs, and multi-repo context search.
 
-[Download Cody for Jetbrains here.](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) 
+[Download Cody for JetBrains](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) 
 
 <YouTube
   id="Q6dYz6esf8g"
