@@ -97,7 +97,7 @@ Today, we’re releasing experimental functionality to use OpenCtx context provi
 * [Google docs](https://openctx.org/docs/providers/google-docs)
 * [Sourcegraph code search](https://openctx.org/docs/providers/sourcegraph-search)
 
-To try it out, add context providers to your VS Code settings. For examples, to utilize the [DevDocs provider](https://openctx.org/docs/providers/devdocs), add the following to your `settings.json`:
+To try it out, add context providers to your VS Code settings. For example, to use the [DevDocs provider](https://openctx.org/docs/providers/devdocs), add the following to your `settings.json`:
 
 ```javascript
 "openctx.providers": {
