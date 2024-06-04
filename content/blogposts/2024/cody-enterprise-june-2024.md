@@ -29,7 +29,6 @@ By default, Cody Enterprise has no restrictions on the repos it can use for cont
 
 When both `include` and `exclude` rules are specified, Cody will use content from any repository that matches the `include` patterns but does not match any `exclude` filter. In the example below, Cody can access content from repositories with names starting with `github.com/sourcegraph`, but it will exclude files from the `/cloud` repository.
 
-
 ```json
 "cody.contextFilters": {
   "include": [
@@ -45,11 +44,7 @@ When both `include` and `exclude` rules are specified, Cody will use content fro
 }
 ```
 
-
-
 Context Filters are available for Cody Enterprise customers in JetBrains, VS Code, and the Cody web client. To access it, you’ll need to meet the following requirements:
-
-
 
 * A valid Cody Enterprise license and running Sourcegraph version >=5.4.0
 * A Cody client meeting the following version specs: VS Code >=1.20.0 or JetBrains >=6.0.0
