@@ -82,11 +82,11 @@ Chat commands are the commands you are already using. They return outputs from C
 - **Explain Code**: Explains a code snippet or file at a high level, including key properties, arguments, and algorithms
 - **Smell Code**: Analyzes a selected code snippet and provides suggestions for how to improve quality
 
-Edit commands are new and trigger code edits directly in your files (and sometimes in net-new files). These commands are new in this release and include:
+Edit commands trigger code edits directly in your files (and sometimes in net-new files). These commands are new in this release and include:
 
-- Edit code
-- Document code
-- Generate unit tests
+- Edit Code
+- Document Code
+- Generate Unit Tests
 
 ### Edit code
 
@@ -164,7 +164,7 @@ We’ve squashed some bugs and significantly improved the JetBrains extension's 
 
 ## Thank you to our community
 
-**Thank you** to all of our JetBrains beta users. Your feedback has allowed us to bring JetBrains to GA. We appreciate all of your thoughtful insights, requests, and support. 
+**Thank you** to all of our JetBrains beta users. Your feedback has allowed us to bring the JetBrains extension to GA. We appreciate all of your thoughtful insights, requests, and support. 
 
 If you’re new to Cody, we’d love your feedback too! You can submit feedback along with questions and comments to [our support forum](https://community.sourcegraph.com).
 
