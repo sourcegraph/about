@@ -23,7 +23,7 @@ The JetBrains extension now supports new commands, inline code edits, and all of
 [Download Cody for Jetbrains here.](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) 
 
 <YouTube
-  id=""
+  id="Q6dYz6esf8g"
 />
 
 ## Better autocomplete with more hotkeys
@@ -57,6 +57,8 @@ If you’re a Cody Enterprise user, you will also have the option of adding remo
   }}
   loop={true}
 />
+
+Watch the full video walkthrough on [multi-repo context on YouTube](https://www.youtube.com/watch?v=071ytrt3bOE).
 
 ## LLM switching
 
@@ -103,6 +105,8 @@ You can also place the cursor on a blank line in your file without highlighting 
   loop={true}
 />
 
+Learn more about the Edit Command with this [YouTube video walkthrough](https://www.youtube.com/watch?v=CzvdoH5XGwk).
+
 ### Generate unit tests
 
 This command replaces Cody’s old unit testing command, which was limited to outputting test code in the chat window. Now, when you prompt Cody to generate unit tests, it will:
@@ -114,7 +118,7 @@ This command replaces Cody’s old unit testing command, which was limited to ou
 Try the new command in the Cody sidebar or with the <kbd>Shift + Ctrl + T</kbd> hotkey.
 
 <YouTube
-  id=""
+  id="PZOjAkeyP78"
 />
 
 ### Document code
@@ -129,6 +133,8 @@ You can trigger the documentation command with the <kbd>Shift + Ctrl + H</kbd> h
   }}
   loop={true}
 />
+
+Learn to use the Document Code command with this [YouTube walkthrough](https://www.youtube.com/watch?v=Jx5ffmxg3Po).
 
 ## GPT-4o support for Pro and Enterprise
 
