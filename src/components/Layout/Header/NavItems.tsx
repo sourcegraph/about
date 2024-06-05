@@ -72,6 +72,10 @@ const NAV_ITEMS: NavItem[] = [
                 name: 'Support forum',
                 href: 'https://community.sourcegraph.com',
             },
+            {
+                name: 'Webinars',
+                href: '/webinars',
+            },
         ],
     },
     {

@@ -176,7 +176,7 @@ export const ENTERPRISE_CODY_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'Enterprise features',
-        features: ['everythingInPro', 'flexDeployment', 'entAdmin', 'guardrails'],
+        features: ['everythingInPro', 'flexDeployment', 'entAdmin', 'guardrails', 'contextFilters'],
     },
     {
         topic: 'Support',
@@ -398,19 +398,23 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'Guardrails',
         description: "We scan Cody's output for OSS code, reducing the risk of copyrighted code in suggestions",
     },
+    contextFilters: {
+        label: 'Context Filters',
+        description: 'Prevent sensitive files from being sent to third-party LLM providers',
+    },
     freeLLMsupport: {
         label: 'Default LLMs for chat, commands, and autocomplete',
     },
     proLLMchat: {
         label: 'Multiple LLM choices for chat',
-        description: 'Claude Instant 1.2, Claude 2, Claude 3, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview, Mixtral',
+        description: 'GPT-4o, GPT-4 Turbo, Claude 3 (Opus, Sonnet, Haiku), Mixtral',
     },
     proLLMcommands: {
         label: 'Default LLMs for commands and autocomplete',
     },
     entLLMchoices: {
         label: 'Flexible LLM choices',
-        description: 'Claude Instant 1.2, Claude 2, Claude 3, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview',
+        description: 'GPT-4o, GPT-4 Turbo, Claude 3 (Opus, Sonnet, Haiku)',
     },
     BringYourLLMKey: {
         label: 'Bring your own LLM key',
@@ -421,7 +425,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     codeIntelEntLLMchoices: {
         label: 'Flexible LLM choices',
-        description: 'Claude Instant 1.2, StarCoder, Claude 2, Claude 3, ChatGPT 3.5 Turbo, ChatGPT 4 Turbo Preview',
+        description: 'GPT-4o, GPT-4 Turbo, Claude 3 (Opus, Sonnet, Haiku)',
     },
     codeIntelBringYourLLMKey: {
         label: 'Bring your own LLM key',
@@ -507,7 +511,7 @@ export const CODE_INTELLIGENCE_CE_FEATURES: FeatureCluster[] = [
     },
     {
         topic: 'Advanced security',
-        features: ['codeIntelGuardrails', 'codeIntelAdminControls'],
+        features: ['guardrails', 'contextFilters', 'codeIntelAdminControls'],
         topicClass: 'mb-6',
     },
 ]

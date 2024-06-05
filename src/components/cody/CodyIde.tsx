@@ -63,7 +63,6 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                                 'text-white text-opacity-80': !isLight,
                             })}
                         >
-                            GA
                         </span>
                     </div>
                 </div>
@@ -85,7 +84,6 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                                 'text-white text-opacity-80': !isLight,
                             })}
                         >
-                            GA
                         </span>
                     </div>
                 </div>

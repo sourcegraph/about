@@ -72,6 +72,6 @@ Not only is OpenCtx open source (Apache 2), it's designed to be open. [OpenCtx p
 
 ---
 
-Check out [openctx.org](https://openctx.org), see the code in [sourcegraph/openctx](https://github.com/sourcegraph/openctx) (Apache 2.0), [follow @sqs](https://twitter.com/sqs) for updates, and discuss stuff in the [forum](https://community.sourcegraph.com/).
+Check out [openctx.org](https://openctx.org), see the code in [sourcegraph/openctx](https://github.com/sourcegraph/openctx) (Apache 2.0), [follow @sqs](https://twitter.com/sqs) for updates, and discuss stuff in the [forum](https://community.sourcegraph.com/c/openctx/10).
 
 Also: we're hosting an in-person hack week May 25-31 in Singapore, so if you're around and want to build OpenCtx support for your favorite dev tools or editor, [hit us up](https://x.com/Sourcegraph)!

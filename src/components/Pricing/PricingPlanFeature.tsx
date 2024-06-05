@@ -27,7 +27,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag
             >
                 {feature.label}
             </div>
-            {feature.label === 'Guardrails' && (
+            {feature.label === 'Context Filters' && (
                 <Badge
                     text="new"
                     size="small"

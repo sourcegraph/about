@@ -135,7 +135,12 @@ const EnterPriseTrial: FunctionComponent = () => (
 
         <div className="enterprise-form-bg mt-6 rounded-2xl  py-12 px-6">
             <div className={classNames('mx-auto max-w-[588px] rounded-lg bg-white p-4', styles.container)}>
-                <HubSpotForm masterFormName="contactMulti" formId="e090296f-84f5-4bcb-9093-a533336841b4" />
+                <HubSpotForm
+                    masterFormName="contactMulti"
+                    formId="e090296f-84f5-4bcb-9093-a533336841b4"
+                    chiliPiper={false}
+                    bookIt={true}
+                />
             </div>
         </div>
     </div>

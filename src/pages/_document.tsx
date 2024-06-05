@@ -154,15 +154,6 @@ export default class MyDocument extends Document<MyDocumentProps> {
                         `}
                     </Script>
 
-                    {/* Plausible Analytics (GA Alternative) */}
-                    {/* Plausible recommends this in the head, but Next.js recommends afterInteractive */}
-                    <Script
-                        id="script-plausible"
-                        data-domain="sourcegraph.com"
-                        src="https://plausible.io/js/plausible.js"
-                        strategy="afterInteractive"
-                    />
-
                     {/* Triblio "Webpage Personalization" */}
                     {/* Triblio recommends this in the head which we follow with beforeInteractive */}
                     <Script
