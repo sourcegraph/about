@@ -104,6 +104,9 @@
     .btn-primary {
         @apply bg-violet-400 text-white hover:bg-violet-500;
     }
+    .btn-primary-dark {
+        @apply bg-violet-500 text-white hover:bg-violet-400;
+    }
     .btn-inverted-primary {
         @apply bg-white text-violet-400 outline-none hover:bg-violet-600 hover:text-white focus:border-transparent focus:bg-white focus:text-violet-400 focus:ring focus:ring-violet-400;
     }
@@ -437,6 +440,18 @@
         background: linear-gradient(to bottom, var(--violet-600, #6112a3), var(--violet-900, #1a003a));
         filter: blur(80px);
         z-index: -10;
+    }
+    .sg-bg-gradient-cody-light-hero {
+        background: linear-gradient(to right, rgba(74, 193, 232, 0.7) 3.81%, rgba(161, 18, 255, 0.7) 47.45%, rgba(255, 85, 67, 0.39) 92.33%), #fff;
+        stroke-width: 1px;
+        stroke: var(--Grayscale-200, #dbe2f0);
+        opacity: 0.5;
+        filter: blur(50px);
+    }
+    .sg-bg-gradient-cody-light-mobile-hero {
+        background: linear-gradient(to right, rgba(74, 193, 232, 0.30) -2.29%, rgba(161, 18, 255, 0.30) 60.34%, rgba(255, 85, 67, 0.30) 92.56%);
+        opacity: 0.4;
+        filter: blur(60px);
     }
     .sg-bg-gradient-cip-cody {
         background: linear-gradient(0deg, rgba(206, 131, 255, 0.05), rgba(206, 131, 255, 0.05)),

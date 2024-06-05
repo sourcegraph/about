@@ -10,9 +10,10 @@ import { useAuthModal } from '../../context/AuthModalContext'
 interface CodyCtaProps {
     isCodyPage?: boolean
     source: string
+    isLight?: boolean
 }
 
-export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, source }) => {
+export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, source, isLight = false }) => {
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (): void => openModal(source)
@@ -21,7 +22,10 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
         <ContentSection
             id="contact-form"
             parentClassName="!py-0"
-            className="mx-auto flex flex-col gap-6 py-16 md:flex-row md:py-[112px]"
+            className={classNames('mx-auto flex flex-col gap-6 py-16 md:flex-row', {
+                'md:py-[96px]': isLight,
+                'md:py-[112px]': !isLight,
+            })}
         >
             <div className="hover:cta-free-cody relative overflow-hidden rounded-2xl border border-gray-200 border-opacity-25 bg-white px-14 py-16 md:w-1/2 md:p-16">
                 <div className="bg-grad absolute right-0 top-0 h-[3px] w-full flex-1 bg-gradient-to-r from-blue-300 via-violet-400 to-vermillion-300" />
@@ -31,13 +35,22 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
                         '!leading-10 !tracking-[-1px]': isCodyPage,
                     })}
                 >
-                    Get started with Cody
+                    {isLight ? (
+                        <>
+                            <span className="hidden md:block"> Get started with Cody </span>
+                            <span className="block md:hidden">Cody Free</span>
+                        </>
+                    ) : (
+                        <span> Get started with Cody </span>
+                    )}
                 </Heading>
 
                 <Heading
                     size="h3"
-                    className={classNames('mt-4 max-w-[413.5px] font-sans text-[18px] text-gray-500', {
+                    className={classNames('mt-4 max-w-[413.5px] text-[18px]', {
                         'leading-[27px] !tracking-[-0.25px]': isCodyPage,
+                        'text-gray-500': !isLight,
+                        'text-[#343A4D]': isLight,
                     })}
                 >
                     Use Cody for free in your IDE, no credit card required.
@@ -46,10 +59,20 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
                     <button
                         onClick={handleOpenModal}
                         title="Get Cody free"
-                        className="btn btn-primary text-center"
+                        className={classNames('btn text-center', {
+                            'btn-primary': !isLight,
+                            'btn-primary-dark': isLight,
+                        })}
                         type="button"
                     >
-                        Get Cody for free
+                        {isLight ? (
+                            <>
+                                <span className="hidden md:block">Get Cody for free</span>
+                                <span className="block md:hidden">Get Cody free</span>
+                            </>
+                        ) : (
+                            <span>Get Cody for free</span>
+                        )}
                     </button>
                 </div>
             </div>
@@ -73,7 +96,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
                 </Heading>
                 <Heading
                     size="h3"
-                    className={classNames('font-sans text-[18px] text-white text-opacity-80', {
+                    className={classNames('text-[18px] text-white text-opacity-80', {
                         'leading-[27px] -tracking-[0.25px]': isCodyPage,
                     })}
                 >
@@ -86,7 +109,14 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
                         title="Get Cody for Enterprise"
                         className="btn hover:bg-color-violet-600 w-full rounded-[5px] border border-white px-6 py-2 text-center text-white md:w-auto"
                     >
-                        Request info
+                        {isLight ? (
+                            <>
+                                <span className="md:hidden">Contact sales</span>
+                                <span className="hidden md:flex"> Request info</span>
+                            </>
+                        ) : (
+                            <span> Request info</span>
+                        )}
                     </Link>
                     <Link
                         href="/pricing"
