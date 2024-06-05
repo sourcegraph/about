@@ -82,4 +82,4 @@ Cody has increased context window limits for both inputs and outputs. These chan
 For BYOK customers, increasing context limits may increase LLM costs. [Read the docs](https://sourcegraph.com/docs/cody/clients/enable-cody-enterprise#smart-context-window) for more information on this feature and how to set your own context limits.
 
 <br />
-Sourcegraph 5.X.X is now available. Users self-hosting Sourcegraph can upgrade their instances today, and Sourcegraph Cloud users will receive this update within the coming days.
+Sourcegraph 5.4.5071 is now available. Users self-hosting Sourcegraph can upgrade their instances today, and Sourcegraph Cloud users will receive this update within the coming days.
