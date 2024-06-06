@@ -1,6 +1,6 @@
 ---
 title: "Sourcegraph June 2024 release: Jupyter Notebook rendering, Mermaid diagrams, and Cody Enterprise updates"
-publishDate: 2024-06-05T10:00-07:00
+publishDate: 2024-06-06T10:00-07:00
 authors:
   - name: Justin Dorfman
     url: https://x.com/jdorfman
