@@ -1,4 +1,4 @@
-import { FunctionComponent, PropsWithChildren, Provider, ReactNode, useEffect } from 'react'
+import { FunctionComponent, PropsWithChildren, ReactNode, useEffect } from 'react'
 
 import classNames from 'classnames'
 import Cookies from 'js-cookie'

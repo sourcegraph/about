@@ -3,6 +3,8 @@ import { FunctionComponent } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
+import { TelemetryRecorder } from '@sourcegraph/telemetry'
+
 import { ContentSection, Layout, TwoColumnSection, Heading, Video, InfiniteCarousel } from '../components'
 import { CodeSearchCard } from '../components/Code-search/CodeSearchCard'
 
@@ -64,7 +66,11 @@ const codeHosts = [
     { name: 'any Git-based code host', icon: '/code-search/code-hosts/any-git.svg' },
 ]
 
-export const CodeSearchPage: FunctionComponent = () => (
+interface Props {
+    telemetryRecorder: TelemetryRecorder<'',''>
+}
+
+export const CodeSearchPage: FunctionComponent<Props> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Sourcegraph | Code Search',
@@ -94,6 +100,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         title="Sourcegraph Code Search"
                         loop={true}
                         className="h-[432px] rounded-[5px] border border-gray-200 object-cover"
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
                 rightColumn={
@@ -163,6 +170,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         title="Sourcegraph Notebooks"
                         loop={true}
                         className="h-[432px] rounded-[5px] border border-gray-200 object-cover lg:h-[401px] lg:w-[577px]"
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />
@@ -182,6 +190,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         loop={true}
                         title="Batch Changes: How it works"
                         className="h-[432px] rounded-[5px] border border-gray-200 object-cover lg:h-[324px] lg:w-[577px]"
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
                 rightColumn={
@@ -249,6 +258,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         title="Code Insights"
                         loop={true}
                         className="h-[526px] rounded-lg border border-gray-200 object-cover lg:h-[324px] lg:w-[577px]"
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />

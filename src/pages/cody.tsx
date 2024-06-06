@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useState } from 'react'
+import { FunctionComponent, useState } from 'react'
 
 import classNames from 'classnames'
 import { useRouter } from 'next/router'

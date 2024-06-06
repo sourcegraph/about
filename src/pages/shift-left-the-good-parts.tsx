@@ -2,6 +2,8 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
+import { TelemetryRecorder } from '@sourcegraph/telemetry'
+
 import {
     CallToActionContentSection,
     ContentSection,
@@ -37,7 +39,11 @@ const blogResourceItems = [
     },
 ]
 
-const ShiftLeftPage: FunctionComponent = () => (
+interface Props {
+    telemetryRecorder: TelemetryRecorder<'',''>
+}
+
+const ShiftLeftPage: FunctionComponent<Props> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Shift Left - Sourcegraph',
@@ -104,6 +110,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                         title="Code reuse"
                         caption="Discovering and reusing existing code can help you spin up an MVP ASAP, so you can quickly validate the user need with a rough sketch of the product."
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />
@@ -122,6 +129,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                         title="Definitions and references"
                         caption="Walking the forward and backward graph of code (defs and refs) is the bread-and-butter of building up a contextual mental model of how the code works."
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
                 rightColumn={
@@ -186,6 +194,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                         title="Reveal gaps in test coverage"
                         caption="Code coverage tools reveal gaps in test coverage."
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />
@@ -204,6 +213,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                         title="Codebase alerts"
                         caption="Set up alerts for anti-patterns and vulnerable dependency versions in your codebase."
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
                 rightColumn={
@@ -275,6 +285,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                         title="Find references in code reviews"
                         caption="Go-to-definition and find references at work."
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />

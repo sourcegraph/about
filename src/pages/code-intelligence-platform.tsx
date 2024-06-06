@@ -8,6 +8,8 @@ import SourceBranchIcon from 'mdi-react/SourceBranchIcon'
 import ViewDashboardIcon from 'mdi-react/ViewDashboardIcon'
 import Link from 'next/link'
 
+import { TelemetryRecorder } from '@sourcegraph/telemetry'
+
 import {
     Layout,
     ResourceList,
@@ -146,7 +148,11 @@ const blogResourceItems = [
     },
 ]
 
-const CodeIntelligencePlatform: FunctionComponent = () => (
+interface Props {
+    telemetryRecorder: TelemetryRecorder<'',''>
+}
+
+const CodeIntelligencePlatform: FunctionComponent<Props> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Key traits of a code intelligence platform',
@@ -213,6 +219,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                         }}
                         title="Sourcegraph code search"
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />
@@ -231,6 +238,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                         }}
                         title="Sourcegraph batch changes"
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
                 rightColumn={
@@ -287,6 +295,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                         }}
                         title="Sourcegraph code insights"
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />

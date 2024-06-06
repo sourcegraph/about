@@ -1,5 +1,7 @@
 import { FunctionComponent } from 'react'
 
+import { TelemetryRecorder } from '@sourcegraph/telemetry'
+
 import {
     Blockquote,
     ContentSection,
@@ -17,7 +19,11 @@ import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const batchChangesDemoFormURL = '/contact/request-batch-changes-demo'
 
-export const BatchChangesPage: FunctionComponent = () => (
+interface Props {
+    telemetryRecorder: TelemetryRecorder<'',''>
+}
+
+export const BatchChangesPage: FunctionComponent<Props> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Sourcegraph Batch Changes - Large-Scale Code Changes',
@@ -113,6 +119,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                         }}
                         loop={true}
                         title="Batch Changes: How it works"
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />
@@ -157,6 +164,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                         }}
                         loop={true}
                         title="Batch Changes: Creation to merge"
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />

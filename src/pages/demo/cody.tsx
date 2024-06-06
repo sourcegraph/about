@@ -1,4 +1,6 @@
-import { FunctionComponent, useEffect } from 'react'
+import { FunctionComponent } from 'react'
+
+import { TelemetryRecorder } from '@sourcegraph/telemetry'
 
 import {
     ContentSection,
@@ -46,7 +48,11 @@ const IMAGE_TAB_CONTENT = [
     },
 ]
 
-const DemoCodyPage: FunctionComponent = () => {
+interface Props {
+    telemetryRecorder: TelemetryRecorder<'',''>
+}
+
+const DemoCodyPage: FunctionComponent<Props> = ({telemetryRecorder}) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 
@@ -113,6 +119,7 @@ const DemoCodyPage: FunctionComponent = () => {
                                 webm: 'https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase',
                             }}
                             className="w-full rounded-lg"
+                            telemetryRecorder={telemetryRecorder}
                         />
                     </div>
                 </div>
