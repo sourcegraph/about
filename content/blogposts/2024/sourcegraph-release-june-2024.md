@@ -66,7 +66,7 @@ Jupyter Notebook files were previously rendered as JSON, but they’ll now rende
 <br />
 You can now use GPT-4o as your LLM for powering Cody chat and commands. GPT-4o is OpenAI’s latest model, and it’s two times faster than GPT-4 Turbo while performing better in general reasoning benchmarks. 
 
- [Read the docs](https://sourcegraph.com/docs/cody/core-concepts/cody-gateway#configuring-custom-models) for information on configuring your model selection. You can also try out GPT-4o and compare it against other models today using the [LLM Litmus Test](https://s0.dev/).
+ [Read the docs](https://sourcegraph.com/docs/cody/core-concepts/cody-gateway#configuring-custom-models) for information on configuring your model selection. You can also try out GPT-4o and compare it against other models using the [LLM Litmus Test](https://s0.dev/).
  <br />
 
 ### Smart context windows for better codebase awareness
