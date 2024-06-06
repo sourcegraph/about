@@ -6,7 +6,7 @@ authors:
     url: https://x.com/jdorfman
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
-description: "This month’s release supports rendering Jupyter Notebooks and Mermaid diagrams in the Code Search file view. It also introduces support for GPT-4o and larger context windows to Cody Enterprise."
+description: "This month’s release supports rendering Jupyter Notebooks and Mermaid diagrams in the Code Search file view. It also introduces support for GPT-4o and larger context windows for Cody Enterprise."
 tags: [blog, release]
 slug: "release/june-2024"
 published: true
