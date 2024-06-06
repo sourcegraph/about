@@ -83,4 +83,5 @@ export const enum EventName {
     JOIN_IDE_WAITLIST = 'JoinIDEWaitlist',
     SEARCH_LEARN_MORE_CTA = 'SearchLearnMoreCTA',
     CODY_LEARN_MORE_CTA = 'CodyLearnMoreCTA',
+    VALUE_HEADLINE_TEST_ENROLLED = 'ValueHeadlineTestEnrolled',
 }
