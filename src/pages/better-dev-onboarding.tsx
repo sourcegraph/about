@@ -1,5 +1,7 @@
 import { FunctionComponent } from 'react'
 
+import { TelemetryRecorder } from '@sourcegraph/telemetry'
+
 import {
     ContentSection,
     CustomerLogos,
@@ -37,7 +39,11 @@ const resourceItems = [
     },
 ]
 
-const BetterDeveloperOnboarding: FunctionComponent = () => (
+interface Props {
+    telemetryRecorder: TelemetryRecorder<'',''>
+}
+
+const BetterDeveloperOnboarding: FunctionComponent<Props> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Better Developer Onboarding - Sourcegraph',
@@ -62,7 +68,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
-            <CoreFeatures />
+            <CoreFeatures telemetryRecorder={telemetryRecorder} />
         </ContentSection>
 
         <div className="bg-gray-100">

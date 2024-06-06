@@ -26,7 +26,6 @@ export const useFilters = ({ telemetryRecorder }: UseFilterProps): UseFilters =>
     const logResourceClickEvent = (groupTitle: string, type: string): void =>
         telemetryRecorder.recordEvent(`resources.filter.${groupTitle === 'Content Type' ? 'contentType' : 'subject'}`, 'toggle', { privateMetadata: { type }})
 
-
     const defaultFilterGroups = [
         {
             title: 'Content Type',
