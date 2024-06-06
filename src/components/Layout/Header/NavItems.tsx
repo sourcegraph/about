@@ -13,9 +13,11 @@ interface NavLink {
     name: string
     href: string
     badgeText?: string
+    id?: string
 }
 
 interface NavSection {
+    id?: string
     name: string
     links: (NavLink | { divider: true })[]
     badgeText?: string
@@ -25,6 +27,7 @@ type NavItem = NavLink | NavSection
 
 const NAV_ITEMS: NavItem[] = [
     {
+        id: 'topnav',
         name: 'Products',
         links: [
             {
@@ -38,14 +41,17 @@ const NAV_ITEMS: NavItem[] = [
         ],
     },
     {
+        id: 'topnav',
         name: 'Pricing',
         href: '/pricing',
     },
     {
+        id: 'topnav',
         name: 'Enterprise',
         href: '/enterprise',
     },
     {
+        id: 'topnav',
         name: 'Resources',
         links: [
             {
@@ -79,6 +85,7 @@ const NAV_ITEMS: NavItem[] = [
         ],
     },
     {
+        id: 'topnav',
         name: 'Search public code',
         href: 'https://sourcegraph.com/search',
     },
@@ -86,12 +93,15 @@ const NAV_ITEMS: NavItem[] = [
 
 interface Props {
     linkElement?: React.ComponentType<
-        Pick<React.ComponentProps<typeof Link>, 'href' | 'className' | 'aria-current' | 'children'>
+        Pick<React.ComponentProps<typeof Link>, 'href' | 'className' | 'aria-current' | 'children'> & {
+            close: () => void
+        }
     >
     classes: Record<'item' | 'menu' | 'menuItem' | 'menuItemActive' | 'divider', string>
+    close: () => void
 }
 
-export const NavItems: React.FunctionComponent<Props> = ({ linkElement: LinkElement = Link, classes }) => {
+export const NavItems: React.FunctionComponent<Props> = ({ close, linkElement: LinkElement = Link, classes }) => {
     const router = useRouter()
     const isCurrentLink = useCallback((href: string): boolean => router.asPath === href, [router.asPath])
     return (
@@ -99,10 +109,12 @@ export const NavItems: React.FunctionComponent<Props> = ({ linkElement: LinkElem
             {NAV_ITEMS.map(item =>
                 'href' in item ? (
                     <LinkElement
+                        id={item.id ?? 'topnav'}
                         key={item.name}
                         href={item.href}
                         className={classNames('flex items-center', classes.item)}
                         aria-current={isCurrentLink(item.href) ? 'page' : undefined}
+                        close={close}
                     >
                         {item.name}
                         {item.badgeText && (
@@ -111,6 +123,7 @@ export const NavItems: React.FunctionComponent<Props> = ({ linkElement: LinkElem
                     </LinkElement>
                 ) : (
                     <NavItemMenu
+                        id={item.id ?? 'topnav'}
                         key={item.name}
                         name={item.name}
                         links={item.links}
@@ -126,11 +139,13 @@ export const NavItems: React.FunctionComponent<Props> = ({ linkElement: LinkElem
 
 const NavItemMenu: React.FunctionComponent<
     NavSection & {
+        id: string
         isCurrentLink: (href: string) => boolean
         className: string
         classes: Record<'menu' | 'menuItem' | 'menuItemActive' | 'divider', string>
     }
 > = ({
+    id,
     name,
     links,
     isCurrentLink,
@@ -146,7 +161,7 @@ const NavItemMenu: React.FunctionComponent<
         {({ open }) => (
             <>
                 <div>
-                    <Menu.Button className={classNames('flex items-center', className)}>
+                    <Menu.Button id={id} className={classNames('flex items-center', className)}>
                         {name}
                         {open ? (
                             <ChevronUpIcon className="ml-[1px] w-xs" />
@@ -179,20 +194,23 @@ const NavItemMenu: React.FunctionComponent<
                             ) : (
                                 <Menu.Item key={link.name}>
                                     {({ active }) => (
-                                        <Link
-                                            href={link.href}
-                                            className={classNames(
-                                                'block px-4 py-2 text-base',
-                                                menuItemClassName,
-                                                active && menuItemActiveClassName
-                                            )}
-                                            aria-current={isCurrentLink(link.href) ? 'page' : undefined}
-                                        >
-                                            {link.name}
-                                            {link.badgeText && (
-                                                <Badge className="ml-4" size="small" text={link.badgeText} />
-                                            )}
-                                        </Link>
+                                        <>
+                                            <Link
+                                                id={id}
+                                                href={link.href}
+                                                className={classNames(
+                                                    'block px-4 py-2 text-base',
+                                                    menuItemClassName,
+                                                    active && menuItemActiveClassName
+                                                )}
+                                                aria-current={isCurrentLink(link.href) ? 'page' : undefined}
+                                            >
+                                                {link.name}
+                                                {link.badgeText && (
+                                                    <Badge className="ml-4" size="small" text={link.badgeText} />
+                                                )}
+                                            </Link>
+                                        </>
                                     )}
                                 </Menu.Item>
                             )
