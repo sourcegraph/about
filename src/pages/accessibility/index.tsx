@@ -5,7 +5,7 @@ import { ContentSection, Layout } from '../../components'
 const Accessibility: React.FunctionComponent = () => (
     <Layout headerColorTheme="white">
         <ContentSection background="white">
-            <h1 className="mb-xs">Accessibility</h1>
+            <h1 className="mb-4">Accessibility</h1>
             <p>
                 At Sourcegraph, we take accessibility seriously and strive to make our product usable by as many people
                 as possible, including those with disabilities.
@@ -18,7 +18,7 @@ const Accessibility: React.FunctionComponent = () => (
                 (WCAG) 2.1 AA standard for digital accessibility.
             </p>
 
-            <h2 className="mt-xl mb-xs">Voluntary Product Accessibility Template (VPAT)</h2>
+            <h2 className="mt-12 mb-4">Voluntary Product Accessibility Template (VPAT)</h2>
             <p>
                 If you want to learn more about the accessibility of our product, you can check our latest{' '}
                 <a
@@ -35,7 +35,7 @@ const Accessibility: React.FunctionComponent = () => (
                 accessibility issues.
             </p>
 
-            <h2 className="mt-xl mb-xs">Continuing to improve</h2>
+            <h2 className="mt-12 mb-4">Continuing to improve</h2>
             <p>We are actively working on improving accessibility and we consider it for all new features.</p>
             <p>
                 You can check our progress and contribute to accessibility improvements on our{' '}
@@ -44,7 +44,7 @@ const Accessibility: React.FunctionComponent = () => (
                 </a>
             </p>
 
-            <h2 className="mt-xl mb-xs">Contact us</h2>
+            <h2 className="mt-12 mb-4">Contact us</h2>
             <p>
                 If you encounter any accessibility issues while using our product, please let us know by{' '}
                 <a

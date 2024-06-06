@@ -21,7 +21,7 @@ export const ContentPage: FunctionComponent<Props> = ({
     className = '',
     children,
 }) => (
-    <div className={`${className} mx-auto my-xl max-w-4xl`}>
+    <div className={`${className} mx-auto my-12 max-w-4xl`}>
         <Jumbotron title={title} description={description} titleClassName={titleClassName} className={`${className}`}>
             {extraDescription}
             {mainActions}

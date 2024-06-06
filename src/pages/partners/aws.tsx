@@ -93,7 +93,7 @@ const AWS: FunctionComponent = () => (
         }}
     >
         <ContentSection
-            parentClassName="!py-0 !px-sm overflow-x-clip"
+            parentClassName="!py-0 !px-6 overflow-x-clip"
             className="grid grid-cols-1 gap-x-4 md:mt-[26px] md:grid-cols-2 md:px-6"
         >
             <div className="flex w-full max-w-[782px] flex-col">
@@ -122,7 +122,7 @@ const AWS: FunctionComponent = () => (
 
         <ThreeUpText
             items={threeUpTextItems}
-            className="mx-auto mt-16 max-w-screen-xl md:mt-44 md:px-sm"
+            className="mx-auto mt-16 max-w-screen-xl md:mt-44 md:px-6"
             wrapperClassName="!gap-6"
         />
 
@@ -136,7 +136,7 @@ const AWS: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection className="flex flex-col items-center pb-16 md:pt-12 md:pb-28" parentClassName="!py-0">
-            <Heading size="h2" className="px-sm text-center !text-4xl text-white">
+            <Heading size="h2" className="px-6 text-center !text-4xl text-white">
                 Reach out to our partner team to learn more
             </Heading>
             <div className="mt-8 flex flex-col gap-5 sm:flex-row">

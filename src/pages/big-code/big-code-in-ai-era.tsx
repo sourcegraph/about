@@ -29,7 +29,7 @@ const TheRiseOfAI: FunctionComponent = () => (
         className="relative"
     >
         <ContentSection
-            parentClassName="!py-0 !px-sm overflow-x-clip"
+            parentClassName="!py-0 !px-6 overflow-x-clip"
             className="grid grid-cols-1 gap-x-4 md:grid-cols-2 md:px-6"
         >
             <div className="flex w-full max-w-[737px] flex-col">
@@ -50,14 +50,14 @@ const TheRiseOfAI: FunctionComponent = () => (
         <Heading
             as="h2"
             size="h3"
-            className="relative z-10 mt-16 max-w-[838px] px-sm text-center text-white md:mx-auto md:mt-[176px]"
+            className="relative z-10 mt-16 max-w-[838px] px-6 text-center text-white md:mx-auto md:mt-[176px]"
         >
             Developers are struggling more than ever with issues around tech debt, maintenance, collaboration, and
             scalability. The overnight AI boom means Big Code pains are only getting worse:
         </Heading>
 
         <ContentSection
-            parentClassName="!py-0 !px-sm"
+            parentClassName="!py-0 !px-6"
             className="mt-16 flex flex-col items-center gap-6 md:flex-row md:items-start md:px-6"
         >
             <div className="flex flex-col items-center gap-3 md:w-[417px]">
@@ -92,7 +92,7 @@ const TheRiseOfAI: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection
-            parentClassName="!py-0 !px-sm"
+            parentClassName="!py-0 !px-6"
             className="mt-16 flex flex-col gap-[34px] rounded-[5px] bg-white p-6 md:mt-[120px] md:flex-row md:p-12 "
         >
             <Heading size="h1" as="h4" className="!text-4xl text-gray-700 md:max-w-[562px] md:!text-7xl">
@@ -112,12 +112,12 @@ const TheRiseOfAI: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <Heading size="h2" as="h4" className="mx-sm mt-16 text-center !text-4xl text-white md:mx-auto md:mt-[112px]">
+        <Heading size="h2" as="h4" className="mx-6 mt-16 text-center !text-4xl text-white md:mx-auto md:mt-[112px]">
             We can’t ignore the Big Code problem anymore.
         </Heading>
 
         <ContentSection
-            parentClassName="!py-0 !px-sm"
+            parentClassName="!py-0 !px-6"
             className="mt-16 flex flex-col justify-between gap-6 text-center md:flex-row md:px-6"
         >
             <PercentageContent
@@ -141,7 +141,7 @@ const TheRiseOfAI: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection
-            className="grid grid-cols-1 gap-6 px-sm py-16 md:grid-cols-2 md:px-6 md:pt-[112px] md:pb-28"
+            className="grid grid-cols-1 gap-6 px-6 py-16 md:grid-cols-2 md:px-6 md:pt-[112px] md:pb-28"
             parentClassName="!p-0"
         >
             <div>

@@ -18,7 +18,7 @@ export const AbcsEbook: FunctionComponent = () => (
     >
         <ContentSection>
             <div className="mx-auto max-w-5xl">
-                <h1 className="mb-sm text-center">Our ABCs: Always Be Coding children's book</h1>
+                <h1 className="mb-6 text-center">Our ABCs: Always Be Coding children's book</h1>
 
                 <p className="text-center">
                     <img
@@ -140,18 +140,18 @@ export const AbcsEbook: FunctionComponent = () => (
                     </a>
                 </p>
 
-                <h2 className="mt-5xl">FAQs</h2>
+                <h2 className="mt-24">FAQs</h2>
 
                 <p>We've had quite a few folks reach out with questions about this book and future ones.</p>
 
-                <h3 className="pt-xs">Do you plan on selling this as a physical book?</h3>
+                <h3 className="pt-4">Do you plan on selling this as a physical book?</h3>
                 <p>
                     We want to make it easy for folks to get a physical copy and while we don't (yet) have plans to
                     print and distribute, we're looking into vendors that can print and ship on demand. In any case, the
                     PDF is high-resolution so you can print it yourself.
                 </p>
 
-                <h3 className="pt-xs">Do you have any other books like this planned?</h3>
+                <h3 className="pt-4">Do you have any other books like this planned?</h3>
                 <p>
                     We've been blown away by the response to this book and while we'd love to add "children's book
                     authoring" to the list of Sourcegraph capabilities, we haven't yet decided if we plan to turn this

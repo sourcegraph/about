@@ -43,7 +43,7 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
 
     return (
         <Layout meta={meta}>
-            <div className="mx-auto mt-10 mb-xl flex max-w-screen-xl flex-col gap-x-5 px-8 lg:flex-row lg:px-10 2xl:px-0">
+            <div className="mx-auto mt-10 mb-12 flex max-w-screen-xl flex-col gap-x-5 px-8 lg:flex-row lg:px-10 2xl:px-0">
                 <article className="flex-1">
                     <BlogHeader {...blogInfo} variant="post" />
                     <PostTemplate post={post} content={content} />

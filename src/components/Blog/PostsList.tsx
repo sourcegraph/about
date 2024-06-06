@@ -19,7 +19,7 @@ export const PostsList: FunctionComponent<Props> = ({ posts }) => {
         content: null,
     }
     return (
-        <ol className="ml-0 grid list-none gap-x-xl gap-y-md sm:grid-cols-1 md:grid-cols-2">
+        <ol className="ml-0 grid list-none gap-x-12 gap-y-8 sm:grid-cols-1 md:grid-cols-2">
             {posts.map(post => {
                 const PostList = POST_INDEX_TYPE_TO_COMPONENT[postIndexType(post.frontmatter)]
 

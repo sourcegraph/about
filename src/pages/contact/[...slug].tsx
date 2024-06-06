@@ -30,7 +30,7 @@ const ContactPage: NextPage<ContactPageProps> = ({
             className="sg-bg-radial-space"
         >
             <ContentSection className="relative md:pb-4">
-                <div className="relative z-10 flex flex-col items-baseline gap-md md:flex-row">
+                <div className="relative z-10 flex flex-col items-baseline gap-8 md:flex-row">
                     <div className="order-2 flex-1 md:order-1">
                         <CustomerLogos dark={true} monochrome={true} className="!bg-transparent" />
                     </div>

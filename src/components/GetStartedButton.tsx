@@ -20,7 +20,7 @@ export const GetStartedLinkButton: React.FunctionComponent<{
         className={classNames(
             'btn whitespace-nowrap',
             dark ? 'btn-inverted-primary' : 'btn-primary',
-            size === 'lg' && 'py-xs',
+            size === 'lg' && 'py-4',
             className
         )}
         href="/get-started"
@@ -33,7 +33,7 @@ export const GetStartedLinkButton: React.FunctionComponent<{
     </Link>
 )
 
-const BUTTON_CLASS_NAME = 'btn btn-primary py-xxs px-xs'
+const BUTTON_CLASS_NAME = 'btn btn-primary py-2 px-4'
 
 export const GetStartedButton: React.FunctionComponent<{
     buttonLocation: number
@@ -115,7 +115,7 @@ const OtherVariants: React.FunctionComponent<{ className?: string; triangleClass
     className,
     triangleClassName,
 }) => (
-    <div className={classNames('rounded bg-violet-800 p-xxs text-sm text-white/70', className)}>
+    <div className={classNames('rounded bg-violet-800 p-2 text-sm text-white/70', className)}>
         <TriangleSmallUpIcon className={classNames('text-violet-800', triangleClassName)} />
         <Link
             href="https://sourcegraph.com/search"

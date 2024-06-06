@@ -22,11 +22,11 @@ export const AutomationSection: FunctionComponent<AutomationSectionProps> = ({
     return (
         <ContentSection
             parentClassName={classNames(
-                parentClassName || 'md:!pt-3xl md:!px-lg md:!pb-md overflow-hidden !px-sm !py-md'
+                parentClassName || 'md:!pt-16 md:!px-10 md:!pb-8 overflow-hidden !px-6 !py-8'
             )}
-            className="flex flex-col gap-6 xl:px-sm"
+            className="flex flex-col gap-6 xl:px-6"
         >
-            <div className="w-full p-sm md:w-[822px]">
+            <div className="w-full p-6 md:w-[822px]">
                 <Heading
                     size="h2"
                     className={classNames(

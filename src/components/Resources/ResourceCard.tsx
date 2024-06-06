@@ -38,13 +38,13 @@ export const ResourceCard = forwardRef<HTMLAnchorElement, Card>(({ resource, cla
             ref={ref}
         >
             <div className="flex h-full flex-col">
-                <div className="flex h-[54px] items-center rounded-t-lg border-b-1 border-gray-500 px-4 py-sm">
+                <div className="flex h-[54px] items-center rounded-t-lg border-b-1 border-gray-500 px-4 py-6">
                     <div className="font-mono text-sm font-medium first-letter:capitalize">{contentType}</div>
                 </div>
 
                 {/* Card Info */}
-                <div className="flex flex-grow flex-col px-4 py-sm">
-                    <h4 className="mb-sm">{truncate(title, 97)}</h4>
+                <div className="flex flex-grow flex-col px-4 py-6">
+                    <h4 className="mb-6">{truncate(title, 97)}</h4>
                     <div className="mb-auto text-base">{truncate(description, 170)}</div>
                     <div className="mt-2 font-semibold lowercase text-violet-500 first-letter:capitalize hover:text-violet-400">
                         {ctaText}

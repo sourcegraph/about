@@ -48,7 +48,7 @@ const GitLab: FunctionComponent = () => (
             scaleMobileImage={true}
             alt='GitLab'
         />
-        <div className='py-md md:py-3xl'>
+        <div className='py-8 md:py-16'>
             <InfiniteCarousel duration={400} images={carouselImages} />
         </div>
         <SolutionExplanationSection
@@ -63,18 +63,18 @@ const GitLab: FunctionComponent = () => (
         <AutomationSection />
         <ContactUsCta
             buttonClassNames='!max-w-full'
-            parentClassNames='mdi:!py-5xl mdi:!px-0 !px-sm !py-md'
-            className='px-2xl py-3xl'
+            parentClassNames='mdi:!py-24 mdi:!px-0 !px-6 !py-8'
+            className='px-14 py-16'
         />
     </Layout>
 )
 
 const TestimonialCard: FunctionComponent = () => (
     <ContentSection
-        parentClassName='py-3xl mdi:!px-20 !px-sm'
+        parentClassName='py-16 mdi:!px-20 !px-6'
         className='sg-bg-code-search-new-cta flex max-w-[1232px] flex-col justify-between rounded-3xl border border-gray-200 border-opacity-25'
     >
-        <div className='flex flex-col py-3xl px-sm md:px-20'>
+        <div className='flex flex-col py-16 px-6 md:px-20'>
             <div className='flex w-full flex-col gap-[70px] mdi:w-[775px]'>
                 <img className='h-[54.91px] w-[171.471px]' src='/solutions/gitlab/qualtrics.svg' alt='Qualtrics' />
                 <Heading
@@ -85,11 +85,11 @@ const TestimonialCard: FunctionComponent = () => (
                     it. That made signing up for Cody easy.”
                 </Heading>
             </div>
-            <div className='mt-sm'>
+            <div className='mt-6'>
                 <span className='text-[16px] font-normal leading-6 -tracking-[0.25px] text-white text-opacity-80'>
                     Godwin Babu
                 </span>
-                <div className='flex flex-col justify-between gap-5xl md:flex-row'>
+                <div className='flex flex-col justify-between gap-24 md:flex-row'>
                     <span className='text-[14px] font-normal leading-[19.88px] text-white'>
                         Sr. Manager and DevX Leader
                     </span>

@@ -51,7 +51,7 @@ export const Modal: FunctionComponent<Modal> = ({
         <Portal>
             <div
                 className={classNames(
-                    'fixed top-0 left-0 z-[9999] flex h-full w-full items-center justify-center px-sm',
+                    'fixed top-0 left-0 z-[9999] flex h-full w-full items-center justify-center px-6',
                     {
                         hidden: !open,
                         'block animate-fadeIn': open,
@@ -63,12 +63,12 @@ export const Modal: FunctionComponent<Modal> = ({
                     <div className="sign-up-modal-gradient absolute z-10 h-[531.097px] w-[570.405px]" />
                     <div
                         className={classNames(
-                            'relative z-20 mx-auto w-full max-w-[507px] rounded-md bg-white p-sm shadow-modal md:p-16',
+                            'relative z-20 mx-auto w-full max-w-[507px] rounded-md bg-white p-6 shadow-modal md:p-16',
                             modalClassName
                         )}
                         ref={modalReference}
                     >
-                        {title && <h4 className="mb-md pr-lg">{title}</h4>}
+                        {title && <h4 className="mb-8 pr-10">{title}</h4>}
                         {showCloseIcon && (
                             <CloseIcon
                                 className="absolute top-6 right-6 cursor-pointer text-blurple-400"

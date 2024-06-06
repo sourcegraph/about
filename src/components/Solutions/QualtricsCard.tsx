@@ -23,12 +23,12 @@ const QualtricsLogo = (): JSX.Element => (
 
 export const QualtricsCard = (): JSX.Element => (
     <ContentSection
-        className="align-end sg-bg-gradient-aurora-spectrum flex flex-wrap justify-end gap-lg rounded-2xl border border-[#DBE2F0] py-md px-md font-['SF_Pro'] md:flex-nowrap md:py-3xl md:px-20"
+        className="align-end sg-bg-gradient-aurora-spectrum flex flex-wrap justify-end gap-10 rounded-2xl border border-[#DBE2F0] py-8 px-8 font-['SF_Pro'] md:flex-nowrap md:py-16 md:px-20"
         parentClassName="!py-0 -mb-4"
     >
-        <div className="flex flex-col gap-lg md:gap-[70px]">
+        <div className="flex flex-col gap-10 md:gap-[70px]">
             <QualtricsLogo />
-            <div className="flex flex-col gap-sm font-sans">
+            <div className="flex flex-col gap-6 font-sans">
                 <p className="mb-0 text-2xl font-normal leading-tight tracking-[-0.25px] md:text-[35px]">
                     “Something that would've taken me multiple dev days was done in an hour with Cody. Cody can generate
                     a template for a test, and then I can prompt it to make adjustments to get the test to cover exactly

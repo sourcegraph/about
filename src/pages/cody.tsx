@@ -148,7 +148,7 @@ const CodyPage: FunctionComponent = () => {
             <ChooseYourLlmSection
                 article={article}
                 reverseQuote={true}
-                className="!mx-sm mt-16 h-auto overflow-hidden md:!min-h-[554px] lg:!mx-auto"
+                className="!mx-6 mt-16 h-auto overflow-hidden md:!min-h-[554px] lg:!mx-auto"
                 authorCardClassName="!text-[#0F111A] !bg-white"
                 modelCardClassName="text-white bg-violet-700 !border-1 !border-[#343A4D]"
                 modelCardContent={modelCardContent}

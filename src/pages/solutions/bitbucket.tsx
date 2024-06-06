@@ -49,7 +49,7 @@ const Bitbucket: FunctionComponent = () => (
             textColor="!text-[#0F111A]"
             buttonHref="/contact/request-info-bitbucket?form_submission_source=solutions-bitbucket"
         />
-        <div className="py-md md:py-3xl">
+        <div className="py-8 md:py-16">
             <InfiniteCarousel duration={400} images={carouselImages} />
         </div>
         <SolutionExplanationSection
@@ -59,7 +59,7 @@ const Bitbucket: FunctionComponent = () => (
             explanationCardData={explanationCardData}
         />
         <div className="relative -mt-[64px]">
-            <EnterpriseGradeSection parentClassName="!py-0 !px-sm mdi:!py-0 mdi:!px-lg !my-0 md:!py-0" />
+            <EnterpriseGradeSection parentClassName="!py-0 !px-6 mdi:!py-0 mdi:!px-10 !my-0 md:!py-0" />
         </div>
         <SearchDescriptionSection
             title="The best search tool for code hosted on Bitbucket"
@@ -68,18 +68,18 @@ const Bitbucket: FunctionComponent = () => (
             titleTextColor="!text-[#0F111A]"
             subTitleTextColor="!text-[#343A4D]"
         />
-        <div className="!py-md md:!py-5xl">
+        <div className="!py-8 md:!py-24">
             <NineCaseStudySection />
         </div>
         <AutomationSection
-            parentClassName="md:!px-lg md:!pb-0 overflow-hidden !px-sm !py-0"
+            parentClassName="md:!px-10 md:!pb-0 overflow-hidden !px-6 !py-0"
             titleTextColor="!text-[#0F111A]"
             subTitleTextColor="!text-[#343A4D]"
         />
         <ContactUsCta
             buttonClassNames="!max-w-full"
-            parentClassNames="mdi:!py-5xl mdi:!px-0 !px-sm !py-md"
-            className="px-2xl py-3xl"
+            parentClassNames="mdi:!py-24 mdi:!px-0 !px-6 !py-8"
+            className="px-14 py-16"
         />
     </Layout>
 )

@@ -27,7 +27,7 @@ export const ContentSection: FunctionComponent<ContentSection> = ({
         <Background
             variant={background}
             illustration={illustration}
-            className={classNames('px-sm md:py-16', parentClassName)}
+            className={classNames('px-6 md:py-16', parentClassName)}
         >
             <section className={classNames('mx-auto', className, slimWidth ? 'max-w-[840px]' : 'max-w-screen-xl')}>
                 {children}

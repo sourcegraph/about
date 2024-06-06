@@ -60,7 +60,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
                 >
                     {description}
                 </span>
-                <span className="my-sm grid gap-[3px]">
+                <span className="my-6 grid gap-[3px]">
                     {price && <div className="flex items-center text-4xl text-gray-500">{price}</div>}
                     {priceDetail && priceDetail}
                 </span>
@@ -74,7 +74,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
                     >
                         <div className=" flex cursor-pointer flex-row items-center justify-center gap-4 text-lg font-semibold leading-[27px]">
                             <span>SEE DETAILS</span>
-                            <ChevronDownIcon className="w-xs" />
+                            <ChevronDownIcon className="w-4" />
                         </div>
                     </button>
                 )}
@@ -94,7 +94,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
                                             </h5>
                                             {node.description && (
                                                 <Tooltip
-                                                    wrapperClassName="my-auto ml-xxs text-gray-300 flex items-center text-sm"
+                                                    wrapperClassName="my-auto ml-2 text-gray-300 flex items-center text-sm"
                                                     text={node.description}
                                                     tooltipClassName="p-2"
                                                 >

@@ -45,8 +45,9 @@ const About: FunctionComponent = () => (
             <ContentSection>
                 <h1>About Sourcegraph</h1>
                 <p className="mt-6 max-w-4xl text-xl">
-                Sourcegraph is a code intelligence platform that allows developers to rapidly search, write, and understand code by bringing insights from their entire codebase right into their editor. We help developers and companies with billions of lines of code create the software you use
-                    every day.
+                    Sourcegraph is a code intelligence platform that allows developers to rapidly search, write, and
+                    understand code by bringing insights from their entire codebase right into their editor. We help
+                    developers and companies with billions of lines of code create the software you use every day.
                 </p>
             </ContentSection>
 
@@ -174,7 +175,7 @@ const About: FunctionComponent = () => (
 
             <ContentSection>
                 <h2>Investors</h2>
-                <div className="mx-8 grid grid-cols-1 gap-lg md:grid-cols-3">
+                <div className="mx-8 grid grid-cols-1 gap-10 md:grid-cols-3">
                     {INVESTORS.map(investor => (
                         <div key={investor.image} className="max-w-xs">
                             <img src={investor.image} alt={investor.name} className="mx-0 my-1 w-full px-2 py-0" />

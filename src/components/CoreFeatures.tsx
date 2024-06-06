@@ -134,7 +134,7 @@ export const CoreFeatures: FunctionComponent = () => {
         <>
             <div className="mb-24 text-center">
                 <h2>How developers use Sourcegraph</h2>
-                <p className="mx-auto my-xs max-w-3xl text-lg">
+                <p className="mx-auto my-4 max-w-3xl text-lg">
                     Sourcegraph's code intelligence platform is built with features that help you understand, fix, and
                     automate across your entire codebase.
                 </p>
@@ -143,7 +143,7 @@ export const CoreFeatures: FunctionComponent = () => {
             {features.map((feature, index) => (
                 <div
                     key={feature.productFeature}
-                    className={classNames('grid grid-cols-1 flex-col-reverse gap-lg lg:grid-cols-2 lg:flex-row', {
+                    className={classNames('grid grid-cols-1 flex-col-reverse gap-10 lg:grid-cols-2 lg:flex-row', {
                         'lg:flex-row-reverse': index % 2,
                         'mb-32': index !== features.length - 1,
                     })}
@@ -151,7 +151,7 @@ export const CoreFeatures: FunctionComponent = () => {
                     <div>
                         <span className="text-md mb-2 block font-semibold uppercase">{feature.productFeature}</span>
                         <h2>{feature.title}</h2>
-                        <p className="mt-sm">{feature.description}</p>
+                        <p className="mt-6">{feature.description}</p>
                         <ul className="my-4">
                             {feature.details.map(detail => (
                                 <li key={detail}>{detail}</li>

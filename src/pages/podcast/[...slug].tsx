@@ -40,7 +40,7 @@ const PodcastPage: NextPage<PageProps> = ({ post, content }) => {
 
     return (
         <Layout meta={meta}>
-            <article className="mx-auto mb-xl max-w-screen-xl px-sm">
+            <article className="mx-auto mb-12 max-w-screen-xl px-6">
                 <BlogHeader {...podcastInfo} variant="post" />
                 <PostTemplate post={post} content={content} className="max-w-[840px]" />
             </article>

@@ -14,7 +14,7 @@ const FixingVulnerabilities: FunctionComponent = () => (
         }}
     >
         <div className="container mx-auto py-24">
-            <div className="grid grid-cols-1 gap-md lg:grid-cols-2">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
                 <div>
                     <h1 className="mb-6">Find and fix security vulnerabilities faster</h1>
                     <h4>You can't fix what you can't find</h4>
