@@ -21,7 +21,7 @@ changelogItems:
     category: Batch Changes
   - description: "Fixed an Executor bug causing code indexing issues when repos had a space in their name. This should impact customers using Azure DevOps."
     url: https://github.com/sourcegraph/sourcegraph/pull/62466
-    category: Precise Indexing
+    category: Code Indexing
   - description: "Added documentation for setting sub-repo user permissions with the GraphQL API."
     url: https://sourcegraph.com/docs/admin/permissions/api#setting-sub-repository-permissions-for-users
     category: Admin
