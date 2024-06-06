@@ -2,6 +2,8 @@ import { FunctionComponent, useEffect, useState } from 'react'
 
 import classNames from 'classnames'
 import { useRouter } from 'next/router'
+import posthog from 'posthog-js'
+import { useFeatureFlagVariantKey } from 'posthog-js/react'
 
 import {
     Heading,
@@ -16,8 +18,8 @@ import {
     CodyPartners,
     CodyTestimonials,
 } from '../components'
+import { CodyHeadline } from '../components/cody/CodyHeadline'
 import { CodyChooseLlmDualTheme } from '../components/cody/dual-theme/CodyChooseLlmDualTheme'
-import { CodyIntroDualTheme } from '../components/cody/dual-theme/CodyIntroDualTheme'
 import { SourcePoweredDualTheme } from '../components/cody/dual-theme/SourcePoweredDualTheme'
 import { HowCodyWorks } from '../components/cody/HowCodyWorks'
 import { useAuthModal } from '../context/AuthModalContext'
@@ -61,7 +63,14 @@ const CodyPage: FunctionComponent = () => {
     const source = pathname.slice(1) || 'about-home'
     const handleOpenModal = (): void => openModal(source)
 
+    const userFlag = useFeatureFlagVariantKey('cody-value-headline-test')
+
+    const [flagReady, setFlagReady] = useState(false)
+
     useEffect(() => {
+        posthog.onFeatureFlags(() => {
+            setFlagReady(true)
+        })
         const eventArguments = {
             description: 'About - Cody page view',
             source: 'about-cody',
@@ -70,6 +79,22 @@ const CodyPage: FunctionComponent = () => {
         getEventLogger()?.log(EventName.VIEW_ABOUT_CODY, eventArguments, eventArguments)
     }, [])
 
+    useEffect(() => {
+        const headlineTestEventArguments = {
+            testName: 'ValueHeadlineTestEnrolled',
+            group: (userFlag as string) ?? 'undefined',
+        }
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        getEventLogger()?.log(
+            EventName.VALUE_HEADLINE_TEST_ENROLLED,
+            headlineTestEventArguments,
+            headlineTestEventArguments
+        )
+    }, [userFlag])
+
+    if (!flagReady) {
+        return <></>
+    }
     return (
         <Layout
             meta={{
@@ -84,18 +109,25 @@ const CodyPage: FunctionComponent = () => {
         >
             <div className="relative">
                 <div className="sg-bg-gradient-cody-light-mobile-hero !absolute top-[310px] z-[10] h-[650px] w-[1000px] md:relative md:hidden md:bg-none" />
-                <CodyIntroDualTheme
+                <CodyHeadline
                     isLight={true}
-                    title="Code more, type less"
-                    handleOpenModal={handleOpenModal}
                     wrapperClassName="relative z-[20] md:z-0"
+                    userGroup={userFlag as string}
+                    handleOpenModal={handleOpenModal}
                 />
                 <CodyAutocomplete isLight={true} wrapperClassName="z-[20] md:z-0" />
             </div>
+
+            <CodyAutocomplete className="sg-bg-gradient-cody-hero" isLight={true} />
+
             <CodyIde isLight={true} />
+
             <CodyChat isLight={true} />
+
             <CodyPartners isLight={true} />
+
             <CodyTestimonials isLight={true} />
+
             <CodyImageTab
                 icon="/cody/commands-brand-icon.svg"
                 headerText="Run custom and pre-built commands"
