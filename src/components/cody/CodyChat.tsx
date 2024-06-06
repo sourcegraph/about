@@ -100,7 +100,7 @@ export const CodyChat: FunctionComponent<CodyChatProps> = ({ isLight = false }) 
                             'md:-top-16 md:h-[522px] xl:-right-[20px]': !isLight,
                             'md:bottom-[34px] md:h-[478px] xl:-right-0': isLight,
                         })}
-                        src={isLight ? 'cody-chat-interface-light-v2.svg' : '/cody/cody-chat-interface-v2.png'}
+                        src={isLight ? '/assets/cody/cody-chat-interface-light-v2.svg' : '/cody/cody-chat-interface-v2.png'}
                         alt="Cody Chat interface"
                     />
                 </div>
