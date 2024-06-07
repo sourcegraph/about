@@ -1,7 +1,5 @@
 import { FunctionComponent } from 'react'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import {
     ContentSection,
     Heading,
@@ -18,6 +16,7 @@ import {
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
+import { TelemetryProps } from '../../telemetry'
 
 declare global {
     interface Window {
@@ -48,11 +47,7 @@ const IMAGE_TAB_CONTENT = [
     },
 ]
 
-interface Props {
-    telemetryRecorder: TelemetryRecorder<'',''>
-}
-
-const DemoCodyPage: FunctionComponent<Props> = ({telemetryRecorder}) => {
+const DemoCodyPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 

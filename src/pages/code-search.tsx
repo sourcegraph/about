@@ -3,10 +3,9 @@ import { FunctionComponent } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import { ContentSection, Layout, TwoColumnSection, Heading, Video, InfiniteCarousel } from '../components'
 import { CodeSearchCard } from '../components/Code-search/CodeSearchCard'
+import { TelemetryProps } from '../telemetry'
 
 export const carouselImages = [
     { src: '/home/carousel/1password-logo.svg', className: 'w-[208px] h-[40px] mx-6' },
@@ -66,11 +65,7 @@ const codeHosts = [
     { name: 'any Git-based code host', icon: '/code-search/code-hosts/any-git.svg' },
 ]
 
-interface Props {
-    telemetryRecorder: TelemetryRecorder<'',''>
-}
-
-export const CodeSearchPage: FunctionComponent<Props> = ({telemetryRecorder}) => (
+export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Sourcegraph | Code Search',

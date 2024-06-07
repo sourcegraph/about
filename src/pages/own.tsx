@@ -3,11 +3,10 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry';
-
 import { Badge, ContentSection, FeatureRoadMap, Heading, Layout } from '../components'
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { buttonLocation } from '../data/tracking'
+import { TelemetryProps } from '../telemetry';
 
 interface OwnContentProps {
     title: string
@@ -44,7 +43,7 @@ const roadMapSteps = [
     },
 ]
 
-const OwnPage: FunctionComponent<{telemetryRecorder: TelemetryRecorder<'',''>}> = ({telemetryRecorder}) => (
+const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Code Ownership',

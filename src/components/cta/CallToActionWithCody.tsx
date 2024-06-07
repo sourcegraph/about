@@ -3,14 +3,13 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import { GITHUB, GITLAB, GOOGLE } from '../../pages/constants'
+import { TelemetryProps } from '../../telemetry'
 import { Heading } from '../Heading'
 
 import { ExternalProvider } from './ExternalProvider'
 
-export const CallToActionWithCody: FunctionComponent<{ className?: string, telemetryRecorder: TelemetryRecorder<'',''> }> = ({ className, telemetryRecorder }) => (
+export const CallToActionWithCody: FunctionComponent<{ className?: string } & TelemetryProps> = ({ className, telemetryRecorder }) => (
     <div
         className={classNames(
             'relative flex max-w-full flex-col overflow-hidden py-[96px] px-sm md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px]',

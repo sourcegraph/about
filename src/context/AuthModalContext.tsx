@@ -3,9 +3,8 @@ import { FunctionComponent, ReactNode, createContext, useContext, useState, useM
 import { useRouter } from 'next/router'
 import { useFeatureFlagVariantKey } from 'posthog-js/react'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import { AuthenticateModalContent, Modal, IdeModalContent } from '../components'
+import { TelemetryProps } from '../telemetry'
 
 interface AuthModalContextProps {
     isSignUpModalOpen: boolean
@@ -21,7 +20,7 @@ const AuthModalContext = createContext<AuthModalContextProps>({
 
 export const useAuthModal = (): AuthModalContextProps => useContext(AuthModalContext)
 
-export const AuthModalProvider: FunctionComponent<{ children: ReactNode, telemetryRecorder: TelemetryRecorder<'',''> }> = ({ children, telemetryRecorder }) => {
+export const AuthModalProvider: FunctionComponent<{ children: ReactNode } & TelemetryProps> = ({ children, telemetryRecorder }) => {
     const router = useRouter()
     const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false)
     const [isControlModalOpen, setIsControlModalOpen] = useState(false)

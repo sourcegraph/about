@@ -2,16 +2,15 @@ import classNames from 'classnames'
 import EmailOutlineIcon from 'mdi-react/EmailOutlineIcon'
 import Link from 'next/link'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
+import { TelemetryProps } from '../../telemetry'
 
 import { telemetryProviderTypes } from './ExternalProvider'
 
-interface EmailAuthProps {
+interface EmailAuthProps extends TelemetryProps {
     label?: React.ReactNode | string
     source: string
     className?: string
     icon?: boolean
-    telemetryRecorder: TelemetryRecorder<'', ''>
 }
 
 export const EmailAuth: React.FunctionComponent<EmailAuthProps> = ({

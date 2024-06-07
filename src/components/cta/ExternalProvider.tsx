@@ -5,10 +5,9 @@ import Cookies from 'js-cookie'
 import GithubIcon from 'mdi-react/GithubIcon'
 import Link from 'next/link'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import { getProviderButtonsTracker } from '../../lib/utils'
 import { GITHUB, GITLAB, GOOGLE, VSCODE, JETBRAINS } from '../../pages/constants'
+import { TelemetryProps } from '../../telemetry'
 
 export type ProviderType = typeof GITHUB | typeof GITLAB | typeof GOOGLE | typeof VSCODE | typeof JETBRAINS
 
@@ -21,7 +20,7 @@ export const telemetryProviderTypes: { [key in ProviderType | string]: number } 
     form: 6,
 }
 
-interface ExternalProviderProps {
+interface ExternalProviderProps extends TelemetryProps {
     label: string
     source: string
     providerType: ProviderType
@@ -29,7 +28,6 @@ interface ExternalProviderProps {
     className?: string
     plan?: 'pro' | 'free'
     disablePlanParam?: boolean
-    telemetryRecorder: TelemetryRecorder<'', ''>
 }
 
 interface ExternalLinkProps {

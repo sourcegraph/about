@@ -1,12 +1,9 @@
 import Link from 'next/link'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import { appDownloads } from '../data/downloads'
+import { TelemetryProps } from '../telemetry'
 
-type DownloadLinkProps = Omit<React.ComponentProps<typeof Link> & { downloadName: keyof typeof appDownloads }, 'href'> & {
-    telemetryRecorder: TelemetryRecorder<'',''>
-}
+type DownloadLinkProps = Omit<React.ComponentProps<typeof Link> & { downloadName: keyof typeof appDownloads }, 'href'> & TelemetryProps
 
 /**
  * Wrapper for the Link component that logs download clicks. Requires a

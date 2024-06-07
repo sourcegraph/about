@@ -2,8 +2,6 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import {
     CallToActionContentSection,
     ContentSection,
@@ -13,6 +11,7 @@ import {
     Video,
 } from '../components'
 import { buttonLocation, buttonStyle } from '../data/tracking'
+import { TelemetryProps } from '../telemetry'
 
 const blogResourceItems = [
     {
@@ -39,11 +38,7 @@ const blogResourceItems = [
     },
 ]
 
-interface Props {
-    telemetryRecorder: TelemetryRecorder<'',''>
-}
-
-const ShiftLeftPage: FunctionComponent<Props> = ({telemetryRecorder}) => (
+const ShiftLeftPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Shift Left - Sourcegraph',

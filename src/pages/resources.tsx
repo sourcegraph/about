@@ -2,8 +2,6 @@ import { FunctionComponent, useCallback, useEffect, useMemo, useRef, useState } 
 
 import Link from 'next/link'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import {
     Layout,
     Filters,
@@ -16,11 +14,12 @@ import {
     Heading,
     SearchInput,
 } from '../components'
+import { TelemetryProps } from '../telemetry'
 
 const sortResources = (resources: Resource[]): Resource[] =>
     resources.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf())
 
-const Resources: FunctionComponent<{ telemetryRecorder: TelemetryRecorder<'',''> }> = ({ telemetryRecorder }) => {
+const Resources: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => {
     const { filterGroups, setFilter, resetFilterGroup, resetFilterGroups } = useFilters({ telemetryRecorder })
     const [searchTerm, setSearchTerm] = useState<string>('')
     const [filteredResources, setFilteredResources] = useState<Resource[]>([])

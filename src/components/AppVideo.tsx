@@ -3,7 +3,7 @@ import React, { useCallback, useRef, useState } from 'react'
 import classNames from 'classnames'
 import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
+import { TelemetryProps } from '../telemetry'
 
 const VIDEOS: Record<'app-demo-202304', { poster: string; mp4: string; webm: string; dimensions: number }> = {
     'app-demo-202304': {
@@ -15,13 +15,14 @@ const VIDEOS: Record<'app-demo-202304', { poster: string; mp4: string; webm: str
     },
 } as const
 
-export const DemoVideo: React.FunctionComponent<{
+interface DemoVideoProps extends TelemetryProps {
     video: keyof typeof VIDEOS
     splash?: boolean
     className?: string
     splashClassName?: string
-    telemetryRecorder: TelemetryRecorder<'',''>
-}> = ({ video, splash = false, className, splashClassName, telemetryRecorder }) => {
+}
+
+export const DemoVideo: React.FunctionComponent<DemoVideoProps > = ({ video, splash = false, className, splashClassName, telemetryRecorder }) => {
     const videoRef = useRef<HTMLVideoElement>(null)
 
     const [isShowing, setIsShowing] = useState(false)

@@ -3,10 +3,9 @@ import { FunctionComponent, ReactNode, useEffect } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import { buttonLocation, buttonStyle } from '../data/tracking'
 import { startCase } from '../lib/utils'
+import { TelemetryProps } from '../telemetry'
 
 interface Video {
     mp4: string
@@ -98,7 +97,7 @@ export const features: Features[] = [
     },
 ]
 
-export const CoreFeatures: FunctionComponent<{telemetryRecorder: TelemetryRecorder<'',''>}> = ({telemetryRecorder}) => {
+export const CoreFeatures: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => {
     useEffect(() => {
         const videos = features.map(
             (vid, index): VideoElement => ({

@@ -1,7 +1,5 @@
 import { FunctionComponent } from 'react'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import {
     Blockquote,
     ContentSection,
@@ -16,14 +14,11 @@ import {
 } from '../components'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { buttonStyle, buttonLocation } from '../data/tracking'
+import { TelemetryProps } from '../telemetry'
 
 const batchChangesDemoFormURL = '/contact/request-batch-changes-demo'
 
-interface Props {
-    telemetryRecorder: TelemetryRecorder<'',''>
-}
-
-export const BatchChangesPage: FunctionComponent<Props> = ({telemetryRecorder}) => (
+export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Sourcegraph Batch Changes - Large-Scale Code Changes',

@@ -2,18 +2,16 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import { VSCODE, JETBRAINS } from '../pages/constants'
+import { TelemetryProps } from '../telemetry'
 
 import { ExternalProvider } from './cta/ExternalProvider'
 import { Heading } from './Heading'
 
-interface Props {
+interface Props extends TelemetryProps {
     source: string
     plan?: 'pro' | 'free'
     disablePlanParam?: boolean
-    telemetryRecorder: TelemetryRecorder<'',''>
 }
 
 export const IdeModalContent: FunctionComponent<Props> = ({ source, plan = 'free', disablePlanParam, telemetryRecorder }) => (

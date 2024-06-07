@@ -1,15 +1,10 @@
 import React, { FunctionComponent } from 'react'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import { ContentSection, Layout, HubSpotForm, Heading } from '../components'
 import { DemoVideo } from '../components/DemoVideo'
+import { TelemetryProps } from '../telemetry'
 
-interface Props {
-    telemetryRecorder: TelemetryRecorder<'',''>
-}
-
-const Demo: FunctionComponent<Props> = ({telemetryRecorder}) => (
+const Demo: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Schedule a demo - Sourcegraph',

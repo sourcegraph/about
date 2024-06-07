@@ -5,8 +5,6 @@ import LighteningBoltOutlineIcon from 'mdi-react/LightningBoltOutlineIcon'
 import RocketLaunchOutlineIcon from 'mdi-react/RocketLaunchOutlineIcon'
 import TrendingUpIcon from 'mdi-react/TrendingUpIcon'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import {
     Blockquote,
     CallToActionContentSection,
@@ -35,6 +33,7 @@ import {
 import { CodeInsightExampleType } from '../components/CodeInsights/types'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { buttonLocation, buttonStyle } from '../data/tracking'
+import { TelemetryProps } from '../telemetry'
 
 import styles from './code-insights.module.css'
 
@@ -299,11 +298,7 @@ const blogResourceItems = [
     },
 ]
 
-interface Props {
-    telemetryRecorder: TelemetryRecorder<'',''>
-}
-
-const CodeInsightsPage: FunctionComponent<Props> = ({telemetryRecorder}) => (
+const CodeInsightsPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Sourcegraph - Code Insights',

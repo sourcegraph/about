@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
+import { TelemetryProps } from '../telemetry'
 
 interface Video {
     host?: 'gcp' | 'self'
@@ -27,7 +27,7 @@ const hosts = {
     self: '',
 }
 
-export const Video: FunctionComponent<Video & { telemetryRecorder: TelemetryRecorder<'',''> }> = ({
+export const Video: FunctionComponent<Video & TelemetryProps> = ({
     host = 'gcp',
     source,
     loop,

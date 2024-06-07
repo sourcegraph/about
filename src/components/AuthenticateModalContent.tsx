@@ -2,17 +2,15 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import { GITHUB, GITLAB, GOOGLE } from '../pages/constants'
+import { TelemetryProps } from '../telemetry'
 
 import { ExternalProvider } from './cta/ExternalProvider'
 import { Heading } from './Heading'
 
-interface Props {
+interface Props extends TelemetryProps {
     source: string
     plan?: 'pro' | 'free'
-    telemetryRecorder: TelemetryRecorder<'',''>
 }
 
 export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, plan = 'free', telemetryRecorder }) => (

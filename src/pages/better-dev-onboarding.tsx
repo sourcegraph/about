@@ -1,7 +1,5 @@
 import { FunctionComponent } from 'react'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import {
     ContentSection,
     CustomerLogos,
@@ -13,6 +11,7 @@ import {
     Hero,
     CallToActionContentSection,
 } from '../components'
+import { TelemetryProps } from '../telemetry'
 
 const resourceItems = [
     {
@@ -39,11 +38,7 @@ const resourceItems = [
     },
 ]
 
-interface Props {
-    telemetryRecorder: TelemetryRecorder<'',''>
-}
-
-const BetterDeveloperOnboarding: FunctionComponent<Props> = ({telemetryRecorder}) => (
+const BetterDeveloperOnboarding: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Better Developer Onboarding - Sourcegraph',

@@ -8,8 +8,6 @@ import SourceBranchIcon from 'mdi-react/SourceBranchIcon'
 import ViewDashboardIcon from 'mdi-react/ViewDashboardIcon'
 import Link from 'next/link'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import {
     Layout,
     ResourceList,
@@ -20,6 +18,7 @@ import {
     Video,
 } from '../components'
 import { buttonStyle, buttonLocation } from '../data/tracking'
+import { TelemetryProps } from '../telemetry'
 
 const CarouselItem: FunctionComponent<{
     icon: MdiReactIconComponentType
@@ -148,11 +147,7 @@ const blogResourceItems = [
     },
 ]
 
-interface Props {
-    telemetryRecorder: TelemetryRecorder<'',''>
-}
-
-const CodeIntelligencePlatform: FunctionComponent<Props> = ({telemetryRecorder}) => (
+const CodeIntelligencePlatform: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Key traits of a code intelligence platform',

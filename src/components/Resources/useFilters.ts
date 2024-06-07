@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
+import { TelemetryProps } from '../../telemetry'
 
 import { resourceItems, Filter } from '.'
 
@@ -14,15 +14,11 @@ interface UseFilters {
     resetFilterGroups: () => void
 }
 
-interface UseFilterProps {
-    telemetryRecorder: TelemetryRecorder<'', ''>
-}
-
 /**
  * This hook is used for getting, setting, and resetting filters
  * based on our resource items data.
  */
-export const useFilters = ({ telemetryRecorder }: UseFilterProps): UseFilters => {
+export const useFilters = ({ telemetryRecorder }: TelemetryProps): UseFilters => {
     const logResourceClickEvent = (groupTitle: string, type: string): void =>
         telemetryRecorder.recordEvent(`resources.filter.${groupTitle === 'Content Type' ? 'contentType' : 'subject'}`, 'toggle', { privateMetadata: { type }})
 

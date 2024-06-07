@@ -4,15 +4,13 @@ import classNames from 'classnames'
 import CheckCircleIcon from 'mdi-react/CheckCircleIcon'
 import ContentCopyIcon from 'mdi-react/ContentCopyIcon'
 
-import { TelemetryRecorder } from '@sourcegraph/telemetry'
-
 import { copy } from '../lib/utils'
+import { TelemetryProps } from '../telemetry'
 
-interface CodeSnippetProps {
+interface CodeSnippetProps extends TelemetryProps {
     code: string
     snippetName?: string
     className?: string
-    telemetryRecorder: TelemetryRecorder<'', ''>
 }
 
 export const CodeSnippet: FunctionComponent<CodeSnippetProps> = ({ snippetName, code, className, telemetryRecorder }) => {
