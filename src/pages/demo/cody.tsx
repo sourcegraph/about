@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect } from 'react'
+import { FunctionComponent } from 'react'
 
 import {
     ContentSection,
@@ -16,8 +16,8 @@ import {
 } from '../../components'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
-import { EventName, getEventLogger } from '../../hooks/eventLogger'
 import { useWindowWidth } from '../../hooks/windowWidth'
+import { TelemetryProps } from '../../telemetry'
 
 declare global {
     interface Window {
@@ -48,22 +48,13 @@ const IMAGE_TAB_CONTENT = [
     },
 ]
 
-const DemoCodyPage: FunctionComponent = () => {
+const DemoCodyPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (): void => openModal('cody')
-
-    useEffect(() => {
-        const eventArguments = {
-            description: 'About - Cody page view',
-            source: 'about-cody',
-        }
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger()?.log(EventName.VIEW_ABOUT_CODY, eventArguments, eventArguments)
-    }, [])
 
     return (
         <Layout
@@ -124,6 +115,7 @@ const DemoCodyPage: FunctionComponent = () => {
                                 webm: 'https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase',
                             }}
                             className="w-full rounded-lg"
+                            telemetryRecorder={telemetryRecorder}
                         />
                     </div>
                 </div>
