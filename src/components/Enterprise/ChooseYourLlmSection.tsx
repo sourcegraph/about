@@ -73,7 +73,7 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
             <div
                 className={classNames(
                     'rounded-2xl border-1 border-gray-200 bg-violet-700 !py-16 px-6 text-white md:px-sm lg:px-20',
-                    authorCardClassName ?? 'w-[50%] text-white',
+                    authorCardClassName ?? 'text-white',
                     reverseQuote && 'flex h-full flex-col-reverse items-start !py-0 md:h-auto md:min-h-[554px]'
                 )}
             >
