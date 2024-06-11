@@ -20,11 +20,12 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
                 title: 'Sourcegraph Open Source Support Program',
                 description:
                     'At Sourcegraph, we are committed to supporting the open source projects that form the backbone of our products.',
+                image: 'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/sourcegraph-supporting-open-source-og.png',
             }}
             className="community-page bg-gray-50"
         >
             <ContentSection parentClassName="md:!pt-16 md:!pb-8 flex items-center" className="py-4 md:py-0 lg:px-6">
-                <div className="flex max-w-[624px] md:max-w-2xl flex-col gap-6 text-center lg:max-w-3xl px-2 sm:px-4 md:px-0 mdi:px-4">
+                <div className="flex max-w-[624px] flex-col gap-6 px-2 text-center sm:px-4 md:max-w-2xl md:px-0 lg:max-w-3xl mdi:px-4">
                     <Heading size="h1" className="text-gray-700">
                         Supporting open source
                     </Heading>
