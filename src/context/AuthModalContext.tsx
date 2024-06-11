@@ -4,8 +4,7 @@ import { useRouter } from 'next/router'
 import { useFeatureFlagVariantKey } from 'posthog-js/react'
 
 import { AuthenticateModalContent, Modal, IdeModalContent } from '../components'
-import { EventName, getEventLogger } from '../hooks/eventLogger'
-import { logAuthPopoverEvent } from '../util'
+import { TelemetryProps } from '../telemetry'
 
 interface AuthModalContextProps {
     isSignUpModalOpen: boolean
@@ -21,7 +20,7 @@ const AuthModalContext = createContext<AuthModalContextProps>({
 
 export const useAuthModal = (): AuthModalContextProps => useContext(AuthModalContext)
 
-export const AuthModalProvider: FunctionComponent<{ children: ReactNode }> = ({ children }) => {
+export const AuthModalProvider: FunctionComponent<{ children: ReactNode } & TelemetryProps> = ({ children, telemetryRecorder }) => {
     const router = useRouter()
     const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false)
     const [isControlModalOpen, setIsControlModalOpen] = useState(false)
@@ -32,25 +31,19 @@ export const AuthModalProvider: FunctionComponent<{ children: ReactNode }> = ({ 
 
     const userFlag = useFeatureFlagVariantKey('install-first')
 
-    const logEvent = (eventArguments: { testName: string; group: string; modal: string }): void => {
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger().log(EventName.ENROLLMENT, eventArguments, eventArguments)
-    }
-
     const displayModal = useCallback((): void => {
-        const eventArguments = {
+        telemetryRecorder.recordEvent('abTest', 'enroll', { privateMetadata: {
             testName: 'AuthInstallModalTest',
             group: (userFlag as string) ?? 'undefined',
             modal: userFlag === 'test' ? 'installation' : 'signup',
-        }
-        logEvent(eventArguments)
+        }})
 
         if (userFlag === 'test') {
             setIsControlModalOpen(true)
         } else {
             setIsSignUpModalOpen(true)
         }
-    }, [userFlag])
+    }, [userFlag, telemetryRecorder])
 
     const openModal = useCallback(
         (source: string, plan?: 'pro' | 'free', disablePlanParam?: boolean) => {
@@ -61,10 +54,13 @@ export const AuthModalProvider: FunctionComponent<{ children: ReactNode }> = ({ 
             } else {
                 setIsSignUpModalOpen(true)
             }
-            logAuthPopoverEvent(source)
+            telemetryRecorder.recordEvent('aboutGetCodyPopover', 'open', { privateMetadata: {
+                source,
+                description: ''
+            }})
             setPlan(plan ?? 'free')
         },
-        [displayModal, router.pathname]
+        [displayModal, router.pathname, telemetryRecorder]
     )
 
     const closeModal = (): void => {
@@ -84,12 +80,12 @@ export const AuthModalProvider: FunctionComponent<{ children: ReactNode }> = ({ 
 
                 {isSignUpModalOpen && (
                     <Modal open={isSignUpModalOpen} handleClose={closeModal}>
-                        <AuthenticateModalContent source={source} plan={plan} />
+                        <AuthenticateModalContent source={source} plan={plan} telemetryRecorder={telemetryRecorder} />
                     </Modal>
                 )}
                 {isControlModalOpen && (
                     <Modal open={isControlModalOpen} handleClose={closeModal}>
-                        <IdeModalContent source={source} plan={plan} disablePlanParam={disablePlanParam} />
+                        <IdeModalContent source={source} plan={plan} disablePlanParam={disablePlanParam} telemetryRecorder={telemetryRecorder} />
                     </Modal>
                 )}
             </>

@@ -3,16 +3,17 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { GITHUB, GITLAB, GOOGLE } from '../pages/constants'
+import { TelemetryProps } from '../telemetry'
 
 import { ExternalProvider } from './cta/ExternalProvider'
 import { Heading } from './Heading'
 
-interface Props {
+interface Props extends TelemetryProps {
     source: string
     plan?: 'pro' | 'free'
 }
 
-export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, plan = 'free' }) => (
+export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, plan = 'free', telemetryRecorder }) => (
     <div>
         <Heading size="h4" className="text-lg font-semibold text-gray-600">
             Sign up to get free access
@@ -24,6 +25,7 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, pla
             className="mt-8"
             source={source}
             plan={plan}
+            telemetryRecorder={telemetryRecorder}
         />
         <ExternalProvider
             providerType={GITLAB}
@@ -32,6 +34,7 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, pla
             className="mt-4"
             source={source}
             plan={plan}
+            telemetryRecorder={telemetryRecorder}
         />
         <ExternalProvider
             providerType={GOOGLE}
@@ -40,6 +43,7 @@ export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, pla
             className="mt-4"
             source={source}
             plan={plan}
+            telemetryRecorder={telemetryRecorder}
         />
         <p className="mt-8 text-sm text-gray-500">
             By registering, you agree to our{' '}

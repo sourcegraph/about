@@ -1,6 +1,5 @@
 import { gql, useQuery } from '@apollo/client'
 
-import { getEventLogger } from './eventLogger'
 import {
     EvaluateFeatureFlagResult,
     EvaluateFeatureFlagVariables,
@@ -123,7 +122,8 @@ export function useFeatureFlag(
                 flagStates.set(flagName, 'refetch')
                 refetch()
                     .then(() => flagStates.set(flagName, 'new_value'))
-                    .catch(error => getEventLogger().log(error))
+                    // eslint-disable-next-line no-console
+                    .catch(error => console.log(error))
                 break
             }
 

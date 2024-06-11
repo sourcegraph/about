@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
 import { appDownloads } from '../data/downloads'
-import { EventName, getEventLogger } from '../hooks/eventLogger'
+import { TelemetryProps } from '../telemetry'
 
-type DownloadLinkProps = Omit<React.ComponentProps<typeof Link> & { downloadName: keyof typeof appDownloads }, 'href'>
+type DownloadLinkProps = Omit<React.ComponentProps<typeof Link> & { downloadName: keyof typeof appDownloads }, 'href'> & TelemetryProps
 
 /**
  * Wrapper for the Link component that logs download clicks. Requires a
@@ -11,16 +11,14 @@ type DownloadLinkProps = Omit<React.ComponentProps<typeof Link> & { downloadName
  * "app-download-mac-zip".
  */
 export const DownloadLink: React.FunctionComponent<DownloadLinkProps> = props => {
-    const { downloadName, ...linkProps } = props
+    const { telemetryRecorder, downloadName, ...linkProps } = props
     const href = appDownloads[downloadName]
     const handleOnClick = (): void => {
-        const eventArguments = {
+        telemetryRecorder.recordEvent('app', 'download', { metadata: { source: 1 }, privateMetadata: {
             downloadSource: 'about',
             type: downloadName,
             downloadLinkUrl: href,
-        }
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger().log(EventName.DOWNLOAD_CLICK, eventArguments, eventArguments)
+        }})
     }
 
     return <Link href={href} {...linkProps} onClick={handleOnClick} />

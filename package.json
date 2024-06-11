@@ -96,7 +96,6 @@
     "@cypress/webpack-preprocessor": "^5.12.0",
     "@next/bundle-analyzer": "^12.3.0",
     "@sourcegraph/eslint-config": "^0.33.0",
-    "@sourcegraph/event-logger": "^2.0.6",
     "@sourcegraph/prettierrc": "^3.0.3",
     "@svgr/webpack": "^6.2.1",
     "@tailwindcss/typography": "^0.5.10",

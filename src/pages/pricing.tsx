@@ -33,6 +33,7 @@ import { breakpoints } from '../data/breakpoints'
 import { buttonLocation, buttonStyle } from '../data/tracking'
 import { useFeatureFlag } from '../hooks/useFeatureFlag'
 import { useWindowWidth } from '../hooks/windowWidth'
+import { TelemetryProps } from '../telemetry'
 
 interface Tab {
     key: string
@@ -246,7 +247,7 @@ const CodeIntelFeatures: FunctionComponent<{ features: FeatureCluster[] }> = ({ 
     </div>
 )
 
-const PricingPage: FunctionComponent = () => {
+const PricingPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => {
     const [selectedOption, setSelectedOption] = useState('cody')
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.md
@@ -264,12 +265,13 @@ const PricingPage: FunctionComponent = () => {
 
     useEffect(() => {
         if (status === 'loaded') {
-            const eventArguments = {
+            const privateMetadata = {
                 testName: 'Increase Free user chat limit experiment',
                 group: isEnabled ? 'control' : 'treatment',
             }
+            telemetryRecorder.recordEvent('abTest', 'increaseChatLimit', {privateMetadata})
             // eslint-disable-next-line no-console
-            console.log('eventArguments', eventArguments)
+            console.log('eventArguments', privateMetadata)
         } else {
             // eslint-disable-next-line no-console
             console.log(isEnabled, status, error)

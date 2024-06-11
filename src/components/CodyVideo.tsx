@@ -3,7 +3,7 @@ import React, { useCallback, useRef, useState } from 'react'
 import classNames from 'classnames'
 import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
 
-import { EventName, getEventLogger } from '../hooks/eventLogger'
+import { TelemetryProps } from '../telemetry'
 
 const VIDEOS: Record<
     'cody-demo-202303' | 'cody-promo-202306',
@@ -25,14 +25,16 @@ const VIDEOS: Record<
     },
 } as const
 
-export const DemoVideo: React.FunctionComponent<{
+interface DemoVideoProps extends TelemetryProps {
     video: keyof typeof VIDEOS
     splash?: boolean
     className?: string
     splashClassName?: string
     showPlayButton?: boolean
     playIconClassName?: string
-}> = ({ video, splash = false, className, splashClassName, playIconClassName, showPlayButton = true }) => {
+}
+
+export const DemoVideo: React.FunctionComponent<DemoVideoProps> = ({ telemetryRecorder, video, splash = false, className, splashClassName, playIconClassName, showPlayButton = true }) => {
     const videoRef = useRef<HTMLVideoElement>(null)
 
     const [isShowing, setIsShowing] = useState(false)
@@ -59,7 +61,7 @@ export const DemoVideo: React.FunctionComponent<{
             ref={videoRef}
             // eslint-disable-next-line react/forbid-dom-props
             style={{ aspectRatio: videoInfo.dimensions }}
-            onPlay={() => getEventLogger().log(EventName.STATIC_VIDEO_PLAYED, { title }, { title })}
+            onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 4 }, privateMetadata: { title } })}
         >
             <source type="video/webm" src={videoInfo.webm} data-cookieconsent="ignore" />
             <source type="video/mp4" src={videoInfo.mp4} data-cookieconsent="ignore" />

@@ -3,7 +3,7 @@ import React, { useCallback, useRef, useState } from 'react'
 import classNames from 'classnames'
 import PlayCircleIcon from 'mdi-react/PlayCircleIcon'
 
-import { EventName, getEventLogger } from '../hooks/eventLogger'
+import { TelemetryProps } from '../telemetry'
 
 const VIDEOS: Record<
     'homepage-demo-202301' | 'cody-demo-202305' | 'cody-promo-202306',
@@ -35,14 +35,16 @@ const VIDEOS: Record<
     },
 } as const
 
-export const DemoVideo: React.FunctionComponent<{
+interface DemoVideoProps extends TelemetryProps {
     video: keyof typeof VIDEOS
     splash?: boolean
     className?: string
     splashClassName?: string
     playButton?: React.ReactNode
     scrollIntoViewOnPlay?: boolean
-}> = ({ video, splash = false, className, splashClassName, playButton, scrollIntoViewOnPlay = false }) => {
+}
+
+export const DemoVideo: React.FunctionComponent<DemoVideoProps> = ({ video, splash = false, className, splashClassName, playButton, scrollIntoViewOnPlay = false, telemetryRecorder }) => {
     const videoRef = useRef<HTMLVideoElement>(null)
     const [isShowing, setIsShowing] = useState(false)
     const onPlayClick = useCallback(() => {
@@ -69,7 +71,7 @@ export const DemoVideo: React.FunctionComponent<{
             ref={videoRef}
             // eslint-disable-next-line react/forbid-dom-props
             style={{ aspectRatio: videoInfo.dimensions }}
-            onPlay={() => getEventLogger().log(EventName.STATIC_VIDEO_PLAYED, { title, video }, { title, video })}
+            onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 5 }, privateMetadata: { title } })}
         >
             <track
                 default={true}

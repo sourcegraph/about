@@ -145,9 +145,6 @@ devDependencies:
   '@sourcegraph/eslint-config':
     specifier: ^0.33.0
     version: 0.33.0(eslint@8.32.0)(typescript@4.5.5)
-  '@sourcegraph/event-logger':
-    specifier: ^2.0.6
-    version: 2.0.6
   '@sourcegraph/prettierrc':
     specifier: ^3.0.3
     version: 3.0.3
@@ -4447,14 +4444,6 @@ packages:
       - eslint-import-resolver-webpack
       - supports-color
       - typescript
-    dev: true
-
-  /@sourcegraph/event-logger@2.0.6:
-    resolution: {integrity: sha512-orgIdiq3cKf3oeIqyhBBRvHFrJfKYyqRM87r9p13gh/5zkBBDQKrOkoz9WwJHBaeiiwUpr8sL0VjmAP0o59Gdw==}
-    dependencies:
-      date-fns: 2.29.3
-      js-cookie: 3.0.5
-      uuid: 8.3.2
     dev: true
 
   /@sourcegraph/prettierrc@3.0.3:
@@ -8991,6 +8980,7 @@ packages:
   /js-cookie@3.0.5:
     resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
     engines: {node: '>=14'}
+    dev: false
 
   /js-sdsl@4.2.0:
     resolution: {integrity: sha512-dyBIzQBDkCqCu+0upx25Y2jGdbTGxE9fshMsCdK0ViOongpV+n5tXRcZY9v7CaVQ79AGS9KA1KHtojxiM7aXSQ==}
