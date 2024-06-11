@@ -16,11 +16,11 @@ You have either already chosen an AI coding assistant for your team or are in th
 
 ## Does it work with your existing tools - IDEs, Code hosts?
 
-When you introduce a new developer tool in your organization, you want it to work alongside all your other tools. You want to ensure that any learning curve or changes associated with adopting a new tool are amply made up for by the benefits you will receive. Your AI coding assistant should integrate with your favorite editors - VSCode, JetBrains, etc. The relevant functionality should also be available in a simple web-based interface where applicable. Additionally, it should work with your code regardless of where it lives---GitHub, GitLab, Bitbucket, etc.
+When you introduce a new developer tool in your organization, you want it to work alongside all your other tools. You want to ensure that any learning curve or changes associated with adopting a new tool are amply made up for by the benefits you will receive. Your AI coding assistant should integrate with your favorite editors - VSCode, JetBrains, etc. The relevant functionality should also be available in a simple web-based interface where applicable. Additionally, it should work with your code regardless of where it lives—GitHub, GitLab, Bitbucket, etc.
 
 ## Does it support the programming languages and frameworks you use?
 
-Each organization is different in terms of its choice of programming language(s) or frameworks, and its reasons for choosing also vary---history, skill, performance, preference, etc. You need a coding AI assistant that helps with your specific environment and produces the most relevant results for your language and framework choices.
+Each organization is different in terms of its choice of programming language(s) or frameworks, and its reasons for choosing also vary—history, skill, performance, preference, etc. You need a coding AI assistant that helps with your specific environment and produces the most relevant results for your language and framework choices.
 
 ## Does it support your specific use case scenarios?
 
@@ -34,7 +34,7 @@ When writing code, you need to carry a lot of context in your head - about the c
 
 Code is the ultimate expression of logic, but there is a lot more context relevant to code, which isn't necessarily code itself. Before code becomes code, it is likely a feature specification doc, a bug report, a design artifact, an example in an API reference doc, or maybe just a chat with a coworker. Once code executes, it produces logs, trails, or any number of other artifacts.
 
-Gathering this context from different tools---whether to write or review code---has to be one of the more laborious tasks in software development. You want an AI coding assistant that can gather relevant context from external sources like Confluence, Jira, Notion, Slack, Google Docs, Prometheus, or even random web pages.
+Gathering this context from different tools—whether to write or review code—has to be one of the more laborious tasks in software development. You want an AI coding assistant that can gather relevant context from external sources like Confluence, Jira, Notion, Slack, Google Docs, Prometheus, or even random web pages.
 
 ## Does it allow you to take advantage of advancements in the fast-moving LLM space?
 
