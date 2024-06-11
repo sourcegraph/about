@@ -8,8 +8,8 @@ description: "A list of key questions you should ask when evaluating AI coding a
 tags: [blog]
 slug: "how-to-choose-the-ai-coding-assistant-that-works-best-for-your-engineering-team"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/all-you-need-is-cody.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/all-you-need-is-cody/all-you-need-is-cody.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/non-devs/sourcegraph-non-devs.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/non-devs/sourcegraph-non-devs.png
 ---
 
 You have either already chosen an AI coding assistant for your team or are in the process of evaluating one. If you don't belong to either of the above two groups, you will soon find yourself in the minority. Irrespective of which camp you are in, the rapid advancements in this space mean that you need to carefully evaluate how you choose an AI coding assistant - one that is not just right for your needs today but also sets you up for the future. Here, we list the key questions you should ask while evaluating an AI coding assistant.
