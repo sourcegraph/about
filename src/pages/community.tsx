@@ -144,13 +144,13 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
                     </div>
                     <div>
                         <p className="mb-0 text-center text-lg tracking-[-0.25px]">
-                            Pssst, we pay $250-$500 a blog post.{' '}
+                            Pssst, we allow open source devs to use Cody for free!{' '}
                             <a
-                                href="https://docs.google.com/forms/d/e/1FAIpQLSeB3KvQRI6B5A7ghgdNKdyie1ZAsLj8K-OgztKpol_BEghC4A/viewform"
+                                href="https://sourcegraph.com/supporting-open-source"
                                 className="text-black  underline underline-offset-[3.55px]"
                                 target="_blank rel=noopener"
                             >
-                                Apply to be a guest author.
+                                Apply for Cody Pro credits.
                             </a>
                         </p>
                     </div>
