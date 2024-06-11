@@ -1,5 +1,5 @@
 ---
-title: "How to choose the AI coding assistant that works best for your engineering team?"
+title: "How to choose the AI coding assistant that works best for your engineering team"
 publishDate: 2024-06-11T10:00-07:00
 authors:
   - name: Raman Sharma
