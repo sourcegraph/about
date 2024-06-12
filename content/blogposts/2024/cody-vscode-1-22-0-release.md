@@ -48,7 +48,7 @@ We’re making it easier to add these @-mentions to the chat window for follow-u
 When you type `@` in the chat window, you’ll now see “Current Codebase’ and “Current File” in the dropdown, and clicking them adds the respective @-mentions to the chat.
 
 <Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-22-release/cody-context-buttons.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-22-release/cody-context-buttons-2.png"
   alt="Cody's current codebase and current file context buttons"
 />
 
