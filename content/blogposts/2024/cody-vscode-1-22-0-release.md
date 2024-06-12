@@ -16,20 +16,20 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-22-release/cody-vscode-1.22-og-image.jpg
 ---
 
-[Cody for VS Code v1.22](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) is now available. This update brings support for two of Googe’s latest Gemini 1.5 models, Flash and Pro. It also adds buttons for quickly adding current codebase or file context to your chat, plus some UI tweaks to clearly show what files Cody is using as context.
+[Cody for VS Code v1.22](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) is now available. This update supports two of Google’s latest Gemini 1.5 models, Flash and Pro. It also adds buttons for quickly adding the current codebase or file context to your chat and some UI tweaks to clearly show what files Cody is using as context.
 
 ## Support for Gemini 1.5 Flash + Gemini 1.5 Pro
 
-Google recently announced new models in the Gemini family, including Gemini 1.5 Flash and Gemini 1.5 Pro. Both of these models are now available to Cody Pro users in VS Code.
+Google recently announced new models in the Gemini family, including Gemini 1.5 Flash and Gemini 1.5 Pro. Both models are now available to Cody Pro users in VS Code.
 
-[Gemini 1.5 Flash](https://deepmind.google/technologies/gemini/flash/) is a lightweight model built for speed and efficiency. [Gemini 1.5 Pro](https://deepmind.google/technologies/gemini/pro/) is a larger model optimized for high performance across many tasks. You’ll find Flash under the “Optimzed for Speed” LLM menu and Pro under “Optimized for Accuracy.” 
+[Gemini 1.5 Flash](https://deepmind.google/technologies/gemini/flash/) is a lightweight model built for speed and efficiency. [Gemini 1.5 Pro](https://deepmind.google/technologies/gemini/pro/) is a larger model optimized for high performance across many tasks. Flash is under the “Optimized for Speed” LLM menu, and Pro is under “Optimized for Accuracy.” 
 
 Both Gemini models use expanded context windows (the same ones we introduced for the Claude 3 models in [v1.14.0](https://sourcegraph.com/blog/cody-vscode-1-14-0-release)):
 
 * 30,000 tokens of user-defined context
 * 15,000 tokens of input context
 
-Try them out and let us know what you think!
+Try them out, and let us know what you think!
 
 <Video
   source={{
@@ -41,9 +41,9 @@ Try them out and let us know what you think!
 
 ## Quickly add @codebase and @file to chat
 
-As you’re chattingwith Cody, oucan prompt Cody to use specific context by typing @&lt;repository> or @&lt;file>. When you start a _new_ chat with Cody, both your current repository and current file are pre-populated in the chat window. 
+While using chat in Cody, you can prompt it to use specific context by typing @(repository) or @(file). When you start a _new_ chat with Cody, your current repository and file are pre-populated in the chat window.
 
-We’re making it easier to add these @-mentions to the chat window for followup messages (or in case you accidentally delete them).
+We’re making it easier to add these @-mentions to the chat window for follow-up messages (or in case you accidentally delete them).
 
 When you type `@` in the chat window, you’ll now see “Current Codebase’ and “Current File” in the dropdown, and clicking them adds the respective @-mentions to the chat.
 
@@ -52,11 +52,11 @@ When you type `@` in the chat window, you’ll now see “Current Codebase’ an
   alt="Cody's current codebase and current file context buttons"
 />
 
-## See the exact context used for followup messages
+## See the exact context used for follow-up messages
 
-When you start a new chat in Cody, you’ll see a message showing the context that’s used to respond to the first question. For followup messages after that point, only _net-new_ context would be shown as a line item in the chat. This was meant to show that all previous context _plus_ the new context was used, but this wasn’t super clear.
+When you start a new chat in Cody, you’ll see a message showing the context used to respond to the first question. For follow-up messages after that point, only _net-new_ context would be shown as a line item in the chat previously.  The chat would actually use all previous and new contexts, but this wasn’t clear.
 
-Now, Cody shows net-new context and will mention that prior messages are also being used as context, making it super clear that context used earlier in a thread is not lost of discarded for followups.
+Now, Cody shows net-new context and mentions that prior messages are also being used as context, making it more evident that prior context in a thread is preserved for follow-ups.
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-22-release/cody-prior-context.png"
