@@ -41,7 +41,7 @@ Try them out, and let us know what you think!
 
 ## Quickly add @codebase and @file to chat
 
-While using chat in Cody, you can prompt it to use specific context by typing @(repository) or @(file). When you start a _new_ chat with Cody, your current repository and file are pre-populated in the chat window.
+While using chat in Cody, you can prompt it to use specific context by typing @\<repository\> or @\<file\>. When you start a _new_ chat with Cody, your current repository and file are pre-populated in the chat window.
 
 We’re making it easier to add these @-mentions to the chat window for follow-up messages (or in case you accidentally delete them).
 
