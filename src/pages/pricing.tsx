@@ -83,7 +83,7 @@ const GetProButton: FunctionComponent<{ className?: string; title?: string }> = 
 }) => {
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal('cody', 'pro',true)
+    const handleOpenModal = (): void => openModal('cody', 'pro', true)
     return (
         <button
             title={title}
@@ -168,12 +168,12 @@ const Accordion: FunctionComponent<{
                 <span className="col-span-11 text-gray-700">{question}</span>
                 {isOpen ? (
                     <ChevronUpIcon
-                        className="col-span-1 w-xs  justify-self-end font-bold text-gray-500"
+                        className="col-span-1 w-4 justify-self-end font-bold text-gray-500"
                         strokeWidth={2.7}
                     />
                 ) : (
                     <ChevronDownIcon
-                        className="col-span-1 w-xs justify-self-end font-bold text-gray-500"
+                        className="col-span-1 w-4 justify-self-end font-bold text-gray-500"
                         strokeWidth={2.7}
                     />
                 )}
@@ -203,7 +203,7 @@ const CodeIntelFeatures: FunctionComponent<{ features: FeatureCluster[] }> = ({ 
                     </Heading>
                     {node.description && (
                         <Tooltip
-                            wrapperClassName="my-auto ml-xxs text-gray-300 flex items-center text-sm"
+                            wrapperClassName="my-auto ml-2 text-gray-300 flex items-center text-sm"
                             text={node.description}
                             tooltipClassName="p-2"
                         >
@@ -228,7 +228,7 @@ const CodeIntelFeatures: FunctionComponent<{ features: FeatureCluster[] }> = ({ 
                                     )}
                                     {feature.description && (
                                         <Tooltip
-                                            wrapperClassName="my-auto ml-xxs text-gray-300 flex items-center"
+                                            wrapperClassName="my-auto ml-2 text-gray-300 flex items-center"
                                             tooltipClassName="p-2 z-20"
                                             text={feature.description}
                                         >
@@ -276,7 +276,7 @@ const PricingPage: FunctionComponent = () => {
             }}
             hero={
                 <>
-                    <div className="container mx-auto grid pb-[62px] pt-3xl text-center">
+                    <div className="container mx-auto grid pb-[62px] pt-16 text-center">
                         <Heading size="h1" className="!text-[52px] !font-semibold !leading-[62px] !tracking-[-1px]">
                             Pricing
                         </Heading>
@@ -482,7 +482,7 @@ const PricingPage: FunctionComponent = () => {
                                             <span className="flex border-b-1 pb-[24px] text-[16px] font-normal leading-5 -tracking-[0.25px] text-gray-700">
                                                 For teams with a minimum of 50 users
                                             </span>
-                                            <span className="mt-sm mb-2 grid gap-[3px]">
+                                            <span className="mt-6 mb-2 grid gap-[3px]">
                                                 <div className="flex items-center text-4xl">
                                                     <PriceItem
                                                         amount={59}

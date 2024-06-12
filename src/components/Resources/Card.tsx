@@ -48,7 +48,7 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
         <div className="rounded-lg bg-white shadow-md sm:min-h-[540px] md:min-h-[475px]">
             <div
                 className={classNames(
-                    'flex h-[54px] items-center overflow-hidden rounded-t-lg bg-gradient-to-r px-sm',
+                    'flex h-[54px] items-center overflow-hidden rounded-t-lg bg-gradient-to-r px-6',
                     backgrounds[resource.contentType] || 'from-gray-200 to-gray-300'
                 )}
             >
@@ -57,15 +57,15 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
 
             {/* Card Info */}
             <div
-                className="flex flex-col p-sm"
+                className="flex flex-col p-6"
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ height: 'calc(100% - 54px)' }}
             >
-                <h4 className="mb-sm">
+                <h4 className="mb-6">
                     {resource.title.length > 100 ? `${resource.title.slice(0, 97)}...` : resource.title}
                 </h4>
 
-                <div className="mb-sm flex flex-wrap">
+                <div className="mb-6 flex flex-wrap">
                     {resource.subjects
                         .slice(0, 3)
                         .sort()
@@ -78,7 +78,7 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                         <div className="group relative">
                             <Badge text={`+${resource.subjects.slice(3).length}`} size="small" />
 
-                            <div className="absolute left-0 top-0 hidden cursor-default flex-col rounded-md bg-white pt-xxs pl-xxs shadow-md group-hover:flex group-hover:animate-fadeIn">
+                            <div className="absolute left-0 top-0 hidden cursor-default flex-col rounded-md bg-white pt-2 pl-2 shadow-md group-hover:flex group-hover:animate-fadeIn">
                                 {resource.subjects.slice(3).map(subject => (
                                     <span key={subject} className="mr-2 mb-2 first-letter:capitalize">
                                         <Badge text={subject} size="small" />
@@ -89,7 +89,7 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                     )}
                 </div>
 
-                <div className="mb-sm text-sm">
+                <div className="mb-6 text-sm">
                     {resource.description.length > 170
                         ? `${resource.description.slice(0, 167)}...`
                         : resource.description}
@@ -103,11 +103,11 @@ export const Card: FunctionComponent<Card> = ({ resource }) => {
                         data-button-type="cta"
                     >
                         {ctaText}
-                        <ArrowRightIcon className="ml-xs inline" />
+                        <ArrowRightIcon className="ml-4 inline" />
                     </Link>
 
                     {resource.featured && (
-                        <span className="d-flex ml-auto h-sm w-sm items-center justify-center rounded-full bg-violet-100">
+                        <span className="d-flex ml-auto h-6 w-6 items-center justify-center rounded-full bg-violet-100">
                             <StarIcon className="text-violet-400" size={18} />
                         </span>
                     )}

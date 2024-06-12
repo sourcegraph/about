@@ -23,7 +23,7 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
 }) => (
     <div
         className={classNames(
-            !mergeColumns && `grid ${blockOnMdAndDown ? 'md' : 'lg'}:grid-cols-12 gap-y-xl lg:gap-x-xl`, // done
+            !mergeColumns && `grid ${blockOnMdAndDown ? 'md' : 'lg'}:grid-cols-12 gap-y-12 lg:gap-x-12`, // done
             {
                 'flex flex-col lg:flex-row': mergeColumns, // done
                 'items-center': centerContent, // done
@@ -33,7 +33,7 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
     >
         <div
             className={classNames(!mergeColumns && `col-span-12 ${blockOnMdAndDown ? 'md' : 'lg'}:col-span-6`, {
-                'mb-sm lg:mb-0 lg:pr-xl': mergeColumns, // done
+                'mb-6 lg:mb-0 lg:pr-12': mergeColumns, // done
                 'order-last lg:order-first': reverseOnMobile,
             })}
         >

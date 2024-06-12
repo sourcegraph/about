@@ -121,12 +121,12 @@ const Starship: FunctionComponent = () => (
         <ContentSection parentClassName="relative !pt-0 !px-0" className="flex flex-col items-center text-white">
             <Heading
                 size="h2"
-                className="max-w-[728px] px-sm text-center !font-grotesk !text-4xl font-medium !tracking-[-1px]"
+                className="max-w-[728px] px-6 text-center !font-grotesk !text-4xl font-medium !tracking-[-1px]"
             >
                 Over 1.8M engineers use Sourcegraph to build software you rely on
             </Heading>
 
-            <CustomerLogos dark={true} monochrome={true} className="-px-sm !bg-transparent md:pb-5xl" />
+            <CustomerLogos dark={true} monochrome={true} className="-px-6 !bg-transparent md:pb-24" />
 
             <DownloadAppCallToActionSection colorTheme="dark" />
 

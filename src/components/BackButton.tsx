@@ -15,7 +15,7 @@ interface BackButtonProps {
 export const BackButton: FunctionComponent<BackButtonProps> = ({ href, text, light = false }) => (
     <Link
         href={href}
-        className="mb-xs block cursor-pointer uppercase"
+        className="mb-4 block cursor-pointer uppercase"
         data-button-style={buttonStyle.textWithArrow}
         data-button-location={buttonLocation.hero}
         data-button-type="cta"

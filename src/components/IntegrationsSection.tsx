@@ -102,7 +102,7 @@ export const IntegrationsSection: FunctionComponent = () => (
     <ContentSection background="white">
         <h2 className="mb-12">Works with your code, infrastructure, and tools</h2>
 
-        <div className="grid grid-cols-1 gap-md lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             <div className="flex flex-col">
                 <Heading size="h4" as="h3" className="mb-6 !text-[20px] !font-semibold !leading-7">
                     All your repositories + 2M open source (and counting)

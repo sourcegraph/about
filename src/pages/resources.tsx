@@ -217,8 +217,8 @@ const Resources: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => 
 
                 <div className="col-span-2">
                     {noResults || !resourcesToDisplay.length ? (
-                        <div className="col-span-2 mx-auto mb-3xl text-center">
-                            <span className="mb-xxs inline-flex h-md w-md items-center justify-center rounded-full bg-white p-1">
+                        <div className="col-span-2 mx-auto mb-16 text-center">
+                            <span className="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-white p-1">
                                 &#128534;
                             </span>
                             <h4>There are no items that match your search criteria.</h4>

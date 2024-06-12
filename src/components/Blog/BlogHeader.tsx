@@ -17,7 +17,7 @@ interface Props extends Pick<BlogTypeInfo, 'title' | 'belowTitle' | 'baseUrl'> {
 
 export const BlogHeader: FunctionComponent<Props> = ({ title, belowTitle, baseUrl, variant, className }) =>
     variant === 'list' ? (
-        <div className={classNames(className, 'py-sm')}>
+        <div className={classNames(className, 'py-6')}>
             <Heading as="h1" size="h3" className="inline-block !font-normal">
                 <Link href={baseUrl} className="bg-violet-100 px-4 py-2 !font-grotesk text-violet-600 hover:underline">
                     {title}
@@ -27,7 +27,7 @@ export const BlogHeader: FunctionComponent<Props> = ({ title, belowTitle, baseUr
             {belowTitle && <div className="mt-5">{belowTitle}</div>}
         </div>
     ) : (
-        <nav className={classNames(className, 'my-sm')}>
+        <nav className={classNames(className, 'my-6')}>
             <Link
                 href={baseUrl}
                 className="inline-flex items-center bg-violet-100 py-1 pl-2 pr-3 !font-grotesk text-violet-600  hover:underline"

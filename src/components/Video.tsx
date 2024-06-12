@@ -65,7 +65,7 @@ export const Video: FunctionComponent<Video & TelemetryProps> = ({
                 {link ? (
                     <a href={link} className="flex font-normal not-italic">
                         {caption}
-                        {linkIcon && <OpenInNewIcon className="my-auto ml-xxs" size={18} />}
+                        {linkIcon && <OpenInNewIcon className="my-auto ml-2" size={18} />}
                     </a>
                 ) : (
                     caption

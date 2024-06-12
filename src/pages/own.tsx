@@ -94,7 +94,7 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
             />
         </ContentSection>
 
-        <ContentSection className="grid grid-cols-1 items-center gap-lg gap-x-24 md:mt-24 md:grid-cols-2 md:flex-row">
+        <ContentSection className="grid grid-cols-1 items-center gap-10 gap-x-24 md:mt-24 md:grid-cols-2 md:flex-row">
             <OwnContent
                 title="Resolve incidents and security vulnerabilities faster"
                 description="Search for vulnerable or outdated code patterns and reach out to the owners in seconds. Escalate in one click. Don’t waste time emailing around to find who can help. Fast collaboration, fast remediation."
@@ -124,7 +124,7 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
             </div>
         </ContentSection>
 
-        <ContentSection className="grid grid-cols-1 items-center gap-lg gap-x-24 md:grid-cols-2 md:flex-row">
+        <ContentSection className="grid grid-cols-1 items-center gap-10 gap-x-24 md:grid-cols-2 md:flex-row">
             <div className="order-last md:order-first">
                 <video
                     className="mx-auto w-full max-w-[577px] rounded-[5px] bg-gray-300"
@@ -154,7 +154,7 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
             />
         </ContentSection>
 
-        <ContentSection className="grid grid-cols-1 gap-lg gap-x-24 md:grid-cols-2 md:flex-row" parentClassName="!pb-0">
+        <ContentSection className="grid grid-cols-1 gap-10 gap-x-24 md:grid-cols-2 md:flex-row" parentClassName="!pb-0">
             <OwnContent
                 title="Own is currently an experimental feature, but we have a big vision for code ownership."
                 description="We’d love your feedback on Own. You can turn it on using the documentation below, or contact us to get a demo and learn more about our roadmap."

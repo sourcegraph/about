@@ -90,24 +90,24 @@ export const CallToActionContentSection: FunctionComponent<CtaSection> = ({
         <>
             <div className="bg-violet-700 text-white">
                 <div
-                    className="bg-[] mx-auto grid h-full min-h-[291px] max-w-screen-xl grid-cols-12 items-center bg-[center_left] bg-repeat-y px-sm py-3xl lg:pl-0"
+                    className="bg-[] mx-auto grid h-full min-h-[291px] max-w-screen-xl grid-cols-12 items-center bg-[center_left] bg-repeat-y px-6 py-16 lg:pl-0"
                     // eslint-disable-next-line react/forbid-dom-props
                     style={lgAndUp ? { backgroundImage: `url('${illustration}')` } : undefined}
                 >
-                    <div className="col-span-full md:col-span-7 lg:col-span-5 lg:col-start-4 lg:pl-xl">
-                        <h2 className="mb-sm text-violet-200">{title}</h2>
+                    <div className="col-span-full md:col-span-7 lg:col-span-5 lg:col-start-4 lg:pl-12">
+                        <h2 className="mb-6 text-violet-200">{title}</h2>
                         <p className="max-w-2xl text-lg">{description}</p>
                     </div>
 
                     <div className={classNames('col-span-full flex flex-col items-center md:col-span-5 lg:col-span-4')}>
                         {cta1 && (
-                            <div className="mt-sm">
+                            <div className="mt-6">
                                 <Cta {...cta1} />
                             </div>
                         )}
 
                         {cta2 && typeof cta2 === 'object' && (
-                            <div className="mt-sm">
+                            <div className="mt-6">
                                 <Cta {...cta2} />
                             </div>
                         )}

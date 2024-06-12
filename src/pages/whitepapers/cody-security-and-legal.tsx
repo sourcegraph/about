@@ -18,7 +18,7 @@ const CodySecurityAndLegal: NextPage = () => {
 
     return (
         <Layout meta={meta}>
-            <article className="mx-auto mb-xl max-w-screen-xl px-sm">
+            <article className="mx-auto mb-12 max-w-screen-xl px-6">
                 <div className="container mx-auto pt-20 sm:pl-0">
                     <BackButton href="/resources" text="Resources" />
                 </div>

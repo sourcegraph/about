@@ -46,7 +46,7 @@ const ShiftLeftPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) =
         }}
         hero={
             <div className="sg-bg-gradient-venus">
-                <div className="mx-auto max-w-screen-md px-sm py-5xl md:text-center">
+                <div className="mx-auto max-w-screen-md px-6 py-24 md:text-center">
                     <h1>Shift Left: The good parts</h1>
                     <h3 className="mt-6 mb-0 max-w-[750px] md:mx-auto">5 practical ways to help your org shift left</h3>
                 </div>

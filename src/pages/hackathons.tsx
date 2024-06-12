@@ -43,7 +43,7 @@ export const Hackathons: FunctionComponent = () => (
                         , and we'll get back to you ASAP on how to get started!
                     </p>
                     <div className="mt-6 border-t border-gray-300">
-                        <p className="pt-sm">
+                        <p className="pt-6">
                             Get started with the{' '}
                             <a
                                 target="_blank"
@@ -86,7 +86,7 @@ export const Hackathons: FunctionComponent = () => (
                             , and we'll get back to you ASAP on how to get started!
                         </p>
                         <div className="mt-6 border-t border-gray-300">
-                            <p className="pt-sm">
+                            <p className="pt-6">
                                 Get started with the{' '}
                                 <a
                                     target="_blank"

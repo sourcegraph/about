@@ -13,16 +13,16 @@ const CaseStudiesHome: FunctionComponent = () => (
             }}
         >
             <div>
-                <div className="py-lg px-6 text-center">
-                    <h1 className="mb-xs">Sourcegraph case studies</h1>
+                <div className="py-10 px-6 text-center">
+                    <h1 className="mb-4">Sourcegraph case studies</h1>
                     <h4>Learn how engineering teams understand, fix, and automate across their entire codebase</h4>
                 </div>
 
-                <div className="mx-auto mb-3xl max-w-screen-xl px-6">
+                <div className="mx-auto mb-16 max-w-screen-xl px-6">
                     <ul className="ml-0 grid list-none grid-cols-12 flex-wrap gap-6">
                         {CASESTUDIES.map(study => (
                             <li className="col-span-12 flex grid-cols-4 md:col-span-6 lg:col-span-4" key={study.name}>
-                                <div className="w-full border border-solid border-gray-200 bg-white p-sm">
+                                <div className="w-full border border-solid border-gray-200 bg-white p-6">
                                     <CaseStudyCard study={study} />
                                 </div>
                             </li>

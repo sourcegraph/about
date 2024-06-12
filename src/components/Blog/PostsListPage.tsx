@@ -28,11 +28,11 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
 
     return (
         <Layout meta={blogInfo.meta}>
-            <div className="mx-auto max-w-screen-xl px-sm md:mt-5">
+            <div className="mx-auto max-w-screen-xl px-6 md:mt-5">
                 <div className="flex flex-col gap-8 sm:flex-row">
                     <div>
                         <div className="sticky top-5 sm:max-w-[300px] md:mb-16 md:max-w-[320px] md:pt-6">
-                            <BlogHeader {...blogInfo} variant="list" className="pt-0 md:pt-sm" />
+                            <BlogHeader {...blogInfo} variant="list" className="pt-0 md:pt-6" />
 
                             <div className="flex flex-col-reverse gap-6 sm:flex-col md:gap-8">
                                 <SearchInput onSearch={setSearchTerm} label="SEARCH" />
@@ -56,10 +56,10 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
                         </div>
                     </div>
 
-                    <div className="flex-1 sm:pt-sm">
+                    <div className="flex-1 sm:pt-6">
                         {!!searchTerm && !currentRecords.length ? (
-                            <div className="col-span-2 mx-auto mb-3xl text-center">
-                                <span className="mb-xxs inline-flex h-md w-md items-center justify-center rounded-full bg-white p-1">
+                            <div className="col-span-2 mx-auto mb-16 text-center">
+                                <span className="mb-2 inline-flex h-md w-md items-center justify-center rounded-full bg-white p-1">
                                     &#128534;
                                 </span>
                                 <h4>There are no items that match your search criteria.</h4>

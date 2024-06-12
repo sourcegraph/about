@@ -37,10 +37,10 @@ export const OtherComparisons: FunctionComponent = () => (
         <Heading size="h2" className="mb-10">
             Compare other code AI assistants
         </Heading>
-        <div className="grid grid-cols-1 gap-lg text-center md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-10 text-center md:grid-cols-3">
             {data?.map(assistant => (
                 <Link href={assistant.url} key={assistant.name}>
-                    <div className="col-span mb-10 rounded p-xs hover:shadow-lg sm:p-md">
+                    <div className="col-span mb-10 rounded p-4 hover:shadow-lg sm:p-8">
                         <img src="/cody-logomark-default.svg" className="mb-2 mr-10 inline h-[48px] w-[48px]" />
                         <img
                             src={`/assets/compare/${assistant.image}`}

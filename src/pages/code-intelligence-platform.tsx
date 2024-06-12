@@ -156,7 +156,7 @@ const CodeIntelligencePlatform: FunctionComponent<TelemetryProps> = ({telemetryR
         }}
         hero={
             <div className="sg-bg-gradient-saturn">
-                <div className="container mx-auto py-16 md:text-center lg:py-5xl">
+                <div className="container mx-auto py-16 md:text-center lg:py-24">
                     <h1>Key traits of a code intelligence platform</h1>
                     <h3 className="max-w-[750px] py-6 md:mx-auto">
                         Sourcegraph helps developers save time and move faster, regardless of how complex your codebase
@@ -186,7 +186,7 @@ const CodeIntelligencePlatform: FunctionComponent<TelemetryProps> = ({telemetryR
         </ContentSection>
 
         <ContentSection background="white">
-            <h2 className="px-0 pb-md">Sourcegraph helps enterprise development teams...</h2>
+            <h2 className="px-0 pb-8">Sourcegraph helps enterprise development teams...</h2>
 
             <TwoColumnSection
                 centerContent={true}

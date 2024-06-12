@@ -34,10 +34,10 @@ export const IntroCard: FunctionComponent<IntroCardProps> = ({
     const isMobile = windowWidth < breakpoints.md
     return (
         <ContentSection
-            parentClassName="!py-md !px-sm md:!py-3xl md:!px-20 overflow-hidden"
-            className="flex flex-col justify-between gap-6 md:flex-row xl:px-sm"
+            parentClassName="!py-8 !px-6 md:!py-16 md:!px-20 overflow-hidden"
+            className="flex flex-col justify-between gap-6 md:flex-row xl:px-6"
         >
-            <div className="flex flex-col gap-0 overflow-visible md:flex-row md:gap-2xl">
+            <div className="flex flex-col gap-0 overflow-visible md:flex-row md:gap-14">
                 <div className={classNames('relative w-full md:w-[51%]', textColor ?? '!text-gray-700')}>
                     <Heading
                         size="h1"
@@ -45,7 +45,7 @@ export const IntroCard: FunctionComponent<IntroCardProps> = ({
                     >
                         {title}
                     </Heading>
-                    <p className="text-wrap !mb-0 pb-md text-2xl font-normal !leading-[30px] -tracking-[0.25px] md:mt-2.5">
+                    <p className="text-wrap !mb-0 pb-8 text-2xl font-normal !leading-[30px] -tracking-[0.25px] md:mt-2.5">
                         {description}
                     </p>
                     <Link

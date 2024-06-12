@@ -374,8 +374,8 @@ const CodeInsightsPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}
                     Code Insights provides reliable real-time reporting directly from the codebase, making engineering
                     leaders and their teams more effective.
                 </p>
-                <div className="flex flex-col justify-around lg:px-3xl">
-                    <div className="flex py-4 lg:py-md">
+                <div className="flex flex-col justify-around lg:px-16">
+                    <div className="flex py-4 lg:py-8">
                         <div className="mr-6">
                             <BullsEyeArrowIcon className="icon text-blurple-400" size={70} />
                         </div>
@@ -384,7 +384,7 @@ const CodeInsightsPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}
                             <p className={`${styles['icon-paragraph']}`}>Measure goals and progress in your codebase</p>
                         </div>
                     </div>
-                    <div className="flex py-4 lg:py-md">
+                    <div className="flex py-4 lg:py-8">
                         <div className="icon mr-6">
                             <LighteningBoltOutlineIcon className="icon text-blurple-400" size={70} />
                         </div>
@@ -396,8 +396,8 @@ const CodeInsightsPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col justify-around lg:px-3xl">
-                    <div className="flex py-4 lg:py-md">
+                <div className="flex flex-col justify-around lg:px-16">
+                    <div className="flex py-4 lg:py-8">
                         <div className="mr-6">
                             <TrendingUpIcon className="icon text-blurple-400" size={70} />
                         </div>
@@ -408,7 +408,7 @@ const CodeInsightsPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}
                             </p>
                         </div>
                     </div>
-                    <div className="flex py-4 lg:py-md">
+                    <div className="flex py-4 lg:py-8">
                         <div className="mr-6">
                             <RocketLaunchOutlineIcon className="icon text-blurple-400" size={70} />
                         </div>

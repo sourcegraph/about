@@ -335,7 +335,7 @@ const CodeSearchHero: FunctionComponent = () => (
                 </div>
 
                 <div className="container mx-auto mb-6 grid gap-8 text-center">
-                    <Heading size="h1" className="color-[#0F111A] pt-3xl !tracking-[-1px] md:pt-0">
+                    <Heading size="h1" className="color-[#0F111A] pt-16 !tracking-[-1px] md:pt-0">
                         Grok your entire codebase
                     </Heading>
                 </div>

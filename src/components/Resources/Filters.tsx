@@ -76,9 +76,9 @@ const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter
                             <Menu.Button className="mb-2 flex w-full items-center justify-between rounded-md border border-gray-300 py-2 px-3">
                                 <p className="mb-0 text-gray-500 md:col-span-2 lg:whitespace-nowrap">{title}</p>
                                 {open ? (
-                                    <ChevronUpIcon className="ml-[1px] w-xs text-gray-500" />
+                                    <ChevronUpIcon className="ml-[1px] w-4 text-gray-500" />
                                 ) : (
-                                    <ChevronDownIcon className="ml-[1px] w-xs  text-gray-500" />
+                                    <ChevronDownIcon className="ml-[1px] w-4  text-gray-500" />
                                 )}
                             </Menu.Button>
 
@@ -157,7 +157,7 @@ export const Filters: FunctionComponent<Filters> = ({ groups, setFilter, resetFi
                     className="mt-8 mb-16 flex max-w-[159px] justify-between gap-4 text-[18px] font-semibold text-gray-700"
                     onClick={() => setOpen(true)}
                 >
-                    SHOW FILTER <ChevronDownIcon className="ml-[1px] w-xs text-gray-700" />
+                    SHOW FILTER <ChevronDownIcon className="ml-[1px] w-4 text-gray-700" />
                 </button>
             ) : (
                 <button
@@ -165,7 +165,7 @@ export const Filters: FunctionComponent<Filters> = ({ groups, setFilter, resetFi
                     className="mt-8 flex max-w-[159px] justify-between gap-4 text-[18px] font-semibold text-gray-700"
                     onClick={() => setOpen(false)}
                 >
-                    HIDE FILTER <ChevronUpIcon className="ml-[1px] w-xs text-gray-700" />
+                    HIDE FILTER <ChevronUpIcon className="ml-[1px] w-4 text-gray-700" />
                 </button>
             )}
             {open && (

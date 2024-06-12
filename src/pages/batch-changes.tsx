@@ -47,7 +47,7 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({telemetryRe
                         through checks and code reviews until each change is merged.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 gap-md md:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div>
                         <Figure
                             src="/batch-changes/asking_developers_to_update_repos.svg"

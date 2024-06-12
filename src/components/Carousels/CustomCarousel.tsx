@@ -45,11 +45,11 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = ({
 
     return (
         <div>
-            {title && <h2 className="mb-3xl text-center md:mx-auto">{title}</h2>}
+            {title && <h2 className="mb-16 text-center md:mx-auto">{title}</h2>}
 
             <div
                 className={classNames(
-                    'grid grid-cols-1 items-center gap-md lg:grid-cols-2',
+                    'grid grid-cols-1 items-center gap-8 lg:grid-cols-2',
                     autoAdvance ? 'justify-center' : 'flex-col py-32 lg:flex-row'
                 )}
             >

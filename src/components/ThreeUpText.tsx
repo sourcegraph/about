@@ -48,7 +48,7 @@ export const ThreeUpText: FunctionComponent<ThreeUpText> = ({
     fullWidthTitle = false,
     wrapperClassName = '',
 }) => (
-    <div className={classNames('px-sm text-center', className)}>
+    <div className={classNames('px-6 text-center', className)}>
         {title && (
             <h2
                 className={classNames('md:text-center', {
@@ -74,11 +74,11 @@ export const ThreeUpText: FunctionComponent<ThreeUpText> = ({
                     key={`item-${index + 1}-${item.description}`}
                     className="col-span-12 mb-8 sm:w-full sm:max-w-md lg:col-span-4 lg:mb-0 lg:max-w-none"
                 >
-                    {item.icon && <div className="mb-sm">{item.icon}</div>}
+                    {item.icon && <div className="mb-6">{item.icon}</div>}
                     <ItemTitle text={item.subtitle} small={!!item.icon} />
 
                     {typeof item.description === 'string' ? (
-                        <p className="lg:px-sm">{item.description}</p>
+                        <p className="lg:px-6">{item.description}</p>
                     ) : (
                         item.description
                     )}
