@@ -13,8 +13,7 @@ tags: [blog]
 slug: 'cody-vscode-1-22-0-release'
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-22-release/cody-vscode-1.22-og-image.jpg
-socialImage:https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-22-release/cody-vscode-1.22-og-image.jpg
-socialImage: 
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-22-release/cody-vscode-1.22-og-image.jpg
 ---
 
 [Cody for VS Code v1.22](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) is now available. This update brings support for two of Googe’s latest Gemini 1.5 models, Flash and Pro. It also adds buttons for quickly adding current codebase or file context to your chat, plus some UI tweaks to clearly show what files Cody is using as context.
@@ -40,9 +39,9 @@ Try them out and let us know what you think!
   caption="Cody chat with Gemini 1.5 Flash"
 />
 
-## Quickly add @<codebase> and @<file> to chat
+## Quickly add @codebase and @file to chat
 
-As you’re chatting with Cody, you can prompt Cody to use specific context by typing @&lt;repository> or @&lt;file>. When you start a _new_ chat with Cody, both your current repository and current file are pre-populated in the chat window. 
+As you’re chattingwith Cody, oucan prompt Cody to use specific context by typing @&lt;repository> or @&lt;file>. When you start a _new_ chat with Cody, both your current repository and current file are pre-populated in the chat window. 
 
 We’re making it easier to add these @-mentions to the chat window for followup messages (or in case you accidentally delete them).
 
