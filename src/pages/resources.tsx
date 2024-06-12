@@ -14,13 +14,13 @@ import {
     Heading,
     SearchInput,
 } from '../components'
-import { EventName, getEventLogger } from '../hooks/eventLogger'
+import { TelemetryProps } from '../telemetry'
 
 const sortResources = (resources: Resource[]): Resource[] =>
     resources.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf())
 
-const Resources: FunctionComponent = () => {
-    const { filterGroups, setFilter, resetFilterGroup, resetFilterGroups } = useFilters()
+const Resources: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => {
+    const { filterGroups, setFilter, resetFilterGroup, resetFilterGroups } = useFilters({ telemetryRecorder })
     const [searchTerm, setSearchTerm] = useState<string>('')
     const [filteredResources, setFilteredResources] = useState<Resource[]>([])
 
@@ -121,23 +121,19 @@ const Resources: FunctionComponent = () => {
 
     const handlerResourceItemClick = (resource: Resource, isFeatured?: boolean): void => {
         const { title, contentType, description } = resource
-        const eventArguments = {
+        telemetryRecorder.recordEvent(`resources.${isFeatured ? 'featuredItem' : 'item'}`, 'click', { privateMetadata: {
             title,
             description,
             contentType,
-        }
-        const eventName = isFeatured ? EventName.RESOURCE_FEATURED_ITEM_CLICK : EventName.RESOURCE_ITEM_CLICK
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger().log(eventName, eventArguments, eventArguments)
+        }})
     }
 
     useEffect(() => {
         if (!resourcesToDisplay.length) {
-            // eslint-disable-next-line @typescript-eslint/no-floating-promises
-            getEventLogger().log(EventName.EMPTY_RESOURCE_SEARCH_RESULT, { searchTerm }, { searchTerm })
+            telemetryRecorder.recordEvent('resources.filter.emptyResults', 'view', { privateMetadata: { searchTerm }})
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [resourcesToDisplay.length])
+    }, [resourcesToDisplay.length, telemetryRecorder])
 
     useEffect(() => {
         // Scroll the last resource item into view if display limit is reduced
@@ -222,7 +218,7 @@ const Resources: FunctionComponent = () => {
                 <div className="col-span-2">
                     {noResults || !resourcesToDisplay.length ? (
                         <div className="col-span-2 mx-auto mb-16 text-center">
-                            <span className="mb-2 inline-flex h-md w-md items-center justify-center rounded-full bg-white p-1">
+                            <span className="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-white p-1">
                                 &#128534;
                             </span>
                             <h4>There are no items that match your search criteria.</h4>

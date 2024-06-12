@@ -66,3 +66,7 @@ export class NoOpTelemetryRecorderProvider extends BaseTelemetryRecorderProvider
 
 export const noOptelemetryRecorderProvider = new NoOpTelemetryRecorderProvider()
 export const noOpTelemetryRecorder = noOptelemetryRecorderProvider.getRecorder()
+
+export interface TelemetryProps {
+    telemetryRecorder: typeof noOpTelemetryRecorder
+}

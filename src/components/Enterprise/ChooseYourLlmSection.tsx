@@ -17,6 +17,7 @@ interface ChooseYourLlmSectionProps {
     modelCardContent?: { title: string; description: string }
     modelDescriptionClassName?: string
     parentClassName?: string
+    isLight?: boolean
 }
 const enterpriseDarkDevTools = [
     { src: '/enterprise/logo-tiles/anthropic-dark.svg', alt: 'ai' },
@@ -56,11 +57,13 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
     modelDescriptionClassName,
     modelCardContent,
     parentClassName,
+    isLight = false,
 }) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.md
-    const enterpriseDevTools = !reverseQuote ? enterpriseLightDevTools : enterpriseDarkDevTools
-    const enterpriseDevToolsMobile = !reverseQuote ? enterpriseLightDevToolsMobile : enterpriseDarkDevToolsMobile
+    const enterpriseDevTools = !reverseQuote || isLight ? enterpriseLightDevTools : enterpriseDarkDevTools
+    const enterpriseDevToolsMobile =
+        !reverseQuote || isLight ? enterpriseLightDevToolsMobile : enterpriseDarkDevToolsMobile
 
     return (
         <ContentSection
@@ -69,12 +72,12 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
         >
             <div
                 className={classNames(
-                    'rounded-2xl border-1 border-gray-200 bg-violet-700 !py-16 px-6 text-white md:px-20',
+                    'rounded-2xl border-1 border-gray-200 bg-violet-700 !py-16 px-6 text-white md:px-6 lg:px-20',
                     authorCardClassName ?? 'text-white',
                     reverseQuote && 'flex h-full flex-col-reverse items-start !py-0 md:h-auto md:min-h-[554px]'
                 )}
             >
-                <div className={classNames(reverseQuote && "pt-[118px] !font-['SF_Pro']")}>
+                <div className={classNames(reverseQuote && 'pt-[118px]')}>
                     <p className="mb-0 leading-6 tracking-[-0.25px] opacity-80">
                         {article?.author ?? 'Satish Surapaneni'}
                     </p>
@@ -84,7 +87,7 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
                 </div>
                 <p
                     className={classNames('mb-0 pt-6 text-[35px] font-normal leading-[43.75px] md:max-w-[468px]', {
-                        "!font-['SF_Pro'] -tracking-[0.25px]": reverseQuote,
+                        '-tracking-[0.25px]': reverseQuote,
                         '-tracking-[2px]': !reverseQuote,
                     })}
                 >
@@ -96,7 +99,7 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
             <div
                 className={classNames(
                     'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 pt-[71px] md:py-[71px] md:pb-10',
-                    reverseQuote ? "!font-['SF_Pro'] md:min-h-[554px]" : 'sm:min-h-[558px] md:min-h-[700px]',
+                    reverseQuote ? 'md:min-h-[554px]' : 'sm:min-h-[558px] md:min-h-[700px]',
                     modelCardClassName
                 )}
             >

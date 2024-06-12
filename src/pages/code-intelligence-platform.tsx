@@ -18,6 +18,7 @@ import {
     Video,
 } from '../components'
 import { buttonStyle, buttonLocation } from '../data/tracking'
+import { TelemetryProps } from '../telemetry'
 
 const CarouselItem: FunctionComponent<{
     icon: MdiReactIconComponentType
@@ -146,7 +147,7 @@ const blogResourceItems = [
     },
 ]
 
-const CodeIntelligencePlatform: FunctionComponent = () => (
+const CodeIntelligencePlatform: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Key traits of a code intelligence platform',
@@ -213,6 +214,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                         }}
                         title="Sourcegraph code search"
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />
@@ -231,6 +233,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                         }}
                         title="Sourcegraph batch changes"
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
                 rightColumn={
@@ -287,6 +290,7 @@ const CodeIntelligencePlatform: FunctionComponent = () => (
                         }}
                         title="Sourcegraph code insights"
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />

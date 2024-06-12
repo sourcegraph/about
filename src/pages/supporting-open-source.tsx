@@ -20,29 +20,24 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
                 title: 'Sourcegraph Open Source Support Program',
                 description:
                     'At Sourcegraph, we are committed to supporting the open source projects that form the backbone of our products.',
+                image: 'https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/meta/sourcegraph-supporting-open-source-og.png',
             }}
             className="community-page bg-gray-50"
         >
-            <ContentSection parentClassName="md:!pt-24 md:!pb-8" className="py-4 md:py-0 lg:px-6">
-                <div className="flex flex-col">
-                    <Heading size="h1" className="mb-6 text-center md:text-left">
+            <ContentSection parentClassName="md:!pt-16 md:!pb-8 flex items-center" className="py-4 md:py-0 lg:px-6">
+                <div className="flex max-w-[624px] flex-col gap-6 px-2 text-center sm:px-4 md:max-w-2xl md:px-0 lg:max-w-3xl mdi:px-4">
+                    <Heading size="h1" className="text-gray-700">
                         Supporting open source
                     </Heading>
-                    <div className="flex max-w-3xl flex-col justify-center text-gray-500 md:justify-center">
-                        <Heading size="h3" className="text-center leading-[30px] !tracking-[-0.25px] md:text-left">
-                            At Sourcegraph, we are committed to supporting the open source projects that form the
-                            backbone of our products.
-                        </Heading>
-                        <br />
-                    </div>
+                    <Heading size="h3" className="leading-[31.2px] !tracking-[-0.25px] text-gray-500">
+                        At Sourcegraph, we are committed to supporting the open source projects that form the backbone
+                        of our products.
+                    </Heading>
                 </div>
             </ContentSection>
 
             <ContentSection parentClassName="md:mt-0 md:pt-8 md:pb-0" className="lg:px-6">
-                <Heading size="h2" className="text-center !leading-[40px] !tracking-[-1px] md:text-center">
-                    Cody Pro credits
-                </Heading>
-                <div className="mt-2 flex-1 sm:pt-6">
+                <div className="flex-1">
                     <iframe
                         src="https://docs.google.com/forms/d/e/1FAIpQLSfMHmJrqpg0SNpMxNyxUi2VPbGUBwvkrET1oLZun-bojaxrPA/viewform?embedded=true"
                         width="100%"

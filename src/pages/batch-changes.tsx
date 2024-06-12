@@ -14,10 +14,11 @@ import {
 } from '../components'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { buttonStyle, buttonLocation } from '../data/tracking'
+import { TelemetryProps } from '../telemetry'
 
 const batchChangesDemoFormURL = '/contact/request-batch-changes-demo'
 
-export const BatchChangesPage: FunctionComponent = () => (
+export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Sourcegraph Batch Changes - Large-Scale Code Changes',
@@ -113,6 +114,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                         }}
                         loop={true}
                         title="Batch Changes: How it works"
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />
@@ -157,6 +159,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                         }}
                         loop={true}
                         title="Batch Changes: Creation to merge"
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />

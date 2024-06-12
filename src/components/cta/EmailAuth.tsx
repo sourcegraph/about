@@ -2,9 +2,11 @@ import classNames from 'classnames'
 import EmailOutlineIcon from 'mdi-react/EmailOutlineIcon'
 import Link from 'next/link'
 
-import { EventName, getEventLogger } from '../../hooks/eventLogger'
+import { TelemetryProps } from '../../telemetry'
 
-interface EmailAuthProps {
+import { telemetryProviderTypes } from './ExternalProvider'
+
+interface EmailAuthProps extends TelemetryProps {
     label?: React.ReactNode | string
     source: string
     className?: string
@@ -16,15 +18,14 @@ export const EmailAuth: React.FunctionComponent<EmailAuthProps> = ({
     source,
     className,
     icon,
+    telemetryRecorder,
 }) => {
     const handleOnClick = (): void => {
-        const eventArguments = {
+        telemetryRecorder.recordEvent('auth', 'initiate', { metadata: { authType: telemetryProviderTypes.form }, privateMetadata: {
             type: 'form',
             source,
             description: '',
-        }
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger().log(EventName.AUTH_INITIATED, eventArguments, eventArguments)
+        }})
     }
 
     return (

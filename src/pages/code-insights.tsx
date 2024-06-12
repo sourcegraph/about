@@ -33,6 +33,7 @@ import {
 import { CodeInsightExampleType } from '../components/CodeInsights/types'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { buttonLocation, buttonStyle } from '../data/tracking'
+import { TelemetryProps } from '../telemetry'
 
 import styles from './code-insights.module.css'
 
@@ -297,7 +298,7 @@ const blogResourceItems = [
     },
 ]
 
-const CodeInsightsPage: FunctionComponent = () => (
+const CodeInsightsPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Sourcegraph - Code Insights',
@@ -344,6 +345,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         }}
                         title="Code Insights"
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />

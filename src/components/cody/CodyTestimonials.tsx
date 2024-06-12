@@ -1,6 +1,12 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
+
 import { ContentSection } from '..'
+
+interface CodyTestimonialsProps {
+    isLight?: boolean
+}
 
 const TESTIMONIALS = [
     {
@@ -42,9 +48,14 @@ const TESTIMONIALS = [
     },
 ]
 
-export const CodyTestimonials: FunctionComponent = () => (
+export const CodyTestimonials: FunctionComponent<CodyTestimonialsProps> = ({ isLight = false }) => (
     <ContentSection parentClassName="!py-0" className="w-full py-16 pb-24 md:pb-8 md:pt-24 ">
-        <div className="flex w-full flex-col items-stretch justify-between  gap-x-0 gap-y-[30px] py-6 md:flex-row md:gap-x-[30px]">
+        <div
+            className={classNames(
+                'flex w-full flex-col items-stretch justify-between gap-x-0 gap-y-[30px] md:flex-row md:gap-x-[30px] md:py-6',
+                { 'pt-6': !isLight }
+            )}
+        >
             {TESTIMONIALS.map(testimonial => (
                 <div
                     key={testimonial.name}
@@ -59,7 +70,10 @@ export const CodyTestimonials: FunctionComponent = () => (
                             <div className="text-sm font-normal leading-[19.88px]">
                                 {testimonial.url ? (
                                     <a
-                                        className="text-sm text-gray-500"
+                                        className={classNames('text-sm', {
+                                            'text-gray-500': !isLight,
+                                            'text-[#343A4D]': isLight,
+                                        })}
                                         href="https://twitter.com/jsjoeio"
                                         target="_blank"
                                         rel="noreferrer"
@@ -67,12 +81,24 @@ export const CodyTestimonials: FunctionComponent = () => (
                                         {testimonial.username}
                                     </a>
                                 ) : (
-                                    <span className="text-sm text-gray-500">{testimonial.username}</span>
+                                    <span
+                                        className={classNames('text-sm', {
+                                            'text-gray-500': !isLight,
+                                            'text-[#343A4D]': isLight,
+                                        })}
+                                    >
+                                        {testimonial.username}
+                                    </span>
                                 )}
                             </div>
                         </div>
                     </div>
-                    <div className="text-lg font-normal leading-[27px] tracking-[-0.25px] text-gray-700">
+                    <div
+                        className={classNames('text-lg font-normal leading-[27px] tracking-[-0.25px]', {
+                            'text-gray-700': !isLight,
+                            'text-[#0F111A]': isLight,
+                        })}
+                    >
                         <p className="m-0 p-0">{testimonial.comment}</p>
                     </div>
                 </div>
