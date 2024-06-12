@@ -39,13 +39,13 @@ Try them out, and let us know what you think!
   caption="Cody chat with Gemini 1.5 Flash"
 />
 
-## Quickly add @codebase and @file to chat
+## Quickly add @repository and @file to chat
 
 While using chat in Cody, you can prompt it to use specific context by typing @\<repository\> or @\<file\>. When you start a _new_ chat with Cody, your current repository and file are pre-populated in the chat window.
 
 We’re making it easier to add these @-mentions to the chat window for follow-up messages (or in case you accidentally delete them).
 
-When you type `@` in the chat window, you’ll now see “Current Codebase’ and “Current File” in the dropdown, and clicking them adds the respective @-mentions to the chat.
+When you type `@` in the chat window, you’ll see “Repository“ and “Current File” in the dropdown. Clicking them adds the respective @-mentions to the chat.
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-22-release/cody-context-buttons-2.png"
@@ -54,7 +54,7 @@ When you type `@` in the chat window, you’ll now see “Current Codebase’ an
 
 ## See the exact context used for follow-up messages
 
-When you start a new chat in Cody, you’ll see a message showing the context used to respond to the first question. For follow-up messages after that point, only _net-new_ context would be shown as a line item in the chat previously.  The chat would actually use all previous and new contexts, but this wasn’t clear.
+When you start a new chat in Cody, you’ll see a message showing the context used to respond to the first question. For follow-up messages after that point, only _net-new_ context was shown as a line item in the chat previously.  The chat would actually use all previous and new contexts, but this wasn’t clear.
 
 Now, Cody shows net-new context and mentions that prior messages are also being used as context, making it more evident that prior context in a thread is preserved for follow-ups.
 
