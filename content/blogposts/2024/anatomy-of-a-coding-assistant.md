@@ -86,7 +86,7 @@ With [the June release](https://sourcegraph.com/blog/release/june-2024), we made
 
 ## Context sources outside of your codebase
 
-In addition to automatic context fetching, we've found that providing a way for the user to manually include context is also helpful. We've done this by letting the user ask questions about specific files by @-mentioning them. More recently, we've realized that there is more context the user sometimes wants to include outside of the codebase, such as documentation, web pages, Slack threads, Linear issues, and Notion documents. We've made this possible through [OpenCtx](https://openctx.org/), and it has proven useful.
+In addition to automatic context fetching, we've found that providing a way for the user to manually include context is also helpful. We've done this by letting the user ask questions about specific files by @-mentioning them. More recently, we've realized that there is more context the user sometimes wants to include outside of the codebase, such as documentation, web pages, Slack threads, Linear issues, and Notion documents. We've created an open source protocol called [OpenCtx](https://openctx.org/) to make it super easy to bring in context from any source.
 
 [![20_tweet](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/20_tweet.png)](https://x.com/beyang/status/1792616243742244974)
 
