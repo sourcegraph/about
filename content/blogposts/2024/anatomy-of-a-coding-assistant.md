@@ -58,7 +58,7 @@ In this post, we're going to take a look at how context fetching works for each 
 
 Chat allows you to ask questions about your codebase and generate code that's tailored to work within your codebase. For this, we want a few things:
 
-1. **Conversation history:** We need to keep track of the entire conversation history so it makes sense as continuous chat.
+1. **Conversation history:** In a given chat session, we record previous messages as they may contain relevant context for the user's next request.
 2. **Automatic context fetching:** It's important to automatically fetch the most relevant code snippets related to the user's query.
 3. **User control:** Users should have the ability to mention specific files and provide those directly to the model, and also include the option to reference external sources like Slack threads or Notion documents to enrich the context further.
 
