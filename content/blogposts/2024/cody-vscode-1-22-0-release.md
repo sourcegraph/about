@@ -20,7 +20,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 
 ## Support for Gemini 1.5 Flash + Gemini 1.5 Pro
 
-Google recently announced new models in the Gemini family, including Gemini 1.5 Flash and Gemini 1.5 Pro. Both models are now available to Cody Pro users in VS Code.
+Google recently announced new models in the Gemini family, including Gemini 1.5 Flash and Gemini 1.5 Pro. Both models are now available to Cody Pro and Enterprise users in VS Code.
 
 [Gemini 1.5 Flash](https://deepmind.google/technologies/gemini/flash/) is a lightweight model built for speed and efficiency. [Gemini 1.5 Pro](https://deepmind.google/technologies/gemini/pro/) is a larger model optimized for high performance across many tasks. Flash is under the “Optimized for Speed” LLM menu, and Pro is under “Optimized for Accuracy.” 
 
