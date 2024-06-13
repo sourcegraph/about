@@ -38,7 +38,7 @@ Over the past year or so, we’ve learned a lot about what works for fetching th
 
 ## An AI coding assistant - a product of products
 
-The reality is, if you look at a coding assistant like [Sourcegraph Cody](https://sourcegraph.com/cody), it’s not a single product—it’s many products put together. You have autocomplete, which allows you to keep coding and get suggestions as you flow through your code. Then there’s chat, which allows you to chat with your codebase. Cody also has a feature that lets you edit code, and another one that generates unit tests based on a particular file.
+The reality is, if you look at a coding assistant like [Sourcegraph Cody](https://sourcegraph.com/cody), it’s not a single product—it’s many products put together. You have autocomplete, which makes suggestions as you code that keep you in flow. Then there’s chat, which allows you to ask questions of and generate code that fits in your codebase. Cody also has a feature that automates quick inline code changes with natural language, and another one that generates unit tests.
 
 ![6_edits](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/6_edits.png)
 
