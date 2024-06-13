@@ -12,8 +12,8 @@ description: "Learn about our efforts to improve LLM code completion performance
 tags: [blog]
 slug: 'enhancing-code-completion-for-rust-in-cody'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/sourcegraph-social-image.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/sourcegraph-social-image.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/enhancing-code-completion-for-rust-in-cody/enhancing-code-completion-for-rust-in-cody.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/enhancing-code-completion-for-rust-in-cody/enhancing-code-completion-for-rust-in-cody.png
 ---
 
 Although most LLMs are trained on corpora that include several programming languages, we often observe differential performance across languages, especially languages like [Rust](https://www.rust-lang.org/) that are not well represented in popular training datasets. In this post, we share early results from our efforts to improve the performance of LLMs for code completion in such languages.
