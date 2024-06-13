@@ -115,7 +115,7 @@ This system relies on traditional algorithms and heuristics rather than LLMs, wh
 
 ## Context fetching for test generation
 
-This feature allows you to select a file and automatically generate tests for it using an AI model of your choosing. The requirements for this feature are vastly different from those for chat or autocomplete. For this, we want to be able to detect if there is already a test file for the chosen file. If it doesn’t exist, we want to generate that automatically. Whether you end up generating a new file or finding an existing test file for the chosen file, we want to be able to add relevant files for context.
+This feature allows you to select a file and automatically generate tests for it. The requirements for this feature are vastly different from those for chat or autocomplete. For this, we want to be able to detect if there is already a test file for the chosen file. If it doesn’t exist, we want to generate that automatically. Whether you end up generating a new file or finding an existing test file for the chosen file, we want to be able to add relevant files for context.
 
 ![16_test](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/16_test.png)
 
