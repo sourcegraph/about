@@ -148,7 +148,7 @@ Some of the areas we’re still actively working are:
 
 - Underlying LLM models, comparing different models and [fine-tuning](https://sourcegraph.com/blog/enhancing-code-completion-for-rust-in-cody) some of them
 - A query rewriting strategy where we have AI rewrite user queries to fit our context-fetching system better
-- (Work in progress) a smarter way to determine what types of context need to be fetched for each query
+- A smarter way to determine what types of context need to be fetched for each query
 
 Our long-term goal is to create an AI coding assistant that finds the right context for you in a smart way, not just from your codebase, but from any tool or reference source that a human software engineer would use in order to get the job done.
 
