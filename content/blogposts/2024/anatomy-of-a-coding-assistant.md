@@ -119,7 +119,7 @@ This feature allows you to select a file and automatically generate tests for it
 
 ![16_test](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/16_test.png)
 
-To achieve this, after creating or finding the test file, we find other test files to understand how tests are written in the given project. This ensures that the AI doesn’t hallucinate and uses the appropriate methods and conventions. Without this context, test generation wouldn’t work as well because it might use outdated methods or methods not used in the given project.
+To achieve this, after creating or finding the test file, we find other test files to understand how tests are written in the given project. This significantly reduces AI hallucinations and ensures we use the appropriate methods and conventions. Without this context, test generation wouldn’t work as well because it might use outdated methods or methods not used in the given project.
 
 ![17_test_context](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/17_test_context.png)
 
