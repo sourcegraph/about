@@ -18,8 +18,8 @@ const SecurityPage: FunctionComponent = () => (
             childrenClassName="bg-white"
         >
             <div className="mx-auto max-w-[1062px]">
-                <div className="py-lg px-6 text-center">
-                    <Heading size="h1" className="mb-xs">
+                <div className="py-10 px-6 text-center">
+                    <Heading size="h1" className="mb-4">
                         Security at Sourcegraph
                     </Heading>
                     <Heading size="h3" as="h2">
@@ -29,7 +29,7 @@ const SecurityPage: FunctionComponent = () => (
 
                     <Link
                         href="mailto:security@sourcegraph.com"
-                        className="btn-link mt-md flex justify-center font-semibold"
+                        className="btn-link mt-8 flex justify-center font-semibold"
                         title="Contact our security team"
                         data-button-style={buttonStyle.textWithArrow}
                     >
@@ -307,7 +307,7 @@ const SecurityPage: FunctionComponent = () => (
                                 className: 'md:text-2xl py-5',
                                 content: (
                                     <div>
-                                        <Heading size="h3" className="my-xs">
+                                        <Heading size="h3" className="my-4">
                                             Trust & Compliance
                                         </Heading>
                                         <p className="text-lg">
@@ -324,7 +324,7 @@ const SecurityPage: FunctionComponent = () => (
                                             Go to Security Trust Portal
                                         </Link>
 
-                                        <Heading size="h5" as="h4" className="mt-8 mb-xs text-xl">
+                                        <Heading size="h5" as="h4" className="mt-8 mb-4 text-xl">
                                             Subprocessors
                                         </Heading>
                                         <p className="text-lg">
@@ -333,7 +333,7 @@ const SecurityPage: FunctionComponent = () => (
 
                                         <Link
                                             href="/terms/subprocessors"
-                                            className="btn-link mt-md flex font-semibold"
+                                            className="btn-link mt-8 flex font-semibold"
                                             title="Go to Subprocessors"
                                             data-button-style={buttonStyle.textWithArrow}
                                         >
@@ -349,7 +349,7 @@ const SecurityPage: FunctionComponent = () => (
                                 className: 'md:text-2xl py-5',
                                 content: (
                                     <div>
-                                        <Heading size="h3" className="my-xs">
+                                        <Heading size="h3" className="my-4">
                                             Program
                                         </Heading>
                                         <p className="mb-8 text-lg">

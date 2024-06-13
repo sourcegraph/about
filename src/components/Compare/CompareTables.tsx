@@ -26,7 +26,7 @@ export const CompareTables: FunctionComponent<CompareTableProps> = ({
     }))
     return (
         <div
-            className={classNames('  mx-auto grid max-w-screen-xl grid-cols-1 gap-lg px-5 md:grid-cols-12 xl:px-0', {
+            className={classNames('  mx-auto grid max-w-screen-xl grid-cols-1 gap-10 px-5 md:grid-cols-12 xl:px-0', {
                 'relative z-20 bg-white lg:pt-[86px]': demoStyle,
             })}
         >

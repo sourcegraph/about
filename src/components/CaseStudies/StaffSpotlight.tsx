@@ -24,7 +24,7 @@ export const StaffSpotlight: FunctionComponent<{
                     {staff.map(a => (
                         <div key={a.name} className="md:text-center">
                             <img
-                                className="mb-sm inline max-w-[150px] rounded-full"
+                                className="mb-6 inline max-w-[150px] rounded-full"
                                 width={150}
                                 height={150}
                                 src={a.image}
@@ -40,7 +40,7 @@ export const StaffSpotlight: FunctionComponent<{
             // Single staff design
             <div className="flex flex-col md:flex-row">
                 {staff[0].image && (
-                    <div className="mb-sm md:mb-0">
+                    <div className="mb-6 md:mb-0">
                         <img
                             className="w-full max-w-[150px] rounded-full"
                             width={150}
@@ -50,7 +50,7 @@ export const StaffSpotlight: FunctionComponent<{
                     </div>
                 )}
 
-                <div className="pl-0 md:pl-md">
+                <div className="pl-0 md:pl-8">
                     <h3>{staff[0].name}</h3>
                     <p className="text-gray-400">{staff[0].title}</p>
 

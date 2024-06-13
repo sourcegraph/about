@@ -61,7 +61,7 @@ export const Blockquote: FunctionComponent<{
             }
             // Blockquotes in column: Border flips to horizontal for mobile
             if (isMdOrDown) {
-                return `pt-3xl pb-0 mb-0 border-solid ${borderNone} border-t-3 border-t-violet-400`
+                return `pt-16 pb-0 mb-0 border-solid ${borderNone} border-t-3 border-t-violet-400`
             }
             return `border-solid ${borderLocation} border-r-violet-400`
         }
@@ -69,8 +69,8 @@ export const Blockquote: FunctionComponent<{
     }
 
     return (
-        <blockquote className={classNames('px-md', getBorderStyle(), className)}>
-            {headline ? largeText ? <h2>{headline}</h2> : <h4 className="mb-sm">{headline}</h4> : null}
+        <blockquote className={classNames('px-8', getBorderStyle(), className)}>
+            {headline ? largeText ? <h2>{headline}</h2> : <h4 className="mb-6">{headline}</h4> : null}
 
             {largeText ? (
                 <h3 className="text-3xl font-normal">&ldquo;{quote}&rdquo;</h3>
@@ -106,7 +106,7 @@ export const Blockquote: FunctionComponent<{
             {link?.href &&
                 (link?.href.includes('http') ? (
                     <a
-                        className={classNames('mt-md flex', !border && center && 'justify-center')}
+                        className={classNames('mt-8 flex', !border && center && 'justify-center')}
                         href={link.href}
                         target="_blank"
                         rel="nofollow noreferrer"
@@ -121,7 +121,7 @@ export const Blockquote: FunctionComponent<{
                 ) : (
                     <Link
                         href={link.href}
-                        className={classNames('mt-md flex', !border && center && 'justify-center')}
+                        className={classNames('mt-8 flex', !border && center && 'justify-center')}
                         title={link.text}
                         data-button-style={buttonStyle.textWithArrow}
                         data-button-location={buttonLocation.body}

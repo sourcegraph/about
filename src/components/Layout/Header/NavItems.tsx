@@ -164,9 +164,9 @@ const NavItemMenu: React.FunctionComponent<
                     <Menu.Button id={id} className={classNames('flex items-center', className)}>
                         {name}
                         {open ? (
-                            <ChevronUpIcon className="ml-[1px] w-xs" />
+                            <ChevronUpIcon className="ml-[1px] w-4" />
                         ) : (
-                            <ChevronDownIcon className="ml-[1px] w-xs" />
+                            <ChevronDownIcon className="ml-[1px] w-4" />
                         )}
                     </Menu.Button>
                 </div>

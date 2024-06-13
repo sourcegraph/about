@@ -25,7 +25,7 @@ export const CodyChooseLlmDualTheme: FunctionComponent<CodyChooseLlmDualThemePro
                     isLight={true}
                     article={article}
                     reverseQuote={true}
-                    className="!mx-sm mt-16 mb-[64px] hidden h-auto overflow-hidden md:flex md:!min-h-[554px] md:flex-row lg:!mx-auto"
+                    className="!mx-6 mt-16 mb-[64px] hidden h-auto overflow-hidden md:flex md:!min-h-[554px] md:flex-row lg:!mx-auto"
                     authorCardClassName="!text-white !bg-violet-700"
                     modelCardClassName="text-[#000] bg-white !border-1 !border-gray-200 w-[50%]"
                     modelCardContent={modelCardContent}
@@ -36,7 +36,7 @@ export const CodyChooseLlmDualTheme: FunctionComponent<CodyChooseLlmDualThemePro
                 <ChooseYourLlmSection
                     article={article}
                     reverseQuote={true}
-                    className="!mx-sm mt-16 h-auto overflow-hidden md:!min-h-[554px] lg:!mx-auto"
+                    className="!mx-6 mt-16 h-auto overflow-hidden md:!min-h-[554px] lg:!mx-auto"
                     authorCardClassName="!text-[#0F111A] !bg-white"
                     modelCardClassName="text-white bg-violet-700 !border-1 !border-[#343A4D]"
                     modelCardContent={modelCardContent}

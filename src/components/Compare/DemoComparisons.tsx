@@ -43,20 +43,18 @@ export const DemoComparisons: FunctionComponent = () => (
         <Heading size="h2" className="mb-10 px-4 !leading-10 !tracking-[-1px] lg:mb-[75px] lg:px-0">
             Compare other code AI assistants
         </Heading>
-        <div className="grid grid-cols-1 gap-lg text-center md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-10 text-center md:grid-cols-3">
             {data?.map(assistant => (
-                <div className="col-span mb-10 rounded p-10 text-left sm:p-md" key={assistant.name}>
+                <div className="col-span mb-10 rounded p-10 text-left sm:p-8" key={assistant.name}>
                     <img
                         src={`/assets/compare/${assistant.image}`}
-                        className="mb-2 mr-sm inline h-sm w-sm"
+                        className="mb-2 mr-6 inline h-6 w-6"
                         alt={assistant.name}
                     />
-                    <img src="/cody-logomark-default.svg" className="mb-2 inline h-sm w-sm" alt="Cody" />
-
-                    <Heading size="h3" className="mb-sm text-2xl leading-[30px] !tracking-[-0.25px] text-black">
+                    <img src="/cody-logomark-default.svg" className="h-6 w-6 mb-2 inline" alt="Cody" />
+                    <Heading size="h3" className="mb-6 text-2xl leading-[30px] !tracking-[-0.25px] text-black">
                         {assistant.name}
                     </Heading>
-
                     <Link
                         href={assistant.url}
                         className="btn-link flex font-semibold tracking-[-0.25px]"

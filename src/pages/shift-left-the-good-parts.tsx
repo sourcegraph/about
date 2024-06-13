@@ -11,6 +11,7 @@ import {
     Video,
 } from '../components'
 import { buttonLocation, buttonStyle } from '../data/tracking'
+import { TelemetryProps } from '../telemetry'
 
 const blogResourceItems = [
     {
@@ -37,7 +38,7 @@ const blogResourceItems = [
     },
 ]
 
-const ShiftLeftPage: FunctionComponent = () => (
+const ShiftLeftPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Shift Left - Sourcegraph',
@@ -45,7 +46,7 @@ const ShiftLeftPage: FunctionComponent = () => (
         }}
         hero={
             <div className="sg-bg-gradient-venus">
-                <div className="mx-auto max-w-screen-md px-sm py-5xl md:text-center">
+                <div className="mx-auto max-w-screen-md px-6 py-24 md:text-center">
                     <h1>Shift Left: The good parts</h1>
                     <h3 className="mt-6 mb-0 max-w-[750px] md:mx-auto">5 practical ways to help your org shift left</h3>
                 </div>
@@ -104,6 +105,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                         title="Code reuse"
                         caption="Discovering and reusing existing code can help you spin up an MVP ASAP, so you can quickly validate the user need with a rough sketch of the product."
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />
@@ -122,6 +124,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                         title="Definitions and references"
                         caption="Walking the forward and backward graph of code (defs and refs) is the bread-and-butter of building up a contextual mental model of how the code works."
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
                 rightColumn={
@@ -186,6 +189,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                         title="Reveal gaps in test coverage"
                         caption="Code coverage tools reveal gaps in test coverage."
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />
@@ -204,6 +208,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                         title="Codebase alerts"
                         caption="Set up alerts for anti-patterns and vulnerable dependency versions in your codebase."
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
                 rightColumn={
@@ -275,6 +280,7 @@ const ShiftLeftPage: FunctionComponent = () => (
                         title="Find references in code reviews"
                         caption="Go-to-definition and find references at work."
                         loop={true}
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />

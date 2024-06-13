@@ -30,7 +30,7 @@ const Sourcegraph4: FunctionComponent = () => (
         heroAndHeaderClassName="bg-[url('/backgrounds/starship-launch-pills-large.svg')] bg-no-repeat bg-cover bg-center"
         headerColorTheme="dark"
         hero={
-            <div className="px-sm py-3xl md:py-5xl">
+            <div className="px-6 py-16 md:py-24">
                 <div className="mx-auto max-w-[850px] text-center text-white">
                     <img
                         src="/sourcegraph/sourcegraph-4-starship-reflected.svg"
@@ -38,8 +38,8 @@ const Sourcegraph4: FunctionComponent = () => (
                         className="mx-auto w-full max-w-screen-md"
                     />
 
-                    <h1 className="mb-sm mt-3xl sm:mt-36">From code search to code intelligence</h1>
-                    <h3 className="mx-auto mb-5xl max-w-2xl">
+                    <h1 className="mb-6 mt-16 sm:mt-36">From code search to code intelligence</h1>
+                    <h3 className="mx-auto mb-24 max-w-2xl">
                         Sourcegraph 4.0, the latest release of our code intelligence platform, is now available.
                     </h3>
 
@@ -88,7 +88,7 @@ const Sourcegraph4: FunctionComponent = () => (
         />
 
         <ContentSection background="white" parentClassName="pt-0 md:pt-0">
-            <div className="mb-5xl">
+            <div className="mb-24">
                 <ThreeUpText
                     title={
                         <>
@@ -132,7 +132,7 @@ const Sourcegraph4: FunctionComponent = () => (
                             subtitle: (
                                 <div>
                                     Server-side Batch Changes{' '}
-                                    <span className="ml-xxs">
+                                    <span className="ml-2">
                                         <Badge color="light-gray" size="small" text="Beta" />
                                     </span>
                                 </div>
@@ -173,14 +173,14 @@ const Sourcegraph4: FunctionComponent = () => (
             </div>
 
             <div className="mx-auto max-w-5xl text-center">
-                <h2 className="mb-3xl">Experience 4.0 with the Sourcegraph Engineering team</h2>
+                <h2 className="mb-16">Experience 4.0 with the Sourcegraph Engineering team</h2>
 
                 <div className="mx-auto aspect-video max-w-[800px]">
                     <TwitchPlayer video="1604525409" autoplay={false} width="100%" height="100%" />
                 </div>
             </div>
 
-            <h2 className="mx-auto mt-5xl mb-3xl max-w-[700px] text-center">
+            <h2 className="mx-auto mt-24 mb-16 max-w-[700px] text-center">
                 Join these engineering orgs pushing forward modern software development
             </h2>
 

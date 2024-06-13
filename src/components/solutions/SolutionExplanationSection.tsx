@@ -25,8 +25,8 @@ export const SolutionExplanationSection: FunctionComponent<SolutionExplanationSe
     const isMobile = windowWidth < breakpoints.md
     return (
         <ContentSection
-            parentClassName='!px-sm !py-0 md:!px-0 !py-3xl'
-            className='flex max-w-[1232px] flex-col items-center gap-md px-0 md:gap-lg md:px-sm lg:px-0'
+            parentClassName='!px-6 !py-0 md:!px-0 !py-16'
+            className='flex max-w-[1232px] flex-col items-center gap-8 px-0 md:gap-10 md:px-6 lg:px-0'
         >
             <div className={classNames('w-full text-center md:w-[508px]', titleTextColor ?? '!text-gray-700')}>
                 <Heading
@@ -50,7 +50,7 @@ export const SolutionExplanationSection: FunctionComponent<SolutionExplanationSe
                         title={card.title}
                         description={card.description}
                         className={classNames(
-                            'rounded-2xl border border-gray-200 bg-white py-3xl px-lg',
+                            'rounded-2xl border border-gray-200 bg-white py-16 px-10',
                             card.className
                         )}
                         titleTextColor={titleTextColor}

@@ -161,7 +161,7 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
 
     return (
         <div className={classNames(className, { 'bg-black text-white': dark })}>
-            <div className="mx-auto mb-xl max-w-xl text-center">
+            <div className="mx-auto mb-12 max-w-xl text-center">
                 {overline && (
                     <Heading size="h6" as="h2">
                         {overline}
@@ -187,7 +187,7 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
                     <Link
                         key={logo.name}
                         href={logo.link ? logo.link : '/case-studies'}
-                        className={classNames('mx-6 mb-xl shrink-0', {
+                        className={classNames('mx-6 mb-12 shrink-0', {
                             'xl:mb-0': index > (logos.length - 1) / 2 && containerWidth >= breakpoints.xl,
                         })}
                         title={`${logo.name} logo`}

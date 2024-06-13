@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect } from 'react'
+import { FunctionComponent } from 'react'
 
 import {
     ContentSection,
@@ -16,8 +16,8 @@ import {
 } from '../../components'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
-import { EventName, getEventLogger } from '../../hooks/eventLogger'
 import { useWindowWidth } from '../../hooks/windowWidth'
+import { TelemetryProps } from '../../telemetry'
 
 declare global {
     interface Window {
@@ -48,22 +48,13 @@ const IMAGE_TAB_CONTENT = [
     },
 ]
 
-const DemoCodyPage: FunctionComponent = () => {
+const DemoCodyPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (): void => openModal('cody')
-
-    useEffect(() => {
-        const eventArguments = {
-            description: 'About - Cody page view',
-            source: 'about-cody',
-        }
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger()?.log(EventName.VIEW_ABOUT_CODY, eventArguments, eventArguments)
-    }, [])
 
     return (
         <Layout
@@ -79,7 +70,7 @@ const DemoCodyPage: FunctionComponent = () => {
         >
             {/* Hero Section */}
             <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 md:mt-0 md:pt-[22px] md:pb-9">
-                <div className="flex flex-col items-center justify-between gap-y-6 px-sm lg:flex-row lg:gap-x-6 lg:gap-y-0">
+                <div className="flex flex-col items-center justify-between gap-y-6 px-6 lg:flex-row lg:gap-x-6 lg:gap-y-0">
                     <div className="w-full md:max-w-[554px] lg:max-w-[616px]">
                         <div className="center flex items-center gap-x-4">
                             <Heading size="h1" className="!text-[53px] text-white md:!text-[62px]">
@@ -124,6 +115,7 @@ const DemoCodyPage: FunctionComponent = () => {
                                 webm: 'https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase',
                             }}
                             className="w-full rounded-lg"
+                            telemetryRecorder={telemetryRecorder}
                         />
                     </div>
                 </div>

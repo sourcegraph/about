@@ -33,7 +33,7 @@ const BuildUnitTestsPage: FunctionComponent = () => {
                                 </Heading>
                             </div>
                         </div>
-                        <div className="flex justify-center gap-sm">
+                        <div className="flex justify-center gap-6">
                             <button
                                 type="button"
                                 className="btn btn-primary min-w-fit px-6 lg:px-4"
@@ -71,7 +71,7 @@ const BuildUnitTestsPage: FunctionComponent = () => {
                 </div>
             }
         >
-            <ContentSection className="mt-8 flex flex-wrap justify-center gap-sm md:-mt-40">
+            <ContentSection className="mt-8 flex flex-wrap justify-center gap-6 md:-mt-40">
                 <CardDescription title="Hit your test coverage goals">
                     Creating unit tests takes hours rather than days with Cody.
                 </CardDescription>
@@ -83,16 +83,16 @@ const BuildUnitTestsPage: FunctionComponent = () => {
                 </CardDescription>
             </ContentSection>
 
-            <div className="py-lg md:pt-0 md:pb-3xl">
+            <div className="py-10 md:pt-0 md:pb-16">
                 <InfiniteCarousel duration={400} images={carouselImages} />
             </div>
 
             <ContentSection
-                className="border-color-[#DBE2F0] relative flex flex-col-reverse gap-y-lg overflow-hidden rounded-2xl border bg-white pb-md md:flex-row md:pl-lg lg:h-[859px]"
-                parentClassName="!pt-0 pb-3xl"
+                className="border-color-[#DBE2F0] relative flex flex-col-reverse gap-y-10 overflow-hidden rounded-2xl border bg-white pb-8 md:flex-row md:pl-10 lg:h-[859px]"
+                parentClassName="!pt-0 pb-16"
             >
-                <div className="z-10 flex flex-col gap-3xl rounded-lg bg-white bg-opacity-40 px-sm shadow-xl shadow-white/80 backdrop-blur-[1px] md:my-3xl md:w-full md:max-w-[450px] lg:max-w-[552px] 2xl:shadow-none">
-                    <div className="flex flex-col gap-xs">
+                <div className="z-10 flex flex-col gap-16 rounded-lg bg-white bg-opacity-40 px-6 shadow-xl shadow-white/80 backdrop-blur-[1px] md:my-16 md:w-full md:max-w-[450px] lg:max-w-[552px] 2xl:shadow-none">
+                    <div className="flex flex-col gap-4">
                         <Heading size="h2" className="!leading-[40px] !tracking-[-1px]">
                             Cody makes testing easy
                         </Heading>
@@ -101,7 +101,7 @@ const BuildUnitTestsPage: FunctionComponent = () => {
                             command.
                         </Heading>
                     </div>
-                    <div className="flex flex-col gap-lg">
+                    <div className="flex flex-col gap-10">
                         <CardSection icon={<MagnifyIcon />} title="Framework-aware">
                             Existing testing frameworks are detected and used for generating new tests.
                         </CardSection>

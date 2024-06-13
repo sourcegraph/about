@@ -407,7 +407,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     proLLMchat: {
         label: 'Multiple LLM choices for chat',
-        description: 'GPT-4o, GPT-4 Turbo, Claude 3 (Opus, Sonnet, Haiku), Mixtral',
+        description: 'GPT-4o, GPT-4 Turbo, Gemini Flash and Pro, Mixtral, Claude 3 (Opus, Sonnet, Haiku)',
     },
     proLLMcommands: {
         label: 'Default LLMs for commands and autocomplete',

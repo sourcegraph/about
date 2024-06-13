@@ -30,7 +30,7 @@ export const Figure: FunctionComponent<Figure> = ({
                 {link ? (
                     <a href={link} className="flex not-italic">
                         {caption}
-                        {linkIcon && <OpenInNewIcon className="my-auto ml-xxs" size={18} />}
+                        {linkIcon && <OpenInNewIcon className="my-auto ml-2" size={18} />}
                     </a>
                 ) : (
                     caption

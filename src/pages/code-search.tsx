@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 import { ContentSection, Layout, TwoColumnSection, Heading, Video, InfiniteCarousel } from '../components'
 import { CodeSearchCard } from '../components/Code-search/CodeSearchCard'
+import { TelemetryProps } from '../telemetry'
 
 export const carouselImages = [
     { src: '/home/carousel/1password-logo.svg', className: 'w-[208px] h-[40px] mx-6' },
@@ -64,7 +65,7 @@ const codeHosts = [
     { name: 'any Git-based code host', icon: '/code-search/code-hosts/any-git.svg' },
 ]
 
-export const CodeSearchPage: FunctionComponent = () => (
+export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Sourcegraph | Code Search',
@@ -94,6 +95,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         title="Sourcegraph Code Search"
                         loop={true}
                         className="h-[432px] rounded-[5px] border border-gray-200 object-cover"
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
                 rightColumn={
@@ -163,6 +165,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         title="Sourcegraph Notebooks"
                         loop={true}
                         className="h-[432px] rounded-[5px] border border-gray-200 object-cover lg:h-[401px] lg:w-[577px]"
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />
@@ -182,6 +185,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         loop={true}
                         title="Batch Changes: How it works"
                         className="h-[432px] rounded-[5px] border border-gray-200 object-cover lg:h-[324px] lg:w-[577px]"
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
                 rightColumn={
@@ -249,6 +253,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         title="Code Insights"
                         loop={true}
                         className="h-[526px] rounded-lg border border-gray-200 object-cover lg:h-[324px] lg:w-[577px]"
+                        telemetryRecorder={telemetryRecorder}
                     />
                 }
             />
@@ -330,7 +335,7 @@ const CodeSearchHero: FunctionComponent = () => (
                 </div>
 
                 <div className="container mx-auto mb-6 grid gap-8 text-center">
-                    <Heading size="h1" className="color-[#0F111A] pt-3xl !tracking-[-1px] md:pt-0">
+                    <Heading size="h1" className="color-[#0F111A] pt-16 !tracking-[-1px] md:pt-0">
                         Grok your entire codebase
                     </Heading>
                 </div>

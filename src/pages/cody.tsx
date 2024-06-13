@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useState } from 'react'
+import { FunctionComponent, useState } from 'react'
 
 import classNames from 'classnames'
 import { useRouter } from 'next/router'
@@ -22,7 +22,6 @@ import { SourcePoweredDualTheme } from '../components/cody/dual-theme/SourcePowe
 import { HowCodyWorks } from '../components/cody/HowCodyWorks'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
-import { EventName, getEventLogger } from '../hooks/eventLogger'
 import { useWindowWidth } from '../hooks/windowWidth'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
@@ -60,15 +59,6 @@ const CodyPage: FunctionComponent = () => {
 
     const source = pathname.slice(1) || 'about-home'
     const handleOpenModal = (): void => openModal(source)
-
-    useEffect(() => {
-        const eventArguments = {
-            description: 'About - Cody page view',
-            source: 'about-cody',
-        }
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger()?.log(EventName.VIEW_ABOUT_CODY, eventArguments, eventArguments)
-    }, [])
 
     return (
         <Layout

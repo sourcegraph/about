@@ -31,14 +31,14 @@ export const ReleasePost: FunctionComponent<Props> = ({
 
             {frontmatter.changelogItems?.length ? (
                 <div>
-                    <h3 className={`m-0 pt-sm pb-xxs ${styles['changelog-header']}`}>Changelog highlights</h3>
+                    <h3 className={`m-0 pt-6 pb-2 ${styles['changelog-header']}`}>Changelog highlights</h3>
 
                     <ol className="ml-0 mb-2 list-none border-y border-solid border-gray-200">
                         {frontmatter.changelogItems?.map(({ url, category, description }) => (
                             <li key={url} className="m-0 bg-white p-0 [&:not(:last-child)]:border-b-1">
                                 <a
                                     href={url}
-                                    className={`${styles.item} block px-xs py-xxs text-black md:flex`}
+                                    className={`${styles.item} block px-4 py-2 text-black md:flex`}
                                     title={`${category}: ${description}`}
                                     data-button-style={buttonStyle.text}
                                     data-button-location={buttonLocation.body}
@@ -76,7 +76,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
 }
 
 const CommonLinks: React.FunctionComponent<{ className?: string }> = ({ className }) => (
-    <ul className={classNames(className, 'mb-0 ml-0 list-none flex-col flex-wrap gap-md md:flex md:flex-row')}>
+    <ul className={classNames(className, 'mb-0 ml-0 list-none flex-col flex-wrap gap-8 md:flex md:flex-row')}>
         <li>
             <a href="https://sourcegraph.com/docs/admin/install" className="text-gray-400">
                 How to install

@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { Badge, ContentSection, FeatureRoadMap, Heading, Layout } from '../components'
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { buttonLocation } from '../data/tracking'
-import { EventName, getEventLogger } from '../hooks/eventLogger'
+import { TelemetryProps } from '../telemetry';
 
 interface OwnContentProps {
     title: string
@@ -43,7 +43,7 @@ const roadMapSteps = [
     },
 ]
 
-const OwnPage: FunctionComponent = () => (
+const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Code Ownership',
@@ -94,7 +94,7 @@ const OwnPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection className="grid grid-cols-1 items-center gap-lg gap-x-24 md:mt-24 md:grid-cols-2 md:flex-row">
+        <ContentSection className="grid grid-cols-1 items-center gap-10 gap-x-24 md:mt-24 md:grid-cols-2 md:flex-row">
             <OwnContent
                 title="Resolve incidents and security vulnerabilities faster"
                 description="Search for vulnerable or outdated code patterns and reach out to the owners in seconds. Escalate in one click. Don’t waste time emailing around to find who can help. Fast collaboration, fast remediation."
@@ -108,13 +108,7 @@ const OwnPage: FunctionComponent = () => (
                     playsInline={true}
                     controls={false}
                     data-cookieconsent="ignore"
-                    onPlay={() =>
-                        getEventLogger().log(
-                            EventName.STATIC_VIDEO_PLAYED,
-                            { title: 'Own vulnerabilities' },
-                            { title: 'Own vulnerabilities' }
-                        )
-                    }
+                    onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 1 }, privateMetadata: { title: 'Own vulnerabilities' } })}
                 >
                     <source
                         type="video/webm"
@@ -130,7 +124,7 @@ const OwnPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <ContentSection className="grid grid-cols-1 items-center gap-lg gap-x-24 md:grid-cols-2 md:flex-row">
+        <ContentSection className="grid grid-cols-1 items-center gap-10 gap-x-24 md:grid-cols-2 md:flex-row">
             <div className="order-last md:order-first">
                 <video
                     className="mx-auto w-full max-w-[577px] rounded-[5px] bg-gray-300"
@@ -140,13 +134,7 @@ const OwnPage: FunctionComponent = () => (
                     playsInline={true}
                     controls={false}
                     data-cookieconsent="ignore"
-                    onPlay={() =>
-                        getEventLogger().log(
-                            EventName.STATIC_VIDEO_PLAYED,
-                            { title: 'Own knowledge sharing' },
-                            { title: 'Own knowledge sharing' }
-                        )
-                    }
+                    onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 2 }, privateMetadata: { title: 'Own knowledge sharing' } })}
                 >
                     <source
                         type="video/webm"
@@ -166,7 +154,7 @@ const OwnPage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <ContentSection className="grid grid-cols-1 gap-lg gap-x-24 md:grid-cols-2 md:flex-row" parentClassName="!pb-0">
+        <ContentSection className="grid grid-cols-1 gap-10 gap-x-24 md:grid-cols-2 md:flex-row" parentClassName="!pb-0">
             <OwnContent
                 title="Own is currently an experimental feature, but we have a big vision for code ownership."
                 description="We’d love your feedback on Own. You can turn it on using the documentation below, or contact us to get a demo and learn more about our roadmap."

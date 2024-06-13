@@ -39,7 +39,7 @@ const Webinar: FunctionComponent = () => {
                     leftColumn={
                         <div className="flex h-full items-center">
                             <img
-                                className="mr-xs inline w-[65px] border-r-2 border-r-black pr-xs md:mr-sm md:w-[95px] md:border-r-3 md:pr-sm"
+                                className="mr-4 inline w-[65px] border-r-2 border-r-black pr-4 md:mr-6 md:w-[95px] md:border-r-3 md:pr-6"
                                 src="/sourcegraph/sourcegraph-mark.svg"
                                 alt="Sourcegraph mark"
                             />

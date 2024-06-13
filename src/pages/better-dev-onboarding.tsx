@@ -11,6 +11,7 @@ import {
     Hero,
     CallToActionContentSection,
 } from '../components'
+import { TelemetryProps } from '../telemetry'
 
 const resourceItems = [
     {
@@ -37,7 +38,7 @@ const resourceItems = [
     },
 ]
 
-const BetterDeveloperOnboarding: FunctionComponent = () => (
+const BetterDeveloperOnboarding: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Better Developer Onboarding - Sourcegraph',
@@ -62,7 +63,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
-            <CoreFeatures />
+            <CoreFeatures telemetryRecorder={telemetryRecorder} />
         </ContentSection>
 
         <div className="bg-gray-100">

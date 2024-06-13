@@ -20,7 +20,7 @@ export const CaseStudy: FunctionComponent = () => (
                 author: 'François Jehl, Senior Engineering Manager, Criteo',
             }}
         >
-            <ContentSection background="white" slimWidth={true} className="pb-md">
+            <ContentSection background="white" slimWidth={true} className="pb-8">
                 <p>
                     Founded in France in 2005, Criteo partners with retailers to recommend products to potential
                     customers through ad retargeting. The company has massive volumes of data stored in its on-premise
@@ -32,7 +32,7 @@ export const CaseStudy: FunctionComponent = () => (
                     work in multiple repositories, this small-scale search strategy isn't sufficient and can be a major
                     time sink.
                 </p>
-                <div className="grid grid-cols-1 justify-center gap-lg pt-xs text-center md:grid-cols-2">
+                <div className="grid grid-cols-1 justify-center gap-10 pt-4 text-center md:grid-cols-2">
                     <figure>
                         <img
                             src="/case-studies/francois-jehl-criteo.jpg"
@@ -60,7 +60,7 @@ export const CaseStudy: FunctionComponent = () => (
                     quote="When looking for alternatives, the general consensus was 'If you're a giant like Google, you can simply build your own code search engine. If that's not you, then buy Sourcegraph."
                     author="François Jehl"
                 />
-                <h2 className="pt-md pb-1">Prioritize developer happiness and productivity follows</h2>
+                <h2 className="pt-8 pb-1">Prioritize developer happiness and productivity follows</h2>
                 <Blockquote
                     quote="At Criteo, developer happiness is our top priority—not just productivity. We want to tackle the things that developers see as hurdles in their day-to-day life. By providing them with the right tools, like Sourcegraph, we've found that increased productivity is a natural byproduct."
                     author="François Jehl"
@@ -77,7 +77,7 @@ export const CaseStudy: FunctionComponent = () => (
                     for—perhaps just patterns that need to be deprecated. With our previous tools, the results were not
                     good,” said François Jehl.
                 </p>
-                <h2 className="pt-md pb-1">Survey says Sourcegraph is the ultimate time-saver</h2>
+                <h2 className="pt-8 pb-1">Survey says Sourcegraph is the ultimate time-saver</h2>
                 <p>
                     Criteo conducted an internal survey with Sourcegraph early adopters to determine how Sourcegraph has
                     impacted its developers' workflows. The survey found that 83 percent of those developers used

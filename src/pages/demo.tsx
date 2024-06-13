@@ -2,8 +2,9 @@ import React, { FunctionComponent } from 'react'
 
 import { ContentSection, Layout, HubSpotForm, Heading } from '../components'
 import { DemoVideo } from '../components/DemoVideo'
+import { TelemetryProps } from '../telemetry'
 
-const Demo: FunctionComponent = () => (
+const Demo: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     <Layout
         meta={{
             title: 'Schedule a demo - Sourcegraph',
@@ -24,7 +25,7 @@ const Demo: FunctionComponent = () => (
                 </p>
             </div>
             <div className="flex flex-col-reverse items-start gap-6 md:flex-row">
-                <DemoVideo video="homepage-demo-202301" className="mt-10 rounded-lg md:w-[50%] md:max-w-[578px]" />
+                <DemoVideo telemetryRecorder={telemetryRecorder} video="homepage-demo-202301" className="mt-10 rounded-lg md:w-[50%] md:max-w-[578px]" />
                 <div className="w-full rounded-[10px] bg-gray-50 pt-6 pb-0 pl-6 pr-[1px] shadow-xl md:px-16 md:pt-12 md:pb-[13px] md:pr-8">
                     <HubSpotForm
                         masterFormName="contactMulti"

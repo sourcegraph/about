@@ -24,7 +24,7 @@ export const DownloadAppCallToActionSection: FunctionComponent<StarshipPageCallT
 }) => (
     <div
         className={classNames(
-            'relative mt-32 flex w-full flex-col items-center px-sm py-10 text-center text-white',
+            'relative mt-32 flex w-full flex-col items-center px-6 py-10 text-center text-white',
             colorTheme === 'light' ? 'sg-bg-gradient-purple' : ''
         )}
     >

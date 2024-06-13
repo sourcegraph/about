@@ -15,7 +15,7 @@ export const TrySourcegraphForFreeButton: React.FunctionComponent<{
         className={classNames(
             'btn whitespace-nowrap',
             dark ? 'btn-inverted-primary' : 'btn-primary',
-            size === 'lg' && 'py-xs'
+            size === 'lg' && 'py-4'
         )}
         href="/contact/request-info"
         title={children}
@@ -38,7 +38,7 @@ export const TrySourcegraphAppButton: React.FunctionComponent<{
         className={classNames(
             'btn whitespace-nowrap',
             dark ? 'btn-inverted-primary' : 'btn-primary',
-            size === 'lg' && 'py-xs'
+            size === 'lg' && 'py-4'
         )}
         href={href}
         data-button-style={buttonStyle.primary}

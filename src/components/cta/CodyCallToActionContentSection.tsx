@@ -91,7 +91,7 @@ export const CodyCallToActionContentSection: FunctionComponent<CtaSection> = ({
         <div className="my-20 bg-violet-700 text-white">
             <div
                 className={classNames(
-                    'bg-[] mx-auto h-full min-h-[291px] items-center bg-[center_left] bg-repeat-y px-sm py-3xl lg:pl-0',
+                    'bg-[] mx-auto h-full min-h-[291px] items-center bg-[center_left] bg-repeat-y px-6 py-16 lg:pl-0',
                     {
                         'grid max-w-screen-xl grid-cols-12': !smallCta,
                         'mx-auto flex max-w-[1066px] flex-col md:flex-row md:justify-around lg:gap-[76px]': smallCta,
@@ -113,11 +113,11 @@ export const CodyCallToActionContentSection: FunctionComponent<CtaSection> = ({
                 )}
                 <div
                     className={classNames({
-                        'col-span-full  md:col-span-7 lg:col-span-6 lg:col-start-3 lg:pl-xl': !smallCta,
+                        'col-span-full  md:col-span-7 lg:col-span-6 lg:col-start-3 lg:pl-12': !smallCta,
                         'w-full md:w-auto': smallCta,
                     })}
                 >
-                    <Heading size="h2" className="mb-sm text-white">
+                    <Heading size="h2" className="mb-6 text-white">
                         {title}
                     </Heading>
                     <p className="max-w-2xl text-lg">{description}</p>
@@ -130,13 +130,13 @@ export const CodyCallToActionContentSection: FunctionComponent<CtaSection> = ({
                     })}
                 >
                     {cta1 && (
-                        <div className="mt-sm">
+                        <div className="mt-6">
                             <Cta {...cta1} />
                         </div>
                     )}
 
                     {cta2 && typeof cta2 === 'object' && (
-                        <div className="mt-sm">
+                        <div className="mt-6">
                             <Cta {...cta2} />
                         </div>
                     )}

@@ -31,7 +31,7 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
         className={classNames(
             'btn inline-flex items-center whitespace-nowrap',
             buttonClassName,
-            size === 'lg' && 'py-xs'
+            size === 'lg' && 'py-4'
         )}
         title={children}
         data-button-style={buttonStyle.outline}

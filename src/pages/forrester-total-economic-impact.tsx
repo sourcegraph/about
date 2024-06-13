@@ -70,8 +70,8 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
             displayChildrenUnderNav={true}
         >
             <ContentSection
-                parentClassName="!py-0 !px-sm"
-                className="!mt-[22px] flex flex-col justify-between gap-6 md:flex-row xl:px-sm"
+                parentClassName="!py-0 !px-6"
+                className="!mt-[22px] flex flex-col justify-between gap-6 md:flex-row xl:px-6"
             >
                 <div className="max-w-[637px]">
                     <Heading size="h1" className="text-white">
@@ -91,7 +91,7 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <div className="mt-16 bg-violet-700 py-6 px-sm md:mt-24 md:py-24">
+            <div className="mt-16 bg-violet-700 py-6 px-6 md:mt-24 md:py-24">
                 <Heading size="h2" as="h3" className="text-center !text-4xl text-white">
                     Key findings
                 </Heading>
@@ -115,25 +115,25 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                 </div>
             </div>
 
-            <Heading size="h2" as="h3" className="mt-16 px-sm text-center !text-4xl text-white md:mt-24">
+            <Heading size="h2" as="h3" className="mt-16 px-6 text-center !text-4xl text-white md:mt-24">
                 Incremental profit for customers derives from:
             </Heading>
 
             <ThreeUpText
                 items={threeUpTextItems}
-                className="mx-auto mt-16 max-w-screen-xl md:px-sm"
+                className="mx-auto mt-16 max-w-screen-xl md:px-6"
                 wrapperClassName="!gap-6"
             />
 
-            <Heading size="h1" as="h3" className="mt-16 px-sm text-center text-white md:mt-[192px]">
+            <Heading size="h1" as="h3" className="mt-16 px-6 text-center text-white md:mt-[192px]">
                 How Sourcegraph achieves this impact
             </Heading>
 
             <ContentSection
-                className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 xl:px-sm"
+                className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 xl:px-6"
                 parentClassName="px-0 overflow-x-clip"
             >
-                <div className="max-w-[628px] px-sm xl:px-0">
+                <div className="max-w-[628px] px-6 xl:px-0">
                     <Heading size="h2" as="h3" className="!text-4xl text-white">
                         Sourcegraph is a code intelligence platform
                     </Heading>
@@ -294,7 +294,7 @@ const BatchChangesInsight: FunctionComponent<BatchChangesInsightProps> = ({
     wrapperClassName,
 }) => (
     <ContentSection
-        className={classNames('flex flex-col gap-y-10 gap-x-[133px] md:flex-row xl:px-sm', wrapperClassName)}
+        className={classNames('flex flex-col gap-y-10 gap-x-[133px] md:flex-row xl:px-6', wrapperClassName)}
         parentClassName="!py-0"
     >
         <div className="max-w-[627px]">
@@ -334,9 +334,9 @@ export const PLAN_COLORS: Record<
 
 const WorkflowStats: FunctionComponent<WorkflowStatsProps> = ({ title, stats, borderColorClass, textColorClass }) => (
     <div
-        className={`h-100 mx-auto max-w-[519px] rounded border-t-16 border-gray-200 bg-white p-xs shadow-lg sm:p-md md:max-h-[532px] ${borderColorClass} md:mx-0`}
+        className={`h-100 mx-auto max-w-[519px] rounded border-t-16 border-gray-200 bg-white p-4 shadow-lg sm:p-8 md:max-h-[532px] ${borderColorClass} md:mx-0`}
     >
-        <Heading size="h2" className="mb-sm text-3xl sm:!text-4xl">
+        <Heading size="h2" className="mb-6 text-3xl sm:!text-4xl">
             {title}
         </Heading>
         {stats?.map((stat, index) => (

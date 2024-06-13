@@ -18,9 +18,9 @@ const Newsletter: FunctionComponent = () => {
 
     return (
         <Layout meta={meta}>
-            <div className="mx-auto max-w-7xl px-sm md:px-6">
-                <div className="flex flex-col items-start gap-md py-3xl  lg:flex-row lg:gap-sm lg:py-5xl">
-                    <div className="flex-start flex flex-1 flex-col gap-sm lg:gap-xs">
+            <div className="mx-auto max-w-7xl px-6 md:px-6">
+                <div className="flex flex-col items-start gap-8 py-16  lg:flex-row lg:gap-6 lg:py-24">
+                    <div className="flex-start flex flex-1 flex-col gap-6 lg:gap-4">
                         <Badge
                             text="From the source"
                             size="large"
@@ -37,7 +37,7 @@ const Newsletter: FunctionComponent = () => {
                     </div>
                     <div
                         className={classNames(
-                            'newsletter-form flex w-full max-w-[628px] flex-col items-baseline gap-4 rounded-lg border border-gray-200 bg-gray-50 p-lg [&>div]:w-full',
+                            'newsletter-form flex w-full max-w-[628px] flex-col items-baseline gap-4 rounded-lg border border-gray-200 bg-gray-50 p-10 [&>div]:w-full',
                             styles.newsletter
                         )}
                     >
@@ -60,7 +60,7 @@ const Newsletter: FunctionComponent = () => {
                                 <img
                                     src="/newsletter/sentiment-very-satisfied.svg"
                                     alt="sentiment very satisfied"
-                                    className="h-sm w-sm"
+                                    className="h-6 w-6"
                                 />
                                 <p className="m-0 text-sm leading-[19.88px] text-[#0F111A]">
                                     Thank you! You’re signed up.

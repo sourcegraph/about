@@ -177,7 +177,7 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
             <div className="mx-auto max-w-screen-xl px-4">
                 {!minimal && (
                     <div className="mb-8 flex flex-col-reverse sm:grid sm:grid-cols-12">
-                        <div className="col-span-12 mt-xl sm:mt-0 sm:mb-sm lg:col-span-4 lg:mb-0">
+                        <div className="col-span-12 mt-12 sm:mt-0 sm:mb-6 lg:col-span-4 lg:mb-0">
                             <Link
                                 href="/"
                                 title="Sourcegraph - Universal code search"
@@ -223,13 +223,13 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
 
                         <div className="col-span-12 sm:grid sm:grid-cols-12 lg:col-span-8">
                             {FOOTER_LINK_SECTIONS.map(({ name, items }) => (
-                                <div className="mb-md sm:col-span-3 sm:mb-0" key={name}>
-                                    <Heading size="h5" as="h2" className="mb-xs text-base">
+                                <div className="mb-8 sm:col-span-3 sm:mb-0" key={name}>
+                                    <Heading size="h5" as="h2" className="mb-4 text-base">
                                         {name}
                                     </Heading>
                                     <ul className="ml-0 list-none">
                                         {items.map(({ name, href, icon: Icon, badgeText }) => (
-                                            <li className="mb-xs max-w-[176px]" key={name}>
+                                            <li className="mb-4 max-w-[176px]" key={name}>
                                                 <Link
                                                     href={href}
                                                     title={name}
@@ -258,10 +258,10 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
                     </div>
                 )}
 
-                <div className={classNames('text-sm', { 'py-4': minimal, 'pt-sm pb-2': !minimal })}>
+                <div className={classNames('text-sm', { 'py-4': minimal, 'pt-6 pb-2': !minimal })}>
                     <ul className="ml-0 list-none">
                         <li
-                            className={classNames('mr-lg text-gray-200 sm:inline', {
+                            className={classNames('mr-10 text-gray-200 sm:inline', {
                                 'text-gray-200': dark,
                                 'text-gray-500': !dark,
                             })}
@@ -270,7 +270,7 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
                         </li>
 
                         {POSTSCRIPT_LINKS.map(({ name, href }) => (
-                            <li key={name} className="mt-xxs inline-block sm:mt-0">
+                            <li key={name} className="mt-2 inline-block sm:mt-0">
                                 <Link
                                     key={name}
                                     href={href}

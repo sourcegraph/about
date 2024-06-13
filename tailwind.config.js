@@ -111,15 +111,7 @@ module.exports = {
         '"Noto Sans"',
         'sans-serif',
       ],
-      mono: [
-        'ui-monospace',
-        'Menlo',
-        'Monaco',
-        'Consolas',
-        '"Liberation Mono"',
-        '"Courier New"',
-        'monospace',
-      ],
+      mono: ['ui-monospace', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
       systemMono: ['ui-monospace', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
       grotesk: ['Space Grotesk'],
       spaceMono: ['Space Mono'],
@@ -129,7 +121,7 @@ module.exports = {
       xs: ['0.75rem', { lineHeight: '1.125rem' }], // 12px / 18px
       sm: ['0.875rem', { lineHeight: '1.313rem', fontWeight: '400', letterSpacing: '0' }], // 14px / 21px
       base: ['1rem', { lineHeight: '1.5rem', fontWeight: '400', letterSpacing: '-0.005em' }], // 16px / 24px
-      lg: ['1.125rem', { lineHeight: '1.688rem', fontWeight: '400', letterSpacing: '-0.005em' }], // 18px / 27px
+      lg: ['1.12rem', { lineHeight: '1.688rem', fontWeight: '400', letterSpacing: '-0.005em' }], // 18px / 27px
       xl: ['1.25rem', { lineHeight: '1.75rem' }], // 20px / 28px
       '2xl': ['1.5rem', { lineHeight: '2.125rem' }], // 24px / 34px
       '3xl': ['1.875rem', { lineHeight: '2.625rem' }], // 30px / 42px
@@ -165,16 +157,35 @@ module.exports = {
       },
 
       spacing: {
-        xxs: '0.5rem', // 8px
-        xs: '1rem', // 16px
-        sm: '1.5rem', // 24px
-        md: '2rem', // 32px
-        lg: '2.5rem', // 40px
-        xl: '3rem', // 48px
-        '2xl': '3.5rem', // 56px
-        '3xl': '4rem', // 64px
-        '4xl': '4.5rem', // 72px
-        '5xl': '6rem', // 96px
+        1: '4px',
+        2: '8px',
+        3: '12px',
+        4: '16px',
+        5: '20px',
+        6: '24px',
+        7: '28px',
+        8: '32px',
+        9: '36px',
+        10: '40px',
+        11: '44px',
+        12: '48px',
+        14: '56px',
+        16: '64px',
+        20: '80px',
+        24: '96px',
+        28: '112px',
+        32: '128px',
+        36: '144px',
+        40: '160px',
+        44: '176px',
+        48: '192px',
+        52: '208px',
+        56: '224px',
+        60: '240px',
+        64: '256px',
+        72: '288px',
+        80: '320px',
+        96: '384px',
       },
 
       borderWidth: {

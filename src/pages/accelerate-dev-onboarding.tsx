@@ -13,7 +13,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                 'Get sharable links to help new developers ask questions with context, and enable senior devs to share knowledge without running local searches for specific bits of code.',
         }}
     >
-        <div className="container mx-auto grid grid-cols-1 gap-md py-24 lg:grid-cols-2">
+        <div className="container mx-auto grid grid-cols-1 gap-8 py-24 lg:grid-cols-2">
             <div>
                 <h1 className="mb-6">Accelerate developer onboarding and decrease time to first commit</h1>
                 <h4>Self-serve onboarding, codebase exploration, and knowledge sharing</h4>

@@ -46,7 +46,7 @@ export const BoardSection: FunctionComponent<{ className?: string }> = ({ classN
     <div id="board" className={`${className}`}>
         <h2>Board of Directors</h2>
 
-        <div className="my-8 grid grid-cols-1 gap-xl sm:grid-cols-2 md:grid-cols-3">
+        <div className="my-8 grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3">
             {BOARD.map(boardMembers => (
                 <div key={`${boardMembers.name.replace(' ', '-').toLowerCase()}`} className="flex flex-col">
                     <img

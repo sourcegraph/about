@@ -10,9 +10,7 @@ import posthog, { CaptureResult } from 'posthog-js'
 import { PostHogProvider } from 'posthog-js/react'
 
 import { AuthModalProvider } from '../context/AuthModalContext'
-import { useEventLogger, useLogAllLinkClicks } from '../hooks/eventLogger'
-import { useLandingSource } from '../hooks/landingSource'
-import { useRecordPageViews } from '../hooks/telemetry'
+import { useRecordLinkClicks, useRecordPageViews } from '../hooks/telemetry'
 import { TelemetryRecorderProvider, noOpTelemetryRecorder } from '../telemetry'
 import 'prism-themes/themes/prism-one-light.css'
 
@@ -27,16 +25,13 @@ if (typeof window !== 'undefined') {
 }
 
 const App = ({ Component, pageProps }: AppProps): ReactNode => {
-    useEventLogger()
-    useLandingSource()
-    useLogAllLinkClicks()
-
     let telemetryRecorder = noOpTelemetryRecorder
     if (typeof window !== 'undefined') {
       const telemetryRecorderProvider = new TelemetryRecorderProvider()
       telemetryRecorder = telemetryRecorderProvider.getRecorder()
     }
     useRecordPageViews(telemetryRecorder)
+    useRecordLinkClicks(telemetryRecorder)
 
     const router = useRouter()
 
@@ -51,9 +46,9 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
 
     return (
       <PostHogProvider client={posthog}>
-        <AuthModalProvider>
+        <AuthModalProvider telemetryRecorder={telemetryRecorder}>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <Component {...pageProps} />
+            <Component {...pageProps} telemetryRecorder={telemetryRecorder} />
         </AuthModalProvider>
       </PostHogProvider>
     )

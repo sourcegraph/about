@@ -142,7 +142,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({
             }; }`}</style>
             <section
                 className={classNames('flex-1', props.childrenClassName, {
-                    '-mt-[68px] pt-5xl md:-mt-[74px] md:!pt-[148px]': props.displayChildrenUnderNav,
+                    '-mt-[68px] pt-24 md:-mt-[74px] md:!pt-[148px]': props.displayChildrenUnderNav,
                 })}
             >
                 {props.children}

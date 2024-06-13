@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { EventName, getEventLogger } from '../../hooks/eventLogger'
+import { TelemetryProps } from '../../telemetry'
 
 import { resourceItems, Filter } from '.'
 
@@ -18,14 +18,9 @@ interface UseFilters {
  * This hook is used for getting, setting, and resetting filters
  * based on our resource items data.
  */
-export const useFilters = (): UseFilters => {
-    const logResourceClickEvent = (groupTitle: string, type: string): void => {
-        const eventName =
-            groupTitle === 'Content Type' ? EventName.RESOURCE_CONTENT_TYPE_FILTER : EventName.RESOURCE_SUBJECT_FILTER
-
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger().log(eventName, { type }, { type })
-    }
+export const useFilters = ({ telemetryRecorder }: TelemetryProps): UseFilters => {
+    const logResourceClickEvent = (groupTitle: string, type: string): void =>
+        telemetryRecorder.recordEvent(`resources.filter.${groupTitle === 'Content Type' ? 'contentType' : 'subject'}`, 'toggle', { privateMetadata: { type }})
 
     const defaultFilterGroups = [
         {

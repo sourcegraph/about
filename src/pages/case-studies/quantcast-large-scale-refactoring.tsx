@@ -36,7 +36,7 @@ export const CaseStudy: FunctionComponent = () => (
                     discovering and deploying Sourcegraph, Quantcast was able to do major refactors with confidence.
                 </p>
 
-                <h2 className="pt-md pb-1">GDPR readiness though organization-wide code search</h2>
+                <h2 className="pt-8 pb-1">GDPR readiness though organization-wide code search</h2>
                 <p>
                     May 2018 was the deadline for the EU General Data Protection Regulation, a law that provides
                     widespread protections for users and their personal data. Quantcast saw it as an opportunity to
@@ -85,7 +85,7 @@ export const CaseStudy: FunctionComponent = () => (
                     results.
                 </p>
 
-                <h2 className="pt-md pb-1">Preventing future issues with code monitoring and notifications</h2>
+                <h2 className="pt-8 pb-1">Preventing future issues with code monitoring and notifications</h2>
 
                 <p>
                     With more data privacy laws on the horizon (such as California's Consumer Privacy Act), Quantcast
@@ -96,7 +96,7 @@ export const CaseStudy: FunctionComponent = () => (
 
                 <Blockquote quote="Saved searches allow us to constantly monitor code that manages personal data, organization wide, before changes land in production." />
 
-                <h2 className="pt-md pb-1">
+                <h2 className="pt-8 pb-1">
                     Large scale refactoring is now possible without risking production stability
                 </h2>
 
@@ -106,7 +106,7 @@ export const CaseStudy: FunctionComponent = () => (
                     without risking production stability.
                 </p>
 
-                <p className="pb-md">
+                <p className="pb-8">
                     Saved searches with email notifications empower teams to continuously monitor changes to code
                     handling personal information which mitigates compliance risk without distracting developers from
                     delivering business value.

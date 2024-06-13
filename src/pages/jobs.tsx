@@ -70,7 +70,7 @@ const CareersPage: FunctionComponent = () => {
     return (
         <Layout className="jobs-page" headerColorTheme="white">
             <ContentSection background="white" className="xl:pl-6" parentClassName="!pt-8 !pb-[55px]">
-                <h1 className="mb-sm">Let's build the future together.</h1>
+                <h1 className="mb-6">Let's build the future together.</h1>
                 <h3 className="max-w-[820px]">
                     We're developing the world's most advanced code intelligence platform with brilliant dreamers around the
                     globe.
@@ -183,7 +183,7 @@ const CareersPage: FunctionComponent = () => {
             </ContentSection>
 
             <div className="bg-violet-700">
-                <ContentSection parentClassName="!py-8" className="md:px-sm">
+                <ContentSection parentClassName="!py-8" className="md:px-6">
                     <h1 className="text-white">We value...</h1>
                 </ContentSection>
             </div>

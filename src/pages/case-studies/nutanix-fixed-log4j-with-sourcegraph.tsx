@@ -99,8 +99,8 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection background="white" slimWidth={true}>
-                <div className="mx-auto pt-5xl">
-                    <p className="mt-5xl pt-3xl sm:mt-0">
+                <div className="mx-auto pt-24">
+                    <p className="mt-24 pt-16 sm:mt-0">
                         As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the
                         complexity involved in securing the multitude of applications and solutions required to power
                         such a large organization. “Security is something that we care about intensely here at Nutanix,”
@@ -199,7 +199,7 @@ export const CaseStudy: FunctionComponent = () => (
                         without completely flying by the seats of our pants.”
                     </p>
 
-                    <div className="py-5xl">
+                    <div className="py-24">
                         <Blockquote
                             quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
                             better than having to say, 'Well, boss, I think we got it all.'"
@@ -271,7 +271,7 @@ export const CaseStudy: FunctionComponent = () => (
                         the next vulnerability.
                     </p>
 
-                    <div className="mt-5xl">
+                    <div className="mt-24">
                         <StaffSpotlight
                             customer="Nutanix"
                             about={

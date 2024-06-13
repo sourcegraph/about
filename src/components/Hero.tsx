@@ -66,15 +66,15 @@ export const Hero: FunctionComponent<Omit<Hero, 'children' | 'illustration'>> = 
                 {product && <h6 className={classNames('mb-2', { 'mx-auto text-center': centerContent })}>{product}</h6>}
             </div>
 
-            {description && <p className="mt-sm max-w-xl text-lg">{description}</p>}
+            {description && <p className="mt-6 max-w-xl text-lg">{description}</p>}
 
             {subtitle && (
-                <h3 className={classNames('mt-sm max-w-4xl', { 'mx-auto text-center': centerContent })}>{subtitle}</h3>
+                <h3 className={classNames('mt-6 max-w-4xl', { 'mx-auto text-center': centerContent })}>{subtitle}</h3>
             )}
 
             {cta && (
                 <div
-                    className={classNames('mt-md flex flex-col', {
+                    className={classNames('mt-8 flex flex-col', {
                         'mx-auto items-center': centerContent,
                     })}
                 >
@@ -97,8 +97,8 @@ export const Hero: FunctionComponent<Omit<Hero, 'children' | 'illustration'>> = 
             background={variant}
             illustration={illustration}
             parentClassName={classNames(className, {
-                '-mt-[68px] md:-mt-[74px] pt-5xl md:!pt-[148px]': displayUnderNav,
-                'relative md:h-[750px] lg:mb-xs md:mb-4xl mb-0': floatingImg,
+                '-mt-[68px] md:-mt-[74px] pt-24 md:!pt-[148px]': displayUnderNav,
+                'relative md:h-[750px] lg:mb-4 md:mb-16 mb-0': floatingImg,
             })}
             className="flex items-center"
         >

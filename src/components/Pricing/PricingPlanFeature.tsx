@@ -45,7 +45,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({ feature, tag: Tag
             )}
             {feature.description && (
                 <Tooltip
-                    wrapperClassName="my-auto ml-xxs text-gray-300 flex items-center"
+                    wrapperClassName="my-auto ml-2 text-gray-300 flex items-center"
                     tooltipClassName="p-2 z-20"
                     text={feature.description}
                 >

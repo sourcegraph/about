@@ -21,9 +21,9 @@ const ContactHome: FunctionComponent = () => (
         }}
     >
         <ContentPage title={title} description={description}>
-            <ContentSection className="pt-3xl pb-xxs">
-                <div className="grid grid-cols-1 gap-md md:grid-cols-2">
-                    <section className="rounded-lg border-1 p-xs">
+            <ContentSection className="pt-16 pb-2">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                    <section className="rounded-lg border-1 p-4">
                         <h4>Product support</h4>
                         <p>For help using Sourcegraph:</p>
                         <ul className="ml-0 list-none">
@@ -55,7 +55,7 @@ const ContactHome: FunctionComponent = () => (
                             </li>
                         </ul>
                     </section>
-                    <section className="rounded-lg border-1 p-xs">
+                    <section className="rounded-lg border-1 p-4">
                         <h4>Sales</h4>
                         <p>For information about products and purchasing:</p>
                         <Link
@@ -69,7 +69,7 @@ const ContactHome: FunctionComponent = () => (
                             Contact sales
                         </Link>
                     </section>
-                    <section className="rounded-lg border-1 p-xs">
+                    <section className="rounded-lg border-1 p-4">
                         <h4>Jobs</h4>
 
                         <p>For information about joining our team:</p>
@@ -84,7 +84,7 @@ const ContactHome: FunctionComponent = () => (
                             See career opportunities
                         </a>
                     </section>
-                    <section className="rounded-lg border-1 p-xs">
+                    <section className="rounded-lg border-1 p-4">
                         <h4>Everything else</h4>
                         <ul className="ml-0 list-none">
                             <li>

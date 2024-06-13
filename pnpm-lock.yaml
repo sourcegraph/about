@@ -142,9 +142,6 @@ devDependencies:
   '@sourcegraph/eslint-config':
     specifier: ^0.33.0
     version: 0.33.0(eslint@8.32.0)(typescript@4.5.5)
-  '@sourcegraph/event-logger':
-    specifier: ^2.0.6
-    version: 2.0.6
   '@sourcegraph/prettierrc':
     specifier: ^3.0.3
     version: 3.0.3
@@ -4435,14 +4432,6 @@ packages:
       - typescript
     dev: true
 
-  /@sourcegraph/event-logger@2.0.6:
-    resolution: {integrity: sha512-orgIdiq3cKf3oeIqyhBBRvHFrJfKYyqRM87r9p13gh/5zkBBDQKrOkoz9WwJHBaeiiwUpr8sL0VjmAP0o59Gdw==}
-    dependencies:
-      date-fns: 2.29.3
-      js-cookie: 3.0.5
-      uuid: 8.3.2
-    dev: true
-
   /@sourcegraph/prettierrc@3.0.3:
     resolution: {integrity: sha512-FQ1/Ued4I02R0JkrHHofDN163juVxUnPALzfxPZrDZUHv+c3jHjfZhmTHEz+Wd+g3b7MFk0fkj36nZSnvPyU8A==}
     dev: true
@@ -6741,11 +6730,6 @@ packages:
       assert-plus: 1.0.0
     dev: true
 
-  /date-fns@2.29.3:
-    resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
-    engines: {node: '>=0.11'}
-    dev: true
-
   /date-fns@3.3.1:
     resolution: {integrity: sha512-y8e109LYGgoQDveiEBD3DYXKba1jWf5BA8YU1FL5Tvm0BTdEfy54WLCwnuYWZNnzzvALy/QQ4Hov+Q9RVRv+Zw==}
     dev: false
@@ -8913,6 +8897,7 @@ packages:
   /js-cookie@3.0.5:
     resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
     engines: {node: '>=14'}
+    dev: false
 
   /js-sdsl@4.2.0:
     resolution: {integrity: sha512-dyBIzQBDkCqCu+0upx25Y2jGdbTGxE9fshMsCdK0ViOongpV+n5tXRcZY9v7CaVQ79AGS9KA1KHtojxiM7aXSQ==}
