@@ -90,7 +90,6 @@ In addition to automatic context fetching, we've found that providing a way for 
 
 [![20_tweet](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/20_tweet.png)](https://x.com/beyang/status/1792616243742244974)
 
-At the moment, this allows users to include context from various sources manually. In the future, we envision this feature being used by both users and AI.
 
 ---
 
