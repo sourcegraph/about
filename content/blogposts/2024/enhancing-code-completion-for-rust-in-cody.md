@@ -70,7 +70,7 @@ To illustrate the effectiveness of our fine-tuned Mixtral model, let's look at a
 
 **Example 1**: *Given a HashMap, return true if all keys are strings in lower case or all keys are strings in upper case, else return false. The function should return false if the given HashMap is empty.*
 
-**olution from mixtral-8x7b base model:**
+**Solution from mixtral-8x7b base model:**
 
 ```rust
 use std::collections::HashMap;
@@ -223,7 +223,7 @@ The base model's solution for finding the largest prime factor of a number fails
 
 **Example 3**: *You're a hungry rabbit, and you already have eaten a certain number of carrots, but now you need to eat more carrots to complete the day's meals. You should return a vector of [ total number of eaten carrots after your meals, the number of carrots left after your meals ] if there are not enough remaining carrots, you will eat all remaining carrots, but will still be hungry.*
 
-**olution from mixtral-8x7b base model:**
+**Solution from mixtral-8x7b base model:**
 
 ```rust
 /// You're a hungry rabbit, and you already have eaten a certain number of carrots,
@@ -342,7 +342,7 @@ In summary, the finetuned model provides a more robust solution by correctly adj
 
 **Example 4**:  *This function takes a vector l and returns a vector l' such that l' is identical to l in the odd indicies, while its values at the even indicies are equal to the values of the even indicies of l, but sorted.*
 
-**olution from mixtral-8x7b base model:**
+**Solution from mixtral-8x7b base model:**
 
 ```rust
 /// This function takes a vector l and returns a vector l' such that
@@ -433,7 +433,7 @@ In summary, the base model fails due to an incorrect use of slicing and sorting 
 
 **Example 5**: *triples_sum_to_zero takes a vector of integers as an input. it returns true if there are three distinct elements in the vector that sum to zero, and false otherwise.*
 
-**olution from mixtral-8x7b base model:**
+**Solution from mixtral-8x7b base model:**
 
 ```rust
 /// triples_sum_to_zero takes a vector of integers as an input.
