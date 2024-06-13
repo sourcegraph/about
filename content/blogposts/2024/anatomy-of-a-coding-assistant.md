@@ -127,7 +127,7 @@ To achieve this, after creating or finding the test file, we find other test fil
 
 ## Context fetching for editing code
 
-This is a feature that lets you select a block of code and edit it using a natural language instruction.
+This is a feature that lets you select a block of code and edit it using natural language instructions.
 
 ![18_edits](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/18_edits.png)
 For this, we automatically retrieve:
