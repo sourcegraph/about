@@ -134,7 +134,7 @@ For this, we automatically retrieve:
 
 - Surrounding code, both before and after the cursor
 - Diagnostic information like warnings and errors
-- User-defined contexts
+- User-specified context from @-mentions
 
 In the future, we’re planning to incorporate code graph contexts as well. By bringing diagnostic information, we're able to provide more appropriate code edits to the selected range.
 
