@@ -99,7 +99,7 @@ Autocomplete provides code suggestions as you code in your editor. For this feat
 
 ![13_autocomplete](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/13_autocomplete.png)
 
-For this, we look at a few sources of information: the cursor position, the surrounding code, and the code graph (a code graph is a representation of the relationships and structures within a codebase, mapping entities such as classes and methods to show how they are interconnected). Using heuristics, such as examining the cursor position within the code graph, we determine if the user wants a single-line suggestion or a multi-line suggestion. Once we determine that, we add more context by looking through recent files and open tabs. Within those, we find similar code snippets to the surrounding code of the current cursor.
+For this, we look at a few sources of information: the cursor position, the surrounding code, and the code graph (a code graph is a representation of the relationships and structures within a codebase, mapping entities such as classes and methods to show how they are interconnected). We use the current cursor position within the code graph to determine if the user wants a single-line suggestion or a multi-line suggestion. Once we determine that, we add more context by looking through recent files and open tabs. Within those, we find code snippets related to the code you're currently writing.
 
 ![14_autocomplete2](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/14_autocomplete2.png)
 
