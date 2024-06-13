@@ -47,6 +47,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                     contentClassName,
                     'prose',
                     'prose-headings:font-semibold',
+                    'prose-headings:mb-2.5',
                     'prose-a:text-violet-500',
                     'prose-a:no-underline',
                     'hover:prose-a:text-violet-400',
