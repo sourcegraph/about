@@ -136,7 +136,7 @@ For this, we automatically retrieve:
 - Diagnostic information like warnings and errors
 - User-specified context from @-mentions
 
-By including diagnostic information, we're able to provide more appropriate code edits to the selected range of code. In the future, we plan to incorporate code graph context here as well.
+By including diagnostic information, we're able to provide more appropriate code edits to the selected range of code. With the code editing feature, we currently put greater emphasis on the users prompt and rely on the above context sources to generate high quality code output. In the future, we plan to incorporate code graph context here as well.
 
 ---
 
