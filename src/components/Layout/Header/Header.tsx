@@ -54,7 +54,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
 
     return (
         <Disclosure as="nav" className={classNames('fixed top-0 left-0 right-0 z-[1030]')} ref={navRef}>
-            {({ open }) => (
+            {({ open, close }) => (
                 <>
                     <Banner />
                     <HeaderContent
@@ -63,6 +63,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
                         open={open}
                         sticky={sticky}
                         source={source}
+                        close={close}
                     />
                 </>
             )}
@@ -106,13 +107,14 @@ const HEADER_CONTENT_THEME_CLASS: Record<
     },
 }
 
-const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean; source: string }> = ({
-    colorTheme,
-    open,
-    sticky,
-    source,
-    ...props
-}) => {
+const HeaderContent: FunctionComponent<
+    Props & {
+        open: boolean
+        sticky: boolean
+        source: string
+        close: () => void
+    }
+> = ({ colorTheme, open, sticky, source, close, ...props }) => {
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (): void => openModal(source)
@@ -122,6 +124,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
     const callToAction = (
         <>
             <MeetWithProductExpertButton
+                id="topnav"
                 buttonLocation={buttonLocation.nav}
                 buttonClassName={classNames(
                     '!font-semibold',
@@ -131,6 +134,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                 requestInfo={true}
             />
             <Link
+                id="topnav"
                 href="https://sourcegraph.com/sign-in?returnTo=/cody/manage"
                 title="Get started with Cody"
                 className={classNames(
@@ -144,6 +148,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                 Login
             </Link>
             <button
+                id="topnav"
                 type="button"
                 className={classNames(
                     'btn min-w-fit px-6 lg:px-4',
@@ -191,6 +196,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                                     <div className="hidden flex-1 md:ml-4 lg:block">
                                         <div className="flex space-x-3">
                                             <NavItems
+                                                close={close}
                                                 classes={{
                                                     ...classes,
                                                     item: classNames(
@@ -239,6 +245,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
             >
                 <div className="space-y-1 px-2 pt-2 pb-3">
                     <NavItems
+                        close={close}
                         linkElement={DisclosureButton}
                         classes={{
                             ...classes,
@@ -253,5 +260,7 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
 }
 
 const DisclosureButton: React.FunctionComponent<
-    Pick<React.ComponentProps<typeof Link>, 'href' | 'className' | 'aria-current' | 'children'>
-> = props => <Disclosure.Button as={Link} {...props} />
+    Pick<React.ComponentProps<typeof Link>, 'href' | 'className' | 'aria-current' | 'children'> & {
+        close: () => void
+    }
+> = ({ close, ...props }) => <Link id="topnav" {...props} onClick={() => close()} />
