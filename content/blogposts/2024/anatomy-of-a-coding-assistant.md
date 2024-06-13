@@ -64,7 +64,7 @@ Chat allows you to ask questions about your codebase and generate code that's ta
 
 ![9_context](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/9_context.png)
 
-For automatic context fetching, we’ve found that there are two options that work fairly well:
+For code search, we use two techniques for surfacing relevant snippets:
 
 1. **Indexed search:** We ask an LLM a question like, "Given this user query, what keywords should be used to search for relevant parts of the codebase?" Once the AI provides keywords, we use a search engine that leverages indexing to perform the search. We get search rankings, and based on a predefined token limit, we send the most relevant search results back to the main AI model you're having a conversation with.
     1. For free and Pro users, we use our home-grown search engine called symf, written in Golang, that runs on your local environment.
