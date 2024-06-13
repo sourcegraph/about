@@ -56,7 +56,7 @@ In this post, we're going to take a look at how context fetching works for each 
 
 ![8_chat](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/8_chat.png)
 
-Chat is the feature that allows you to interact with an AI model about your codebase. For this, we want a few things:
+Chat allows you to ask questions about your codebase and generate code that's tailored to work within your codebase. For this, we want a few things:
 
 1. **Conversation history:** We need to keep track of the entire conversation history so it makes sense as continuous chat.
 2. **Automatic context fetching:** It's important to automatically fetch the most relevant code snippets related to the user's query.
