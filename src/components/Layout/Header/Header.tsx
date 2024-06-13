@@ -3,6 +3,7 @@ import { FunctionComponent, useState, useEffect, RefObject } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
+import { useTheme } from 'next-themes';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -118,7 +119,18 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
     const handleOpenModal = (): void => openModal(source)
     const dark = colorTheme === 'dark' || colorTheme === 'purple'
     const classes = HEADER_CONTENT_THEME_CLASS[colorTheme]
+    const { theme, setTheme } = useTheme();
+     const [mounted, setMounted] = useState(false);
+  
+    const toggleTheme = (): void => { setTheme(theme === 'dark' ? 'light' : 'dark') };
+      useEffect(() => {
+    setMounted(true);
+  }, []);
 
+  if (!mounted) {
+    return null;
+  }
+ 
     const callToAction = (
         <>
             <MeetWithProductExpertButton
@@ -153,6 +165,13 @@ const HeaderContent: FunctionComponent<Props & { open: boolean; sticky: boolean;
                 onClick={handleOpenModal}
             >
                 Get Cody for free
+            </button>
+            <button
+                type="button"
+                className='btn min-w-fit px-6 lg:px-4 text-black dark:btn-inverted-primary dark:text-white btn-primary'
+                title="Theme test" onClick={toggleTheme}
+            >
+                Switch to {theme === 'dark' ? 'light' : 'dark'} mode
             </button>
         </>
     )
