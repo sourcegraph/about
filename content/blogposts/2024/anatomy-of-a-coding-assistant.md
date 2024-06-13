@@ -24,7 +24,7 @@ If you ask ChatGPT a coding question about your particular codebase, it won’t 
 
 ![3_chatgpt](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/3_chatgpt.png)
 
-Even if it happens to be open-sourced, the answer you get might be outdated or not accurate enough.
+Even if it happens to be open source, the answer you get might be outdated or not accurate enough.
 
 ![4_chatgpt2](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/4_chatgpt2.png)
 
