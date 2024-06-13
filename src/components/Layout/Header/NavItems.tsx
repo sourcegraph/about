@@ -194,7 +194,7 @@ const NavItemMenu: React.FunctionComponent<
                             ) : (
                                 <Menu.Item key={link.name}>
                                     {({ active }) => (
-                                        <>
+                                        <div>
                                             <Link
                                                 id={id}
                                                 href={link.href}
@@ -210,7 +210,7 @@ const NavItemMenu: React.FunctionComponent<
                                                     <Badge className="ml-4" size="small" text={link.badgeText} />
                                                 )}
                                             </Link>
-                                        </>
+                                        </div>
                                     )}
                                 </Menu.Item>
                             )
