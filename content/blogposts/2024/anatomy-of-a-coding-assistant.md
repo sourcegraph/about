@@ -76,7 +76,7 @@ For code search, we use two techniques for surfacing relevant snippets:
 ![11_embeddings](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/11_embeddings.png)
     
 
-In our product, [we default to a mix of both](https://github.com/sourcegraph/cody/blob/0238df0eda7e6e9be03139a56a89e235b76be448/vscode/package.json#L967) with an option to use one or the other.
+Currently, [we default to a mix of both](https://github.com/sourcegraph/cody/blob/0238df0eda7e6e9be03139a56a89e235b76be448/vscode/package.json#L967) with an option to use one or the other.
 
 ### Recent improvements to context fetching for chat
 
