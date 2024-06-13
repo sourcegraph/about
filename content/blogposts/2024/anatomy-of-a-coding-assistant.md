@@ -132,7 +132,7 @@ This is a feature that lets you select a block of code and edit it using a natur
 ![18_edits](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/18_edits.png)
 For this, we automatically retrieve:
 
-- Surrounding code (prefix and suffix)
+- Surrounding code, both before and after the cursor
 - Diagnostic information like warnings and errors
 - User-defined contexts
 
