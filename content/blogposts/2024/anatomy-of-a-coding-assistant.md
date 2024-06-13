@@ -95,7 +95,7 @@ In addition to automatic context fetching, we've found that providing a way for 
 
 ## Context fetching for autocomplete
 
-Autocomplete is the feature that suggests what line(s) of code to write as you go through your code editor. For this feature, we want it to feel as instantaneous as possible because we don’t want to break the flow of the programmer. At the same time, we want to quickly find and identify which code snippets to include as part of the context to provide high-quality suggestions.
+Autocomplete provides code suggestions as you code in your editor. For this feature, we want it to feel as instantaneous as possible because we don’t want to break the flow of the programmer. At the same time, we want to quickly find and identify which code snippets to include as part of the context to provide high-quality suggestions.
 
 ![13_autocomplete](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/13_autocomplete.png)
 
