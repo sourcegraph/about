@@ -82,7 +82,7 @@ In our product, [we default to a mix of both](https://github.com/sourcegraph/cod
 
 ### Recent improvements to context fetching for chat
 
-With the June release, we made several improvements: Enterprise context now rewrites queries, enabling us to handle longer and foreign-language questions. We also detect filenames and symbols in queries, addressing a class of "easy-looking" questions users expect us to get right.
+With [the June release](https://sourcegraph.com/blog/release/june-2024), we made several improvements: Enterprise context now rewrites queries, enabling us to handle longer and foreign-language questions. We also detect filenames and symbols in queries, addressing a class of "easy-looking" questions users expect us to get right.
 
 ---
 
