@@ -16,7 +16,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/1_po
 
 Have you ever wondered how an AI coding assistant works?
 
-We’ve been working on our AI coding assistant, Cody, for a while now, and over time we’ve learned that really, ***context is king***.
+We’ve been working on our AI coding assistant, [Cody](https://sourcegraph.com/cody), for a while now, and over time we’ve learned that really, ***context is king***.
 
 ![2_octopus](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/2_octopus.png)
 
