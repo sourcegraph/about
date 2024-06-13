@@ -42,7 +42,7 @@ The reality is, if you look at a coding assistant like [Sourcegraph Cody](https:
 
 ![6_edits](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/6_edits.png)
 
-Each of these features works very differently from one another. The mental model of the user and the requirements are different for each. For autocomplete, speed is key. You want it to be very fast and accurate enough so that it doesn’t interrupt the programmer’s flow. On the other hand, for chat, accuracy and the quality of the responses may be more important.
+Each of these features works very differently from one another. The mental model of the user and the requirements are different for each. **For autocomplete, speed is key.** You want it to be very fast and accurate enough so that it doesn’t interrupt the programmer’s flow. On the other hand, **for chat, accuracy and the quality of the responses may be more important**.
 
 ![7_tradeoff](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/7_tradeoff.png)
 
