@@ -146,18 +146,12 @@ Even though creating and polishing a context fetching mechanism for each of thes
 
 Some of the areas we’re still actively working are:
 
-- Underlying LLM models, comparing different models and fine-tuning some of them
+- Underlying LLM models, comparing different models and [fine-tuning](https://sourcegraph.com/blog/enhancing-code-completion-for-rust-in-cody) some of them
 - A query rewriting strategy where we have AI rewrite user queries to fit our context-fetching system better
 - (Work in progress) a smarter way to determine what types of context need to be fetched for each query
 
 Our long-term goal is to create an AI coding assistant that finds the right context for you in a smart way, not just from your codebase, but from any tool or reference source that a human software engineer would use in order to get the job done.
 
----
+## Try Cody
 
-## Conclusion
-
-In this article, I've given you an overview of how an AI coding assistant, [Sourcegraph Cody](https://sourcegraph.com/cody), fetches the right context for the right features. I hope you can see that a lot of work actually goes into this. Part of the reason is because, as I said at the beginning, an AI coding assistant is truly many products put together. It's not just a single product, single UI, or a single method that works for everything.
-
-We’ve also discussed further room for improvement because we know our system is not perfect yet. In this regard, we’d love to hear from you if you have any feedback.
-
-We're excited to see what further improvements we can make in the future, as well as what other players in this space will bring about.
+Enjoyed learning about how [Cody](https://sourcegraph.com/cody) works? Give it a try and [let us know](https://x.com/sourcegraph) what you think!
