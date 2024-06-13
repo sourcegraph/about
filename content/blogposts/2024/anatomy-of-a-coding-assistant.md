@@ -60,7 +60,7 @@ Chat allows you to ask questions about your codebase and generate code that's ta
 
 1. **Conversation history:** In a given chat session, we record previous messages as they may contain relevant context for the user's next request.
 2. **Code search:** We fetch the most relevant code snippets related to the user's query from the codebase using search, similar to how a human dev might search for these code snippets.
-3. **User control:** Users should have the ability to mention specific files and provide those directly to the model, and also include the option to reference external sources like Slack threads or Notion documents to enrich the context further.
+3. **User control:** Users should have the ability to mention specific files and provide those directly to the model with an option to reference external sources like Slack threads or Notion documents to enrich the context further.
 
 ![9_context](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/9_context.png)
 
