@@ -107,7 +107,7 @@ For autocomplete, we don't currently use embeddings. Instead, we consider all re
 
 ![15_similar](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/15_similar.png)
 
-Once we create rankings of different code snippets from various sources this way, we combine them using what’s called Reciprocal Rank Fusion. For more details on this, you can find [this other document](https://www.notion.so/How-we-combine-multiple-snippet-lists-d567d4b0a4c54197bc5df6e178749860?pvs=21) about it.
+Once we create rankings of different code snippets from various sources this way, we combine them using what’s called Reciprocal Rank Fusion. For more details on this, you can [read this document](https://www.notion.so/How-we-combine-multiple-snippet-lists-d567d4b0a4c54197bc5df6e178749860?pvs=21).
 
 Context fetching for autocomplete relies mostly on fast classical and compiler-based techniques, rather than LLMs, because we need something that performs very quickly and can be invoked at high volume. As long as the quality of the selected snippets is good enough, the LLM model can use that information to produce high-quality suggestions.
 
