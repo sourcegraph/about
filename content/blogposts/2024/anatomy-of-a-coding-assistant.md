@@ -67,8 +67,6 @@ Chat allows you to ask questions about your codebase and generate code that's ta
 For code search, we use two techniques for surfacing relevant snippets:
 
 1. **AI-enhanced keyword search:** We ask an LLM a question like, "Given this user query, what keywords should be used to search for relevant parts of the codebase?" We use these keywords to query a keyword search index we've created over the codebase. This index returns a set of results, ordered by Sourcegraph's code-aware ranking mechanism, and we select the top results subject to the constraint of the LLM's context window.
-    1. For free and Pro users, we use our home-grown search engine called symf, written in Golang, that runs on your local environment.
-    2. For Enterprise users, we leverage [Sourcegraph’s Code Search](https://sourcegraph.com/code-search) for this.
     
 ![10_indexed](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/10_indexed.png)
     
