@@ -6,7 +6,7 @@ authors:
 publishDate: 2024-06-13T10:00-01:00
 description: "Discover how AI coding assistants like Sourcegraph Cody enhance developer productivity by leveraging context. Learn about features like autocomplete, chat, test generation, and code editing, and how they fetch relevant code snippets to provide accurate suggestions and edits."
 tags: [blog]
-slug: 'content/blogposts/2024/anatomy-of-a-coding-assistant'
+slug: 'anatomy-of-a-coding-assistant'
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/1_pointer.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/1_pointer.png
