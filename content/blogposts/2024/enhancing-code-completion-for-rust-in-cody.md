@@ -8,7 +8,7 @@ authors:
   - name: Beyang Liu
     url: https://x.com/beyang
 publishDate: 2024-06-13T10:00-01:00
-description: "TBD"
+description: "Learn about our efforts to improve LLM code completion performance for the Rust programming language."
 tags: [blog]
 slug: 'enhancing-code-completion-for-rust-in-cody'
 published: true
