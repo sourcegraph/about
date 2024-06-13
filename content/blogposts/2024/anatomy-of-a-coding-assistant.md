@@ -70,7 +70,7 @@ For code search, we use two techniques for surfacing relevant snippets:
     
 ![10_indexed](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/10_indexed.png)
     
-2. **Embeddings:** When we set up embeddings, we first convert code snippets from various files into embeddings in a preprocessing step. Then, when we get the user query, we convert it to an embedding as well. Using these embeddings, we perform vector search to find the most relevant code snippets for the user query. An embedding is a vector representation of a piece of text, and vector search helps find the most relevant pieces of text given another piece of text, such as the user query.
+2. **Embeddings:** Embeddings refer to the internal vector of numbers that LLMs use to represent text. When we set up embeddings, we first convert code snippets from various files into embeddings in an indexing step. At query time, we convert the user query to an embedding vector, too. Using these embeddings, we perform vector search to find the most relevant code snippets for the user query.
     1. To convert code snippets into embeddings, we use either OpenAI’s text-embedding-ada-002 model or Sourcegraph's own model called st-multi-qa-mpnet-base-dot-v1. The choice between these models is [determined by a feature flag](https://github.com/sourcegraph/cody/blob/ee47055967bdb3e65c8694cab726dd47d50c29ba/vscode/src/local-context/local-embeddings.ts#L31). The embeddings are [stored locally on your machine](https://github.com/sourcegraph/cody/blob/main/vscode/src/local-context/local-embeddings.ts#L55).
     
 ![11_embeddings](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/11_embeddings.png)
