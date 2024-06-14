@@ -109,13 +109,13 @@ const CodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => {
             <CodyTestimonials isLight={true} />
             <CodyImageTab
                 icon="/cody/commands-brand-icon.svg"
-                headerText="Run custom and pre-built commands"
+                headerText="Generate, test, and fix code with commands"
                 description={
                     <Heading
                         size="h3"
                         className="mb-0 px-6 pt-[18px] text-lg leading-[30px] !tracking-[-0.25px] text-[#343A4D]"
                     >
-                        Generate, test, and fix code with one-click commands.
+                        Run Cody's one-click commands or create your own custom commands to execute AI workflows.
                     </Heading>
                 }
                 tabContent={IMAGE_TAB_CONTENT}
