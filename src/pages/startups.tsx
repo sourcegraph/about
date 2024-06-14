@@ -1,11 +1,14 @@
-import { FunctionComponent } from 'react'
-import { Layout, Heading, ContentSection, FAQItem, Accordion } from '../components'
+import { FunctionComponent, useState, useEffect } from 'react'
+import { Layout, Heading, ContentSection, FAQItem } from '../components'
+
+import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
+import classNames from 'classnames'
 
 const StartupPage: FunctionComponent = () => {
     const faqData: FAQItem[] = [
         {
             question: 'What benefits does the Sourcegraph for Startups program offer?',
-            answer: 'The program offers a 50% discount on Sourcegraph Enterprise for up to 2 years, as well as dedicated support and resources to help startups succeed.',
+            answer: 'The program offers 6 months of free access to Cody Pro for up to 25 users.',
         },
         {
             question: 'Who is eligible for the Sourcegraph for Startups program?',
@@ -17,7 +20,11 @@ const StartupPage: FunctionComponent = () => {
         },
         {
             question: 'Do I need a Sourcegraph account to apply?',
-            answer: 'Yes; you will need a Sourcegraph account registered to your business email address.',
+            answer: 'Yes; you will need a Sourcegraph account registered to your company email address.',
+        },
+        {
+            question: 'What do',
+            answer: 'As part of the program, we ask that you share your feedback on the product with us. We will also ask to interview you after 6 months to get your feedback on Cody.',
         },
         {
             question: 'What if I am a startup but my company is not on the VC list?',
@@ -25,6 +32,56 @@ const StartupPage: FunctionComponent = () => {
         },
         // Add more FAQ items as needed
     ]
+
+const Accordion: FunctionComponent<{
+    question: string
+    answer: React.ReactNode
+    index: number
+    selectedOption: string
+}> = ({ question, answer, index, selectedOption }) => {
+    const [isOpen, setIsOpen] = useState(false)
+
+    const handleToggle = (): void => {
+        setIsOpen(!isOpen)
+    }
+
+    useEffect(() => {
+        setIsOpen(false)
+    }, [selectedOption])
+    return (
+        <div className="faq rounded-lg border border-gray-200 bg-white" key={index}>
+            <button
+                type="button"
+                className={classNames(
+                    'grid w-full grid-cols-12 items-center  rounded-t-lg p-5 text-left text-base font-semibold leading-5 -tracking-[0.25px] focus:outline-none',
+                    isOpen ? 'bg-gray-50' : ''
+                )}
+                onClick={handleToggle}
+            >
+                <span className="col-span-11 text-gray-700">{question}</span>
+                {isOpen ? (
+                    <ChevronUpIcon
+                        className="col-span-1 w-4 justify-self-end font-bold text-gray-500"
+                        strokeWidth={2.7}
+                    />
+                ) : (
+                    <ChevronDownIcon
+                        className="col-span-1 w-4 justify-self-end font-bold text-gray-500"
+                        strokeWidth={2.7}
+                    />
+                )}
+            </button>
+            <div
+                className={classNames(
+                    'transition-max-height overflow-hidden duration-700 ease-in-out',
+                    isOpen ? 'max-h-[500px] ' : 'max-h-0'
+                )}
+            >
+                <div className="p-5 leading-5 tracking-[-0.25px] text-gray-500">{answer}</div>
+            </div>
+        </div>
+    )
+}
 
     return (
         <Layout
