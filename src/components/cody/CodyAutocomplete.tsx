@@ -79,7 +79,7 @@ export const CodyAutocomplete: FunctionComponent<CodyAutocompleteProps> = ({
                             }
                         )}
                     >
-                        Cody autocompletes single lines, or whole functions, in any programming language, configuration
+                        Cody generates single lines, or whole functions, in any programming language, configuration
                         file, or documentation.
                     </Heading>
                     <div className="flex w-full items-center justify-center rounded-lg bg-gray-50 p-6 md:w-[459px]">
