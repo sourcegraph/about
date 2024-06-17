@@ -143,7 +143,7 @@ By including diagnostic information, we're able to provide more appropriate code
 Over time, we've developed many ways to evaluate different context-fetching methods as well as the underlying LLM models.
 
 For example, we have:
-- a set of ~90 queries we run against open source repos to test the efficiacy of our chat system
+- a set of ~90 queries we run against open source repos to test the efficacy of our chat system
 - an internal leaderboard that automatically evaluates large language models' effectiveness at the features I mentioned above
 - lots and lots of tests that hit our default models and assert various things like non-hallucination, LLMs staying in character, etc.
 
