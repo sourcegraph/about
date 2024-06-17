@@ -66,7 +66,9 @@ Chat allows you to ask questions about your codebase and generate code that's ta
 
 For code search, we use two techniques for surfacing relevant snippets:
 
-1. **AI-enhanced keyword search:** We ask an LLM a question like, "Given this user query, what keywords should be used to search for relevant parts of the codebase?" We use these keywords to query a keyword search index we've created over the codebase. This index returns a set of results, ordered by Sourcegraph's code-aware ranking mechanism, and we select the top results subject to the constraint of the LLM's context window.
+1. **Keyword search:** We first perform a 'query understanding' step, which interprets the user's query and crafts a set of code searches to perform. This step pulls out important entities like file paths and symbols, as well as key terms and their variants. We use both traditional search techniques, and a lightweight LLM to process queries.
+
+In particular, with [the June release](https://sourcegraph.com/blog/release/june-2024), we made several improvements: Enterprise context now rewrites queries, enabling us to handle longer and foreign-language questions. We also detect filenames and symbols in queries, addressing a class of "easy-looking" questions users expect us to get right.
     
 ![10_indexed](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/10_indexed.png)
     
@@ -77,10 +79,6 @@ For code search, we use two techniques for surfacing relevant snippets:
     
 
 Currently, [we default to a mix of both](https://github.com/sourcegraph/cody/blob/0238df0eda7e6e9be03139a56a89e235b76be448/vscode/package.json#L967) with an option to use one or the other.
-
-### Recent improvements to context fetching for chat
-
-With [the June release](https://sourcegraph.com/blog/release/june-2024), we made several improvements: Enterprise context now rewrites queries, enabling us to handle longer and foreign-language questions. We also detect filenames and symbols in queries, addressing a class of "easy-looking" questions users expect us to get right.
 
 ---
 
@@ -99,7 +97,7 @@ Autocomplete provides code suggestions as you code in your editor. For this feat
 
 ![13_autocomplete](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/13_autocomplete.png)
 
-For this, we look at a few sources of information: the cursor position, the surrounding code, and the code graph (a code graph is a representation of the relationships and structures within a codebase, mapping entities such as classes and methods to show how they are interconnected). We use the current cursor position within the code graph to determine if the user wants a single-line suggestion or a multi-line suggestion. Once we determine that, we add more context by looking through recent files and open tabs. Within those, we find code snippets related to the code you're currently writing.
+For this, we look at a few sources of information: the cursor position, the surrounding code, and [the code graph](https://sourcegraph.notion.site/How-do-we-use-the-code-graph-for-autocomplete-context-11145ad3e07049e8ab1add7ac3012f81) (a code graph is a representation of the relationships and structures within a codebase, mapping entities such as classes and methods to show how they are interconnected). We use the current cursor position within the code graph to determine if the user wants a single-line suggestion or a multi-line suggestion. Once we determine that, we add more context by looking through recent files and open tabs. Within those, we find code snippets related to the code you're currently writing.
 
 ![14_autocomplete2](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/14_autocomplete2.png)
 
