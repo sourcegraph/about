@@ -138,6 +138,19 @@ By including diagnostic information, we're able to provide more appropriate code
 
 ---
 
+## A note on evals
+
+Over time, we've developed many ways to evaluate different context-fetching methods as well as the underlying LLM models.
+
+For example, we have:
+- a set of ~90 queries we run against open source repos to test the efficiacy of our chat system
+- an internal leaderboard that automatically evaluates large language models' effectiveness at the features I mentioned above
+- lots and lots of tests that hit our default models and assert various things like non-hallucination, LLMs staying in character, etc.
+
+We've found that developing these testing frameworks is a crucial part of making sure we can keep making progress in our product quality.
+
+---
+
 ## Further room for improvement
 
 Even though creating and polishing a context fetching mechanism for each of these features has taken a lot of work, we must admit that there’s still a lot of room for improvement.
