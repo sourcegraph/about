@@ -5,12 +5,6 @@ import { Tabs } from './Tabs'
 const events = {
     upcoming: [
         {
-            title: 'Code AI Summit',
-            location: 'New York, NY',
-            date: 'Jun 17, 2024',
-            link: 'https://lu.ma/rf872e0k',
-        },
-        {
             title: 'Collision',
             location: 'Toronto',
             date: 'Jun 17-20, 2024',
