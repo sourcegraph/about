@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useState } from 'react'
+import { FunctionComponent, useState } from 'react'
 
 import classNames from 'classnames'
 import { useRouter } from 'next/router'
@@ -16,15 +16,13 @@ import {
     CodyPartners,
     CodyTestimonials,
 } from '../components'
-import { CodyHeadline } from '../components/cody/CodyHeadline'
 import { CodyChooseLlmDualTheme } from '../components/cody/dual-theme/CodyChooseLlmDualTheme'
+import { CodyIntroDualTheme } from '../components/cody/dual-theme/CodyIntroDualTheme'
 import { SourcePoweredDualTheme } from '../components/cody/dual-theme/SourcePoweredDualTheme'
 import { HowCodyWorks } from '../components/cody/HowCodyWorks'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
-import { useFeatureFlag } from '../hooks/useFeatureFlag'
 import { useWindowWidth } from '../hooks/windowWidth'
-import { TelemetryProps } from '../telemetry'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 
@@ -51,7 +49,7 @@ const IMAGE_TAB_CONTENT = [
     },
 ]
 
-const CodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => {
+const CodyPage: FunctionComponent = () => {
     const [isContactModalOpen, setIsContactModalOpen] = useState(false)
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
@@ -61,25 +59,6 @@ const CodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => {
 
     const source = pathname.slice(1) || 'about-home'
     const handleOpenModal = (): void => openModal(source)
-
-    const { flagValue: userFlag, isFlagReady } = useFeatureFlag('cody-value-headline-test')
-
-    useEffect(() => {
-        if (isFlagReady) {
-            const headlineTestEventArguments = {
-                testName: 'ValueHeadlineTestEnrolled',
-                group: (userFlag as string) ?? 'undefined',
-            }
-
-            telemetryRecorder.recordEvent('ValueHeadlineTestEnrolled', 'view', {
-                privateMetadata: headlineTestEventArguments,
-            })
-        }
-    }, [isFlagReady, telemetryRecorder, userFlag])
-
-    if (!isFlagReady) {
-        return null
-    }
 
     return (
         <Layout
@@ -95,11 +74,11 @@ const CodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => {
         >
             <div className="relative">
                 <div className="sg-bg-gradient-cody-light-mobile-hero !absolute top-[310px] z-[10] h-[650px] w-[1000px] md:relative md:hidden md:bg-none" />
-                <CodyHeadline
+                <CodyIntroDualTheme
                     isLight={true}
+                    title="Code more, type less"
                     handleOpenModal={handleOpenModal}
                     wrapperClassName="relative z-[20] md:z-0"
-                    userGroup={userFlag as string}
                 />
                 <CodyAutocomplete isLight={true} wrapperClassName="z-[20] md:z-0" />
             </div>
