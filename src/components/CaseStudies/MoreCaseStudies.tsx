@@ -2,8 +2,6 @@ import { FunctionComponent } from 'react'
 
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 
-import { Heading } from '../Heading'
-
 import { CaseStudyCard } from './CaseStudyCard'
 
 export const CUSTOMER_STORIES = [
@@ -42,9 +40,7 @@ export const CUSTOMER_STORIES = [
 
 const MoreCaseStudies: FunctionComponent = () => (
     <div className="ml-auto flex flex-col pt-16 pb-[18px] md:w-[830px] md:py-16">
-        <Heading size="h2" className="pb-12 !text-4xl md:pb-[59px]">
-            Explore other customer stories
-        </Heading>
+        <h2 className="pb-12 md:pb-[59px]">Explore other customer stories</h2>
         <div className="z-[10] ml-0 flex flex-col-reverse md:flex-col">
             {CUSTOMER_STORIES.map((study, index) => (
                 <div key={index} className="m-0 grid gap-x-[258px]  md:grid-cols-2 ">

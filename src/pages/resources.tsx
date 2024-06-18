@@ -11,7 +11,6 @@ import {
     ContentSection,
     CodyCta,
     useFilters,
-    Heading,
     SearchInput,
 } from '../components'
 import { TelemetryProps } from '../telemetry'
@@ -157,9 +156,7 @@ const Resources: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => 
                     parentClassName="relative !pt-0"
                     className="pt-[72px] pb-[70px] text-center text-white md:pb-[30px]"
                 >
-                    <Heading size="h1" className="pb-6 text-white">
-                        Resources
-                    </Heading>
+                    <h1 className="pb-6 text-white">Resources</h1>
                     <p className="mb-[101px] text-[18px] md:mb-[70px] md:text-[30px]">
                         Videos, guides, customer stories, and more
                     </p>
@@ -172,9 +169,7 @@ const Resources: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => 
                         <p className="pb-1 text-center font-mono font-[500] capitalize lg:text-left">
                             {featuredResource.contentType}
                         </p>
-                        <Heading size="h2" className="mb-8 text-center !text-4xl md:mb-4 lg:text-left">
-                            {featuredResource.title}
-                        </Heading>
+                        <h2 className="mb-8 text-center md:mb-4 lg:text-left">{featuredResource.title}</h2>
                         <Link
                             href={featuredResource.link}
                             className="hidden rounded-[5px] border border-violet-500 px-6 py-2 text-center font-semibold text-violet-500 hover:border-violet-400 hover:text-violet-400 lg:block"

@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 
-import { ContentSection, Layout, HubSpotForm, Heading } from '../components'
+import { ContentSection, Layout, HubSpotForm } from '../components'
 import { DemoVideo } from '../components/DemoVideo'
 import { TelemetryProps } from '../telemetry'
 
@@ -16,9 +16,7 @@ const Demo: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
     >
         <ContentSection className="md:pb-4">
             <div className="mb-8">
-                <Heading size="h1" className="mb-6 text-white">
-                    Schedule a demo with a product expert
-                </Heading>
+                <h1 className="mb-6 text-white">Schedule a demo with a product expert</h1>
                 <p className="mb-16 max-w-3xl text-3xl text-gray-200">
                     Want to see Sourcegraph in action and speak with a product expert? Fill out the form below, and
                     we'll be in touch.

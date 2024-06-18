@@ -1,5 +1,4 @@
 import { ContentSection } from './ContentSection'
-import { Heading } from './Heading'
 import { Tabs } from './Tabs'
 
 const events = {
@@ -77,9 +76,7 @@ const EventsList = (): JSX.Element => (
     <ContentSection parentClassName="md:pt-16" className="lg:px-6">
         <div className="flex flex-col justify-between md:flex-row">
             <div className="max-w-lg pt-16 pb-[52px] md:py-0">
-                <Heading size="h2" className="mb-6 text-center !leading-[40px] !tracking-[-1px] md:text-left">
-                    Events
-                </Heading>
+                <h2 className="mb-6 text-center md:text-left">Events</h2>
                 <p className="pr-5 text-center text-lg tracking-[-0.25px] md:text-left">
                     Sourcegraph actively participates in prominent industry events. We’re always eager to engage with
                     fellow developers, potential partners, and talented individuals seeking career opportunities.
@@ -98,15 +95,15 @@ const EventsList = (): JSX.Element => (
                             <ul className="ml-0 list-outside list-none text-center md:text-left">
                                 {events.upcoming.map(event => (
                                     <li key={event.title} className="p-[25px]">
-                                        <Heading size="h6">{event.date}</Heading>
+                                        <h6>{event.date}</h6>
                                         {event.link ? (
-                                            <Heading size="h4">
+                                            <h4>
                                                 <a href={event.link} target="_blank" rel="noopener noreferrer">
                                                     {event.title}
                                                 </a>
-                                            </Heading>
+                                            </h4>
                                         ) : (
-                                            <Heading size="h4">{event.title}</Heading>
+                                            <h4>{event.title}</h4>
                                         )}
                                         <p className="mb-0 text-base tracking-[-0.25px]">{event.location}</p>
                                     </li>
@@ -122,8 +119,8 @@ const EventsList = (): JSX.Element => (
                             <ul className="ml-0 list-outside list-none text-center md:text-left">
                                 {events.past.map(event => (
                                     <li key={event.title} className="p-[25px]">
-                                        <Heading size="h6">{event.date}</Heading>
-                                        <Heading size="h4">{event.title}</Heading>
+                                        <h6>{event.date}</h6>
+                                        <h4>{event.title}</h4>
                                         <p className="mb-0 text-base tracking-[-0.25px]">{event.location}</p>
                                     </li>
                                 ))}

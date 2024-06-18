@@ -2,7 +2,7 @@ import { FunctionComponent, ReactNode, useState } from 'react'
 
 import classNames from 'classnames'
 
-import { Heading, ContentSection } from '..'
+import { ContentSection } from '..'
 import { useWindowWidth } from '../../hooks/windowWidth'
 
 export const CodyImageTab: FunctionComponent<{
@@ -38,16 +38,14 @@ export const CodyImageTab: FunctionComponent<{
                     src={icon}
                     alt="Cody logo"
                 />
-                <Heading
-                    size="h2"
+                <h2
                     className={classNames('mt-[18px]', {
-                        '!text-4xl text-white': !isLight,
-                        'px-6 !text-[36px] !font-semibold !leading-[40px] !tracking-[-1px] text-[#0F111A] md:!text-[40px]':
-                            isLight,
+                        'text-white': !isLight,
+                        'px-6 text-[#0F111A]': isLight,
                     })}
                 >
                     {headerText}
-                </Heading>
+                </h2>
                 {typeof description === 'string' ? (
                     <p
                         className={classNames('mt-[18px] mb-0 text-lg', {
@@ -85,7 +83,7 @@ export const CodyImageTab: FunctionComponent<{
                                 })}
                                 type="button"
                             >
-                                <Heading size="h5">{content.header}</Heading>
+                                <h5>{content.header}</h5>
                                 <p className="mb-0 text-lg">{content.description}</p>
                             </button>
                         ))}

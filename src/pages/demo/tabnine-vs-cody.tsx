@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Heading, Layout } from '../../components'
+import { Layout } from '../../components'
 import CompareHero from '../../components/Compare/CompareHero'
 import { CompareTables } from '../../components/Compare/CompareTables'
 import { tabnineVsCody } from '../../components/Compare/constants'
@@ -28,12 +28,10 @@ const TabnineVsCodyPage: FunctionComponent = () => {
                     competitorIcon="/assets/compare/tabnine.svg"
                     containerClassName="xl:pt-[121px]"
                 >
-                    <Heading
-                        size="h3"
-                        className="mt-[-15px] mb-0 pb-[5px] font-sf !leading-[30px] !tracking-[-0.25px] lg:w-[671px] lg:text-2xl"
-                    >
-                        Cody Free and Cody Pro offer a wider range of features (autocomplete, chat, and commands) using cloud-based models.
-                    </Heading>
+                    <h3 className="mt-[-15px] mb-0 pb-[5px] lg:w-[671px]">
+                        Cody Free and Cody Pro offer a wider range of features (autocomplete, chat, and commands) using
+                        cloud-based models.
+                    </h3>
 
                     <button
                         type="button"

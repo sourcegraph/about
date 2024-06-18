@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
 
-import { ContentSection, Layout, Heading } from '../components'
+import { ContentSection, Layout } from '../components'
 import { PostsList } from '../components/Blog/PostsList'
 import { useLoadMoreAndSearch } from '../hooks/loadMoreAndSearch'
 import { Post, PostIndexComponentProps } from '../interfaces/posts'
@@ -26,13 +26,11 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
         >
             <ContentSection parentClassName="md:!pt-16 md:!pb-8 flex items-center" className="py-4 md:py-0 lg:px-6">
                 <div className="flex max-w-[624px] flex-col gap-6 px-2 text-center sm:px-4 md:max-w-2xl md:px-0 lg:max-w-3xl mdi:px-4">
-                    <Heading size="h1" className="text-gray-700">
-                        Supporting open source
-                    </Heading>
-                    <Heading size="h3" className="leading-[31.2px] !tracking-[-0.25px] text-gray-500">
+                    <h1 className="text-gray-700">Supporting open source</h1>
+                    <h3 className="text-gray-500">
                         At Sourcegraph, we are committed to supporting the open source projects that form the backbone
                         of our products.
-                    </Heading>
+                    </h3>
                 </div>
             </ContentSection>
 
@@ -52,9 +50,9 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
             <ContentSection parentClassName="!pt-[10px] !pb-0" className="px-6">
                 <div className="flex flex-col justify-start pb-8 md:flex-row md:justify-between md:py-24">
                     <div className="flex flex-col md:w-1/2">
-                        <Heading size="h2" className="pb-6 !leading-[40px] !tracking-[-1px] text-gray-700">
+                        <h2 className="pb-6 text-gray-700">
                             Funding
-                        </Heading>
+                        </h2>
                         <p className="mb-0 max-w-[534px] font-sans text-lg tracking-[-0.25px] text-gray-700">
                             We actively contribute to various funding platforms, including thanks.dev, Open Collective,
                             Stackaid, GitHub Sponsors, and more, to ensure the sustainability of these critical
@@ -129,9 +127,7 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
             </ContentSection>
 
             <ContentSection parentClassName="mt-6 md:mt-0 md:pt-8 md:pb-0" className="lg:px-6">
-                <Heading size="h2" className="text-center !leading-[40px] !tracking-[-1px] md:text-left">
-                    Guest blog posts
-                </Heading>
+                <h2 className="text-center md:text-left">Guest blog posts</h2>
                 <div className="flex-1 p-4 sm:pt-6">
                     {!currentRecords.length ? (
                         <div className="col-span-2 mx-auto mb-16 text-center">

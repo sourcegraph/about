@@ -5,7 +5,7 @@ import RocketLaunchIcon from 'mdi-react/RocketLaunchIcon'
 import UploadIcon from 'mdi-react/UploadIcon'
 import Link from 'next/link'
 
-import { ContentSection, Heading, Layout, ThreeUpText } from '../../components'
+import { ContentSection, Layout, ThreeUpText } from '../../components'
 import { BlogListItem } from '../../components/Blog/BlogListItem'
 
 const threeUpTextItems = [
@@ -97,9 +97,7 @@ const AWS: FunctionComponent = () => (
             className="grid grid-cols-1 gap-x-4 md:mt-[26px] md:grid-cols-2 md:px-6"
         >
             <div className="flex w-full max-w-[782px] flex-col">
-                <Heading size="h1" className="mb-6 text-white xl:w-[612px]">
-                    Sourcegraph is optimized to run on AWS
-                </Heading>
+                <h1 className="mb-6 text-white xl:w-[612px]">Sourcegraph is optimized to run on AWS</h1>
 
                 <p className="mb-8 text-3xl text-gray-200 xl:w-[782px]">
                     Sourcegraph has invested heavily to develop an optimized customer experience on AWS. Sourcegraph has
@@ -127,18 +125,16 @@ const AWS: FunctionComponent = () => (
         />
 
         <ContentSection className="pt-16 pb-10 md:pt-[180px] md:pb-24" parentClassName="!py-0">
-            <Heading size="h2" className="mb-8 !text-4xl text-white md:mb-16">
-                Successful customers
-            </Heading>
+            <h2 className="mb-8 text-white md:mb-16">Successful customers</h2>
             {caseStudies.map(caseStudy => (
                 <BlogListItem key={caseStudy.title} {...caseStudy} />
             ))}
         </ContentSection>
 
         <ContentSection className="flex flex-col items-center pb-16 md:pt-12 md:pb-28" parentClassName="!py-0">
-            <Heading size="h2" className="px-6 text-center !text-4xl text-white">
+            <h2 className="px-6 text-center text-white">
                 Reach out to our partner team to learn more
-            </Heading>
+            </h2>
             <div className="mt-8 flex flex-col gap-5 sm:flex-row">
                 <Link
                     href="mailto:partner@sourcegraph.com"

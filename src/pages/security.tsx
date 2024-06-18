@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import KeyboardArrowRightIcon from 'mdi-react/KeyboardArrowRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Heading, Layout, Tabs } from '../components'
+import { ContentSection, Layout, Tabs } from '../components'
 import { buttonStyle } from '../data/tracking'
 
 const SecurityPage: FunctionComponent = () => (
@@ -19,13 +19,11 @@ const SecurityPage: FunctionComponent = () => (
         >
             <div className="mx-auto max-w-[1062px]">
                 <div className="py-10 px-6 text-center">
-                    <Heading size="h1" className="mb-4">
-                        Security at Sourcegraph
-                    </Heading>
-                    <Heading size="h3" as="h2">
+                    <h1 className="mb-4">Security at Sourcegraph</h1>
+                    <h3>
                         We know that source code is one of your most sensitive assets. Every component of Sourcegraph
                         was designed with security in mind.
-                    </Heading>
+                    </h3>
 
                     <Link
                         href="mailto:security@sourcegraph.com"
@@ -50,12 +48,8 @@ const SecurityPage: FunctionComponent = () => (
                                 className: 'md:text-2xl py-5',
                                 content: (
                                     <div>
-                                        <Heading size="h3" className="mt-4">
-                                            Sourcegraph Cloud
-                                        </Heading>
-                                        <Heading size="h5" as="h4" className="mt-6">
-                                            Infrastructure
-                                        </Heading>
+                                        <h3 className="mt-4">Sourcegraph Cloud</h3>
+                                        <h5 className="mt-6">Infrastructure</h5>
                                         <ul className="mt-4 ml-5 space-y-1.5">
                                             <li>
                                                 All infrastructure is hosted on Google Cloud Platform and managed
@@ -100,9 +94,7 @@ const SecurityPage: FunctionComponent = () => (
                                                 </Link>
                                             </li>
                                         </ul>
-                                        <Heading size="h5" className="mt-6">
-                                            Monitoring and Incident Response
-                                        </Heading>
+                                        <h5 className="mt-6">Monitoring and Incident Response</h5>
                                         <ul className="mt-4 ml-5 space-y-1.5">
                                             <li>
                                                 Our operations team monitors service availability 24x7x365. They
@@ -143,9 +135,7 @@ const SecurityPage: FunctionComponent = () => (
                                             </li>
                                         </ul>
 
-                                        <Heading size="h3" className="mt-10">
-                                            Sourcegraph self-hosted
-                                        </Heading>
+                                        <h3 className="mt-10">Sourcegraph self-hosted</h3>
                                         <p className="mb-0 mt-4">
                                             Sourcegraph self-hosted gives you the most control over deployment and
                                             security options.
@@ -198,9 +188,9 @@ const SecurityPage: FunctionComponent = () => (
                                             </li>
                                         </ul>
 
-                                        <Heading size="h3" className="mt-6">
+                                        <h3 className="mt-6">
                                             Shared security model for Sourcegraph Cloud and Sourcegraph.com
-                                        </Heading>
+                                        </h3>
                                         <ul className="mt-4 ml-5 space-y-1.5">
                                             <li>
                                                 For these products, Sourcegraph (the company) handles the security of
@@ -219,12 +209,8 @@ const SecurityPage: FunctionComponent = () => (
                                             </li>
                                         </ul>
 
-                                        <Heading size="h3" className="mt-6">
-                                            General security practices{' '}
-                                        </Heading>
-                                        <Heading size="h5" className="mt-4">
-                                            Development
-                                        </Heading>
+                                        <h3 className="mt-6">General security practices </h3>
+                                        <h5 className="mt-4">Development</h5>
                                         <ul className="mt-4 ml-5 space-y-1.5">
                                             <li>
                                                 Access to all internal systems is protected by multi-factor
@@ -253,9 +239,7 @@ const SecurityPage: FunctionComponent = () => (
                                             <li>Our software components are monitored for CVEs.</li>
                                         </ul>
 
-                                        <Heading size="h5" className="mt-6">
-                                            Code Security
-                                        </Heading>
+                                        <h5 className="mt-6">Code Security</h5>
                                         <ul className="mt-4 ml-5 space-y-1.5">
                                             <li>
                                                 We employ various tools and processes to ensure Sourcegraph’s code
@@ -269,9 +253,7 @@ const SecurityPage: FunctionComponent = () => (
                                             <li>Internal audits of our code and systems are run regularly.</li>
                                         </ul>
 
-                                        <Heading size="h5" className="mt-6">
-                                            Container Security
-                                        </Heading>
+                                        <h5 className="mt-6">Container Security</h5>
                                         <ul className="mt-4 ml-5 space-y-1.5">
                                             <li>
                                                 We utilize industry-leading practices to build and ship our software,
@@ -284,9 +266,7 @@ const SecurityPage: FunctionComponent = () => (
                                             </li>
                                         </ul>
 
-                                        <Heading size="h3" className="mt-6">
-                                            Software Bill of Materials and OSS usage
-                                        </Heading>
+                                        <h3 className="mt-6">Software Bill of Materials and OSS usage</h3>
                                         <p className="mt-4">
                                             A full list of tools and licenses can be found{' '}
                                             <Link
@@ -307,9 +287,7 @@ const SecurityPage: FunctionComponent = () => (
                                 className: 'md:text-2xl py-5',
                                 content: (
                                     <div>
-                                        <Heading size="h3" className="my-4">
-                                            Trust & Compliance
-                                        </Heading>
+                                        <h3 className="my-4">Trust & Compliance</h3>
                                         <p className="text-lg">
                                             For details on our information security practices or to request a copy of
                                             our SOC 2 Report, please visit our Security Trust Portal.
@@ -324,9 +302,7 @@ const SecurityPage: FunctionComponent = () => (
                                             Go to Security Trust Portal
                                         </Link>
 
-                                        <Heading size="h5" as="h4" className="mt-8 mb-4 text-xl">
-                                            Subprocessors
-                                        </Heading>
+                                        <h5 className="mt-8 mb-4">Subprocessors</h5>
                                         <p className="text-lg">
                                             For a list of Sourcegraph's subprocessors, please visit the link below.
                                         </p>
@@ -349,9 +325,7 @@ const SecurityPage: FunctionComponent = () => (
                                 className: 'md:text-2xl py-5',
                                 content: (
                                     <div>
-                                        <Heading size="h3" className="my-4">
-                                            Program
-                                        </Heading>
+                                        <h3 className="my-4">Program</h3>
                                         <p className="mb-8 text-lg">
                                             Sourcegraph hosts a private bug bounty program on HackerOne. If you believe
                                             that you have found a vulnerability related to Sourcegraph, please reach out

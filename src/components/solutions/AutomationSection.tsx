@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 
-import { Heading, ContentSection } from '..'
+import { ContentSection } from '..'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
 
@@ -27,15 +27,15 @@ export const AutomationSection: FunctionComponent<AutomationSectionProps> = ({
             className="flex flex-col gap-6 xl:px-6"
         >
             <div className="w-full p-6 md:w-[822px]">
-                <Heading
-                    size="h2"
+                <h2
+                   
                     className={classNames(
-                        '!pb-4 !font-["Source_Sans_Pro"] !text-[43px] !font-semibold !leading-[43px] !-tracking-[1px] md:pb-0 md:!text-[40px] md:!leading-10',
+                        '!pb-4 md:pb-0',
                         titleTextColor ?? '!text-gray-700'
                     )}
                 >
                     Automate and track large scale code changes
-                </Heading>
+                </h2>
                 <p
                     className={classNames(
                         'mb-1 flex text-2xl font-normal leading-[30px] -tracking-[0.25px] md:w-full',

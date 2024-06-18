@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 
-import { ContentSection, Heading } from '..'
+import { ContentSection } from '..'
 import { DevPlatformsSection } from '../Enterprise/DevPlatformsSection'
 
 export const HowCodyWorks: FunctionComponent<{ isLight: boolean }> = ({ isLight = false }) => (
@@ -19,15 +19,14 @@ export const HowCodyWorks: FunctionComponent<{ isLight: boolean }> = ({ isLight 
                 'pb-16 pt-[84px]': isLight,
             })}
         >
-            <Heading
-                size="h2"
-                className={classNames('pb-4 !text-[40px] !leading-10 !-tracking-[1px]', {
+            <h2
+                className={classNames('pb-4', {
                     'text-white': !isLight,
                     'text-[#000]': isLight,
                 })}
             >
                 Works with your existing code hosts and IDEs
-            </Heading>
+            </h2>
             <p
                 className={classNames('text-2xl leading-[30px] -tracking-[0.25px]', {
                     'text-gray-200': !isLight,

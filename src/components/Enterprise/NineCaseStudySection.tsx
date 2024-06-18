@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Heading } from '..'
+import { ContentSection } from '..'
 
 export const NineCaseStudySection: FunctionComponent = () => (
     <ContentSection
@@ -20,15 +20,11 @@ export const NineCaseStudySection: FunctionComponent = () => (
         <div className="relative flex max-w-[479px] flex-col gap-16">
             <div>
                 <p className="mb-0  font-sans text-[75px] font-semibold leading-[93.75px]">$276K</p>
-                <Heading size="h3" className="!leading-[30px] !tracking-[-0.25px] text-gray-200">
-                    Engineering time saved
-                </Heading>
+                <h3 className="text-gray-200">Engineering time saved</h3>
             </div>
             <div>
                 <p className="mb-0 font-sans text-[75px] font-semibold leading-[93.75px]">1,200 hours</p>
-                <Heading size="h3" className="!leading-[30px] !tracking-[-0.25px] text-gray-200">
-                    Estimated annual time savings
-                </Heading>
+                <h3 className="text-gray-200">Estimated annual time savings</h3>
             </div>
             <div>
                 <Link

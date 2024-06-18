@@ -5,7 +5,6 @@ import Link from 'next/link'
 
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 import { ContentSection } from '../ContentSection'
-import { Heading } from '../Heading'
 
 interface ContactUsCtaProps {
     buttonClassNames?: string
@@ -26,9 +25,7 @@ export const ContactUsCta: FunctionComponent<ContactUsCtaProps> = ({
         )}
         parentClassName={classNames('md:px-[80px] py-[96px]', parentClassNames)}
     >
-        <Heading size="h2" className="!leading-10 !tracking-[-1px] text-white">
-            Contact us for a demo or to start an enterprise trial
-        </Heading>
+        <h2 className="text-white">Contact us for a demo or to start an enterprise trial</h2>
         <div className="text-center md:items-center">
             <div
                 className={classNames(

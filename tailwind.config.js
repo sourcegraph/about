@@ -86,59 +86,33 @@ module.exports = {
     }),
 
     fontFamily: {
-      sans: [
-        'Source Sans Pro',
-        'ui-sans-serif',
-        'system-ui',
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        '"Noto Sans"',
-        'sans-serif',
-      ],
-      systemSans: [
-        'ui-sans-serif',
-        'system-ui',
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        '"Noto Sans"',
-        'sans-serif',
-      ],
-      mono: ['ui-monospace', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
-      systemMono: ['ui-monospace', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
-      grotesk: ['Space Grotesk'],
-      spaceMono: ['Space Mono'],
+      sans: ['Inter'],
+      mono: ['Roboto mono'],
+      display: ['Space Grotesk'],
     },
 
     fontSize: {
-      xs: ['0.75rem', { lineHeight: '1.125rem' }], // 12px / 18px
-      sm: ['0.875rem', { lineHeight: '1.313rem', fontWeight: '400', letterSpacing: '0' }], // 14px / 21px
-      base: ['1rem', { lineHeight: '1.5rem', fontWeight: '400', letterSpacing: '-0.005em' }], // 16px / 24px
-      lg: ['1.12rem', { lineHeight: '1.688rem', fontWeight: '400', letterSpacing: '-0.005em' }], // 18px / 27px
-      xl: ['1.25rem', { lineHeight: '1.75rem' }], // 20px / 28px
-      '2xl': ['1.5rem', { lineHeight: '2.125rem' }], // 24px / 34px
-      '3xl': ['1.875rem', { lineHeight: '2.625rem' }], // 30px / 42px
-      '4xl': ['2.25rem', { lineHeight: '2.688rem' }], // 36px / 43px
-      '5xl': ['2.5rem', { lineHeight: '3rem' }], // 40px / 48px
-      '6xl': ['3rem', { lineHeight: '3.625rem' }], // 48px / 58px
-      '7xl': ['3.25rem', { lineHeight: '3.875rem' }], // 52px / 62px
-      '8xl': ['3.875rem', { lineHeight: '4.625rem' }], // 62px / 74px
+      xs: ['0.75rem', { lineHeight: '1.5' }], // 12px / 18px
+      sm: ['0.875rem', { lineHeight: '1.5' }], // 14px / 21px
+      base: ['1rem', { lineHeight: '1.5' }], // 16px / 24px
+      lg: ['1.125rem', { lineHeight: '1.5' }], // 18px / 27px
+      xl: ['1.25rem', { lineHeight: '1.5' }], // 20px / 28px
+      '2xl': ['1.5rem', { lineHeight: '1.4' }], // 24px / 34px
+      '3xl': ['1.875rem', { lineHeight: '1.3' }], // 30px / 42px
+      '4xl': ['2.25rem', { lineHeight: '1.2' }], // 36px / 43px
+      '5xl': ['2.5rem', { lineHeight: '1.2' }], // 40px / 48px
+      '6xl': ['3rem', { lineHeight: '1.2' }], // 48px / 58px
+      '7xl': ['3.25rem', { lineHeight: '1.2' }], // 52px / 62px
+      '8xl': ['3.875rem', { lineHeight: '1.2' }], // 72px / 74px
       '9xl': ['4.5rem', { lineHeight: '5.375rem' }], // 72px / 86px
     },
 
     letterSpacing: {
-      tightest: '-0.02em',
-      tighter: '-0.01em',
-      tight: '-0.005em',
+      tightest: '-1px',
+      tighter: '-0.5px',
+      tight: '-0.25px',
       normal: 0,
-      wide: '0.03em',
+      wide: '0.25px',
     },
 
     // This extends (not replaces) theme properties

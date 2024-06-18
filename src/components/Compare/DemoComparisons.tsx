@@ -3,8 +3,6 @@ import { FunctionComponent } from 'react'
 import KeyboardArrowRightIcon from 'mdi-react/KeyboardArrowRightIcon'
 import Link from 'next/link'
 
-import { Heading } from '../Heading'
-
 const data = [
     {
         name: 'Compare Cody to GitHub’s Copilot',
@@ -40,9 +38,9 @@ const data = [
 
 export const DemoComparisons: FunctionComponent = () => (
     <div className="mx-auto mb-10 max-w-[1232px]  lg:pt-10">
-        <Heading size="h2" className="mb-10 px-4 !leading-10 !tracking-[-1px] lg:mb-[75px] lg:px-0">
+        <h2 className="mb-10 px-4 lg:mb-[75px] lg:px-0">
             Compare other code AI assistants
-        </Heading>
+        </h2>
         <div className="grid grid-cols-1 gap-10 text-center md:grid-cols-3">
             {data?.map(assistant => (
                 <div className="col-span mb-10 rounded p-10 text-left sm:p-8" key={assistant.name}>
@@ -52,9 +50,9 @@ export const DemoComparisons: FunctionComponent = () => (
                         alt={assistant.name}
                     />
                     <img src="/cody-logomark-default.svg" className="h-6 w-6 mb-2 inline" alt="Cody" />
-                    <Heading size="h3" className="mb-6 text-2xl leading-[30px] !tracking-[-0.25px] text-black">
+                    <h3 className="mb-6 text-black">
                         {assistant.name}
-                    </Heading>
+                    </h3>
                     <Link
                         href={assistant.url}
                         className="btn-link flex font-semibold tracking-[-0.25px]"

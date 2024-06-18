@@ -8,7 +8,7 @@ import CurrencyDollar from 'mdi-react/CurrencyUsdIcon'
 import MinusCircle from 'mdi-react/MinusCircleIcon'
 import Link from 'next/link'
 
-import { ContentSection, CustomerLogos, Heading, HubSpotForm, Layout, ThreeUpText } from '../components'
+import { ContentSection, CustomerLogos, HubSpotForm, Layout, ThreeUpText } from '../components'
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { buttonLocation } from '../data/tracking'
 
@@ -35,25 +35,21 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
         {
             icon: <MinusCircle className="mx-auto mb-6 rounded bg-violet-200 p-2 text-violet-400" size={48} />,
             description: (
-                <Heading size="h4" className="mx-auto px-1 text-center text-white">
-                    Eliminating other search tools and solutions
-                </Heading>
+                <h4 className="mx-auto px-1 text-center text-white">Eliminating other search tools and solutions</h4>
             ),
         },
         {
             icon: <CodeTags className="mx-auto mb-6 rounded bg-violet-200 p-2 text-violet-400" size={48} />,
             description: (
-                <Heading size="h4" className="mx-auto px-1 text-center text-white">
+                <h4 className="mx-auto px-1 text-center text-white">
                     Reduced developer labor cost for typical search and understanding activities
-                </Heading>
+                </h4>
             ),
         },
         {
             icon: <CurrencyDollar className="mx-auto mb-6 rounded bg-violet-200 p-2 text-violet-400" size={48} />,
             description: (
-                <Heading size="h4" className="mx-auto px-1 text-center text-white">
-                    Labor savings for additional use cases
-                </Heading>
+                <h4 className="mx-auto px-1 text-center text-white">Labor savings for additional use cases</h4>
             ),
         },
     ]
@@ -74,12 +70,10 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                 className="!mt-[22px] flex flex-col justify-between gap-6 md:flex-row xl:px-6"
             >
                 <div className="max-w-[637px]">
-                    <Heading size="h1" className="text-white">
-                        The Total Economic Impact™ of Sourcegraph code intelligence platform
-                    </Heading>
-                    <Heading size="h3" as="h2" className="mt-6 text-gray-200">
+                    <h1 className="text-white">The Total Economic Impact™ of Sourcegraph code intelligence platform</h1>
+                    <h3 className="mt-6 text-gray-200">
                         A commissioned study conducted by Forrester Consulting on behalf of Sourcegraph
-                    </Heading>
+                    </h3>
                 </div>
                 <div className={classNames(styles.form, 'md:min-w-[400px] xl:min-w-[517px]')} id="get-report-form">
                     <HubSpotForm
@@ -92,9 +86,9 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
             </ContentSection>
 
             <div className="mt-16 bg-violet-700 py-6 px-6 md:mt-24 md:py-24">
-                <Heading size="h2" as="h3" className="text-center !text-4xl text-white">
+                <h2 className="text-center text-white">
                     Key findings
-                </Heading>
+                </h2>
                 <p className="mx-auto mt-[30px] max-w-[572px] text-center text-lg text-gray-100">
                     Relying on customer interviews, data collection, and financial analysis, Forrester Consulting
                     concluded that Sourcegraph can provide customers:
@@ -115,9 +109,9 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                 </div>
             </div>
 
-            <Heading size="h2" as="h3" className="mt-16 px-6 text-center !text-4xl text-white md:mt-24">
+            <h2 className="mt-16 px-6 text-center text-white md:mt-24">
                 Incremental profit for customers derives from:
-            </Heading>
+            </h2>
 
             <ThreeUpText
                 items={threeUpTextItems}
@@ -125,18 +119,18 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                 wrapperClassName="!gap-6"
             />
 
-            <Heading size="h1" as="h3" className="mt-16 px-6 text-center text-white md:mt-[192px]">
+            <h1 className="mt-16 px-6 text-center text-white md:mt-[192px]">
                 How Sourcegraph achieves this impact
-            </Heading>
+            </h1>
 
             <ContentSection
                 className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 xl:px-6"
                 parentClassName="px-0 overflow-x-clip"
             >
                 <div className="max-w-[628px] px-6 xl:px-0">
-                    <Heading size="h2" as="h3" className="!text-4xl text-white">
+                    <h2 className="text-white">
                         Sourcegraph is a code intelligence platform
-                    </Heading>
+                    </h2>
                     <p className="mt-6 text-lg text-gray-200">
                         Sourcegraph understands various developer search use cases and effectively facilitates their
                         application, be it debugging, seeking broad understanding, code reuse, code health analysis, or
@@ -180,9 +174,9 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
             />
 
             <ContentSection className="py-8 md:pt-[144px]" parentClassName="!pb-0 md:!py-0">
-                <Heading size="h2" className="mx-auto mb-24 text-center !text-4xl text-white">
+                <h2 className="mx-auto mb-24 text-center text-white">
                     Sourcegraph meaningfully improves developer workflows
-                </Heading>
+                </h2>
                 <div className="flex flex-col justify-center gap-6 md:flex-row">
                     <WorkflowStats
                         title="Before Sourcegraph:"
@@ -252,10 +246,10 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
             />
 
             <ContentSection className="flex flex-col items-center py-16 md:pt-[208px]" parentClassName="!py-0">
-                <Heading size="h2" className="mx-auto max-w-[846px] text-center !text-4xl text-white">
+                <h2 className="mx-auto max-w-[846px] text-center text-white">
                     Download the full report to discover the ROI and cost savings your enterprise can see with
                     Sourcegraph
-                </Heading>
+                </h2>
                 <div className="mt-8 flex flex-row gap-4">
                     <Link
                         href="#get-report-form"
@@ -274,9 +268,9 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection className="py-8 md:pt-[176px] md:pb-28" parentClassName="!py-0">
-                <Heading size="h2" className="mx-auto max-w-[628px] text-center !text-4xl text-white">
+                <h2 className="mx-auto max-w-[628px] text-center text-white">
                     Sourcegraph is trusted by the world’s leading enterprises
-                </Heading>
+                </h2>
                 <CustomerLogos dark={true} monochrome={true} className="!bg-transparent md:mt-[68px]" />
             </ContentSection>
         </Layout>
@@ -298,9 +292,7 @@ const BatchChangesInsight: FunctionComponent<BatchChangesInsightProps> = ({
         parentClassName="!py-0"
     >
         <div className="max-w-[627px]">
-            <Heading size="h2" className="mx-auto mb-[37px] max-w-[846px] !text-4xl text-white">
-                {heading}
-            </Heading>
+            <h2 className="mx-auto mb-[37px] max-w-[846px] text-white">{heading}</h2>
             {listItems.length > 0 && (
                 <>
                     {paragraph}
@@ -336,9 +328,9 @@ const WorkflowStats: FunctionComponent<WorkflowStatsProps> = ({ title, stats, bo
     <div
         className={`h-100 mx-auto max-w-[519px] rounded border-t-16 border-gray-200 bg-white p-4 shadow-lg sm:p-8 md:max-h-[532px] ${borderColorClass} md:mx-0`}
     >
-        <Heading size="h2" className="mb-6 text-3xl sm:!text-4xl">
+        <h2 className="mb-6">
             {title}
-        </Heading>
+        </h2>
         {stats?.map((stat, index) => (
             <div key={index} className="flex">
                 {title === 'Before Sourcegraph:' ? (

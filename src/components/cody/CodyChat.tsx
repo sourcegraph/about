@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 
-import { ContentSection, Heading } from '..'
+import { ContentSection } from '..'
 import { useWindowWidth } from '../../hooks/windowWidth'
 
 interface CodyChatProps {
@@ -36,25 +36,22 @@ export const CodyChat: FunctionComponent<CodyChatProps> = ({ isLight = false }) 
             <div className={classNames('mx-6 md:ml-14', { 'md:mb-32': !isLight, 'md:mb-0': isLight })}>
                 <div className="flex w-full max-w-[701px] flex-col gap-[18px]">
                     <img className="h-[48px] w-[48px]" src="/cody/chat-brand-icon.svg" alt="Cody Chat" />
-                    <Heading
-                        size="h2"
-                        className={classNames(
-                            'm-0 text-left font-semibold !tracking-[-1px] md:text-4xl md:text-[40px]',
-                            {
-                                'leading-10 text-white': !isLight,
-                                '!leading-[43px] text-[#0F111A] md:!leading-10': isLight,
-                            }
-                        )}
+                    <h2
+                        className={classNames('m-0 text-left', {
+                            'text-white': !isLight,
+                            'text-[#0F111A]': isLight,
+                        })}
                     >
                         AI chat for code generation and explanation
-                    </Heading>
+                    </h2>
                     <h3
                         className={classNames('m-0 text-left md:text-2xl', {
                             'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
                             'text-lg text-gray-200': !isLight,
                         })}
                     >
-                        Generate code on demand using AI. Cody also unblocks you when you’re jumping into new projects or trying to understand legacy code.
+                        Generate code on demand using AI. Cody also unblocks you when you’re jumping into new projects
+                        or trying to understand legacy code.
                     </h3>
                 </div>
             </div>
