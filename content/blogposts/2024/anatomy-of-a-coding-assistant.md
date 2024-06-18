@@ -3,7 +3,7 @@ title: "The anatomy of an AI coding assistant"
 authors:
   - name: YK Sugi
     url: https://x.com/ykdojo
-publishDate: 2024-06-13T10:00-01:00
+publishDate: 2024-06-18T10:00-01:00
 description: "Discover how AI coding assistants like Sourcegraph Cody enhance developer productivity by leveraging context. Learn about features like autocomplete, chat, test generation, and code editing, and how they fetch relevant code snippets to provide accurate suggestions and edits."
 tags: [blog]
 slug: 'anatomy-of-a-coding-assistant'
