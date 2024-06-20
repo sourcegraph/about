@@ -199,7 +199,7 @@ An example response:
 }
 ```
 
-Confirm that the returned state is QUEUED OR COMPLETED.  If interested in previewing the results, go to to the URL https://[your-sourcegraph-server-url]/<applyURL>
+Confirm that the returned state is QUEUED OR COMPLETED.  If interested in previewing the results, go to to the URL https://_your-sourcegraph-server-url_/<applyURL>
 
 ### 6. Wait for Batch Spec Execution to Complete
 
