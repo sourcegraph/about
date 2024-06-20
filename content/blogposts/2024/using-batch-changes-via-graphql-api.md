@@ -72,7 +72,7 @@ Save the ID returned (`"VXNlcjoyNQ=="` in the above example response) from this 
 
 ### 2. Create the Batch Change Object
 
-Next, create an empty batch change in the namespace.  We'll add the spec file in the next step.  Pass the **NamespaceID** returned from the previous step along with a display name (for $name).
+Next, create an empty batch change in the namespace.  We'll add the spec file in the next step.  Pass the `NamespaceID` returned from the previous step along with a display name (for $name).
 ```python
 mutation CreateEmptyBatchChange($NamespaceID: ID!, $name: String!) {
   createEmptyBatchChange(namespace: $NamespaceID, name: $name) {
@@ -179,11 +179,11 @@ An example response:
   }
 }
 ```
-Confirm that the returned state is QUEUED OR COMPLETED.  If interested in previewing the results, go to to the URL `https://[your-sourcegraph-server-url]/<applyURL>`
+Confirm that the returned state is `QUEUED` or `COMPLETED`.  If interested in previewing the results, go to the URL `https://[your-sourcegraph-server-url]/<applyURL>`
 
 ### 6. Wait for Batch Spec Execution to Complete
 
-If the state in the previous step is QUEUED, run the following until the **state** is COMPLETED AND the **workspaceResolution.state** is COMPLETED.
+If the state in the previous step is `QUEUED`, run the following until the `state` is `COMPLETED` and the `workspaceResolution.state` is `COMPLETED`.
 ```python
 query WorkspaceResolutionStatus($BatchSpecID: ID!) {
   node(id: $BatchSpecID) {
