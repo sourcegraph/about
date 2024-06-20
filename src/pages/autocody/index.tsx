@@ -22,7 +22,7 @@ const AutoCodyPage: FunctionComponent = () => (
             <Principles />
         </div>
 
-        <div className="mx-auto mt-32 max-w-5xl pb-32">
+        <div className="mx-auto mt-32 max-w-6xl pb-32">
             <AutoCodyHowItWorks />
         </div>
     </Layout>

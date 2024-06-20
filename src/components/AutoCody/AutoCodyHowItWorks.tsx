@@ -2,8 +2,8 @@ import { FunctionComponent } from 'react'
 
 const AutoCodyHowItWorks: FunctionComponent = () => (
     <div>
-        <h2 className="text-center text-4xl font-semibold text-[#0F111A]">How does AutoCody work?</h2>
-        <h3 className="mx-auto mt-4 text-center text-xl font-normal tracking-tight text-[#343A4D]">
+        <h2 className="text-center text-4xl font-semibold !tracking-[-1px] text-[#0F111A]">How does AutoCody work?</h2>
+        <h3 className="mx-auto mt-2 text-center text-xl font-semibold tracking-tight text-gray-400">
             A 5-step user{' '}
             <span role="img" aria-label="handshake">
                 🤝
@@ -22,7 +22,7 @@ const AutoCodyHowItWorks: FunctionComponent = () => (
                 </div>
             </div>
             <div className="">
-                <div className="rounded-2xl bg-gray-100 p-8"></div>
+                <div className="rounded-2xl bg-gray-200/30 p-8">VIDEO GOES HERE</div>
             </div>
         </div>
     </div>
