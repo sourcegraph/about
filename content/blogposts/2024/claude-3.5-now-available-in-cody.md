@@ -4,7 +4,7 @@ authors:
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
 publishDate: 2024-06-20T10:00-01:00
-description: "Anthropic’s latest model, Claude 3.5 Sonnet, is available now for Cody Pro. Upgrade to the latest extension versions or try s0.dev to get started."
+description: "Anthropic’s latest model, Claude 3.5 Sonnet, is available now for Cody Pro. Upgrade to the latest extension version or try s0.dev to get started."
 tags: [blog]
 slug: 'claude-3.5-sonnet-now-available-in-cody'
 published: true
