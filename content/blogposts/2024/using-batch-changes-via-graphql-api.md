@@ -1,11 +1,11 @@
 ---
 title: "Using Batch Changes via the Sourcegraph GraphQL API"
+publishDate: 2024-06-20T10:00-07:00
 authors:
   - name: Mike McLaughlin
     url: https://handbook.sourcegraph.com/team/#mike-mclaughlin
   - name: Ted Moskalenko
     url: https://handbook.sourcegraph.com/team/#ted-moskalenko
-publishDate: 2024-04-20T10:00-07:00
 description: "Learn how to create and execute Batch Changes using the Sourcegraph GraphQL API."
 tags: [blog]
 slug: "using-batch-changes-via-graphql-api"
@@ -375,4 +375,4 @@ IMPORTANT: Be sure to iterate over the entire list of IDs in "nodes".  NOTE: if
 
 Batch Changes is a powerful tool to help organizations make changes across many repositories and code hosts, letting you create PRs on all affected repositories and tracking their progress until they're all merged. There are different ways to execute them via UI or CLI, but in specific instances they can also be created and managed via the GraphQL API, offering flexibility to make changes programmatically depending on your specific circumstances.
 
-Check out our [demo code](https://github.com/sourcegraph/blog-examples/blob/main/batch-changes-api/bc.py) to give subscriptions with HTTP callbacks a try!
+If you're interested in trying this yourself, check out our [demo code](https://github.com/sourcegraph/blog-examples/blob/main/batch-changes-api/bc.py) to get started.
