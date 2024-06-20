@@ -4,7 +4,7 @@ authors:
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
 publishDate: 2024-06-20T10:00-01:00
-description: "Anthropic’s latest model, Claude 3.5 Sonnet, is available now for Cody Pro. Upgrade to the latest extension versions or try s0.dev to get started today."
+description: "Anthropic’s latest model, Claude 3.5 Sonnet, is available now for Cody Pro. Upgrade to the latest extension versions or try s0.dev to get started."
 tags: [blog]
 slug: 'claude-3.5-sonnet-now-available-in-cody'
 published: true
@@ -32,7 +32,7 @@ You can try Claude 3.5 Sonnet for yourself on s0.dev to compare it against other
 
 ## Get started with Claude 3.5 Sonnet and Cody
 
-Claude 3.5 Sonnet is available today for Cody Pro, and you can get started with it by downloading the latest [VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) and switching to the pre-release build. It will also be availabl for the [JetBrains plugin](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat/versions) nightly build.
+Claude 3.5 Sonnet is available today for Cody Pro, and you can get started with it by downloading the latest [VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) and switching to the pre-release build. It will also be available for the [JetBrains plugin](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat/versions) in the coming days.
 
 3.5 Sonnet will also come to Cody Enterprise users in the next Sourcegraph release planned for July 5.
 
