@@ -1,11 +1,9 @@
 ---
-title: " Claude 3.5 Sonnet is now available for Cody"
+title: "Claude 3.5 Sonnet is now available for Cody"
 authors:
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
-description: "Anthropic’s latest model, Claude 3.5 Sonnet, is available now for Cody Pro. Upgrade to the latest extension versions or try s0.dev to get started today.
-Title: Claude 3.5 Sonnet is now available for Cody
-"
+description: "Anthropic’s latest model, Claude 3.5 Sonnet, is available now for Cody Pro. Upgrade to the latest extension versions or try s0.dev to get started today."
 tags: [blog]
 slug: 'claude-3.5-sonnet-now-available-in-cody'
 published: true
@@ -23,7 +21,7 @@ Anthropic’s [announcement blog](https://www.anthropic.com/news/claude-3-5-sonn
 
 <Video
   source={{
-    mp4: 'blog/claude-3.5-sonnet-now-available-in-cody/3.5-sonnet-example'
+    mp4: 'blog/claude-3.5-sonnet-now-available-in-cody/3.5-sonnet-example-border'
   }}
   loop={true}
   caption="Claude 3.5 Sonnet vs Claude 3 Opus in s0.dev"
