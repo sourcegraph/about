@@ -24,7 +24,8 @@ First, let's talk about what's happening to junior developers.
 
 ## The Purge (2013)
 
-![The Purge](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-purge.png)
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-purge.png" alt="The Purge" style={{maxWidth: '200px'}} />
+
 
 Let's start with our first story of the day, which is about a law firm and has nothing to do with programming. But it is indeed centrally relevant to the crisis happening right now. My buddy Gene Kim gave me permission to share this story about his friend who runs a 50-person law firm.
 
@@ -46,7 +47,8 @@ You picked a bad year to be a junior associate lawyer, that's for damn sure.
 
 ## The Shining (1980)
 
-![The Shining](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-shining.png)
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-shining.png" alt="The Shining" style={{maxWidth: '200px'}} />
+
 
 Gene shared the law-firm story to illustrate how widespread this problem is. He claims the same chaos, which is undoubtedly unfolding across legal firms everywhere, is also hitting all writing and editorial jobs. Demand for junior writers and editors is evaporating.
 
@@ -62,7 +64,8 @@ But he is terrified for his teenage kids.
 
 ## Invasion of the Body Snatchers (1956)
 
-![Invasion of the Body Snatchers](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/invasion-of-the-body-snatchers.png)
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/invasion-of-the-body-snatchers.png" style={{maxWidth: '200px'}} alt="Invasion of the Body Snatchers" />
+
 
 *Personal anecdote: I watched the pod scene from the original black and white 50s version of this movie when I was about 8, and wow, that was traumatizingly scary. My wife has also been watching horror movies since she was about 4 (!) and we share a deep love of horror, probably because we're all messed up from childhood.*
 
@@ -80,7 +83,8 @@ Well sure, except… What exactly are interns supposed to do now? Their jobs hav
 
 ## The Crazies (2010)
 
-![The Crazies](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-crazies.png)
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-crazies.png" alt="The Crazies" style={{maxWidth: '200px'}} />
+
 
 On to our fourth story, which is *finally* about programming… or at least, about how it doesn't seem to exist anymore.
 
@@ -94,7 +98,8 @@ Since then I've discovered that several other super amazing senior colleagues ha
 
 ## The Thing (1982)
 
-![The Thing](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-thing.png)
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-thing.png" alt="The Thing" style={{maxWidth: '200px'}} />
+
 
 Is it really new? Clearly this "New Thing" has already been around in other domains, since even the original ChatGPT was able to replace a lot of human labor. 
 
@@ -114,7 +119,8 @@ But for the past 5 to 6 weeks, things have been very, very different my friend, 
 
 ## Chopping Mall (1986)
 
-![Choping Mall](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/chopping-mall.png)
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/chopping-mall.png" alt="Choping Mall" style={{maxWidth: '200px'}} />
+
 
 Chat-based programming, which I'm going to preemptively label **Ch**at **O**riented **P**rogramming (CHOP) because I suspect I'll be to be saying it a lot, is a brand-spanking new phenomenon. Like, seriously, just over a month old. I first noticed it when GPT-4o came out, which was mid-May. 
 
@@ -128,7 +134,8 @@ No wonder CHOP got a bad rap.
 
 ## Upgrade (2018)
 
-![Upgrade](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/upgrade.png)
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/upgrade.png" alt="Upgrade" style={{maxWidth: '200px'}} />
+
 
 When the GPT-4o model dropped, it could suddenly edit 1000-line source files (a figure that encompasses 95+% of the source files in most repos worldwide) with tremendous precision and faithfulness to the original, leaving the untouched parts of the file 99.9% diff-perfect. Every once in a very rare while I see it drop a space character, or slightly mis-indent a line. But that's it. It's solid.
 
@@ -146,7 +153,7 @@ Why aren't you upgraded yet?
 
 ## Child's Play (1988)
 
-![Child's Play](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/childs-play.png)
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/childs-play.png" alt="Child's Play" style={{maxWidth: '200px'}} />
 
 Why isn't CHOP, this new chat-first, chat-centered programming technique taking off faster? 
 
@@ -168,7 +175,8 @@ So this time around, can we just skip ahead to the inevitable stage when not usi
 
 ## The Mangler (1995)
 
-![The Mangler](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-mangler.png)
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-mangler.png" alt="The Mangler" style={{maxWidth: '200px'}} />
+
 
 *Trivia: My brother told me that movie was so scary that he had to leave the theater. Never saw it myself, but the short story was fun.*
 
@@ -192,7 +200,8 @@ Not on my project, hopefully! But if the model is currently spitting out similar
 
 ## Cabin in the Woods (2011)
 
-![Cabin in the Woods](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/cabin-in-the-woods.png)
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/cabin-in-the-woods.png" alt="Cabin in the Woods" style={{maxWidth: '200px'}} />
+
 
 GPT's redesign was *awful* – but not when you looked directly at it. Up close it was downright cozy.
 
@@ -210,7 +219,8 @@ Chat, it seems, is *safer* for senior programmers than it is for junior ones. An
 
 ## 28 Days Later (2002)
 
-![28 Days Later](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/28-days-later.png)
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/28-days-later.png" alt="28 Days Later" style={{maxWidth: '200px'}} />
+
 
 A lot of companies ask me, how can we tell which parts were written by the AI and which parts by the programmer? Well, if chat-oriented programming becomes the dominant modality for programmers, then LLMs will be writing the vast majority of all source code worldwide. That's an economic shift, one dramatic enough to change all the roles in software engineering.
 
@@ -232,7 +242,8 @@ The rest of this post is just some direct, simple, and timeless advice for junio
 
 ## Final Destination (2000)
 
-![Final Destination](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/final-destination.png)
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/final-destination.png" alt="Final Destination" style={{maxWidth: '200px'}} />
+
 
 Get good, fast. That's what you need to do. Get ahead of the slackers while our industry turns upside down, and you might be the one to survive.
 
