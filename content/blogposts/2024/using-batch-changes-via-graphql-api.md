@@ -51,7 +51,6 @@ Once the batch specification is complete, the next phase is to start writing cod
 Every Batch Change is "owned" by either an individual user or an [organization](https://sourcegraph.com/docs/admin/organizations#organizations). The owner is referred to as the "namespace".  The APIs referenced in this post require a namespace ID rather than the individual or organization name.
 
 Use the following GraphQL API to convert from the name (either a user name or an organization name) to the ID:
-
 ```python
 query NamespaceByName($name: String!) {
   namespaceByName(name: $name) {
@@ -59,9 +58,7 @@ query NamespaceByName($name: String!) {
   }
 }
 ```
-
 An example response:
-
 ```python
 {
   "data": {
@@ -71,13 +68,11 @@ An example response:
   }
 }
 ```
-
 Save the ID returned (`"VXNlcjoyNQ=="` in the above example response) from this query.  You'll need this ID to be passed to several of the APIs later on in this document.  We'll refer to this value throughout this document as NamespaceID.
 
 ### 2. Create the Batch Change Object
 
 Next, create an empty batch change in the namespace.  We'll add the spec file in the next step.  Pass the **NamespaceID** returned from the previous step along with a display name (for $name).
-
 ```python
 mutation CreateEmptyBatchChange($NamespaceID: ID!, $name: String!) {
   createEmptyBatchChange(namespace: $NamespaceID, name: $name) {
@@ -86,9 +81,7 @@ mutation CreateEmptyBatchChange($NamespaceID: ID!, $name: String!) {
   }
 }
 ```
-
 An example response:
-
 ```python
 {
   "data": {
@@ -99,7 +92,6 @@ An example response:
   }
 }
 ```
-
 Save the ID returned (`"QmF0Y2hDaGFuZ2U6OTQ3"` in the above example response) when running this mutation.  We'll refer to it below as **BatchChangeID**.
 
 Once created, view the Batch Change in the Drafts or navigate to the URL from the above response.
@@ -109,7 +101,6 @@ Once created, view the Batch Change in the Drafts or navigate to the URL from th
 Once the Batch Change specification is created, it needs to be converted to a string variable value to be passed to the GraphQL API.  
 
 **Example: Batch Change Specification**
-
 ```python
 name: test-from-api
 description: Add Hello World to READMEs
@@ -134,17 +125,13 @@ changesetTemplate:
   # Optional: Push the commit to a branch named after this batch change by default.
   branch: ${{ batch_change.name }}
 ```
-
 **Example: String Variable Value**
-
 ```python
 "name: test-from-api\ndescription: Add Hello World to READMEs\n\n# Find the first 100 search results for README files.\n# This could yield less than 100 repos/workspaces if some repos contain multiple READMEs.\non:\n  - repositoriesMatchingQuery: file:README.md count:1\n\n# In each repository, run this command. Each repository's resulting diff is captured.\nsteps:\n  - run: IFS=$'\n'; echo Hello World | tee -a $(find -name README.md)\n    container: ubuntu:18.04\n\n# Describe the changeset (e.g., GitHub pull request) you want for each repository.\nchangesetTemplate:\n  title: Hello World\n  body: My first batch change!\n  commit:\n    message: Append Hello World to all README.md files\n  # Optional: Push the commit to a branch named after this batch change by default.\n  branch: ${{ batch_change.name }}"
 ```
-
 ### 4. Upload the Batch Change Specification
 
 Next, upload the Batch Change specification (to `$batchSpec`) using the format outlined in the previous step.
-
 ```python
 mutation CreateBatchSpecFromRaw($batchSpec: String!, $NamespaceID: ID!, $BatchChangeID: ID!) {
   createBatchSpecFromRaw(batchSpec: $batchSpec, namespace: $NamespaceID, batchChange: $BatchChangeID) {
@@ -153,9 +140,7 @@ mutation CreateBatchSpecFromRaw($batchSpec: String!, $NamespaceID: ID!, $BatchCh
   }
 }
 ```
-
 An example response:
-
 ```python
 {
   "data": {
@@ -166,7 +151,6 @@ An example response:
   }
 }
 ```
-
 Save the ID returned from this mutation (`"QmF0Y2hTcGVjOiJiYzIxNjRlOS02M2M0LTQyNjQtOWMwYS0yOTJmNDViOWFmNjYi"` in the above example response).  It will be referred to later in this document as **BatchSpecID**.
 
 NOTE: if you need to make a change after performing this step, use the `replaceBatchChangeInput` mutation.
@@ -174,7 +158,6 @@ NOTE: if you need to make a change after performing this step, use the `replaceB
 ### 5. Execute the Batch Change
 
 Finally, execute the Batch Change using:
-
 ```python
 mutation ExecuteBatchSpec($BatchSpecID: ID!) {
   executeBatchSpec(batchSpec: $BatchSpecID) {
@@ -184,9 +167,7 @@ mutation ExecuteBatchSpec($BatchSpecID: ID!) {
   }
 }
 ```
-
 An example response:
-
 ```python
 {
   "data": {
@@ -198,13 +179,11 @@ An example response:
   }
 }
 ```
-
 Confirm that the returned state is QUEUED OR COMPLETED.  If interested in previewing the results, go to to the URL `https://[your-sourcegraph-server-url]/<applyURL>`
 
 ### 6. Wait for Batch Spec Execution to Complete
 
 If the state in the previous step is QUEUED, run the following until the **state** is COMPLETED AND the **workspaceResolution.state** is COMPLETED.
-
 ```python
 query WorkspaceResolutionStatus($BatchSpecID: ID!) {
   node(id: $BatchSpecID) {
@@ -220,9 +199,7 @@ query WorkspaceResolutionStatus($BatchSpecID: ID!) {
   }
 }
 ```
-
 An example response:
-
 ```python
 {
   "data": {
@@ -238,11 +215,9 @@ An example response:
   }
 }
 ```
-
 ### 7. Apply the Batch Change
 
 Once ready to apply this Batch Change and create the PRs on your code host, run the following:
-
 ```python
 mutation ApplyBatchChange($BatchSpecID: ID!) {
   applyBatchChange(batchSpec: $BatchSpecID) {
@@ -253,9 +228,7 @@ mutation ApplyBatchChange($BatchSpecID: ID!) {
   }
 }
 ```
-
 An example response:
-
 ```python
 "data": {
     "applyBatchChange": {
@@ -267,11 +240,9 @@ An example response:
   }
 }
 ```
-
 ### 8. View Changeset Details and State
 
 After applying the Batch Change, run this query to see more details:
-
 ```python
 query BatchChangeChangesets($BatchChangeID: ID!) {
   node(id: $BatchChangeID) {
@@ -292,11 +263,8 @@ query BatchChangeChangesets($BatchChangeID: ID!) {
     }
   }
 }
-
 ```
-
 An example response:
-
 ```python
 {
   "data": {
@@ -320,11 +288,9 @@ An example response:
   }
 }
 ```
-
 ### 9. Publish
 
 In order to publish changesets, use the list of changeset IDs from the previous API call and invoke the publish mutation on each:
-
 ```python
 mutation PublishChangesets($BatchChangeID: ID!, $changesets: [ID!]!, $draft: Boolean) {
   publishChangesets(batchChange: $BatchChangeID, changesets: $changesets, draft: $draft) {
@@ -342,9 +308,7 @@ mutation PublishChangesets($BatchChangeID: ID!, $changesets: [ID!]!, $draft: Boo
   }
 }
 ```
-
 An example response:
-
 ```python
 {
   "data": {
@@ -368,7 +332,6 @@ An example response:
   }
 }
 ```
-
 IMPORTANT: Be sure to iterate over the entire list of IDs in "nodes".  NOTE: if there is another page of results, be sure to call this query again with the "after" parameter set to the "endCursor" value.
 
 ### Summary
