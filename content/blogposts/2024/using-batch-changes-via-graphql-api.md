@@ -6,6 +6,8 @@ authors:
     url: https://handbook.sourcegraph.com/team/#mike-mclaughlin
   - name: Ted Moskalenko
     url: https://handbook.sourcegraph.com/team/#ted-moskalenko
+  - name: Ryan Aznar
+    url: https://handbook.sourcegraph.com/team/#ryan-aznar 
 description: "Learn how to create and execute Batch Changes using the Sourcegraph GraphQL API."
 tags: [blog]
 slug: "using-batch-changes-via-graphql-api"
