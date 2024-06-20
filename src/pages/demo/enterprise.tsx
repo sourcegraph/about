@@ -101,9 +101,9 @@ const Enterprise: FunctionComponent = () => {
                     <p className="mb-0 leading-6 tracking-[-0.25px] text-gray-700">Satish Surapaneni</p>
                     <p className="mb-0 text-sm leading-[19.88px]">Senior Engineering Manager, F5</p>
                     <p className="mb-0 pt-3 text-[35px] font-normal leading-[43.75px] -tracking-[2px]">
-                        "We are developing software faster than ever, with aggressive schedules, and across boundaries. Things
-                        that used to be worked out in a closed room now need to be done while teams are spread out across the
-                        globe.”
+                        "We are developing software faster than ever, with aggressive schedules, and across boundaries.
+                        Things that used to be worked out in a closed room now need to be done while teams are spread
+                        out across the globe.”
                     </p>
                 </div>
             </ContentSection>

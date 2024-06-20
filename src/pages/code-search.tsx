@@ -65,7 +65,7 @@ const codeHosts = [
     { name: 'any Git-based code host', icon: '/code-search/code-hosts/any-git.svg' },
 ]
 
-export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
+export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
     <Layout
         meta={{
             title: 'Sourcegraph | Code Search',

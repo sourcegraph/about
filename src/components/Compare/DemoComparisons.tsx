@@ -51,7 +51,7 @@ export const DemoComparisons: FunctionComponent = () => (
                         className="mb-2 mr-6 inline h-6 w-6"
                         alt={assistant.name}
                     />
-                    <img src="/cody-logomark-default.svg" className="h-6 w-6 mb-2 inline" alt="Cody" />
+                    <img src="/cody-logomark-default.svg" className="mb-2 inline h-6 w-6" alt="Cody" />
                     <Heading size="h3" className="mb-6 text-2xl leading-[30px] !tracking-[-0.25px] text-black">
                         {assistant.name}
                     </Heading>

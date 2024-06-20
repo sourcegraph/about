@@ -14,7 +14,12 @@ interface Props extends TelemetryProps {
     disablePlanParam?: boolean
 }
 
-export const IdeModalContent: FunctionComponent<Props> = ({ source, plan = 'free', disablePlanParam, telemetryRecorder }) => (
+export const IdeModalContent: FunctionComponent<Props> = ({
+    source,
+    plan = 'free',
+    disablePlanParam,
+    telemetryRecorder,
+}) => (
     <div>
         <Heading size="h4" className="font-[590px] text-2xl leading-[30px] -tracking-[.25px] text-gray-600 md:pr-2">
             Install the Cody IDE extension

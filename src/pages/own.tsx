@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { Badge, ContentSection, FeatureRoadMap, Heading, Layout } from '../components'
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { buttonLocation } from '../data/tracking'
-import { TelemetryProps } from '../telemetry';
+import { TelemetryProps } from '../telemetry'
 
 interface OwnContentProps {
     title: string
@@ -43,7 +43,7 @@ const roadMapSteps = [
     },
 ]
 
-const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
+const OwnPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
     <Layout
         meta={{
             title: 'Code Ownership',
@@ -108,7 +108,12 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
                     playsInline={true}
                     controls={false}
                     data-cookieconsent="ignore"
-                    onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 1 }, privateMetadata: { title: 'Own vulnerabilities' } })}
+                    onPlay={() =>
+                        telemetryRecorder.recordEvent('video', 'play', {
+                            metadata: { video: 1 },
+                            privateMetadata: { title: 'Own vulnerabilities' },
+                        })
+                    }
                 >
                     <source
                         type="video/webm"
@@ -134,7 +139,12 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
                     playsInline={true}
                     controls={false}
                     data-cookieconsent="ignore"
-                    onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 2 }, privateMetadata: { title: 'Own knowledge sharing' } })}
+                    onPlay={() =>
+                        telemetryRecorder.recordEvent('video', 'play', {
+                            metadata: { video: 2 },
+                            privateMetadata: { title: 'Own knowledge sharing' },
+                        })
+                    }
                 >
                     <source
                         type="video/webm"
