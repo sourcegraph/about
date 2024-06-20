@@ -32,7 +32,7 @@ You can try Claude 3.5 Sonnet for yourself on [s0.dev](http://s0.dev/) to compar
 
 ## Get started with Claude 3.5 Sonnet and Cody
 
-Claude 3.5 Sonnet is available today for Cody Pro, and you can get started with it by downloading the latest [VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) and switching to the pre-release build. It will also be available in the next [JetBrains plugin](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat/versions) release in the coming days.
+Claude 3.5 Sonnet is available today for Cody Pro, and you can get started with it by downloading the latest [VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) release (v1.22.4). It will also be available in the next [JetBrains plugin](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat/versions) release in the coming days.
 
 3.5 Sonnet will also come to Cody Enterprise users in the next Sourcegraph release planned for July 5.
 
