@@ -4,7 +4,7 @@ authors:
   - name: Steve Yegge
     url: https://x.com/Steve_Yegge
 publishDate: 2024-06-20T10:00-01:00
-description: "Learn about our efforts to improve LLM code completion performance for the Rust programming language."
+description: "LLMs are putting pressure on junior tech jobs. Learn how to stay ahead."
 tags: [blog]
 slug: 'the-death-of-the-junior-developer'
 published: true
@@ -23,6 +23,8 @@ My wife and I are huge horror-movie buffs. So, to reflect the somber theme of to
 First, let's talk about what's happening to junior developers.
 
 ## The Purge (2013)
+
+![The Purge](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-purge.png)
 
 Let's start with our first story of the day, which is about a law firm and has nothing to do with programming. But it is indeed centrally relevant to the crisis happening right now. My buddy Gene Kim gave me permission to share this story about his friend who runs a 50-person law firm.
 
@@ -44,6 +46,8 @@ You picked a bad year to be a junior associate lawyer, that's for damn sure.
 
 ## The Shining (1980)
 
+![The Shining](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-shining.png)
+
 Gene shared the law-firm story to illustrate how widespread this problem is. He claims the same chaos, which is undoubtedly unfolding across legal firms everywhere, is also hitting all writing and editorial jobs. Demand for junior writers and editors is evaporating.
 
 Everyone now just needs senior writers who are also good prompt engineers: An arrangement that meets all of their needs faster and cheaper than hiring junior humans.
@@ -57,6 +61,8 @@ Gene could not be happier, at least for himself, because in addition to being fa
 But he is terrified for his teenage kids.
 
 ## Invasion of the Body Snatchers (1956)
+
+![Invasion of the Body Snatchers](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/invasion-of-the-body-snatchers.png)
 
 *Personal anecdote: I watched the pod scene from the original black and white 50s version of this movie when I was about 8, and wow, that was traumatizingly scary. My wife has also been watching horror movies since she was about 4 (!) and we share a deep love of horror, probably because we're all messed up from childhood.*
 
@@ -74,6 +80,8 @@ Well sure, except… What exactly are interns supposed to do now? Their jobs hav
 
 ## The Crazies (2010)
 
+![The Crazies](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-crazies.png)
+
 On to our fourth story, which is *finally* about programming… or at least, about how it doesn't seem to exist anymore.
 
 Last week, I was hanging out with a very senior NLP-expert friend; dude is a brilliant programmer and mathematician who threw it all away to go work in quantum computing for five years, which is enough time to build like a quarter of one quantum computer. Given that he has about fifteen years to go before it's finished, he is back to doing a lot of coding again these days
@@ -85,6 +93,8 @@ That resonated with me, since that's how I've been programming for about the pas
 Since then I've discovered that several other super amazing senior colleagues have also adopted this coding strategy to accelerate themselves. It has honestly been a bit of a relief to hear confirmation coming from so many respectable people that chat-first programming is indeed a New Thing.
 
 ## The Thing (1982)
+
+![The Thing](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-thing.png)
 
 Is it really new? Clearly this "New Thing" has already been around in other domains, since even the original ChatGPT was able to replace a lot of human labor. 
 
@@ -104,6 +114,8 @@ But for the past 5 to 6 weeks, things have been very, very different my friend, 
 
 ## Chopping Mall (1986)
 
+![Choping Mall](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/chopping-mall.png)
+
 Chat-based programming, which I'm going to preemptively label **Ch**at **O**riented **P**rogramming (CHOP) because I suspect I'll be to be saying it a lot, is a brand-spanking new phenomenon. Like, seriously, just over a month old. I first noticed it when GPT-4o came out, which was mid-May. 
 
 Remember the big manufactured drama about the new OpenAI "4o" GPT model having Scarlett Johansson's voice? That's the one. That model changed everything about programming overnight.
@@ -115,6 +127,8 @@ But from the dawn of time through May of this year, that's all you had. Your onl
 No wonder CHOP got a bad rap.
 
 ## Upgrade (2018)
+
+![Upgrade](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/upgrade.png)
 
 When the GPT-4o model dropped, it could suddenly edit 1000-line source files (a figure that encompasses 95+% of the source files in most repos worldwide) with tremendous precision and faithfulness to the original, leaving the untouched parts of the file 99.9% diff-perfect. Every once in a very rare while I see it drop a space character, or slightly mis-indent a line. But that's it. It's solid.
 
@@ -130,7 +144,9 @@ You can quibble over the numbers, but it's clear that programmers using CHOP are
 
 Why aren't you upgraded yet?
 
-## Child's play (1988)
+## Child's Play (1988)
+
+![Child's Play](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/childs-play.png)
 
 Why isn't CHOP, this new chat-first, chat-centered programming technique taking off faster? 
 
@@ -151,6 +167,8 @@ But come on. Today in 2024, if you try to be the cool hipster by saying you cond
 So this time around, can we just skip ahead to the inevitable stage when not using coding assistants makes you a dumbass?
 
 ## The Mangler (1995)
+
+![The Mangler](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/the-mangler.png)
 
 *Trivia: My brother told me that movie was so scary that he had to leave the theater. Never saw it myself, but the short story was fun.*
 
@@ -174,6 +192,8 @@ Not on my project, hopefully! But if the model is currently spitting out similar
 
 ## Cabin in the Woods (2011)
 
+![Cabin in the Woods](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/cabin-in-the-woods.png)
+
 GPT's redesign was *awful* – but not when you looked directly at it. Up close it was downright cozy.
 
 You had to pull back and look at the design in the broader context of support, maintenance, upgrades, add-ons, and a bunch of other dimensions that are critically important to software design and engineering. With that wider lens, it was a bad train wreck waiting to happen.
@@ -189,6 +209,8 @@ Or worse.
 Chat, it seems, is *safer* for senior programmers than it is for junior ones. And a lot of companies are going to interpret "safer" to mean "better."
 
 ## 28 Days Later (2002)
+
+![28 Days Later](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/28-days-later.png)
 
 A lot of companies ask me, how can we tell which parts were written by the AI and which parts by the programmer? Well, if chat-oriented programming becomes the dominant modality for programmers, then LLMs will be writing the vast majority of all source code worldwide. That's an economic shift, one dramatic enough to change all the roles in software engineering.
 
@@ -209,6 +231,8 @@ If you want to survive the change, you'd better show up prepared and stay on top
 The rest of this post is just some direct, simple, and timeless advice for junior and aspiring software engineers. I hope it can help get you through this awkward period where our industry collectively figures out what exactly the hell is going to happen.
 
 ## Final Destination (2000)
+
+![Final Destination](https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/final-destination.png)
 
 Get good, fast. That's what you need to do. Get ahead of the slackers while our industry turns upside down, and you might be the one to survive.
 
