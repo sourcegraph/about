@@ -74,11 +74,11 @@ An example response:
   }
 }
 ```
-Save the ID returned (`"VXNlcjoyNQ=="` in the above example response) from this query.  You'll need this ID to be passed to several of the APIs later on in this document.  We'll refer to this value throughout this document as NamespaceID.
+Save the ID returned (`"VXNlcjoyNQ=="` in the above example response) from this query.  You'll need this ID to be passed to several of the APIs later on in this document.  We'll refer to this value throughout this document as `NamespaceID`.
 
 ### 2. Create the Batch Change Object
 
-Next, create an empty batch change in the namespace.  We'll add the spec file in the next step.  Pass the `NamespaceID` returned from the previous step along with a display name. We'll choose **test-from-api** for `$name`
+Next, create an empty batch change in the namespace.  We'll add the spec file in the next step.  Pass the `NamespaceID` returned from the previous step along with a display name. We'll choose `test-from-api` for `$name`.
 ```python
 mutation CreateEmptyBatchChange($NamespaceID: ID!, $name: String!) {
   createEmptyBatchChange(namespace: $NamespaceID, name: $name) {
@@ -98,7 +98,7 @@ An example response:
   }
 }
 ```
-Save the ID returned (`"QmF0Y2hDaGFuZ2U6OTQ3"` in the above example response) when running this mutation.  We'll refer to it below as **BatchChangeID**.
+Save the ID returned (`"QmF0Y2hDaGFuZ2U6OTQ3"` in the above example response) when running this mutation.  We'll refer to it below as `BatchChangeID`.
 
 Once created, view the Batch Change in the Drafts or navigate to the URL from the above response.
 
@@ -159,7 +159,7 @@ An example response:
   }
 }
 ```
-Save the ID returned from this mutation (`"QmF0Y2hTcGVjOiJiYzIxNjRlOS02M2M0LTQyNjQtOWMwYS0yOTJmNDViOWFmNjYi"` in the above example response).  It will be referred to later in this document as **BatchSpecID**.
+Save the ID returned from this mutation (`"QmF0Y2hTcGVjOiJiYzIxNjRlOS02M2M0LTQyNjQtOWMwYS0yOTJmNDViOWFmNjYi"` in the above example response).  It will be referred to later in this document as `BatchSpecID`.
 
 NOTE: if you need to make a change after performing this step, use the `replaceBatchChangeInput` mutation.
 
