@@ -14,7 +14,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/claude-3.5-s
 
 Today, Anthropic [announced](https://www.anthropic.com/news/claude-3-5-sonnet) their latest large language model: Claude 3.5 Sonnet. This model’s reasoning skills outperform Anthropic’s previous flagship model—Claude 3 Opus—while being roughly twice as fast as Opus.
 
-Cody, our AI coding assistant, is built on the principle of choice, and we’re committed to bringing the best models and best context into your IDE with Cody. To that end, we’re making Claude 3.5 Sonnet available today in Cody Pro. Pro users can now hot-swap their model to 3.5 Sonnet for chat, commands, and code edits with unlimited usage.
+Cody, our AI coding assistant, is built on the principle of choice, and we’re committed to bringing the *best models* and *best context* into your IDE with Cody. To that end, we’re making Claude 3.5 Sonnet available today in Cody Pro. Pro users can now hot-swap their model to 3.5 Sonnet for chat, commands, and code edits with unlimited usage.
 
 ## See Claude 3.5 Sonnet in action for coding tasks
 
@@ -28,11 +28,11 @@ Anthropic’s [announcement blog](https://www.anthropic.com/news/claude-3-5-sonn
   caption="Claude 3.5 Sonnet vs Claude 3 Opus in s0.dev"
 />
 
-You can try Claude 3.5 Sonnet for yourself on s0.dev to compare it against other LLMs like Claude 3 Opus, Gemini 1.5 Pro, and GPT-4o.
+You can try Claude 3.5 Sonnet for yourself on [s0.dev](http://s0.dev/) to compare it against other LLMs like Claude 3 Opus, Gemini 1.5 Pro, and GPT-4o.
 
 ## Get started with Claude 3.5 Sonnet and Cody
 
-Claude 3.5 Sonnet is available today for Cody Pro, and you can get started with it by downloading the latest [VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) and switching to the pre-release build. It will also be available for the [JetBrains plugin](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat/versions) in the coming days.
+Claude 3.5 Sonnet is available today for Cody Pro, and you can get started with it by downloading the latest [VS Code extension](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) and switching to the pre-release build. It will also be available in the next [JetBrains plugin](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat/versions) release in the coming days.
 
 3.5 Sonnet will also come to Cody Enterprise users in the next Sourcegraph release planned for July 5.
 
