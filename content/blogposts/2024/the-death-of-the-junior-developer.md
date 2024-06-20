@@ -8,8 +8,8 @@ description: "LLMs are putting pressure on junior tech jobs. Learn how to stay a
 tags: [blog]
 slug: 'the-death-of-the-junior-developer'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/enhancing-code-completion-for-rust-in-cody/enhancing-code-completion-for-rust-in-cody.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/enhancing-code-completion-for-rust-in-cody/enhancing-code-completion-for-rust-in-cody.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/death-of-the-junior-developer-hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/death-of-the-junior-developer-hero.png
 ---
 
 I have been chatting with a bunch of smart senior people lately. By cross-barfticulating these conversations I've picked up on an emerging new pattern, which is that 80% of you are way smarter than me. My goodness.
