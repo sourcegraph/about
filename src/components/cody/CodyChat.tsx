@@ -54,7 +54,8 @@ export const CodyChat: FunctionComponent<CodyChatProps> = ({ isLight = false }) 
                             'text-lg text-gray-200': !isLight,
                         })}
                     >
-                        Generate code on demand using AI. Cody also unblocks you when you’re jumping into new projects or trying to understand legacy code.
+                        Generate code on demand using AI. Cody also unblocks you when you’re jumping into new projects
+                        or trying to understand legacy code.
                     </h3>
                 </div>
             </div>

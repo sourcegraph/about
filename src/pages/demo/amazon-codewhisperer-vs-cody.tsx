@@ -30,9 +30,11 @@ const AmazonCodewhispererVsCodyPage: FunctionComponent = () => {
                 >
                     <Heading
                         size="h3"
-                        className="mt-[-15px] mb-0 pb-[5px] font-sf !leading-[30px] !tracking-[-0.25px] lg:w-[671px] lg:text-2xl"
+                        className="font-sf mt-[-15px] mb-0 pb-[5px] !leading-[30px] !tracking-[-0.25px] lg:w-[671px] lg:text-2xl"
                     >
-                       Cody is a good option for developers who want more expansive functionality, such as chat and commands alongside autocomplete, or for free-tier users who are looking for a context-aware code AI.
+                        Cody is a good option for developers who want more expansive functionality, such as chat and
+                        commands alongside autocomplete, or for free-tier users who are looking for a context-aware code
+                        AI.
                     </Heading>
 
                     <button

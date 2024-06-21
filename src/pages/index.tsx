@@ -1,10 +1,11 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, ReactSVG } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
 import { ContentSection, Layout, InfiniteCarousel, Heading } from '../components'
+import { Icon } from '../components/icon'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
@@ -28,6 +29,16 @@ const Home: FunctionComponent = () => {
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (): void => openModal('home')
+
+    const iconDefinition: [keyof ReactSVG, Record<string, string>][] = [
+        ['svg', { viewBox: '0 0 32 32' }],
+        [
+            'path',
+            {
+                d: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z',
+            },
+        ],
+    ]
 
     return (
         <Layout
@@ -62,8 +73,8 @@ const Home: FunctionComponent = () => {
                             <Heading size="h1">Cody</Heading>
                         </div>
                         <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
-                            Ship code faster with Cody, the AI coding assistant. Cody uses advanced search and
-                            codebase context to help you write and fix code.
+                            Ship code faster with Cody, the AI coding assistant. Cody uses advanced search and codebase
+                            context to help you write and fix code.
                         </Heading>
                     </div>
                     <div className="pb-8">
@@ -111,11 +122,22 @@ const Home: FunctionComponent = () => {
                     </div>
                     <div className="mx-6 mb-8 grid grid-cols-1 gap-8 md:mx-0 md:grid-cols-2 md:gap-6">
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
-                            <img
+                            {/* <img
                                 className="h-[48px] w-[48px]"
                                 src="/home/branded-icons/chat-brand-icon.svg"
                                 alt="Completions Brand Icon"
-                            />
+                            /> */}
+                            <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="100%">
+                                        <stop offset="0.12104" stopColor="#7048E8" />
+                                        <stop offset="0.308435" stopColor="#00CBEC" />
+                                        <stop offset="0.642062" stopColor="#A112FF" />
+                                        <stop offset="0.919599" stopColor="#FF5543" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <Icon fill="none" iconNode={iconDefinition} size={48} color="url(#grad1)" />
                             <Heading size="h2" className="pb-4 pt-6 !-tracking-[1px] md:leading-10">
                                 Get help with context-aware chat
                             </Heading>

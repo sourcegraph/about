@@ -30,9 +30,10 @@ const TabnineVsCodyPage: FunctionComponent = () => {
                 >
                     <Heading
                         size="h3"
-                        className="mt-[-15px] mb-0 pb-[5px] font-sf !leading-[30px] !tracking-[-0.25px] lg:w-[671px] lg:text-2xl"
+                        className="font-sf mt-[-15px] mb-0 pb-[5px] !leading-[30px] !tracking-[-0.25px] lg:w-[671px] lg:text-2xl"
                     >
-                        Cody Free and Cody Pro offer a wider range of features (autocomplete, chat, and commands) using cloud-based models.
+                        Cody Free and Cody Pro offer a wider range of features (autocomplete, chat, and commands) using
+                        cloud-based models.
                     </Heading>
 
                     <button

@@ -147,7 +147,7 @@ const blogResourceItems = [
     },
 ]
 
-const CodeIntelligencePlatform: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
+const CodeIntelligencePlatform: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
     <Layout
         meta={{
             title: 'Key traits of a code intelligence platform',

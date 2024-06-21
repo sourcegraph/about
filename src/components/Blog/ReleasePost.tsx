@@ -14,7 +14,7 @@ import styles from './ReleasePost.module.css'
 type ReleaseComponents = import('mdx/types').MDXComponents
 const components = { Alert, Badge, Figure, OpenInNewIcon, Video, YouTube }
 
-interface Props extends PostComponentProps { }
+interface Props extends PostComponentProps {}
 
 /**
  * A post about a release.

@@ -32,7 +32,8 @@ const WebinarsPage: FunctionComponent = () => (
                 {/* left side */}
                 <div>
                     <h3 className="text-xl">
-                        May 23 <span className="rounded-lg bg-vermillion-300 px-2 py-1 text-xs text-white">On-Demand</span>
+                        May 23{' '}
+                        <span className="rounded-lg bg-vermillion-300 px-2 py-1 text-xs text-white">On-Demand</span>
                     </h3>
                     <h2 className="mt-4">Live Coding with AI</h2>
                     <p className="mt-6 text-lg text-gray-600">

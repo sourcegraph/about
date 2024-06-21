@@ -40,7 +40,7 @@ interface ExternalLinkProps {
     id: string
     link: string
     openInNewTab?: boolean
-    disablePlanParam?: boolean 
+    disablePlanParam?: boolean
 }
 
 const PLAN_PRO = 'pro'
@@ -148,7 +148,7 @@ const ExternalLink: FunctionComponent<ExternalLinkProps> = ({
     icon,
     link,
     openInNewTab,
-    disablePlanParam
+    disablePlanParam,
 }) => (
     <Link
         href={plan === PLAN_PRO && !disablePlanParam ? `${link + '?pro=true'}` : `${link}`}
@@ -215,9 +215,15 @@ export const ExternalProvider: FunctionComponent<ExternalProviderProps> = ({
             description: '',
         }
         if (providerType === VSCODE || providerType === JETBRAINS) {
-            telemetryRecorder.recordEvent('codyExtension', 'initiateInstall', { metadata: { editorType: telemetryProviderTypes[providerType] }, privateMetadata: eventArguments })
+            telemetryRecorder.recordEvent('codyExtension', 'initiateInstall', {
+                metadata: { editorType: telemetryProviderTypes[providerType] },
+                privateMetadata: eventArguments,
+            })
         } else {
-            telemetryRecorder.recordEvent('auth', 'initiate', { metadata: { authType: telemetryProviderTypes[providerType] }, privateMetadata: eventArguments })
+            telemetryRecorder.recordEvent('auth', 'initiate', {
+                metadata: { authType: telemetryProviderTypes[providerType] },
+                privateMetadata: eventArguments,
+            })
             Cookies.set('cody.survey.show', JSON.stringify(true), {
                 expires: 365,
                 domain: 'sourcegraph.com',

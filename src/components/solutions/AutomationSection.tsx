@@ -21,9 +21,7 @@ export const AutomationSection: FunctionComponent<AutomationSectionProps> = ({
     const isMobile = windowWidth < breakpoints.md
     return (
         <ContentSection
-            parentClassName={classNames(
-                parentClassName || 'md:!pt-16 md:!px-10 md:!pb-8 overflow-hidden !px-6 !py-8'
-            )}
+            parentClassName={classNames(parentClassName || 'md:!pt-16 md:!px-10 md:!pb-8 overflow-hidden !px-6 !py-8')}
             className="flex flex-col gap-6 xl:px-6"
         >
             <div className="w-full p-6 md:w-[822px]">

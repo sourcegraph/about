@@ -22,9 +22,9 @@ export const CodyCard: FunctionComponent<CodyCardProps> = ({
     subTitleTextColor,
 }) => (
     <div className={classNames('flex w-full flex-col gap-4 xl:w-[410.6px]', className)}>
-        {icon && <img src={icon} alt='Search' className='h-6 w-6' />}
+        {icon && <img src={icon} alt="Search" className="h-6 w-6" />}
         <Heading
-            size='h5'
+            size="h5"
             className={classNames(
                 '!text-2xl !font-[590] !leading-[30px] !-tracking-[0.25px]',
                 titleTextColor ?? '!text-gray-700'

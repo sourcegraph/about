@@ -18,7 +18,7 @@ import { TelemetryProps } from '../telemetry'
 
 const batchChangesDemoFormURL = '/contact/request-batch-changes-demo'
 
-export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
+export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
     <Layout
         meta={{
             title: 'Sourcegraph Batch Changes - Large-Scale Code Changes',

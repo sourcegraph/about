@@ -2,12 +2,13 @@
 /* eslint @typescript-eslint/no-floating-promises: 0 */
 import { FunctionComponent, useState, useEffect } from 'react'
 
-import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
+import { ChevronDownIcon } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
+import { TrendingUp } from 'lucide-react'
 import InformationCircleOutlineIcon from 'mdi-react/InformationCircleOutlineIcon'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { MdOutlineTrendingUp } from 'react-icons/md'
+// import { MdOutlineTrendingUp } from 'react-icons/md'
 
 import {
     ContentSection,
@@ -28,6 +29,7 @@ import {
     Badge,
 } from '../components'
 import { Dropdown } from '../components/Dropdown'
+import { Icon } from '../components/icon'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { buttonLocation, buttonStyle } from '../data/tracking'
@@ -94,7 +96,7 @@ const GetProButton: FunctionComponent<{ className?: string; title?: string }> = 
             type="button"
             onClick={handleOpenModal}
         >
-            <MdOutlineTrendingUp />
+            <TrendingUp size={16} />
             {title}
         </button>
     )
@@ -155,6 +157,7 @@ const Accordion: FunctionComponent<{
     useEffect(() => {
         setIsOpen(false)
     }, [selectedOption])
+
     return (
         <div className="faq rounded-lg border border-gray-200 bg-white" key={index}>
             <button
@@ -167,9 +170,11 @@ const Accordion: FunctionComponent<{
             >
                 <span className="col-span-11 text-gray-700">{question}</span>
                 {isOpen ? (
-                    <ChevronUpIcon
-                        className="col-span-1 w-4 justify-self-end font-bold text-gray-500"
-                        strokeWidth={2.7}
+                    <Icon
+                        className="col-span-1 justify-self-end font-bold text-gray-500"
+                        name="chevron-up"
+                        color="black"
+                        size={16}
                     />
                 ) : (
                     <ChevronDownIcon
