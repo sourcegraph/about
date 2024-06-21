@@ -294,10 +294,6 @@ function Principles(): JSX.Element {
                 <p className="mt-5 text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
                     We believe the best place for a user to provide high fidelity feedback to AI is in a code editor.
                 </p>
-
-                <p className="mt-5 text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
-                    We believe the best place for a user to provide high fidelity feedback to AI is in a code editor.
-                </p>
             </div>
 
             <div className="mx-auto mt-16 max-w-3xl">
