@@ -323,25 +323,17 @@ mutation PublishChangesets($BatchChangeID: ID!, $changesets: [ID!]!, $draft: Boo
 An example response:
 ```python
 {
-  "data": {
-    "node": {
-      "changesets": {
-        "totalCount": 1,
-        "nodes": [
-          {
-            "id": "Q2hhbmdlc2V0OjEzODA4",
-            "state": "FAILED"
-          }
-        ],
-        "pageInfo": {
-          "endCursor": null,
-          "hasNextPage": false
-        }
-      },
-      "url": "/users/namespace/batch-changes/test-from-api",
-      "state": "OPEN"
-    }
-  }
+  "data":
+  {
+    "publishChangesets":
+    {
+        "errors":[],
+        "changesetCount":1,
+        "progress":0,
+        "state":"PROCESSING",
+        "finishedAt":null
+    }
+  }
 }
 ```
 **IMPORTANT:** Be sure to iterate over the entire list of IDs in `"nodes"`.  NOTE: if there is another page of results, be sure to call this query again with the `"after"` parameter set to the `"endCursor"` value.
