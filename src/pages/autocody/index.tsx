@@ -584,5 +584,5 @@ const HubSpotForm: React.FC = () => {
         }
     }, [])
 
-    return <div ref={formContainerRef}></div>
+    return <div ref={formContainerRef} />
 }
