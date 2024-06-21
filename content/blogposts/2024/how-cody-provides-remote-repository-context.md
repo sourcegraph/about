@@ -68,7 +68,7 @@ The Sourcegraph instance also re-indexes repositories regularly to keep the sour
   alt="Sourcegraph instance setup for indexing repositories"
 />
 
-_(There’s a lot of machinery under the hood to make this system work. Part 2 of this blog (coming soon) will explain how exactly Sourcegraph indexes code and keeps it fresh to support this functionality)_
+_(There’s a lot of machinery under the hood to make this system work. Part 2 of this blog, coming soon, will explain how exactly Sourcegraph indexes code and keeps it fresh to support this functionality)_
 
 ## What remote context awareness means for Cody users
 
