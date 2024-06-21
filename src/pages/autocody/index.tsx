@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useRef } from 'react'
+import { FunctionComponent } from 'react'
 
 import { Layout } from '../../components'
 
@@ -552,7 +552,10 @@ function SignUp(): JSX.Element {
                 Sign up for the waitlist to get notified when AutoCody is ready.
             </h3>
 
-            <div className="mt-20">FORM GOES HERE{/* <HubSpotForm /> */}</div>
+            <div className="mt-20">
+                FORM GOES HERE
+                {/* <HubSpotForm /> */}
+            </div>
         </div>
     )
 }
