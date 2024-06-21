@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useEffect } from 'react'
 
 import { Layout } from '../../components'
 
@@ -545,6 +545,23 @@ function AutoCodyHowItWorks(): JSX.Element {
 }
 
 function SignUp(): JSX.Element {
+    useEffect(() => {
+        const script = document.createElement('script')
+        script.src = '//js.hsforms.net/forms/embed/v2.js'
+        script.async = true
+        script.onload = () => {
+            if (window.hbspt) {
+                window.hbspt.forms.create({
+                    region: 'na1',
+                    portalId: '2762526',
+                    formId: '94e3f9f3-72c3-4ab6-8259-9743ad551cfb',
+                    target: '#hubspotForm'
+                })
+            }
+        }
+        document.body.appendChild(script)
+    }, [])
+
     return (
         <div id="waitlist-autocody" className="mx-auto max-w-3xl text-center">
             <h2 className="text-4xl font-semibold !tracking-[-1px] text-[#0F111A]">Interested?</h2>
@@ -552,10 +569,7 @@ function SignUp(): JSX.Element {
                 Sign up for the waitlist to get notified when AutoCody is ready.
             </h3>
 
-            <div className="mt-20">
-                FORM GOES HERE
-                {/* <HubSpotForm /> */}
-            </div>
+            <div id="hubspotForm" className="mt-20"></div>
         </div>
     )
 }
