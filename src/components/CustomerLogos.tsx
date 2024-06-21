@@ -160,16 +160,8 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
     return (
         <div className={classNames(className, { 'bg-black text-white': dark })}>
             <div className="mx-auto mb-12 max-w-xl text-center">
-                {overline && (
-                    <h6>
-                        {overline}
-                    </h6>
-                )}
-                {headline && (
-                    <h2 className={classNames('my-2', headlineClassName)}>
-                        {headline}
-                    </h2>
-                )}
+                {overline && <h6>{overline}</h6>}
+                {headline && <h2 className={classNames('my-2', headlineClassName)}>{headline}</h2>}
                 {description && <p className="text-lg">{description}</p>}
                 {ctaLink}
             </div>

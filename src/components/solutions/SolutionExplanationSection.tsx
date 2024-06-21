@@ -25,8 +25,8 @@ export const SolutionExplanationSection: FunctionComponent<SolutionExplanationSe
     const isMobile = windowWidth < breakpoints.md
     return (
         <ContentSection
-            parentClassName='!px-6 !py-0 md:!px-0 !py-16'
-            className='flex max-w-[1232px] flex-col items-center gap-8 px-0 md:gap-10 md:px-6 lg:px-0'
+            parentClassName="!px-6 !py-0 md:!px-0 !py-16"
+            className="flex max-w-[1232px] flex-col items-center gap-8 px-0 md:gap-10 md:px-6 lg:px-0"
         >
             <div className={classNames('w-full text-center md:w-[508px]', titleTextColor ?? '!text-gray-700')}>
                 <h2>{title}</h2>

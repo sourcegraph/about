@@ -18,8 +18,8 @@ export const CodeSearchCard: FunctionComponent = () => (
                 Get Code Search for your team’s entire private codebase. Contact us for a demo or to get started with a
                 free trial.
             </h3>
-            <div className="flex max-w-[356px] flex-col flex-wrap gap-4 pt-4 sm:flex-row">
-                <Link href="/demo" className="btn btn-primary max-w-[216px]">
+            <div className="flex max-w-[390px] flex-col flex-wrap gap-4 pt-4 sm:flex-row">
+                <Link href="/demo" className="btn btn-primary max-w-[220px]">
                     Contact us for a demo
                 </Link>
                 <Link

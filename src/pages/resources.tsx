@@ -120,16 +120,18 @@ const Resources: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => 
 
     const handlerResourceItemClick = (resource: Resource, isFeatured?: boolean): void => {
         const { title, contentType, description } = resource
-        telemetryRecorder.recordEvent(`resources.${isFeatured ? 'featuredItem' : 'item'}`, 'click', { privateMetadata: {
-            title,
-            description,
-            contentType,
-        }})
+        telemetryRecorder.recordEvent(`resources.${isFeatured ? 'featuredItem' : 'item'}`, 'click', {
+            privateMetadata: {
+                title,
+                description,
+                contentType,
+            },
+        })
     }
 
     useEffect(() => {
         if (!resourcesToDisplay.length) {
-            telemetryRecorder.recordEvent('resources.filter.emptyResults', 'view', { privateMetadata: { searchTerm }})
+            telemetryRecorder.recordEvent('resources.filter.emptyResults', 'view', { privateMetadata: { searchTerm } })
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [resourcesToDisplay.length, telemetryRecorder])

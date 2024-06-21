@@ -116,9 +116,7 @@ export const CodyCallToActionContentSection: FunctionComponent<CtaSection> = ({
                         'w-full md:w-auto': smallCta,
                     })}
                 >
-                    <h2 className="mb-6 text-white">
-                        {title}
-                    </h2>
+                    <h2 className="mb-6 text-white">{title}</h2>
                     <p className="max-w-2xl text-lg">{description}</p>
                 </div>
 

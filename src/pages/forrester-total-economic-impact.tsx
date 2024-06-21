@@ -86,9 +86,7 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
             </ContentSection>
 
             <div className="mt-16 bg-violet-700 py-6 px-6 md:mt-24 md:py-24">
-                <h2 className="text-center text-white">
-                    Key findings
-                </h2>
+                <h2 className="text-center text-white">Key findings</h2>
                 <p className="mx-auto mt-[30px] max-w-[572px] text-center text-lg text-gray-100">
                     Relying on customer interviews, data collection, and financial analysis, Forrester Consulting
                     concluded that Sourcegraph can provide customers:
@@ -119,18 +117,14 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                 wrapperClassName="!gap-6"
             />
 
-            <h1 className="mt-16 px-6 text-center text-white md:mt-[192px]">
-                How Sourcegraph achieves this impact
-            </h1>
+            <h1 className="mt-16 px-6 text-center text-white md:mt-[192px]">How Sourcegraph achieves this impact</h1>
 
             <ContentSection
                 className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 xl:px-6"
                 parentClassName="px-0 overflow-x-clip"
             >
                 <div className="max-w-[628px] px-6 xl:px-0">
-                    <h2 className="text-white">
-                        Sourcegraph is a code intelligence platform
-                    </h2>
+                    <h2 className="text-white">Sourcegraph is a code intelligence platform</h2>
                     <p className="mt-6 text-lg text-gray-200">
                         Sourcegraph understands various developer search use cases and effectively facilitates their
                         application, be it debugging, seeking broad understanding, code reuse, code health analysis, or
@@ -328,9 +322,7 @@ const WorkflowStats: FunctionComponent<WorkflowStatsProps> = ({ title, stats, bo
     <div
         className={`h-100 mx-auto max-w-[519px] rounded border-t-16 border-gray-200 bg-white p-4 shadow-lg sm:p-8 md:max-h-[532px] ${borderColorClass} md:mx-0`}
     >
-        <h2 className="mb-6">
-            {title}
-        </h2>
+        <h2 className="mb-6">{title}</h2>
         {stats?.map((stat, index) => (
             <div key={index} className="flex">
                 {title === 'Before Sourcegraph:' ? (

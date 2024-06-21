@@ -14,11 +14,11 @@ const GithubVsCodeSearch: FunctionComponent = () => (
         }}
         hero={
             <CompareHero
-                title='Sourcegraph vs GitHub code search'
-                competitorDescription='GitHub Copilot Logo'
-                competitorIcon='/assets/compare/github-code-search.svg'
-                defaultIcon='/assets/compare/sourcegraph-code-search.svg'
-                defaultIconDescription='Sourcegraph Cody Logo'
+                title="Sourcegraph vs GitHub code search"
+                competitorDescription="GitHub Copilot Logo"
+                competitorIcon="/assets/compare/github-code-search.svg"
+                defaultIcon="/assets/compare/sourcegraph-code-search.svg"
+                defaultIconDescription="Sourcegraph Cody Logo"
                 useCustomImage={true}
             >
                 <p>
@@ -30,13 +30,13 @@ const GithubVsCodeSearch: FunctionComponent = () => (
                     GitHub code search is available to all users but comes with limitations. Not all code is indexed,
                     search results are restricted to 100 results, and it does not support multi-line searching. It does
                     not offer comprehensive search across branches, nor offers granular search parameters like
-                    case-sensitive search. GitHub code search is unable to make and track large-scale
-                    changes across repositories and code hosts or transform code into a queryable database to create
-                    custom, visual dashboards to track migrations, vulnerabilities, code health, and other metrics.
+                    case-sensitive search. GitHub code search is unable to make and track large-scale changes across
+                    repositories and code hosts or transform code into a queryable database to create custom, visual
+                    dashboards to track migrations, vulnerabilities, code health, and other metrics.
                 </p>
 
                 <p>
-                    <strong className='inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500'>TL;DR:</strong>{' '}
+                    <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
                     GitHub code search is a good choice for individuals or small teams operating with a small codebase
                     looking to find code, issues, or pull requests with simple search queries. Sourcegraph Code Search
                     is a better option for organizations with a large number of repositories or a large and complex
@@ -48,7 +48,7 @@ const GithubVsCodeSearch: FunctionComponent = () => (
             </CompareHero>
         }
     >
-        <CompareTables compareData={githubVsCodeSearch} firstChoiceTitle='Sourcegraph Code Search' />
+        <CompareTables compareData={githubVsCodeSearch} firstChoiceTitle="Sourcegraph Code Search" />
         <CodeSearchCard />
     </Layout>
 )

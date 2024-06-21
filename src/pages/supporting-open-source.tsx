@@ -50,9 +50,7 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
             <ContentSection parentClassName="!pt-[10px] !pb-0" className="px-6">
                 <div className="flex flex-col justify-start pb-8 md:flex-row md:justify-between md:py-24">
                     <div className="flex flex-col md:w-1/2">
-                        <h2 className="pb-6 text-gray-700">
-                            Funding
-                        </h2>
+                        <h2 className="pb-6 text-gray-700">Funding</h2>
                         <p className="mb-0 max-w-[534px] font-sans text-lg tracking-[-0.25px] text-gray-700">
                             We actively contribute to various funding platforms, including thanks.dev, Open Collective,
                             Stackaid, GitHub Sponsors, and more, to ensure the sustainability of these critical

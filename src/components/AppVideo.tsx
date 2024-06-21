@@ -22,7 +22,13 @@ interface DemoVideoProps extends TelemetryProps {
     splashClassName?: string
 }
 
-export const DemoVideo: React.FunctionComponent<DemoVideoProps > = ({ video, splash = false, className, splashClassName, telemetryRecorder }) => {
+export const DemoVideo: React.FunctionComponent<DemoVideoProps> = ({
+    video,
+    splash = false,
+    className,
+    splashClassName,
+    telemetryRecorder,
+}) => {
     const videoRef = useRef<HTMLVideoElement>(null)
 
     const [isShowing, setIsShowing] = useState(false)
@@ -49,7 +55,9 @@ export const DemoVideo: React.FunctionComponent<DemoVideoProps > = ({ video, spl
             ref={videoRef}
             // eslint-disable-next-line react/forbid-dom-props
             style={{ aspectRatio: videoInfo.dimensions }}
-            onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 3 }, privateMetadata: { title } })}
+            onPlay={() =>
+                telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 3 }, privateMetadata: { title } })
+            }
         >
             <source type="video/webm" src={videoInfo.webm} data-cookieconsent="ignore" />
             <source type="video/mp4" src={videoInfo.mp4} data-cookieconsent="ignore" />

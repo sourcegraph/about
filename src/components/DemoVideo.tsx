@@ -44,7 +44,15 @@ interface DemoVideoProps extends TelemetryProps {
     scrollIntoViewOnPlay?: boolean
 }
 
-export const DemoVideo: React.FunctionComponent<DemoVideoProps> = ({ video, splash = false, className, splashClassName, playButton, scrollIntoViewOnPlay = false, telemetryRecorder }) => {
+export const DemoVideo: React.FunctionComponent<DemoVideoProps> = ({
+    video,
+    splash = false,
+    className,
+    splashClassName,
+    playButton,
+    scrollIntoViewOnPlay = false,
+    telemetryRecorder,
+}) => {
     const videoRef = useRef<HTMLVideoElement>(null)
     const [isShowing, setIsShowing] = useState(false)
     const onPlayClick = useCallback(() => {
@@ -71,7 +79,9 @@ export const DemoVideo: React.FunctionComponent<DemoVideoProps> = ({ video, spla
             ref={videoRef}
             // eslint-disable-next-line react/forbid-dom-props
             style={{ aspectRatio: videoInfo.dimensions }}
-            onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 5 }, privateMetadata: { title } })}
+            onPlay={() =>
+                telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 5 }, privateMetadata: { title } })
+            }
         >
             <track
                 default={true}

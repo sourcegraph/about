@@ -47,7 +47,7 @@ const IMAGE_TAB_CONTENT = [
     },
 ]
 
-const DemoCodyPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => {
+const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 

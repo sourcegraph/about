@@ -41,8 +41,9 @@ const Home: FunctionComponent = () => {
             customFooterClassName="!bg-gray-50"
             customDark={false}
             hero={<HomeHero />}
+            className="w-full overflow-hidden"
         >
-            <div className="bg-gray-50">
+            <div className="oveflow-hidden w-full bg-gray-50">
                 <ContentSection parentClassName="!py-0" className="flex items-center justify-center">
                     <p className="pb-10 pt-16 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
                         Over 2.5M engineers use Sourcegraph
@@ -83,18 +84,18 @@ const Home: FunctionComponent = () => {
                             />
                         )}
                     </div>
-                    <div className="relative mx-6 mb-8 flex h-auto gap-[19px]  overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:h-[329px]">
-                        <div className="flex  flex-col py-16 pl-10">
+                    <div className="relative mx-6 mb-8 flex h-auto gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:max-h-[500px] lg:h-[329px]">
+                        <div className="text-pretty flex w-full flex-col py-16 pl-10">
                             <img
                                 className="h-[48px] w-[48px]"
                                 src="/home/branded-icons/completions-brand-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <h2 className="pb-4 pt-6">Faster coding with autocomplete</h2>
-                            <h3 className="text-gray-500">
+                            <h2 className="break-words pb-4 pt-6">Faster coding with autocomplete</h2>
+                            <h5 className="text-gray-500">
                                 Suggestions for single lines or whole functions, in any programming language,
                                 configuration file, or docs.
-                            </h3>
+                            </h5>
                         </div>
                         {!isMobile && (
                             <div className="h-full w-full">
@@ -115,9 +116,9 @@ const Home: FunctionComponent = () => {
                                 alt="Completions Brand Icon"
                             />
                             <h2 className="pb-4 pt-6">Get help with context-aware chat</h2>
-                            <h3 className="mb-0 text-gray-500">
+                            <h5 className="mb-0 text-gray-500">
                                 Query like a human and learn about your code, or get help with tricky problems.
-                            </h3>
+                            </h5>
                         </div>
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             <img
@@ -126,10 +127,10 @@ const Home: FunctionComponent = () => {
                                 alt="Completions Brand Icon"
                             />
                             <h2 className="pb-4 pt-6">Automate workflows with commands</h2>
-                            <h3 className="mb-0 text-gray-500">
+                            <h5 className="mb-0 text-gray-500">
                                 Build and personalize commands that automate common tasks. Explain code or generate unit
                                 tests in seconds.
-                            </h3>
+                            </h5>
                         </div>
                     </div>
                     <Link
@@ -226,9 +227,9 @@ const Home: FunctionComponent = () => {
                                 alt="Completions Brand Icon"
                             />
                             <h2 className="pb-4 pt-6">Find and fix code</h2>
-                            <h3 className="text-gray-500">
+                            <h5 className="text-gray-500">
                                 Find what you need in milliseconds across all of your code–no matter where it lives.
-                            </h3>
+                            </h5>
                         </div>
                         {isDesktop && <img src="/home/code-graph-home.svg" alt="Multiline Completion" />}
                     </div>
@@ -239,10 +240,10 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/Code-insights-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <h2 className="pb-4 pt-6">Track trends in your codebase</h2>
-                            <h3 className="text-gray-500">
+                            <h2 className="break-words pb-4 pt-6">Track trends in your codebase</h2>
+                            <h5 className="text-gray-500">
                                 Transform your code into a queryable database to create custom dashboards in seconds.
-                            </h3>
+                            </h5>
                         </div>
                         <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             <img
@@ -251,7 +252,7 @@ const Home: FunctionComponent = () => {
                                 alt="Completions Brand Icon"
                             />
                             <h2 className="pb-4 pt-6">Automate large-scale code changes</h2>
-                            <h3 className="text-gray-500">
+                            <h3 className="text-lg text-gray-500">
                                 Find and make changes across your codebase in one go, whether a version change or a
                                 vulnerability fix.
                             </h3>

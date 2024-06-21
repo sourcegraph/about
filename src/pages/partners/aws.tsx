@@ -132,9 +132,7 @@ const AWS: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection className="flex flex-col items-center pb-16 md:pt-12 md:pb-28" parentClassName="!py-0">
-            <h2 className="px-6 text-center text-white">
-                Reach out to our partner team to learn more
-            </h2>
+            <h2 className="px-6 text-center text-white">Reach out to our partner team to learn more</h2>
             <div className="mt-8 flex flex-col gap-5 sm:flex-row">
                 <Link
                     href="mailto:partner@sourcegraph.com"

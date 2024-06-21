@@ -65,7 +65,7 @@ const codeHosts = [
     { name: 'any Git-based code host', icon: '/code-search/code-hosts/any-git.svg' },
 ]
 
-export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
+export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
     <Layout
         meta={{
             title: 'Sourcegraph | Code Search',
@@ -311,21 +311,17 @@ const CodeSearchHero: FunctionComponent = () => (
         <div className="mx-auto flex flex-col items-center justify-center text-center">
             <div className="mx-auto flex flex-col items-center pb-16 pt-8 md:w-[828px] md:pb-[63px] md:pt-16">
                 <div className="mb-[8px] flex items-center justify-start gap-[8px]">
-                    <div className="flex h-[40px] w-[40px] items-center justify-center rounded-xl border-2 border-[#F0F2F2] shadow-lg">
-                        <img src="/codesearch-logomark-default.svg" alt="Cody Logo" className="h-5 w-5" />
-                    </div>
+                    <img src="/codesearch-logomark-default.svg" alt="Cody Logo" className="w-[40px h-[40px]" />
                     <h3>Code Search</h3>
                 </div>
 
                 <div className="container mx-auto mb-6 grid gap-8 text-center">
-                    <h1 className="color-[#0F111A] pt-16 md:pt-0">
-                        Grok your entire codebase
-                    </h1>
+                    <h1 className="color-[#0F111A] pt-16 md:pt-0">Grok your entire codebase</h1>
                 </div>
-                <h4 className="mb-10 text-gray-500 md:mb-8 md:px-6">
+                <h3 className="mb-10 text-gray-500 md:mb-8 md:px-6">
                     Code Search makes it easy to find code, make large-scale changes, and track insights across
                     codebases of any scale and with any number of code hosts.
-                </h4>
+                </h3>
                 <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
                     <Link href="/demo" className="btn btn-primary">
                         Contact us for a demo

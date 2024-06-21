@@ -8,7 +8,10 @@ import { TelemetryProps } from '../../telemetry'
 
 import { ExternalProvider } from './ExternalProvider'
 
-export const CallToActionWithCody: FunctionComponent<{ className?: string } & TelemetryProps> = ({ className, telemetryRecorder }) => (
+export const CallToActionWithCody: FunctionComponent<{ className?: string } & TelemetryProps> = ({
+    className,
+    telemetryRecorder,
+}) => (
     <div
         className={classNames(
             'relative flex max-w-full flex-col overflow-hidden py-[96px] px-6 md:max-h-[384px] md:flex-row md:items-center md:py-[114.5px]',

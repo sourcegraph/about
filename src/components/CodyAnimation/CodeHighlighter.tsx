@@ -29,7 +29,7 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 
     return (
         <div
-            className={classNames('cody-animation relative m-0 p-0 inline-flex', {
+            className={classNames('cody-animation relative m-0 inline-flex p-0', {
                 'apply-gray': !highlighted,
                 'inline-flex': inline,
             })}

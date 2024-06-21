@@ -39,11 +39,7 @@ export const IntroCard: FunctionComponent<IntroCardProps> = ({
         >
             <div className="flex flex-col gap-0 overflow-visible md:flex-row md:gap-14">
                 <div className={classNames('relative w-full md:w-[51%]', textColor ?? '!text-gray-700')}>
-                    <h1
-                        className='max-w-[404px] md:w-full md:max-w-full'
-                    >
-                        {title}
-                    </h1>
+                    <h1 className="max-w-[404px] md:w-full md:max-w-full">{title}</h1>
                     <p className="text-wrap !mb-0 pb-8 text-2xl font-normal !leading-[30px] -tracking-[0.25px] md:mt-2.5">
                         {description}
                     </p>

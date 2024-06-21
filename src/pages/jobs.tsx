@@ -72,8 +72,8 @@ const CareersPage: FunctionComponent = () => {
             <ContentSection background="white" className="xl:pl-6" parentClassName="!pt-8 !pb-[55px]">
                 <h1 className="mb-6">Let's build the future together.</h1>
                 <h3 className="max-w-[820px]">
-                    We're developing the world's most advanced code intelligence platform with brilliant dreamers around the
-                    globe.
+                    We're developing the world's most advanced code intelligence platform with brilliant dreamers around
+                    the globe.
                 </h3>
                 <a
                     className="btn btn-primary mt-8"

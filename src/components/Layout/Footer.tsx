@@ -224,9 +224,7 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
                         <div className="col-span-12 sm:grid sm:grid-cols-12 lg:col-span-8">
                             {FOOTER_LINK_SECTIONS.map(({ name, items }) => (
                                 <div className="mb-8 sm:col-span-3 sm:mb-0" key={name}>
-                                    <h5 className="mb-4">
-                                        {name}
-                                    </h5>
+                                    <h5 className="mb-4">{name}</h5>
                                     <ul className="ml-0 list-none">
                                         {items.map(({ name, href, icon: Icon, badgeText }) => (
                                             <li className="mb-4 max-w-[176px]" key={name}>

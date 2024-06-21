@@ -153,9 +153,7 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
             <ContentSection parentClassName="!pt-[10px] !pb-0" className="px-6">
                 <div className="flex flex-col justify-start pb-8 md:flex-row md:justify-between md:py-24">
                     <div className="flex flex-col md:w-1/2">
-                        <h2 className="pb-6 text-gray-700">
-                            Supporting open source
-                        </h2>
+                        <h2 className="pb-6 text-gray-700">Supporting open source</h2>
                         <p className="mb-0 max-w-[534px] font-sans text-lg tracking-[-0.25px] text-gray-700">
                             At Sourcegraph, we are committed to supporting the open source projects that form the
                             backbone of our products. We actively contribute to various funding platforms, including
@@ -233,9 +231,7 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
             <EventsList />
 
             <ContentSection parentClassName="mt-6 md:mt-0 md:pt-8 md:pb-0" className="lg:px-6">
-                <h2 className="text-center md:text-left">
-                    Blog posts
-                </h2>
+                <h2 className="text-center md:text-left">Blog posts</h2>
                 <div className="flex-1 p-4 sm:pt-6">
                     {!currentRecords.length ? (
                         <div className="col-span-2 mx-auto mb-16 text-center">

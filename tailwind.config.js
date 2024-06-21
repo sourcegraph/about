@@ -86,8 +86,32 @@ module.exports = {
     }),
 
     fontFamily: {
-      sans: ['Inter'],
-      mono: ['Roboto mono'],
+      sans: [
+        'Inter',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        '"Noto Sans"',
+        'sans-serif',
+      ],
+      mono: [
+        'Roboto mono',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        '"Noto Sans"',
+        'sans-serif',
+      ],
       display: ['Space Grotesk'],
     },
 
@@ -104,7 +128,6 @@ module.exports = {
       '6xl': ['3rem', { lineHeight: '1.2' }], // 48px / 58px
       '7xl': ['3.25rem', { lineHeight: '1.2' }], // 52px / 62px
       '8xl': ['3.875rem', { lineHeight: '1.2' }], // 72px / 74px
-      '9xl': ['4.5rem', { lineHeight: '5.375rem' }], // 72px / 86px
     },
 
     letterSpacing: {
