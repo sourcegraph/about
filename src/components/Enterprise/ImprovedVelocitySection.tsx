@@ -4,7 +4,7 @@ import { ContentSection } from '../ContentSection'
 
 export const ImprovedVelocitySection: FunctionComponent = () => (
     <ContentSection
-        className="relative z-10 flex max-w-[1232px] flex-col gap-6 md:flex-row"
+        className="relative z-10 grid max-w-[1232px] grid-cols-1 gap-6 md:grid-cols-2"
         parentClassName="!md:px-[80px] !py-0"
     >
         <div className="flex h-[533px] flex-col justify-between px-0 py-16 md:px-10">

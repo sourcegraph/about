@@ -4,7 +4,7 @@ import { ContentSection } from '..'
 
 export const TrackVulnerabilitiesSection: FunctionComponent = () => (
     <ContentSection
-        className="flex max-w-[1232px] flex-col gap-6 md:flex-row"
+        className="grid max-w-[1232px] grid-cols-1 gap-6 md:grid-cols-2"
         parentClassName="!md:px-[80px] !md:pb-[96px]"
     >
         <div className="md:pt-6 md:pl-16 md:pr-10">
