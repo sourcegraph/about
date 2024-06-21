@@ -1,6 +1,6 @@
 ---
 title: "Using Batch Changes via the Sourcegraph GraphQL API"
-publishDate: 2024-06-20T10:00-07:00
+publishDate: 2024-06-24T10:00-07:00
 authors:
   - name: Mike McLaughlin
     url: https://handbook.sourcegraph.com/team/#mike-mclaughlin
