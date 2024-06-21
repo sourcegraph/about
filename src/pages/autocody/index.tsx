@@ -552,37 +552,35 @@ function SignUp(): JSX.Element {
                 Sign up for the waitlist to get notified when AutoCody is ready.
             </h3>
 
-            <div className="mt-20">
-                <HubSpotForm />
-            </div>
+            <div className="mt-20">FORM GOES HERE{/* <HubSpotForm /> */}</div>
         </div>
     )
 }
 
-const HubSpotForm: React.FC = () => {
-    const formContainerRef = useRef<HTMLDivElement>(null)
+// const HubSpotForm: React.FC = () => {
+//     const formContainerRef = useRef<HTMLDivElement>(null)
 
-    useEffect(() => {
-        const script = document.createElement('script')
-        script.src = '//js.hsforms.net/forms/embed/v2.js'
-        script.type = 'text/javascript'
-        document.body.append(script)
+//     useEffect(() => {
+//         const script = document.createElement('script')
+//         script.src = '//js.hsforms.net/forms/embed/v2.js'
+//         script.type = 'text/javascript'
+//         document.body.append(script)
 
-        script.addEventListener('load', () => {
-            if (window.hbspt) {
-                window.hbspt.forms.create({
-                    region: 'na1',
-                    portalId: '2762526',
-                    formId: '94e3f9f3-72c3-4ab6-8259-9743ad551cfb',
-                    target: formContainerRef.current,
-                })
-            }
-        })
+//         script.addEventListener('load', () => {
+//             if (window.hbspt) {
+//                 window.hbspt.forms.create({
+//                     region: 'na1',
+//                     portalId: '2762526',
+//                     formId: '94e3f9f3-72c3-4ab6-8259-9743ad551cfb',
+//                     target: formContainerRef.current,
+//                 })
+//             }
+//         })
 
-        return () => {
-            script.remove()
-        }
-    }, [])
+//         return () => {
+//             script.remove()
+//         }
+//     }, [])
 
-    return <div ref={formContainerRef} />
-}
+//     return <div ref={formContainerRef} />
+// }
