@@ -261,7 +261,7 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
                 <div className={classNames('text-sm', { 'py-4': minimal, 'pt-6 pb-2': !minimal })}>
                     <ul className="ml-0 list-none">
                         <li
-                            className={classNames('mr-10 text-gray-200 sm:inline', {
+                            className={classNames('mr-10 sm:inline', {
                                 'text-gray-200': dark,
                                 'text-gray-500': !dark,
                             })}
