@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useEffect, useRef } from 'react'
 
 import { Layout } from '../../components'
 
@@ -274,8 +274,8 @@ function Principles(): JSX.Element {
             </div>
 
             <div className="mx-auto mt-20 max-w-3xl">
-                <p className="text-xl font-semibold text-gray-400">Principle 1: Cooperation</p>
-                <p className="text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
+                <p className="text-xl font-semibold text-gray-700">Principle 1: Cooperation</p>
+                <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
                     <span className="text-blurple-400">A combination of human coder and AI. </span> Agentic solutions,
                     like{' '}
                     <a
@@ -287,18 +287,20 @@ function Principles(): JSX.Element {
                         SWE-Agent
                     </a>
                     , that allow the AI to define a plan and execute against it fully autonomously are only able to
-                    achieve a 12.29% success rate on the full SWE-bench test set. If you want to create an autonomous
-                    car, you don't remove the steering wheel. We must allow the AI to be trained and "steered" by a
-                    user.
+                    achieve a 12.29% success rate on the full SWE-bench test set.
                 </p>
-                <p className="mt-5 text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
+                {/* <p className="mt-5 text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
+                    If you want to create an autonomous car, you don't remove the steering wheel. We must allow the AI
+                    to be trained and "steered" by a user.
+                </p> */}
+                <p className="mt-5 text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
                     We believe the best place for a user to provide high fidelity feedback to AI is in a code editor.
                 </p>
             </div>
 
             <div className="mx-auto mt-16 max-w-3xl">
-                <p className="text-xl font-semibold text-gray-400">Principle 2: Context</p>
-                <p className="text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
+                <p className="text-xl font-semibold text-gray-700">Principle 2: Context</p>
+                <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
                     <span className="text-blurple-400">Context should come from inside AND outside the codebase. </span>{' '}
                     We are building{' '}
                     <a
@@ -316,8 +318,8 @@ function Principles(): JSX.Element {
             </div>
 
             <div className="mx-auto mt-16 max-w-3xl">
-                <p className="text-xl font-semibold text-gray-400">Principle 3: Steerable</p>
-                <p className="text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
+                <p className="text-xl font-semibold text-gray-700">Principle 3: Interactive</p>
+                <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
                     <span className="text-blurple-400">A user should be in the loop at every step. </span> In an agentic
                     workflow, AI will do the work, with the human providing oversight. A user should be able to steer
                     the workflow at every step by evaluating LLM output throughout the process.
@@ -325,8 +327,8 @@ function Principles(): JSX.Element {
             </div>
 
             <div className="mx-auto mt-16 max-w-3xl">
-                <p className="text-xl font-semibold text-gray-400">Principle 4: Feedback</p>
-                <p className="text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
+                <p className="text-xl font-semibold text-gray-700">Principle 4: Feedback</p>
+                <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
                     <span className="text-blurple-400">AI should learn from feedback. </span> AI should continuously
                     evolve and adapt to better understand the user's intent, not just the code. Gathering feedback at
                     every step of the process.
@@ -550,7 +552,37 @@ function SignUp(): JSX.Element {
                 Sign up for the waitlist to get notified when AutoCody is ready.
             </h3>
 
-            <div className="mt-20">SIGNUP FORM HERE</div>
+            <div className="mt-20">
+                <HubSpotForm />
+            </div>
         </div>
     )
+}
+
+const HubSpotForm: React.FC = () => {
+    const formContainerRef = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        const script = document.createElement('script')
+        script.src = '//js.hsforms.net/forms/embed/v2.js'
+        script.type = 'text/javascript'
+        document.body.append(script)
+
+        script.addEventListener('load', () => {
+            if (window.hbspt) {
+                window.hbspt.forms.create({
+                    region: 'na1',
+                    portalId: '2762526',
+                    formId: '94e3f9f3-72c3-4ab6-8259-9743ad551cfb',
+                    target: formContainerRef.current,
+                })
+            }
+        })
+
+        return () => {
+            script.remove()
+        }
+    }, [])
+
+    return <div ref={formContainerRef}></div>
 }
