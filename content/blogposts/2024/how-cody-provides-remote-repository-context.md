@@ -28,14 +28,14 @@ In short, for an AI coding assistant to generate quality code and answers about 
 You can think of human developers as a function of all the context in their heads:
 
 <Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/how-cody-provides-remote-repository-context/human-dev-context.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/how-cody-provides-remote-repository-context/compressed_human-dev-context.png"
   alt="Human developers' context"
 />
 
 Meanwhile, you can think of AI as a function of all the context in its training data, plus any other context that’s been manually passed in:
 
 <Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/how-cody-provides-remote-repository-context/ai-dev-context.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/how-cody-provides-remote-repository-context/compressed_ai-dev-context.png"
   alt="AI developers' context"
 />
 
