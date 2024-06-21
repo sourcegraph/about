@@ -17,6 +17,7 @@ import {
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
+import { captureCustomEventWithPageData } from '../../lib/utils'
 import { TelemetryProps } from '../../telemetry'
 
 declare global {
@@ -48,13 +49,16 @@ const IMAGE_TAB_CONTENT = [
     },
 ]
 
-const DemoCodyPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => {
+const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal('cody')
+    const handleOpenModal = (pagePosition: string): void => {
+        captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
+        openModal('cody')
+    }
 
     return (
         <Layout
@@ -96,7 +100,7 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) =>
                                 type="button"
                                 className="btn btn-inverted-primary text-violet-500"
                                 title="Download Sourcegraph"
-                                onClick={handleOpenModal}
+                                onClick={() => handleOpenModal('top')}
                             >
                                 Get Cody for free
                             </button>

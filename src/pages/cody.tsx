@@ -23,6 +23,7 @@ import { HowCodyWorks } from '../components/cody/HowCodyWorks'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
+import { captureCustomEventWithPageData } from '../lib/utils'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 
@@ -58,7 +59,10 @@ const CodyPage: FunctionComponent = () => {
     const { openModal } = useAuthModal()
 
     const source = pathname.slice(1) || 'about-home'
-    const handleOpenModal = (): void => openModal(source)
+    const handleOpenModal = (pagePosition: string): void => {
+        captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
+        openModal(source)
+    }
 
     return (
         <Layout

@@ -7,11 +7,16 @@ import Link from 'next/link'
 import { CodyCta, ContentSection, Heading, InfiniteCarousel, Layout } from '../../components'
 import { CardSection, CardDescription, QualtricsCard } from '../../components/Solutions'
 import { useAuthModal } from '../../context/AuthModalContext'
+import { captureCustomEventWithPageData } from '../../lib/utils'
 import { carouselImages } from '../code-search'
 
 const BuildUnitTestsPage: FunctionComponent = () => {
     const { openModal } = useAuthModal()
-    const handleOpenModal = (): void => openModal('build-unit-tests')
+
+    const handleOpenModal = (pagePosition: string): void => {
+        captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
+        openModal('build-unit-tests')
+    }
 
     return (
         <Layout
@@ -38,7 +43,7 @@ const BuildUnitTestsPage: FunctionComponent = () => {
                                 type="button"
                                 className="btn btn-primary min-w-fit px-6 lg:px-4"
                                 title="Download Sourcegraph"
-                                onClick={handleOpenModal}
+                                onClick={() => handleOpenModal('top')}
                             >
                                 Get Cody for free
                             </button>

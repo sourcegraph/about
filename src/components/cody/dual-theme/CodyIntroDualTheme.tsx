@@ -1,13 +1,14 @@
 import React, { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
+import { CaptureResult } from 'posthog-js'
 
 import { Heading } from '../..'
 import { ContentSection } from '../../ContentSection'
 
 interface CodyIntroDualThemeProps {
     isLight?: boolean
-    handleOpenModal?: () => void
+    handleOpenModal: (pagePosition: string) => void | CaptureResult
     title?: string
     wrapperClassName?: string
 }
@@ -52,7 +53,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                     'text-violet-500': !isLight,
                 })}
                 title="Get Cody for free"
-                onClick={handleOpenModal}
+                onClick={() => handleOpenModal('top')}
             >
                 <div className="flex items-center justify-center">
                     <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Get Cody for

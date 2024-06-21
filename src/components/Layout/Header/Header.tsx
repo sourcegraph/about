@@ -8,6 +8,7 @@ import { useRouter } from 'next/router'
 
 import { useAuthModal } from '../../../context/AuthModalContext'
 import { buttonLocation } from '../../../data/tracking'
+import { captureCustomEventWithPageData } from '../../../lib/utils'
 import { Banner } from '../../Banner'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
 
@@ -117,13 +118,19 @@ const HeaderContent: FunctionComponent<
 > = ({ colorTheme, open, sticky, source, close, ...props }) => {
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal(source)
+    const handleOpenModal = (eventName: string, initiateOpenModal: boolean): void => {
+        captureCustomEventWithPageData(eventName)
+        if (initiateOpenModal) {
+            openModal(source)
+        }
+    }
     const dark = colorTheme === 'dark' || colorTheme === 'purple'
     const classes = HEADER_CONTENT_THEME_CLASS[colorTheme]
 
     const callToAction = (
         <>
             <MeetWithProductExpertButton
+                handleEventSubmission={handleOpenModal}
                 id="topnav"
                 buttonLocation={buttonLocation.nav}
                 buttonClassName={classNames(
@@ -134,6 +141,7 @@ const HeaderContent: FunctionComponent<
                 requestInfo={true}
             />
             <Link
+                onClick={() => handleOpenModal('login_click', false)}
                 id="topnav"
                 href="https://sourcegraph.com/sign-in?returnTo=/cody/manage"
                 title="Get started with Cody"
@@ -155,7 +163,7 @@ const HeaderContent: FunctionComponent<
                     dark ? 'btn-inverted-primary text-violet-500' : 'btn-primary'
                 )}
                 title="Download Sourcegraph"
-                onClick={handleOpenModal}
+                onClick={() => handleOpenModal('get_cody_nav_click', true)}
             >
                 Get Cody for free
             </button>
