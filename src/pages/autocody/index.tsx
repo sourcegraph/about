@@ -25,7 +25,7 @@ const AutoCodyPage: FunctionComponent = () => (
             <AutoCodyHowItWorks />
         </div>
 
-        <div className="mx-auto mt-40 max-w-3xl pb-32">
+        <div className="mx-auto mt-40 max-w-3xl pb-44">
             <SignUp />
         </div>
     </Layout>
@@ -231,9 +231,24 @@ function VSCode(): JSX.Element {
                                         </span>
                                     </h1>
                                     <p className="mx-auto mt-4 max-w-[40ch] text-xl leading-normal text-gray-300 lg:text-2xl">
-                                        We are building our autonomous coding assistant that will be able to write code
-                                        for you, understand your problems, and guide you in solving them.
+                                        We are building an autonomous coding assistant that will be able to understand
+                                        your problems, create a step-by-step plan to solve them, and write code
+                                        alongside you.
                                     </p>
+
+                                    <div className="text-center">
+                                        <button
+                                            type="button"
+                                            onClick={() => {
+                                                const element = document.querySelector('#waitlist-autocody')
+                                                if (element) {
+                                                    element.scrollIntoView({ behavior: 'smooth' })
+                                                }
+                                            }}
+                                        >
+                                            Get on the Waitlist
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -249,17 +264,19 @@ function Principles(): JSX.Element {
     return (
         <>
             <div className="mx-auto max-w-3xl">
-                <h2 className="text-4xl font-semibold !tracking-[-1px] text-[#0F111A]">Core Principles</h2>
-                <h3 className="mx-auto mt-2 text-xl font-semibold tracking-tight text-gray-400">
-                    How we're thinking about the road to autonomous coding
+                <h2 className="text-4xl font-semibold !tracking-[-1px] text-[#0F111A]">
+                    Our core principles for the road to autonomous coding
+                </h2>
+                <h3 className="mx-auto mt-2 text-2xl font-semibold tracking-tight text-gray-400">
+                    4 ideas that will guide an agentic coding experience
                 </h3>
             </div>
 
             <div className="mx-auto mt-16 max-w-3xl">
-                <p className="font-semibold text-gray-400">Principle 1: Hybrid</p>
+                <p className="text-gray-40a0 font-semibold">Principle 1: Cooperation</p>
                 <p className="text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
-                    <span className="text-blurple-400">A combination of coder and AI. </span> There are agentic
-                    solutions that let the AI free to choose the correct path to solve an issue from start to finish.{' '}
+                    <span className="text-blurple-400">A combination of human coder and AI. </span> Agentic solutions,
+                    like{' '}
                     <a
                         href="https://github.com/princeton-nlp/swe-agent"
                         target="_blank"
@@ -268,9 +285,13 @@ function Principles(): JSX.Element {
                     >
                         SWE-Agent
                     </a>
-                    , the benchmark for autonomous code generation, is only able to achieve a 12.29% success rate on the
-                    full SWE-bench test set. If you want to create an autonomous car, you don't remove the steering
-                    wheel. We must allow the AI to be trained and "steered" by a user.
+                    , that allow the AI to define a plan and execute against it fully autonomously are only able to
+                    achieve a 12.29% success rate on the full SWE-bench test set. If you want to create an autonomous
+                    car, you don't remove the steering wheel. We must allow the AI to be trained and "steered" by a
+                    user.
+                </p>
+                <p className="mt-5 text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
+                    We believe the best place for a user to provide high fidelity feedback to AI is in a code editor.
                 </p>
 
                 <p className="mt-5 text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
@@ -281,8 +302,8 @@ function Principles(): JSX.Element {
             <div className="mx-auto mt-16 max-w-3xl">
                 <p className="font-semibold text-gray-400">Principle 2: Context</p>
                 <p className="text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
-                    <span className="text-blurple-400">Context should come from inside AND outside a repo. </span> We
-                    are building{' '}
+                    <span className="text-blurple-400">Context should come from inside AND outside the codebase. </span>{' '}
+                    We are building{' '}
                     <a
                         href="https://openctx.org"
                         target="_blank"
@@ -291,9 +312,9 @@ function Principles(): JSX.Element {
                     >
                         OpenCtx
                     </a>
-                    , an open source tool to bring in content about your code from sources like Linear, Jira, Slack,
-                    Google Docs, and more. We believe that an LLM (and a human) can't effectively solve a problem
-                    without the context of the problem.
+                    , an open source tool to bring relevant context about your code from sources like Linear, Jira,
+                    Slack, Google Docs, and more. We believe that an LLM (just like a human) cannot effectively solve a
+                    problem without full context and understanding of the problem.
                 </p>
             </div>
 
@@ -301,21 +322,18 @@ function Principles(): JSX.Element {
                 <p className="font-semibold text-gray-400">Principle 3: Steerable</p>
                 <p className="text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
                     <span className="text-blurple-400">A user should be in the loop at every step. </span> In an agentic
-                    workflow, AI will have many steps to complete for the user. A user should be able to steer the
-                    workflow at every step by evaluating LLM output throughout the process.
+                    workflow, AI will do the work, with the human providing oversight. A user should be able to steer
+                    the workflow at every step by evaluating LLM output throughout the process.
                 </p>
             </div>
 
             <div className="mx-auto mt-16 max-w-3xl">
-                <p className="font-semibold text-gray-400">Principle 4: Context</p>
-                <h2 className="mx-auto w-full text-4xl font-semibold text-black">
-                    <span className="text-black">Context .</span>
-                </h2>
-
-                <div className="mt-4 text-xl font-medium leading-normal text-gray-600 lg:text-2xl">
-                    AI should be trained to understand the user's intent, not just the code. Gathering feedback at every
-                    step of the process is key.
-                </div>
+                <p className="font-semibold text-gray-400">Principle 4: Feedback</p>
+                <p className="text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
+                    <span className="text-blurple-400">AI should learn from feedback. </span> AI should continuously
+                    evolve and adapt to better understand the user's intent, not just the code. Gathering feedback at
+                    every step of the process.
+                </p>
             </div>
         </>
     )
@@ -528,5 +546,14 @@ function AutoCodyHowItWorks(): JSX.Element {
 }
 
 function SignUp(): JSX.Element {
-    return <div>SignUp</div>
+    return (
+        <div id="waitlist-autocody" className="mx-auto max-w-3xl text-center">
+            <h2 className="text-4xl font-semibold !tracking-[-1px] text-[#0F111A]">Interested?</h2>
+            <h3 className="mx-auto mt-2 text-xl font-semibold tracking-tight text-gray-400">
+                Sign up for the waitlist to get notified when AutoCody is ready.
+            </h3>
+
+            <div className="mt-20">SIGNUP FORM HERE</div>
+        </div>
+    )
 }
