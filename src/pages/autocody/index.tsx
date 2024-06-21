@@ -211,7 +211,7 @@ function VSCode(): JSX.Element {
                                 <div className="z-10 flex h-32 w-32 items-center justify-center rounded-full border border-black bg-[#0D121B] shadow-2xl">
                                     <video
                                         autoPlay={true}
-                                        loop={true}
+                                        loop={false}
                                         muted={true}
                                         playsInline={true}
                                         className="h-24 w-24"
@@ -222,9 +222,9 @@ function VSCode(): JSX.Element {
                                 </div>
                             </div>
 
-                            <div className="relative h-[300px] flex-grow">
+                            <div className="relative h-[300px] flex-grow pt-5">
                                 <div className="flex h-full flex-col justify-center px-5 text-white">
-                                    <h1 className="text-[100px] font-semibold leading-none !tracking-[-3px] text-white">
+                                    <h1 className="text-9xl font-semibold leading-none !tracking-[-3px] text-white">
                                         Auto
                                         <span className="bg-gradient-to-br from-gray-100 to-gray-200 bg-clip-text text-transparent">
                                             Cody
@@ -236,9 +236,10 @@ function VSCode(): JSX.Element {
                                         alongside you.
                                     </p>
 
-                                    <div className="text-center">
+                                    <div className="mt-5 text-center">
                                         <button
                                             type="button"
+                                            className="rounded-xl bg-blurple-400 px-4 py-2.5 text-white hover:bg-blurple-300"
                                             onClick={() => {
                                                 const element = document.querySelector('#waitlist-autocody')
                                                 if (element) {
@@ -272,8 +273,8 @@ function Principles(): JSX.Element {
                 </h3>
             </div>
 
-            <div className="mx-auto mt-16 max-w-3xl">
-                <p className="text-gray-40a0 font-semibold">Principle 1: Cooperation</p>
+            <div className="mx-auto mt-20 max-w-3xl">
+                <p className="text-xl font-semibold text-gray-400">Principle 1: Cooperation</p>
                 <p className="text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
                     <span className="text-blurple-400">A combination of human coder and AI. </span> Agentic solutions,
                     like{' '}
@@ -300,7 +301,7 @@ function Principles(): JSX.Element {
             </div>
 
             <div className="mx-auto mt-16 max-w-3xl">
-                <p className="font-semibold text-gray-400">Principle 2: Context</p>
+                <p className="text-xl font-semibold text-gray-400">Principle 2: Context</p>
                 <p className="text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
                     <span className="text-blurple-400">Context should come from inside AND outside the codebase. </span>{' '}
                     We are building{' '}
@@ -319,7 +320,7 @@ function Principles(): JSX.Element {
             </div>
 
             <div className="mx-auto mt-16 max-w-3xl">
-                <p className="font-semibold text-gray-400">Principle 3: Steerable</p>
+                <p className="text-xl font-semibold text-gray-400">Principle 3: Steerable</p>
                 <p className="text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
                     <span className="text-blurple-400">A user should be in the loop at every step. </span> In an agentic
                     workflow, AI will do the work, with the human providing oversight. A user should be able to steer
@@ -328,7 +329,7 @@ function Principles(): JSX.Element {
             </div>
 
             <div className="mx-auto mt-16 max-w-3xl">
-                <p className="font-semibold text-gray-400">Principle 4: Feedback</p>
+                <p className="text-xl font-semibold text-gray-400">Principle 4: Feedback</p>
                 <p className="text-xl font-semibold text-gray-400 lg:text-3xl lg:leading-normal">
                     <span className="text-blurple-400">AI should learn from feedback. </span> AI should continuously
                     evolve and adapt to better understand the user's intent, not just the code. Gathering feedback at
