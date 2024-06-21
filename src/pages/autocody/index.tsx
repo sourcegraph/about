@@ -21,8 +21,12 @@ const AutoCodyPage: FunctionComponent = () => (
             <Principles />
         </div>
 
-        <div className="mx-auto mt-40 max-w-6xl pb-32">
+        <div className="mx-auto mt-40 max-w-6xl">
             <AutoCodyHowItWorks />
+        </div>
+
+        <div className="mx-auto mt-40 max-w-3xl pb-32">
+            <SignUp />
         </div>
     </Layout>
 )
@@ -204,10 +208,10 @@ function VSCode(): JSX.Element {
                             <div className="relative flex justify-center">
                                 {/* <div className="absolute h-32 w-32 -translate-x-5 translate-y-5 -rotate-6 rounded-xl border border-black bg-gray-700" />
                         <div className="absolute h-32 w-32 translate-x-3 rotate-12 rounded-xl border border-black bg-gray-700" /> */}
-                                <div className="z-10 flex h-32 w-32 items-center justify-center rounded-full border border-black bg-gradient-to-br from-gray-700 to-black shadow-2xl">
+                                <div className="z-10 flex h-32 w-32 items-center justify-center rounded-full border border-black bg-[#0D121B] shadow-2xl">
                                     <video
                                         autoPlay={true}
-                                        loop={false}
+                                        loop={true}
                                         muted={true}
                                         playsInline={true}
                                         className="h-24 w-24"
@@ -331,20 +335,198 @@ function AutoCodyHowItWorks(): JSX.Element {
                 AI strategy
             </h3>
 
-            <div className="mt-14 grid grid-cols-[400px,1fr] gap-4">
-                <div className="">
-                    <div className="rounded-2xl bg-gray-200/30 p-8">
-                        <p className="text-sm font-semibold text-gray-400">Step 1</p>
-                        <h3 className="text-2xl font-semibold text-[#0F111A]">Prompting</h3>
-                        <p className="mt-4 text-lg text-gray-500">
-                            The step that we know and have done 1,000+ times in the past year
-                        </p>
+            <div className="relative mt-14 flex gap-4">
+                <div className="w-[400px]">
+                    <div className="sticky top-20">
+                        <div className="rounded-2xl bg-gray-200/30 p-8">
+                            <p className="text-sm font-semibold text-gray-400">Step 1</p>
+                            <h3 className="text-2xl font-semibold text-[#0F111A]">User prompts AutoCody</h3>
+                            <p className="mt-4 text-lg text-gray-500">
+                                The step that we know and have done 1,000+ times in the past year
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div className="">
-                    <div className="rounded-2xl bg-gray-200/30 p-8">VIDEO GOES HERE</div>
+
+                <div className="flex-1 overflow-y-auto">
+                    <div className="rounded-2xl bg-gray-200/30 p-12 pr-0">
+                        <video
+                            src="/cody/autocody-prompting.mp4"
+                            className="rounded-l-2xl"
+                            autoPlay={true}
+                            loop={true}
+                            muted={true}
+                            playsInline={true}
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div className="relative mt-14 flex gap-4">
+                <div className="w-[400px]">
+                    <div className="sticky top-20">
+                        <div className="rounded-2xl bg-gray-200/30 p-8">
+                            <p className="text-sm font-semibold text-gray-400">Step 2</p>
+                            <h3 className="text-2xl font-semibold text-[#0F111A]">AutoCody will restate the problem</h3>
+                            <p className="mt-4 text-lg text-gray-500">
+                                AutoCody will clarify a user's prompt. It will state the current behavior and define the
+                                desired behavior.
+                            </p>
+
+                            <p className="mt-4 text-lg text-gray-500">
+                                Why? Clarifying user intent is important. Getting intent wrong by a few degrees can send
+                                AI down a rabbit hole.
+                            </p>
+                        </div>
+
+                        <div className="mt-4 rounded-2xl bg-gray-200/30 p-8">
+                            <h3 className="text-lg font-semibold text-gray-500">User will approve/edit restatement</h3>
+                            <p className="mt-2 text-base text-gray-500">
+                                A user can let AutoCody know if the current behavior and desired behavior are correct.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flex-1 overflow-y-auto">
+                    <div className="rounded-2xl bg-gray-200/30 p-12 pr-0">
+                        <video
+                            src="/cody/autocody-restate.mp4"
+                            className="rounded-l-2xl"
+                            autoPlay={true}
+                            loop={true}
+                            muted={true}
+                            playsInline={true}
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div className="relative mt-14 flex gap-4">
+                <div className="w-[400px]">
+                    <div className="sticky top-20">
+                        <div className="rounded-2xl bg-gray-200/30 p-8">
+                            <p className="text-sm font-semibold text-gray-400">Step 3</p>
+                            <h3 className="text-2xl font-semibold text-[#0F111A]">
+                                AutoCody will find relevant context
+                            </h3>
+                            <p className="mt-4 text-lg text-gray-500">
+                                AutoCody will use the prompt and restatement to create queries under the hood. Then it
+                                will search your codebase and relevant sources to find high quality context.
+                            </p>
+                            <p className="mt-4 text-lg text-gray-500">
+                                AutoCody will evaluate each piece of context to determine how important it is to the
+                                task.
+                            </p>
+                            <p className="mt-4 text-lg text-gray-500">
+                                Why? Context is key. Without context, an LLM can't understand the user's intent.
+                            </p>
+                        </div>
+
+                        <div className="mt-4 rounded-2xl bg-gray-200/30 p-8">
+                            <h3 className="text-lg font-semibold text-gray-500">User will add/remove context</h3>
+                            <p className="mt-2 text-base text-gray-500">
+                                A user can let AutoCody know if each piece of context was relevant. They can remove and
+                                add context as needed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flex-1 overflow-y-auto">
+                    <div className="rounded-2xl bg-gray-200/30 p-12 pr-0">
+                        <video
+                            src="/cody/autocody-restate.mp4"
+                            className="rounded-l-2xl"
+                            autoPlay={true}
+                            loop={true}
+                            muted={true}
+                            playsInline={true}
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div className="relative mt-14 flex gap-4">
+                <div className="w-[400px]">
+                    <div className="sticky top-20">
+                        <div className="rounded-2xl bg-gray-200/30 p-8">
+                            <p className="text-sm font-semibold text-gray-400">Step 4</p>
+                            <h3 className="text-2xl font-semibold text-[#0F111A]">AutoCody creates a plan</h3>
+                            <p className="mt-4 text-lg text-gray-500">
+                                After a user approves the context, AutoCody will create a step-by-step plan to solve a
+                                user's issue.
+                            </p>
+                            <p className="mt-4 text-lg text-gray-500">
+                                Each step in the plan also acts as a to-do list item so a user can mark it as complete.
+                            </p>
+                        </div>
+
+                        <div className="mt-4 rounded-2xl bg-gray-200/30 p-8">
+                            <h3 className="text-lg font-semibold text-gray-500">User will update the plan</h3>
+                            <p className="mt-2 text-base text-gray-500">
+                                A user can let AutoCody know if the plan is correct. They can tweak steps, add or remove
+                                steps, or change the order of steps.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flex-1 overflow-y-auto">
+                    <div className="rounded-2xl bg-gray-200/30 p-12 pr-0">
+                        <video
+                            src="/cody/autocody-restate.mp4"
+                            className="rounded-l-2xl"
+                            autoPlay={true}
+                            loop={true}
+                            muted={true}
+                            playsInline={true}
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div className="relative mt-14 flex gap-4">
+                <div className="w-[400px]">
+                    <div className="sticky top-20">
+                        <div className="rounded-2xl bg-gray-200/30 p-8">
+                            <p className="text-sm font-semibold text-gray-400">Step 5</p>
+                            <h3 className="text-2xl font-semibold text-[#0F111A]">
+                                AutoCody executes the plan step-by-step
+                            </h3>
+                            <p className="mt-4 text-lg text-gray-500">
+                                AutoCody will execute the plan step-by-step. It will make changes to the codebase and
+                                update the user on its progress.
+                            </p>
+                        </div>
+
+                        <div className="mt-4 rounded-2xl bg-gray-200/30 p-8">
+                            <h3 className="text-lg font-semibold text-gray-500">User will sit back and enjoy!</h3>
+                            <p className="mt-2 text-base text-gray-500">
+                                Since the user was able to adjust and steer AutoCody every step of the way, there is a
+                                higher chance of AutoCody completing the task successfully.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flex-1 overflow-y-auto">
+                    <div className="rounded-2xl bg-gray-200/30 p-12 pr-0">
+                        <video
+                            src="/cody/autocody-restate.mp4"
+                            className="rounded-l-2xl"
+                            autoPlay={true}
+                            loop={true}
+                            muted={true}
+                            playsInline={true}
+                        />
+                    </div>
                 </div>
             </div>
         </div>
     )
+}
+
+function SignUp(): JSX.Element {
+    return <div>SignUp</div>
 }
