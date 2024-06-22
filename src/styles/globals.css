@@ -16,7 +16,7 @@
         @apply font-systemSans text-base font-normal tracking-normal antialiased;
     }
     h1 {
-        @apply font-sans text-6xl font-semibold tracking-normal md:text-7xl md:tracking-tightest;
+        @apply font-sans text-violet-1 text-6xl font-semibold tracking-normal md:text-7xl md:tracking-tightest;
     }
     h2 {
         @apply font-sans text-4xl font-semibold tracking-normal md:text-5xl md:tracking-tighter;

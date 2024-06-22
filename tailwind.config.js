@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
+const { createThemes }  = require('tw-colors')
 const plugin = require('tailwindcss/plugin')
 const typography = require('@tailwindcss/typography')
 
@@ -77,6 +78,7 @@ module.exports = {
   content: ['./src/pages/**/*.tsx', './src/components/**/*.tsx'],
 
   // Theme based on our Marketing DLS
+   darkMode: 'selector',
   theme: {
     colors: ({ colors }) => ({
       inherit: colors.inherit,
@@ -249,6 +251,18 @@ module.exports = {
       addBase({
         ':root': extractColors(dlsColors),
       })
+    }),
+       createThemes({
+         light: {
+           violet:{
+          1: '#820DDE',
+        },
+      },
+        dark: {
+        violet:{
+          1: '#121212',
+        },
+      },
     }),
   ],
 }
