@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import Link from 'next/link'
 import { MdDoNotDisturb, MdLock, MdOutlineSecurity, MdVpnKey } from 'react-icons/md'
 
-import { ContentSection, Heading } from '..'
+import { ContentSection } from '..'
 
 interface EnterpriseGradeSectionProps {
     parentClassName?: string
@@ -37,12 +37,8 @@ export const EnterpriseGradeSection: FunctionComponent<EnterpriseGradeSectionPro
             '!py-0 md:px-[80px]': !parentClassName,
         })}
     >
-        <Heading size="h6" className="mb-4">
-            cody
-        </Heading>
-        <Heading size="h2" className="mb-10 !leading-10 !tracking-[-1px]">
-            Enterprise-grade AI security and governance
-        </Heading>
+        <h6 className="mb-4">cody</h6>
+        <h2 className="mb-10">Enterprise-grade AI security and governance</h2>
         <div className="mb-6 grid grid-cols-1 gap-6 md:grid-cols-3 ">
             {securityCardFeatures.map(feature => (
                 <SecurityCard key={feature.heading} {...feature} />
@@ -55,9 +51,7 @@ export const EnterpriseGradeSection: FunctionComponent<EnterpriseGradeSectionPro
                 </div>
                 <div className="mt-10 mb-4 pl-10 pt-10 pr-10 md:my-10  md:py-10   md:pl-0 md:pb-10">
                     <div className="flex max-w-[311px] flex-col gap-4">
-                        <Heading size="h2" className="!leading-10 !tracking-[-1px]">
-                            Guardrails to catch licensed code
-                        </Heading>
+                        <h2>Guardrails to catch licensed code</h2>
                         <p
                             className={classNames('mb-0 text-[18px] font-normal leading-[27px] -tracking-[0.25px]', {
                                 '!font-sans': parentClassName,
@@ -78,7 +72,7 @@ export const EnterpriseGradeSection: FunctionComponent<EnterpriseGradeSectionPro
                 />
                 <div className="flex items-start gap-4 rounded-2xl border-1 border-gray-200 bg-gray-100 py-10 px-8">
                     <img src="/enterprise/file-document-outline.svg" alt="" />
-                    <Heading size="h5" className="!font-[590px] !leading-[25px] !tracking-[-0.25px]">
+                    <h5>
                         To learn more, read our
                         <Link
                             href="/whitepapers/cody-security-and-legal"
@@ -87,7 +81,7 @@ export const EnterpriseGradeSection: FunctionComponent<EnterpriseGradeSectionPro
                         >
                             Cody security & legal whitepaper
                         </Link>
-                    </Heading>
+                    </h5>
                 </div>
             </div>
         </div>
@@ -101,9 +95,7 @@ const SecurityCard: FunctionComponent<{ icon: ReactNode; heading: string; paragr
 }) => (
     <div className="flex flex-col gap-4 rounded-2xl border-1 border-gray-200 py-10 px-8">
         {icon}
-        <Heading size="h4" className="font-systemSans !leading-[30px] tracking-[-0.25]">
-            {heading}
-        </Heading>
+        <h4>{heading}</h4>
         <p className="mb-0 text-[18px] font-normal leading-[27px] -tracking-[0.25px]">{paragraph}</p>
     </div>
 )

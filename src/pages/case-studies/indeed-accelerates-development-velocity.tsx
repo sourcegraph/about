@@ -72,9 +72,7 @@ export const CaseStudy: FunctionComponent = () => {
                         instances or 500 and if the work would take a few minutes or a few days to accomplish.
                     </p>
 
-                    <h2 className="pt-8 pb-1">
-                        Reducing the manual work required for large-scale code updates by 90%
-                    </h2>
+                    <h2 className="pt-8 pb-1">Reducing the manual work required for large-scale code updates by 90%</h2>
 
                     <p>
                         In most cases, the Sourcegraph searches were being done because something in the code needed to

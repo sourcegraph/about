@@ -298,7 +298,7 @@ const blogResourceItems = [
     },
 ]
 
-const CodeInsightsPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
+const CodeInsightsPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
     <Layout
         meta={{
             title: 'Sourcegraph - Code Insights',

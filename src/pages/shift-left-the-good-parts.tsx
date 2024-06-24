@@ -38,7 +38,7 @@ const blogResourceItems = [
     },
 ]
 
-const ShiftLeftPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
+const ShiftLeftPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
     <Layout
         meta={{
             title: 'Shift Left - Sourcegraph',

@@ -4,7 +4,7 @@ import MagnifyIcon from 'mdi-react/MagnifyIcon'
 import NavigationIcon from 'mdi-react/NavigationIcon'
 import Link from 'next/link'
 
-import { CodyCta, ContentSection, Heading, InfiniteCarousel, Layout } from '../../components'
+import { CodyCta, ContentSection, InfiniteCarousel, Layout } from '../../components'
 import { CardSection, CardDescription, QualtricsCard } from '../../components/Solutions'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { carouselImages } from '../code-search'
@@ -25,12 +25,12 @@ const BuildUnitTestsPage: FunctionComponent = () => {
                 <div className="w-full">
                     <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-10 px-2 pt-[64px] md:px-6">
                         <div className="align-center flex flex-col justify-center gap-6 text-center">
-                            <Heading size="h1">Build unit tests with AI</Heading>
+                            <h1>Build unit tests with AI</h1>
                             <div className="flex w-full justify-center">
-                                <Heading size="h3" className="max-w-[928px] leading-[30px] !tracking-[-0.25px]">
+                                <h3 className="max-w-[928px]">
                                     Cody lives in your IDE sidebar and generates tests with a single hotkey or button
                                     click, considering your existing code to create relevant tests.
-                                </Heading>
+                                </h3>
                             </div>
                         </div>
                         <div className="flex justify-center gap-6">
@@ -93,13 +93,11 @@ const BuildUnitTestsPage: FunctionComponent = () => {
             >
                 <div className="z-10 flex flex-col gap-16 rounded-lg bg-white bg-opacity-40 px-6 shadow-xl shadow-white/80 backdrop-blur-[1px] md:my-16 md:w-full md:max-w-[450px] lg:max-w-[552px] 2xl:shadow-none">
                     <div className="flex flex-col gap-4">
-                        <Heading size="h2" className="!leading-[40px] !tracking-[-1px]">
-                            Cody makes testing easy
-                        </Heading>
-                        <Heading size="h3" className="!font-sans !leading-tight !tracking-[-0.25px]">
+                        <h2>Cody makes testing easy</h2>
+                        <h3>
                             Highlight a symbol, code block, or file, and Cody will generate tests for that code at your
                             command.
-                        </Heading>
+                        </h3>
                     </div>
                     <div className="flex flex-col gap-10">
                         <CardSection icon={<MagnifyIcon />} title="Framework-aware">

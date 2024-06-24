@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { ContentSection, Heading } from '..'
+import { ContentSection } from '..'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 
 interface RequestDemoCtaProps {
@@ -14,9 +14,7 @@ export const RequestDemoCta: FunctionComponent<RequestDemoCtaProps> = ({ onClick
         className="flex max-w-[1232px] flex-col justify-between rounded-2xl border-1 border-gray-200  bg-violet-700 py-16 px-[56px] md:flex-row"
         parentClassName="md:px-[80px] !py-0 md:!pb-[96px] !pb-[64px]"
     >
-        <Heading size="h2" className="mb-8 !leading-10 !tracking-[-1px] text-white md:mb-0">
-            Request a demo or start an enterprise trial
-        </Heading>
+        <h2 className="mb-8 text-white md:mb-0">Request a demo or start an enterprise trial</h2>
         <div className="flex max-w-[356px] flex-col flex-wrap items-center gap-6 sm:flex-row md:gap-4">
             {onClickContactUs ? (
                 <button

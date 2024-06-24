@@ -5,7 +5,6 @@ import Link from 'next/link'
 
 import { CodyFeatureCard } from '../CodyFeatureCard'
 import { ContentSection } from '../ContentSection'
-import { Heading } from '../Heading'
 
 import { CodeSmells, ExplainCode, SummarizeCode, UnitTest } from './cody-illustrations'
 
@@ -42,9 +41,9 @@ export const CodebaseAwareIntelligence: FunctionComponent = () => (
             className="mx-auto flex flex-col items-center gap-y-8 gap-x-[83px] text-center md:!mt-2 md:flex-row md:items-start"
         >
             <div className="border-t border-gray-500 pt-12 text-left">
-                <Heading size="h2" className="!text-[36px] text-white">
+                <h2 className="!text-[36px] text-white">
                     Codebase-aware <b>chat and commands</b>
-                </Heading>
+                </h2>
                 <p className="my-[30px] max-w-[572px] text-lg text-gray-200">
                     Ask Cody questions in the chat view or run pre-built commands for common actions. Cody will use
                     Sourcegraph’s code graph to answer using knowledge of your codebase.

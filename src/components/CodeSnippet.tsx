@@ -13,7 +13,12 @@ interface CodeSnippetProps extends TelemetryProps {
     className?: string
 }
 
-export const CodeSnippet: FunctionComponent<CodeSnippetProps> = ({ snippetName, code, className, telemetryRecorder }) => {
+export const CodeSnippet: FunctionComponent<CodeSnippetProps> = ({
+    snippetName,
+    code,
+    className,
+    telemetryRecorder,
+}) => {
     const [copied, setCopied] = useState(false)
     const handleCopy = (): void => {
         copy(code)

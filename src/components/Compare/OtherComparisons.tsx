@@ -2,8 +2,6 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Heading } from '../Heading'
-
 const data = [
     {
         name: 'GitHub Copilot',
@@ -34,9 +32,7 @@ const data = [
 
 export const OtherComparisons: FunctionComponent = () => (
     <div className="mx-auto my-10 max-w-screen-xl">
-        <Heading size="h2" className="mb-10">
-            Compare other code AI assistants
-        </Heading>
+        <h2 className="mb-10">Compare other code AI assistants</h2>
         <div className="grid grid-cols-1 gap-10 text-center md:grid-cols-3">
             {data?.map(assistant => (
                 <Link href={assistant.url} key={assistant.name}>

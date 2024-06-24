@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Heading, Layout } from '../../components'
+import { Layout } from '../../components'
 import CompareHero from '../../components/Compare/CompareHero'
 import { CompareTables } from '../../components/Compare/CompareTables'
 import { copilotVsCody } from '../../components/Compare/constants'
@@ -28,13 +28,11 @@ const CopilotVsCodyPage: FunctionComponent = () => {
                     competitorIcon="/assets/compare/github-copilot.svg"
                     containerClassName="xl:pt-[121px]"
                 >
-                    <Heading
-                        size="h3"
-                        className="mt-[-15px] mb-0 pb-[5px] font-sf !leading-[30px] !tracking-[-0.25px] lg:w-[671px] lg:text-2xl"
-                    >
-                        Cody is the better option for individuals who want a free AI code assistant that they can personalize using codebase context, or for users who would like to select which LLM they'd like to use.
-
-                    </Heading>
+                    <h3 className="mt-[-15px] mb-0 pb-[5px] lg:w-[671px]">
+                        Cody is the better option for individuals who want a free AI code assistant that they can
+                        personalize using codebase context, or for users who would like to select which LLM they'd like
+                        to use.
+                    </h3>
 
                     <button
                         type="button"

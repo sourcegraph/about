@@ -3,10 +3,10 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { Badge, ContentSection, FeatureRoadMap, Heading, Layout } from '../components'
+import { Badge, ContentSection, FeatureRoadMap, Layout } from '../components'
 import { MeetWithProductExpertButton } from '../components/cta/MeetWithProductExpertButton'
 import { buttonLocation } from '../data/tracking'
-import { TelemetryProps } from '../telemetry';
+import { TelemetryProps } from '../telemetry'
 
 interface OwnContentProps {
     title: string
@@ -43,7 +43,7 @@ const roadMapSteps = [
     },
 ]
 
-const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
+const OwnPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
     <Layout
         meta={{
             title: 'Code Ownership',
@@ -62,17 +62,13 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
         >
             <div className="md:max-w-[597px]">
                 <div className="flex gap-x-2">
-                    <Heading size="h6" className="text-white">
-                        SOURCEGRAPH OWN
-                    </Heading>
+                    <h6 className="text-white">SOURCEGRAPH OWN</h6>
                     <Badge size="small" text="Experimental" color="dark-blue" />
                 </div>
-                <Heading size="h1" className="mt-2 text-white">
-                    100% code ownership coverage, now
-                </Heading>
-                <Heading size="h3" className="mt-6 text-gray-200">
+                <h1 className="mt-2 text-white">100% code ownership coverage, now</h1>
+                <h3 className="mt-6 text-gray-200">
                     Evergreen code ownership across code hosts, powering Code Search, Batch Changes, and Insights.
-                </Heading>
+                </h3>
                 <div className="mt-8 flex flex-row gap-x-4">
                     <Link
                         href="https://sourcegraph.com/docs/own"
@@ -108,7 +104,12 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
                     playsInline={true}
                     controls={false}
                     data-cookieconsent="ignore"
-                    onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 1 }, privateMetadata: { title: 'Own vulnerabilities' } })}
+                    onPlay={() =>
+                        telemetryRecorder.recordEvent('video', 'play', {
+                            metadata: { video: 1 },
+                            privateMetadata: { title: 'Own vulnerabilities' },
+                        })
+                    }
                 >
                     <source
                         type="video/webm"
@@ -134,7 +135,12 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
                     playsInline={true}
                     controls={false}
                     data-cookieconsent="ignore"
-                    onPlay={() => telemetryRecorder.recordEvent('video', 'play', { metadata: { video: 2 }, privateMetadata: { title: 'Own knowledge sharing' } })}
+                    onPlay={() =>
+                        telemetryRecorder.recordEvent('video', 'play', {
+                            metadata: { video: 2 },
+                            privateMetadata: { title: 'Own knowledge sharing' },
+                        })
+                    }
                 >
                     <source
                         type="video/webm"
@@ -165,7 +171,7 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
             <div>
                 <FeatureRoadMap steps={roadMapSteps} />
 
-                <Heading className="ml-6 text-white" size="h5">
+                <h5 className="ml-6 text-white">
                     Have a feature request?{' '}
                     <Link
                         className="text-white underline"
@@ -174,14 +180,12 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
                     >
                         Let us know!
                     </Link>
-                </Heading>
+                </h5>
             </div>
         </ContentSection>
 
         <ContentSection className="flex flex-col items-center" parentClassName="mt-12 mb-4">
-            <Heading className="mb-4 !text-[36px] text-white" size="h2">
-                Try Sourcegraph Own
-            </Heading>
+            <h2 className="mb-4 !text-[36px] text-white">Try Sourcegraph Own</h2>
 
             <p className="mb-0 text-lg text-gray-200">Available now as an experimental feature!</p>
             <div className="mt-8 flex flex-row gap-x-4">
@@ -204,11 +208,7 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
 
 const OwnContent: FunctionComponent<OwnContentProps> = ({ title, description, link = '', linkText, className }) => (
     <div className={classNames(className, 'md:max-w-[572px]')}>
-        {title && (
-            <Heading size="h4" className="!text-4xl text-white">
-                {title}
-            </Heading>
-        )}
+        {title && <h4 className="text-white">{title}</h4>}
         {description && <p className="mt-[30px] text-lg text-gray-200">{description}</p>}
         {linkText && (
             <Link href={link} className="mt-[30px] text-lg text-gray-200 underline">

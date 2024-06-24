@@ -1,7 +1,7 @@
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import Link from 'next/link'
 
-import { ContentSection, Heading, Layout } from '../../components'
+import { ContentSection, Layout } from '../../components'
 
 interface ThankYouProps {
     actionPage: string
@@ -65,14 +65,14 @@ const slugs = Object.keys(slugData)
 const ThankYouPage: NextPage<ThankYouProps> = ({ actionPage, pdfUrl }) => (
     <Layout headerColorTheme="dark">
         <ContentSection parentClassName="sg-bg-thank-you-page !pb-16 !pt-8 md:!mt-16" className="">
-            <Heading size="h1" className="mx-auto max-w-[846px] text-center !text-[57px] text-white">
+            <h1 className="mx-auto max-w-[846px] text-center text-white">
                 Thank you, the whitepaper is on its way to your inbox
-            </Heading>
+            </h1>
 
-            <Heading size="h3" className="mx-auto mt-8 max-w-[846px] text-center text-white">
+            <h3 className="mx-auto mt-8 max-w-[846px] text-center text-white">
                 If you’d like to learn more from our experts, including how organizations are partnering with
                 Sourcegraph to accelerate software development, schedule your demo today.
-            </Heading>
+            </h3>
 
             <div className="mt-[29.5px] flex flex-row flex-wrap justify-center gap-6">
                 <Link
@@ -92,9 +92,7 @@ const ThankYouPage: NextPage<ThankYouProps> = ({ actionPage, pdfUrl }) => (
                 </Link>
             </div>
 
-            <Heading size="h3" className="mt-16 text-center !text-[36px] font-semibold text-white md:mt-[113.5px]">
-                Additional content
-            </Heading>
+            <h3 className="mt-16 text-center font-semibold text-white md:mt-[113.5px]">Additional content</h3>
 
             <div className="mt-10 flex flex-row  flex-wrap justify-center gap-[78px]">
                 {whitepapers.map(whitepaper => {

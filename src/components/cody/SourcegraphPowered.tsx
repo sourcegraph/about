@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { ContentSection, Heading } from '..'
+import { ContentSection } from '..'
 
 export const SourcegraphPowered: FunctionComponent = () => (
     <ContentSection
@@ -10,9 +10,9 @@ export const SourcegraphPowered: FunctionComponent = () => (
         className="m-0 flex flex-col items-center gap-5 px-6 py-16 md:flex-row md:justify-between md:px-0 lg:py-28"
     >
         <div className="flex w-full max-w-[570px] flex-col md:ml-[29px]">
-            <Heading size="h2" className="mb-1 text-[40px] font-normal leading-10 tracking-[-1px] text-white">
+            <h2 className="mb-1 font-normal text-white">
                 Sourcegraph powered <span className="cody-heading bg-clip-text text-transparent">context</span>
-            </Heading>
+            </h2>
 
             <p className="mb-0 mt-[12px] text-2xl font-normal leading-[30px] tracking-[-0.25px] text-[rgba(255,255,255,0.80)] md:max-w-[501px]">
                 Cody uses your code graph plus{' '}

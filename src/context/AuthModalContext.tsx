@@ -20,7 +20,10 @@ const AuthModalContext = createContext<AuthModalContextProps>({
 
 export const useAuthModal = (): AuthModalContextProps => useContext(AuthModalContext)
 
-export const AuthModalProvider: FunctionComponent<{ children: ReactNode } & TelemetryProps> = ({ children, telemetryRecorder }) => {
+export const AuthModalProvider: FunctionComponent<{ children: ReactNode } & TelemetryProps> = ({
+    children,
+    telemetryRecorder,
+}) => {
     const router = useRouter()
     const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false)
     const [isControlModalOpen, setIsControlModalOpen] = useState(false)
@@ -32,11 +35,13 @@ export const AuthModalProvider: FunctionComponent<{ children: ReactNode } & Tele
     const userFlag = useFeatureFlagVariantKey('install-first')
 
     const displayModal = useCallback((): void => {
-        telemetryRecorder.recordEvent('abTest', 'enroll', { privateMetadata: {
-            testName: 'AuthInstallModalTest',
-            group: (userFlag as string) ?? 'undefined',
-            modal: userFlag === 'test' ? 'installation' : 'signup',
-        }})
+        telemetryRecorder.recordEvent('abTest', 'enroll', {
+            privateMetadata: {
+                testName: 'AuthInstallModalTest',
+                group: (userFlag as string) ?? 'undefined',
+                modal: userFlag === 'test' ? 'installation' : 'signup',
+            },
+        })
 
         if (userFlag === 'test') {
             setIsControlModalOpen(true)
@@ -54,10 +59,12 @@ export const AuthModalProvider: FunctionComponent<{ children: ReactNode } & Tele
             } else {
                 setIsSignUpModalOpen(true)
             }
-            telemetryRecorder.recordEvent('aboutGetCodyPopover', 'open', { privateMetadata: {
-                source,
-                description: ''
-            }})
+            telemetryRecorder.recordEvent('aboutGetCodyPopover', 'open', {
+                privateMetadata: {
+                    source,
+                    description: '',
+                },
+            })
             setPlan(plan ?? 'free')
         },
         [displayModal, router.pathname, telemetryRecorder]
@@ -85,7 +92,12 @@ export const AuthModalProvider: FunctionComponent<{ children: ReactNode } & Tele
                 )}
                 {isControlModalOpen && (
                     <Modal open={isControlModalOpen} handleClose={closeModal}>
-                        <IdeModalContent source={source} plan={plan} disablePlanParam={disablePlanParam} telemetryRecorder={telemetryRecorder} />
+                        <IdeModalContent
+                            source={source}
+                            plan={plan}
+                            disablePlanParam={disablePlanParam}
+                            telemetryRecorder={telemetryRecorder}
+                        />
                     </Modal>
                 )}
             </>

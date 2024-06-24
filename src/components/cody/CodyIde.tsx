@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 
-import { ContentSection, Heading } from '..'
+import { ContentSection } from '..'
 
 interface CodyIdeProps {
     isLight?: boolean
@@ -28,16 +28,14 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                     'md:pr-0': isLight,
                 })}
             >
-                <Heading
-                    size="h6"
-                    className={classNames('whitespace-nowrap !text-lg', {
+                <h6
+                    className={classNames('whitespace-nowrap', {
                         'text-gray-200': !isLight,
-                        '  pb-[48px] !font-systemSans !font-semibold !leading-[27px] !tracking-[0.54px] text-[#0F111A] md:pb-0':
-                            isLight,
+                        'pb-[48px] text-[#0F111A] md:pb-0': isLight,
                     })}
                 >
                     Cody is available for:
-                </Heading>
+                </h6>
             </div>
             <div
                 className={classNames('flex flex-wrap items-center justify-center', {
@@ -48,15 +46,14 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                 <div className={classNames('flex items-center gap-x-4 md:px-6', { 'py-[16px]': isLight })}>
                     <img className="h-[50px] w-[50px]" src="/icons/vscode.svg" alt="VS Code IDE Marketplace" />{' '}
                     <div className={classNames({ 'w-[110px]': isLight })}>
-                        <Heading
-                            size="h4"
-                            className={classNames('font-systemSans !text-2xl', {
+                        <h4
+                            className={classNames({
                                 'text-gray-200': !isLight,
-                                '!font-normal !leading-[30px] !tracking-[-0.25px] text-[#0F111A]': isLight,
+                                'text-[#0F111A]': isLight,
                             })}
                         >
                             VS Code
-                        </Heading>
+                        </h4>
                         <span
                             className={classNames('text-sm', {
                                 'text-[#343A4D]': isLight,
@@ -70,15 +67,14 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                 <div className={classNames('flex items-center gap-x-4 md:px-6', { 'py-[16px]': isLight })}>
                     <img className="h-[50px] w-[50px]" src="/icons/IntelliJ.svg" alt="IntelliJ IDE marketplace" />{' '}
                     <div className={classNames({ 'w-[110px]': isLight })}>
-                        <Heading
-                            size="h4"
-                            className={classNames('font-systemSans !text-2xl', {
+                        <h4
+                            className={classNames({
                                 'text-gray-200': !isLight,
-                                '!font-normal !leading-[30px] !tracking-[-0.25px] text-[#0F111A]': isLight,
+                                'text-[#0F111A]': isLight,
                             })}
                         >
                             {isLight ? 'IntelliJ' : 'JetBrains IDEs'}
-                        </Heading>
+                        </h4>
                         <span
                             className={classNames('text-sm', {
                                 'text-[#343A4D]': isLight,
@@ -92,15 +88,14 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                 <div className={classNames('flex items-center gap-x-4 md:px-6', { 'py-[16px]': isLight })}>
                     <img className="h-[50px] w-[50px]" src="/icons/Neovim-logo.svg" alt="NeoVim IDE" />{' '}
                     <div className={classNames({ 'w-[110px]': isLight })}>
-                        <Heading
-                            size="h4"
-                            className={classNames('font-systemSans !text-2xl', {
+                        <h4
+                            className={classNames({
                                 'text-gray-200': !isLight,
-                                '!font-normal !leading-[30px] !tracking-[-0.25px] text-[#0F111A]': isLight,
+                                'text-[#0F111A]': isLight,
                             })}
                         >
                             Neovim
-                        </Heading>
+                        </h4>
                         <span
                             className={classNames('text-sm', {
                                 'text-[#343A4D]': isLight,

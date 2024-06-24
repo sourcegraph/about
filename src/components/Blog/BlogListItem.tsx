@@ -2,8 +2,6 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Heading } from '../Heading'
-
 interface Blogs {
     heading?: string
     title: string
@@ -22,14 +20,12 @@ export const BlogListItem: FunctionComponent<Blogs> = ({
     <div className="mb-6 md:mb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[114px] lg:grid-cols-3 lg:gap-[114px]">
             <div className="flex flex-col text-white lg:col-span-2">
-                <Heading size="h6" className="mb-[6px] text-blurple-200">
-                    {heading}
-                </Heading>
-                <Heading size="h3" className="mb-[14px]">
+                <h6 className="mb-[6px] text-blurple-200">{heading}</h6>
+                <h3 className="mb-[14px]">
                     <Link href={href} className="text-white">
                         {title}
                     </Link>
-                </Heading>
+                </h3>
                 {description}
             </div>
             <div className="flex items-center lg:col-span-1">
