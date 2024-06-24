@@ -388,22 +388,16 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
         if (chiliPiper) {
             window.addEventListener('message', handleMessage)
         }
-        const onScriptLoad = (): void => {
-            if (window.LDBookItV2) {
-                // Perform initialization and setup
-                window.LDBookItV2.initialize('00D3t000000hHKtEAM', 'New Prospect', 'ld_bookit_log_id', {
-                    autoSubmit: true,
-                })
-                window.LDBookItV2.setFormProvider('hubspot_embed')
-            }
-        }
-        if (bookIt) {
-            window.addEventListener('message', onScriptLoad)
+
+        if (bookIt && window.LDBookItV2) {
+            window.LDBookItV2.initialize('00D3t000000hHKtEAM', 'New Prospect', 'ld_bookit_log_id', {
+                autoSubmit: true,
+            })
+            window.LDBookItV2.setFormProvider('hubspot_embed')
         }
 
         return () => {
             window.removeEventListener('message', handleMessage)
-            window.removeEventListener('message', onScriptLoad)
         }
     }, [formId, masterFormName, onFormSubmitted, inlineMessage, chiliPiper, formCreated, bookIt])
 
