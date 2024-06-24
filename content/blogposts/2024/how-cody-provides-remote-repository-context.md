@@ -68,7 +68,7 @@ The third point—context awareness of remote codebases—is the most challengin
 
 To solve the first problem, remote context needs to be accessible to the local IDE. Not many solutions even attempt this today and the few that do require users to set up indexing for each individual remote repository that they want accessible to the AI. This works for setups with a small, finite number of repositories to index, but it’s fickle for large setups with hundreds (if not thousands) of repositories.
 
-Cody Enterprise has an advantage by being built on the Sourcegraph platform. When users firs  set up Sourcegraph, they start by configuring a Sourcegraph instance, a server that connects to all of their code hosts. This instance indexes all of their repositories across every code host. Those repositories are then searchable by both [Code Search](https://sourcegraph.com/code-search) and Cody.
+Cody Enterprise has an advantage by being built on the Sourcegraph platform. When users firt  set up Sourcegraph, they start by configuring a Sourcegraph instance, a server that connects to all of their code hosts. This instance indexes all of their repositories across every code host. Those repositories are then searchable by both [Code Search](https://sourcegraph.com/code-search) and Cody.
 
 The Sourcegraph instance also re-indexes repositories regularly to keep the source code fresh (both for Cody and Code Search), making challenge #3 a non-issue. 
 
