@@ -16,13 +16,15 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/batch-changes-
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/batch-changes-graphql/batchchanges-graphql.png
 ---
 
-Since Sourcegraph introduced [Batch Changes](https://sourcegraph.com/batch-changes), many customers have successfully used it to [save them time](https://sourcegraph.com/case-studies/indeed-accelerates-development-velocity) making changes, [increased their productivity](https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow), or helped them [address critical vulnerabilities](https://sourcegraph.com/case-studies/nutanix-fixed-log4j-with-sourcegraph). Batch Changes uses fast and accurate code search that enable organizations to make large-scale changes across a codebase, no matter the size of the change or where that code is hosted.These changes, submitted as PRs, can then be tracked easily from a single UI within the Sourcegraph instance.
+[Batch Changes](https://sourcegraph.com/batch-changes) is a feature of Code Search that lets teams make large-scale changes across their codebases, even for codebases with multiple code hosts and any number of repositories. Batch Changes programmatically opens pull requests (or merge requests) for each change, and teams can track every PR to completion from a simple UI.
+
+Many customers have successfully used Batch Changes to [save time](https://sourcegraph.com/case-studies/indeed-accelerates-development-velocity) making changes, [increase their productivity](https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow), or [address critical vulnerabilities](https://sourcegraph.com/case-studies/nutanix-fixed-log4j-with-sourcegraph).
 
 There are a few different ways to create and manage Batch Changes, namely through the [UI or CLI](https://sourcegraph.com/docs/batch-changes/create-a-batch-change#create-a-batch-change-with-the-sourcegraph-cli), but in this post we'll walk through steps to programmatically create and execute a [Batch Change](https://sourcegraph.com/docs/batch_changes) from start to finish via the [GraphQL API](https://sourcegraph.com/docs/api/graphql).
 
 ## Why use GraphQL?
 
-Batch Changes are generally created and managed from within the [Sourcegraph UI](https://sourcegraph.com/docs/batch_changes/quickstart) or [CLI](https://sourcegraph.com/docs/batch_changes/how-tos/creating_a_batch_change), but there are times when it may be necessary to use the API.  This is especially true when there is a custom UI or some automation placed in front of the Batch Changes feature. Before proceeding with the step by step guide below, consider exploring the UI or CLI options or discuss this with your account team. 
+Batch Changes can be created and managed using the [Sourcegraph UI](https://sourcegraph.com/docs/batch_changes/quickstart) or [CLI](https://sourcegraph.com/docs/batch_changes/how-tos/creating_a_batch_change). However we also offer a Batch Changes API which lets teams build their own custom interfaces for writing and executing batch changes for their in-house steups. Before proceeding with the step by step guide below, consider exploring the UI or CLI options or discuss this with your account team. 
 
 # Step-by-step guide
 
@@ -30,11 +32,11 @@ Batch Changes are generally created and managed from within the [Sourcegraph UI]
 
 **Deploy Sourcegraph Executors**
 
-This procedure assumes you have deployed [Sourcegraph Executors](https://sourcegraph.com/docs/admin/executors) and will be running Batch Changes [server-side](https://sourcegraph.com/docs/batch-changes/server-side#running-batch-changes-server-side).  If you will be running Batch Changes [locally](https://sourcegraph.com/docs/batch-changes/create-a-batch-change), some of these steps will need to change.
+This procedure assumes you have deployed [Sourcegraph Executors](https://sourcegraph.com/docs/admin/executors) and will be running Batch Changes [server-side](https://sourcegraph.com/docs/batch-changes/server-side#running-batch-changes-server-side).
 
 **Build your Batch Change Specification**
 
-The first step to creating any Batch Change is to create a [Batch Change specification](https://sourcegraph.com/docs/batch_changes/references/batch_spec_yaml_reference) (aka Batch Spec) file in an editor of your choice. This file defines three main components crucial to executing a change:
+The first step to creating any batch bhange is to create a [batch change specification](https://sourcegraph.com/docs/batch_changes/references/batch_spec_yaml_reference) (aka batch spec) file in an editor of your choice. This file defines three main components crucial to executing a change:
 
 * [Which repositories to search](https://sourcegraph.com/docs/batch_changes/references/batch_spec_yaml_reference#on)
 * The [steps](https://sourcegraph.com/docs/batch_changes/references/batch_spec_yaml_reference#steps) (or actions) to perform against matches
@@ -42,7 +44,7 @@ The first step to creating any Batch Change is to create a [Batch Change specifi
 
 **API Execution Procedure**
 
-Once the batch specification is complete, the next phase is to start writing code to create and execute the Batch Change. The steps below are the GraphQL APIs that need to be carried out either in the code or in the [Sourcegraph GraphQL API Console](https://sourcegraph.com/docs/api/graphql#api-console).
+Once the batch specification is complete, the next phase is to write code to create and execute the batch change. The steps below are the GraphQL APIs that need to be carried out either in the code or in the [Sourcegraph GraphQL API Console](https://sourcegraph.com/docs/api/graphql#api-console).
 
 1. Get the Namespace ID
 2. Create the Batch Change Object
@@ -56,7 +58,7 @@ Once the batch specification is complete, the next phase is to start writing cod
 
 ### 1. Get the Namespace ID
 
-Every Batch Change is "owned" by either an individual user or an [organization](https://sourcegraph.com/docs/admin/organizations#organizations). The owner is referred to as the "namespace".  The APIs referenced in this post require a namespace ID rather than the individual or organization name.
+Every batch change is "owned" by either an individual user or an [organization](https://sourcegraph.com/docs/admin/organizations#organizations). The owner is referred to as the "namespace".  The APIs referenced in this post require a namespace ID rather than the individual or organization name.
 
 Use the following GraphQL API to convert from the name (either a user name or an organization name) to the ID:
 ```python
@@ -102,13 +104,13 @@ An example response:
 ```
 Save the ID returned (`"QmF0Y2hDaGFuZ2U6OTQ3"` in the above example response) when running this mutation.  We'll refer to it below as `BatchChangeID`.
 
-Once created, view the Batch Change in the Drafts or navigate to the URL from the above response.
+Once created, view the batch change in the Drafts or navigate to the URL from the above response.
 
 ### 3. Prepare the Batch Change Specification File for Upload
 
-Once the Batch Change specification is created, it needs to be converted to a string variable value to be passed to the GraphQL API.
+Once the batch change specification is created, it needs to be converted to a string variable value to be passed to the GraphQL API.
 
-For those familiar with the Sourcegraph CLI, [src-cli](https://sourcegraph.com/github.com/sourcegraph/src-cli), this is analogous to execute the src batch new command where you can generate a YAML file with a default batch spec.
+For those familiar with the Sourcegraph CLI, [src-cli](https://sourcegraph.com/github.com/sourcegraph/src-cli), this is analogous to executing the `src batch new` command where you can generate a YAML file with a default batch spec.
 
 **Example: Batch Change Specification**
 ```python
@@ -141,7 +143,7 @@ changesetTemplate:
 ```
 ### 4. Upload the Batch Change Specification
 
-Next, upload the Batch Change specification (to `$batchSpec`) using the format outlined in the previous step.
+Next, upload the batch change specification (to `$batchSpec`) using the format outlined in the previous step.
 ```python
 mutation CreateBatchSpecFromRaw($batchSpec: String!, $NamespaceID: ID!, $BatchChangeID: ID!) {
   createBatchSpecFromRaw(batchSpec: $batchSpec, namespace: $NamespaceID, batchChange: $BatchChangeID) {
@@ -167,7 +169,7 @@ NOTE: if you need to make a change after performing this step, use the `replaceB
 
 ### 5. Execute the Batch Change
 
-Finally, execute the Batch Change using:
+Finally, execute the batch change using:
 ```python
 mutation ExecuteBatchSpec($BatchSpecID: ID!) {
   executeBatchSpec(batchSpec: $BatchSpecID) {
@@ -191,7 +193,7 @@ An example response:
 ```
 Confirm that the returned state is `QUEUED` or `COMPLETED`.  If interested in previewing the results, go to the URL `https://[your-sourcegraph-server-url]/<applyURL>`
 
-For those familiar with the Sourcegraph CLI, [src-cli](https://sourcegraph.com/github.com/sourcegraph/src-cli), this is analogous to execute the src batch preview command.
+With the Sourcegraph CLI, [src-cli](https://sourcegraph.com/github.com/sourcegraph/src-cli), this is analogous to executing the `src batch preview` command.
 
 ### 6. Wait for Batch Spec Execution to Complete
 
@@ -229,7 +231,7 @@ An example response:
 ```
 ### 7. Apply the Batch Change
 
-Once ready to apply this Batch Change and create the PRs on your code host, run the following:
+Once ready to apply this batch change and create the PRs on your code host, run the following:
 ```python
 mutation ApplyBatchChange($BatchSpecID: ID!) {
   applyBatchChange(batchSpec: $BatchSpecID) {
@@ -254,7 +256,7 @@ An example response:
 ```
 ### 8. View Changeset Details and State
 
-After applying the Batch Change, run this query to see more details:
+After applying the batch change, run this query to see more details:
 ```python
 query BatchChangeChangesets($BatchChangeID: ID!) {
   node(id: $BatchChangeID) {
@@ -300,6 +302,8 @@ An example response:
   }
 }
 ```
+With the Sourcegraph CLI, [src-cli](https://sourcegraph.com/github.com/sourcegraph/src-cli), this is analogous to executing the `src batch apply` command.
+
 ### 9. Publish
 
 In order to publish changesets, use the list of changeset IDs from the previous API call and invoke the publish mutation on each:
@@ -342,4 +346,4 @@ An example response:
 
 Batch Changes is a powerful tool to help organizations make changes across many repositories and code hosts, letting you create PRs on all affected repositories and tracking their progress until they're all merged. There are different ways to execute them via UI or CLI, but in specific instances they can also be created and managed via the GraphQL API, offering flexibility to make changes programmatically depending on your specific circumstances.
 
-If you're interested in trying this yourself, check out our [demo code](https://github.com/sourcegraph/blog-examples/blob/main/batch-changes-api/bc.py) to get started.
+[Contact us](https://sourcegraph.com/contact/request-info) if you'd like to learn more about Batch Changes. Existing customers can contact their account manager for assistance, or try it themselves with our [demo code](https://github.com/sourcegraph/blog-examples/blob/main/batch-changes-api/bc.py).
