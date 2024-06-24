@@ -24,7 +24,7 @@ There are a few different ways to create and manage Batch Changes, namely throug
 
 ## Why use GraphQL?
 
-Batch Changes can be created and managed using the [Sourcegraph UI](https://sourcegraph.com/docs/batch_changes/quickstart) or [CLI](https://sourcegraph.com/docs/batch_changes/how-tos/creating_a_batch_change). However we also offer a Batch Changes API which lets teams build their own custom interfaces for writing and executing batch changes for their in-house steups. Before proceeding with the step by step guide below, consider exploring the UI or CLI options or discuss this with your account team. 
+Batch Changes can be created and managed using the [Sourcegraph UI](https://sourcegraph.com/docs/batch_changes/quickstart) or [CLI](https://sourcegraph.com/docs/batch_changes/how-tos/creating_a_batch_change). However we also offer a Batch Changes API which lets teams build their own custom interfaces for writing and executing batch changes for their in-house setups. Before proceeding with the step by step guide below, consider exploring the UI or CLI options or discuss this with your account team. 
 
 # Step-by-step guide
 
@@ -36,7 +36,7 @@ This procedure assumes you have deployed [Sourcegraph Executors](https://sourceg
 
 **Build your Batch Change Specification**
 
-The first step to creating any batch bhange is to create a [batch change specification](https://sourcegraph.com/docs/batch_changes/references/batch_spec_yaml_reference) (aka batch spec) file in an editor of your choice. This file defines three main components crucial to executing a change:
+The first step to creating any batch change is to create a [batch change specification](https://sourcegraph.com/docs/batch_changes/references/batch_spec_yaml_reference) (aka batch spec) file in an editor of your choice. This file defines three main components crucial to executing a change:
 
 * [Which repositories to search](https://sourcegraph.com/docs/batch_changes/references/batch_spec_yaml_reference#on)
 * The [steps](https://sourcegraph.com/docs/batch_changes/references/batch_spec_yaml_reference#steps) (or actions) to perform against matches
