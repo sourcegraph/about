@@ -5,18 +5,6 @@ import { Tabs } from './Tabs'
 const events = {
     upcoming: [
         {
-            title: 'Collision',
-            location: 'Toronto',
-            date: 'Jun 17-20, 2024',
-            link: 'https://collisionconf.com/',
-        },
-        {
-            title: 'AI Dev Tools Night',
-            location: 'San Francisco, CA',
-            date: 'Jun 24, 2024',
-            link: 'https://lu.ma/ai-devtools-night',
-        },
-        {
             title: 'AI Engineer World’s Fair',
             location: 'San Francisco, CA',
             date: 'Jun 25-27, 2024',
@@ -30,6 +18,18 @@ const events = {
         },
     ],
     past: [
+        {
+            title: 'AI Dev Tools Night',
+            location: 'San Francisco, CA',
+            date: 'Jun 24, 2024',
+            link: 'https://lu.ma/ai-devtools-night',
+        },
+        {
+            title: 'Collision',
+            location: 'Toronto',
+            date: 'Jun 17-20, 2024',
+            link: 'https://collisionconf.com/',
+        },
         {
             title: 'Learning TypeScript Livestream',
             location: 'YouTube',
