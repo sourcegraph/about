@@ -16,7 +16,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/batch-changes-
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/batch-changes-graphql/batchchanges-graphql.png
 ---
 
-[Batch Changes](https://sourcegraph.com/batch-changes) is a feature of Code Search that lets teams make large-scale changes across their codebases, even for codebases with multiple code hosts and any number of repositories. Batch Changes programmatically opens pull requests (or merge requests) for each change, and teams can track every PR to completion from a simple UI.
+Batch Changes is a feature of [Code Search](https://sourcegraph.com/code-search) that lets teams make large-scale changes across their codebases, even for codebases with multiple code hosts and any number of repositories. Batch Changes programmatically opens pull requests (or merge requests) for each change, and teams can track every PR to completion from a simple UI.
 
 Many customers have successfully used Batch Changes to [save time](https://sourcegraph.com/case-studies/indeed-accelerates-development-velocity) making changes, [increase their productivity](https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow), or [address critical vulnerabilities](https://sourcegraph.com/case-studies/nutanix-fixed-log4j-with-sourcegraph).
 
