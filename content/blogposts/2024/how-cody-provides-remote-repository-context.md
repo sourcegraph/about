@@ -81,7 +81,7 @@ The Sourcegraph instance also re-indexes repositories regularly to keep the sour
 
 ## What remote context awareness means for Cody users
 
-This setup of building Cody Enterprise _on top of_ Sourcegraph means that users get all three forms of code context: local file, local repository, and_ _remote repository context.
+This setup of building Cody Enterprise _on top of_ Sourcegraph means that users get all three forms of code context: local file, local repository, and remote repository context.
 
 As a Cody Enterprise user, you can use any repository in your codebase for context from any Cody interface. You can work in Repository A in your IDE and ask Cody a question requiring context from both Repository A and Repository B (for example a utility library). Or, you can ask Cody a high-level question about Repository C without having any project open in your IDE.
 
