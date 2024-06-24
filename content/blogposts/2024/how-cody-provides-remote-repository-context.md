@@ -17,9 +17,9 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-cody-und
 
 ## Why “context awareness” matters for code AI
 
-[Cody](http://sourcegraph.com/cody), our AI coding assistant, exists because building software is _complex_, and it’s complex because of the amount of context that developers have to carry in their heads at any time to work effectively. Writing code requires developers to first read and understand existing code.
+Building software is complex because of the amount of context that developers have to carry in their heads at any time to work effectively. Writing code requires developers to first read and understand existing code.
 
-The issue of code complexity is why we frequently talk about Cody, our AI coding assistant, being **context-aware**. Just as human developers need to carry context in their heads to write good code, so too does AI. An AI developer without context might be able to answer LeetCode-style problems (just as a human developer could), but it wouldn’t be able to effectively work within, and update, an existing codebase.
+The issue of code complexity is why we frequently talk about [Cody](http://sourcegraph.com/cody), our AI coding assistant, being **context-aware**. Just as human developers need to carry context in their heads to write good code, so too does AI. An AI developer without context might be able to answer LeetCode-style problems (just as a human developer could), but it wouldn’t be able to work within, and update, an existing codebase.
 
 In short, for an AI coding assistant to generate quality code and answers about code, it needs context. Extending beyond this: **for an AI coding assistant to be most effective within an enterprise-scale environment, it needs context at the same enterprise scale**.
 
@@ -28,18 +28,27 @@ In short, for an AI coding assistant to generate quality code and answers about 
 You can think of human developers as a function of all the context in their heads:
 
 <Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/how-cody-provides-remote-repository-context/compressed_human-dev-context.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/how-cody-provides-remote-repository-context/human-dev.png"
   alt="Human developers' context"
 />
 
-Meanwhile, you can think of AI as a function of all the context in its training data, plus any other context that’s been manually passed in:
+Meanwhile, you can think of AI as a function of all the context in its training data:
 
 <Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/how-cody-provides-remote-repository-context/compressed_ai-dev-context.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/how-cody-provides-remote-repository-context/generic-ai-dev.png"
+  alt="Generic AI' context"
+/>
+
+These are two very different sets of contexts! 
+
+For Cody, “context awareness” means finding a way to augment the AI’s existing training data with the relevant context that a human developer uses:
+
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/how-cody-provides-remote-repository-context/informed-ai-dev.png"
   alt="AI developers' context"
 />
 
-In theory, context awareness for an AI coding assistant isn’t that difficult. As a developer, you can copy relevant code (context) and paste it into a chat window alongside your request, similar to how you’d work with ChatGPT. We believe this defeats much of the value of having an _assistant_ though; if you have to find the exact relevant code snippets and manually copy and paste them to your AI assistant, then you still have to do a lot of the work of reading and understanding context. The value comes from the tool’s ability to retrieve its own context (and hopefully the right context) to answer your questions or generate quality code.
+In theory, context awareness for an AI coding assistant isn’t that difficult. As a developer, you can copy relevant code and paste it into a chat window alongside your request, similar to how you’d work with ChatGPT. This defeats much of the point of having an _assistant_ though, since it still requires you to find, read, and understand context. The value comes from the tool’s ability to _retrieve_ context to answer your questions or generate quality code.
 
 This automated context retrieval is where the challenge comes in. When you’re working in your IDE, the context you need for any given task can be broad:
 
@@ -57,9 +66,9 @@ The third point—context awareness of remote codebases—is the most challengin
 
 ## How Cody solves remote context awareness at enterprise scale
 
-To solve the first problem, you need a way of making remote context accessible to the local IDE. Not many solutions even attempt this today, and the few that do require users to set up indexing for each individual remote repository that they want accessible to the AI. This works for setups where there’s a small, finite number of repositories to index, but it’s more fickle for larger setups with hundreds (if not thousands) of repositories to consider.
+To solve the first problem, remote context needs to be accessible to the local IDE. Not many solutions even attempt this today and the few that do require users to set up indexing for each individual remote repository that they want accessible to the AI. This works for setups with a small, finite number of repositories to index, but it’s fickle for large setups with hundreds (if not thousands) of repositories.
 
-This is where Cody has a unique advantage, and it’s because of the underlying Sourcegraph platform. When users first set up Sourcegraph, they start by configuring a Sourcegraph instance, a server that connects to all of their code hosts. This instance indexes all of their repositories across every code host. Those repositories are then searchable by both [Code Search](https://sourcegraph.com/code-search) and Cody, and Cody can retrieve context from those repositories as needed.
+Cody Enterprise has an advantage by being built on the Sourcegraph platform. When users firs  set up Sourcegraph, they start by configuring a Sourcegraph instance, a server that connects to all of their code hosts. This instance indexes all of their repositories across every code host. Those repositories are then searchable by both [Code Search](https://sourcegraph.com/code-search) and Cody.
 
 The Sourcegraph instance also re-indexes repositories regularly to keep the source code fresh (both for Cody and Code Search), making challenge #3 a non-issue. 
 
@@ -68,11 +77,11 @@ The Sourcegraph instance also re-indexes repositories regularly to keep the sour
   alt="Sourcegraph instance setup for indexing repositories"
 />
 
-_(There’s a lot of machinery under the hood to make this system work. Part 2 of this blog, coming soon, will explain how exactly Sourcegraph indexes code and keeps it fresh to support this functionality)_
+*(There’s a lot of machinery under the hood to make this system work. Part 2 of this blog (coming soon) will explain how exactly Sourcegraph indexes code and keeps it fresh to support this functionality.)*
 
 ## What remote context awareness means for Cody users
 
-This setup of building Cody Enterprise _on top of_ Sourcegraph means that users get all three forms of code context: local file, local repository, and remote repository context.
+This setup of building Cody Enterprise _on top of_ Sourcegraph means that users get all three forms of code context: local file, local repository, and_ _remote repository context.
 
 As a Cody Enterprise user, you can use any repository in your codebase for context from any Cody interface. You can work in Repository A in your IDE and ask Cody a question requiring context from both Repository A and Repository B (for example a utility library). Or, you can ask Cody a high-level question about Repository C without having any project open in your IDE.
 
@@ -103,7 +112,7 @@ For large enterprises with massive codebases, two common questions pop up:
 1. Can this solution _scale_?
 2. How can this be made secure for teams where different developers have different permissions to particular repositories?
 
-Scalability is another area where Cody Enterprise benefits from the underlying Sourcegraph platform. We’ve scaled Sourcegraph (and Code Search) to several **massive** customer codebases, and Cody Enterprise can connect to these huge codebase indexes. We've worked with customers with over 300,000 repositories and monorepos exceeding 90GBs, and Cody has been able to integrate with them for context retrieval without issue.
+Scalability is another area where Cody Enterprise benefits from the Sourcegraph platform. We’ve scaled Sourcegraph (and Code Search) to several **massive** customer codebases, and Cody Enterprise can connect to these huge codebase indexes. We've worked with customers with over 300,000 repositories and monorepos exceeding 90GBs, and Cody has been able to integrate with them for context retrieval without issue.
 
 On the security front, Cody supports RBAC, so admins can control access to specific repositories more granularly. This prevents users from inadvertently getting access to the content of a repository by chatting with Cody and asking about it. Admins can also set up [context filters](https://sourcegraph.com/docs/cody/capabilities/ignore-context) to prevent sensitive files or repositories from being relayed to any third-party LLM providers.
 
