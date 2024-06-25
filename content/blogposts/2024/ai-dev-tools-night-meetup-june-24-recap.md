@@ -20,6 +20,10 @@ Developers, developers, developers! Last night, Sourcegraph hosted an AI Dev Too
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/ykdojo?ref_src=twsrc%5Etfw">@ykdojo</a> kicking us off! <a href="https://t.co/CU3f5RDgGX">pic.twitter.com/CU3f5RDgGX</a></p>&mdash; Beyang (@beyang) <a href="https://twitter.com/beyang/status/1805407914582237469?ref_src=twsrc%5Etfw">June 25, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+![Quinn welcoming everyone](https://pbs.twimg.com/media/GQ4ZckybwAAkvJ3?format=jpg&name=medium)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Quinn, the CEO and cofounder of <a href="https://twitter.com/sourcegraph?ref_src=twsrc%5Etfw">@sourcegraph</a>, opens the AI Dev Tools night! <a href="https://t.co/Fe7Qk7IpaJ">pic.twitter.com/Fe7Qk7IpaJ</a></p>&mdash; Alexy 🤍💙🤍 (@ChiefScientist) <a href="https://twitter.com/ChiefScientist/status/1805408502011380015?ref_src=twsrc%5Etfw">June 25, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Dane Schneider from PlandexAI
 
 ![Dane showing Plandex](https://pbs.twimg.com/media/GQ4dEukbwAIr23C?format=jpg&name=large)
