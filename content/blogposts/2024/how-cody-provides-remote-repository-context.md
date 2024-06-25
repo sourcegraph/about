@@ -3,7 +3,7 @@ title: "How Cody provides remote repository awareness for codebases of every siz
 authors:
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
-publishDate: 2024-06-24T10:00-01:00
+publishDate: 2024-06-25T10:00-01:00
 description: "Cody’s context awareness scales to every size codebase, from the smallest startups to the biggest enterprises, using the Sourcegraph platform. Read how it works and what it means for you."
 tags: [blog]
 slug: 'how-cody-provides-remote-repository-context'
