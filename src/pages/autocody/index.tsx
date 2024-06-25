@@ -422,7 +422,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                         </div>
 
                         <div className="mt-4 rounded-2xl bg-gray-200/30 p-8">
-                            <h3 className="text-lg font-semibold text-[#0F111A]">Context Refinement</h3>
+                            <h3 className="text-lg font-semibold text-[#0F111A]">User refines context</h3>
                             <p className="mt-2 text-lg text-gray-500">
                                 Review, add, or remove context to ensure relevance and completeness
                             </p>
@@ -457,7 +457,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                         </div>
 
                         <div className="mt-4 rounded-2xl bg-gray-200/30 p-8">
-                            <h3 className="text-lg font-semibold text-[#0F111A]">Plan Customization</h3>
+                            <h3 className="text-lg font-semibold text-[#0F111A]">User customizes the plan</h3>
                             <p className="mt-2 text-lg text-gray-500">
                                 Modify the plan by tweaking, adding, removing, or reordering steps as needed
                             </p>
@@ -491,7 +491,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                         </div>
 
                         <div className="mt-4 rounded-2xl bg-gray-200/30 p-8">
-                            <h3 className="text-lg font-semibold text-[#0F111A]">Oversight and Enjoyment</h3>
+                            <h3 className="text-lg font-semibold text-[#0F111A]">User audits the changes</h3>
                             <p className="mt-2 text-lg text-gray-500">
                                 With your guidance throughout the process, AutoCody is primed for successful task
                                 completion
