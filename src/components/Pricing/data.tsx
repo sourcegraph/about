@@ -293,7 +293,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     freeAutocompletions: {
         label: (
             <p className="m-0 text-[16px] leading-5 tracking-[-0.25px]">
-                <span className="font-semibold">Unlimited </span> Autocompletions
+                <span className="font-semibold">Unlimited </span> Autocomplete
             </p>
         ),
     },
@@ -358,7 +358,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     proAutoCompletions: {
         label: (
             <p className="m-0 text-[16px] leading-5 -tracking-[0.25px]">
-                <span className="font-semibold">Unlimited </span> Autocompletions
+                <span className="font-semibold">Unlimited </span> Autocomplete
             </p>
         ),
     },
@@ -370,7 +370,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         ),
     },
     codeIntAutoCompletions: {
-        label: 'Unlimited autocompletions',
+        label: 'Unlimited autocomplete',
     },
     codeIntMessageAndcommands: {
         label: 'Unlimited messages and commands',
