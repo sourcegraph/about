@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint-disable react/no-array-index-key */
 import { FunctionComponent, useEffect } from 'react'
 
 import { Layout } from '../../components'
