@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { FunctionComponent, useEffect } from 'react'
 
 import { Layout } from '../../components'
