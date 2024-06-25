@@ -1,0 +1,36 @@
+---
+title: "We're making Cody Free 10x better"
+authors:
+  - name: Quinn Slack, Kevin Chen
+publishDate: 2024-06-25T10:00-07:00
+description: "We've increased chat limits by 10x, made autocompletes unlimited, and added models to Cody Free"
+tags: [blog]
+slug: 'making-cody-free-10x-better'
+published: true
+heroImage: <NEEDS IMAGE>
+socialImage: <NEEDS IMAGE>
+---
+
+Today, Cody helps developers all over the world write millions of lines of code every month, increasing developer flow and productivity, and ultimately helping them build amazing software faster.
+
+To help developers do this better, we are excited to announce that today, we are making our Cody Free tier, **10x better**. Specifically Cody Free users now have:
+- 200 chat/command uses per month, up 10x from 20
+- Unlimited autocompletes, up from 500 autocompletes per month
+- The ability to choose from select models such as the Mixtral, Gemini, and Claude 3 family of models.
+
+We're especially excited about giving users the ability to choose from a selection of models, previously a feature exclusive to our Cody Pro tier. Now, users can choose between different models that suit their needs, whether its a faster model or a more capable one.
+
+### Looking for more power?
+
+If you're looking for even more, Cody Pro can be a great choice. At just $9 per user per month, users get:
+- Unlimited chats and commands
+- Access to powerful models like Claude 3 Opus and GPT-4o
+
+### Cody for Enterprise
+
+Finally, if you're looking for a deployment that's suited to the needs of your enterprise, we offer Cody Enterprise, which offers:
+- Universal support for code hosts
+- Code intelligence for large codebases
+- Proven enterprise scale and security
+
+[Learn more](https://sourcegraph.com/cody) about Cody here, or [contact us](https://sourcegraph.com/contact/request-info) to find out more.
