@@ -293,14 +293,14 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     freeAutocompletions: {
         label: (
             <p className="m-0 text-[16px] leading-5 tracking-[-0.25px]">
-                <span className="font-bold">500 </span> Autocompletions per month
+                <span className="font-semibold">Unlimited </span> Autocompletions
             </p>
         ),
     },
     freeMessageAndcommands: {
         label: (
             <p className="m-0 text-[16px] font-normal -tracking-[0.25px]">
-                <span className="font-bold">20 </span> Messages and commands per month
+                <span className="font-bold">200 </span> Messages and commands per month
             </p>
         ),
     },
