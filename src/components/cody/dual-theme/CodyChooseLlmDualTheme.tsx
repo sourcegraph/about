@@ -16,7 +16,7 @@ export const CodyChooseLlmDualTheme: FunctionComponent<CodyChooseLlmDualThemePro
     const modelCardContent = {
         title: 'Choose from your favorite LLMs',
         description:
-            'Cody supports the latest LLMs including Claude 3, GPT-4 Turbo, and Mixtral-8x7B. You can also bring your own LLM key with Amazon Bedrock and Azure OpenAI.',
+            'Cody supports the latest LLMs including Claude 3.5, GPT-4o, Gemini 1.5, and Mixtral-8x7B. You can also bring your own LLM key with Amazon Bedrock and Azure OpenAI.',
     }
     return (
         <>
