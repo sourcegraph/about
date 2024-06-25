@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 
-import { CodyAnimation, ContentSection, Heading } from '..'
+import { CodyAnimation, ContentSection } from '..'
 import { useWindowWidth } from '../../hooks/windowWidth'
 
 interface CodyAutocompleteProps {
@@ -60,38 +60,32 @@ export const CodyAutocomplete: FunctionComponent<CodyAutocompleteProps> = ({
             >
                 <div className="mb-[24px] flex w-full flex-col px-6 md:my-[65px] md:mb-0 md:w-[543px] md:pl-[56px]">
                     <img className="h-[46px] w-[46px]" src="/cody/completions-brand-icon.svg" alt="Cody Icon" />
-                    <Heading
-                        size="h2"
-                        className={classNames('pt-4 text-left font-semibold !tracking-[-1px]', {
-                            '!text-[36px] leading-[43px] text-[#0F111A] md:!text-[40px] md:leading-10': isLight,
-                            '!text-5xl leading-10 text-white': !isLight,
+                    <h2
+                        className={classNames('pt-4 text-left', {
+                            'text-[#0F111A]': isLight,
+                            'text-white': !isLight,
                         })}
                     >
                         Code faster with AI-assisted autocomplete
-                    </Heading>
-                    <Heading
-                        size="h3"
-                        className={classNames(
-                            'max-w-[510px] pt-4 text-left font-systemSans !text-lg !tracking-[-0.25px] md:!text-2xl md:!leading-[30px]',
-                            {
-                                'pb-[32px] !font-normal !leading-[30px] text-[#343A4D]': isLight,
-                                'pb-5 !leading-[27px] text-gray-200': !isLight,
-                            }
-                        )}
+                    </h2>
+                    <h3
+                        className={classNames('max-w-[510px] pt-4 text-left', {
+                            'pb-[32px] text-[#343A4D]': isLight,
+                            'pb-5 text-gray-200': !isLight,
+                        })}
                     >
                         Cody generates single lines, or whole functions, in any programming language, configuration
                         file, or documentation.
-                    </Heading>
+                    </h3>
                     <div className="flex w-full items-center justify-center rounded-lg bg-gray-50 p-6 md:w-[459px]">
-                        <Heading
-                            size="h5"
-                            className={classNames(
-                                'font-[590px] mb-0 w-full text-center !text-xl font-semibold !leading-[25px] !tracking-[-0.25px] md:w-[313px]',
-                                { 'text-gray-500': !isLight, 'text-[#343A4D]': isLight }
-                            )}
+                        <h5
+                            className={classNames('mb-0 w-full text-center md:w-[313px]', {
+                                'text-gray-500': !isLight,
+                                'text-[#343A4D]': isLight,
+                            })}
                         >
                             Every day, Cody helps developers write &gt; 150,000 lines of code
-                        </Heading>
+                        </h5>
                     </div>
                 </div>
                 <div

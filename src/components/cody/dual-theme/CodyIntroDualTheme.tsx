@@ -3,7 +3,6 @@ import React, { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import { CaptureResult } from 'posthog-js'
 
-import { Heading } from '../..'
 import { ContentSection } from '../../ContentSection'
 
 interface CodyIntroDualThemeProps {
@@ -29,23 +28,21 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
         <div className="mx-auto w-full px-6 md:w-[849px] lg:w-[895px]">
             <h1
                 className={classNames('mx-auto w-full text-[48px] font-semibold', {
-                    'pt-6 leading-[48px] text-white md:text-[72px] md:leading-[86px]': !isLight,
-                    'pt-[50px] font-systemSans leading-[58px] !tracking-[-1px] text-[#0F111A] md:pt-0 md:text-[52px] md:leading-[62px]':
-                        isLight,
+                    'pt-6 text-white md:text-[72px]': !isLight,
+                    'pt-[50px]': isLight,
                 })}
             >
                 {title ?? <span>Code more, type&nbsp;less</span>}
             </h1>
-            <Heading
-                size="h3"
-                className={classNames('mx-auto mb-8 mt-6 max-w-[700px] leading-[30px] !tracking-[-0.25px]', {
+            <h3
+                className={classNames('mx-auto mb-8 mt-6 max-w-[700px]', {
                     'text-[#FFFFFF]': !isLight,
                     'text-[#343A4D]': isLight,
                 })}
             >
                 Cody is an AI coding assistant that uses advanced search and codebase context to help you understand,
                 write, and fix code faster.
-            </Heading>
+            </h3>
             <button
                 type="button"
                 className={classNames('btn btn-inverted-primary px-5 py-3', {

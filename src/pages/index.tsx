@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Layout, InfiniteCarousel, Heading } from '../components'
+import { ContentSection, Layout, InfiniteCarousel } from '../components'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
@@ -48,8 +48,9 @@ const Home: FunctionComponent = () => {
             customFooterClassName="!bg-gray-50"
             customDark={false}
             hero={<HomeHero onOpenModal={handleOpenModal} />}
+            className="w-full overflow-hidden"
         >
-            <div className="bg-gray-50">
+            <div className="oveflow-hidden w-full bg-gray-50">
                 <ContentSection parentClassName="!py-0" className="flex items-center justify-center">
                     <p className="pb-10 pt-16 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
                         Over 2.5M engineers use Sourcegraph
@@ -66,12 +67,12 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/cody-squircle.svg"
                                 alt="Cody Product logo"
                             />
-                            <Heading size="h1">Cody</Heading>
+                            <h1>Cody</h1>
                         </div>
-                        <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
+                        <h3 className="text-gray-500">
                             Ship code faster with Cody, the AI coding assistant. Cody uses advanced search and codebase
                             context to help you write and fix code.
-                        </Heading>
+                        </h3>
                     </div>
                     <div className="pb-8">
                         {isMobile ? (
@@ -90,20 +91,18 @@ const Home: FunctionComponent = () => {
                             />
                         )}
                     </div>
-                    <div className="relative mx-6 mb-8 flex h-auto gap-[19px]  overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:h-[329px]">
-                        <div className="flex  flex-col py-16 pl-10">
+                    <div className="relative mx-6 mb-8 flex h-auto gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:max-h-[500px] lg:h-[329px]">
+                        <div className="text-pretty flex w-full flex-col py-16 pl-10">
                             <img
                                 className="h-[48px] w-[48px]"
                                 src="/home/branded-icons/completions-brand-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <Heading size="h2" className="pb-4 pt-6 !-tracking-[1px] md:leading-10">
-                                Faster coding with autocomplete
-                            </Heading>
-                            <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
+                            <h2 className="break-words pb-4 pt-6">Faster coding with autocomplete</h2>
+                            <h5 className="text-gray-500">
                                 Suggestions for single lines or whole functions, in any programming language,
                                 configuration file, or docs.
-                            </Heading>
+                            </h5>
                         </div>
                         {!isMobile && (
                             <div className="h-full w-full">
@@ -123,12 +122,10 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/chat-brand-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <Heading size="h2" className="pb-4 pt-6 !-tracking-[1px] md:leading-10">
-                                Get help with context-aware chat
-                            </Heading>
-                            <Heading size="h3" className="mb-0 leading-[30px] !-tracking-[0.25px] text-gray-500">
+                            <h2 className="pb-4 pt-6">Get help with context-aware chat</h2>
+                            <h5 className="mb-0 text-gray-500">
                                 Query like a human and learn about your code, or get help with tricky problems.
-                            </Heading>
+                            </h5>
                         </div>
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             <img
@@ -136,13 +133,11 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/commands-brand-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <Heading size="h2" className="pb-4 pt-6 !-tracking-[1px] md:leading-10">
-                                Automate workflows with commands
-                            </Heading>
-                            <Heading size="h3" className="mb-0 leading-[30px] !-tracking-[0.25px] text-gray-500">
+                            <h2 className="pb-4 pt-6">Automate workflows with commands</h2>
+                            <h5 className="mb-0 text-gray-500">
                                 Build and personalize commands that automate common tasks. Explain code or generate unit
                                 tests in seconds.
-                            </Heading>
+                            </h5>
                         </div>
                     </div>
                     <Link
@@ -201,13 +196,13 @@ const Home: FunctionComponent = () => {
                                     src="/home/branded-icons/Code-Search-squircle.svg"
                                     alt="Cody Product logo"
                                 />
-                                <Heading size="h1">Code Search</Heading>
+                                <h1>Code Search</h1>
                             </div>
-                            <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
+                            <h3 className="text-gray-500">
                                 Search your entire codebase—every code host and repository, at any scale—in a single
                                 place. Code Search makes it easy for developers to onboard to new codebases, understand
                                 code faster, and find & fix security risks.
-                            </Heading>
+                            </h3>
                         </div>
                         <div className="flex pb-8">
                             {isMobile ? (
@@ -238,12 +233,10 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/code-search-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <Heading size="h2" className="pb-4 pt-6 !-tracking-[1px] md:leading-10">
-                                Find and fix code
-                            </Heading>
-                            <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
+                            <h2 className="pb-4 pt-6">Find and fix code</h2>
+                            <h5 className="text-gray-500">
                                 Find what you need in milliseconds across all of your code–no matter where it lives.
-                            </Heading>
+                            </h5>
                         </div>
                         {isDesktop && <img src="/home/code-graph-home.svg" alt="Multiline Completion" />}
                     </div>
@@ -254,12 +247,10 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/Code-insights-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <Heading size="h2" className="pb-4 pt-6 !-tracking-[1px] md:leading-10">
-                                Track trends in your codebase
-                            </Heading>
-                            <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
+                            <h2 className="break-words pb-4 pt-6">Track trends in your codebase</h2>
+                            <h5 className="text-gray-500">
                                 Transform your code into a queryable database to create custom dashboards in seconds.
-                            </Heading>
+                            </h5>
                         </div>
                         <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             <img
@@ -267,13 +258,11 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/batch-changes-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <Heading size="h2" className="pb-4 pt-6 !-tracking-[1px] md:leading-10">
-                                Automate large-scale code changes
-                            </Heading>
-                            <Heading size="h3" className="leading-[30px] !-tracking-[0.25px] text-gray-500">
+                            <h2 className="pb-4 pt-6">Automate large-scale code changes</h2>
+                            <h3 className="text-lg text-gray-500">
                                 Find and make changes across your codebase in one go, whether a version change or a
                                 vulnerability fix.
-                            </Heading>
+                            </h3>
                         </div>
                     </div>
                     <Link
@@ -310,9 +299,7 @@ const Home: FunctionComponent = () => {
                         <div className="hover:cta-free-cody relative overflow-hidden rounded-2xl border-1 border-gray-200 bg-white">
                             <div className="cta-top-border absolute left-0 right-0 top-0 rounded-t-2xl" />
                             <div className=" px-14 py-16">
-                                <Heading className="mb-4 !-tracking-[1px] text-gray-700 md:leading-10" size="h2">
-                                    Get started with Cody
-                                </Heading>
+                                <h2 className="mb-4 text-gray-700">Get started with Cody</h2>
                                 <p className="mb-0 text-lg text-gray-500">
                                     Use Cody for free in your IDE, no credit card required.
                                 </p>
@@ -330,9 +317,7 @@ const Home: FunctionComponent = () => {
                         </div>
 
                         <div className="cta-home rounded-2xl px-14 py-16 text-white">
-                            <Heading className="mb-[10px] !-tracking-[1px] md:leading-10" size="h2">
-                                Cody Enterprise
-                            </Heading>
+                            <h2 className="mb-[10px]">Cody Enterprise</h2>
                             <p className="mb-0 text-lg text-[#FFFFFFCC]">
                                 Cody Enterprise provides additional security, scalability, and control for your
                                 organization. Unlimited usage and context search for your entire codebase.
@@ -370,12 +355,9 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
         <ContentSection className="flex items-center justify-center" parentClassName="!py-0">
             <div className="mx-auto flex flex-col items-center justify-center text-center">
                 <div className="mx-auto flex flex-col items-center pb-16 pt-8 md:w-[680px] md:pb-[70px] md:pt-16">
-                    <Heading
-                        size="h1"
-                        className="mb-8 w-full text-center !text-[48px] text-white md:mb-6 md:!text-[62px] lg:leading-[65px] lg:-tracking-[0.62px]"
-                    >
+                    <h1 className="mb-8 w-full text-center text-white md:mb-6">
                         Understand and write code blazingly fast
-                    </Heading>
+                    </h1>
                     <p className="mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-[#FFFFFF99] md:mb-8">
                         Sourcegraph allows developers to rapidly search, write, and understand code by bringing insights
                         from their entire codebase right into the editor

@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection, Heading, HubSpotForm, Layout } from '../../components'
+import { ContentSection, HubSpotForm, Layout } from '../../components'
 
 import styles from '../../styles/CustomHubspotForm.module.scss'
 
@@ -33,9 +33,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             className="grid grid-cols-1 gap-x-4 md:grid-cols-2 md:px-6"
         >
             <div className="flex w-full max-w-[737px] flex-col">
-                <Heading size="h1" className="mb-6 text-white md:!text-[62px] xl:w-[737px]">
-                    Big Code in the AI era
-                </Heading>
+                <h1 className="mb-6 text-white xl:w-[737px]">Big Code in the AI era</h1>
 
                 <p className="m-0 text-lg text-gray-200">
                     The Big Code problem is a rapidly growing crisis for developers, engineering leaders, and companies
@@ -47,14 +45,10 @@ const TheRiseOfAI: FunctionComponent = () => (
 
         <div className="absolute right-0 ml-9 hidden h-[600px] w-full bg-[url('/rise-of-ai/illustration.png')] bg-cover bg-center bg-no-repeat md:top-[15px] md:block md:w-[400px] lg:top-[30px] lg:w-[500px] xl:w-[550px]" />
 
-        <Heading
-            as="h2"
-            size="h3"
-            className="relative z-10 mt-16 max-w-[838px] px-6 text-center text-white md:mx-auto md:mt-[176px]"
-        >
+        <h3 className="relative z-10 mt-16 max-w-[838px] px-6 text-center text-white md:mx-auto md:mt-[176px]">
             Developers are struggling more than ever with issues around tech debt, maintenance, collaboration, and
             scalability. The overnight AI boom means Big Code pains are only getting worse:
-        </Heading>
+        </h3>
 
         <ContentSection
             parentClassName="!py-0 !px-6"
@@ -62,18 +56,14 @@ const TheRiseOfAI: FunctionComponent = () => (
         >
             <div className="flex flex-col items-center gap-3 md:w-[417px]">
                 <img className="h-[237px] w-[237px]" src="/rise-of-ai/72.svg" alt="72%" />
-                <Heading as="h3" size="h4" className="text-center text-white">
-                    Big Code’s getting bigger.
-                </Heading>
+                <h4 className="text-center text-white">Big Code’s getting bigger.</h4>
                 <p className="text-center text-lg text-white">
                     77% of devs say their codebase grew 5x over the past three years.
                 </p>
             </div>
             <div className="flex flex-col items-center gap-3 md:w-[417px]">
                 <img className="h-[237px] w-[237px]" src="/rise-of-ai/14.svg" alt="72%" />
-                <Heading size="h4" className="text-center text-white">
-                    Devs aren’t writing code.
-                </Heading>
+                <h4 className="text-center text-white">Devs aren’t writing code.</h4>
                 <p className="text-center text-lg text-white">
                     Only 14% of devs’ time is actually spent writing new code for core products. The rest is spent
                     trying to search, understand, and fix code.
@@ -81,9 +71,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             </div>
             <div className="flex flex-col items-center gap-3 md:w-[417px]">
                 <img className="h-[237px] w-[237px]" src="/rise-of-ai/73.svg" alt="72%" />
-                <Heading size="h4" className="text-center text-white">
-                    AI brings innovation–and headaches.
-                </Heading>
+                <h4 className="text-center text-white">AI brings innovation–and headaches.</h4>
                 <p className="text-center text-lg text-white">
                     73% of devs already struggle with code created by someone else that is difficult to understand. This
                     number will only go up with the rise of AI.{' '}
@@ -95,10 +83,10 @@ const TheRiseOfAI: FunctionComponent = () => (
             parentClassName="!py-0 !px-6"
             className="mt-16 flex flex-col gap-[34px] rounded-[5px] bg-white p-6 md:mt-[120px] md:flex-row md:p-12 "
         >
-            <Heading size="h1" as="h4" className="!text-4xl text-gray-700 md:max-w-[562px] md:!text-7xl">
+            <h1 className="text-gray-700 md:max-w-[562px]">
                 Only <span className="text-violet-500">65% of devs</span> say their company has a plan to address Big
                 Code.
-            </Heading>
+            </h1>
             <div className="flex flex-col md:w-[562px]">
                 <p className="text-xl font-semibold">
                     Big • Code <span className="font-normal italic text-gray-500"> noun </span>
@@ -112,9 +100,9 @@ const TheRiseOfAI: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <Heading size="h2" as="h4" className="mx-6 mt-16 text-center !text-4xl text-white md:mx-auto md:mt-[112px]">
+        <h2 className="mx-6 mt-16 text-center text-white md:mx-auto md:mt-[112px]">
             We can’t ignore the Big Code problem anymore.
-        </Heading>
+        </h2>
 
         <ContentSection
             parentClassName="!py-0 !px-6"
@@ -145,9 +133,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             parentClassName="!p-0"
         >
             <div>
-                <Heading size="h2" as="h4" className="mb-[30px] max-w-[460px] !text-4xl text-white">
-                    The AI era is here and no one has a plan.
-                </Heading>
+                <h2 className="mb-[30px] max-w-[460px] text-white">The AI era is here and no one has a plan.</h2>
                 <p className="max-w-[572px] text-lg text-gray-200">
                     76% of developers are excited about the rise of dev tools powered by AI, but there are still big
                     concerns around AI and its impact on Big Code:
@@ -174,9 +160,7 @@ const TheRiseOfAI: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection className="md:mb-20 md:px-6" parentClassName="!py-0">
-            <Heading size="h2" as="h4" className="mx-auto mb-[54px] max-w-[1061px] text-center !text-4xl text-white">
-                The Big Code struggle is real.
-            </Heading>
+            <h2 className="mx-auto mb-[54px] max-w-[1061px] text-center text-white">The Big Code struggle is real.</h2>
             <div className="relative z-10 grid grid-cols-1 justify-items-center gap-6 rounded-[5px] bg-white p-4 md:grid-cols-2 md:p-12">
                 <PercentageContent
                     percentage="95"
@@ -214,9 +198,7 @@ const TheRiseOfAI: FunctionComponent = () => (
             parentClassName="md:!pt-8"
         >
             <div className="md:pb:0 w-full border-b border-gray-500 pb-10 md:w-fit md:border-r md:border-b-0 md:pr-8">
-                <Heading size="h2" as="h4" className="!text-4xl text-white">
-                    Get the full report
-                </Heading>
+                <h2 className="!text-4xl text-white">Get the full report</h2>
 
                 <div className={classNames('mx-auto mt-4 md:min-w-[400px] xl:min-w-[517px]', styles.form)}>
                     <HubSpotForm
@@ -228,9 +210,7 @@ const TheRiseOfAI: FunctionComponent = () => (
                 </div>
             </div>
             <div className="w-full md:w-fit">
-                <Heading size="h2" as="h4" className="mb-4 !text-4xl text-white md:mb-8">
-                    Put AI to work on Big Code.
-                </Heading>
+                <h2 className="mb-4 text-white md:mb-8">Put AI to work on Big Code.</h2>
                 <Link
                     href="/cody"
                     className="btn btn-outline-white w-fit min-w-fit px-6 font-normal"
@@ -242,9 +222,7 @@ const TheRiseOfAI: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection className="py-16 md:py-28" parentClassName="bg-gray-200 !py-0  relative z-10">
-            <Heading size="h2" as="h4" className="mb-4 text-center !text-4xl">
-                Methodology
-            </Heading>
+            <h2 className="mb-4 text-center !text-4xl">Methodology</h2>
             <p className="mx-auto mb-0 max-w-[768px] text-center text-lg text-gray-700">
                 To create our Big Code Report, we rely on survey data gathered anonymously by Ground Control Research.
                 The respondents are developers and engineering leaders that vary in experience levels across several
@@ -266,9 +244,7 @@ const PercentageContent: FunctionComponent<PercentageContentProps> = ({
 }) => (
     <div className={classNames(wrapperClassName)}>
         <div className={classNames('flex text-violet-300', percentageClassName)}>
-            <Heading size="h1" as="h4" className="!text-9xl">
-                {percentage}
-            </Heading>
+            <h1>{percentage}</h1>
             <p className="!text-[40px] font-semibold leading-[70px]">%</p>
         </div>
         <p className={classNames('text-lg text-white', descriptionClassName)}>{description}</p>

@@ -2,7 +2,7 @@ import { FunctionComponent, ReactNode, useEffect, useRef, useState } from 'react
 
 import classNames from 'classnames'
 
-import { Heading, ContentSection } from '..'
+import { ContentSection } from '..'
 
 export const CodyVideoTab: FunctionComponent<{
     icon: string
@@ -52,9 +52,7 @@ export const CodyVideoTab: FunctionComponent<{
         >
             <div>
                 <img className="h-[48px] w-[48px]" src={icon} alt="Cody logo" />
-                <Heading size="h2" className="mt-[18px] !text-4xl text-white">
-                    {headerText}
-                </Heading>
+                <h2 className="mt-[18px] !text-4xl text-white">{headerText}</h2>
                 {typeof description === 'string' ? (
                     <p className="mt-[18px] mb-0 text-lg text-gray-200">{description}</p>
                 ) : (
@@ -74,7 +72,7 @@ export const CodyVideoTab: FunctionComponent<{
                                 )}
                                 type="button"
                             >
-                                <Heading size="h5">{content.header}</Heading>
+                                <h5>{content.header}</h5>
                                 <p className="mb-0 text-lg">{content.description}</p>
                             </button>
                         ))}

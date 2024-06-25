@@ -11,7 +11,6 @@ import { MdOutlineTrendingUp } from 'react-icons/md'
 
 import {
     ContentSection,
-    Heading,
     Layout,
     PricingPlan,
     FREE_FEATURES_OVERVIEW,
@@ -195,12 +194,7 @@ const CodeIntelFeatures: FunctionComponent<{ features: FeatureCluster[] }> = ({ 
         {features.map(node => (
             <div key={node.topic} className="border-0 bg-transparent px-0">
                 <div className={classNames('flex items-center pt-[10px] text-sm')}>
-                    <Heading
-                        size="h5"
-                        className="mb-3 !text-base !font-semibold !leading-5 !tracking-[-0.25px] !text-gray-700"
-                    >
-                        {node.topic}
-                    </Heading>
+                    <h5 className="mb-3 !text-gray-700">{node.topic}</h5>
                     {node.description && (
                         <Tooltip
                             wrapperClassName="my-auto ml-2 text-gray-300 flex items-center text-sm"
@@ -277,9 +271,7 @@ const PricingPage: FunctionComponent = () => {
             hero={
                 <>
                     <div className="container mx-auto grid pb-[62px] pt-16 text-center">
-                        <Heading size="h1" className="!text-[52px] !font-semibold !leading-[62px] !tracking-[-1px]">
-                            Pricing
-                        </Heading>
+                        <h1>Pricing</h1>
                     </div>
                     <ContentSection className="flex justify-center" parentClassName="md:!py-0 pb-8">
                         {isMobile ? (
@@ -366,12 +358,7 @@ const PricingPage: FunctionComponent = () => {
                             <div className="bg-[url('/backgrounds/grid-code-intel.svg')] bg-right">
                                 <div className="bg-code-intel-card flex flex-row flex-wrap justify-between rounded-2xl border-1 border-gray-200 p-6 md:p-12">
                                     <div className="flex flex-col items-start justify-center gap-4">
-                                        <Heading
-                                            className="!text-[52px] !leading-[62px] !-tracking-[1px] !text-gray-700"
-                                            size="h1"
-                                        >
-                                            Better together
-                                        </Heading>
+                                        <h1 className="!text-gray-700">Better together</h1>
                                         <p className="text-[24px] font-normal leading-[30px] tracking-[-0.25px] text-gray-500">
                                             Unlock the full power of our Code Intelligence Platform
                                         </p>
@@ -444,12 +431,7 @@ const PricingPage: FunctionComponent = () => {
                                             />
                                         </div>
                                     </div>
-                                    <Heading
-                                        className="!text-[52px] !leading-[62px] !-tracking-[1px] !text-gray-700"
-                                        size="h1"
-                                    >
-                                        Better together
-                                    </Heading>
+                                    <h1 className="!text-gray-700">Better together</h1>
                                     <p className=" text-[24px] font-normal leading-[30px] tracking-[-0.25px] text-gray-500">
                                         Unlock the full power of our Code Intelligence platform
                                     </p>
@@ -473,12 +455,7 @@ const PricingPage: FunctionComponent = () => {
                                 <div className="flex flex-col gap-8">
                                     <div className="grid grid-flow-col">
                                         <div>
-                                            <Heading
-                                                size="h2"
-                                                className="mb-2 !text-[38px] !leading-[43.7px] !tracking-[-0.5px] !text-gray-700"
-                                            >
-                                                Code Intelligence Platform
-                                            </Heading>
+                                            <h2 className="mb-2 !text-gray-700">Code Intelligence Platform</h2>
                                             <span className="flex border-b-1 pb-[24px] text-[16px] font-normal leading-5 -tracking-[0.25px] text-gray-700">
                                                 For teams with a minimum of 50 users
                                             </span>
@@ -520,12 +497,7 @@ const PricingPage: FunctionComponent = () => {
                                     <div className="transition-max-height max-h-[1240px] overflow-hidden duration-700 ease-in-out">
                                         <div className="mx-auto flex flex-col gap-8 md:flex-row">
                                             <div className="">
-                                                <Heading
-                                                    size="h4"
-                                                    className="mb-8 !text-[24px] !font-semibold !leading-[30px] !tracking-[-0.25px]"
-                                                >
-                                                    Cody Enterprise
-                                                </Heading>
+                                                <h4 className="mb-8 !text-[24px]">Cody Enterprise</h4>
                                                 <p className="mt-2 pb-[18px] text-[18px] font-normal leading-[27px] -tracking-[0.25px] text-gray-700">
                                                     All features of <span className="underline"> Cody Enterprise</span>,
                                                     including:
@@ -538,12 +510,7 @@ const PricingPage: FunctionComponent = () => {
                                                 </span>
                                             </div>
                                             <div className="">
-                                                <Heading
-                                                    size="h4"
-                                                    className="mb-8 !text-[24px] !font-semibold !leading-[30px] !tracking-[-0.25px]"
-                                                >
-                                                    Code Search Enterprise
-                                                </Heading>
+                                                <h4 className="mb-8">Code Search Enterprise</h4>
                                                 <p className="mt-2 pb-[18px] text-[18px] font-normal leading-[27px] -tracking-[0.25px] text-gray-700">
                                                     All features of{' '}
                                                     <span className="underline"> Code Search Enterprise</span>,
@@ -564,9 +531,7 @@ const PricingPage: FunctionComponent = () => {
                 parentClassName="!py-0"
             >
                 <div className="col-span-full border-t-1 md:col-span-2">
-                    <Heading size="h1" className="mt-4">
-                        Frequently asked questions
-                    </Heading>
+                    <h1 className="mt-4">Frequently asked questions</h1>
                     <div className="mb-0 mt-4 leading-5 -tracking-[0.25px]">
                         Got a question you don’t see here?{' '}
                         <Link

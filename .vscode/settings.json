@@ -2,7 +2,7 @@
   "typescript.tsserver.experimental.enableProjectDiagnostics": true,
   "search.exclude": {
     "public/": true,
-    "content/": true,
+    "content/": true
   },
-  "cody.codebase": "github.com/sourcegraph/about",
+  "cody.codebase": "github.com/sourcegraph/about"
 }

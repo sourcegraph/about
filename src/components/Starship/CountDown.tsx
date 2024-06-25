@@ -61,7 +61,7 @@ export const CountDown: FunctionComponent<Props> = ({ className, launchDate }) =
 
 const Time: FunctionComponent<TimeProps> = ({ value, label }) => (
     <div className="flex flex-col items-center">
-        <p className="mb-0 font-grotesk text-5xl font-semibold tracking-[-1px] md:text-[150px] md:font-normal md:leading-[210px] lg:text-[172px] lg:leading-[241px]">
+        <p className="font-grotesk mb-0 text-5xl font-semibold tracking-[-1px] md:text-[150px] md:font-normal md:leading-[210px] lg:text-[172px] lg:leading-[241px]">
             {value}
         </p>
         <p className="text-xl font-semibold text-gray-200 lg:text-4xl lg:leading-[50px]">{label}</p>

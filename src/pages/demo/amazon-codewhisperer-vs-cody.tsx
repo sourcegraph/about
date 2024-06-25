@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Heading, Layout } from '../../components'
+import { Layout } from '../../components'
 import CompareHero from '../../components/Compare/CompareHero'
 import { CompareTables } from '../../components/Compare/CompareTables'
 import { amazonCodewhispererVsCody } from '../../components/Compare/constants'
@@ -32,14 +32,11 @@ const AmazonCodewhispererVsCodyPage: FunctionComponent = () => {
                     competitorIcon="/assets/compare/amazon-codewhisperer.svg"
                     containerClassName="xl:pt-[121px]"
                 >
-                    <Heading
-                        size="h3"
-                        className="font-sf mt-[-15px] mb-0 pb-[5px] !leading-[30px] !tracking-[-0.25px] lg:w-[671px] lg:text-2xl"
-                    >
+                    <h3 className="mt-[-15px] mb-0 pb-[5px] lg:w-[671px]">
                         Cody is a good option for developers who want more expansive functionality, such as chat and
                         commands alongside autocomplete, or for free-tier users who are looking for a context-aware code
                         AI.
-                    </Heading>
+                    </h3>
 
                     <button
                         type="button"

@@ -42,7 +42,7 @@ export const faqData: FAQData = {
                         local codebases.
                     </p>
                     <p>
-                        Cody Enterprise is for organizations needing security, scalability, and control. It uses the 
+                        Cody Enterprise is for organizations needing security, scalability, and control. It uses the
                         Sourcegraph platform to provide context of an organization's remote codebase to Cody.
                     </p>
                 </>
@@ -62,13 +62,14 @@ export const faqData: FAQData = {
             answer: (
                 <>
                     <p>
-                        Cody can retrieve codebase context to personalize responses in a number of ways. One way is
-                        with embeddings, which are generated for local user repositories. Cody Free users can create
-                        embeddings for up to 200MB of code and Cody Pro users can create embeddings for up to 1GB of code.
+                        Cody can retrieve codebase context to personalize responses in a number of ways. One way is with
+                        embeddings, which are generated for local user repositories. Cody Free users can create
+                        embeddings for up to 200MB of code and Cody Pro users can create embeddings for up to 1GB of
+                        code.
                     </p>
                     <p>
-                        Cody Enterprise uses Sourcegraph search to retrieve context. This method lets Cody
-                        pull context from a team's full codebase at any scale.
+                        Cody Enterprise uses Sourcegraph search to retrieve context. This method lets Cody pull context
+                        from a team's full codebase at any scale.
                     </p>
                 </>
             ),
@@ -94,11 +95,7 @@ export const faqData: FAQData = {
         },
         {
             question: 'How can I pay for Cody Pro?',
-            answer: (
-                <p>
-                    Cody Pro is billed on a monthly basis and can be paid with a credit card.
-                </p>
-            ),
+            answer: <p>Cody Pro is billed on a monthly basis and can be paid with a credit card.</p>,
         },
         {
             question: 'How can I upgrade or downgrade my plan?',
@@ -137,14 +134,14 @@ export const faqData: FAQData = {
                     <p>
                         For more information about available LLM options, please{' '}
                         <Link
-                        href="https://sourcegraph.com/docs/cody/capabilities/supported-models"
-                        title="Sourcegraph Docs"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        see our docs.
-                    </Link>{' '}
+                            href="https://sourcegraph.com/docs/cody/capabilities/supported-models"
+                            title="Sourcegraph Docs"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            see our docs.
+                        </Link>{' '}
                     </p>
                 </>
             ),

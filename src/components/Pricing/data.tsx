@@ -376,11 +376,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'Unlimited messages and commands',
     },
     proCodeContext: {
-        label: (
-            <p className="m-0 mt-2">
-                Personalization for larger local codebases
-            </p>
-        ),
+        label: <p className="m-0 mt-2">Personalization for larger local codebases</p>,
     },
     entCodeContext: {
         label: <p className="m-0">Advanced personalization for enterprise codebases</p>,

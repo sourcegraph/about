@@ -39,7 +39,7 @@ export const Video: FunctionComponent<Video & TelemetryProps> = ({
     autoPlay = true,
     className,
     thumbnail,
-    telemetryRecorder
+    telemetryRecorder,
 }) => (
     <figure>
         <video
