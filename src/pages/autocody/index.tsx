@@ -542,7 +542,7 @@ function SignUp(): JSX.Element {
                 Sign up for the waitlist to get notified when AutoCody is ready.
             </h3>
 
-            <div id="hubspotForm" className="mt-20"></div>
+            <div id="hubspotForm" className="mt-20" />
         </div>
     )
 }
