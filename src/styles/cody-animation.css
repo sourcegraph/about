@@ -15,6 +15,7 @@
     hyphens: none;
     /* Same stack as font-systemMono */
     font-family: ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    letter-spacing: .25px;
     font-weight: normal;
 }
 
@@ -25,7 +26,7 @@
     border-radius: 0;
 }
 
-.cody-animation :not(pre) > code[class*='language-'] {
+.cody-animation :not(pre)>code[class*='language-'] {
     padding: 0.2em 0.3em;
     border-radius: 0;
     white-space: normal;
@@ -75,7 +76,7 @@
 .cody-animation .token.inserted,
 .cody-animation .token.regex,
 .cody-animation .token.attr-value,
-.cody-animation .token.attr-value > .token.punctuation {
+.cody-animation .token.attr-value>.token.punctuation {
     color: hsl(95, 38%, 62%);
 }
 
@@ -89,8 +90,8 @@
     color: hsl(187, 47%, 55%);
 }
 
-.cody-animation .token.attr-value > .token.punctuation.attr-equals,
-.cody-animation .token.special-attr > .token.attr-value > .token.value.css {
+.cody-animation .token.attr-value>.token.punctuation.attr-equals,
+.cody-animation .token.special-attr>.token.attr-value>.token.value.css {
     color: #c7ffff;
 }
 
@@ -98,11 +99,7 @@
     color: #f93;
 }
 
-.cody-animation
-    .language-javascript
-    .token.template-string
-    > .token.interpolation
-    > .token.interpolation-punctuation.punctuation {
+.cody-animation .language-javascript .token.template-string>.token.interpolation>.token.interpolation-punctuation.punctuation {
     color: hsl(5, 48%, 51%);
 }
 
@@ -138,10 +135,12 @@
 }
 
 @keyframes blink {
+
     0%,
     100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
@@ -153,6 +152,7 @@
     background-color: transparent;
     z-index: 11111;
 }
+
 .cody-multiple-lines::before {
     content: '';
     position: absolute;

@@ -35,7 +35,7 @@ export const CodyChat: FunctionComponent<CodyChatProps> = ({ isLight = false }) 
         >
             <div className={classNames('mx-6 md:ml-14', { 'md:mb-32': !isLight, 'md:mb-0': isLight })}>
                 <div className="flex w-full max-w-[701px] flex-col gap-[18px]">
-                    <img className="h-[48px] w-[48px]" src="/cody/chat-brand-icon.svg" alt="Cody Chat" />
+                    <img className="h-[32px] w-[32px]" src="/cody/chat-brand-icon.svg" alt="Cody Chat" />
                     <h2
                         className={classNames('m-0 text-left', {
                             'text-white': !isLight,

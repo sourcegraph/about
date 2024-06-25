@@ -34,7 +34,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                 {title ?? <span>Code more, type&nbsp;less</span>}
             </h1>
             <h3
-                className={classNames('mx-auto mb-8 mt-6 max-w-[700px]', {
+                className={classNames('mx-auto mb-8 mt-6 max-w-[846px]', {
                     'text-[#FFFFFF]': !isLight,
                     'text-[#343A4D]': isLight,
                 })}

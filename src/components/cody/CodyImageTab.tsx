@@ -34,7 +34,7 @@ export const CodyImageTab: FunctionComponent<{
         >
             <div>
                 <img
-                    className={classNames('h-[48px] w-[48px]', { 'mx-6 mt-[7px] md:mt-[39px]': isLight })}
+                    className={classNames('h-[32px] w-[32px]', { 'mx-6 mt-[7px] md:mt-[39px]': isLight })}
                     src={icon}
                     alt="Cody logo"
                 />

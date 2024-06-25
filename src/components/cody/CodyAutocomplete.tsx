@@ -58,8 +58,8 @@ export const CodyAutocomplete: FunctionComponent<CodyAutocompleteProps> = ({
                     }
                 )}
             >
-                <div className="mb-[24px] flex w-full flex-col px-6 md:my-[65px] md:mb-0 md:w-[543px] md:pl-[56px]">
-                    <img className="h-[46px] w-[46px]" src="/cody/completions-brand-icon.svg" alt="Cody Icon" />
+                <div className="mb-[24px] flex w-full flex-col px-6 md:w-[680px]">
+                    <img className="h-[32px] w-[32px]" src="/cody/completions-brand-icon.svg" alt="Cody Icon" />
                     <h2
                         className={classNames('pt-4 text-left', {
                             'text-[#0F111A]': isLight,
@@ -68,25 +68,15 @@ export const CodyAutocomplete: FunctionComponent<CodyAutocompleteProps> = ({
                     >
                         Code faster with AI-assisted autocomplete
                     </h2>
-                    <h3
-                        className={classNames('max-w-[510px] pt-4 text-left', {
+                    <h5
+                        className={classNames('max-w-[510px] flex w-full pt-4 text-left', {
                             'pb-[32px] text-[#343A4D]': isLight,
                             'pb-5 text-gray-200': !isLight,
                         })}
                     >
                         Cody generates single lines, or whole functions, in any programming language, configuration
                         file, or documentation.
-                    </h3>
-                    <div className="flex w-full items-center justify-center rounded-lg bg-gray-50 p-6 md:w-[459px]">
-                        <h5
-                            className={classNames('mb-0 w-full text-center md:w-[313px]', {
-                                'text-gray-500': !isLight,
-                                'text-[#343A4D]': isLight,
-                            })}
-                        >
-                            Every day, Cody helps developers write &gt; 150,000 lines of code
-                        </h5>
-                    </div>
+                    </h5>
                 </div>
                 <div
                     className={classNames('relative', {

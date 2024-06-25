@@ -87,7 +87,7 @@ const Home: FunctionComponent = () => {
                     <div className="relative mx-6 mb-8 flex h-auto gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:max-h-[500px] lg:h-[329px]">
                         <div className="text-pretty flex w-full flex-col py-16 pl-10">
                             <img
-                                className="h-[48px] w-[48px]"
+                                className="h-[32px] w-[32px]"
                                 src="/home/branded-icons/completions-brand-icon.svg"
                                 alt="Completions Brand Icon"
                             />
@@ -111,7 +111,7 @@ const Home: FunctionComponent = () => {
                     <div className="mx-6 mb-8 grid grid-cols-1 gap-8 md:mx-0 md:grid-cols-2 md:gap-6">
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             <img
-                                className="h-[48px] w-[48px]"
+                                className="h-[32px] w-[32px]"
                                 src="/home/branded-icons/chat-brand-icon.svg"
                                 alt="Completions Brand Icon"
                             />
@@ -122,7 +122,7 @@ const Home: FunctionComponent = () => {
                         </div>
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             <img
-                                className="h-[48px] w-[48px]"
+                                className="h-[32px] w-[32px]"
                                 src="/home/branded-icons/commands-brand-icon.svg"
                                 alt="Completions Brand Icon"
                             />
@@ -234,9 +234,9 @@ const Home: FunctionComponent = () => {
                         {isDesktop && <img src="/home/code-graph-home.svg" alt="Multiline Completion" />}
                     </div>
                     <div className="mx-6 mb-8 flex flex-col gap-8 md:mx-0 md:flex-row md:gap-6">
-                        <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16 md:w-[566px]">
+                        <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             <img
-                                className="h-[48px] w-[48px]"
+                                className="h-[32px] w-[32px]"
                                 src="/home/branded-icons/Code-insights-icon.svg"
                                 alt="Completions Brand Icon"
                             />
@@ -247,7 +247,7 @@ const Home: FunctionComponent = () => {
                         </div>
                         <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             <img
-                                className="h-[48px] w-[48px]"
+                                className="h-[32px] w-[32px]"
                                 src="/home/branded-icons/batch-changes-icon.svg"
                                 alt="Completions Brand Icon"
                             />
@@ -272,7 +272,7 @@ const Home: FunctionComponent = () => {
                                 <p className="mb-0 text-base">Aneesh Agrawal</p>
                                 <p className="mb-0 text-sm">Software Engineer, Lyft</p>
                             </div>
-                            <p className="mb-0 pb-4 text-[35px] font-normal leading-[43.75px] md:pb-0">
+                            <p className="mb-0 pb-4 text-3xl font-normal md:pb-0">
                                 Sourcegraph makes it easy to survey and understand existing use cases to make sure we
                                 build the right thing.
                             </p>
