@@ -50,7 +50,7 @@ For Cody, “context awareness” means finding a way to augment the AI’s exis
 
 In theory, context awareness for an AI coding assistant isn’t that difficult. As a developer, you can copy relevant code and paste it into a chat window alongside your request, similar to how you’d work with ChatGPT. This defeats much of the point of having an _assistant_ though, since it still requires you to find, read, and understand context. The value comes from the tool’s ability to _retrieve_ context to answer your questions or generate quality code.
 
-This automated context retrieval is where the challenge comes in. When you’re working in your IDE, the context you need for any given task can be broad:
+This automated context retrieval is where the challenge comes in. When you’re working in your IDE, the code context you need for any given task can be broad:
 
 1. **Context from your local file**. For example, if you’re adding a button to a webpage on a static site, you _might_ not need a lot of broad context. Sometimes, the context of the surrounding code in your local file is enough.
 2. **Context from your open repository.** You may be working on a task that requires context from other files within your working repository. For example, maybe you’re working in one file where you’re consuming an API defined elsewhere.
