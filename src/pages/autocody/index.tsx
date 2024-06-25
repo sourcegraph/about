@@ -1,4 +1,4 @@
-/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/no-array-index-key unicorn/prefer-add-event-listener unicorn/prefer-dom-node-append */
 import { FunctionComponent, useEffect } from 'react'
 
 import { Layout } from '../../components'
