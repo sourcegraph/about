@@ -16,6 +16,10 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/unlocking-op
 
 Developers, developers, developers! Last night, Sourcegraph hosted an AI Dev Tools Night event in San Francisco, and it was a huge success! The evening was filled with insightful talks, plenty of networking opportunities, and an exciting giveaway. Here’s a recap of the highlights from our amazing lineup of speakers and the key takeaways from the event.
 
+![YK kicking off the event](https://pbs.twimg.com/media/GQ4Y7e5aQAAzn-J?format=jpg&name=large)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/ykdojo?ref_src=twsrc%5Etfw">@ykdojo</a> kicking us off! <a href="https://t.co/CU3f5RDgGX">pic.twitter.com/CU3f5RDgGX</a></p>&mdash; Beyang (@beyang) <a href="https://twitter.com/beyang/status/1805407914582237469?ref_src=twsrc%5Etfw">June 25, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Dane Schneider from PlandexAI
 
 ![Dane showing Plandex](https://pbs.twimg.com/media/GQ4dEukbwAIr23C?format=jpg&name=large)
