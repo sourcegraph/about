@@ -8,7 +8,7 @@ const AutoCodyPage: FunctionComponent = () => (
         meta={{
             title: 'AutoCody | Toward planning and more automation',
             description: 'AutoCody is our look at building a new generation of AI coding assistants.',
-            image: 'https://sourcegraph.com/cody/cody-og.png',
+            image: 'https://sourcegraph.com/assets/cody/autocody-og.png',
         }}
         displayChildrenUnderNav={true}
         customFooterClassName="!bg-transparent"
