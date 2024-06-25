@@ -17,12 +17,12 @@ const AutoCodyPage: FunctionComponent = () => (
             <VSCode />
         </div>
 
-        <div className="mt-40">
-            <Principles />
-        </div>
-
         <div className="mx-auto mt-40 max-w-6xl">
             <AutoCodyHowItWorks />
+        </div>
+
+        <div className="mt-40">
+            <Principles />
         </div>
 
         <div className="mx-auto mt-40 max-w-3xl pb-44">
@@ -266,73 +266,70 @@ function Principles(): JSX.Element {
         <>
             <div className="mx-auto max-w-3xl">
                 <h2 className="text-4xl font-semibold !tracking-[-1px] text-[#0F111A]">
-                    Our core principles for the road to autonomous coding
+                    Our core principles for autonomous coding
                 </h2>
                 <h3 className="mx-auto mt-2 text-2xl font-semibold tracking-tight text-gray-400">
-                    4 ideas that will guide an agentic coding experience
+                    Four guiding ideas for an agentic coding experience
                 </h3>
             </div>
 
-            <div className="mx-auto mt-20 max-w-3xl">
-                <p className="text-xl font-semibold text-gray-700">Principle 1: Cooperation</p>
-                <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
-                    <span className="text-blurple-400">A combination of human coder and AI. </span> Agentic solutions,
-                    like{' '}
-                    <a
-                        href="https://github.com/princeton-nlp/swe-agent"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-500 hover:underline"
-                    >
-                        SWE-Agent
-                    </a>
-                    , that allow the AI to define a plan and execute against it fully autonomously are only able to
-                    achieve a 12.29% success rate on the full SWE-bench test set.
-                </p>
-                {/* <p className="mt-5 text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
-                    If you want to create an autonomous car, you don't remove the steering wheel. We must allow the AI
-                    to be trained and "steered" by a user.
-                </p> */}
-                <p className="mt-5 text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
-                    We believe the best place for a user to provide high fidelity feedback to AI is in a code editor.
-                </p>
-            </div>
+            <div className="mx-auto mt-20 max-w-3xl space-y-16">
+                <div>
+                    <p className="text-xl font-semibold text-gray-700">1. AI in the Editor</p>
+                    <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
+                        <span className="text-black">The editor is the optimal environment for AI coding agents. </span>
+                        Fully autonomous solutions like{' '}
+                        <a
+                            href="https://github.com/princeton-nlp/swe-agent"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blurple-500 hover:underline"
+                        >
+                            SWE-Agent
+                        </a>{' '}
+                        achieve only 12.29% success on the SWE-bench test set. We believe coding with agents is most
+                        effective within the editor, allowing for user interaction and guidance.
+                    </p>
+                </div>
 
-            <div className="mx-auto mt-16 max-w-3xl">
-                <p className="text-xl font-semibold text-gray-700">Principle 2: Context</p>
-                <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
-                    <span className="text-blurple-400">Context should come from inside AND outside the codebase. </span>{' '}
-                    We are building{' '}
-                    <a
-                        href="https://openctx.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-500 hover:underline"
-                    >
-                        OpenCtx
-                    </a>
-                    , an open source tool to bring relevant context about your code from sources like Linear, Jira,
-                    Slack, Google Docs, and more. We believe that an LLM (just like a human) cannot effectively solve a
-                    problem without full context and understanding of the problem.
-                </p>
-            </div>
+                <div>
+                    <p className="text-xl font-semibold text-gray-700">2. Comprehensive Context</p>
+                    <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
+                        <span className="text-black">
+                            Context should encompass both internal and external sources.{' '}
+                        </span>
+                        Our{' '}
+                        <a
+                            href="https://openctx.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blurple-500 hover:underline"
+                        >
+                            OpenCtx
+                        </a>{' '}
+                        tool integrates relevant context from various platforms. Like senior engineers, AI needs
+                        comprehensive understanding beyond just the codebase to effectively solve problems.
+                    </p>
+                </div>
 
-            <div className="mx-auto mt-16 max-w-3xl">
-                <p className="text-xl font-semibold text-gray-700">Principle 3: Interactive</p>
-                <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
-                    <span className="text-blurple-400">A user should be in the loop at every step. </span> In an agentic
-                    workflow, AI will do the work, with the human providing oversight. A user should be able to steer
-                    the workflow at every step by evaluating LLM output throughout the process.
-                </p>
-            </div>
+                <div>
+                    <p className="text-xl font-semibold text-gray-700">3. Human Oversight</p>
+                    <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
+                        <span className="text-black">User involvement at every step is crucial. </span>
+                        In an agentic workflow, humans provide oversight and can steer the process by evaluating AI
+                        output. The code editor remains the ideal interface for this high-fidelity feedback loop between
+                        user and AI.
+                    </p>
+                </div>
 
-            <div className="mx-auto mt-16 max-w-3xl">
-                <p className="text-xl font-semibold text-gray-700">Principle 4: Feedback</p>
-                <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
-                    <span className="text-blurple-400">AI should learn from feedback. </span> AI should continuously
-                    evolve and adapt to better understand the user's intent, not just the code. Gathering feedback at
-                    every step of the process.
-                </p>
+                <div>
+                    <p className="text-xl font-semibold text-gray-700">4. Continuous Learning</p>
+                    <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
+                        <span className="text-black">AI should evolve through feedback. </span>
+                        By gathering and learning from feedback at each step, AI can continuously adapt to better
+                        understand not just the code, but also the user's intent and broader project goals.
+                    </p>
+                </div>
             </div>
         </>
     )
@@ -341,15 +338,13 @@ function Principles(): JSX.Element {
 function AutoCodyHowItWorks(): JSX.Element {
     return (
         <div>
-            <h2 className="text-center text-4xl font-semibold !tracking-[-1px] text-[#0F111A]">
-                How does AutoCody work?
-            </h2>
+            <h2 className="text-center text-4xl font-semibold !tracking-[-1px] text-[#0F111A]">How AutoCody Works</h2>
             <h3 className="mx-auto mt-2 text-center text-xl font-semibold tracking-tight text-gray-400">
                 A 5-step user{' '}
                 <span role="img" aria-label="handshake">
                     🤝
                 </span>{' '}
-                AI strategy
+                AI collaboration, all within your code editor
             </h3>
 
             <div className="relative mt-14 flex gap-4">
@@ -357,9 +352,9 @@ function AutoCodyHowItWorks(): JSX.Element {
                     <div className="sticky top-20">
                         <div className="rounded-2xl bg-gray-200/30 p-8">
                             <p className="text-sm font-semibold text-gray-400">Step 1</p>
-                            <h3 className="text-2xl font-semibold text-[#0F111A]">User prompts AutoCody</h3>
+                            <h3 className="text-2xl font-semibold text-[#0F111A]">User Prompts AutoCody</h3>
                             <p className="mt-4 text-lg text-gray-500">
-                                The step that we know and have done 1,000+ times in the past year
+                                Initiate the process with a prompt, just like you've done countless times before
                             </p>
                         </div>
                     </div>
@@ -384,22 +379,17 @@ function AutoCodyHowItWorks(): JSX.Element {
                     <div className="sticky top-20">
                         <div className="rounded-2xl bg-gray-200/30 p-8">
                             <p className="text-sm font-semibold text-gray-400">Step 2</p>
-                            <h3 className="text-2xl font-semibold text-[#0F111A]">AutoCody will restate the problem</h3>
+                            <h3 className="text-2xl font-semibold text-[#0F111A]">Problem Restatement</h3>
                             <p className="mt-4 text-lg text-gray-500">
-                                AutoCody will clarify a user's prompt. It will state the current behavior and define the
-                                desired behavior.
-                            </p>
-
-                            <p className="mt-4 text-lg text-gray-500">
-                                Why? Clarifying user intent is important. Getting intent wrong by a few degrees can send
-                                AI down a rabbit hole.
+                                AutoCody clarifies your prompt, stating current and desired behaviors to ensure
+                                alignment
                             </p>
                         </div>
 
                         <div className="mt-4 rounded-2xl bg-gray-200/30 p-8">
-                            <h3 className="text-lg font-semibold text-gray-500">User will approve/edit restatement</h3>
-                            <p className="mt-2 text-base text-gray-500">
-                                A user can let AutoCody know if the current behavior and desired behavior are correct.
+                            <h3 className="text-lg font-semibold text-[#0F111A]">User Verification</h3>
+                            <p className="mt-2 text-lg text-gray-500">
+                                Approve or edit AutoCody's restatement to fine-tune the understanding
                             </p>
                         </div>
                     </div>
@@ -424,27 +414,17 @@ function AutoCodyHowItWorks(): JSX.Element {
                     <div className="sticky top-20">
                         <div className="rounded-2xl bg-gray-200/30 p-8">
                             <p className="text-sm font-semibold text-gray-400">Step 3</p>
-                            <h3 className="text-2xl font-semibold text-[#0F111A]">
-                                AutoCody will find relevant context
-                            </h3>
+                            <h3 className="text-2xl font-semibold text-[#0F111A]">Context Gathering</h3>
                             <p className="mt-4 text-lg text-gray-500">
-                                AutoCody will use the prompt and restatement to create queries under the hood. Then it
-                                will search your codebase and relevant sources to find high quality context.
-                            </p>
-                            <p className="mt-4 text-lg text-gray-500">
-                                AutoCody will evaluate each piece of context to determine how important it is to the
-                                task.
-                            </p>
-                            <p className="mt-4 text-lg text-gray-500">
-                                Why? Context is key. Without context, an LLM can't understand the user's intent.
+                                AutoCody searches your codebase and relevant sources for high-quality context,
+                                evaluating its importance
                             </p>
                         </div>
 
                         <div className="mt-4 rounded-2xl bg-gray-200/30 p-8">
-                            <h3 className="text-lg font-semibold text-gray-500">User will add/remove context</h3>
-                            <p className="mt-2 text-base text-gray-500">
-                                A user can let AutoCody know if each piece of context was relevant. They can remove and
-                                add context as needed.
+                            <h3 className="text-lg font-semibold text-[#0F111A]">Context Refinement</h3>
+                            <p className="mt-2 text-lg text-gray-500">
+                                Review, add, or remove context to ensure relevance and completeness
                             </p>
                         </div>
                     </div>
@@ -469,21 +449,17 @@ function AutoCodyHowItWorks(): JSX.Element {
                     <div className="sticky top-20">
                         <div className="rounded-2xl bg-gray-200/30 p-8">
                             <p className="text-sm font-semibold text-gray-400">Step 4</p>
-                            <h3 className="text-2xl font-semibold text-[#0F111A]">AutoCody creates a plan</h3>
+                            <h3 className="text-2xl font-semibold text-[#0F111A]">Plan Creation</h3>
                             <p className="mt-4 text-lg text-gray-500">
-                                After a user approves the context, AutoCody will create a step-by-step plan to solve a
-                                user's issue.
-                            </p>
-                            <p className="mt-4 text-lg text-gray-500">
-                                Each step in the plan also acts as a to-do list item so a user can mark it as complete.
+                                AutoCody develops a step-by-step plan to address your issue, serving as an actionable
+                                to-do list
                             </p>
                         </div>
 
                         <div className="mt-4 rounded-2xl bg-gray-200/30 p-8">
-                            <h3 className="text-lg font-semibold text-gray-500">User will update the plan</h3>
-                            <p className="mt-2 text-base text-gray-500">
-                                A user can let AutoCody know if the plan is correct. They can tweak steps, add or remove
-                                steps, or change the order of steps.
+                            <h3 className="text-lg font-semibold text-[#0F111A]">Plan Customization</h3>
+                            <p className="mt-2 text-lg text-gray-500">
+                                Modify the plan by tweaking, adding, removing, or reordering steps as needed
                             </p>
                         </div>
                     </div>
@@ -508,20 +484,17 @@ function AutoCodyHowItWorks(): JSX.Element {
                     <div className="sticky top-20">
                         <div className="rounded-2xl bg-gray-200/30 p-8">
                             <p className="text-sm font-semibold text-gray-400">Step 5</p>
-                            <h3 className="text-2xl font-semibold text-[#0F111A]">
-                                AutoCody executes the plan step-by-step
-                            </h3>
+                            <h3 className="text-2xl font-semibold text-[#0F111A]">Plan Execution</h3>
                             <p className="mt-4 text-lg text-gray-500">
-                                AutoCody will execute the plan step-by-step. It will make changes to the codebase and
-                                update the user on its progress.
+                                AutoCody implements the plan step-by-step, making changes and providing progress updates
                             </p>
                         </div>
 
                         <div className="mt-4 rounded-2xl bg-gray-200/30 p-8">
-                            <h3 className="text-lg font-semibold text-gray-500">User will sit back and enjoy!</h3>
-                            <p className="mt-2 text-base text-gray-500">
-                                Since the user was able to adjust and steer AutoCody every step of the way, there is a
-                                higher chance of AutoCody completing the task successfully.
+                            <h3 className="text-lg font-semibold text-[#0F111A]">Oversight and Enjoyment</h3>
+                            <p className="mt-2 text-lg text-gray-500">
+                                With your guidance throughout the process, AutoCody is primed for successful task
+                                completion
                             </p>
                         </div>
                     </div>
@@ -555,7 +528,7 @@ function SignUp(): JSX.Element {
                     region: 'na1',
                     portalId: '2762526',
                     formId: '94e3f9f3-72c3-4ab6-8259-9743ad551cfb',
-                    target: '#hubspotForm'
+                    target: '#hubspotForm',
                 })
             }
         }
