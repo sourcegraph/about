@@ -49,7 +49,21 @@ We’ve beautified the chat UI with new context chips. The context you @-mention
 
 ## ICYMI: Claude 3.5 Sonnet is here
 
-Last week, we [released Claude 3.5 Sonnet for Cody Pro](https://sourcegraph.com/blog/claude-3.5-sonnet-now-available-in-cody). Cody supports the **best models**, and Anthropic’s latest flagship is already showing [impressive benchmarks](https://www.anthropic.com/news/claude-3-5-sonnet), surpassing Claude 3 Opus in some benchmarks while being far faster. Cody Pro users can now select Claude 3.5 Sonnet for chat and commands (this was shipped in VS Code v1.22.4, but is also available in v1.24.0).
+Last week, we [released Claude 3.5 Sonnet for Cody Pro](https://sourcegraph.com/blog/claude-3.5-sonnet-now-available-in-cody). Cody supports the **best models**, and Anthropic’s latest flagship is already showing [impressive benchmarks](https://www.anthropic.com/news/claude-3-5-sonnet), surpassing Claude 3 Opus in some benchmarks while being far faster. Cody Pro users can now select Claude 3.5 Sonnet for chat and commands (this was shipped in VS Code v1.22.4, but is also available in v1.24.0). JetBrains users will also get access to Claude 3.5 Sonnet in the coming days
+.
+## Upgraded Cody chat experiences across every interface and editor
+
+Today, Cody looks a little bit different everywhere it exists: in VS Code, in JetBrains, and on the web. We want to unify this experience, making Cody chat more polished everywhere while speeding up our ability to release Cody for new IDEs.
+
+We’re doing this using Cody’s webview-based VS Code UI, which we plan to port to JetBrains, the web, and two new clients: Visual Studio and Eclipse. Today, we released the first step of this plan with an [upgraded Cody web view](https://sourcegraph.com/cody/chat). Cody's web chat now supports model selection, context chips, and reflects the same UI as the VS Code chat sidebar. Try it out and let us know what you think!
+
+<Video
+  source={{
+    mp4: 'blog/cody-vscode-1-24-release/new-web-ui'
+  }}
+  loop={true}
+  caption="Cody chat on sourcegraph.com"
+/>
 
 ## Changelog
 
