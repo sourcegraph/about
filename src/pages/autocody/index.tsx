@@ -364,7 +364,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                 <div className="flex-1 overflow-y-auto">
                     <div className="rounded-2xl bg-gray-200/30 p-12 pr-0">
                         <video
-                            src="/cody/autocody-prompting.mp4"
+                            src="/cody/autocody-prompting-2.mp4"
                             className="rounded-l-2xl"
                             autoPlay={true}
                             loop={true}
@@ -399,7 +399,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                 <div className="flex-1 overflow-y-auto">
                     <div className="rounded-2xl bg-gray-200/30 p-12 pr-0">
                         <video
-                            src="/cody/autocody-restate.mp4"
+                            src="/cody/autocody-restate-2.mp4"
                             className="rounded-l-2xl"
                             autoPlay={true}
                             loop={true}
@@ -434,7 +434,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                 <div className="flex-1 overflow-y-auto">
                     <div className="rounded-2xl bg-gray-200/30 p-12 pr-0">
                         <video
-                            src="/cody/autocody-restate.mp4"
+                            src="/cody/autocody-contextualize.mp4"
                             className="rounded-l-2xl"
                             autoPlay={true}
                             loop={true}
@@ -469,7 +469,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                 <div className="flex-1 overflow-y-auto">
                     <div className="rounded-2xl bg-gray-200/30 p-12 pr-0">
                         <video
-                            src="/cody/autocody-restate.mp4"
+                            src="/cody/autocody-plan.mp4"
                             className="rounded-l-2xl"
                             autoPlay={true}
                             loop={true}
