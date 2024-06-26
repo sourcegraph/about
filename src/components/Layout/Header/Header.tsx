@@ -88,10 +88,10 @@ const HEADER_CONTENT_THEME_CLASS: Record<
     },
     dark: {
         container: 'bg-black',
-        item: 'text-white hover:bg-white/25 focus:ring-white',
+        item: 'text-white hover:bg-violet-600 focus:ring-white',
         menu: 'bg-gray-700 ring-white',
         menuItem: 'text-white',
-        menuItemActive: 'bg-gray-600',
+        menuItemActive: 'bg-violet-600',
         divider: 'border-white/25',
         button: 'text-gray-300 hover:bg-gray-700 hover:text-white focus:ring-white',
         panel: 'border-white/25',
@@ -127,23 +127,14 @@ const HeaderContent: FunctionComponent<
             <MeetWithProductExpertButton
                 id="topnav"
                 buttonLocation={buttonLocation.nav}
-                buttonClassName={classNames(
-                    '!font-semibold',
-                    dark ? 'btn-outline-white text-white hover:text-violet-300' : 'btn-link',
-                    'border-0'
-                )}
+                buttonClassName={classNames('!font-semibold', dark ? 'btn-link-dark' : 'btn-link', 'border-0')}
                 requestInfo={true}
             />
             <Link
                 id="topnav"
                 href="https://sourcegraph.com/sign-in?returnTo=/cody/manage"
                 title="Get started with Cody"
-                className={classNames(
-                    'btn text-center',
-                    dark
-                        ? 'btn-outline-white'
-                        : 'text-violet-500 outline outline-1 outline-violet-500 hover:text-violet-400 hover:outline-violet-400'
-                )}
+                className={classNames('btn', dark ? 'btn-secondary-dark' : 'btn-secondary')}
                 type="button"
             >
                 Login
@@ -151,10 +142,7 @@ const HeaderContent: FunctionComponent<
             <button
                 id="topnav"
                 type="button"
-                className={classNames(
-                    'btn min-w-fit px-6 lg:px-4',
-                    dark ? 'btn-inverted-primary text-violet-500' : 'btn-primary'
-                )}
+                className={classNames('btn min-w-fit px-6 lg:px-4', dark ? 'btn-primary-dark' : 'btn-primary')}
                 title="Download Sourcegraph"
                 onClick={handleOpenModal}
             >

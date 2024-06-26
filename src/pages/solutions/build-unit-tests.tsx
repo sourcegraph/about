@@ -46,7 +46,7 @@ const BuildUnitTestsPage: FunctionComponent = () => {
                             <Link
                                 href="https://sourcegraph.com/contact/request-info?form_submission_source=solutions-build-unit-tests"
                                 title="Contact us"
-                                className="btn text-center text-violet-500 outline outline-1 outline-violet-500 hover:text-violet-400 hover:outline-violet-400"
+                                className="btn btn-secondary text-center"
                                 type="button"
                             >
                                 Contact us

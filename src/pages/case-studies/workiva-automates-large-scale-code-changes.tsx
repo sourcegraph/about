@@ -67,6 +67,7 @@ export const CaseStudy: FunctionComponent = () => {
                         <Link
                             href="/batch-changes"
                             title="Batch Changes"
+                            className="btn-link"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.body}
                             data-button-type="cta"

@@ -24,9 +24,9 @@ export const CodeSearchCard: FunctionComponent = () => (
                 </Link>
                 <Link
                     href="/pricing?product=codeSearch"
-                    className="flex items-center justify-start gap-[10px] whitespace-nowrap font-semibold text-white hover:text-violet-300 hover:underline"
+                    className="btn-link-dark btn-link-icon flex items-center justify-start whitespace-nowrap font-semibold"
                 >
-                    See pricing <ChevronRightIcon />
+                    See pricing <ChevronRightIcon className="link-icon" />
                 </Link>
             </div>
         </div>

@@ -82,7 +82,7 @@ const Enterprise: FunctionComponent = () => {
                         cta={
                             <div className="mx-auto flex w-[356px] flex-col items-center justify-center gap-6 sm:flex sm:w-auto  sm:flex-row  md:gap-4">
                                 <Link
-                                    className="btn btn-primary w-full bg-violet-500 sm:w-auto"
+                                    className="btn btn-primary w-full sm:w-auto"
                                     href="/contact/request-info"
                                     title="Contact us for a demo"
                                     data-button-style={buttonStyle.primary}
@@ -92,7 +92,7 @@ const Enterprise: FunctionComponent = () => {
                                     Contact us for a demo
                                 </Link>
                                 <Link
-                                    className="btn  w-full items-center text-violet-500 outline sm:w-auto"
+                                    className="btn btn-secondary w-full items-center sm:w-auto"
                                     href="/pricing"
                                     title="See Pricing"
                                     data-button-style={buttonStyle.outline}

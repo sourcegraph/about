@@ -92,10 +92,10 @@ const TestimonialCard: FunctionComponent = () => (
                     </span>
                     <Link
                         href="/case-studies/qualtrics-speeds-up-unit-tests-and-code-understanding-with-cody"
-                        className="flex gap-2.5 font-semibold leading-[22.4px] text-white"
+                        className="btn-link-dark btn-link-icon flex gap-2.5 font-semibold leading-[22.4px] text-white"
                     >
                         Read the case study
-                        <ChevronRightIcon />
+                        <ChevronRightIcon className="link-icon" />
                     </Link>
                 </div>
             </div>

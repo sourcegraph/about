@@ -21,7 +21,7 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
     dark = false,
     chevron = false,
     size = 'md',
-    buttonClassName = `${dark ? 'btn-outline-white' : 'btn-link'}`,
+    buttonClassName = `${dark ? 'btn-link-dark' : 'btn-link'}`,
     requestInfo = false,
     children = requestInfo ? 'Contact sales' : 'Talk to an engineer',
 }) => (
@@ -29,8 +29,9 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
         id={id}
         href={requestInfo ? '/contact/request-info' : '/demo'}
         className={classNames(
-            'btn inline-flex items-center whitespace-nowrap',
+            'btn btn-link inline-flex items-center whitespace-nowrap',
             buttonClassName,
+            chevron ? 'btn-link-icon' : '',
             size === 'lg' && 'py-4'
         )}
         title={children}
@@ -38,6 +39,6 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
         data-button-location={buttonLocation}
         data-button-type="cta"
     >
-        {children} {chevron && <ChevronRightIcon className="ml-[3px]" />}
+        {children} {chevron && <ChevronRightIcon className="link-icon" />}
     </Link>
 )

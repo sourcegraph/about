@@ -174,7 +174,7 @@ const Resources: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => 
                         <h2 className="mb-8 text-center md:mb-4 lg:text-left">{featuredResource.title}</h2>
                         <Link
                             href={featuredResource.link}
-                            className="hidden rounded-[5px] border border-violet-500 px-6 py-2 text-center font-semibold text-violet-500 hover:border-violet-400 hover:text-violet-400 lg:block"
+                            className="btn btn-secondary hidden px-6 py-2 text-center font-semibold lg:block"
                         >{`Read the ${featuredResource.contentType}`}</Link>
                     </div>
                     <div className="flex justify-center lg:justify-end">
@@ -189,7 +189,7 @@ const Resources: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => 
                     <Link
                         href={featuredResource.link}
                         onClick={() => handlerResourceItemClick(featuredResource, true)}
-                        className="mx-auto mt-8 w-fit rounded-[5px] border border-violet-500 px-6 py-2 text-center font-semibold text-violet-500 hover:border-violet-400 hover:text-violet-400 lg:hidden"
+                        className="btn btn-secondary mx-auto mt-8 w-fit px-6 py-2 text-center font-semibold lg:hidden"
                     >{`Read the ${featuredResource.contentType}`}</Link>
                 </div>
             </ContentSection>
@@ -237,7 +237,7 @@ const Resources: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => 
                         {displayLimit > 6 && filteredResources.length > 6 && (
                             <button
                                 type="button"
-                                className="rounded-[5px] bg-violet-500 px-6 py-2  text-base font-semibold text-white hover:bg-violet-400"
+                                className="btn btn-primary px-6 py-2 text-base font-semibold"
                                 onClick={() => handleShowLess()}
                             >
                                 Show Less
@@ -246,7 +246,7 @@ const Resources: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => 
                         {displayLimit < resources.length && (
                             <button
                                 type="button"
-                                className="rounded-[5px] bg-violet-500 px-6 py-2  text-base font-semibold text-white hover:bg-violet-400"
+                                className="btn btn-primary px-6 py-2 text-base font-semibold"
                                 onClick={handleShowMore}
                             >
                                 Show More

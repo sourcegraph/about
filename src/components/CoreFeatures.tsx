@@ -162,7 +162,7 @@ export const CoreFeatures: FunctionComponent<TelemetryProps> = ({ telemetryRecor
                                 href={feature.ctaLink}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="btn btn-outline-primary mt-2"
+                                className="btn btn-secondary mt-2"
                                 title={`Learn more about ${startCase(feature.productFeature)}`}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
@@ -173,7 +173,7 @@ export const CoreFeatures: FunctionComponent<TelemetryProps> = ({ telemetryRecor
                         ) : (
                             <Link
                                 href={feature.ctaLink}
-                                className="btn btn-outline-primary mt-2"
+                                className="btn btn-secondary mt-2"
                                 title={`Learn more about ${startCase(feature.productFeature)}`}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}

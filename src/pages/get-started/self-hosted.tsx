@@ -49,12 +49,13 @@ export const SelfHostedPage: FunctionComponent = () => (
 
                     <a
                         title="Talk to an engineer"
+                        className="btn-link btn-link-icon"
                         data-button-style={buttonStyle.textWithArrow}
                         data-button-location={buttonLocation.hero}
                         data-button-type="cta"
                         href="https://info.sourcegraph.com/talk-to-a-developer"
                     >
-                        Talk to an engineer <ArrowRightIcon className="inline" />
+                        Talk to an engineer <ArrowRightIcon className="link-icon" />
                     </a>
                 </div>
             </div>

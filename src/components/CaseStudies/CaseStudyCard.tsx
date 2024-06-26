@@ -122,7 +122,7 @@ export const CaseStudyCard: FunctionComponent<{
     logoClassName,
     titleClassName,
     linkClassName,
-    icon = <ArrowRightIcon size={20} className="ml-1 inline" />,
+    icon = <ArrowRightIcon size={20} className="link-icon inline" />,
 }) => (
     <div className="grow">
         <div className="md:pr-12">
@@ -167,7 +167,7 @@ export const CaseStudyCard: FunctionComponent<{
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
-                    className={classNames('font-bold no-underline hover:text-violet-300', linkClassName)}
+                    className={classNames('btn-link btn-link-icon', linkClassName)}
                 >
                     {linkText}
                     {icon}
@@ -179,7 +179,7 @@ export const CaseStudyCard: FunctionComponent<{
                     data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.body}
                     data-button-type="cta"
-                    className={classNames('font-bold no-underline hover:text-violet-300', linkClassName)}
+                    className={classNames('btn-link btn-link-icon', linkClassName)}
                 >
                     {linkText}
                     {icon}

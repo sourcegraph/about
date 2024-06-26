@@ -107,7 +107,7 @@ const AWS: FunctionComponent = () => (
 
                 <Link
                     href="https://aws.amazon.com/marketplace/seller-profile?id=36b4859a-d034-4079-89ed-2ac4d386df23"
-                    className="btn  btn-inverted-primary w-fit px-6 font-normal"
+                    className="btn btn-primary-dark w-fit px-6 font-normal"
                     title="Visit the Marketplace"
                     target="_blank"
                 >
@@ -137,14 +137,14 @@ const AWS: FunctionComponent = () => (
                 <Link
                     href="mailto:partner@sourcegraph.com"
                     title="Get started with Cody"
-                    className="btn btn-inverted-primary text-center"
+                    className="btn btn-primary-dark text-center"
                 >
                     Contact us
                 </Link>
                 <Link
                     href="https://sourcegraph.com/search"
                     title="Search public code"
-                    className="btn btn-outline-white"
+                    className="btn btn-secondary-dark"
                     target="_blank"
                 >
                     Search public code
