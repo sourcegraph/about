@@ -67,3 +67,5 @@ AI Dev Tools Night was a fantastic opportunity to learn, network, and get inspir
 Missed the event? Don’t worry! You can check the recording [here](https://youtu.be/LRF1QEmr2io). If you’re interested in attending future in-person events, sign up [here](https://lu.ma/sourcegraph).
 
 We look forward to seeing you at our next event!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LRF1QEmr2io?si=X8y8rpqRg66rmlAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
