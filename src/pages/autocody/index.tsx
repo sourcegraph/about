@@ -277,8 +277,10 @@ function Principles(): JSX.Element {
             <div className="mx-auto mt-20 max-w-3xl space-y-16">
                 <div>
                     <p className="text-xl font-semibold text-gray-700">1. AI in the Editor</p>
-                    <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
-                        <span className="text-black">The editor is the optimal environment for AI coding agents. </span>
+                    <p className="text-xl font-medium text-gray-400 lg:text-2xl lg:leading-normal">
+                        <span className="font-bold text-gray-600">
+                            The editor is the optimal environment for AI coding agents.{' '}
+                        </span>
                         Fully autonomous solutions like{' '}
                         <a
                             href="https://github.com/princeton-nlp/swe-agent"
@@ -295,8 +297,8 @@ function Principles(): JSX.Element {
 
                 <div>
                     <p className="text-xl font-semibold text-gray-700">2. Comprehensive Context</p>
-                    <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
-                        <span className="text-black">
+                    <p className="text-xl font-medium text-gray-400 lg:text-2xl lg:leading-normal">
+                        <span className="font-bold text-gray-600">
                             Context should encompass both internal and external sources.{' '}
                         </span>
                         Our{' '}
@@ -315,8 +317,8 @@ function Principles(): JSX.Element {
 
                 <div>
                     <p className="text-xl font-semibold text-gray-700">3. Human Oversight</p>
-                    <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
-                        <span className="text-black">User involvement at every step is crucial. </span>
+                    <p className="text-xl font-medium text-gray-400 lg:text-2xl lg:leading-normal">
+                        <span className="font-bold text-gray-600">User involvement at every step is crucial. </span>
                         In an agentic workflow, humans provide oversight and can steer the process by evaluating AI
                         output. The code editor remains the ideal interface for this high-fidelity feedback loop between
                         user and AI.
@@ -325,8 +327,8 @@ function Principles(): JSX.Element {
 
                 <div>
                     <p className="text-xl font-semibold text-gray-700">4. Continuous Learning</p>
-                    <p className="text-xl font-semibold text-gray-400 lg:text-2xl lg:leading-normal">
-                        <span className="text-black">AI should evolve through feedback. </span>
+                    <p className="text-xl font-medium text-gray-400 lg:text-2xl lg:leading-normal">
+                        <span className="font-bold text-gray-600">AI should evolve through feedback. </span>
                         By gathering and learning from feedback at each step, AI can continuously adapt to better
                         understand not just the code, but also the user's intent and broader project goals.
                     </p>
