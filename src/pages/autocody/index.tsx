@@ -12,7 +12,7 @@ const AutoCodyPage: FunctionComponent = () => (
         }}
         displayChildrenUnderNav={true}
         customFooterClassName="!bg-transparent"
-        className="relative mb-40 w-full !overflow-hidden bg-gray-50"
+        className="relative w-full !overflow-hidden bg-gray-50"
     >
         <div className="mt-10 text-center">
             <VSCode />
@@ -36,7 +36,7 @@ export default AutoCodyPage
 
 function VSCode(): JSX.Element {
     return (
-        <div className="relative mx-auto max-w-5xl">
+        <div className="relative mx-auto max-w-5xl px-10 lg:px-0">
             {/* <div className="absolute inset-x-0 inset-y-10 rounded-xl border border-gray-200 bg-gray-50 " /> */}
 
             <img
@@ -225,13 +225,13 @@ function VSCode(): JSX.Element {
 
                             <div className="relative h-[300px] flex-grow pt-5">
                                 <div className="flex h-full flex-col justify-center px-5 text-white">
-                                    <h1 className="text-9xl font-semibold leading-none !tracking-[-3px] text-white">
+                                    <h1 className="text-6xl font-semibold leading-none !tracking-[-3px] text-white lg:text-9xl">
                                         Auto
                                         <span className="bg-gradient-to-br from-gray-100 to-gray-200 bg-clip-text text-transparent">
                                             Cody
                                         </span>
                                     </h1>
-                                    <p className="mx-auto mt-4 max-w-[40ch] text-xl leading-normal text-gray-300 lg:text-2xl">
+                                    <p className="mx-auto mt-4 max-w-[40ch] leading-normal text-gray-300 lg:text-2xl">
                                         We are building an autonomous coding assistant that will be able to understand
                                         your problems, create a step-by-step plan to solve them, and write code
                                         alongside you.
@@ -264,7 +264,7 @@ function VSCode(): JSX.Element {
 
 function Principles(): JSX.Element {
     return (
-        <>
+        <div className="px-6 lg:px-0">
             <div className="mx-auto max-w-3xl">
                 <h2 className="text-4xl font-semibold !tracking-[-1px] text-[#0F111A]">
                     Our core principles for autonomous coding
@@ -332,13 +332,13 @@ function Principles(): JSX.Element {
                     </p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
 function AutoCodyHowItWorks(): JSX.Element {
     return (
-        <div>
+        <div className="px-6 lg:px-0">
             <h2 className="text-center text-4xl font-semibold !tracking-[-1px] text-[#0F111A]">How AutoCody Works</h2>
             <h3 className="mx-auto mt-2 text-center text-xl font-semibold tracking-tight text-gray-400">
                 A 5-step user{' '}
@@ -348,7 +348,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                 AI collaboration, all within your code editor
             </h3>
 
-            <div className="relative mt-14 flex gap-4">
+            <div className="relative mt-14 flex flex-col gap-4 lg:flex-row">
                 <div className="w-[400px]">
                     <div className="sticky top-20">
                         <div className="rounded-2xl bg-gray-200/30 p-8">
@@ -375,7 +375,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                 </div>
             </div>
 
-            <div className="relative mt-14 flex gap-4">
+            <div className="relative mt-14 flex flex-col gap-4 lg:flex-row">
                 <div className="w-[400px]">
                     <div className="sticky top-20">
                         <div className="rounded-2xl bg-gray-200/30 p-8">
@@ -410,7 +410,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                 </div>
             </div>
 
-            <div className="relative mt-14 flex gap-4">
+            <div className="relative mt-14 flex flex-col gap-4 lg:flex-row">
                 <div className="w-[400px]">
                     <div className="sticky top-20">
                         <div className="rounded-2xl bg-gray-200/30 p-8">
@@ -445,7 +445,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                 </div>
             </div>
 
-            <div className="relative mt-14 flex gap-4">
+            <div className="relative mt-14 flex flex-col gap-4 lg:flex-row">
                 <div className="w-[400px]">
                     <div className="sticky top-20">
                         <div className="rounded-2xl bg-gray-200/30 p-8">
@@ -480,7 +480,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                 </div>
             </div>
 
-            <div className="relative mt-14 flex gap-4">
+            <div className="relative mt-14 flex flex-col gap-4 lg:flex-row">
                 <div className="w-[400px]">
                     <div className="sticky top-20">
                         <div className="rounded-2xl bg-gray-200/30 p-8">
@@ -537,41 +537,13 @@ function SignUp(): JSX.Element {
     }, [])
 
     return (
-        <div id="waitlist-autocody" className="mx-auto max-w-3xl text-center">
+        <div id="waitlist-autocody" className="mx-auto max-w-3xl px-6 text-center lg:px-0">
             <h2 className="text-4xl font-semibold !tracking-[-1px] text-[#0F111A]">Interested?</h2>
             <h3 className="mx-auto mt-2 text-xl font-semibold tracking-tight text-gray-400">
                 Sign up for the waitlist to get notified when AutoCody is ready.
             </h3>
 
-            <div id="hubspotForm" className="mt-20" />
+            <div id="hubspotForm" className="mt-10" />
         </div>
     )
 }
-
-// const HubSpotForm: React.FC = () => {
-//     const formContainerRef = useRef<HTMLDivElement>(null)
-
-//     useEffect(() => {
-//         const script = document.createElement('script')
-//         script.src = '//js.hsforms.net/forms/embed/v2.js'
-//         script.type = 'text/javascript'
-//         document.body.append(script)
-
-//         script.addEventListener('load', () => {
-//             if (window.hbspt) {
-//                 window.hbspt.forms.create({
-//                     region: 'na1',
-//                     portalId: '2762526',
-//                     formId: '94e3f9f3-72c3-4ab6-8259-9743ad551cfb',
-//                     target: formContainerRef.current,
-//                 })
-//             }
-//         })
-
-//         return () => {
-//             script.remove()
-//         }
-//     }, [])
-
-//     return <div ref={formContainerRef} />
-// }
