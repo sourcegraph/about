@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Heading, ContentSection } from '..'
+import { ContentSection } from '..'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
 
@@ -14,9 +14,9 @@ export const WriteCodeFasterSection: FunctionComponent = () => {
             parentClassName="!py-16"
         >
             <div className="flex  flex-col px-6 py-10 md:py-16 md:pl-10">
-                <Heading size="h2" className="pb-4 pt-6 !leading-10 !tracking-[-1px] text-gray-700">
+                <h2 className="pb-4 pt-6 text-gray-700">
                     Developers write code faster using Cody and the power of AI in their IDE
-                </Heading>
+                </h2>
             </div>
             <div className="md:sg-developers sg-developers-mobile  relative z-10 h-full w-full">
                 {isMobile ? (

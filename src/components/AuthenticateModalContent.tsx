@@ -6,7 +6,6 @@ import { GITHUB, GITLAB, GOOGLE } from '../pages/constants'
 import { TelemetryProps } from '../telemetry'
 
 import { ExternalProvider } from './cta/ExternalProvider'
-import { Heading } from './Heading'
 
 interface Props extends TelemetryProps {
     source: string
@@ -15,9 +14,7 @@ interface Props extends TelemetryProps {
 
 export const AuthenticateModalContent: FunctionComponent<Props> = ({ source, plan = 'free', telemetryRecorder }) => (
     <div>
-        <Heading size="h4" className="text-lg font-semibold text-gray-600">
-            Sign up to get free access
-        </Heading>
+        <h4 className="text-gray-600">Sign up to get free access</h4>
         <ExternalProvider
             providerType={GITHUB}
             label="Continue With GitHub"

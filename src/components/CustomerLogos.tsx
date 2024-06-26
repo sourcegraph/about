@@ -6,8 +6,6 @@ import Link from 'next/link'
 import { breakpoints } from '../data/breakpoints'
 import { buttonStyle, buttonLocation } from '../data/tracking'
 
-import { Heading } from '.'
-
 interface Logo {
     name: string
     src: string
@@ -162,16 +160,8 @@ export const CustomerLogos: FunctionComponent<CustomerLogos> = ({
     return (
         <div className={classNames(className, { 'bg-black text-white': dark })}>
             <div className="mx-auto mb-12 max-w-xl text-center">
-                {overline && (
-                    <Heading size="h6" as="h2">
-                        {overline}
-                    </Heading>
-                )}
-                {headline && (
-                    <Heading size="h2" as="h3" className={classNames('my-2', headlineClassName)}>
-                        {headline}
-                    </Heading>
-                )}
+                {overline && <h6>{overline}</h6>}
+                {headline && <h2 className={classNames('my-2', headlineClassName)}>{headline}</h2>}
                 {description && <p className="text-lg">{description}</p>}
                 {ctaLink}
             </div>

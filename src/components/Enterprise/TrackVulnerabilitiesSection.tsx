@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Heading, ContentSection } from '..'
+import { ContentSection } from '..'
 
 export const TrackVulnerabilitiesSection: FunctionComponent = () => (
     <ContentSection
@@ -8,9 +8,9 @@ export const TrackVulnerabilitiesSection: FunctionComponent = () => (
         parentClassName="!md:px-[80px] !md:pb-[96px]"
     >
         <div className="md:pt-6 md:pl-16 md:pr-10">
-            <Heading size="h2" className="mb-4 pt-4 !leading-10 !tracking-[-1px] text-black md:pt-0">
+            <h2 className="mb-4 pt-4 text-black md:pt-0">
                 Track and resolve vulnerabilities quickly and with confidence
-            </Heading>
+            </h2>
             <p className="mb-[37px] text-lg leading-[27px] tracking-[-0.25px]">
                 Find all instances of vulnerabilities with Code Search, then use Batch Changes to replace vulnerable
                 code all at once. Plus, Code Insights lets you create dashboards to track instances of vulnerabilities

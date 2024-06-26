@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Heading } from '..'
+import { ContentSection } from '..'
 
 export const NutanixCaseStudySection: FunctionComponent = () => (
     <ContentSection
@@ -16,17 +16,13 @@ export const NutanixCaseStudySection: FunctionComponent = () => (
                     <p className="mb-4 font-sans text-[75px] font-semibold leading-[62px] tracking-[-1px]">
                         &lt;5 minutes
                     </p>
-                    <Heading size="h3" className="!leading-[30px] !tracking-[-0.25px]">
-                        Time to find and fix instances of a vulnerability
-                    </Heading>
+                    <h3>Time to find and fix instances of a vulnerability</h3>
                 </div>
                 <div>
                     <p className="mb-4  font-sans text-[75px] font-semibold leading-[62px] tracking-[-1px]">
                         &lt;4 days
                     </p>
-                    <Heading size="h3" className="!leading-[30px] !tracking-[-0.25px]">
-                        Time to deliver Log4j vulnerability patches to customers
-                    </Heading>
+                    <h3>Time to deliver Log4j vulnerability patches to customers</h3>
                 </div>
             </div>
         </div>

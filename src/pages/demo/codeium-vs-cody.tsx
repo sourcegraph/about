@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Heading, Layout } from '../../components'
+import { Layout } from '../../components'
 import CompareHero from '../../components/Compare/CompareHero'
 import { CompareTables } from '../../components/Compare/CompareTables'
 import { codeiumVsCody } from '../../components/Compare/constants'
@@ -28,13 +28,10 @@ const CodeiumVsCodyPage: FunctionComponent = () => {
                     competitorIcon="/assets/compare/codeium.svg"
                     containerClassName="xl:pt-[121px]"
                 >
-                    <Heading
-                        size="h3"
-                        className="font-sf mt-[-15px] mb-0 pb-[5px] !leading-[30px] !tracking-[-0.25px] lg:w-[671px] lg:text-2xl"
-                    >
+                    <h3 className="mt-[-15px] mb-0 pb-[5px] lg:w-[671px]">
                         Cody is the better option for users who want more transparency and choice for the model being
                         used.
-                    </Heading>
+                    </h3>
 
                     <button
                         type="button"

@@ -23,7 +23,7 @@ const QualtricsLogo = (): JSX.Element => (
 
 export const QualtricsCard = (): JSX.Element => (
     <ContentSection
-        className="align-end sg-bg-gradient-aurora-spectrum flex flex-wrap justify-end gap-10 rounded-2xl border border-[#DBE2F0] py-8 px-8 font-['SF_Pro'] md:flex-nowrap md:py-16 md:px-20"
+        className="align-end sg-bg-gradient-aurora-spectrum flex flex-wrap justify-end gap-10 rounded-2xl border border-[#DBE2F0] py-8 px-8 md:flex-nowrap md:py-16 md:px-20"
         parentClassName="!py-0 -mb-4"
     >
         <div className="flex flex-col gap-10 md:gap-[70px]">

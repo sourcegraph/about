@@ -13,7 +13,7 @@ export const TwoRowWithImage: FunctionComponent<Props> = ({ className, descripti
     <div className={classNames(className, 'mx-auto flex max-w-[1061px] flex-col gap-y-12')}>
         <div className="flex flex-col gap-y-10 border-t border-gray-500 pt-[48px] md:flex-row md:gap-x-10">
             {title && (
-                <p className="min-w-fit font-grotesk text-[48px] font-medium leading-[67px] tracking-[-1px] text-white md:max-w-[444px] md:text-[52px] md:leading-[73px]">
+                <p className="font-grotesk min-w-fit text-[48px] font-medium leading-[67px] tracking-[-1px] text-white md:max-w-[444px] md:text-[52px] md:leading-[73px]">
                     {title}
                 </p>
             )}

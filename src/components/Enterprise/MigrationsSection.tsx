@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, Heading } from '..'
+import { ContentSection } from '..'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
 
@@ -25,9 +25,9 @@ export const MigrationsSection: FunctionComponent = () => {
             </div>
             <div className=" ">
                 <div className="lg:px-10">
-                    <Heading size="h2" className="mb-4 !leading-10 !tracking-[-1px] text-black">
+                    <h2 className="mb-4 text-black">
                         Complete large-scale migrations and refactors in hours rather than days
-                    </Heading>
+                    </h2>
                     <p className="mb-4 text-lg md:mb-0 ">
                         Perform organization-wide migrations and upgrades across every repository and code host with
                         Batch Changes, and track migration progress with Code Insights dashboards.

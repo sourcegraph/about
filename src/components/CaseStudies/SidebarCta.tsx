@@ -1,12 +1,8 @@
 import Link from 'next/link'
 
-import { Heading } from '../Heading'
-
 const SidebarCta: React.FC = () => (
     <div className="sg-bg-code-search-cta mx-auto flex w-full flex-col rounded-lg py-12 px-6 text-center sm:items-center md:w-[378px] md:items-center md:text-left">
-        <Heading size="h2" className="pb-4 !text-4xl text-white ">
-            Try Sourcegraph on your code
-        </Heading>
+        <h2 className="pb-4 text-white ">Try Sourcegraph on your code</h2>
         <p className="pb-1 text-lg text-gray-200">
             Experience code intelligence with a free trial for you and your team, or search millions of open source
             repositories.

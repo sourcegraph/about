@@ -1,7 +1,6 @@
 import { FunctionComponent } from 'react'
 
 import { ContentSection } from '../ContentSection'
-import { Heading } from '../Heading'
 
 export const ImprovedVelocitySection: FunctionComponent = () => (
     <ContentSection
@@ -10,9 +9,7 @@ export const ImprovedVelocitySection: FunctionComponent = () => (
     >
         <div className="flex h-[533px] flex-col justify-between px-0 py-16 md:px-10">
             <div className="flex flex-col gap-4">
-                <Heading size="h2" className="!tracking-[-1px] text-black">
-                    Improve velocity with faster code discovery and understanding
-                </Heading>
+                <h2 className="text-black">Improve velocity with faster code discovery and understanding</h2>
                 <p className="mb-0 text-lg leading-[27px] tracking-[-0.25px]">
                     Developers can find, navigate, and share code across entire codebases in seconds, increasing
                     development velocity and reducing time spent searching for answers.

@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import { MDXRemote } from 'next-mdx-remote'
 
-import { Alert, Badge, Blockquote, Figure, Heading, HubSpotForm, TableWrapper, Video, YouTube } from '..'
+import { Alert, Badge, Blockquote, Figure, HubSpotForm, TableWrapper, Video, YouTube } from '..'
 import { PostComponentProps } from '../../interfaces/posts'
 
 import { BylineAndDate } from './BylineAndDate'
@@ -27,9 +27,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
 }) => (
     <Tag className={className}>
         <div className="mt-12">
-            <Heading as="h1" size="h2" className="!font-grotesk">
-                {frontmatter.title}
-            </Heading>
+            <h2 className="!font-display">{frontmatter.title}</h2>
         </div>
 
         {(frontmatter.authors?.length || frontmatter.publishDate) && (

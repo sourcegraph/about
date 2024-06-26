@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import { Heading, HubSpotForm, Layout } from '../../components'
+import { HubSpotForm, Layout } from '../../components'
 import { BlogHeader } from '../../components/Blog/BlogHeader'
 import { BLOG_TYPE_TO_INFO } from '../../components/Blog/postTypes'
 import { DownloadAppCallToActionSection } from '../../components/cta/DownloadAppCallToActionSection'
@@ -56,9 +56,9 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                                 'flex flex-col items-start rounded-2xl bg-gray-100 p-6'
                             )}
                         >
-                            <Heading size="h5" className="mb-4 normal-case">
+                            <h1 className="text-blog-h3 mb-4 normal-case">
                                 Subscribe for the latest code AI news and product updates
-                            </Heading>
+                            </h1>
                             <HubSpotForm
                                 formId="ab908b80-d1ed-44fd-968c-505c85ed72ac"
                                 inlineMessage="Thanks, you are now subscribed!"

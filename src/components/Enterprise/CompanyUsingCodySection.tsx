@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Heading } from '..'
+import { ContentSection } from '..'
 
 export const CompanyUsingCodySection: FunctionComponent = () => (
     <ContentSection
@@ -11,7 +11,7 @@ export const CompanyUsingCodySection: FunctionComponent = () => (
         parentClassName="!py-0 md:px-[80px]"
     >
         <div className="z-10 flex flex-col items-center gap-6  text-center md:w-[615px]">
-            <Heading size="h2">Used by 6 of the 10 largest software companies in the world</Heading>
+            <h2>Used by 6 of the 10 largest software companies in the world</h2>
             <Link
                 href="https://sourcegraph.com/case-studies"
                 title="Cody"
