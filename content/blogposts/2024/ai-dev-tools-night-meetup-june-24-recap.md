@@ -68,4 +68,7 @@ Missed the event? Don’t worry! You can check the recording [here](https://yout
 
 We look forward to seeing you at our next event!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LRF1QEmr2io?si=X8y8rpqRg66rmlAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<YouTube 
+  title="AI Dev Tools Night Recap"
+  id="LRF1QEmr2io"
+/>
