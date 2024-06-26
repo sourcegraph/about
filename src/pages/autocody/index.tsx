@@ -217,7 +217,7 @@ function VSCode(): JSX.Element {
                                         playsInline={true}
                                         className="h-24 w-24"
                                     >
-                                        <source src="/cody/hiCodyDark.mp4" type="video/mp4" />
+                                        <source src="/assets/cody/hiCodyDark.mp4" type="video/mp4" />
                                         Your browser does not support the video tag.
                                     </video>
                                 </div>
@@ -364,7 +364,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                 <div className="flex-1 overflow-y-auto">
                     <div className="rounded-2xl bg-gray-200/30 p-12 pr-0">
                         <video
-                            src="/cody/autocody-prompting-2.mp4"
+                            src="/assets/cody/autocody-prompting-2.mp4"
                             className="rounded-l-2xl"
                             autoPlay={true}
                             loop={true}
@@ -399,7 +399,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                 <div className="flex-1 overflow-y-auto">
                     <div className="rounded-2xl bg-gray-200/30 p-12 pr-0">
                         <video
-                            src="/cody/autocody-restate-2.mp4"
+                            src="/assets/cody/autocody-restate-2.mp4"
                             className="rounded-l-2xl"
                             autoPlay={true}
                             loop={true}
@@ -434,7 +434,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                 <div className="flex-1 overflow-y-auto">
                     <div className="rounded-2xl bg-gray-200/30 p-12 pr-0">
                         <video
-                            src="/cody/autocody-contextualize.mp4"
+                            src="/assets/cody/autocody-contextualize.mp4"
                             className="rounded-l-2xl"
                             autoPlay={true}
                             loop={true}
@@ -469,7 +469,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                 <div className="flex-1 overflow-y-auto">
                     <div className="rounded-2xl bg-gray-200/30 p-12 pr-0">
                         <video
-                            src="/cody/autocody-plan.mp4"
+                            src="/assets/cody/autocody-plan.mp4"
                             className="rounded-l-2xl"
                             autoPlay={true}
                             loop={true}
@@ -504,7 +504,7 @@ function AutoCodyHowItWorks(): JSX.Element {
                 <div className="flex-1 overflow-y-auto">
                     <div className="rounded-2xl bg-gray-200/30 p-12 pr-0">
                         <video
-                            src="/cody/autocody-restate.mp4"
+                            src="/assets/cody/autocody-restate.mp4"
                             className="rounded-l-2xl"
                             autoPlay={true}
                             loop={true}
