@@ -7,8 +7,8 @@ description: "We've increased chat limits by 10x, made autocompletes unlimited, 
 tags: [blog]
 slug: 'making-cody-free-10x-better'
 published: true
-heroImage: <NEEDS IMAGE>
-socialImage: <NEEDS IMAGE>
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/making-cody-free-10x-better-og.jpg
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/making-cody-free-10x-better-og.jpg
 ---
 
 Today, Cody helps devs all over the world write millions of lines of code every month, increasing flow and productivity, and ultimately helping them build amazing software faster.
