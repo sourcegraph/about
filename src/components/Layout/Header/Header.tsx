@@ -28,6 +28,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
     const { pathname } = router
     /**
      * Determines whether the banner component should be displayed in the header.
+     * useState(true) for on, useState(false) for off.
      */
     const [showBanner, setShowBanner] = useState(false)
 
