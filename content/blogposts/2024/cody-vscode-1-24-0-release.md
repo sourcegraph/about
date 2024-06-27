@@ -22,18 +22,9 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 
 When you run a command that involves editing code inline, you’ll now see a progressive animation as Cody makes edits. You’ll also see inline diffs directly in your file as soon as the command finishes so you can see exactly what happened and accept or decline the edit.
 
-Prior to v1.24, this is how code edits appeared:
 <Video
   source={{
-    mp4: 'blog/cody-vscode-1-24-release/edits-changes-before'
-  }}
-  loop={true}
-/>
-
-Now, Cody will show inline diffs when the edit is complete:
-<Video
-  source={{
-    mp4: 'blog/cody-vscode-1-24-release/edits-changes-after'
+    mp4: 'blog/cody-vscode-1-24-release/ask-cody-to-fix-diff'
   }}
   loop={true}
 />
