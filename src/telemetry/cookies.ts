@@ -33,7 +33,9 @@ let userCookieSettings: CookieAttributes
 let sessionCookieSettings: CookieAttributes
 
 export function getUserCookieSettings(): CookieAttributes {
-    if (userCookieSettings) { return userCookieSettings }
+    if (userCookieSettings) {
+        return userCookieSettings
+    }
     userCookieSettings = {
         // 365 days expiry, but renewed on activity.
         expires: 365,
@@ -53,7 +55,9 @@ export function getUserCookieSettings(): CookieAttributes {
 }
 
 export function getSessionCookieSettings(): CookieAttributes {
-    if (sessionCookieSettings) { return sessionCookieSettings }
+    if (sessionCookieSettings) {
+        return sessionCookieSettings
+    }
     sessionCookieSettings = {
         // ~30 minutes expiry, but renewed on activity.
         expires: 0.0208,

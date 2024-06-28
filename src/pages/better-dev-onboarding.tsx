@@ -38,7 +38,7 @@ const resourceItems = [
     },
 ]
 
-const BetterDeveloperOnboarding: FunctionComponent<TelemetryProps> = ({telemetryRecorder}) => (
+const BetterDeveloperOnboarding: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
     <Layout
         meta={{
             title: 'Better Developer Onboarding - Sourcegraph',

@@ -6,8 +6,6 @@ import { breakpoints } from '../data/breakpoints'
 import { useInView } from '../hooks/useInView'
 import { useWindowWidth } from '../hooks/windowWidth'
 
-import { Heading } from './Heading'
-
 interface Props {
     heading?: string | React.ReactNode
     subHeading?: string | React.ReactNode
@@ -96,16 +94,8 @@ export const CodyFeatureCard: FunctionComponent<Props> = ({
                 </div>
             )}
             {icon && <img className="mb-4" src={icon} height={38} width={38} alt="Icon" />}
-            {heading && (
-                <Heading size="h2" className="mb-6 !text-4xl">
-                    {heading}
-                </Heading>
-            )}
-            {subHeading && (
-                <Heading size="h4" className="mb-2">
-                    {subHeading}
-                </Heading>
-            )}
+            {heading && <h2 className="mb-6">{heading}</h2>}
+            {subHeading && <h4 className="mb-2">{subHeading}</h4>}
             <p className={classNames(descriptionClassName, 'm-0 text-base font-normal text-gray-200')}>{description}</p>
             {hovered && (
                 <div

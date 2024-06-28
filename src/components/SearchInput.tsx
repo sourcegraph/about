@@ -6,8 +6,6 @@ import SearchIcon from 'mdi-react/SearchIcon'
 
 import { debounce } from '../lib/utils'
 
-import { Heading } from './Heading'
-
 interface SearchInputProps {
     onSearch?: (searchTerm: string) => void
     initialValue?: string
@@ -35,9 +33,7 @@ const SearchInput: React.FC<SearchInputProps> = ({ onSearch, label, className, i
 
     return (
         <div className={classNames(className, 'w-full')}>
-            <Heading size="h6" className="pb-4 text-gray-700">
-                {label}
-            </Heading>
+            <h6 className="pb-4 text-gray-700">{label}</h6>
             <div className="relative flex w-full items-center">
                 <SearchIcon size={20} className="absolute left-3 text-gray-400" />
                 <input

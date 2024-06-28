@@ -5,7 +5,6 @@ import Link from 'next/link'
 
 import { PostIndexItemProps } from '../../interfaces/posts'
 import { truncate } from '../../lib/utils'
-import { Heading } from '../Heading'
 
 import { BylineAndDate } from './BylineAndDate'
 
@@ -30,7 +29,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
             />
         </Link>
 
-        <Heading as="h2" size="h5" className="b-0 !font-grotesk font-bold leading-none">
+        <h2 className="text-blog-h2">
             <Link
                 href={`/${blogType}/${slugPath}`}
                 className="block text-gray-600 hover:text-violet-500 hover:underline"
@@ -38,7 +37,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
             >
                 {frontmatter.title}
             </Link>
-        </Heading>
+        </h2>
 
         {slugPath && (
             <p className="text-gray-500">

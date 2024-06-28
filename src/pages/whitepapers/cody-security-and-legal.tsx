@@ -1,7 +1,7 @@
 import { NextPage } from 'next'
 import Link from 'next/link'
 
-import { BackButton, Heading, Layout } from '../../components'
+import { BackButton, Layout } from '../../components'
 import SidebarCta from '../../components/Resources/SidebarCta'
 
 const CodySecurityAndLegal: NextPage = () => {
@@ -26,9 +26,7 @@ const CodySecurityAndLegal: NextPage = () => {
                 {/* <BlogHeader {...blogInfo} variant="post" />
                 <PostTemplate post={post} content={content} className="mx-auto max-w-[840px]" /> */}
                 <div className="mt-12">
-                    <Heading as="h1" size="h1" className="!font-grotesk">
-                        Cody Security and Legal Whitepaper
-                    </Heading>
+                    <h1 className="!font-display">Cody Security and Legal Whitepaper</h1>
                 </div>
 
                 <div className="mt-14 flex flex-col gap-10 md:flex-row">

@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 
-import { ContentSection, Heading } from '..'
+import { ContentSection } from '..'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
 
@@ -104,10 +104,8 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
                 )}
             >
                 <div className="flex flex-col gap-6 px-10 md:gap-4">
-                    {!reverseQuote && <Heading size="h6">cody</Heading>}
-                    <Heading size="h2" className="!leading-10 !tracking-[-1px]">
-                        {modelCardContent?.title ?? 'Choose from your favorite Large Language Models'}
-                    </Heading>
+                    {!reverseQuote && <h6>cody</h6>}
+                    <h2>{modelCardContent?.title ?? 'Choose from your favorite Large Language Models'}</h2>
                     <p
                         className={classNames(
                             'mb-0 font-normal -tracking-[0.25px]',

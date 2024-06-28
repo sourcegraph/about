@@ -14,6 +14,17 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/1_po
 
 ![Pointer clicking on code snippet](https://storage.googleapis.com/sourcegraph-assets/blog/anatomy/1_pointer.png)
 
+Prefer watching a video overview of this topic and how we came to develop [Cody](https://sourcegraph.com/cody)?
+
+If so, feel free to take a look at this video of ours:
+
+<YouTube 
+  title="Context is King - the Evolution of a Modern AI Coding Assistant"
+  id="XaOqSAXNkaM"
+/>
+
+---
+
 Have you ever wondered how an AI coding assistant works?
 
 We’ve been working on our AI coding assistant, [Cody](https://sourcegraph.com/cody), for a while now, and over time we’ve learned that really, ***context is king***.

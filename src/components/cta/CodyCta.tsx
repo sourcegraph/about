@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Heading } from '..'
+import { ContentSection } from '..'
 import { useAuthModal } from '../../context/AuthModalContext'
 
 interface CodyCtaProps {
@@ -29,12 +29,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
         >
             <div className="hover:cta-free-cody relative overflow-hidden rounded-2xl border border-gray-200 border-opacity-25 bg-white px-14 py-16 md:w-1/2 md:p-16">
                 <div className="bg-grad absolute right-0 top-0 h-[3px] w-full flex-1 bg-gradient-to-r from-blue-300 via-violet-400 to-vermillion-300" />
-                <Heading
-                    size="h2"
-                    className={classNames('!text-5xl text-gray-700', {
-                        '!leading-10 !tracking-[-1px]': isCodyPage,
-                    })}
-                >
+                <h2 className="text-gray-700">
                     {isLight ? (
                         <>
                             <span className="hidden md:block"> Get started with Cody </span>
@@ -43,18 +38,16 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
                     ) : (
                         <span> Get started with Cody </span>
                     )}
-                </Heading>
+                </h2>
 
-                <Heading
-                    size="h3"
-                    className={classNames('mt-4 max-w-[413.5px] text-[18px]', {
-                        'leading-[27px] !tracking-[-0.25px]': isCodyPage,
+                <h3
+                    className={classNames('mt-4 max-w-[413.5px]', {
                         'text-gray-500': !isLight,
                         'text-[#343A4D]': isLight,
                     })}
                 >
                     Use Cody for free in your IDE, no credit card required.
-                </Heading>
+                </h3>
                 <div className="mt-6 flex flex-col flex-wrap gap-4 md:flex-row md:gap-2">
                     <button
                         onClick={handleOpenModal}
@@ -85,24 +78,15 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
                     }
                 )}
             >
-                <Heading
-                    size="h2"
-                    className={classNames(' text-white', {
-                        '!text-4xl': !isCodyPage,
-                        '!text-5xl !leading-10 !tracking-[-1px]': isCodyPage,
-                    })}
-                >
-                    Cody Enterprise
-                </Heading>
-                <Heading
-                    size="h3"
+                <h2 className="text-white">Cody Enterprise</h2>
+                <h3
                     className={classNames('text-[18px] text-white text-opacity-80', {
                         'leading-[27px] -tracking-[0.25px]': isCodyPage,
                     })}
                 >
                     Cody Enterprise provides additional security, scalability, and control for your organization.
                     Unlimited usage and context search for your entire codebase.
-                </Heading>
+                </h3>
                 <div className="flex max-w-[356px] flex-col flex-wrap gap-4 md:flex-row">
                     <Link
                         href="https://sourcegraph.com/contact/request-info"

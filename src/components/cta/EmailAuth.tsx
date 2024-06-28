@@ -21,11 +21,14 @@ export const EmailAuth: React.FunctionComponent<EmailAuthProps> = ({
     telemetryRecorder,
 }) => {
     const handleOnClick = (): void => {
-        telemetryRecorder.recordEvent('auth', 'initiate', { metadata: { authType: telemetryProviderTypes.form }, privateMetadata: {
-            type: 'form',
-            source,
-            description: '',
-        }})
+        telemetryRecorder.recordEvent('auth', 'initiate', {
+            metadata: { authType: telemetryProviderTypes.form },
+            privateMetadata: {
+                type: 'form',
+                source,
+                description: '',
+            },
+        })
     }
 
     return (

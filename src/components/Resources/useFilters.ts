@@ -20,7 +20,11 @@ interface UseFilters {
  */
 export const useFilters = ({ telemetryRecorder }: TelemetryProps): UseFilters => {
     const logResourceClickEvent = (groupTitle: string, type: string): void =>
-        telemetryRecorder.recordEvent(`resources.filter.${groupTitle === 'Content Type' ? 'contentType' : 'subject'}`, 'toggle', { privateMetadata: { type }})
+        telemetryRecorder.recordEvent(
+            `resources.filter.${groupTitle === 'Content Type' ? 'contentType' : 'subject'}`,
+            'toggle',
+            { privateMetadata: { type } }
+        )
 
     const defaultFilterGroups = [
         {

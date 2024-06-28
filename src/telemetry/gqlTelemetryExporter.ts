@@ -7,9 +7,7 @@ import type { TelemetryEventInput, TelemetryExporter } from '@sourcegraph/teleme
 export class GraphQLTelemetryExporter implements TelemetryExporter {
     private sourcegraphURL: string | undefined
 
-    constructor(
-        sourcegraphURL: string,
-    ) {
+    constructor(sourcegraphURL: string) {
         this.sourcegraphURL = sourcegraphURL
     }
 
