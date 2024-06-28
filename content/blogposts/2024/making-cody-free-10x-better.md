@@ -1,9 +1,11 @@
 ---
 title: "Cody Free is now 10x better"
-authors:
-  - name: Quinn Slack, Kevin Chen
+authors: 
+  - name: Quinn Slack
+    url: https://slack.org
+  - name: Kevin Chen
 publishDate: 2024-06-25T10:00-07:00
-description: "We've increased chat limits by 10x, made autocompletes unlimited, and added models to Cody Free"
+description: "You now get unlimited code completions, 10x as many chats, and model choice with Cody Free."
 tags: [blog]
 slug: 'making-cody-free-10x-better'
 published: true
