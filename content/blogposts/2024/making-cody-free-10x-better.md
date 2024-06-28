@@ -4,7 +4,7 @@ authors:
   - name: Quinn Slack
     url: https://slack.org
   - name: Kevin Chen
-publishDate: 2024-06-25T10:00-07:00
+publishDate: 2024-07-01T10:00-07:00
 description: "You now get unlimited code completions, 10x as many chats, and model choice with Cody Free."
 tags: [blog]
 slug: 'making-cody-free-10x-better'
