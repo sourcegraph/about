@@ -399,11 +399,12 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Prevent sensitive files from being sent to third-party LLM providers',
     },
     freeLLMsupport: {
-        label: 'Default LLMs for chat, commands, and autocomplete',
+        label: 'Multiple LLM choices for chat and commands',
+        description: 'Claude 3 (Sonnet, Haiku), Claude Sonnet 3.5, Gemini Flash and Pro, Mixtral',
     },
     proLLMchat: {
-        label: 'Multiple LLM choices for chat',
-        description: 'GPT-4o, GPT-4 Turbo, Gemini Flash and Pro, Mixtral, Claude 3 (Opus, Sonnet, Haiku)',
+        label: 'More powerful LLMs for chat and commands',
+        description: 'Everything in free, plus GPT-4o, GPT-4 Turbo, and Claude 3 Opus',
     },
     proLLMcommands: {
         label: 'Default LLMs for commands and autocomplete',
