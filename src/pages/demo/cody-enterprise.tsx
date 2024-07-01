@@ -132,30 +132,7 @@ const DemoCodyABMPage: FunctionComponent = () => {
                 tabContent={IMAGE_TAB_CONTENT}
             />
 
-            <ContentSection
-                parentClassName="!p-0 !m-0"
-                className="m-0 flex flex-col gap-5 px-6 py-16 md:flex-row md:justify-between md:gap-12 md:px-0 lg:py-28"
-            >
-                <div className="flex w-full flex-col md:mx-[29px] ">
-                    <h2 className="text-white">Sourcegraph powered <span className="cody-heading bg-clip-text text-transparent">context</span></h2>
-
-                    <p className="mb-0 mt-3 text-2xl font-normal leading-[30px] tracking-[-0.25px] text-white md:max-w-[501px]">
-                        Sourcegraph’s code graph and analysis tools allows Cody to autocomplete, explain, and edit your
-                        code with additional context.
-                    </p>
-                    <img
-                        src="/cody/context_illustration.svg"
-                        className="mt-6 md:max-w-[501px]"
-                        alt="cody context illustration"
-                    />
-                </div>
-                <div className="hidden md:flex">
-                    <ContextAnimation />
-                </div>
-                <div className="md:hidden md:h-[333px] md:w-[538px] md:min-w-[399px]">
-                    <img src="/cody/context_illustration_details.svg" alt="cody context illustration details" />
-                </div>
-            </ContentSection>
+            <SourcegraphPowered />
 
             <CodyCta source="Cody page" isCodyPage={true} />
         </Layout>
