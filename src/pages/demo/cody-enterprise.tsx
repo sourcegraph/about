@@ -103,24 +103,6 @@ const DemoCodyABMPage: FunctionComponent = () => {
                                 Get Cody for free
                             </button>
                         </div>
-                        <p className="mt-6 text-[14px] text-violet-300 opacity-70">
-                            By registering, you agree to our{' '}
-                            <Link
-                                className="text-violet-300 underline"
-                                target="_blank"
-                                href="https://about.sourcegraph.com/terms"
-                            >
-                                Terms of Service
-                            </Link>{' '}
-                            and{' '}
-                            <Link
-                                className="text-violet-300 underline"
-                                target="_blank"
-                                href="https://about.sourcegraph.com/terms/privacy"
-                            >
-                                Privacy Policy
-                            </Link>
-                        </p>
                     </div>
                     <div className={classNames('w-full max-w-[554px]', styles.codyForm)} ref={formContainerRef}>
                         <h3 className="text-white">Start your free Cody Enterprise trial</h3>
