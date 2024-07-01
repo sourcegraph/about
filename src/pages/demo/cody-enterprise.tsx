@@ -139,7 +139,7 @@ const DemoCodyABMPage: FunctionComponent = () => {
                     </div>
                     <div className={classNames('w-full max-w-[554px]', styles.codyForm)} ref={formContainerRef}>
                         <Heading size="h3" className="mb-4 !text-2xl font-semibold text-white">
-                            Request Cody Demo
+                            Start your free Cody Enterprise trial
                         </Heading>
                         <HubSpotForm
                             formId="255d54c8-65db-435e-b131-d8dc4ab9ea96"
