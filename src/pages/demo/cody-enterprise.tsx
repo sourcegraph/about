@@ -1,11 +1,9 @@
 import { FunctionComponent, useEffect, useRef } from 'react'
-
 import classNames from 'classnames'
 import Link from 'next/link'
 
 import {
     ContentSection,
-    Heading,
     Layout,
     HubSpotForm,
     CodyAutocomplete,
@@ -90,9 +88,7 @@ const DemoCodyABMPage: FunctionComponent = () => {
                 <div className="flex flex-col justify-between gap-y-6 px-sm lg:flex-row lg:gap-x-[70px] lg:gap-y-0">
                     <div className="w-full max-w-[656px]">
                         <div className="center flex items-center gap-x-4">
-                            <Heading size="h1" className="!text-[53px] text-white md:!text-[62px]">
-                                Meet Cody{' '}
-                            </Heading>
+                            <h1 className="text-white">Meet Cody{' '} </h1>
                             <img
                                 src="/cody/cody-logo.svg"
                                 className="h-[45px] w-[49px] md:h-[50px] md:w-[55px]"
@@ -103,10 +99,8 @@ const DemoCodyABMPage: FunctionComponent = () => {
                             The only AI coding assistant <br /> that knows your{' '}
                             <span className="cody-heading bg-clip-text text-transparent"> entire codebase </span>
                         </div>
-                        <Heading size="h4" className="mt-6 max-w-[637px]  !font-normal text-gray-200">
-                            Cody uses AI and deep understanding of your codebase to help you write and understand code
-                            faster
-                        </Heading>
+                        <h4 className="text-gray-200">Cody uses AI and deep understanding of your codebase to help you write and understand code
+                        faster</h4>
 
                         <div className="mt-4 flex flex-wrap gap-2 sm:w-[512px]">
                             <button
@@ -138,9 +132,7 @@ const DemoCodyABMPage: FunctionComponent = () => {
                         </p>
                     </div>
                     <div className={classNames('w-full max-w-[554px]', styles.codyForm)} ref={formContainerRef}>
-                        <Heading size="h3" className="mb-4 !text-2xl font-semibold text-white">
-                            Start your free Cody Enterprise trial
-                        </Heading>
+                        <h3 className="text-white">Start your free Cody Enterprise trial</h3>
                         <HubSpotForm
                             formId="255d54c8-65db-435e-b131-d8dc4ab9ea96"
                             onFormSubmitted={() => window?.saq?.('conv', 'KGsR2v3IRYg4bqhsRm62Hc')}
@@ -163,12 +155,7 @@ const DemoCodyABMPage: FunctionComponent = () => {
                 icon="/cody/commands-brand-icon.svg"
                 headerText="Run custom and pre-built commands"
                 description={
-                    <Heading
-                        size="h3"
-                        className="mb-0 pt-[18px] text-lg leading-[30px] !tracking-[-0.25px] text-gray-200"
-                    >
-                        Generate, test, and fix code with one-click commands.
-                    </Heading>
+                    <h3 className='text-gray-200'>Generate, test, and fix code with one-click commands.</h3>
                 }
                 tabContent={IMAGE_TAB_CONTENT}
             />
@@ -178,9 +165,7 @@ const DemoCodyABMPage: FunctionComponent = () => {
                 className="m-0 flex flex-col gap-5 px-6 py-16 md:flex-row md:justify-between md:gap-12 md:px-0 lg:py-28"
             >
                 <div className="flex w-full flex-col md:mx-[29px] ">
-                    <Heading size="h2" className="mb-1 text-[40px] font-normal leading-10 tracking-[-1px] text-white">
-                        Sourcegraph powered <span className="cody-heading bg-clip-text text-transparent">context</span>
-                    </Heading>
+                    <h2 className="text-white">Sourcegraph powered <span className="cody-heading bg-clip-text text-transparent">context</span></h2>
 
                     <p className="mb-0 mt-3 text-2xl font-normal leading-[30px] tracking-[-0.25px] text-white md:max-w-[501px]">
                         Sourcegraph’s code graph and analysis tools allows Cody to autocomplete, explain, and edit your
