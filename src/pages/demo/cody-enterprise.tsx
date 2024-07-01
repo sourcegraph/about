@@ -55,6 +55,8 @@ const DemoCodyPage: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 
+    const formContainerRef = useRef<HTMLDivElement | null>(null)
+    
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (pagePosition: string): void => {
