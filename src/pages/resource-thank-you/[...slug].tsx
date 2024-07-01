@@ -79,15 +79,11 @@ const ThankYouPage: NextPage<ThankYouProps> = ({ actionPage, pdfUrl }) => (
                     href={pdfUrl}
                     target="_blank"
                     title="Read now"
-                    className="btn-inverted-primary rounded-[5px] bg-white px-6 py-2 font-semibold text-violet-500"
+                    className="btn-primary-dark px-6 py-2 font-semibold"
                 >
                     Read now
                 </Link>
-                <Link
-                    href="/contact/request-info"
-                    title="Schedule a demo"
-                    className="btn-default-outlined rounded-[5px] py-2 px-6"
-                >
+                <Link href="/contact/request-info" title="Schedule a demo" className="btn btn-secondary-dark py-2 px-6">
                     Schedule a demo
                 </Link>
             </div>

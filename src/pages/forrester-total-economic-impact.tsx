@@ -247,13 +247,13 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                 <div className="mt-8 flex flex-row gap-4">
                     <Link
                         href="#get-report-form"
-                        className="btn btn-inverted-primary min-w-fit px-6 font-normal"
+                        className="btn btn-primary-dark min-w-fit px-6 font-normal"
                         title="Read the report"
                     >
                         Read the report
                     </Link>
                     <MeetWithProductExpertButton
-                        buttonClassName="text-white btn-outline-white"
+                        buttonClassName="btn-secondary-dark"
                         buttonLocation={buttonLocation.body}
                     >
                         Contact sales

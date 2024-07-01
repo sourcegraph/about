@@ -60,7 +60,7 @@ const ContactHome: FunctionComponent = () => (
                         <p>For information about products and purchasing:</p>
                         <Link
                             href="/demo"
-                            className="btn btn-outline-primary"
+                            className="btn btn-secondary"
                             title="Contact sales"
                             data-button-style={buttonStyle.outline}
                             data-button-location={buttonLocation.body}
@@ -75,7 +75,7 @@ const ContactHome: FunctionComponent = () => (
                         <p>For information about joining our team:</p>
                         <a
                             href="https://boards.greenhouse.io/sourcegraph91"
-                            className="btn btn-outline-primary"
+                            className="btn btn-secondary"
                             title="See career opportunities"
                             data-button-style={buttonStyle.outline}
                             data-button-location={buttonLocation.body}

@@ -8,7 +8,7 @@ const SidebarCta: React.FC = () => (
             repositories.
         </p>
         <Link
-            className="btn btn-inverted-primary flex min-w-fit self-center rounded-md bg-white py-3 px-5 text-center text-base text-violet-500 hover:!bg-violet-400 md:self-start md:py-2 md:px-6"
+            className="btn btn-primary-dark flex min-w-fit self-center py-3 px-5 text-center text-base md:self-start md:py-2 md:px-6"
             href="/demo"
         >
             Meet with a product expert

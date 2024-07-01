@@ -18,7 +18,7 @@ export const RequestDemoCta: FunctionComponent<RequestDemoCtaProps> = ({ onClick
         <div className="flex max-w-[356px] flex-col flex-wrap items-center gap-6 sm:flex-row md:gap-4">
             {onClickContactUs ? (
                 <button
-                    className="btn btn-inverted-primary w-full border-gray-200 bg-white text-center text-violet-500 md:w-auto"
+                    className="btn btn-primary-dark w-full md:w-auto"
                     title="Contact us"
                     data-button-style={buttonStyle.primary}
                     data-button-location={buttonLocation}
@@ -30,7 +30,7 @@ export const RequestDemoCta: FunctionComponent<RequestDemoCtaProps> = ({ onClick
                 </button>
             ) : (
                 <Link
-                    className="btn btn-inverted-primary w-full border-gray-200 bg-white text-center text-violet-500 md:w-auto"
+                    className="btn btn-primary-dark w-full text-center md:w-auto"
                     href="/contact/request-info"
                     title="Contact us"
                     data-button-style={buttonStyle.primary}
@@ -42,7 +42,7 @@ export const RequestDemoCta: FunctionComponent<RequestDemoCtaProps> = ({ onClick
             )}
 
             <Link
-                className="btn w-full items-center text-center text-white outline md:w-auto"
+                className="btn btn-secondary-dark w-full items-center text-center md:w-auto"
                 href="/pricing"
                 title="See Pricing"
                 data-button-style={buttonStyle.outline}

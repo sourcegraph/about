@@ -51,11 +51,11 @@ export const DemoComparisons: FunctionComponent = () => (
                     <h3 className="mb-6 text-black">{assistant.name}</h3>
                     <Link
                         href={assistant.url}
-                        className="btn-link flex font-semibold tracking-[-0.25px]"
+                        className="btn-link btn-link-icon font-semibold tracking-[-0.25px]"
                         title="Learn more"
                     >
                         Learn more
-                        <KeyboardArrowRightIcon className="ml-3 inline" />
+                        <KeyboardArrowRightIcon className="link-icon" />
                     </Link>
                 </div>
             ))}

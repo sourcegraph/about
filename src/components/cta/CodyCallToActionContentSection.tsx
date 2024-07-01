@@ -37,11 +37,9 @@ const Cta: FunctionComponent<Cta> = ({ text, ctaStyle, link }) => {
             title={text}
             href={link}
             className={classNames({
-                'btn bg-white text-blurple-400 hover:bg-blurple-400 hover:text-white':
-                    ctaStyle === 'primaryButtonWhite',
-                'btn border-white text-white hover:border-blurple-400 hover:bg-blurple-400':
-                    ctaStyle === 'outlineButtonLight',
-                'btn btn-link text-white': ctaStyle === 'link',
+                'btn btn-primary-dark': ctaStyle === 'primaryButtonWhite',
+                'btn btn-secondary-dark': ctaStyle === 'outlineButtonLight',
+                'btn btn-link-dark': ctaStyle === 'link',
             })}
             data-button-style={ctaTrackingStyle}
             data-button-location={buttonLocation.body}

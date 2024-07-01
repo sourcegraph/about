@@ -55,6 +55,7 @@ export const AbcsEbook: FunctionComponent = () => (
                     <a
                         href="https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf"
                         title="Our ABCs: Always Be Coding"
+                        className="btn-link"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
@@ -107,6 +108,7 @@ export const AbcsEbook: FunctionComponent = () => (
                     <a
                         href="https://twitter.com/intent/tweet?text=For%20all%20children%20at%20home%20that%20wonder%20what%20their%20techie%20parents%20do%20all%20day%2C%20night%2C%20and%20some%20weekends%2C%20too%2C%20they%20need%20the%20%22Our%20ABCs%3A%20Always%20Be%20Coding%22%20book%20by%20@sourcegraph%20-%20https%3A//sourcegraph.com/abc%20%23ABCsbook"
                         title="Via Twitter"
+                        className="btn-link"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"
@@ -117,6 +119,7 @@ export const AbcsEbook: FunctionComponent = () => (
                     <a
                         href="mailto:hi+abc@sourcegraph.com"
                         title="Email"
+                        className="btn-link"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"

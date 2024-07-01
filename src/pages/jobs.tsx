@@ -236,7 +236,7 @@ const CareersPage: FunctionComponent = () => {
                 <p className="mb-0 text-center text-lg text-white">We are actively hiring for various roles.</p>
                 <div className="flex flex-col items-center text-center">
                     <a
-                        className="btn btn-inverted-primary"
+                        className="btn btn-primary-dark"
                         href="https://boards.greenhouse.io/sourcegraph91?gh_src=c685479c4us"
                         title="Explore our open roles"
                         target="_blank"

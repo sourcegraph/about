@@ -17,7 +17,7 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
         belowTitle: (
             <>
                 <p className="my-2 text-xl">Conversations, stories, and insights from dev tool creators</p>
-                <PodcastSubscribeLinks linkClassName="mx-1" />
+                <PodcastSubscribeLinks linkClassName="mx-1 btn-link" />
             </>
         ),
         baseUrl: '/podcast',

@@ -225,7 +225,7 @@ function VSCode(): JSX.Element {
 
                             <div className="relative h-[300px] flex-grow pt-5">
                                 <div className="flex h-full flex-col justify-center px-5 text-white">
-                                    <h1 className="text-6xl font-semibold leading-none !tracking-[-3px] text-white lg:text-9xl">
+                                    <h1 className="lg:text-9xl text-6xl font-semibold leading-none !tracking-[-3px] text-white">
                                         Auto
                                         <span className="bg-gradient-to-br from-gray-100 to-gray-200 bg-clip-text text-transparent">
                                             Cody

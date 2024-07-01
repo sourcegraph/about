@@ -46,9 +46,9 @@ export const ResourceCard = forwardRef<HTMLAnchorElement, Card>(({ resource, cla
                 <div className="flex flex-grow flex-col px-4 py-6">
                     <h4 className="mb-6">{truncate(title, 97)}</h4>
                     <div className="mb-auto text-base">{truncate(description, 170)}</div>
-                    <div className="mt-2 font-semibold lowercase text-violet-500 first-letter:capitalize hover:text-violet-400">
+                    <div className="btn-link btn-link-icon mt-2 font-semibold">
                         {ctaText}
-                        <ChevronRightIcon className="ml-1 inline" />
+                        <ChevronRightIcon className="link-icon" />
                     </div>
                 </div>
             </div>

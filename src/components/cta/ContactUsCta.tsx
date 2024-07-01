@@ -35,7 +35,7 @@ export const ContactUsCta: FunctionComponent<ContactUsCtaProps> = ({
             >
                 {onClickContactUs ? (
                     <button
-                        className="btn btn-inverted-primary w-full bg-white sm:w-[140px]  md:w-auto"
+                        className="btn btn-primary-dark w-full sm:w-[140px]  md:w-auto"
                         title="Contact us"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation}
@@ -47,7 +47,7 @@ export const ContactUsCta: FunctionComponent<ContactUsCtaProps> = ({
                     </button>
                 ) : (
                     <Link
-                        className="btn btn-inverted-primary w-full bg-white sm:w-[140px]  md:w-auto"
+                        className="btn btn-primary-dark w-full sm:w-[140px]  md:w-auto"
                         href="/contact/request-info"
                         title="Contact us"
                         data-button-style={buttonStyle.primary}
@@ -59,7 +59,7 @@ export const ContactUsCta: FunctionComponent<ContactUsCtaProps> = ({
                 )}
 
                 <Link
-                    className="btn w-full items-center text-white outline sm:w-[140px]  md:w-auto"
+                    className="btn btn-secondary-dark w-full items-center sm:w-[140px]  md:w-auto"
                     href="/pricing"
                     title="See Pricing"
                     data-button-style={buttonStyle.outline}

@@ -26,14 +26,14 @@ const GetStartedPage: FunctionComponent = () => {
                 <Link
                     target="_blank"
                     href="https://github.com/sourcegraph/sourcegraph.git"
-                    className="flex items-center gap-1 text-lg text-violet-500"
+                    className="btn-link flex items-center gap-1 text-lg"
                 >
                     Build from source <LaunchIcon className="h-[12px] w-[12px] text-gray-700" />
                 </Link>
                 <Link
                     target="_blank"
                     href="https://sourcegraph.com"
-                    className="flex items-center gap-1 text-lg text-violet-500"
+                    className="btn-link flex items-center gap-1 text-lg"
                 >
                     Search public code <LaunchIcon className="h-[12px] w-[12px] text-gray-700" />
                 </Link>
@@ -117,14 +117,14 @@ const EnterPriseTrial: FunctionComponent = () => (
                 <Link
                     href="/cloud"
                     title="Cloud"
-                    className="border-r-1 border-r-gray-400 px-2 text-xl font-semibold text-violet-500"
+                    className="btn-link border-r-1 border-r-gray-400 px-2 text-xl font-semibold"
                 >
                     Cloud
                 </Link>
                 <Link
                     href="https://sourcegraph.com/docs/admin/deploy"
                     title="Server"
-                    className="ml-2 text-xl font-semibold text-violet-500"
+                    className="btn-link ml-2 text-xl font-semibold"
                 >
                     Server
                 </Link>

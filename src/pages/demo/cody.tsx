@@ -95,7 +95,7 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
                         <div className="mt-4 flex flex-wrap gap-2 sm:w-[512px]">
                             <button
                                 type="button"
-                                className="btn btn-inverted-primary text-violet-500"
+                                className="btn btn-primary-dark"
                                 title="Download Sourcegraph"
                                 onClick={() => handleOpenModal('top')}
                             >

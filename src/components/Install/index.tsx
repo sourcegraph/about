@@ -78,7 +78,7 @@ export const Install: FunctionComponent = () => {
                 </code>
 
                 <a
-                    className="inline-block text-lg"
+                    className="btn-link inline-block text-lg"
                     href="https://sourcegraph.com/docs"
                     title="Deploy to a server or cluster"
                     data-button-style={buttonStyle.text}
