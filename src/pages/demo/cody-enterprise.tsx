@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useRef } from 'react'
+import { FunctionComponent, useRef } from 'react'
 
 import classNames from 'classnames'
 import Link from 'next/link'
@@ -18,7 +18,6 @@ import {
 } from '../../components'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
-import { EventName, getEventLogger } from '../../hooks/eventLogger'
 import { useWindowWidth } from '../../hooks/windowWidth'
 
 import styles from '../../styles/CustomHubspotForm.module.scss'
@@ -61,15 +60,6 @@ const DemoCodyABMPage: FunctionComponent = () => {
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (): void => openModal('cody')
-
-    useEffect(() => {
-        const eventArguments = {
-            description: 'About - Cody page view',
-            source: 'about-cody',
-        }
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        getEventLogger()?.log(EventName.VIEW_ABOUT_CODY, eventArguments, eventArguments)
-    }, [])
 
     return (
         <Layout
