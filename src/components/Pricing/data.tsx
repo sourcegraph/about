@@ -400,7 +400,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     freeLLMsupport: {
         label: 'Multiple LLM choices for chat and commands',
-        description: 'Claude 3 (Sonnet, Haiku), Claude Sonnet 3.5, Gemini Flash and Pro, Mixtral',
+        description: 'Claude 3 (Sonnet, Haiku), Claude 3.5 Sonnet, Gemini Flash and Pro, Mixtral',
     },
     proLLMchat: {
         label: 'More powerful LLMs for chat and commands',
