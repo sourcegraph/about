@@ -1,5 +1,7 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
+
 import {
     ContentSection,
     Layout,
@@ -10,7 +12,6 @@ import {
     CodyChat,
     CodyPartners,
     CodyTestimonials,
-    Video,
     SourcegraphPowered,
     CodyAutocomplete,
 } from '../../components'
@@ -18,7 +19,6 @@ import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../../lib/utils'
-import { TelemetryProps } from '../../telemetry'
 
 import styles from '../../styles/CustomHubspotForm.module.scss'
 
@@ -51,7 +51,7 @@ const IMAGE_TAB_CONTENT = [
     },
 ]
 
-const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => {
+const DemoCodyPage: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 
