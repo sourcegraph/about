@@ -19,7 +19,7 @@ export const CodeSearchCard: FunctionComponent = () => (
                 free trial.
             </h3>
             <div className="flex max-w-[390px] flex-col flex-wrap gap-4 pt-4 sm:flex-row">
-                <Link href="/demo" className="btn btn-primary max-w-[220px]">
+                <Link href="/demo" className="btn btn-primary-dark max-w-[220px]">
                     Contact us for a demo
                 </Link>
                 <Link

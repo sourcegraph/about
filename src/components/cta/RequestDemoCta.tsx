@@ -30,7 +30,7 @@ export const RequestDemoCta: FunctionComponent<RequestDemoCtaProps> = ({ onClick
                 </button>
             ) : (
                 <Link
-                    className="btn btn-primary-dark w-full md:w-auto"
+                    className="btn btn-primary-dark w-full text-center md:w-auto"
                     href="/contact/request-info"
                     title="Contact us"
                     data-button-style={buttonStyle.primary}

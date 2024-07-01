@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '../../data/tracking'
@@ -122,7 +122,7 @@ export const CaseStudyCard: FunctionComponent<{
     logoClassName,
     titleClassName,
     linkClassName,
-    icon = <ArrowRightIcon size={20} className="link-icon inline" />,
+    icon = <ChevronRightIcon className="link-icon" />,
 }) => (
     <div className="grow">
         <div className="md:pr-12">
