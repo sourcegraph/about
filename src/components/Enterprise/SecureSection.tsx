@@ -31,9 +31,9 @@ const enterpriseCardObjects = [
 export const SecureSection: FunctionComponent = () => (
     <ContentSection className="flex flex-col py-0 md:gap-10" parentClassName="!py-0 md:!pt-[112px] !pt-8 md:px-[80px]">
         <div className="flex flex-col gap-6 md:flex-row">
-            <div className="flex basis-1/3 flex-col gap-6 p-10">
-                <img src="/enterprise/security-brand-icon.svg" className="w-[51px]" alt="" />
-                <h2 className="!text-[52px]">Secure</h2>
+            <div className="flex basis-1/3 flex-col gap-6 p-10 bg-gray-100">
+                <img src="/enterprise/security-brand-icon.svg" className="w-[40px]" alt="" />
+                <h2>Secure</h2>
             </div>
             {enterpriseCardObjects.slice(0, 2).map(({ heading, paragraph }) => (
                 <EnterpriseCard key={heading} heading={heading} paragraph={paragraph} />
@@ -49,7 +49,7 @@ export const SecureSection: FunctionComponent = () => (
 
 const EnterpriseCard: FunctionComponent<{ heading: string; paragraph: string }> = ({ heading, paragraph }) => (
     <div className="flex basis-1/3 flex-col gap-4 p-10">
-        <h4>{heading}</h4>
+        <h5 className='font-semibold'>{heading}</h5>
         <p className="mb-0 text-[18px] font-normal leading-[27px] -tracking-[0.25px]">{paragraph}</p>
     </div>
 )

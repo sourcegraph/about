@@ -42,7 +42,7 @@ export const DevPlatformsSection: FunctionComponent<DevPlatformsSectionProps> = 
 }) => {
     const enterpriseDevPlatforms = !isLight ? enterpriseLightDevPlatforms : enterpriseDarkDevPlatforms
     return (
-        <div className="flex w-auto justify-center gap-[37px] md:gap-[31.97px]">
+        <div className="flex w-auto justify-center gap-6 md:gap-6">
             <div className={classNames('relative flex flex-col', setOneClassName ?? 'bottom-[17px] gap-[25.21px]')}>
                 {enterpriseDevPlatforms.slice(0, 3).map(({ src, alt }) => (
                     <EnterpriseIcon className="flex justify-center" key={alt} src={src} alt={alt} />

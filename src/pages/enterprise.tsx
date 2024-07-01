@@ -53,9 +53,8 @@ const Enterprise: FunctionComponent = () => {
                     {!isMobile && (
                         <div className="absolute inset-0 top-[48px] z-0 mx-auto h-full max-w-[1280px] transition-opacity duration-1000 ease-in-out">
                             <DotLottiePlayer
-                                className={`absolute inset-0 top-[30px] z-0 h-full w-full object-cover opacity-${
-                                    videoPlayed ? '0' : '100'
-                                }`}
+                                className={`absolute inset-0 top-[30px] z-0 h-full w-full object-cover opacity-${videoPlayed ? '0' : '100'
+                                    }`}
                                 src="https://lottie.host/07b21a4d-e532-47b7-ab01-7bd8faf4ba33/ORhWKPLwKI.lottie"
                                 background="transparent"
                                 speed={1}
@@ -65,9 +64,8 @@ const Enterprise: FunctionComponent = () => {
                                 renderer="svg"
                             />
                             <div
-                                className={`absolute inset-0 top-[30px] z-0 h-full w-full bg-contain bg-center bg-no-repeat opacity-${
-                                    videoPlayed ? '100' : '0'
-                                }`}
+                                className={`absolute inset-0 top-[30px] z-0 h-full w-full bg-contain bg-center bg-no-repeat opacity-${videoPlayed ? '100' : '0'
+                                    }`}
                                 // eslint-disable-next-line react/forbid-dom-props
                                 style={{ backgroundImage: "url('enterprise/Enterprise-hero-still.png')" }}
                             />
@@ -75,7 +73,7 @@ const Enterprise: FunctionComponent = () => {
                     )}
                     <Hero
                         variant="transparent"
-                        className="relative z-10 mx-auto flex items-center justify-center !pt-[122px] pb-8  text-center md:!mt-[-36px] md:w-[750px]  md:pb-[96px]"
+                        className="relative z-10 mx-auto flex items-center justify-center !pt-[122px] pb-8  text-center md:!mt-[-36px] md:w-[800px]  md:pb-[96px]"
                         title="Modern enterprises are powered by productive developers"
                         subtitle="Give your teams the ability to search, write, and understand massive codebases through Sourcegraph's universal and secure Code Intelligence Platform."
                         centerContent={true}

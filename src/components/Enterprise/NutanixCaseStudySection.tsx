@@ -13,13 +13,13 @@ export const NutanixCaseStudySection: FunctionComponent = () => (
         <div className=" flex justify-center rounded-2xl border-1 border-gray-200 py-16 px-6 md:!w-[417px] md:px-20">
             <div className="flex !w-[278px] flex-col gap-16">
                 <div>
-                    <p className="mb-4 font-sans text-[75px] font-semibold leading-[62px] tracking-[-1px]">
+                    <p className="mb-0 font-sans text-7xl font-semibold tracking-[0.25px]">
                         &lt;5 minutes
                     </p>
                     <h3>Time to find and fix instances of a vulnerability</h3>
                 </div>
                 <div>
-                    <p className="mb-4  font-sans text-[75px] font-semibold leading-[62px] tracking-[-1px]">
+                    <p className="mb-0 font-sans text-7xl font-semibold tracking-[0.25px]">
                         &lt;4 days
                     </p>
                     <h3>Time to deliver Log4j vulnerability patches to customers</h3>

@@ -37,7 +37,7 @@ export const EnterpriseGradeSection: FunctionComponent<EnterpriseGradeSectionPro
             '!py-0 md:px-[80px]': !parentClassName,
         })}
     >
-        <h6 className="mb-4">cody</h6>
+        <h6 className="mb-4">CODY</h6>
         <h2 className="mb-10">Enterprise-grade AI security and governance</h2>
         <div className="mb-6 grid grid-cols-1 gap-6 md:grid-cols-3 ">
             {securityCardFeatures.map(feature => (

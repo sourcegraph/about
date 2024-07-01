@@ -22,7 +22,7 @@ export const ImprovedVelocitySection: FunctionComponent = () => (
         <div className="h-auto rounded-2xl border-1 border-gray-200 bg-white px-6 py-16  md:max-w-[574px] md:px-20">
             <p className="mb-0 leading-6 tracking-[-0.25px] text-gray-700">Satish Surapaneni</p>
             <p className="mb-0 text-sm leading-[19.88px]">Senior Engineering Manager, F5</p>
-            <p className="mb-0 pt-3 text-[35px] font-normal leading-[43.75px] -tracking-[2px]">
+            <p className="mb-0 pt-8 text-2xl font-normal leading-1.2 tracking-tight">
                 "We are developing software faster than ever, with aggressive schedules, and across boundaries. Things
                 that used to be worked out in a closed room now need to be done while teams are spread out across the
                 globe.”
