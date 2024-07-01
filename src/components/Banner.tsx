@@ -2,6 +2,13 @@ import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import { FunctionComponent } from 'mdx/types'
 import Link from 'next/link'
 
+/**
+ * Renders a banner component with a message and a link to learn more.
+ * The banner is displayed at the top of the page with a gradient border.
+ * The content is centered and responsive, adjusting to different screen sizes.
+ * Turn on and off in src/components/Layout/Header/Header.tsx
+ * Find `const [showBanner, setShowBanner] = useState(false)` switch true for on, false for off.
+ */
 export const Banner: FunctionComponent<{}> = () => (
     <div className="sg-border-gradient-banner z-[1000] border-b-1 bg-black py-[13px]">
         <div className="mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-12 gap-y-[9px] px-2 md:flex-row">
