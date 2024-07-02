@@ -36,7 +36,7 @@ The Resident Architect will perform the determined activities either by working 
 The parties agree that the following rules shall apply to the consumption of hours set forth above:
   - (a) Availability: Unless otherwise agreed by the parties in writing, Professional Services will be performed Monday through Friday, between the hours of 8:00 a.m. – 7:00 p.m. in the Customer’s local time zone. Work outside of the hours above, work on weekends or on local holidays must be pre-approved in writing by Sourcegraph.
   - (b) Location: Professional Services will be performed at a remote location.
-  - (c) Multiple Personnel: Sourcegrah may, at its sole discretion, choose to engage different consulting personnel for different portions of the Professional Services.
+  - (c) Multiple Personnel: Sourcegraph may, at its sole discretion, choose to engage different consulting personnel for different portions of the Professional Services.
   - (d) Any hours set forth above not consumed during the Subscription Period will expire.
 
 ### Resident Architect Packages
