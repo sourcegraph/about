@@ -3,7 +3,7 @@ layout: markdown
 title: Terms of Service for Sourcegraph Professional Services
 ---
 
-Last Modified: May 9, 2023
+Last Modified: July 2, 2023
 
 This document outlines the basic terms and conditions that apply to Sourcegraph's Professional Services Offerings.
 
@@ -22,3 +22,4 @@ This Professional Services Exhibit (“PSE”) describes the Professional Servic
 
 - [Implementation Services](/terms/implementation-services) - Dedicated implementation engineering support to design, plan, and execute your production implementation.
 - [Managed Services](/terms/managed-services) - Hands-on Sourcegraph management of self-hosted production instances with dedicated experts.
+- [Resident Architecture](/terms/resident-architecture) - Dedicated expertise to perform tailored projects that drive usage, adoption, white-glove enablement, advanced feature utiization, and more.
