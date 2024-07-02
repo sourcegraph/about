@@ -1,5 +1,5 @@
 ---
-title: "Cody Free is now 10x better"
+title: "Cody Free is now 10x better and offers Claude 3.5 Sonnet"
 authors: 
   - name: Quinn Slack
     url: https://slack.org
