@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import classNames from 'classnames'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
+import { useRouter } from 'next/router'
 
 import { Layout, CustomerLogos, HubSpotForm, ContentSection } from '../../components'
+import { captureCustomEventWithPageData } from '../../lib/utils'
 
 import { slugs, slugData, type ContactPageProps } from './data'
 
@@ -19,6 +21,14 @@ const ContactPage: NextPage<ContactPageProps> = ({
     form_submission_source,
 }) => {
     const [formSubmitted, setFormSubmitted] = useState(false)
+    const router = useRouter()
+    const slugName = router?.query?.slug ? router.query.slug[0] : null
+
+    useEffect(() => {
+        if (formSubmitted && slugName === 'request-info') {
+            captureCustomEventWithPageData('contact_us_submit', undefined, true)
+        }
+    }, [formSubmitted, slugName])
 
     return (
         <Layout

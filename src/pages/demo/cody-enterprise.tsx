@@ -1,15 +1,17 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useRef } from 'react'
+
+import classNames from 'classnames'
 
 import {
     ContentSection,
     Layout,
+    HubSpotForm,
     CodyImageTab,
     CodyCta,
     CodyIde,
     CodyChat,
     CodyPartners,
     CodyTestimonials,
-    Video,
     SourcegraphPowered,
     CodyAutocomplete,
 } from '../../components'
@@ -17,7 +19,8 @@ import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../../lib/utils'
-import { TelemetryProps } from '../../telemetry'
+
+import styles from '../../styles/CustomHubspotForm.module.scss'
 
 declare global {
     interface Window {
@@ -48,10 +51,12 @@ const IMAGE_TAB_CONTENT = [
     },
 ]
 
-const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => {
+const DemoCodyPage: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
 
+    const formContainerRef = useRef<HTMLDivElement | null>(null)
+    
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (pagePosition: string): void => {
@@ -95,7 +100,7 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
                         <div className="mt-4 flex flex-wrap gap-2 sm:w-[512px]">
                             <button
                                 type="button"
-                                className="btn btn-primary-dark"
+                                className="btn btn-inverted-primary text-violet-500"
                                 title="Download Sourcegraph"
                                 onClick={() => handleOpenModal('top')}
                             >
@@ -103,20 +108,11 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
                             </button>
                         </div>
                     </div>
-                    <div className="w-full">
-                        <Video
-                            host="self"
-                            loop={false}
-                            controls={true}
-                            autoPlay={false}
-                            thumbnail="https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase_SplashScreen.webp"
-                            title="Cody - the AI coding assistant that knows your entire codebase"
-                            source={{
-                                mp4: 'https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase',
-                                webm: 'https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase',
-                            }}
-                            className="w-full rounded-lg"
-                            telemetryRecorder={telemetryRecorder}
+                    <div className={classNames('w-full max-w-[554px]', styles.codyForm)} ref={formContainerRef}>
+                        <h3 className="text-white">Start your free Cody Enterprise trial</h3>
+                        <HubSpotForm
+                            formId="255d54c8-65db-435e-b131-d8dc4ab9ea96"
+                            onFormSubmitted={() => window?.saq?.('conv', 'KGsR2v3IRYg4bqhsRm62Hc')}
                         />
                     </div>
                 </div>

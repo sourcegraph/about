@@ -3,6 +3,7 @@ import React from 'react'
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
+import { CaptureResult } from 'posthog-js'
 
 import { buttonStyle } from '../../data/tracking'
 
@@ -14,10 +15,12 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
     requestInfo?: boolean
     children?: string
     buttonClassName?: string
+    handleEventSubmission?: (eventName: string, initiateOpenModal: boolean) => void | CaptureResult
     id?: string
 }> = ({
     id,
     buttonLocation,
+    handleEventSubmission = () => {},
     dark = false,
     chevron = false,
     size = 'md',
@@ -26,6 +29,7 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
     children = requestInfo ? 'Contact sales' : 'Talk to an engineer',
 }) => (
     <Link
+        onClick={() => handleEventSubmission('contact_sales_click', false)}
         id={id}
         href={requestInfo ? '/contact/request-info' : '/demo'}
         className={classNames(
