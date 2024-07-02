@@ -23,7 +23,7 @@ To do this, we’re changing the Cody Free tier to make it **10x better**:
 * **10x more chats and commands:** You now get 200 chats and commands every month, up from 20
 * **Model choice:** Cody Free users can now choose which model to use, including Mixtral, Gemini 1.5, Claude 3 Haiku, and Claude 3.5 Sonnet
 
-Previously, Cody Free defaulted to Claude 3 Sonnet. We've updated the default to Claude 3.5 Sonnet, and we’re bringing the ability to hot-swap models from Cody Pro to free users, so you can choose the **best models** to fit your preferences. Whether you prefer a faster model or a larger, more capable model, Cody Free now has options for you.
+Previously, Cody Free only offered Claude 3 Sonnet. We’re bringing the ability to hot-swap models from Cody Pro to free users, so you can choose the **best models** to fit your preferences. Whether you prefer a faster model or a larger, more capable model, Cody Free now has options for you.
 
 This change is **now live for all Cody users**, including VS Code, JetBrains, and [Cody web](https://sourcegraph.com/cody/chat) users. If you’re using Cody in your IDE, you can get these upgrades by updating to the latest extension version. If you don’t yet have Cody, you can [get started today](https://sourcegraph.com/cody).
 
