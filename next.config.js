@@ -8,8 +8,7 @@ const nextConfig = {
   productionBrowserSourceMaps: true,
   reactStrictMode: true,
   pageExtensions: ['tsx'],
-  // Fixes error: Global CSS cannot be imported from within node_modules: Ref:https://react-tweet.vercel.app/next#troubleshooting
-  transpilePackages: ['react-tweet'],
+  transpilePackages: ['lucide-react'],
   webpack(config, options) {
     const { isServer } = options
 
