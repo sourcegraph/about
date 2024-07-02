@@ -3,7 +3,7 @@ import React, { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import { useRouter } from 'next/router'
 
-import { Heading, Badge, Layout, HubSpotForm } from '../../components'
+import { Badge, Layout, HubSpotForm } from '../../components'
 
 import styles from '../../styles/CustomHubspotForm.module.scss'
 
@@ -27,9 +27,9 @@ const Newsletter: FunctionComponent = () => {
                             className="w-fit !rounded-none border border-violet-500 px-3 !py-1 font-mono !text-lg !font-medium !leading-[27px] !tracking-[-0.75px]"
                             color="violet"
                         />
-                        <Heading size="h2" className="color-[#0F111A] m-0 normal-case !leading-[40px] !tracking-[-1px]">
+                        <h2 className="color-[#0F111A] m-0 normal-case">
                             Subscribe for the latest code AI industry news and product updates
-                        </Heading>
+                        </h2>
                         <p className="color-[#0F111A] m-0 text-lg leading-[27px] !tracking-[-0.25px]">
                             Get our monthly newsletter with news around the industry along with Sourcegraph product and
                             blog updates.

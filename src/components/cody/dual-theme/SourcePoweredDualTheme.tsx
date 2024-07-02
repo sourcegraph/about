@@ -3,7 +3,7 @@ import React, { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-import { ContentSection, Heading } from '../..'
+import { ContentSection } from '../..'
 
 interface SourcePoweredDualThemeProps {
     isLight?: boolean
@@ -23,16 +23,15 @@ export const SourcePoweredDualTheme: FunctionComponent<SourcePoweredDualThemePro
                 'max-w-auto': isLight,
             })}
         >
-            <Heading
-                size="h2"
-                className={classNames('mb-1 text-[40px] font-normal leading-10 tracking-[-1px]', {
+            <h2
+                className={classNames('mb-1', {
                     'text-white': !isLight,
                     'text-[#0F111A]': isLight,
                 })}
             >
                 Sourcegraph powered{' '}
                 <span className={classNames({ 'cody-heading bg-clip-text text-transparent': !isLight })}>context</span>
-            </Heading>
+            </h2>
 
             <p
                 className={classNames(

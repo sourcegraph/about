@@ -4,7 +4,6 @@ import classNames from 'classnames'
 import Link from 'next/link'
 
 import { ContentSection } from '../ContentSection'
-import { Heading } from '../Heading'
 
 const securityFeatures = [
     {
@@ -64,7 +63,7 @@ const SecurityFeature: FunctionComponent<{
                 <img key={altText} src={src} alt={altText} className="mb-8 h-[60px] w-[60px]" />
             ))}
         </div>
-        <Heading size="h4">{heading}</Heading>
+        <h4>{heading}</h4>
         <p className="mb-0 mt-4 text-[18px] font-normal leading-[27px] -tracking-[0.25px]">{paragraph}</p>
     </div>
 )

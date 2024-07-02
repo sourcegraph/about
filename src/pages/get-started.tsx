@@ -6,7 +6,7 @@ import LaunchIcon from 'mdi-react/LaunchIcon'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { ContentSection, Heading, HubSpotForm, Layout, Tabs } from '../components'
+import { ContentSection, HubSpotForm, Layout, Tabs } from '../components'
 
 import styles from '../styles/getStarted.module.scss'
 
@@ -62,7 +62,7 @@ const GetStartedPage: FunctionComponent = () => {
                                 <>
                                     <div className="hidden items-center md:flex">
                                         <div className="flex flex-col gap-y-2">
-                                            <Heading size="h4">Request an enterprise trial</Heading>
+                                            <h4>Request an enterprise trial</h4>
                                             <p
                                                 className={classNames(
                                                     'm-0 text-base font-normal !text-gray-500',
@@ -106,9 +106,7 @@ const GetStartedPage: FunctionComponent = () => {
 
 const EnterPriseTrial: FunctionComponent = () => (
     <div className="mt-8 md:mt-0">
-        <Heading size="h1" className="text-4xl text-gray-700 md:text-[56px]">
-            Request an Enterprise trial
-        </Heading>
+        <h1 className="text-gray-700">Request an Enterprise trial</h1>
         <div className="mt-4 flex flex-col justify-between gap-x-4 gap-y-[10px] md:flex-row md:items-end">
             <p className="mb-0 max-w-[590px] text-lg text-gray-500">
                 Sourcegraph Enterprise is designed for teams and deployment at scale. Start a trial in a cloud

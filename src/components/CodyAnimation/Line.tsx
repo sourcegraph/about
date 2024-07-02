@@ -10,7 +10,7 @@ interface Props {
 
 export const Line: FunctionComponent<Props> = ({ children, className, active }) => (
     <div
-        className={classNames('items-center whitespace-nowrap font-systemMono', className, { 'bg-[#343A4D]': active })}
+        className={classNames('font-systemMono items-center whitespace-nowrap', className, { 'bg-[#343A4D]': active })}
     >
         {children}
     </div>

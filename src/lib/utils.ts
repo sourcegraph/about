@@ -1,5 +1,12 @@
+import posthog, { CaptureResult } from 'posthog-js'
+
 import { ProviderType } from '../components/cta/ExternalProvider'
 import { GITHUB, GITLAB, VSCODE, JETBRAINS } from '../pages/constants'
+
+interface EventData {
+    current_page?: string
+    page_position?: string
+}
 
 export const copy = async (text: string): Promise<void> => {
     if (navigator.clipboard) {
@@ -130,5 +137,26 @@ export const getProviderButtonsTracker = (providerType: ProviderType): ButtonTra
     return {
         buttonId: 'googleButton',
         conversionId: '',
+    }
+}
+
+export const captureCustomEventWithPageData = (
+    eventName: string,
+    pagePosition?: string,
+    disableCurrentPage?: boolean
+): void | CaptureResult => {
+    const eventData: EventData = {}
+
+    if (!disableCurrentPage) {
+        eventData.current_page = window.location.href
+    }
+    if (pagePosition !== undefined) {
+        eventData.page_position = pagePosition
+    }
+
+    try {
+        return posthog?.capture(eventName, eventData)
+    } catch (error) {
+        console.error('Error capturing event in posthog:', error)
     }
 }

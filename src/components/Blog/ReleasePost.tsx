@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import { MDXRemote } from 'next-mdx-remote'
 
-import { Alert, Badge, Figure, Heading, Video, YouTube } from '..'
+import { Alert, Badge, Figure, Video, YouTube } from '..'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 import { PostComponentProps } from '../../interfaces/posts'
 
@@ -62,9 +62,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
 
     return (
         <Tag className={className}>
-            <Heading as="h1" size="h2" className="!font-grotesk">
-                {frontmatter.title}
-            </Heading>
+            <h1 className="text-blog-h1">{frontmatter.title}</h1>
 
             {(frontmatter.authors?.length || frontmatter.publishDate) && (
                 <BylineAndDate authors={frontmatter.authors} publishDate={frontmatter.publishDate} />

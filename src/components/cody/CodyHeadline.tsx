@@ -35,7 +35,7 @@ const HeadlineText: FunctionComponent<HeadlineTextProps> = ({ isLight, title, su
 
 export const CodyHeadline: FunctionComponent<{
     userGroup: string | undefined
-    handleOpenModal: () => void
+    handleOpenModal: (pagePosition: string) => void
     isLight?: boolean
     wrapperClassName?: string
 }> = ({ userGroup, handleOpenModal, isLight = false, wrapperClassName }) => (
@@ -85,7 +85,7 @@ export const CodyHeadline: FunctionComponent<{
                     'text-violet-500': !isLight,
                 })}
                 title="Get Cody for free"
-                onClick={handleOpenModal}
+                onClick={() => handleOpenModal('top')}
             >
                 <div className="flex items-center justify-center">
                     <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Get Cody for

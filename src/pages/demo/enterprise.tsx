@@ -2,7 +2,7 @@ import { FunctionComponent, useEffect, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 
-import { ContentSection, Heading, HubSpotForm, Layout } from '../../components'
+import { ContentSection, HubSpotForm, Layout } from '../../components'
 import { ContactUsCta } from '../../components/cta/ContactUsCta'
 import { RequestDemoCta } from '../../components/cta/RequestDemoCta'
 import { ChooseYourLlmSection } from '../../components/Enterprise/ChooseYourLlmSection'
@@ -42,10 +42,10 @@ const Enterprise: FunctionComponent = () => {
                     <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-6 px-2 pt-[112px] md:flex-row md:px-6">
                         <div className="flex w-full flex-1 flex-col gap-6">
                             <h1 className="md:text-6xl">Modern enterprises are powered by productive developers</h1>
-                            <Heading size="h3">
+                            <h3>
                                 Give your teams the ability to search, write, and understand massive codebases through
                                 Sourcegraph's universal and secure Code Intelligence Platform.{' '}
-                            </Heading>
+                            </h3>
                             {!formSubmitted && (
                                 <img
                                     className="hidden md:block"
@@ -88,9 +88,7 @@ const Enterprise: FunctionComponent = () => {
             >
                 <div className="flex h-[533px] flex-col justify-between px-0 py-16 md:px-10">
                     <div className="flex flex-col gap-4">
-                        <Heading size="h2" className="!tracking-[-1px] text-black">
-                            Improve velocity with faster code discovery and understanding
-                        </Heading>
+                        <h2 className="text-black">Improve velocity with faster code discovery and understanding</h2>
                         <p className="mb-0 text-lg leading-[27px] tracking-[-0.25px]">
                             Developers can find, navigate, and share code across entire codebases in seconds, increasing
                             development velocity and reducing time spent searching for answers.

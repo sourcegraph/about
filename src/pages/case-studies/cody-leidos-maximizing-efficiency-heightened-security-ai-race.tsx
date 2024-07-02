@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactNode } from 'react'
 
-import { Badge, Blockquote, ContentSection, Heading, Hero, Layout } from '../../components'
+import { Badge, Blockquote, ContentSection, Hero, Layout } from '../../components'
 import MoreCaseStudies from '../../components/CaseStudies/MoreCaseStudies'
 import SidebarCta from '../../components/CaseStudies/SidebarCta'
 
@@ -27,12 +27,9 @@ const Leidos: FunctionComponent = () => (
                             size="small"
                             className="relative -top-[24px] z-10 md:-top-[5px]"
                         />
-                        <Heading
-                            size="h1"
-                            className="relative -top-3 z-10 pb-16 !text-[52px] md:-top-[2px] lg:w-[949px]"
-                        >
+                        <h1 className="relative -top-3 z-10 pb-16 md:-top-[2px] lg:w-[949px]">
                             Cody + Leidos: Maximizing efficiency with heightened security in the AI race
-                        </Heading>
+                        </h1>
                         <div className="relative z-[10] -mt-3 flex w-full flex-col gap-x-8 rounded-lg border border-gray-500 bg-white py-16 px-12 shadow-lg md:-mt-[2px] md:flex-row xl:w-[1280px]">
                             <img
                                 className="mb-8 w-36 object-contain md:mb-0"
@@ -306,11 +303,7 @@ const CaseStudyContent: FunctionComponent<{
     title?: string
 }> = ({ content, title }) => (
     <div className="mb-[48px]">
-        {title && (
-            <Heading size="h2" className="mb-[24px] !text-4xl">
-                {title}
-            </Heading>
-        )}
+        {title && <h2 className="mb-[24px]">{title}</h2>}
         {typeof content === 'string' ? <p className="text-lg">{content}</p> : content}
     </div>
 )
@@ -320,9 +313,7 @@ const SidebarContent: FunctionComponent<{
     title: string
 }> = ({ content, title }) => (
     <div className="mb-8  md:w-[378px]">
-        <Heading size="h2" className="mb-2 !text-[30px] !leading-snug text-violet-500">
-            {title}
-        </Heading>
+        <h2 className="mb-2 text-violet-500">{title}</h2>
         {typeof content === 'string' ? <p className="text-[18px]">{content}</p> : content}
     </div>
 )

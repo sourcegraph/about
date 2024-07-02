@@ -5,7 +5,6 @@ import Link from 'next/link'
 
 import { GITHUB, GITLAB, GOOGLE } from '../../pages/constants'
 import { TelemetryProps } from '../../telemetry'
-import { Heading } from '../Heading'
 
 import { ExternalProvider } from './ExternalProvider'
 
@@ -35,9 +34,7 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string } & Te
         />
         <div className="z-10 flex flex-1 flex-col">
             <div className="max-w-[444px] md:self-end">
-                <Heading className="mb-[10px] !text-[36px] text-white" size="h2">
-                    Try Cody for free
-                </Heading>
+                <h2 className="mb-[10px] text-white">Try Cody for free</h2>
                 <p className="mb-0 text-lg text-gray-200">
                     Cody writes code and answers questions for you, speeding up work and keeping devs in flow.
                 </p>
@@ -86,9 +83,7 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string } & Te
         </div>
         <div className="my-[42px] border-b border-gray-400 md:my-0 md:mx-[42px] md:h-[266px] md:border-l" />
         <div className="z-10 flex flex-1 flex-col">
-            <Heading size="h4" className="mb-4 text-white">
-                Cody Enterprise
-            </Heading>
+            <h4 className="mb-4 text-white">Cody Enterprise</h4>
             <p className="mb-8 max-w-[444px] text-lg text-gray-200">
                 Cody Enterprise provides additional security, scalability, and control for your organization. Unlimited
                 usage and context-awareness of your entire codebase.

@@ -7,7 +7,6 @@ import ChevronUpIcon from 'mdi-react/ChevronUpIcon'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
 import { Badge } from '../Badge'
-import { Heading } from '../Heading'
 
 export interface Filter {
     text: string
@@ -113,9 +112,9 @@ const FilterGroup: FunctionComponent<FilterGroup> = ({ title, filters, setFilter
             </div>
         ) : (
             <>
-                <Heading size="h6" className="mb-4 pt-12 text-gray-700 md:col-span-2 lg:whitespace-nowrap">
+                <h6 className="mb-4 pt-12 text-gray-700 md:col-span-2 lg:whitespace-nowrap">
                     {title === 'Subject' ? `FILTER ${title}` : `FILTER BY ${title}`}
-                </Heading>
+                </h6>
                 <div className="flex flex-wrap gap-4">
                     {filters.map(filter => (
                         <Filter

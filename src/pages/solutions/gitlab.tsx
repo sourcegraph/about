@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Heading, InfiniteCarousel, Layout } from '../../components'
+import { ContentSection, InfiniteCarousel, Layout } from '../../components'
 import { ContactUsCta } from '../../components/cta/ContactUsCta'
 import { AutomationSection } from '../../components/solutions/AutomationSection'
 import { IntroCard } from '../../components/solutions/IntroCard'
@@ -77,13 +77,10 @@ const TestimonialCard: FunctionComponent = () => (
         <div className="flex flex-col py-16 px-6 md:px-20">
             <div className="flex w-full flex-col gap-[70px] mdi:w-[775px]">
                 <img className="h-[54.91px] w-[171.471px]" src="/solutions/gitlab/qualtrics.svg" alt="Qualtrics" />
-                <Heading
-                    size="h5"
-                    className="!text-[35px] !font-normal !leading-[43.75px] !-tracking-[0.25px] !text-white"
-                >
+                <h5 className="!text-[35px] !text-white">
                     'We run our own GitLab instance within our own data centers, and Sourcegraph works seamlessly with
                     it. That made signing up for Cody easy.”
-                </Heading>
+                </h5>
             </div>
             <div className="mt-6">
                 <span className="text-[16px] font-normal leading-6 -tracking-[0.25px] text-white text-opacity-80">

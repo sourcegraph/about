@@ -5,7 +5,6 @@ import Link from 'next/link'
 
 import { CodyFeatureCard } from '../CodyFeatureCard'
 import { ContentSection } from '../ContentSection'
-import { Heading } from '../Heading'
 
 import { CodeCompletions } from './cody-illustrations'
 
@@ -31,9 +30,9 @@ export const AiGeneratedCode: FunctionComponent = () => (
             className="mx-auto mt-16 flex flex-col items-center gap-y-8 gap-x-[83px] text-center md:!mt-[176px] md:!mb-[128px] md:flex-row md:items-start"
         >
             <div className="border-t border-gray-500 pt-12 text-left">
-                <Heading size="h2" className="!text-[36px] text-white">
+                <h2 className="!text-[36px] text-white">
                     Code faster with AI-assisted <b>autocomplete</b>
-                </Heading>
+                </h2>
                 <p className="mt-[30px] max-w-[572px] text-lg text-gray-200">
                     Cody suggests completions as you type using context from your code. It’s powered by the latest
                     instant LLM models for accuracy and performance.

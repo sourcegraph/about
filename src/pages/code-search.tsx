@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Layout, TwoColumnSection, Heading, Video, InfiniteCarousel } from '../components'
+import { ContentSection, Layout, TwoColumnSection, Video, InfiniteCarousel } from '../components'
 import { CodeSearchCard } from '../components/Code-search/CodeSearchCard'
 import { TelemetryProps } from '../telemetry'
 
@@ -101,9 +101,9 @@ export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({ telemetryRec
                 rightColumn={
                     <div>
                         <p className="color-[#0F111A] mb-4 text-lg font-semibold !tracking-[0.54px]">CODE SEARCH</p>
-                        <Heading size="h2" className="color-[#0F111A] mb-6 !leading-10 !tracking-[-1px]">
+                        <h2 className="color-[#0F111A] mb-6">
                             Find and fix code in any code host, language, or repository
-                        </Heading>
+                        </h2>
                         <ul className="mb-6 text-lg leading-[27px] tracking-[-0.25px] text-[#343A4D]">
                             <li className="mb-3">
                                 Onboard to new repositories and projects more quickly by searching and navigating code
@@ -136,9 +136,7 @@ export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({ telemetryRec
                 leftColumn={
                     <div>
                         <p className="color-[#0F111A] mb-4 text-lg font-semibold !tracking-[0.54px]">CODE NAVIGATION</p>
-                        <Heading size="h2" className="color-[#0F111A] mb-6 !leading-10 !tracking-[-1px]">
-                            Understand your code and its dependencies
-                        </Heading>
+                        <h2 className="color-[#0F111A] mb-6">Understand your code and its dependencies</h2>
                         <ul className="mb-6 text-lg leading-[27px] tracking-[-0.25px] text-[#343A4D]">
                             <li className="mb-3">
                                 Onboard to codebases faster with cross-repository code navigation features like “Go to
@@ -191,9 +189,7 @@ export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({ telemetryRec
                 rightColumn={
                     <div>
                         <p className="color-[#0F111A] mb-4 text-lg font-semibold !tracking-[0.54px]">BATCH CHANGES</p>
-                        <Heading size="h2" className="color-[#0F111A] mb-6 !leading-10 !tracking-[-1px]">
-                            Automate large-scale code changes
-                        </Heading>
+                        <h2 className="color-[#0F111A] mb-6">Automate large-scale code changes</h2>
                         <ul className="mb-6 text-lg leading-[27px] tracking-[-0.25px] text-[#343A4D]">
                             <li className="mb-3">
                                 Find all occurrences of code to change with Code Search and make every change with a
@@ -223,9 +219,7 @@ export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({ telemetryRec
                 leftColumn={
                     <div>
                         <p className="color-[#0F111A] mb-4 text-lg font-semibold tracking-[3%]">CODE INSIGHTS</p>
-                        <Heading size="h2" className="color-[#0F111A] mb-6 !leading-10 !tracking-[-1px]">
-                            Track meaningful insights across your codebase
-                        </Heading>
+                        <h2 className="color-[#0F111A] mb-6">Track meaningful insights across your codebase</h2>
                         <ul className="mb-6 text-lg leading-[27px] tracking-[-0.25px] text-[#343A4D]">
                             <li className="mb-3">
                                 Make data-driven decisions using visualizations of your entire codebase. Simply write a
@@ -264,16 +258,12 @@ export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({ telemetryRec
             className="!my-0 flex w-full  flex-col gap-x-12 !p-0 md:flex-col lg:pl-6"
         >
             <div className="mx-auto flex w-full flex-col gap-x-8 gap-y-8 lg:flex-row">
-                <Heading size="h2" className="text-center !leading-10 !tracking-[-1px] lg:pl-6 lg:text-left">
-                    Code Search works with:
-                </Heading>
+                <h2 className="text-center lg:pl-6 lg:text-left">Code Search works with:</h2>
                 <div className="mx-auto flex w-full max-w-[797px] flex-wrap items-center justify-center gap-16">
                     {codeHosts.map(codeHost => (
                         <div className="flex items-center gap-x-4" key={codeHost.name}>
                             <img className="h-[50px] w-[50px]" src={codeHost.icon} alt={codeHost.name} />{' '}
-                            <Heading size="h3" className="!text-2xl !tracking-normal text-gray-600">
-                                {codeHost.name}
-                            </Heading>
+                            <h3 className="text-gray-600">{codeHost.name}</h3>
                         </div>
                     ))}
                 </div>
@@ -289,9 +279,7 @@ export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({ telemetryRec
                     >
                         <div className="mb-4 flex items-center">
                             <div className="mr-[10px] flex h-10 w-10 items-end justify-center rounded-full bg-gradient-to-b  from-[#CD76F1]  to-[#EE8EA1] pb-0.5">
-                                <Heading size="h3" className="text-white">
-                                    {testimonial.avatar}
-                                </Heading>
+                                <h3 className="text-white">{testimonial.avatar}</h3>
                             </div>
 
                             <div>
@@ -323,29 +311,17 @@ const CodeSearchHero: FunctionComponent = () => (
         <div className="mx-auto flex flex-col items-center justify-center text-center">
             <div className="mx-auto flex flex-col items-center pb-16 pt-8 md:w-[828px] md:pb-[63px] md:pt-16">
                 <div className="mb-[8px] flex items-center justify-start gap-[8px]">
-                    <div className="flex h-[40px] w-[40px] items-center justify-center rounded-xl border-2 border-[#F0F2F2] shadow-lg">
-                        <img src="/codesearch-logomark-default.svg" alt="Cody Logo" className="h-5 w-5" />
-                    </div>
-                    <Heading
-                        size="h3"
-                        className="!font-['Source_Sans_Pro'] !text-[32px] font-semibold leading-8 !tracking-[-2px]"
-                    >
-                        Code Search
-                    </Heading>
+                    <img src="/codesearch-logomark-default.svg" alt="Cody Logo" className="w-[40px h-[40px]" />
+                    <h3>Code Search</h3>
                 </div>
 
                 <div className="container mx-auto mb-6 grid gap-8 text-center">
-                    <Heading size="h1" className="color-[#0F111A] pt-16 !tracking-[-1px] md:pt-0">
-                        Grok your entire codebase
-                    </Heading>
+                    <h1 className="color-[#0F111A] pt-16 md:pt-0">Grok your entire codebase</h1>
                 </div>
-                <Heading
-                    size="h4"
-                    className="mb-10 text-[24px] !font-normal !leading-[30px] !-tracking-[0.25px] text-gray-500 md:mb-8 md:px-6"
-                >
+                <h3 className="mb-10 text-gray-500 md:mb-8 md:px-6">
                     Code Search makes it easy to find code, make large-scale changes, and track insights across
                     codebases of any scale and with any number of code hosts.
-                </Heading>
+                </h3>
                 <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
                     <Link href="/demo" className="btn btn-primary">
                         Contact us for a demo

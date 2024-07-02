@@ -4,7 +4,7 @@ import { GetStaticProps } from 'next'
 import Link from 'next/link'
 import { FaDiscord, FaGithub } from 'react-icons/fa'
 
-import { ContentSection, Layout, Heading } from '../components'
+import { ContentSection, Layout } from '../components'
 import { PostsList } from '../components/Blog/PostsList'
 import EventsList from '../components/EventsList'
 import { buttonStyle, buttonLocation } from '../data/tracking'
@@ -50,9 +50,7 @@ const expertsData = [
 const CommunityExpert: FunctionComponent<{ expert: typeof expertsData[0] }> = ({ expert }) => (
     <div className="flex w-full flex-col items-center">
         <img src={expert.image} alt="avatar" className="mb-4 h-12 w-12 rounded-full" />
-        <Heading size="h4" className="pb-1">
-            {expert.name}
-        </Heading>
+        <h4 className="pb-1">{expert.name}</h4>
         <p className="text-grey-700 mb-5 text-sm leading-[19.88px]">{expert.role}</p>
         <div className="flex gap-4">
             <a href={expert.links.discord}>
@@ -82,14 +80,12 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
         >
             <ContentSection parentClassName="md:!py-24" className="py-4 md:py-0 lg:px-6">
                 <div className="flex flex-col">
-                    <Heading size="h1" className="mb-6 text-center md:text-left">
-                        Welcome to the Sourcegraph Community
-                    </Heading>
+                    <h1 className="mb-6 text-center md:text-left">Welcome to the Sourcegraph Community</h1>
                     <div className="flex max-w-3xl flex-col justify-center text-gray-500 md:justify-center">
-                        <Heading size="h3" className="text-center leading-[30px] !tracking-[-0.25px] md:text-left">
+                        <h3 className="text-center md:text-left">
                             Our community is driven by a shared passion for open source and developer productivity,
                             fueled by the power of AI tools & code search.
-                        </Heading>
+                        </h3>
                         <br />
                         <p className="mb-8 text-center text-lg tracking-[-0.25px] md:text-left">
                             Whether you’re a seasoned veteran or a budding enthusiast, join us to explore, learn, and
@@ -124,9 +120,7 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
             <ContentSection parentClassName="md:!py-0" className="lg:px-6">
                 <div className="sg-community-experts mx-auto flex max-w-screen-xl flex-col items-center rounded-lg border border-gray-200 py-16">
                     <div className="flex max-w-[840px] flex-col items-center">
-                        <Heading size="h2" className="max-w-[672px] pb-4 text-center !leading-[100%] !tracking-[-1px]">
-                            Our experts are the heart of our community
-                        </Heading>
+                        <h2 className="max-w-[672px] pb-4 text-center">Our experts are the heart of our community</h2>
                         <p className="text-center text-lg tracking-[-0.25px]">
                             Our experts embody the spirit of collaboration and knowledge sharing. They generously
                             contribute their expertise through insightful blog posts, videos, pull requests, and active
@@ -159,9 +153,7 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
             <ContentSection parentClassName="!pt-[10px] !pb-0" className="px-6">
                 <div className="flex flex-col justify-start pb-8 md:flex-row md:justify-between md:py-24">
                     <div className="flex flex-col md:w-1/2">
-                        <Heading size="h2" className="pb-6 !leading-[40px] !tracking-[-1px] text-gray-700">
-                            Supporting open source
-                        </Heading>
+                        <h2 className="pb-6 text-gray-700">Supporting open source</h2>
                         <p className="mb-0 max-w-[534px] font-sans text-lg tracking-[-0.25px] text-gray-700">
                             At Sourcegraph, we are committed to supporting the open source projects that form the
                             backbone of our products. We actively contribute to various funding platforms, including
@@ -239,9 +231,7 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
             <EventsList />
 
             <ContentSection parentClassName="mt-6 md:mt-0 md:pt-8 md:pb-0" className="lg:px-6">
-                <Heading size="h2" className="text-center !leading-[40px] !tracking-[-1px] md:text-left">
-                    Blog posts
-                </Heading>
+                <h2 className="text-center md:text-left">Blog posts</h2>
                 <div className="flex-1 p-4 sm:pt-6">
                     {!currentRecords.length ? (
                         <div className="col-span-2 mx-auto mb-16 text-center">

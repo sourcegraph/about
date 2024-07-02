@@ -8,6 +8,7 @@ import { useRouter } from 'next/router'
 
 import { useAuthModal } from '../../../context/AuthModalContext'
 import { buttonLocation } from '../../../data/tracking'
+import { captureCustomEventWithPageData } from '../../../lib/utils'
 import { Banner } from '../../Banner'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
 
@@ -26,6 +27,11 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
     const [sticky, setSticky] = useState<boolean>(false)
     const router = useRouter()
     const { pathname } = router
+    /**
+     * Determines whether the banner component should be displayed in the header.
+     * useState(true) for on, useState(false) for off.
+     */
+    const [showBanner, setShowBanner] = useState(false)
 
     const source = pathname.slice(1) || 'about-home'
 
@@ -56,7 +62,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
         <Disclosure as="nav" className={classNames('fixed top-0 left-0 right-0 z-[1030]')} ref={navRef}>
             {({ open, close }) => (
                 <>
-                    <Banner />
+                    {showBanner && <Banner />}
                     <HeaderContent
                         colorTheme={colorTheme}
                         minimal={minimal}
@@ -117,13 +123,19 @@ const HeaderContent: FunctionComponent<
 > = ({ colorTheme, open, sticky, source, close, ...props }) => {
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal(source)
+    const handleOpenModal = (eventName: string, initiateOpenModal: boolean): void => {
+        captureCustomEventWithPageData(eventName)
+        if (initiateOpenModal) {
+            openModal(source)
+        }
+    }
     const dark = colorTheme === 'dark' || colorTheme === 'purple'
     const classes = HEADER_CONTENT_THEME_CLASS[colorTheme]
 
     const callToAction = (
         <>
             <MeetWithProductExpertButton
+                handleEventSubmission={handleOpenModal}
                 id="topnav"
                 buttonLocation={buttonLocation.nav}
                 buttonClassName={classNames(
@@ -134,6 +146,7 @@ const HeaderContent: FunctionComponent<
                 requestInfo={true}
             />
             <Link
+                onClick={() => handleOpenModal('login_click', false)}
                 id="topnav"
                 href="https://sourcegraph.com/sign-in?returnTo=/cody/manage"
                 title="Get started with Cody"
@@ -155,7 +168,7 @@ const HeaderContent: FunctionComponent<
                     dark ? 'btn-inverted-primary text-violet-500' : 'btn-primary'
                 )}
                 title="Download Sourcegraph"
-                onClick={handleOpenModal}
+                onClick={() => handleOpenModal('get_cody_nav_click', true)}
             >
                 Get Cody for free
             </button>

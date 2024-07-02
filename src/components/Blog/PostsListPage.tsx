@@ -2,7 +2,7 @@ import { FunctionComponent, ReactNode } from 'react'
 
 import classNames from 'classnames'
 
-import { Heading, HubSpotForm, Layout } from '..'
+import { HubSpotForm, Layout } from '..'
 import { useLoadMoreAndSearch } from '../../hooks/loadMoreAndSearch'
 import { BlogTypeInfo, PostIndexItemProps } from '../../interfaces/posts'
 import { SearchInput } from '../SearchInput'
@@ -43,9 +43,9 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
                                         'flex flex-col items-start rounded-2xl bg-gray-100 p-6'
                                     )}
                                 >
-                                    <Heading size="h5" className="mb-8 normal-case">
+                                    <h1 className="text-blog-h3 mb-8 normal-case">
                                         Subscribe for the latest code AI news and product updates
-                                    </Heading>
+                                    </h1>
 
                                     <HubSpotForm
                                         formId="ab908b80-d1ed-44fd-968c-505c85ed72ac"

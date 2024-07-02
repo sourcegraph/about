@@ -5,7 +5,7 @@ import Cookies from 'js-cookie'
 import GithubIcon from 'mdi-react/GithubIcon'
 import Link from 'next/link'
 
-import { getProviderButtonsTracker } from '../../lib/utils'
+import { getProviderButtonsTracker, captureCustomEventWithPageData } from '../../lib/utils'
 import { GITHUB, GITLAB, GOOGLE, VSCODE, JETBRAINS } from '../../pages/constants'
 import { TelemetryProps } from '../../telemetry'
 
@@ -220,6 +220,7 @@ export const ExternalProvider: FunctionComponent<ExternalProviderProps> = ({
                 privateMetadata: eventArguments,
             })
         } else {
+            captureCustomEventWithPageData(`${providerType}_auth_click`)
             telemetryRecorder.recordEvent('auth', 'initiate', {
                 metadata: { authType: telemetryProviderTypes[providerType] },
                 privateMetadata: eventArguments,
@@ -242,7 +243,7 @@ export const ExternalProvider: FunctionComponent<ExternalProviderProps> = ({
                     id="githubButton"
                     handleOnClick={handleOnClick}
                     icon={<GithubIcon className="mr-2" />}
-                    link="https://sourcegraph.com/.auth/openidconnect/login?prompt_auth=github&pc=sams&&redirect=/get-cody"
+                    link="https://sourcegraph.com/.auth/openidconnect/login?prompt_auth=github&pc=sams&&redirect=/cody/manage"
                 />
             )
         case GITLAB:
@@ -255,7 +256,7 @@ export const ExternalProvider: FunctionComponent<ExternalProviderProps> = ({
                     id="gitlabButton"
                     handleOnClick={handleOnClick}
                     icon={<GitlabColorIcon className="mr-2" />}
-                    link="https://sourcegraph.com/.auth/openidconnect/login?prompt_auth=gitlab&pc=sams&redirect=/get-cody"
+                    link="https://sourcegraph.com/.auth/openidconnect/login?prompt_auth=gitlab&pc=sams&redirect=/cody/manage"
                 />
             )
         case GOOGLE:
@@ -268,7 +269,7 @@ export const ExternalProvider: FunctionComponent<ExternalProviderProps> = ({
                     id="googleButton"
                     handleOnClick={handleOnClick}
                     icon={<GoogleColorIcon className="mr-2 h-6 w-6" />}
-                    link="https://sourcegraph.com/.auth/openidconnect/login?prompt_auth=google&pc=sams&redirect=/get-cody"
+                    link="https://sourcegraph.com/.auth/openidconnect/login?prompt_auth=google&pc=sams&redirect=/cody/manage"
                 />
             )
         case VSCODE:

@@ -4,7 +4,6 @@ import classNames from 'classnames'
 import { useRouter } from 'next/router'
 
 import {
-    Heading,
     Layout,
     HubSpotForm,
     Modal,
@@ -24,6 +23,7 @@ import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useFeatureFlag } from '../hooks/useFeatureFlag'
 import { useWindowWidth } from '../hooks/windowWidth'
+import { captureCustomEventWithPageData } from '../lib/utils'
 import { TelemetryProps } from '../telemetry'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
@@ -60,7 +60,10 @@ const CodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => {
     const { openModal } = useAuthModal()
 
     const source = pathname.slice(1) || 'about-home'
-    const handleOpenModal = (): void => openModal(source)
+    const handleOpenModal = (pagePosition: string): void => {
+        captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
+        openModal(source)
+    }
 
     const { flagValue: userFlag, isFlagReady, isBlocked } = useFeatureFlag('cody-value-headline-test')
 
@@ -111,12 +114,9 @@ const CodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => {
                 icon="/cody/commands-brand-icon.svg"
                 headerText="Generate, test, and fix code with commands"
                 description={
-                    <Heading
-                        size="h3"
-                        className="mb-0 px-6 pt-[18px] text-lg leading-[30px] !tracking-[-0.25px] text-[#343A4D]"
-                    >
+                    <h3 className="mb-0 px-6 pt-[18px] text-[#343A4D]">
                         Run Cody's one-click commands or create your own custom commands to execute AI workflows.
-                    </Heading>
+                    </h3>
                 }
                 tabContent={IMAGE_TAB_CONTENT}
                 isLight={true}
@@ -133,9 +133,7 @@ const CodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => {
             >
                 <div className="flex flex-col gap-8 md:flex-row md:gap-10">
                     <div className="min-w-[200px] max-w-[513px]">
-                        <Heading size="h2" className="!text-4xl text-white">
-                            Get Cody where you work
-                        </Heading>
+                        <h2 className="text-white">Get Cody where you work</h2>
                         <p className="mt-4 text-lg text-gray-200">
                             Cody for Enterprise provides context-aware answers based on your own private codebase.
                             Contact us through the form to learn more.

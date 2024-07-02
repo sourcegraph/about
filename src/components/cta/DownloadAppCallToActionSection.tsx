@@ -3,7 +3,6 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 
 import { buttonLocation } from '../../data/tracking'
-import { Heading } from '../Heading'
 
 import { TrySourcegraphAppButton } from './TrySourcegraphForFreeButton'
 
@@ -28,11 +27,7 @@ export const DownloadAppCallToActionSection: FunctionComponent<StarshipPageCallT
             colorTheme === 'light' ? 'sg-bg-gradient-purple' : ''
         )}
     >
-        {title && (
-            <Heading size="h3" className={classNames('!font-grotesk text-4xl tracking-[-1px]')}>
-                {title}
-            </Heading>
-        )}
+        {title && <h3 className="!font-display ">{title}</h3>}
         {description && <p className="mt-4 mb-0 text-lg text-gray-200">{description}</p>}
         {buttonText && (
             <div className="mt-6 flex gap-x-4 md:mt-8">

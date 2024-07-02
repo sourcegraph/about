@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 
-import { Heading, ContentSection } from '..'
+import { ContentSection } from '..'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
 
@@ -29,12 +29,7 @@ export const SolutionExplanationSection: FunctionComponent<SolutionExplanationSe
             className="flex max-w-[1232px] flex-col items-center gap-8 px-0 md:gap-10 md:px-6 lg:px-0"
         >
             <div className={classNames('w-full text-center md:w-[508px]', titleTextColor ?? '!text-gray-700')}>
-                <Heading
-                    size="h3"
-                    className="!font-['Source_Sans_Pro'] !text-4xl !font-semibold !leading-[43px] !-tracking-[1px] md:!text-[40px] md:!leading-10"
-                >
-                    {title}
-                </Heading>
+                <h2>{title}</h2>
             </div>
             <div className="relative -ml-6 sm:-ml-[208px] md:ml-0">
                 {isMobile ? (

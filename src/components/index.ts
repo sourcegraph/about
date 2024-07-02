@@ -12,7 +12,6 @@ export { CallToActionWithCody } from './cta/CallToActionWithCody'
 export { CustomerLogos } from './CustomerLogos'
 export { DemioForm } from './DemioForm'
 export { Figure } from './Figure'
-export { Heading } from './Heading'
 export { Hero } from './Hero'
 export { HubSpotForm, type HubSpotFormProps } from './HubSpotForm'
 

@@ -2,7 +2,6 @@ import { FunctionComponent } from 'react'
 
 import {
     ContentSection,
-    Heading,
     Layout,
     CodyImageTab,
     CodyCta,
@@ -17,6 +16,7 @@ import {
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
+import { captureCustomEventWithPageData } from '../../lib/utils'
 import { TelemetryProps } from '../../telemetry'
 
 declare global {
@@ -54,7 +54,10 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
 
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal('cody')
+    const handleOpenModal = (pagePosition: string): void => {
+        captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
+        openModal('cody')
+    }
 
     return (
         <Layout
@@ -73,9 +76,7 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
                 <div className="flex flex-col items-center justify-between gap-y-6 px-6 lg:flex-row lg:gap-x-6 lg:gap-y-0">
                     <div className="w-full md:max-w-[554px] lg:max-w-[616px]">
                         <div className="center flex items-center gap-x-4">
-                            <Heading size="h1" className="!text-[53px] text-white md:!text-[62px]">
-                                Meet Cody{' '}
-                            </Heading>
+                            <h1 className="text-white">Meet Cody </h1>
                             <img
                                 src="/cody/cody-logo.svg"
                                 className="h-[45px] w-[49px] md:h-[50px] md:w-[55px]"
@@ -86,17 +87,17 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
                             The only AI coding assistant <br /> that knows your{' '}
                             <span className="cody-heading bg-clip-text text-transparent"> entire codebase </span>
                         </div>
-                        <Heading size="h4" className="mt-6 max-w-[637px]  !font-normal text-gray-200">
+                        <h4 className="mt-6 max-w-[637px] !font-normal text-gray-200">
                             Cody uses AI and deep understanding of your codebase to help you write and understand code
                             faster
-                        </Heading>
+                        </h4>
 
                         <div className="mt-4 flex flex-wrap gap-2 sm:w-[512px]">
                             <button
                                 type="button"
                                 className="btn btn-inverted-primary text-violet-500"
                                 title="Download Sourcegraph"
-                                onClick={handleOpenModal}
+                                onClick={() => handleOpenModal('top')}
                             >
                                 Get Cody for free
                             </button>
@@ -135,12 +136,9 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
                 icon="/cody/commands-brand-icon.svg"
                 headerText="Run custom and pre-built commands"
                 description={
-                    <Heading
-                        size="h3"
-                        className="mb-0 pt-[18px] text-lg leading-[30px] !tracking-[-0.25px] text-gray-200"
-                    >
+                    <h3 className="mb-0 pt-[18px] text-gray-200">
                         Generate, test, and fix code with one-click commands.
-                    </Heading>
+                    </h3>
                 }
                 tabContent={IMAGE_TAB_CONTENT}
             />
