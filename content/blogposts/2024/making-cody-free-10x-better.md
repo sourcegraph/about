@@ -4,7 +4,7 @@ authors:
   - name: Quinn Slack
     url: https://slack.org
   - name: Kevin Chen
-publishDate: 2024-07-01T10:00-07:00
+publishDate: 2024-07-02T10:00-07:00
 description: "You now get unlimited code completions, 10x as many chats, and model choice with Cody Free."
 tags: [blog]
 slug: 'making-cody-free-10x-better'
@@ -25,7 +25,7 @@ To do this, we’re changing the Cody Free tier to make it **10x better**:
 
 Previously, Cody Free defaulted to Claude 3 Sonnet. We've updated the default to Claude 3.5 Sonnet, and we’re bringing the ability to hot-swap models from Cody Pro to free users, so you can choose the **best models** to fit your preferences. Whether you prefer a faster model or a larger, more capable model, Cody Free now has options for you.
 
-This change is **now live**. If you’re a Cody Free user, all you need to do is upgrade your client to the latest version (VS Code v1.24.0 or JetBrains nightly 6.0.8) to get the updates. If you don’t yet have Cody, [get started today](https://sourcegraph.com/cody).
+This change is **now live for all Cody users**, including VS Code, JetBrains, and [Cody web](https://sourcegraph.com/cody/chat) users. If you’re using Cody in your IDE, you can get these upgrades by updating to the latest extension version. If you don’t yet have Cody, you can [get started today](https://sourcegraph.com/cody).
 
 ## Want even more Cody?
 
