@@ -66,10 +66,7 @@ const GetStartedButton: FunctionComponent<{ className?: string; title?: string }
     return (
         <button
             title={title}
-            className={classNames(
-                'btn btn-default-outlined w-full border-violet-700 -tracking-[0.25px] text-violet-700 hover:border-violet-500 hover:bg-violet-500 hover:text-white',
-                className
-            )}
+            className={classNames('btn btn-secondary w-full -tracking-[0.25px]', className)}
             type="button"
             onClick={handleOpenModal}
         >
@@ -89,7 +86,7 @@ const GetProButton: FunctionComponent<{ className?: string; title?: string }> = 
         <button
             title={title}
             className={classNames(
-                'btn btn-default-outlined -mt-[8px] flex w-full items-center justify-center gap-2 border-violet-600 bg-violet-500 -tracking-[0.25px] text-white',
+                'btn btn-primary -mt-[8px] flex w-full items-center justify-center gap-2 -tracking-[0.25px]',
                 className
             )}
             type="button"
@@ -107,7 +104,7 @@ const ContactUsButton: FunctionComponent<{ className?: string; href: string; tit
 }) => (
     <Link
         href={href}
-        className={classNames('btn btn-default-outlined flex w-full justify-center -tracking-[0.25px]', className)}
+        className={classNames('btn flex w-full justify-center -tracking-[0.25px]', className)}
         title="Contact us"
         data-button-style={buttonStyle.outline}
         data-button-location={buttonLocation.bodyDemo}
@@ -353,7 +350,7 @@ const PricingPage: FunctionComponent = () => {
                                         <ContactUsButton
                                             href="/contact/pricing?form_submission_source=pricing-cody-enterprise"
                                             title="Contact sales"
-                                            className="border-violet-700 text-violet-700 hover:border-violet-500 hover:bg-violet-500 hover:text-white"
+                                            className="btn-secondary"
                                         />
                                     }
                                     features={ENTERPRISE_CODY_FEATURES_OVERVIEW}
@@ -412,7 +409,7 @@ const PricingPage: FunctionComponent = () => {
                                     <ContactUsButton
                                         href="/contact/pricing?form_submission_source=pricing-enterprise"
                                         title="Contact sales"
-                                        className="btn-default-outlined border-violet-600 bg-violet-500 text-white hover:bg-white hover:text-violet-500"
+                                        className="btn-primary"
                                     />
                                 }
                                 features={ENTERPRISE_FEATURES_OVERVIEW}
@@ -476,7 +473,7 @@ const PricingPage: FunctionComponent = () => {
                                             <ContactUsButton
                                                 href="/contact/pricing?form_submission_source=pricing-code-intelligence"
                                                 title="Contact sales"
-                                                className="btn w-full border-violet-600 bg-violet-500 text-white md:w-fit"
+                                                className="btn btn-primary w-full md:w-fit"
                                             />
                                         </div>
                                         {!isMobile && (
@@ -542,10 +539,10 @@ const PricingPage: FunctionComponent = () => {
                         <Link
                             href="/contact/request-info?form_submission_source=pricing-enterprise"
                             title="contact Sourcegraph"
-                            className="btn p-0 leading-[22px] text-violet-500 underline underline-offset-2"
+                            className="btn btn-link p-0 leading-[22px]"
                         >
                             Contact us.
-                        </Link>{' '}
+                        </Link>
                     </div>
                 </div>
                 <div className="col-span-full grid gap-4 md:col-span-3">
@@ -567,7 +564,7 @@ const PricingPage: FunctionComponent = () => {
 const ViewPlatformButton = ({ chooseProduct }: Pick<Props, 'chooseProduct'>): JSX.Element => (
     <button
         title="View platform bundle details"
-        className="btn btn-default-outlined btn-default-outlined border-violet-600 bg-violet-500 text-white"
+        className="btn btn-primary"
         type="button"
         onClick={() => chooseProduct('codeIntelligence')}
     >

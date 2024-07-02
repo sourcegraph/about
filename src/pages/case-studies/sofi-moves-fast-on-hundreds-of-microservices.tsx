@@ -43,6 +43,7 @@ export const CaseStudy: FunctionComponent = () => (
                     <Link
                         href="/blog/from-saas-to-on-premises"
                         title="on-prem solution"
+                        className="btn-link"
                         data-button-style={buttonStyle.text}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"

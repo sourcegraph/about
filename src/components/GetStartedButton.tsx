@@ -19,7 +19,7 @@ export const GetStartedLinkButton: React.FunctionComponent<{
     <Link
         className={classNames(
             'btn whitespace-nowrap',
-            dark ? 'btn-inverted-primary' : 'btn-primary',
+            dark ? 'btn-primary-dark' : 'btn-primary',
             size === 'lg' && 'py-4',
             className
         )}
