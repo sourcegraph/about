@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 import { ContentSection } from '..'
 import { useAuthModal } from '../../context/AuthModalContext'
+import { captureCustomEventWithPageData } from '../../lib/utils'
 
 interface CodyCtaProps {
     isCodyPage?: boolean
@@ -16,7 +17,10 @@ interface CodyCtaProps {
 export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, source, isLight = false }) => {
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal(source)
+    const handleOpenModal = (pagePosition: string): void => {
+        captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
+        openModal(source)
+    }
 
     return (
         <ContentSection
@@ -50,7 +54,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({ isCodyPage = false, s
                 </h3>
                 <div className="mt-6 flex flex-col flex-wrap gap-4 md:flex-row md:gap-2">
                     <button
-                        onClick={handleOpenModal}
+                        onClick={() => handleOpenModal('bottom')}
                         title="Get Cody free"
                         className={classNames('btn text-center', {
                             'btn-primary': !isLight,

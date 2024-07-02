@@ -9,6 +9,7 @@ import { Icon } from '../components/icon'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
+import { captureCustomEventWithPageData } from '../lib/utils'
 
 export const carouselImages = [
     { src: '/home/carousel/1password-logo.svg', className: 'w-[190px] h-[37px] mx-6' },
@@ -21,14 +22,16 @@ export const carouselImages = [
     { src: '/home/carousel/nutanix-logo.svg', className: 'w-[201px] h-[24.446px] mx-6' },
 ]
 
+interface HomeHeroProps {
+    onOpenModal: (pagePosition: string) => void
+}
+
 const Home: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.md
     const isDesktop = windowWidth > breakpoints.lg
 
     const { openModal } = useAuthModal()
-
-    const handleOpenModal = (): void => openModal('home')
 
     const iconDefinition: [keyof ReactSVG, Record<string, string>][] = [
         ['svg', { viewBox: '0 0 32 32' }],
@@ -40,6 +43,10 @@ const Home: FunctionComponent = () => {
         ],
     ]
 
+    const handleOpenModal = (pagePosition: string): void => {
+        captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
+        openModal('home')
+    }
     return (
         <Layout
             meta={{
@@ -51,7 +58,7 @@ const Home: FunctionComponent = () => {
             headerColorTheme="purple"
             customFooterClassName="!bg-gray-50"
             customDark={false}
-            hero={<HomeHero />}
+            hero={<HomeHero onOpenModal={handleOpenModal} />}
             className="w-full overflow-hidden"
         >
             <div className="oveflow-hidden w-full bg-gray-50">
@@ -323,7 +330,7 @@ const Home: FunctionComponent = () => {
                                         type="button"
                                         className={classNames('btn btn-primary w-full md:w-auto')}
                                         title="free cody"
-                                        onClick={handleOpenModal}
+                                        onClick={() => handleOpenModal('bottom')}
                                     >
                                         Get Cody for free
                                     </button>
@@ -362,13 +369,10 @@ const Home: FunctionComponent = () => {
     )
 }
 
-const HomeHero: FunctionComponent = () => {
+const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.sm
 
-    const { openModal } = useAuthModal()
-
-    const handleOpenModal = (): void => openModal('home')
     return (
         <ContentSection className="flex items-center justify-center" parentClassName="!py-0">
             <div className="mx-auto flex flex-col items-center justify-center text-center">
@@ -384,7 +388,7 @@ const HomeHero: FunctionComponent = () => {
                         type="button"
                         className={classNames('btn btn-inverted-primary text-violet-500')}
                         title="free cody"
-                        onClick={handleOpenModal}
+                        onClick={() => onOpenModal('top')}
                     >
                         Get Cody for free
                     </button>

@@ -7,11 +7,15 @@ import { tabnineVsCody } from '../../components/Compare/constants'
 import { DemoComparisons } from '../../components/Compare/DemoComparisons'
 import { CodyCallToActionContentSection } from '../../components/cta/CodyCallToActionContentSection'
 import { useAuthModal } from '../../context/AuthModalContext'
+import { captureCustomEventWithPageData } from '../../lib/utils'
 
 const TabnineVsCodyPage: FunctionComponent = () => {
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal('tabnine-vs-cody')
+    const handleOpenModal = (pagePosition: string): void => {
+        captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
+        openModal('tabnine-vs-cody')
+    }
 
     return (
         <Layout
@@ -37,7 +41,7 @@ const TabnineVsCodyPage: FunctionComponent = () => {
                         type="button"
                         className="btn btn-inverted-primary mt-0 min-w-[204px] border px-6 py-2 text-violet-500 "
                         title="Get Cody for free"
-                        onClick={handleOpenModal}
+                        onClick={() => handleOpenModal('top')}
                     >
                         <div className="flex items-center justify-center leading-6 tracking-[-0.25px]">
                             <img src="/cody/cody-logo.svg" className="mr-2 h-[24px] w-[24px]" alt="Cody Logo" /> Get

@@ -293,14 +293,14 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     freeAutocompletions: {
         label: (
             <p className="m-0 text-[16px] leading-5 tracking-[-0.25px]">
-                <span className="font-bold">500 </span> Autocompletions per month
+                <span className="font-semibold">Unlimited </span> Autocomplete
             </p>
         ),
     },
     freeMessageAndcommands: {
         label: (
             <p className="m-0 text-[16px] font-normal -tracking-[0.25px]">
-                <span className="font-bold">20 </span> Messages and commands per month
+                <span className="font-bold">200 </span> Messages and commands per month
             </p>
         ),
     },
@@ -358,7 +358,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     proAutoCompletions: {
         label: (
             <p className="m-0 text-[16px] leading-5 -tracking-[0.25px]">
-                <span className="font-semibold">Unlimited </span> Autocompletions
+                <span className="font-semibold">Unlimited </span> Autocomplete
             </p>
         ),
     },
@@ -370,7 +370,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         ),
     },
     codeIntAutoCompletions: {
-        label: 'Unlimited autocompletions',
+        label: 'Unlimited autocomplete',
     },
     codeIntMessageAndcommands: {
         label: 'Unlimited messages and commands',
@@ -399,11 +399,12 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Prevent sensitive files from being sent to third-party LLM providers',
     },
     freeLLMsupport: {
-        label: 'Default LLMs for chat, commands, and autocomplete',
+        label: 'Multiple LLM choices for chat and commands',
+        description: 'Claude 3 (Sonnet, Haiku), Claude 3.5 Sonnet, Gemini Flash and Pro, Mixtral',
     },
     proLLMchat: {
-        label: 'Multiple LLM choices for chat',
-        description: 'GPT-4o, GPT-4 Turbo, Gemini Flash and Pro, Mixtral, Claude 3 (Opus, Sonnet, Haiku)',
+        label: 'More powerful LLMs for chat and commands',
+        description: 'Everything in free, plus GPT-4o, GPT-4 Turbo, and Claude 3 Opus',
     },
     proLLMcommands: {
         label: 'Default LLMs for commands and autocomplete',

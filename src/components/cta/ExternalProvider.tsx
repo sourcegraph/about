@@ -5,7 +5,7 @@ import Cookies from 'js-cookie'
 import GithubIcon from 'mdi-react/GithubIcon'
 import Link from 'next/link'
 
-import { getProviderButtonsTracker } from '../../lib/utils'
+import { getProviderButtonsTracker, captureCustomEventWithPageData } from '../../lib/utils'
 import { GITHUB, GITLAB, GOOGLE, VSCODE, JETBRAINS } from '../../pages/constants'
 import { TelemetryProps } from '../../telemetry'
 
@@ -220,6 +220,7 @@ export const ExternalProvider: FunctionComponent<ExternalProviderProps> = ({
                 privateMetadata: eventArguments,
             })
         } else {
+            captureCustomEventWithPageData(`${providerType}_auth_click`)
             telemetryRecorder.recordEvent('auth', 'initiate', {
                 metadata: { authType: telemetryProviderTypes[providerType] },
                 privateMetadata: eventArguments,
