@@ -10,7 +10,7 @@ interface FeatureFlagHookResultProps {
     isBlocked: boolean
 }
 
-const DEFAULT_TIMEOUT = 5000
+const DEFAULT_TIMEOUT = 500
 
 export const useFeatureFlag = (name: string, timeout = DEFAULT_TIMEOUT): FeatureFlagHookResultProps => {
     const [flagValue, setFlagValue] = useState<FeatureFlagValue>(null)
