@@ -73,12 +73,12 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
                     <Link
                         href="https://sourcegraph.com/docs/own"
                         title="Documentation"
-                        className="btn btn-inverted-primary"
+                        className="btn btn-primary-dark"
                     >
                         Documentation
                     </Link>
                     <MeetWithProductExpertButton
-                        buttonClassName="text-white border border-white"
+                        buttonClassName="btn-secondary-dark"
                         buttonLocation={buttonLocation.hero}
                     />
                 </div>
@@ -192,13 +192,13 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
                 <Link
                     href="https://sourcegraph.com/docs/own"
                     title="Documentation"
-                    className="btn btn-inverted-primary"
+                    className="btn btn-primary-dark"
                     target="_blank"
                 >
                     Documentation
                 </Link>
                 <MeetWithProductExpertButton
-                    buttonClassName="text-white border border-white"
+                    buttonClassName="btn-secondary-dark"
                     buttonLocation={buttonLocation.body}
                 />
             </div>

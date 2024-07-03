@@ -47,7 +47,7 @@ export const IdeModalContent: FunctionComponent<Props> = ({
                 className="text-violet-500 underline underline-offset-[3.5px]"
             >
                 {' '}
-                Sign in.{' '}
+                Sign in.
             </Link>
         </p>
     </div>

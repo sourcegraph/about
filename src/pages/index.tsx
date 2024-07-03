@@ -1,10 +1,11 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, ReactSVG } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
 import { ContentSection, Layout, InfiniteCarousel } from '../components'
+import { Icon } from '../components/icon'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
@@ -31,6 +32,16 @@ const Home: FunctionComponent = () => {
     const isDesktop = windowWidth > breakpoints.lg
 
     const { openModal } = useAuthModal()
+
+    const iconDefinition: [keyof ReactSVG, Record<string, string>][] = [
+        ['svg', { viewBox: '0 0 32 32' }],
+        [
+            'path',
+            {
+                d: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z',
+            },
+        ],
+    ]
 
     const handleOpenModal = (pagePosition: string): void => {
         captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
@@ -117,11 +128,22 @@ const Home: FunctionComponent = () => {
                     </div>
                     <div className="mx-6 mb-8 grid grid-cols-1 gap-8 md:mx-0 md:grid-cols-2 md:gap-6">
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
-                            <img
+                            {/* <img
                                 className="h-[48px] w-[48px]"
                                 src="/home/branded-icons/chat-brand-icon.svg"
                                 alt="Completions Brand Icon"
-                            />
+                            /> */}
+                            <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="100%">
+                                        <stop offset="0.12104" stopColor="#7048E8" />
+                                        <stop offset="0.308435" stopColor="#00CBEC" />
+                                        <stop offset="0.642062" stopColor="#A112FF" />
+                                        <stop offset="0.919599" stopColor="#FF5543" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <Icon fill="none" iconNode={iconDefinition} size={48} color="url(#grad1)" />
                             <h2 className="pb-4 pt-6">Get help with context-aware chat</h2>
                             <h5 className="mb-0 text-gray-500">
                                 Query like a human and learn about your code, or get help with tricky problems.
@@ -143,10 +165,10 @@ const Home: FunctionComponent = () => {
                     <Link
                         href="https://sourcegraph.com/cody"
                         title="Cody"
-                        className="btn rounded-65px] mx-6 mb-16 border border-violet-500 p-0 px-5 py-3 text-center font-semibold !-tracking-[0.25px]  text-violet-500 hover:border-violet-400 hover:text-violet-400 md:mx-0 md:mb-28 md:border-none md:px-0 md:pb-0 md:pt-0 md:text-left md:text-violet-500"
+                        className="btn btn-link btn-link-icon mx-6 mb-16 p-0 px-5 py-3 text-center font-semibold !-tracking-[0.25px] md:mx-0 md:mb-28 md:px-0 md:pb-0 md:pt-0 md:text-left"
                     >
                         Learn more about Cody
-                        <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
+                        <ChevronRightIcon className="link-icon" />
                     </Link>
                     <div className="relative overflow-hidden md:overflow-visible">
                         <div className="sg-reviews mb-28 grid grid-cols-1 gap-[30px] rounded-none px-6 py-24 md:mb-24 md:grid-cols-2 md:rounded-2xl md:px-20">
@@ -268,10 +290,10 @@ const Home: FunctionComponent = () => {
                     <Link
                         href="https://sourcegraph.com/code-search"
                         title="Code Search"
-                        className="btn rounded-65px] mx-6 mb-28 border border-violet-500 p-0 px-5 py-3 text-center font-semibold !-tracking-[0.25px] text-violet-500  hover:border-violet-400 hover:text-violet-400 md:mx-0 md:mb-24 md:border-none md:px-0 md:pb-0 md:pt-0 md:text-left md:text-violet-500"
+                        className="btn btn-link btn-link-icon mx-6 mb-28 p-0 px-5 py-3 text-center font-semibold !-tracking-[0.25px] md:mx-0 md:mb-24 md:px-0 md:pb-0 md:pt-0 md:text-left"
                     >
                         Learn more about Code Search
-                        <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
+                        <ChevronRightIcon className="link-icon" />
                     </Link>
                     <div className="sg-reviews flex flex-col gap-6 rounded-none px-6 py-[73px] text-white md:flex-row md:gap-16 md:rounded-2xl md:px-20 md:py-16">
                         <div className="flex flex-col gap-4 p-5 md:p-0">
@@ -288,10 +310,10 @@ const Home: FunctionComponent = () => {
                             <Link
                                 href="https://sourcegraph.com/case-studies/lyft-monolith-to-microservices"
                                 title="Case study"
-                                className="btn p-0 text-white"
+                                className="btn btn-link-dark btn-link-icon p-0"
                             >
                                 Read the case study
-                                <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
+                                <ChevronRightIcon className="link-icon" />
                             </Link>
                         </div>
                     </div>
@@ -326,17 +348,20 @@ const Home: FunctionComponent = () => {
                                 <Link
                                     href="https://sourcegraph.com/contact/request-info"
                                     title="Get Cody for Enterprise"
-                                    className="btn hover:bg-color-violet-600 w-full rounded-[5px] border border-white px-6 py-2 text-center text-white md:w-auto"
+                                    className="btn btn-secondary-dark w-full px-6 py-2 text-center md:w-auto"
                                 >
                                     Request info
                                 </Link>
                                 <Link
                                     href="https://sourcegraph.com/pricing"
                                     title="See pricing"
-                                    className="btn hover:bg-color-violet-600 border-whit w-full rounded-[5px] border px-6 text-center text-white md:w-auto md:border-none"
+                                    className={classNames(
+                                        'btn btn-link-dark w-full rounded-[5px] px-6 text-center md:w-auto',
+                                        !isMobile ? 'btn-link-icon' : ''
+                                    )}
                                 >
                                     See pricing
-                                    {!isMobile && <ChevronRightIcon className="!mb-0 ml-[10px] inline" />}
+                                    {!isMobile && <ChevronRightIcon className="link-icon" />}
                                 </Link>
                             </div>
                         </div>
@@ -364,7 +389,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
                     </p>
                     <button
                         type="button"
-                        className={classNames('btn btn-inverted-primary text-violet-500')}
+                        className={classNames('btn btn-primary-dark')}
                         title="free cody"
                         onClick={() => onOpenModal('top')}
                     >

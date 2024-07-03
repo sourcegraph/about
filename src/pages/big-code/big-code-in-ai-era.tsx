@@ -213,7 +213,7 @@ const TheRiseOfAI: FunctionComponent = () => (
                 <h2 className="mb-4 text-white md:mb-8">Put AI to work on Big Code.</h2>
                 <Link
                     href="/cody"
-                    className="btn btn-outline-white w-fit min-w-fit px-6 font-normal"
+                    className="btn btn-secondary-dark w-fit min-w-fit px-6 font-normal"
                     title="Get access to Cody"
                 >
                     Get access to Cody

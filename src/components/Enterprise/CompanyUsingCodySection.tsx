@@ -15,10 +15,10 @@ export const CompanyUsingCodySection: FunctionComponent = () => (
             <Link
                 href="https://sourcegraph.com/case-studies"
                 title="Cody"
-                className="btn p-0 text-center font-semibold !-tracking-[0.25px]  text-violet-500  hover:underline md:text-violet-500"
+                className="btn btn-link btn-link-icon p-0 text-center font-semibold !-tracking-[0.25px]"
             >
                 Read customer stories
-                <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
+                <ChevronRightIcon className="link-icon" />
             </Link>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-[42px] ">

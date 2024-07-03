@@ -30,10 +30,10 @@ export const NineCaseStudySection: FunctionComponent = () => (
                 <Link
                     href="https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow"
                     title="Case study"
-                    className="btn p-0 text-left  font-semibold !-tracking-[0.25px] text-white hover:underline  md:border-none  md:text-center "
+                    className="btn btn-link-dark btn-link-icon p-0 text-left  font-semibold !-tracking-[0.25px] md:text-center "
                 >
                     Read the case study
-                    <ChevronRightIcon className="!mb-0 ml-[10px] inline" />
+                    <ChevronRightIcon className="link-icon" />
                 </Link>
             </div>
         </div>

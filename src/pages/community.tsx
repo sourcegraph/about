@@ -103,7 +103,7 @@ const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts
                                 Discord
                             </a>
                             <a
-                                className="btn btn-outline btn-outline-primary w-fit tracking-[-0.25px]"
+                                className="btn btn-secondary w-fit tracking-[-0.25px]"
                                 href="https://community.sourcegraph.com/"
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
