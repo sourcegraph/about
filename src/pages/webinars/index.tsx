@@ -32,6 +32,70 @@ const WebinarsPage: FunctionComponent = () => (
                 {/* left side */}
                 <div>
                     <h3 className="text-xl">
+                        July 30 10:00 PM PST <span className="text-sm mr-2">(July 31 3pm-4pm AEDT / 1-2pm SGT / 10:30-11:30 IST)</span>
+                        <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Live</span>
+                    </h3>
+                    <h2 className="mt-4">Live Coding with AI</h2>
+                    <p className="mt-6 text-lg text-gray-600">
+                    Learn how to get the most out of Cody by diving deeper into the features and capabilities of the most powerful AI coding assistant.
+                    </p>
+
+                    <p className="mt-4 text-lg text-gray-600">
+                    This webinar will show you how to create custom commands, using cody with other tools like plantuml plugin to visualise architecture.
+                    </p>
+                </div>
+
+                {/* right side */}
+                <div className="relative h-0 w-full overflow-hidden rounded pb-[56.25%]">
+                    <iframe
+                        title="StreamYard Embed"
+                        src="https://streamyard.com/watch/z99VKw63sGVy?embed=true"
+                        width="100%"
+                        height="100%"
+                        frameBorder="0"
+                        allow="autoplay; fullscreen"
+                        className="absolute left-0 top-0 h-full w-full overflow-hidden"
+                    />
+                </div>
+            </div>
+        </ContentSection>
+        <ContentSection>
+            <div className="mt-10 flex flex-col gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12">
+                {/* left side */}
+                <div>
+                    <h3 className="text-xl">
+                        July 16 10:00 PM PST <span className="text-sm mr-2">(July 17 3pm-4pm AEDT / 1-2pm SGT / 10:30-11:30 IST)</span>
+                        <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Live</span>
+                    </h3>
+                    <h2 className="mt-4">Live Coding with AI</h2>
+                    <p className="mt-6 text-lg text-gray-600">
+                    Learn how to get started with AI coding and how to use Sourcegraph Cody to get the most out of it.
+                    </p>
+
+                    <p className="mt-4 text-lg text-gray-600">
+                    This webinar will get you up to speed with the essentials of coding with AI, from using autocomplete, chatting with AI, debugging code, and writing documentation.
+                    </p>
+                </div>
+
+                {/* right side */}
+                <div className="relative h-0 w-full overflow-hidden rounded pb-[56.25%]">
+                    <iframe
+                        title="StreamYard Embed"
+                        src="https://streamyard.com/watch/FZkmsW7DRk3p?embed=true"
+                        width="100%"
+                        height="100%"
+                        frameBorder="0"
+                        allow="autoplay; fullscreen"
+                        className="absolute left-0 top-0 h-full w-full overflow-hidden"
+                    />
+                </div>
+            </div>
+        </ContentSection>
+        <ContentSection>
+            <div className="mt-10 flex flex-col gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12">
+                {/* left side */}
+                <div>
+                    <h3 className="text-xl">
                         May 23{' '}
                         <span className="rounded-lg bg-vermillion-300 px-2 py-1 text-xs text-white">On-Demand</span>
                     </h3>
