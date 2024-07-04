@@ -32,7 +32,7 @@ const WebinarsPage: FunctionComponent = () => (
                 {/* left side */}
                 <div>
                     <h3 className="text-xl">
-                        July 30 10:00 PM PST <span className="text-sm mr-2">(July 31 3pm-4pm AEDT / 1-2pm SGT / 10:30-11:30 IST)</span>
+                        July 30 10:00 PM PST <span className="text-sm mr-2">(July 31 3pm-4pm AEDT / 1pm-2pm SGT / 10:30am-11:30am IST)</span>
                         <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Live</span>
                     </h3>
                     <h2 className="mt-4">Advanced AI Coding Techniques</h2>
@@ -64,7 +64,7 @@ const WebinarsPage: FunctionComponent = () => (
                 {/* left side */}
                 <div>
                     <h3 className="text-xl">
-                        July 16 10:00 PM PST <span className="text-sm mr-2">(July 17 3pm-4pm AEDT / 1-2pm SGT / 10:30-11:30 IST)</span>
+                        July 16 10:00 PM PST <span className="text-sm mr-2">(July 17 3pm-4pm AEDT / 1pm-2pm SGT / 10:30am-11:30am IST)</span>
                         <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Live</span>
                     </h3>
                     <h2 className="mt-4">Getting Started with AI Coding</h2>
