@@ -51,14 +51,6 @@ const LEADERS: {
         twitter: 'https://twitter.com/DanielNealAdler',
     },
     {
-        name: 'Chris Sells',
-        image: '/staff/avatar-chris.jpg',
-        title: 'Head of Product',
-        bio: 'https://handbook.sourcegraph.com/team/#chris-sells',
-        github: 'https://github.com/csells',
-        linkedin: 'https://www.linkedin.com/in/csells/',
-    },
-    {
         name: 'Carly Jones',
         image: '/staff/avatar-carly.png',
         title: 'VP Talent & People',
