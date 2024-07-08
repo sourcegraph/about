@@ -4,12 +4,6 @@ import { Tabs } from './Tabs'
 const events = {
     upcoming: [
         {
-            title: 'AI Engineer World’s Fair',
-            location: 'San Francisco, CA',
-            date: 'Jun 25-27, 2024',
-            link: 'https://www.ai.engineer/worldsfair',
-        },
-        {
             title: 'designFAO',
             location: 'Portugal',
             date: 'Oct 11, 2024',
@@ -17,6 +11,12 @@ const events = {
         },
     ],
     past: [
+        {
+            title: 'AI Engineer World’s Fair',
+            location: 'San Francisco, CA',
+            date: 'Jun 25-27, 2024',
+            link: 'https://www.ai.engineer/worldsfair',
+        },
         {
             title: 'AI Dev Tools Night',
             location: 'San Francisco, CA',
