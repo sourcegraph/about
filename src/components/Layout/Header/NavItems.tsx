@@ -2,23 +2,37 @@ import React, { useCallback } from 'react'
 
 import { Menu, Transition } from '@headlessui/react'
 import classNames from 'classnames'
-import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
-import ChevronUpIcon from 'mdi-react/ChevronUpIcon'
+import {
+    ChevronDownIcon,
+    ChevronUpIcon,
+    Building2,
+    HelpCircle,
+    BookText,
+    Newspaper,
+    Calendar,
+    UsersRound,
+    TestTube,
+} from 'lucide-react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { Badge } from '../../Badge'
+import { ContentSection } from '../../ContentSection'
 
 interface NavLink {
-    name: string
+    text: string
+    subText?: string
+    decoratedText?: string
     href: string
     badgeText?: string
     id?: string
+    icon?: string | JSX.Element
+    iconPosition?: 'top' | 'left'
 }
 
 interface NavSection {
     id?: string
-    name: string
+    text: string
     links: (NavLink | { divider: true })[]
     badgeText?: string
 }
@@ -28,65 +42,124 @@ type NavItem = NavLink | NavSection
 const NAV_ITEMS: NavItem[] = [
     {
         id: 'topnav',
-        name: 'Products',
+        text: 'Products',
         links: [
             {
-                name: 'Cody',
+                text: 'Cody',
                 href: '/cody',
+                icon: '/home/branded-icons/cody-squircle.svg',
+                subText: 'AI coding assistant with deep codebase context',
+                iconPosition: 'top',
             },
             {
-                name: 'Code Search',
+                text: 'Code Search',
                 href: '/code-search',
+                icon: '/home/branded-icons/Code-Search-squircle.svg',
+                subText: 'Advanced codebase search, batch changes, and insights',
+                iconPosition: 'top',
             },
         ],
     },
     {
         id: 'topnav',
-        name: 'Pricing',
+        text: 'Solutions',
+        links: [
+            {
+                text: 'Enterprise',
+                subText: 'Scale and security for any size team',
+                href: '/enterprise',
+                icon: (
+                    <div className="hidden w-fit rounded-lg border-1 border-black/25 bg-white p-2 lg:block">
+                        <Building2 className="h-4 w-4 !bg-transparent text-black" />
+                    </div>
+                ),
+                iconPosition: 'top',
+            },
+            {
+                decoratedText: 'Use Cases',
+                text: 'Unit testing',
+                href: '/solutions/build-unit-tests',
+            },
+            {
+                text: 'Batch Changes',
+                href: '/batch-changes',
+            },
+            {
+                text: 'Code Insights',
+                href: '/code-insights',
+            },
+            {
+                decoratedText: 'Integrations',
+                text: 'GitLab',
+                href: '/solutions/gitlab',
+            },
+            {
+                text: 'Bitbucket',
+                href: '/solutions/bitbucket',
+            },
+        ],
+    },
+    {
+        id: 'topnav',
+        text: 'Resources',
+        links: [
+            {
+                text: 'Support forum',
+                subText: 'Questions and feedback',
+                href: 'https://community.sourcegraph.com',
+                iconPosition: 'left',
+                icon: <HelpCircle className="h-[14px] w-[14px]" />,
+            },
+            {
+                text: 'Docs',
+                subText: 'Get started with our products',
+                href: 'https://docs.sourcegraph.com',
+                iconPosition: 'left',
+                icon: <BookText className="h-[14px] w-[14px]" />,
+            },
+            {
+                text: 'Blog',
+                subText: 'The latest posts and updates',
+                href: '/blog',
+                iconPosition: 'left',
+                icon: <Newspaper className="h-[14px] w-[14px]" />,
+            },
+            {
+                text: 'Events',
+                subText: 'Live and online meetups',
+                href: '/events',
+                iconPosition: 'left',
+                icon: <Calendar className="h-[14px] w-[14px]" />,
+            },
+            {
+                text: 'Community',
+                subText: 'Dev community, open source',
+                href: '/community',
+                iconPosition: 'left',
+                icon: <UsersRound className="h-[14px] w-[14px]" />,
+            },
+            {
+                text: 'Sourcegraph Labs',
+                subText: 'AI experiment playground',
+                href: 'https://s0.dev/',
+                iconPosition: 'left',
+                icon: <TestTube className="h-[14px] w-[14px]" />,
+            },
+        ],
+    },
+    {
+        id: 'topnav',
+        text: 'Docs',
+        href: 'https://docs.sourcegraph.com',
+    },
+    {
+        id: 'topnav',
+        text: 'Pricing',
         href: '/pricing',
     },
     {
         id: 'topnav',
-        name: 'Enterprise',
-        href: '/enterprise',
-    },
-    {
-        id: 'topnav',
-        name: 'Resources',
-        links: [
-            {
-                name: 'Resources library',
-                href: '/resources',
-            },
-            {
-                name: 'Customer stories',
-                href: '/case-studies',
-            },
-            {
-                name: 'Blog',
-                href: '/blog',
-            },
-            {
-                name: 'Docs',
-                href: 'https://sourcegraph.com/docs',
-            },
-            {
-                name: 'Cody comparisons',
-                href: '/compare',
-            },
-            {
-                name: 'Support forum',
-                href: 'https://community.sourcegraph.com',
-            },
-            {
-                name: 'Webinars',
-                href: '/webinars',
-            },
-        ],
-    },
-    {
-        id: 'topnav',
-        name: 'Search public code',
+        text: 'Search public code',
         href: 'https://sourcegraph.com/search',
     },
 ]
@@ -97,7 +170,18 @@ interface Props {
             close: () => void
         }
     >
-    classes: Record<'item' | 'menu' | 'menuItem' | 'menuItemActive' | 'divider', string>
+    classes: Record<
+        | 'item'
+        | 'menu'
+        | 'menuItem'
+        | 'menuItemActive'
+        | 'divider'
+        | 'icon'
+        | 'decoratedText'
+        | 'subText'
+        | 'arrowIcon',
+        string
+    >
     close: () => void
 }
 
@@ -105,18 +189,18 @@ export const NavItems: React.FunctionComponent<Props> = ({ close, linkElement: L
     const router = useRouter()
     const isCurrentLink = useCallback((href: string): boolean => router.asPath === href, [router.asPath])
     return (
-        <>
+        <ContentSection className="flex flex-col gap-4 pl-3 pb-1 lg:flex-row lg:pl-0 lg:pb-0" parentClassName="!px-0">
             {NAV_ITEMS.map(item =>
                 'href' in item ? (
                     <LinkElement
                         id={item.id ?? 'topnav'}
-                        key={item.name}
+                        key={item.text}
                         href={item.href}
                         className={classNames('flex items-center', classes.item)}
                         aria-current={isCurrentLink(item.href) ? 'page' : undefined}
                         close={close}
                     >
-                        {item.name}
+                        {item.text}
                         {item.badgeText && (
                             <Badge className="ml-2" size="small" text={item.badgeText} color="blurple" />
                         )}
@@ -124,8 +208,8 @@ export const NavItems: React.FunctionComponent<Props> = ({ close, linkElement: L
                 ) : (
                     <NavItemMenu
                         id={item.id ?? 'topnav'}
-                        key={item.name}
-                        name={item.name}
+                        key={item.text}
+                        text={item.text}
                         links={item.links}
                         isCurrentLink={isCurrentLink}
                         className={classes.item}
@@ -133,7 +217,7 @@ export const NavItems: React.FunctionComponent<Props> = ({ close, linkElement: L
                     />
                 )
             )}
-        </>
+        </ContentSection>
     )
 }
 
@@ -142,11 +226,14 @@ const NavItemMenu: React.FunctionComponent<
         id: string
         isCurrentLink: (href: string) => boolean
         className: string
-        classes: Record<'menu' | 'menuItem' | 'menuItemActive' | 'divider', string>
+        classes: Record<
+            'menu' | 'menuItem' | 'menuItemActive' | 'divider' | 'icon' | 'decoratedText' | 'subText' | 'arrowIcon',
+            string
+        >
     }
 > = ({
     id,
-    name,
+    text,
     links,
     isCurrentLink,
     className,
@@ -155,18 +242,28 @@ const NavItemMenu: React.FunctionComponent<
         menuItem: menuItemClassName,
         menuItemActive: menuItemActiveClassName,
         divider: dividerClassName,
+        arrowIcon: arrowClassName,
+        decoratedText: decoratedTextClassName,
+        subText: menuItemSubTextClassName,
     },
 }) => (
     <Menu as="div" className="relative">
         {({ open }) => (
             <>
                 <div>
-                    <Menu.Button id={id} className={classNames('flex items-center', className)}>
-                        {name}
+                    <Menu.Button
+                        id={id}
+                        className={classNames('flex items-center', className, {
+                            'lg:bg-gray-200': open && className.includes('text-gray-500'),
+                            'lg:bg-gray-500': open && className.includes('text-white'),
+                            'lg:bg-violet-500': open && className.includes('hover:bg-violet-600'),
+                        })}
+                    >
+                        {text}
                         {open ? (
-                            <ChevronUpIcon className="ml-[1px] w-4" />
+                            <ChevronUpIcon className="ml-1 h-6 w-6 lg:h-3 lg:w-3" />
                         ) : (
-                            <ChevronDownIcon className="ml-[1px] w-4" />
+                            <ChevronDownIcon className="ml-1 h-6 w-6 lg:h-3 lg:w-3" />
                         )}
                     </Menu.Button>
                 </div>
@@ -179,12 +276,13 @@ const NavItemMenu: React.FunctionComponent<
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                 >
-                    <Menu.Items
-                        className={classNames(
-                            menuClassName,
-                            'mt-2 rounded-md py-1 ring-1 ring-opacity-25 focus:outline-none'
-                        )}
-                    >
+                    <Menu.Items className={classNames(menuClassName, 'mt-2 rounded-md lg:p-3')}>
+                        <div
+                            className={classNames(
+                                arrowClassName,
+                                'absolute left-2.5 -top-[5.5px] hidden h-[10px] w-[10px] rotate-45 rounded-tl-sm border-t border-l lg:block'
+                            )}
+                        />
                         {links.map((link, index) =>
                             'divider' in link ? (
                                 // eslint-disable-next-line react/no-array-index-key
@@ -192,20 +290,78 @@ const NavItemMenu: React.FunctionComponent<
                                     <hr className={classNames('my-1', dividerClassName)} />
                                 </Menu.Item>
                             ) : (
-                                <Menu.Item key={link.name}>
+                                <Menu.Item key={link.text}>
                                     {({ active }) => (
                                         <div>
+                                            {link.decoratedText && (
+                                                <div
+                                                    className={classNames(
+                                                        decoratedTextClassName,
+                                                        'hidden p-4 lg:block'
+                                                    )}
+                                                >
+                                                    {link.decoratedText}
+                                                    <hr className={classNames(dividerClassName, 'mr-[6px]')} />
+                                                </div>
+                                            )}
                                             <Link
-                                                id={id}
-                                                href={link.href}
                                                 className={classNames(
-                                                    'block px-4 py-2 text-base',
+                                                    'block rounded-lg px-6 py-4 lg:px-3 lg:py-1',
                                                     menuItemClassName,
                                                     active && menuItemActiveClassName
                                                 )}
+                                                id={id}
+                                                href={link.href}
                                                 aria-current={isCurrentLink(link.href) ? 'page' : undefined}
                                             >
-                                                {link.name}
+                                                <div
+                                                    className={`${
+                                                        link.iconPosition === 'top'
+                                                            ? 'flex flex-col lg:py-3'
+                                                            : 'flex  items-baseline gap-3'
+                                                    }`}
+                                                >
+                                                    {link.icon && (
+                                                        <div
+                                                            className={`hidden lg:block ${
+                                                                link.iconPosition === 'top'
+                                                                    ? 'mb-3'
+                                                                    : 'relative top-[2px]'
+                                                            }`}
+                                                        >
+                                                            {typeof link.icon === 'string' ? (
+                                                                <img
+                                                                    src={link.icon}
+                                                                    className="h-8 w-8 lg:block"
+                                                                    alt={link.text}
+                                                                />
+                                                            ) : (
+                                                                link.icon
+                                                            )}
+                                                        </div>
+                                                    )}
+                                                    <div>
+                                                        <p
+                                                            className={classNames(
+                                                                'mb-0  text-sm font-medium tracking-tight',
+                                                                menuItemClassName
+                                                            )}
+                                                        >
+                                                            {link.text}
+                                                        </p>
+
+                                                        {link.subText && (
+                                                            <p
+                                                                className={classNames(
+                                                                    'mb-0 hidden align-bottom text-xs text-gray-500 lg:block',
+                                                                    menuItemSubTextClassName
+                                                                )}
+                                                            >
+                                                                {link.subText}
+                                                            </p>
+                                                        )}
+                                                    </div>
+                                                </div>
                                                 {link.badgeText && (
                                                     <Badge className="ml-4" size="small" text={link.badgeText} />
                                                 )}

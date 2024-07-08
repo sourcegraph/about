@@ -72,7 +72,6 @@ const CodyPage: FunctionComponent = () => {
                 image: 'https://sourcegraph.com/cody/cody-og.png',
             }}
             displayChildrenUnderNav={true}
-            customFooterClassName="!bg-transparent"
             className="relative w-full !overflow-hidden bg-gray-50"
         >
             <div className="relative">

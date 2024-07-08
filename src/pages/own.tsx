@@ -51,7 +51,7 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
                 'Evergreen code ownership across code hosts, powering Code Search, Batch Changes, and Insights.',
             image: 'https://sourcegraph.com/own/og-own.png',
         }}
-        headerColorTheme="purple"
+        headerColorTheme="dark"
         childrenClassName="sg-bg-gradient-own"
         displayChildrenUnderNav={true}
     >
@@ -78,7 +78,7 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
                         Documentation
                     </Link>
                     <MeetWithProductExpertButton
-                        buttonClassName="btn-secondary-dark"
+                        buttonClassName="btn btn-secondary-dark text-gray-75"
                         buttonLocation={buttonLocation.hero}
                     />
                 </div>
@@ -198,7 +198,7 @@ const OwnPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
                     Documentation
                 </Link>
                 <MeetWithProductExpertButton
-                    buttonClassName="btn-secondary-dark"
+                    buttonClassName="btn btn-secondary-dark text-gray-75"
                     buttonLocation={buttonLocation.body}
                 />
             </div>

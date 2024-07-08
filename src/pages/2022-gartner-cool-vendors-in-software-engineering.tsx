@@ -11,10 +11,9 @@ export const Report: FunctionComponent = () => (
         }}
         hero={
             <Hero
-                className="enterprise-form-bg"
                 displayUnderNav={true}
                 titleClassName="text-white text-4xl md:text-7xl"
-                variant="purple"
+                variant="black"
                 title="Cool Vendors in Software Engineering: Enhancing Developer Productivity"
                 leftColumn={
                     <img
@@ -26,7 +25,7 @@ export const Report: FunctionComponent = () => (
                 mergeColumns={true}
             />
         }
-        headerColorTheme="purple"
+        headerColorTheme="dark"
     >
         <GatedResourceLayout
             title="Cool Vendors in Software Engineering: Enhancing Developer Productivity"

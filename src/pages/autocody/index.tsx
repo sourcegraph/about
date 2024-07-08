@@ -11,7 +11,6 @@ const AutoCodyPage: FunctionComponent = () => (
             image: 'https://sourcegraph.com/assets/cody/autocody-og.png',
         }}
         displayChildrenUnderNav={true}
-        customFooterClassName="!bg-transparent"
         className="relative w-full !overflow-hidden bg-gray-50"
     >
         <div className="mt-10 text-center">

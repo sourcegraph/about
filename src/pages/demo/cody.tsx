@@ -67,9 +67,8 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
                     'Cody is the most powerful and accurate AI coding assistant for writing, fixing, and maintaining code.',
                 image: 'https://about.sourcegraph.com/cody/cody-og.png',
             }}
-            headerColorTheme="purple"
+            headerColorTheme="dark"
             displayChildrenUnderNav={true}
-            customFooterClassName="!bg-transparent"
         >
             {/* Hero Section */}
             <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 md:mt-0 md:pt-[22px] md:pb-9">

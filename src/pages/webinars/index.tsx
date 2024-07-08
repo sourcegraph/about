@@ -32,16 +32,19 @@ const WebinarsPage: FunctionComponent = () => (
                 {/* left side */}
                 <div>
                     <h3 className="text-xl">
-                        July 30 10:00 PM PST <span className="text-sm mr-2">(July 31 3pm-4pm AEDT / 1pm-2pm SGT / 10:30am-11:30am IST)</span>
+                        July 30 10:00 PM PST{' '}
+                        <span className="mr-2 text-sm">(July 31 3pm-4pm AEDT / 1pm-2pm SGT / 10:30am-11:30am IST)</span>
                         <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Live</span>
                     </h3>
                     <h2 className="mt-4">Advanced AI Coding Techniques</h2>
                     <p className="mt-6 text-lg text-gray-600">
-                    Learn how to get the most out of Cody by diving deeper into the features and capabilities of the most powerful AI coding assistant.
+                        Learn how to get the most out of Cody by diving deeper into the features and capabilities of the
+                        most powerful AI coding assistant.
                     </p>
 
                     <p className="mt-4 text-lg text-gray-600">
-                    This webinar will show you how to create custom commands, using cody with other tools like plantuml plugin to visualise architecture.
+                        This webinar will show you how to create custom commands, using cody with other tools like
+                        plantuml plugin to visualise architecture.
                     </p>
                 </div>
 
@@ -64,16 +67,19 @@ const WebinarsPage: FunctionComponent = () => (
                 {/* left side */}
                 <div>
                     <h3 className="text-xl">
-                        July 16 10:00 PM PST <span className="text-sm mr-2">(July 17 3pm-4pm AEDT / 1pm-2pm SGT / 10:30am-11:30am IST)</span>
+                        July 16 10:00 PM PST{' '}
+                        <span className="mr-2 text-sm">(July 17 3pm-4pm AEDT / 1pm-2pm SGT / 10:30am-11:30am IST)</span>
                         <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Live</span>
                     </h3>
                     <h2 className="mt-4">Getting Started with AI Coding</h2>
                     <p className="mt-6 text-lg text-gray-600">
-                    Learn how to get started with AI coding and how to use Sourcegraph Cody to get the most out of it.
+                        Learn how to get started with AI coding and how to use Sourcegraph Cody to get the most out of
+                        it.
                     </p>
 
                     <p className="mt-4 text-lg text-gray-600">
-                    This webinar will get you up to speed with the essentials of coding with AI, from using autocomplete, chatting with AI, debugging code, and writing documentation.
+                        This webinar will get you up to speed with the essentials of coding with AI, from using
+                        autocomplete, chatting with AI, debugging code, and writing documentation.
                     </p>
                 </div>
 
