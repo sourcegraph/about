@@ -168,6 +168,37 @@ export const faqData: FAQData = {
             question: 'Is an annual contract required for any of the plans?',
             answer: <p>Cody Enterprise requires an annual contract. Cody Pro is paid on a monthly basis.</p>,
         },
+        {
+            question: 'How are active users counted and billed?',
+            answer: (
+                <>
+                    <p>
+                        <i>
+                            Note: this only applies to Enterprise Cody contracts. Cody Pro users pay for a seat every
+                            month, regardless of usage.
+                        </i>
+                    </p>
+                    <p>
+                        A billable user is one who is signed in to their Enterprise Sourcegraph account and actively
+                        interacts with Cody (e.g. they see suggested autocompletions, they run commands or chat with
+                        Cody, they start new discussions, clear chat history, or copy text from chats, they change Cody
+                        settings, and more). Simply having Cody installed is not enough to be considered a billable
+                        user.
+                    </p>
+                    <p>
+                        <Link
+                            href="https://sourcegraph.com/docs/admin/pricing"
+                            title="Cody pricing details"
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            See a more comprehensive list of user actions that are included in our docs.
+                        </Link>
+                    </p>
+                </>
+            ),
+        },
     ],
     codeSearch: [
         {
