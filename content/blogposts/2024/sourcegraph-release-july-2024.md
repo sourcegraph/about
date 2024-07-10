@@ -1,15 +1,15 @@
 ---
 title: "Sourcegraph July 2024 updates: Model support via Google Vertex AI, improved Cody Analytics, and updates to Code Search"
-description: "This month’s v5.5.0 release supports new Google Gemini and Claude 3.5 Sonnet models, secure model usage via Google’s Vertex AI, and improvements to Cody’s web view. For Code Search, keyword search is now GA and Batch Changes gets a new GitHub App auth integration."
 authors:
   - name: Kelvin Yap
-    url: https://handbook.sourcegraph.com/team/#sts=Kelvin%20Yap
-publishDate: 2024-07-10T08:00
+    url: https://x.com/KelvinYap
+publishDate: 2024-07-10T10:00-01:00
+description: "This month’s v5.5.0 release supports new Google Gemini and Claude 3.5 Sonnet models, secure model usage via Google’s Vertex AI, and improvements to Cody’s web view. For Code Search, keyword search is now GA and Batch Changes gets a new GitHub App auth integration."
 tags: [blog, release]
-slug: "release/july-2024"
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
+slug: 'release/july-2024'
 published: true
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/july-2024/sourcegraph-5-5-release.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/july-2024/sourcegraph-5-5-release.png
 changelogItems:
   - description: "Server-side batch changes are now GA."
     url: 
@@ -67,6 +67,7 @@ The analytics dashboard has been updated with definitions to provide greater at-
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/july-2024/cody-analytics-updates.png"
   alt="Cody Analytics updates"
+  style={{ width: '50%', height: '50%' }}
 />
 <br />
 
@@ -122,6 +123,7 @@ Originally announced in [Sourcegraph 5.3](https://sourcegraph.com/blog/sourcegra
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/july-2024/keyword-search-ga.png"
   alt="Keyword Search GA"
+  style={{ width: '50%', height: '50%' }}
 />
 <br />
 
