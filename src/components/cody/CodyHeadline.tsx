@@ -73,7 +73,7 @@ export const CodyHeadline: FunctionComponent<{
             ) : (
                 <HeadlineText
                     isLight={isLight}
-                    title="Write less, ship more"
+                    title="Code more, type less"
                     subTitle="Cody is an AI coding assistant that uses advanced search and codebase context 
                         to help you understand, write, and fix code faster."
                 />
