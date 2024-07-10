@@ -17,7 +17,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 ---
 ### Claude 3.5 Sonnet is now the default model for commands and code edits
 
-Just one hour after Anthropic released Claude 3.5 Sonnet in June, we [released a new version of Cody supporting it](https://sourcegraph.com/blog/claude-3.5-sonnet-now-available-in-cody). Now, Claude 3.5 Sonnet is the default model for inline editing and commands for new useres.
+Just one hour after Anthropic released Claude 3.5 Sonnet in June, we [released a new version of Cody supporting it](https://sourcegraph.com/blog/claude-3.5-sonnet-now-available-in-cody). Now, Claude 3.5 Sonnet is the default model for inline editing and commands for new users.
 
 ![Claude 3.5 Sonnet Picker](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-26-release/claude-3.5-sonnet-picker-1.png)
 
