@@ -54,7 +54,7 @@ Also did you know Cody Free now has unlimited code completions? We scrapped the 
 
 ### 🧪 Experimental: Generate Git commit messages
 
-We have introduced a new experimental feature that is receiving a lot of attention and praise in our Discord server. With just a click of a button, Cody will now generate the perfect Git commit message for you, allowing you to push your code to your Git server more quickly.
+A while back we introduced an experimental feature that is receiving a lot of attention and praise in our Discord server. With just a click of a button (or in the sidebar), Cody will now generate the perfect Git commit message for you, allowing you to push your code to your Git server more quickly. Let us know what you think!
 
 <Video
   source={{
