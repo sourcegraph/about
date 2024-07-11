@@ -50,7 +50,7 @@ Hot on the heels of our [announcement supporting Claude 3.5 Sonnet](https://sour
 [Read our docs](https://sourcegraph.com/docs/cody/core-concepts/cody-gateway#configuring-custom-models) for model selection information on configuring use of Claude 3.5 Sonnet. You can also try Claude 3.5 Sonnet and both Google Gemini models in a side by side comparison over at [LLM Litmus Test](https://s0.dev/).
 <br />
 
-### Claude 3 and 3.5 support on Google Cloud via Vertex AI
+## Claude 3 and 3.5 support on Google Cloud via Vertex AI
 
 <br />
 For security-conscious enterprises, the use of LLMs through public APIs provided directly by the model provider or hosted by third-party inference providers can raise concerns about data privacy and IP protection. Cody Enterprise addresses these concerns by supporting the private and secure consumption of models through managed services like [Amazon Bedrock](https://sourcegraph.com/blog/integrating-cody-with-amazon-bedrock) and [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), and now supports Claude models on Google Cloud via [Vertex AI](https://cloud.google.com/vertex-ai?hl=en) as well.
