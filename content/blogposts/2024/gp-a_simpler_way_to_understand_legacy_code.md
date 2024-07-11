@@ -11,7 +11,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/a_simpler_way_
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/a_simpler_way_to_understand_legacy_code/image_og.png
 ---
 
-Legacy code, often referred to as inherited or outdated code, is a common challenge for developers and engineering teams. It may use obsolete technology, have little to no documentation, or contain complex dependencies. A recent study by Kragle shows that developers spend only 11% to 30% of their time [fixing technical debt](https://www.krugle.com/resources/downloads/Krugle_WP_Hidden_Costs_of_Code_Maintenance.pdf), and about half of that time is just to understand the source code they're trying to maintain. This shows how challenging it can be to understand legacy systems and why we need simpler, more effective ways to handle them.
+Legacy code, often referred to as inherited or outdated code, is a common challenge for developers and engineering teams. It may use obsolete technology, have little to no documentation, or contain complex dependencies. A recent study by Krugle shows that developers spend only 11% to 30% of their time [fixing technical debt](https://www.krugle.com/resources/downloads/Krugle_WP_Hidden_Costs_of_Code_Maintenance.pdf), and about half of that time is just to understand the source code they're trying to maintain. This shows how challenging it can be to understand legacy systems and why we need simpler, more effective ways to handle them.
 
 Despite these challenges, understanding legacy code is important to keeping existing software running smoothly. This article will explore tips for understanding and working with legacy code. We'll learn to navigate, document, and refactor legacy code the right way.
 
