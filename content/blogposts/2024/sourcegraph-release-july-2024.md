@@ -34,7 +34,7 @@ In this month’s Sourcegraph release (5.5.0) we’ve made numerous improvements
 Code Search also receives some polish with general availability of keyword search, an improved GitHub App auth integration for Batch Changes, as well as general availability of Slack notifications and Logs for Code Monitors.
 <br />
 
-### Support for Google Gemini models (beta)
+## Support for Google Gemini models (beta)
 
 <br />
 In keeping with giving users access to the best models and best context with Cody, Google's latest models Gemini 1.5 Pro and Flash are now available for Cody Enterprise. [Gemini 1.5 Flash](https://deepmind.google/technologies/gemini/flash/) is a lightweight model built for speed and efficiency, while [Gemini 1.5 Pro](https://deepmind.google/technologies/gemini/pro/) is a larger model optimized for high performance across many tasks.\
