@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph July 2024 updates: Model support via Google Vertex AI, improved Cody Analytics, and updates to Code Search"
+title: "Sourcegraph July 2024 updates: Model support via Google Vertex AI, improved Analytics, and Code Search updates"
 authors:
   - name: Kelvin Yap
     url: https://x.com/KelvinYap
