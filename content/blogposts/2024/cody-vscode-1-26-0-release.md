@@ -66,7 +66,7 @@ A while back we introduced an experimental feature that has become increasingly 
 
 ## Changelog
 
-See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.24.0) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
+See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.26.0) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
 
 ## Thank you
 
