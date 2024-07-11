@@ -2,7 +2,6 @@
 title: "5 steps to automate repetitive tasks in software development"
 authors:
   - name: Desmond Obisi
-    url: https://x.com/adocomplete
 publishDate: 2024-07-11T10:00-07:00
 description: "Automate repetitive tasks in software development and boost productivity with these 5 actionable steps."
 tags: [blog, guest-post]
@@ -14,7 +13,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/5-steps-to-a
 
 Do you spend countless hours on tedious, repetitive tasks that hinder your software development process? You're not alone. [A McKinsey study](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/unleashing-developer-productivity-with-generative-ai) shows that developers spend up to 30% or more of their time on routine and manual tasks, leading to burnout and decreased productivity. Imagine if you could reclaim that time for innovation and complex problem-solving.
 
-Automation is the key to streamlining your workflow and boosting productivity. By automating mundane tasks, you can focus on what truly matters: building high-quality software. This guide will look into the benefits of automation and provide practical steps to integrate it into your software development cycle.
+Automation is the key to streamlining your workflow and boosting productivity. By automating mundane tasks, you can focus on what truly matters: **building high-quality software**. This guide will look into the benefits of automation and provide practical steps to integrate it into your software development cycle.
 
 **TL;DR: Automation streamlines your workflow and boosts productivity by handling repetitive tasks. To automate repetitive tasks in software development, follow these steps:**
 
@@ -31,7 +30,7 @@ Let’s get into the details.
 This process begins with a thorough analysis to identify repetitive tasks that consume a significant portion of your time. Here are some examples of the common tasks that are repeated in the software development process:
 
 1. **Code formatting**: Code formatting guarantees that the written code adheres to predefined standards and styles, promoting readability and maintainability. Automation tools can apply these style rules across the entire codebase, enforcing consistency without the developer reviewing each code line manually.
-2. **Running tests**: Continuous testing is crucial in identifying bugs early and making software quality, but it can be time-consuming when handled manually. Automating the running of unit, integration, end-to-end, and acceptance tests ensures that they are run consistently after every change, improving software quality and developer efficiency.
+2. **Writing and running tests**: Continuous testing is crucial in identifying bugs early and writing high-quality software, but it can be time-consuming when handled manually. Automating the writing, running of unit, integration, end-to-end, and acceptance tests ensures the delivery of higher quality software and improved developer efficiency.
 3. **Deployments**: Transferring code from one environment to another, for example, from testing to production, requires serious attention to detail to avoid errors. Automating this process makes the deployments faster and more reliable. They can be executed with a simple push of a button, reducing downtime and increasing deployment frequency.
 4. **API documentation**: Keeping API documentation up-to-date is important for internal developers and external users, and manually updating this documentation can be tedious. Automation tools can generate and update API documentation directly from the codebase, making sure that the documentation is always accurate and reflects the latest changes without requiring additional developer effort.
 5. **Code reviews**: While the critical and creative aspects of code reviews cannot be fully automated, routine elements like checking for style violations, code consistency, or simple bugs can be automated. Automation tools can scan the code for these common issues before the human review process, streamlining the review by allowing humans to focus on more complex considerations.
@@ -57,7 +56,7 @@ Selecting the right tools is essential for achieving effective automation. Ident
 
 **Some popular tools for automation include:**
 
-- [**Cody AI by Sourcegraph**](https://sourcegraph.com/cody): An AI-powered tool that automates various development tasks, from code reviews and fixing coding issues to code documentation.
+- [**Sourcegraph Cody**](https://sourcegraph.com/cody): A code AI assistant that helps developers write, understand, and maintain code.
 - [**ESLint**](https://eslint.org/): A code linter that automates code formatting and bug detection by applying predefined coding standards, enhancing productivity and code quality. It streamlines workflows by forcing consistency across the codebase.
 - [**Jenkins**](https://www.jenkins.io/): An open-source automation server that supports building, deploying, and automation in software development.
 - [**GitHub Actions**](https://github.com/features/actions)**:** This is a custom workflow or automation script integrated with GitHub. It enables the automation of workflows directly from your repository.
@@ -72,13 +71,13 @@ While knowing the right criteria to check when choosing your automation tools is
 
 [Cody](https://sourcegraph.com/cody) by Sourcegraph is a powerful VSCode extension that can be customized to fit your workflow automation needs. It leverages artificial intelligence (AI) to offer quick, ready-to-use commands for common actions such as writing, describing, fixing, and refactoring code.
 
-These commands allow you to run predefined actions with smart context-fetching anywhere in the editor. Like the autocomplete and chat feature in Cody, the commands feature will search for context in your codebase to provide more contextually aware and informed answers. Commands are also available in VS Code, JetBrains, and the Sourcegraph web app. 
+These commands allow you to run predefined actions with smart context-fetching anywhere in the editor. Like the autocomplete and chat feature in Cody, the commands feature will search for context in your codebase to provide more contextually aware and informed answers.
 
-Cody’s custom commands can handle tasks like:
+Cody’s built-in commands can handle tasks like:
 
-- `edit` - For editing, fixing, and generating code.
+- `edit` - For editing, fixing, and generating new code.
 - `explain` - For explaining code.
-- `test` - For generating unit or integration tests.
+- `test` - For generating unit tests.
 - `doc` - For generating code documentation.
 - `smell` - For improving code quality.
 
@@ -113,7 +112,7 @@ You can save your custom command settings to your machine globally for all works
 
 https://drive.google.com/file/d/1nIzT6vYA-0ZcyWtM96vZwJG1K6bcDaQY/view?usp=drivesdk
 
-> Note that the quality of your custom commands' responses depends on which large language model (LLM) Cody uses. Cody uses Claude 3 Sonnet by default, but you can upgrade to Pro to access and use other advanced models.
+> Note that the quality of your custom commands' responses depends on which large language model (LLM) Cody uses. Cody uses Claude 3.5 Sonnet by default, but you can upgrade to Pro to access other models like GPT-4o and Gemini 1.5 Pro.
 
 Now that you know one of Cody's automation techniques for open API specs generation from your codebase, you should understand how to merge this technique into the workflow.
 
@@ -121,7 +120,7 @@ Now that you know one of Cody's automation techniques for open API specs generat
 
 As there isn’t a one-size-fits-all approach to automation and considering each person’s system is unique, here are some tips for integrating designed automation into your code workflow:
 
-1. **Start small, think big:** First, automate the most repetitive tasks. These are usually the low-hanging fruits that can be automated quickly and easily. Once these tasks run smoothly, gradually expand your automation efforts to include more complex processes till you achieve 100% coverage. This step-by-step approach allows you or your team to adapt to new automation tools and techniques without getting overwhelmed.
+1. **Start small, think big:** First, automate the most repetitive tasks. These are usually the low-hanging fruit that can be automated quickly and easily. Once these tasks run smoothly, gradually expand your automation efforts to include more complex processes till you achieve wider coverage. This step-by-step approach allows you or your team to adapt to new automation tools and techniques without getting overwhelmed.
 2. **Stay up to date:** Regularly update your automation scripts and tools. Automation technology continually evolves, with new features and security enhancements being released regularly. By keeping your tools and scripts up to date, you ensure you’re leveraging the latest advancements and maintaining a secure environment. Regular updates also help avoid potential vulnerabilities and compatibility issues interrupting your automated workflows.
 3. **Create a feedback loop:** Establish a feedback loop with your team. Continuous feedback is essential for improving and enhancing your automation processes over time. Encourage team members to share their experiences, challenges, and suggestions for improvement. This collaborative approach encourages a culture of continuous improvement and innovation, guaranteeing that your automation strategies remain aligned with your organization's evolving needs.
 
@@ -137,6 +136,6 @@ Next are some best practices for maintaining and updating these integrations ove
 
 Embracing automation in the software development process has the potential to transform workflows, save time, and increase productivity. Identifying repetitive tasks, selecting the appropriate tools, and implementing customized solutions can greatly improve your coding standards and reduce the burden of routine tasks.
 
-[Cody](https://sourcegraph.com/cody) is a utility and valuable tool for automating various development activities, including code reviews, code generation, documentation, fixing coding issues, and automating deployments.
+[Cody](https://sourcegraph.com/cody) is a valuable tool for automating various development activities including code generation, refactoring, documentation, fixing coding issues, and generating unit tests.
 
 Integrating Cody into your workflow unlocks new levels of project efficiency and results in faster, more reliable, and higher-quality outcomes.
