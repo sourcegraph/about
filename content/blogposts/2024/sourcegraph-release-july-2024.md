@@ -73,7 +73,7 @@ The analytics dashboard has been updated with definitions to provide greater at-
 ### Updates to Cody Web (beta)
 
 <br />
-The vast majority of Cody usage happens alongside your code in your IDE of choice, but you can also chat with Cody and ask questions about code via the web. Currently in beta we've given the Cody web interface a facelift to bring more consistency with the IDE plugins, with more updates and features to come. For more programmatic use the Cody CLI is experimental with improvements to authentication, output responses into .txt files, and more.
+The vast majority of Cody usage happens alongside your code in your IDE of choice, but you can also chat with Cody and ask questions about code [via the web](https://sourcegraph.com/cody/chat). Currently in beta we've given the Cody web interface a facelift to bring more consistency with the IDE plugins, with more updates and features to come. For more programmatic use the Cody CLI is experimental with improvements to authentication, output responses into .txt files, and more.
 
 [Read our docs](https://sourcegraph.com/docs/cody/clients/cody-with-sourcegraph) for more information about using Cody Web.
 <br />
