@@ -8,8 +8,8 @@ description: "Discover essential tips and tools to understand and improve legacy
 tags: [blog, guest-post]
 slug: "5-steps-to-automate-repetitive-tasks-in-software-development"
 published: true
-heroImage: 
-socialImage: 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/a_simpler_way_to_understand_legacy_code/image_og.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/a_simpler_way_to_understand_legacy_code/image_og.png
 ---
 
 Legacy code, often referred to as inherited or outdated code, is a common challenge for developers and engineering teams. It may use obsolete technology, have little to no documentation, or contain complex dependencies. A recent study by Kragle shows that developers spend only 11% to 30% of their time [fixing technical debt](https://www.krugle.com/resources/downloads/Krugle_WP_Hidden_Costs_of_Code_Maintenance.pdf), and about half of that time is just to understand the source code they're trying to maintain. This shows how challenging it can be to understand legacy systems and why we need simpler, more effective ways to handle them.
