@@ -65,9 +65,8 @@ The analytics dashboard has been updated with definitions to provide greater at-
 <br />
 
 <Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/july-2024/cody-analytics-updates.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/july-2024/cody-analytics-updates_65.png"
   alt="Cody Analytics updates"
-  style={{ width: '50%', height: '50%' }}
 />
 <br />
 
@@ -121,9 +120,8 @@ Originally announced in [Sourcegraph 5.3](https://sourcegraph.com/blog/sourcegra
 <br />
 
 <Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/july-2024/keyword-search-ga.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/july-2024/keyword-search-ga_80.png"
   alt="Keyword Search GA"
-  style={{ width: '50%', height: '50%' }}
 />
 <br />
 
