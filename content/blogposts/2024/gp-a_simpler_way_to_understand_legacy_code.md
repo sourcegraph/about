@@ -1,8 +1,7 @@
 ---
 title: "A simpler way to understand legacy code"
 authors:
-  - name: Ado Kukic
-    url: https://x.com/adocomplete
+  - name: Shuaib Oseni
 publishDate: 2024-07-11T11:00-07:00
 description: "Discover essential tips and tools to understand and improve legacy code."
 tags: [blog, guest-post]
@@ -14,7 +13,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/a_simpler_wa
 
 Legacy code, often referred to as inherited or outdated code, is a common challenge for developers and engineering teams. It may use obsolete technology, have little to no documentation, or contain complex dependencies. A recent study by Kragle shows that developers spend only 11% to 30% of their time [fixing technical debt](https://www.krugle.com/resources/downloads/Krugle_WP_Hidden_Costs_of_Code_Maintenance.pdf), and about half of that time is just to understand the source code they're trying to maintain. This shows how challenging it can be to understand legacy systems and why we need simpler, more effective ways to handle them.
 
-Understanding legacy code is important to keeping existing software running smoothly despite these challenges. This article will explore tips for understanding and working with legacy code. We'll learn to navigate, document, and refactor legacy code the right way.
+Despite these challenges, understanding legacy code is important to keeping existing software running smoothly. This article will explore tips for understanding and working with legacy code. We'll learn to navigate, document, and refactor legacy code the right way.
 
 First, let's look at some key strategies for understanding legacy code.
 
@@ -75,13 +74,13 @@ In addition to these strategies, leveraging tools like Cody can further simplify
 
 ## How to use Cody to understand legacy code
 
-Cody is [Sourcegraph's AI coding assistant](https://sourcegraph.com/cody) designed to help developers and engineering teams understand, write, review, and refactor code and accelerate code generation. It is powered by Sourcegraph's [code search](https://sourcegraph.com/code-search), which it uses to retrieve context from a codebase and extend its capabilities.
+[Cody](https://sourcegraph.com/cody) is a AI coding assistant designed to help developers and engineering teams understand, write, review, and refactor code and accelerate code generation and software development. It is powered by Sourcegraph's [code search](https://sourcegraph.com/code-search), which it uses to retrieve context from a codebase and extend its capabilities.
 
 By utilizing Cody, you can focus on building better and more efficient software with the help of AI-enabled assistance. Cody's key features include:
 
-- [**Autocomplete**](https://sourcegraph.com/docs/cody/capabilities/autocomplete): With the autocomplete feature, Cody makes coding easy for developers using the start coder Large Language Model (LLM) to get fast and accurate code predictions. It analyzes code as it is typed, offering suggestions for subsequent lines – single lines of code or functions. It works across different programming languages.
+- [**Autocomplete**](https://sourcegraph.com/docs/cody/capabilities/autocomplete): With the autocomplete feature, Cody makes coding easy for developers using the StarCoder Large Language Model (LLM) to get fast and accurate code predictions. It analyzes code as it is typed, offering suggestions for subsequent lines – single lines of code and multi-line functions. It works across different programming languages.
 - [**Chat**](https://sourcegraph.com/docs/cody/capabilities/chat)**:** Cody allows you to ask technical questions and get contextual answers about your codebase or specific snippets using prompts such as "Add helpful debug log statements."
-- [**Command**](https://sourcegraph.com/docs/cody/capabilities/commands)**:** Think of them as shortcuts for everyday coding tasks. These allow you to run predefined actions with smart context-fetching anywhere in your codebase. You can also speed up certain actions by creating custom commands for those repetitive tasks.
+- [**Commands**](https://sourcegraph.com/docs/cody/capabilities/commands)**:** Think of them as shortcuts for everyday coding tasks. These allow you to run predefined actions with smart context-fetching anywhere in your codebase. You can also speed up certain actions by creating custom commands for those repetitive tasks.
 
 With the above features, Cody helps software developers by providing insights into legacy code structure, identifying potential issues, and suggesting improvements. Its intuitive interface and detailed reports make it easier to understand complex codebases and prioritize refactoring efforts.
 
@@ -92,7 +91,7 @@ Now that we've covered the strategies for understanding legacy code, let’s tak
 To get started with Cody:
 
 - Create an [account](https://sourcegraph.com/cody) using one of these authentication methods - GitHub, GitLab, or Google.
-- Install Cody for any of Sourcegraph's supported IDE - VS Code, IntelliJ, or Neovim.
+- Install Cody for any of Sourcegraph's supported IDE - VS Code, IntelliJ (or any other JetBrains IDE), or Neovim.
 
 > NB: VS Code is the IDE used in this section.
 
@@ -166,4 +165,4 @@ Using Cody with our example codebase, we can see how it simplifies refactoring, 
 
 Working with legacy systems can be a task, but it becomes manageable and fun with the right approach and tools, especially when developers prioritize the *code with tests* approach. Developers can effectively understand and improve legacy code by assessing the codebase, leveraging documentation, utilizing code analysis tools, understanding version control history, refactoring wisely, and implementing comprehensive testing.
 
-AI-assisted coding tools like Cody further simplify challenges with legacy code and complex systems, providing valuable insights and automated assistance. For more information about Cody, visit the [Sourcegraph](https://sourcegraph.com/cody) website.
+AI-assisted coding tools like Cody further simplify challenges with legacy code and complex systems, providing valuable insights and automated assistance. Give [Cody](https://sourcegraph.com/cody) a try today for your legacy codebase.```
