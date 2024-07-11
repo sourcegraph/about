@@ -99,7 +99,7 @@ Improving chat quality is important to ensure users get timely and accurate resp
 
 <br />
 
-### GitHub App auth integration for Batch Changes
+## GitHub App auth integration for Batch Changes
 
 <br />
 
