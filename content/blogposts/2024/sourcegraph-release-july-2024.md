@@ -45,7 +45,7 @@ Note: For customers using Cody Gateway, Gemini 1.5 Pro and Flash are available f
 ### Claude 3.5 Sonnet support for Cody chat
 
 <br />
-Hot on the heels of our [announcement supporting Claude 3.5 Sonnet](https://sourcegraph.com/blog/claude-3.5-sonnet-now-available-in-cody), Cody Enterprise customers can now select Claude 3.5 Sonnet as their LLM for chat. This brings Anthropic's latest and greatest LLM to all Cody plans, and is available for both VS Code (v1.24.0) and JetBrains (v6.0.12) IDEs.\
+Hot on the heels of our [announcement supporting Claude 3.5 Sonnet](https://sourcegraph.com/blog/claude-3.5-sonnet-now-available-in-cody), Cody Enterprise customers can now select Claude 3.5 Sonnet as their LLM for chat. This brings Anthropic's latest and greatest LLM to all Cody plans, and is available for both VS Code (v1.24.0) and JetBrains (v6.0.12) IDEs.
 
 [Read our docs](https://sourcegraph.com/docs/cody/core-concepts/cody-gateway#configuring-custom-models) for model selection information on configuring use of Claude 3.5 Sonnet. You can also try Claude 3.5 Sonnet and both Google Gemini models in a side by side comparison over at [LLM Litmus Test](https://s0.dev/).
 <br />
