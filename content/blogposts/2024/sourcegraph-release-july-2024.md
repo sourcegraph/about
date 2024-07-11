@@ -111,7 +111,7 @@ Please [read our docs](https://sourcegraph.com/docs/batch-changes/configuring-cr
 
 <br />
 
-### Keyword Search GA
+## Keyword Search GA
 
 <br />
 
