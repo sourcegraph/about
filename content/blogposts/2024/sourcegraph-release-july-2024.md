@@ -125,6 +125,8 @@ Originally announced in [Sourcegraph 5.3](https://sourcegraph.com/blog/sourcegra
 />
 <br />
 
+<br />
+
 Sourcegraph 5.5.0 is now available. Users self-hosting Sourcegraph can upgrade their instances today, and Sourcegraph Cloud users will receive this update within the coming days.
 
 <br />
