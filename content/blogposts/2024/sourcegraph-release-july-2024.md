@@ -53,7 +53,7 @@ Hot on the heels of our [announcement supporting Claude 3.5 Sonnet](https://sour
 ### Claude 3 and 3.5 support on Google Cloud via Vertex AI
 
 <br />
-For security-conscious enterprises, the use of LLMs through public APIs provided directly by the model provider or hosted by third-party inference providers can raise concerns about data privacy and IP protection. Cody Enterprise addresses these concerns by supporting the private and secure consumption of models through managed services like [Amazon Bedrock](https://sourcegraph.com/blog/integrating-cody-with-amazon-bedrock) and [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), and now supports Claude models on Google Cloud via [Vertex AI](https://cloud.google.com/vertex-ai?hl=en) as well.\
+For security-conscious enterprises, the use of LLMs through public APIs provided directly by the model provider or hosted by third-party inference providers can raise concerns about data privacy and IP protection. Cody Enterprise addresses these concerns by supporting the private and secure consumption of models through managed services like [Amazon Bedrock](https://sourcegraph.com/blog/integrating-cody-with-amazon-bedrock) and [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), and now supports Claude models on Google Cloud via [Vertex AI](https://cloud.google.com/vertex-ai?hl=en) as well.
 
 Cody Enterprise supports the Claude 3 family (Haiku, Sonnet, Opus) of models and Claude 3.5 Sonnet via Vertex AI. [Read our docs](https://sourcegraph.com/docs/cody/clients/enable-cody-enterprise#supported-models-and-model-providers) to learn more about setting up models with various managed services.
 <br />
