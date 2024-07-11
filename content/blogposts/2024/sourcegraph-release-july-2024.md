@@ -58,7 +58,7 @@ For security-conscious enterprises, the use of LLMs through public APIs provided
 Cody Enterprise supports the Claude 3 family (Haiku, Sonnet, Opus) of models and Claude 3.5 Sonnet via Vertex AI. [Read our docs](https://sourcegraph.com/docs/cody/clients/enable-cody-enterprise#supported-models-and-model-providers) to learn more about setting up models with various managed services.
 <br />
 
-### Improved Cody Analytics
+## Improved Cody Analytics
 
 <br />
 The analytics dashboard has been updated with definitions to provide greater at-a-glance clarity for authenticated and billable users. A time picker has been added with predefined values (e.g. last week, last month, last 3 months) so admins can have a granular view of data across a time period. And finally, you can now export user-level data (such as chat and command events, and completion acceptance rate) with anonymous IDs as a CSV to aid in further analysis or post-processing.
