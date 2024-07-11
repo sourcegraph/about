@@ -398,7 +398,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
                 {!isMobile && (
                     <div className="w-full lg:w-[1062px]">
                         <video
-                            className="rounded-lg shadow-md"
+                            className="rounded-lg border-1 border-gray-200 shadow-md"
                             autoPlay={true}
                             muted={true}
                             loop={true}

@@ -134,6 +134,7 @@
  
      .btn {
          @apply inline-block rounded py-2 px-6;
+         @apply focus:ring focus:ring-violet-300 focus:outline-none;
          transition-timing-function: ease-in-out;
          transition-duration: 0.2s;
          transition-property: background, color, border-color;
@@ -144,20 +145,28 @@
      }
  
      .btn-primary {
-         @apply bg-violet-700 text-gray-75 hover:bg-violet-600 focus:rounded-[5px] focus:bg-violet-700 focus:ring focus:ring-violet-300;
+         @apply bg-violet-700 text-gray-75 hover:bg-violet-600 focus:rounded-[5px] focus:bg-violet-700;
      }
  
      .btn-primary-dark {
-         @apply rounded-[5px] bg-gray-75 text-violet-700 hover:bg-lemon-50 focus:rounded-[5px] focus:bg-gray-200 focus:ring focus:ring-violet-300;
+         @apply rounded-[5px] bg-gray-75 text-violet-700 hover:bg-lemon-50 focus:rounded-[5px] focus:bg-gray-200;
      }
  
      .btn-secondary {
-         @apply rounded-[5px] border-1 border-violet-700 bg-transparent text-violet-700 hover:bg-violet-100 focus:ring focus:ring-violet-300;
+         @apply rounded-[5px] border-1 border-violet-700 bg-transparent text-violet-700 hover:bg-violet-100;
      }
  
      .btn-secondary-dark {
-         @apply rounded-[5px] border-1 border-gray-75 bg-transparent text-gray-75 hover:border-gray-75 hover:bg-violet-600 focus:rounded-[5px] focus:ring focus:ring-violet-300;
+         @apply rounded-[5px] border-1 border-gray-75 bg-transparent text-gray-75 hover:border-gray-75 hover:bg-violet-600 focus:rounded-[5px];
      }
+
+     .btn-sm {
+        @apply text-sm py-1.5 px-3;
+    }
+
+    .btn-mobile {
+        @apply w-[356px];
+    }
  
      .btn-link {
          @apply link-transition text-violet-500 hover:underline;

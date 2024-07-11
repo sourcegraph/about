@@ -27,6 +27,7 @@ interface Props {
 export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }) => {
     const [lastScrollPosition, setLastScrollPosition] = useState<number>(0)
     const [sticky, setSticky] = useState<boolean>(false)
+    const [isKeyboardNavigation, setIsKeyboardNavigation] = useState<boolean>(false)
     const router = useRouter()
     const { pathname } = router
     /**
@@ -53,12 +54,33 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
         setLastScrollPosition(scrollPosition)
     }
 
+    // Event listeners for detecting keyboard navigation
+    const handleKeyDown = (event: KeyboardEvent): void => {
+        if (event.key === 'Tab') {
+            setIsKeyboardNavigation(true)
+        }
+    }
+
+    const handleMouseDown = (): void => {
+        setIsKeyboardNavigation(false)
+    }
+
     // This listens for scroll events to handle the sticky nav
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true })
 
         return () => window.removeEventListener('scroll', handleScroll)
     })
+
+    useEffect(() => {
+        window.addEventListener('keydown', handleKeyDown)
+        window.addEventListener('mousedown', handleMouseDown)
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown)
+            window.removeEventListener('mousedown', handleMouseDown)
+        }
+    }, [])
 
     return (
         <Disclosure as="nav" className={classNames('fixed top-0 left-0 right-0 z-[1030]')} ref={navRef}>
@@ -72,6 +94,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
                         sticky={sticky}
                         source={source}
                         close={close}
+                        isKeyboardNavigation={isKeyboardNavigation}
                     />
                 </>
             )}
@@ -91,7 +114,7 @@ const HEADER_CONTENT_THEME_CLASS: Record<
         | 'button'
         | 'panel'
         | 'icon'
-        | 'decoratedText'
+        | 'sectionHeader'
         | 'subText'
         | 'arrowIcon',
         string
@@ -99,31 +122,31 @@ const HEADER_CONTENT_THEME_CLASS: Record<
 > = {
     white: {
         container: 'bg-gray-50',
-        item: 'text-gray-500 hover:bg-gray-200 focus:ring-black',
+        item: 'text-gray-500 hover:bg-violet-100 focus:ring-violet-300',
         menu: 'bg-white border-gray-200',
-        menuItem: 'text-gray-700',
+        menuItem: 'text-gray-800',
         menuItemActive: 'bg-gray-100',
         divider: 'border-black/25',
-        button: 'text-gray-500 hover:bg-violet-200 hover:text-black focus:ring-black',
+        button: 'text-gray-500 hover:bg-violet-200 hover:text-black',
         panel: 'border-black/25',
         icon: 'border-black/25 bg-white',
-        decoratedText: 'text-gray-300',
+        sectionHeader: 'opacity-60',
         subText: 'text-gray-400',
         arrowIcon: 'bg-white border-gray-200',
     },
     dark: {
-        container: 'bg-gray-700',
-        item: 'text-white hover:bg-gray-600 focus:ring-white',
-        menu: 'bg-gray-700 border-gray-600',
+        container: 'bg-gray-800',
+        item: 'text-white hover:bg-gray-600 focus:ring-violet-300',
+        menu: 'bg-gray-800 border-gray-600',
         menuItem: 'text-white',
         menuItemActive: 'bg-white/10',
         divider: 'border-white/25',
-        button: 'text-gray-300 hover:bg-gray-700 hover:text-white focus:ring-white',
+        button: 'text-gray-300 hover:bg-gray-800 hover:text-white',
         panel: 'border-white/25',
         icon: 'border-white/25 bg-black/25',
-        decoratedText: 'text-gray-400',
+        sectionHeader: 'opacity-100',
         subText: 'text-gray-200',
-        arrowIcon: 'bg-gray-700 border-gray-600',
+        arrowIcon: 'bg-gray-800 border-gray-600',
     },
     purple: {
         container: 'bg-violet-750',
@@ -132,10 +155,10 @@ const HEADER_CONTENT_THEME_CLASS: Record<
         menuItem: 'text-white',
         menuItemActive: 'bg-violet-600',
         divider: 'border-white/25',
-        button: 'text-gray-300 hover:bg-gray-700 hover:text-white focus:ring-white',
+        button: 'text-gray-300 hover:bg-gray-800 hover:text-white',
         panel: 'border-white/25',
         icon: 'border-white/25 bg-violet-700',
-        decoratedText: 'text-gray-400',
+        sectionHeader: 'opacity-100',
         subText: 'text-gray-200',
         arrowIcon: 'bg-violet-750 border-gray-600',
     },
@@ -147,8 +170,9 @@ const HeaderContent: FunctionComponent<
         sticky: boolean
         source: string
         close: () => void
+        isKeyboardNavigation: boolean
     }
-> = ({ colorTheme, open, sticky, source, close, ...props }) => {
+> = ({ colorTheme, open, sticky, source, close, isKeyboardNavigation, ...props }) => {
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (eventName: string, initiateOpenModal: boolean): void => {
@@ -165,7 +189,7 @@ const HeaderContent: FunctionComponent<
 
     const getButtonClasses = (isDark: boolean, isMobile: boolean): string => {
         const baseClasses = 'w-full flex justify-center !font-semibold'
-        const darkClasses = isMobile ? 'btn-secondary-dark text-gray-200 hover:bg-gray-500' : 'btn-link-dark'
+        const darkClasses = isMobile ? 'btn-secondary-dark text-gray-200' : 'btn-link-dark'
         const lightClasses = `!text-violet-700 ${isMobile ? 'btn-secondary' : 'btn-link'}`
 
         return classNames(baseClasses, isDark ? darkClasses : lightClasses)
@@ -177,7 +201,7 @@ const HeaderContent: FunctionComponent<
                 handleEventSubmission={handleOpenModal}
                 id="topnav"
                 buttonLocation={buttonLocation.nav}
-                buttonClassName={`order-2 lg:order-1 py-3 lg:py-2 px-5 lg:px-4 ${getButtonClasses(dark, isMobile)}`}
+                buttonClassName={`order-2 lg:order-1 py-3  px-5 lg:btn-sm ${getButtonClasses(dark, isMobile)}`}
                 requestInfo={true}
             >
                 Contact
@@ -188,8 +212,8 @@ const HeaderContent: FunctionComponent<
                 href="https://sourcegraph.com/sign-in?returnTo=/cody/manage"
                 title="Get started with Cody"
                 className={classNames(
-                    'btn order-3 flex w-full justify-center py-3 px-5 lg:order-2  lg:py-1.5 lg:px-4 ',
-                    dark ? 'btn-secondary-dark hover:bg-gray-500' : 'btn-secondary '
+                    'btn lg:btn-sm order-3 flex w-full justify-center py-3 px-5 lg:order-2 lg:!px-4',
+                    dark ? 'btn-secondary-dark' : 'btn-secondary '
                 )}
                 type="button"
             >
@@ -199,7 +223,7 @@ const HeaderContent: FunctionComponent<
                 id="topnav"
                 type="button"
                 className={classNames(
-                    'btn order-1 w-full min-w-fit py-3 px-5 lg:order-3 lg:py-1.5 lg:px-3',
+                    'btn lg:btn-sm order-1 w-full min-w-fit py-3 px-5 lg:order-3 ',
                     dark ? 'btn-primary-dark' : 'btn-primary'
                 )}
                 title="Download Sourcegraph"
@@ -252,13 +276,14 @@ const HeaderContent: FunctionComponent<
                                                         classes.item
                                                     ),
                                                     menu: classNames(
-                                                        'absolute left-0 z-10 w-48 border-1 origin-top-right shadow-lg sg-navbar-menu  lg:w-[274px]',
+                                                        'absolute left-0 z-10 w-48 border-1 origin-top-right shadow-lg sg-navbar-menu  lg:w-[274px] focus:outline-none',
+                                                        isKeyboardNavigation && 'focus:ring-2 focus:ring-violet-300',
                                                         classes.menu
                                                     ),
                                                     icon: classes.icon,
-                                                    decoratedText: classNames(
-                                                        'text-xs leading-normal tracking-wide uppercase',
-                                                        classes.decoratedText
+                                                    sectionHeader: classNames(
+                                                        'text-gray-400 text-xs leading-normal tracking-wide uppercase',
+                                                        classes.sectionHeader
                                                     ),
                                                     subText: classNames(
                                                         'text-xs leading-normal tracking-normal',

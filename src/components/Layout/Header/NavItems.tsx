@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { ReactNode, useCallback } from 'react'
 
 import { Menu, Transition } from '@headlessui/react'
 import classNames from 'classnames'
@@ -22,7 +22,7 @@ import { ContentSection } from '../../ContentSection'
 interface NavLink {
     text: string
     subText?: string
-    decoratedText?: string
+    sectionHeader?: string
     href: string
     badgeText?: string
     id?: string
@@ -33,11 +33,15 @@ interface NavLink {
 interface NavSection {
     id?: string
     text: string
-    links: (NavLink | { divider: true })[]
+    links: (NavLink | { divider: true } | { sectionHeader: string })[]
     badgeText?: string
 }
 
 type NavItem = NavLink | NavSection
+
+const iconWrapper = (iconContent: ReactNode): JSX.Element => (
+    <div className="hidden w-fit rounded-lg border-1 border-gray-200 bg-white p-2 lg:block">{iconContent}</div>
+)
 
 const NAV_ITEMS: NavItem[] = [
     {
@@ -47,14 +51,22 @@ const NAV_ITEMS: NavItem[] = [
             {
                 text: 'Cody',
                 href: '/cody',
-                icon: '/home/branded-icons/cody-squircle.svg',
+                icon: iconWrapper(
+                    <img src="/assets/navigation/cody-icon.svg" alt="" className="h-4 w-4 !bg-transparent text-black" />
+                ),
                 subText: 'AI coding assistant with deep codebase context',
                 iconPosition: 'top',
             },
             {
                 text: 'Code Search',
                 href: '/code-search',
-                icon: '/home/branded-icons/Code-Search-squircle.svg',
+                icon: iconWrapper(
+                    <img
+                        src="/assets/navigation/code-search-icon.svg"
+                        alt=""
+                        className="h-4 w-4 !bg-transparent text-black"
+                    />
+                ),
                 subText: 'Advanced codebase search, batch changes, and insights',
                 iconPosition: 'top',
             },
@@ -68,15 +80,11 @@ const NAV_ITEMS: NavItem[] = [
                 text: 'Enterprise',
                 subText: 'Scale and security for any size team',
                 href: '/enterprise',
-                icon: (
-                    <div className="hidden w-fit rounded-lg border-1 border-black/25 bg-white p-2 lg:block">
-                        <Building2 className="h-4 w-4 !bg-transparent text-black" />
-                    </div>
-                ),
+                icon: iconWrapper(<Building2 className="h-4 w-4 !bg-transparent text-black" />),
                 iconPosition: 'top',
             },
+            { sectionHeader: 'Use Cases' },
             {
-                decoratedText: 'Use Cases',
                 text: 'Unit testing',
                 href: '/solutions/build-unit-tests',
             },
@@ -88,8 +96,8 @@ const NAV_ITEMS: NavItem[] = [
                 text: 'Code Insights',
                 href: '/code-insights',
             },
+            { sectionHeader: 'Integrations' },
             {
-                decoratedText: 'Integrations',
                 text: 'GitLab',
                 href: '/solutions/gitlab',
             },
@@ -177,7 +185,7 @@ interface Props {
         | 'menuItemActive'
         | 'divider'
         | 'icon'
-        | 'decoratedText'
+        | 'sectionHeader'
         | 'subText'
         | 'arrowIcon',
         string
@@ -227,7 +235,7 @@ const NavItemMenu: React.FunctionComponent<
         isCurrentLink: (href: string) => boolean
         className: string
         classes: Record<
-            'menu' | 'menuItem' | 'menuItemActive' | 'divider' | 'icon' | 'decoratedText' | 'subText' | 'arrowIcon',
+            'menu' | 'menuItem' | 'menuItemActive' | 'divider' | 'icon' | 'sectionHeader' | 'subText' | 'arrowIcon',
             string
         >
     }
@@ -243,7 +251,7 @@ const NavItemMenu: React.FunctionComponent<
         menuItemActive: menuItemActiveClassName,
         divider: dividerClassName,
         arrowIcon: arrowClassName,
-        decoratedText: decoratedTextClassName,
+        sectionHeader: sectionHeaderClassName,
         subText: menuItemSubTextClassName,
     },
 }) => (
@@ -254,7 +262,7 @@ const NavItemMenu: React.FunctionComponent<
                     <Menu.Button
                         id={id}
                         className={classNames('flex items-center', className, {
-                            'lg:bg-gray-200': open && className.includes('text-gray-500'),
+                            'lg:bg-violet-100': open && className.includes('text-gray-500'),
                             'lg:bg-gray-500': open && className.includes('text-white'),
                             'lg:bg-violet-500': open && className.includes('hover:bg-violet-600'),
                         })}
@@ -276,7 +284,7 @@ const NavItemMenu: React.FunctionComponent<
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                 >
-                    <Menu.Items className={classNames(menuClassName, 'mt-2 rounded-md lg:p-3')}>
+                    <Menu.Items className={classNames(menuClassName, 'mt-2 rounded-md lg:p-1')}>
                         <div
                             className={classNames(
                                 arrowClassName,
@@ -289,84 +297,76 @@ const NavItemMenu: React.FunctionComponent<
                                 <Menu.Item key={index} disabled={true}>
                                     <hr className={classNames('my-1', dividerClassName)} />
                                 </Menu.Item>
+                            ) : 'sectionHeader' in link ? (
+                                <div key={index} className="hidden px-2 pt-5 pb-3 lg:block">
+                                    <div className={sectionHeaderClassName}>
+                                        {link.sectionHeader}
+                                        <hr className={classNames(dividerClassName, 'mr-[6px] mt-1')} />
+                                    </div>
+                                </div>
                             ) : (
                                 <Menu.Item key={link.text}>
                                     {({ active }) => (
-                                        <div>
-                                            {link.decoratedText && (
-                                                <div
-                                                    className={classNames(
-                                                        decoratedTextClassName,
-                                                        'hidden p-4 lg:block'
-                                                    )}
-                                                >
-                                                    {link.decoratedText}
-                                                    <hr className={classNames(dividerClassName, 'mr-[6px]')} />
-                                                </div>
+                                        <Link
+                                            className={classNames(
+                                                'relative z-10 block rounded-lg px-6 py-4 lg:px-2 lg:py-1',
+                                                menuItemClassName,
+                                                active && menuItemActiveClassName
                                             )}
-                                            <Link
-                                                className={classNames(
-                                                    'block rounded-lg px-6 py-4 lg:px-3 lg:py-1',
-                                                    menuItemClassName,
-                                                    active && menuItemActiveClassName
-                                                )}
-                                                id={id}
-                                                href={link.href}
-                                                aria-current={isCurrentLink(link.href) ? 'page' : undefined}
+                                            id={id}
+                                            href={link.href}
+                                            aria-current={isCurrentLink(link.href) ? 'page' : undefined}
+                                        >
+                                            <div
+                                                className={`${
+                                                    link.iconPosition === 'top'
+                                                        ? 'flex flex-col lg:py-3'
+                                                        : 'flex  items-baseline gap-3'
+                                                }`}
                                             >
-                                                <div
-                                                    className={`${
-                                                        link.iconPosition === 'top'
-                                                            ? 'flex flex-col lg:py-3'
-                                                            : 'flex  items-baseline gap-3'
-                                                    }`}
-                                                >
-                                                    {link.icon && (
-                                                        <div
-                                                            className={`hidden lg:block ${
-                                                                link.iconPosition === 'top'
-                                                                    ? 'mb-3'
-                                                                    : 'relative top-[2px]'
-                                                            }`}
-                                                        >
-                                                            {typeof link.icon === 'string' ? (
-                                                                <img
-                                                                    src={link.icon}
-                                                                    className="h-8 w-8 lg:block"
-                                                                    alt={link.text}
-                                                                />
-                                                            ) : (
-                                                                link.icon
-                                                            )}
-                                                        </div>
-                                                    )}
-                                                    <div>
-                                                        <p
-                                                            className={classNames(
-                                                                'mb-0  text-sm font-medium tracking-tight',
-                                                                menuItemClassName
-                                                            )}
-                                                        >
-                                                            {link.text}
-                                                        </p>
-
-                                                        {link.subText && (
-                                                            <p
-                                                                className={classNames(
-                                                                    'mb-0 hidden align-bottom text-xs text-gray-500 lg:block',
-                                                                    menuItemSubTextClassName
-                                                                )}
-                                                            >
-                                                                {link.subText}
-                                                            </p>
+                                                {link.icon && (
+                                                    <div
+                                                        className={`hidden lg:block ${
+                                                            link.iconPosition === 'top' ? 'mb-3' : 'relative top-[2px]'
+                                                        }`}
+                                                    >
+                                                        {typeof link.icon === 'string' ? (
+                                                            <img
+                                                                src={link.icon}
+                                                                className="h-8 w-8 lg:block"
+                                                                alt={link.text}
+                                                            />
+                                                        ) : (
+                                                            link.icon
                                                         )}
                                                     </div>
-                                                </div>
-                                                {link.badgeText && (
-                                                    <Badge className="ml-4" size="small" text={link.badgeText} />
                                                 )}
-                                            </Link>
-                                        </div>
+                                                <div>
+                                                    <p
+                                                        className={classNames(
+                                                            'mb-0  text-sm font-medium tracking-tight',
+                                                            menuItemClassName
+                                                        )}
+                                                    >
+                                                        {link.text}
+                                                    </p>
+
+                                                    {link.subText && (
+                                                        <p
+                                                            className={classNames(
+                                                                'mb-0 hidden align-bottom text-xs text-gray-500 lg:block',
+                                                                menuItemSubTextClassName
+                                                            )}
+                                                        >
+                                                            {link.subText}
+                                                        </p>
+                                                    )}
+                                                </div>
+                                            </div>
+                                            {link.badgeText && (
+                                                <Badge className="ml-4" size="small" text={link.badgeText} />
+                                            )}
+                                        </Link>
                                     )}
                                 </Menu.Item>
                             )

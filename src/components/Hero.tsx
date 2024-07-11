@@ -97,7 +97,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'children' | 'illustration'>> = 
             background={variant}
             illustration={illustration}
             parentClassName={classNames(className, {
-                '-mt-[68px] md:-mt-[74px] pt-24 md:!pt-[148px]': displayUnderNav,
+                '-mt-[68px] md:-mt-[52px] pt-24 md:!pt-[148px]': displayUnderNav,
                 'relative md:h-[750px] lg:mb-4 md:mb-16 mb-0': floatingImg,
             })}
             className="flex items-center"

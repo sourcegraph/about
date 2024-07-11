@@ -218,7 +218,7 @@ export const Footer: React.FunctionComponent<Props> = ({ minimal, dark, classNam
             className={classNames(
                 className,
                 !minimal && 'pt-16 pb-2',
-                dark ? 'bg-gray-700 text-gray-50' : 'bg-gray-50 text-gray-700',
+                dark ? 'bg-gray-800 text-gray-50' : 'bg-gray-50 text-gray-800',
                 'z-10'
             )}
         >
