@@ -37,7 +37,7 @@ Code Search also receives some polish with general availability of keyword searc
 ## Support for Google Gemini models (beta)
 
 <br />
-In keeping with giving users access to the best models and best context with Cody, Google's latest models Gemini 1.5 Pro and Flash are now available for Cody Enterprise. [Gemini 1.5 Flash](https://deepmind.google/technologies/gemini/flash/) is a lightweight model built for speed and efficiency, while [Gemini 1.5 Pro](https://deepmind.google/technologies/gemini/pro/) is a larger model optimized for high performance across many tasks.\
+In keeping with giving users access to the best models and best context with Cody, Google's latest models Gemini 1.5 Pro and Flash are now available for Cody Enterprise. [Gemini 1.5 Flash](https://deepmind.google/technologies/gemini/flash/) is a lightweight model built for speed and efficiency, while [Gemini 1.5 Pro](https://deepmind.google/technologies/gemini/pro/) is a larger model optimized for high performance across many tasks.
 
 Note: For customers using Cody Gateway, Gemini 1.5 Pro and Flash are available for chat, and Flash is available for autocomplete. For BYOK customers Gemini 1.5 Pro and Flash are only available for chat. Please [read our docs](https://sourcegraph.com/docs/cody/core-concepts/cody-gateway#configuring-custom-models) for information on configuring your model selection.
 <br />
