@@ -29,7 +29,7 @@ changelogItems:
 ---
 
 <br />
-In this month’s Sourcegraph release (5.5.0) we’ve made numerous improvements to Cody Enterprise. Highlights include support for models from providers like Google and Anthropic, support for model access via Google’s Vertex AI, and improvements to chat response quality. The updated Cody web view is now in beta, while Cody CLI is available as an experimental feature.
+In this month’s Sourcegraph release (5.5.0) we’ve made numerous improvements to Cody Enterprise. Highlights include support for models from providers like Google and Anthropic, support for model access via Google’s Vertex AI, and improvements to chat response quality. The updated [Cody web view](https://sourcegraph.com/cody/chat) is now in beta, while [Cody CLI](https://github.com/sourcegraph/cody/blob/main/cli/README.md) is available as an experimental feature.
 
 Code Search also receives some polish with general availability of keyword search, an improved GitHub App auth integration for Batch Changes, as well as general availability of Slack notifications and Logs for Code Monitors.
 <br />
