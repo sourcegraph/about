@@ -88,7 +88,7 @@ The vast majority of Cody usage happens alongside your code in your IDE of choic
 />
 <br />
 
-### Chat quality improvements
+## Chat quality improvements
 
 <br />
 Improving chat quality is important to ensure users get timely and accurate responses from Cody. We've made a number of changes under the hood this month to improve the quality of responses users receive via chat across all clients, including:
