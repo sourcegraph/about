@@ -165,4 +165,4 @@ Using Cody with our example codebase, we can see how it simplifies refactoring, 
 
 Working with legacy systems can be a task, but it becomes manageable and fun with the right approach and tools, especially when developers prioritize the *code with tests* approach. Developers can effectively understand and improve legacy code by assessing the codebase, leveraging documentation, utilizing code analysis tools, understanding version control history, refactoring wisely, and implementing comprehensive testing.
 
-AI-assisted coding tools like Cody further simplify challenges with legacy code and complex systems, providing valuable insights and automated assistance. Give [Cody](https://sourcegraph.com/cody) a try today for your legacy codebase.```
+AI-assisted coding tools like Cody further simplify challenges with legacy code and complex systems, providing valuable insights and automated assistance. Give [Cody](https://sourcegraph.com/cody) a try today for your legacy codebase.
