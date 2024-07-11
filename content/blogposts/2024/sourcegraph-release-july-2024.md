@@ -1,10 +1,10 @@
 ---
-title: "Sourcegraph July 2024 updates: Model support via Google Vertex AI, improved Analytics, and Code Search updates"
+title: "Sourcegraph July 2024 updates: Vertex AI support, improved Analytics, and Code Search updates"
 authors:
   - name: Kelvin Yap
     url: https://x.com/KelvinYap
 publishDate: 2024-07-10T10:00-01:00
-description: "This month’s v5.5.0 release supports new Google Gemini and Claude 3.5 Sonnet models, secure model usage via Google’s Vertex AI, and improvements to Cody’s web view. For Code Search, keyword search is now GA and Batch Changes gets a new GitHub App auth integration."
+description: "This month’s release supports new Google Gemini and Claude 3.5 Sonnet models, secure model usage via Google’s Vertex AI, and improvements to Cody’s web view. Batch Changes gets a new GitHub App auth integration."
 tags: [blog, release]
 slug: 'release/july-2024'
 published: true
