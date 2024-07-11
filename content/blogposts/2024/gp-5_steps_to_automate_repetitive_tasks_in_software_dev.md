@@ -18,9 +18,13 @@ Automation is the key to streamlining your workflow and boosting productivity. B
 **TL;DR: Automation streamlines your workflow and boosts productivity by handling repetitive tasks. To automate repetitive tasks in software development, follow these steps:**
 
 Step 1: Identify the repetitive tasks
+
 Step 2: Choose the right tools for automation
+
 Step 3: Implement the automation tool
+
 Step 4: Tips for integrating automation into your code workflows
+
 Step 5: Follow best practices for maintaining and updating automation workflows
 
 Let’s get into the details.
