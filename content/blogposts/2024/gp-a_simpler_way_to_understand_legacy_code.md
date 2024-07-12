@@ -5,7 +5,7 @@ authors:
 publishDate: 2024-07-11T11:00-07:00
 description: "Discover essential tips and tools to understand and improve legacy code."
 tags: [blog, guest-post]
-slug: "5-steps-to-automate-repetitive-tasks-in-software-development"
+slug: "a-simpler-way-to-understand-legacy-code"
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/a_simpler_way_to_understand_legacy_code/image_og.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/a_simpler_way_to_understand_legacy_code/image_og.png
