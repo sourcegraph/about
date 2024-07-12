@@ -238,8 +238,8 @@ const HeaderContent: FunctionComponent<
         <>
             <div
                 className={classNames(
-                    'transition bg-gray-50',
-                    (sticky || open) && HEADER_CONTENT_THEME_CLASS[colorTheme].container
+                    'transition',
+                    HEADER_CONTENT_THEME_CLASS[colorTheme].container
                 )}
             >
                 <div className="mx-auto max-w-7xl px-2 md:px-6 xl:px-0">
