@@ -2,6 +2,8 @@
 title: "A simpler way to understand legacy code"
 authors:
   - name: Shuaib Oseni
+  - name: Ado Kukic
+    url: https://x.com/adocomplete
 publishDate: 2024-07-11T11:00-07:00
 description: "Discover essential tips and tools to understand and improve legacy code."
 tags: [blog, guest-post]
