@@ -378,7 +378,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
 
     return (
         <ContentSection
-            className="relative mt-[-82px] flex items-center justify-center rounded-2xl bg-violet-700 md:mt-[-53px]"
+            className="relative mt-[-72px] flex items-center justify-center rounded-2xl bg-violet-700 md:mt-[-43px]"
             parentClassName="!py-0 !pb-16 !bg-gray-50"
         >
             <div className="mx-auto flex flex-col items-center justify-center px-3 text-center md:px-0">
