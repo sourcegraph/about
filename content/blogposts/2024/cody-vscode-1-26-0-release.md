@@ -64,6 +64,10 @@ A while back we introduced an experimental feature that has become increasingly 
   caption="Cody generating a Git commit message"
 />
 
+To enable this feature, go to the Cody settings and enable the `commit message generation` setting.
+
+![Enable Git commit message generation in Cody](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-26-release/image-007.png)
+
 ## Changelog
 
 See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.26.0) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
@@ -72,7 +76,7 @@ See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.2
 
 Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
-We value your feedback in our [support forum](https://community.sourcegraph.com/c/cody/5), [Discord](https://discord.com/servers/sourcegraph-969688426372825169), and [GitHub](https://github.com/sourcegraph/cody/discussions). Happy Codying!
+We value your feedback in our [support forum](https://community.sourcegraph.com/c/cody/5), [Discord](https://discord.com/servers/sourcegraph-969688426372825169), and [GitHub](https://github.com/sourcegraph/cody). Happy Codying!
 
 ---
 
