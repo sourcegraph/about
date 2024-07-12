@@ -238,7 +238,7 @@ const HeaderContent: FunctionComponent<
         <>
             <div
                 className={classNames(
-                    'transition',
+                    'transition bg-gray-50',
                     (sticky || open) && HEADER_CONTENT_THEME_CLASS[colorTheme].container
                 )}
             >
