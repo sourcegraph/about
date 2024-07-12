@@ -36,7 +36,7 @@ const ContactPage: NextPage<ContactPageProps> = ({
                 title: `Sourcegraph - ${title}`,
                 description,
             }}
-            headerColorTheme="purple"
+            headerColorTheme="dark"
             className="sg-bg-radial-space"
         >
             <ContentSection className="relative md:pb-4">

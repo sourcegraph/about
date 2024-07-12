@@ -23,8 +23,7 @@ const TheRiseOfAI: FunctionComponent = () => (
                 'Developers are struggling more than ever with issues around tech debt, maintenance, collaboration, and scalability. But with the overnight AI boom, the pain of Big Code is only getting worse.',
             image: 'https://about.sourcegraph.com/rise-of-ai/rise-of-ai-og.png',
         }}
-        headerColorTheme="purple"
-        childrenClassName="sg-bg-gradient-mobile md:sg-bg-gradient-app-large"
+        headerColorTheme="dark"
         displayChildrenUnderNav={true}
         className="relative"
     >

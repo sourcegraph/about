@@ -61,8 +61,7 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                 description: 'A commissioned study conducted by Forrester Consulting on behalf of Sourcegraph',
                 image: '/other/forrester-tei/tei-og.png',
             }}
-            headerColorTheme="purple"
-            childrenClassName="sg-bg-gradient-own"
+            headerColorTheme="dark"
             displayChildrenUnderNav={true}
         >
             <ContentSection
@@ -253,7 +252,7 @@ const ForresterTotalEconomicImpact: FunctionComponent = () => {
                         Read the report
                     </Link>
                     <MeetWithProductExpertButton
-                        buttonClassName="btn-secondary-dark"
+                        buttonClassName="btn btn-secondary-dark text-gray-75"
                         buttonLocation={buttonLocation.body}
                     >
                         Contact sales

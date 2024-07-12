@@ -11,7 +11,7 @@ const Demo: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
             description:
                 "From developer onboarding to incident response, see how companies of all sizes use Sourcegraph to solve the industry's most challenging code problems.",
         }}
-        headerColorTheme="purple"
+        headerColorTheme="dark"
         className="sg-bg-radial-space"
     >
         <ContentSection className="md:pb-4">

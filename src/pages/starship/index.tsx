@@ -57,8 +57,7 @@ declare global {
 
 const Starship: FunctionComponent = () => (
     <Layout
-        headerColorTheme="purple"
-        childrenClassName="sg-bg-gradient-starship"
+        headerColorTheme="dark"
         displayChildrenUnderNav={true}
         meta={{
             image: 'https://sourcegraph.com/starship/starship_og.png',

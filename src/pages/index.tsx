@@ -54,16 +54,16 @@ const Home: FunctionComponent = () => {
                 description:
                     'Sourcegraph’s code intelligence platform makes it easy for devs to write, fix, and maintain code with Cody, the AI coding assistant, and Code Search.',
             }}
-            heroAndHeaderClassName="home-hero"
-            headerColorTheme="purple"
-            customFooterClassName="!bg-gray-50"
+            heroAndHeaderClassName=""
+            headerColorTheme="white"
             customDark={false}
             hero={<HomeHero onOpenModal={handleOpenModal} />}
-            className="w-full overflow-hidden"
+            className="relative w-full !overflow-hidden bg-gray-50"
+            displayChildrenUnderNav={false}
         >
-            <div className="oveflow-hidden w-full bg-gray-50">
+            <div className="oveflow-hidden relative w-full bg-gray-50">
                 <ContentSection parentClassName="!py-0" className="flex items-center justify-center">
-                    <p className="pb-10 pt-16 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
+                    <p className="mb-16 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
                         Over 2.5M engineers use Sourcegraph
                     </p>
                 </ContentSection>
@@ -377,19 +377,22 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
     const isMobile = windowWidth < breakpoints.sm
 
     return (
-        <ContentSection className="flex items-center justify-center" parentClassName="!py-0">
-            <div className="mx-auto flex flex-col items-center justify-center text-center">
-                <div className="mx-auto flex flex-col items-center pb-16 pt-8 md:w-[680px] md:pb-[70px] md:pt-16">
-                    <h1 className="mb-8 w-full text-center text-white md:mb-6">
+        <ContentSection
+            className="relative mt-[-82px] flex items-center justify-center rounded-2xl bg-violet-700 md:mt-[-53px]"
+            parentClassName="!py-0 !pb-16 !bg-gray-50"
+        >
+            <div className="mx-auto flex flex-col items-center justify-center px-3 text-center md:px-0">
+                <div className="mx-auto flex max-w-[456px] flex-col items-center pb-8 pt-8 sm:max-w-full md:w-[680px] md:pb-[26px] md:pt-10">
+                    <h1 className="mb-8 w-full text-center text-5xl text-gray-100 sm:text-6xl">
                         Understand and write code blazingly fast
                     </h1>
-                    <p className="mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-[#FFFFFF99] md:mb-8">
+                    <p className="mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-white opacity-60 md:mb-8">
                         Sourcegraph allows developers to rapidly search, write, and understand code by bringing insights
                         from their entire codebase right into the editor
                     </p>
                     <button
                         type="button"
-                        className={classNames('btn btn-primary-dark')}
+                        className="btn btn-primary-dark w-full max-w-[356px] px-5 sm:w-fit sm:px-6"
                         title="free cody"
                         onClick={() => onOpenModal('top')}
                     >
@@ -399,7 +402,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
                 {!isMobile && (
                     <div className="w-full overflow-hidden lg:w-[1062px]">
                         <video
-                            className="relative bottom-[-6px] rounded-t-lg"
+                            className="relative bottom-[-6px] rounded-t-xl shadow-md"
                             autoPlay={true}
                             muted={true}
                             loop={true}

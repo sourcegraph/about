@@ -7,7 +7,9 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { useAuthModal } from '../../../context/AuthModalContext'
+import { breakpoints } from '../../../data/breakpoints'
 import { buttonLocation } from '../../../data/tracking'
+import { useWindowWidth } from '../../../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../../../lib/utils'
 import { Banner } from '../../Banner'
 import { MeetWithProductExpertButton } from '../../cta/MeetWithProductExpertButton'
@@ -25,6 +27,7 @@ interface Props {
 export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }) => {
     const [lastScrollPosition, setLastScrollPosition] = useState<number>(0)
     const [sticky, setSticky] = useState<boolean>(false)
+    const [isKeyboardNavigation, setIsKeyboardNavigation] = useState<boolean>(false)
     const router = useRouter()
     const { pathname } = router
     /**
@@ -51,12 +54,33 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
         setLastScrollPosition(scrollPosition)
     }
 
+    // Event listeners for detecting keyboard navigation
+    const handleKeyDown = (event: KeyboardEvent): void => {
+        if (event.key === 'Tab') {
+            setIsKeyboardNavigation(true)
+        }
+    }
+
+    const handleMouseDown = (): void => {
+        setIsKeyboardNavigation(false)
+    }
+
     // This listens for scroll events to handle the sticky nav
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true })
 
         return () => window.removeEventListener('scroll', handleScroll)
     })
+
+    useEffect(() => {
+        window.addEventListener('keydown', handleKeyDown)
+        window.addEventListener('mousedown', handleMouseDown)
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown)
+            window.removeEventListener('mousedown', handleMouseDown)
+        }
+    }, [])
 
     return (
         <Disclosure as="nav" className={classNames('fixed top-0 left-0 right-0 z-[1030]')} ref={navRef}>
@@ -70,6 +94,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
                         sticky={sticky}
                         source={source}
                         close={close}
+                        isKeyboardNavigation={isKeyboardNavigation}
                     />
                 </>
             )}
@@ -79,37 +104,63 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
 
 const HEADER_CONTENT_THEME_CLASS: Record<
     HeaderColorTheme,
-    Record<'container' | 'item' | 'menu' | 'menuItem' | 'menuItemActive' | 'divider' | 'button' | 'panel', string>
+    Record<
+        | 'container'
+        | 'item'
+        | 'menu'
+        | 'menuItem'
+        | 'menuItemActive'
+        | 'divider'
+        | 'button'
+        | 'panel'
+        | 'icon'
+        | 'sectionHeader'
+        | 'subText'
+        | 'arrowIcon',
+        string
+    >
 > = {
     white: {
-        container: 'bg-white',
-        item: 'text-black hover:bg-violet-200 focus:ring-black',
-        menu: 'bg-white ring-black',
-        menuItem: 'text-black',
-        menuItemActive: 'bg-violet-200',
+        container: 'bg-gray-50',
+        item: 'text-gray-500 hover:bg-violet-100 focus:ring-violet-300',
+        menu: 'bg-white border-gray-200',
+        menuItem: 'text-gray-800',
+        menuItemActive: 'bg-gray-100',
         divider: 'border-black/25',
-        button: 'text-gray-500 hover:bg-violet-200 hover:text-black focus:ring-black',
+        button: 'text-gray-500 hover:bg-violet-200 hover:text-black',
         panel: 'border-black/25',
+        icon: 'border-black/25 bg-white',
+        sectionHeader: 'opacity-60',
+        subText: 'text-gray-400',
+        arrowIcon: 'bg-white border-gray-200',
     },
     dark: {
-        container: 'bg-black',
-        item: 'text-white hover:bg-violet-600 focus:ring-white',
-        menu: 'bg-gray-700 ring-white',
+        container: 'bg-gray-800',
+        item: 'text-white hover:bg-gray-600 focus:ring-violet-300',
+        menu: 'bg-gray-800 border-gray-600',
         menuItem: 'text-white',
-        menuItemActive: 'bg-violet-600',
+        menuItemActive: 'bg-white/10',
         divider: 'border-white/25',
-        button: 'text-gray-300 hover:bg-gray-700 hover:text-white focus:ring-white',
+        button: 'text-gray-300 hover:bg-gray-800 hover:text-white',
         panel: 'border-white/25',
+        icon: 'border-white/25 bg-black/25',
+        sectionHeader: 'opacity-100',
+        subText: 'text-gray-200',
+        arrowIcon: 'bg-gray-800 border-gray-600',
     },
     purple: {
         container: 'bg-violet-750',
         item: 'text-white hover:bg-violet-600 focus:ring-white',
-        menu: 'bg-violet-750 ring-white',
+        menu: 'bg-violet-750 border-gray-600',
         menuItem: 'text-white',
         menuItemActive: 'bg-violet-600',
         divider: 'border-white/25',
-        button: 'text-gray-300 hover:bg-gray-700 hover:text-white focus:ring-white',
+        button: 'text-gray-300 hover:bg-gray-800 hover:text-white',
         panel: 'border-white/25',
+        icon: 'border-white/25 bg-violet-700',
+        sectionHeader: 'opacity-100',
+        subText: 'text-gray-200',
+        arrowIcon: 'bg-violet-750 border-gray-600',
     },
 }
 
@@ -119,8 +170,9 @@ const HeaderContent: FunctionComponent<
         sticky: boolean
         source: string
         close: () => void
+        isKeyboardNavigation: boolean
     }
-> = ({ colorTheme, open, sticky, source, close, ...props }) => {
+> = ({ colorTheme, open, sticky, source, close, isKeyboardNavigation, ...props }) => {
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (eventName: string, initiateOpenModal: boolean): void => {
@@ -132,21 +184,37 @@ const HeaderContent: FunctionComponent<
     const dark = colorTheme === 'dark' || colorTheme === 'purple'
     const classes = HEADER_CONTENT_THEME_CLASS[colorTheme]
 
+    const windowWidth = useWindowWidth()
+    const isMobile = windowWidth < breakpoints.lg
+
+    const getButtonClasses = (isDark: boolean, isMobile: boolean): string => {
+        const baseClasses = 'w-full flex justify-center !font-semibold'
+        const darkClasses = isMobile ? 'btn-secondary-dark text-gray-200' : 'btn-link-dark'
+        const lightClasses = `!text-violet-700 ${isMobile ? 'btn-secondary' : 'btn-link'}`
+
+        return classNames(baseClasses, isDark ? darkClasses : lightClasses)
+    }
+
     const callToAction = (
-        <>
+        <span className="flex w-full flex-col items-center gap-4 lg:flex-row">
             <MeetWithProductExpertButton
                 handleEventSubmission={handleOpenModal}
                 id="topnav"
                 buttonLocation={buttonLocation.nav}
-                buttonClassName={classNames('!font-semibold', dark ? 'btn-link-dark' : 'btn-link', 'border-0')}
+                buttonClassName={`order-2 lg:order-1 py-3  px-5 lg:btn-sm ${getButtonClasses(dark, isMobile)}`}
                 requestInfo={true}
-            />
+            >
+                Contact
+            </MeetWithProductExpertButton>
             <Link
                 onClick={() => handleOpenModal('login_click', false)}
                 id="topnav"
                 href="https://sourcegraph.com/sign-in?returnTo=/cody/manage"
                 title="Get started with Cody"
-                className={classNames('btn', dark ? 'btn-secondary-dark' : 'btn-secondary')}
+                className={classNames(
+                    'btn lg:btn-sm order-3 flex w-full justify-center py-3 px-5 lg:order-2 lg:!px-4',
+                    dark ? 'btn-secondary-dark' : 'btn-secondary '
+                )}
                 type="button"
             >
                 Login
@@ -154,13 +222,16 @@ const HeaderContent: FunctionComponent<
             <button
                 id="topnav"
                 type="button"
-                className={classNames('btn min-w-fit px-6 lg:px-4', dark ? 'btn-primary-dark' : 'btn-primary')}
+                className={classNames(
+                    'btn lg:btn-sm order-1 w-full min-w-fit py-3 px-5 lg:order-3 ',
+                    dark ? 'btn-primary-dark' : 'btn-primary'
+                )}
                 title="Download Sourcegraph"
                 onClick={() => handleOpenModal('get_cody_nav_click', true)}
             >
                 Get Cody for free
             </button>
-        </>
+        </span>
     )
 
     return (
@@ -171,7 +242,7 @@ const HeaderContent: FunctionComponent<
                     (sticky || open) && HEADER_CONTENT_THEME_CLASS[colorTheme].container
                 )}
             >
-                <div className="mx-auto max-w-7xl px-2 md:px-6">
+                <div className="mx-auto max-w-7xl px-2 md:px-6 xl:px-0">
                     <div className="relative flex h-16 items-center justify-between">
                         <div className="flex flex-1 items-center md:items-stretch md:justify-start">
                             <div className="flex flex-shrink-0 items-center">
@@ -194,27 +265,36 @@ const HeaderContent: FunctionComponent<
                             </div>
                             {!props.minimal && (
                                 <>
-                                    <div className="hidden flex-1 md:ml-4 lg:block">
+                                    <div className="hidden flex-1 items-center self-center md:ml-4 lg:block">
                                         <div className="flex space-x-3">
                                             <NavItems
                                                 close={close}
                                                 classes={{
                                                     ...classes,
                                                     item: classNames(
-                                                        'whitespace-nowrap rounded-md p-2 font-medium text-base focus:outline-none focus:ring-2',
+                                                        'whitespace-nowrap rounded-2xl py-0 px-2 font-medium text-sm leading-normal tracking-normal focus:outline-none focus:ring-2',
                                                         classes.item
                                                     ),
                                                     menu: classNames(
-                                                        'absolute right-0 z-10 w-48 origin-top-right shadow-lg',
+                                                        'absolute left-0 z-10 w-48 border-1 origin-top-right shadow-lg sg-navbar-menu  lg:w-[274px] focus:outline-none',
+                                                        isKeyboardNavigation && 'focus:ring-2 focus:ring-violet-300',
                                                         classes.menu
                                                     ),
+                                                    icon: classes.icon,
+                                                    sectionHeader: classNames(
+                                                        'text-gray-400 text-xs leading-normal tracking-wide uppercase',
+                                                        classes.sectionHeader
+                                                    ),
+                                                    subText: classNames(
+                                                        'text-xs leading-normal tracking-normal',
+                                                        classes.subText
+                                                    ),
+                                                    arrowIcon: classes.arrowIcon,
                                                 }}
                                             />
                                         </div>
                                     </div>
-                                    <div className="hidden items-center space-x-3 pr-2 md:ml-6 md:pr-0 lg:ml-0 lg:flex">
-                                        {callToAction}
-                                    </div>
+                                    <div className="hidden pr-2 md:pr-0 lg:flex">{callToAction}</div>
                                 </>
                             )}
                         </div>
@@ -239,21 +319,24 @@ const HeaderContent: FunctionComponent<
             </div>
             <Disclosure.Panel
                 className={classNames(
-                    'border-b lg:hidden',
+                    'max-h-[calc(100vh-64px)] overflow-y-auto border-b lg:hidden',
                     HEADER_CONTENT_THEME_CLASS[colorTheme].container,
                     HEADER_CONTENT_THEME_CLASS[colorTheme].panel
                 )}
             >
                 <div className="space-y-1 px-2 pt-2 pb-3">
+                    <div className="ml-3 mb-10 mt-8 flex flex-col items-start space-y-4 lg:my-0">{callToAction}</div>
                     <NavItems
                         close={close}
                         linkElement={DisclosureButton}
                         classes={{
                             ...classes,
-                            item: classNames('block rounded-md px-3 py-2 text-base font-medium', classes.item),
+                            item: classNames(
+                                'w-full flex justify-between rounded-md px-3 py-2 text-base font-normal leading-normal tracking-normal',
+                                classes.item
+                            ),
                         }}
                     />
-                    <div className="ml-3 !mt-2 flex flex-col items-start space-y-4">{callToAction}</div>
                 </div>
             </Disclosure.Panel>
         </>

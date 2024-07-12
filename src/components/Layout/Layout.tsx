@@ -137,7 +137,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({
                 headerColorTheme === 'purple'
                     ? 'var(--sg-color-violet-750)'
                     : headerColorTheme === 'dark'
-                    ? 'black'
+                    ? 'var(--sg-color-gray-800)'
                     : 'white'
             }; }`}</style>
             <section

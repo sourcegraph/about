@@ -152,7 +152,7 @@ const Resources: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => 
                 description: 'Sourcegraph workshops, case studies, whitepapers, blog posts, and recorded events',
             }}
             heroAndHeaderClassName="sg-resource-hero"
-            headerColorTheme="purple"
+            headerColorTheme="dark"
             hero={
                 <ContentSection
                     parentClassName="relative !pt-0"
@@ -174,7 +174,7 @@ const Resources: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => 
                         <h2 className="mb-8 text-center md:mb-4 lg:text-left">{featuredResource.title}</h2>
                         <Link
                             href={featuredResource.link}
-                            className="btn btn-secondary hidden px-6 py-2 text-center font-semibold lg:block"
+                            className="btn btn-primary hidden px-6 py-2 text-center font-semibold lg:block"
                         >{`Read the ${featuredResource.contentType}`}</Link>
                     </div>
                     <div className="flex justify-center lg:justify-end">

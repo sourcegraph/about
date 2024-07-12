@@ -301,7 +301,6 @@ const PricingPage: FunctionComponent = () => {
                 </>
             }
             childrenClassName="pt-0 !bg-gray-50"
-            customFooterClassName="!bg-white"
         >
             <ContentSection className="mx-auto mdi:px-[80px]" parentClassName="!py-0 mdi:!px-0">
                 <div

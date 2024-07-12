@@ -82,8 +82,7 @@ const caseStudies = [
 
 const AWS: FunctionComponent = () => (
     <Layout
-        headerColorTheme="purple"
-        childrenClassName="sg-aws-mobile-bg-gradient md:sg-aws-bg-gradient"
+        headerColorTheme="dark"
         displayChildrenUnderNav={true}
         meta={{
             image: 'https://sourcegraph.com/assets/aws/sourcegraph_aws.png',
