@@ -66,7 +66,7 @@ A while back we introduced an experimental feature that has become increasingly 
 
 To enable this feature, go to the Cody settings and enable the `commit message generation` setting.
 
-![Cody offline mode](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-26-release/image-007.png)
+![Enable Git commit message generation in Cody](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-26-release/image-007.png)
 
 ## Changelog
 
