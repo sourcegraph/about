@@ -116,7 +116,13 @@ Now that your setup is complete, you can create custom commands via the Cody ext
 
 You can save your custom command settings to your machine globally for all workspaces or to a particular workspace. In this example, the setting was saved for all workspaces or projects. Below is a 60-second video demo showing how the custom command works for code generation.
 
-https://drive.google.com/file/d/1nIzT6vYA-0ZcyWtM96vZwJG1K6bcDaQY/view?usp=drivesdk
+<Video
+  source={{
+    mp4: 'blog/a_simpler_way_to_understand_legacy_code/custom-command-cody'
+  }}
+  loop={true}
+  caption="Creating custom commands with Cody"
+/>
 
 > Note that the quality of your custom commands' responses depends on which large language model (LLM) Cody uses. Cody uses Claude 3.5 Sonnet by default, but you can upgrade to Pro to access other models like GPT-4o and Gemini 1.5 Pro.
 
