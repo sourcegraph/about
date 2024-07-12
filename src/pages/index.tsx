@@ -105,7 +105,7 @@ const Home: FunctionComponent = () => {
                     <div className="relative mx-6 mb-8 flex h-auto gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:max-h-[500px] lg:h-[329px]">
                         <div className="text-pretty flex w-full flex-col py-16 pl-10">
                             <img
-                                className="h-[48px] w-[48px]"
+                                className="h-[40px] w-[40px]"
                                 src="/home/branded-icons/completions-brand-icon.svg"
                                 alt="Completions Brand Icon"
                             />
@@ -151,7 +151,7 @@ const Home: FunctionComponent = () => {
                         </div>
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             <img
-                                className="h-[48px] w-[48px]"
+                                className="h-[40px] w-[40px]"
                                 src="/home/branded-icons/commands-brand-icon.svg"
                                 alt="Completions Brand Icon"
                             />
@@ -263,9 +263,9 @@ const Home: FunctionComponent = () => {
                         {isDesktop && <img src="/home/code-graph-home.svg" alt="Multiline Completion" />}
                     </div>
                     <div className="mx-6 mb-8 flex flex-col gap-8 md:mx-0 md:flex-row md:gap-6">
-                        <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16 md:w-[566px]">
+                        <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             <img
-                                className="h-[48px] w-[48px]"
+                                className="h-[40px] w-[40px]"
                                 src="/home/branded-icons/Code-insights-icon.svg"
                                 alt="Completions Brand Icon"
                             />
@@ -276,7 +276,7 @@ const Home: FunctionComponent = () => {
                         </div>
                         <div className="flex w-full flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             <img
-                                className="h-[48px] w-[48px]"
+                                className="h-[40px] w-[40px]"
                                 src="/home/branded-icons/batch-changes-icon.svg"
                                 alt="Completions Brand Icon"
                             />
@@ -378,12 +378,12 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
 
     return (
         <ContentSection
-            className="relative mt-[-82px] flex items-center justify-center rounded-2xl bg-violet-700 md:mt-[-53px]"
+            className="relative mt-[-72px] flex items-center justify-center rounded-2xl bg-violet-700 md:mt-[-43px]"
             parentClassName="!py-0 !pb-16 !bg-gray-50"
         >
             <div className="mx-auto flex flex-col items-center justify-center px-3 text-center md:px-0">
                 <div className="mx-auto flex max-w-[456px] flex-col items-center pb-8 pt-8 sm:max-w-full md:w-[680px] md:pb-[26px] md:pt-10">
-                    <h1 className="mb-8 w-full text-center text-5xl text-gray-100 sm:text-6xl">
+                    <h1 className="mb-8 mt-10 w-full text-center text-5xl text-gray-100 sm:text-6xl">
                         Understand and write code blazingly fast
                     </h1>
                     <p className="mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-white opacity-60 md:mb-8">
