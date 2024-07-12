@@ -2,6 +2,8 @@
 title: "5 steps to automate repetitive tasks in software development"
 authors:
   - name: Desmond Obisi
+  - name: Ado Kukic
+    url: https://x.com/adocomplete
 publishDate: 2024-07-11T10:00-07:00
 description: "Automate repetitive tasks in software development and boost productivity with these 5 actionable steps."
 tags: [blog, guest-post]
