@@ -284,7 +284,11 @@ const NavItemMenu: React.FunctionComponent<
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                 >
-                    <Menu.Items className={classNames(menuClassName, 'mt-2 rounded-md lg:p-1')}>
+                    <Menu.Items
+                        className={classNames(menuClassName, 'mt-2 rounded-md lg:p-1', {
+                            '!pb-2': text === 'Solutions',
+                        })}
+                    >
                         <div
                             className={classNames(
                                 arrowClassName,
@@ -302,7 +306,7 @@ const NavItemMenu: React.FunctionComponent<
                                     key={index}
                                     className={classNames('hidden px-2  pb-3 lg:block', {
                                         'pt-4': index === 1,
-                                        'pt-7': index === 5,
+                                        'pt-8': index === 5,
                                     })}
                                 >
                                     <div className={sectionHeaderClassName}>
