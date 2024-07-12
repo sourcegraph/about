@@ -298,7 +298,13 @@ const NavItemMenu: React.FunctionComponent<
                                     <hr className={classNames('my-1', dividerClassName)} />
                                 </Menu.Item>
                             ) : 'sectionHeader' in link ? (
-                                <div key={index} className="hidden px-2 pt-5 pb-3 lg:block">
+                                <div
+                                    key={index}
+                                    className={classNames('hidden px-2  pb-3 lg:block', {
+                                        'pt-4': index === 1,
+                                        'pt-7': index === 5,
+                                    })}
+                                >
                                     <div className={sectionHeaderClassName}>
                                         {link.sectionHeader}
                                         <hr className={classNames(dividerClassName, 'mr-[6px] mt-1')} />
