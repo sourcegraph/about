@@ -194,7 +194,7 @@ const loadAllScripts = async (chiliPiper?: boolean, bookIt?: boolean): Promise<v
     if (chiliPiper && !window.ChiliPiper) {
         loadingScripts.push(loadScriptElement('chilipiper', chiliPiperScript))
     }
-    if (bookIt && !window.LDBookItV2) {
+    if (bookIt) {
         loadingScripts.push(loadScriptElement('bookIt', bookItScript))
     }
 
@@ -267,9 +267,13 @@ const onFormReady = (form: HTMLFormElement): void => {
      * session data and populate hidden form fields.
      */
     if (form) {
-        const getAllCookies: { [index: string]: string } = document.cookie
-            .split(';')
-            .reduce((key, string) => Object.assign(key, { [string.split('=')[0].trim()]: string.split('=')[1] }), {})
+        const getAllCookies: { [index: string]: string } = document.cookie.split(';').reduce(
+            (key, string) =>
+                Object.assign(key, {
+                    [string.split('=')[0].trim()]: string.split('=')[1],
+                }),
+            {}
+        )
         const { sourcegraphAnonymousUid, sourcegraphSourceUrl } = getAllCookies
         const landingSource: string = sessionStorage.getItem('landingSource') || ''
         const firstSourceURL: string =
@@ -326,6 +330,26 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     }, [form_submission_source, router.query.form_submission_source])
 
     const [formCreated, setFormCreated] = useState<boolean>(false)
+    const [messageListenerAdded, setMessageListenerAdded] = useState<boolean>(false)
+
+    const bookitInitialisation = (): void => {
+        let attempts = 0
+        const maxAttempts = 3
+
+        const intervalId = setInterval(() => {
+            if (window.LDBookItV2) {
+                window.LDBookItV2.initialize('00D3t000000hHKtEAM', 'New Prospect', 'ld_bookit_log_id', {
+                    autoSubmit: true,
+                })
+                window.LDBookItV2.setFormProvider('hubspot_embed')
+                clearInterval(intervalId)
+            } else if (attempts >= maxAttempts) {
+                console.error('LDBookItV2 did not become available within the maximum allowed attempts.')
+                clearInterval(intervalId)
+            }
+            attempts++
+        }, 4000)
+    }
 
     useEffect(() => {
         // Set the master form id if it's provided
@@ -337,6 +361,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
         // Load all scripts
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
         loadAllScripts(chiliPiper, bookIt)
+        bookitInitialisation()
 
         if (!formCreated) {
             createHubSpotForm({
@@ -354,10 +379,10 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
             const chiliPiperDomain = 'sourcegraph'
             const chiliPiperRouter = 'contact-sales'
 
-            if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
+            if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit' && !bookIt) {
                 const lead = data.data.reduce((object, item) => Object.assign(object, { [item.name]: item.value }), {})
 
-                // Prevent schdulder from opening twice
+                // Prevent schedulder from opening twice
                 const scheduler = document.querySelector('.chilipiper-popup')
 
                 if (!window.ChiliPiper || scheduler) {
@@ -376,19 +401,15 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
          * If ChiliPiper is enabled, load the script and add an event
          * listener to map the lead data to the ChiliPiper scheduler.
          */
-        if (chiliPiper) {
+        if (chiliPiper || (bookIt && !messageListenerAdded)) {
             window.addEventListener('message', handleMessage)
-        }
-
-        if (bookIt && !!window.LDBookItV2) {
-            window.LDBookItV2.initialize('00D3t000000hHKtEAM', 'New Prospect', 'ld_bookit_log_id', {
-                autoSubmit: true,
-            })
-            window.LDBookItV2.setFormProvider('hubspot_embed')
+            setMessageListenerAdded(true)
         }
 
         return () => {
-            window.removeEventListener('message', handleMessage)
+            if (messageListenerAdded) {
+                window.removeEventListener('message', handleMessage)
+            }
         }
     }, [formId, masterFormName, onFormSubmitted, inlineMessage, chiliPiper, formCreated, bookIt])
 
