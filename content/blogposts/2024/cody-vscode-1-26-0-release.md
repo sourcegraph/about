@@ -64,6 +64,10 @@ A while back we introduced an experimental feature that has become increasingly 
   caption="Cody generating a Git commit message"
 />
 
+To enable this feature, go to the Cody settings and enable the `commit message generation` setting.
+
+![Cody offline mode](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-26-release/image-007.png)
+
 ## Changelog
 
 See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.26.0) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
