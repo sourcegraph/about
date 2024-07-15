@@ -4,8 +4,8 @@ import classNames from 'classnames'
 
 import { HubSpotForm, Layout } from '../components'
 import { CodyChooseLlmDualTheme } from '../components/cody/dual-theme/CodyChooseLlmDualTheme'
-import { EnterpriseGradeSection } from '../components/Enterprise/EnterpriseGradeSection'
 import { HowCodyWorks } from '../components/cody/HowCodyWorks'
+import { EnterpriseGradeSection } from '../components/Enterprise/EnterpriseGradeSection'
 
 const Enterprise: FunctionComponent = () => {
     const formContainerRef = useRef<HTMLDivElement>(null)
@@ -23,7 +23,7 @@ const Enterprise: FunctionComponent = () => {
             meta={{
                 title: 'Cody | Enterprise Trial Offer',
                 description:
-                    "Get started with a trial of Cody Enterprise to try the AI coding assistant with your team.",
+                    'Get started with a trial of Cody Enterprise to try the AI coding assistant with your team.',
             }}
             className="bg-gray-50"
             hero={
