@@ -13,11 +13,11 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/gp-how-to-writ
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/gp-how-to-write-unit-tests/image_og.jpg
 ---
 
-Imagine being in the final stages of a critical project. Everything seems on track, but a bug surfaces, throwing the entire schedule into disorder. According to a study by the [IBM System Science Institute](https://www.researchgate.net/figure/IBM-System-Science-Institute-Relative-Cost-of-Fixing-Defects_fig1_255965523), the cost to fix a bug found after product release can be up to 6 times higher than if caught during the design phase. This scenario is all too common in software development.
+Imagine being in the final stages of a critical project. Everything seems on track, but a bug surfaces, throwing the entire schedule into chaos. According to a study by the [IBM System Science Institute](https://www.researchgate.net/figure/IBM-System-Science-Institute-Relative-Cost-of-Fixing-Defects_fig1_255965523), the cost to fix a bug found after product release can be up to 6 times higher than if caught during the design phase. This scenario is all too common in software development.
 
 Catching bugs late in the development process is frustrating and costly. As renowned software developer [Martin Fowler](https://www.martinfowler.com/) once said, "*Any fool can write code that a computer can understand. Good programmers write code that humans can understand.*" Unit testing ensures that code is functional, maintainable, and reliable.
 
-This guide on unit testing will explain why writing unit tests matters, discuss the different unit-test frameworks available, how unit-testing practices have evolved, and provide some pro tips for writing maintainable unit tests. It will also show how Cody can enhance the whole process.
+This guide on unit testing will explain why writing unit tests matters, discuss the different unit-test frameworks available, how unit-testing practices have evolved, and provide some pro tips for writing maintainable unit tests. It will also show how [Cody](https://sourcegraph.com/cody) can enhance the whole process.
 
 Now, let’s break down the details.
 
@@ -57,6 +57,7 @@ Let's look at an example of a **unit test in Golang** using the [testing package
         banks := []Bank{
             {Name: "Bank A", X: 1, Y: 1},
             {Name: "Bank B", X: 2, Y: 2},
+            {Name: "Bank C", X: 5, Y: 7},
         }
         expected := "Bank A"
     
@@ -250,7 +251,7 @@ Cody analyzes the function and automatically generates comprehensive unit test c
 
 ![Go program](https://storage.googleapis.com/sourcegraph-assets/blog/gp-how-to-write-unit-tests/image_005.png)
 
-1. **Static code analysis**: After the modification, Cody also performs static code analysis to detect any syntax errors, code style violations, and other potential issues without executing the code. This helps maintain code quality and consistency.
+1. **Code analysis**: After the modification, Cody can perform code analysis to detect any syntax errors, code style violations, and other potential issues without executing the code. This helps maintain code quality and consistency.
 
 ![Code analysis](https://storage.googleapis.com/sourcegraph-assets/blog/gp-how-to-write-unit-tests/image_006.png)
 
