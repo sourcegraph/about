@@ -113,7 +113,7 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
                         )}
                     >
                         {modelCardContent?.description ??
-                            'Cody, Sourcegraph’s AI coding assistant, lets you choose from multiple LLM options including Anthropic Claude 3.5 and OpenAI GPT-4p. You can even bring your own LLM key with Amazon Bedrock and Azure OpenAI.'}
+                            'Cody, Sourcegraph’s AI coding assistant, lets you choose from multiple LLM options including Anthropic Claude 3.5 and OpenAI GPT-4o. You can even bring your own LLM key with Amazon Bedrock and Azure OpenAI.'}
                     </p>
                 </div>
                 {!isMobile ? (
