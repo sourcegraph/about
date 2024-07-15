@@ -4,6 +4,12 @@ import { Tabs } from './Tabs'
 const events = {
     upcoming: [
         {
+            title: 'AI Dev Tools Night',
+            location: 'San Francisco, CA',
+            date: 'August 6, 2024',
+            link: 'https://lu.ma/vkszglsx',
+        },
+        {
             title: 'designFAO',
             location: 'Portugal',
             date: 'Oct 11, 2024',
