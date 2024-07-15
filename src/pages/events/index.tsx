@@ -33,7 +33,7 @@ const EventsPage: FunctionComponent = () => (
                 {/* left side */}
                 <div>
                     <h3 className="text-xl">
-                        June 24 <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Upcoming</span>
+                        August 6 <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Upcoming</span>
                     </h3>
 
                     <div className="grid gap-y-5 gap-x-10 xl:grid-cols-2">
@@ -61,10 +61,10 @@ const EventsPage: FunctionComponent = () => (
 
                             <p className="mt-4">🎤 Talks</p>
                             <ul>
-                                <li>6:05 - 6:30 pm: Dane Schneider · Plandex</li>
-                                <li>6:35 - 6:45 pm: Ado Kukic · Sourcegraph</li>
-                                <li>6:50 - 7:05 pm: YK Sugi · Sourcegraph</li>
-                                <li>7:10 - 7:25 pm: Beyang Liu · Sourcegraph</li>
+                                <li>
+                                    We'll have great speakers from Netlify, Google DeepMind, Nvidia, and more. Check
+                                    back this page for more info!
+                                </li>
                             </ul>
 
                             <p className="mt-4">🍕 Social hour</p>
@@ -79,9 +79,9 @@ const EventsPage: FunctionComponent = () => (
                 {/* right side */}
                 <iframe
                     title="AI Dev Tools Night"
-                    src="https://lu.ma/embed-checkout/evt-udGjOxvW1orjMr8"
+                    src="https://lu.ma/embed/event/evt-z8ZgBgQoiOE91JK/simple"
                     width="100%"
-                    height="1000"
+                    height="640"
                     className="rounded-xl"
                     allowFullScreen={false}
                     aria-hidden={false}
