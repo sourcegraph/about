@@ -4,7 +4,7 @@ authors:
   - name: Ekemini Samuel
   - name: Ado Kukic
     url: https://x.com/adocomplete
-publishDate: 2024-07-15T10:00-07:00
+publishDate: 2024-07-16T10:00-07:00
 description: "Discover the essentials of unit testing: key components, best practices, and the advantages of using frameworks and tools like Cody for efficient testing."
 tags: [blog, guest-post]
 slug: "how-to-write-unit-tests"
