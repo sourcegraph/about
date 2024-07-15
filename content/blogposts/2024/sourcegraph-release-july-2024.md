@@ -20,7 +20,7 @@ changelogItems:
   - description: "Fixed webhook events for Bitbucket Server plugin."
     url: 
     category: Code Search
-  - description: "Slack notifications are noew GA and the beta label has been removed from the UI."
+  - description: "Slack notifications are now GA and the beta label has been removed from the UI."
     url: 
     category: Code Monitors
   - description: "Logs in Code Monitors are now GA and the beta label has been removed from the UI."
