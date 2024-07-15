@@ -3,9 +3,9 @@ import { FunctionComponent, useEffect, useRef, useState } from 'react'
 import classNames from 'classnames'
 
 import { HubSpotForm, Layout } from '../components'
-import { HowCodyWorks } from '../components/cody/HowCodyWorks'
 import { CodyChooseLlmDualTheme } from '../components/cody/dual-theme/CodyChooseLlmDualTheme'
 import { EnterpriseGradeSection } from '../components/Enterprise/EnterpriseGradeSection'
+import { HowCodyWorks } from '../components/cody/HowCodyWorks'
 
 const Enterprise: FunctionComponent = () => {
     const formContainerRef = useRef<HTMLDivElement>(null)
