@@ -174,7 +174,7 @@ In simple words, by generating appropriate documentation based on your code, Cod
 
 1. **Save time:** Cody generates multiple lines of documentation based on the code, which frees up developers’ time to focus on more creative tasks in the development process.
 2. **Focus on what matters:** Since developers find it cumbersome to write documentation, Cody generates documentation content based on the code context, and the developer focuses on engineering.
-3. **Adherence** **to coding s****tandards:** Cody takes care of the convention and style guide when writing the documentation. In the case of Python, you can observe it following [PEP-8 Style Guide](https://peps.python.org/pep-0008/) for Python and [PEP-257 Docstring Conventions.](https://peps.python.org/pep-0257/)
+3. **Adherence to coding standards:** Cody takes care of the convention and style guide when writing the documentation. In the case of Python, you can observe it following [PEP-8 Style Guide](https://peps.python.org/pep-0008/) for Python and [PEP-257 Docstring Conventions.](https://peps.python.org/pep-0257/)
 4. **Provide real-time suggestions** for improving the quality of your code, whether for the documentation, code snippets, or the entire function.
 
 High-quality documentation is as essential as high-quality code. Cody can be used as a peer programming buddy, for both code and documentation generation.
