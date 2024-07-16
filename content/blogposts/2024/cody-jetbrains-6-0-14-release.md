@@ -24,7 +24,7 @@ Cody for JetBrains now includes new flagship models from both Anthropic and Goog
 * Gemini 1.5 Flash, a lightweight model built for speed and efficiency
 * Gemini 1.5 Pro, a larger model optimized for high performance across many tasks
 
-These models are available for chat and commands for _all_ Cody users, including Free, Pro, and Enterprise. 
+These models are available for chat and commands for _all_ Cody users, including Free, Pro, and Enterprise.
 
 ## ICYMI: Cody Free is now 10x better with no limit on completions
 
@@ -36,7 +36,7 @@ We recently [upgraded Cody’s free tier](https://sourcegraph.com/blog/making-co
 
 These changes are already live for all user. Cody Pro is still available for $9/month for devs wanting unlimited chat and commands plus access to the best flagship models.
 
-## Find Cody features using Search Everywhere 
+## Find Cody features using Search Everywhere
 
 You can now more easily find and discover Cody actions using the Search Everywhere feature in JetBrains.
 
@@ -51,7 +51,7 @@ Press <kbd>Shift</kbd> twice to open the Search Everywhere window. Then, type in
 
 When you highlight a code selection, Cody provides an inline hint — `Ctrl + Alt + ↵ to Edit` — next to your selection. This hint is now shown _below_ the last line of the selection to be less intrusive. It also isn’t shown when you only select a single line of code, which prevents it from appearing when you’re not intentionally editing a code selection (such as when you use Find/Replace and highlight multiple single-line selections).
 
-<Video 
+<Video
   source={{
     mp4: 'blog/cody-jetbrains-6-0-14-release/ui-hint-WebStorm'
   }}
@@ -81,7 +81,7 @@ You can now power Cody’s chat and commands off Ollama models running on your l
 
 You’ll need to install Ollama and download a chat model such as CodeGemma or Llama3. [The README provides full setup instructions](https://sourcegraph.com/github.com/sourcegraph/jetbrains/-/blob/README.md#use-ollama-models-for-chat--commands).
 
-<Video 
+<Video
   source={{
     mp4: 'blog/cody-jetbrains-6-0-14-release/ollama-jetbrains'
   }}
@@ -89,11 +89,9 @@ You’ll need to install Ollama and download a chat model such as CodeGemma or L
   title="Cody with Ollama"
 />
 
-
 ## Changelog
 
 See the [changelog](https://github.com/sourcegraph/jetbrains/releases/tag/v6.0.14) and [GitHub releases](https://github.com/sourcegraph/jetbrains/releases) for a complete list of changes.
-
 
 ## Thank you
 
