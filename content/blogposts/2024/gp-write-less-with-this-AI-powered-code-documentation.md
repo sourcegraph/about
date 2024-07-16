@@ -80,8 +80,10 @@ Well, how do you use Cody?
 
 Like code [auto-completion](https://sourcegraph.com/docs/cody/capabilities/autocomplete) in the coding process, Cody also automatically suggests documentation when your cursor is at the empty line or end of a statement or when you start writing a comment. Cody works with all programming languages, but this article focuses specifically on Python. When you write code and start with `#` to begin a comment, Cody can automatically provide intelligent comment suggestions for such repetitive tasks. The highlight indicates the generated content.
 
+```python
     import numpy as np
     X = np.linspace(-5, 5, 100)  #Generate 100 evenly spaced values between -5 and 5
+```
 
 If you hover over the generated comment, one of the key features of Cody is the **tool tip** that shows you are getting 1/1 (one of one) generated suggestions. If there are more suggestions, Windows/Linux users can press `Alt + ]` to move to the next suggestion, press `Tab` to accept the suggestion, or `Ctrl + RightArrow` to accept only a word. Similar shortcut keys using Option keys will be available for MacOS.
 
