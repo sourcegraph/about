@@ -1,12 +1,12 @@
 ---
-title: "Cody for JetBrains v6.0.14: "
+title: "Cody for JetBrains v6.0.14: Claude 3.5 Sonnet, Gemini 1.5, experimental Ollama support, and more"
 authors:
   - name: Justin Dorfman
     url: https://handbook.sourcegraph.com/team/#justin-dorfman
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
 publishDate: 2024-07-16T10:00-01:00
-description: ""
+description: "The Cody plugin has new models from Anthropic and Google, better feature discoverability, updated UI hints, experimental Ollama support, and more."
 tags: [blog]
 slug: "cody-jetbrains-6-0-14-release"
 published: true
@@ -16,7 +16,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrai
 
 [Cody for JetBrains v6.0.14](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) is now available! This plugin version has new models from Anthropic and Google, better feature discoverability, updated UI hints, experimental Ollama support, and more.
 
-## New models: Claude 3.5 Sonnet + Gemini 1.5 Flash and Pro
+## New models: Claude 3.5 Sonnet + Gemini 1.5 Flash & Pro
 
 Cody for JetBrains now includes new flagship models from both Anthropic and Google, including:
 
@@ -34,13 +34,13 @@ We recently [upgraded Cody’s free tier](https://sourcegraph.com/blog/making-co
 * **Unlimited code completions**: We’re scrapping the limit on code completions. Every tier of Cody, including Cody Free, now gets unlimited AI-generated autocomplete
 * **10x more chats and commands**: You now get 200 chats and commands every month, up from 20
 
-These changes are already live for all users, including those with the JetBrains plugin. Cody Pro is still available for $9/month for users wanting unlimited chat and commands plus access to the best flagship models.
+These changes are already live for all user. Cody Pro is still available for $9/month for devs wanting unlimited chat and commands plus access to the best flagship models.
 
 ## Find Cody features using Search Everywhere 
 
-You can now more easily find and discover Cody actions using the Search Everywhere feature of JetBrains.
+You can now more easily find and discover Cody actions using the Search Everywhere feature in JetBrains.
 
-Press <kbd>Shift</kbd> twice to open the Search Everywhere window. Then, you can type in the <kbd>Cody:</kbd> prefix to get a list of all supported Cody actions.
+Press <kbd>Shift</kbd> twice to open the Search Everywhere window. Then, type in the <kbd>Cody:</kbd> prefix to get a list of all supported Cody actions.
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains-6-0-14-release/search-everywhere-cody.png"
@@ -48,7 +48,7 @@ Press <kbd>Shift</kbd> twice to open the Search Everywhere window. Then, you can
 
 ## Updates to Cody’s UI hints
 
-When you highlight a code selection, Cody provides an inline hint — `Ctrl + Alt + ↵ to Edit` — next to your selection. This hint is now shown _below** **_the last line of the selection to be less intrusive. It also isn’t shown when you only select a single line of code, which prevents it from appearing when you’re not intentionally editing a code selection (or when you use Find/Replace and highlight multiple single-line selections).
+When you highlight a code selection, Cody provides an inline hint — `Ctrl + Alt + ↵ to Edit` — next to your selection. This hint is now shown _below_ the last line of the selection to be less intrusive. It also isn’t shown when you only select a single line of code, which prevents it from appearing when you’re not intentionally editing a code selection (such as when you use Find/Replace and highlight multiple single-line selections).
 
 <Video 
   source={{
@@ -66,7 +66,7 @@ You can also turn off this UI hint in the Cody settings.
 
 ## Better notifications when hitting rate limits
 
-We understand that hitting rate limits can be frustrating for free users, particularly because reaching the limit isn’t always obvious. For clarity, we’ve added notifications in the status bar to indicate when you’ve hit the chat and command rate limit.
+We understand that hitting rate limits can be frustrating when reaching the limit isn’t made obvious. For clarity, we’ve added notifications in the status bar to indicate when you’ve hit the chat and command rate limit.
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains-6-0-14-release/rate-limit-notification.png"
@@ -74,7 +74,7 @@ We understand that hitting rate limits can be frustrating for free users, partic
 
 ## 🧪 Experimental: Ollama model support
 
-You can now power Cody’s chat and commands off Ollama models running on your local machine. This lets you chat without sending messages over the internet to an LLM provider so that you can use Cody offline—even on an airplane!
+You can now power Cody’s chat and commands off Ollama models running on your local machine. This lets you chat without sending messages over the internet to an LLM provider so that you can use Cody offline. You can code with an AI coding assistant wherever you are, even on an airplane!
 
 You’ll need to install Ollama and download a chat model such as CodeGemma or Llama3. [The README provides full setup instructions](https://sourcegraph.com/github.com/sourcegraph/jetbrains/-/blob/README.md#use-ollama-models-for-chat--commands).
 
