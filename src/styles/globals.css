@@ -41,7 +41,7 @@
      }
  
      code {
-         @apply break-words font-mono text-base font-medium tracking-tightest;
+         @apply break-words font-mono text-base font-medium tracking-normal;
      }
  
      kbd {
