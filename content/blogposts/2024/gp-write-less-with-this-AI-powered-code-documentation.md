@@ -66,7 +66,7 @@ For Visual Studio Code IDE integration, you can get the Cody extension from the 
 
 When you install Visual Studio for the first time, Cody is usually the last item in the sidebar, where you’ll need to sign in. Here, you should choose the same login method you used when you created an account.
 
-![](https://storage.googleapis.com/sourcegraph-assets/blog/gp-write-less-with-this-ai-powered-code-documentation/image_002.png)
+![Cody for VS Code](https://storage.googleapis.com/sourcegraph-assets/blog/gp-write-less-with-this-ai-powered-code-documentation/image_002.png)
 
 Cody is now integrated into your development workflow, and you can start using it right away.
 
