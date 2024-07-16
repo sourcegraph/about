@@ -44,6 +44,7 @@ Press <kbd>Shift</kbd> twice to open the Search Everywhere window. Then, type in
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains-6-0-14-release/search-everywhere-cody.png"
+  alt="Search Everywhere for Cody actions"
 />
 
 ## Updates to Cody’s UI hints
@@ -62,6 +63,7 @@ You can also turn off this UI hint in the Cody settings.
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains-6-0-14-release/ui-hint.png"
+  alt="Settings for UI hints"
 />
 
 ## Better notifications when hitting rate limits
@@ -70,6 +72,7 @@ We understand that hitting rate limits can be frustrating when reaching the limi
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains-6-0-14-release/rate-limit-notification.png"
+  alt="Rate limit notification in the status bar"
 />
 
 ## 🧪 Experimental: Ollama model support
