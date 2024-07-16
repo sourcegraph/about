@@ -35,9 +35,9 @@ In addition, clear internal documentation definitely improves code readability. 
 Documentation includes a wide range of texts, including user manuals and technical guides, tailored for developers, testers, and end-users. Documentation can be categorized into several types:
 
 - **User documentation**: Written by technical writers, this includes manuals, quick-start guides, tutorials, and frequently asked questions (FAQs) that provide guidance on effectively using the software or product for the end-users.
-- **Technical documentation****:** This includes architectural diagrams, database schemas, system design documents, API reference documents, and other technical documents that help provide detailed insights into the software’s architecture, design, specifications, and implementation for developers and system administrators.
+- **Technical documentation:** This includes architectural diagrams, database schemas, system design documents, API reference documents, and other technical documents that help provide detailed insights into the software’s architecture, design, specifications, and implementation for developers and system administrators.
 - **In-code documentation**: Typically includes comments in the code, function, and method descriptions, as well as documentation strings (termed “**DocStrings**” in Python programming). Several tools generate HTML documentation content from these comments and DocStrings.
-- **API documentation****:** ****These documents state an API's form, function, and features. They are typically written by engineers who build the APIs, and the content is consumed by other engineers who implement them.
+- **API documentation:** These documents state an API's form, function, and features. They are typically written by engineers who build the APIs, and the content is consumed by other engineers who implement them.
 
 Note that in certain cases where the primary users are developers, the user documentation doubles as the technical documentation and vice-versa.
 
@@ -171,8 +171,8 @@ Cody’s chat allows you to add files and symbols as context in your messages; y
 In simple words, by generating appropriate documentation based on your code, Cody can:
 
 1. **Save time:** Cody generates multiple lines of documentation based on the code, which frees up developers’ time to focus on more creative tasks in the development process.
-2. **Focus on what matters****:** Since developers find it cumbersome to write documentation, Cody generates documentation content based on the code context, and the developer focuses on engineering.
-3. **Adherence** **to coding s****tandards****:** Cody takes care of the convention and style guide when writing the documentation. In the case of Python, you can observe it following [PEP-8 Style Guide](https://peps.python.org/pep-0008/) for Python and [PEP-257 Docstring Conventions.](https://peps.python.org/pep-0257/)
+2. **Focus on what matters:** Since developers find it cumbersome to write documentation, Cody generates documentation content based on the code context, and the developer focuses on engineering.
+3. **Adherence** **to coding s****tandards:** Cody takes care of the convention and style guide when writing the documentation. In the case of Python, you can observe it following [PEP-8 Style Guide](https://peps.python.org/pep-0008/) for Python and [PEP-257 Docstring Conventions.](https://peps.python.org/pep-0257/)
 4. **Provide real-time suggestions** for improving the quality of your code, whether for the documentation, code snippets, or the entire function.
 
 High-quality documentation is as essential as high-quality code. Cody can be used as a peer programming buddy, for both code and documentation generation.
