@@ -194,7 +194,7 @@ Here are some bonus tips to get the most out of Cody:
 - **Alt + C:** Open Cody Command Menu to trigger other commands
 - You can also use prompt engineering techniques to get better results. You can easily open the prompt and write natural language command prompts, guiding the AI to perform according to your prompt, such as providing more context and expected outcomes.
 - Create a custom command for other repeated tasks you’d like to automate in your coding based on custom prompts.
-  - Open the **Command Menu** and select **Custom Commands** ****> **New Custom Command**.
+  - Open the **Command Menu** and select **Custom Commands > New Custom Command**.
 
 ## Wrapping up
 
