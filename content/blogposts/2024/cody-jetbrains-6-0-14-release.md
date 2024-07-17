@@ -75,7 +75,7 @@ We understand that hitting rate limits can be frustrating when reaching the limi
   alt="Rate limit notification in the status bar"
 />
 
-## 🧪 Experimental: Ollama model support for Free & Pro
+## 🧪 Experimental: Ollama model support
 
 You can now power Cody’s chat and commands off Ollama models running on your local machine. This lets you chat without sending messages over the internet to an LLM provider so that you can use Cody offline. You can code with an AI coding assistant wherever you are, even on an airplane!
 
