@@ -75,11 +75,11 @@ We understand that hitting rate limits can be frustrating when reaching the limi
   alt="Rate limit notification in the status bar"
 />
 
-## 🧪 Experimental: Ollama model support
+## 🧪 Experimental: Ollama model support for Free & Pro
 
 You can now power Cody’s chat and commands off Ollama models running on your local machine. This lets you chat without sending messages over the internet to an LLM provider so that you can use Cody offline. You can code with an AI coding assistant wherever you are, even on an airplane!
 
-You’ll need to install Ollama and download a chat model such as CodeGemma or Llama3. [The README provides full setup instructions](https://sourcegraph.com/github.com/sourcegraph/jetbrains/-/blob/README.md#use-ollama-models-for-chat--commands).
+You’ll need to install Ollama and download a chat model such as CodeGemma or Llama3. [The README provides full setup instructions](https://sourcegraph.com/github.com/sourcegraph/jetbrains/-/blob/README.md#use-ollama-models-for-chat--commands). Ollama is currently supported on the Free and Pro tiers.
 
 <Video
   source={{
