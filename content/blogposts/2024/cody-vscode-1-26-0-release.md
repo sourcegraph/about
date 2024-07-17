@@ -8,7 +8,7 @@ authors:
   - name: Ado Kukic
     url: https://x.com/adocomplete
 publishDate: 2024-07-10T10:00-01:00
-description: "We introduced a new offline mode for using Cody + OllamaClaude 3.5 Sonnet is the new default for commands and edits in Cody."
+description: "We introduced a new offline mode for using Cody + Ollama, and Claude 3.5 Sonnet is the new default for commands and edits in Cody."
 tags: [blog]
 slug: 'cody-vscode-1-26-0-release'
 published: true
