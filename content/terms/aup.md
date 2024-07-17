@@ -3,7 +3,7 @@ layout: markdown
 title: Acceptable Use Policy
 ---
 
-Last updated:  November 30, 2023
+Last updated:  July 17, 2024
 
 This Acceptable Use Policy applies to your use of our [Services](https://about.sourcegraph.com/terms). By using our Services, you agree to the terms of this Acceptable Use Policy. 
 
@@ -14,5 +14,6 @@ This Acceptable Use Policy applies to your use of our [Services](https://about.s
     3. Illegal content 
     4. Sexually explicit content
     5. Violent, hateful, or threatening content
-    6. Automated determination of legally protected issues or legal rights, including housing decisions, asylum or immigration decisions, financial eligibility, or medical advice or results. 
+    6. Automated determination of legally protected issues or legal rights, including housing decisions, asylum or immigration decisions, financial eligibility, or medical advice or results
+    7. Purposes other than the generation, review, or analysis of software code  
 3. **Partner Use Restrictions.** If You use Sourcegraph in conjunction with another product, you must also follow that product’s AUP. Anthropic’s AUP is available at https://console.anthropic.com/legal/aup, and Starcoder’s AUP is available at https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement.
