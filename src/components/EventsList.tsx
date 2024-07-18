@@ -10,6 +10,12 @@ const events = {
             link: 'https://lu.ma/vkszglsx',
         },
         {
+            title: 'Your Cody questions answered live!',
+            location: 'StreamYard',
+            date: 'August 8, 2024',
+            link: 'https://streamyard.com/watch/EbR6CjSPJEHa',
+        },
+        {
             title: 'designFAO',
             location: 'Portugal',
             date: 'Oct 11, 2024',
