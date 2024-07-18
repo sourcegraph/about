@@ -1,5 +1,6 @@
-Before you merge this PR, please make sure that you have:
+Before you merge this PR, please review the following:
 
+## Blog post
 - [ ] Checked title case (This is correct. This Is Not Correct)
 - [ ] Updated publishDate
 - [ ] Updated authors
@@ -14,3 +15,7 @@ Before you merge this PR, please make sure that you have:
 - [ ] Formatted text for readability (headings, bullet points, etc.)
 - [ ] Added image alt text
 - [ ] Ran [Markdown linter](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+
+## Other
+
+- [ ] This is not a blog post
