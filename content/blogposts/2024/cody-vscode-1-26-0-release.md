@@ -70,7 +70,7 @@ To enable this feature, go to the Cody settings and enable the `commit message g
 
 <Badge text="Can't find it?" size="small" color="vermillion" />
 
-Experimental features only show up in pre-release versions but users can still turn them on manually by adding the setting in their user `settings.json` file:
+Experimental features only show up in pre-release versions, but users can still turn them on manually by adding the setting in their user `settings.json` file:
 
 `"cody.experimental.commitMessage": true,`
 
