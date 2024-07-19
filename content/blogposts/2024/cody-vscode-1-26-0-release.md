@@ -68,6 +68,12 @@ To enable this feature, go to the Cody settings and enable the `commit message g
 
 ![Enable Git commit message generation in Cody](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-26-release/image-007.png)
 
+<Badge text="Can't find it?" size="small" color="vermillion" />
+
+Experimental features only show up in pre-release versions, but users can still turn them on manually by adding the setting in their user `settings.json` file:
+
+`"cody.experimental.commitMessage": true,`
+
 ## Changelog
 
 See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.26.0) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
