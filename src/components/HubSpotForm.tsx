@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useState } from 'react'
+import { FunctionComponent, useEffect, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 import { useRouter } from 'next/router'
@@ -331,24 +331,32 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
 
     const [formCreated, setFormCreated] = useState<boolean>(false)
     const [messageListenerAdded, setMessageListenerAdded] = useState<boolean>(false)
+    const intervalIdRef = useRef<number | null>(null)
 
     const bookitInitialisation = (): void => {
         let attempts = 0
-        const maxAttempts = 3
+        const maxAttempts = 10
 
-        const intervalId = setInterval(() => {
+        intervalIdRef.current = window.setInterval(() => {
             if (window.LDBookItV2) {
                 window.LDBookItV2.initialize('00D3t000000hHKtEAM', 'New Prospect', 'ld_bookit_log_id', {
                     autoSubmit: true,
                 })
                 window.LDBookItV2.setFormProvider('hubspot_embed')
-                clearInterval(intervalId)
+
+                if (intervalIdRef.current !== null) {
+                    clearInterval(intervalIdRef.current)
+                    intervalIdRef.current = null
+                }
             } else if (attempts >= maxAttempts) {
                 console.error('LDBookItV2 did not become available within the maximum allowed attempts.')
-                clearInterval(intervalId)
+                if (intervalIdRef.current !== null) {
+                    clearInterval(intervalIdRef.current)
+                    intervalIdRef.current = null
+                }
             }
             attempts++
-        }, 4000)
+        }, 2000)
     }
 
     useEffect(() => {
@@ -366,7 +374,10 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
         if (!formCreated) {
             createHubSpotForm({
                 formId: formId || masterFormId,
-                onFormReady: trySettingFormTarget ?? onFormReady,
+                onFormReady: form => {
+                    trySettingFormTarget(form)
+                    onFormReady(form)
+                },
                 onFormSubmitted,
                 inlineMessage,
             })
@@ -409,6 +420,9 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
         return () => {
             if (messageListenerAdded) {
                 window.removeEventListener('message', handleMessage)
+            }
+            if (intervalIdRef.current !== null) {
+                clearInterval(intervalIdRef.current)
             }
         }
     }, [formId, masterFormName, onFormSubmitted, inlineMessage, chiliPiper, formCreated, bookIt])
