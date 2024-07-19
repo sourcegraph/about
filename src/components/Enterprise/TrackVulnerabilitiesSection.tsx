@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import { ContentSection } from '..'
+import ReadCaseStudyLink from '../ReadCaseStudyLink'
 
 export const TrackVulnerabilitiesSection: FunctionComponent = () => (
     <ContentSection
@@ -24,7 +25,12 @@ export const TrackVulnerabilitiesSection: FunctionComponent = () => (
                 than having to say, 'Well, boss, I think we got it all.'”
             </p>
             <p className="mb-0 leading-6 tracking-[-0.25px] text-gray-700">Jon Kohler</p>
-            <p className="mb-0 text-sm leading-[19.88px]">Nutanix, after responding to the Log4J vulnerability</p>
+            <p className="mb-16 text-sm leading-[19.88px]">Nutanix, after responding to the Log4J vulnerability</p>
+            <ReadCaseStudyLink
+                parentClassName="text-right"
+                linkClassName="btn btn-link btn-link-icon p-0 text-right font-semibold !-tracking-[0.25px] md:mx-0 md:text-left"
+                href="https://sourcegraph.com/case-studies/nutanix-fixed-log4j-with-sourcegraph"
+            />
         </div>
     </ContentSection>
 )

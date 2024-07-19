@@ -1,10 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
-import Link from 'next/link'
-
 import { ContentSection, InfiniteCarousel, Layout } from '../../components'
 import { ContactUsCta } from '../../components/cta/ContactUsCta'
+import ReadCaseStudyLink from '../../components/ReadCaseStudyLink'
 import { AutomationSection } from '../../components/solutions/AutomationSection'
 import { IntroCard } from '../../components/solutions/IntroCard'
 import { SearchDescriptionSection } from '../../components/solutions/SearchDescriptionSection'
@@ -90,13 +88,10 @@ const TestimonialCard: FunctionComponent = () => (
                     <span className="text-[14px] font-normal leading-[19.88px] text-white">
                         Sr. Manager and DevX Leader
                     </span>
-                    <Link
+                    <ReadCaseStudyLink
+                        linkClassName="btn-link-dark btn-link-icon flex gap-2.5 font-semibold leading-[22.4px] text-white"
                         href="/case-studies/qualtrics-speeds-up-unit-tests-and-code-understanding-with-cody"
-                        className="btn-link-dark btn-link-icon flex gap-2.5 font-semibold leading-[22.4px] text-white"
-                    >
-                        Read the case study
-                        <ChevronRightIcon className="link-icon" />
-                    </Link>
+                    />
                 </div>
             </div>
         </div>
