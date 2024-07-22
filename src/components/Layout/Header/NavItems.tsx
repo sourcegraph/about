@@ -312,14 +312,14 @@ const NavItemMenu: React.FunctionComponent<
                             ) : 'sectionHeader' in link ? (
                                 <div
                                     key={index}
-                                    className={classNames('hidden px-2  pb-3 lg:block', {
+                                    className={classNames('hidden px-4 pb-1 lg:block', {
                                         'pt-4': index === 1,
-                                        'pt-8': index === 5,
+                                        'pt-5': index === 5,
                                     })}
                                 >
                                     <div className={sectionHeaderClassName}>
                                         {link.sectionHeader}
-                                        <hr className={classNames(dividerClassName, 'mr-[6px] mt-1')} />
+                                        <hr className={classNames(dividerClassName, 'mr-[6px]')} />
                                     </div>
                                 </div>
                             ) : (
@@ -327,7 +327,7 @@ const NavItemMenu: React.FunctionComponent<
                                     {({ active }) => (
                                         <Link
                                             className={classNames(
-                                                'relative z-10 block rounded-lg px-6 py-4 lg:px-2 lg:py-1',
+                                                'relative z-10 block rounded-md px-6 py-4 lg:px-4 lg:py-2',
                                                 menuItemClassName,
                                                 active && menuItemActiveClassName
                                             )}
@@ -339,7 +339,7 @@ const NavItemMenu: React.FunctionComponent<
                                                 className={`${
                                                     link.iconPosition === 'top'
                                                         ? 'flex flex-col lg:py-3'
-                                                        : 'flex  items-baseline gap-3'
+                                                        : 'flex items-baseline gap-3'
                                                 }`}
                                             >
                                                 {link.icon && (
@@ -362,7 +362,7 @@ const NavItemMenu: React.FunctionComponent<
                                                 <div>
                                                     <p
                                                         className={classNames(
-                                                            'mb-0  text-sm font-medium tracking-tight',
+                                                            'mb-0 text-sm font-medium tracking-tight',
                                                             menuItemClassName
                                                         )}
                                                     >
