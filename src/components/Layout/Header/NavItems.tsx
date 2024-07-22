@@ -12,6 +12,7 @@ import {
     Calendar,
     UsersRound,
     TestTube,
+    HandshakeIcon,
 } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -145,6 +146,13 @@ const NAV_ITEMS: NavItem[] = [
                 href: '/community',
                 iconPosition: 'left',
                 icon: <UsersRound className="h-[14px] w-[14px]" />,
+            },
+            {
+                text: 'Customer Stories',
+                subText: 'Success stories, case studies',
+                href: '/case-studies',
+                iconPosition: 'left',
+                icon: <HandshakeIcon className="h-[14px] w-[14px]" />,
             },
             {
                 text: 'Sourcegraph Labs',

@@ -2,6 +2,7 @@ import React, { FC, memo, useEffect, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 import { AnimationPlaybackControls, useAnimate, useInView } from 'framer-motion'
+import Link from 'next/link'
 
 const TICKER_DIRECTION_LEFT = -1
 
@@ -117,16 +118,22 @@ const TickerAnimation: FC<InfiniteCarouselProps> = memo((props: InfiniteCarousel
 
 TickerAnimation.displayName = 'TickerAnimation'
 
-export const InfiniteCarousel: FC<{ images: { src: string; className?: string }[]; duration?: number }> = ({
-    images,
-    duration,
-}) => {
+export const InfiniteCarousel: FC<{
+    images: { src: string; className?: string; url?: string }[]
+    duration?: number
+}> = ({ images, duration }) => {
     const duplicatedImages = [...images, ...images, ...images, ...images, ...images, ...images, ...images, ...images] // Duplicate images for seamless looping
     return (
         <TickerAnimation duration={duration}>
             {duplicatedImages.map((img, index) => (
                 <div key={index} className={classNames('flex items-center justify-center', img.className)}>
-                    <img src={img.src} alt={`slide-${index}`} className="h-auto w-full" />
+                    {img.url ? (
+                        <Link href={img.url}>
+                            <img src={img.src} alt={`slide-${index}`} className="h-auto w-full" />
+                        </Link>
+                    ) : (
+                        <img src={img.src} alt={`slide-${index}`} className="h-auto w-full" />
+                    )}{' '}
                 </div>
             ))}
         </TickerAnimation>
