@@ -418,7 +418,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Bring your own key with Azure OpenAI and Amazon Bedrock',
     },
     BringYourLLM: {
-        label: 'Bring your own LLM',
+        label: 'Self-hosted LLM',
     },
     codeIntelEntLLMchoices: {
         label: 'Flexible LLM choices',
