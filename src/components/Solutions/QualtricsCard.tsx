@@ -1,7 +1,5 @@
-import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
-import Link from 'next/link'
-
 import { ContentSection } from '../ContentSection'
+import ReadCaseStudyLink from '../ReadCaseStudyLink'
 
 const QualtricsLogo = (): JSX.Element => (
     <svg xmlns="http://www.w3.org/2000/svg" width="172" height="55" viewBox="0 0 172 55" fill="#0F111A">
@@ -40,15 +38,10 @@ export const QualtricsCard = (): JSX.Element => (
                 </div>
             </div>
         </div>
-        <div className="flex max-h-[24px] whitespace-nowrap md:self-end md:px-0 lg:px-10">
-            <Link
-                href="https://sourcegraph.com/case-studies/qualtrics-speeds-up-unit-tests-and-code-understanding-with-cody"
-                title="Case study"
-                className="btn btn-link btn-link-icon p-0"
-            >
-                Read the case study
-                <ChevronRightIcon className="link-icon" />
-            </Link>
-        </div>
+        <ReadCaseStudyLink
+            parentClassName="flex max-h-[24px] whitespace-nowrap md:self-end md:px-0 lg:px-10"
+            linkClassName="btn btn-link btn-link-icon p-0"
+            href="https://sourcegraph.com/case-studies/qualtrics-speeds-up-unit-tests-and-code-understanding-with-cody"
+        />
     </ContentSection>
 )

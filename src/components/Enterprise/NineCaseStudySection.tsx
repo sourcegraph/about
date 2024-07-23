@@ -1,9 +1,7 @@
 import { FunctionComponent } from 'react'
 
-import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
-import Link from 'next/link'
-
 import { ContentSection } from '..'
+import ReadCaseStudyLink from '../ReadCaseStudyLink'
 
 export const NineCaseStudySection: FunctionComponent = () => (
     <ContentSection
@@ -26,16 +24,10 @@ export const NineCaseStudySection: FunctionComponent = () => (
                 <p className="mb-0 font-sans text-[75px] font-semibold leading-[93.75px]">1,200 hours</p>
                 <h3 className="text-gray-200">Estimated annual time savings</h3>
             </div>
-            <div>
-                <Link
-                    href="https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow"
-                    title="Case study"
-                    className="btn btn-link-dark btn-link-icon p-0 text-left  font-semibold !-tracking-[0.25px] md:text-center "
-                >
-                    Read the case study
-                    <ChevronRightIcon className="link-icon" />
-                </Link>
-            </div>
+            <ReadCaseStudyLink
+                linkClassName="btn btn-link-dark btn-link-icon p-0 text-left font-semibold !-tracking-[0.25px] md:text-center"
+                href="https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow"
+            />
         </div>
     </ContentSection>
 )

@@ -1,9 +1,7 @@
 import { FunctionComponent } from 'react'
 
-import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
-import Link from 'next/link'
-
 import { ContentSection } from '..'
+import ReadCaseStudyLink from '../ReadCaseStudyLink'
 
 export const NutanixCaseStudySection: FunctionComponent = () => (
     <ContentSection
@@ -33,16 +31,11 @@ export const NutanixCaseStudySection: FunctionComponent = () => (
                     Nutanix was able to find every instance of Log4j vulnerabilities in their large codebase and ship
                     codebase-wide fixes in less than a week
                 </p>
-                <div className="text-right">
-                    <Link
-                        href="https://sourcegraph.com/case-studies/nutanix-fixed-log4j-with-sourcegraph"
-                        title="Case study"
-                        className="btn btn-link btn-link-icon p-0 text-right font-semibold !-tracking-[0.25px] md:mx-0 md:text-left"
-                    >
-                        Read the case study
-                        <ChevronRightIcon className="link-icon" />
-                    </Link>
-                </div>
+                <ReadCaseStudyLink
+                    parentClassName="text-right"
+                    linkClassName="btn btn-link btn-link-icon p-0 text-right font-semibold !-tracking-[0.25px] md:mx-0 md:text-left"
+                    href="https://sourcegraph.com/case-studies/nutanix-fixed-log4j-with-sourcegraph"
+                />
             </div>
         </div>
     </ContentSection>

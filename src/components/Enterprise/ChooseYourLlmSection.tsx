@@ -5,6 +5,7 @@ import classNames from 'classnames'
 import { ContentSection } from '..'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
+import ReadCaseStudyLink from '../ReadCaseStudyLink'
 
 import { EnterpriseIcon } from './EnterpriseIcon'
 
@@ -72,18 +73,27 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
         >
             <div
                 className={classNames(
-                    'rounded-2xl border-1 border-gray-200 bg-violet-700 !py-16 px-6 text-white md:px-6 lg:px-20',
+                    'relative rounded-2xl border-1 border-gray-200 bg-violet-700 !py-16 px-6 text-white md:px-6 lg:px-20',
                     authorCardClassName ?? 'text-white',
                     reverseQuote && 'flex h-full flex-col-reverse items-start !py-0 md:h-auto md:min-h-[554px]'
                 )}
             >
-                <div className={classNames(reverseQuote && 'pt-[118px]')}>
-                    <p className="mb-0 leading-6 tracking-[-0.25px] opacity-80">
-                        {article?.author ?? 'Satish Surapaneni'}
-                    </p>
-                    <p className="mb-0 text-sm leading-[19.88px]">
-                        {article?.role ?? 'Senior Engineering Manager, F5'}
-                    </p>
+                <div className="flex w-full flex-col">
+                    <div className={classNames(reverseQuote && 'w-full pt-[118px]')}>
+                        <p className="mb-0 leading-6 tracking-[-0.25px] opacity-80">
+                            {article?.author ?? 'Satish Surapaneni'}
+                        </p>
+                        <p className="mb-0 text-sm leading-[19.88px]">
+                            {article?.role ?? 'Senior Engineering Manager, F5'}
+                        </p>
+                    </div>
+                    {reverseQuote && (
+                        <ReadCaseStudyLink
+                            parentClassName="flex whitespace-nowrap px-10 md:self-end md:px-0"
+                            linkClassName="btn btn-link-dark btn-link-icon p-0"
+                            href="https://sourcegraph.com/case-studies/cody-leidos-maximizing-efficiency-heightened-security-ai-race"
+                        />
+                    )}
                 </div>
                 <p
                     className={classNames('mb-0 pt-6 text-[35px] font-normal leading-[43.75px] md:max-w-[468px]', {
@@ -95,6 +105,13 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
                         `“Before Sourcegraph, each of our teams was siloed. Developers could understand their own codebase,
                     but it was difficult for them to see and understand other team members’ code.“`}
                 </p>
+                {!reverseQuote && (
+                    <ReadCaseStudyLink
+                        parentClassName="flex justify-end whitespace-nowrap pt-4 px-10 md:self-end md:px-0"
+                        linkClassName="btn btn-link-dark btn-link-icon p-0"
+                        href=" https://sourcegraph.com/case-studies/f5-streamlines-collaboration-globally"
+                    />
+                )}
             </div>
             <div
                 className={classNames(

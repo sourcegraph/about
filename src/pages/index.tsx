@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 import { ContentSection, Layout, InfiniteCarousel } from '../components'
 import { Icon } from '../components/icon'
+import ReadCaseStudyLink from '../components/ReadCaseStudyLink'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
@@ -306,16 +307,11 @@ const Home: FunctionComponent = () => {
                                 build the right thing.
                             </p>
                         </div>
-                        <div className="flex whitespace-nowrap px-10 md:self-end md:px-0">
-                            <Link
-                                href="https://sourcegraph.com/case-studies/lyft-monolith-to-microservices"
-                                title="Case study"
-                                className="btn btn-link-dark btn-link-icon p-0"
-                            >
-                                Read the case study
-                                <ChevronRightIcon className="link-icon" />
-                            </Link>
-                        </div>
+                        <ReadCaseStudyLink
+                            parentClassName="flex whitespace-nowrap px-10 md:self-end md:px-0"
+                            linkClassName="btn btn-link-dark btn-link-icon p-0"
+                            href="https://sourcegraph.com/case-studies/lyft-monolith-to-microservices"
+                        />
                     </div>
                     <div className="mx-6 grid grid-cols-1 gap-6 py-16 md:mx-0 md:grid-cols-2 md:py-24">
                         <div className="hover:cta-free-cody relative overflow-hidden rounded-2xl border-1 border-gray-200 bg-white">

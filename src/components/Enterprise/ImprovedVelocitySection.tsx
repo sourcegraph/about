@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import { ContentSection } from '../ContentSection'
+import ReadCaseStudyLink from '../ReadCaseStudyLink'
 
 export const ImprovedVelocitySection: FunctionComponent = () => (
     <ContentSection
@@ -22,11 +23,16 @@ export const ImprovedVelocitySection: FunctionComponent = () => (
         <div className="h-auto rounded-2xl border-1 border-gray-200 bg-white px-6 py-16  md:max-w-[574px] md:px-20">
             <p className="mb-0 leading-6 tracking-[-0.25px] text-gray-700">Satish Surapaneni</p>
             <p className="mb-0 text-sm leading-[19.88px]">Senior Engineering Manager, F5</p>
-            <p className="mb-0 pt-3 text-[35px] font-normal leading-[43.75px] -tracking-[2px]">
+            <p className="mb-16 pt-3 text-[35px] font-normal leading-[43.75px] -tracking-[2px]">
                 "We are developing software faster than ever, with aggressive schedules, and across boundaries. Things
                 that used to be worked out in a closed room now need to be done while teams are spread out across the
                 globe.”
             </p>
+            <ReadCaseStudyLink
+                parentClassName="text-right"
+                linkClassName="btn btn-link btn-link-icon p-0 text-right font-semibold !-tracking-[0.25px] md:mx-0 md:text-left"
+                href="https://sourcegraph.com/case-studies/f5-streamlines-collaboration-globally"
+            />
         </div>
     </ContentSection>
 )
