@@ -1,12 +1,10 @@
 ---
-title: "Cody for VS Code v1.26: Introducing the unified Cody sidebar"
+title: "Cody for VS Code v1.28: Introducing the unified Cody sidebar"
 authors:
   - name: Alex Isken
     url: https://x.com/AlexanderIsken
   - name: Justin Dorfman
     url: https://x.com/jdorfman
-  - name: Ado Kukic
-    url: https://x.com/adocomplete
 publishDate: 2024-07-24T10:00-01:00
 description: "Cody has a fresh new sidebar design, which will soon become the unified design for all Cody interfaces. The new sidebar is available today for Free and Pro users and is coming soon for Enterprise users."
 tags: [blog]
@@ -19,7 +17,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 
 Building software is complex, and a good AI coding assistant needs to fit seamlessly into your development workflow without adding to that complexity. It should always be available when you need it and be intuitive to use to reduce your everyday toil.
 
-To accomplish this with Cody, we believe it should provide a familiar experience wherever you use it: in any number of IDEs or on the web. We’re rolling out a new Cody sidebar experience using WebViews for VS Code, available today for Free and Pro users (and coming soon for Enterprise users).
+To accomplish this with Cody, it should provide a familiar experience wherever you use it: in any number of IDEs or on the web. We’re rolling out a new Cody sidebar experience using WebViews for VS Code, and it is available today for Free and Pro users (and coming soon for Enterprise users).
 
 <Video
   source={{
@@ -35,7 +33,7 @@ The new sidebar UX updates include:
 * **The side panel now has dedicated tabs**. You can toggle between chat, history, commands, Cody settings, and account settings. These tabs replace the dropdown sections of the prior sidebar design.
 * **Commands and chat help tips appear in the primary sidebar below chat**. All functions are now quickly available at a glance.
 
-This update will soon become the default interface everywhere Cody exists, unifying the experience and making it faster for us to ship Cody to new IDEs. It is available today in VS Code for Cody Free and Cody Pro users, and it will be available in VS Code for Cody Enterprise users, plus all JetBrains users, in the coming weeks.
+This update will soon become the default interface everywhere Cody exists, unifying the experience and making it faster for us to ship Cody to new IDEs. It is available today in VS Code for Free and Pro users and will be available in VS Code for Enterprise users, plus all JetBrains users, in the coming weeks.
 
 The new interface is also available now in [Cody for Web](https://sourcegraph.com/cody/chat), where you can chat about public code in your browser.
 
