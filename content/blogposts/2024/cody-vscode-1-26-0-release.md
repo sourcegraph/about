@@ -12,8 +12,8 @@ description: "We introduced a new offline mode for using Cody + Ollama, and Clau
 tags: [blog]
 slug: 'cody-vscode-1-26-0-release'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-26-release/cody-vscode-1.26-og-image.jpg
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-26-release/cody-vscode-1.26-og-image.jpg
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-26-release/cody-vscode-1.26-v2-og-image.jpg
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-26-release/cody-vscode-1.26-v2-og-image.jpg
 ---
 ### Claude 3.5 Sonnet is now the default model for commands and code edits
 
