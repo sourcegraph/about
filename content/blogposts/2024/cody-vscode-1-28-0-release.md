@@ -10,8 +10,8 @@ description: "Cody has a fresh new sidebar design, which will soon become the un
 tags: [blog]
 slug: 'cody-vscode-1-28-0-release'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-26-release/cody-vscode-1.28-og-image.jpg
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-26-release/cody-vscode-1.28-og-image.jpg
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-28-release/cody-vscode-1.28-og-image.jpg
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-28-release/cody-vscode-1.28-og-image.jpg
 ---
 ### Introducing a new, unified Cody experience
 
