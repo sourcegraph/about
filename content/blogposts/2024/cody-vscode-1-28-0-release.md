@@ -17,25 +17,22 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 
 Building software is complex, and a good AI coding assistant needs to fit seamlessly into your development workflow without adding to that complexity. It should always be available when you need it and be intuitive to use to reduce your everyday toil.
 
-To accomplish this with Cody, it should provide a familiar experience wherever you use it: in any number of IDEs or on the web. We’re rolling out a new Cody sidebar experience using WebViews for VS Code, and it is available today for Free and Pro users (and coming soon for Enterprise users).
+This means that Cody needs to provide a familiar experience wherever you use it: in any number of IDEs or on the web. We’re rolling out a new Cody sidebar experience using WebViews for VS Code, and it is available today for Free and Pro users (and coming soon for Enterprise users).
 
-<Video
-  source={{
-    mp4: 'blog/cody-vscode-1-26-release/cody-git-commit-message'
-  }}
-  loop={true}
-  caption="??"
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-28-release/new-cody-sidebar.png"
+  alt="The new Cody VS Code sidebar design"
 />
 
 The new sidebar UX updates include:
 
-* **Chat lives directly in the sidebar**. You can start chatting with Cody anytime from the primary sidebar. You can still open a dedicated chat window with the “Move Chat to Editor Panel” button.
-* **The side panel now has dedicated tabs**. You can toggle between chat, history, commands, Cody settings, and account settings. These tabs replace the dropdown sections of the prior sidebar design.
+* **Chat lives directly in the sidebar**. You can start chatting with Cody anytime from the primary sidebar. You can open a dedicated chat window with the “Move Chat to Editor Panel” button.
+* **The side panel now has dedicated tabs**. Toggle between chat, history, commands, Cody settings, and account settings. These tabs replace the dropdown sections of the prior sidebar design.
 * **Commands and chat help tips appear in the primary sidebar below chat**. All functions are now quickly available at a glance.
 
-This update will soon become the default interface everywhere Cody exists, unifying the experience and making it faster for us to ship Cody to new IDEs. It is available today in VS Code for Free and Pro users and will be available in VS Code for Enterprise users, plus all JetBrains users, in the coming weeks.
+This update will soon become the default interface everywhere Cody exists, unifying the experience and making it faster for us to bring Cody to new IDEs. It is available today in VS Code for Free and Pro users and will be available in VS Code for Enterprise users, plus all JetBrains users, in the coming weeks.
 
-The new interface is also available now in [Cody for Web](https://sourcegraph.com/cody/chat), where you can chat about public code in your browser.
+The new interface is also available in [Cody for Web](https://sourcegraph.com/cody/chat), where you can chat about public code in your browser.
 
 ## Changelog
 
