@@ -20,7 +20,7 @@ Building software is complex, and a good AI coding assistant needs to fit seamle
 This means that Cody needs to provide a familiar experience wherever you use it: in any number of IDEs or on the web. We’re rolling out a new Cody sidebar experience using WebViews for VS Code, and it is available today for Free and Pro users (and coming soon for Enterprise users).
 
 <Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-28-release/new-cody-sidebar.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-28-release/new-cody-sidebar-2.png"
   alt="The new Cody VS Code sidebar design"
 />
 
