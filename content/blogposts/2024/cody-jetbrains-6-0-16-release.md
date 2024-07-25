@@ -62,7 +62,7 @@ The displayed file paths for remote context items are now formatted for easier r
 
 ### Cmd+Enter correctly triggers code edits
 
-The `Cmd + ↵ shortcut` for running the Edit Code command was not working for some users. This bug is now fixed.
+The `Cmd + ↵` shortcut for running the Edit Code command was not working for some users. This bug is now fixed.
 
 ### "Cody is disabled on this file" message
 
