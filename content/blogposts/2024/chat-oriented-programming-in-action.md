@@ -129,7 +129,7 @@ With chat-oriented programming, the AI coding assistant is your rubber duck. Ins
 
 In the pre-CHOP era of coding when you would get a build or compile time error you would manually review the output, navigate to the troublesome line of code, and identify what the issue was. Some languages and frameworks, like Rust, for example, have really detailed error logs, while others leave a cryptic trail of breadcrumbs for you to piece together making debugging all that much harder.
 
-{Embed this tweet: <https://x.com/jdrumgoole/status/1813954619736785222>)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Why does calling an SQLAlchemy function with a missing database result in 8 pages of errors before it finally gets its act together to bleat sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at &quot;localhost&quot; (127.0.0.1), port 5432 failed: FATAL:… <a href="https://t.co/LisFSUyjzc">pic.twitter.com/LisFSUyjzc</a></p>&mdash; Joe Drumgoole (@jdrumgoole) <a href="https://twitter.com/jdrumgoole/status/1813954619736785222?ref_src=twsrc%5Etfw">July 18, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 With Cody, you can side-step a lot of the manual debugging by highlighting the output and asking Cody to explain what the issue is in plain English. Let's see it in action. Going back to our example of adding a new model, let's say I omitted the additional required properties for the model and then I tried to run the application. I would get the following error message: 
 
