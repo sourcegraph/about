@@ -49,6 +49,15 @@ The post-edit UI now shows the keyboard shortcuts for each action.
 
 Previously, Cody displayed an Edit Code hint (`Ctrl + Alt + ↵ to Edit`) inline with any code you had highlighted. We heard your feedback that this shortcut was often distracting, so we’ve removed it.
 
+## Context files are formatted for readability
+
+The displayed file paths for remote context items are now formatted for easier readability. This update applies to Cody Enterprise users who are using remote repository context.
+
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains-6-0-16-release/old-vs-new-jb.png"
+  alt="The old and new file path format for remote context items"
+/>
+
 ## Bug fixes
 
 ### Cmd+Enter correctly triggers code edits
