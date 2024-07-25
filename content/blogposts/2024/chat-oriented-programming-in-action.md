@@ -14,7 +14,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-t
 
 What we now call "programming" was once called "high-level programming" in the era of Dijkstra and Fortran and mainframes were programmed mostly in low-level assembly. The dawn of "high-level" programming languages like C (which today many would consider "low-level") and then interpreted languages like Python and JavaScript changed the very foundation of what it meant to be a programmer.
 
-With the advent of LLMs, it seems we are on the cusp of another foundational shift. The new way of programming is something that Steve Yegge has called [CHOP](https://sourcegraph.com/blog/the-death-of-the-junior-developer), or chat-oriented programming, and can be classified as coding via iterative prompt refinement. We are currently in an in-between state, where classical "line-smithing"-style coding is still highly relevant and important. But we've also noticed an emerging set of behaviors and patterns, in both our own experience and in talking with our customers, that seem to fall into this new paradigm. We'll cover some of these new behaviors and how they relate to the general areas of the software creation lifecycle.
+With the advent of LLMs, it seems we are on the cusp of another foundational shift. The new way of programming is something that Steve Yegge has called [CHOP](https://sourcegraph.com/blog/the-death-of-the-junior-developer), or chat-oriented programming, and can be classified as *coding via iterative prompt refinement*. We are currently in an in-between state, where classical "line-smithing"-style coding is still highly relevant and important. But we've also noticed an emerging set of behaviors and patterns, in both our own experience and in talking with our customers, that seem to fall into this new paradigm. We'll cover some of these new behaviors and how they relate to the general areas of the software creation lifecycle.
 
 I have been writing code professionally for over 15 years. I have seen many trends come and go, coding methodologies take off and be replaced, and coding paradigms evolve. In this post, I want to share my take on chat-oriented programming, compare and contrast it to how I wrote code in the past, and discuss how I use AI coding assistants like [Cody](https://sourcegraph.com/cody) to help me write, understand, and ship code faster.
 
@@ -22,17 +22,17 @@ I have been writing code professionally for over 15 years. I have seen many tren
 
 Before AI tools like ChatGPT and specialized coding assistants like Cody hit the scene, writing code required a familiar workflow that looked something like this:
 
--   Understand the issue: read the GitHub, Jira, or Linear issue, requirements doc, or other information to understand what change you need to make to a codebase.
+-   **Understand the issue**: read the GitHub, Jira, or Linear issue, requirements doc, or other information to understand what change you need to make to a codebase.
 
--   Understand the codebase: set up your working environment, review the documentation, look through relevant files in the codebase, and familiarize yourself with the files you'll be working on.
+-   **Understand the codebase**: set up your working environment, review the documentation, look through relevant files in the codebase, and familiarize yourself with the files you'll be working on.
 
--   Research a solution: there are times when you know exactly what you need to do and can jump into a file and make the changes, but more often than not you'll hit up Google or Stack Overflow to research libraries, docs, and discussions relevant to the issue at hand. You'll then piece together this information and make it actionable for the problem you are trying to solve.
+-   **Research a solution**: there are times when you know exactly what you need to do and can jump into a file and make the changes, but more often than not you'll hit up Google or Stack Overflow to research libraries, docs, and discussions relevant to the issue at hand. You'll then piece together this information and make it actionable for the problem you are trying to solve.
 
--   Write and test the code: finally you get to actually write some code. Open up the relevant files and make edits or create new ones and implement the functionality. Test the functionality to make sure it behaves the way you expect it. Once the main functionality is in, write additional code to handle errors and edge cases, write unit tests, and integrate with the greater system.
+-   **Write and test the code**: finally you get to actually write some code. Open up the relevant files and make edits or create new ones and implement the functionality. Test the functionality to make sure it behaves the way you expect it. Once the main functionality is in, write additional code to handle errors and edge cases, write unit tests, and integrate with the greater system.
 
--   Code review: make the PR and get it reviewed. At this stage, your manager or peer will review the code and make sure it aligns with the rest of the codebase conventions, functions as expected, and is high quality. At this stage, you may refactor the code based on feedback and finally you're ready to merge.
+-   **Code review**: make the PR and get it reviewed. At this stage, your manager or peer will review the code and make sure it aligns with the rest of the codebase conventions, functions as expected, and is high quality. At this stage, you may refactor the code based on feedback and finally you're ready to merge.
 
--   Ship it: once all the checks, both automated and manual, are good to go, squash and merge that PR, ship the feature and repeat the process for the next one.
+-   **Ship it**: once all the checks, both automated and manual, are good to go, squash and merge that PR, ship the feature and repeat the process for the next one.
 
 In the chat-oriented programming era, this coding workflow is changing dramatically, both inside and outside the editor. One interesting thing about the above workflow is that only one of the six steps is inside the code editor, even though we often think of editors as the primary application for developing software.
 
@@ -82,7 +82,7 @@ How Eloquent ORM manages SQL relationships:
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/chop-in-action/cody-web-laravel.png)
 
-And anything else you desire. [Cody on the Web](https://sourcegraph.com/cody/chat) behaves much like the IDE extension but allows you to ask questions about any open source repository that Sourcegraph has indexed on its public search instance located at <https://sourcegraph.com/search>. Give it a try today.
+And anything else you desire. [Cody on the Web](https://sourcegraph.com/cody/chat) behaves much like the IDE extension but allows you to ask questions about any open source repository that Sourcegraph has indexed on its public search instance located at [https://sourcegraph.com/search](https://sourcegraph.com/search). Give it a try today.
 
 ## Writing Code
 
@@ -128,8 +128,6 @@ In the traditional way of writing code, [rubber duck debugging](https://en.wikip
 With chat-oriented programming, the AI coding assistant is your rubber duck. Instead of being an inanimate object that only listens to your woes, it can provide valuable feedback. Cody is an expert on your codebase and can analyze error messages, suggest potential causes all the way down to the line number, and in many cases even generate the fix for you.
 
 In the pre-CHOP era of coding when you would get a build or compile time error you would manually review the output, navigate to the troublesome line of code, and identify what the issue was. Some languages and frameworks, like Rust, for example, have really detailed error logs, while others leave a cryptic trail of breadcrumbs for you to piece together making debugging all that much harder.
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Why does calling an SQLAlchemy function with a missing database result in 8 pages of errors before it finally gets its act together to bleat sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at &quot;localhost&quot; (127.0.0.1), port 5432 failed: FATAL:… <a href="https://t.co/LisFSUyjzc">pic.twitter.com/LisFSUyjzc</a></p>&mdash; Joe Drumgoole (@jdrumgoole) <a href="https://twitter.com/jdrumgoole/status/1813954619736785222?ref_src=twsrc%5Etfw">July 18, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 With Cody, you can side-step a lot of the manual debugging by highlighting the output and asking Cody to explain what the issue is in plain English. Let's see it in action. Going back to our example of adding a new model, let's say I omitted the additional required properties for the model and then I tried to run the application. I would get the following error message: 
 
