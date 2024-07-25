@@ -1,6 +1,6 @@
 ---
 title: "Chat-Oriented Programming (CHOP) in action"
-publishDate: 2024-04-16T19:00-07:00
+publishDate: 2024-07-26T19:00-07:00
 authors:
   - name: Ado Kukic
     url: https://twitter.com/adocomplete
