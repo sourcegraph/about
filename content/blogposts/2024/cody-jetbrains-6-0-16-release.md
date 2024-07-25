@@ -14,7 +14,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains-6-0-16-release/cody-jetbrains-6.0.16-og-image.jpg
 --- 
 
-[Cody for JetBrains v6.0.14](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) is now available! This release includes quality-of-life updates to how shortcuts are displayed in the plugin and several bugfixes.
+[Cody for JetBrains v6.0.16](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) is now available! This release includes quality-of-life updates to how shortcuts are displayed in the plugin and several bugfixes.
 
 ## Updates to shortcut hints
 
