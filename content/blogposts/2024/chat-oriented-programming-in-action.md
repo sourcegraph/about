@@ -7,7 +7,7 @@ authors:
 tags: [blog]
 slug: 'chat-oriented-programming-in-action'
 published: true 
-description: ""
+description: "Learn how chat-oriented programming (CHOP) is helping developers understand, write, debug, and maintain code."
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-llm-litmus-test/llm-litmus-test-og-image.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-llm-litmus-test/llm-litmus-test-og-image.png
 ---
