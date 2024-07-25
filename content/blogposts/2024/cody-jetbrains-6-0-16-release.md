@@ -55,7 +55,7 @@ Previously, Cody displayed an Edit Code hint (`Ctrl + Alt + ↵ to Edit`) inline
 
 The `Cmd + ↵ shortcut` for running the Edit Code command was not working for some users. This bug is now fixed.
 
-### "Cody is disalbed on this file" messaged
+### "Cody is disabled on this file" messaged
 
 The message “Cody is disabled on this file” appeared in error for some users. This message pertains to Context Filters, a Cody Enterprise feature, and it should only appear when an admin has restricted files. This bug is now fixed.
 
