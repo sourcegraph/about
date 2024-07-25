@@ -50,7 +50,7 @@ Let's see this in practice. Recently, Anthropic announced the release of [Claude
 
 Pre-CHOP, my workflow would result in a ton of manual searching in the codebase to find where we define and add new models. Eventually, I would land on this page where we define our models: 
 
-![Sourcegraph Code Search](/code-search.png)
+![Sourcegraph Code Search](https://storage.googleapis.com/sourcegraph-assets/blog/chop-in-action/code-search.png)
 
 From here, I would need to dive deeper into the individual options and understand what ModelUsage.Chat meant or whether I should add the expandedContextWindow for the new model, and so on. I could spend hours navigating through the codebase and reaching out to my colleagues on Slack for further context before feeling confident enough to write a single line of code.
 
@@ -58,15 +58,15 @@ Let's see how we can accomplish this with Cody and chat-oriented programming. Wi
 
 We can ask general questions like "what is this codebase about?" or "how do I set up my working environment for this codebase" and Cody will generally give you a really good answer. But this information can usually be found in the README.md file of a project. Let's ask something a little more complex - such as how would I add a new LLM model to our Cody VS Code extension.
 
-![Cody Chat](/ask-cody.png)
+![Cody Chat](https://storage.googleapis.com/sourcegraph-assets/blog/chop-in-action/ask-cody.png)
 
 Now you may be asking yourself "how did Cody know all these things?" The answer is [context](https://sourcegraph.com/blog/anatomy-of-a-coding-assistant). Each time we ask Cody a question it looks through relevant code files and includes them with our query to the LLM. We can see which files and lines were used for context by clicking the Context dropdown.
 
-![Cody Context](/cody-context.png)
+![Cody Context](https://storage.googleapis.com/sourcegraph-assets/blog/chop-in-action/cody-context.png)
 
 Any questions we have about our codebase we can just ask Cody and get personalized answers based on our codebase. We can easily ask follow-up questions to learn more. For example, I noticed that the usage property is an array that supports Chat and Edit, but I want to know what this actually means. I can just ask a follow-up question to find out:
 
-![Cody Chat follow up questions](/ask-cody-follow-up.png)
+![Cody Chat follow up questions](https://storage.googleapis.com/sourcegraph-assets/blog/chop-in-action/ask-cody-follow-up.png)
 
 This comes in handy when we want to really develop a deep understanding of our codebase before making changes. Instead of reading the actual code or bothering our engineering counterparts, we can just ask Cody.
 
@@ -76,11 +76,11 @@ Within the chat-oriented programming paradigm, understanding of our codebase bec
 
 Chatting with your codebase in your IDE is powerful, but what if you could chat with any open source repository in the world? You could learn how and where Next.js implements its file-based routing:
 
-![](/cody-web-nextjs.png)
+![](https://storage.googleapis.com/sourcegraph-assets/blog/chop-in-action/cody-web-nextjs.png)
 
 How Eloquent ORM manages SQL relationships:
 
-![](/cody-web-laravel.png)
+![](https://storage.googleapis.com/sourcegraph-assets/blog/chop-in-action/cody-web-laravel.png)
 
 And anything else you desire. [Cody on the Web](https://sourcegraph.com/cody/chat) behaves much like the IDE extension but allows you to ask questions about any open source repository that Sourcegraph has indexed on its public search instance located at <https://sourcegraph.com/search>. Give it a try today.
 
@@ -133,7 +133,7 @@ In the pre-CHOP era of coding when you would get a build or compile time error y
 
 With Cody, you can side-step a lot of the manual debugging by highlighting the output and asking Cody to explain what the issue is in plain English. Let's see it in action. Going back to our example of adding a new model, let's say I omitted the additional required properties for the model and then I tried to run the application. I would get the following error message: 
 
-![VS Code error message](/error-message.png)
+![VS Code error message](https://storage.googleapis.com/sourcegraph-assets/blog/chop-in-action/error-message.png)
 
 Pre-CHOP, I would likely try to navigate the problematic file and try to debug it myself. If I couldn't find the solution, I'd copy and paste this error message into Google, find a StackOverflow discussion on a similar error, and retrace my steps to debug it. With CHOP, I can just ask Cody to explain the issue at hand to me. Once I have the explanation, I can ask follow-up questions to better understand the problem or even ask Cody to fix the issue for me.
 
@@ -155,11 +155,11 @@ With chat-oriented programming, you have a powerful tool that can help keep you 
 
 Let's see how we can accomplish this with Cody. In the example below, I will show how I can use the Find Code Smells command on a file to identify potential improvements. Even a great programmer like myself can improve ;).
 
-![Cody Code Smells Command in action](/cody-code-smells-command.png)
+![Cody Code Smells Command in action](https://storage.googleapis.com/sourcegraph-assets/blog/chop-in-action/cody-code-smells-command.png)
 
 Overall, it's not bad, but there's definitely some room for improvement. Let's tackle issue number one. I will simply follow up in the Cody chat window and ask Cody how I can improve this code to tackle the highlighted issue.
 
-![Cody code smell improvement suggestion](/code-smell-improvement.png)
+![Cody code smell improvement suggestion](https://storage.googleapis.com/sourcegraph-assets/blog/chop-in-action/code-smell-improvement.png)
 
 With this improvement, my codebase became that much more maintainable!
 
