@@ -52,11 +52,11 @@ Pre-CHOP, my workflow would result in a ton of manual searching in the codebase 
 
 ![Sourcegraph Code Search](https://storage.googleapis.com/sourcegraph-assets/blog/chop-in-action/code-search.png)
 
-From here, I would need to dive deeper into the individual options and understand what ModelUsage.Chat meant or whether I should add the expandedContextWindow for the new model, and so on. I could spend hours navigating through the codebase and reaching out to my colleagues on Slack for further context before feeling confident enough to write a single line of code.
+From here, I would need to dive deeper into the individual options and understand what `ModelUsage.Chat` meant or whether I should add the `expandedContextWindow` for the new model, and so on. I could spend hours navigating through the codebase and reaching out to my colleagues on Slack for further context before feeling confident enough to write a single line of code.
 
 Let's see how we can accomplish this with Cody and chat-oriented programming. With the Cody extension installed in your IDE of choice, you can chat with your codebase. When you ask a question, Cody fetches the most relevant files and provides them as context alongside your query to your LLM of choice.
 
-We can ask general questions like "what is this codebase about?" or "how do I set up my working environment for this codebase" and Cody will generally give you a really good answer. But this information can usually be found in the README.md file of a project. Let's ask something a little more complex - such as how would I add a new LLM model to our Cody VS Code extension.
+We can ask general questions like "what is this codebase about?" or "how do I set up my working environment for this codebase" and Cody will generally give you a really good answer. But this information can usually be found in the `README.md` file of a project. Let's ask something a little more complex - such as how would I add a new LLM model to our Cody VS Code extension.
 
 ![Cody Chat](https://storage.googleapis.com/sourcegraph-assets/blog/chop-in-action/ask-cody.png)
 
@@ -103,7 +103,7 @@ Anthropic recently released Claude 3.5 Sonnet and with it a feature called [Arti
   caption="Using Cody to insert code from Chat"
 />
 
-But Cody has another way to do CHOP. With the Edit Code command (CMD+K) a developer can insert new code or edit existing code directly in the file they are working in. Let's go back to our sourcegraph/cody repo and add Claude 3.5 sonnet to our models list.
+But Cody has another way to do CHOP. With the Edit Code command (CMD+K) a developer can insert new code or edit existing code directly in the file they are working in. Let's go back to our `sourcegraph/cody` repo and add Claude 3.5 sonnet to our models list.
 
 <Video
   source={{
@@ -113,7 +113,7 @@ But Cody has another way to do CHOP. With the Edit Code command (CMD+K) a develo
   caption="Using Cody to insert and edit code"
 />
 
-This type of CHOP workflow allows you to focus on the what instead of figuring out the how. You ask the AI coding assistant to complete tasks, it does it, you review the changes and accept them, or if the generated code isn't what you want, ask for a revision. In this case you are essentially acting as the code reviewer while the AI coding assistant is active as the programmer.
+This type of CHOP workflow allows you to focus on the **what** instead of figuring out the **how**. You ask the AI coding assistant to complete tasks, it does it, you review the changes and accept them, or if the generated code isn't what you want, ask for a revision. In this case you are essentially acting as the code reviewer while the AI coding assistant is active as the programmer.
 
 I am personally a huge fan of this approach to coding, and it has become my default way of writing code. It allows me to focus on the end result rather than the line-by-line implementation logic. With Cody's edit command, you can insert brand-new code or make edits to existing functions and files.
 
