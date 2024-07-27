@@ -1,6 +1,6 @@
 ---
 title: "Chat-oriented programming (CHOP) in action"
-publishDate: 2024-07-26T19:00-07:00
+publishDate: 2024-07-27T19:00-07:00
 authors:
   - name: Ado Kukic
     url: https://twitter.com/adocomplete
@@ -8,13 +8,13 @@ tags: [blog]
 slug: 'chat-oriented-programming-in-action'
 published: true 
 description: "Learn how chat-oriented programming (CHOP) is helping developers understand, write, debug, and maintain code."
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-llm-litmus-test/llm-litmus-test-og-image.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-the-llm-litmus-test/llm-litmus-test-og-image.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/starship-blog-hero-1.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/starship-blog-hero-1.png
 ---
 
-What we now call "programming" was once called "high-level programming" in the era of Dijkstra and Fortran and mainframes were programmed mostly in low-level assembly. The dawn of "high-level" programming languages like C (which today many would consider "low-level") and then interpreted languages like Python and JavaScript changed the very foundation of what it meant to be a programmer.
+What we now call "programming" was once called "high-level programming" in the era of Fortran and mainframes programmed mostly in low-level assembly. The dawn of "high-level" programming languages like C (which today many would consider "low-level") and then interpreted languages like Python and JavaScript changed the very foundation of what it meant to be a programmer.
 
-With the advent of LLMs, it seems we are on the cusp of another foundational shift. The new way of programming is something that Steve Yegge has called [CHOP](https://sourcegraph.com/blog/the-death-of-the-junior-developer), or chat-oriented programming, and can be classified as *coding via iterative prompt refinement*. We are currently in an in-between state, where classical "line-smithing"-style coding is still highly relevant and important. But we've also noticed an emerging set of behaviors and patterns, in both our own experience and in talking with our customers, that seem to fall into this new paradigm. We'll cover some of these new behaviors and how they relate to the general areas of the software creation lifecycle.
+With the advent of LLMs, it seems we are on the cusp of another foundational shift. The new way of programming is something that Steve Yegge has called [CHOP](https://sourcegraph.com/blog/the-death-of-the-junior-developer), or chat-oriented programming, and can be classified as *coding via iterative prompt refinement*. We are currently in an in-between state, where the classical "line-smithing" way of coding is still highly relevant and important. But there seems to be an emerging set of behaviors and patterns that seem to fall into a new paradigm. We'll cover some of these new behaviors and how they relate to the general areas of the software creation lifecycle.
 
 I have been writing code professionally for over 15 years. I have seen many trends come and go, coding methodologies take off and be replaced, and coding paradigms evolve. In this post, I want to share my take on chat-oriented programming, compare and contrast it to how I wrote code in the past, and discuss how I use AI coding assistants like [Cody](https://sourcegraph.com/cody) to help me write, understand, and ship code faster.
 
@@ -92,7 +92,7 @@ With CHOP, writing code is more like having a collaborative painting session wit
 
 Test-Driven Development (TDD) is a popular software development approach where test cases are created before code is written. Chat-oriented programming can greatly improve TDD by allowing developers to define both the test cases and implementation logic in natural language. Rather than focusing on line-by-line logic, developers can focus on the end result and let the AI coding assistant handle writing the code. The tests then act as a necessary "contract of correctness" for the AI-generated code.
 
-Anthropic recently released Claude 3.5 Sonnet and with it a feature called [Artifiacts](https://www.anthropic.com/news/claude-3-5-sonnet) that can serve as a great introduction to chat-oriented programming. Cody handles CHOP in multiple ways. We saw in the previous section on understanding a codebase that the Cody chat box can generate snippets of code. Some developers may prefer this approach. Ask Cody a question in the chat box, review the output, and if they're happy with it, insert it into their code files.
+Anthropic recently released Claude 3.5 Sonnet and with it a feature called [Artifacts](https://www.anthropic.com/news/claude-3-5-sonnet) that can serve as a great introduction to chat-oriented programming. Cody handles CHOP in multiple ways. We saw in the previous section on understanding a codebase that the Cody chat box can generate snippets of code. Some developers may prefer this approach. Ask Cody a question in the chat box, review the output, and if they're happy with it, insert it into their code files.
 
 
 <Video
