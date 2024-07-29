@@ -21,7 +21,7 @@ We’re excited to share [the news](https://techcrunch.com/2021/07/13/sourcegrap
 
 The massive shift to digital-first over the last year means that every company is now a tech company—but that also means every company is now drowning in code. The pressure for companies to scale and innovate quickly is at an all-time high, and everyone is looking at developers to move the needle.
 
-The bigger the company, the more code inevitably piles up in every company and project. The most successful software teams actually have the biggest pains because success leads to bigger budgets and expanded scope (leading to more devs, code, and complexity). Devs need agency to choose the best tools to tackle the growing problem of [Big Code](/press-release/big-code-survey-2020/).
+The bigger the company, the more code inevitably piles up in every company and project. The most successful software teams actually have the biggest pains because success leads to bigger budgets and expanded scope (leading to more devs, code, and complexity). Devs need agency to choose the best tools to tackle the growing problem of [Big Code](blog/big-code-survey-2020).
 
 We’re in the earliest days of Universal Code Search and in many ways it feels like the Google Search era of 1995—if you’ve never used it before, you don’t know you need it. But once you do, you can’t imagine doing your job (or life) without it. In the same way, Universal Code Search is a revelation for devs. It makes their lives easier and jobs more rewarding. But there’s still so much more value we can bring to dev teams and so many more devs who have yet to use Sourcegraph.
 
