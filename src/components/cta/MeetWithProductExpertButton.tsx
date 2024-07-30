@@ -15,6 +15,7 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
     requestInfo?: boolean
     children?: string
     buttonClassName?: string
+    customClassName?: string
     handleEventSubmission?: (eventName: string, initiateOpenModal: boolean) => void | CaptureResult
     id?: string
 }> = ({
@@ -25,6 +26,7 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
     chevron = false,
     size = 'md',
     buttonClassName = `${dark ? 'btn-link-dark' : 'btn-link'}`,
+    customClassName,
     requestInfo = false,
     children = requestInfo ? 'Contact sales' : 'Talk to an engineer',
 }) => (
@@ -33,10 +35,11 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
         id={id}
         href={requestInfo ? '/contact/request-info' : '/demo'}
         className={classNames(
-            'btn btn-link inline-flex items-center whitespace-nowrap',
-            buttonClassName,
+            'inline-flex items-center whitespace-nowrap',
+            !customClassName && buttonClassName,
             chevron ? 'btn-link-icon' : '',
-            size === 'lg' && 'py-4'
+            size === 'lg' && 'py-4',
+            customClassName
         )}
         title={children}
         data-button-style={buttonStyle.outline}

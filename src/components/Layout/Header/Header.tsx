@@ -213,7 +213,7 @@ const HeaderContent: FunctionComponent<
                 title="Get started with Cody"
                 className={classNames(
                     'btn lg:btn-sm order-3 flex w-full justify-center py-3 px-5 lg:order-2 lg:!px-4',
-                    dark ? 'btn-secondary-dark' : 'btn-secondary '
+                    dark ? 'btn-secondary-dark' : 'btn-secondary'
                 )}
                 type="button"
             >
