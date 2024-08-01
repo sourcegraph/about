@@ -6,9 +6,9 @@ import Link from 'next/link'
 
 import { ContentSection, Hero, Layout, Tabs, TwoColumnSection, Video, CodyCta } from '../components'
 import BatchCodeHighlighter from '../components/batch-changes/BatchCodeHighlighter'
-import ClientDoubleCaseStudyCard from '../components/ClientDoubleCaseStudyCard'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { Icon } from '../components/icon'
+import TwoColumnTestimonialCard from '../components/TwoColumnTestimonialCard'
 import { buttonLocation } from '../data/tracking'
 import { TelemetryProps } from '../telemetry'
 
@@ -31,10 +31,13 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
                 description:
                     'Automate large-scale changes with Sourcegraph Batch Changes. Keep your code up to date and pay down tech debt across all repositories and code hosts.',
             }}
+            childrenClassName="bg-gray-50"
             displayChildrenUnderNav={false}
+            headerColorTheme="white"
+            heroAndHeaderClassName="bg-gray-50"
             hero={
                 <Hero
-                    variant="white"
+                    variant="gray"
                     product="batch changes"
                     title={'Automate large-scale\ncode changes'}
                     titleClassName="text-gray-700"
@@ -108,7 +111,10 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
             </svg>
 
             {/* Architecture */}
-            <ContentSection parentClassName="md:!py-24" className="rounded-2xl border border-[#E4E9F4] px-10 py-6">
+            <ContentSection
+                parentClassName="md:!py-24"
+                className="rounded-2xl border border-[#E4E9F4] bg-white px-10 py-6"
+            >
                 <TwoColumnSection
                     centerContent={true}
                     leftColumn={
@@ -149,7 +155,7 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
 
             {/* Social proof */}
             <ContentSection parentClassName="!px-0 !py-0 !my-0">
-                <ClientDoubleCaseStudyCard
+                <TwoColumnTestimonialCard
                     leftClientImgSrc="/case-studies/jared-hodge-indeed.jpg"
                     rightClientImgSrc="/case-studies/trent-grover-workiva.jpg"
                     rightTestimony="Sourcegraph Batch Changes gives us the confidence we need to understand the total impact of large-scale code changes before we make them. This enables the entire team to make more impactful decisions more often."
@@ -162,7 +168,7 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
                     className="sg-case-study !mb-0 md:rounded-2xl md:border md:border-[#E4E9F4]"
                     title="Teams move faster with Batch Changes"
                     titleClassName="text-gray-700 font-semibold text-3xl mx-auto w-full text-center mb-16 tracking-tighter leading-9"
-                    isBatchChangesPage={true}
+                    isWideSpacing={true}
                 />
             </ContentSection>
             <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" viewBox="0 0 32 33" fill="none">
@@ -184,7 +190,7 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
             {/* Track */}
             <ContentSection
                 parentClassName="!pt-24 md:!pb-0"
-                className="rounded-2xl border border-[#E4E9F4] px-10 py-6"
+                className="rounded-2xl border border-[#E4E9F4] bg-white px-10 py-6"
             >
                 <TwoColumnSection
                     centerContent={true}
@@ -219,13 +225,13 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
             <ContentSection parentClassName="!py-24">
                 <h2 className="mb-8 text-center text-gray-700 md:mb-16">How developers are using Batch Changes </h2>
                 <Tabs
-                    isBatchChangesClassName={true}
+                    isWideSpacing={true}
                     tabs={[
                         {
                             key: 'configuration',
                             title: 'Configuration',
                             content: (
-                                <div className="mx-auto max-w-4xl">
+                                <div className="max-w-screen mx-auto w-auto lg:w-min">
                                     <p className={subTitleClassName}>
                                         Quickly edit every CI, build, and other configuration files to make changes such
                                         as altering steps, migrating versions, or changing base images.
@@ -238,7 +244,7 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
                             key: 'refactoring',
                             title: 'Refactoring',
                             content: (
-                                <div className="mx-auto max-w-4xl">
+                                <div className="max-w-screen mx-auto w-auto lg:w-min">
                                     <p className={subTitleClassName}>
                                         Use language-aware tooling of your choice to perform complex refactors like
                                         updating an API and its function calls or replacing libraries entirely.
@@ -251,7 +257,7 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
                             key: 'security',
                             title: 'Security',
                             content: (
-                                <div className="mx-auto max-w-4xl">
+                                <div className="max-w-screen mx-auto w-auto lg:w-min">
                                     <p className={subTitleClassName}>
                                         Refactor code to replace insecure functions, update vulnerable packages, or
                                         modify container configurations across hundreds of repositories.
@@ -273,7 +279,7 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
                     </Link>
                 </div>
             </ContentSection>
-            <CodyCta source="Batch Changes Page" isCodyPage={true} isBatchChangesPage={true} />
+            <CodyCta source="Batch Changes Page" isCodyPage={true} isVariantStyle={true} />
         </Layout>
     )
 }

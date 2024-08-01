@@ -5,9 +5,9 @@ import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
 import { ContentSection, Layout, InfiniteCarousel } from '../components'
-import ClientDoubleCaseStudyCard from '../components/ClientDoubleCaseStudyCard'
 import { Icon } from '../components/icon'
 import ReadCaseStudyLink from '../components/ReadCaseStudyLink'
+import TwoColumnTestimonialCard from '../components/TwoColumnTestimonialCard'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
@@ -173,7 +173,7 @@ const Home: FunctionComponent = () => {
                         <ChevronRightIcon className="link-icon" />
                     </Link>
                     <div className="relative overflow-hidden md:overflow-visible">
-                        <ClientDoubleCaseStudyCard
+                        <TwoColumnTestimonialCard
                             leftClientImgSrc="/home/reviews1.svg"
                             rightClientImgSrc="/home/reviews2.png"
                             rightTestimony="By its nature and capabilities, Sourcegraph can be a tool to reduce friction, speed up feedback loops, and improve developer velocity."

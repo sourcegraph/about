@@ -12,14 +12,14 @@ interface CodyCtaProps {
     isCodyPage?: boolean
     source: string
     isLight?: boolean
-    isBatchChangesPage?: boolean
+    isVariantStyle?: boolean
 }
 
 export const CodyCta: FunctionComponent<CodyCtaProps> = ({
     isCodyPage = false,
     source,
     isLight = false,
-    isBatchChangesPage,
+    isVariantStyle,
 }) => {
     const { openModal } = useAuthModal()
 
@@ -28,21 +28,21 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
         openModal(source)
     }
 
-    const isDefaultStyle = (): boolean => !isLight && !isBatchChangesPage
+    const isDefaultStyle = (): boolean => !isLight && !isVariantStyle
 
-    const isLightStyle = (): boolean => isLight && !isBatchChangesPage
+    const isLightStyle = (): boolean => isLight && !isVariantStyle
 
     const contentClassName = classNames('mx-auto flex flex-col gap-6  md:flex-row', {
         'md:py-[96px]': isLight,
         'md:py-[112px]': isDefaultStyle(),
-        'py-16': !isBatchChangesPage,
-        'pb-24': isBatchChangesPage,
+        'py-16': !isVariantStyle,
+        'pb-24': isVariantStyle,
     })
 
     const h3ClassName = classNames('mt-4 ', {
         'max-w-[413.5px] text-gray-500': isDefaultStyle(),
         'max-w-[413.5px] text-[#343A4D]': isLightStyle(),
-        'max-w-[516px] text-lg text-gray-500': isBatchChangesPage,
+        'max-w-[516px] text-lg text-gray-500': isVariantStyle,
     })
 
     const h2Content = isLight ? (
@@ -51,7 +51,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
             <span className="block md:hidden">Cody Free</span>
         </>
     ) : (
-        <span>{isBatchChangesPage ? 'Try Sourcegraph on your code for free' : 'Get started with Cody'}</span>
+        <span>{isVariantStyle ? 'Try Sourcegraph on your code for free' : 'Get started with Cody'}</span>
     )
 
     const batchChangesButtonContent = (
@@ -67,7 +67,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
                     <span className="block md:hidden">Get Cody free</span>
                 </>
             ) : (
-                <span>{isBatchChangesPage ? 'Start free' : 'Get Cody for free'}</span>
+                <span>{isVariantStyle ? 'Start free' : 'Get Cody for free'}</span>
             )}
         </button>
     )
@@ -78,7 +78,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
             <span className="hidden md:flex"> Request info</span>
         </>
     ) : (
-        <span>{isBatchChangesPage ? 'Contact sales' : 'Request info'} </span>
+        <span>{isVariantStyle ? 'Contact sales' : 'Request info'} </span>
     )
 
     return (
@@ -86,35 +86,35 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
             <div
                 className={classNames(
                     'hover:cta-free-cody relative overflow-hidden rounded-2xl border border-gray-200 bg-white px-14 py-16 md:w-1/2 md:p-16',
-                    { 'border-opacity-25': !isBatchChangesPage }
+                    { 'border-opacity-25': !isVariantStyle }
                 )}
             >
                 <div className="bg-grad absolute right-0 top-0 h-[3px] w-full flex-1 bg-gradient-to-r from-blue-300 via-violet-400 to-vermillion-300" />
-                <h2 className={classNames('text-gray-700', { 'max-w-[444px]': isBatchChangesPage })}>{h2Content}</h2>
+                <h2 className={classNames('text-gray-700', { 'max-w-[444px]': isVariantStyle })}>{h2Content}</h2>
                 <h3 className={h3ClassName}>
-                    {isBatchChangesPage
+                    {isVariantStyle
                         ? 'Experience code intelligence with a free trial for you and your team, or search millions of open source repositories.'
                         : ' Use Cody for free in your IDE, no credit card required.'}
                 </h3>
                 <div
                     className={classNames('mt-6 flex flex-col flex-wrap gap-4 md:flex-row', {
-                        'md:gap-6': isBatchChangesPage,
-                        'md:gap-2': !isBatchChangesPage,
+                        'md:gap-6': isVariantStyle,
+                        'md:gap-2': !isVariantStyle,
                     })}
                 >
-                    {isBatchChangesPage ? (
+                    {isVariantStyle ? (
                         <Link
                             title="Get Cody free"
                             className="btn btn-primary text-center"
                             href="/contact/request-info"
                         >
-                            <span>{isBatchChangesPage ? 'Start free' : 'Get Cody for free'}</span>
+                            <span>{isVariantStyle ? 'Start free' : 'Get Cody for free'}</span>
                         </Link>
                     ) : (
                         batchChangesButtonContent
                     )}
 
-                    {isBatchChangesPage && (
+                    {isVariantStyle && (
                         <Link
                             href="/demo"
                             className={classNames(
@@ -137,13 +137,13 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
                     }
                 )}
             >
-                <h2 className="text-white">{isBatchChangesPage ? 'Enterprise' : 'Cody Enterprise'}</h2>
+                <h2 className="text-white">{isVariantStyle ? 'Enterprise' : 'Cody Enterprise'}</h2>
                 <h3
                     className={classNames('text-[18px] text-white text-opacity-80', {
                         'leading-[27px] -tracking-[0.25px]': isCodyPage,
                     })}
                 >
-                    {isBatchChangesPage
+                    {isVariantStyle
                         ? 'Enterprise provides additional security, scalability, and control for your organization. Unlimited usage and context-awareness of your entire codebase.'
                         : 'Cody Enterprise provides additional security, scalability, and control for your organization. Unlimited usage and context search for your entire codebase.'}
                 </h3>

@@ -236,12 +236,7 @@ const HeaderContent: FunctionComponent<
 
     return (
         <>
-            <div
-                className={classNames(
-                    'transition',
-                    HEADER_CONTENT_THEME_CLASS[colorTheme].container
-                )}
-            >
+            <div className={classNames('transition', HEADER_CONTENT_THEME_CLASS[colorTheme].container)}>
                 <div className="mx-auto max-w-7xl px-2 md:px-6 xl:px-0">
                     <div className="relative flex h-16 items-center justify-between">
                         <div className="flex flex-1 items-center md:items-stretch md:justify-start">

@@ -17,7 +17,7 @@ interface Tabs {
     tabsWrapperClassName?: string
     onTabChange?: (activeTabKey: string) => void
     activeTabKey?: string
-    isBatchChangesClassName?: boolean
+    isWideSpacing?: boolean
 }
 
 export const Tabs: FunctionComponent<Tabs> = ({
@@ -28,7 +28,7 @@ export const Tabs: FunctionComponent<Tabs> = ({
     tabsWrapperClassName,
     onTabChange,
     activeTabKey: controlledActiveTabKey,
-    isBatchChangesClassName,
+    isWideSpacing,
 }) => {
     const [currentTab, setCurrentTab] = useState(tabs[0]?.key)
 
@@ -49,7 +49,7 @@ export const Tabs: FunctionComponent<Tabs> = ({
                 className={classNames(
                     'flex-row items-center justify-center border-b border-solid border-b-gray-200 text-center xs:flex xs:text-left',
                     navClassName,
-                    { 'mx-auto max-w-[846px] gap-x-6': isBatchChangesClassName }
+                    { 'mx-auto max-w-[846px] gap-x-6': isWideSpacing }
                 )}
             >
                 {tabs.map(tab => (
@@ -60,19 +60,18 @@ export const Tabs: FunctionComponent<Tabs> = ({
                         tabIndex={0}
                         type="button"
                         className={classNames(
-                            '!relative cursor-pointer border-b-3 border-solid border-transparent px-4 text-center font-semibold',
-                            { 'border-b-violet-400 bg-transparent': tab.key === currentTab && !isBatchChangesClassName },
-                            { 'text-violet-500': tab.key !== currentTab && isBatchChangesClassName },
-                            { 'py-2 text-lg': !isBatchChangesClassName },
+                            '!relative cursor-pointer border-b-3 border-solid border-transparent py-2 px-4 text-center text-lg font-semibold',
                             {
-                                'py-2 text-lg !leading-[31px] text-gray-700 md:pt-2 md:pb-6 md:text-2xl':
-                                    isBatchChangesClassName,
+                                'border-b-violet-400 bg-transparent': tab.key === currentTab && !isWideSpacing,
+                            },
+                            {
+                                '!leading-[31px] text-gray-700 md:pt-2 md:pb-6 md:text-2xl': isWideSpacing,
                             },
                             tab.className
                         )}
                     >
                         {tab.title}
-                        {isBatchChangesClassName && (
+                        {isWideSpacing && (
                             <div className="absolute -bottom-1.5 left-[0px] right-[0px] flex w-full justify-center">
                                 <div
                                     className={classNames({
@@ -89,8 +88,8 @@ export const Tabs: FunctionComponent<Tabs> = ({
 
             <div
                 className={classNames(
-                    { 'py-6': !isBatchChangesClassName },
-                    { 'pt-[33px] pb-0': isBatchChangesClassName },
+                    { 'py-6': !isWideSpacing },
+                    { 'pt-[33px] pb-0': isWideSpacing },
                     contentClassName
                 )}
             >
