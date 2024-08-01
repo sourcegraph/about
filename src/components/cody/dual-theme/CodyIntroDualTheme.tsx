@@ -27,15 +27,15 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
     >
         <div className="mx-auto w-full px-6 md:w-[849px] lg:w-[895px]">
             <h1
-                className={classNames('mx-auto w-full text-[48px] font-semibold', {
+                className={classNames('mx-auto w-full text-[52px] font-semibold md:!leading-[62px]', {
                     'pt-6 text-white md:text-[72px]': !isLight,
-                    'pt-[50px]': isLight,
+                    'pt-[24px] text-[#0F111A]': isLight,
                 })}
             >
                 {title ?? <span>Code more, type&nbsp;less</span>}
             </h1>
             <h3
-                className={classNames('mx-auto mb-8 mt-6 max-w-[700px]', {
+                className={classNames('mx-auto mb-8 mt-6 max-w-[700px] md:leading-[30px]', {
                     'text-[#FFFFFF]': !isLight,
                     'text-[#343A4D]': isLight,
                 })}
