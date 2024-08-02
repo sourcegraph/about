@@ -292,6 +292,14 @@
          border-image-slice: 1 !important;
          border-image-source: linear-gradient(90.07deg, #5033e1 3.77%, #a112ff 42.1%, #503cdc 94.28%);
      }
+
+     .sg-border-gradient-hubspot {
+         border: double 2px transparent;
+         border-radius: 30px;
+         background-image: linear-gradient(white, white), linear-gradient(120deg, #00cbec 0%, #a112ff 50%, #ff5543 100%);
+         background-origin: border-box;
+         background-clip: padding-box, border-box;
+     }
  
      /* ==================== Backgrounds ==================== */
      /* Light Nebulous Backgrounds */
