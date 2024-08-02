@@ -245,8 +245,8 @@ export const copilotVsCody: CompareDataType = {
             attributes: [
                 createAttribute({
                     feature: 'Chat model (default)',
-                    cody: 'Claude 3',
-                    competitor: 'GPT-4',
+                    cody: 'Claude 3.5 Sonnet',
+                    competitor: 'GPT-4o',
                 }),
                 createAttribute({
                     feature: 'Autocomplete model (default)',
@@ -358,7 +358,7 @@ export const codeiumVsCody: CompareDataType = {
             attributes: [
                 createAttribute({
                     feature: 'Chat model (default)',
-                    cody: 'Claude 3 Sonnet',
+                    cody: 'Claude 3.5 Sonnet',
                     competitor: 'Proprietary',
                 }),
                 createAttribute({
@@ -469,7 +469,7 @@ export const amazonCodewhispererVsCody: CompareDataType = {
             attributes: [
                 createAttribute({
                     feature: 'Chat model (default)',
-                    cody: 'Claude 3 Sonnet',
+                    cody: 'Claude 3.5 Sonnet',
                 }),
                 createAttribute({
                     feature: 'Autocomplete model (default)',
@@ -565,8 +565,8 @@ export const cursorVsCody: CompareDataType = {
             attributes: [
                 createAttribute({
                     feature: 'Chat model (default)',
-                    cody: 'Claude 3 Sonnet',
-                    competitor: 'GPT-3.5',
+                    cody: 'Claude 3.5 Sonnet',
+                    competitor: 'Proprietary',
                 }),
                 createAttribute({
                     feature: 'Autocomplete model (default)',
@@ -675,7 +675,7 @@ export const tabnineVsCody: CompareDataType = {
             attributes: [
                 createAttribute({
                     feature: 'Chat model (default)',
-                    cody: 'Claude 3 Sonnet',
+                    cody: 'Claude 3.5 Sonnet',
                     competitor: 'Proprietary',
                 }),
                 createAttribute({
@@ -777,7 +777,7 @@ export const continueVsCody: CompareDataType = {
             attributes: [
                 createAttribute({
                     feature: 'Chat model (default)',
-                    cody: 'Claude 3 Sonnet',
+                    cody: 'Claude 3.5 Sonnet',
                     competitor: 'Code Llama',
                     competitor_details: '7B parameters via Ollama',
                 }),
