@@ -392,7 +392,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
                 </button>
             </div>
 
-            <div className="hidden w-full overflow-hidden sm:block lg:w-[1062px]">
+            <div className="hidden aspect-video w-full overflow-hidden sm:block lg:w-[1062px]">
                 <video
                     className="relative bottom-[-6px] rounded-t-xl shadow-md"
                     autoPlay={true}
