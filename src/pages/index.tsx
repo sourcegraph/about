@@ -368,52 +368,46 @@ const Home: FunctionComponent = () => {
     )
 }
 
-const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
-    const windowWidth = useWindowWidth()
-    const isMobile = windowWidth < breakpoints.sm
-
-    return (
-        <ContentSection
-            className="relative mt-[-72px] flex items-center justify-center rounded-2xl bg-violet-700 md:mt-[-43px]"
-            parentClassName="!py-0 !pb-16 !bg-gray-50"
-        >
-            <div className="mx-auto flex flex-col items-center justify-center px-3 text-center md:px-0">
-                <div className="mx-auto flex max-w-[456px] flex-col items-center pb-8 pt-8 sm:max-w-full md:w-[680px] md:pb-[26px] md:pt-10">
-                    <h1 className="mb-8 mt-10 w-full text-center text-5xl text-gray-100 sm:text-6xl">
-                        Understand and write code blazingly fast
-                    </h1>
-                    <p className="mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-white opacity-60 md:mb-8">
-                        Sourcegraph allows developers to rapidly search, write, and understand code by bringing insights
-                        from their entire codebase right into the editor
-                    </p>
-                    <button
-                        type="button"
-                        className="btn btn-primary-dark w-full max-w-[356px] px-5 sm:w-fit sm:px-6"
-                        title="free cody"
-                        onClick={() => onOpenModal('top')}
-                    >
-                        Get Cody for free
-                    </button>
-                </div>
-                {!isMobile && (
-                    <div className="w-full overflow-hidden lg:w-[1062px]">
-                        <video
-                            className="relative bottom-[-6px] rounded-t-xl shadow-md"
-                            autoPlay={true}
-                            muted={true}
-                            loop={true}
-                            playsInline={true}
-                            controls={false}
-                        >
-                            <source type="video/webm" src="/home/Header-Vid-Non-Rounded.webm" />
-                            <source type="video/mp4" src="/home/Header-Vid-Non-Rounded.mp4" />
-                            <source type="video/ogg" src="/home/Header-Vid-Non-Rounded.ogg" />
-                        </video>
-                    </div>
-                )}
+const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
+    <ContentSection
+        className="relative mt-[-72px] flex items-center justify-center rounded-2xl bg-violet-700 md:mt-[-43px]"
+        parentClassName="!py-0 !pb-16 !bg-gray-50"
+    >
+        <div className="mx-auto flex flex-col items-center justify-center px-3 text-center md:px-0">
+            <div className="mx-auto flex max-w-[456px] flex-col items-center pb-8 pt-8 sm:max-w-full md:w-[680px] md:pb-[26px] md:pt-10">
+                <h1 className="mb-8 mt-10 w-full text-center text-5xl text-gray-100 sm:text-6xl">
+                    Understand and write code blazingly fast
+                </h1>
+                <p className="mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-white opacity-60 md:mb-8">
+                    Sourcegraph allows developers to rapidly search, write, and understand code by bringing insights
+                    from their entire codebase right into the editor
+                </p>
+                <button
+                    type="button"
+                    className="btn btn-primary-dark w-full max-w-[356px] px-5 sm:w-fit sm:px-6"
+                    title="free cody"
+                    onClick={() => onOpenModal('top')}
+                >
+                    Get Cody for free
+                </button>
             </div>
-        </ContentSection>
-    )
-}
+
+            <div className="hidden w-full overflow-hidden sm:block lg:w-[1062px]">
+                <video
+                    className="relative bottom-[-6px] rounded-t-xl shadow-md"
+                    autoPlay={true}
+                    muted={true}
+                    loop={true}
+                    playsInline={true}
+                    controls={false}
+                >
+                    <source type="video/webm" src="/home/Header-Vid-Non-Rounded.webm" />
+                    <source type="video/mp4" src="/home/Header-Vid-Non-Rounded.mp4" />
+                    <source type="video/ogg" src="/home/Header-Vid-Non-Rounded.ogg" />
+                </video>
+            </div>
+        </div>
+    </ContentSection>
+)
 
 export default Home
