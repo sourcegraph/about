@@ -213,7 +213,7 @@ const HeaderContent: FunctionComponent<
                 title="Get started with Cody"
                 className={classNames(
                     'btn lg:btn-sm order-3 flex w-full justify-center py-3 px-5 lg:order-2 lg:!px-4',
-                    dark ? 'btn-secondary-dark' : 'btn-secondary '
+                    dark ? 'btn-secondary-dark' : 'btn-secondary'
                 )}
                 type="button"
             >
@@ -236,12 +236,7 @@ const HeaderContent: FunctionComponent<
 
     return (
         <>
-            <div
-                className={classNames(
-                    'transition',
-                    HEADER_CONTENT_THEME_CLASS[colorTheme].container
-                )}
-            >
+            <div className={classNames('transition', HEADER_CONTENT_THEME_CLASS[colorTheme].container)}>
                 <div className="mx-auto max-w-7xl px-2 md:px-6 xl:px-0">
                     <div className="relative flex h-16 items-center justify-between">
                         <div className="flex flex-1 items-center md:items-stretch md:justify-start">

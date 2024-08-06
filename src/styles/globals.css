@@ -7,6 +7,7 @@
  @tailwind components;
  @tailwind utilities;
  @import url('./cody-animation.css');
+ @import url('./BatchCodeHighlighter.css');
  
  /* Base Styles */
  @layer base {
@@ -159,11 +160,11 @@
      .btn-secondary-dark {
          @apply rounded-[5px] border-1 border-gray-75 bg-transparent text-gray-75 hover:border-gray-75 hover:bg-violet-600 focus:rounded-[5px];
      }
-
+ 
      .btn-sm {
         @apply text-sm py-1.5 px-3;
     }
-
+ 
     .btn-mobile {
         @apply w-[356px];
     }
@@ -670,8 +671,25 @@
      }
  
      .sg-reviews {
-         background: linear-gradient(233deg, rgba(97, 18, 163, 0.54) 27.87%, rgba(97, 18, 163, 0) 119.99%), #1a0f22;
-     }
+        background: linear-gradient(233deg, rgba(97, 18, 163, 0.54) 27.87%, rgba(97, 18, 163, 0) 119.99%), #1a0f22;
+      }
+
+     .sg-case-study {
+         background: linear-gradient(
+                176deg,
+                #fff 3.34%,
+                rgba(255, 255, 255, 0.9) 70.39%,
+                rgba(255, 255, 255, 0.8) 96.66%
+             ),
+             linear-gradient(
+                90deg,
+                rgba(112, 72, 232, 0.7) 0%,
+                rgba(74, 193, 232, 0.7) 32.21%,
+                rgba(161, 18, 255, 0.7) 65.39%,
+                rgba(255, 85, 67, 0.7) 104.43%
+             ),
+             #f9fafb;
+      }
  
      .sg-navbar-menu {
          border-radius: var(--radius-m, 8px);
