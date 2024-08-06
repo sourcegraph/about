@@ -35,7 +35,7 @@ const enterpriseDarkDevToolsMobile = [
 ]
 
 const enterpriseLightDevToolsMobile = [
-    { src: '/enterprise/logo-tiles/azure-light.svg', alt: 'microsoft azure' },
+    { src: '/assets/enterprise/logo-tiles/azure-light.svg', alt: 'microsoft azure' },
     { src: '/enterprise/logo-tiles/anthropic-light.svg', alt: 'ai' },
     { src: '/enterprise/logo-tiles/bedrock-light.svg', alt: 'amazon bedrock' },
     { src: '/enterprise/logo-tiles/openai-light.svg', alt: 'open ai' },
@@ -45,12 +45,12 @@ const enterpriseLightDevTools = [
     { src: '/enterprise/logo-tiles/anthropic-light.svg', alt: 'ai' },
     { src: '/enterprise/logo-tiles/openai-light.svg', alt: 'open ai' },
     { src: '/enterprise/logo-tiles/ollama-light.svg', alt: 'ollama' },
-    { src: '/enterprise/logo-tiles/azure-light.svg', alt: 'microsoft azure' },
-    { src: '/enterprise/logo-tiles/blank-tile.svg', alt: 'blank tile' },
+    { src: '/assets/enterprise/logo-tiles/azure-light.svg', alt: 'microsoft azure' },
+    { src: '/assets/enterprise/logo-tiles/blank-tile.svg', alt: 'blank tile' },
     { src: '/enterprise/logo-tiles/bedrock-light.svg', alt: 'amazon bedrock' },
-    { src: '/enterprise/logo-tiles/google-gemini.svg', alt: 'google gemini' },
-    { src: '/enterprise/logo-tiles/hugging-face.svg', alt: 'hugging face' },
-    { src: '/enterprise/logo-tiles/meta.svg', alt: 'meta' },
+    { src: '/assets/enterprise/logo-tiles/google-gemini.svg', alt: 'google gemini' },
+    { src: '/assets/enterprise/logo-tiles/hugging-face.svg', alt: 'hugging face' },
+    { src: '/assets/enterprise/logo-tiles/meta.svg', alt: 'meta' },
 ]
 export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> = ({
     article,
