@@ -144,7 +144,7 @@ This update will become the default interface everywhere Cody exists, starting w
 <br />
 
 <Figure
-  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/august-2024/unified%20sidebar.png"
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/august-2024/unified%20cody%20sidebar%20update.png"
   alt="Cody unified sidebar"
 />
 <br />
