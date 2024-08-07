@@ -47,7 +47,7 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                 <BlogHeader {...blogInfo} title="Back to Blog" variant="post" />
             </header>
 
-            <div className="mx-auto flex max-w-7xl flex-col gap-x-20 px-8 lg:flex-row lg:px-10 2xl:px-0">
+            <div className="mx-auto flex max-w-7xl flex-col gap-x-14 px-8 lg:flex-row lg:px-10 2xl:px-0">
                 <article className="flex-1">
                     <PostTemplate post={post} content={content} />
                 </article>
