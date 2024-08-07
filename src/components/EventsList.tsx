@@ -4,12 +4,6 @@ import { Tabs } from './Tabs'
 const events = {
     upcoming: [
         {
-            title: 'AI Dev Tools Night',
-            location: 'San Francisco, CA',
-            date: 'August 6, 2024',
-            link: 'https://lu.ma/vkszglsx',
-        },
-        {
             title: 'Your Cody questions answered live!',
             location: 'StreamYard',
             date: 'August 8, 2024',
@@ -23,6 +17,12 @@ const events = {
         },
     ],
     past: [
+        {
+            title: 'AI Dev Tools Night',
+            location: 'San Francisco, CA',
+            date: 'August 6, 2024',
+            link: 'https://lu.ma/vkszglsx',
+        },
         {
             title: 'AI Engineer World’s Fair',
             location: 'San Francisco, CA',
