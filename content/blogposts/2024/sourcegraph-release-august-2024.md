@@ -1,10 +1,10 @@
 ---
-title: "Sourcegraph August 2024 updates: New search experience, enterprise model selection, and prompt library"
+title: "Sourcegraph August 2024 updates: New search experience, enterprise model selection, and Prompt Library"
 authors:
   - name: Kelvin Yap
     url: https://x.com/KelvinYap
 publishDate: 2024-08-07T10:00-01:00
-description: "In this month’s release we’ve made significant improvements to the code search experience, introduced prompts and the prompt library, and made enterprise model selection available as EAP."
+description: "In this month’s release we’ve made significant improvements to the code search experience, introduced prompts and the Prompt Library, and made enterprise model selection available as EAP."
 tags: [blog, release]
 slug: 'release/august-2024'
 published: true
@@ -15,7 +15,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post
 <br />
 In this month’s Sourcegraph release (5.6.0) we’ve made significant improvements to the code search experience including a new search experience, regex support for repo metadata, and saved searches improvements.
 
-For Cody we are introducing the evolution of commands with prompts and prompt library, additional analytics improvements, and the launch of enterprise model selection as EAP.
+For Cody we are introducing the evolution of commands with prompts and Prompt Library, additional analytics improvements, and the launch of enterprise model selection as EAP.
 <br />
 
 ## New search experience
@@ -88,7 +88,7 @@ You can now transfer ownership of a saved search. Previously when a person left 
 You can now mark saved searches as a “draft”, letting other users know that a saved search isn’t quite ready to be used yet.
 <br />
 
-## Prompts and prompt library for VS Code
+## Prompts and Prompt Library for VS Code
 
 <br />
 Cody currently offers users quick, ready-to-use commands for common actions to write, describe, fix, and smell code, as well as the ability to create their own custom commands tailored to your development workflow. We’ve heard from customers how valuable commands are and received lots of feedback on how to improve them.
@@ -138,7 +138,7 @@ Enterprise model selection is currently part of our Early Access Program (EAP) a
 <br />
 [Announced recently](https://sourcegraph.com/blog/cody-vscode-1-28-0-release) for Cody Free and Pro users on VS Code, the unified Cody sidebar is now available for Enterprise end users too. The new sidebar experience is aligned with our goal of making the Cody experience as familiar and consistent as possible, regardless of whether you’re using it on the web or across any of the IDEs we support.
 
-The new UX updates include moving chat into the primary sidebar with the option to open a dedicated chat window with the “Move Chat to Editor Panel” button. Commands and the new prompts and prompt library are also available in the sidebar, with all functions quickly available at a glance.
+The new UX updates include moving chat into the primary sidebar with the option to open a dedicated chat window with the “Move Chat to Editor Panel” button. Commands and the new prompts and Prompt Library are also available in the sidebar, with all functions quickly available at a glance.
 
 This update will become the default interface everywhere Cody exists, starting with VS Code users across the Free, Pro, and Enterprise plans today, and will be available to JetBrains users soon as well.
 <br />
