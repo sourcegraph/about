@@ -17,13 +17,13 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 <br />
 Cody currently offers users quick, ready-to-use commands for common actions to write, describe, fix, and smell code, as well as the ability to create their own custom commands tailored to your development workflow. We’ve heard from customers how valuable commands are and received lots of feedback on how to improve them.
 
-With that in mind we are excited to share the evolution of commands in Cody, beginning with VS Code: prompts. Prompts function the same as commands but have been renamed to easier understand their usefulness in the context of existing AI chat terminology. Prompts can be created and discovered via the web UI in the new Prompt Library, making it easier to create, edit, share, and discover prompts you’ve created or have been shared within your organization.
+With that in mind we are excited to share the evolution of commands in Cody, beginning with VS Code: prompts. Prompts function the same as commands but have been renamed to easier understand their usefulness in the context of existing AI chat terminology. Prompts can be created and discovered via the web UI in the new prompt library, making it easier to create, edit, share, and discover prompts you’ve created or have been shared within your organization.
 <br />
 
 ## Introducing the prompt library
 
 <br />
-The Prompt Library can be found in Cody’s web UI and is where you can view, create or edit a prompt. We have listened to your feedback and improved sharing and discovery in particular - it is now much easier to share and view than it was previously with commands.
+The prompt library can be found in Cody’s web UI and is where you can view, create or edit a prompt. We have listened to your feedback and improved sharing and discovery in particular - it is now much easier to share and view than it was previously with commands.
 <br />
 
 <Figure
@@ -49,7 +49,7 @@ Creating a prompt now occurs inside the web UI and users in the IDE wishing to c
 
 Prompts can be marked as draft to let others know they shouldn’t use it yet, and you can either create the prompt for your personal use or assign your organization as the owner if you wish to share it with others.
 
-Editing a prompt is now easier than ever and there’s no need to mess with a JSON file in your IDE anymore. Simply click on the Edit button associated with the relevant prompt in the Prompt Library to make the relevant changes, and you can also transfer ownership of the prompt or delete it from this view as well.
+Editing a prompt is now easier than ever and there’s no need to mess with a JSON file in your IDE anymore. Simply click on the Edit button associated with the relevant prompt in the prompt library to make the relevant changes, and you can also transfer ownership of the prompt or delete it from this view as well.
 <br />
 
 <Figure
@@ -76,7 +76,7 @@ Prompts function similarly to commands in the IDE, but we’ve made it accessibl
 ### What's next for commands
 
 <br />
-Prompts and the Prompt Library are available in VS Code 1.30.0 today and will eventually replace commands in the coming months. Commands will still be supported in the meantime to ensure backwards compatibility, and we’ll gradually shift functionality over from commands so that prompts can do everything commands can, and more. 
+Prompts and the prompt library are available in VS Code 1.30.0 today and will eventually replace commands in the coming months. Commands will still be supported in the meantime to ensure backwards compatibility, and we’ll gradually shift functionality over from commands so that prompts can do everything commands can, and more. 
 
 <br />
 
