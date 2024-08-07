@@ -102,7 +102,7 @@ With that in mind we are excited to share the evolution of commands in Cody, beg
 />
 <br />
 
-Prompts are releasing for VS Code today and will be coming to JetBrains IDEs soon. Please read our announcement [INSERT BLOG LINK HERE] of prompts to learn more about its capabilities and eventual replacement for commands.
+Prompts are releasing for VS Code today and will be coming to JetBrains IDEs soon. Please read our [announcement of prompts](https://sourcegraph.com/blog/cody-vscode-1-30-0-release) to learn more about its capabilities and eventual replacement for commands.
 <br />
 
 ## Enterprise model selection (EAP)
