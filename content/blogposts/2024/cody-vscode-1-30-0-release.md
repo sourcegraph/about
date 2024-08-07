@@ -47,7 +47,7 @@ Creating a prompt now occurs inside the web UI and users in the IDE wishing to c
 />
 <br />
 
-Prompts can be marked as draft to let others know they shouldn’t use it yet, and you can either create the prompt for your personal use or assign your organization as the owner if you wish to share it with others.
+Prompts can be marked as draft to let others know they shouldn’t use it yet, and you can either create the prompt for your personal use or assign your organization as the owner, who can then make it shareable with others.
 
 Editing a prompt is now easier than ever and there’s no need to mess with a JSON file in your IDE anymore. Simply click on the Edit button associated with the relevant prompt in the Prompt Library to make the relevant changes, and you can also transfer ownership of the prompt or delete it from this view as well.
 <br />
