@@ -29,9 +29,9 @@ export const BlogHeader: FunctionComponent<Props> = ({ title, belowTitle, baseUr
         <nav className={classNames(className, 'my-6')}>
             <Link
                 href={baseUrl}
-                className="!font-grotesk inline-flex items-center bg-violet-100 py-1 pl-2 pr-3 text-violet-600  hover:underline"
+                className="!font-grotesk group inline-flex items-center text-sm text-gray-300 hover:text-gray-600"
             >
-                <ArrowLeftIcon className="inline h-5" /> {title}
+                <ArrowLeftIcon className="inline h-3 transition-transform group-hover:-translate-x-1" /> {title}
             </Link>
         </nav>
     )

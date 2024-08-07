@@ -43,22 +43,27 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
 
     return (
         <Layout meta={meta}>
-            <div className="mx-auto mt-10 mb-12 flex max-w-screen-xl flex-col gap-x-5 px-8 lg:flex-row lg:px-10 2xl:px-0">
+            <header className="mx-auto max-w-7xl px-8 lg:px-10 2xl:px-0">
+                <BlogHeader {...blogInfo} title="Back to Blog" variant="post" />
+            </header>
+
+            <div className="mx-auto flex max-w-7xl flex-col gap-x-14 px-8 lg:flex-row lg:px-10 2xl:px-0">
                 <article className="flex-1">
-                    <BlogHeader {...blogInfo} variant="post" />
                     <PostTemplate post={post} content={content} />
                 </article>
-                <aside className="hidden md:block md:w-[350px]">
+
+                <aside className="mt-36 hidden md:block md:w-[350px]">
                     <div className="sticky top-36">
                         <div
                             className={classNames(
                                 styles.blogForm,
-                                'flex flex-col items-start rounded-2xl bg-gray-100 p-6'
+                                'flex flex-col items-start rounded-xl border border-gray-200 p-6'
                             )}
                         >
-                            <h1 className="text-blog-h3 mb-4 normal-case">
+                            <h3 className="mb-4 text-xl normal-case">
                                 Subscribe for the latest code AI news and product updates
-                            </h1>
+                            </h3>
+
                             <HubSpotForm
                                 formId="ab908b80-d1ed-44fd-968c-505c85ed72ac"
                                 inlineMessage="Thanks, you are now subscribed!"

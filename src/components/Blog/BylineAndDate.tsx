@@ -11,9 +11,9 @@ export const BylineAndDate: React.FunctionComponent<{
         {authors?.length && (
             <span className="mr-1">
                 {authors.map((a, index) => (
-                    <span key={a.name} className="font-semibold text-gray-600">
+                    <span key={a.name} className="font-semibold text-gray-500">
                         {a.url ? (
-                            <Link href={a.url} className="font-semibold text-gray-600">
+                            <Link href={a.url} className="font-semibold text-gray-500">
                                 {a.name}
                             </Link>
                         ) : (
@@ -24,6 +24,7 @@ export const BylineAndDate: React.FunctionComponent<{
                 ))}
             </span>
         )}
+
         {publishDate && <PublishDate date={publishDate} />}
     </p>
 )
