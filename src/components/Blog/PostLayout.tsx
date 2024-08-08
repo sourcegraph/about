@@ -26,12 +26,12 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
     contentClassName = '',
 }) => (
     <Tag className={className}>
-        <div className="mt-12">
-            <h2 className="!font-display">{frontmatter.title}</h2>
+        <div>
+            <h2 className="!font-display text-4xl xl:text-6xl">{frontmatter.title}</h2>
         </div>
 
         {(frontmatter.authors?.length || frontmatter.publishDate) && (
-            <div className="mt-4">
+            <div className="mt-3">
                 <BylineAndDate authors={frontmatter.authors} publishDate={frontmatter.publishDate} />
             </div>
         )}
@@ -39,11 +39,14 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
         {content && (
             <div
                 className={classNames(
-                    'mt-12',
+                    'mt-8',
                     'min-h-[60vh]',
                     styles.content,
                     contentClassName,
                     'prose',
+                    'xl:prose-lg',
+                    'leading-relaxed',
+                    'xl:leading-relaxed',
                     'prose-headings:font-semibold',
                     'prose-headings:mb-2.5',
                     'prose-a:text-violet-500',

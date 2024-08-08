@@ -39,7 +39,11 @@ export const TwoColumnSection: FunctionComponent<TwoColumnSection> = ({
         >
             {leftColumn}
         </div>
-        <div className={classNames(!mergeColumns && `col-span-12 ${blockOnMdAndDown ? 'md' : 'lg'}:col-span-6`)}>
+        <div
+            className={classNames(
+                !mergeColumns && `col-span-12 ${blockOnMdAndDown ? 'md' : 'lg'}:col-span-6`
+            )}
+        >
             {rightColumn}
         </div>
     </div>

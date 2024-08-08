@@ -10,12 +10,14 @@ export const TrySourcegraphForFreeButton: React.FunctionComponent<{
     dark?: boolean
     size?: 'md' | 'lg'
     children?: string
-}> = ({ buttonLocation, dark = false, size = 'md', children = 'Try Sourcegraph for free' }) => (
+    customClassName?: string
+}> = ({ buttonLocation, dark = false, size = 'md', children = 'Try Sourcegraph for free', customClassName }) => (
     <Link
         className={classNames(
             'btn whitespace-nowrap',
             dark ? 'btn-primary-dark' : 'btn-primary',
-            size === 'lg' && 'py-4'
+            size === 'lg' && 'py-4',
+            customClassName
         )}
         href="/contact/request-info"
         title={children}

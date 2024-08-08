@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { ContentSection, Layout, InfiniteCarousel } from '../components'
 import { Icon } from '../components/icon'
 import ReadCaseStudyLink from '../components/ReadCaseStudyLink'
+import TwoColumnTestimonialCard from '../components/TwoColumnTestimonialCard'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
@@ -172,46 +173,16 @@ const Home: FunctionComponent = () => {
                         <ChevronRightIcon className="link-icon" />
                     </Link>
                     <div className="relative overflow-hidden md:overflow-visible">
-                        <div className="sg-reviews mb-28 grid grid-cols-1 gap-[30px] rounded-none px-6 py-24 md:mb-24 md:grid-cols-2 md:rounded-2xl md:px-20">
-                            <div className="flex flex-col gap-4 rounded-[10px] border-1 border-gray-200 bg-white p-5">
-                                <div className="flex ">
-                                    <img
-                                        className="mr-[10px] h-[40px] w-[40px]"
-                                        src="/home/reviews1.svg"
-                                        alt="Completions Brand Icon"
-                                    />
-                                    <div className="flex flex-col">
-                                        <p className="mb-0 text-base text-violet-500">Vito Baggiolini</p>
-                                        <p className="mb-0 text-sm !-tracking-[0.25px] text-gray-500">
-                                            Senior Software Engineer, CERN
-                                        </p>
-                                    </div>
-                                </div>
-                                <p className="mb-0 text-lg !-tracking-[0.25px] text-gray-700">
-                                    Sourcegraph is extremely valuable for what we do. It enables us to easily clean up
-                                    deprecated APIs and estimate the risks and costs of our API's evolution.
-                                </p>
-                            </div>
-                            <div className="flex flex-col gap-4 rounded-[10px] border-1 border-gray-200 bg-white p-5">
-                                <div className="flex ">
-                                    <img
-                                        className="mr-[10px] h-[40px] w-[40px]"
-                                        src="/home/reviews2.png"
-                                        alt="Completions Brand Icon"
-                                    />
-                                    <div className="flex flex-col">
-                                        <p className="mb-0 text-base text-violet-500">Bryce Kalow</p>
-                                        <p className="mb-0 text-sm !-tracking-[0.25px] text-gray-500">
-                                            Senior Web Engineer, HashiCorp
-                                        </p>
-                                    </div>
-                                </div>
-                                <p className="mb-0 text-lg !-tracking-[0.25px] text-gray-700">
-                                    By its nature and capabilities, Sourcegraph can be a tool to reduce friction, speed
-                                    up feedback loops, and improve developer velocity.
-                                </p>
-                            </div>
-                        </div>
+                        <TwoColumnTestimonialCard
+                            leftClientImgSrc="/home/reviews1.svg"
+                            rightClientImgSrc="/home/reviews2.png"
+                            rightTestimony="By its nature and capabilities, Sourcegraph can be a tool to reduce friction, speed up feedback loops, and improve developer velocity."
+                            leftTestimony="Sourcegraph is extremely valuable for what we do. It enables us to easily clean up deprecated APIs and estimate the risks and costs of our API's evolution."
+                            leftClientName="Vito Baggiolini"
+                            leftClientTitle="Senior Software Engineer, CERN"
+                            rightClientName="Bryce Kalow"
+                            rightClientTitle="Senior Web Engineer, HashiCorp"
+                        />
                         <div className="z-10 mx-6 mb-14 flex flex-col md:mx-0 md:w-[762px]">
                             <div className="flex items-center gap-4 pb-6">
                                 <img

@@ -17,6 +17,7 @@ interface Tabs {
     tabsWrapperClassName?: string
     onTabChange?: (activeTabKey: string) => void
     activeTabKey?: string
+    isWideSpacing?: boolean
 }
 
 export const Tabs: FunctionComponent<Tabs> = ({
@@ -27,6 +28,7 @@ export const Tabs: FunctionComponent<Tabs> = ({
     tabsWrapperClassName,
     onTabChange,
     activeTabKey: controlledActiveTabKey,
+    isWideSpacing,
 }) => {
     const [currentTab, setCurrentTab] = useState(tabs[0]?.key)
 
@@ -46,30 +48,51 @@ export const Tabs: FunctionComponent<Tabs> = ({
             <div
                 className={classNames(
                     'flex-row items-center justify-center border-b border-solid border-b-gray-200 text-center xs:flex xs:text-left',
-                    navClassName
+                    navClassName,
+                    { 'mx-auto max-w-[846px] gap-x-6': isWideSpacing }
                 )}
             >
                 {tabs.map(tab => (
-                    <div
+                    <button
                         key={tab.key}
                         onClick={() => handleTabChange(tab.key)}
                         onKeyDown={() => handleTabChange(tab.key)}
-                        role="button"
                         tabIndex={0}
+                        type="button"
                         className={classNames(
-                            'cursor-pointer border-b-3 border-solid border-transparent px-4 py-2 text-center text-lg font-semibold',
-                            { 'border-b-violet-400 bg-transparent': tab.key === currentTab },
+                            '!relative cursor-pointer border-b-3 border-solid border-transparent py-2 px-4 text-center text-lg font-semibold',
+                            {
+                                'border-b-violet-400 bg-transparent': tab.key === currentTab && !isWideSpacing,
+                            },
+                            {
+                                '!leading-[31px] text-gray-700 md:pt-2 md:pb-6 md:text-2xl': isWideSpacing,
+                            },
                             tab.className
                         )}
                     >
                         {tab.title}
-                    </div>
+                        {isWideSpacing && (
+                            <div className="absolute -bottom-1.5 left-[0px] right-[0px] flex w-full justify-center">
+                                <div
+                                    className={classNames({
+                                        'h-[4px] w-full bg-violet-400 md:w-[90%]': tab.key === currentTab,
+                                    })}
+                                />
+                            </div>
+                        )}
+                    </button>
                 ))}
 
                 {tabBarExtraContent}
             </div>
 
-            <div className={classNames('py-6', contentClassName)}>
+            <div
+                className={classNames(
+                    { 'py-6': !isWideSpacing },
+                    { 'pt-[33px] pb-0': isWideSpacing },
+                    contentClassName
+                )}
+            >
                 {tabs.map(tab => (
                     <div
                         key={tab.key}

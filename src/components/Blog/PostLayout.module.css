@@ -1,8 +1,8 @@
 .content img,
-			.content object,
-			/* Gif-like videos */
-			.content video[autoplay][loop][muted]:not([controls]) {
-    width: 100%;
+.content object,
+/* Gif-like videos */
+.content video[autoplay][loop][muted]:not([controls]) {
+    /* width: 100%; */
     /* margin: 3rem auto 2rem auto; */
     display: block;
     border-style: none;
@@ -74,7 +74,7 @@
 
 .content ul,
 .content ol {
-    line-height: 1.8;
+    line-height: 1.6;
     padding-left: 0;
 }
 .content li {

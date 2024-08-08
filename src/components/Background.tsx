@@ -45,6 +45,7 @@ export interface Background {
     | 'transparent'
         | 'white'
         | 'black'
+        | 'gray'
         // Light Nebulous Variants
         | 'lightNebulousSaturn1'
         | 'lightNebulousSaturn2'
@@ -103,6 +104,7 @@ const backgrounds: { [key: string]: StaticImageData | string } = {
     // Standard Variants
     white: 'bg-white text-black',
     black: 'bg-black text-white',
+    gray: 'bg-gray-50',
     // Light Nebulous Variants
     lightNebulousSaturn1,
     lightNebulousSaturn2,

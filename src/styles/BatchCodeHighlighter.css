@@ -1,0 +1,159 @@
+.batch-code {
+    background: #1f2a37;
+}
+.batch-code code[class*='language-'],
+.batch-code pre[class*='language-'] {
+    background: transparent;
+    color: #e4e9f4;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+    -webkit-hyphens: none;
+    hyphens: none;
+    /* Same stack as font-systemMono */
+    font-family: ui-monospace, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    font-weight: normal;
+}
+
+.batch-code mark {
+    background-color: transparent;
+    color: #ce9178;
+}
+
+.batch-code b {
+    background-color: transparent;
+    color: #ffdb45;
+    font-weight: 400;
+}
+
+.batch-code em {
+    background-color: transparent;
+    color: #ffc247;
+    font-style: normal;
+}
+
+.batch-code strong {
+    background-color: transparent;
+    color: #820dde;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.batch-code :not(pre) > code[class*='language-'] {
+    padding: 0.2em 0.3em;
+    border-radius: 0;
+    white-space: normal;
+}
+
+.batch-code .token.comment,
+.batch-code .token.prolog,
+.batch-code .token.cdata {
+    color: #17ab52;
+}
+
+.batch-code .token.comment {
+    font-style: normal;
+}
+
+.batch-code .token.doctype,
+.batch-code .token.punctuation,
+.batch-code .token.entity {
+    color: #e4e9f4;
+}
+
+.batch-code .token.attr-name,
+.batch-code .token.class-name,
+.batch-code .token.boolean,
+.batch-code .token.constant,
+.batch-code .token.number,
+.batch-code .token.atrule {
+    color: #9cdcfe;
+}
+
+.batch-code .token.keyword {
+    color: hsl(286, 60%, 67%);
+}
+
+.batch-code .token.property,
+.batch-code .token.tag,
+.batch-code .token.symbol,
+.batch-code .token.deleted,
+.batch-code .token.important {
+    color: #569cd6;
+}
+
+.batch-code .token.selector,
+.batch-code .token.char,
+.batch-code .token.builtin,
+.batch-code .token.inserted,
+.batch-code .token.string,
+.batch-code .token.regex,
+.batch-code .token.attr-value,
+.batch-code .token.attr-value > .token.punctuation {
+    color: #e4e9f4;
+}
+
+.batch-code .token.variable,
+.batch-code .token.operator,
+.batch-code .token.function {
+    color: #c7ffff;
+}
+
+.batch-code .token.url {
+    color: hsl(187, 47%, 55%);
+}
+
+.batch-code .token.attr-value > .token.punctuation.attr-equals,
+.batch-code .token.special-attr > .token.attr-value > .token.value.css {
+    color: #c7ffff;
+}
+.batch-code .token.attr-value > .token.punctuation.attr-hyphens,
+.batch-code .token.special-attr > .token.attr-value > .token.value.css {
+    color: #f93;
+}
+.batch-code .token.operator {
+    color: #f93;
+}
+
+.batch-code .token.template-string > .token.interpolation > .token.interpolation-punctuation.punctuation {
+    color: #0000;
+}
+
+.batch-code code[class*='language-']::selection,
+.batch-code pre[class*='language-']::selection,
+.batch-code .token::selection,
+.batch-code .number::selection,
+.batch-code .symbol::selection {
+    background-color: hsl(220, 13%, 28%);
+    color: inherit;
+    text-shadow: none;
+}
+
+.line-numbers-rows > span:before {
+    color: #374151 !important;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.2em !important;
+    width: 3em; /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border: none !important;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
