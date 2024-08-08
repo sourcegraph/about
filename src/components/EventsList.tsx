@@ -9,6 +9,24 @@ const events = {
             date: 'Oct 11, 2024',
             link: 'https://friends.figma.com/events/details/figma-portugal-presents-designfao-partner-event-2/',
         },
+        {
+            title: 'All Things Open',
+            location: 'Raleigh, NC USA',
+            date: 'Oct 27-29, 2024',
+            link: 'https://2024.allthingsopen.org/',
+        },
+        {
+            title: 'QCon SF',
+            location: 'San Francisco, CA',
+            date: 'Nov 18-22, 2024',
+            link: 'https://qconsf.com/',
+        },
+        {
+            title: 'AWS re:Invent',
+            location: 'Las Vegas, NV',
+            date: 'Dec 2–6, 2024',
+            link: 'https://reinvent.awsevents.com/',
+        },
     ],
     past: [
         {
