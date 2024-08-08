@@ -60,7 +60,7 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
                                 'flex flex-col items-start rounded-xl border border-gray-200 p-6'
                             )}
                         >
-                            <h3 className="mb-4 text-xl normal-case">
+                            <h3 className="mb-4 text-xl normal-case leading-snug">
                                 Subscribe for the latest code AI news and product updates
                             </h3>
 
