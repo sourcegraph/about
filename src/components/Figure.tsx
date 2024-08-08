@@ -2,6 +2,9 @@ import { FunctionComponent, ReactNode } from 'react'
 
 import classNames from 'classnames'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
 interface Figure {
     src: string
     alt: string
@@ -24,7 +27,15 @@ export const Figure: FunctionComponent<Figure> = ({
     shadow = false,
 }) => (
     <figure>
-        <img src={src} alt={alt} title={alt} className={classNames({ 'mx-auto': centre, 'drop-shadow-xl': shadow })} />
+        <Zoom>
+            <img
+                src={src}
+                alt={alt}
+                title={alt}
+                className={classNames({ 'mx-auto': centre, 'drop-shadow-xl': shadow })}
+            />
+        </Zoom>
+
         {caption && (
             <figcaption className={'mt-3 ' + (captionCenter ? 'text-center' : '')}>
                 {link ? (
