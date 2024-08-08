@@ -16,11 +16,8 @@ export const UniversalSection: FunctionComponent = () => (
             <p className="mb-0 text-xl leading-[26px] -tracking-[0.25px] text-gray-500">
                 Cody lives in VS Code and JetBrains IDEs and works with code from any code host.
             </p>
-            <p className="mt-4 text-xl leading-[26px] -tracking-[0.25px]  text-gray-500">
-                <Link
-                    className="!px-0 !py-0  leading-[22px] text-violet-500 underline underline-offset-4"
-                    href="/enterprise"
-                >
+            <p className="mt-4 text-xl leading-[26px] -tracking-[0.25px] text-gray-500">
+                <Link className="large-in-line-link !px-0 !py-0 text-xl leading-[22px]" href="/enterprise">
                     Cody Enterprise
                 </Link>{' '}
                 integrates with all your code hosts for expanded codebase context and personalization.

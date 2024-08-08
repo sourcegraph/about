@@ -26,9 +26,9 @@ const EnterpriseTrialOffer: FunctionComponent = () => {
                     'Get started with a trial of Cody Enterprise to try the AI coding assistant with your team.',
             }}
             className="bg-gray-50"
-            heroAndHeaderClassName="pt-20 md:pt-[57px]"
+            heroAndHeaderClassName="!pt-0"
             hero={
-                <ContentSection parentClassName="pt-11 pb-[64px] px-[24px] md:px-20">
+                <ContentSection className="pt-[79px] md:pt-[57px]" parentClassName="pt-11 pb-[64px] px-[24px] md:px-20">
                     <div ref={formContainerRef}>
                         <div className="relative mx-auto flex w-full flex-col gap-10 pt-0 md:flex-row md:gap-10">
                             <div className="flex w-full flex-1 flex-col md:pr-10 md:pt-10 md:pr-20">
@@ -44,7 +44,7 @@ const EnterpriseTrialOffer: FunctionComponent = () => {
                             </div>
                             <div className="w-full md:w-1/2">
                                 <div className="overflow-hidden !rounded-2xl ">
-                                    <div className="sg-border-gradient-hubspot relative z-10 !rounded-2xl border-1 bg-white pl-12 pt-12 pb-[11px] pr-2.5">
+                                    <div className="sg-border-gradient-light relative z-10 !rounded-2xl border-1 bg-white pl-12 pt-12 pb-[11px] pr-2.5">
                                         <h2 className="mb-6 text-gray-700">Start your free trial</h2>
                                         <div
                                             className={classNames('mt-5', {
