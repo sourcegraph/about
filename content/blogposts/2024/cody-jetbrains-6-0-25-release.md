@@ -18,7 +18,9 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrai
 
 ## Ask Cody to Fix
 
-Cody now makes it even faster to go from seeing an error in your IDE to writing a fix. For errors in your code, Cody presents a new button: Ask Cody to Fix. When you click it, Cody will review the issue and suggest a fix. You can then view the diff of changes and accept or undo the change.
+Cody now makes it faster to go from seeing an error in your IDE to implementing a fix.
+
+When you view an error, Cody will present a new button: Ask Cody to Fix. Click it to prompt Cody to review the issue and suggest a fix. You can then view the diff of changes and accept or undo the change.
 
 <Video
   source={{
@@ -31,7 +33,7 @@ Cody now makes it even faster to go from seeing an error in your IDE to writing 
 
 ## Compatibility for JetBrains 2024.2 versions
 
-Earlier this week, new versions of JetBrains IDEs began rolling out including IntelliJ 2024.2 and GoLand 2024.2. This update makes the Cody plugin compatible with these 2024.2 versions, so we recommend upgrading Cody if you upgrade your JetBrains IDE to a 2024.2 version.
+Earlier this week, new versions of JetBrains IDEs began rolling out including IntelliJ 2024.2 and GoLand 2024.2. This update makes the Cody plugin compatible with these 2024.2 versions, so we recommend upgrading Cody when you upgrade your JetBrains IDE.
 
 ## Changelog
 
