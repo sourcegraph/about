@@ -31,6 +31,8 @@ When you view an error, Cody will present a new button: Ask Cody to Fix. Click i
   title="Ask Cody to Fix in JetBrains"
 />
 
+The Ask Cody to Fix button is available today on Mac and coming soon to Windows.
+
 ## Compatibility for JetBrains 2024.2 versions
 
 Earlier this week, new versions of JetBrains IDEs began rolling out including IntelliJ 2024.2 and GoLand 2024.2. This update makes the Cody plugin compatible with these 2024.2 versions, so we recommend upgrading Cody when you upgrade your JetBrains IDE.
