@@ -19,7 +19,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
     <article className={classNames(className)}>
         <Link
             href={`/${blogType}/${slugPath}`}
-            className="group block overflow-hidden rounded-lg hover:-translate-y-1.5"
+            className="group block aspect-video overflow-hidden rounded-lg hover:-translate-y-1.5"
             style={{ transition: 'transform 500ms cubic-bezier(.67,.03,.25,1.12)' }}
         >
             <img
