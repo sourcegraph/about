@@ -75,7 +75,7 @@ export const Blockquote: FunctionComponent<{
             {largeText ? (
                 <h3 className="text-3xl font-normal">&ldquo;{quote}&rdquo;</h3>
             ) : (
-                <p className="font-normal">&ldquo;{quote}&rdquo;</p>
+                <p className="mb-0 font-normal">&ldquo;{quote}&rdquo;</p>
             )}
 
             {author && <figcaption className="mt-4 text-gray-400">&mdash; {author}</figcaption>}
