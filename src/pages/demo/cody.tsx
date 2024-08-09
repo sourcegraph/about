@@ -127,7 +127,7 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
 
             <CodyChat />
 
-            <CodyPartners isLight={false} />
+            <CodyPartners isLight={false} className="!pb-[32px] md:pt-[96px] md:!pb-0" />
 
             <CodyTestimonials />
 

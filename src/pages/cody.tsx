@@ -86,7 +86,7 @@ const CodyPage: FunctionComponent = () => {
             </div>
             <CodyIde isLight={true} />
             <CodyChat isLight={true} />
-            <CodyPartners isLight={true} />
+            <CodyPartners isLight={true} className="!pb-[32px] md:pt-[96px] md:pb-0" />
             <CodyTestimonials isLight={true} />
             <CodyImageTab
                 icon="/cody/commands-brand-icon.svg"

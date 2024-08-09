@@ -21,17 +21,7 @@ export const CodyChooseLlmDualTheme: FunctionComponent<CodyChooseLlmDualThemePro
     return (
         <>
             {isLight ? (
-                <ChooseYourLlmSection
-                    isLight={true}
-                    article={article}
-                    reverseQuote={true}
-                    className="!mx-6 mt-16 mb-[64px] hidden h-auto overflow-hidden md:flex md:!min-h-[554px] md:flex-row lg:!mx-auto"
-                    authorCardClassName="!text-white !bg-violet-700"
-                    modelCardClassName="text-[#000] bg-white !border-1 !border-gray-200 w-[50%]"
-                    modelCardContent={modelCardContent}
-                    modelDescriptionClassName="!text-[#000] text-[24px] leading-[30px]"
-                    parentClassName="!p-0"
-                />
+                <ChooseYourLlmSection />
             ) : (
                 <ChooseYourLlmSection
                     article={article}
@@ -40,7 +30,6 @@ export const CodyChooseLlmDualTheme: FunctionComponent<CodyChooseLlmDualThemePro
                     authorCardClassName="!text-[#0F111A] !bg-white"
                     modelCardClassName="text-white bg-violet-700 !border-1 !border-[#343A4D]"
                     modelCardContent={modelCardContent}
-                    modelDescriptionClassName="!text-[#DBE2F0] text-[24px] leading-[30px]"
                     parentClassName="!p-0"
                 />
             )}
