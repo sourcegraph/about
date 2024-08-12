@@ -57,6 +57,8 @@ export interface FrontMatter {
     layout?: string
     style?: string
     audioSrc?: string
+    version?: string[]
+    avatar?: string
 }
 
 export interface PostComponentProps {
