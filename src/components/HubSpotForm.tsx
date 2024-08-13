@@ -68,7 +68,7 @@ interface CreateHubSpotFormProps {
 
 export interface HubSpotFormProps {
     formId?: string
-    masterFormName?: 'contactMulti' | 'contactEmail' | 'gatedMulti' | 'gatedEmail'
+    masterFormName?: 'contactMulti' | 'contactEmail' | 'enterpriseTrial' | 'gatedMulti' | 'gatedEmail'
     onFormSubmitted?: () => void
     inlineMessage?: string
     chiliPiper?: boolean
@@ -122,6 +122,9 @@ const masterForms: { [key: string]: string } = {
     // Contact Us Multi Field Form
     contactMulti: 'e090296f-84f5-4bcb-9093-a533336841b4',
 
+    // Enterprise trial form
+    enterpriseTrial: '8eeb5a2f-8189-4510-a4fa-90aa9f1f1647',
+    
     // Gated Content Email Only Form
     gatedEmail: '9b2539ad-feaa-4dd2-b6b4-2439c5bc98da',
 
