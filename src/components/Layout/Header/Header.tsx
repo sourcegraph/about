@@ -201,7 +201,10 @@ const HeaderContent: FunctionComponent<
                 handleEventSubmission={handleOpenModal}
                 id="topnav"
                 buttonLocation={buttonLocation.nav}
-                buttonClassName={`order-2 lg:order-1 py-3  px-5 lg:btn-sm ${getButtonClasses(dark, isMobile)}`}
+                buttonClassName={classNames(
+                    'btn lg:btn-sm order-2 flex w-full justify-center py-3 px-5 lg:order-2 lg:!px-4',
+                    dark ? 'btn-secondary-dark' : 'btn-secondary'
+                )}
                 requestInfo={true}
             >
                 Contact
@@ -211,10 +214,7 @@ const HeaderContent: FunctionComponent<
                 id="topnav"
                 href="https://sourcegraph.com/sign-in?returnTo=/cody/manage"
                 title="Get started with Cody"
-                className={classNames(
-                    'btn lg:btn-sm order-3 flex w-full justify-center py-3 px-5 lg:order-2 lg:!px-4',
-                    dark ? 'btn-secondary-dark' : 'btn-secondary'
-                )}
+                className={`lg:btn-sm order-3 py-3 px-5 lg:order-1 lg:px-0 ${getButtonClasses(dark, isMobile)}`}
                 type="button"
             >
                 Login
