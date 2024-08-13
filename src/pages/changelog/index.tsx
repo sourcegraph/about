@@ -58,7 +58,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                 <div
                     className="relative flex h-[330px] w-[85%] items-center justify-center rounded-lg bg-cover bg-center"
                     // eslint-disable-next-line react/forbid-dom-props
-                    style={{ backgroundImage: 'url("http://localhost:3000/assets/changelog/bento-hero.png")' }}
+                    style={{ backgroundImage: 'url("/assets/changelog/bento-hero.png")' }}
                 >
                     <div className="absolute inset-0 flex flex-col items-start justify-center p-6 px-[80px]">
                         <h1 className="font-sans text-6xl font-semibold leading-extra-tight tracking-extra-tight text-white">
