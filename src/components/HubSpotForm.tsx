@@ -124,7 +124,7 @@ const masterForms: { [key: string]: string } = {
 
     // Enterprise trial form
     enterpriseTrial: '8eeb5a2f-8189-4510-a4fa-90aa9f1f1647',
-
+    
     // Gated Content Email Only Form
     gatedEmail: '9b2539ad-feaa-4dd2-b6b4-2439c5bc98da',
 

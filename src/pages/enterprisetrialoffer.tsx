@@ -2,7 +2,7 @@ import { FunctionComponent, useEffect, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 
-import { Layout, CodyPartners, ContentSection, HubSpotForm } from '../components'
+import { Layout, CodyPartners, ContentSection, HubSpotForm, Blockquote } from '../components'
 import { ChooseYourLlmSection } from '../components/Enterprise/ChooseYourLlmSection'
 import { EnterpriseGradeSection } from '../components/Enterprise/EnterpriseGradeSection'
 import { ProcessTable } from '../components/Enterprise/ProcessTable'
@@ -36,11 +36,34 @@ const EnterpriseTrialOffer: FunctionComponent = () => {
                                     Productive <span className="hidden md:inline-block">dev teams</span>{' '}
                                     <span className="md:hidden">developers</span> are powered by Cody Enterprise
                                 </h1>
-                                <h5 className="max-w-[533px] text-xl leading-[26px] text-gray-700 md:mb-10">
+                                <h5 className="max-w-[533px] text-xl leading-[26px] text-gray-700 md:mb-6">
                                     Start your free trial of Cody Enterprise and give your teams the ability to search,
                                     write, and understand massive codebases through Sourcegraph's universal and secure
                                     Code Intelligence Platform.
                                 </h5>
+                                <Blockquote
+                                    className="hidden w-full !py-0 pl-6 !pr-0 md:block"
+                                    largeText={false}
+                                    logo={{
+                                        src: '/assets/enterprise/logo-tiles/leidos.svg',
+                                        alt: 'leidos logo',
+                                        href: '',
+                                    }}
+                                    authorPointer={false}
+                                    leftBorderAccent={true}
+                                    borderLeftColor="border-l-[#E4E9F4]"
+                                    displayLogoOnTop={true}
+                                    quoteClassName="text-2xl text-gray-700 leading-[31.2px] tracking-tight"
+                                    quote="I use Cody every day, all day long. No matter what I write, Cody helps improve it... you can make Cody explain things to you every step of the way."
+                                    author={
+                                        <span className="tracking-tight text-gray-500">
+                                            Rob Linger{' '}
+                                            <span className="block text-sm tracking-normal text-gray-700">
+                                                AI Software Architect, Leidos
+                                            </span>
+                                        </span>
+                                    }
+                                />
                             </div>
                             <div className="w-full md:w-1/2">
                                 <div className="overflow-hidden !rounded-2xl ">
