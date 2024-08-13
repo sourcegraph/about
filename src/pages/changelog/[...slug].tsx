@@ -1,8 +1,8 @@
 import path from 'path'
 
+import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
-import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 
 import { Layout, HubSpotForm, Alert, Badge, Blockquote, Figure, TableWrapper, Video, YouTube  } from '../../components'
 import changelogComponents from '../../components/Changelog'

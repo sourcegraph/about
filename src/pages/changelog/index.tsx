@@ -4,7 +4,6 @@ import { GetStaticProps, NextPage } from 'next'
 import Link from 'next/link'
 
 import { Layout, HubSpotForm } from '../../components'
-import Subscribe from '../../components/Changelog/Subscribe'
 import { useLoadMoreAndSearch } from '../../hooks/loadMoreAndSearch'
 import { getAllPublishedChangeLogPosts } from '../../lib/api'
 import { formatDate } from '../../lib/utils'
@@ -44,7 +43,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
         }
     }
 
-    const toggleVersion = (keyword: string): void => {
+    const toggleVersion = (keyword = ''): void => {
         if (selectedVersions.includes(keyword)) {
             setSelectedVersions(selectedVersions.filter(version => version !== keyword));
         }
@@ -117,9 +116,9 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                                     type='button'
                                                     onClick={() => toggleTag(keyword)}
                                                     key={keyword}
-                                                    className={'flex px-2 py-1 items-center justify-center rounded-[6px] border border-gray-200 bg-white'}
+                                                    className='flex px-2 py-1 items-center justify-center rounded-[6px] border border-gray-200 bg-white'
                                                 >
-                                                    <span className={'text-center font-sans text-sm font-normal leading-[150%] tracking-[0px]' }>
+                                                    <span className='text-center font-sans text-sm font-normal leading-[150%] tracking-[0px]'>
                                                         {keyword}
                                                     </span>
                                                 </button>
@@ -153,9 +152,9 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                         <h2>{post.title}</h2>
                                     </Link>
                                     <div className="my-4 flex items-center space-x-2">
-                                        <button onClick={() => toggleVersion(post?.version[0])} className="flex items-center justify-center rounded-md bg-[#E4E9F4] px-2 py-1">
+                                        <button type='button' onClick={() => toggleVersion(post?.version?.[0] ?? '')} className="flex items-center justify-center rounded-md bg-[#E4E9F4] px-2 py-1">
                                             <span className="text-center font-sans text-sm font-normal leading-[150%] tracking-[0px] text-[#374151]">
-                                                {post?.version[0]}
+                                            {post?.version?.[0] ?? ''}
                                             </span>
                                         </button>
                                         <img
