@@ -55,6 +55,7 @@ When you highlight a code selection, Cody provides an inline hint — `Ctrl + Al
   source={{
     mp4: 'blog/cody-jetbrains-6-0-14-release/ui-hint-WebStorm'
   }}
+  controls={true}
   loop={true}
   title="UI hints for edits in JetBrains"
 />
@@ -85,6 +86,7 @@ You’ll need to install Ollama and download a chat model such as CodeGemma or L
   source={{
     mp4: 'blog/cody-jetbrains-6-0-14-release/ollama-jetbrains'
   }}
+  controls={true}
   loop={true}
   title="Cody with Ollama"
 />

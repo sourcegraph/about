@@ -34,7 +34,7 @@ This rewrite focuses on speed and simplicity for users. There are numerous impro
 
 These improvements aren't limited to design and quality of life - you will notice markedly improved performance (as much as 10x faster in some instances) for a faster and snappier experience searching your codebase.
 
-There are some limitations to the new search experience - particularly if you use precise code intelligence, Perforce, or have accessibility requirements - so we are making it available today as an opt-in for Enterprise customers (both at the admin and end-user level). As we continue work to gain parity with the existing experience we will graduate the experience to opt-out later this year, and as the default shortly thereafter.
+There are some limitations to the new search experience - particularly if you use precise code intelligence, Perforce, or have accessibility requirements - so we are making it available today as an opt-in for Enterprise customers (please [see our docs](https://sourcegraph.com/docs/code-search/features#search-experience) to learn more about opting in). As we continue work to gain parity with the existing experience we will graduate the experience to opt-out later this year, and as the default shortly thereafter.
 <br />
 
 <Figure

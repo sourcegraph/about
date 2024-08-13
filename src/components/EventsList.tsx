@@ -4,19 +4,37 @@ import { Tabs } from './Tabs'
 const events = {
     upcoming: [
         {
-            title: 'Your Cody questions answered live!',
-            location: 'StreamYard',
-            date: 'August 8, 2024',
-            link: 'https://streamyard.com/watch/EbR6CjSPJEHa',
-        },
-        {
             title: 'designFAO',
             location: 'Portugal',
             date: 'Oct 11, 2024',
             link: 'https://friends.figma.com/events/details/figma-portugal-presents-designfao-partner-event-2/',
         },
+        {
+            title: 'All Things Open',
+            location: 'Raleigh, NC USA',
+            date: 'Oct 27-29, 2024',
+            link: 'https://2024.allthingsopen.org/',
+        },
+        {
+            title: 'QCon SF',
+            location: 'San Francisco, CA',
+            date: 'Nov 18-22, 2024',
+            link: 'https://qconsf.com/',
+        },
+        {
+            title: 'AWS re:Invent',
+            location: 'Las Vegas, NV',
+            date: 'Dec 2–6, 2024',
+            link: 'https://reinvent.awsevents.com/',
+        },
     ],
     past: [
+        {
+            title: 'Your Cody questions answered live!',
+            location: 'StreamYard',
+            date: 'August 8, 2024',
+            link: 'https://streamyard.com/watch/EbR6CjSPJEHa',
+        },
         {
             title: 'AI Dev Tools Night',
             location: 'San Francisco, CA',
