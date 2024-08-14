@@ -4,6 +4,9 @@ import { GetStaticProps, NextPage } from 'next'
 import Link from 'next/link'
 
 import { Layout, HubSpotForm } from '../../components'
+import { CalendarIcon, SearchIcon, ChevronDownIcon } from '../../components/Changelog/icons'
+import { NoItemsFound } from '../../components/Changelog/NoItemsFound'
+import { primaryTopics, secondaryTopics } from '../../constants/changelogTopics'
 import { useLoadMoreAndSearch } from '../../hooks/loadMoreAndSearch'
 import { getAllPublishedChangeLogPosts } from '../../lib/api'
 import { formatDate } from '../../lib/utils'
@@ -21,18 +24,19 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
         .map(record => record.frontmatter.tags)
         .flat()
         .filter((tag, index, self) => self.indexOf(tag) === index)
-        .sort()
+
+    const secondaryTags = [...allTags.filter(tag => (tag as string) && !primaryTopics.includes(tag as string) && !secondaryTopics.includes(tag as string)), ...secondaryTopics].sort()
+
+    const initialTopicLimit = primaryTopics.length
+
+    let visibleTopics = expanded ? [...primaryTopics, ...secondaryTags] : primaryTopics
+    visibleTopics = [...selectedTags, ...visibleTopics].filter((tag, index, self) => self.indexOf(tag) === index)
+
+    const remainingCount = secondaryTags.length - (visibleTopics.length - primaryTopics.length)
 
     const toggleExpanded = (): void => {
-        setExpanded(!expanded)
+        setExpanded(!expanded)  
     }
-
-    const rowLimit = 4
-    const topicsPerRow = 3
-    const initialTopicLimit = rowLimit * topicsPerRow
-
-    const visibleTopics = expanded ? allTags : allTags.slice(0, initialTopicLimit)
-    const remainingCount = allTags.length - initialTopicLimit
 
     const toggleTag = (keyword: string): void => {
         if (selectedTags.includes(keyword)) {
@@ -73,38 +77,11 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
             <div className="min-h-scree flex items-center justify-center bg-[#F9FAFB] pt-14">
                 <div className="container mx-auto flex w-[83%] flex-col p-6 md:flex-row">
                     <div className="flex w-full flex-col md:w-3/4">
-                        {currentRecords.map(({ frontmatter: post, slugPath }) => (
+                        {currentRecords.length > 0 ? currentRecords.map(({ frontmatter: post, slugPath }) => (
                             <div key={post.title} className="mb-12 flex">
                                 <aside className="w-1/4 pr-6">
                                     <div className="mb-5 flex items-center gap-1.5">
-                                        <svg
-                                            width="16"
-                                            height="17"
-                                            viewBox="0 0 16 17"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <g clipPath="url(#clip0_215_2093)">
-                                                <path
-                                                    d="M5.33333 1.83334V4.5M10.6667 1.83334V4.5M2 7.16667H14M3.33333 3.16667H12.6667C13.403 3.16667 14 3.76362 14 4.5V13.8333C14 14.5697 13.403 15.1667 12.6667 15.1667H3.33333C2.59695 15.1667 2 14.5697 2 13.8333V4.5C2 3.76362 2.59695 3.16667 3.33333 3.16667Z"
-                                                    stroke="#A6B6D9"
-                                                    strokeWidth="1.75"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_215_2093">
-                                                    <rect
-                                                        width="16"
-                                                        height="16"
-                                                        fill="white"
-                                                        transform="translate(0 0.5)"
-                                                    />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-
+                                        <CalendarIcon />
                                         <h2 className="text-gray-900 font-sans text-sm font-normal leading-6 tracking-normal">
                                             {formatDate(post?.publishDate)}
                                         </h2>
@@ -169,7 +146,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                     <p className='self-stretch text-[#111928] font-sans text-sm font-normal leading-[150%] tracking-normal'>{post?.description}</p>
                                 </div>
                             </div>
-                        ))}
+                        )): <NoItemsFound />}
 
                         {/* <div className="flex-1 sm:pt-6">
                             {!!searchTerm && !currentRecords.length ? (
@@ -209,21 +186,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                     className="w-full rounded-lg border border-[#A6B6D9] bg-[#F9FAFB] p-3 pl-10 font-sans text-sm font-normal leading-[21px] tracking-normal text-[#374151]"
                                 />
                                 <div className="pointer-events-none absolute top-1/2 left-3 -translate-y-1/2 transform">
-                                    <svg
-                                        width="18"
-                                        height="18"
-                                        viewBox="0 0 18 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M15.75 15.7501L12.525 12.5251M14.25 8.25C14.25 11.5637 11.5637 14.25 8.25 14.25C4.93629 14.25 2.25 11.5637 2.25 8.25C2.25 4.93629 4.93629 2.25 8.25 2.25C11.5637 2.25 14.25 4.93629 14.25 8.25Z"
-                                            stroke="#374151"
-                                            strokeWidth="1.75"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                        />
-                                    </svg>
+                                    <SearchIcon />
                                 </div>
                             </div>
                             {
@@ -243,11 +206,6 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                                 <span className={`text-center font-sans text-sm font-normal ${selectedVersions.includes(keyword || '') ? 'text-[#6112A3] leading-[150%] tracking-[0px]' : 'text-gray-900 leading-6 tracking-normal'}`}>
                                                     {keyword}
                                                 </span>
-                                                {selectedVersions.includes(keyword || '') && (
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" >
-                                                        <path d="M9 3.5L3 9.5M3 3.5L9 9.5" stroke="#6112A3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                )}
                                             </button>
                                         ))}
                                     </div>
@@ -268,32 +226,13 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                             <span className={`text-center font-sans text-sm font-normal ${selectedTags.includes(keyword || '') ? 'text-[#6112A3] leading-[150%] tracking-[0px]' : 'text-gray-900 leading-6 tracking-normal'}`}>
                                                 {keyword}
                                             </span>
-                                            {selectedTags.includes(keyword || '') && (
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" >
-                                                    <path d="M9 3.5L3 9.5M3 3.5L9 9.5" stroke="#6112A3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            )}
                                         </button>
                                     ))}
                                 </div>
                                 {remainingCount > 0 && !expanded && (
                                     <div>
                                         <button type='button' onClick={toggleExpanded} className="text-blue-600 flex items-center">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="16"
-                                                height="17"
-                                                viewBox="0 0 16 17"
-                                                fill="none"
-                                            >
-                                                <path
-                                                    d="M4 6.5L8 10.5L12 6.5"
-                                                    stroke="#111928"
-                                                    strokeWidth="1.25"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                />
-                                            </svg>
+                                            <ChevronDownIcon />
                                             <span className="ml-2 font-sans text-sm font-normal leading-[21px] tracking-normal text-black">
                                                 Expand all ({remainingCount})
                                             </span>
@@ -322,12 +261,14 @@ export const getStaticProps: GetStaticProps = async ({ preview = false }) => {
     if (!publishedPosts) {
         return { notFound: true }
     }
+
     const postsIndexProps = publishedPosts.map(post => ({
         frontmatter: post.frontmatter,
         excerpt: post.excerpt,
         slugPath: post.slugPath,
         urlPath: post.urlPath,
     }))
+
     return {
         props: {
             allPosts: postsIndexProps,

@@ -15,7 +15,6 @@ const Components = {
 	p: (props: any) => <p {...props} className='self-stretch text-[#111928] font-sans text-sm font-normal leading-[150%] tracking-[0px]'>{props.children}</p>,
 	h2: (props: any) => <Heading level="2" id={props.id} props={props} />,
 	h3: (props: any) => <Heading level="3" id={props.id} props={props} />,
-	img: (props: any) => <img className="rounded-xl" {...props} />,
 	pre: (props: any) => <PreCodeBlock {...props} />
 }
 

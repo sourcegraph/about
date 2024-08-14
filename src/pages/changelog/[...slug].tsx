@@ -6,6 +6,7 @@ import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
 import { Layout, HubSpotForm, Alert, Badge, Blockquote, Figure, TableWrapper, Video, YouTube  } from '../../components'
 import changelogComponents from '../../components/Changelog'
+import { ArrowDownRightIcon } from '../../components/Changelog/icons'
 import { PostDetailsInfo } from '../../components/Changelog/PostDetailsInfo'
 import { Page } from '../../interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '../../lib'
@@ -63,17 +64,13 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
                                 <div className='text-[#111928] font-sans text-sm font-normal leading-[150%]'>
                                     <span className='inline-flex items-center'>
                                         Technical Changelog
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none" className='ml-1'>
-                                            <path d="M5.25 5.75H12.75M12.75 5.75V13.25M12.75 5.75L5.25 13.25" stroke="#111928" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
+                                        <ArrowDownRightIcon />
                                     </span>
                                 </div>
                                 <div className='text-[#111928] font-sans text-sm font-normal leading-[150%] mt-2'>
                                     <span className='inline-flex items-center'>
                                         Download Cody for VS Code
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none" className='ml-1'>
-                                            <path d="M5.25 5.75H12.75M12.75 5.75V13.25M12.75 5.75L5.25 13.25" stroke="#111928" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
+                                        <ArrowDownRightIcon />
                                     </span>
                                 </div>
                             </div>
