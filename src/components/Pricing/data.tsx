@@ -108,7 +108,7 @@ export const FREE_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'LLM Support',
-        features: ['freeLLMsupport'],
+        features: ['freeLLMsupport', 'ollamaLLMsupport'],
     },
     {
         topic: 'Compatibility',
@@ -140,7 +140,7 @@ export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'LLM Support',
-        features: ['proLLMchat', 'proLLMcommands'],
+        features: ['proLLMchat', 'ollamaLLMsupport'],
     },
     {
         topic: 'Compatibility',
@@ -399,15 +399,15 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Prevent sensitive files from being sent to third-party LLM providers',
     },
     freeLLMsupport: {
-        label: 'Multiple LLM choices for chat and commands',
+        label: 'Multiple LLM choices for chat',
         description: 'Claude 3.5 Sonnet, Gemini Flash and Pro, Mixtral',
     },
-    proLLMchat: {
-        label: 'More powerful LLMs for chat and commands',
-        description: 'Everything in free, plus GPT-4o, and Claude 3.5 Sonnet',
+    ollamaLLMsupport: {
+        label: 'Connect to local Ollama models',
     },
-    proLLMcommands: {
-        label: 'Default LLMs for commands and autocomplete',
+    proLLMchat: {
+        label: 'More powerful LLMs for chat',
+        description: 'Everything in free, plus GPT-4o, and Claude 3.5 Sonnet',
     },
     entLLMchoices: {
         label: 'Flexible LLM choices',
@@ -419,6 +419,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     BringYourLLM: {
         label: 'Bring your own LLM',
+        description: 'Connect Cody to your own hosted LLM',
     },
     codeIntelEntLLMchoices: {
         label: 'Flexible LLM choices',
