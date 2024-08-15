@@ -10,6 +10,7 @@ export interface FeatureCluster {
 export interface FeatureInfo {
     label: string | ReactNode
     description?: string | ReactNode
+    options?: string[]
     badgeLabel?: string
 }
 
@@ -399,19 +400,19 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Prevent sensitive files from being sent to third-party LLM providers',
     },
     freeLLMsupport: {
-        label: 'Multiple LLM choices for chat',
-        description: 'Claude 3.5 Sonnet, Gemini Flash and Pro, Mixtral',
+        label: 'Multiple LLM choices for chat including:',
+        options: ['Claude 3.5 Sonnet', 'Gemini Pro and Flash', 'Mixtral'],
     },
     ollamaLLMsupport: {
         label: 'Connect to local Ollama models',
     },
     proLLMchat: {
-        label: 'More powerful LLMs for chat',
-        description: 'Everything in free, plus GPT-4o, and Claude 3.5 Sonnet',
+        label: 'More powerful LLMs for chat:',
+        options: ['All models in Free', 'GPT-4o', 'Claude 3 Opus'],
     },
     entLLMchoices: {
-        label: 'Flexible LLM choices',
-        description: 'GPT-4o, Gemini Flash and Pro, Claude 3.5 Sonnet, and more',
+        label: 'Flexible LLM choices including:',
+        options: ['Claude 3.5 Sonnet', 'GPT-4o', 'Gemini Pro and Flash'],
     },
     BringYourLLMKey: {
         label: 'Bring your own LLM key',
