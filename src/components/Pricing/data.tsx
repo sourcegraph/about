@@ -300,14 +300,14 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     freeMessageAndcommands: {
         label: (
             <p className="m-0 text-[16px] font-normal -tracking-[0.25px]">
-                <span className="font-bold">200 </span> Messages and commands per month
+                <span className="font-bold">200 </span> Chat messages and commands per month
             </p>
         ),
     },
     freeCodeContext: {
         label: (
             <div className="grid gap-6">
-                <p className="m-0">Personalization for small local codebases</p>
+                <p className="m-0">Personalization for local codebases</p>
             </div>
         ),
     },
@@ -365,7 +365,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     proMessageAndcommands: {
         label: (
             <p className="m-0 text-[16px] leading-5 -tracking-[0.25px]">
-                <span className="font-semibold">Unlimited</span> Messages and commands
+                <span className="font-semibold">Unlimited</span> Chat and commands
             </p>
         ),
     },
@@ -373,13 +373,13 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'Unlimited autocomplete',
     },
     codeIntMessageAndcommands: {
-        label: 'Unlimited messages and commands',
+        label: 'Unlimited chat and commands',
     },
     proCodeContext: {
-        label: <p className="m-0 mt-2">Personalization for larger local codebases</p>,
+        label: <p className="m-0 mt-2">Personalization for local codebases</p>,
     },
     entCodeContext: {
-        label: <p className="m-0">Advanced personalization for enterprise codebases</p>,
+        label: <p className="m-0">Personalization for remote, enterprise-scale codebases</p>,
     },
     everythingInPro: {
         label: 'Everything in Pro plus...',
