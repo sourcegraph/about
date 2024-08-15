@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { GetStaticProps, NextPage } from 'next'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import { Layout, HubSpotForm } from '../../components'
 import { CalendarIcon, SearchIcon, ChevronDownIcon } from '../../components/Changelog/icons'
@@ -13,6 +14,9 @@ import { formatDate } from '../../lib/utils'
 
 const Changelog: NextPage<any> = ({ posts, allPosts }) => {
     const [expanded, setExpanded] = useState(false)
+
+    const router = useRouter()
+    const { query } = router
 
     const { currentRecords, page, setPage, setSearchTerm, filteredRecords, searchTerm, setSelectedTags, selectedTags, setSelectedVersions, selectedVersions } = useLoadMoreAndSearch(
         allPosts,
@@ -34,18 +38,36 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
 
     const remainingCount = secondaryTags.length - (visibleTopics.length - primaryTopics.length)
 
+    useEffect(() => {
+        if (query.topics) {
+            const tagsFromUrl = (query.topics as string).split(',')
+            setSelectedTags(tagsFromUrl)
+        }
+    }, [query.topics])
+
+    const updateQueryParams = async(tags: string[]): Promise<void> => {
+        const queryParams = { ...query };
+        if (tags.length > 0) {
+            queryParams.topics = tags.join(',')
+        } else {
+            delete queryParams.topics
+        }
+        
+        await router.push({ query: queryParams }, undefined, { shallow: true })
+    };
+
     const toggleExpanded = (): void => {
         setExpanded(!expanded)  
     }
 
-    const toggleTag = (keyword: string): void => {
-        if (selectedTags.includes(keyword)) {
-            setSelectedTags(selectedTags.filter(tag => tag !== keyword));
-        }
-        else {
-            setSelectedTags([...selectedTags, keyword]);
-        }
-    }
+    const toggleTag = async(keyword: string): Promise<void> => {
+        const updatedTags = selectedTags.includes(keyword)
+            ? selectedTags.filter(tag => tag !== keyword)
+            : [...selectedTags, keyword]
+        
+        setSelectedTags(updatedTags)
+        await updateQueryParams(updatedTags)
+    };
 
     const toggleVersion = (keyword = ''): void => {
         if (selectedVersions.includes(keyword)) {
