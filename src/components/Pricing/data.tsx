@@ -108,7 +108,7 @@ export const FREE_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'LLM Support',
-        features: ['freeLLMsupport'],
+        features: ['freeLLMsupport', 'ollamaLLMsupport'],
     },
     {
         topic: 'Compatibility',
@@ -140,7 +140,7 @@ export const PRO_FEATURES_OVERVIEW: FeatureCluster[] = [
     },
     {
         topic: 'LLM Support',
-        features: ['proLLMchat', 'proLLMcommands'],
+        features: ['proLLMchat', 'ollamaLLMsupport'],
     },
     {
         topic: 'Compatibility',
@@ -300,14 +300,14 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     freeMessageAndcommands: {
         label: (
             <p className="m-0 text-[16px] font-normal -tracking-[0.25px]">
-                <span className="font-bold">200 </span> Messages and commands per month
+                <span className="font-bold">200 </span> Chat messages and commands per month
             </p>
         ),
     },
     freeCodeContext: {
         label: (
             <div className="grid gap-6">
-                <p className="m-0">Personalization for small local codebases</p>
+                <p className="m-0">Personalization for local codebases</p>
             </div>
         ),
     },
@@ -365,7 +365,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     proMessageAndcommands: {
         label: (
             <p className="m-0 text-[16px] leading-5 -tracking-[0.25px]">
-                <span className="font-semibold">Unlimited</span> Messages and commands
+                <span className="font-semibold">Unlimited</span> Chat and commands
             </p>
         ),
     },
@@ -373,13 +373,13 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         label: 'Unlimited autocomplete',
     },
     codeIntMessageAndcommands: {
-        label: 'Unlimited messages and commands',
+        label: 'Unlimited chat and commands',
     },
     proCodeContext: {
-        label: <p className="m-0 mt-2">Personalization for larger local codebases</p>,
+        label: <p className="m-0 mt-2">Personalization for local codebases</p>,
     },
     entCodeContext: {
-        label: <p className="m-0">Advanced personalization for enterprise codebases</p>,
+        label: <p className="m-0">Personalization for remote, enterprise-scale codebases</p>,
     },
     everythingInPro: {
         label: 'Everything in Pro plus...',
@@ -399,15 +399,15 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
         description: 'Prevent sensitive files from being sent to third-party LLM providers',
     },
     freeLLMsupport: {
-        label: 'Multiple LLM choices for chat and commands',
+        label: 'Multiple LLM choices for chat',
         description: 'Claude 3.5 Sonnet, Gemini Flash and Pro, Mixtral',
     },
-    proLLMchat: {
-        label: 'More powerful LLMs for chat and commands',
-        description: 'Everything in free, plus GPT-4o, and Claude 3.5 Sonnet',
+    ollamaLLMsupport: {
+        label: 'Connect to local Ollama models',
     },
-    proLLMcommands: {
-        label: 'Default LLMs for commands and autocomplete',
+    proLLMchat: {
+        label: 'More powerful LLMs for chat',
+        description: 'Everything in free, plus GPT-4o, and Claude 3.5 Sonnet',
     },
     entLLMchoices: {
         label: 'Flexible LLM choices',
@@ -419,6 +419,7 @@ const FEATURE_INFO: Record<string, FeatureInfo> = {
     },
     BringYourLLM: {
         label: 'Bring your own LLM',
+        description: 'Connect Cody to your own hosted LLM',
     },
     codeIntelEntLLMchoices: {
         label: 'Flexible LLM choices',
