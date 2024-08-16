@@ -32,6 +32,7 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
     const version = post?.frontmatter?.version
     const publishDate = post?.frontmatter?.publishDate
     const tags = post?.frontmatter?.tags
+    const relatedTopics = post?.frontmatter?.relatedTopics
 
     return (
         <Layout>
@@ -61,18 +62,21 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
                                 Related
                             </h2>
                             <div>
-                                <div className='text-[#111928] font-sans text-sm font-normal leading-[150%]'>
-                                    <span className='inline-flex items-center'>
-                                        Technical Changelog
-                                        <ArrowDownRightIcon />
-                                    </span>
-                                </div>
-                                <div className='text-[#111928] font-sans text-sm font-normal leading-[150%] mt-2'>
-                                    <span className='inline-flex items-center'>
-                                        Download Cody for VS Code
-                                        <ArrowDownRightIcon />
-                                    </span>
-                                </div>
+                                {relatedTopics.map((topic: any) => 
+                                    <div key={topic.title} className='text-[#111928] font-sans text-sm font-normal leading-[150%] mt-2'>
+                                        <span className='inline-flex items-center'>
+                                            <a 
+                                                href={topic.url} 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className='inline-flex items-center text-inherit no-underline'
+                                            >
+                                                {topic.title}
+                                                <ArrowDownRightIcon />
+                                            </a>
+                                        </span>
+                                    </div>
+                                )}
                             </div>
                         </div>
                         <div className="space-y-6 mt-8">

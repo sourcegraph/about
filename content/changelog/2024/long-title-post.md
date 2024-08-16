@@ -10,6 +10,11 @@ tags: [blog, cody]
 version: [v1.24.3]
 slug: 'long-title-post'
 published: true
+relatedTopics:
+  - title: Technical Changelog
+    url: https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-a
+  - title: Download Cody for VS Code
+    url: https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-a
 ---
 
 The search bar now supports keyword search by default, which ANDs terms together instead of searching literally as before. The behavior can be disabled through a toggle on the search results page.
