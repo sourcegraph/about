@@ -22,6 +22,8 @@ export const carouselImages = [
     { src: '/home/carousel/canva-logo.svg', className: 'w-[124px] h-[39.774px] mx-6', url: '/case-studies' },
     { src: '/home/carousel/redfin-logo.svg', className: 'w-[136px] h-[36.082px] mx-6', url: '/case-studies' },
     { src: '/home/carousel/nutanix-logo.svg', className: 'w-[201px] h-[24.446px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/leidos-logo.svg', className: 'w-[224px] h-[53px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/palo-alto-logo.svg', className: 'w-[257px] h-[47px] mx-6', url: '/case-studies' },
 ]
 
 interface HomeHeroProps {

@@ -3,7 +3,16 @@ import { FunctionComponent } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection } from '..'
+import { ContentSection, InfiniteCarousel } from '..'
+
+export const carouselImages = [
+    { src: '/enterprise/cern-logo.svg', className: 'h-[37px] w-[125px] mx-[21px]' },
+    { src: '/enterprise/mercado-libre-logo.svg', className: 'h-[51px] w-[121px] mx-[21px]' },
+    { src: '/enterprise/SoFi-logo.svg', className: 'h-[49px] w-[169px] mx-[21px]' },
+    { src: '/enterprise/qualtrics-logo.svg', className: 'h-[55px] w-[172px] mx-[21px]' },
+    { src: '/enterprise/leidos-logo.svg', className: 'h-[54px] w-[225px] mx-[21px]' },
+    { src: '/home/carousel/palo-alto-logo.svg', className: ' h-[48px] w-[258px] mx-[21px]' },
+]
 
 export const CompanyUsingCodySection: FunctionComponent = () => (
     <ContentSection
@@ -21,12 +30,6 @@ export const CompanyUsingCodySection: FunctionComponent = () => (
                 <ChevronRightIcon className="link-icon" />
             </Link>
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-[42px] ">
-            <img className="" src="/enterprise/cern-logo.svg" alt="Cody Product logo" />
-            <img className="" src="/enterprise/mercado-libre-logo.svg" alt="Cody Product logo" />
-            <img className="" src="/enterprise/SoFi-logo.svg" alt="Cody Product logo" />
-            <img className="" src="/enterprise/qualtrics-logo.svg" alt="Cody Product logo" />
-            <img className="" src="/enterprise/leidos-logo.svg" alt="Cody Product logo" />
-        </div>
+            <InfiniteCarousel images={carouselImages} />
     </ContentSection>
 )
