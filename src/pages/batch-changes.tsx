@@ -4,7 +4,8 @@ import { Merge } from 'lucide-react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Hero, Layout, Tabs, TwoColumnSection, Video, CodyCta } from '../components'
+import { ContentSection, Hero, Layout, Tabs, TwoColumnSection, Video } from '../components'
+import { ContactUsCta } from '../components/cta/ContactUsCta'
 import BatchCodeHighlighter from '../components/batch-changes/BatchCodeHighlighter'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { Icon } from '../components/icon'
@@ -279,7 +280,11 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
                     </Link>
                 </div>
             </ContentSection>
-            <CodyCta source="Batch Changes Page" isCodyPage={true} isVariantStyle={true} />
+            <ContactUsCta
+            buttonClassNames="!max-w-full"
+            parentClassNames="mdi:!py-24 mdi:!px-0 !px-6 !py-8"
+            className="px-14 py-16"
+        />
         </Layout>
     )
 }

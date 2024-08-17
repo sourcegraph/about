@@ -36,32 +36,32 @@ export const ContactUsCta: FunctionComponent<ContactUsCtaProps> = ({
                 {onClickContactUs ? (
                     <button
                         className="btn btn-primary-dark w-full sm:w-[140px]  md:w-auto"
-                        title="Contact us"
+                        title="Book a demo"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation}
                         data-button-type="cta"
                         onClick={onClickContactUs}
                         type="button"
                     >
-                        Contact us
+                        Book a demo
                     </button>
                 ) : (
                     <Link
                         className="btn btn-primary-dark w-full sm:w-[140px]  md:w-auto"
                         href="/contact/request-info"
-                        title="Contact us"
+                        title="Book a demo"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation}
                         data-button-type="cta"
                     >
-                        Contact us
+                        Book a demo
                     </Link>
                 )}
 
                 <Link
                     className="btn btn-secondary-dark w-full items-center sm:w-[140px]  md:w-auto"
                     href="/pricing"
-                    title="See Pricing"
+                    title="See pricing"
                     data-button-style={buttonStyle.outline}
                     data-button-location={buttonLocation.hero}
                     data-button-type="cta"

@@ -1,9 +1,9 @@
 import React from 'react'
 
 import classNames from 'classnames'
+import Link from 'next/link'
 
-import { MeetWithProductExpertButton } from './MeetWithProductExpertButton'
-import { TrySourcegraphForFreeButton } from './TrySourcegraphForFreeButton'
+import { buttonStyle } from '../../data/tracking'
 
 export const StandardCallToAction: React.FunctionComponent<{
     center?: boolean
@@ -29,18 +29,65 @@ export const StandardCallToAction: React.FunctionComponent<{
             'justify-center': center,
         })}
     >
-        <TrySourcegraphForFreeButton
+        <BookADemoButton
             buttonLocation={buttonLocation}
             dark={dark}
             size={size}
             customClassName={leftButtonClassName}
         />
-        <MeetWithProductExpertButton
+        <SeePricingButton
             buttonLocation={buttonLocation}
             dark={dark}
-            chevron={chevron}
             size={size}
-            customClassName={leftButtonClassName}
+            customClassName={rightButtonClassName}
         />
     </div>
+)
+
+const BookADemoButton: React.FunctionComponent<{
+    buttonLocation: number
+    dark?: boolean
+    size?: 'md' | 'lg'
+    children?: string
+    customClassName?: string
+}> = ({ buttonLocation, dark = false, size = 'md', children = 'Book a demo', customClassName }) => (
+    <Link
+        className={classNames(
+            'btn whitespace-nowrap',
+            dark ? 'btn-primary-dark' : 'btn-primary',
+            size === 'lg' && 'py-4',
+            customClassName
+        )}
+        href="/contact/request-info"
+        title={children}
+        data-button-style={buttonStyle.primary}
+        data-button-location={buttonLocation}
+        data-button-type="cta"
+    >
+        {children}
+    </Link>
+)
+
+const SeePricingButton: React.FunctionComponent<{
+    buttonLocation: number
+    dark?: boolean
+    size?: 'md' | 'lg'
+    children?: string
+    customClassName?: string
+}> = ({ buttonLocation, dark = false, size = 'md', children = 'See pricing', customClassName }) => (
+    <Link
+        className={classNames(
+            'btn whitespace-nowrap',
+            dark ? 'btn-primary-dark' : 'btn-primary',
+            size === 'lg' && 'py-4',
+            customClassName
+        )}
+        href="/pricing"
+        title={children}
+        data-button-style={buttonStyle.primary}
+        data-button-location={buttonLocation}
+        data-button-type="cta"
+    >
+        {children}
+    </Link>
 )
