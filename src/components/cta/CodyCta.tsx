@@ -74,11 +74,11 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
 
     const linkContent = isLight ? (
         <>
-            <span className="md:hidden">Contact sales</span>
-            <span className="hidden md:flex"> Request info</span>
+            <span className="md:hidden">Book a demo</span>
+            <span className="hidden md:flex">Book a demo</span>
         </>
     ) : (
-        <span>{isVariantStyle ? 'Contact sales' : 'Request info'} </span>
+        <span>{isVariantStyle ? 'Book a demo' : 'Book a demo'} </span>
     )
 
     return (
@@ -123,7 +123,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
                             )}
                             data-button-type="cta"
                         >
-                            Meet with product expert
+                            Book a demo
                         </Link>
                     )}
                 </div>

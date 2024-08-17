@@ -324,7 +324,7 @@ const CodeSearchHero: FunctionComponent = () => (
                 </h3>
                 <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
                     <Link href="/demo" className="btn btn-primary">
-                        Contact us for a demo
+                        Book a demo
                     </Link>
                     <Link
                         href="/pricing?product=codeSearch"

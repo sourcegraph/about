@@ -28,12 +28,12 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
     buttonClassName = `${dark ? 'btn-link-dark' : 'btn-link'}`,
     customClassName,
     requestInfo = false,
-    children = requestInfo ? 'Contact sales' : 'Talk to an engineer',
+    children = requestInfo ? 'Book a demo' : 'Book a demo',
 }) => (
     <Link
         onClick={() => handleEventSubmission('contact_sales_click', false)}
         id={id}
-        href={requestInfo ? '/contact/request-info' : '/demo'}
+        href={requestInfo ? '/contact/request-info' : '/contact/request-info'}
         className={classNames(
             'inline-flex items-center whitespace-nowrap',
             !customClassName && buttonClassName,
@@ -42,7 +42,7 @@ export const MeetWithProductExpertButton: React.FunctionComponent<{
             customClassName
         )}
         title={children}
-        data-button-style={buttonStyle.outline}
+        data-button-style={buttonStyle.primary}
         data-button-location={buttonLocation}
         data-button-type="cta"
     >

@@ -40,7 +40,7 @@ export const StandardCallToAction: React.FunctionComponent<{
             dark={dark}
             chevron={chevron}
             size={size}
-            customClassName={rightButtonClassName}
+            customClassName={leftButtonClassName}
         />
     </div>
 )

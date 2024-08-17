@@ -317,7 +317,7 @@ const Home: FunctionComponent = () => {
                                     title="Get Cody for Enterprise"
                                     className="btn btn-secondary-dark w-full px-6 py-2 text-center md:w-auto"
                                 >
-                                    Request info
+                                    Book a demo
                                 </Link>
                                 <Link
                                     href="https://sourcegraph.com/pricing"
