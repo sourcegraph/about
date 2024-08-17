@@ -1,5 +1,7 @@
 import path from 'path'
 
+import { useEffect, useState } from 'react'
+
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
@@ -25,7 +27,14 @@ interface PageProps {
 
 const CONTENT_PARENT_DIRECTORY = './content/'
 
+const getMainUrl = (fullUrl: string): string => {
+    const url = new URL(fullUrl);
+    return `${url.origin}${url.pathname.split('/').slice(0, 3).join('/')}`
+}
+
 const TermPage: NextPage<PageProps> = ({ post, content }) => {
+    const [xPostUrl, setXPostUrl] = useState('')
+
     const title = post.frontmatter.title
     const name = post?.frontmatter?.authors?.[0]?.name ?? ''
     const avatar = post?.frontmatter?.avatar
@@ -33,6 +42,15 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
     const publishDate = post?.frontmatter?.publishDate
     const tags = post?.frontmatter?.tags
     const relatedTopics = post?.frontmatter?.relatedTopics
+
+    useEffect(() => {
+        const fullUrl = window.location.href
+        const extractedMainUrl = getMainUrl(fullUrl);
+
+        const completeURL = `https://x.com/intent/tweet?url=${extractedMainUrl}&via=Sourcegraph&text=Check out the latest changes from Sourcegraph:`
+
+        setXPostUrl(completeURL);
+    }, []);
 
     return (
         <Layout>
@@ -88,6 +106,7 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
                         <button
                             type="submit"
                             className="flex px-6 py-2 justify-center items-center gap-2 rounded border border-[#270741] mt-6"
+                            onClick={() => window.open(xPostUrl, '_blank', 'noopener,noreferrer')}
                         >
                             <span>
                                 <img className='w-[16px] h-[16px] flex-shrink-0' src='/assets/changelog/Xcom.png' />
