@@ -27,8 +27,8 @@ export const slugData: SlugDataProps = {
         masterFormName: 'contactMulti',
     },
     'request-info': {
-        title: 'Contact us',
-        description: 'Talk with a product specialist to learn more about Sourcegraph.',
+        title: 'Book a demo',
+        description: "We'll discuss what Sourcegraph can do for your team, then provide a live product demo based on your needs.",
         masterFormName: 'contactMulti',
         form_submission_source: 'request-info',
     },
