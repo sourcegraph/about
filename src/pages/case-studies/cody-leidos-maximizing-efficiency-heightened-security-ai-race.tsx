@@ -2,7 +2,7 @@ import { FunctionComponent, ReactNode } from 'react'
 
 import { Badge, Blockquote, ContentSection, Hero, Layout } from '../../components'
 import MoreCaseStudies from '../../components/CaseStudies/MoreCaseStudies'
-import SidebarCta from '../../components/CaseStudies/SidebarCta'
+import SidebarCta from '../../components/SidebarCta'
 
 const Leidos: FunctionComponent = () => (
     <Layout
