@@ -100,6 +100,9 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+  react-medium-image-zoom:
+    specifier: ^5.2.8
+    version: 5.2.8(react-dom@18.2.0)(react@18.2.0)
   react-popper:
     specifier: ^2.3.0
     version: 2.3.0(@popperjs/core@2.11.7)(react-dom@18.2.0)(react@18.2.0)
@@ -11606,6 +11609,16 @@ packages:
       react-reconciler: 0.20.4(react@18.2.0)
       scheduler: 0.13.6
     dev: true
+
+  /react-medium-image-zoom@5.2.8(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-ivnubZi/2GQcMTneQy5gjLxEQLenKu081844qqZ7/JvLxSh5YPF1TLq7s+5rc54dKa0jjPT8Zm2tiC0Sda6eIA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
 
   /react-native@0.72.4(@babel/core@7.22.20)(@babel/preset-env@7.22.20)(react@18.2.0):
     resolution: {integrity: sha512-+vrObi0wZR+NeqL09KihAAdVlQ9IdplwznJWtYrjnQ4UbCW6rkzZJebRsugwUneSOKNFaHFEo1uKU89HsgtYBg==}

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import { Badge, Blockquote, ContentSection, Hero, Layout } from '../../components'
 import MoreCaseStudies from '../../components/CaseStudies/MoreCaseStudies'
-import SidebarCta from '../../components/CaseStudies/SidebarCta'
+import SidebarCta from '../../components/SidebarCta'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
 
 const Qualtrics: FunctionComponent = () => (

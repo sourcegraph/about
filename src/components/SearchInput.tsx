@@ -33,14 +33,17 @@ const SearchInput: React.FC<SearchInputProps> = ({ onSearch, label, className, i
 
     return (
         <div className={classNames(className, 'w-full')}>
-            <h6 className="pb-4 text-gray-700">{label}</h6>
+            {/* <h6 className="pb-1 text-sm tracking-tight text-gray-400">{label}</h6> */}
+
             <div className="relative flex w-full items-center">
                 <SearchIcon size={20} className="absolute left-3 text-gray-400" />
+
                 <input
                     type="text"
                     value={searchTerm}
                     onChange={handleChange}
-                    className="h-[54px] w-full rounded-lg border border-gray-300 py-2 pl-12 pr-[16px] focus:border-2 focus:border-violet-400 focus:shadow-card focus:outline-none"
+                    placeholder="Search posts&hellip;"
+                    className="w-full rounded-lg border border-gray-200 py-2 pl-10 pr-4 tracking-tighter focus:outline-none focus:ring-1 focus:ring-violet-300"
                 />
                 {searchTerm && (
                     <button type="button" className="absolute right-2 top-4 text-gray-400" onClick={handleClearSearch}>

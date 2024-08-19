@@ -32,6 +32,10 @@ export const Blockquote: FunctionComponent<{
     leftBorderAccent?: boolean
     inline?: boolean // inline vs. col layout
     className?: string
+    authorPointer?: boolean
+    quoteClassName?: string
+    displayLogoOnTop?: boolean
+    borderLeftColor?: string
 }> = ({
     quote,
     author,
@@ -45,6 +49,10 @@ export const Blockquote: FunctionComponent<{
     inline = true,
     leftBorderAccent = false,
     className,
+    authorPointer = true,
+    quoteClassName,
+    displayLogoOnTop,
+    borderLeftColor = 'border-l-violet-400',
 }) => {
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg
@@ -56,7 +64,7 @@ export const Blockquote: FunctionComponent<{
         if (border) {
             if (inline) {
                 return `my-8 border-solid ${borderLocation} ${
-                    leftBorderAccent ? 'border-l-violet-400' : 'border-r-violet-400'
+                    leftBorderAccent ? borderLeftColor : 'border-r-violet-400'
                 } `
             }
             // Blockquotes in column: Border flips to horizontal for mobile
@@ -70,17 +78,34 @@ export const Blockquote: FunctionComponent<{
 
     return (
         <blockquote className={classNames('px-8', getBorderStyle(), className)}>
+            {logo && displayLogoOnTop && (
+                <img
+                    src={logo.src}
+                    className={classNames('mb-3 max-w-[150px]', {
+                        'mx-auto': !border && center,
+                    })}
+                    width="110px"
+                    alt={logo.alt}
+                />
+            )}
             {headline ? largeText ? <h2>{headline}</h2> : <h4 className="mb-6">{headline}</h4> : null}
 
             {largeText ? (
                 <h3 className="text-3xl font-normal">&ldquo;{quote}&rdquo;</h3>
             ) : (
-                <p className="mb-0 font-normal">&ldquo;{quote}&rdquo;</p>
+                <p className={classNames('font-normal', quoteClassName)}>&ldquo;{quote}&rdquo;</p>
             )}
 
-            {author && <figcaption className="mt-4 text-gray-400">&mdash; {author}</figcaption>}
+            {author && (
+                <figcaption
+                    className={classNames('mt-4 text-gray-400', { 'mt-4': authorPointer, 'mt-2.5': !authorPointer })}
+                >
+                    {authorPointer && <span>&mdash;</span>} {author}
+                </figcaption>
+            )}
 
             {logo &&
+                !displayLogoOnTop &&
                 (logo.href ? (
                     <Link href={logo.href}>
                         <img

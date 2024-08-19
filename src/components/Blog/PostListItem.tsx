@@ -16,10 +16,14 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
     blogType,
     children,
 }) => (
-    <article className={classNames(className, 'space-y-2')}>
-        <Link href={`/${blogType}/${slugPath}`} className="mb-3 block">
+    <article className={classNames(className)}>
+        <Link
+            href={`/${blogType}/${slugPath}`}
+            className="group block aspect-video overflow-hidden rounded-lg hover:-translate-y-1.5"
+            style={{ transition: 'transform 500ms cubic-bezier(.67,.03,.25,1.12)' }}
+        >
             <img
-                className="w-full rounded-lg"
+                className="h-full rounded-lg object-cover"
                 src={
                     frontmatter.heroImage
                         ? frontmatter.heroImage
@@ -29,18 +33,22 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
             />
         </Link>
 
-        <h2 className="text-blog-h2">
+        <h2 className="text-blog-h3 mt-4 mb-3 leading-tight">
             <Link
                 href={`/${blogType}/${slugPath}`}
-                className="block text-gray-600 hover:text-violet-500 hover:underline"
+                className="block text-gray-600 hover:text-violet-500"
                 title={frontmatter.title}
             >
                 {frontmatter.title}
             </Link>
         </h2>
 
+        {(frontmatter.authors?.length || frontmatter.publishDate) && (
+            <BylineAndDate authors={frontmatter.authors} publishDate={frontmatter.publishDate} />
+        )}
+
         {slugPath && (
-            <p className="text-gray-500">
+            <p className="mt-3 block text-gray-400">
                 {frontmatter.description
                     ? truncate(frontmatter.description, 300)
                     : typeof excerpt === 'string' && excerpt}
@@ -48,9 +56,5 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
         )}
 
         {children}
-
-        {(frontmatter.authors?.length || frontmatter.publishDate) && (
-            <BylineAndDate authors={frontmatter.authors} publishDate={frontmatter.publishDate} />
-        )}
     </article>
 )

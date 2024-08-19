@@ -27,7 +27,31 @@ export const ReleasePost: FunctionComponent<Props> = ({
 }) => {
     const body = (
         <>
-            {content && <MDXRemote {...content} components={components as ReleaseComponents} />}
+            {content && (
+                <div
+                    className={classNames(
+                        'mt-8',
+                        'min-h-[60vh]',
+                        styles.content,
+                        'prose',
+                        'xl:prose-lg',
+                        'leading-relaxed',
+                        'xl:leading-relaxed',
+                        'prose-headings:font-semibold',
+                        'prose-headings:mb-2.5',
+                        'prose-a:text-violet-500',
+                        'prose-a:no-underline',
+                        'hover:prose-a:text-violet-400',
+                        'hover:prose-a:underline',
+                        'prose-img:rounded-lg',
+                        'prose-img:!mt-8',
+                        'prose-code:before:hidden',
+                        'prose-code:after:hidden'
+                    )}
+                >
+                    <MDXRemote {...content} components={components as ReleaseComponents} />
+                </div>
+            )}
 
             {frontmatter.changelogItems?.length ? (
                 <div>
@@ -65,7 +89,9 @@ export const ReleasePost: FunctionComponent<Props> = ({
             <h1 className="text-blog-h1">{frontmatter.title}</h1>
 
             {(frontmatter.authors?.length || frontmatter.publishDate) && (
-                <BylineAndDate authors={frontmatter.authors} publishDate={frontmatter.publishDate} />
+                <div className="mt-3">
+                    <BylineAndDate authors={frontmatter.authors} publishDate={frontmatter.publishDate} />
+                </div>
             )}
 
             {body}

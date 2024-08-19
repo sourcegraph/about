@@ -28,24 +28,24 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
 
     return (
         <Layout meta={blogInfo.meta}>
-            <div className="mx-auto max-w-screen-xl px-6 md:mt-5">
-                <div className="flex flex-col gap-8 sm:flex-row">
+            <div className="mx-auto mb-20 max-w-screen-xl px-6 md:mt-5">
+                <div className="flex flex-col gap-12 md:flex-row">
                     <div>
-                        <div className="sticky top-5 sm:max-w-[300px] md:mb-16 md:max-w-[320px] md:pt-6">
-                            <BlogHeader {...blogInfo} variant="list" className="pt-0 md:pt-6" />
+                        <div className="sticky top-20 md:max-w-[300px] md:pt-3 lg:max-w-[320px]">
+                            <BlogHeader {...blogInfo} title="All posts" variant="list" className="pt-0 md:pt-3" />
 
-                            <div className="flex flex-col-reverse gap-6 sm:flex-col md:gap-8">
-                                <SearchInput onSearch={setSearchTerm} label="SEARCH" />
+                            <div className="mt-5 flex flex-col-reverse gap-6 sm:flex-col md:gap-8">
+                                <SearchInput onSearch={setSearchTerm} label="Search" />
 
                                 <div
                                     className={classNames(
                                         styles.blogForm,
-                                        'flex flex-col items-start rounded-2xl bg-gray-100 p-6'
+                                        'flex flex-col items-start rounded-xl border border-gray-200 p-6'
                                     )}
                                 >
-                                    <h1 className="text-blog-h3 mb-8 normal-case">
+                                    <h3 className="mb-4 text-xl font-normal leading-snug">
                                         Subscribe for the latest code AI news and product updates
-                                    </h1>
+                                    </h3>
 
                                     <HubSpotForm
                                         formId="ab908b80-d1ed-44fd-968c-505c85ed72ac"
