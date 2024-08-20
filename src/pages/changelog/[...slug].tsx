@@ -2,13 +2,14 @@ import path from 'path'
 
 import { useEffect, useState } from 'react'
 
+import { ArrowUpRight } from 'lucide-react'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
 import { Layout, HubSpotForm, Alert, Badge, Blockquote, Figure, TableWrapper, Video, YouTube  } from '../../components'
 import changelogComponents from '../../components/Changelog'
-import { ArrowDownRightIcon } from '../../components/Changelog/icons'
+import { XIcon } from '../../components/Changelog/icons'
 import { PostDetailsInfo } from '../../components/Changelog/PostDetailsInfo'
 import { Page } from '../../interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '../../lib'
@@ -76,12 +77,12 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
                     {/* Right part */}
                     <aside className="w-full md:mt-0 md:w-1/4 md:pl-6">
                         <div className="space-y-6">
-                            <h2 className="font-sans text-sm font-semibold uppercase leading-[21px] tracking-wide text-[#111928] mb-4 mt-2">
+                            <h2 className="font-sans text-sm font-semibold uppercase leading-[21px] tracking-wide text-gray-700 mb-4 mt-2">
                                 Related
                             </h2>
                             <div>
                                 {relatedTopics.map((topic: any) => 
-                                    <div key={topic.title} className='text-[#111928] font-sans text-sm font-normal leading-[150%] mt-2'>
+                                    <div key={topic.title} className='text-gray-700 font-sans text-sm font-normal leading-[150%] mt-2'>
                                         <span className='inline-flex items-center'>
                                             <a 
                                                 href={topic.url} 
@@ -90,7 +91,7 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
                                                 className='inline-flex items-center text-inherit no-underline'
                                             >
                                                 {topic.title}
-                                                <ArrowDownRightIcon />
+                                                <ArrowUpRight className='w-4 h-4' />
                                             </a>
                                         </span>
                                     </div>
@@ -98,25 +99,25 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
                             </div>
                         </div>
                         <div className="space-y-6 mt-8">
-                            <h2 className="font-sans text-sm font-semibold uppercase leading-[21px] tracking-wide text-[#111928] mb-4 mt-6">
+                            <h2 className="font-sans text-sm font-semibold uppercase leading-[21px] tracking-wide text-gray-700 mb-4 mt-6">
                                 SHARE
                             </h2>
-                            <span className='self-stretch text-[#111928] font-sans text-sm font-normal leading-[150%] tracking-[0px]' >Share on X (Twitter) to continue the  discussion with others</span>
+                            <span className='self-stretch text-gray-700 font-sans text-sm font-normal leading-[150%] tracking-[0px]' >Share on X (Twitter) to continue the  discussion with others</span>
                         </div>
                         <button
                             type="submit"
-                            className="flex px-6 py-2 justify-center items-center gap-2 rounded border border-[#270741] mt-6"
+                            className="flex px-6 py-2 justify-center items-center gap-2 rounded border border-violet-700 mt-6"
                             onClick={() => window.open(xPostUrl, '_blank', 'noopener,noreferrer')}
                         >
                             <span>
-                                <img className='w-[16px] h-[16px] flex-shrink-0' src='/assets/changelog/Xcom.png' />
+                                <XIcon />
                             </span>
-                            <span className='text-[#270741] font-sans text-base font-semibold leading-[150%] tracking-[-0.25px]'>
+                            <span className='text-violet-700 font-sans text-base font-semibold leading-[150%] tracking-[-0.25px]'>
                                 Post
                             </span>
                         </button>
                         <div className="mt-8 subsribe-changelog-button">
-                            <h2 className="font-sans text-sm font-semibold uppercase leading-[21px] tracking-wide text-[#111928] mt-8 mb-4">SUBSCRIBE</h2>
+                            <h2 className="font-sans text-sm font-semibold uppercase leading-[21px] tracking-wide text-gray-700 mt-8 mb-4">SUBSCRIBE</h2>
                             <HubSpotForm
                                 formId="ab908b80-d1ed-44fd-968c-505c85ed72ac"
                                 inlineMessage="Thanks, you are now subscribed!"

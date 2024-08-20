@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
+import { Calendar, ChevronDown, Search } from 'lucide-react'
 import { GetStaticProps, NextPage } from 'next'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { Layout, HubSpotForm } from '../../components'
-import { CalendarIcon, SearchIcon, ChevronDownIcon } from '../../components/Changelog/icons'
 import { NoItemsFound } from '../../components/Changelog/NoItemsFound'
 import { primaryTopics, secondaryTopics } from '../../constants/changelogTopics'
 import { useLoadMoreAndSearch } from '../../hooks/loadMoreAndSearch'
@@ -79,16 +79,16 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
     }
 
     return (
-        <Layout className="bg-[#F9FAFB]">
-            <div className="relative mt-[-30px] flex items-center justify-center bg-[#F9FAFB]">
+        <Layout className="bg-gray-50">
+            <div className="relative mt-[-30px] flex items-center justify-center bg-gray-50">
                 <div
                     className="relative flex h-[330px] w-[85%] items-center justify-center rounded-lg bg-cover bg-center"
                     // eslint-disable-next-line react/forbid-dom-props
                     style={{ backgroundImage: 'url("/assets/changelog/bento-hero.png")' }}
                 >
-                    <div className="absolute inset-0 flex flex-col items-start justify-center p-6 px-[80px]">
+                    <div className="absolute inset-0 flex flex-col items-start justify-center p-6 px-[80px] space-y-6">
                         <h1 className="font-sans text-6xl font-semibold leading-extra-tight tracking-extra-tight text-white">
-                            Changelog
+                            Changelog   
                         </h1>
                         <p className="font-sans text-base font-normal leading-custom-150 tracking-custom-tight text-white">
                             Latest updates to the Sourcegraph and Cody platform
@@ -96,14 +96,14 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                     </div>
                 </div>
             </div>
-            <div className="min-h-scree flex items-center justify-center bg-[#F9FAFB] pt-14">
+            <div className="min-h-scree flex items-center justify-center bg-gray-50 pt-14">
                 <div className="container mx-auto flex w-[83%] flex-col p-6 md:flex-row">
                     <div className="flex w-full flex-col md:w-3/4">
                         {currentRecords.length > 0 ? currentRecords.map(({ frontmatter: post, slugPath }) => (
                             <div key={post.title} className="mb-12 flex">
                                 <aside className="w-1/4 pr-6">
                                     <div className="mb-5 flex items-center gap-1.5">
-                                        <CalendarIcon />
+                                        <Calendar className='w-4 h-4 text-gray-300'/>
                                         <h2 className="text-gray-900 font-sans text-sm font-normal leading-6 tracking-normal">
                                             {formatDate(post?.publishDate)}
                                         </h2>
@@ -151,21 +151,21 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                         <h2>{post.title}</h2>
                                     </Link>
                                     <div className="my-4 flex items-center space-x-2">
-                                        <button type='button' onClick={() => toggleVersion(post?.version?.[0] ?? '')} className="flex items-center justify-center rounded-md bg-[#E4E9F4] px-2 py-1">
-                                            <span className="text-center font-sans text-sm font-normal leading-[150%] tracking-[0px] text-[#374151]">
+                                        <button type='button' onClick={() => toggleVersion(post?.version?.[0] ?? '')} className="flex items-center justify-center rounded-md bg-gray-100 px-2 py-1">
+                                            <span className="text-center font-sans text-sm font-normal leading-[150%] tracking-[0px] text-gray-500">
                                             {post?.version?.[0] ?? ''}
                                             </span>
                                         </button>
                                         <img
                                             src={post?.avatar}
                                             alt={post?.authors?.[0]?.name ?? ''}
-                                            className="bg-lightgray h-[20px] w-[20px] rounded-full border-[0.5px] border-[#14171F] bg-cover bg-center bg-no-repeat"
+                                            className="bg-lightgray h-[20px] w-[20px] rounded-full border-[0.5px] border-gray-800 bg-cover bg-center bg-no-repeat"
                                         />
-                                        <span className="font-sans text-sm font-normal leading-[150%] tracking-[0px] text-[#111928]">
+                                        <span className="font-sans text-sm font-normal leading-[150%] tracking-[0px] text-gray-700">
                                             {post?.authors?.[0]?.name ?? ''}
                                         </span>
                                     </div>
-                                    <p className='self-stretch text-[#111928] font-sans text-sm font-normal leading-[150%] tracking-normal'>{post?.description}</p>
+                                    <p className='self-stretch text-gray-700 font-sans text-sm font-normal leading-[150%] tracking-normal'>{post?.description}</p>
                                 </div>
                             </div>
                         )): <NoItemsFound />}
@@ -205,16 +205,16 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                     type="text"
                                     onChange={event => setSearchTerm(event.target.value)}
                                     placeholder="Search"
-                                    className="w-full rounded-lg border border-[#A6B6D9] bg-[#F9FAFB] p-3 pl-10 font-sans text-sm font-normal leading-[21px] tracking-normal text-[#374151]"
+                                    className="w-full rounded-lg border border-gray-300 bg-gray-50 p-3 pl-10 font-sans text-sm font-normal leading-[21px] tracking-normal text-gray-500 focus:border-violet-500 focus:ring-violet-500 focus:ring-1s outline-none"
                                 />
                                 <div className="pointer-events-none absolute top-1/2 left-3 -translate-y-1/2 transform">
-                                    <SearchIcon />
+                                    <Search className='w-5 h-5 text-gray-500' />
                                 </div>
                             </div>
                             {
                                 selectedVersions.length > 0 && 
                                 <div className="space-y-6">
-                                    <h2 className="mt-8 mb-6 font-sans text-sm font-semibold uppercase leading-[21px] tracking-wide text-[#111928]">
+                                    <h2 className="mt-8 mb-6 font-sans text-sm font-semibold uppercase leading-[21px] tracking-wide text-gray-700">
                                         VERSION
                                     </h2>
                                     <div className="mb-8 flex flex-wrap gap-2">
@@ -223,9 +223,9 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                                 type='button'
                                                 onClick={() => toggleVersion(keyword || '')}
                                                 key={keyword}
-                                                className={`flex px-2 py-1 ${selectedVersions.includes(keyword || '') ? 'justify-center items-center gap-1 rounded-md border border-[#E8D1FF] bg-[#EEDFFF]' : 'items-center justify-center rounded-[6px] border border-gray-200 bg-white'} `}
+                                                className={`flex px-2 py-1 ${selectedVersions.includes(keyword || '') ? 'justify-center items-center gap-1 rounded-md border border-violet-200 bg-violet-100' : 'items-center justify-center rounded-[6px] border border-gray-200 bg-white'} `}
                                             >
-                                                <span className={`text-center font-sans text-sm font-normal ${selectedVersions.includes(keyword || '') ? 'text-[#6112A3] leading-[150%] tracking-[0px]' : 'text-gray-900 leading-6 tracking-normal'}`}>
+                                                <span className={`text-center font-sans text-sm font-normal ${selectedVersions.includes(keyword || '') ? 'text-violet-600 leading-[150%] tracking-[0px]' : 'text-gray-900 leading-6 tracking-normal'}`}>
                                                     {keyword}
                                                 </span>
                                             </button>
@@ -234,7 +234,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                 </div>
                             }
                             <div className="space-y-6">
-                                <h2 className="mt-8 mb-6 font-sans text-sm font-semibold uppercase leading-[21px] tracking-wide text-[#111928]">
+                                <h2 className="mt-8 mb-6 font-sans text-sm font-semibold uppercase leading-[21px] tracking-wide text-gray-700">
                                     TOPICS
                                 </h2>
                                 <div className="mb-8 flex flex-wrap gap-2">
@@ -243,9 +243,9 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                             type='button'
                                             onClick={() => toggleTag(keyword || '')}
                                             key={keyword}
-                                            className={`flex px-2 py-1 ${selectedTags.includes(keyword || '') ? 'justify-center items-center gap-1 rounded-md border border-[#E8D1FF] bg-[#EEDFFF]' : 'items-center justify-center rounded-[6px] border border-gray-200 bg-white'} `}
+                                            className={`flex px-2 py-1 ${selectedTags.includes(keyword || '') ? 'justify-center items-center gap-1 rounded-md border border-violet-200 bg-violet-100' : 'items-center justify-center rounded-[6px] border border-gray-200 bg-white'} `}
                                         >
-                                            <span className={`text-center font-sans text-sm font-normal ${selectedTags.includes(keyword || '') ? 'text-[#6112A3] leading-[150%] tracking-[0px]' : 'text-gray-900 leading-6 tracking-normal'}`}>
+                                            <span className={`text-center font-sans text-sm font-normal ${selectedTags.includes(keyword || '') ? 'text-violet-600 leading-[150%] tracking-[0px]' : 'text-gray-900 leading-6 tracking-normal'}`}>
                                                 {keyword}
                                             </span>
                                         </button>
@@ -254,7 +254,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                 {remainingCount > 0 && !expanded && (
                                     <div>
                                         <button type='button' onClick={toggleExpanded} className="text-blue-600 flex items-center">
-                                            <ChevronDownIcon />
+                                            <ChevronDown className='w-4 h-4' />
                                             <span className="ml-2 font-sans text-sm font-normal leading-[21px] tracking-normal text-black">
                                                 Expand all ({remainingCount})
                                             </span>
@@ -263,7 +263,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                 )}
                             </div>
                             <div className="mt-8 subsribe-changelog-button">
-                                <h2 className="font-sans text-sm font-semibold uppercase leading-[21px] tracking-wide text-[#111928] mt-8 mb-4">SUBSCRIBE</h2>
+                                <h2 className="font-sans text-sm font-semibold uppercase leading-[21px] tracking-wide text-gray-700 mt-8 mb-4">SUBSCRIBE</h2>
                                 <HubSpotForm
                                     formId="ab908b80-d1ed-44fd-968c-505c85ed72ac"
                                     inlineMessage="Thanks, you are now subscribed!"
