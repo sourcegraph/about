@@ -83,13 +83,13 @@ const Enterprise: FunctionComponent = () => {
                             <div className="mx-auto flex w-[356px] flex-col items-center justify-center gap-6 sm:flex sm:w-auto  sm:flex-row  md:gap-4">
                                 <Link
                                     className="btn btn-primary w-full sm:w-auto"
-                                    href="/contact/request-info"
-                                    title="Contact us for a demo"
+                                    href="/enterprise-trial-offer"
+                                    title="Start your free trial"
                                     data-button-style={buttonStyle.primary}
                                     data-button-location={buttonLocation}
                                     data-button-type="cta"
                                 >
-                                    Contact us for a demo
+                                    Start your free trial
                                 </Link>
                                 <Link
                                     className="btn btn-secondary w-full items-center sm:w-auto"

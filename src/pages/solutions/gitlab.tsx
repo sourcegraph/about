@@ -42,7 +42,7 @@ const GitLab: FunctionComponent = () => (
             description="Write and understand code in GitLab environments with native
                             Cody and Code Search integrations."
             mainImageUrl="/solutions/gitlab/enterprise-context.svg"
-            contactButtonLabel="Contact us for a demo"
+            contactButtonLabel="Book a demo"
             scaleMobileImage={true}
             alt="GitLab"
         />

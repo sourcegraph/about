@@ -59,7 +59,7 @@ const ContactHome: FunctionComponent = () => (
                         <h4>Sales</h4>
                         <p>For information about products and purchasing:</p>
                         <Link
-                            href="/demo"
+                            href="/contact/request-info"
                             className="btn btn-secondary"
                             title="Contact sales"
                             data-button-style={buttonStyle.outline}

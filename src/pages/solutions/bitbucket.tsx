@@ -43,7 +43,7 @@ const Bitbucket: FunctionComponent = () => (
             title="Understand and write code faster with Bitbucket + AI"
             description="Sourcegraph’s AI coding assistant and Code Search integrate with Bitbucket Cloud and Bitbucket Data Center."
             mainImageUrl="/solutions/bitbucket/bitbucket-enterprise-context.svg"
-            contactButtonLabel="Contact us"
+            contactButtonLabel="Book a demo"
             alt="Bitbucket"
             scaleMobileImage={true}
             textColor="!text-[#0F111A]"
