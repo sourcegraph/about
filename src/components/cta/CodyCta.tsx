@@ -149,7 +149,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
                 </h3>
                 <div className="flex max-w-[356px] flex-col flex-wrap gap-4 md:flex-row">
                     <Link
-                        href="https://sourcegraph.com/contact/request-info"
+                        href="/contact/request-info"
                         title="Get Cody for Enterprise"
                         className="btn btn-secondary-dark w-full px-6 py-2 text-center md:w-auto"
                     >
