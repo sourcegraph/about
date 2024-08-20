@@ -49,7 +49,7 @@ const BuildUnitTestsPage: FunctionComponent = () => {
                             </button>
 
                             <Link
-                                href="https://sourcegraph.com/contact/request-info?form_submission_source=solutions-build-unit-tests"
+                                href="/contact/request-info?form_submission_source=solutions-build-unit-tests"
                                 title="Book a demo"
                                 className="btn btn-secondary text-center"
                                 type="button"
