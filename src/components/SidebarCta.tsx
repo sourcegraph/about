@@ -12,9 +12,9 @@ interface SidebarCtaProps {
 }
 
 const SidebarCta: React.FC<SidebarCtaProps> = ({
-    title = 'Try Sourcegraph on your code',
-    description = ' Experience code intelligence with a free trial for you and your team, or search millions of open source repositories.',
-    btnLabel = 'Meet with a product expert',
+    title = 'Try Sourcegraph with your team',
+    description = 'Search, write, and understand code faster with Code Search + Cody.',
+    btnLabel = 'Book a demo',
     parentClassName,
     headingClassName,
     subTitleClassName,
@@ -33,7 +33,7 @@ const SidebarCta: React.FC<SidebarCtaProps> = ({
                 linkClassName,
                 'btn btn-primary-dark flex min-w-fit self-center py-3 px-5 text-center text-base md:self-start md:py-2 md:px-6'
             )}
-            href="/demo"
+            href="/contact/request-info"
         >
             {btnLabel}
         </Link>
