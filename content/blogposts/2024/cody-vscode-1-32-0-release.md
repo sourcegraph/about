@@ -22,6 +22,11 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 
 ## Chat now uses the full sidebar width
 
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-32-release/chat-width.png"
+  alt="Chat width in the sidebar viewport"
+/>
+
 ## Changelog
 
 See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.32.0) and [GitHub releases](https://github.com/sourcegraph/cody/releases) for a complete list of changes.
