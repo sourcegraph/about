@@ -25,7 +25,7 @@ export const ContactUsCta: FunctionComponent<ContactUsCtaProps> = ({
         )}
         parentClassName={classNames('md:px-[80px] py-[96px]', parentClassNames)}
     >
-        <h2 className="text-white">Contact us for a demo or to start an enterprise trial</h2>
+        <h2 className="text-white">Contact us for a demo with a product expert</h2>
         <div className="text-center md:items-center">
             <div
                 className={classNames(
