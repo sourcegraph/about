@@ -26,7 +26,7 @@ These updates are powered by several server-side and client-side optimizations. 
 
 These updates are available now for Free and Pro users. We’ve rolled out some autocomplete updates to Enterprise users, but the most significant updates (including moving to DeepSeek V2) will roll out to Enterprise users soon.
 
-[Read more about the autocomplete updates]().
+[Read more about the autocomplete updates](https://sourcegraph.com/blog/improving-cody-autocomplete-faster-smarter).
 
 ## Dynamically insert code from Cody chat into your files with Smart Apply
 
@@ -42,6 +42,8 @@ Whenever Cody provides a code block as a suggestion in chat, press Apply, and Co
 ## Accept and reject block-level diffs for more granular control
 
 You can now control which parts of a multiline edit to accept with more granularity. When you ask Cody to edit a block of code, the presented diff will be split into discrete code blocks, and you can accept or reject each block diff separately.
+
+Huge _thank you_ to [Justin Milner](https://github.com/justinmilner1) for making this contribution! ✨ 🫶
 
 <Video
   source={{
