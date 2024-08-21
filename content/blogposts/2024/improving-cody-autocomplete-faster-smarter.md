@@ -81,7 +81,7 @@ Here’s our analytics tracking suggested characters and accepted characters:
 
 ## Better Multi-Line Completions
 
-Our A/B testing showed significant improvements for multi-line completions, thanks to DeepSeek v2's enhanced ability to understand context:
+Our A/B testing showed significant improvements for multi-line completions, thanks to DeepSeek-V2's enhanced ability to understand context.
 
 For 2-5 line completions:
 
