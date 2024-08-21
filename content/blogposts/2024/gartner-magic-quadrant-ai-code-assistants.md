@@ -43,7 +43,7 @@ This support for flexibility extends to LLMs too. Enterprises can choose LLMs fr
 
 Our vision for AI Code Assistants is validated by some of the largest organizations in the world choosing Sourcegraph, including Leidos, Palo Alto Networks, Bet365, Booking.com, and Blackstone. 
 
-> “Cody surveys Blackstone’s abundant, fragmented codebases and then writes software code and creates new software.” 
+> Cody surveys Blackstone’s abundant, fragmented codebases and then writes software code and creates new software.
 >
 > -- <cite>John Stetcher, CTO, Blackstone</cite>
 
