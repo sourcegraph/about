@@ -5,7 +5,7 @@ authors:
     url: https://x.com/AlexanderIsken
   - name: Justin Dorfman
     url: https://x.com/jdorfman
-publishDate: 2024-08-21T10:00-01:00
+publishDate: 2024-08-21T10:00-02:00
 description: "Fix code faster using Ask Cody to Fix on Windows. Plus, a faster, more intuitive sidebar UI is coming to Cody on JetBrains next month."
 tags: [blog]
 slug: "cody-jetbrains-6-0-26-release"
