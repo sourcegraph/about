@@ -33,12 +33,14 @@ The Ask Cody to Fix button ([released in v6.0.25](https://sourcegraph.com/blog/c
 
 A good AI coding assistant should fit seamlessly into your workflow, reducing toil without adding complexity to your work. For Cody to achieve this, we believe it needs a UX that is fast, intuitive, and consistent regardless of where you work with it.
 
-In the next JetBrains update (coming the first week of September), the Cody sidebar will receive a significant UI overhaul to match the one [recently released on VS Code](https://sourcegraph.com/blog/cody-vscode-1-28-0-release).
+In the next JetBrains update (coming the first week of September), the Cody sidebar will receive a significant UI overhaul, matching the faster and more polished sidebar of the one [recently released on VS Code](https://sourcegraph.com/blog/cody-vscode-1-28-0-release).
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains-6-0-26-release/new-unified-sidebar-jb.png"
   alt="New Cody sidebar"
 />
+
+You will need to upgrade to JetBrains version 2023.2 or later to see the new sidebar. Going forward, the Cody plugin will be optimized for more recent JetBrains IDE version, and we will only make critical security and bug fixes for versions 2023.1 and older.
 
 ## Changelog
 
