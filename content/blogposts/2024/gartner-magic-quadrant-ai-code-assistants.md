@@ -47,7 +47,7 @@ Our vision for AI Code Assistants is validated by some of the largest organizati
 >
 > -- <cite>John Stetcher, CTO, Blackstone</cite>
 
-We are committed to working closely with them to ensure their needs and requirements are met across security, scale, and compliance, regardless of industry or geographic location. In the words of Qualtrics, a global Experience Management (XM) company, “When choosing a coding assistant, we prioritized data loss prevention and assurance of the security of our intellectual property. Cody worked seamlessly with the systems we already had in place.”
+We are committed to working closely with them to ensure their needs and requirements are met across security, scale, and compliance, regardless of industry or geographic location. [In the words of Qualtrics](https://sourcegraph.com/case-studies/qualtrics-speeds-up-unit-tests-and-code-understanding-with-cody), a global Experience Management (XM) company, “When choosing a coding assistant, we prioritized data loss prevention and assurance of the security of our intellectual property. Cody worked seamlessly with the systems we already had in place.”
 
 [Download the complimentary report](https://sourcegraph.com/resources/gartner-magic-quadrant) to learn more about Sourcegraph’s placement as a Visionary in the 2024 Gartner® Magic Quadrant™ for AI Code Assistants.
 
