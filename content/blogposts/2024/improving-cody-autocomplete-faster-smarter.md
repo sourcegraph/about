@@ -20,7 +20,7 @@ The big benefits are a **350ms reduction in autocomplete speeds along with a 58%
 
 ## Speed Boost: 350ms Faster
 
-Cody’s response time is down by a whopping 350ms. This means that our P75 latency (the time it takes for 75% of completions to appear) have decreased by 350ms for single-line completions, which represents 87% of all suggestions. Single-line completions have gone from 900ms to 690ms.
+Cody’s response time is down by a whopping 350ms. This means that our P75 latency (the time it takes for 75% of completions to appear) has decreased by 350ms for single-line completions, which represents 87% of all suggestions. Single-line completions have gone from 900ms to 690ms.
 
 - Single line: 900ms -> 690ms
 - 2-5 lines: 1100ms -> 850ms
