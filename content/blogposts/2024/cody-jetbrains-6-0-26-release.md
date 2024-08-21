@@ -40,7 +40,7 @@ In the next JetBrains update (coming the first week of September), the Cody side
   alt="New Cody sidebar"
 />
 
-You will need to upgrade to JetBrains version 2023.2 or later to see the new sidebar. Going forward, the Cody plugin will be optimized for more recent JetBrains IDE version, and we will only make critical security and bug fixes for versions 2023.1 and older.
+You will need to upgrade to JetBrains version 2023.2 or later to see the new sidebar. Going forward, the Cody plugin will be optimized for more recent JetBrains IDE versions, and we will only make critical security and bug fixes for versions 2023.1 and older.
 
 ## Changelog
 
