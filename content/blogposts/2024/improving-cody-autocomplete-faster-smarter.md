@@ -8,8 +8,8 @@ description: "We're excited to announce a new release of Cody that includes fast
 tags: [blog]
 slug: "improving-cody-autocomplete-faster-smarter"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/improving-cody-autocomplete-faster-smarter/improving-cody-autocomplete-faster-smarter-go.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/improving-cody-autocomplete-faster-smarter/improving-cody-autocomplete-faster-smarter-go.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/faster-autocomplete/autocomplete-cover.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/faster-autocomplete/autocomplete-cover.png
 --- 
 
 We just wrapped up our Faster Autocomplete project and now Cody is faster and smarter for more of your coding tasks. The big changes that happened under the hood are that we switched from Starcoder to DeepSeek v2 for our autocomplete model leading to improvements across the board.
@@ -22,7 +22,14 @@ Let’s dive into some numbers and see how these changes are going to help Cody 
 
 Cody’s response time is down by a whopping 350m. This means that our P75 latency (the time it takes for 75% of completions to appear) have decreased by 350ms for single-line completions, which represents 87% of all suggestions. Single-line completions have gone from 900ms to 690ms.
 
-VIDEO HERE
+<Video
+  source={{
+    mp4: 'blog/faster-autocomplete/autocomplete%20faster'
+  }}
+  controls={true}
+  loop={true}
+  title="Faster autocomplete"
+/>
 
 The speed improvements are gained not only from switching to DeepSeek v2, but from by adding two features: Hot Streak and Smart Throttle.
 
@@ -39,7 +46,10 @@ The implementation of Hot Streak contributed significantly to Cody's performance
 3. A 10% increase in the total number of accepted characters, indicating that Cody wrote more code for users.
 4. Approximately 35% increase in completions served from cache (in combination with Smart Throttle prefetching).
 
-![Screenshot 2024-08-14 at 15.54.21.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e7ce844a-fe2e-4102-b77e-e852aee3841b/d3981cd1-848c-4c3a-a951-789c961ef9e4/Screenshot_2024-08-14_at_15.54.21.png)
+<Figure 
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/faster-autocomplete/autocomplete-hotstreak.png"
+    caption="Faster completions served from cache"
+/>
 
 ### Implementing Smart Throttle
 
@@ -58,7 +68,12 @@ We’ve seen a **58% increase** in the number of accepted characters per user. T
 - Suggested characters per user increased from 1,600 to 2,500.
 - Accepted characters per user increased from 600 to 950.
 
-![Screenshot 2024-08-14 at 15.42.51.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e7ce844a-fe2e-4102-b77e-e852aee3841b/6fd8b53e-882e-4b72-8841-10828ab2c3f5/Screenshot_2024-08-14_at_15.42.51.png)
+Here’s our analytics tracking suggested characters and accepted characters:
+
+<Figure 
+    src="https://storage.googleapis.com/sourcegraph-assets/blog/faster-autocomplete/autocomplete-characters.png"
+    caption="Suggested and accepted characters per user"
+/>
 
 ## Better Multi-Line Completions
 
