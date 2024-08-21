@@ -97,7 +97,7 @@ A 30-second Persistence Rate specifically looks at whether the accepted completi
 
 ## Improvements for Cody Enterprise Users
 
-For our Cody Enterprise users, we've also made significant improvements, though the exact numbers differ slightly from our PLG users due to the unique requirements of enterprise environments. 
+For our Cody Enterprise users, we've also made significant improvements, though the exact numbers differ slightly from our Free and Pro users due to the unique requirements of enterprise environments. 
 
 The current improvements are from algorithmic updates and client-side improvements:
 
