@@ -12,7 +12,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/faster-autocom
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/faster-autocomplete/autocomplete-cover.png
 --- 
 
-We just wrapped up our Faster Autocomplete project and now Cody is faster and smarter for more of your coding tasks. The big changes that happened under the hood are that we switched from Starcoder to DeepSeek v2 for our autocomplete model leading to improvements across the board.
+We just wrapped up our Faster Autocomplete project and now Cody is faster and smarter for more of your coding tasks. The big changes that happened under the hood are that we switched from StarCoder to DeepSeek-V2 for our autocomplete model leading to improvements across the board.
 
 Cody is built on model interoperability and promises to always provide the best, latest-gen models for every given task to help speed up devs and reduce toil. This update delivers on that promise by bringing a cutting-edge model to autocomplete, speeding up completions while increasing quality and accuracy.
 
