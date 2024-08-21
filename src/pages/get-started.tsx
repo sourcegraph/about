@@ -115,14 +115,14 @@ const EnterPriseTrial: FunctionComponent = () => (
             <p className="mb-0 min-w-fit text-lg">
                 Learn more:
                 <Link
-                    href="/cloud"
+                    href="https://sourcegraph.com/docs/admin/deploy"
                     title="Cloud"
                     className="btn-link border-r-1 border-r-gray-400 px-2 text-xl font-semibold"
                 >
                     Cloud
                 </Link>
                 <Link
-                    href="https://sourcegraph.com/docs/admin/deploy"
+                    href="https://sourcegraph.com/docs/admin/deploy/docker-single-container"
                     title="Server"
                     className="btn-link ml-2 text-xl font-semibold"
                 >
