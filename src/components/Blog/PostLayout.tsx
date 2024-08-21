@@ -44,6 +44,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                     styles.content,
                     contentClassName,
                     'prose',
+                    '!max-w-[75ch]',
                     'xl:prose-lg',
                     'leading-relaxed',
                     'xl:leading-relaxed',
