@@ -65,7 +65,7 @@ The implementation of Smart Throttle contributed significantly to Cody's perform
 
 ## Smarter Suggestions: 58% More Accepted Code
 
-Not only is Cody faster, but it's also getting better at suggesting code you actually want to use. The DeepSeek v2 model has significantly improved the quality of suggestions. 
+Not only is Cody faster, but it's also getting better at suggesting code you actually want to use. The DeepSeek-V2 model has significantly improved the quality of suggestions. 
 
 We’ve seen a **58% increase** in the number of accepted characters per user. This means that the suggestions provided by Cody are more likely to be relevant and accepted. In practical terms, if you're writing a 1000-line program, Cody is now potentially writing 580 of those lines for you, up from about 367 before.
 
