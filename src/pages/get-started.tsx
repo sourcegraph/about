@@ -44,8 +44,8 @@ const GetStartedPage: FunctionComponent = () => {
     return (
         <Layout
             meta={{
-                title: 'Install the Cody app',
-                description: 'Connect your code with Cody in minutes.',
+                title: 'Get started with Sourcegraph',
+                description: 'Request a trial for Sourcegraph Enterprise. Self-host or run in the cloud.',
             }}
             headerColorTheme="white"
         >
