@@ -34,7 +34,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
      * Determines whether the banner component should be displayed in the header.
      * useState(true) for on, useState(false) for off.
      */
-    const [showBanner, setShowBanner] = useState(false)
+    const [showBanner, setShowBanner] = useState(true)
 
     const source = pathname.slice(1) || 'about-home'
 

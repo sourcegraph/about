@@ -13,11 +13,11 @@ export const Banner: FunctionComponent<{}> = () => (
     <div className="sg-border-gradient-banner z-[1000] border-b-1 bg-black py-[13px]">
         <div className="mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-12 gap-y-[9px] px-2 md:flex-row">
             <p className="mb-0 text-center font-semibold leading-[22px] text-white">
-                Claude 3.5 Sonnet is now available for Cody
+                Sourcegraph is a Visionary in the 2024 Gartner® Magic Quadrant™ for AI Code Assistants.
             </p>
             <Link
-                href="https://sourcegraph.com/blog/claude-3.5-sonnet-now-available-in-cody"
-                title="Claude 3.5 Sonnet is now available for Cody"
+                href="https://sourcegraph.com/blog/gartner-magic-quadrant-ai-code-assistants"
+                title="Sourcegraph is a Visionary in the first Gartner® Magic Quadrant™ for AI Code Assistants"
                 className="btn btn-link-dark btn-link-icon bg-transparent !px-0 !py-0 leading-[22px] text-violet-300"
                 target="_blank"
             >
