@@ -35,7 +35,7 @@ Cody’s response time is down by a whopping 350ms. This means that our P75 late
   title="Faster autocomplete"
 />
 
-The speed improvements are gained not only from switching to DeepSeek v2, but from by adding two features: Hot Streak and Smart Throttle.
+The speed improvements are gained not only from switching to DeepSeek-V2, but also from adding two features: Hot Streak and Smart Throttle.
 
 ### Implementing Hot Streak
 
