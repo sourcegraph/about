@@ -106,7 +106,7 @@ The current improvements are from algorithmic updates and client-side improvemen
 - Improvements in caching
 - Changes in CAR and wCAR
 
-More significant improvements are coming shortly in the coming weeks when enterprise customers are migrated to DeepSeek and enable Hot Streak and Smart Throttle.
+More significant improvements are coming shortly when enterprise customers are migrated to DeepSeek and enable Hot Streak and Smart Throttle.
 
 ### Speed and Efficiency
 
