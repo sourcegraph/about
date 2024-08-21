@@ -118,7 +118,7 @@ P75 latency decreased by 200ms for 87% of completions suggested. There has also 
 
 ### Coming Soon for Enterprise
 
-We're working on bringing enterprise performance more in line with PLG improvements. Here's what's coming:
+We're working on bringing enterprise performance more in line with Free/Pro improvements. Here's what's coming:
 
 - Migration to our recommended autocomplete provider/model combo
 - Enabling Hot Streak and Smart Throttle features by default
