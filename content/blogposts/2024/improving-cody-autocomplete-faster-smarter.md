@@ -127,6 +127,6 @@ These upcoming changes will further boost team productivity and code quality for
 
 ## Wrapping Up
 
-These improvements, powered by our switch to DeepSeek v2 and our custom optimizations, represent real time saved and frustration avoided in your daily coding life. Cody's getting faster and smarter, all to help you write better code more quickly.
+These improvements, powered by our switch to DeepSeek-V2 and our custom optimizations, represent real time saved and frustration avoided in your daily coding life. Cody's getting faster and smarter, all to help you write better code more quickly.
 
 We'd love to hear how these changes are affecting your work. Are you noticing the speed improvements? Finding Cody's suggestions more useful? Drop us a line and let us know!
