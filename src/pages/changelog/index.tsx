@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { Layout, HubSpotForm } from '../../components'
+import HeroSection from '../../components/Changelog/Hero'
 import { NoItemsFound } from '../../components/Changelog/NoItemsFound'
 import { primaryTopics, secondaryTopics } from '../../constants/changelogTopics'
 import { useLoadMoreAndSearch } from '../../hooks/loadMoreAndSearch'
@@ -81,20 +82,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
     return (
         <Layout className="bg-gray-50">
             <div className="relative mt-[-30px] flex items-center justify-center bg-gray-50">
-                <div
-                    className="relative flex h-[330px] w-[85%] items-center justify-center rounded-lg bg-cover bg-center"
-                    // eslint-disable-next-line react/forbid-dom-props
-                    style={{ backgroundImage: 'url("/assets/changelog/bento-hero.png")' }}
-                >
-                    <div className="absolute inset-0 flex flex-col items-start justify-center p-6 px-[80px] space-y-6">
-                        <h1 className="font-sans text-6xl font-semibold leading-extra-tight tracking-extra-tight text-white">
-                            Changelog   
-                        </h1>
-                        <p className="font-sans text-base font-normal leading-custom-150 tracking-custom-tight text-white">
-                            Latest updates to the Sourcegraph and Cody platform
-                        </p>
-                    </div>
-                </div>
+                <HeroSection />
             </div>
             <div className="min-h-scree flex items-center justify-center bg-gray-50 pt-14">
                 <div className="container mx-auto flex w-[83%] flex-col p-6 md:flex-row">
