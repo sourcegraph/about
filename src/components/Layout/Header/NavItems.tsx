@@ -18,7 +18,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { Badge } from '../../Badge'
-import { ContentSection } from '../../ContentSection'
 
 interface NavLink {
     text: string
