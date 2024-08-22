@@ -16,6 +16,7 @@ interface TwoColumnTestimonialCardProps {
     title?: string
     titleClassName?: string
     isWideSpacing?: boolean
+    isVariantStyle?: boolean
 }
 
 interface ClientTestimonialCardProps {
@@ -39,9 +40,15 @@ const TwoColumnTestimonialCard: React.FC<TwoColumnTestimonialCardProps> = ({
     className,
     roundedImage,
     titleClassName,
+    isVariantStyle,
     title,
 }) => (
-    <div className={classNames(className, 'sg-reviews mb-28 rounded-none px-6 py-24 md:mb-24 md:rounded-2xl md:px-20')}>
+    <div
+        className={classNames(className, 'mb-28 rounded-none px-6 md:mb-24 md:rounded-2xl md:px-0', [
+            { 'sg-reviews py-24 md:!px-20': !isVariantStyle },
+            { 'pt-28': isVariantStyle },
+        ])}
+    >
         {title && <div className={titleClassName}>{title}</div>}
         <div className="grid grid-cols-1 gap-[30px] md:grid-cols-2">
             <ClientTestimonialCard

@@ -4,6 +4,7 @@ import { DotLottiePlayer } from '@dotlottie/react-player'
 import Link from 'next/link'
 
 import { Layout, Hero } from '../components'
+import { BentoWithMockup } from '../components/bentoWithMockup'
 import { ContactUsCta } from '../components/cta/ContactUsCta'
 import { RequestDemoCta } from '../components/cta/RequestDemoCta'
 import { ChooseYourLlmSection } from '../components/Enterprise/ChooseYourLlmSection'
@@ -47,7 +48,7 @@ const Enterprise: FunctionComponent = () => {
                 description:
                     "Give your teams the ability to search, write, and understand massive codebases through Sourcegraph's universal and secure Code Intelligence Platform.",
             }}
-            className="bg-gray-50"
+            className="overflow-hidden bg-gray-50"
             hero={
                 <div className="">
                     {!isMobile && (
@@ -109,6 +110,9 @@ const Enterprise: FunctionComponent = () => {
             }
         >
             <CompanyUsingCodySection />
+            <div className="relative z-10 mx-auto max-w-[1232px] px-6 md:px-0 md:pb-28">
+                <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
+            </div>
             <ImprovedVelocitySection />
             <WriteCodeFasterSection />
             <MigrationsSection />
