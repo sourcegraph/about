@@ -13,7 +13,7 @@ export const Banner: FunctionComponent<{}> = () => (
     <div className="sg-border-gradient-banner z-[1000] border-b-1 bg-black py-[13px]">
         <div className="mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-12 gap-y-[9px] px-2 md:flex-row">
             <p className="mb-0 text-center font-semibold leading-[22px] text-white">
-                Sourcegraph is a Visionary in the 2024 Gartner® Magic Quadrant™ for AI Code Assistants.
+                Sourcegraph is a Visionary in the 2024 Gartner® Magic Quadrant™ for AI Code Assistants
             </p>
             <Link
                 href="https://sourcegraph.com/blog/gartner-magic-quadrant-ai-code-assistants"
