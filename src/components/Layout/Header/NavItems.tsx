@@ -205,7 +205,7 @@ export const NavItems: React.FunctionComponent<Props> = ({ close, linkElement: L
     const router = useRouter()
     const isCurrentLink = useCallback((href: string): boolean => router.asPath === href, [router.asPath])
     return (
-        <ContentSection className="flex flex-col gap-4 pl-3 pb-1 lg:flex-row lg:pl-0 lg:pb-0" parentClassName="!px-0">
+        <nav className="flex flex-col gap-4 pl-3 pb-1 lg:flex-row lg:pl-0 lg:pb-0">
             {NAV_ITEMS.map(item =>
                 'href' in item ? (
                     <LinkElement
@@ -233,7 +233,7 @@ export const NavItems: React.FunctionComponent<Props> = ({ close, linkElement: L
                     />
                 )
             )}
-        </ContentSection>
+        </nav>
     )
 }
 
