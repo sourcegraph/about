@@ -44,8 +44,8 @@ const GetStartedPage: FunctionComponent = () => {
     return (
         <Layout
             meta={{
-                title: 'Install the Cody app',
-                description: 'Connect your code with Cody in minutes.',
+                title: 'Get started with Sourcegraph',
+                description: 'Request a trial for Sourcegraph Enterprise. Self-host or run in the cloud.',
             }}
             headerColorTheme="white"
         >
@@ -115,14 +115,14 @@ const EnterPriseTrial: FunctionComponent = () => (
             <p className="mb-0 min-w-fit text-lg">
                 Learn more:
                 <Link
-                    href="/cloud"
+                    href="https://sourcegraph.com/docs/admin/deploy"
                     title="Cloud"
                     className="btn-link border-r-1 border-r-gray-400 px-2 text-xl font-semibold"
                 >
                     Cloud
                 </Link>
                 <Link
-                    href="https://sourcegraph.com/docs/admin/deploy"
+                    href="https://sourcegraph.com/docs/admin/deploy/docker-single-container"
                     title="Server"
                     className="btn-link ml-2 text-xl font-semibold"
                 >

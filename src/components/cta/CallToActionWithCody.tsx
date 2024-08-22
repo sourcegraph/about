@@ -94,7 +94,7 @@ export const CallToActionWithCody: FunctionComponent<{ className?: string } & Te
                     title="Get Cody Enterprise"
                     className="hover:bg-color-violet-600 rounded-[5px] border border-white py-2 px-6 text-white"
                 >
-                    Request info
+                    Book a demo
                 </Link>
             </div>
         </div>

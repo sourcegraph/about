@@ -68,17 +68,17 @@ const Cta: FunctionComponent<Cta> = ({ text, ctaStyle, link }) => {
  * This is our CTA Section as defined in our DLS. Please refer to it for specs.
  */
 export const CallToActionContentSection: FunctionComponent<CtaSection> = ({
-    title = 'Try Sourcegraph on your code.',
-    description = 'Experience code intelligence with a free trial for you and your team, or search millions of open source repositories.',
+    title = 'Try Sourcegraph on your code',
+    description = 'Help your team search, write, and understand code faster with the code intelligence platform.',
     cta1 = {
-        text: 'Start for free',
+        text: 'Book a demo',
         ctaStyle: 'primaryButtonWhite',
         link: '/contact/request-info',
     },
     cta2 = {
-        text: 'Meet with a product expert',
+        text: 'See pricing',
         ctaStyle: 'link',
-        link: '/demo',
+        link: '/pricing',
     },
 }) => {
     const windowWidth = useWindowWidth()

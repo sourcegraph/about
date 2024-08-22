@@ -207,7 +207,7 @@ const HeaderContent: FunctionComponent<
                 )}
                 requestInfo={true}
             >
-                Contact
+                Book a demo
             </MeetWithProductExpertButton>
             <Link
                 onClick={() => handleOpenModal('login_click', false)}

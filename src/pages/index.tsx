@@ -315,14 +315,14 @@ const Home: FunctionComponent = () => {
                             </p>
                             <div className="mt-8 flex flex-col items-center gap-4 md:flex-row">
                                 <Link
-                                    href="https://sourcegraph.com/contact/request-info"
+                                    href="/contact/request-info"
                                     title="Get Cody for Enterprise"
                                     className="btn btn-secondary-dark w-full px-6 py-2 text-center md:w-auto"
                                 >
-                                    Request info
+                                    Book a demo
                                 </Link>
                                 <Link
-                                    href="https://sourcegraph.com/pricing"
+                                    href="/pricing"
                                     title="See pricing"
                                     className={classNames(
                                         'btn btn-link-dark w-full rounded-[5px] px-6 text-center md:w-auto',
