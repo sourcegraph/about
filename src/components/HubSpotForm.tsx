@@ -68,7 +68,13 @@ interface CreateHubSpotFormProps {
 
 export interface HubSpotFormProps {
     formId?: string
-    masterFormName?: 'contactMulti' | 'contactEmail' | 'enterpriseTrial' | 'gatedMulti' | 'gatedEmail'
+    masterFormName?:
+        | 'contactMulti'
+        | 'contactEmail'
+        | 'enterpriseTrial'
+        | 'gartnerMagicQuadrant'
+        | 'gatedMulti'
+        | 'gatedEmail'
     onFormSubmitted?: () => void
     inlineMessage?: string
     chiliPiper?: boolean
@@ -124,7 +130,11 @@ const masterForms: { [key: string]: string } = {
 
     // Enterprise trial form
     enterpriseTrial: '8eeb5a2f-8189-4510-a4fa-90aa9f1f1647',
-    
+
+    // Gartner magic quadrant form
+
+    gartnerMagicQuadrant: 'a9e7fa28-8e83-44d5-9cba-978d693e2e53',
+
     // Gated Content Email Only Form
     gatedEmail: '9b2539ad-feaa-4dd2-b6b4-2439c5bc98da',
 
