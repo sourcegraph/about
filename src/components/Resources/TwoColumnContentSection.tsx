@@ -12,6 +12,7 @@ interface TwoColumnContentSectionProps {
 }
 const TwoColumnContentSection: FunctionComponent<TwoColumnContentSectionProps> = ({
     title,
+    banner,
     subContent,
     alternateStyle,
 }) => {
