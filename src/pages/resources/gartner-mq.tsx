@@ -25,8 +25,8 @@ const listItems = [
 const GartnerMq: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Cody | Gartner mq',
-            description: 'Get started with a trial of Cody Enterprise to try the AI coding assistant with your team.',
+            title: 'Sourcegraph Cody | Visionary in Gartner® Magic Quadrant™ for AI Code Assistants',
+            description: 'Sourcegraph is honored to be a Visionary in the 2024 Gartner® Magic Quadrant™ for AI Code Assistants',
         }}
         className="overflow-hidden bg-gray-50"
         heroAndHeaderClassName="!pt-0"
