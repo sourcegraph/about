@@ -8,6 +8,7 @@ interface TwoColumnContentSectionProps {
     title?: string | ReactNode
     subContent: ReactNode
     alternateStyle?: boolean
+    banner?: ReactNode
 }
 const TwoColumnContentSection: FunctionComponent<TwoColumnContentSectionProps> = ({
     title,
