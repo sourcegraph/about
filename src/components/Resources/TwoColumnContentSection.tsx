@@ -10,6 +10,12 @@ interface TwoColumnContentSectionProps {
     alternateStyle?: boolean
     banner?: ReactNode
 }
+const listItems = [
+    'Why Gartner positioned Sourcegraph as a Visionary',
+    'Where the AI Code Assistant market stands today and where it’s headed',
+    'How to choose the right AI Code Assistant for your organization',
+]
+
 const TwoColumnContentSection: FunctionComponent<TwoColumnContentSectionProps> = ({
     title,
     banner,
@@ -24,12 +30,6 @@ const TwoColumnContentSection: FunctionComponent<TwoColumnContentSectionProps> =
             formContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }
     }, [formSubmitted])
-
-    const listItems = [
-        'Why Gartner positioned Sourcegraph as a Visionary',
-        'Where the AI Code Assistant market stands today and where it’s headed',
-        'How to choose the right AI Code Assistant for your organization',
-    ]
 
     return (
         <ContentSection
@@ -94,6 +94,7 @@ const TwoColumnContentSection: FunctionComponent<TwoColumnContentSectionProps> =
                                         bookIt={false}
                                         form_submission_source="gartner-magic-quadrant"
                                         onFormSubmitted={() => setFormSubmitted(true)}
+                                        overrideInlineMessage={false}
                                     />
                                 </div>
                             </div>
