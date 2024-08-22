@@ -8,9 +8,9 @@ import { ContentSection, InfiniteCarousel } from '..'
 export const carouselImages = [
     { src: '/enterprise/cern-logo.svg', className: 'h-[37px] w-[125px] mx-[21px]' },
     { src: '/enterprise/mercado-libre-logo.svg', className: 'h-[51px] w-[121px] mx-[21px]' },
-    { src: '/enterprise/SoFi-logo.svg', className: 'h-[49px] w-[169px] mx-[21px]' },
-    { src: '/enterprise/qualtrics-logo.svg', className: 'h-[55px] w-[172px] mx-[21px]' },
-    { src: '/enterprise/leidos-logo.svg', className: 'h-[54px] w-[225px] mx-[21px]' },
+    { src: '/enterprise/sofi-logo-violet.svg', className: 'h-[49px] w-[169px] mx-[21px]' },
+    { src: '/home/carousel/qualtrics-logo.svg', className: 'h-[55px] w-[172px] mx-[21px]' },
+    { src: '/assets/icons/leidos-light.svg', className: 'h-[54px] w-[225px] mx-[21px]' },
     { src: '/home/carousel/palo-alto-logo.svg', className: ' h-[48px] w-[258px] mx-[21px]' },
 ]
 

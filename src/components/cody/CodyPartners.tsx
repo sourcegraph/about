@@ -56,7 +56,7 @@ const lightThemeIcons = [
         className: 'h-[27px] md:mt-[7px] w-[117.612px] order-4 md:order-2 mx-6',
     },
     {
-        src: '/icons/qualtrics-light.svg',
+        src: '/home/carousel/qualtrics-logo.svg',
         className: 'h-12 w-[107px] order-4 md:order-3 mx-6',
     },
     {
@@ -72,7 +72,7 @@ const lightThemeIcons = [
         className: 'h-12 w-[147px] md:block order-7 md:order-6 mx-6',
     },
     {
-        src: '.../../home/carousel/palo-alto-logo.svg',
+        src: '/home/carousel/palo-alto-logo.svg',
         className: 'w-[181px] h-[33px] order-8 mx-6',
     },
 ]
