@@ -18,7 +18,7 @@ interface LayoutProps {
         icon?: string
         canonical?: string
     }
-    children: ReactNode
+    children?: ReactNode
     minimal?: boolean
 
     hero?: ReactNode
@@ -140,14 +140,15 @@ export const Layout: FunctionComponent<LayoutProps> = ({
                     ? 'var(--sg-color-gray-800)'
                     : 'white'
             }; }`}</style>
-            <section
-                className={classNames('flex-1', props.childrenClassName, {
-                    '-mt-[68px] pt-24 md:-mt-[74px] md:!pt-[148px]': props.displayChildrenUnderNav,
-                })}
-            >
-                {props.children}
-            </section>
-
+            {props.children && (
+                <section
+                    className={classNames('flex-1', props.childrenClassName, {
+                        '-mt-[68px] pt-24 md:-mt-[74px] md:!pt-[148px]': props.displayChildrenUnderNav,
+                    })}
+                >
+                    {props.children}
+                </section>
+            )}
             {!props.hideFooter && (
                 <Footer
                     className={customFooterClassName}
