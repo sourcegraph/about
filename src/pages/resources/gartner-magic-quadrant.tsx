@@ -6,7 +6,8 @@ import TwoColumnContentSection from '../../components/Resources/TwoColumnContent
 const GartnerMagicQuadrant: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Cody | Gartner magic quadrant',
+            title: 'Sourcegraph Cody | Visionary in Gartner® Magic Quadrant™ for AI Code Assistants',
+            description: 'Sourcegraph is honored to be a Visionary in the 2024 Gartner® Magic Quadrant™ for AI Code Assistants',
         }}
         className="overflow-hidden bg-gray-50"
         heroAndHeaderClassName="!pt-0"
