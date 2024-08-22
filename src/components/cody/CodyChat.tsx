@@ -25,10 +25,11 @@ export const CodyChat: FunctionComponent<CodyChatProps> = ({ isLight = false }) 
     return (
         <ContentSection
             className={classNames(
-                'flex w-full flex-col overflow-hidden border-gray-200 border-opacity-50 pt-[64px] md:rounded-2xl md:border xl:max-w-[1280px]',
+                'flex w-full flex-col overflow-hidden   pt-[64px] md:rounded-2xl md:border xl:max-w-[1280px]',
                 {
-                    'md:bg-violet-700 md:pt-[72px]': !isLight,
-                    'h-auto bg-none md:mb-0 md:bg-white md:pt-[48px] md:pb-0 xl:max-h-[757px]': isLight,
+                    'border-gray-500 md:bg-violet-700 md:pt-[72px]': !isLight,
+                    'h-auto border-gray-200 border-opacity-50 bg-none md:mb-0 md:bg-white md:pt-[48px] md:pb-0 xl:max-h-[757px]':
+                        isLight,
                 }
             )}
             parentClassName={classNames('!px-0 !pb-0', { '!pt-0 md:!pt-[96px] pb-[16px] md:pb-0': isLight })}
