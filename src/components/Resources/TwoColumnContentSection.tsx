@@ -94,6 +94,7 @@ const TwoColumnContentSection: FunctionComponent<TwoColumnContentSectionProps> =
                                         bookIt={false}
                                         form_submission_source="gartner-magic-quadrant"
                                         onFormSubmitted={() => setFormSubmitted(true)}
+                                        overrideInlineMessage={false}
                                     />
                                 </div>
                             </div>
