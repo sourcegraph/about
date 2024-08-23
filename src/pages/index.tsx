@@ -347,7 +347,7 @@ const Home: FunctionComponent = () => {
 
 const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
     <ContentSection
-        className="relative mt-[-72px] flex items-center justify-center rounded-2xl bg-violet-700 md:mt-[-43px]"
+        className="relative mt-[64px] flex items-center justify-center rounded-2xl bg-violet-700 md:mt-[32px]"
         parentClassName="!py-0 !pb-16 !bg-gray-50"
     >
         <div className="mx-auto flex flex-col items-center justify-center px-3 text-center md:px-0">
@@ -361,14 +361,13 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
                 </p>
                 <button
                     type="button"
-                    className="btn btn-primary-dark w-full max-w-[356px] px-5 sm:w-fit sm:px-6"
+                    className="btn btn-primary-dark w-full max-w-[356px] px-5 mb-8 sm:w-fit sm:px-6 sm:mb-12"
                     title="free cody"
                     onClick={() => onOpenModal('top')}
                 >
                     Get Cody for free
                 </button>
             </div>
-
             <div className="hidden aspect-video w-full overflow-hidden sm:block lg:w-[1062px]">
                 <video
                     className="relative bottom-[-6px] rounded-t-xl shadow-md"
