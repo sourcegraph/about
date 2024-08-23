@@ -15,6 +15,7 @@ import {
     CodyPartners,
     CodyTestimonials,
 } from '../components'
+import { BentoWithMockup } from '../components/bentoWithMockup'
 import { CodyChooseLlmDualTheme } from '../components/cody/dual-theme/CodyChooseLlmDualTheme'
 import { CodyIntroDualTheme } from '../components/cody/dual-theme/CodyIntroDualTheme'
 import { SourcePoweredDualTheme } from '../components/cody/dual-theme/SourcePoweredDualTheme'
@@ -86,6 +87,9 @@ const CodyPage: FunctionComponent = () => {
             </div>
             <CodyIde isLight={true} />
             <CodyChat isLight={true} />
+            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
+                <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
+            </div>
             <CodyPartners isLight={true} className="!pb-[32px] md:pt-[96px] md:pb-0" />
             <CodyTestimonials isLight={true} />
             <CodyImageTab

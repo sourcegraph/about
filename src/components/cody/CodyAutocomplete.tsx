@@ -51,10 +51,10 @@ export const CodyAutocomplete: FunctionComponent<CodyAutocompleteProps> = ({
                     'flex justify-center !mx-0 relative z-[9]': isLight,
                 })}
                 className={classNames(
-                    'relative flex w-full flex-col gap-[15px] overflow-hidden border-gray-200 border-opacity-50 py-16 px-0 md:mt-0 md:flex-row md:rounded-lg md:border md:pt-[150px] md:pb-[47px] xl:max-w-[1280px]',
+                    'relative flex w-full flex-col gap-[15px] overflow-hidden  py-16 px-0 md:mt-0 md:flex-row md:rounded-lg md:border md:pt-[150px] md:pb-[47px] xl:max-w-[1280px]',
                     {
-                        'mx-auto mt-16 border-y bg-violet-700 md:pl-[62px]': !isLight,
-                        'mx-[24px] rounded-lg border bg-white !px-0 md:mx-auto md:border-y md:pb-[64px]': isLight,
+                        'mx-auto mt-16 border-y bg-violet-700 border-gray-500 md:pl-[62px]': !isLight,
+                        'mx-[24px] rounded-lg border bg-white border-gray-200 border-opacity-50 !px-0 md:mx-auto md:border-y md:pb-[64px]': isLight,
                     }
                 )}
             >

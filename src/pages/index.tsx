@@ -5,6 +5,7 @@ import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
 import { ContentSection, Layout, InfiniteCarousel } from '../components'
+import { BentoWithMockup } from '../components/bentoWithMockup'
 import { Icon } from '../components/icon'
 import ReadCaseStudyLink from '../components/ReadCaseStudyLink'
 import TwoColumnTestimonialCard from '../components/TwoColumnTestimonialCard'
@@ -75,7 +76,7 @@ const Home: FunctionComponent = () => {
                     <InfiniteCarousel images={carouselImages} />
                 </div>
                 <div className="mx-auto flex flex-col md:max-w-screen-xl md:px-6">
-                    <div className="flex max-w-[769px] flex-col px-6 pb-14 md:px-0">
+                    <div className="flex max-w-[769px] flex-col px-6 pb-6 md:px-0">
                         <div className="flex items-center gap-4 pb-6">
                             <img
                                 className="h-[50px] w-[50px] rounded-t-2xl"
@@ -89,6 +90,14 @@ const Home: FunctionComponent = () => {
                             context to help you write and fix code.
                         </h3>
                     </div>
+                    <Link
+                        href="https://sourcegraph.com/cody"
+                        title="Cody"
+                        className="btn btn-link btn-link-icon mx-6 mb-16 p-0 px-5 py-3 text-center font-semibold !-tracking-[0.25px] md:mx-0 md:mb-14 md:px-0 md:pb-0 md:pt-0 md:text-left"
+                    >
+                        Learn more about Cody
+                        <ChevronRightIcon className="link-icon" />
+                    </Link>
                     <div className="pb-8">
                         {isMobile ? (
                             <div className="">
@@ -166,14 +175,10 @@ const Home: FunctionComponent = () => {
                             </h5>
                         </div>
                     </div>
-                    <Link
-                        href="https://sourcegraph.com/cody"
-                        title="Cody"
-                        className="btn btn-link btn-link-icon mx-6 mb-16 p-0 px-5 py-3 text-center font-semibold !-tracking-[0.25px] md:mx-0 md:mb-28 md:px-0 md:pb-0 md:pt-0 md:text-left"
-                    >
-                        Learn more about Cody
-                        <ChevronRightIcon className="link-icon" />
-                    </Link>
+                    <div className="px-6 md:px-0">
+                        <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
+                    </div>
+
                     <div className="relative overflow-hidden md:overflow-visible">
                         <TwoColumnTestimonialCard
                             leftClientImgSrc="/home/reviews1.svg"
@@ -184,6 +189,7 @@ const Home: FunctionComponent = () => {
                             leftClientTitle="Senior Software Engineer, CERN"
                             rightClientName="Bryce Kalow"
                             rightClientTitle="Senior Web Engineer, HashiCorp"
+                            isVariantStyle={true}
                         />
                         <div className="z-10 mx-6 mb-14 flex flex-col md:mx-0 md:w-[762px]">
                             <div className="flex items-center gap-4 pb-6">
