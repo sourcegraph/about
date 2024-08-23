@@ -15,21 +15,20 @@ export const carouselImages = [
 ]
 
 export const CompanyUsingCodySection: FunctionComponent = () => (
-    <ContentSection
-        className="relative mx-auto mt-0 flex flex-col items-center gap-12 py-16 text-center md:mt-[-135px] md:pt-[282px] md:pb-[96px]"
-        parentClassName="!py-0 md:px-[80px]"
-    >
-        <div className="z-10 flex flex-col items-center gap-6  text-center md:w-[615px]">
-            <h2>Used by 6 of the 10 largest software companies in the world</h2>
-            <Link
-                href="https://sourcegraph.com/case-studies"
-                title="Cody"
-                className="btn btn-link btn-link-icon p-0 text-center font-semibold !-tracking-[0.25px]"
-            >
-                Read customer stories
-                <ChevronRightIcon className="link-icon" />
-            </Link>
-        </div>
-            <InfiniteCarousel images={carouselImages} />
-    </ContentSection>
+    <div className="relative mx-auto mt-0 flex flex-col items-center gap-12 py-16 text-center md:mt-[-135px] md:pt-[282px] md:pb-24">
+        <ContentSection parentClassName="!py-0 md:px-20">
+            <div className="z-10 flex flex-col items-center gap-6  text-center md:w-[615px]">
+                <h2>Used by 6 of the 10 largest software companies in the world</h2>
+                <Link
+                    href="https://sourcegraph.com/case-studies"
+                    title="Cody"
+                    className="btn btn-link btn-link-icon p-0 text-center font-semibold !-tracking-[0.25px]"
+                >
+                    Read customer stories
+                    <ChevronRightIcon className="link-icon" />
+                </Link>
+            </div>
+        </ContentSection>
+        <InfiniteCarousel images={carouselImages} />
+    </div>
 )

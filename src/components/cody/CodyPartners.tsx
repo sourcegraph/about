@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 
-import { ContentSection, InfiniteCarousel } from '..'
+import { InfiniteCarousel } from '..'
 
 const darkThemeIcons = [
     {
@@ -81,9 +81,7 @@ export const CodyPartners: FunctionComponent<{ isLight?: boolean; className?: st
     isLight = false,
     className,
 }) => (
-    <ContentSection parentClassName="!p-0 m-0">
-        <div className={classNames(className, 'm-0 mt-0 w-full items-center justify-center py-24 md:mt-0 md:px-[0px]')}>
-            <InfiniteCarousel images={isLight ? lightThemeIcons : darkThemeIcons} />
-        </div>
-    </ContentSection>
+    <div className={classNames(className, 'm-0 mt-0 w-full items-center justify-center py-24 md:mt-0 md:px-[0px]')}>
+        <InfiniteCarousel images={isLight ? lightThemeIcons : darkThemeIcons} />
+    </div>
 )
