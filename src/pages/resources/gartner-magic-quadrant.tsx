@@ -9,7 +9,7 @@ const GartnerMagicQuadrant: FunctionComponent = () => (
             title: 'Sourcegraph Cody | Visionary in Gartner® Magic Quadrant™ for AI Code Assistants',
             description: 'Sourcegraph is honored to be a Visionary in the 2024 Gartner® Magic Quadrant™ for AI Code Assistants',
         }}
-        className="overflow-hidden bg-gray-50"
+        className="bg-gray-50"
         heroAndHeaderClassName="!pt-0"
         hero={
             <TwoColumnContentSection
