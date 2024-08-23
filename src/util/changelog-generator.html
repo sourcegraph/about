@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog Markdown Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        form {
+            display: grid;
+            gap: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            white-space: pre-wrap;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        #copyButton {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Changelog Markdown Generator</h1>
+    <form id="changelogForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required>
+
+        <label for="authorName">Author Name:</label>
+        <input type="text" id="authorName" required>
+
+        <label for="authorUrl">Author URL:</label>
+        <input type="text" id="authorUrl" required>
+
+        <label for="avatar">Avatar URL:</label>
+        <input type="text" id="avatar" required>
+
+        <label for="publishDate">Publish Date:</label>
+        <input type="datetime-local" id="publishDate" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" required></textarea>
+
+        <label for="tags">Tags (comma-separated):</label>
+        <input type="text" id="tags" required>
+
+        <label for="version">Version:</label>
+        <input type="text" id="version" required>
+
+        <label for="slug">Slug:</label>
+        <input type="text" id="slug" required>
+
+        <label for="published">Published:</label>
+        <input type="checkbox" id="published" checked>
+
+        <label for="relatedTopic1Title">Related Topic 1 Title:</label>
+        <input type="text" id="relatedTopic1Title" required>
+
+        <label for="relatedTopic1Url">Related Topic 1 URL:</label>
+        <input type="text" id="relatedTopic1Url" required>
+
+        <label for="relatedTopic2Title">Related Topic 2 Title:</label>
+        <input type="text" id="relatedTopic2Title">
+
+        <label for="relatedTopic2Url">Related Topic 2 URL:</label>
+        <input type="text" id="relatedTopic2Url">
+
+        <button type="submit">Generate Markdown</button>
+    </form>
+
+    <div id="output"></div>
+    <button id="copyButton">Copy Markdown</button>
+
+    <script>
+        document.getElementById('changelogForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const title = document.getElementById('title').value;
+            const authorName = document.getElementById('authorName').value;
+            const authorUrl = document.getElementById('authorUrl').value;
+            const avatar = document.getElementById('avatar').value;
+            const publishDate = new Date(document.getElementById('publishDate').value);
+            const description = document.getElementById('description').value;
+            const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim());
+            const version = document.getElementById('version').value;
+            const slug = document.getElementById('slug').value;
+            const published = document.getElementById('published').checked;
+            const relatedTopic1Title = document.getElementById('relatedTopic1Title').value;
+            const relatedTopic1Url = document.getElementById('relatedTopic1Url').value;
+            const relatedTopic2Title = document.getElementById('relatedTopic2Title').value;
+            const relatedTopic2Url = document.getElementById('relatedTopic2Url').value;
+
+            const markdown = `---
+
+title: "${title}"
+
+authors:
+  - name: ${authorName}
+    url: ${authorUrl}
+
+avatar: ${avatar}
+
+publishDate: ${publishDate.toISOString().replace('T', 'T').slice(0, -5)}
+
+description: "${description}"
+
+tags: [${tags.join(', ')}]
+
+version: [${version}]
+
+slug: '${slug}'
+
+published: ${published}
+
+relatedTopics:
+  - title: ${relatedTopic1Title}
+    url: ${relatedTopic1Url}
+  - title: ${relatedTopic2Title}
+    url: ${relatedTopic2Url}
+
+---
+
+Start drafting your post!`;
+
+            document.getElementById('output').textContent = markdown;
+            document.getElementById('copyButton').style.display = 'block';
+        });
+        document.getElementById('copyButton').addEventListener('click', function() {
+            const outputText = document.getElementById('output').textContent;
+            navigator.clipboard.writeText(outputText).then(function() {
+                alert('Markdown copied to clipboard!');
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        });
+  </script>
+</body></html>
