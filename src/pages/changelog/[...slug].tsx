@@ -38,7 +38,7 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
 
     const title = post.frontmatter.title
     const name = post?.frontmatter?.authors?.[0]?.name ?? ''
-    const avatar = post?.frontmatter?.avatar
+    const avatar = post?.frontmatter?.authors?.[0]?.avatar ?? ''
     const version = post?.frontmatter?.version
     const publishDate = post?.frontmatter?.publishDate
     const tags = post?.frontmatter?.tags
@@ -81,7 +81,7 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
                                 Related
                             </h2>
                             <div>
-                                {relatedTopics.map((topic: any) => 
+                                {relatedTopics?.map((topic: any) => 
                                     <div key={topic.title} className='text-gray-700 font-sans text-sm font-normal leading-[150%] mt-2'>
                                         <span className='inline-flex items-center'>
                                             <a 

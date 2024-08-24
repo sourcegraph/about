@@ -145,7 +145,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                             </span>
                                         </button>
                                         <img
-                                            src={post?.avatar}
+                                            src={post?.authors?.[0]?.avatar ?? ''}
                                             alt={post?.authors?.[0]?.name ?? ''}
                                             className="bg-lightgray h-[20px] w-[20px] rounded-full border-[0.5px] border-gray-800 bg-cover bg-center bg-no-repeat"
                                         />

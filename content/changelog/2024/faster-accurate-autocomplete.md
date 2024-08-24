@@ -7,7 +7,7 @@ authors:
   - name: Justin Dorfman
     url: https://x.com/jdorfman
     avatar: https://images.weserv.nl/?url=avatars.githubusercontent.com/u/65769327
-publishDate: 2024-08-21 T10:00-01:00
+publishDate: 2024-08-21T10:00-01:00
 description: "Cody's autocomplete is now faster, more accurate, and powered by DeepSeek V2."
 tags: [VS Code, Cody]
 version: [v1.32]

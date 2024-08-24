@@ -3,7 +3,7 @@ title: "ShorterTitle"
 authors:
   - name: Stacey Peterson
     url: https://handbook.sourcegraph.com/team/#alex-isken
-avatar: https://images.weserv.nl/?url=avatars.githubusercontent.com/u/65769327
+    avatar: https://images.weserv.nl/?url=avatars.githubusercontent.com/u/65769327
 publishDate: 2024-06-26T10:00-01:00
 description: "The search bar now supports keyword search by default, which ANDs terms together instead of searching literally as before. The behavior can be disabled through a toggle on the search results page."
 tags: [blog]
