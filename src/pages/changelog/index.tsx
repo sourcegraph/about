@@ -139,7 +139,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                         <h2>{post.title}</h2>
                                     </Link>
                                     <div className="my-4 flex items-center space-x-2">
-                                        <button type='button' onClick={() => toggleVersion(post?.version?.[0] ?? '')} className="flex items-center justify-center rounded-md bg-gray-100 px-2 py-1">
+                                        <button type='button' onClick={() => toggleVersion(post?.version?.[0] ?? '')} className="flex items-center justify-center rounded-md bg-gray-200 px-2 py-1">
                                             <span className="text-center font-sans text-sm font-normal leading-[150%] tracking-[0px] text-gray-500">
                                             {post?.version?.[0] ?? ''}
                                             </span>
