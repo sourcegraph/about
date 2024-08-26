@@ -14,7 +14,7 @@ relatedTopics:
   - title: Read Cody docs
     url: https://sourcegraph.com/docs/cody
   - title: Download Cody for VS Code
-    url: https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-a
+    url: https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai
 ---
 
 Autocomplete has been overhauled with multiple under-the-hood changes, making it both faster and more accurate:

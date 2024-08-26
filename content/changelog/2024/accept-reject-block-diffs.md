@@ -14,7 +14,7 @@ relatedTopics:
   - title: Read Cody docs
     url: https://sourcegraph.com/docs/cody
   - title: Download Cody for VS Code
-    url: https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-a
+    url: https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai
 ---
 
 You can now control which parts of a multi-line edit to accept with more granularity. When you ask Cody to edit a block of code, the presented diff will be split into discrete code blocks, and you can accept or reject each diff separately.

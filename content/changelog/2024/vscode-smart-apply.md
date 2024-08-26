@@ -14,7 +14,7 @@ relatedTopics:
   - title: Read Cody docs
     url: https://sourcegraph.com/docs/cody
   - title: Download Cody for VS Code
-    url: https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-a
+    url: https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai
 ---
 
 [Chat-oriented programming (CHOP)](https://sourcegraph.com/blog/chat-oriented-programming-in-action) is a new paradigm for chatting with AI to work through problems, write code, and build solutions. CHOP is now even more powerful with the Smart Apply feature, which lets you take suggestions from Cody in the chat and near-instantly turn them into diffs in your code.
