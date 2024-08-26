@@ -19,4 +19,7 @@ published: true
 
 Whenever Cody provides a code block as a suggestion in chat, press Apply, and Cody will analyze your open code file, find where that relevant code should live, and introduce a diff. For chat messages where Cody presents multiple code suggestions, you can apply each in sequence to go from chat suggestions to written code in only a few seconds.
 
-[Watch the demo video to see how it works →](https://youtu.be/9SMa8NJdJlg?si=4m8FkLpHblU0kTGp)
+<YouTube
+  id="9SMa8NJdJlg"
+  showTitle={true}
+/>
