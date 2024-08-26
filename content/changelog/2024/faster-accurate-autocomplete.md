@@ -10,6 +10,11 @@ tags: [Cody, VS Code, Autocomplete]
 version: [v1.32]
 slug: 'faster-accurate-autocomplete'
 published: true
+relatedTopics:
+  - title: Read Cody docs
+    url: https://sourcegraph.com/docs/cody
+  - title: Download Cody for VS Code
+    url: https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-a
 ---
 
 Autocomplete has been overhauled with multiple under-the-hood changes, making it both faster and more accurate:

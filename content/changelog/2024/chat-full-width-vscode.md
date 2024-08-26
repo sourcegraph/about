@@ -10,6 +10,11 @@ tags: [Cody, VS Code, Chat]
 version: [v1.32]
 slug: 'chat-full-width-vscode'
 published: true
+relatedTopics:
+  - title: Read Cody docs
+    url: https://sourcegraph.com/docs/cody
+  - title: Download Cody for VS Code
+    url: https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-a
 ---
 
 We heard from users that the chat wasn’t using the full sidebar width, and the chat text was narrower than needed. We’ve updated this to make chat more space-efficient.
