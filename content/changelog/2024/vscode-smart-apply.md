@@ -7,7 +7,7 @@ authors:
   - name: Justin Dorfman
     url: https://x.com/jdorfman
     avatar: https://images.weserv.nl/?url=avatars.githubusercontent.com/u/65769327
-publishDate: 2024-08-21T10:00-01:00
+publishDate: 2024-08-21T10:00-02:00
 description: "Chat-Oriented Programming (CHOP) allows users to interact with AI to solve problems and write code directly through chat. The new Smart Apply feature enables quick conversion of AI suggestions into code diffs. By pressing Apply, Cody intelligently inserts suggested code directly into code files, streamlining the process from chat to implementation."
 tags: [VS Code, Cody]
 version: [v1.32]
