@@ -49,7 +49,14 @@
         <input type="text" id="title" required>
 
         <label for="authorName">Author Name:</label>
-        <input type="text" id="authorName" required>
+<input type="text" id="authorName" list="authorList" required>
+<datalist id="authorList">
+    <option value="Alex">
+    <option value="Justin">
+    <option value="Maedah">
+    <option value="Kelvin">
+</datalist>
+
 
         <label for="authorUrl">Author URL:</label>
         <input type="text" id="authorUrl" required>
@@ -92,27 +99,49 @@
 
     <div id="output"></div>
     <button id="copyButton">Copy Markdown</button>
+<script>
+    document.getElementById('authorName').addEventListener('change', function() {
+        const authorUrl = document.getElementById('authorUrl');
+        if (this.value === 'Justin') {
+            authorUrl.value = 'https://x.com/jdorfman';
+        } else if (this.value === 'Alex') {
+            authorUrl.value = 'https://x.com/alex_miller_';
+        } else if (this.value === 'Maedah') {
+            authorUrl.value = 'https://x.com/maedah_';
+        } else if (this.value === 'Kelvin') {
+            authorUrl.value = 'https://x.com/kelvin_';
+        }
+        const avatar = document.getElementById('avatar');
+        if (this.value === 'Justin') {
+            avatar.value = 'https://lh3.googleusercontent.com/a/ACg8ocLpVESruQTkYABkUVENjrKddntaoCFmxoS1-t0EmnPmVA=s96-c';
+        } else if (this.value === 'Alex') {
+            authorUrl.value = 'https://x.com/alex_miller_';
+        } else if (this.value === 'Maedah') {
+            authorUrl.value = 'https://x.com/maedah_';
+        } else if (this.value === 'Kelvin') {
+            authorUrl.value = 'https://x.com/kelvin_';
+        }
+    });
 
-    <script>
-        document.getElementById('changelogForm').addEventListener('submit', function(e) {
-            e.preventDefault();
+    document.getElementById('changelogForm').addEventListener('submit', function(e) {
+        e.preventDefault();
 
-            const title = document.getElementById('title').value;
-            const authorName = document.getElementById('authorName').value;
-            const authorUrl = document.getElementById('authorUrl').value;
-            const avatar = document.getElementById('avatar').value;
-            const publishDate = new Date(document.getElementById('publishDate').value);
-            const description = document.getElementById('description').value;
-            const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim());
-            const version = document.getElementById('version').value;
-            const slug = document.getElementById('slug').value;
-            const published = document.getElementById('published').checked;
-            const relatedTopic1Title = document.getElementById('relatedTopic1Title').value;
-            const relatedTopic1Url = document.getElementById('relatedTopic1Url').value;
-            const relatedTopic2Title = document.getElementById('relatedTopic2Title').value;
-            const relatedTopic2Url = document.getElementById('relatedTopic2Url').value;
+        const title = document.getElementById('title').value;
+        const authorName = document.getElementById('authorName').value;
+        const authorUrl = document.getElementById('authorUrl').value;
+        const avatar = document.getElementById('avatar').value;
+        const publishDate = new Date(document.getElementById('publishDate').value);
+        const description = document.getElementById('description').value;
+        const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim());
+        const version = document.getElementById('version').value;
+        const slug = document.getElementById('slug').value;
+        const published = document.getElementById('published').checked;
+        const relatedTopic1Title = document.getElementById('relatedTopic1Title').value;
+        const relatedTopic1Url = document.getElementById('relatedTopic1Url').value;
+        const relatedTopic2Title = document.getElementById('relatedTopic2Title').value;
+        const relatedTopic2Url = document.getElementById('relatedTopic2Url').value;
 
-            const markdown = `---
+        const markdown = `---
 
 title: "${title}"
 
@@ -144,16 +173,17 @@ relatedTopics:
 
 Start drafting your post!`;
 
-            document.getElementById('output').textContent = markdown;
-            document.getElementById('copyButton').style.display = 'block';
+        document.getElementById('output').textContent = markdown;
+        document.getElementById('copyButton').style.display = 'block';
+    });
+
+    document.getElementById('copyButton').addEventListener('click', function() {
+        const outputText = document.getElementById('output').textContent;
+        navigator.clipboard.writeText(outputText).then(function() {
+            alert('Markdown copied to clipboard!');
+        }, function(err) {
+            console.error('Could not copy text: ', err);
         });
-        document.getElementById('copyButton').addEventListener('click', function() {
-            const outputText = document.getElementById('output').textContent;
-            navigator.clipboard.writeText(outputText).then(function() {
-                alert('Markdown copied to clipboard!');
-            }, function(err) {
-                console.error('Could not copy text: ', err);
-            });
-        });
-  </script>
+    });
+</script>
 </body></html>
