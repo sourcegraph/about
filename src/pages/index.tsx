@@ -367,7 +367,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
                     title="free cody"
                     onClick={() => onOpenModal('top')}
                 >
-                    Get Cody for free
+                    Download our AI code assistant for free
                 </button>
             </div>
 
