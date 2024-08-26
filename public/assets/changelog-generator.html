@@ -100,6 +100,15 @@
     <div id="output"></div>
     <button id="copyButton">Copy Markdown</button>
 <script>
+    // Set default publish date to today
+    document.addEventListener('DOMContentLoaded', function() {
+        const now = new Date();
+        const offset = now.getTimezoneOffset() * 60000;
+        const localISOTime = (new Date(now - offset)).toISOString().slice(0, 16);
+        document.getElementById('publishDate').value = localISOTime;
+    });
+
+    // Existing event listeners
     document.getElementById('authorName').addEventListener('change', function() {
         const authorUrl = document.getElementById('authorUrl');
         if (this.value === 'Justin') {
