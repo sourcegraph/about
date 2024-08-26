@@ -22,7 +22,8 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
     const { currentRecords, page, setPage, setSearchTerm, filteredRecords, searchTerm, setSelectedTags, selectedTags, setSelectedVersions, selectedVersions } = useLoadMoreAndSearch(
         allPosts,
         1,
-        posts
+        posts,
+        10
     )
 
     const allTags = currentRecords
@@ -87,7 +88,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
             <div className="min-h-scree flex items-center justify-center bg-gray-50 pt-14">
                 <div className="container mx-auto flex w-[83%] flex-col p-6 md:flex-row">
                     <div className="flex w-full flex-col md:w-3/4">
-                        {currentRecords.length > 0 ? currentRecords.map(({ frontmatter: post, slugPath }) => (
+                        {currentRecords.length > 0 ? currentRecords.map(({ frontmatter: post, slugPath }, index) => (
                             <div key={post.title} className="mb-12 flex">
                                 <aside className="w-1/4 pr-6">
                                     <div className="mb-5 flex items-center gap-1.5">
@@ -154,6 +155,21 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                         </span>
                                     </div>
                                     <p className='self-stretch text-gray-700 font-sans text-sm font-normal leading-[150%] tracking-normal'>{post?.description}</p>
+                                    {currentRecords.length === index + 1 &&
+                                        <div className='flex w-full justify-center align-center mt-8'>
+                                            {currentRecords.length < filteredRecords.length && (
+                                                <div className="flex justify-center">
+                                                    <button
+                                                        type="button"
+                                                        className="btn btn-primary my-8"
+                                                        onClick={() => setPage(page + 1)}
+                                                    >
+                                                        Load more
+                                                    </button>
+                                                </div>
+                                            )}
+                                        </div>
+                                    }
                                 </div>
                             </div>
                         )): <NoItemsFound />}
@@ -172,17 +188,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                             )}
                             </div>
                         */}
-                        {currentRecords.length < filteredRecords.length && (
-                            <div className="flex justify-center">
-                                <button
-                                    type="button"
-                                    className="btn btn-primary my-8"
-                                    onClick={() => setPage(page + 1)}
-                                >
-                                    Load more
-                                </button>
-                            </div>
-                        )}
+                        
                     </div>
 
                     {/* Right part */}
