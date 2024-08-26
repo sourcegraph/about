@@ -3,7 +3,7 @@ title: "Dynamically insert code from Cody chat into your files with Smart Apply"
 authors:
   - name: Alex Isken
     url: https://x.com/AlexanderIsken
-    avatar: https://avatars.githubusercontent.com/u/13739780?s=400&u=fa4488f167a8bcef3bb8ad74fdb463c2319bb75f&v=4
+    avatar: https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.png
 publishDate: 2024-08-21T10:00-02:00
 description: "Chat-Oriented Programming (CHOP) allows users to interact with AI to solve problems and write code directly through chat. The new Smart Apply feature enables quick conversion of AI suggestions into code diffs. By pressing Apply, Cody intelligently inserts suggested code directly into code files, streamlining the process from chat to implementation."
 tags: [VS Code, Cody]
