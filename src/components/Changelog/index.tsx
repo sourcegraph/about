@@ -13,6 +13,7 @@ const Components = {
 	},
 	a: (props: any) => <CustomLink {...props} />,
 	p: (props: any) => <p {...props} className='self-stretch text-gray-700 font-sans text-sm font-normal leading-[150%] tracking-[0px]'>{props.children}</p>,
+	li: (props: any) => <li {...props} className='self-stretch text-gray-700 font-sans text-sm font-normal leading-[150%] tracking-[0px]'>{props.children}</li>,
 	h2: (props: any) => <Heading level="2" id={props.id} props={props} />,
 	h3: (props: any) => <Heading level="3" id={props.id} props={props} />,
 	pre: (props: any) => <PreCodeBlock {...props} />
