@@ -15,16 +15,16 @@ import { useWindowWidth } from '../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../lib/utils'
 
 export const carouselImages = [
-    { src: '/home/carousel/1password-logo.svg', className: 'w-[170.364px] h-[31.815px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/reddit-logo.svg', className: 'w-[90px] h-[48px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/databricks-logo.svg', className: 'w-[178px] h-[48px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/podium-logo.svg', className: 'w-[136px] h-[48px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/qualtrics-logo.svg', className: 'w-[125px] h-[48px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/canva-logo.svg', className: 'w-[85px] h-[48px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/redfin-logo.svg', className: 'w-[97px] h-[48px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/nutanix-logo.svg', className: 'w-[150px] h-[48px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/leidos-logo.svg', className: 'w-[113.625px] h-[27px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/palo-alto-logo.svg', className: 'w-[163px] h-[30px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/1password-logo.svg', className: 'w-[170.364px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/reddit-logo.svg', className: 'w-[90px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/databricks-logo.svg', className: 'w-[178px]  mx-6', url: '/case-studies' },
+    { src: '/home/carousel/podium-logo.svg', className: 'w-[136px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/qualtrics-logo.svg', className: 'w-[125px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/canva-logo.svg', className: 'w-[85px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/redfin-logo.svg', className: 'w-[97px mx-6', url: '/case-studies' },
+    { src: '/home/carousel/nutanix-logo.svg', className: 'w-[150px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/leidos-logo.svg', className: 'w-[113.625px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/palo-alto-logo.svg', className: 'w-[163px] mx-6', url: '/case-studies' },
 ]
 
 interface HomeHeroProps {
@@ -67,7 +67,7 @@ const Home: FunctionComponent = () => {
             displayChildrenUnderNav={false}
         >
             <div className="oveflow-hidden relative w-full bg-gray-50">
-                <ContentSection parentClassName="!py-0" className="flex items-center justify-center">
+                <ContentSection parentClassName="!py-0" className="flex flex-col items-center justify-center">
                     <p className="mb-16 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
                         Over 2.5M engineers use Sourcegraph
                     </p>
