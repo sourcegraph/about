@@ -54,7 +54,7 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
     }, []);
 
     return (
-        <Layout>
+        <Layout className='bg-gray-50'>
             <div className="min-h-scree flex items-center justify-center ml-6">
                 <div className="container mx-auto flex w-[80%] flex-col p-6 md:flex-row">
                     <div className="flex w-full flex-col md:w-3/4">
