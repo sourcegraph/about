@@ -10,12 +10,6 @@ interface TwoColumnContentSectionProps {
     alternateStyle?: boolean
     banner?: ReactNode
 }
-const listItems = [
-    'Why Gartner positioned Sourcegraph as a Visionary',
-    'Where the AI Code Assistant market stands today and where it’s headed',
-    'How to choose the right AI Code Assistant for your organization',
-]
-
 const TwoColumnContentSection: FunctionComponent<TwoColumnContentSectionProps> = ({
     title,
     banner,
@@ -31,22 +25,17 @@ const TwoColumnContentSection: FunctionComponent<TwoColumnContentSectionProps> =
         }
     }, [formSubmitted])
 
+    const listItems = [
+        'Why Gartner positioned Sourcegraph as a Visionary',
+        'Where the AI Code Assistant market stands today and where it’s headed',
+        'How to choose the right AI Code Assistant for your organization',
+    ]
+
     return (
-        <ContentSection
-            className={classNames([{ 'pt-0 md:pt-0': banner }, { 'pt-[79px] md:pt-[55px]': !banner }])}
-            parentClassName={classNames('pb-16 px-6 md:px-20', [
-                { 'pt-[127px] lg:pt-16': banner },
-                { 'pt-11': !banner },
-            ])}
-        >
-            {banner}
-            <div className={classNames([{ 'pt-24': banner }])} ref={formContainerRef}>
+        <ContentSection className="pt-[79px] md:pt-[55px]" parentClassName="pt-11 pb-16 px-6 md:px-20">
+            <div ref={formContainerRef}>
                 <div className="relative mx-auto flex w-full flex-col gap-10 pt-0 md:flex-row md:gap-10">
-                    <div
-                        className={classNames('flex w-full flex-1 flex-col md:pr-0 md:pr-0', [
-                            { 'md:pt-10 ': !banner },
-                        ])}
-                    >
+                    <div className="flex w-full flex-1 flex-col md:pr-0 md:pt-10 md:pr-0">
                         <h1
                             className={classNames('mb-10 max-w-[589px] !text-5xl text-gray-700 md:tracking-tighter', [
                                 { 'max-w-[605px] md:!text-[32px]': alternateStyle },
@@ -63,7 +52,7 @@ const TwoColumnContentSection: FunctionComponent<TwoColumnContentSectionProps> =
                             ])}
                         >
                             {subContent}
-                            <p className={classNames([{ 'pb-3': alternateStyle }])}>
+                            <p>
                                 Download your complimentary copy of the 2024 Gartner® Magic Quadrant™ for AI Code
                                 Assistants and learn:
                             </p>
@@ -119,12 +108,7 @@ const DisclaimerSection: FunctionComponent<{ alternateStyle?: boolean }> = ({ al
         ])}
     >
         <img src="/assets/resources/gartner.svg" alt="gartner logo" className="h-12 w-[131px]" />
-        <div
-            className={classNames('mt-4 text-sm leading-[21px] tracking-normal text-gray-500', [
-                { 'md:mb-8': alternateStyle },
-                { 'md:mb-10': !alternateStyle },
-            ])}
-        >
+        <div className="mt-4 text-sm leading-[21px] tracking-normal text-gray-500 md:mb-10">
             <p>
                 Gartner does not endorse any vendor, product or service depicted in its research publications, and does
                 not advise technology users to select only those vendors with the highest ratings or other designation.
