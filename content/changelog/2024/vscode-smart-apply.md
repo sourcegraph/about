@@ -6,7 +6,7 @@ authors:
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.png
 publishDate: 2024-08-21T10:00-02:00
 description: "Chat-Oriented Programming (CHOP) allows users to interact with AI to solve problems and write code directly through chat. The new Smart Apply feature enables quick conversion of AI suggestions into code diffs. By pressing Apply, Cody intelligently inserts suggested code directly into code files, streamlining the process from chat to implementation."
-tags: [VS Code, Cody]
+tags: [Cody, VS Code, Chat]
 version: [v1.32]
 slug: 'vscode-smart-apply'
 published: true

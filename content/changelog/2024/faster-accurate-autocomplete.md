@@ -6,7 +6,7 @@ authors:
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.png
 publishDate: 2024-08-21T10:00-01:00
 description: "Autocomplete has been improved with faster performance and greater accuracy, including a 350-millisecond reduction in latency and a 4% increase in completion acceptance rate. The update features the new DeepSeek-V2 model and is available to Free and Pro users, with full rollout to Enterprise users coming soon."
-tags: [Cody, Autocomplete]
+tags: [Cody, VS Code, Autocomplete]
 version: [v1.32]
 slug: 'faster-accurate-autocomplete'
 published: true

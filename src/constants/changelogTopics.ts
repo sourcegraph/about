@@ -6,4 +6,5 @@ export const primaryTopics = [
 
 export const secondaryTopics = [
   'Autocomplete',
+  'Chat',
 ]
