@@ -1,5 +1,5 @@
 ---
-title: "Cody for VS Code now supports Smart Apply"
+title: "Dynamically insert code from Cody chat into your files with Smart Apply"
 authors:
   - name: Alex Isken
     url: https://x.com/AlexanderIsken
