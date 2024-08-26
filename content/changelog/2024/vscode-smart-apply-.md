@@ -1,0 +1,22 @@
+---
+title: "Cody for VS Code now supports Smart Apply"
+authors:
+  - name: Alex Isken
+    url: https://x.com/AlexanderIsken
+    avatar: https://images.weserv.nl/?url=avatars.githubusercontent.com/u/65769327
+  - name: Justin Dorfman
+    url: https://x.com/jdorfman
+    avatar: https://images.weserv.nl/?url=avatars.githubusercontent.com/u/65769327
+publishDate: 2024-08-21T10:00-01:00
+description: "Chat-Oriented Programming (CHOP) allows users to interact with AI to solve problems and write code directly through chat. The new Smart Apply feature enables quick conversion of AI suggestions into code diffs. By pressing Apply, Cody intelligently inserts suggested code directly into code files, streamlining the process from chat to implementation."
+tags: [VS Code, Cody]
+version: [v1.32]
+slug: 'faster-accurate-autocomplete'
+published: true
+---
+
+[Chat-oriented programming (CHOP)](https://sourcegraph.com/blog/chat-oriented-programming-in-action) is a new paradigm for chatting with AI to work through problems, write code, and build solutions. CHOP is now even more powerful with the Smart Apply feature, which lets you take suggestions from Cody in the chat and near-instantly turn them into diffs in your code.
+
+Whenever Cody provides a code block as a suggestion in chat, press Apply, and Cody will analyze your open code file, find where that relevant code should live, and introduce a diff. For chat messages where Cody presents multiple code suggestions, you can apply each in sequence to go from chat suggestions to written code in only a few seconds.
+
+[Watch the demo video to see how it works →](https://youtu.be/9SMa8NJdJlg?si=4m8FkLpHblU0kTGp)
