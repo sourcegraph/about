@@ -15,14 +15,16 @@ import { useWindowWidth } from '../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../lib/utils'
 
 export const carouselImages = [
-    { src: '/home/carousel/1password-logo.svg', className: 'w-[190px] h-[37px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/reddit-logo.svg', className: 'w-[120px] h-[41.311px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/databricks-logo.svg', className: 'w-[139px] h-[30px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/podium-logo.svg', className: 'w-[164px] h-[35px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/qualtrics-logo.svg', className: 'w-[124px] h-[39.756px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/canva-logo.svg', className: 'w-[124px] h-[39.774px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/redfin-logo.svg', className: 'w-[136px] h-[36.082px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/nutanix-logo.svg', className: 'w-[201px] h-[24.446px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/1password-logo.svg', className: 'w-[170.364px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/reddit-logo.svg', className: 'w-[90px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/databricks-logo.svg', className: 'w-[178px]  mx-6', url: '/case-studies' },
+    { src: '/home/carousel/podium-logo.svg', className: 'w-[136px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/qualtrics-logo.svg', className: 'w-[125px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/canva-logo.svg', className: 'w-[85px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/redfin-logo.svg', className: 'w-[97px mx-6', url: '/case-studies' },
+    { src: '/home/carousel/nutanix-logo.svg', className: 'w-[150px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/leidos-logo.svg', className: 'w-[113.625px] mx-6', url: '/case-studies' },
+    { src: '/home/carousel/palo-alto-logo.svg', className: 'w-[163px] mx-6', url: '/case-studies' },
 ]
 
 interface HomeHeroProps {
@@ -65,7 +67,7 @@ const Home: FunctionComponent = () => {
             displayChildrenUnderNav={false}
         >
             <div className="oveflow-hidden relative w-full bg-gray-50">
-                <ContentSection parentClassName="!py-0" className="flex items-center justify-center">
+                <ContentSection parentClassName="!py-0" className="flex flex-col items-center justify-center">
                     <p className="mb-16 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
                         Over 2.5M engineers use Sourcegraph
                     </p>
