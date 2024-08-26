@@ -6,7 +6,7 @@ authors:
     avatar: https://avatars.githubusercontent.com/u/13739780?s=400&u=fa4488f167a8bcef3bb8ad74fdb463c2319bb75f&v=4
 publishDate: 2024-08-21T10:00-01:00
 description: "Autocomplete has been improved with faster performance and greater accuracy, including a 350-millisecond reduction in latency and a 4% increase in completion acceptance rate. The update features the new DeepSeek-V2 model and is available to Free and Pro users, with full rollout to Enterprise users coming soon."
-tags: [VS Code, Cody]
+tags: [Cody, Autocomplete]
 version: [v1.32]
 slug: 'faster-accurate-autocomplete'
 published: true
