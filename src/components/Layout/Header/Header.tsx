@@ -36,7 +36,6 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
      */
     const [showBanner, setShowBanner] = useState(true)
 
-
     const source = pathname.slice(1) || 'about-home'
 
     /**
