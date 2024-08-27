@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Layout, InfiniteCarousel } from '../components'
+import { ContentSection, Layout, CodyPartners } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
 import { Icon } from '../components/icon'
 import ReadCaseStudyLink from '../components/ReadCaseStudyLink'
@@ -13,19 +13,6 @@ import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../lib/utils'
-
-export const carouselImages = [
-    { src: '/home/carousel/1password-logo.svg', className: 'w-[170.364px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/reddit-logo.svg', className: 'w-[90px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/databricks-logo.svg', className: 'w-[178px]  mx-6', url: '/case-studies' },
-    { src: '/home/carousel/podium-logo.svg', className: 'w-[136px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/qualtrics-logo.svg', className: 'w-[125px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/canva-logo.svg', className: 'w-[85px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/redfin-logo.svg', className: 'w-[97px mx-6', url: '/case-studies' },
-    { src: '/home/carousel/nutanix-logo.svg', className: 'w-[150px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/leidos-logo.svg', className: 'w-[113.625px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/palo-alto-logo.svg', className: 'w-[163px] mx-6', url: '/case-studies' },
-]
 
 interface HomeHeroProps {
     onOpenModal: (pagePosition: string) => void
@@ -72,9 +59,17 @@ const Home: FunctionComponent = () => {
                         Over 2.5M engineers use Sourcegraph
                     </p>
                 </ContentSection>
-                <div className="flex items-center pb-16 md:pb-28">
-                    <InfiniteCarousel images={carouselImages} />
+
+                <div className="flex items-center pb-16">
+                    <CodyPartners isLight={true} className="!pb-[16px] pt-[16px]" />
                 </div>
+
+                <div className="mx-auto flex flex-col pb-12 md:max-w-screen-xl md:px-6">
+                    <div className="px-6 md:px-0">
+                        <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
+                    </div>
+                </div>
+
                 <div className="mx-auto flex flex-col md:max-w-screen-xl md:px-6">
                     <div className="flex max-w-[769px] flex-col px-6 pb-6 md:px-0">
                         <div className="flex items-center gap-4 pb-6">
@@ -116,7 +111,7 @@ const Home: FunctionComponent = () => {
                         )}
                     </div>
                     <div className="relative mx-6 mb-8 flex h-auto gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:max-h-[500px] lg:h-[329px]">
-                        <div className="text-pretty flex w-full flex-col py-16 pl-10">
+                        <div className="flex w-full flex-col text-pretty py-16 pl-10">
                             <img
                                 className="h-[40px] w-[40px]"
                                 src="/home/branded-icons/completions-brand-icon.svg"
@@ -139,7 +134,7 @@ const Home: FunctionComponent = () => {
                             </div>
                         )}
                     </div>
-                    <div className="mx-6 mb-8 grid grid-cols-1 gap-8 md:mx-0 md:grid-cols-2 md:gap-6">
+                    <div className="mx-6 mb-0 grid grid-cols-1 gap-8 md:mx-0 md:grid-cols-2 md:gap-6">
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             {/* <img
                                 className="h-[48px] w-[48px]"
@@ -175,9 +170,6 @@ const Home: FunctionComponent = () => {
                             </h5>
                         </div>
                     </div>
-                    <div className="px-6 md:px-0">
-                        <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
-                    </div>
 
                     <div className="relative overflow-hidden md:overflow-visible">
                         <TwoColumnTestimonialCard
@@ -196,7 +188,7 @@ const Home: FunctionComponent = () => {
                                 <img
                                     className="h-[50px] w-[50px] rounded-t-2xl"
                                     src="/home/branded-icons/Code-Search-squircle.svg"
-                                    alt="Cody Product logo"
+                                    alt="Code Search Product logo"
                                 />
                                 <h1>Code Search</h1>
                             </div>
@@ -363,26 +355,12 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
                 </p>
                 <button
                     type="button"
-                    className="btn btn-primary-dark w-full max-w-[356px] px-5 mb-8 sm:w-fit sm:px-6 sm:mb-12"
+                    className="btn btn-primary-dark mb-8 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
                     title="free cody"
                     onClick={() => onOpenModal('top')}
                 >
-                    Get Cody for free
+                    Download Cody, the AI coding assistant
                 </button>
-            </div>
-            <div className="hidden aspect-video w-full overflow-hidden sm:block lg:w-[1062px]">
-                <video
-                    className="relative bottom-[-6px] rounded-t-xl shadow-md"
-                    autoPlay={true}
-                    muted={true}
-                    loop={true}
-                    playsInline={true}
-                    controls={false}
-                >
-                    <source type="video/webm" src="/home/Header-Vid-Non-Rounded.webm" />
-                    <source type="video/mp4" src="/home/Header-Vid-Non-Rounded.mp4" />
-                    <source type="video/ogg" src="/home/Header-Vid-Non-Rounded.ogg" />
-                </video>
             </div>
         </div>
     </ContentSection>

@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
+import Link from 'next/link'
 import { CaptureResult } from 'posthog-js'
 
 import { ContentSection } from '../../ContentSection'
@@ -43,17 +44,28 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                 Cody is an AI coding assistant that uses advanced search and codebase context to help you understand,
                 write, and fix code faster.
             </h3>
-            <button
+            <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
+                <button
                 type="button"
-                className={classNames('btn px-5 py-3', isLight ? 'btn-primary' : 'btn-primary-dark')}
+                className={classNames('btn mr-4 px-5 py-3', isLight ? 'btn-primary' : 'btn-primary-dark')}
                 title="Get Cody for free"
                 onClick={() => handleOpenModal('top')}
             >
                 <div className="flex items-center justify-center">
-                    <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Get Cody for
-                    free
+                    <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Get Cody for your IDE
                 </div>
             </button>
+            <Link
+                href="https://sourcegraph.com/sign-in?returnTo=/cody/chat"
+                title="Chat on the web"
+                className="btn btn-secondary mr-4 px-5 py-3"
+                type="button"
+            >
+                <div className="flex items-center justify-center">
+                    Chat on the web
+                </div>
+            </Link>
+            </div>
         </div>
     </ContentSection>
 )
