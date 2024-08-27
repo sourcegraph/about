@@ -54,20 +54,21 @@ const Home: FunctionComponent = () => {
             displayChildrenUnderNav={false}
         >
             <div className="oveflow-hidden relative w-full bg-gray-50">
-                <div className="flex items-center pb-16 md:pb-28">
-                    <CodyPartners isLight={true} className="!pb-[32px] md:pt-[96px] md:pb-0" />
-                </div>
                 <ContentSection parentClassName="!py-0" className="flex flex-col items-center justify-center">
                     <p className="mb-16 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
                         Over 2.5M engineers use Sourcegraph
                     </p>
                 </ContentSection>
 
-                    <div className="mx-auto flex flex-col md:max-w-screen-xl md:px-6 pb-12">
-                        <div className="px-6 md:px-0">
-                            <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
-                        </div>
+                <div className="flex items-center pb-16">
+                    <CodyPartners isLight={true} className="!pb-[16px] pt-[16px]" />
+                </div>
+
+                <div className="mx-auto flex flex-col pb-12 md:max-w-screen-xl md:px-6">
+                    <div className="px-6 md:px-0">
+                        <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
                     </div>
+                </div>
 
                 <div className="mx-auto flex flex-col md:max-w-screen-xl md:px-6">
                     <div className="flex max-w-[769px] flex-col px-6 pb-6 md:px-0">
@@ -110,7 +111,7 @@ const Home: FunctionComponent = () => {
                         )}
                     </div>
                     <div className="relative mx-6 mb-8 flex h-auto gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:max-h-[500px] lg:h-[329px]">
-                        <div className="text-pretty flex w-full flex-col py-16 pl-10">
+                        <div className="flex w-full flex-col text-pretty py-16 pl-10">
                             <img
                                 className="h-[40px] w-[40px]"
                                 src="/home/branded-icons/completions-brand-icon.svg"
@@ -133,7 +134,7 @@ const Home: FunctionComponent = () => {
                             </div>
                         )}
                     </div>
-                    <div className="mx-6 mb-8 grid grid-cols-1 gap-8 md:mx-0 md:grid-cols-2 md:gap-6">
+                    <div className="mx-6 mb-0 grid grid-cols-1 gap-8 md:mx-0 md:grid-cols-2 md:gap-6">
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             {/* <img
                                 className="h-[48px] w-[48px]"
@@ -187,7 +188,7 @@ const Home: FunctionComponent = () => {
                                 <img
                                     className="h-[50px] w-[50px] rounded-t-2xl"
                                     src="/home/branded-icons/Code-Search-squircle.svg"
-                                    alt="Cody Product logo"
+                                    alt="Code Search Product logo"
                                 />
                                 <h1>Code Search</h1>
                             </div>
@@ -354,26 +355,12 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
                 </p>
                 <button
                     type="button"
-                    className="btn btn-primary-dark w-full max-w-[356px] px-5 mb-8 sm:w-fit sm:px-6 sm:mb-12"
+                    className="btn btn-primary-dark mb-8 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
                     title="free cody"
                     onClick={() => onOpenModal('top')}
                 >
-                    Download the AI coding assistant
+                    Download Cody, the AI coding assistant
                 </button>
-            </div>
-            <div className="hidden aspect-video w-full overflow-hidden sm:block lg:w-[1062px]">
-                <video
-                    className="relative bottom-[-6px] rounded-t-xl shadow-md"
-                    autoPlay={true}
-                    muted={true}
-                    loop={true}
-                    playsInline={true}
-                    controls={false}
-                >
-                    <source type="video/webm" src="/home/Header-Vid-Non-Rounded.webm" />
-                    <source type="video/mp4" src="/home/Header-Vid-Non-Rounded.mp4" />
-                    <source type="video/ogg" src="/home/Header-Vid-Non-Rounded.ogg" />
-                </video>
             </div>
         </div>
     </ContentSection>
