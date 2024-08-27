@@ -21,10 +21,9 @@ const CompareCopilotPage: FunctionComponent = () => (
             >
                 <p>
                     Cursor is an “AI-first Code Editor.” Unlike other solutions which are commonly IDE extensions and
-                    plugins, Cursor itself is a fork of VS Code. This gives Cursor some unique functionality, including
-                    its “Auto-debug” feature that can attempt to fix errors that appear in the VS Code terminal. Cursor
-                    also provides codebase context to the LLM, and users can manually select files and symbols to
-                    include as context for questions.
+                    plugins, Cursor itself is a fork of VS Code. Cursor features autocomplete (called "Tab"), chat, and
+                    Command+K for quickly editing code. Cursor users can also feed local code context to the LLM by 
+                    manually selecting files and symbols to include in chat.
                 </p>
 
                 <p>
@@ -34,9 +33,11 @@ const CompareCopilotPage: FunctionComponent = () => (
 
                 <p>
                     <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
-                    Cursor is a good choice for users who are willing to migrate from their preferred IDE to Cursor. It
-                    offers unique functionality and has strong codebase context features. However, Cody is a better
-                    option for users who want LLM choice or who want their code AI to work within their IDE of choice.
+                    Cursor is a good choice for users willing to migrate from their preferred IDE to Cursor. It offers
+                    unique functionality and has local codebase context features. However, Cody is a better choice for
+                    users who want to use their existing IDE. Cody also offers more functionality for enterprise
+                    developers, including the ability to reference remote codebase context in chat. Lastly, Cody offers more
+                    generous usage for premium models such as Claude 3.5 Sonnet, especially on the free tier.
                 </p>
             </CompareHero>
         }
