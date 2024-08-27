@@ -20,7 +20,7 @@
 # ========== SOURCEGRAPH REDIRECTS ==========
 [[redirects]]
   from = "/changelog"
-  to = "https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
+  to = "https://sourcegraph.com/docs/CHANGELOG"
 
 [[redirects]]
   from = "/own"
