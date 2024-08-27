@@ -62,6 +62,13 @@ const Home: FunctionComponent = () => {
                         Over 2.5M engineers use Sourcegraph
                     </p>
                 </ContentSection>
+
+                    <div className="mx-auto flex flex-col md:max-w-screen-xl md:px-6 pb-12">
+                        <div className="px-6 md:px-0">
+                            <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
+                        </div>
+                    </div>
+
                 <div className="mx-auto flex flex-col md:max-w-screen-xl md:px-6">
                     <div className="flex max-w-[769px] flex-col px-6 pb-6 md:px-0">
                         <div className="flex items-center gap-4 pb-6">
@@ -161,9 +168,6 @@ const Home: FunctionComponent = () => {
                                 tests in seconds.
                             </h5>
                         </div>
-                    </div>
-                    <div className="px-6 md:px-0">
-                        <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
                     </div>
 
                     <div className="relative overflow-hidden md:overflow-visible">
