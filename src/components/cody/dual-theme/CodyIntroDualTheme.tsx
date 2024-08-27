@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
+import Link from 'next/link'
 import { CaptureResult } from 'posthog-js'
 
 import { ContentSection } from '../../ContentSection'
-import Link from 'next/link'
 
 interface CodyIntroDualThemeProps {
     isLight?: boolean
