@@ -100,7 +100,7 @@ const TickerAnimation: FC<InfiniteCarouselProps> = memo((props: InfiniteCarousel
         >
             <div
                 ref={scope}
-                className="FMT__container__contents inline-block flex items-center justify-center align-middle"
+                className="FMT__container__contents inline-block flex items-center justify-left align-middle"
             >
                 {children.map((item, index) => (
                     <div key={index} id={`${tickerUUID}_${index}`}>
@@ -120,7 +120,7 @@ TickerAnimation.displayName = 'TickerAnimation'
 export const InfiniteCarousel: FC<{
     images: { src: string; className?: string; url?: string }[]
     duration?: number
-}> = ({ images, duration = 50 }) => { // Set a faster default duration
+}> = ({ images, duration = 60 }) => { // Set a faster default duration
     const duplicatedImages = [...images, ...images] // Duplicate images once for seamless looping
     return (
         <TickerAnimation duration={duration}>
