@@ -4,6 +4,7 @@ import classNames from 'classnames'
 import { CaptureResult } from 'posthog-js'
 
 import { ContentSection } from '../../ContentSection'
+import Link from 'next/link'
 
 interface CodyIntroDualThemeProps {
     isLight?: boolean
@@ -45,7 +46,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
             </h3>
             <button
                 type="button"
-                className={classNames('btn px-5 py-3', isLight ? 'btn-primary' : 'btn-primary-dark')}
+                className={classNames('btn px-5 py-3 mr-4', isLight ? 'btn-primary' : 'btn-primary-dark')}
                 title="Get Cody for free"
                 onClick={() => handleOpenModal('top')}
             >
@@ -54,6 +55,14 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                     free
                 </div>
             </button>
+            <Link
+                href="https://sourcegraph.com/sign-in?returnTo=/cody/chat"
+                title="Chat on the web"
+                className="btn btn-secondary text-center px-5 py-3"
+                type="button"
+            >
+                Chat on the web
+            </Link>
         </div>
     </ContentSection>
 )
