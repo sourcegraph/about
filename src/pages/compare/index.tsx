@@ -200,7 +200,7 @@ const ComparePage: FunctionComponent = () => (
                         Autocomplete <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                         <MdCheck className="h-6 w-6 fill-violet-400" />
+                        Proprietary IDE <MdCheck className="h-6 w-6 fill-violet-400" />
                     </li>
                 </ul>
             </div>
