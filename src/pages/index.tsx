@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Layout, InfiniteCarousel } from '../components'
+import { ContentSection, Layout, CodyPartners } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
 import { Icon } from '../components/icon'
 import ReadCaseStudyLink from '../components/ReadCaseStudyLink'
@@ -13,19 +13,6 @@ import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../lib/utils'
-
-export const carouselImages = [
-    { src: '/home/carousel/1password-logo.svg', className: 'w-[170.364px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/reddit-logo.svg', className: 'w-[90px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/databricks-logo.svg', className: 'w-[178px]  mx-6', url: '/case-studies' },
-    { src: '/home/carousel/podium-logo.svg', className: 'w-[136px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/qualtrics-logo.svg', className: 'w-[125px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/canva-logo.svg', className: 'w-[85px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/redfin-logo.svg', className: 'w-[97px mx-6', url: '/case-studies' },
-    { src: '/home/carousel/nutanix-logo.svg', className: 'w-[150px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/leidos-logo.svg', className: 'w-[113.625px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/palo-alto-logo.svg', className: 'w-[163px] mx-6', url: '/case-studies' },
-]
 
 interface HomeHeroProps {
     onOpenModal: (pagePosition: string) => void
@@ -67,14 +54,14 @@ const Home: FunctionComponent = () => {
             displayChildrenUnderNav={false}
         >
             <div className="oveflow-hidden relative w-full bg-gray-50">
+                <div className="flex items-center pb-16 md:pb-28">
+                    <CodyPartners isLight={true} className="!pb-[32px] md:pt-[96px] md:pb-0" />
+                </div>
                 <ContentSection parentClassName="!py-0" className="flex flex-col items-center justify-center">
                     <p className="mb-16 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
                         Over 2.5M engineers use Sourcegraph
                     </p>
                 </ContentSection>
-                <div className="flex items-center pb-16 md:pb-28">
-                    <InfiniteCarousel images={carouselImages} />
-                </div>
                 <div className="mx-auto flex flex-col md:max-w-screen-xl md:px-6">
                     <div className="flex max-w-[769px] flex-col px-6 pb-6 md:px-0">
                         <div className="flex items-center gap-4 pb-6">
@@ -367,7 +354,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
                     title="free cody"
                     onClick={() => onOpenModal('top')}
                 >
-                    Download our AI code assistant for free
+                    Download the AI coding assistant
                 </button>
             </div>
 
