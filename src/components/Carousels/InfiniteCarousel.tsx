@@ -33,7 +33,7 @@ const TickerAnimation: FC<InfiniteCarouselProps> = memo((props: InfiniteCarousel
         let contentWidth = 0
 
         for (let index = 0; index < children.length; index++) {
-            const element = document.getElementById(`${tickerUUID}_${index}`)?.clientWidth // eslint-disable-line
+            const element = document.getElementById(`${tickerUUID}_${index}`)?.clientWidth // eslint-disable-line unicorn/prefer-query-selector
             if (element) {
                 contentWidth += element
             }
