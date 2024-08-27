@@ -52,7 +52,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                 onClick={() => handleOpenModal('top')}
             >
                 <div className="flex items-center justify-center">
-                    <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Get Cody in your IDE
+                    <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Get Cody for your IDE
                 </div>
             </button>
             <Link
@@ -62,7 +62,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                 type="button"
             >
                 <div className="flex items-center justify-center">
-                    <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Chat on the web
+                    Chat on the web
                 </div>
             </Link>
             </div>
