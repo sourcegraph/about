@@ -46,7 +46,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
             </h3>
             <button
                 type="button"
-                className={classNames('btn px-5 py-3 mr-4', isLight ? 'btn-primary' : 'btn-primary-dark')}
+                className={classNames('btn mr-4 px-5 py-3', isLight ? 'btn-primary' : 'btn-primary-dark')}
                 title="Get Cody for free"
                 onClick={() => handleOpenModal('top')}
             >
@@ -58,7 +58,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
             <Link
                 href="https://sourcegraph.com/sign-in?returnTo=/cody/chat"
                 title="Chat on the web"
-                className="btn btn-secondary text-center px-5 py-3"
+                className="btn btn-secondary px-5 py-3 text-center"
                 type="button"
             >
                 Chat on the web
