@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, CodyPartners, Layout, TwoColumnSection, Video, InfiniteCarousel } from '../components'
+import { ContentSection, CodyPartners, Layout, TwoColumnSection, Video } from '../components'
 import { CodeSearchCard } from '../components/Code-search/CodeSearchCard'
 import { TelemetryProps } from '../telemetry'
 
