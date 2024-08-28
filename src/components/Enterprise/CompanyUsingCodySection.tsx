@@ -30,7 +30,7 @@ export const CompanyUsingCodySection: FunctionComponent = () => (
                 </Link>
             </div>
         </ContentSection>
-        <div className="relative max-w-[900px] w-full overflow-hidden">
+        <div className="relative max-w-[1200px] w-full overflow-hidden">
             <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-gray-50 to-transparent z-10"/>
             <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-gray-50 to-transparent z-10"/>
             <InfiniteCarousel images={carouselImages} />
