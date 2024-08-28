@@ -35,8 +35,6 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
      * useState(true) for on, useState(false) for off.
      */
     const [showBanner, setShowBanner] = useState(true)
-    const windowWidth = useWindowWidth()
-    const isMobile = windowWidth < breakpoints.md
 
     const source = pathname.slice(1) || 'about-home'
 
@@ -88,7 +86,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
         <Disclosure as="nav" className={classNames('fixed top-0 left-0 right-0 z-[1030]')} ref={navRef}>
             {({ open, close }) => (
                 <>
-                    {showBanner && !isMobile && <Banner />}
+                    {showBanner && <Banner />}
                     <HeaderContent
                         colorTheme={colorTheme}
                         minimal={minimal}
