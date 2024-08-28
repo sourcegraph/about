@@ -46,17 +46,16 @@
     <h1>Changelog Markdown Generator</h1>
     <form id="changelogForm">
         <label for="title">Title:</label>
-        <input type="text" id="title" required>
+        <input type="text" id="title" required placeholder="Changelog post title here.">
 
         <label for="authorName">Author Name:</label>
-<input type="text" id="authorName" list="authorList" required>
-<datalist id="authorList">
-    <option value="Alex">
-    <option value="Justin">
-    <option value="Maedah">
-    <option value="Kelvin">
-</datalist>
-
+        <input type="text" id="authorName" list="authorList" required>
+        <datalist id="authorList">
+            <option value="Alex Isken">
+            <option value="Justin Dorfman">
+            <option value="Maedah Batool">
+            <option value="Kelvin Yap">
+        </datalist>
 
         <label for="authorUrl">Author URL:</label>
         <input type="text" id="authorUrl" required>
@@ -68,90 +67,79 @@
         <input type="datetime-local" id="publishDate" required>
 
         <label for="description">Description:</label>
-        <textarea id="description" required></textarea>
+        <textarea id="description" required placeholder="Enter a brief meta description of the Changelog post."></textarea>
 
         <label for="tags">Tags (comma-separated):</label>
-        <input type="text" id="tags" required>
+        <input type="text" id="tags" required placeholder="blog, cody">
 
         <label for="version">Version:</label>
-        <input type="text" id="version" required>
+        <input type="text" id="version" required placeholder="v1.24.3">
 
         <label for="slug">Slug:</label>
-        <input type="text" id="slug" required>
+        <input type="text" id="slug" required placeholder="changelog-post-slug">
 
-        <label for="published">Published:</label>
-        <input type="checkbox" id="published" checked>
-
-        <label for="relatedTopic1Title">Related Topic 1 Title:</label>
-        <input type="text" id="relatedTopic1Title" required>
-
-        <label for="relatedTopic1Url">Related Topic 1 URL:</label>
-        <input type="text" id="relatedTopic1Url" required>
-
-        <label for="relatedTopic2Title">Related Topic 2 Title:</label>
-        <input type="text" id="relatedTopic2Title">
-
-        <label for="relatedTopic2Url">Related Topic 2 URL:</label>
-        <input type="text" id="relatedTopic2Url">
+        <label for="content">Content:</label>
+        <textarea id="content" required></textarea>
 
         <button type="submit">Generate Markdown</button>
     </form>
 
     <div id="output"></div>
     <button id="copyButton">Copy Markdown</button>
-<script>
-    // Set default publish date to today
-    document.addEventListener('DOMContentLoaded', function() {
-        const now = new Date();
-        const offset = now.getTimezoneOffset() * 60000;
-        const localISOTime = (new Date(now - offset)).toISOString().slice(0, 16);
-        document.getElementById('publishDate').value = localISOTime;
-    });
 
-    // Existing event listeners
-    document.getElementById('authorName').addEventListener('change', function() {
-        const authorUrl = document.getElementById('authorUrl');
-        if (this.value === 'Justin') {
-            authorUrl.value = 'https://x.com/jdorfman';
-        } else if (this.value === 'Alex') {
-            authorUrl.value = 'https://x.com/alex_miller_';
-        } else if (this.value === 'Maedah') {
-            authorUrl.value = 'https://x.com/maedah_';
-        } else if (this.value === 'Kelvin') {
-            authorUrl.value = 'https://x.com/kelvin_';
-        }
-        const avatar = document.getElementById('avatar');
-        if (this.value === 'Justin') {
-            avatar.value = 'https://lh3.googleusercontent.com/a/ACg8ocLpVESruQTkYABkUVENjrKddntaoCFmxoS1-t0EmnPmVA=s96-c';
-        } else if (this.value === 'Alex') {
-            authorUrl.value = 'https://x.com/alex_miller_';
-        } else if (this.value === 'Maedah') {
-            authorUrl.value = 'https://x.com/maedah_';
-        } else if (this.value === 'Kelvin') {
-            authorUrl.value = 'https://x.com/kelvin_';
-        }
-    });
+    <script>
+        // Set default publish date to today
+        document.addEventListener('DOMContentLoaded', function() {
+            const now = new Date();
+            const offset = now.getTimezoneOffset() * 60000;
+            const localISOTime = (new Date(now - offset)).toISOString().slice(0, 16);
+            document.getElementById('publishDate').value = localISOTime;
+        });
 
-    document.getElementById('changelogForm').addEventListener('submit', function(e) {
-        e.preventDefault();
+        document.addEventListener('DOMContentLoaded', function() {
+            const authorData = {
+                "Justin Dorfman": {
+                    url: 'https://x.com/jdorfman',
+                    avatar: 'https://storage.googleapis.com/sourcegraph-assets/blog/justin_avatar.png'
+                },
+                "Alex Isken": {
+                    url: 'https://x.com/alex_miller_',
+                    avatar: 'https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.png'
+                },
+                "Maedah Batool": {
+                    url: 'https://x.com/maedah_',
+                    avatar: 'https://storage.googleapis.com/sourcegraph-assets/blog/maedah_avatar.png'
+                },
+                "Kelvin Yap": {
+                    url: 'https://x.com/kelvin_',
+                    avatar: 'https://storage.googleapis.com/sourcegraph-assets/blog/kelvin_avatar.png'
+                }
+            };
 
-        const title = document.getElementById('title').value;
-        const authorName = document.getElementById('authorName').value;
-        const authorUrl = document.getElementById('authorUrl').value;
-        const avatar = document.getElementById('avatar').value;
-        const publishDate = new Date(document.getElementById('publishDate').value);
-        const description = document.getElementById('description').value;
-        const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim());
-        const version = document.getElementById('version').value;
-        const slug = document.getElementById('slug').value;
-        const published = document.getElementById('published').checked;
-        const relatedTopic1Title = document.getElementById('relatedTopic1Title').value;
-        const relatedTopic1Url = document.getElementById('relatedTopic1Url').value;
-        const relatedTopic2Title = document.getElementById('relatedTopic2Title').value;
-        const relatedTopic2Url = document.getElementById('relatedTopic2Url').value;
+            document.getElementById('authorName').addEventListener('change', function() {
+                const selectedAuthor = this.value;
+                if (authorData[selectedAuthor]) {
+                    document.getElementById('authorUrl').value = authorData[selectedAuthor].url;
+                    document.getElementById('avatar').value = authorData[selectedAuthor].avatar;
+                }
+            });
+        });
 
-        const markdown = `---
+        document.getElementById('changelogForm').addEventListener('submit', function(e) {
+            e.preventDefault();
 
+            const title = document.getElementById('title').value;
+            const authorName = document.getElementById('authorName').value;
+            const authorUrl = document.getElementById('authorUrl').value;
+            const avatar = document.getElementById('avatar').value;
+            const publishDate = new Date(document.getElementById('publishDate').value);
+            const description = document.getElementById('description').value;
+            const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim());
+            const version = document.getElementById('version').value;
+            const slug = document.getElementById('slug').value;
+            const content = document.getElementById('content').value;
+
+            const markdown = `---
 title: "${title}"
 
 authors:
@@ -170,29 +158,24 @@ version: [${version}]
 
 slug: '${slug}'
 
-published: ${published}
-
-relatedTopics:
-  - title: ${relatedTopic1Title}
-    url: ${relatedTopic1Url}
-  - title: ${relatedTopic2Title}
-    url: ${relatedTopic2Url}
+published: true
 
 ---
 
-Start drafting your post!`;
+${content}`;
 
-        document.getElementById('output').textContent = markdown;
-        document.getElementById('copyButton').style.display = 'block';
-    });
-
-    document.getElementById('copyButton').addEventListener('click', function() {
-        const outputText = document.getElementById('output').textContent;
-        navigator.clipboard.writeText(outputText).then(function() {
-            alert('Markdown copied to clipboard!');
-        }, function(err) {
-            console.error('Could not copy text: ', err);
+            document.getElementById('output').textContent = markdown;
+            document.getElementById('copyButton').style.display = 'block';
         });
-    });
-</script>
-</body></html>
+
+        document.getElementById('copyButton').addEventListener('click', function() {
+            const outputText = document.getElementById('output').textContent;
+            navigator.clipboard.writeText(outputText).then(function() {
+                alert('Markdown copied to clipboard!');
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        });
+    </script>
+</body>
+</html>
