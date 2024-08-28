@@ -13,6 +13,7 @@ export const carouselImages = [
     { src: '/assets/icons/leidos-light.svg', className: 'h-[54px] w-[225px] mx-[21px]' },
     { src: '/home/carousel/palo-alto-logo.svg', className: ' h-[48px] w-[258px] mx-[21px]' },
     { src: '/assets/icons/uber-logo.svg', className: ' h-[48px] w-[170px] mx-[21px]' },
+    { src: '/assets/icons/nutanix-logo.svg', className: ' h-[48px] w-[170px] mx-[21px]' },
 ]
 export const CompanyUsingCodySection: FunctionComponent = () => (
     <div className="relative mx-auto mt-0 flex flex-col items-center gap-12 py-16 text-center md:mt-[-135px] md:pt-[282px] md:pb-24">
