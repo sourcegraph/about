@@ -3,26 +3,9 @@ import { FunctionComponent } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Layout, TwoColumnSection, Video, InfiniteCarousel } from '../components'
+import { ContentSection, CodyPartners, Layout, TwoColumnSection, Video, InfiniteCarousel } from '../components'
 import { CodeSearchCard } from '../components/Code-search/CodeSearchCard'
 import { TelemetryProps } from '../telemetry'
-
-export const carouselImages = [
-    { src: '/home/carousel/1password-logo.svg', className: 'w-[208px] h-[40px] mx-6' },
-    { src: '/home/carousel/reddit-logo-simple.svg', className: 'w-[131px] h-[37px] mx-6' },
-    { src: '/home/carousel/leidos-logo.svg', className: 'w-[224px] h-[53px] mx-6' },
-    { src: '/home/carousel/palo-alto-logo.svg', className: 'w-[257px] h-[47px] mx-6' },
-    { src: '/home/carousel/qualtrics-logo.svg', className: 'w-[171px] h-[54.9px] mx-6' },
-    { src: '/home/carousel/canva-logo.svg', className: 'w-[112px] h-[36px] mx-6' },
-    { src: '/home/carousel/podium-logo.svg', className: 'w-[173px] h-[37px] mx-6' },
-    { src: '/home/carousel/redfin-logo.svg', className: 'w-[135px] h-[36px] mx-6' },
-    { src: '/home/carousel/nutanix-logo.svg', className: 'w-[180px] h-[22px] mx-6' },
-    { src: '/home/carousel/indeed-logo.svg', className: 'w-[150px] h-[40.33px] mx-6' },
-    { src: '/home/carousel/uber-logo.svg', className: 'w-[124.16px] h-[34.33px] mx-6' },
-    { src: '/home/carousel/mercado-libre-logo.svg', className: 'w-[77.95px] h-[77.96px] mx-6' },
-    { src: '/home/carousel/dropbox-logo.svg', className: 'w-[164.27px] h-[92px] mx-6' },
-    { src: '/home/carousel/plaid-logo.svg', className: 'w-[129px] h-[48px] mx-6' },
-]
 
 const testimonials = [
     {
@@ -76,8 +59,8 @@ export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({ telemetryRec
         hero={<CodeSearchHero />}
         className="bg-gray-50"
     >
-        <div className="flex items-center py-10 lg:pb-16 lg:pt-24">
-            <InfiniteCarousel duration={400} images={carouselImages} />
+        <div className="flex items-center pt-16 pb-16">
+            <CodyPartners isLight={true} className="!pb-[8px] pt-[16px]" />
         </div>
 
         <ContentSection className="lg:pl-6" parentClassName="lg:!py-24">
