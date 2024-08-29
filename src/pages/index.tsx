@@ -346,26 +346,38 @@ const Home: FunctionComponent = () => {
 
 const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
     <ContentSection
-        className="relative mt-[64px] flex items-center justify-center rounded-2xl bg-violet-700 md:mt-[32px]"
+        className="relative mt-[64px] flex items-center justify-center rounded-2xl md:mt-[32px]"
         parentClassName="!py-0 !pb-16 !bg-gray-50"
     >
         <div className="mx-auto flex flex-col items-center justify-center px-3 text-center md:px-0">
             <div className="mx-auto flex max-w-[456px] flex-col items-center pb-8 pt-8 sm:max-w-full md:w-[680px] md:pb-[26px] md:pt-10">
-                <h1 className="mb-8 mt-10 w-full text-center text-5xl text-gray-100 sm:text-6xl">
+                <h1 className="mb-8 mt-10 w-full text-center text-5xl sm:text-6xl">
                     Understand and write code blazingly fast
                 </h1>
-                <p className="mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-white opacity-60 md:mb-8">
+                <p className="mb-10 text-2xl font-normal leading-[30px] text-[#343A4D] -tracking-[0.25px] md:mb-8">
                     Sourcegraph allows developers to rapidly search, write, and understand code by bringing insights
                     from their entire codebase right into the editor
                 </p>
-                <button
+                <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
+                    <button
+                        type="button"
+                        className="btn btn-primary mb-8 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
+                        title="free cody"
+                        onClick={() => onOpenModal('top')}
+                    >
+                        Download the AI coding assistant
+                    </button>
+                    <Link
+                    href="http://localhost:3000/contact/request-info"
+                    title="Book a demo"
+                    className="btn btn-secondary mb-8 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
                     type="button"
-                    className="btn btn-primary-dark mb-8 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
-                    title="free cody"
-                    onClick={() => onOpenModal('top')}
-                >
-                    Download Cody, the AI coding assistant
-                </button>
+                    >
+                        <div className="flex items-center justify-center">
+                            Book a demo
+                        </div>
+                    </Link>
+                </div>
             </div>
         </div>
     </ContentSection>
