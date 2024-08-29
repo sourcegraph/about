@@ -160,8 +160,8 @@ export const CodyPartners: FunctionComponent<{ isLight?: boolean; className?: st
 }) => (
     <div className={classNames(className, 'm-0 mt-0 w-full items-center justify-center py-24 md:mt-0 md:px-[0px]')}>
         <div className="max-w-[1232px] mx-auto relative">
-            <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-gray-50 to-transparent z-10"/>
-            <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-gray-50 to-transparent z-10"/>
+            <div className={`absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r ${isLight ? 'from-gray-50' : 'from-gray-800'} to-transparent z-10`}/>
+            <div className={`absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l ${isLight ? 'from-gray-50' : 'from-gray-800'} to-transparent z-10`}/>
             <InfiniteCarousel images={isLight ? lightThemeIcons : darkThemeIcons} />
         </div>
     </div>
