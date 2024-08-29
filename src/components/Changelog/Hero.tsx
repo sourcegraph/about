@@ -1,4 +1,3 @@
-import React from 'react'
 
 const HeroSection = (): any => (
   <div className="flex lg:h-[330px] h-[598px] w-[85%] lg:justify-between items-center lg:content-center self-stretch flex-wrap bg-violet-700 rounded-lg">
@@ -7,7 +6,7 @@ const HeroSection = (): any => (
         Changelog
       </h1>
       <p className="font-sans text-base font-normal leading-custom-150 tracking-custom-tight text-white">
-        Latest updates to the Sourcegraph and Cody platform
+        Latest updates to the Sourcegraph Code Search and Cody platform!
       </p>
     </div>
     <div className="relative w-[400px] mx-20 lg:h-full flex mt-8 lg:mt-0">
