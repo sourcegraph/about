@@ -56,11 +56,11 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
     return (
         <Layout className='bg-gray-50'>
             <div className="min-h-scree flex items-center justify-center ml-6">
-                <div className="container mx-auto flex w-[80%] flex-col p-6 md:flex-row">
+                <div className="container mx-auto flex w-full md:w-[80%] flex-col p-6 md:flex-row">
                     <div className="flex w-full flex-col md:w-3/4">
-                        <div className="mb-12 flex">
-                            <aside className="w-1/4 pr-6" />
-                            <div className="ml-4 w-[55%]">
+                        <div className="mb-12 flex flex-col md:flex-row">
+                            <aside className="hidden md:block w-1/4 pr-6" />
+                            <div className="ml-0 md:ml-4 w-full md:w-[60%]">
                                 <h2>{title}</h2>
                                 <PostDetailsInfo
                                     version={version}
@@ -73,7 +73,6 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
                             </div>
                         </div>
                     </div>
-
                     {/* Right part */}
                     <aside className="w-full md:mt-0 md:w-1/4 md:pl-6">
                         <div className="space-y-6">

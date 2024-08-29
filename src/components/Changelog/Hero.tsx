@@ -1,16 +1,16 @@
 import React from 'react'
 
 const HeroSection = (): any => (
-  <div className="flex h-[330px] w-[85%] px-20 justify-between items-center content-center self-stretch flex-wrap bg-violet-700 rounded-lg">
-    <div className="flex-grow space-y-6">
-      <h1 className="font-sans text-6xl font-semibold leading-extra-tight tracking-extra-tight text-white">
+  <div className="flex lg:h-[330px] h-[598px] w-[85%] lg:justify-between items-center lg:content-center self-stretch flex-wrap bg-violet-700 rounded-lg">
+    <div className="flex flex-col items-center lg:items-start flex-grow space-y-6 mx-10 lg:mx-20 w-[400px]">
+      <h1 className="font-sans text-6xl font-semibold leading-extra-tight tracking-extra-tight text-white pt-8 lg:pt-0 pb-0">
         Changelog
       </h1>
       <p className="font-sans text-base font-normal leading-custom-150 tracking-custom-tight text-white">
         Latest updates to the Sourcegraph and Cody platform
       </p>
     </div>
-    <div className="relative w-[400px] h-full flex">
+    <div className="relative w-[400px] mx-20 lg:h-full flex mt-8 lg:mt-0">
       <div className="absolute left-[-20px] top-0 h-full flex justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -45,8 +45,8 @@ const HeroSection = (): any => (
           </defs>
         </svg>
       </div>
-      <div className="flex flex-col space-y-[18px] overflow-y-auto h-full pl-4">
-        <svg width="339" height="63" viewBox="0 0 339 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div className="flex flex-col md:space-y-[18px] space-y-[5px] overflow-y-auto lg:h-full pl-4">
+        <svg className='md:w-[339px] w-[250px] h-[63px]' viewBox="0 0 339 63" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g opacity="0.3">
             <path d="M0 8C0 3.58172 3.58172 0 8 0H331C335.418 0 339 3.58172 339 8V55C339 59.4183 335.418 63 331 63H7.99999C3.58171 63 0 59.4183 0 55V8Z" fill="url(#paint0_linear_2001_2881)" fill-opacity="0.17" />
             <path d="M0.5 8C0.5 3.85786 3.85786 0.5 8 0.5H331C335.142 0.5 338.5 3.85787 338.5 8V55C338.5 59.1421 335.142 62.5 331 62.5H7.99999C3.85786 62.5 0.5 59.1421 0.5 55V8Z" stroke="url(#paint1_linear_2001_2881)" stroke-opacity="0.67" />
@@ -83,7 +83,7 @@ const HeroSection = (): any => (
           </defs>
         </svg>
         {/* eslint-disable-next-line react/forbid-dom-props */}
-        <svg width="372" height="96" viewBox="0 0 372 96" fill="none" style={{ marginLeft: -15, marginTop: '10px', marginBottom: '-10px' }} xmlns="http://www.w3.org/2000/svg">
+        <svg className='md:w-[372px] w-[280px] h-[96px] -ml-[15px] mt-[10px] -mb-[10px]' viewBox="0 0 372 96" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g opacity="0.3" filter="url(#filter0_f_2001_2888)">
             <path d="M12 82.4316L14.5099 12.1552L360 13.2215L357.49 83.4976L12 82.4316Z" fill="white" />
             <path d="M12 82.4316L14.5099 12.1552L360 13.2215L357.49 83.4976L12 82.4316Z" fill="url(#paint0_linear_2001_2888)" fill-opacity="0.7" />
@@ -109,7 +109,7 @@ const HeroSection = (): any => (
             </linearGradient>
           </defs>
         </svg>
-        <svg width="339" height="64" viewBox="0 0 339 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className='md:w-[339px] w-[250px] h-[63px]' viewBox="0 0 339 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g opacity="0.4">
             <path d="M0 8.5C0 4.08172 3.58172 0.5 8 0.5H331C335.418 0.5 339 4.08172 339 8.5V55.5C339 59.9183 335.418 63.5 331 63.5H7.99999C3.58171 63.5 0 59.9183 0 55.5V8.5Z" fill="white" fill-opacity="0.17" />
             <path d="M0.5 8.5C0.5 4.35786 3.85786 1 8 1H331C335.142 1 338.5 4.35787 338.5 8.5V55.5C338.5 59.6421 335.142 63 331 63H7.99999C3.85786 63 0.5 59.6421 0.5 55.5V8.5Z" stroke="#E4E9F4" stroke-opacity="0.4" />
@@ -126,7 +126,7 @@ const HeroSection = (): any => (
             <path d="M21 26.5C22.6569 26.5 24 25.1569 24 23.5C24 21.8431 22.6569 20.5 21 20.5C19.3431 20.5 18 21.8431 18 23.5C18 25.1569 19.3431 26.5 21 26.5ZM21 26.5V38.5M35 32.5C33.3431 32.5 32 33.8431 32 35.5C32 37.1569 33.3431 38.5 35 38.5C36.6569 38.5 38 37.1569 38 35.5C38 33.8431 36.6569 32.5 35 32.5ZM35 32.5V25.5C35 24.9696 34.7893 24.4609 34.4142 24.0858C34.0391 23.7107 33.5304 23.5 33 23.5H28M31 26.5L28 23.5M28 23.5L31 20.5" stroke="#E4E9F4" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
           </g>
         </svg>
-        <svg width="339" height="64" viewBox="0 0 339 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className='md:w-[339px] w-[250px] h-[63px]' viewBox="0 0 339 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g opacity="0.4">
             <path d="M0 8.5C0 4.08172 3.58172 0.5 8 0.5H331C335.418 0.5 339 4.08172 339 8.5V55.5C339 59.9183 335.418 63.5 331 63.5H7.99999C3.58171 63.5 0 59.9183 0 55.5V8.5Z" fill="url(#paint0_linear_2001_2887)" fill-opacity="0.17" />
             <path d="M0.5 8.5C0.5 4.35786 3.85786 1 8 1H331C335.142 1 338.5 4.35787 338.5 8.5V55.5C338.5 59.6421 335.142 63 331 63H7.99999C3.85786 63 0.5 59.6421 0.5 55.5V8.5Z" stroke="url(#paint1_linear_2001_2887)" stroke-opacity="0.67" />

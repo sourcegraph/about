@@ -59,13 +59,13 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
     };
 
     const toggleExpanded = (): void => {
-        setExpanded(!expanded)  
+        setExpanded(!expanded)
     }
 
     const toggleTag = async(keyword: string): Promise<void> => {
         const updatedTags = selectedTags.includes(keyword)
             ? selectedTags.filter(tag => tag !== keyword)
-            : [...selectedTags, keyword]
+            : [...selectedTags,  keyword]
         
         setSelectedTags(updatedTags)
         await updateQueryParams(updatedTags)
@@ -89,30 +89,33 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                 <div className="container mx-auto flex w-[83%] flex-col p-6 md:flex-row">
                     <div className="flex w-full flex-col md:w-3/4">
                         {currentRecords.length > 0 ? currentRecords.map(({ frontmatter: post, slugPath }, index) => (
-                            <div key={post.title} className="mb-12 flex">
-                                <aside className="w-1/4 pr-6">
+                            <div
+                                key={post.title}
+                                className="mb-12 flex flex-col md:flex-row"
+                            >
+                                <aside className="w-full md:w-1/4 pr-0 md:pr-6 mb-4 md:mb-0">
                                     <div className="mb-5 flex items-center gap-1.5">
-                                        <Calendar className='w-4 h-4 text-gray-300'/>
+                                        <Calendar className="w-4 h-4 text-gray-300" />
                                         <h2 className="text-gray-900 font-sans text-sm font-normal leading-6 tracking-normal">
                                             {formatDate(post?.publishDate)}
                                         </h2>
                                     </div>
-                                    {post.tags && post.tags.length > 0 &&
+                                    {post.tags && post.tags.length > 0 && (
                                         <div className="flex flex-wrap gap-2">
-                                            {post.tags.map(keyword =>
+                                            {post.tags.map(keyword => (
                                                 <button
-                                                    type='button'
+                                                    type="button"
                                                     onClick={() => toggleTag(keyword)}
                                                     key={keyword}
-                                                    className='flex px-2 py-1 items-center justify-center rounded-[6px] border border-gray-200 bg-white'
+                                                    className="flex px-2 py-1 items-center justify-center rounded-[6px] border border-gray-200 bg-white"
                                                 >
-                                                    <span className='text-center font-sans text-sm font-normal leading-[150%] tracking-[0px]'>
+                                                    <span className="text-center font-sans text-sm font-normal leading-[150%] tracking-[0px]">
                                                         {keyword}
                                                     </span>
                                                 </button>
-                                            )}
+                                            ))}
                                         </div>
-                                    }
+                                    )}
                                 </aside>
                                 <svg
                                     width="30"
@@ -120,7 +123,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                     viewBox="0 0 30 100%"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="mx-6"
+                                    className="hidden md:block mx-6"
                                 >
                                     <path
                                         fillRule="evenodd"
@@ -132,7 +135,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                 </svg>
 
                                 {/* Content part */}
-                                <div className="ml-4 w-[55%]">
+                                <div className="ml-0 md:ml-4 w-full md:w-[55%]">
                                     <Link
                                         href={`/changelog/${slugPath}`}
                                         className="not-prose group text-inherit hover:text-inherit"
@@ -140,9 +143,13 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                         <h2>{post.title}</h2>
                                     </Link>
                                     <div className="my-4 flex items-center space-x-2">
-                                        <button type='button' onClick={() => toggleVersion(post?.version?.[0] ?? '')} className="flex items-center justify-center rounded-md bg-gray-200 px-2 py-1">
+                                        <button
+                                            type="button"
+                                            onClick={() => toggleVersion(post?.version?.[0] ?? '')}
+                                            className="flex items-center justify-center rounded-md bg-gray-200 px-2 py-1"
+                                        >
                                             <span className="text-center font-sans text-sm font-normal leading-[150%] tracking-[0px] text-gray-500">
-                                            {post?.version?.[0] ?? ''}
+                                                {post?.version?.[0] ?? ''}
                                             </span>
                                         </button>
                                         <img
@@ -154,9 +161,11 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                             {post?.authors?.[0]?.name ?? ''}
                                         </span>
                                     </div>
-                                    <p className='self-stretch text-gray-700 font-sans text-sm font-normal leading-[150%] tracking-normal'>{post?.description}</p>
-                                    {currentRecords.length === index + 1 &&
-                                        <div className='flex w-full justify-center align-center mt-8'>
+                                    <p className="self-stretch text-gray-700 font-sans text-sm font-normal leading-[150%] tracking-normal">
+                                        {post?.description}
+                                    </p>
+                                    {currentRecords.length === index + 1 && (
+                                        <div className="flex w-full justify-center align-center mt-8">
                                             {currentRecords.length < filteredRecords.length && (
                                                 <div className="flex justify-center">
                                                     <button
@@ -169,26 +178,10 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                                 </div>
                                             )}
                                         </div>
-                                    }
+                                    )}
                                 </div>
                             </div>
-                        )): <NoItemsFound />}
-
-                        {/* <div className="flex-1 sm:pt-6">
-                            {!!searchTerm && !currentRecords.length ? (
-                                <div className="col-span-2 mx-auto mb-16 text-center">
-                                    <span className="h-md w-md mb-2 inline-flex items-center justify-center rounded-full bg-white p-1">
-                                        &#128534;
-                                    </span>
-                                    <h4>There are no items that match your search criteria.</h4>
-                                    <p className="text-lg">Please try searching with different terms.</p>
-                                </div>
-                            ) : (
-                                <PostsList posts={currentRecords} />
-                            )}
-                            </div>
-                        */}
-                        
+                        )) : <NoItemsFound />}
                     </div>
 
                     {/* Right part */}
@@ -206,7 +199,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                 </div>
                             </div>
                             {
-                                selectedVersions.length > 0 && 
+                                selectedVersions.length > 0 &&
                                 <div className="space-y-6">
                                     <h2 className="mt-8 mb-6 font-sans text-sm font-semibold uppercase leading-[21px] tracking-wide text-gray-700">
                                         VERSION
