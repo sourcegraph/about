@@ -82,7 +82,7 @@ const Home: FunctionComponent = () => {
                         </div>
                         <h3 className="text-gray-500">
                             Ship code faster with Cody, the AI coding assistant. Cody uses the latest models plus the
-                            most expansive context to help you solve hard problems in your IDE.
+                            most extensive development context to help you solve hard problems in your IDE.
                         </h3>
                     </div>
                     <Link
@@ -132,8 +132,8 @@ const Home: FunctionComponent = () => {
                             <Icon fill="none" iconNode={iconDefinition} size={48} color="url(#grad1)" />
                             <h2 className="pb-4 pt-6">Solve hard problems with chat</h2>
                             <h5 className="mb-0 text-gray-500">
-                                Chat with Cody to quickly generate and edit code, using flagship AI models plus
-                                expansive codebase context for the powerful results.
+                                Chat with Cody to quickly generate and edit code, using latest-gen AI models plus
+                                extensive codebase context for fast and accurate results.
                             </h5>
                         </div>
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
@@ -368,7 +368,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
                         Download the AI coding assistant
                     </button>
                     <Link
-                    href="http://localhost:3000/contact/request-info"
+                    href="/contact/request-info"
                     title="Book a demo"
                     className="btn btn-secondary mb-4 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
                     type="button"
