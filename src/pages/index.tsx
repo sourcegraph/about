@@ -81,8 +81,8 @@ const Home: FunctionComponent = () => {
                             <h1>Cody</h1>
                         </div>
                         <h3 className="text-gray-500">
-                            Ship code faster with Cody, the AI coding assistant. Cody uses advanced search and codebase
-                            context to help you write and fix code.
+                            Ship code faster with Cody, the AI coding assistant. Cody uses the latest models plus the
+                            most expansive context to help you solve hard problems in your IDE.
                         </h3>
                     </div>
                     <Link
@@ -110,30 +110,8 @@ const Home: FunctionComponent = () => {
                             />
                         )}
                     </div>
-                    <div className="relative mx-6 mb-8 flex h-auto gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:max-h-[500px] lg:h-[329px]">
-                        <div className="flex w-full flex-col text-pretty py-16 pl-10">
-                            <img
-                                className="h-[40px] w-[40px]"
-                                src="/home/branded-icons/completions-brand-icon.svg"
-                                alt="Completions Brand Icon"
-                            />
-                            <h2 className="break-words pb-4 pt-6">Faster coding with autocomplete</h2>
-                            <h5 className="text-gray-500">
-                                Suggestions for single lines or whole functions, in any programming language,
-                                configuration file, or docs.
-                            </h5>
-                        </div>
-                        {!isMobile && (
-                            <div className="h-full w-full">
-                                <div className="autocomplete-gradient absolute z-0 h-[392.193px] w-[1087.411px]" />
-                                <img
-                                    className=" relative h-full w-full"
-                                    src="/home/multiline-completion.svg"
-                                    alt="Multiline Completion"
-                                />
-                            </div>
-                        )}
-                    </div>
+
+                    {/* Chat + Prompts sections */}
                     <div className="mx-6 mb-0 grid grid-cols-1 gap-8 md:mx-0 md:grid-cols-2 md:gap-6">
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             {/* <img
@@ -152,9 +130,10 @@ const Home: FunctionComponent = () => {
                                 </defs>
                             </svg>
                             <Icon fill="none" iconNode={iconDefinition} size={48} color="url(#grad1)" />
-                            <h2 className="pb-4 pt-6">Get help with context-aware chat</h2>
+                            <h2 className="pb-4 pt-6">Solve hard problems with chat</h2>
                             <h5 className="mb-0 text-gray-500">
-                                Query like a human and learn about your code, or get help with tricky problems.
+                                Chat with Cody to quickly generate and edit code, using flagship AI models plus
+                                expansive codebase context for the powerful results.
                             </h5>
                         </div>
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
@@ -163,12 +142,38 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/commands-brand-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <h2 className="pb-4 pt-6">Automate workflows with commands</h2>
+                            <h2 className="pb-4 pt-6">Automate workflows with prompts</h2>
                             <h5 className="mb-0 text-gray-500">
-                                Build and personalize commands that automate common tasks. Explain code or generate unit
-                                tests in seconds.
+                                Build and customize prompts for automating common tasks and reducing toil. Generate unit
+                                tests, modernize code, document code, and more.
                             </h5>
                         </div>
+                    </div>
+
+                    {/* Completions section */}
+                    <div className="relative mx-6 mt-8 flex h-auto gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:max-h-[500px] lg:h-[329px]">
+                        <div className="flex w-full flex-col text-pretty py-16 pl-10">
+                            <img
+                                className="h-[40px] w-[40px]"
+                                src="/home/branded-icons/completions-brand-icon.svg"
+                                alt="Completions Brand Icon"
+                            />
+                            <h2 className="break-words pb-4 pt-6">Code faster with autocomplete</h2>
+                            <h5 className="text-gray-500">
+                                Cody completes single lines or whole functions, in any programming language,
+                                configuration file, or docs.
+                            </h5>
+                        </div>
+                        {!isMobile && (
+                            <div className="h-full w-full">
+                                <div className="autocomplete-gradient absolute z-0 h-[392.193px] w-[1087.411px]" />
+                                <img
+                                    className=" relative h-full w-full"
+                                    src="/home/multiline-completion.svg"
+                                    alt="Multiline Completion"
+                                />
+                            </div>
+                        )}
                     </div>
 
                     <div className="relative overflow-hidden md:overflow-visible">
