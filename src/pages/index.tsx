@@ -372,6 +372,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
                     title="Book a demo"
                     className="btn btn-secondary mb-4 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
                     type="button"
+                    onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click')}
                     >
                         <div className="flex items-center justify-center">
                             Book a demo
