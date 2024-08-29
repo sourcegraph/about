@@ -20,7 +20,7 @@
 # ========== SOURCEGRAPH REDIRECTS ==========
 [[redirects]]
   from = "/changelog"
-  to = "https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
+  to = "https://sourcegraph.com/docs/CHANGELOG"
 
 [[redirects]]
   from = "/own"
@@ -176,19 +176,23 @@
 # ========== INDIVIDUAL REDIRECTS ==========
 [[redirects]]
   from = "/contact/sales"
-  to = "/demo"
+  to = "/contact/request-info"
 
 [[redirects]]
   from = "/contact/product-specialist"
-  to = "/demo"
+  to = "/contact/request-info"
 
 [[redirects]]
   from = "/contact/request-demo"
-  to = "/demo"
+  to = "/contact/request-info"
 
 [[redirects]]
   from = "/contact/request-code-change-management-demo"
-  to = "/demo"
+  to = "/contact/request-info"
+
+[[redirects]]
+  from = "/get-started/self-hosted"
+  to = "/docs/admin/deploy/docker-single-container"
 
 [[redirects]]
   from = "/customers"
@@ -216,7 +220,7 @@
 
 [[redirects]]
   from = "/get-started/cloud"
-  to = "/get-started/self-hosted"
+  to = "/docs/admin/deploy"
   force = true
 
 [[redirects]]

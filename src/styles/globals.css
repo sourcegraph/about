@@ -261,15 +261,15 @@
      }
  
      .large-in-line-link {
-         @apply font-sans text-lg tracking-tight underline;
+         @apply font-sans text-lg font-medium tracking-tight text-inherit underline underline-offset-4;
      }
  
      .base-in-line-link {
-         @apply font-sans text-base font-normal tracking-tight underline;
+         @apply font-sans text-base font-medium tracking-tight text-inherit underline underline-offset-4;
      }
  
      .small-in-line-link {
-         @apply font-sans text-sm font-normal tracking-normal underline;
+         @apply font-sans text-sm font-medium tracking-normal text-inherit underline underline-offset-4;
      }
  
      .large-button {
@@ -294,6 +294,14 @@
          border-image-source: linear-gradient(90.07deg, #5033e1 3.77%, #a112ff 42.1%, #503cdc 94.28%);
      }
  
+     .sg-border-gradient-light {
+        border: double 2px transparent;
+        border-radius: 30px;
+        background-image: linear-gradient(white, white),
+            linear-gradient(120deg, rgba(0, 203, 236, 0.4) 0%, rgba(161, 18, 255, 0.4) 50%, rgba(255, 85, 67, 0.4) 100%);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+    }
      /* ==================== Backgrounds ==================== */
      /* Light Nebulous Backgrounds */
      /* TODO */
@@ -568,7 +576,9 @@
              radial-gradient(117.83% 133.36% at 52.08% 100%, #6112a3 0.41%, #270741 54.04%, #1e0632 94.78%)
          );
      }
- 
+     .sg-bg-code-search-cta-violet {
+        background: var(--Violet-100, #EEDFFF);
+     }
      .sg-bg-code-search-new-cta {
          background: linear-gradient(233deg, rgba(97, 18, 163, 0.54) 27.87%, rgba(97, 18, 163, 0) 119.99%),
              var(--Violet-700, #270741);

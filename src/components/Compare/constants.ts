@@ -84,7 +84,7 @@ export const githubVsCodeSearch: CompareDataType = {
                 createAttribute({
                     feature: 'Symbol searching',
                     cody: '75+ languages',
-                    competitor: '10 languages',
+                    competitor: '20 languages',
                 }),
                 createAttribute({
                     feature: 'Case-sensitive search',
@@ -124,7 +124,7 @@ export const githubVsCodeSearch: CompareDataType = {
                 createAttribute({
                     feature: 'Search-based code navigation',
                     cody: '40 languages',
-                    competitor: '11 languages',
+                    competitor: '20 languages',
                 }),
                 createAttribute({
                     feature: 'Precise code navigation: language support',
@@ -566,11 +566,13 @@ export const cursorVsCody: CompareDataType = {
                 createAttribute({
                     feature: 'Chat model (default)',
                     cody: 'Claude 3.5 Sonnet',
-                    competitor: 'Proprietary',
+                    competitor: 'Claude 3.5 Sonnet',
+                    competitor_details: 'Usage is restricted on Hobby and Pro tiers',
                 }),
                 createAttribute({
                     feature: 'Autocomplete model (default)',
                     cody: 'StarCoder',
+                    competitor: 'Proprietary',
                 }),
                 createAttribute({
                     feature: 'Choose your LLM',
@@ -597,14 +599,13 @@ export const cursorVsCody: CompareDataType = {
             attributes: [
                 createAttribute({
                     feature: 'Personalized responses using codebase context',
-                    cody_details: 'Available on all tiers',
+                    cody_details: 'Remote context available on Cody Enterprise',
                     competitor: true,
-                    competitor_details: 'Available on all tiers',
+                    competitor_details: 'Local code only',
                 }),
                 createAttribute({
                     feature: 'Fine-tuned LLM',
                     cody: false,
-                    competitor_details: 'Waitlist for Enterprise tier',
                 }),
             ],
         },
@@ -613,7 +614,7 @@ export const cursorVsCody: CompareDataType = {
             attributes: [
                 createAttribute({
                     feature: 'Free tier offered',
-                    competitor_details: 'Free for students, teachers, and OSS mainters',
+                    competitor: true,
                 }),
             ],
         },

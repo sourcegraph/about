@@ -4,11 +4,10 @@ import MagnifyIcon from 'mdi-react/MagnifyIcon'
 import NavigationIcon from 'mdi-react/NavigationIcon'
 import Link from 'next/link'
 
-import { CodyCta, ContentSection, InfiniteCarousel, Layout } from '../../components'
+import { CodyCta, CodyPartners, ContentSection, Layout } from '../../components'
 import { CardSection, CardDescription, QualtricsCard } from '../../components/Solutions'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { captureCustomEventWithPageData } from '../../lib/utils'
-import { carouselImages } from '../code-search'
 
 const BuildUnitTestsPage: FunctionComponent = () => {
     const { openModal } = useAuthModal()
@@ -49,12 +48,12 @@ const BuildUnitTestsPage: FunctionComponent = () => {
                             </button>
 
                             <Link
-                                href="https://sourcegraph.com/contact/request-info?form_submission_source=solutions-build-unit-tests"
-                                title="Contact us"
+                                href="/contact/request-info?form_submission_source=solutions-build-unit-tests"
+                                title="Book a demo"
                                 className="btn btn-secondary text-center"
                                 type="button"
                             >
-                                Contact us
+                                Book a demo
                             </Link>
                         </div>
                         <div className="h-fit max-h-[555px] max-w-[928px] self-center overflow-hidden rounded-lg md:w-[100%] md:min-w-[450px]">
@@ -88,8 +87,8 @@ const BuildUnitTestsPage: FunctionComponent = () => {
                 </CardDescription>
             </ContentSection>
 
-            <div className="py-10 md:pt-0 md:pb-16">
-                <InfiniteCarousel duration={400} images={carouselImages} />
+            <div className="flex items-center pt-16 pb-16">
+                <CodyPartners isLight={true} className="!pb-[8px] pt-[16px]" />
             </div>
 
             <ContentSection

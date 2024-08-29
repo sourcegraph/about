@@ -64,14 +64,22 @@ interface CreateHubSpotFormProps {
     onFormSubmitted?: () => void
     inlineMessage?: string
     chiliPiper?: boolean
+    overrideInlineMessage?: boolean
 }
 
 export interface HubSpotFormProps {
     formId?: string
-    masterFormName?: 'contactMulti' | 'contactEmail' | 'gatedMulti' | 'gatedEmail'
+    masterFormName?:
+        | 'contactMulti'
+        | 'contactEmail'
+        | 'enterpriseTrial'
+        | 'gartnerMagicQuadrant'
+        | 'gatedMulti'
+        | 'gatedEmail'
     onFormSubmitted?: () => void
     inlineMessage?: string
     chiliPiper?: boolean
+    overrideInlineMessage?: boolean
     overrideFormShorten?: boolean
     form_submission_source?: string
     bookIt?: boolean
@@ -121,6 +129,13 @@ const masterForms: { [key: string]: string } = {
 
     // Contact Us Multi Field Form
     contactMulti: 'e090296f-84f5-4bcb-9093-a533336841b4',
+
+    // Enterprise trial form
+    enterpriseTrial: '8eeb5a2f-8189-4510-a4fa-90aa9f1f1647',
+
+    // Gartner magic quadrant form
+
+    gartnerMagicQuadrant: 'a9e7fa28-8e83-44d5-9cba-978d693e2e53',
 
     // Gated Content Email Only Form
     gatedEmail: '9b2539ad-feaa-4dd2-b6b4-2439c5bc98da',
@@ -220,9 +235,15 @@ function trySettingFormTarget(form: HTMLFormElement): void {
     }
 }
 
-function createHubSpotForm({ formId, onFormReady, onFormSubmitted, inlineMessage }: CreateHubSpotFormProps): void {
+function createHubSpotForm({
+    formId,
+    onFormReady,
+    onFormSubmitted,
+    inlineMessage,
+    overrideInlineMessage,
+}: CreateHubSpotFormProps): void {
     const hbsptCreateForm = (): void => {
-        window.hbspt?.forms.create({
+        const hubspotFormConfig: HubSpotAPIProps = {
             region: 'na1',
             portalId: '2762526',
             formId,
@@ -233,8 +254,13 @@ function createHubSpotForm({ formId, onFormReady, onFormSubmitted, inlineMessage
                 }
             },
             onFormSubmitted,
-            inlineMessage,
-        })
+        }
+
+        if (overrideInlineMessage) {
+            hubspotFormConfig.inlineMessage = inlineMessage
+        }
+
+        window.hbspt?.forms.create(hubspotFormConfig)
     }
 
     if (window.hbspt) {
@@ -293,6 +319,7 @@ const onFormReady = (form: HTMLFormElement): void => {
  * @param options.masterFormName - an optional master form name
  * @param options.onFormSubmitted - a callback that runs after a form submission
  * @param options.inlineMessage - a message to display after a form submission
+ * @param options.overrideInlineMessage - a boolean prop to override `inline message` made by hubspot
  * @param options.chiliPiper - a boolean prop to enable/disable ChiliPiper
  * @param options.overrideFormShorten - a boolean prop to override `display:none` made by clearbitScript
  * @returns - a div element with an id where the HubSpot form renders
@@ -301,6 +328,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     formId,
     masterFormName,
     onFormSubmitted,
+    overrideInlineMessage = true,
     inlineMessage = 'Thank you for your interest in Sourcegraph. We will be in contact with you soon!',
     chiliPiper,
     overrideFormShorten,
@@ -380,6 +408,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
                 },
                 onFormSubmitted,
                 inlineMessage,
+                overrideInlineMessage,
             })
 
             setFormCreated(true)

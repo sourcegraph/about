@@ -114,7 +114,7 @@ const CommonLinks: React.FunctionComponent<{ className?: string }> = ({ classNam
         <li className="flex-1" />
         <li>
             <a
-                href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
+                href="https://sourcegraph.com/changelog"
                 className="text-gray-400"
             >
                 Full changelog

@@ -4,7 +4,8 @@ import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, Layout, InfiniteCarousel } from '../components'
+import { ContentSection, Layout, CodyPartners } from '../components'
+import { BentoWithMockup } from '../components/bentoWithMockup'
 import { Icon } from '../components/icon'
 import ReadCaseStudyLink from '../components/ReadCaseStudyLink'
 import TwoColumnTestimonialCard from '../components/TwoColumnTestimonialCard'
@@ -12,17 +13,6 @@ import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../lib/utils'
-
-export const carouselImages = [
-    { src: '/home/carousel/1password-logo.svg', className: 'w-[190px] h-[37px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/reddit-logo.svg', className: 'w-[120px] h-[41.311px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/databricks-logo.svg', className: 'w-[139px] h-[30px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/podium-logo.svg', className: 'w-[164px] h-[35px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/qualtrics-logo.svg', className: 'w-[124px] h-[39.756px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/canva-logo.svg', className: 'w-[124px] h-[39.774px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/redfin-logo.svg', className: 'w-[136px] h-[36.082px] mx-6', url: '/case-studies' },
-    { src: '/home/carousel/nutanix-logo.svg', className: 'w-[201px] h-[24.446px] mx-6', url: '/case-studies' },
-]
 
 interface HomeHeroProps {
     onOpenModal: (pagePosition: string) => void
@@ -64,16 +54,24 @@ const Home: FunctionComponent = () => {
             displayChildrenUnderNav={false}
         >
             <div className="oveflow-hidden relative w-full bg-gray-50">
-                <ContentSection parentClassName="!py-0" className="flex items-center justify-center">
+                <ContentSection parentClassName="!py-0" className="flex flex-col items-center justify-center">
                     <p className="mb-16 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
                         Over 2.5M engineers use Sourcegraph
                     </p>
                 </ContentSection>
-                <div className="flex items-center pb-16 md:pb-28">
-                    <InfiniteCarousel images={carouselImages} />
+
+                <div className="flex items-center pb-16">
+                    <CodyPartners isLight={true} className="!pb-[16px] pt-[16px]" />
                 </div>
+
+                <div className="mx-auto flex flex-col pb-12 md:max-w-screen-xl md:px-6">
+                    <div className="px-6 md:px-0">
+                        <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
+                    </div>
+                </div>
+
                 <div className="mx-auto flex flex-col md:max-w-screen-xl md:px-6">
-                    <div className="flex max-w-[769px] flex-col px-6 pb-14 md:px-0">
+                    <div className="flex max-w-[769px] flex-col px-6 pb-6 md:px-0">
                         <div className="flex items-center gap-4 pb-6">
                             <img
                                 className="h-[50px] w-[50px] rounded-t-2xl"
@@ -87,6 +85,14 @@ const Home: FunctionComponent = () => {
                             context to help you write and fix code.
                         </h3>
                     </div>
+                    <Link
+                        href="https://sourcegraph.com/cody"
+                        title="Cody"
+                        className="btn btn-link btn-link-icon mx-6 mb-16 p-0 px-5 py-3 text-center font-semibold !-tracking-[0.25px] md:mx-0 md:mb-14 md:px-0 md:pb-0 md:pt-0 md:text-left"
+                    >
+                        Learn more about Cody
+                        <ChevronRightIcon className="link-icon" />
+                    </Link>
                     <div className="pb-8">
                         {isMobile ? (
                             <div className="">
@@ -105,7 +111,7 @@ const Home: FunctionComponent = () => {
                         )}
                     </div>
                     <div className="relative mx-6 mb-8 flex h-auto gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:max-h-[500px] lg:h-[329px]">
-                        <div className="text-pretty flex w-full flex-col py-16 pl-10">
+                        <div className="flex w-full flex-col text-pretty py-16 pl-10">
                             <img
                                 className="h-[40px] w-[40px]"
                                 src="/home/branded-icons/completions-brand-icon.svg"
@@ -128,7 +134,7 @@ const Home: FunctionComponent = () => {
                             </div>
                         )}
                     </div>
-                    <div className="mx-6 mb-8 grid grid-cols-1 gap-8 md:mx-0 md:grid-cols-2 md:gap-6">
+                    <div className="mx-6 mb-0 grid grid-cols-1 gap-8 md:mx-0 md:grid-cols-2 md:gap-6">
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             {/* <img
                                 className="h-[48px] w-[48px]"
@@ -164,14 +170,7 @@ const Home: FunctionComponent = () => {
                             </h5>
                         </div>
                     </div>
-                    <Link
-                        href="https://sourcegraph.com/cody"
-                        title="Cody"
-                        className="btn btn-link btn-link-icon mx-6 mb-16 p-0 px-5 py-3 text-center font-semibold !-tracking-[0.25px] md:mx-0 md:mb-28 md:px-0 md:pb-0 md:pt-0 md:text-left"
-                    >
-                        Learn more about Cody
-                        <ChevronRightIcon className="link-icon" />
-                    </Link>
+
                     <div className="relative overflow-hidden md:overflow-visible">
                         <TwoColumnTestimonialCard
                             leftClientImgSrc="/home/reviews1.svg"
@@ -182,13 +181,14 @@ const Home: FunctionComponent = () => {
                             leftClientTitle="Senior Software Engineer, CERN"
                             rightClientName="Bryce Kalow"
                             rightClientTitle="Senior Web Engineer, HashiCorp"
+                            isVariantStyle={true}
                         />
                         <div className="z-10 mx-6 mb-14 flex flex-col md:mx-0 md:w-[762px]">
                             <div className="flex items-center gap-4 pb-6">
                                 <img
                                     className="h-[50px] w-[50px] rounded-t-2xl"
                                     src="/home/branded-icons/Code-Search-squircle.svg"
-                                    alt="Cody Product logo"
+                                    alt="Code Search Product logo"
                                 />
                                 <h1>Code Search</h1>
                             </div>
@@ -313,14 +313,14 @@ const Home: FunctionComponent = () => {
                             </p>
                             <div className="mt-8 flex flex-col items-center gap-4 md:flex-row">
                                 <Link
-                                    href="https://sourcegraph.com/contact/request-info"
+                                    href="/contact/request-info"
                                     title="Get Cody for Enterprise"
                                     className="btn btn-secondary-dark w-full px-6 py-2 text-center md:w-auto"
                                 >
-                                    Request info
+                                    Book a demo
                                 </Link>
                                 <Link
-                                    href="https://sourcegraph.com/pricing"
+                                    href="/pricing"
                                     title="See pricing"
                                     className={classNames(
                                         'btn btn-link-dark w-full rounded-[5px] px-6 text-center md:w-auto',
@@ -341,7 +341,7 @@ const Home: FunctionComponent = () => {
 
 const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
     <ContentSection
-        className="relative mt-[-72px] flex items-center justify-center rounded-2xl bg-violet-700 md:mt-[-43px]"
+        className="relative mt-[64px] flex items-center justify-center rounded-2xl bg-violet-700 md:mt-[32px]"
         parentClassName="!py-0 !pb-16 !bg-gray-50"
     >
         <div className="mx-auto flex flex-col items-center justify-center px-3 text-center md:px-0">
@@ -355,27 +355,12 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
                 </p>
                 <button
                     type="button"
-                    className="btn btn-primary-dark w-full max-w-[356px] px-5 sm:w-fit sm:px-6"
+                    className="btn btn-primary-dark mb-8 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
                     title="free cody"
                     onClick={() => onOpenModal('top')}
                 >
-                    Get Cody for free
+                    Download Cody, the AI coding assistant
                 </button>
-            </div>
-
-            <div className="hidden aspect-video w-full overflow-hidden sm:block lg:w-[1062px]">
-                <video
-                    className="relative bottom-[-6px] rounded-t-xl shadow-md"
-                    autoPlay={true}
-                    muted={true}
-                    loop={true}
-                    playsInline={true}
-                    controls={false}
-                >
-                    <source type="video/webm" src="/home/Header-Vid-Non-Rounded.webm" />
-                    <source type="video/mp4" src="/home/Header-Vid-Non-Rounded.mp4" />
-                    <source type="video/ogg" src="/home/Header-Vid-Non-Rounded.ogg" />
-                </video>
             </div>
         </div>
     </ContentSection>

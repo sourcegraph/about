@@ -50,6 +50,7 @@ interface Props {
 interface PriceItemProps {
     amount: number
     hasLimit?: boolean
+    hasSingleUserLimit?: boolean
     description?: string
     className?: string
     amountClassName?: string
@@ -326,8 +327,8 @@ const PricingPage: FunctionComponent = () => {
                                 />
                                 <PricingPlan
                                     name={<p className="mb-[13px]">Pro</p>}
-                                    description="Best for professional developers and small teams"
-                                    price={<PriceItem amount={9} hasLimit={true} />}
+                                    description="Best for professional devs and small teams"
+                                    price={<PriceItem amount={9} hasSingleUserLimit={true} />}
                                     buttons={<GetProButton title="Sign up for Cody Pro" />}
                                     features={PRO_FEATURES_OVERVIEW}
                                     planClasses={
@@ -592,11 +593,12 @@ const TabComponent = ({ tab, selectedOption, chooseProduct, className }: Props):
     </div>
 )
 
-const PriceItem = ({ amount, description, hasLimit, className, amountClassName }: PriceItemProps): JSX.Element => (
+const PriceItem = ({ amount, description, hasLimit, hasSingleUserLimit, className, amountClassName }: PriceItemProps): JSX.Element => (
     <div className={classNames('flex flex-col p-2 pb-0', className)}>
         <p className="mb-0 flex items-center font-semibold leading-[43px] text-gray-500">
             <span className={classNames('text-[36px]', amountClassName)}>${amount}</span>
             {hasLimit && <span className="ml-[10px] text-[18px]">per user/month</span>}
+            {hasSingleUserLimit && <span className="ml-[10px] text-[18px]">per month</span>}
         </p>
         {description && <p className="mb-0 text-[14px] font-normal leading-[19.88px] text-gray-600">{description}</p>}
     </div>

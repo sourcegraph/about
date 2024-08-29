@@ -13,6 +13,7 @@ import {
     SourcegraphPowered,
     CodyAutocomplete,
 } from '../../components'
+import { BentoWithMockup } from '../../components/bentoWithMockup'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
@@ -127,7 +128,11 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
 
             <CodyChat />
 
-            <CodyPartners isLight={false} />
+            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
+                <BentoWithMockup isDarkBorder={true} isVariantTitle={true} href="/resources/gartner-mq" />
+            </div>
+
+            <CodyPartners isLight={false} className="!pb-[32px] md:pt-[96px] md:!pb-0" />
 
             <CodyTestimonials />
 

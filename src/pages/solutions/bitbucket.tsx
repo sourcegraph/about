@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { InfiniteCarousel, Layout } from '../../components'
+import { CodyPartners, Layout } from '../../components'
 import { ContactUsCta } from '../../components/cta/ContactUsCta'
 import { EnterpriseGradeSection } from '../../components/Enterprise/EnterpriseGradeSection'
 import { NineCaseStudySection } from '../../components/Enterprise/NineCaseStudySection'
@@ -8,7 +8,6 @@ import { AutomationSection } from '../../components/solutions/AutomationSection'
 import { IntroCard } from '../../components/solutions/IntroCard'
 import { SearchDescriptionSection } from '../../components/solutions/SearchDescriptionSection'
 import { SolutionExplanationSection } from '../../components/solutions/SolutionExplanationSection'
-import { carouselImages } from '../code-search'
 
 const explanationCardData = [
     {
@@ -43,14 +42,14 @@ const Bitbucket: FunctionComponent = () => (
             title="Understand and write code faster with Bitbucket + AI"
             description="Sourcegraph’s AI coding assistant and Code Search integrate with Bitbucket Cloud and Bitbucket Data Center."
             mainImageUrl="/solutions/bitbucket/bitbucket-enterprise-context.svg"
-            contactButtonLabel="Contact us"
+            contactButtonLabel="Book a demo"
             alt="Bitbucket"
             scaleMobileImage={true}
             textColor="!text-[#0F111A]"
             buttonHref="/contact/request-info-bitbucket?form_submission_source=solutions-bitbucket"
         />
-        <div className="py-8 md:py-16">
-            <InfiniteCarousel duration={400} images={carouselImages} />
+        <div className="flex items-center pt-16 pb-16">
+            <CodyPartners isLight={true} className="!pb-[8px] pt-[16px]" />
         </div>
         <SolutionExplanationSection
             title="Code Intelligence for Bitbucket"

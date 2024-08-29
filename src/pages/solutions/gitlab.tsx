@@ -1,13 +1,12 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, InfiniteCarousel, Layout } from '../../components'
+import { CodyPartners, ContentSection, Layout } from '../../components'
 import { ContactUsCta } from '../../components/cta/ContactUsCta'
 import ReadCaseStudyLink from '../../components/ReadCaseStudyLink'
 import { AutomationSection } from '../../components/solutions/AutomationSection'
 import { IntroCard } from '../../components/solutions/IntroCard'
 import { SearchDescriptionSection } from '../../components/solutions/SearchDescriptionSection'
 import { SolutionExplanationSection } from '../../components/solutions/SolutionExplanationSection'
-import { carouselImages } from '../code-search'
 
 const explanationCardData = [
     {
@@ -42,12 +41,12 @@ const GitLab: FunctionComponent = () => (
             description="Write and understand code in GitLab environments with native
                             Cody and Code Search integrations."
             mainImageUrl="/solutions/gitlab/enterprise-context.svg"
-            contactButtonLabel="Contact us for a demo"
+            contactButtonLabel="Book a demo"
             scaleMobileImage={true}
             alt="GitLab"
         />
-        <div className="py-8 md:py-16">
-            <InfiniteCarousel duration={400} images={carouselImages} />
+        <div className="flex items-center pt-16 pb-16">
+            <CodyPartners isLight={true} className="!pb-[8px] pt-[16px]" />
         </div>
         <SolutionExplanationSection
             title="Write code faster with AI in your GitLab environment"

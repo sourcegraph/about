@@ -4,6 +4,7 @@ import { DotLottiePlayer } from '@dotlottie/react-player'
 import Link from 'next/link'
 
 import { Layout, Hero } from '../components'
+import { BentoWithMockup } from '../components/bentoWithMockup'
 import { ContactUsCta } from '../components/cta/ContactUsCta'
 import { RequestDemoCta } from '../components/cta/RequestDemoCta'
 import { ChooseYourLlmSection } from '../components/Enterprise/ChooseYourLlmSection'
@@ -47,7 +48,7 @@ const Enterprise: FunctionComponent = () => {
                 description:
                     "Give your teams the ability to search, write, and understand massive codebases through Sourcegraph's universal and secure Code Intelligence Platform.",
             }}
-            className="bg-gray-50"
+            className="overflow-hidden bg-gray-50"
             hero={
                 <div className="">
                     {!isMobile && (
@@ -83,13 +84,13 @@ const Enterprise: FunctionComponent = () => {
                             <div className="mx-auto flex w-[356px] flex-col items-center justify-center gap-6 sm:flex sm:w-auto  sm:flex-row  md:gap-4">
                                 <Link
                                     className="btn btn-primary w-full sm:w-auto"
-                                    href="/contact/request-info"
-                                    title="Contact us for a demo"
+                                    href="/enterprise-trial-offer"
+                                    title="Start your free trial"
                                     data-button-style={buttonStyle.primary}
                                     data-button-location={buttonLocation}
                                     data-button-type="cta"
                                 >
-                                    Contact us for a demo
+                                    Start your free trial
                                 </Link>
                                 <Link
                                     className="btn btn-secondary w-full items-center sm:w-auto"
@@ -109,6 +110,9 @@ const Enterprise: FunctionComponent = () => {
             }
         >
             <CompanyUsingCodySection />
+            <div className="relative z-10 mx-auto max-w-[1232px] px-6 md:px-0 md:pb-28">
+                <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
+            </div>
             <ImprovedVelocitySection />
             <WriteCodeFasterSection />
             <MigrationsSection />

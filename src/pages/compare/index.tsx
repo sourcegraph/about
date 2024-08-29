@@ -156,8 +156,9 @@ const ComparePage: FunctionComponent = () => (
                 <h2 className="mb-3 text-3xl">Cody vs Cursor</h2>
                 <p className="mb-5 text-gray-500">
                     Cursor is an “AI-first Code Editor.” Unlike other solutions which are commonly IDE extensions and
-                    plugins, Cursor itself is a fork of VS Code. This gives Cursor some unique functionality, including
-                    its “Auto-debug” feature that can attempt to fix errors that appear in the VS Code terminal.
+                    plugins, Cursor itself is a fork of VS Code. Cursor features autocomplete (called "Tab"), chat, and
+                    Command+K for quickly editing code. Cursor users can also feed local code context to the LLM by
+                    manually selecting files and symbols to include in chat.
                 </p>
                 <Link className="btn btn-primary text-lg" href="/compare/cursor-vs-cody">
                     See full comparison
@@ -179,7 +180,7 @@ const ComparePage: FunctionComponent = () => (
                         Autocomplete <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Standalone app <MdClose className="inline-block h-6 w-6 fill-gray-200" />
+                        Proprietary IDE <MdClose className="inline-block h-6 w-6 fill-gray-200" />
                     </li>
                 </ul>
             </div>
@@ -190,7 +191,7 @@ const ComparePage: FunctionComponent = () => (
                         Free Plan <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Choose your LLM <MdClose className="h-6 w-6 fill-gray-200" />
+                        Choose your LLM <MdCheck className="h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
                         Bring your own LLM key <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
@@ -199,7 +200,7 @@ const ComparePage: FunctionComponent = () => (
                         Autocomplete <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Standalone app <MdCheck className="h-6 w-6 fill-violet-400" />
+                        Proprietary IDE <MdCheck className="h-6 w-6 fill-violet-400" />
                     </li>
                 </ul>
             </div>
