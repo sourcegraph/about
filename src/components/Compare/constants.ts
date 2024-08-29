@@ -84,7 +84,7 @@ export const githubVsCodeSearch: CompareDataType = {
                 createAttribute({
                     feature: 'Symbol searching',
                     cody: '75+ languages',
-                    competitor: '10 languages',
+                    competitor: '20 languages',
                 }),
                 createAttribute({
                     feature: 'Case-sensitive search',
@@ -124,7 +124,7 @@ export const githubVsCodeSearch: CompareDataType = {
                 createAttribute({
                     feature: 'Search-based code navigation',
                     cody: '40 languages',
-                    competitor: '11 languages',
+                    competitor: '20 languages',
                 }),
                 createAttribute({
                     feature: 'Precise code navigation: language support',
