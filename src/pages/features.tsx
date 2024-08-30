@@ -22,13 +22,13 @@ import styles from '../styles/CustomHubspotForm.module.scss'
 const CHAT_CONTENT = [
     {
         header: 'Ask about your code',
-        description: 'Use “@” + a repository, file, line range, or symbol to ask questions about your codebase. Generate code using context @-mention files or symbols to use that code as context. Cody will use it to generate contextually relevant code.',
+        description: 'Use "@" + a repository, file, line range, or symbol to ask questions about your codebase. Generate code using context @-mention files or symbols to use that code as context. Cody will use it to generate contextually relevant code.',
         imageSrc: '/cody/features/chat-ask-cody.png',
         imageAlt: 'Cody Chat Ask Cody',
     },
     {
         header: 'Smart Apply',
-        description: 'When Cody suggests code in chat, hit “Apply” to make those changes directly in your files.',
+        description: 'When Cody suggests code in chat, hit "Apply" to make those changes directly in your files.',
     },
     {
         header: 'Inline edits',
@@ -64,7 +64,7 @@ const CHAT_CONTENT = [
     },
     {
         header: 'Context Filters',
-        description: 'Configure which repositories and file paths Cody can or can’t send to the LLM and use as context.',
+        description: 'Configure which repositories and file paths Cody can or can\'t send to the LLM and use as context.',
     },
     {
         header: 'Guardrails for catching licensed code',
@@ -83,7 +83,7 @@ const PROMPTS_CONTENT = [
     },
     {
         header: 'Document code',
-        description: 'Generate documentation for any selection of code (from symbols to entire files), even for legacy code you didn’t write yourself.',
+        description: 'Generate documentation for any selection of code (from symbols to entire files), even for legacy code you didn\'t write yourself.',
     },
     {
         header: 'Find code smells',
@@ -186,7 +186,7 @@ const CODE_INSIGHTS_CONTENT = [
     },
     {
         header: 'Visualize your codebase with dashboards',
-        description: 'Customize dashboards with multiple insights. Anything that’s happening in your codebase can be visualized.',
+        description: 'Customize dashboards with multiple insights. Anything that\'s happening in your codebase can be visualized.',
     },
 ]
 
@@ -213,7 +213,7 @@ const CodyPage: FunctionComponent = () => {
                     'Learn how Code Search and Cody help you write, fix, and maintain code faster.',
                 image: 'https://sourcegraph.com/code-search/code-search-og.png',
             }}
-            hero={<CodeSearchHero handleOpenModal={handleOpenModal}/>}
+            hero={<FeaturesHero handleOpenModal={handleOpenModal}/>}
             className="bg-gray-50"
         >
             {/* Chat section */}
@@ -226,7 +226,7 @@ const CodyPage: FunctionComponent = () => {
                 <p className={classNames('m-0 text-left md:text-2xl max-w-[800px]', {
                             'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
                             'text-lg text-gray-200': !isLight,
-                        })}>Chat directly with the AI to ask questions about your code, generate code, and edit code. Cody has context of your open file and repository by default, and you can use “@” to add context on specific files, symbols, remote repositories, or other non-code artifacts.</p>
+                        })}>Chat directly with the AI to ask questions about your code, generate code, and edit code. Cody has context of your open file and repository by default, and you can use "@" to add context on specific files, symbols, remote repositories, or other non-code artifacts.</p>
             </div>
 
             <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
@@ -477,7 +477,11 @@ const CodyPage: FunctionComponent = () => {
     )
 }
 
-const CodeSearchHero: FunctionComponent = ({handleOpenModal}) => (
+interface FeaturesHeroProps {
+    handleOpenModal: (pagePosition: string) => void;
+}
+
+const FeaturesHero: FunctionComponent<FeaturesHeroProps>    = ({handleOpenModal}) => (
     <ContentSection className="flex items-center justify-center" parentClassName="!py-0">
         <div className="mx-auto flex flex-col items-center justify-center text-center">
             <div className="mx-auto flex flex-col items-center pb-16 pt-8 md:w-[828px] md:pb-[63px] md:pt-16">
@@ -488,7 +492,7 @@ const CodeSearchHero: FunctionComponent = ({handleOpenModal}) => (
                     Search, navigate, and automate code faster.
                 </h3>
                 <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
-                    <button onClick={handleOpenModal} className="btn btn-primary">
+                    <button onClick={() => handleOpenModal('hero')} className="btn btn-primary">
                     <div className="flex items-center justify-center">
                         <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Get Cody for your IDE
                     </div>
