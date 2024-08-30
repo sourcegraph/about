@@ -193,6 +193,9 @@ devDependencies:
   '@types/react-dom':
     specifier: ^18.0.6
     version: 18.0.6
+  '@types/react-scroll':
+    specifier: ^1.8.10
+    version: 1.8.10
   '@types/uuid':
     specifier: 8.0.1
     version: 8.0.1
@@ -4860,6 +4863,12 @@ packages:
 
   /@types/react-reconciler@0.28.4:
     resolution: {integrity: sha512-Xd55E2aLI9Q/ikDQEmfRzIwYJs4oO0h9ZHA3FZDakzt1WR6JMZcpqtCZlF97I72KVjoY4rHXU5TfvkRDOyr/rg==}
+    dependencies:
+      '@types/react': 18.0.20
+    dev: true
+
+  /@types/react-scroll@1.8.10:
+    resolution: {integrity: sha512-RD4Z7grbdNGOKwKnUBKar6zNxqaW3n8m9QSrfvljW+gmkj1GArb8AFBomVr6xMOgHPD3v1uV3BrIf01py57daQ==}
     dependencies:
       '@types/react': 18.0.20
     dev: true

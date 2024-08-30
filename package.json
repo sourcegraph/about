@@ -112,6 +112,7 @@
     "@types/prismjs": "^1.26.0",
     "@types/react": "18.0.20",
     "@types/react-dom": "^18.0.6",
+    "@types/react-scroll": "^1.8.10",
     "@types/uuid": "8.0.1",
     "autoprefixer": "^10.4.8",
     "cypress": "13.2.0",
