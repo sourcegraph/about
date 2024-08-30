@@ -12,9 +12,7 @@ import {
     CodyTestimonials,
     ContentSection,
 } from '../../components'
-import { CodyChooseLlmDualTheme } from '../../components/cody/dual-theme/CodyChooseLlmDualTheme'
 import { CodyIntroDualTheme } from '../../components/cody/dual-theme/CodyIntroDualTheme'
-import { HowCodyWorks } from '../../components/cody/HowCodyWorks'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
@@ -247,12 +245,6 @@ const CodyPage: FunctionComponent = () => {
                 </div>
                 ))}
             </ContentSection>
-            
-            <CodyPartners isLight={true} className="!pb-[32px] md:pt-[96px] md:pb-0" />
-            <CodyTestimonials isLight={true} />
-
-            <HowCodyWorks isLight={true} />
-            <CodyChooseLlmDualTheme isLight={true} />
             
             <CodyCta source="Cody page" isCodyPage={true} isLight={true} />
             <Modal

@@ -6,21 +6,12 @@ import { useRouter } from 'next/router'
 
 import {
     Layout,
-    HubSpotForm,
-    Modal,
-    CodyCta,
-    CodyPartners,
-    CodyTestimonials,
     ContentSection,
 } from '../../components'
-import { CodyChooseLlmDualTheme } from '../../components/cody/dual-theme/CodyChooseLlmDualTheme'
-import { HowCodyWorks } from '../../components/cody/HowCodyWorks'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../../lib/utils'
-
-import styles from '../../styles/CustomHubspotForm.module.scss'
 
 const CODE_SEARCH_CONTENT = [
     {
@@ -264,36 +255,6 @@ const CodyPage: FunctionComponent = () => {
                 </div>
                 ))}
             </ContentSection>
-            
-            <CodyPartners isLight={true} className="!pb-[32px] md:pt-[96px] md:pb-0" />
-            <CodyTestimonials isLight={true} />
-
-            <HowCodyWorks isLight={true} />
-            <CodyChooseLlmDualTheme isLight={true} />
-            
-            <CodyCta source="Cody page" isCodyPage={true} isLight={true} />
-            <Modal
-                open={isContactModalOpen}
-                handleClose={() => setIsContactModalOpen(false)}
-                modalBackdropClassName="cody-contact-modal"
-                modalClassName="bg-[#632590] border border-opacity-20 border-white px-6 py-[64px] md:px-[80px] md:py-[96px]"
-            >
-                <div className="flex flex-col gap-8 md:flex-row md:gap-10">
-                    <div className="min-w-[200px] max-w-[513px]">
-                        <h2 className="text-white">Get Cody where you work</h2>
-                        <p className="mt-4 text-lg text-gray-200">
-                            Cody for Enterprise provides context-aware answers based on your own private codebase.
-                            Contact us through the form to learn more.
-                        </p>
-                    </div>
-                    <div className={classNames('md:min-w-[400px] xl:min-w-[554px]', styles.codyForm)}>
-                        <HubSpotForm
-                            formId="05e46684-9fbc-4c4d-b010-f661f247c4c6"
-                            inlineMessage="Thank you! We'll get back to you soon"
-                        />
-                    </div>
-                </div>
-            </Modal>
         </Layout>
     )
 }
