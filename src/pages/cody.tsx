@@ -43,7 +43,7 @@ const IMAGE_TAB_CONTENT = [
         imageSrc: { mobile: '/cody/describe-code-smell.png', desktop: '/cody/describe-code-smell.svg' },
     },
     {
-        header: 'Define your own custom commands',
+        header: 'Define your own custom prompts',
         description: 'Customize Cody for your workflow',
         imageSrc: { mobile: '/cody/define-custom-command.png', desktop: '/cody/define-custom-command.svg' },
     },
@@ -95,27 +95,34 @@ const CodyPage: FunctionComponent = () => {
 
             <CodyIde isLight={true} />
 
-            <CodyAutocomplete isLight={true} wrapperClassName="z-[20] md:z-0" />
-
-            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
-                <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
-            </div>
-
             <CodyImageTab
                 icon="/cody/commands-brand-icon.svg"
-                headerText="Generate, test, and fix code with commands"
+                headerText="Generate, test, and fix code with prompts"
                 description={
                     <h3 className="mb-0 px-6 pt-[18px] text-[#343A4D]">
-                        Run Cody's one-click commands or create your own custom commands to execute AI workflows.
+                        Run Cody's one-click prompts or create your own custom prompts to execute AI workflows.
                     </h3>
                 }
                 tabContent={IMAGE_TAB_CONTENT}
                 isLight={true}
             />
+
+            <CodyAutocomplete isLight={true} wrapperClassName="z-[20] md:z-0 !mt-24" />
+
+            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
+                <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
+            </div>
+
+            <div className="py-8">
+                <CodyChooseLlmDualTheme isLight={true} />
+            </div>
+
             <HowCodyWorks isLight={true} />
-            <CodyChooseLlmDualTheme isLight={true} />
-            <SourcePoweredDualTheme isLight={true} />
+
+            {/* <SourcePoweredDualTheme isLight={true} /> */}
+
             <CodyCta source="Cody page" isCodyPage={true} isLight={true} />
+
             <Modal
                 open={isContactModalOpen}
                 handleClose={() => setIsContactModalOpen(false)}
