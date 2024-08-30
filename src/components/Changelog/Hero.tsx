@@ -1,8 +1,8 @@
 
 const HeroSection = (): any => (
-  <div className="flex lg:h-[330px] h-[598px] w-[85%] lg:justify-between items-center lg:content-center self-stretch flex-wrap bg-violet-700 rounded-lg">
-    <div className="flex flex-col items-center lg:items-start flex-grow space-y-6 mx-10 lg:mx-20 w-[400px]">
-      <h1 className="font-sans text-6xl font-semibold leading-extra-tight tracking-extra-tight text-white pt-8 lg:pt-0 pb-0">
+  <div className="flex xl:h-[330px] lg:h-[400px] h-[598px] w-[85%] 2xl:justify-between items-center 2xl:content-center mt-8 md:mt-2 lg:mt-0 self-stretch lg:flex-nowrap flex-wrap bg-violet-700 rounded-lg">
+    <div className="flex flex-col 2xl:items-start flex-grow space-y-6 mx-10 2xl:mx-20 w-[400px] mt-8 lg:mt-0">
+      <h1 className="font-sans text-6xl font-semibold leading-extra-tight tracking-extra-tight text-white pt-8 2xl:pt-0 pb-0">
         Changelog
       </h1>
       <p className="font-sans text-base font-normal leading-custom-150 tracking-custom-tight text-white">

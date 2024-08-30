@@ -16,7 +16,7 @@ export function PostDetailsInfoContainer({ children }: { children: React.ReactNo
 
 export function PostDetailsInfo({ version, avatar, username, keywords, date }: PostInfoProps): any {
   return (
-    <div className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6 my-4 mb-8 text-gray-700 text-sm font-sans">
+    <div className="flex flex-col 2xl:flex-row items-start 2xl:items-center space-y-4 2xl:space-y-0 2xl:space-x-6 my-4 mb-8 text-gray-700 text-sm font-sans">
       <span className="flex items-center space-x-2 text-gray-700 text-sm font-sans">
         <img
           src={avatar}

@@ -81,17 +81,22 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
                             </h2>
                             <div>
                                 {relatedTopics?.map((topic: any) => 
-                                    <div key={topic.title} className='text-gray-700 font-sans text-sm font-normal leading-[150%] mt-2'>
-                                        <span className='inline-flex items-center'>
-                                            <a 
-                                                href={topic.url} 
-                                                target="_blank" 
-                                                rel="noopener noreferrer"
-                                                className='inline-flex items-center text-inherit no-underline'
-                                            >
-                                                {topic.title}
-                                                <ArrowUpRight className='w-4 h-4' />
-                                            </a>
+                                    <div
+                                        key={topic.title}
+                                        className="text-gray-700 font-sans text-sm font-normal leading-[150%] mt-2"
+                                    >
+                                        <span className="inline-flex items-center">
+                                        <a
+                                            href={topic.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center text-inherit no-underline"
+                                        >
+                                            <span className="truncate sm:max-w-none">
+                                            {topic.title}
+                                            </span>
+                                            <ArrowUpRight className="w-4 h-4 ml-1  sm:inline" />
+                                        </a>
                                         </span>
                                     </div>
                                 )}

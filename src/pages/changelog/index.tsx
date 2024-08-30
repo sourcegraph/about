@@ -82,7 +82,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
 
     return (
         <Layout className="bg-gray-50">
-            <div className="relative mt-[-30px] flex items-center justify-center bg-gray-50">
+            <div className="relative flex items-center justify-center bg-gray-50">
                 <HeroSection />
             </div>
             <div className="min-h-scree flex items-center justify-center bg-gray-50 pt-14">
