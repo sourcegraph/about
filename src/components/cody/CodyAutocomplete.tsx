@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 
-import { CodyAnimation, ContentSection } from '..'
+import { ContentSection } from '..'
 import { useWindowWidth } from '../../hooks/windowWidth'
 
 interface CodyAutocompleteProps {
@@ -26,7 +26,7 @@ export const CodyAutocomplete: FunctionComponent<CodyAutocompleteProps> = ({
                 'md:mt-[64px]': isLight,
             })}
         >
-            <div className="relative z-[10] mx-auto mb-16 w-full text-6xl text-white md:mb-[-96px] md:w-[816px]">
+            {/* <div className="relative z-[10] mx-auto mb-16 w-full text-6xl text-white md:mb-[-96px] md:w-[816px]">
                 <CodyAnimation
                     className={classNames(className, {
                         'sg-bg-gradient-cody-hero': !isLight,
@@ -34,7 +34,7 @@ export const CodyAutocomplete: FunctionComponent<CodyAutocompleteProps> = ({
                     })}
                     isLight={isLight}
                 />
-            </div>
+            </div> */}
 
             <div className={classNames('!absolute relative top-0 z-[8] mx-auto mb-16 flex w-full justify-center')}>
                 <div
@@ -51,10 +51,11 @@ export const CodyAutocomplete: FunctionComponent<CodyAutocompleteProps> = ({
                     'flex justify-center !mx-0 relative z-[9]': isLight,
                 })}
                 className={classNames(
-                    'relative flex w-full flex-col gap-[15px] overflow-hidden  py-16 px-0 md:mt-0 md:flex-row md:rounded-lg md:border md:pt-[150px] md:pb-[47px] xl:max-w-[1280px]',
+                    'relative flex w-full flex-col gap-[15px] overflow-hidden  py-16 px-0 md:mt-0 md:flex-row md:rounded-lg md:border md:pb-[47px] xl:max-w-[1280px]',
                     {
-                        'mx-auto mt-16 border-y bg-violet-700 border-gray-500 md:pl-[62px]': !isLight,
-                        'mx-[24px] rounded-lg border bg-white border-gray-200 border-opacity-50 !px-0 md:mx-auto md:border-y md:pb-[64px]': isLight,
+                        'mx-auto mt-16 border-y border-gray-500 bg-violet-700 md:pl-[62px]': !isLight,
+                        'mx-[24px] rounded-lg border border-gray-200 border-opacity-50 bg-white !px-0 md:mx-auto md:border-y md:pb-[64px]':
+                            isLight,
                     }
                 )}
             >
