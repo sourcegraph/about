@@ -11,6 +11,7 @@ interface CodyIntroDualThemeProps {
     handleOpenModal: (pagePosition: string) => void | CaptureResult
     title?: string
     wrapperClassName?: string
+    subTitle?: string
 }
 
 export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
@@ -18,6 +19,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
     handleOpenModal,
     wrapperClassName,
     title,
+    subTitle = "Cody is an AI coding assistant that uses advanced search and codebase context to help you understand,write, and fix code faster."
 }) => (
     <ContentSection
         parentClassName="!py-0 !px-0"
@@ -41,8 +43,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                     'text-[#343A4D]': isLight,
                 })}
             >
-                Cody is an AI coding assistant that uses advanced search and codebase context to help you understand,
-                write, and fix code faster.
+                {subTitle}
             </h3>
             <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
                 <button
