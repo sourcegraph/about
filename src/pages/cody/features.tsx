@@ -109,9 +109,6 @@ const AUTOCOMPLETE_CONTENT = [
     },
 ]
 
-
-
-
 const CodyPage: FunctionComponent = () => {
     const [isContactModalOpen, setIsContactModalOpen] = useState(false)
     const windowWidth = useWindowWidth()
@@ -164,7 +161,7 @@ const CodyPage: FunctionComponent = () => {
 
             <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
             parentClassName={classNames('md:px-20')}>
-                {CHAT_CONTENT.map((content) => (
+                {CHAT_CONTENT.map(content => (
                 <div key={content.header}
                 className={classNames(
                     'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 pt-16 bg-white',
@@ -198,7 +195,7 @@ const CodyPage: FunctionComponent = () => {
 
             <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
             parentClassName={classNames('md:px-20')}>
-                {PROMPTS_CONTENT.map((content) => (
+                {PROMPTS_CONTENT.map(content => (
                 <div
                 key={content.header}
                 className={classNames(
@@ -232,7 +229,7 @@ const CodyPage: FunctionComponent = () => {
 
             <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
             parentClassName={classNames('md:px-20')}>
-                {AUTOCOMPLETE_CONTENT.map((content) => (
+                {AUTOCOMPLETE_CONTENT.map(content => (
                 <div
                 key={content.header}
                 className={classNames(

@@ -1,8 +1,8 @@
 import {FunctionComponent, useState } from 'react'
 
 import classNames from 'classnames'
-import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import {
     Layout,
@@ -147,7 +147,7 @@ const CodyPage: FunctionComponent = () => {
 
             <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
             parentClassName={classNames('md:px-20')}>
-                {CODE_SEARCH_CONTENT.map((content) => (
+                {CODE_SEARCH_CONTENT.map(content => (
                 <div
                 key={content.header}
                 className={classNames(
@@ -180,7 +180,7 @@ const CodyPage: FunctionComponent = () => {
 
             <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
             parentClassName={classNames('md:px-20')}>
-                {CODE_NAVIGATION_CONTENT.map((content) => (
+                {CODE_NAVIGATION_CONTENT.map(content => (
                 <div
                 key={content.header}
                 className={classNames(
@@ -213,7 +213,7 @@ const CodyPage: FunctionComponent = () => {
 
             <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
             parentClassName={classNames('md:px-20')}>
-                {BATCH_CHANGES_CONTENT.map((content) => (
+                {BATCH_CHANGES_CONTENT.map(content => (
                 <div
                 key={content.header}
                 className={classNames(
@@ -246,7 +246,7 @@ const CodyPage: FunctionComponent = () => {
 
             <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
             parentClassName={classNames('md:px-20')}>
-                {CODE_INSIGHTS_CONTENT.map((content) => (
+                {CODE_INSIGHTS_CONTENT.map(content => (
                 <div
                 key={content.header}
                 className={classNames(
