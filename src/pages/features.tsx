@@ -188,10 +188,10 @@ const SECTIONS = [
     { id: 'chat', name: 'Chat', icon: '/cody/chat-brand-icon.svg', alt: 'Cody Chat' },
     { id: 'prompts', name: 'Prompts', icon: '/cody/commands-brand-icon.svg', alt: 'Cody Prompts' },
     { id: 'autocomplete', name: 'Autocomplete', icon: '/cody/completions-brand-icon.svg', alt: 'Cody Autocomplete' },
-    { id: 'code-search', name: 'Code Search' },
-    { id: 'code-navigation', name: 'Code Navigation' },
-    { id: 'batch-changes', name: 'Batch Changes' },
-    { id: 'code-insights', name: 'Code Insights' },
+    { id: 'code-search', name: 'Code Search', icon: '/cody/code-search.svg', alt: 'Code Search' },
+    { id: 'code-navigation', name: 'Code Navigation', icon: '/cody/code-navigation.svg', alt: 'Code Navigation' },
+    { id: 'batch-changes', name: 'Batch Changes', icon: '/cody/batch-changes.svg', alt: 'Batch Changes' },
+    { id: 'code-insights', name: 'Code Insights', icon: '/cody/code-insights.svg', alt: 'Code Insights' },
 ]
 
 const CodyPage: FunctionComponent = () => {
@@ -326,7 +326,7 @@ const CodyPage: FunctionComponent = () => {
 
             {/* Autocomplete section */}
             <div id="autocomplete" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4 flex flex-col gap-6 px-6 md:gap-4 md:px-10">
-                <img className="h-[48px] w-[48px]" src="/cody/completions-brand-icon.svg" alt="Cody Chat" />
+                <img className="h-[48px] w-[48px]" src="/cody/completions-brand-icon.svg" alt="Cody Autocomplete" />
                 <h2 className={classNames('m-0 mb-4 text-left', {
                             'text-white': !isLight,
                             'text-[#0F111A]': isLight,
@@ -360,6 +360,7 @@ const CodyPage: FunctionComponent = () => {
 
             {/* Code Search section */}
             <div id="code-search" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
+            <img className="h-[48px] w-[48px]" src="/cody/code-search.svg" alt="Code Search" />
                 <h2 className={classNames('m-0 mb-4 text-left', {
                             'text-white': !isLight,
                             'text-[#0F111A]': isLight,
@@ -393,6 +394,7 @@ const CodyPage: FunctionComponent = () => {
 
             {/* Code Navigation section */}
             <div id="code-navigation" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
+                <img className="h-[48px] w-[48px]" src="/cody/code-navigation.svg" alt="Code Navigation" />
                 <h2 className={classNames('m-0 mb-4 text-left', {
                             'text-white': !isLight,
                             'text-[#0F111A]': isLight,
@@ -426,6 +428,7 @@ const CodyPage: FunctionComponent = () => {
 
             {/* Batch Changes section */}
             <div id="batch-changes" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
+                <img className="h-[48px] w-[48px]" src="/cody/batch-changes.svg" alt="Batch Changes" />
                 <h2 className={classNames('m-0 mb-4 text-left', {
                             'text-white': !isLight,
                             'text-[#0F111A]': isLight,
@@ -459,6 +462,7 @@ const CodyPage: FunctionComponent = () => {
 
             {/* Code Insights section */}
             <div id="code-insights" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
+                <img className="h-[48px] w-[48px]" src="/cody/code-insights.svg" alt="Code Insights" />
                 <h2 className={classNames('m-0 mb-4 text-left', {
                             'text-white': !isLight,
                             'text-[#0F111A]': isLight,
