@@ -8,8 +8,6 @@ import {
     HubSpotForm,
     Modal,
     CodyCta,
-    CodyPartners,
-    CodyTestimonials,
     ContentSection,
 } from '../../components'
 import { CodyIntroDualTheme } from '../../components/cody/dual-theme/CodyIntroDualTheme'
