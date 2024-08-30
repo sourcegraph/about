@@ -17,7 +17,6 @@ import {
 import { BentoWithMockup } from '../components/bentoWithMockup'
 import { CodyChooseLlmDualTheme } from '../components/cody/dual-theme/CodyChooseLlmDualTheme'
 import { CodyIntroDualTheme } from '../components/cody/dual-theme/CodyIntroDualTheme'
-import { SourcePoweredDualTheme } from '../components/cody/dual-theme/SourcePoweredDualTheme'
 import { HowCodyWorks } from '../components/cody/HowCodyWorks'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
