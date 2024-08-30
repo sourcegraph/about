@@ -1,7 +1,6 @@
 import {FunctionComponent, useState, useEffect } from 'react'
 
 import classNames from 'classnames'
-
 import { Link as ScrollLink } from 'react-scroll'
 
 import {
@@ -234,7 +233,7 @@ const CodyPage: FunctionComponent = () => {
             <nav className="sticky top-[110px] z-10 bg-gray-50">
                 <div className="mx-auto max-w-screen-xl px-4 py-4">
                     <ul className="flex justify-between overflow-x-auto">
-                        {SECTIONS.map((section) => (
+                        {SECTIONS.map(section => (
                             <div key={section.id} className="">
                                 <ScrollLink
                                     to={section.id}
