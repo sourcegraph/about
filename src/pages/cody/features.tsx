@@ -251,8 +251,6 @@ const CodyPage: FunctionComponent = () => {
                 ))}
             </ContentSection>
             
-  
-
             <CodyPartners isLight={true} className="!pb-[32px] md:pt-[96px] md:pb-0" />
             <CodyTestimonials isLight={true} />
 
