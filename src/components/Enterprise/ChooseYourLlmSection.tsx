@@ -1,11 +1,11 @@
 import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
+import Link from 'next/link'
 
 import { ContentSection } from '..'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
-import ReadCaseStudyLink from '../ReadCaseStudyLink'
 
 import { EnterpriseIcon } from './EnterpriseIcon'
 
@@ -60,7 +60,7 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
     modelCardClassName,
     modelCardContent,
     parentClassName,
-    isLight = false,
+    isLight = true,
 }) => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.md
@@ -75,6 +75,77 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
             parentClassName={classNames('md:px-20', parentClassName)}
         >
             <div
+                className={classNames('flex w-full flex-col md:ml-[29px]', {
+                    'max-w-[570px]': !isLight,
+                    'max-w-auto': isLight,
+                })}
+            >
+                <h2
+                    className={classNames('mb-1', {
+                        'text-white': !isLight,
+                        'text-[#0F111A]': isLight,
+                    })}
+                >
+                    Sourcegraph powered{' '}
+                    <span className={classNames({ 'cody-heading bg-clip-text text-transparent': !isLight })}>
+                        context
+                    </span>
+                </h2>
+
+                <p
+                    className={classNames(
+                        'mb-0 mt-[12px] text-2xl font-normal leading-[30px] tracking-[-0.25px] md:max-w-[501px]',
+                        {
+                            'text-[rgba(255,255,255,0.80)]': !isLight,
+                            'hidden text-[#343A4D] md:block': isLight,
+                        }
+                    )}
+                >
+                    Cody uses your code graph plus{' '}
+                    <Link
+                        href="/code-search"
+                        className={classNames('underline', {
+                            'text-[rgba(255,255,255,0.80)] underline-offset-[2px]': !isLight,
+                            'text-[#343A4D] !decoration-[#343A4D] !underline-offset-[5px]': isLight,
+                        })}
+                    >
+                        Code Search
+                    </Link>{' '}
+                    to autocomplete, explain, and edit your code with additional context.
+                </p>
+                <p
+                    className={classNames({
+                        hidden: !isLight,
+                        'md:max-w-[501px]text-[#343A4D] mb-0 mt-[12px] text-2xl font-normal leading-[30px] tracking-[-0.25px] md:hidden':
+                            isLight,
+                    })}
+                >
+                    Sourcegraph's code graph and analysis tools allows Cody to autocomplete, explain, and edit your code
+                    with additional context.
+                </p>
+                {isLight ? (
+                    <div className="mt-[24px] md:mt-0">
+                        <img
+                            src="assets/cody/new_context_illustration.svg"
+                            className="mt-6 hidden md:flex md:max-w-full"
+                            alt="cody context illustration"
+                        />
+                        <img
+                            src="assets/cody/source-power-mobile.svg"
+                            alt="cody context illustration details"
+                            className="h-full w-full md:hidden"
+                        />
+                    </div>
+                ) : (
+                    <img
+                        src="assets/cody/new_context_illustration.svg"
+                        alt="cody context illustration details"
+                        className="h-full w-full md:hidden"
+                    />
+                )}
+            </div>
+
+            {/* <div
                 className={classNames(
                     'grid-rows-auto relative grid !gap-6 rounded-2xl border-1 border-gray-200 bg-violet-700 !py-16 px-6 text-white md:px-20',
                     authorCardClassName ?? 'text-white',
@@ -117,10 +188,11 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
                         href="/case-studies/cody-leidos-maximizing-efficiency-heightened-security-ai-race "
                     />
                 )}
-            </div>
+            </div> */}
+
             <div
                 className={classNames(
-                    'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 py-16',
+                    'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 py-10',
                     modelCardClassName
                 )}
             >

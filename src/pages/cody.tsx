@@ -13,12 +13,10 @@ import {
     CodyChat,
     CodyImageTab,
     CodyPartners,
-    CodyTestimonials,
 } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
 import { CodyChooseLlmDualTheme } from '../components/cody/dual-theme/CodyChooseLlmDualTheme'
 import { CodyIntroDualTheme } from '../components/cody/dual-theme/CodyIntroDualTheme'
-import { SourcePoweredDualTheme } from '../components/cody/dual-theme/SourcePoweredDualTheme'
 import { HowCodyWorks } from '../components/cody/HowCodyWorks'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
@@ -44,7 +42,7 @@ const IMAGE_TAB_CONTENT = [
         imageSrc: { mobile: '/cody/describe-code-smell.png', desktop: '/cody/describe-code-smell.svg' },
     },
     {
-        header: 'Define your own custom commands',
+        header: 'Define your own custom prompts',
         description: 'Customize Cody for your workflow',
         imageSrc: { mobile: '/cody/define-custom-command.png', desktop: '/cody/define-custom-command.svg' },
     },
@@ -75,38 +73,55 @@ const CodyPage: FunctionComponent = () => {
             displayChildrenUnderNav={true}
             className="relative w-full !overflow-hidden bg-gray-50"
         >
-            <div className="relative">
+            <div className="relative md:pt-10">
                 <div className="sg-bg-gradient-cody-light-mobile-hero !absolute top-[310px] z-[10] h-[650px] w-[1000px] md:relative md:hidden md:bg-none" />
+
                 <CodyIntroDualTheme
                     isLight={true}
                     title="Code more, type less"
                     handleOpenModal={handleOpenModal}
                     wrapperClassName="relative z-[20] md:z-0"
                 />
-                <CodyAutocomplete isLight={true} wrapperClassName="z-[20] md:z-0" />
+
+                <p className="pt-32 text-center text-base font-normal uppercase leading-[27px] text-gray-400">
+                    Over 2.5M engineers use Sourcegraph
+                </p>
+
+                <CodyPartners isLight={true} className="!pt-0 !pb-[32px] md:pb-0" />
             </div>
-            <CodyIde isLight={true} />
+
             <CodyChat isLight={true} />
-            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
-                <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
-            </div>
-            <CodyPartners isLight={true} className="!pb-[32px] md:pt-[96px] md:pb-0" />
-            <CodyTestimonials isLight={true} />
+
+            <CodyIde isLight={true} />
+
             <CodyImageTab
                 icon="/cody/commands-brand-icon.svg"
-                headerText="Generate, test, and fix code with commands"
+                headerText="Generate, test, and fix code with prompts"
                 description={
                     <h3 className="mb-0 px-6 pt-[18px] text-[#343A4D]">
-                        Run Cody's one-click commands or create your own custom commands to execute AI workflows.
+                        Run Cody's one-click prompts or create your own custom prompts to execute AI workflows.
                     </h3>
                 }
                 tabContent={IMAGE_TAB_CONTENT}
                 isLight={true}
             />
+
+            <CodyAutocomplete isLight={true} wrapperClassName="z-[20] md:z-0 !mt-24" />
+
+            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
+                <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
+            </div>
+
+            <div className="py-8">
+                <CodyChooseLlmDualTheme isLight={true} />
+            </div>
+
             <HowCodyWorks isLight={true} />
-            <CodyChooseLlmDualTheme isLight={true} />
-            <SourcePoweredDualTheme isLight={true} />
+
+            {/* <SourcePoweredDualTheme isLight={true} /> */}
+
             <CodyCta source="Cody page" isCodyPage={true} isLight={true} />
+
             <Modal
                 open={isContactModalOpen}
                 handleClose={() => setIsContactModalOpen(false)}

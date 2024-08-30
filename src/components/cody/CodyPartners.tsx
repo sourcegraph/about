@@ -84,7 +84,7 @@ const darkThemeIcons = [
         id: 'Plaid Logo',
         src: '/assets/icons/plaid-logo-light.svg',
         className: 'w-[100px] order-16 md:order-16 mx-6',
-    }
+    },
 ]
 
 const lightThemeIcons = [
@@ -101,32 +101,32 @@ const lightThemeIcons = [
         className: 'w-[100px] md:mt-[7px] order-2 md:order-2 mx-6',
     },
     {
-        src: '/assets/icons/dropbox-logo.svg', 
-        className: 'w-[130px] order-3 md:order-3 mx-6' 
+        src: '/assets/icons/dropbox-logo.svg',
+        className: 'w-[130px] order-3 md:order-3 mx-6',
     },
     {
         src: '/home/carousel/palo-alto-logo.svg',
         className: 'w-[181px] order-4 md:order-4 mx-6',
     },
     {
-        src: '/assets/icons/databricks-logo.svg', 
-        className: 'w-[150px] order-5 md:order-5 mx-6' 
+        src: '/assets/icons/databricks-logo.svg',
+        className: 'w-[150px] order-5 md:order-5 mx-6',
     },
-    { 
-        src: '/enterprise/cern-logo.svg', 
-        className: 'w-[100px] order-19 md:order-19 mx-6' 
+    {
+        src: '/enterprise/cern-logo.svg',
+        className: 'w-[100px] order-19 md:order-19 mx-6',
     },
-    { 
-        src: '/assets/icons/mercado-libre-logo.svg', 
-        className: 'w-[100px] order-8 md:order-8 mx-6' 
+    {
+        src: '/assets/icons/mercado-libre-logo.svg',
+        className: 'w-[100px] order-8 md:order-8 mx-6',
     },
     {
         src: '/assets/icons/indeed-logo.svg',
         className: 'w-[120px] order-9 md:order-9 mx-6',
     },
-    { 
-        src: '/assets/icons/sofi-logo-violet.svg', 
-        className: 'w-[100px] order-10 md:order-10 mx-6' 
+    {
+        src: '/assets/icons/sofi-logo-violet.svg',
+        className: 'w-[100px] order-10 md:order-10 mx-6',
     },
     {
         src: '/home/carousel/leidos-logo.svg',
@@ -149,8 +149,8 @@ const lightThemeIcons = [
         className: 'w-[100px] order-15 md:order-15 mx-6',
     },
     {
-        src: '/assets/icons/canva-logo.svg', 
-        className: 'w-[100px] order-6 md:order-6 mx-6' 
+        src: '/assets/icons/canva-logo.svg',
+        className: 'w-[100px] order-6 md:order-6 mx-6',
     },
 ]
 
@@ -159,10 +159,18 @@ export const CodyPartners: FunctionComponent<{ isLight?: boolean; className?: st
     className,
 }) => (
     <div className={classNames(className, 'm-0 mt-0 w-full items-center justify-center py-24 md:mt-0 md:px-[0px]')}>
-        <div className="max-w-[1232px] mx-auto relative">
-            <div className={`absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r ${isLight ? 'from-gray-50' : 'from-gray-800'} to-transparent z-10`}/>
-            <div className={`absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l ${isLight ? 'from-gray-50' : 'from-gray-800'} to-transparent z-10`}/>
-            <InfiniteCarousel images={isLight ? lightThemeIcons : darkThemeIcons} />
+        <div className="relative mx-auto max-w-[1232px]">
+            <div
+                className={`absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r ${
+                    isLight ? 'from-gray-50' : 'from-gray-800'
+                } z-10 to-transparent`}
+            />
+            <div
+                className={`absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l ${
+                    isLight ? 'from-gray-50' : 'from-gray-800'
+                } z-10 to-transparent`}
+            />
+            <InfiniteCarousel images={isLight ? lightThemeIcons : darkThemeIcons} duration={1000} />
         </div>
     </div>
 )

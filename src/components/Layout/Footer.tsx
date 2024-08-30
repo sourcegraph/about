@@ -81,7 +81,7 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
             },
             {
                 name: 'Changelog',
-                href: 'https://sourcegraph.com/changelog',
+                href: '/changelog',
             },
             {
                 name: 'Community',
