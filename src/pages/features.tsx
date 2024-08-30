@@ -221,7 +221,7 @@ const CodyPage: FunctionComponent = () => {
             const scrollPosition = window.scrollY + 100 // Offset for the sticky menu
 
             for (const section of SECTIONS) {
-                const element = document.querySelector(`#${section.id}`)
+                const element = document.querySelector(`#${section.id}`) as HTMLElement
                 if (element && element.offsetTop <= scrollPosition && element.offsetTop + element.offsetHeight > scrollPosition) {
                     setActiveSection(section.id)
                     break
