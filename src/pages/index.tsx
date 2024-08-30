@@ -55,7 +55,7 @@ const Home: FunctionComponent = () => {
         >
             <div className="oveflow-hidden relative w-full bg-gray-50">
                 <ContentSection parentClassName="!py-0" className="flex flex-col items-center justify-center">
-                    <p className="mb-16 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
+                    <p className="mb-11 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
                         Over 2.5M engineers use Sourcegraph
                     </p>
                 </ContentSection>
