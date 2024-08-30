@@ -11,7 +11,6 @@ import {
     CodyCta,
     ContentSection,
 } from '../components'
-import { CodyIntroDualTheme } from '../components/cody/dual-theme/CodyIntroDualTheme'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
@@ -492,7 +491,7 @@ const FeaturesHero: FunctionComponent<FeaturesHeroProps>    = ({handleOpenModal}
                     Search, navigate, and automate code faster.
                 </h3>
                 <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
-                    <button onClick={() => handleOpenModal('hero')} className="btn btn-primary">
+                    <button onClick={() => handleOpenModal('hero')} type="button" className="btn btn-primary">
                     <div className="flex items-center justify-center">
                         <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Get Cody for your IDE
                     </div>
