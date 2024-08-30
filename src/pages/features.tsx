@@ -1,7 +1,8 @@
 import {FunctionComponent, useState, useEffect } from 'react'
+
 import { Link as ScrollLink } from 'react-scroll'
 import classNames from 'classnames'
-import Link from 'next/link'
+
 import { useRouter } from 'next/router'
 
 import {
@@ -216,11 +217,11 @@ const CodyPage: FunctionComponent = () => {
     }
 
     useEffect(() => {
-        const handleScroll = () => {
+        const handleScroll = (): void => {
             const scrollPosition = window.scrollY + 100 // Offset for the sticky menu
 
             for (const section of SECTIONS) {
-                const element = document.getElementById(section.id)
+                const element = document.querySelector(`#${section.id}`)
                 if (element && element.offsetTop <= scrollPosition && element.offsetTop + element.offsetHeight > scrollPosition) {
                     setActiveSection(section.id)
                     break
@@ -229,7 +230,9 @@ const CodyPage: FunctionComponent = () => {
         }
 
         window.addEventListener('scroll', handleScroll)
-        return () => window.removeEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
     }, [])
 
     return (
@@ -240,7 +243,7 @@ const CodyPage: FunctionComponent = () => {
                     'Learn how Code Search and Cody help you write, fix, and maintain code faster.',
                 image: 'https://sourcegraph.com/code-search/code-search-og.png',
             }}
-            hero={<FeaturesHero handleOpenModal={handleOpenModal}/>}
+            hero={<FeaturesHero/>}
             className="bg-gray-50 relative"
         >
             <nav className="sticky top-[110px] z-10 bg-gray-50">
@@ -531,11 +534,7 @@ const CodyPage: FunctionComponent = () => {
     )
 }
 
-interface FeaturesHeroProps {
-    handleOpenModal: (pagePosition: string) => void;
-}
-
-const FeaturesHero: FunctionComponent<FeaturesHeroProps>    = ({handleOpenModal}) => (
+const FeaturesHero: FunctionComponent = () => (
     <ContentSection className="flex items-center justify-center" parentClassName="!py-0">
         <div className="mx-auto flex flex-col items-center justify-center text-center">
             <div className="mx-auto flex flex-col items-center pb-16 pt-8 md:w-[828px] md:pb-[25px] md:pt-16">
