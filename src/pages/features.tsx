@@ -1,9 +1,8 @@
 import {FunctionComponent, useState, useEffect } from 'react'
 
-import { Link as ScrollLink } from 'react-scroll'
 import classNames from 'classnames'
 
-import { useRouter } from 'next/router'
+import { Link as ScrollLink } from 'react-scroll'
 
 import {
     Layout,
@@ -12,10 +11,6 @@ import {
     CodyCta,
     ContentSection,
 } from '../components'
-import { useAuthModal } from '../context/AuthModalContext'
-import { breakpoints } from '../data/breakpoints'
-import { useWindowWidth } from '../hooks/windowWidth'
-import { captureCustomEventWithPageData } from '../lib/utils'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 
@@ -202,19 +197,9 @@ const SECTIONS = [
 
 const CodyPage: FunctionComponent = () => {
     const [isContactModalOpen, setIsContactModalOpen] = useState(false)
-    const windowWidth = useWindowWidth()
-    const isMobile = windowWidth < breakpoints.lg
     const isLight = true; 
-    const router = useRouter()
-    const { pathname } = router
-    const { openModal } = useAuthModal()
     const [activeSection, setActiveSection] = useState('')
 
-    const source = pathname.slice(1) || 'about-home'
-    const handleOpenModal = (pagePosition: string): void => {
-        captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
-        openModal(source)
-    }
 
     useEffect(() => {
         const handleScroll = (): void => {
