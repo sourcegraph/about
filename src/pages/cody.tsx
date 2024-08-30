@@ -13,7 +13,6 @@ import {
     CodyChat,
     CodyImageTab,
     CodyPartners,
-    CodyTestimonials,
 } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
 import { CodyChooseLlmDualTheme } from '../components/cody/dual-theme/CodyChooseLlmDualTheme'
@@ -75,23 +74,33 @@ const CodyPage: FunctionComponent = () => {
             displayChildrenUnderNav={true}
             className="relative w-full !overflow-hidden bg-gray-50"
         >
-            <div className="relative">
+            <div className="relative md:pt-10">
                 <div className="sg-bg-gradient-cody-light-mobile-hero !absolute top-[310px] z-[10] h-[650px] w-[1000px] md:relative md:hidden md:bg-none" />
+
                 <CodyIntroDualTheme
                     isLight={true}
                     title="Code more, type less"
                     handleOpenModal={handleOpenModal}
                     wrapperClassName="relative z-[20] md:z-0"
                 />
-                <CodyAutocomplete isLight={true} wrapperClassName="z-[20] md:z-0" />
+
+                <p className="pt-32 text-center text-base font-normal uppercase leading-[27px] text-gray-400">
+                    Over 2.5M engineers use Sourcegraph
+                </p>
+
+                <CodyPartners isLight={true} className="!pt-0 !pb-[32px] md:pb-0" />
             </div>
-            <CodyIde isLight={true} />
+
             <CodyChat isLight={true} />
+
+            <CodyIde isLight={true} />
+
+            <CodyAutocomplete isLight={true} wrapperClassName="z-[20] md:z-0" />
+
             <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
                 <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
             </div>
-            <CodyPartners isLight={true} className="!pb-[32px] md:pt-[96px] md:pb-0" />
-            <CodyTestimonials isLight={true} />
+
             <CodyImageTab
                 icon="/cody/commands-brand-icon.svg"
                 headerText="Generate, test, and fix code with commands"

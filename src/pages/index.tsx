@@ -55,16 +55,16 @@ const Home: FunctionComponent = () => {
         >
             <div className="oveflow-hidden relative w-full bg-gray-50">
                 <ContentSection parentClassName="!py-0" className="flex flex-col items-center justify-center">
-                    <p className="mb-11 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
+                    <p className="text-center text-base font-normal uppercase leading-[27px] text-gray-400">
                         Over 2.5M engineers use Sourcegraph
                     </p>
                 </ContentSection>
 
-                <div className="flex items-center pb-16">
-                    <CodyPartners isLight={true} className="!pb-[16px] pt-[16px]" />
+                <div className="flex items-center pb-20">
+                    <CodyPartners isLight={true} className="!pb-4 pt-4" />
                 </div>
 
-                <div className="mx-auto flex flex-col pb-12 md:max-w-screen-xl md:px-6">
+                <div className="mx-auto flex flex-col pb-20 md:max-w-screen-xl md:px-6">
                     <div className="px-6 md:px-0">
                         <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
                     </div>
@@ -78,8 +78,9 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/cody-squircle.svg"
                                 alt="Cody Product logo"
                             />
-                            <h1>Cody</h1>
+                            <h2>Cody</h2>
                         </div>
+
                         <h3 className="text-gray-500">
                             Ship code faster with Cody, the AI coding assistant. Cody uses the latest models plus the
                             most extensive development context to help you solve hard problems in your IDE.
@@ -152,7 +153,7 @@ const Home: FunctionComponent = () => {
 
                     {/* Completions section */}
                     <div className="relative mx-6 mt-8 flex h-auto gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:max-h-[500px] lg:h-[329px]">
-                        <div className="flex w-full flex-col text-pretty py-16 pl-10">
+                        <div className="text-pretty flex w-full flex-col py-16 pl-10">
                             <img
                                 className="h-[40px] w-[40px]"
                                 src="/home/branded-icons/completions-brand-icon.svg"
@@ -350,33 +351,33 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
         parentClassName="!py-0 !pb-16 !bg-gray-50"
     >
         <div className="mx-auto flex flex-col items-center justify-center px-3 text-center md:px-0">
-            <div className="mx-auto flex max-w-[456px] flex-col items-center pb-4 pt-4 sm:max-w-full md:w-[680px] md:pb-[26px] md:pt-10">
-                <h1 className="mb-8 mt-6 w-full text-center text-5xl sm:text-6xl md:mt-10">
-                    Understand and write code blazingly fast
+            <div className="mx-auto flex flex-col items-center pb-4 pt-4 md:w-[680px] md:pb-[26px] md:pt-20">
+                <h1 className="w-full text-center text-4xl sm:text-8xl">
+                    Understand and write code{' '}
+                    <span className="font-extrabold italic text-[#A112FF]">blazingly fast</span>
                 </h1>
-                <p className="mb-6 text-2xl font-normal leading-[30px] text-[#343A4D] -tracking-[0.25px] md:mb-8">
+
+                <p className="mt-6 font-normal leading-tight text-gray-400 md:text-xl">
                     Sourcegraph allows developers to rapidly search, write, and understand code by bringing insights
                     from their entire codebase right into the editor
                 </p>
-                <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
+
+                <div className="mx-auto mt-6 flex flex-row flex-wrap justify-center gap-2 rounded-[6px]">
                     <button
                         type="button"
                         className="btn btn-primary mb-4 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
-                        title="free cody"
                         onClick={() => onOpenModal('top')}
                     >
                         Download the AI coding assistant
                     </button>
                     <Link
-                    href="/contact/request-info"
-                    title="Book a demo"
-                    className="btn btn-secondary mb-4 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
-                    type="button"
-                    onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click')}
+                        href="/contact/request-info"
+                        title="Book a demo"
+                        className="btn btn-secondary mb-4 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
+                        type="button"
+                        onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click')}
                     >
-                        <div className="flex items-center justify-center">
-                            Book a demo
-                        </div>
+                        <div className="flex items-center justify-center">Book a demo</div>
                     </Link>
                 </div>
             </div>
