@@ -8,18 +8,12 @@ import {
     HubSpotForm,
     Modal,
     CodyCta,
-    CodyIde,
-    CodyAutocomplete,
-    CodyChat,
-    CodyImageTab,
     CodyPartners,
     CodyTestimonials,
     ContentSection,
 } from '../../components'
-import { BentoWithMockup } from '../../components/bentoWithMockup'
 import { CodyChooseLlmDualTheme } from '../../components/cody/dual-theme/CodyChooseLlmDualTheme'
 import { CodyIntroDualTheme } from '../../components/cody/dual-theme/CodyIntroDualTheme'
-import { SourcePoweredDualTheme } from '../../components/cody/dual-theme/SourcePoweredDualTheme'
 import { HowCodyWorks } from '../../components/cody/HowCodyWorks'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
@@ -206,12 +200,13 @@ const CodyPage: FunctionComponent = () => {
             parentClassName={classNames('md:px-20')}>
                 {PROMPTS_CONTENT.map((content) => (
                 <div
+                key={content.header}
                 className={classNames(
                     'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 py-16 bg-white',
                 )}
             >
                     <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
-                            <div key={content.header}>
+                            <div>
                                 <h2 className="mb-2">{content.header}</h2>
                                 <div className="mb-9 text-xl leading-[26px] tracking-tight text-gray-500">
                                     <p>{content.description}</p>
@@ -232,19 +227,20 @@ const CodyPage: FunctionComponent = () => {
                 <p className={classNames('m-0 text-left md:text-2xl max-w-[800px]', {
                             'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
                             'text-lg text-gray-200': !isLight,
-                        })}>Cody predicts what you’re trying to write before you type it. It makes single-line and multi-line suggestions as you type, using the context of the code around your cursor to make accurate suggestions.</p>
+                        })}>Cody predicts what you\'re trying to write before you type it. It makes single-line and multi-line suggestions as you type, using the context of the code around your cursor to make accurate suggestions.</p>
             </div>
 
             <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
             parentClassName={classNames('md:px-20')}>
                 {AUTOCOMPLETE_CONTENT.map((content) => (
                 <div
+                key={content.header}
                 className={classNames(
                     'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 py-16 bg-white',
                 )}
             >
                     <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
-                            <div key={content.header}>
+                            <div>
                                 <h2 className="mb-2">{content.header}</h2>
                                 <div className="mb-9 text-xl leading-[26px] tracking-tight text-gray-500">
                                     <p>{content.description}</p>

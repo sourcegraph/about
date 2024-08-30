@@ -2,25 +2,17 @@ import {FunctionComponent, useState } from 'react'
 
 import classNames from 'classnames'
 import { useRouter } from 'next/router'
-import Link from 'next/link'
 
 import {
     Layout,
     HubSpotForm,
     Modal,
     CodyCta,
-    CodyIde,
-    CodyAutocomplete,
-    CodyChat,
-    CodyImageTab,
     CodyPartners,
     CodyTestimonials,
     ContentSection,
 } from '../../components'
-import { BentoWithMockup } from '../../components/bentoWithMockup'
 import { CodyChooseLlmDualTheme } from '../../components/cody/dual-theme/CodyChooseLlmDualTheme'
-import { CodyIntroDualTheme } from '../../components/cody/dual-theme/CodyIntroDualTheme'
-import { SourcePoweredDualTheme } from '../../components/cody/dual-theme/SourcePoweredDualTheme'
 import { HowCodyWorks } from '../../components/cody/HowCodyWorks'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
@@ -113,7 +105,6 @@ const CODE_INSIGHTS_CONTENT = [
     },
 ]
 
-
 const CodyPage: FunctionComponent = () => {
     const [isContactModalOpen, setIsContactModalOpen] = useState(false)
     const windowWidth = useWindowWidth()
@@ -157,12 +148,13 @@ const CodyPage: FunctionComponent = () => {
             parentClassName={classNames('md:px-20')}>
                 {CODE_SEARCH_CONTENT.map((content) => (
                 <div
+                key={content.header}
                 className={classNames(
                     'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 py-16 bg-white',
                 )}
             >
                     <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
-                            <div key={content.header}>
+                            <div>
                                 <h2>{content.header}</h2>
                                 <div className="mb-9 text-xl leading-[26px] tracking-tight text-gray-500">
                                     <p>{content.description}</p>
@@ -189,12 +181,13 @@ const CodyPage: FunctionComponent = () => {
             parentClassName={classNames('md:px-20')}>
                 {CODE_NAVIGATION_CONTENT.map((content) => (
                 <div
+                key={content.header}
                 className={classNames(
                     'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 py-16 bg-white',
                 )}
             >
                     <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
-                            <div key={content.header}>
+                            <div>
                                 <h2>{content.header}</h2>
                                 <div className="mb-9 text-xl leading-[26px] tracking-tight text-gray-500">
                                     <p>{content.description}</p>
@@ -221,12 +214,13 @@ const CodyPage: FunctionComponent = () => {
             parentClassName={classNames('md:px-20')}>
                 {BATCH_CHANGES_CONTENT.map((content) => (
                 <div
+                key={content.header}
                 className={classNames(
                     'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 py-16 bg-white',
                 )}
             >
                     <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
-                            <div key={content.header}>
+                            <div>
                                 <h2>{content.header}</h2>
                                 <div className="mb-9 text-xl leading-[26px] tracking-tight text-gray-500">
                                     <p>{content.description}</p>
@@ -253,12 +247,13 @@ const CodyPage: FunctionComponent = () => {
             parentClassName={classNames('md:px-20')}>
                 {CODE_INSIGHTS_CONTENT.map((content) => (
                 <div
+                key={content.header}
                 className={classNames(
                     'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 py-16 bg-white',
                 )}
             >
                     <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
-                            <div key={content.header}>
+                            <div>
                                 <h2>{content.header}</h2>
                                 <div className="mb-9 text-xl leading-[26px] tracking-tight text-gray-500">
                                     <p>{content.description}</p>
@@ -269,8 +264,6 @@ const CodyPage: FunctionComponent = () => {
                 ))}
             </ContentSection>
             
-  
-
             <CodyPartners isLight={true} className="!pb-[32px] md:pt-[96px] md:pb-0" />
             <CodyTestimonials isLight={true} />
 
