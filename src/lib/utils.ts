@@ -160,3 +160,13 @@ export const captureCustomEventWithPageData = (
         console.error('Error capturing event in posthog:', error)
     }
 }
+
+export const formatDate = (dateString = ''): string => {
+    const date = new Date(dateString);
+    const options: Intl.DateTimeFormatOptions = { 
+        year: 'numeric', 
+        month: 'long',
+        day: 'numeric'  
+    };
+    return new Intl.DateTimeFormat('en-US', options).format(date);
+}

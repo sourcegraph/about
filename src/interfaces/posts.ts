@@ -45,6 +45,7 @@ export interface FrontMatter {
     authors?: {
         name: string
         url?: string
+        avatar?: string
     }[]
     tags?: string[]
     changelogItems?: {
@@ -57,6 +58,7 @@ export interface FrontMatter {
     layout?: string
     style?: string
     audioSrc?: string
+    version?: string[]
 }
 
 export interface PostComponentProps {
