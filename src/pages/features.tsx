@@ -1,5 +1,5 @@
-import {FunctionComponent, useState } from 'react'
-
+import {FunctionComponent, useState, useEffect } from 'react'
+import { Link as ScrollLink } from 'react-scroll'
 import classNames from 'classnames'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -189,6 +189,16 @@ const CODE_INSIGHTS_CONTENT = [
     },
 ]
 
+const SECTIONS = [
+    { id: 'chat', name: 'Chat' },
+    { id: 'prompts', name: 'Prompts' },
+    { id: 'autocomplete', name: 'Autocomplete' },
+    { id: 'code-search', name: 'Code Search' },
+    { id: 'code-navigation', name: 'Code Navigation' },
+    { id: 'batch-changes', name: 'Batch Changes' },
+    { id: 'code-insights', name: 'Code Insights' },
+]
+
 const CodyPage: FunctionComponent = () => {
     const [isContactModalOpen, setIsContactModalOpen] = useState(false)
     const windowWidth = useWindowWidth()
@@ -197,12 +207,30 @@ const CodyPage: FunctionComponent = () => {
     const router = useRouter()
     const { pathname } = router
     const { openModal } = useAuthModal()
+    const [activeSection, setActiveSection] = useState('')
 
     const source = pathname.slice(1) || 'about-home'
     const handleOpenModal = (pagePosition: string): void => {
         captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
         openModal(source)
     }
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY + 100 // Offset for the sticky menu
+
+            for (const section of SECTIONS) {
+                const element = document.getElementById(section.id)
+                if (element && element.offsetTop <= scrollPosition && element.offsetTop + element.offsetHeight > scrollPosition) {
+                    setActiveSection(section.id)
+                    break
+                }
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
 
     return (
         <Layout
@@ -213,10 +241,36 @@ const CodyPage: FunctionComponent = () => {
                 image: 'https://sourcegraph.com/code-search/code-search-og.png',
             }}
             hero={<FeaturesHero handleOpenModal={handleOpenModal}/>}
-            className="bg-gray-50"
+            className="bg-gray-50 relative"
         >
+            <nav className="sticky top-[110px] z-10 bg-gray-50">
+                <div className="mx-auto max-w-screen-xl px-4 py-4">
+                    <ul className="flex justify-between overflow-x-auto">
+                        {SECTIONS.map((section) => (
+                            <div key={section.id} className="">
+                                <ScrollLink
+                                    to={section.id}
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-70}
+                                    className={classNames(
+                                        'cursor-pointer px-3 py-2',
+                                        {
+                                            'font-bold text-purple-600': activeSection === section.id,
+                                            'text-gray-600 hover:text-purple-600': activeSection !== section.id
+                                        }
+                                    )}
+                                >
+                                    {section.name}
+                                </ScrollLink>
+                            </div>
+                        ))}
+                    </ul>
+                </div>
+            </nav>
+
             {/* Chat section */}
-            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4 flex flex-col gap-6 px-6 md:gap-4 md:px-10">
+            <div id="chat" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4 flex flex-col gap-6 px-6 md:gap-4 md:px-10">
                 <img className="h-[48px] w-[48px]" src="/cody/chat-brand-icon.svg" alt="Cody Chat" />
                 <h2 className={classNames('m-0 mb-4 text-left', {
                             'text-white': !isLight,
@@ -250,7 +304,7 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             {/* Prompts section */}
-            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4 flex flex-col gap-6 px-6 md:gap-4 md:px-10">
+            <div id="prompts" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4 flex flex-col gap-6 px-6 md:gap-4 md:px-10">
                 <img className="h-[48px] w-[48px]" src="/cody/commands-brand-icon.svg" alt="Cody Chat" />
                 <h2 className={classNames('m-0 mb-4 text-left', {
                             'text-white': !isLight,
@@ -284,7 +338,7 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             {/* Autocomplete section */}
-            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4 flex flex-col gap-6 px-6 md:gap-4 md:px-10">
+            <div id="autocomplete" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4 flex flex-col gap-6 px-6 md:gap-4 md:px-10">
                 <img className="h-[48px] w-[48px]" src="/cody/completions-brand-icon.svg" alt="Cody Chat" />
                 <h2 className={classNames('m-0 mb-4 text-left', {
                             'text-white': !isLight,
@@ -318,7 +372,7 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             {/* Code Search section */}
-            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
+            <div id="code-search" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
                 <h2 className={classNames('m-0 mb-4 text-left', {
                             'text-white': !isLight,
                             'text-[#0F111A]': isLight,
@@ -351,7 +405,7 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             {/* Code Navigation section */}
-            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
+            <div id="code-navigation" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
                 <h2 className={classNames('m-0 mb-4 text-left', {
                             'text-white': !isLight,
                             'text-[#0F111A]': isLight,
@@ -384,7 +438,7 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             {/* Batch Changes section */}
-            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
+            <div id="batch-changes" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
                 <h2 className={classNames('m-0 mb-4 text-left', {
                             'text-white': !isLight,
                             'text-[#0F111A]': isLight,
@@ -417,7 +471,7 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             {/* Code Insights section */}
-            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
+            <div id="code-insights" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
                 <h2 className={classNames('m-0 mb-4 text-left', {
                             'text-white': !isLight,
                             'text-[#0F111A]': isLight,
@@ -483,26 +537,13 @@ interface FeaturesHeroProps {
 const FeaturesHero: FunctionComponent<FeaturesHeroProps>    = ({handleOpenModal}) => (
     <ContentSection className="flex items-center justify-center" parentClassName="!py-0">
         <div className="mx-auto flex flex-col items-center justify-center text-center">
-            <div className="mx-auto flex flex-col items-center pb-16 pt-8 md:w-[828px] md:pb-[63px] md:pt-16">
+            <div className="mx-auto flex flex-col items-center pb-16 pt-8 md:w-[828px] md:pb-[25px] md:pt-16">
                 <div className="container mx-auto mb-6 grid gap-8 text-center">
                     <h1 className="color-[#0F111A] pt-16 md:pt-0">Features</h1>
                 </div>
                 <h3 className="mb-10 text-gray-500 md:mb-8 md:px-6">
                     Search, navigate, and automate code faster.
                 </h3>
-                <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
-                    <button onClick={() => handleOpenModal('hero')} type="button" className="btn btn-primary">
-                    <div className="flex items-center justify-center">
-                        <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Get Cody for your IDE
-                    </div>
-                    </button>
-                    <Link
-                        href="/contact/request-info"
-                        className="btn btn-secondary w-[215px] text-center sm:w-fit"
-                    >
-                        Book a demo
-                    </Link>
-                </div>
             </div>
         </div>
     </ContentSection>
