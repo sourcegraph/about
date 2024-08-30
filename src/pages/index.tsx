@@ -55,7 +55,7 @@ const Home: FunctionComponent = () => {
         >
             <div className="oveflow-hidden relative w-full bg-gray-50">
                 <ContentSection parentClassName="!py-0" className="flex flex-col items-center justify-center">
-                    <p className="mb-16 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
+                    <p className="mb-11 text-center text-[20px] font-[590] uppercase leading-[27px] text-gray-500">
                         Over 2.5M engineers use Sourcegraph
                     </p>
                 </ContentSection>
@@ -81,8 +81,8 @@ const Home: FunctionComponent = () => {
                             <h1>Cody</h1>
                         </div>
                         <h3 className="text-gray-500">
-                            Ship code faster with Cody, the AI coding assistant. Cody uses advanced search and codebase
-                            context to help you write and fix code.
+                            Ship code faster with Cody, the AI coding assistant. Cody uses the latest models plus the
+                            most extensive development context to help you solve hard problems in your IDE.
                         </h3>
                     </div>
                     <Link
@@ -110,30 +110,8 @@ const Home: FunctionComponent = () => {
                             />
                         )}
                     </div>
-                    <div className="relative mx-6 mb-8 flex h-auto gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:max-h-[500px] lg:h-[329px]">
-                        <div className="flex w-full flex-col text-pretty py-16 pl-10">
-                            <img
-                                className="h-[40px] w-[40px]"
-                                src="/home/branded-icons/completions-brand-icon.svg"
-                                alt="Completions Brand Icon"
-                            />
-                            <h2 className="break-words pb-4 pt-6">Faster coding with autocomplete</h2>
-                            <h5 className="text-gray-500">
-                                Suggestions for single lines or whole functions, in any programming language,
-                                configuration file, or docs.
-                            </h5>
-                        </div>
-                        {!isMobile && (
-                            <div className="h-full w-full">
-                                <div className="autocomplete-gradient absolute z-0 h-[392.193px] w-[1087.411px]" />
-                                <img
-                                    className=" relative h-full w-full"
-                                    src="/home/multiline-completion.svg"
-                                    alt="Multiline Completion"
-                                />
-                            </div>
-                        )}
-                    </div>
+
+                    {/* Chat + Prompts sections */}
                     <div className="mx-6 mb-0 grid grid-cols-1 gap-8 md:mx-0 md:grid-cols-2 md:gap-6">
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
                             {/* <img
@@ -152,9 +130,10 @@ const Home: FunctionComponent = () => {
                                 </defs>
                             </svg>
                             <Icon fill="none" iconNode={iconDefinition} size={48} color="url(#grad1)" />
-                            <h2 className="pb-4 pt-6">Get help with context-aware chat</h2>
+                            <h2 className="pb-4 pt-6">Solve hard problems with chat</h2>
                             <h5 className="mb-0 text-gray-500">
-                                Query like a human and learn about your code, or get help with tricky problems.
+                                Chat with Cody to quickly generate and edit code, using latest-gen AI models plus
+                                extensive codebase context for fast and accurate results.
                             </h5>
                         </div>
                         <div className="flex flex-col rounded-2xl border-1 border-gray-200 bg-white px-10 py-16">
@@ -163,12 +142,38 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/commands-brand-icon.svg"
                                 alt="Completions Brand Icon"
                             />
-                            <h2 className="pb-4 pt-6">Automate workflows with commands</h2>
+                            <h2 className="pb-4 pt-6">Automate workflows with prompts</h2>
                             <h5 className="mb-0 text-gray-500">
-                                Build and personalize commands that automate common tasks. Explain code or generate unit
-                                tests in seconds.
+                                Build and customize prompts for automating common tasks and reducing toil. Generate unit
+                                tests, modernize code, document code, and more.
                             </h5>
                         </div>
+                    </div>
+
+                    {/* Completions section */}
+                    <div className="relative mx-6 mt-8 flex h-auto gap-[19px] overflow-hidden rounded-2xl border-1 border-gray-200 bg-white md:mx-0 md:max-h-[500px] lg:h-[329px]">
+                        <div className="flex w-full flex-col text-pretty py-16 pl-10">
+                            <img
+                                className="h-[40px] w-[40px]"
+                                src="/home/branded-icons/completions-brand-icon.svg"
+                                alt="Completions Brand Icon"
+                            />
+                            <h2 className="break-words pb-4 pt-6">Code faster with autocomplete</h2>
+                            <h5 className="text-gray-500">
+                                Cody completes single lines or whole functions, in any programming language,
+                                configuration file, or docs.
+                            </h5>
+                        </div>
+                        {!isMobile && (
+                            <div className="h-full w-full">
+                                <div className="autocomplete-gradient absolute z-0 h-[392.193px] w-[1087.411px]" />
+                                <img
+                                    className=" relative h-full w-full"
+                                    src="/home/multiline-completion.svg"
+                                    alt="Multiline Completion"
+                                />
+                            </div>
+                        )}
                     </div>
 
                     <div className="relative overflow-hidden md:overflow-visible">
@@ -341,26 +346,39 @@ const Home: FunctionComponent = () => {
 
 const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
     <ContentSection
-        className="relative mt-[64px] flex items-center justify-center rounded-2xl bg-violet-700 md:mt-[32px]"
+        className="relative mt-[64px] flex items-center justify-center rounded-2xl md:mt-[32px]"
         parentClassName="!py-0 !pb-16 !bg-gray-50"
     >
         <div className="mx-auto flex flex-col items-center justify-center px-3 text-center md:px-0">
-            <div className="mx-auto flex max-w-[456px] flex-col items-center pb-8 pt-8 sm:max-w-full md:w-[680px] md:pb-[26px] md:pt-10">
-                <h1 className="mb-8 mt-10 w-full text-center text-5xl text-gray-100 sm:text-6xl">
+            <div className="mx-auto flex max-w-[456px] flex-col items-center pb-4 pt-4 sm:max-w-full md:w-[680px] md:pb-[26px] md:pt-10">
+                <h1 className="mb-8 mt-6 w-full text-center text-5xl sm:text-6xl md:mt-10">
                     Understand and write code blazingly fast
                 </h1>
-                <p className="mb-10 text-2xl font-normal leading-[30px] -tracking-[0.25px] text-white opacity-60 md:mb-8">
+                <p className="mb-6 text-2xl font-normal leading-[30px] text-[#343A4D] -tracking-[0.25px] md:mb-8">
                     Sourcegraph allows developers to rapidly search, write, and understand code by bringing insights
                     from their entire codebase right into the editor
                 </p>
-                <button
+                <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
+                    <button
+                        type="button"
+                        className="btn btn-primary mb-4 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
+                        title="free cody"
+                        onClick={() => onOpenModal('top')}
+                    >
+                        Download the AI coding assistant
+                    </button>
+                    <Link
+                    href="/contact/request-info"
+                    title="Book a demo"
+                    className="btn btn-secondary mb-4 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
                     type="button"
-                    className="btn btn-primary-dark mb-8 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
-                    title="free cody"
-                    onClick={() => onOpenModal('top')}
-                >
-                    Download Cody, the AI coding assistant
-                </button>
+                    onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click')}
+                    >
+                        <div className="flex items-center justify-center">
+                            Book a demo
+                        </div>
+                    </Link>
+                </div>
             </div>
         </div>
     </ContentSection>
