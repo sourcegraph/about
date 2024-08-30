@@ -1,0 +1,257 @@
+commit 08bf099d1986e384fa1d87197de13dc7dd05019e
+Author: Alex Isken <alex.isken@sourcegraph.com>
+Date:   Mon Oct 23 10:58:26 2023 -0500
+
+    Remove Oct 4 banner
+
+commit 0509cb58091f4287723851f8d425432bfc312adb
+Author: Alex Isken <alex.isken@sourcegraph.com>
+Date:   Tue Oct 3 15:55:33 2023 -0500
+
+    Add banner pointing to the release livestream (#6516)
+    
+    Add banner to About site
+
+commit 1c24410f8e0159631c548908f928a8aaaa81a95a
+Author: GitStart-SourceGraph <89894075+gitstart-sourcegraph@users.noreply.github.com>
+Date:   Wed Jun 28 22:43:18 2023 +0800
+
+    SGM-6313 - June 28th launch - Homepage / Cody / Code-Search updates (#6326)
+    
+    * New marketing site to promote Cody App!
+    
+    ---------
+    
+    Co-authored-by: Paulo Almeida <eu@paulo.digital>
+    Co-authored-by: rob rhyne <rob@sourcegraph.com>
+    Co-authored-by: Alex Isken <alex.isken@sourcegraph.com>
+    Co-authored-by: Quinn Slack <quinn@slack.org>
+
+commit 7e6bb0e532b406894ec08f95d5ef3d1f52272997
+Author: GitStart-SourceGraph <89894075+gitstart-sourcegraph@users.noreply.github.com>
+Date:   Wed Jun 14 22:30:26 2023 +0545
+
+    [SGM-6281] - Research request: Improve Core Web Vitals (#6291)
+    
+    * chore: improve core vitals
+    
+    * chore: update  3rd party packages
+    
+    * chore: update lock
+    
+    * chore: update dependent package
+    
+    * chore: update document
+    
+    * chore: update document
+    
+    * fix: resolve footer alignment
+    
+    * chore: support browser caching
+    
+    * chore: fix cta alignment
+
+commit bc699bde88b1568ec7efd24509127d34466e18d8
+Author: GitStart-SourceGraph <89894075+gitstart-sourcegraph@users.noreply.github.com>
+Date:   Fri May 26 21:56:23 2023 +0545
+
+    [SGM-6271] : V2 /cody updates (#6274)
+    
+    * chore: implement cody page update
+    
+    * chore: update page bg
+    
+    * chore: Format files
+    
+    * chore: Format files
+    
+    * chore: resolve suggested improvements
+    
+    * chore: remove modal trigger
+
+commit 69b0a99225f510ad2ccb8ee408017de05ed0aa08
+Author: GitStart-SourceGraph <89894075+gitstart-sourcegraph@users.noreply.github.com>
+Date:   Wed May 24 03:45:52 2023 +0545
+
+    fix: Fix modal visibility on small screens (#6272)
+
+commit 089c706e2446e9b46194a38380810361b1dd75a1
+Author: GitStart-SourceGraph <89894075+gitstart-sourcegraph@users.noreply.github.com>
+Date:   Sat May 20 00:39:43 2023 +0700
+
+    [SGM-51897]: Improve frictionless sign-up flow by skipping steps (#6262)
+    
+    * implement new signup flow with oauth buttons on homepage and modals
+
+commit 0aaa05c9597c2d0cc30c373a8e4317580f69df9c
+Author: GitStart-SourceGraph <89894075+gitstart-sourcegraph@users.noreply.github.com>
+Date:   Sat May 6 06:40:00 2023 +0800
+
+    [SGM-6237] : Updates to Home and Cody Page (#6239)
+    
+    * chore: update homepage and cody page
+    
+    * chore: updates radio and checkbox bg colors
+    
+    * chore: updates checkbox
+    
+    * chore: updates checkbox
+    
+    * Update personal use copy
+    
+    * chore: resolves suggested improvements
+    
+    * Change border color
+    
+    * Update src/styles/globals.css
+    
+    * Add ID to a div for direct linking
+    
+    ---------
+    
+    Co-authored-by: Alex Isken <alex.isken@sourcegraph.com>
+
+commit bf5da11b5f82005ac8c80cecbed9a29381512d2b
+Author: GitStart-SourceGraph <89894075+gitstart-sourcegraph@users.noreply.github.com>
+Date:   Fri Apr 28 23:02:53 2023 +0800
+
+    chore: Add banner (#6223)
+
+commit 5948c43a2b98055005c77aaee9b72f4431604af2
+Author: Quinn Slack <quinn@slack.org>
+Date:   Sat Apr 8 23:08:36 2023 -0700
+
+    rm starship banner and disabled experiments (#6184)
+    
+    * rm disabled experiments
+    
+    * rm starship banner ~2.5 weeks after the event
+
+commit 223aed0ddb16a46c03023ab77eff881be72d0d17
+Author: GitStart-SourceGraph <89894075+gitstart-sourcegraph@users.noreply.github.com>
+Date:   Thu Mar 23 23:17:33 2023 +0800
+
+    SGM-6057 - Homepage updates (#6091)
+    
+    * chore: update home page
+    
+    * chore: remove redirect from get-started page
+    
+    * chore: resolves suggested improvements
+    
+    * Move DownloadLink into separate component file
+    
+    * Use DownloadLink for app downloads
+    
+    * Update index.tsx
+    
+    * Update get-started.tsx
+    
+    * Update get-started.tsx
+    
+    * Update index.tsx
+    
+    * Update linux deb and linux zip download urls
+    
+    * chore: mac and old version download links
+    
+    * Change remaining Link to DownloadLink
+    
+    * chore: update old version download link
+    
+    * chore: preserver change
+    
+    ---------
+    
+    Co-authored-by: Marek <marek@sourcegraph.com>
+    Co-authored-by: Alex Isken <alex.isken@sourcegraph.com>
+
+commit fac694a2ecaed0eb2f63e230f64c3cc34eb0ab15
+Author: GitStart-SourceGraph <89894075+gitstart-sourcegraph@users.noreply.github.com>
+Date:   Mon Mar 20 22:06:13 2023 +0545
+
+    [SGM-6078] : Add banner (#6080)
+    
+    * chore: Adds starship banner on homepage
+    
+    * chore: update items alignment
+    
+    * chore: support banner on all pages
+    
+    * chore: removes banner on starship page
+    
+    * chore: adds bottom border gradient on banner
+    
+    * chore: adds bottom border gradient on banner
+    
+    * Update Banner.tsx
+    
+    ---------
+    
+    Co-authored-by: Alex Isken <alex.isken@sourcegraph.com>
+
+commit a0ecc7a49d7286d5447c4e28644f20f1b9b64d48
+Author: Quinn Slack <quinn@slack.org>
+Date:   Tue Mar 7 06:29:09 2023 -0800
+
+    fix CTA color on light pages (#6050)
+    
+    Now it is a link with good contrast instead of a white-on-light-background outline button.
+
+commit 0390aea5500fc830ec0f2d3bf567ad7c19be21da
+Author: Quinn Slack <quinn@slack.org>
+Date:   Sun Feb 19 16:58:08 2023 -1000
+
+    Simplify homepage and introduce some experiments (#6010)
+    
+    * Code intelligence headline
+    
+    * use correct title
+    
+    * simplify
+    
+    * support customizing text
+    
+    * simplify index
+    
+    * nicer subtle text color on homepage
+    
+    * wording
+
+commit c4be49c23d5010ba3d6098899627b6b989237f83
+Author: Quinn Slack <quinn@slack.org>
+Date:   Sat Feb 18 20:39:28 2023 -1000
+
+    tweaks to homepage (#6007)
+    
+    * add key
+    
+    * remove confusing-looking public code search button
+
+commit 11b814d18af46c66d3468e69801c0c418f086729
+Author: Quinn Slack <quinn@slack.org>
+Date:   Sat Feb 18 16:46:11 2023 -1000
+
+    remove bootstrap, fully move to tailwind (#6006)
+
+commit a3b61f9eadfa90918aaa43111dab62db4b84c249
+Author: Quinn Slack <quinn@slack.org>
+Date:   Fri Feb 10 16:25:36 2023 +0100
+
+    New homepage design ("brand-aid") (#5992)
+    
+    * remove isBlog (unused)
+    
+    * rename to Background.tsx
+    
+    * new homepage design
+    
+    * fix colors
+    
+    * tabindex
+
+commit 3a7bd38744ceebf2943059d04b0160f40193c996
+Author: Quinn Slack <quinn@slack.org>
+Date:   Sun Feb 5 15:04:59 2023 +0100
+
+    use better filenames not index.tsx (#5988)

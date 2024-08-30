@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 
-import { Layout, ContentSection, ThreeUpText, InfiniteCarousel } from '../components'
+import { Layout, ContentSection, ThreeUpText, InfiniteCarousel, YouTube } from '../components'
 import { buttonStyle, buttonLocation } from '../data/tracking'
 
 const CareersPage: FunctionComponent = () => {
@@ -86,11 +86,11 @@ const CareersPage: FunctionComponent = () => {
                     data-button-type="cta"
                 >
                     Explore our open roles
-                    <ChevronRightIcon className="ml-2 inline" />
+                    <ChevronRightIcon className="ml-2 inline"/>
                 </a>
             </ContentSection>
 
-            <InfiniteCarousel duration={200} images={carouselImages} />
+            <InfiniteCarousel duration={200} images={carouselImages}/>
 
             <ContentSection background="white" parentClassName="!pt-[104px] !pb-16">
                 <div className="flex flex-wrap">
@@ -124,27 +124,27 @@ const CareersPage: FunctionComponent = () => {
                 <ThreeUpText
                     items={[
                         {
-                            icon: <img className="mx-auto mb-2" src="/careers/Remote.svg" alt="Map pin icon" />,
+                            icon: <img className="mx-auto mb-2" src="/careers/Remote.svg" alt="Map pin icon"/>,
                             subtitle: 'Work fully remote',
                             description: 'Anywhere and at anytime',
                         },
                         {
-                            icon: <img className="mx-auto mb-2" src="/careers/PTO.svg" alt="Sun icon" />,
+                            icon: <img className="mx-auto mb-2" src="/careers/PTO.svg" alt="Sun icon"/>,
                             subtitle: 'Unlimited PTO',
                             description: '...with a 30-day minimum',
                         },
                         {
-                            icon: <img className="mx-auto mb-2" src="/careers/Travel.svg" alt="Airplane icon" />,
+                            icon: <img className="mx-auto mb-2" src="/careers/Travel.svg" alt="Airplane icon"/>,
                             subtitle: 'Generous travel budgets',
                             description: 'Meet your team across the globe',
                         },
                         {
-                            icon: <img className="mx-auto mb-2" src="/careers/Salary.svg" alt="Dollar bill icon" />,
+                            icon: <img className="mx-auto mb-2" src="/careers/Salary.svg" alt="Dollar bill icon"/>,
                             subtitle: 'Competitive pay + equity',
                             description: 'So you can live your best life',
                         },
                         {
-                            icon: <img className="mx-auto mb-2" src="/careers/Medical.svg" alt="Medical cross icon" />,
+                            icon: <img className="mx-auto mb-2" src="/careers/Medical.svg" alt="Medical cross icon"/>,
                             subtitle: 'Medical, dental, and vision',
                             description: 'Got you covered 100% (US only)',
                         },
@@ -161,20 +161,20 @@ const CareersPage: FunctionComponent = () => {
                         },
                         {
                             icon: (
-                                <img className="mx-auto mb-2" src="/careers/OfficeBudget.svg" alt="Headphones icon" />
+                                <img className="mx-auto mb-2" src="/careers/OfficeBudget.svg" alt="Headphones icon"/>
                             ),
                             subtitle: 'Office budget',
                             description: 'Create a space where you thrive',
                         },
                         {
                             icon: (
-                                <img className="mx-auto mb-2" src="/careers/Wellness.svg" alt="Person jogging icon" />
+                                <img className="mx-auto mb-2" src="/careers/Wellness.svg" alt="Person jogging icon"/>
                             ),
                             subtitle: 'Wellness budget',
                             description: 'Take care of yourself on our dime',
                         },
                         {
-                            icon: <img className="mx-auto mb-2" src="/careers/FamilyPlanning.svg" alt="Baby icon" />,
+                            icon: <img className="mx-auto mb-2" src="/careers/FamilyPlanning.svg" alt="Baby icon"/>,
                             subtitle: 'Family Planning benefits',
                             description: '$25K, because family comes first',
                         },
@@ -184,12 +184,72 @@ const CareersPage: FunctionComponent = () => {
 
             <div className="bg-violet-700">
                 <ContentSection parentClassName="!py-8" className="md:px-6">
+                    <h1 className="text-white">Globally remote, async first</h1>
+                </ContentSection>
+            </div>
+
+            <ContentSection parentClassName="!pt-16">
+
+                <div className="px-6">
+                    <h2 className="text-center">Better, together, wherever you are!</h2>
+
+                    <div className="mx-auto flex flex-col items-center m-12">
+                        <div className="flex flex-col md:flex-row justify-between">
+                            <p className="w-full md:w-[48%] mb-4 md:mb-0">
+                                Sourcegraph has been an all remote company since it's earliest days, and we now have
+                                teammates all over
+                                the world. Through this experience we’ve developed guidelines to encourage collaboration
+                                and thoughtful
+                                decision making that lead to a balanced workday and mindset.
+                            </p>
+                            <p className="w-full md:w-[48%] mb-4 md:mb-0">
+                                We complement our remote culture with meaningful personal interactions. Our twice yearly
+                                all company trips, frequent in-person hackathons, and team meetups are designed to spark
+                                creativity, foster innovation, and strengthen bonds.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="text-center">
+                        <YouTube title="Accelerate developer onboarding with Sourcegraph" id="FmQRuxo61eU"
+                                 className="mx-auto max-w-6xl"/>
+                        <p className="text-sm text-gray-600 italic mt-2">Sourcegraph Merge 2024 was held in Rome,
+                            Italy</p>
+                    </div>
+
+                    <div className="flex flex-row justify-center items-center gap-4 mt-12">
+                        <img
+                            className="w-full max-h-[382px] rounded-[5px]"
+                            src="/careers/sales-offsite.png"
+                            alt="Graphic portraying that 85% of employees at Sourcegraph say it is a great place to work compared to 57% of employees at a typical U.S.-based company."
+                        />
+
+                        <img
+                            className="w-full max-w-[544px] rounded-[5px]"
+                            src="/careers/krakow-hackathon.png"
+                            alt="Graphic portraying that 85% of employees at Sourcegraph say it is a great place to work compared to 57% of employees at a typical U.S.-based company."
+                        />
+
+                        <img
+                            className="w-full max-h-[382px] rounded-[5px]"
+                            src="/careers/design-team-offsite.png"
+                            alt="Graphic portraying that 85% of employees at Sourcegraph say it is a great place to work compared to 57% of employees at a typical U.S.-based company."
+                        />
+
+                    </div>
+                    <p className="text-center">A sales team retreat, a hackathon in Krakow, and the design team’s
+                        offsite at Figma Config in San Francisco.</p>
+                </div>
+            </ContentSection>
+
+            <div className="bg-violet-700">
+                <ContentSection parentClassName="!py-8" className="md:px-6">
                     <h1 className="text-white">We value...</h1>
                 </ContentSection>
             </div>
 
             <ContentSection parentClassName="!pt-16">
-                <div className="mx-auto flex flex-col items-center">
+            <div className="mx-auto flex flex-col items-center">
                     {valueItems.map((item, index) => (
                         <div key={item.value}>
                             <div
@@ -246,7 +306,7 @@ const CareersPage: FunctionComponent = () => {
                         data-button-type="cta"
                     >
                         Explore our open roles
-                        <ChevronRightIcon className="ml-2 inline" />
+                        <ChevronRightIcon className="ml-2 inline"/>
                     </a>
                 </div>
             </div>
@@ -255,3 +315,6 @@ const CareersPage: FunctionComponent = () => {
 }
 
 export default CareersPage
+
+
+
