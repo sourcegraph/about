@@ -190,9 +190,9 @@ const CODE_INSIGHTS_CONTENT = [
 ]
 
 const SECTIONS = [
-    { id: 'chat', name: 'Chat' },
-    { id: 'prompts', name: 'Prompts' },
-    { id: 'autocomplete', name: 'Autocomplete' },
+    { id: 'chat', name: 'Chat', icon: '/cody/chat-brand-icon.svg', alt: 'Cody Chat' },
+    { id: 'prompts', name: 'Prompts', icon: '/cody/commands-brand-icon.svg', alt: 'Cody Prompts' },
+    { id: 'autocomplete', name: 'Autocomplete', icon: '/cody/completions-brand-icon.svg', alt: 'Cody Autocomplete' },
     { id: 'code-search', name: 'Code Search' },
     { id: 'code-navigation', name: 'Code Navigation' },
     { id: 'batch-changes', name: 'Batch Changes' },
@@ -254,13 +254,14 @@ const CodyPage: FunctionComponent = () => {
                                     duration={500}
                                     offset={-70}
                                     className={classNames(
-                                        'cursor-pointer px-3 py-2',
+                                        'cursor-pointer px-3 py-2 flex flex-col items-center',
                                         {
                                             'font-bold text-purple-600': activeSection === section.id,
                                             'text-gray-600 hover:text-purple-600': activeSection !== section.id
                                         }
                                     )}
                                 >
+                                    <img src={section.icon} alt={section.alt} className="h-[24px] w-[24px] mb-2" />
                                     {section.name}
                                 </ScrollLink>
                             </div>
