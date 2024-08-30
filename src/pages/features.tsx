@@ -199,7 +199,6 @@ const CodyPage: FunctionComponent = () => {
     const isLight = true; 
     const [activeSection, setActiveSection] = useState('')
 
-
     useEffect(() => {
         const handleScroll = (): void => {
             const scrollPosition = window.scrollY + 100 // Offset for the sticky menu
