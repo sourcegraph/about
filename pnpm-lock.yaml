@@ -89,8 +89,8 @@ dependencies:
     specifier: ^4.0.3
     version: 4.1.0(react-dom@18.2.0)(react@18.2.0)
   posthog-js:
-    specifier: ^1.136.2
-    version: 1.136.2
+    specifier: ^1.160.0
+    version: 1.160.0
   prism-themes:
     specifier: ^1.9.0
     version: 1.9.0
@@ -11404,11 +11404,12 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
-  /posthog-js@1.136.2:
-    resolution: {integrity: sha512-9oTUB/JDayzV+hB4f7u+ZNUbfnkGHLxyZw+FOE59pCgmbWHcJxhpGbu2Xlyv027/iHIjQbn1mtm2wJmBI2BuqA==}
+  /posthog-js@1.160.0:
+    resolution: {integrity: sha512-K/RRgmPYIpP69nnveCJfkclb8VU+R+jsgqlrKaLGsM5CtQM9g01WOzAiT3u36WLswi58JiFMXgJtECKQuoqTgQ==}
     dependencies:
       fflate: 0.4.8
       preact: 10.20.0
+      web-vitals: 4.2.3
     dev: false
 
   /preact@10.20.0:
@@ -13773,6 +13774,10 @@ packages:
 
   /web-namespaces@2.0.1:
     resolution: {integrity: sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ==}
+    dev: false
+
+  /web-vitals@4.2.3:
+    resolution: {integrity: sha512-/CFAm1mNxSmOj6i0Co+iGFJ58OS4NRGVP+AWS/l509uIK5a1bSoIVaHz/ZumpHTfHSZBpgrJ+wjfpAOrTHok5Q==}
     dev: false
 
   /webidl-conversions@3.0.1:
