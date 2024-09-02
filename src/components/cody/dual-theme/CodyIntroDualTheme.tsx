@@ -60,7 +60,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                     onClick={() => handleOpenModal('top')}
                 >
                     <div className="flex items-center justify-center">
-                        <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Get Cody
+                        <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Download Cody
                         for your IDE
                     </div>
                 </button>

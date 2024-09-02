@@ -305,7 +305,7 @@ const Home: FunctionComponent = () => {
                                         title="free cody"
                                         onClick={() => handleOpenModal('bottom')}
                                     >
-                                        Get Cody for free
+                                        Download Cody for free
                                     </button>
                                 </div>
                             </div>
