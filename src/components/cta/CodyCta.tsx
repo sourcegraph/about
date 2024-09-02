@@ -63,8 +63,8 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
         >
             {isLight ? (
                 <>
-                    <span className="hidden md:block">Get Cody for free</span>
-                    <span className="block md:hidden">Get Cody free</span>
+                    <span className="hidden md:block">Download Cody for free</span>
+                    <span className="block md:hidden">Download Cody free</span>
                 </>
             ) : (
                 <span>{isVariantStyle ? 'Start free' : 'Get Cody for free'}</span>
