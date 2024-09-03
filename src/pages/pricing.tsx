@@ -580,7 +580,7 @@ const TabComponent = ({ tab, selectedOption, chooseProduct, className }: Props):
             className="btn !px-0 pt-[10px] pb-0 transition-all duration-700 ease-in-out"
             onClick={() => chooseProduct(tab.key)}
         >
-            <div className="grid grid-cols-1 justify-items-start gap-1 text-left">
+            <div className="grid grid-cols-1 justify-items-start gap-1 text-left px-2">
                 <p className="mb-0 text-[18px] font-semibold leading-[27px] -tracking-[0.25px] text-gray-700">
                     {tab.title}
                 </p>
