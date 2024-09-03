@@ -226,7 +226,7 @@ const HeaderContent: FunctionComponent<
                     'btn lg:btn-sm order-1 w-full min-w-fit py-3 px-5 lg:order-3 ',
                     dark ? 'btn-primary-dark' : 'btn-primary'
                 )}
-                title="Download Sourcegraph"
+                title="Get Cody for free"
                 onClick={() => handleOpenModal('get_cody_nav_click', true)}
             >
                 Get Cody for free
