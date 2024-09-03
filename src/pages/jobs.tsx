@@ -313,8 +313,4 @@ const CareersPage: FunctionComponent = () => {
         </Layout>
     )
 }
-
 export default CareersPage
-
-
-
