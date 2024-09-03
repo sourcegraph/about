@@ -1,22 +1,17 @@
-import {FunctionComponent, useState, useEffect } from 'react'
+import { FunctionComponent, useState, useEffect } from 'react'
 
 import classNames from 'classnames'
 import { Link as ScrollLink } from 'react-scroll'
 
-import {
-    Layout,
-    HubSpotForm,
-    Modal,
-    CodyCta,
-    ContentSection,
-} from '../components'
+import { Layout, HubSpotForm, Modal, CodyCta, ContentSection } from '../components'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 
 const CHAT_CONTENT = [
     {
         header: 'Ask about your code',
-        description: 'Use "@" + a repository, file, line range, or symbol to ask questions about your codebase. Generate code using context @-mention files or symbols to use that code as context. Cody will use it to generate contextually relevant code.',
+        description:
+            'Use "@" + a repository, file, line range, or symbol to ask questions about your codebase. Generate code using context @-mention files or symbols to use that code as context. Cody will use it to generate contextually relevant code.',
         imageSrc: '/cody/features/chat-ask-cody.png',
         imageAlt: 'Cody Chat Ask Cody',
     },
@@ -26,7 +21,8 @@ const CHAT_CONTENT = [
     },
     {
         header: 'Inline edits',
-        description: 'Highlight code, hit the edit hotkey, and describe a change. Cody will generate a diff for the change in seconds.',
+        description:
+            'Highlight code, hit the edit hotkey, and describe a change. Cody will generate a diff for the change in seconds.',
         imageSrc: '/cody/features/chat-inline-edits.png',
         imageAlt: 'Cody Chat Inline Edits',
     },
@@ -38,7 +34,8 @@ const CHAT_CONTENT = [
     },
     {
         header: 'Reference your development artifacts',
-        description: 'Connect Cody to OpenCtx to @-mention non-code artifacts like Google Docs, Notion pages, Jira tickets, and Linear issues.',
+        description:
+            'Connect Cody to OpenCtx to @-mention non-code artifacts like Google Docs, Notion pages, Jira tickets, and Linear issues.',
         imageSrc: '/cody/features/chat-reference-artifacts.png',
         imageAlt: 'Cody Chat Reference Artifacts',
     },
@@ -58,30 +55,36 @@ const CHAT_CONTENT = [
     },
     {
         header: 'Context Filters',
-        description: 'Configure which repositories and file paths Cody can or can\'t send to the LLM and use as context.',
+        description:
+            "Configure which repositories and file paths Cody can or can't send to the LLM and use as context.",
     },
     {
         header: 'Guardrails for catching licensed code',
-        description: 'Cody verifies suggestions against a large corpus of public code and flags licensed code suggestions to the user.',
+        description:
+            'Cody verifies suggestions against a large corpus of public code and flags licensed code suggestions to the user.',
     },
 ]
 
 const PROMPTS_CONTENT = [
     {
         header: 'Generate unit tests',
-        description: 'Generate unit tests for your code selection, adding to your existing test file or creating a new one, with consideration for your existing tests and test framework.',
+        description:
+            'Generate unit tests for your code selection, adding to your existing test file or creating a new one, with consideration for your existing tests and test framework.',
     },
     {
         header: 'Explain code',
-        description: 'Explain code in simple language, walking through its inputs, outputs, purpose, and logic of the code.',
+        description:
+            'Explain code in simple language, walking through its inputs, outputs, purpose, and logic of the code.',
     },
     {
         header: 'Document code',
-        description: 'Generate documentation for any selection of code (from symbols to entire files), even for legacy code you didn\'t write yourself.',
+        description:
+            "Generate documentation for any selection of code (from symbols to entire files), even for legacy code you didn't write yourself.",
     },
     {
         header: 'Find code smells',
-        description: 'Analyze a code selection and provide suggestions for improving readability, maintainability, performance, or security.',
+        description:
+            'Analyze a code selection and provide suggestions for improving readability, maintainability, performance, or security.',
     },
     {
         header: 'Prompt Library',
@@ -92,7 +95,8 @@ const PROMPTS_CONTENT = [
 const AUTOCOMPLETE_CONTENT = [
     {
         header: 'Smart predictions',
-        description: 'Cody predicts your next move as you type, suggesting code (like function arguments) without needing to look them up.',
+        description:
+            'Cody predicts your next move as you type, suggesting code (like function arguments) without needing to look them up.',
     },
     {
         header: 'Natural language code generation',
@@ -119,7 +123,8 @@ const CODE_SEARCH_CONTENT = [
     },
     {
         header: 'Diff and commit search',
-        description: 'Use diff and commit searches to find specific changes to your codebase. Filter by author and date.',
+        description:
+            'Use diff and commit searches to find specific changes to your codebase. Filter by author and date.',
     },
     {
         header: 'Symbol search',
@@ -146,11 +151,13 @@ const CODE_SEARCH_CONTENT = [
 const CODE_NAVIGATION_CONTENT = [
     {
         header: 'Search-based code navigation',
-        description: 'Navigate code with Find \'references\' and \'Go to definition,\' supporting 40+ languages out-of-the-box.',
+        description:
+            "Navigate code with Find 'references' and 'Go to definition,' supporting 40+ languages out-of-the-box.",
     },
     {
         header: 'Precise, compiler-accurate code navigation',
-        description: 'Configure SCIP data of your code graph for 100% accurate code navigation supporting 11 common languages.',
+        description:
+            'Configure SCIP data of your code graph for 100% accurate code navigation supporting 11 common languages.',
     },
     {
         header: 'Cross-repository code navigation',
@@ -180,7 +187,8 @@ const CODE_INSIGHTS_CONTENT = [
     },
     {
         header: 'Visualize your codebase with dashboards',
-        description: 'Customize dashboards with multiple insights. Anything that\'s happening in your codebase can be visualized.',
+        description:
+            "Customize dashboards with multiple insights. Anything that's happening in your codebase can be visualized.",
     },
 ]
 
@@ -196,7 +204,7 @@ const SECTIONS = [
 
 const CodyPage: FunctionComponent = () => {
     const [isContactModalOpen, setIsContactModalOpen] = useState(false)
-    const isLight = true; 
+    const isLight = true
     const [activeSection, setActiveSection] = useState('')
 
     useEffect(() => {
@@ -205,7 +213,11 @@ const CodyPage: FunctionComponent = () => {
 
             for (const section of SECTIONS) {
                 const element = document.querySelector(`#${section.id}`) as HTMLElement
-                if (element && element.offsetTop <= scrollPosition && element.offsetTop + element.offsetHeight > scrollPosition) {
+                if (
+                    element &&
+                    element.offsetTop <= scrollPosition &&
+                    element.offsetTop + element.offsetHeight > scrollPosition
+                ) {
                     setActiveSection(section.id)
                     break
                 }
@@ -222,15 +234,14 @@ const CodyPage: FunctionComponent = () => {
         <Layout
             meta={{
                 title: 'Sourcegraph | Features',
-                description:
-                    'Learn how Code Search and Cody help you write, fix, and maintain code faster.',
+                description: 'Learn how Code Search and Cody help you write, fix, and maintain code faster.',
                 image: 'https://sourcegraph.com/code-search/code-search-og.png',
             }}
-            hero={<FeaturesHero/>}
-            className="bg-gray-50 relative"
+            hero={<FeaturesHero />}
+            className="relative bg-gray-50"
         >
-            <nav className="sticky top-[110px] z-10 bg-gray-50">
-                <div className="mx-auto max-w-screen-xl px-4 py-4">
+            <nav className="sticky top-[110px] z-10 bg-gray-50 py-2">
+                <div className="mx-auto max-w-screen-xl rounded-full bg-gray-100 px-3 py-1.5">
                     <ul className="flex justify-between overflow-x-auto">
                         {SECTIONS.map(section => (
                             <div key={section.id} className="">
@@ -240,14 +251,14 @@ const CodyPage: FunctionComponent = () => {
                                     duration={500}
                                     offset={-70}
                                     className={classNames(
-                                        'cursor-pointer px-3 py-2 flex flex-col items-center',
+                                        'flex cursor-pointer items-center items-center gap-x-2 rounded-full px-4 py-1 text-sm text-gray-400',
                                         {
-                                            'font-bold text-purple-600': activeSection === section.id,
-                                            'text-gray-600 hover:text-purple-600': activeSection !== section.id
+                                            'bg-gray-200/50 text-gray-600': activeSection === section.id,
+                                            'hover:text-purple-600 text-gray-600': activeSection !== section.id,
                                         }
                                     )}
                                 >
-                                    <img src={section.icon} alt={section.alt} className="h-[24px] w-[24px] mb-2" />
+                                    <img src={section.icon} alt={section.alt} className="h-4 w-4" />
                                     {section.name}
                                 </ScrollLink>
                             </div>
@@ -257,27 +268,43 @@ const CodyPage: FunctionComponent = () => {
             </nav>
 
             {/* Chat section */}
-            <div id="chat" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4 flex flex-col gap-6 px-6 md:gap-4 md:px-10">
+            <div
+                id="chat"
+                className="mx-auto flex max-w-screen-xl flex-col gap-6 px-6 px-6 pt-24 md:gap-4 md:px-0 md:px-10 md:pb-4"
+            >
                 <img className="h-[48px] w-[48px]" src="/cody/chat-brand-icon.svg" alt="Cody Chat" />
-                <h2 className={classNames('m-0 mb-4 text-left', {
-                            'text-white': !isLight,
-                            'text-[#0F111A]': isLight,
-                        })}>Chat</h2>
-                <p className={classNames('m-0 text-left md:text-2xl max-w-[800px]', {
-                            'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
-                            'text-lg text-gray-200': !isLight,
-                        })}>Chat directly with the AI to ask questions about your code, generate code, and edit code. Cody has context of your open file and repository by default, and you can use "@" to add context on specific files, symbols, remote repositories, or other non-code artifacts.</p>
+                <h2
+                    className={classNames('m-0 mb-4 text-left', {
+                        'text-white': !isLight,
+                        'text-[#0F111A]': isLight,
+                    })}
+                >
+                    Chat
+                </h2>
+                <p
+                    className={classNames('m-0 max-w-[800px] text-left md:text-2xl', {
+                        'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
+                        'text-lg text-gray-200': !isLight,
+                    })}
+                >
+                    Chat directly with the AI to ask questions about your code, generate code, and edit code. Cody has
+                    context of your open file and repository by default, and you can use "@" to add context on specific
+                    files, symbols, remote repositories, or other non-code artifacts.
+                </p>
             </div>
 
-            <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
-            parentClassName={classNames('md:px-20')}>
-                {CHAT_CONTENT.map(content => (
-                <div key={content.header}
-                className={classNames(
-                    'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 pt-16 bg-white',
-                )}
+            <ContentSection
+                className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
+                parentClassName={classNames('md:px-20')}
             >
-                    <div className="flex flex-col gap-6 md:gap-4">
+                {CHAT_CONTENT.map(content => (
+                    <div
+                        key={content.header}
+                        className={classNames(
+                            'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 bg-white pt-16'
+                        )}
+                    >
+                        <div className="flex flex-col gap-6 md:gap-4">
                             <div className="px-6 md:px-10">
                                 <h2 className="mb-2">{content.header}</h2>
                                 <div className="mb-9 text-xl leading-[26px] tracking-tight text-gray-500">
@@ -285,215 +312,286 @@ const CodyPage: FunctionComponent = () => {
                                 </div>
                             </div>
                             <img className="md:-px-10" src={content.imageSrc} alt={content.imageAlt} />
+                        </div>
                     </div>
-                </div>
                 ))}
             </ContentSection>
 
             {/* Prompts section */}
-            <div id="prompts" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4 flex flex-col gap-6 px-6 md:gap-4 md:px-10">
+            <div
+                id="prompts"
+                className="mx-auto flex max-w-screen-xl flex-col gap-6 px-6 px-6 pt-24 md:gap-4 md:px-0 md:px-10 md:pb-4"
+            >
                 <img className="h-[48px] w-[48px]" src="/cody/commands-brand-icon.svg" alt="Cody Chat" />
-                <h2 className={classNames('m-0 mb-4 text-left', {
-                            'text-white': !isLight,
-                            'text-[#0F111A]': isLight,
-                        })}>Prompts</h2>
-                <p className={classNames('m-0 text-left md:text-2xl max-w-[800px]', {
-                            'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
-                            'text-lg text-gray-200': !isLight,
-                        })}>Automate key tasks in your workflow with premade and customizable prompts. Any common query or task can be built into a prompt to save and share with your team.</p>
+                <h2
+                    className={classNames('m-0 mb-4 text-left', {
+                        'text-white': !isLight,
+                        'text-[#0F111A]': isLight,
+                    })}
+                >
+                    Prompts
+                </h2>
+                <p
+                    className={classNames('m-0 max-w-[800px] text-left md:text-2xl', {
+                        'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
+                        'text-lg text-gray-200': !isLight,
+                    })}
+                >
+                    Automate key tasks in your workflow with premade and customizable prompts. Any common query or task
+                    can be built into a prompt to save and share with your team.
+                </p>
             </div>
 
-            <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
-            parentClassName={classNames('md:px-20')}>
-                {PROMPTS_CONTENT.map(content => (
-                <div
-                key={content.header}
-                className={classNames(
-                    'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 py-16 bg-white',
-                )}
+            <ContentSection
+                className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
+                parentClassName={classNames('md:px-20')}
             >
-                    <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
+                {PROMPTS_CONTENT.map(content => (
+                    <div
+                        key={content.header}
+                        className={classNames(
+                            'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 bg-white py-16'
+                        )}
+                    >
+                        <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
                             <div>
                                 <h2 className="mb-2">{content.header}</h2>
                                 <div className="mb-9 text-xl leading-[26px] tracking-tight text-gray-500">
                                     <p>{content.description}</p>
                                 </div>
                             </div>
+                        </div>
                     </div>
-                </div>
                 ))}
             </ContentSection>
 
             {/* Autocomplete section */}
-            <div id="autocomplete" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4 flex flex-col gap-6 px-6 md:gap-4 md:px-10">
+            <div
+                id="autocomplete"
+                className="mx-auto flex max-w-screen-xl flex-col gap-6 px-6 px-6 pt-24 md:gap-4 md:px-0 md:px-10 md:pb-4"
+            >
                 <img className="h-[48px] w-[48px]" src="/cody/completions-brand-icon.svg" alt="Cody Autocomplete" />
-                <h2 className={classNames('m-0 mb-4 text-left', {
-                            'text-white': !isLight,
-                            'text-[#0F111A]': isLight,
-                        })}>Autocomplete</h2>
-                <p className={classNames('m-0 text-left md:text-2xl max-w-[800px]', {
-                            'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
-                            'text-lg text-gray-200': !isLight,
-                        })}>Cody predicts what you\'re trying to write before you type it. It makes single-line and multi-line suggestions as you type, using the context of the code around your cursor to make accurate suggestions.</p>
+                <h2
+                    className={classNames('m-0 mb-4 text-left', {
+                        'text-white': !isLight,
+                        'text-[#0F111A]': isLight,
+                    })}
+                >
+                    Autocomplete
+                </h2>
+                <p
+                    className={classNames('m-0 max-w-[800px] text-left md:text-2xl', {
+                        'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
+                        'text-lg text-gray-200': !isLight,
+                    })}
+                >
+                    Cody predicts what you\'re trying to write before you type it. It makes single-line and multi-line
+                    suggestions as you type, using the context of the code around your cursor to make accurate
+                    suggestions.
+                </p>
             </div>
 
-            <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
-            parentClassName={classNames('md:px-20')}>
-                {AUTOCOMPLETE_CONTENT.map(content => (
-                <div
-                key={content.header}
-                className={classNames(
-                    'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 py-16 bg-white',
-                )}
+            <ContentSection
+                className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
+                parentClassName={classNames('md:px-20')}
             >
-                    <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
+                {AUTOCOMPLETE_CONTENT.map(content => (
+                    <div
+                        key={content.header}
+                        className={classNames(
+                            'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 bg-white py-16'
+                        )}
+                    >
+                        <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
                             <div>
                                 <h2 className="mb-2">{content.header}</h2>
                                 <div className="mb-9 text-xl leading-[26px] tracking-tight text-gray-500">
                                     <p>{content.description}</p>
                                 </div>
                             </div>
+                        </div>
                     </div>
-                </div>
                 ))}
             </ContentSection>
 
             {/* Code Search section */}
             <div id="code-search" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
-            <img className="h-[48px] w-[48px]" src="/cody/code-search.svg" alt="Code Search" />
-                <h2 className={classNames('m-0 mb-4 text-left', {
-                            'text-white': !isLight,
-                            'text-[#0F111A]': isLight,
-                        })}>Code Search</h2>
-                <p className={classNames('m-0 text-left md:text-2xl max-w-[800px]', {
-                            'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
-                            'text-lg text-gray-200': !isLight,
-                        })}>Search all of your code in one place. Sourcegraph indexes all your code hosts to a single server that you can search and navigate from the web.</p>
+                <img className="h-[48px] w-[48px]" src="/cody/code-search.svg" alt="Code Search" />
+                <h2
+                    className={classNames('m-0 mb-4 text-left', {
+                        'text-white': !isLight,
+                        'text-[#0F111A]': isLight,
+                    })}
+                >
+                    Code Search
+                </h2>
+                <p
+                    className={classNames('m-0 max-w-[800px] text-left md:text-2xl', {
+                        'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
+                        'text-lg text-gray-200': !isLight,
+                    })}
+                >
+                    Search all of your code in one place. Sourcegraph indexes all your code hosts to a single server
+                    that you can search and navigate from the web.
+                </p>
             </div>
 
-            <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
-            parentClassName={classNames('md:px-20')}>
-                {CODE_SEARCH_CONTENT.map(content => (
-                <div
-                key={content.header}
-                className={classNames(
-                    'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 py-16 bg-white',
-                )}
+            <ContentSection
+                className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
+                parentClassName={classNames('md:px-20')}
             >
-                    <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
+                {CODE_SEARCH_CONTENT.map(content => (
+                    <div
+                        key={content.header}
+                        className={classNames(
+                            'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 bg-white py-16'
+                        )}
+                    >
+                        <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
                             <div>
                                 <h2>{content.header}</h2>
                                 <div className="mb-9 text-xl leading-[26px] tracking-tight text-gray-500">
                                     <p>{content.description}</p>
                                 </div>
                             </div>
+                        </div>
                     </div>
-                </div>
                 ))}
             </ContentSection>
 
             {/* Code Navigation section */}
             <div id="code-navigation" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
                 <img className="h-[48px] w-[48px]" src="/cody/code-navigation.svg" alt="Code Navigation" />
-                <h2 className={classNames('m-0 mb-4 text-left', {
-                            'text-white': !isLight,
-                            'text-[#0F111A]': isLight,
-                        })}>Code Navigation</h2>
-                <p className={classNames('m-0 text-left md:text-2xl max-w-[800px]', {
-                            'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
-                            'text-lg text-gray-200': !isLight,
-                        })}>Navigate through your full code graph on the web without pulling it to your local machine.</p>
+                <h2
+                    className={classNames('m-0 mb-4 text-left', {
+                        'text-white': !isLight,
+                        'text-[#0F111A]': isLight,
+                    })}
+                >
+                    Code Navigation
+                </h2>
+                <p
+                    className={classNames('m-0 max-w-[800px] text-left md:text-2xl', {
+                        'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
+                        'text-lg text-gray-200': !isLight,
+                    })}
+                >
+                    Navigate through your full code graph on the web without pulling it to your local machine.
+                </p>
             </div>
 
-            <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
-            parentClassName={classNames('md:px-20')}>
-                {CODE_NAVIGATION_CONTENT.map(content => (
-                <div
-                key={content.header}
-                className={classNames(
-                    'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 py-16 bg-white',
-                )}
+            <ContentSection
+                className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
+                parentClassName={classNames('md:px-20')}
             >
-                    <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
+                {CODE_NAVIGATION_CONTENT.map(content => (
+                    <div
+                        key={content.header}
+                        className={classNames(
+                            'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 bg-white py-16'
+                        )}
+                    >
+                        <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
                             <div>
                                 <h2>{content.header}</h2>
                                 <div className="mb-9 text-xl leading-[26px] tracking-tight text-gray-500">
                                     <p>{content.description}</p>
                                 </div>
                             </div>
+                        </div>
                     </div>
-                </div>
                 ))}
             </ContentSection>
 
             {/* Batch Changes section */}
             <div id="batch-changes" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
                 <img className="h-[48px] w-[48px]" src="/cody/batch-changes.svg" alt="Batch Changes" />
-                <h2 className={classNames('m-0 mb-4 text-left', {
-                            'text-white': !isLight,
-                            'text-[#0F111A]': isLight,
-                        })}>Batch Changes</h2>
-                <p className={classNames('m-0 text-left md:text-2xl max-w-[800px]', {
-                            'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
-                            'text-lg text-gray-200': !isLight,
-                        })}>Automate and ship large-scale code changes to keep your code up to date, fix security issues, and pay down tech debt.</p>
+                <h2
+                    className={classNames('m-0 mb-4 text-left', {
+                        'text-white': !isLight,
+                        'text-[#0F111A]': isLight,
+                    })}
+                >
+                    Batch Changes
+                </h2>
+                <p
+                    className={classNames('m-0 max-w-[800px] text-left md:text-2xl', {
+                        'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
+                        'text-lg text-gray-200': !isLight,
+                    })}
+                >
+                    Automate and ship large-scale code changes to keep your code up to date, fix security issues, and
+                    pay down tech debt.
+                </p>
             </div>
 
-            <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
-            parentClassName={classNames('md:px-20')}>
-                {BATCH_CHANGES_CONTENT.map(content => (
-                <div
-                key={content.header}
-                className={classNames(
-                    'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 py-16 bg-white',
-                )}
+            <ContentSection
+                className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
+                parentClassName={classNames('md:px-20')}
             >
-                    <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
+                {BATCH_CHANGES_CONTENT.map(content => (
+                    <div
+                        key={content.header}
+                        className={classNames(
+                            'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 bg-white py-16'
+                        )}
+                    >
+                        <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
                             <div>
                                 <h2>{content.header}</h2>
                                 <div className="mb-9 text-xl leading-[26px] tracking-tight text-gray-500">
                                     <p>{content.description}</p>
                                 </div>
                             </div>
+                        </div>
                     </div>
-                </div>
                 ))}
             </ContentSection>
 
             {/* Code Insights section */}
             <div id="code-insights" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
                 <img className="h-[48px] w-[48px]" src="/cody/code-insights.svg" alt="Code Insights" />
-                <h2 className={classNames('m-0 mb-4 text-left', {
-                            'text-white': !isLight,
-                            'text-[#0F111A]': isLight,
-                        })}>Code Insights</h2>
-                <p className={classNames('m-0 text-left md:text-2xl max-w-[800px]', {
-                            'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
-                            'text-lg text-gray-200': !isLight,
-                        })}>Transform your code into a queryable database to create customizable, visual dashboards in seconds.</p>
+                <h2
+                    className={classNames('m-0 mb-4 text-left', {
+                        'text-white': !isLight,
+                        'text-[#0F111A]': isLight,
+                    })}
+                >
+                    Code Insights
+                </h2>
+                <p
+                    className={classNames('m-0 max-w-[800px] text-left md:text-2xl', {
+                        'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
+                        'text-lg text-gray-200': !isLight,
+                    })}
+                >
+                    Transform your code into a queryable database to create customizable, visual dashboards in seconds.
+                </p>
             </div>
 
-            <ContentSection className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
-            parentClassName={classNames('md:px-20')}>
-                {CODE_INSIGHTS_CONTENT.map(content => (
-                <div
-                key={content.header}
-                className={classNames(
-                    'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 py-16 bg-white',
-                )}
+            <ContentSection
+                className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
+                parentClassName={classNames('md:px-20')}
             >
-                    <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
+                {CODE_INSIGHTS_CONTENT.map(content => (
+                    <div
+                        key={content.header}
+                        className={classNames(
+                            'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 bg-white py-16'
+                        )}
+                    >
+                        <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
                             <div>
                                 <h2>{content.header}</h2>
                                 <div className="mb-9 text-xl leading-[26px] tracking-tight text-gray-500">
                                     <p>{content.description}</p>
                                 </div>
                             </div>
+                        </div>
                     </div>
-                </div>
                 ))}
             </ContentSection>
-            
+
             <CodyCta source="Cody page" isCodyPage={true} isLight={true} />
             <Modal
                 open={isContactModalOpen}
@@ -528,9 +626,7 @@ const FeaturesHero: FunctionComponent = () => (
                 <div className="container mx-auto mb-6 grid gap-8 text-center">
                     <h1 className="color-[#0F111A] pt-16 md:pt-0">Features</h1>
                 </div>
-                <h3 className="mb-10 text-gray-500 md:mb-8 md:px-6">
-                    Search, navigate, and automate code faster.
-                </h3>
+                <h3 className="mb-10 text-gray-500 md:mb-8 md:px-6">Search, navigate, and automate code faster.</h3>
             </div>
         </div>
     </ContentSection>
