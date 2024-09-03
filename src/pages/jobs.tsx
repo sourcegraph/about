@@ -315,6 +315,3 @@ const CareersPage: FunctionComponent = () => {
 }
 
 export default CareersPage
-
-
-
