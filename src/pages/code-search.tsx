@@ -214,7 +214,7 @@ export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({ telemetryRec
                             </li>
                         </ul>
                         <Link
-                            href="/blog/announcing-code-insights"
+                            href="/code-insights"
                             className="btn-link btn-link-icon font-semibold leading-[22.4px]"
                         >
                             Learn more about Code Insights <ChevronRightIcon className="link-icon" />
