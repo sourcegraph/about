@@ -577,10 +577,10 @@ const TabComponent = ({ tab, selectedOption, chooseProduct, className }: Props):
         <button
             key={tab.key}
             type="button"
-            className="btn !px-0 pt-[10px] pb-0 transition-all duration-700 ease-in-out"
+            className="btn !px-0 pt-[10px] pb-0 duration-700 ease-in-out focus:!outline-none focus:!ring-0"
             onClick={() => chooseProduct(tab.key)}
         >
-            <div className="grid grid-cols-1 justify-items-start gap-1 text-left px-2">
+            <div className="grid grid-cols-1 justify-items-start gap-1 px-2 text-left">
                 <p className="mb-0 text-[18px] font-semibold leading-[27px] -tracking-[0.25px] text-gray-700">
                     {tab.title}
                 </p>
@@ -588,12 +588,19 @@ const TabComponent = ({ tab, selectedOption, chooseProduct, className }: Props):
                     {tab.subtitle}
                 </p>
             </div>
-            {tab.key === selectedOption && <div className="plan-top-border !h-[2px]" />}
+            {tab.key === selectedOption ? <div className="plan-top-border !h-[2px]" /> : <div className="h-[2px]" />}
         </button>
     </div>
 )
 
-const PriceItem = ({ amount, description, hasLimit, hasSingleUserLimit, className, amountClassName }: PriceItemProps): JSX.Element => (
+const PriceItem = ({
+    amount,
+    description,
+    hasLimit,
+    hasSingleUserLimit,
+    className,
+    amountClassName,
+}: PriceItemProps): JSX.Element => (
     <div className={classNames('flex flex-col p-2 pb-0', className)}>
         <p className="mb-0 flex items-center font-semibold leading-[43px] text-gray-500">
             <span className={classNames('text-[36px]', amountClassName)}>${amount}</span>
