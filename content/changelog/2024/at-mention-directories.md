@@ -8,7 +8,7 @@ publishDate: 2024-09-04T21:15-02:00
 description: "Alongside files and repos Cody now lets developers @-mention directories as context, making it easier for users working with larger, more complex repos like monorepos to ensure they're including the best context with their prompts."
 tags: [Enterprise, VS Code, JetBrains]
 
-version: []
+version: [v5.7.0]
 
 slug: 'at-mention-directories'
 
