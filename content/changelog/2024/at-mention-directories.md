@@ -1,5 +1,5 @@
 ---
-title: "@-mentioning Directories as Context"
+title: "@-mentioning Directories as context"
 authors:
   - name: Kelvin Yap
     url: https://x.com/kelvinyap
