@@ -170,7 +170,7 @@ export const CodyPartners: FunctionComponent<{ isLight?: boolean; className?: st
                     isLight ? 'from-gray-50' : 'from-gray-800'
                 } z-10 to-transparent`}
             />
-            <InfiniteCarousel images={isLight ? lightThemeIcons : darkThemeIcons} duration={200} />
+            <InfiniteCarousel images={isLight ? lightThemeIcons : darkThemeIcons} duration={300} />
         </div>
     </div>
 )
