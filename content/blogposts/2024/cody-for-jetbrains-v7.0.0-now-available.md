@@ -3,6 +3,8 @@ title: "Cody for JetBrains v7.0.0 now available"
 authors:
   - name: Kelvin Yap
     url: https://x.com/KelvinYap
+    - name: Justin Dorfman
+    url: https://x.com/jdorfman
 publishDate: 2024-09-04T10:00-01:00
 description: "v7.0.0 brings our biggest update for JetBrains yet with a new side panel, prompts and Prompt Library,  Smart Apply, and various context improvements."
 tags: [blog]
