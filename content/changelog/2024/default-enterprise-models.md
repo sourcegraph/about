@@ -24,6 +24,7 @@ Cody is built on model interoperability and we aim to provide access to the best
 
 ### DeepSeek-V2 for autocomplete
 
+<br />
 In our various evaluations around quality and latency, DeepSeek-V2 has shown to provide the best mix of both. Recently announced for our Free and Pro users, DeepSeek-V2 is now the recommended default model for Enterprise customers too. Users should upgrade to the latest Cody version of their respective IDE to see the benefits.
 <br />
 
@@ -37,6 +38,7 @@ As part of a larger effort to [improve the quality of autocomplete](https://sour
 
 ### Claude 3.5 Sonnet for chat and prompts
 
+<br />
 Claude 3.5 Sonnet has shown to be one of the best performing models in the market, and is the [default model for our Free and Pro users](https://sourcegraph.com/blog/making-cody-free-10x-better). We’ve seen improvements in overall user satisfaction with Claude 3.5 Sonnet across these users, so in this month’s Sourcegraph release we’re making it the default model for chat and prompts.
 
 Cloud customers will see these default models appear when their instance is updated. We recommend Self-hosted Customers make this change when they update. BYOK customers should check with their provider if they support Claude 3.5 Sonnet for their specific deployment environment. And as always, please contact your account rep if you have any questions.
