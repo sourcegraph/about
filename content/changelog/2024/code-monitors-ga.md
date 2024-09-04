@@ -12,7 +12,7 @@ description: "Webhooks for Code Monitors are now generally available, alerting u
 
 tags: [Enterprise, Code Search, Code Monitors]
 
-version: []
+version: [v5.7.0]
 
 slug: 'code-monitors-ga'
 
