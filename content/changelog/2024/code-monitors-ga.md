@@ -4,8 +4,7 @@ title: "Code Monitor Webhooks generally available"
 authors:
   - name: Kelvin Yap
     url: https://x.com/kelvinyap
-
-avatar: https://storage.googleapis.com/sourcegraph-assets/blog/kelvin_avatar.png
+    avatar: https://storage.googleapis.com/sourcegraph-assets/blog/kelvin_avatar.png
 
 publishDate: 2024-09-04T21:04-02:00
 

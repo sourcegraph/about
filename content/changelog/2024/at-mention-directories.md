@@ -1,16 +1,11 @@
 ---
 title: "@-mentioning Directories as Context"
-
 authors:
   - name: Kelvin Yap
     url: https://x.com/kelvinyap
-
-avatar: https://storage.googleapis.com/sourcegraph-assets/blog/kelvin_avatar.png
-
+    avatar: https://storage.googleapis.com/sourcegraph-assets/blog/kelvin_avatar.png
 publishDate: 2024-09-04T21:15-02:00
-
 description: "Alongside files and repos Cody now lets developers @-mention directories as context, making it easier for users working with larger, more complex repos like monorepos to ensure they're including the best context with their prompts."
-
 tags: [Enterprise, VS Code, JetBrains, Cody Web, Cody]
 
 version: [v5.7.0, v7.0.0, v1.36]
