@@ -23,6 +23,10 @@
   to = "https://sourcegraph.com/docs/CHANGELOG"
 
 [[redirects]]
+  from = "/app"
+  to = "/cody"
+
+[[redirects]]
   from = "/own"
   to = "https://sourcegraph.com/docs/own"
   status = 301
