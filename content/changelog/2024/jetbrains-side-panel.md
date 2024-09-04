@@ -1,5 +1,5 @@
 ---
-title: "New JetBrains Side Panel"
+title: "New JetBrains side panel"
 
 authors:
   - name: Kelvin Yap
@@ -44,4 +44,4 @@ In our quest for consistency across how you use Cody, JetBrains users now get th
 />
 <br />
 
-[Learn more](https://sourcegraph.com/blog/cody-for-jetbrains-v7.0-now-available) about one of the biggest updates to Cody for JetBrains yet.
+[Learn more](https://sourcegraph.com/blog/cody-for-jetbrains-v7.0.0-now-available) about one of the biggest updates to Cody for JetBrains yet.
