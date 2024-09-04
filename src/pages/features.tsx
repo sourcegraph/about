@@ -44,6 +44,8 @@ const CHAT_CONTENT = [
     {
         header: 'Use information directly from the web',
         description: '@-mention web URLs to pull live information, like docs, that can be used to answer questions.',
+        imageSrc: '/cody/features/web-urls.png',
+        imageAlt: 'Add web URLs to your chat',
     },
     {
         header: 'Choose your favorite model',
@@ -77,6 +79,8 @@ const PROMPTS_CONTENT = [
         header: 'Explain code',
         description:
             'Explain code in simple language, walking through its inputs, outputs, purpose, and logic of the code.',
+        imageSrc: '/cody/features/explain-code.png',
+        imageAlt: 'Cody Explain Code',
     },
     {
         header: 'Document code',
