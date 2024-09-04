@@ -151,9 +151,18 @@ The new prompts and prompt library appear underneath the chat, making it easier 
 <br />
 It’s common when working with AI that you sometimes don’t get the answer you need on the first try or need to continue a conversation to get the answer or code you want. With that in mind, we’ve improved the Cody chat experience in JetBrains to:
 
-- **Edit and resubmit a previous chat** We’ve improved the iterative chat experience for JetBrains users, who can now edit and resubmit a previous chat if they want a different response to their original prompt.
-- **Easier code insertion options** You can now Copy, Insert at Cursor, or Add to new file when you want to insert code that Cody provides in a chat response.
+- **Edit and resubmit a previous chat:** We’ve improved the iterative chat experience for JetBrains users, who can now edit and resubmit a previous chat if they want a different response to their original prompt.
 - **Improved UI:** We’ve made it easier to distinguish between your prompts, the context from Sourcegraph, and the response from Cody.
+- **Easier code insertion options:** You can now Copy, Insert at Cursor, or Add to new file when you want to insert code that Cody provides in a chat response.
+
+<Video
+  source={{
+    mp4: 'blog/cody-jetbrains-7-0-0-release/jetbrains-easier-code-insertion-options'
+  }}
+  controls={true}
+  loop={true}
+  title="Easier code insertion options in JetBrains"
+/>
 <br />
 
 ### JetBrains compatibility notes
