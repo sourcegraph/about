@@ -24,7 +24,7 @@ The core experience of using Cody is alongside your code in your IDE of choice, 
 
 We’re happy to announce that Cody Web is now generally available and includes numerous improvements to make the web experience better and more consistent.
 
-**Updated chat interface**
+## Updated chat interface
 
 The chat interface should feel familiar, with a consistent look and feel to Cody in your IDE. Under the hood Cody Web shares much of the same code with the IDE plugins, and you should see less lag between features being added to the web interface moving forward.
 
@@ -34,7 +34,7 @@ The chat interface should feel familiar, with a consistent look and feel to Cody
 />
 <br />
 
-**@-mentions**
+## @-mentions
 
 Cody Web now supports @-mentions just like in VS Code and JetBrains. Previously Cody Web users were reliant on Cody automatically finding the right context with no way to help guide it, but now users have control over the context Cody is provided when generating a response.
 
@@ -44,7 +44,7 @@ Cody Web now supports @-mentions just like in VS Code and JetBrains. Previously 
 />
 <br />
 
-**Prompts and Prompt Library**
+## Prompts and Prompt Library
 
 Cody Web gains the new prompts and Prompt Library added to VS Code and now JetBrains as well. Users can edit and use prompts they’ve created themselves, as well as use prompts shared with their organization.
 
