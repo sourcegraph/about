@@ -18,6 +18,8 @@ const CHAT_CONTENT = [
     {
         header: 'Smart Apply',
         description: 'When Cody suggests code in chat, hit "Apply" to make those changes directly in your files.',
+        imageSrc: '/cody/features/smart-apply.png',
+        imageAlt: 'Cody Smart Apply',
     },
     {
         header: 'Inline edits',
@@ -240,8 +242,8 @@ const CodyPage: FunctionComponent = () => {
             hero={<FeaturesHero />}
             className="relative bg-gray-50"
         >
-            <nav className="sticky top-[110px] z-10 bg-gray-50 py-2">
-                <div className="mx-auto max-w-screen-xl rounded-full bg-gray-100 px-3 py-1.5">
+            <nav className="sticky top-[110px] z-10 hidden bg-gray-50 py-1 xl:block">
+                <div className="mx-auto max-w-screen-xl rounded-full bg-gray-200/50 px-1 py-1">
                     <ul className="ml-0 flex justify-between gap-x-2 overflow-x-auto">
                         {SECTIONS.map(section => (
                             <div key={section.id} className="w-full">
@@ -253,7 +255,7 @@ const CodyPage: FunctionComponent = () => {
                                     className={classNames(
                                         'flex cursor-pointer items-center justify-center gap-x-2 rounded-full px-4 py-1 text-sm text-gray-400 hover:bg-gray-200/50',
                                         {
-                                            'bg-gray-200/50 text-gray-600': activeSection === section.id,
+                                            'bg-gray-300/30 text-gray-600': activeSection === section.id,
                                             'hover:text-purple-600 text-gray-600': activeSection !== section.id,
                                         }
                                     )}
@@ -446,7 +448,7 @@ const CodyPage: FunctionComponent = () => {
 const FeaturesHero: FunctionComponent = () => (
     <ContentSection className="flex items-center justify-center" parentClassName="!py-0">
         <div className="mx-auto flex flex-col items-center justify-center text-center">
-            <div className="mx-auto flex flex-col items-center pb-16 pt-8 md:w-[828px] md:pb-[25px] md:pt-16">
+            <div className="mx-auto flex flex-col items-center pt-8 md:w-[828px] md:pb-[25px] md:pt-16">
                 <div className="container mx-auto mb-2 grid gap-8 text-center">
                     <h1 className="color-[#0F111A] pt-16 md:pt-0">Features</h1>
                 </div>
@@ -465,11 +467,11 @@ interface HeaderComponentProps {
 }
 
 const HeaderComponent: FC<HeaderComponentProps> = ({ icon, alt, title, isLight, description }) => (
-    <div className="mb-5 flex flex-col items-center justify-center">
-        <div className="mb-5 flex items-center justify-center gap-x-4">
+    <div className="mb-5 flex flex-col md:items-center md:justify-center">
+        <div className="mb-5 flex items-center justify-start gap-x-4 md:justify-center">
             <img className="h-10 w-10" src={icon} alt={alt} />
             <h2
-                className={classNames('m-0 text-left text-5xl', {
+                className={classNames('m-0 text-left text-3xl md:text-5xl', {
                     'text-white': !isLight,
                     'text-[#0F111A]': isLight,
                 })}
@@ -478,9 +480,9 @@ const HeaderComponent: FC<HeaderComponentProps> = ({ icon, alt, title, isLight, 
             </h2>
         </div>
         <p
-            className={classNames('m-0 max-w-[800px] text-left text-center md:text-xl', {
-                'text-[24px] !leading-[30px] !tracking-[-0.25px] text-[#343A4D]': isLight,
-                'text-lg text-gray-200': !isLight,
+            className={classNames('m-0 max-w-[800px] text-left !text-base md:text-center md:!text-xl', {
+                'text-[#343A4D]': isLight,
+                'text-gray-200': !isLight,
             })}
         >
             {description}
@@ -500,17 +502,18 @@ interface ContentCardProps {
 const ContentCard: React.FC<ContentCardProps> = ({ content }) => (
     <div
         className={classNames(
-            'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 bg-white pt-10',
+            'relative flex flex-col overflow-hidden rounded-2xl border-1 border-gray-200 bg-white pt-8',
             { 'pb-5': !content.imageSrc }
         )}
     >
-        <div className="flex flex-col gap-6 md:gap-4">
-            <div className="px-6 md:px-10">
-                <h2 className="mb-4 text-2xl">{content.header}</h2>
-                <div className="text-lg tracking-tight text-gray-400">
+        <div className="flex h-full flex-col justify-between gap-6 md:gap-4">
+            <div className="px-6 md:px-8">
+                <h2 className="mb-2 text-xl md:text-2xl">{content.header}</h2>
+                <div className="text-sm tracking-tight text-gray-400 md:text-lg">
                     <p>{content.description}</p>
                 </div>
             </div>
+
             {content.imageSrc && (
                 <img className="md:-px-10" src={content.imageSrc} alt={content.imageAlt || content.header} />
             )}
