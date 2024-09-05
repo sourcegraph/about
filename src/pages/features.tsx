@@ -114,43 +114,64 @@ const CODE_SEARCH_CONTENT = [
     {
         header: 'Multi-repo, multi-code host search',
         description: 'See your code from a single search bar, across every repository and every code host.',
+        imageSrc: '/assets/features/multi-repo.png',
+        imageAlt: 'Multi repo search',
     },
     {
         header: 'Shareable web links',
         description: 'Share exact files and lines of code with teammates using shareable web URLs.',
+        imageSrc: '/assets/features/shareable-web-links.png',
+        imageAlt: 'Web links',
     },
     {
         header: 'Branch search',
         description: 'Search across all repositories, branches, forks, and even archived repositories.',
+        imageSrc: '/assets/features/branch-search.png',
+        imageAlt: 'Branch search',
     },
     {
         header: 'Keyword and regex search',
         description: 'Search using keywords or using regular expressions.',
+        imageSrc: '/assets/features/regex-search.png',
+        imageAlt: 'Regular expression search',
     },
     {
         header: 'Diff and commit search',
         description:
             'Use diff and commit searches to find specific changes to your codebase. Filter by author and date.',
+            imageSrc: '/assets/features/diff-search.png',
+            imageAlt: 'Diff search',
     },
     {
         header: 'Symbol search',
         description: 'Search for symbols within your code, with support for 75+ languages.',
+        imageSrc: '/assets/features/symbol-search.png',
+        imageAlt: 'Symbol search',
     },
     {
         header: 'Search Jobs',
         description: 'Run exhaustive searches in the background for sensitive tasks like finding tokens & secrets.',
+        imageSrc: '/assets/features/search-jobs.png',
+        imageAlt: 'Search jobs',
+        
     },
     {
         header: 'Code monitoring',
         description: 'Proactively monitor changes to your codebase. Get notified via Slack, email, or webhook.',
+        imageSrc: '/assets/features/code-monitors.png',
+        imageAlt: 'Code monitors',
     },
     {
         header: 'Search contexts',
         description: 'Create and share repository and file groupings for quick, scoped searches.',
+        imageSrc: '/assets/features/search-contexts.png',
+        imageAlt: 'Search contexts',
     },
     {
         header: 'Saved searches',
         description: 'Save searches that you come back to over time.',
+        imageSrc: '/assets/features/saved-searches.png',
+        imageAlt: 'Saved search',
     },
 ]
 
@@ -173,7 +194,7 @@ const CODE_NAVIGATION_CONTENT = [
         header: 'Cross-repository code navigation',
         description: 'Navigate dependencies of your code graph, even when they cross repositories.',
         imageSrc: '/assets/features/',
-        imageAlt: ''
+        imageAlt: 'Cross-repository code navigation'
     },
     {
         header: 'Code ownership data',
