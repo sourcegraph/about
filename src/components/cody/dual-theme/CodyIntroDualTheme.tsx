@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 import Link from 'next/link'
-import { CaptureResult } from 'posthog-js'
+import { CaptureResult, posthog } from 'posthog-js'
 
 import { ContentSection } from '../../ContentSection'
 
@@ -10,6 +10,7 @@ interface CodyIntroDualThemeProps {
     isLight?: boolean
     handleOpenModal: (pagePosition: string) => void | CaptureResult
     title?: string
+    description?: string
     wrapperClassName?: string
 }
 
@@ -18,6 +19,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
     handleOpenModal,
     wrapperClassName,
     title,
+    description,
 }) => (
     <ContentSection
         parentClassName="!py-0 !px-0"
@@ -48,8 +50,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                     }
                 )}
             >
-                Cody is an AI coding assistant that uses advanced search and codebase context to help you understand,
-                write, and fix code faster.
+                {description ?? "Cody is an AI coding assistant that uses advanced search and codebase context to help you understand, write, and fix code faster."}
             </p>
 
             <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
