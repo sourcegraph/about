@@ -193,7 +193,7 @@ const CODE_NAVIGATION_CONTENT = [
     {
         header: 'Cross-repository code navigation',
         description: 'Navigate dependencies of your code graph, even when they cross repositories.',
-        imageSrc: '/assets/features/',
+        imageSrc: '/assets/features/cross-repo.png',
         imageAlt: 'Cross-repository code navigation'
     },
     {
