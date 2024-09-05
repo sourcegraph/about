@@ -12,60 +12,66 @@ const CHAT_CONTENT = [
         header: 'Ask about your code',
         description:
             'Use "@" + a repository, file, line range, or symbol to ask questions about your codebase. Generate code using context @-mention files or symbols to use that code as context. Cody will use it to generate contextually relevant code.',
-        imageSrc: '/cody/features/chat-ask-cody.png',
+        imageSrc: '/assets/features/chat-ask-cody.png',
         imageAlt: 'Cody Chat Ask Cody',
     },
     {
         header: 'Smart Apply',
         description: 'When Cody suggests code in chat, hit "Apply" to make those changes directly in your files.',
-        imageSrc: '/cody/features/smart-apply.png',
+        imageSrc: '/assets/features/smart-apply.png',
         imageAlt: 'Cody Smart Apply',
     },
     {
         header: 'Inline edits',
         description:
             'Highlight code, hit the edit hotkey, and describe a change. Cody will generate a diff for the change in seconds.',
-        imageSrc: '/cody/features/chat-inline-edits.png',
+        imageSrc: '/assets/features/chat-inline-edits.png',
         imageAlt: 'Cody Chat Inline Edits',
     },
     {
         header: 'Ask Cody to Fix',
         description: 'For errors in your code, hit Ask Cody to Fix and Cody will propose a diff based on the error.',
-        imageSrc: '/cody/features/chat-ask-cody-to-fix.png',
+        imageSrc: '/assets/features/chat-ask-cody-to-fix.png',
         imageAlt: 'Cody Chat Ask Cody to Fix',
     },
     {
         header: 'Reference your development artifacts',
         description:
             'Connect Cody to OpenCtx to @-mention non-code artifacts like Google Docs, Notion pages, Jira tickets, and Linear issues.',
-        imageSrc: '/cody/features/chat-reference-artifacts.png',
+        imageSrc: '/assets/features/chat-reference-artifacts.png',
         imageAlt: 'Cody Chat Reference Artifacts',
     },
     {
         header: 'Use information directly from the web',
         description: '@-mention web URLs to pull live information, like docs, that can be used to answer questions.',
-        imageSrc: '/cody/features/web-urls.png',
+        imageSrc: '/assets/features/web-urls.png',
         imageAlt: 'Add web URLs to your chat',
     },
     {
         header: 'Choose your favorite model',
         description: 'Choose from model options optimized for speed versus accuracy.',
-        imageSrc: '/cody/features/chat-model-selection.png',
+        imageSrc: '/assets/features/chat-model-selection.png',
         imageAlt: 'Cody Chat Model Selection',
     },
     {
         header: 'Run offline (Experimental)',
         description: 'Connect to Ollama to run entirely offline. You can even code using AI on an airplane.',
+        imageSrc: '/assets/features/cody-ollama.png',
+        imageAlt: 'Run offline',
     },
     {
         header: 'Context Filters',
         description:
             "Configure which repositories and file paths Cody can or can't send to the LLM and use as context.",
+        imageSrc: '/assets/features/cody-context-filters.png',
+        imageAlt: 'Context filters',
     },
     {
         header: 'Guardrails for catching licensed code',
         description:
             'Cody verifies suggestions against a large corpus of public code and flags licensed code suggestions to the user.',
+        imageSrc: '/assets/features/cody-guardrails.png',
+        imageAlt: 'Guardrails',
     },
 ]
 
@@ -74,27 +80,35 @@ const PROMPTS_CONTENT = [
         header: 'Generate unit tests',
         description:
             'Generate unit tests for your code selection, adding to your existing test file or creating a new one, with consideration for your existing tests and test framework.',
+        imageSrc: '/assets/features/cody-generate-unit-tests.png',
+        imageAlt: 'Generate unit tests',
     },
     {
         header: 'Explain code',
         description:
             'Explain code in simple language, walking through its inputs, outputs, purpose, and logic of the code.',
-        imageSrc: '/cody/features/explain-code.png',
-        imageAlt: 'Cody Explain Code',
+        imageSrc: '/assets/features/cody-explain-code.png',
+        imageAlt: 'Explain code',
     },
     {
         header: 'Document code',
         description:
             "Generate documentation for any selection of code (from symbols to entire files), even for legacy code you didn't write yourself.",
+        imageSrc: '/assets/features/cody-document-code.png',
+        imageAlt: 'Document code',
     },
     {
         header: 'Find code smells',
         description:
             'Analyze a code selection and provide suggestions for improving readability, maintainability, performance, or security.',
+        imageSrc: '/assets/features/cody-find-code-smells.png',
+        imageAlt: 'Find code smells',
     },
     {
         header: 'Prompt Library',
         description: 'Create and save prompts for reuse, then share them with your teammates via the Prompt Library.',
+        imageSrc: '/assets/features/cody-prompt-library.png',
+        imageAlt: 'Prompt library',
     },
 ]
 
@@ -103,10 +117,14 @@ const AUTOCOMPLETE_CONTENT = [
         header: 'Smart predictions',
         description:
             'Cody predicts your next move as you type, suggesting code (like function arguments) without needing to look them up.',
+        imageSrc: '/assets/features/cody-autocomplete.png',
+        imageAlt: 'Smart predictions',
     },
     {
         header: 'Natural language code generation',
         description: 'Type out a comment in natural language. Cody will suggest how to implement what you commented.',
+        imageSrc: '/assets/features/cody-autocomplete-from-comments.png',
+        imageAlt: 'Natural language code generation',
     },
 ]
 
@@ -278,7 +296,7 @@ const CodyPage: FunctionComponent = () => {
             meta={{
                 title: 'Sourcegraph | Features',
                 description: 'Learn how Code Search and Cody help you write, fix, and maintain code faster.',
-                image: 'https://sourcegraph.com/code-search/code-search-og.png',
+                image: '/assets/features/og-image-features.png',
             }}
             hero={<FeaturesHero />}
             className="relative bg-gray-50"
