@@ -23,8 +23,6 @@ const Home: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.md
     const isDesktop = windowWidth > breakpoints.lg
-    const [title, setTitle ] = useState('');
-    const [description, setDescription] = useState('')
 
     const { openModal } = useAuthModal()
 
@@ -43,30 +41,6 @@ const Home: FunctionComponent = () => {
         openModal('home')
     }
 
-    useEffect(() => {
-        posthog.featureFlags.override({'cody-page-messaging-test': 'control'})
-
-        if (posthog.getFeatureFlag('cody-page-messaging-test') === 'test-most-informed') {
-
-            setTitle('The most informed Code AI');
-            setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster.')
-
-        } else if (posthog.getFeatureFlag('cody-page-messaging-test') === 'test-models-context'){
-
-            setTitle('Coding assistant with the latest AI and the most context');
-            setDescription('Cody uses context of your codebase, docs, tickets, and the web for faster development and accurate code-gen.')
-
-        } else if (posthog.getFeatureFlag('cody-page-messaging-test') === 'test-multiple-contexts'){
-
-            setTitle('The AI assistant with context of your codebase, docs, tickets, and the web');
-            setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster.')
-
-        } else {
-
-            setTitle('Code more, type less');
-            setDescription('Cody is an AI coding assistant that uses advanced search and codebase context to help you understand, write, and fix code faster.')
-        }
-    }, [])
     return (
         <Layout
             meta={{
