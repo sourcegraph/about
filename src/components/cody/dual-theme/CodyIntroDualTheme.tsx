@@ -43,7 +43,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                     }
                 )}
             >
-                {title ?? <span>Code more, type less</span>}
+                {title ?? <span>Code more, type&nbsp;less</span>}
             </h1>
 
             <p

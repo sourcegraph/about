@@ -87,7 +87,7 @@ const CodyPage: FunctionComponent = () => {
             setTitleSize('text-[40px] text-4xl sm:text-6xl')
             setDescriptionSize('md:text-xl')
         } else {
-            setTitle('Code more, type less');
+            setTitle('Code more, type&nbsp;less');
             setDescription('Cody is an AI coding assistant that uses advanced search and codebase context to help you understand, write, and fix code faster')
             setTitleSize('text-[52px] text-4xl sm:text-8xl')
             setDescriptionSize('md:text-xl')
