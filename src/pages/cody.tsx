@@ -68,28 +68,31 @@ const CodyPage: FunctionComponent = () => {
     }
 
     useEffect(() => {
-        if (posthog.getFeatureFlag('cody-page-messaging-test') === 'test-most-informed') {
-            setTitle('The most informed Code AI');
-            setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster')
-            setTitleSize('text-[52px] text-4xl sm:text-8xl')
-            setDescriptionSize('md:text-xl')
-        } else if (posthog.getFeatureFlag('cody-page-messaging-test') === 'test-models-context'){
-            setTitle('Coding assistant with the latest AI and the most context');
-            setDescription('Cody uses context of your codebase, docs, tickets, and the web for faster development and accurate code-gen')
-            setTitleSize('text-[40px] text-4xl sm:text-6xl')
-            setDescriptionSize('md:text-xl')
-        } else if (posthog.getFeatureFlag('cody-page-messaging-test') === 'test-multiple-contexts'){
-            setTitle('The AI assistant with context of your codebase, docs, tickets, and the web');
-            setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster')
-            setTitleSize('text-[40px] text-4xl sm:text-6xl')
-            setDescriptionSize('md:text-xl')
-        } else {
-            setTitle('Code more, type less');
-            setDescription('Cody is an AI coding assistant that uses advanced search and codebase context to help you understand, write, and fix code faster')
-            setTitleSize('text-[52px] text-4xl sm:text-8xl')
-            setDescriptionSize('md:text-xl')
-        }
-    }, [])
+        posthog.onFeatureFlags(() => {
+            const featureFlag = posthog.getFeatureFlag('cody-page-messaging-test');
+            if (featureFlag === 'test-most-informed') {
+                setTitle('The most informed Code AI');
+                setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster')
+                setTitleSize('text-[40px] text-4xl sm:text-8xl')
+                setDescriptionSize('md:text-xl')
+            } else if (featureFlag === 'test-models-context') {
+                setTitle('Coding assistant with the latest AI and the most context');
+                setDescription('Cody uses context of your codebase, docs, tickets, and the web for faster development and accurate code-gen')
+                setTitleSize('text-[40px] text-4xl sm:text-6xl')
+                setDescriptionSize('md:text-xl')
+            } else if (featureFlag === 'test-multiple-contexts') {
+                setTitle('The AI assistant with context of your codebase, docs, tickets, and the web');
+                setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster')
+                setTitleSize('text-[34px] text-4xl sm:text-8xl')
+                setDescriptionSize('md:text-xl')
+            } else {
+                setTitle('Code more, type less');
+                setDescription('Cody is an AI coding assistant that uses advanced search and codebase context to help you understand, write, and fix code faster')
+                setTitleSize('text-[52px] text-4xl sm:text-8xl')
+                setDescriptionSize('md:text-xl')
+            }
+        });
+    }, []);
 
     return (
         <Layout

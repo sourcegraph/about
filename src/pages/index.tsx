@@ -350,18 +350,20 @@ const Home: FunctionComponent = () => {
 const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
     const [abTest, setAbTest ] = useState('');
 
-    useEffect(() => {
-        if (posthog.getFeatureFlag('platform-messaging-test') === 'test-hard-eng-probs') {
-            setAbTest('test-hard-eng-probs');
-        } else if (posthog.getFeatureFlag('platform-messaging-test') === 'test-operate-at-scale'){
-            setAbTest('test-operate-at-scale');
-        } else if (posthog.getFeatureFlag('platform-messaging-test') === 'test-elevate-engineering'){
-            setAbTest('test-elevate-engineering');
-        } else {
-            setAbTest('control');
-        }
-    }, []);
-
+        useEffect(() => {
+            posthog.onFeatureFlags(() => {
+                const featureFlag = posthog.getFeatureFlag('platform-messaging-test');
+                if (featureFlag === 'test-hard-eng-probs') {
+                    setAbTest('test-hard-eng-probs');
+                } else if (featureFlag === 'test-operate-at-scale'){
+                    setAbTest('test-operate-at-scale');
+                } else if (featureFlag === 'test-elevate-engineering'){
+                    setAbTest('test-elevate-engineering');
+                } else {
+                    setAbTest('control');
+                }
+            });
+        }, []);
     return (
     <ContentSection
         className="relative mt-[64px] flex items-center justify-center rounded-2xl md:mt-[32px]"
