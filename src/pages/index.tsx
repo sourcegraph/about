@@ -439,7 +439,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
 
                 {abTest === 'test-elevate-engineering' && (
                     <>
-                        <h1 className="w-full text-center text-4xl sm:text-8xl">
+                        <h1 className="w-full text-center text-4xl sm:text-6xl">
                             <span className="font-extrabold italic text-[#A112FF]">Contextual AI</span> and <span className="font-extrabold italic text-[#A112FF]">scalable search</span> to elevate your engineering team
                         </h1>
 

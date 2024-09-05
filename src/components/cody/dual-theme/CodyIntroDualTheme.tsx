@@ -12,6 +12,8 @@ interface CodyIntroDualThemeProps {
     title?: string
     description?: string
     wrapperClassName?: string
+    titleSize?: string
+    descriptionSize?: string
 }
 
 export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
@@ -20,6 +22,8 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
     wrapperClassName,
     title,
     description,
+    titleSize,
+    descriptionSize,
 }) => (
     <ContentSection
         parentClassName="!py-0 !px-0"
@@ -31,19 +35,21 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
         <div className="mx-auto w-full px-6 md:w-[849px] lg:w-[895px]">
             <h1
                 className={classNames(
-                    'mx-auto w-full text-[52px] text-4xl font-semibold sm:text-8xl md:!leading-[62px]',
+                    'mx-auto w-full font-semibold sm:text-8xl md:!leading-[62px]',
+                    titleSize || 'text-[52px] text-4xl sm:text-8xl',
                     {
                         'text-white': !isLight,
                         'text-[#0F111A]': isLight,
                     }
                 )}
             >
-                {title ?? <span>Code more, type&nbsp;less</span>}
+                {title ?? <span>Code more, type less</span>}
             </h1>
 
             <p
                 className={classNames(
-                    'mx-auto mt-6 mb-8 max-w-[700px] font-normal leading-tight text-gray-400 md:text-xl',
+                    'mx-auto mt-6 mb-8 max-w-[700px] font-normal leading-tight text-gray-400',
+                    descriptionSize || 'md:text-xl',
                     {
                         'text-gray-100': !isLight,
                         'text-gray-400': isLight,

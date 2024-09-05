@@ -57,7 +57,9 @@ const CodyPage: FunctionComponent = () => {
     const { pathname } = router
     const { openModal } = useAuthModal()
     const [title, setTitle ] = useState('');
+    const [titleSize, setTitleSize ] = useState('');
     const [description, setDescription] = useState('')
+    const [descriptionSize, setDescriptionSize] = useState('')
 
     const source = pathname.slice(1) || 'about-home'
     const handleOpenModal = (pagePosition: string): void => {
@@ -70,24 +72,25 @@ const CodyPage: FunctionComponent = () => {
         posthog.featureFlags.override({'cody-page-messaging-test': 'control'})
 
         if (posthog.getFeatureFlag('cody-page-messaging-test') === 'test-most-informed') {
-
             setTitle('The most informed Code AI');
-            setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster.')
-
+            setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster')
+            setTitleSize('text-[52px] text-4xl sm:text-8xl')
+            setDescriptionSize('md:text-xl')
         } else if (posthog.getFeatureFlag('cody-page-messaging-test') === 'test-models-context'){
-
             setTitle('Coding assistant with the latest AI and the most context');
-            setDescription('Cody uses context of your codebase, docs, tickets, and the web for faster development and accurate code-gen.')
-
+            setDescription('Cody uses context of your codebase, docs, tickets, and the web for faster development and accurate code-gen')
+            setTitleSize('text-[40px] text-4xl sm:text-6xl')
+            setDescriptionSize('md:text-xl')
         } else if (posthog.getFeatureFlag('cody-page-messaging-test') === 'test-multiple-contexts'){
-
             setTitle('The AI assistant with context of your codebase, docs, tickets, and the web');
-            setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster.')
-
+            setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster')
+            setTitleSize('text-[40px] text-4xl sm:text-6xl')
+            setDescriptionSize('md:text-xl')
         } else {
-
             setTitle('Code more, type less');
-            setDescription('Cody is an AI coding assistant that uses advanced search and codebase context to help you understand, write, and fix code faster.')
+            setDescription('Cody is an AI coding assistant that uses advanced search and codebase context to help you understand, write, and fix code faster')
+            setTitleSize('text-[52px] text-4xl sm:text-8xl')
+            setDescriptionSize('md:text-xl')
         }
     }, [])
 
@@ -109,6 +112,8 @@ const CodyPage: FunctionComponent = () => {
                         isLight={true}
                         title={title}
                         description={description}
+                        titleSize={titleSize}
+                        descriptionSize={descriptionSize}
                         handleOpenModal={handleOpenModal}
                         wrapperClassName="relative z-[20] md:z-0"
                     />
