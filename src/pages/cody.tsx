@@ -68,9 +68,6 @@ const CodyPage: FunctionComponent = () => {
     }
 
     useEffect(() => {
-        // for testing only - remove before merge
-        posthog.featureFlags.override({'cody-page-messaging-test': 'control'})
-
         if (posthog.getFeatureFlag('cody-page-messaging-test') === 'test-most-informed') {
             setTitle('The most informed Code AI');
             setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster')
