@@ -159,19 +159,27 @@ const CODE_NAVIGATION_CONTENT = [
         header: 'Search-based code navigation',
         description:
             "Navigate code with Find 'references' and 'Go to definition,' supporting 40+ languages out-of-the-box.",
+        imageSrc: '/assets/features/search-based-code-navigation.png',
+        imageAlt: 'Search-based code navigation'
     },
     {
         header: 'Precise, compiler-accurate code navigation',
         description:
             'Configure SCIP data of your code graph for 100% accurate code navigation supporting 11 common languages.',
+        imageSrc: '/assets/features/precise-code-navigation.png',
+        imageAlt: 'Precise code navigation'
     },
     {
         header: 'Cross-repository code navigation',
         description: 'Navigate dependencies of your code graph, even when they cross repositories.',
+        imageSrc: '/assets/features/',
+        imageAlt: ''
     },
     {
         header: 'Code ownership data',
         description: 'See CODEOWNERS data from the file navigation view.',
+        imageSrc: '/assets/features/code-ownership-data.png',
+        imageAlt: 'Code owners data'
     },
 ]
 
@@ -179,10 +187,14 @@ const BATCH_CHANGES_CONTENT = [
     {
         header: 'Change code everywhere',
         description: 'Write batch specs to make programmatic changes across multiple repositories.',
+        imageSrc: '/assets/features/change-code-everywhere.png',
+        imageAlt: 'Batch change changesets list'
     },
     {
         header: 'Track changes from creation to merge',
         description: 'View the status of all changesets from a single dashboard, tracking them through completion.',
+        imageSrc: '/assets/features/track-changes-from-creation-to-merge.png',
+        imageAlt: 'Batch change burndown chart'
     },
 ]
 
@@ -190,11 +202,15 @@ const CODE_INSIGHTS_CONTENT = [
     {
         header: 'Track trends about your code',
         description: 'Visualize migrations, package usage, version adoption, code smells, or even codebase size.',
+        imageSrc: '/assets/features/track-trends-about-your-code.png',
+        imageAlt: 'Code Insights single visualization'
     },
     {
         header: 'Visualize your codebase with dashboards',
         description:
             "Customize dashboards with multiple insights. Anything that's happening in your codebase can be visualized.",
+        imageSrc: '/assets/features/visualize-your-codebase-with-dashboards.png',
+        imageAlt: 'Code Insights dashboard',
     },
 ]
 
