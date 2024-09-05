@@ -1,5 +1,5 @@
 ---
-title: "@-mentioning directories as context"
+title: "@-mention directories for Cody Web and Enterprise"
 authors:
   - name: Kelvin Yap
     url: https://x.com/kelvinyap
@@ -18,7 +18,9 @@ published: true
 
 Cody chat lets developers @ mention specific repos or files as context in a prompt to improve the quality of the answer it provides. This works well for codebases made up of multiple repos or if you know the exact file you wish to work with, but we’ve heard feedback from users that quality of results suffered when working with larger, more complex repos like monorepos and you’re not sure of or need to reference more than one file.
 
-We’re happy to announce we’ve added the ability to mention directories when using Cody chat. Users can now define context for a prompt one level deeper than a repo without referencing specific files, improving the quality of answers Cody provides from the get-go.
+We’re happy to announce an experimental feature that offers users the ability to mention directories when using Cody chat, starting with Enterprise users referencing remote repositories, and for open source repos when using Cody Web. Users can now define context for a prompt one level deeper than a repo without referencing specific files, improving the quality of answers Cody provides from the get-go.
+
+When using Cody Web, you can reference open source directories by selecting the Directories option:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/changelog/at-mention-directories/at-mention-directories.png"
@@ -26,4 +28,12 @@ We’re happy to announce we’ve added the ability to mention directories when 
 />
 <br />
 
-Directory mentions are available for Cody chat in VS Code, JetBrains, and the web view, and only work for remote repositories.
+For Enterprise users in their IDE, they can select Remote Directories:
+
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/changelog/at-mention-directories/at-mention-remote-directory.png"
+  alt="@-mention directories as context in the IDE for Enterprise users"
+/>
+<br />
+
+Note: Directory mentions currently do not support local repositories and are not available for Cody Free or Pro users wanting to reference local directories as context.
