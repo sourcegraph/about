@@ -378,7 +378,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
 
     useEffect(() => {
         // for testing only - remove before merge
-        posthog.featureFlags.override({'platform-messaging-test': 'test-elevate-engineering'})
+        posthog.featureFlags.override({'platform-messaging-test': 'control'})
 
         if (posthog.getFeatureFlag('platform-messaging-test') === 'test-hard-eng-probs') {
             setAbTest('test-hard-eng-probs');
