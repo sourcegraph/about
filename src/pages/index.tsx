@@ -3,6 +3,7 @@ import { FunctionComponent, ReactSVG, useState, useEffect } from 'react'
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
+import { posthog } from 'posthog-js'
 
 import { ContentSection, Layout, CodyPartners } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
@@ -13,7 +14,6 @@ import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../lib/utils'
-import { posthog } from 'posthog-js'
 
 interface HomeHeroProps {
     onOpenModal: (pagePosition: string) => void

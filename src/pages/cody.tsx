@@ -2,6 +2,7 @@ import { FunctionComponent, useState, useEffect } from 'react'
 
 import classNames from 'classnames'
 import { useRouter } from 'next/router'
+import { posthog } from 'posthog-js'
 
 import {
     Layout,
@@ -22,7 +23,6 @@ import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../lib/utils'
-import { posthog } from 'posthog-js'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 
