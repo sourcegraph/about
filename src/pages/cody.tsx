@@ -66,6 +66,7 @@ const CodyPage: FunctionComponent = () => {
     }
 
     useEffect(() => {
+        // for testing only - remove before merge
         posthog.featureFlags.override({'cody-page-messaging-test': 'control'})
 
         if (posthog.getFeatureFlag('cody-page-messaging-test') === 'test-most-informed') {
