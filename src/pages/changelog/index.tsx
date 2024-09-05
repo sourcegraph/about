@@ -86,7 +86,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                 title: 'Sourcegraph | Changelog',
                 description: 'Stay up to date with the latest changes, features, and improvements to Sourcegraph Code Intelligence Platform',
             }}
-            className="bg-gray-50"
+            
         >
             <div className="relative flex items-center justify-center bg-gray-50">
                 <HeroSection />
