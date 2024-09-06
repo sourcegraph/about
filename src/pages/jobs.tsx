@@ -66,9 +66,15 @@ const CareersPage: FunctionComponent = () => {
             className: 'h-auto w-[394px] py-0 px-[10px] md:w-[594px] lg:h-[477px] lg:w-[794px] lg:px-[15px]',
         },
     ]
-
     return (
-        <Layout className="jobs-page" headerColorTheme="white">
+        <Layout 
+            className="jobs-page" 
+            headerColorTheme="white"
+            meta={{
+                title: "Sourcegraph | Careers",
+                description: "Come help us build the world's most advanced code intelligence platform."
+            }}
+        >
             <ContentSection background="white" className="xl:pl-6" parentClassName="!pt-8 !pb-[55px]">
                 <h1 className="mb-6">Let's build the future together.</h1>
                 <h3 className="max-w-[820px]">
