@@ -254,13 +254,13 @@ const CODE_INSIGHTS_CONTENT = [
 ]
 
 const SECTIONS = [
-    { id: 'chat', name: 'Chat', icon: '/cody/chat-brand-icon.svg', alt: 'Cody Chat' },
-    { id: 'prompts', name: 'Prompts', icon: '/cody/commands-brand-icon.svg', alt: 'Cody Prompts' },
-    { id: 'autocomplete', name: 'Autocomplete', icon: '/cody/completions-brand-icon.svg', alt: 'Cody Autocomplete' },
-    { id: 'code-search', name: 'Code Search', icon: '/cody/code-search.svg', alt: 'Code Search' },
-    { id: 'code-navigation', name: 'Code Navigation', icon: '/cody/code-navigation.svg', alt: 'Code Navigation' },
-    { id: 'batch-changes', name: 'Batch Changes', icon: '/cody/batch-changes.svg', alt: 'Batch Changes' },
-    { id: 'code-insights', name: 'Code Insights', icon: '/cody/code-insights.svg', alt: 'Code Insights' },
+    { id: 'chat', name: 'Chat', icon: '/assets/features/chat-brand-icon.svg', alt: 'Cody Chat' },
+    { id: 'prompts', name: 'Prompts', icon: '/assets/features/commands-brand-icon.svg', alt: 'Cody Prompts' },
+    { id: 'autocomplete', name: 'Autocomplete', icon: '/assets/features/completions-brand-icon.svg', alt: 'Cody Autocomplete' },
+    { id: 'code-search', name: 'Code Search', icon: '/assets/features/code-search.svg', alt: 'Code Search' },
+    { id: 'code-navigation', name: 'Code Navigation', icon: '/assets/features/code-navigation.svg', alt: 'Code Navigation' },
+    { id: 'batch-changes', name: 'Batch Changes', icon: '/assets/features/batch-changes.svg', alt: 'Batch Changes' },
+    { id: 'code-insights', name: 'Code Insights', icon: '/assets/features/code-insights.svg', alt: 'Code Insights' },
 ]
 
 const CodyPage: FunctionComponent = () => {
@@ -334,7 +334,7 @@ const CodyPage: FunctionComponent = () => {
                 className="mx-auto flex max-w-screen-xl flex-col gap-6 px-6 px-6 pt-24 md:gap-4 md:px-0 md:px-10 md:pb-4"
             >
                 <HeaderComponent
-                    icon="/cody/chat-brand-icon.svg"
+                    icon="/assets/features/chat-brand-icon.svg"
                     alt="Cody Chat"
                     title="Chat"
                     isLight={isLight}
@@ -357,7 +357,7 @@ const CodyPage: FunctionComponent = () => {
                 className="mx-auto flex max-w-screen-xl flex-col gap-6 px-6 px-6 pt-24 md:gap-4 md:px-0 md:px-10 md:pb-4"
             >
                 <HeaderComponent
-                    icon="/cody/commands-brand-icon.svg"
+                    icon="/assets/features/commands-brand-icon.svg"
                     alt="Cody Prompts"
                     title="Prompts"
                     isLight={isLight}
@@ -380,7 +380,7 @@ const CodyPage: FunctionComponent = () => {
                 className="mx-auto flex max-w-screen-xl flex-col gap-6 px-6 px-6 pt-24 md:gap-4 md:px-0 md:px-10 md:pb-4"
             >
                 <HeaderComponent
-                    icon="/cody/completions-brand-icon.svg"
+                    icon="/assets/features/completions-brand-icon.svg"
                     alt="Cody Autocomplete"
                     title="Autocomplete"
                     isLight={isLight}
@@ -400,7 +400,7 @@ const CodyPage: FunctionComponent = () => {
             {/* Code Search section */}
             <div id="code-search" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
                 <HeaderComponent
-                    icon="/cody/code-search.svg"
+                    icon="/assets/features/code-search.svg"
                     alt="Code Search"
                     title="Code Search"
                     isLight={isLight}
@@ -420,7 +420,7 @@ const CodyPage: FunctionComponent = () => {
             {/* Code Navigation section */}
             <div id="code-navigation" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
                 <HeaderComponent
-                    icon="/cody/code-navigation.svg"
+                    icon="/assets/features/code-navigation.svg"
                     alt="Code Navigation"
                     title="Code Navigation"
                     isLight={isLight}
@@ -440,7 +440,7 @@ const CodyPage: FunctionComponent = () => {
             {/* Batch Changes section */}
             <div id="batch-changes" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
                 <HeaderComponent
-                    icon="/cody/batch-changes.svg"
+                    icon="/assets/features/batch-changes.svg"
                     alt="Batch Changes"
                     title="Batch Changes"
                     isLight={isLight}
@@ -460,7 +460,7 @@ const CodyPage: FunctionComponent = () => {
             {/* Code Insights section */}
             <div id="code-insights" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
                 <HeaderComponent
-                    icon="/cody/code-insights.svg"
+                    icon="/assets/features/code-insights.svg"
                     alt="Code Insights"
                     title="Code Insights"
                     isLight={isLight}
