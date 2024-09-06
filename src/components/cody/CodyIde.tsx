@@ -1,6 +1,9 @@
-import { FunctionComponent, useState } from 'react'
+import { type FunctionComponent, useState } from 'react'
+
 import classNames from 'classnames'
+
 import { ContentSection } from '..'
+
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid'
 
 interface CodyIdeProps {
@@ -37,7 +40,7 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
             })}
         >
             <h4
-                className={classNames('whitespace-nowrap mb-6', {
+                className={classNames('mb-6 whitespace-nowrap', {
                     'text-gray-200': !isLight,
                     'text-[#0F111A]': isLight,
                 })}
@@ -57,8 +60,15 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                     })}
                 >
                     {visibleIdes.map(ide => (
-                        <div key={ide.name} className={classNames('flex items-center gap-x-4 md:px-6', { 'py-[12px]': isLight })}>
-                            <img className="h-[45px] w-[45px]" src={`/icons/IDEs/${ide.icon}`} alt={`${ide.name} IDE Marketplace`} />
+                        <div
+                            key={ide.name}
+                            className={classNames('flex items-center gap-x-4 md:px-6', { 'py-[12px]': isLight })}
+                        >
+                            <img
+                                className="h-[45px] w-[45px]"
+                                src={`/icons/IDEs/${ide.icon}`}
+                                alt={`${ide.name} IDE Marketplace`}
+                            />
                             <div className={classNames({ 'w-[110px]': isLight })}>
                                 <h4
                                     className={classNames({
@@ -72,6 +82,7 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                         </div>
                     ))}
                 </div>
+                {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
                 <button
                     onClick={() => setIsExpanded(!isExpanded)}
                     className={classNames('mt-4 flex items-center pb-4 md:pb-0', {
