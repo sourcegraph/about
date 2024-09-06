@@ -1,7 +1,8 @@
-import { FunctionComponent, useState } from 'react'
+import { FunctionComponent, useState, useEffect } from 'react'
 
 import classNames from 'classnames'
 import { useRouter } from 'next/router'
+import { posthog } from 'posthog-js'
 
 import {
     Layout,
@@ -55,12 +56,43 @@ const CodyPage: FunctionComponent = () => {
     const router = useRouter()
     const { pathname } = router
     const { openModal } = useAuthModal()
+    const [title, setTitle ] = useState('');
+    const [titleSize, setTitleSize ] = useState('');
+    const [description, setDescription] = useState('')
+    const [descriptionSize, setDescriptionSize] = useState('')
 
     const source = pathname.slice(1) || 'about-home'
     const handleOpenModal = (pagePosition: string): void => {
         captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
         openModal(source)
     }
+
+    useEffect(() => {
+        posthog.onFeatureFlags(() => {
+            const featureFlag = posthog.getFeatureFlag('cody-page-messaging-test');
+            if (featureFlag === 'test-most-informed') {
+                setTitle('The most informed Code AI');
+                setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster')
+                setTitleSize('text-[40px] text-4xl sm:text-8xl')
+                setDescriptionSize('md:text-xl')
+            } else if (featureFlag === 'test-models-context') {
+                setTitle('Coding assistant with the latest AI and the most context');
+                setDescription('Cody uses context of your codebase, docs, tickets, and the web for faster development and accurate code-gen')
+                setTitleSize('text-[40px] text-4xl sm:text-6xl')
+                setDescriptionSize('md:text-xl')
+            } else if (featureFlag === 'test-multiple-contexts') {
+                setTitle('The AI assistant with context of your codebase, docs, tickets, and the web');
+                setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster')
+                setTitleSize('text-[34px] text-4xl sm:text-8xl')
+                setDescriptionSize('md:text-xl')
+            } else {
+                setTitle('Code more, type less');
+                setDescription('Cody is an AI coding assistant that uses advanced search and codebase context to help you understand, write, and fix code faster')
+                setTitleSize('text-[52px] text-4xl sm:text-8xl')
+                setDescriptionSize('md:text-xl')
+            }
+        });
+    }, []);
 
     return (
         <Layout
@@ -75,13 +107,17 @@ const CodyPage: FunctionComponent = () => {
         >
             <div className="relative md:pt-10">
                 <div className="sg-bg-gradient-cody-light-mobile-hero !absolute top-[310px] z-[10] h-[650px] w-[1000px] md:relative md:hidden md:bg-none" />
-
-                <CodyIntroDualTheme
-                    isLight={true}
-                    title="Code more, type less"
-                    handleOpenModal={handleOpenModal}
-                    wrapperClassName="relative z-[20] md:z-0"
-                />
+                {title && description && 
+                    <CodyIntroDualTheme
+                        isLight={true}
+                        title={title}
+                        description={description}
+                        titleSize={titleSize}
+                        descriptionSize={descriptionSize}
+                        handleOpenModal={handleOpenModal}
+                        wrapperClassName="relative z-[20] md:z-0"
+                    />
+                }
 
                 <p className="pt-32 text-center text-base font-normal uppercase leading-[27px] text-gray-400">
                     Over 2.5M engineers use Sourcegraph
