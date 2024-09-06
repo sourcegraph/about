@@ -101,17 +101,17 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
                         }
                     )}
                 >
-                    Cody uses your code graph plus{' '}
+                    Cody uses your context of your codebase plus context of docs, tickets, and issues using{' '}
                     <Link
-                        href="/code-search"
+                        href="https://openctx.org/"
                         className={classNames('underline', {
                             'text-[rgba(255,255,255,0.80)] underline-offset-[2px]': !isLight,
                             'text-[#343A4D] !decoration-[#343A4D] !underline-offset-[5px]': isLight,
                         })}
                     >
-                        Code Search
+                        OpenCtx
                     </Link>{' '}
-                    to autocomplete, explain, and edit your code with additional context.
+                    to write and edit code accurately.
                 </p>
                 <p
                     className={classNames({
@@ -197,12 +197,12 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
                 )}
             >
                 <div className="flex flex-col gap-6 px-6 md:gap-4 md:px-10">
-                    <h2>{modelCardContent?.title ?? 'Choose from your favorite LLMs'}</h2>
+                    <h2>{modelCardContent?.title ?? 'Choose from the latest-gen models'}</h2>
                     <div className="mb-9 text-xl leading-[26px] tracking-tight text-gray-500">
                         {modelCardContent?.description ?? (
                             <>
                                 <p>
-                                    Cody supports the latest LLMs including Claude 3.5, GPT-4o, Gemini 1.5, and
+                                    Cody supports the most powerful LLMs including Claude 3.5, GPT-4o, Gemini 1.5, and
                                     Mixtral-8x7B.
                                 </p>
                                 <p>You can also bring your own LLM key with Amazon Bedrock and Azure OpenAI.</p>
