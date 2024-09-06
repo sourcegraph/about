@@ -327,7 +327,7 @@ const NavItemMenu: React.FunctionComponent<
                                 >
                                     <div className={sectionHeaderClassName}>
                                         {link.sectionHeader}
-                                        <hr className={classNames(dividerClassName, 'mr-[6px] mt-2 mb-2')} />
+                                        <hr className={classNames(dividerClassName, 'mr-[6px] my-2')} />
                                     </div>
                                 </div>
                             ) : (
