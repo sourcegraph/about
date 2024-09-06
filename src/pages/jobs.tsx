@@ -71,8 +71,8 @@ const CareersPage: FunctionComponent = () => {
             className="jobs-page" 
             headerColorTheme="white"
             meta={{
-                title: "Sourcegraph | Careers",
-                description: "Come help us build the world's most advanced code intelligence platform."
+                title: 'Sourcegraph | Careers',
+                description: 'Come help us build most advanced code intelligence platform in the world.'
             }}
         >
             <ContentSection background="white" className="xl:pl-6" parentClassName="!pt-8 !pb-[55px]">
