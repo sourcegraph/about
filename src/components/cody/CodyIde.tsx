@@ -1,6 +1,7 @@
 import { type FunctionComponent, useState } from 'react'
 
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid'
+
 import classNames from 'classnames'
 import { ContentSection } from '..'
 
