@@ -45,9 +45,7 @@ export default class MyDocument extends Document<MyDocumentProps> {
                     {/* Google Fonts */}
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-                    <link
-                        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-                        rel="stylesheet"
+
                     />
                     <link
                         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
@@ -61,6 +59,10 @@ export default class MyDocument extends Document<MyDocumentProps> {
                         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Code+Pro&display=swap"
                         rel="stylesheet"
                     />
+
+                    {/* Inter Font */}
+                    <link rel="preconnect" href="https://rsms.me/" />
+                    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 
                     {/* Google structured data. (WebSite) */}
                     <Script

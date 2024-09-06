@@ -348,101 +348,102 @@ const Home: FunctionComponent = () => {
 }
 
 const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
-    const [abTest, setAbTest ] = useState('');
+    const [abTest, setAbTest] = useState('');
 
-        useEffect(() => {
-            posthog.onFeatureFlags(() => {
-                const featureFlag = posthog.getFeatureFlag('platform-messaging-test');
-                if (featureFlag === 'test-hard-eng-probs') {
-                    setAbTest('test-hard-eng-probs');
-                } else if (featureFlag === 'test-operate-at-scale'){
-                    setAbTest('test-operate-at-scale');
-                } else if (featureFlag === 'test-elevate-engineering'){
-                    setAbTest('test-elevate-engineering');
-                } else {
-                    setAbTest('control');
-                }
-            });
-        }, []);
+    useEffect(() => {
+        posthog.onFeatureFlags(() => {
+            const featureFlag = posthog.getFeatureFlag('platform-messaging-test');
+            if (featureFlag === 'test-hard-eng-probs') {
+                setAbTest('test-hard-eng-probs');
+            } else if (featureFlag === 'test-operate-at-scale') {
+                setAbTest('test-operate-at-scale');
+            } else if (featureFlag === 'test-elevate-engineering') {
+                setAbTest('test-elevate-engineering');
+            } else {
+                setAbTest('control');
+            }
+        });
+    }, []);
     return (
-    <ContentSection
-        className="relative mt-[64px] flex items-center justify-center rounded-2xl md:mt-[32px]"
-        parentClassName="!py-0 !pb-16 !bg-gray-50"
-    >
-        <div className="mx-auto flex flex-col items-center justify-center px-3 text-center md:px-0">
-            <div className="mx-auto flex flex-col items-center pb-4 pt-4 md:w-[680px] md:pb-[26px] md:pt-20">
-                {abTest === 'control' && (
-                    <>
-                        <h1 className="w-full text-center text-4xl sm:text-8xl">
-                            Understand and write code{' '}
-                            <span className="font-extrabold italic text-[#A112FF]">blazingly fast</span>
-                        </h1>
+        <ContentSection
+            className="relative mt-2 flex items-center justify-center"
+            parentClassName="!py-0 !pb-16 !bg-gray-50"
+        >
+            <div className="mx-auto flex flex-col items-center justify-center px-3 text-center md:px-0">
+                <div className="mx-auto flex flex-col items-center pb-4 pt-4 md:w-[680px] md:pb-[26px] md:pt-20">
+                    {abTest === 'control' && (
+                        <>
+                            <h1 className="w-full text-center text-5xl sm:text-7xl">
+                                Understand and write code{' '}
+                                <span className="sg-gradient-text">blazingly fast</span>
+                            </h1>
 
-                        <p className="mt-6 font-normal leading-tight text-gray-400 md:text-xl">
-                            Sourcegraph allows developers to rapidly search, write, and understand code by bringing insights
-                            from their entire codebase right into the editor
-                        </p>
-                    </>
-                )}
+                            <p className="mt-6 text-xl text-gray-400">
+                                Sourcegraph allows developers to rapidly search, write, and understand code by bringing insights
+                                from their entire codebase right into the editor.
+                            </p>
+                        </>
+                    )}
 
-                {abTest === 'test-hard-eng-probs' && (
-                    <>
-                        <h1 className="w-full text-center text-4xl sm:text-8xl">
-                            <span className="font-extrabold italic text-[#A112FF]">Code Intelligence</span> that solves the{' '}
-                            hardest engineering problems
-                        </h1>
+                    {abTest === 'test-hard-eng-probs' && (
+                        <>
+                            <h1 className="w-full text-center text-5xl sm:text-7xl">
+                                <span className="sg-gradient-text">Code Intelligence</span> that solves the{' '}
+                                hardest engineering problems
+                            </h1>
 
-                        <p className="mt-6 font-normal leading-tight text-gray-400 md:text-xl">
-                            Sourcegraph has the most scalable code search and the AI assistant with the most extensive developer context to help build and ship faster
-                        </p>
-                    </>
-                )}
-                
-                {abTest === 'test-operate-at-scale' && (
-                    <>
-                        <h1 className="w-full text-center text-4xl sm:text-8xl">
-                            <span className="font-extrabold italic text-[#A112FF]">Code Intelligence</span> for engineering teams operating at scale
-                        </h1>
+                            <p className="mt-6 text-xl text-gray-400">
+                                Sourcegraph has the most scalable code search and the AI assistant with the most extensive developer context to help build and ship faster.
+                            </p>
+                        </>
+                    )}
 
-                        <p className="mt-6 font-normal leading-tight text-gray-400 md:text-xl">
-                            Sourcegraph has the most scalable code search and the AI assistant with the most extensive developer context to help build and ship faster
-                        </p>
-                    </>
-                )}
+                    {abTest === 'test-operate-at-scale' && (
+                        <>
+                            <h1 className="w-full text-center text-5xl md:text-7xl">
+                                <span className="sg-gradient-text">Code Intelligence</span> for engineering teams operating at scale
+                            </h1>
 
-                {abTest === 'test-elevate-engineering' && (
-                    <>
-                        <h1 className="w-full text-center text-4xl sm:text-6xl">
-                            <span className="font-extrabold italic text-[#A112FF]">Contextual AI</span> and <span className="font-extrabold italic text-[#A112FF]">scalable search</span> to elevate your engineering team
-                        </h1>
+                            <p className="mt-6 text-xl text-gray-400">
+                                Sourcegraph has the most scalable code search and the AI assistant with the most extensive developer context to help build and ship faster.
+                            </p>
+                        </>
+                    )}
 
-                        <p className="mt-6 font-normal leading-tight text-gray-400 md:text-xl">
-                            Sourcegraph helps developers working in complex environments navigate, understand, and write code faster
-                        </p>
-                    </>
-                )}
-                
-                <div className="mx-auto mt-6 flex flex-row flex-wrap justify-center gap-2 rounded-[6px]">
-                    <button
-                        type="button"
-                        className="btn btn-primary mb-4 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
-                        onClick={() => onOpenModal('top')}
-                    >
-                        Download the AI coding assistant
-                    </button>
-                    <Link
-                        href="/contact/request-info"
-                        title="Book a demo"
-                        className="btn btn-secondary mb-4 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
-                        type="button"
-                        onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click')}
-                    >
-                        <div className="flex items-center justify-center">Book a demo</div>
-                    </Link>
+                    {abTest === 'test-elevate-engineering' && (
+                        <>
+                            <h1 className="w-full text-center text-5xl sm:text-7xl">
+                                <span className="sg-gradient-text">Contextual AI</span> and <span className="sg-gradient-text">scalable search</span> to elevate your engineering team
+                            </h1>
+
+                            <p className="mt-6 text-xl text-gray-400">
+                                Sourcegraph helps developers working in complex environments navigate, understand, and write code faster.
+                            </p>
+                        </>
+                    )}
+
+                    <div className="mx-auto mt-6 flex flex-row flex-wrap justify-center gap-2">
+                        <button
+                            type="button"
+                            className="btn btn-primary mb-4 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
+                            onClick={() => onOpenModal('top')}
+                        >
+                            Download the AI coding assistant
+                        </button>
+                        <Link
+                            href="/contact/request-info"
+                            title="Book a demo"
+                            className="btn btn-secondary mb-4 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
+                            type="button"
+                            onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click')}
+                        >
+                            <div className="flex items-center justify-center">Book a demo</div>
+                        </Link>
+                    </div>
                 </div>
             </div>
-        </div>
-    </ContentSection>
-)}
+        </ContentSection>
+    )
+}
 
 export default Home
