@@ -120,8 +120,17 @@ export const ChooseYourLlmSection: FunctionComponent<ChooseYourLlmSectionProps> 
                             isLight,
                     })}
                 >
-                    Sourcegraph's code graph and analysis tools allows Cody to autocomplete, explain, and edit your code
-                    with additional context.
+                    Cody uses your context of your codebase plus context of docs, tickets, and issues using{' '}
+                    <Link
+                        href="https://openctx.org/"
+                        className={classNames('underline', {
+                            'text-[rgba(255,255,255,0.80)] underline-offset-[2px]': !isLight,
+                            'text-[#343A4D] !decoration-[#343A4D] !underline-offset-[5px]': isLight,
+                        })}
+                    >
+                        OpenCtx
+                    </Link>{' '}
+                    to write and edit code accurately.
                 </p>
                 {isLight ? (
                     <div className="mt-[24px] md:mt-0">
