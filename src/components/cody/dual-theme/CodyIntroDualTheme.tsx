@@ -22,7 +22,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
     handleOpenModal,
     wrapperClassName,
     title,
-    subTitle = 'Cody is an AI coding assistant that uses advanced search and codebase context to help you understand,write, and fix code faster.'
+    subTitle = 'Cody is an AI coding assistant that uses advanced search and codebase context to help you understand,write, and fix code faster.',
     description,
     titleSize,
     descriptionSize,
