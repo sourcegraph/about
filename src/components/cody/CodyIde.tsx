@@ -1,10 +1,8 @@
 import { type FunctionComponent, useState } from 'react'
 
-import classNames from 'classnames'
-
-import { ContentSection } from '..'
-
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid'
+import classNames from 'classnames'
+import { ContentSection } from '..'
 
 interface CodyIdeProps {
     isLight?: boolean
@@ -82,8 +80,8 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                         </div>
                     ))}
                 </div>
-                {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
                 <button
+                    type="button"
                     onClick={() => setIsExpanded(!isExpanded)}
                     className={classNames('mt-4 flex items-center pb-4 md:pb-0', {
                         'text-gray-200': !isLight,
