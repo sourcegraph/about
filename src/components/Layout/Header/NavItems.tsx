@@ -70,6 +70,15 @@ const NAV_ITEMS: NavItem[] = [
                 subText: 'Advanced codebase search, batch changes, and insights',
                 iconPosition: 'top',
             },
+            { sectionHeader: '' },
+            {
+                text: 'Features',
+                href: '/features',
+            },
+            {
+                text: 'Changelog',
+                href: '/changelog',
+            },
         ],
     },
     {
@@ -318,7 +327,7 @@ const NavItemMenu: React.FunctionComponent<
                                 >
                                     <div className={sectionHeaderClassName}>
                                         {link.sectionHeader}
-                                        <hr className={classNames(dividerClassName, 'mr-[6px]')} />
+                                        <hr className={classNames(dividerClassName, 'mr-[6px] my-2')} />
                                     </div>
                                 </div>
                             ) : (
