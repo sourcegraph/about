@@ -1,8 +1,9 @@
-import { FunctionComponent, ReactSVG } from 'react'
+import { FunctionComponent, ReactSVG, useState, useEffect } from 'react'
 
 import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
+import { posthog } from 'posthog-js'
 
 import { ContentSection, Layout, CodyPartners } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
@@ -39,6 +40,7 @@ const Home: FunctionComponent = () => {
         captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
         openModal('home')
     }
+
     return (
         <Layout
             meta={{
@@ -305,7 +307,7 @@ const Home: FunctionComponent = () => {
                                         title="free cody"
                                         onClick={() => handleOpenModal('bottom')}
                                     >
-                                        Get Cody for free
+                                        Download Cody for free
                                     </button>
                                 </div>
                             </div>
@@ -345,23 +347,81 @@ const Home: FunctionComponent = () => {
     )
 }
 
-const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
+const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
+    const [abTest, setAbTest ] = useState('');
+
+        useEffect(() => {
+            posthog.onFeatureFlags(() => {
+                const featureFlag = posthog.getFeatureFlag('platform-messaging-test');
+                if (featureFlag === 'test-hard-eng-probs') {
+                    setAbTest('test-hard-eng-probs');
+                } else if (featureFlag === 'test-operate-at-scale'){
+                    setAbTest('test-operate-at-scale');
+                } else if (featureFlag === 'test-elevate-engineering'){
+                    setAbTest('test-elevate-engineering');
+                } else {
+                    setAbTest('control');
+                }
+            });
+        }, []);
+    return (
     <ContentSection
         className="relative mt-[64px] flex items-center justify-center rounded-2xl md:mt-[32px]"
         parentClassName="!py-0 !pb-16 !bg-gray-50"
     >
         <div className="mx-auto flex flex-col items-center justify-center px-3 text-center md:px-0">
             <div className="mx-auto flex flex-col items-center pb-4 pt-4 md:w-[680px] md:pb-[26px] md:pt-20">
-                <h1 className="w-full text-center text-4xl sm:text-8xl">
-                    Understand and write code{' '}
-                    <span className="font-extrabold italic text-[#A112FF]">blazingly fast</span>
-                </h1>
+                {abTest === 'control' && (
+                    <>
+                        <h1 className="w-full text-center text-4xl sm:text-8xl">
+                            Understand and write code{' '}
+                            <span className="font-extrabold italic text-[#A112FF]">blazingly fast</span>
+                        </h1>
 
-                <p className="mt-6 font-normal leading-tight text-gray-400 md:text-xl">
-                    Sourcegraph allows developers to rapidly search, write, and understand code by bringing insights
-                    from their entire codebase right into the editor
-                </p>
+                        <p className="mt-6 font-normal leading-tight text-gray-400 md:text-xl">
+                            Sourcegraph allows developers to rapidly search, write, and understand code by bringing insights
+                            from their entire codebase right into the editor
+                        </p>
+                    </>
+                )}
 
+                {abTest === 'test-hard-eng-probs' && (
+                    <>
+                        <h1 className="w-full text-center text-4xl sm:text-8xl">
+                            <span className="font-extrabold italic text-[#A112FF]">Code Intelligence</span> that solves the{' '}
+                            hardest engineering problems
+                        </h1>
+
+                        <p className="mt-6 font-normal leading-tight text-gray-400 md:text-xl">
+                            Sourcegraph has the most scalable code search and the AI assistant with the most extensive developer context to help build and ship faster
+                        </p>
+                    </>
+                )}
+                
+                {abTest === 'test-operate-at-scale' && (
+                    <>
+                        <h1 className="w-full text-center text-4xl sm:text-8xl">
+                            <span className="font-extrabold italic text-[#A112FF]">Code Intelligence</span> for engineering teams operating at scale
+                        </h1>
+
+                        <p className="mt-6 font-normal leading-tight text-gray-400 md:text-xl">
+                            Sourcegraph has the most scalable code search and the AI assistant with the most extensive developer context to help build and ship faster
+                        </p>
+                    </>
+                )}
+
+                {abTest === 'test-elevate-engineering' && (
+                    <>
+                        <h1 className="w-full text-center text-4xl sm:text-6xl">
+                            <span className="font-extrabold italic text-[#A112FF]">Contextual AI</span> and <span className="font-extrabold italic text-[#A112FF]">scalable search</span> to elevate your engineering team
+                        </h1>
+
+                        <p className="mt-6 font-normal leading-tight text-gray-400 md:text-xl">
+                            Sourcegraph helps developers working in complex environments navigate, understand, and write code faster
+                        </p>
+                    </>
+                )}
+                
                 <div className="mx-auto mt-6 flex flex-row flex-wrap justify-center gap-2 rounded-[6px]">
                     <button
                         type="button"
@@ -383,6 +443,6 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => (
             </div>
         </div>
     </ContentSection>
-)
+)}
 
 export default Home

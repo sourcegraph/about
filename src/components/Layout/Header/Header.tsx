@@ -122,7 +122,7 @@ const HEADER_CONTENT_THEME_CLASS: Record<
 > = {
     white: {
         container: 'bg-gray-50',
-        item: 'text-gray-500 hover:bg-violet-100 focus:ring-violet-300',
+        item: 'text-gray-500 hover:text-black active:border-none focus:ring-0',
         menu: 'bg-white border-gray-200',
         menuItem: 'text-gray-800',
         menuItemActive: 'bg-gray-100',
@@ -136,7 +136,7 @@ const HEADER_CONTENT_THEME_CLASS: Record<
     },
     dark: {
         container: 'bg-gray-800',
-        item: 'text-white hover:bg-gray-600 focus:ring-violet-300',
+        item: 'text-gray-200 hover:text-white focus:ring-0',
         menu: 'bg-gray-800 border-gray-600',
         menuItem: 'text-white',
         menuItemActive: 'bg-white/10',
@@ -226,7 +226,7 @@ const HeaderContent: FunctionComponent<
                     'btn lg:btn-sm order-1 w-full min-w-fit py-3 px-5 lg:order-3 ',
                     dark ? 'btn-primary-dark' : 'btn-primary'
                 )}
-                title="Download Sourcegraph"
+                title="Get Cody for free"
                 onClick={() => handleOpenModal('get_cody_nav_click', true)}
             >
                 Get Cody for free
@@ -244,7 +244,7 @@ const HeaderContent: FunctionComponent<
                                 <Link
                                     href="/"
                                     className={classNames(
-                                        'block rounded-md py-1 px-2 focus:outline-none focus:ring-2 md:-ml-2',
+                                        'block rounded-md py-1 px-2 focus:outline-none focus:ring-0 md:-ml-2',
                                         dark ? 'focus:ring-white' : 'focus:ring-black'
                                     )}
                                 >

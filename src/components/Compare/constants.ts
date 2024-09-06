@@ -554,6 +554,7 @@ export const cursorVsCody: CompareDataType = {
                 createAttribute({
                     feature: 'Visual Studio',
                     cody: false,
+                    cody_details: 'Coming soon',
                 }),
                 createAttribute({
                     feature: 'Other',
@@ -590,7 +591,9 @@ export const cursorVsCody: CompareDataType = {
                 createAttribute({
                     feature: 'Pro tier pricing for individuals',
                     cody: '$9 / user / month',
+                    cody_details: 'Unlimited fast requests to Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro, and more',
                     competitor: '$20 / user / month',
+                    competitor_details: '500 fast requests to Claude 3.5 Sonnet and GPT-4o',
                 }),
             ],
         },

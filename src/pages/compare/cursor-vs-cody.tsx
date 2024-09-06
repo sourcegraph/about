@@ -28,7 +28,7 @@ const CompareCopilotPage: FunctionComponent = () => (
 
                 <p>
                     The main downside of Cursor being a fork of VS Code is that it is not available to use with other
-                    IDEs (such as the JetBrains family).
+                    IDEs (such as the JetBrains family), as well as the fact that it's not 100% feature parity with VS Code.
                 </p>
 
                 <p>
@@ -36,8 +36,9 @@ const CompareCopilotPage: FunctionComponent = () => (
                     Cursor is a good choice for users willing to migrate from their preferred IDE to Cursor. It offers
                     unique functionality and has local codebase context features. However, Cody is a better choice for
                     users who want to use their existing IDE. Cody also offers more functionality for enterprise
-                    developers, including the ability to reference remote codebase context in chat. Lastly, Cody offers more
-                    generous usage for premium models such as Claude 3.5 Sonnet, especially on the free tier.
+                    developers, including the ability to reference remote codebase context in chat and flexibility in
+                    LLM deployment - e.g., using your own LLM infrastructure in services like Amazon Bedrock.
+                    Lastly, Cody offers more generous usage for premium models such as Claude 3.5 Sonnet and GPT-4o.
                 </p>
             </CompareHero>
         }

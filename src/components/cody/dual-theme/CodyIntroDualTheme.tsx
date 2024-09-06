@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 import Link from 'next/link'
-import { CaptureResult } from 'posthog-js'
+import { CaptureResult} from 'posthog-js'
 
 import { ContentSection } from '../../ContentSection'
 
@@ -10,8 +10,11 @@ interface CodyIntroDualThemeProps {
     isLight?: boolean
     handleOpenModal: (pagePosition: string) => void | CaptureResult
     title?: string
+    description?: string
     wrapperClassName?: string
     subTitle?: string
+    titleSize?: string
+    descriptionSize?: string
 }
 
 export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
@@ -20,6 +23,9 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
     wrapperClassName,
     title,
     subTitle = 'Cody is an AI coding assistant that uses advanced search and codebase context to help you understand,write, and fix code faster.'
+    description,
+    titleSize,
+    descriptionSize,
 }) => (
     <ContentSection
         parentClassName="!py-0 !px-0"
@@ -31,7 +37,8 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
         <div className="mx-auto w-full px-6 md:w-[849px] lg:w-[895px]">
             <h1
                 className={classNames(
-                    'mx-auto w-full text-[52px] text-4xl font-semibold sm:text-8xl md:!leading-[62px]',
+                    'mx-auto w-full font-semibold sm:text-8xl md:!leading-[62px]',
+                    titleSize || 'text-[52px] text-4xl sm:text-8xl',
                     {
                         'text-white': !isLight,
                         'text-[#0F111A]': isLight,
@@ -43,14 +50,15 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
 
             <p
                 className={classNames(
-                    'mx-auto mt-6 mb-8 max-w-[700px] font-normal leading-tight text-gray-400 md:text-xl',
+                    'mx-auto mt-6 mb-8 max-w-[700px] font-normal leading-tight text-gray-400',
+                    descriptionSize || 'md:text-xl',
                     {
                         'text-gray-100': !isLight,
                         'text-gray-400': isLight,
                     }
                 )}
             >
-                {subTitle}
+                {description ?? 'Cody is an AI coding assistant that uses advanced search and codebase context to help you understand, write, and fix code faster.'}
             </p>
             <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
                 <button
@@ -60,7 +68,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                     onClick={() => handleOpenModal('top')}
                 >
                     <div className="flex items-center justify-center">
-                        <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Get Cody
+                        <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" /> Download Cody
                         for your IDE
                     </div>
                 </button>
