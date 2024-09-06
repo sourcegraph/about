@@ -12,6 +12,7 @@ interface CodyIntroDualThemeProps {
     title?: string
     description?: string
     wrapperClassName?: string
+    subTitle?: string
     titleSize?: string
     descriptionSize?: string
 }
@@ -21,6 +22,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
     handleOpenModal,
     wrapperClassName,
     title,
+    subTitle = 'Cody is an AI coding assistant that uses advanced search and codebase context to help you understand,write, and fix code faster.',
     description,
     titleSize,
     descriptionSize,
@@ -58,7 +60,6 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
             >
                 {description ?? 'Cody is an AI coding assistant that uses advanced search and codebase context to help you understand, write, and fix code faster.'}
             </p>
-
             <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
                 <button
                     type="button"
