@@ -139,31 +139,28 @@
             const slug = document.getElementById('slug').value;
             const content = document.getElementById('content').value;
 
+            const offset = publishDate.getTimezoneOffset();
+            const offsetHours = Math.abs(Math.floor(offset / 60)).toString().padStart(2, '0');
+            const offsetMinutes = (Math.abs(offset) % 60).toString().padStart(2, '0');
+            const offsetSign = offset > 0 ? '-' : '+';
+            const formattedDate = `${publishDate.toISOString().slice(0, 16)}${offsetSign}${offsetHours}:${offsetMinutes}`;
+
             const markdown = `---
 title: "${title}"
-
 authors:
   - name: ${authorName}
     url: ${authorUrl}
-
-avatar: ${avatar}
-
-publishDate: ${publishDate.toISOString().replace('T', 'T').slice(0, -5)}
-
+    avatar: ${avatar}
+publishDate: ${formattedDate}
 description: "${description}"
-
 tags: [${tags.join(', ')}]
-
 version: [${version}]
-
 slug: '${slug}'
-
 published: true
 
 ---
 
 ${content}`;
-
             document.getElementById('output').textContent = markdown;
             document.getElementById('copyButton').style.display = 'block';
         });
@@ -177,5 +174,8 @@ ${content}`;
             });
         });
     </script>
+    <footer>
+        <p style="font-size: 0.8em; color: #ccc;">Created using Cody & CHOP | Last updated: 2024-09-06</p>
+    </footer>
 </body>
 </html>
