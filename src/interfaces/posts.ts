@@ -109,6 +109,7 @@ export const postIndexType = (frontmatter: FrontMatter): PostIndexType =>
 export enum BlogType {
     Podcast = 'podcast',
     Blog = 'blog',
+    Changelog = 'changelog',
 }
 
 export const blogType = (frontmatter: FrontMatter): BlogType =>
