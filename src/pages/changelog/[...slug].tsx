@@ -54,7 +54,7 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
 
     const meta = {
         title,
-        image: 'https://sourcegraph.com/sourcegraph-changelog-og.png',
+        image: 'https://sourcegraph.com/assets/changelog/sourcegraph-changelog-og.png',
         videoID,
         description: description || post.excerpt,
         externalTitle,
