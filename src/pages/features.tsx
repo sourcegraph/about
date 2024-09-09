@@ -338,7 +338,7 @@ const CodyPage: FunctionComponent = () => {
                     alt="Cody Chat"
                     title="Chat"
                     isLight={isLight}
-                    description="Chat directly with the AI to ask questions about your code, generate code, and edit code. Cody has context of your open file and repository by default, and you can use '@' to add context on specific files, symbols, remote repositories, or other non-code artifacts."
+                    description="Chat directly with AI to ask questions about your code, generate code, and edit code. Cody has context of your open file and repository by default, and you can use '@' to add context on specific files, symbols, remote repositories, or other non-code artifacts."
                 />
             </div>
 
