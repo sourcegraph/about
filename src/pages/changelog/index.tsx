@@ -45,40 +45,49 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
             const tagsFromUrl = (query.topics as string).split(',')
             setSelectedTags(tagsFromUrl)
         }
-    }, [query.topics])
+        if (query.versions) {
+            const versionsFromUrl = (query.versions as string).split(',')
+            setSelectedVersions(versionsFromUrl)
+        }
+    }, [query.topics, query.versions])
 
-    const updateQueryParams = async(tags: string[]): Promise<void> => {
+    const updateQueryParams = async(tags: string[], versions: string[]): Promise<void> => {
         const queryParams = { ...query };
         if (tags.length > 0) {
             queryParams.topics = tags.join(',')
         } else {
             delete queryParams.topics
         }
-        
+        if (versions.length > 0) {
+            queryParams.versions = versions.join(',')
+        } else {
+            delete queryParams.versions
+        }
+    
         await router.push({ query: queryParams }, undefined, { shallow: true })
-    };
+    }
 
     const toggleExpanded = (): void => {
         setExpanded(!expanded)
     }
 
-    const toggleTag = async(keyword: string): Promise<void> => {
+    const toggleTag = async (keyword: string): Promise<void> => {
         const updatedTags = selectedTags.includes(keyword)
             ? selectedTags.filter(tag => tag !== keyword)
-            : [...selectedTags,  keyword]
-        
+            : [...selectedTags, keyword]
+    
         setSelectedTags(updatedTags)
-        await updateQueryParams(updatedTags)
+        await updateQueryParams(updatedTags, selectedVersions)
     };
 
-    const toggleVersion = (keyword = ''): void => {
-        if (selectedVersions.includes(keyword)) {
-            setSelectedVersions(selectedVersions.filter(version => version !== keyword));
-        }
-        else {
-            setSelectedVersions([...selectedVersions, keyword]);
-        }
-    }
+    const toggleVersion = async (keyword = ''): Promise<void> => {
+        const updatedVersions = selectedVersions.includes(keyword)
+            ? selectedVersions.filter(version => version !== keyword)
+            : [...selectedVersions, keyword]
+    
+        setSelectedVersions(updatedVersions)
+        await updateQueryParams(selectedTags, updatedVersions)
+    };
 
     return (
         <Layout

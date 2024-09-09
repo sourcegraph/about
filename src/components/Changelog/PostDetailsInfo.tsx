@@ -3,10 +3,10 @@ import React from 'react';
 import { Calendar, Tags } from 'lucide-react'
 
 interface PostInfoProps {
-  version: string;
+  version?: string[]
   avatar: string;
   username: string;
-  keywords: string[];
+  keywords?: string[];
   date: string;
 }
 
@@ -36,7 +36,7 @@ export function PostDetailsInfo({ version, avatar, username, keywords, date }: P
       <span className="flex flex-wrap md:flex-nowrap items-center text-gray-500 space-x-2">
         <span className="flex items-center space-x-1">
           <Tags className="w-5 h-5 text-gray-300" />
-          {keywords.map((keyword, index) => (
+          {keywords?.map((keyword, index) => (
             <span
               key={index}
               className="text-gray-700 font-sans text-sm font-normal leading-[150%] tracking-[0px]"
@@ -45,7 +45,7 @@ export function PostDetailsInfo({ version, avatar, username, keywords, date }: P
             </span>
           ))}
           <span className="text-gray-700 font-sans text-sm font-normal leading-[150%] tracking-[0px]">
-            {version}
+            {version?.[0]}
           </span>
         </span>
       </span>
