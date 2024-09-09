@@ -1,5 +1,5 @@
 ---
-title: "New default models for enterprise: DeepSeek v2 and Claude 3.5 Sonnet"
+title: "New default models for enterprise: DeepSeek-V2 and Claude 3.5 Sonnet"
 
 authors:
   - name: Kelvin Yap
