@@ -13,16 +13,16 @@ interface Event {
 const events: { upcoming: Event[], past: Event[] } = {
     upcoming: [
         {
-            title: 'AI Dev Tools Night',
-            location: 'San Francisco, CA',
-            date: '2024-09-30',
-            link: 'https://lu.ma/mkjng0xx',
-        },
-        {
             title: 'Your Cody questions answered live!',
             location: 'StreamYard',
             date: '2024-09-18',
             link: 'https://streamyard.com/watch/kQC2DSFWAx6r?v=2',
+        },
+        {
+            title: 'AI Dev Tools Night',
+            location: 'San Francisco, CA',
+            date: '2024-09-30',
+            link: 'https://lu.ma/mkjng0xx',
         },
         {
             title: 'designFAO',
