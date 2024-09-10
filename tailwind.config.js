@@ -91,7 +91,8 @@ module.exports = {
 
     fontFamily: {
       sans: [
-        'Inter',
+
+        'InterVariable',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
