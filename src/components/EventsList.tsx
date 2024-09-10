@@ -20,6 +20,12 @@ const events: { upcoming: Event[], past: Event[] } = {
             link: 'https://lu.ma/mkjng0xx',
         },
         {
+            title: 'Your Cody questions answered live!',
+            location: 'StreamYard',
+            date: '2024-09-18',
+            link: 'https://streamyard.com/watch/kQC2DSFWAx6r?v=2',
+        },
+        {
             title: 'designFAO',
             location: 'Portugal',
             date: '2024-10-11',
