@@ -2,7 +2,6 @@ import { isAfter, parseISO } from 'date-fns'
 
 import { ContentSection } from './ContentSection'
 import { Tabs } from './Tabs'
-import { title } from 'process';
 
 interface Event {
     title: string;
