@@ -2,6 +2,7 @@ import { isAfter, parseISO } from 'date-fns'
 
 import { ContentSection } from './ContentSection'
 import { Tabs } from './Tabs'
+import { title } from 'process';
 
 interface Event {
     title: string;
@@ -12,6 +13,12 @@ interface Event {
 
 const events: { upcoming: Event[], past: Event[] } = {
     upcoming: [
+        {
+            title: 'AI Dev Tools Night',
+            location: 'San Francisco, CA',
+            date: '2024-09-30',
+            link: 'https://lu.ma/mkjng0xx',
+        },
         {
             title: 'designFAO',
             location: 'Portugal',
