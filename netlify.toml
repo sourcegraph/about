@@ -243,6 +243,10 @@
   from = "/cloud"
   to = "/enterprise"
 
+[[redirects]]
+  from = "/case-studies/customer-story/casestudycontent"
+  to = "/case-studies"
+
 # ========== END INDIVIDUAL REDIRECTS ==========
 
 # ========== WHOLE SITE REDIRECT ==========
