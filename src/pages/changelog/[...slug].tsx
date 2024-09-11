@@ -71,10 +71,17 @@ const TermPage: NextPage<PageProps> = ({ post, content }) => {
             </header>
             <div className="min-h-scree flex items-center justify-center">
                 <div className="mx-auto flex max-w-7xl flex-col gap-x-14 px-8 lg:flex-row lg:px-10 2xl:px-0">
-                    <article className="flex-1">
-                        <ChangelogLayout post={post} content={content} />
-                    </article>
-                    <aside className="w-full md:mt-0 md:w-1/4 md:pl-6">
+                    <div className="flex w-full flex-col md:w-3/4">
+                        <div className="mb-12 flex flex-col md:flex-row">
+                            <aside className="hidden md:block w-1/4 pr-6" />
+                            <div className="ml-0 md:ml-10 w-full md:w-[65%]">
+                                <article className="flex-1">
+                                    <ChangelogLayout post={post} content={content} />
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <aside className="w-full md:mt-0 md:w-1/4 md:pl-2">
                         <div className="space-y-6">
                             <h2 className="font-sans text-sm font-semibold uppercase leading-[21px] tracking-wide text-gray-700 mb-4 mt-2">
                                 Related

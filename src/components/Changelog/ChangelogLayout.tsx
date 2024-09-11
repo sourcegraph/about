@@ -27,7 +27,7 @@ export const ChangelogLayout: FunctionComponent<PostComponentProps> = ({
 }) => (
     <Tag className={className}>
         <div>
-            <h2 className="!font-display text-4xl xl:text-6xl">{frontmatter.title}</h2>
+            <h2 className='font-sans text-3xl font-semibold tracking-tighter text-left'>{frontmatter.title}</h2>
         </div>
         <PostDetailsInfo
             version={frontmatter?.version}
