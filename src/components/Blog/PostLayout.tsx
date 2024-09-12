@@ -1,8 +1,9 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useState, useEffect } from 'react'
 
 import classNames from 'classnames'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import { MDXRemote } from 'next-mdx-remote'
+import { useRouter } from 'next/router'
 
 import { Alert, Badge, Blockquote, Figure, HubSpotForm, TableWrapper, Video, YouTube } from '..'
 import { PostComponentProps } from '../../interfaces/posts'
@@ -24,10 +25,53 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
     className = '',
     tag: Tag = 'article',
     contentClassName = '',
-}) => (
+}) => {
+    // temp for openai o1 announcement
+    const [isModalOpen, setIsModalOpen] = useState(false)
+        const router = useRouter()
+    
+        useEffect(() => {
+            const { userId } = router.query
+            if (userId) {
+                setIsModalOpen(true)
+            }
+        }, [router.query])
+    
+        const closeModal = (): void => {
+            setIsModalOpen(false)
+        }
+
+        // Temp for OpenAI
+        useEffect(() => {
+            const script = document.createElement('script')
+            script.src = '//js.hsforms.net/forms/embed/v2.js'
+            script.async = true
+            script.addEventListener('load', () => {
+                if (window.hbspt) {
+                    window.hbspt.forms.create({
+                        region: 'na1',
+                        portalId: '2762526',
+                        formId: '27eae4a9-c06e-4a3c-9df2-6dbf4bf600b3',
+                        target: '#hubspotForm',
+                    })
+                }
+            })
+            document.body.append(script)
+        }, [])    
+    return (
     <Tag className={className}>
         <div>
             <h2 className="!font-display text-4xl xl:text-6xl">{frontmatter.title}</h2>
+            {isModalOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="bg-white p-12 rounded">
+                        <h2 className="text-3xl mb-4">You are on the waitlist for OpenAI o1.</h2>
+                        <p className="text-lg mb-4">We will email you when your account has been granted access.</p>
+                        <button onClick={closeModal} type="button" className="btn btn-primary py-2 px-4"
+                    >Ok</button>
+                    </div>
+                </div>
+            )}
         </div>
 
         {(frontmatter.authors?.length || frontmatter.publishDate) && (
@@ -64,4 +108,4 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
             </div>
         )}
     </Tag>
-)
+)}
