@@ -14,11 +14,11 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/o
 
 Large language models (LLMs) like GPT-4o are excellent at predicting the next word or sequence of words in a given context, enabling them to identify patterns and relationships between words and phrases, ultimately generating coherent and contextually relevant responses for a variety of inputs. This makes them ideal tools for coding use cases like code completion, code generation, documentation, and the like. The drawback of using LLMs for coding purposes is that they struggle with understanding, logic, and reasoning. That ends today.
 
-We are excited to collaborate with OpenAI to bring OpenAI o1 to Cody to help you write, understand, and debug code more effectively. OpenAI o1, as the name implies, brings enhanced reasoning capabilities allowing you to tackle more complex problems, generate more accurate and efficient code, and gain a deeper understanding of your codebase. Access to OpenAI o1 is available today in a limited release, allowing developers to explore its capabilities and provide feedback. If you’re interested in getting access to OpenAI o1 with Cody, click here or scroll down to the bottom of this article to sign up for the waitlist.
+We are excited to collaborate with OpenAI to bring OpenAI o1 to Cody to help you write, understand, and debug code more effectively. OpenAI o1, as the name implies, brings enhanced reasoning capabilities allowing you to tackle more complex problems, generate more accurate and efficient code, and gain a deeper understanding of your codebase. Access to OpenAI o1 is available today in a limited release, allowing developers to explore its capabilities and provide feedback. If you’re interested in getting access to OpenAI o1 with Cody, [click here](#sign-up-for-openai-o1-for-cody-waitlist) or scroll down to the bottom of this article to sign up for the waitlist.
 
 ## Reason will prevail! 
 
-OpenAI o1 is an advanced model designed for complex text-based tasks and excels at math and coding-related problems. OpenAI o1 significantly outperforms GPT-4o in a vast majority of reasoning-focused tasks. In the Codeforces eval, GPT-4o had an accuracy score of 11, while OpenAI o1 achieved a score of 89. [Learn more](https://openai.com/index/learning-to-reason-with-llms/) about the evals and results from OpenAI.
+[OpenAI o1](https://openai.com/o1/)is an advanced model designed for complex text-based tasks and excels at math and coding-related problems. OpenAI o1 significantly outperforms GPT-4o in a vast majority of reasoning-focused tasks. In the Codeforces eval, GPT-4o had an accuracy score of 11, while OpenAI o1 achieved a score of 89. [Learn more](https://openai.com/index/learning-to-reason-with-llms/) about the evals and results from OpenAI.
 
 OpenAI o1 tackles the problem of understanding and reasoning about prompts instead of just predicting the next sequence of words. For example, GPT-4o and Claude 3.5 Sonnet struggle to count the number of times the letter r shows up in the word “strawberry”. The reasons for this are out of scope for this blog post, but can be summed up as LLMs lack mechanisms for precise symbolic manipulation. OpenAI o1 on the other hand handles it without issue.
 
@@ -172,4 +172,4 @@ If you do have access, be aware that OpenAI o1 works a little differently than o
 
 <div id="hubspotForm" className="mt-10"></div>
 
-Get on the waitlist for OpenAI o1 and give [Cody a try today](https://sourcegraph.com/cody) and let us know what you think in our community forums or Discord. Happy Codying!
+Get on the waitlist for OpenAI o1 and give [Cody a try today](https://sourcegraph.com/cody) and let us know what you think in our [community forums](https://community.sourcegraph.com/c/cody/5) or [Discord](https://discord.com/servers/sourcegraph-969688426372825169). Happy Codying!
