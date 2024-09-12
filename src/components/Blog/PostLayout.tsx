@@ -1,4 +1,5 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 import classNames from 'classnames'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
@@ -24,10 +25,35 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
     className = '',
     tag: Tag = 'article',
     contentClassName = '',
-}) => (
+}) => {
+    const [isModalOpen, setIsModalOpen] = useState(false)
+        const router = useRouter()
+    
+        useEffect(() => {
+            const { userId } = router.query
+            if (userId) {
+                setIsModalOpen(true)
+            }
+        }, [router.query])
+    
+        const closeModal = () => {
+            setIsModalOpen(false)
+        }
+    
+    return (
     <Tag className={className}>
         <div>
             <h2 className="!font-display text-4xl xl:text-6xl">{frontmatter.title}</h2>
+            {isModalOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="bg-white p-12 rounded">
+                        <h2 className="text-3xl mb-4">You are on the waitlist for OpenAI o1.</h2>
+                        <p className="text-lg mb-4">We will email you when your account has been granted access.</p>
+                        <button onClick={closeModal} className="btn btn-primary py-2 px-4"
+                    >Ok</button>
+                    </div>
+                </div>
+            )}
         </div>
 
         {(frontmatter.authors?.length || frontmatter.publishDate) && (
@@ -64,4 +90,4 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
             </div>
         )}
     </Tag>
-)
+)}
