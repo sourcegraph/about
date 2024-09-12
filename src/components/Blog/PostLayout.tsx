@@ -1,4 +1,5 @@
 import { FunctionComponent, useState, useEffect } from 'react'
+
 import { useRouter } from 'next/router'
 
 import classNames from 'classnames'
@@ -36,7 +37,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
             }
         }, [router.query])
     
-        const closeModal = () => {
+        const closeModal = (): void => {
             setIsModalOpen(false)
         }
     
@@ -49,7 +50,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                     <div className="bg-white p-12 rounded">
                         <h2 className="text-3xl mb-4">You are on the waitlist for OpenAI o1.</h2>
                         <p className="text-lg mb-4">We will email you when your account has been granted access.</p>
-                        <button onClick={closeModal} className="btn btn-primary py-2 px-4"
+                        <button onClick={closeModal} type="button" className="btn btn-primary py-2 px-4"
                     >Ok</button>
                     </div>
                 </div>
