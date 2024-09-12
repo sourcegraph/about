@@ -14,17 +14,17 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/o
 
 Large language models (LLMs) like GPT-4o are excellent at predicting the next word or sequence of words in a given context, enabling them to identify patterns and relationships between words and phrases, ultimately generating coherent and contextually relevant responses for a variety of inputs. This makes them ideal tools for coding use cases like code completion, code generation, documentation, and the like. The drawback of using LLMs for coding purposes is that they struggle with understanding, logic, and reasoning. That ends today.
 
-We are excited to collaborate with OpenAI to bring OpenAI o1 to Cody to help you write, understand, and debug code more effectively. OpenAI o1, as the name implies, brings enhanced reasoning capabilities allowing you to tackle more complex problems, generate more accurate and efficient code, and gain a deeper understanding of your codebase. Access to OpenAI o1 is available today in a limited release, allowing developers to explore its capabilities and provide feedback. If you’re interested in getting access to OpenAI o1 with Cody, [click here](#sign-up-for-openai-o1-for-cody-waitlist) or scroll down to the bottom of this article to sign up for the waitlist.
+We are excited to collaborate with OpenAI to bring the OpenAI o1 family of models to Cody to help you write, understand, and debug code more effectively. OpenAI o1, as the name implies, brings enhanced reasoning capabilities allowing you to tackle more complex problems, generate more accurate and efficient code, and gain a deeper understanding of your codebase. Access to OpenAI o1 models, o1-preview and o1-mini, is available today in a limited release, allowing developers to explore its capabilities and provide feedback. If you’re interested in getting access to the OpenAI o1 family of models with Cody, [click here](#sign-up-for-openai-o1-for-cody-waitlist) or scroll down to the bottom of this article to sign up for the waitlist.
 
 ## Reason will prevail! 
 
-[OpenAI o1](https://openai.com/o1/)is an advanced model designed for complex text-based tasks and excels at math and coding-related problems. OpenAI o1 significantly outperforms GPT-4o in a vast majority of reasoning-focused tasks. In the Codeforces eval, GPT-4o had an accuracy score of 11, while OpenAI o1 achieved a score of 89. [Learn more](https://openai.com/index/learning-to-reason-with-llms/) about the evals and results from OpenAI.
+[OpenAI o1](https://openai.com/o1/) is an advanced family of models designed for complex text-based tasks and excels at math and coding-related problems. OpenAI o1 significantly outperforms GPT-4o in a vast majority of reasoning-focused tasks. In the Codeforces eval, GPT-4o had an accuracy score of 11, while OpenAI o1 achieved a score of 89. [Learn more](https://openai.com/index/learning-to-reason-with-llms/) about the evals and results from OpenAI.
 
-OpenAI o1 tackles the problem of understanding and reasoning about prompts instead of just predicting the next sequence of words. For example, GPT-4o and Claude 3.5 Sonnet struggle to count the number of times the letter r shows up in the word “strawberry”. The reasons for this are out of scope for this blog post, but can be summed up as LLMs lack mechanisms for precise symbolic manipulation. OpenAI o1 on the other hand handles it without issue.
+OpenAI o1 tackles the problem of understanding and reasoning about prompts instead of just predicting the next sequence of words. For example, GPT-4o and Claude 3.5 Sonnet struggle to count the number of times the letter r shows up in the word “strawberry”. The reasons for this are out of scope for this blog post, but can be summed up as LLMs lack mechanisms for precise symbolic manipulation. The o1-preview model on the other hand handles it without issue.
 
 ![OpenAI o1 strawberry example](https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/openai-o1-strawberry.png)
 
-Another example can be seen below between GPT-4o and OpenAI o1. I asked both LLMs to write ten sentences that end with the letter “c.” Both LLMs produced ten sentences, but only OpenAI o1 succeeded in ensuring that all sentences ended in the letter “c.”
+Another example can be seen below between GPT-4o and o1-preview. I asked both LLMs to write ten sentences that end with the letter “c.” Both LLMs produced ten sentences, but only OpenAI o1 succeeded in ensuring that all sentences ended in the letter “c.”
 
 ![OpenAI o1 sentences example](https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/openai-o1-sentences.png)
 
@@ -77,7 +77,7 @@ function generateExamples() {
 console.log(generateExamples());
 ```
 
-OpenAI o1 on the other hand produced this result:
+The o1-preview LLM on the other hand produced this result:
 
 ```js
 function runAlgorithm(number) {
@@ -125,7 +125,7 @@ function generateExamples() {
 console.log(generateExamples());
 ```
 
-Running the OpenAI o1 example, I get the correct result of 1098 for all of the test scenarios. If you are trying to understand why, the culprit is the following snippet:
+Running the o1-preview example, I get the correct result of 1098 for all of the test scenarios. If you are trying to understand why, the culprit is the following snippet:
 
 ```js
 // Ensure the difference is a 3-digit number
@@ -148,7 +148,7 @@ console.log(evaluateExpression("8 + 2 * 5 / (1 + 3 * 2 - 4)")); // Output: 10
 console.log(evaluateExpression("7 - 3 + 2 * (5 + 1)")); // Output: 16
 ```
 
-If we actually run this code, we’ll get the correct answers of 22, 14, 12, 11.3333, and 16. So the output that GPT-4o computed for two of the five examples was wrong. Asking the same of OpenAI o1, I get:
+If we actually run this code, we’ll get the correct answers of 22, 14, 12, 11.3333, and 16. So the output that GPT-4o computed for two of the five examples was wrong. Asking the same of o1-preview, I get:
 
 ```js
 console.log(evaluateExpression("(2 + 3) * (7 - 2) / (1 + 1)")); // Output: 12.5
@@ -160,13 +160,13 @@ console.log(evaluateExpression("((2 + 3) * (5 - 2)) / ((1 + 1) * (2 + 2))")); //
 
 If I run this code, the answers match up with the expected output. You can also use Wolfram Alpha to validate the output yourself. For generating unit tests, having the test case match expectations is very important and OpenAI o1 can help ensure that the test code tests the right functionality, and the test cases are valid.
 
-## Getting access to OpenAI o1 with Cody
+## Getting access to OpenAI o1 family of models with Cody
 
-OpenAI o1 is available to select Cody users starting today. Fill out the form below to be added to the waitlist. You will be notified as soon as OpenAI o1 is available for your account. In the meantime, feel free to use any of our existing models including GPT-4o, Claude 3.5 Sonnet, Gemini Pro, and others. If you are already a Cody user, you can also get on the waitlist by clicking the "Join Waitlist" button from the Cody VS Code extension.
+OpenAI o1, in both o1-preview and o1-mini variants, is available to select Cody users starting today. Fill out the form below to be added to the waitlist. You will be notified as soon as OpenAI o1 is available for your account. In the meantime, feel free to use any of our existing models including GPT-4o, Claude 3.5 Sonnet, Gemini Pro, and others. If you are already a Cody user, you can also get on the waitlist by clicking the "Join Waitlist" button from the Cody VS Code extension.
 
 ![Cody Dropdown Models](https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/cody-dropdown.png)
 
-If you do have access, be aware that OpenAI o1 works a little differently than other models like GPT-4o. One notable difference is that at the moment it does not support streaming. This means that once you ask a question, you will have to wait between 30 seconds to two minutes to get a response and the response will be rendered all at once.
+If you do have access, be aware that OpenAI o1 models work a little differently than other models like GPT-4o. One notable difference is that at the moment it does not support streaming. Both of these models have a two phase approach to generating the output. The first phase is the model thinking and reasoning about the prompt, the second is generating the output tokens. This means that once you ask a question, you will have to wait between 30 seconds to two minutes to get a response and the response will be rendered all at once.
 
 ### Sign up for OpenAI o1 for Cody waitlist 
 
