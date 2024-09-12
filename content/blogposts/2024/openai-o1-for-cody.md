@@ -18,7 +18,7 @@ We are excited to collaborate with OpenAI to bring OpenAI o1 to Cody to help you
 
 ## Reason will prevail! 
 
-OpenAI o1 is an advanced model designed for complex text-based tasks and excels at coding-related problems. Insert additional information from OpenAI press release
+OpenAI o1 is an advanced model designed for complex text-based tasks and excels at math and coding-related problems. OpenAI o1 significantly outperforms GPT-4o in a vast majority of reasoning-focused tasks. In the Codeforces eval, GPT-4o had an accuracy score of 11, while OpenAI o1 achieved a score of 89. [Learn more](https://openai.com/index/learning-to-reason-with-llms/) about the evals and results from OpenAI.
 
 OpenAI o1 tackles the problem of understanding and reasoning about prompts instead of just predicting the next sequence of words. For example, GPT-4o and Claude 3.5 Sonnet struggle to count the number of times the letter r shows up in the word “strawberry”. The reasons for this are out of scope for this blog post, but can be summed up as LLMs lack mechanisms for precise symbolic manipulation. OpenAI o1 on the other hand handles it without issue.
 
