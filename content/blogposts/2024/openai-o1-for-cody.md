@@ -4,7 +4,7 @@ authors:
   - name: Ado Kukic
     url: https://x.com/adocomplete
 publishDate: 2024-09-12T10:00-01:00
-description: "TBD"
+description: "Experience the reasoning power of OpenAI o1 with Cody. Accurate algorithms, reliable tests, and deeper codebase understanding. Sign up for early access today."
 tags: [blog]
 slug: 'openai-o1-for-cody'
 published: true
