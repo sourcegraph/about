@@ -26,6 +26,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
     tag: Tag = 'article',
     contentClassName = '',
 }) => {
+    // temp for openai o1 announcement
     const [isModalOpen, setIsModalOpen] = useState(false)
         const router = useRouter()
     
@@ -39,6 +40,24 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
         const closeModal = (): void => {
             setIsModalOpen(false)
         }
+
+        // Temp for OpenAI
+        useEffect(() => {
+            const script = document.createElement('script')
+            script.src = '//js.hsforms.net/forms/embed/v2.js'
+            script.async = true
+            script.onload = () => {
+                if (window.hbspt) {
+                    window.hbspt.forms.create({
+                        region: "na1",
+                        portalId: "2762526",
+                        formId: "27eae4a9-c06e-4a3c-9df2-6dbf4bf600b3",
+                        target: '#hubspotForm',
+                    })
+                }
+            }
+            document.body.appendChild(script)
+        }, [])
     
     return (
     <Tag className={className}>

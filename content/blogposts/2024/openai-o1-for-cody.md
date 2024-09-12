@@ -168,6 +168,6 @@ Insert Screenshot of Model Selection Dropdown
 
 If you do have access, be aware that OpenAI o1 works a little differently than other models like GPT-4o. One notable difference is that at the moment it does not support streaming. This means that once you ask a question, you will have to wait between 30 seconds to two minutes to get a response and the response will be rendered all at once. 
 
-Insert Signup Hubspot Form
+<div id="hubspotForm" className="mt-10"></div>
 
 Get on the waitlist for OpenAI o1 and give Cody a try today and let us know what you think in our community forums or Discord. Happy Codying!
