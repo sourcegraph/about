@@ -1,9 +1,9 @@
 import { FunctionComponent, useState, useEffect } from 'react'
 
-import { useRouter } from 'next/router'
 import classNames from 'classnames'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import { MDXRemote } from 'next-mdx-remote'
+import { useRouter } from 'next/router'
 
 import { Alert, Badge, Blockquote, Figure, HubSpotForm, TableWrapper, Video, YouTube } from '..'
 import { PostComponentProps } from '../../interfaces/posts'
