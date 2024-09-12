@@ -1,7 +1,6 @@
 import { FunctionComponent, useState, useEffect } from 'react'
 
 import { useRouter } from 'next/router'
-
 import classNames from 'classnames'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import { MDXRemote } from 'next-mdx-remote'
