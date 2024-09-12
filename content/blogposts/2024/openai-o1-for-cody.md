@@ -8,8 +8,8 @@ description: "TBD"
 tags: [blog]
 slug: 'openai-o1-for-cody'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/unlocking-open-source-potential-ai-dev-tools-night-event-og.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/unlocking-open-source-potential-ai-dev-tools-night-event-og.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/openai-o1-cody.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/openai-o1-cody.png
 ---
 
 Large language models (LLMs) like GPT-4o are excellent at predicting the next word or sequence of words in a given context, enabling them to identify patterns and relationships between words and phrases, ultimately generating coherent and contextually relevant responses for a variety of inputs. This makes them ideal tools for coding use cases like code completion, code generation, documentation, and the like. The drawback of using LLMs for coding purposes is that they struggle with understanding, logic, and reasoning. That ends today.
@@ -22,11 +22,11 @@ OpenAI o1 is an advanced model designed for complex text-based tasks and excels 
 
 OpenAI o1 tackles the problem of understanding and reasoning about prompts instead of just predicting the next sequence of words. For example, GPT-4o and Claude 3.5 Sonnet struggle to count the number of times the letter r shows up in the word “strawberry”. The reasons for this are out of scope for this blog post, but can be summed up as LLMs lack mechanisms for precise symbolic manipulation. OpenAI o1 on the other hand handles it without issue.
 
-IMAGE HERE
+![OpenAI o1 strawberry example](https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/openai-o1-strawberry.png)
 
 Another example can be seen below between GPT-4o and OpenAI o1. I asked both LLMs to write ten sentences that end with the letter “c.” Both LLMs produced ten sentences, but only OpenAI o1 succeeded in ensuring that all sentences ended in the letter “c.”
 
-IMAGE HERE
+![OpenAI o1 sentences example](https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/openai-o1-sentences.png)
 
 How can we apply this to our coding challenges? If you’ve been using AI coding assistants like Cody with other LLMs, you may have run into situations where Cody generated accurate-looking, but ultimately faulty code. This can usually be resolved with re-prompting and asking Cody to double-check its work, but with OpenAI o1, you should be able to get the right code from the get-go much more often and have greater confidence that the code generated is accurate. Let’s take a look at a few examples of where OpenAI o1 shines.
 
@@ -164,10 +164,12 @@ If I run this code, the answers match up with the expected output. You can also 
 
 OpenAI o1 is available to select Cody users starting today. Fill out the form below to be added to the waitlist. You will be notified as soon as OpenAI o1 is available for your account. In the meantime, feel free to use any of our existing models including GPT-4o, Claude 3.5 Sonnet, Gemini Pro, and others. If you are already a Cody user, you can also get on the waitlist by clicking the "Join Waitlist" button from the Cody VS Code extension.
 
-Insert Screenshot of Model Selection Dropdown
+![Cody Dropdown Models](https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/cody-dropdown.png)
 
-If you do have access, be aware that OpenAI o1 works a little differently than other models like GPT-4o. One notable difference is that at the moment it does not support streaming. This means that once you ask a question, you will have to wait between 30 seconds to two minutes to get a response and the response will be rendered all at once. 
+If you do have access, be aware that OpenAI o1 works a little differently than other models like GPT-4o. One notable difference is that at the moment it does not support streaming. This means that once you ask a question, you will have to wait between 30 seconds to two minutes to get a response and the response will be rendered all at once.
+
+### Sign up for OpenAI o1 for Cody waitlist 
 
 <div id="hubspotForm" className="mt-10"></div>
 
-Get on the waitlist for OpenAI o1 and give Cody a try today and let us know what you think in our community forums or Discord. Happy Codying!
+Get on the waitlist for OpenAI o1 and give [Cody a try today](https://sourcegraph.com/cody) and let us know what you think in our community forums or Discord. Happy Codying!
