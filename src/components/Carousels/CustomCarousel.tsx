@@ -17,8 +17,13 @@ interface CarouselProps {
     autoAdvance?: boolean
     hasImages?: boolean
     animateTransition?: boolean
+    darkMode?: boolean
+    content?: ContentEnum
 }
-
+export enum ContentEnum { // Ensure export if used in other files
+    Media = 'media',
+    Copy = 'copy',
+}
 interface CarouselItem {
     title: string
     subtitle?: string

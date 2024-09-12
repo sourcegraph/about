@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "@dotlottie/react-player": "^1.6.15",
+    "@figma/code-connect": "^1.1.3",
     "@headlessui/react": "^1.7.11",
     "@heroicons/react": "^2.0.15",
     "@lucide/lab": "^0.1.1",

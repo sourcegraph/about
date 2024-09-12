@@ -1,0 +1,25 @@
+name: Figma Connect & build
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: package.json
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: true
+      - name: Lint
+        run: pnpm run figma connect publish
+      - name: Build production-ready site
+        run: pnpm run build
