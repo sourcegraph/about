@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useRef, useState } from 'react'
+import { FunctionComponent, useCallback, useEffect, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 import { useRouter } from 'next/router'
@@ -337,7 +337,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
 }) => {
     const router = useRouter()
 
-    const updateFormSubmissionSource = (newSource: string): void => {
+    const updateFormSubmissionSource = useCallback((newSource: string): void => {
         const currentQuery = { ...router.query }
         if (currentQuery.form_submission_source) {
             return
@@ -347,15 +347,19 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
         router.replace({
             query: currentQuery,
-        })
-    }
+        }, undefined, { shallow: true })
+    },  [router])
 
     useEffect(() => {
+        if (!router.isReady) {
+            return
+        }
+        
         const currentSlug = form_submission_source || ''
         if (currentSlug) {
             updateFormSubmissionSource(currentSlug)
         }
-    }, [form_submission_source, router.query.form_submission_source])
+    }, [form_submission_source, router.isReady, router.query.form_submission_source, updateFormSubmissionSource])
 
     const [formCreated, setFormCreated] = useState<boolean>(false)
     const [messageListenerAdded, setMessageListenerAdded] = useState<boolean>(false)
