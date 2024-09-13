@@ -53,23 +53,6 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
         setIsModalOpen(false)
     }
 
-    // Temp for OpenAI
-    useEffect(() => {
-        const script = document.createElement('script')
-        script.src = '//js.hsforms.net/forms/embed/v2.js'
-        script.async = true
-        script.addEventListener('load', () => {
-            if (window.hbspt) {
-                window.hbspt.forms.create({
-                    region: 'na1',
-                    portalId: '2762526',
-                    formId: '27eae4a9-c06e-4a3c-9df2-6dbf4bf600b3',
-                    target: '#hubspotForm',
-                })
-            }
-        })
-        document.body.append(script)
-    }, [])
     return (
         <Tag className={className}>
             <div>

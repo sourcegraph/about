@@ -14,7 +14,9 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/o
 
 Large language models (LLMs) like GPT-4o are excellent at predicting the next word or sequence of words in a given context, enabling them to identify patterns and relationships between words and phrases, ultimately generating coherent and contextually relevant responses for a variety of inputs. This makes them ideal tools for coding use cases like code completion, code generation, documentation, and the like. The drawback of using LLMs for coding purposes is that they struggle with understanding, logic, and reasoning. That ends today.
 
-We are excited to collaborate with OpenAI to bring the OpenAI o1 family of models to Cody to help you write, understand, and debug code more effectively. OpenAI o1, as the name implies, brings enhanced reasoning capabilities allowing you to tackle more complex problems, generate more accurate and efficient code, and gain a deeper understanding of your codebase. Access to OpenAI o1 models, o1-preview and o1-mini, is available today in a limited release, allowing developers to explore its capabilities and provide feedback. If you’re interested in getting access to the OpenAI o1 family of models with Cody, [click here](#sign-up-for-openai-o1-for-cody-waitlist) or scroll down to the bottom of this article to sign up for the waitlist.
+We are excited to collaborate with OpenAI to bring the OpenAI o1 family of models to Cody to help you write, understand, and debug code more effectively. OpenAI o1, as the name implies, brings enhanced reasoning capabilities allowing you to tackle more complex problems, generate more accurate and efficient code, and gain a deeper understanding of your codebase. Access to OpenAI o1 models, o1-preview and o1-mini, is available today in a limited release, allowing developers to explore its capabilities and provide feedback. If you’re interested in getting access to the OpenAI o1 family of models with Cody, [download the Cody VS Code extension](https://sourcegraph.com/cody) and once installed, navigate to the model selection and click the "Join Waitlist" button.
+
+![Cody Dropdown Models](https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/cody-dropdown.png)
 
 ## Reason will prevail! 
 
@@ -162,14 +164,12 @@ If I run this code, the answers match up with the expected output. You can also 
 
 ## Getting access to OpenAI o1 family of models with Cody
 
-OpenAI o1, in both o1-preview and o1-mini variants, is available to select Cody users starting today. Fill out the form below to be added to the waitlist. You will be notified as soon as OpenAI o1 is available for your account. In the meantime, feel free to use any of our existing models including GPT-4o, Claude 3.5 Sonnet, Gemini Pro, and others. If you are already a Cody user, you can also get on the waitlist by clicking the "Join Waitlist" button from the Cody VS Code extension.
+OpenAI o1, in both o1-preview and o1-mini variants, is available to select Cody users starting today. [Download the Cody VS Code extension](https://sourcegraph.com/cody) and once installed, navigate to the model selection and click the "Join Waitlist" button. You will be notified as soon as OpenAI o1 is available for your account. In the meantime, feel free to use any of our existing models including GPT-4o, Claude 3.5 Sonnet, Gemini Pro, and others.
 
 ![Cody Dropdown Models](https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/cody-dropdown.png)
 
 If you do have access, be aware that OpenAI o1 models work a little differently than other models like GPT-4o. One notable difference is that at the moment it does not support streaming. Both of these models have a two phase approach to generating the output. The first phase is the model thinking and reasoning about the prompt, the second is generating the output tokens. This means that once you ask a question, you will have to wait between 30 seconds to two minutes to get a response and the response will be rendered all at once.
 
-### Sign up for OpenAI o1 for Cody waitlist 
-
-<div id="hubspotForm" className="mt-10"></div>
+### Sign up for OpenAI o1 for Cody waitlist
 
 Get on the waitlist for OpenAI o1 and give [Cody a try today](https://sourcegraph.com/cody) and let us know what you think in our [community forums](https://community.sourcegraph.com/c/cody/5) or [Discord](https://discord.com/servers/sourcegraph-969688426372825169). Happy Codying!
