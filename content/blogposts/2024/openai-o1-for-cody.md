@@ -20,7 +20,7 @@ We are excited to collaborate with OpenAI to bring the OpenAI o1 family of model
 
 ## Reason will prevail! 
 
-[OpenAI o1](https://openai.com/o1/)is an advanced family of models designed for complex text-based tasks and excels at math and coding-related problems. OpenAI o1 significantly outperforms GPT-4o in a vast majority of reasoning-focused tasks. In the Codeforces eval, GPT-4o had an accuracy score of 11, while OpenAI o1 achieved a score of 89. [Learn more](https://openai.com/index/learning-to-reason-with-llms/) about the evals and results from OpenAI.
+[OpenAI o1](https://openai.com/o1/) is an advanced family of models designed for complex text-based tasks and excels at math and coding-related problems. OpenAI o1 significantly outperforms GPT-4o in a vast majority of reasoning-focused tasks. In the Codeforces eval, GPT-4o had an accuracy score of 11, while OpenAI o1 achieved a score of 89. [Learn more](https://openai.com/index/learning-to-reason-with-llms/) about the evals and results from OpenAI.
 
 OpenAI o1 tackles the problem of understanding and reasoning about prompts instead of just predicting the next sequence of words. For example, GPT-4o and Claude 3.5 Sonnet struggle to count the number of times the letter r shows up in the word “strawberry”. The reasons for this are out of scope for this blog post, but can be summed up as LLMs lack mechanisms for precise symbolic manipulation. The o1-preview model on the other hand handles it without issue.
 
@@ -170,6 +170,5 @@ OpenAI o1, in both o1-preview and o1-mini variants, is available to select Cody 
 
 If you do have access, be aware that OpenAI o1 models work a little differently than other models like GPT-4o. One notable difference is that at the moment it does not support streaming. Both of these models have a two phase approach to generating the output. The first phase is the model thinking and reasoning about the prompt, the second is generating the output tokens. This means that once you ask a question, you will have to wait between 30 seconds to two minutes to get a response and the response will be rendered all at once.
 
-### Sign up for OpenAI o1 for Cody waitlist
 
 Get on the waitlist for OpenAI o1 and give [Cody a try today](https://sourcegraph.com/cody) and let us know what you think in our [community forums](https://community.sourcegraph.com/c/cody/5) or [Discord](https://discord.com/servers/sourcegraph-969688426372825169). Happy Codying!
