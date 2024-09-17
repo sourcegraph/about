@@ -1,5 +1,7 @@
 import { FunctionComponent, ReactNode } from 'react'
 
+import classNames from 'classnames'
+
 export interface Template {
     header: string
     description: string
@@ -8,11 +10,25 @@ export interface Template {
 
 interface TemplateCodeBlock {
     template: Template
+    wrapperClassname?: string
+    parentClassname?: string
 }
 
-export const TemplateCodeBlock: FunctionComponent<TemplateCodeBlock> = ({ template }) => (
-    <div className="flex w-full flex-row flex-wrap justify-center md:w-1/2 md:flex-col md:justify-start">
-        <div className="mx-2 mb-4 grow rounded border-1 bg-white p-6" key={template.header}>
+export const TemplateCodeBlock: FunctionComponent<TemplateCodeBlock> = ({
+    template,
+    wrapperClassname,
+    parentClassname,
+}) => (
+    <div
+        className={classNames(
+            'flex w-full flex-row flex-wrap justify-center md:w-1/2 md:flex-col md:justify-start',
+            parentClassname
+        )}
+    >
+        <div
+            className={classNames('mx-2 mb-4 grow rounded border-1 bg-white p-6', wrapperClassname)}
+            key={template.header}
+        >
             <h5>{template.header}</h5>
             <p>{template.description}</p>
             {template.queries.map(query => (
