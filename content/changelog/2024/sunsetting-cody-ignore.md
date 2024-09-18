@@ -4,8 +4,8 @@ authors:
   - name: Alex Isken
     url: https://x.com/AlexanderIsken
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.png
-publishDate: 2024-08-21T10:00-02:00
-description: "OpenAI just unveiled its latest models, 01-preview and o1-mini, which offer enhanced reasoning capabilities for tackling complex tasks. Both models are now available in Cody as a limited release."
+publishDate: 2024-09-18T10:00-02:00
+description: "We are sunsetting Cody Ignore in this release. Cody Ignore was an experimental feature that was off by default for all users, only enabled via the experimental feature setting in the Cody extension. It lets users specify files or folders in a .cody/ignore file which were then ignored by Cody and disregarded from context."
 tags: [Cody, VS Code]
 version: [v1.36]
 slug: 'sunsetting-cody-ignore'
