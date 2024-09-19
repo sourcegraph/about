@@ -243,6 +243,10 @@
   from = "/cloud"
   to = "/enterprise"
 
+[[redirects]]
+  from = "/docs/extensions"
+  to = "/docs"
+
 # ========== END INDIVIDUAL REDIRECTS ==========
 
 # ========== WHOLE SITE REDIRECT ==========
