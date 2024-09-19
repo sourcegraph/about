@@ -23,4 +23,4 @@ Most customers primarily using Notebooks for _evergreen documentation_. To addre
 - Embeddable search result sets
 - Export of all Notebooks to Markdown
 
-The Notebook feature will be decommissioned with the October 30 release (Sourcegraph 5 Release 9). If you have any questions or concerns, please reach out to your account manager or [support](https://help.sourcegraph.com/hc/en-us). Thank you.
+The Notebook feature will be decommissioned with the October 30 release (Sourcegraph 5 Release 9). If you have any questions or concerns, please reach out to your account manager or [support](https://help.sourcegraph.com/hc/en-us).
