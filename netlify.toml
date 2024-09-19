@@ -25,6 +25,10 @@
 [[redirects]]
   from = "/app"
   to = "/cody"
+  
+[[redirects]]
+  from = "/get-cody"
+  to = "/cody"
 
 [[redirects]]
   from = "/own"
