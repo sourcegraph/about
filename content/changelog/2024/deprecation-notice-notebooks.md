@@ -1,9 +1,9 @@
 ---
 title: "Deprecation notice: Notebooks"
 authors:
-  - name: Justin Dorfman
-    url: https://x.com/jdorfman
-    avatar: https://storage.googleapis.com/sourcegraph-assets/blog/justin_avatar.png
+  - name: Ron Shah
+    url: 
+    avatar: https://storage.googleapis.com/sourcegraph-assets/blog/ron_avatar.png
 publishDate: 2024-09-19T10:00-02:00
 description: "The Notebook feature will be decommissioned with the October 30 release (Sourcegraph 5 Release 9)."
 tags: [Notebooks, Deprecation]
