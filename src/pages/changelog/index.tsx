@@ -176,7 +176,7 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                             {post?.authors?.[0]?.name ?? ''}
                                         </span>
                                     </div>
-                                    <p className="self-stretch text-gray-700 font-sans text-sm font-normal leading-[150%] tracking-normal">
+                                    <p className="self-stretch text-gray-700 font-sans text-base font-normal leading-[150%] tracking-normal">
                                         {post?.description}
                                     </p>
                                     {currentRecords.length === index + 1 && (
