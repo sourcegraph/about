@@ -67,7 +67,7 @@ export const FullWidthTabsCarousel: FunctionComponent<FullWidthTabsCarouselProps
             return ''
         }
         return item === currentItem
-            ? 'sg-border-gradient-saturn border-2 border-solid px-2 text-black transition-all duration-500 ease-in-out'
+            ? 'sg-border-gradient-saturn border-2 border-solid px-2 text-black '
             : 'text-gray-300'
     }
 
@@ -89,12 +89,10 @@ export const FullWidthTabsCarousel: FunctionComponent<FullWidthTabsCarouselProps
         animateTransition: boolean
     ): string => {
         if (animateTransition) {
-            return item === currentItem
-                ? 'opacity-100 transition-all duration-1000 ease-in-out lg:w-[350px] xl:w-[450px]'
-                : 'opacity-0'
+            return item === currentItem ? 'opacity-100 lg:w-[350px] xl:w-[450px]' : 'opacity-0'
         }
 
-        return item === currentItem ? 'block w-full' : 'hidden'
+        return item === currentItem ? 'block w-full opacity-100' : 'opacity-0 absolute -z-10'
     }
     return (
         <div>
@@ -149,20 +147,19 @@ export const FullWidthTabsCarousel: FunctionComponent<FullWidthTabsCarouselProps
                         return (
                             <div
                                 className={classNames(
-                                    'custom-carousel-item display-5 mb-0 max-w-[430px] cursor-pointer py-2',
+                                    'custom-carousel-item display-5 mb-0 max-w-[430px] cursor-pointer py-2 transition-all duration-500 ease-in-out',
                                     itemClassName,
                                     index !== carouselItems.length - 1 ? 'mb-2' : 'mb-0'
                                 )}
                                 key={item.title}
                                 onClick={() => carouselHook.moveCarousel(index)}
                                 onKeyDown={() => carouselHook.moveCarousel(index)}
-                                onMouseEnter={() => carouselHook.moveCarousel(index)}
                                 role="button"
                                 tabIndex={0}
                             >
                                 <h5
                                     className={classNames(
-                                        'mb-1 ml-4 text-lg font-semibold leading-[23.4px]',
+                                        'mb-1 ml-4 text-lg font-semibold leading-[23.4px] transition-all duration-500 ease-in-out',
                                         animateTransition ? 'text-lg' : 'font-normal',
                                         !animateTransition &&
                                             item === carouselHook.carouselItems.currentItem &&
@@ -195,7 +192,7 @@ export const FullWidthTabsCarousel: FunctionComponent<FullWidthTabsCarouselProps
                             <div
                                 key={item.title}
                                 className={classNames(
-                                    'overflow-hidden',
+                                    'overflow-hidden transition-all duration-500 ease-in-out',
                                     animateTransition && 'absolute',
                                     itemClassName
                                 )}

@@ -405,22 +405,22 @@ const CodeInsightsPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder
 
         <ContentSection parentClassName="py-16 md:!py-24 px-6">
             <TwoColumnSection
-                className="!gap-y-6 lg:!gap-y-12 lg:!gap-x-[24px]"
+                className="!gap-y-6 md:items-start lg:!gap-y-12 lg:!gap-x-6"
                 centerContent={true}
                 leftColumn={
-                    <div className="mt-16 flex h-auto flex-col-reverse rounded-2xl border-1 border-gray-200 bg-violet-700 px-8 py-12 text-white md:flex-col md:py-16 md:px-16 lg:mt-0">
+                    <div className="mt-16 flex h-auto flex-col-reverse rounded-2xl border-1 border-gray-200 bg-violet-700 px-8 py-12 text-white md:flex-col md:py-16 md:px-16 lg:mt-0 lg:h-full">
                         <img
                             src="/assets/icons/prezi.svg"
                             className="mb-[70px] hidden h-[48px] w-[115px] pb-[10.29px] md:block"
                         />
-                        <p className="mb:pb-6 mb:text-[35px] mb-0 text-[32px] font-normal leading-[43.75px] -tracking-[0.25px]">
+                        <p className="text-[32px] font-normal leading-[43.75px] -tracking-[0.25px] md:mb-6 md:!text-[35px]">
                             With Code Insights, our data and migration tracking is accurate across our entire codebase,
                             and our engineers and managers can shift out of manual spreadsheets and spend more time
                             working on code.”
                         </p>
                         <div>
                             <p className="mb-0 text-base leading-6 tracking-[-0.25px] opacity-80">Balázs Tóthfalussy</p>
-                            <p className="mb-6 text-sm leading-[19.88px] md:mb-[82px]">Engineering Manager, Prezi</p>
+                            <p className="mb-6 text-sm leading-[19.88px] md:mb-[106px]">Engineering Manager, Prezi</p>
                         </div>
                     </div>
                 }
