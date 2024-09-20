@@ -8,9 +8,8 @@ import { TrendingUp } from 'lucide-react'
 import InformationCircleOutlineIcon from 'mdi-react/InformationCircleOutlineIcon'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { captureCustomEventWithPageData } from '../lib/utils'
-// import { MdOutlineTrendingUp } from 'react-icons/md'
 
+// import { MdOutlineTrendingUp } from 'react-icons/md'
 import {
     ContentSection,
     Layout,
@@ -34,6 +33,7 @@ import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { buttonLocation, buttonStyle } from '../data/tracking'
 import { useWindowWidth } from '../hooks/windowWidth'
+import { captureCustomEventWithPageData } from '../lib/utils'
 
 interface Tab {
     key: string

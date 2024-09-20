@@ -3,11 +3,10 @@ import { FunctionComponent } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import {captureCustomEventWithPageData} from '../lib/utils'
 import { ContentSection, CodyPartners, Layout, TwoColumnSection, Video } from '../components'
 import { CodeSearchCard } from '../components/Code-search/CodeSearchCard'
+import {captureCustomEventWithPageData} from '../lib/utils'
 import { TelemetryProps } from '../telemetry'
-
 
 const testimonials = [
     {
