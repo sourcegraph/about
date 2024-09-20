@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { CaptureResult} from 'posthog-js'
 
 import { ContentSection } from '../../ContentSection'
+import { captureCustomEventWithPageData } from '../../../lib/utils'
 
 interface CodyIntroDualThemeProps {
     isLight?: boolean
@@ -77,6 +78,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                     title="Chat on the web"
                     className="btn btn-secondary mr-4 px-5 py-3"
                     type="button"
+                    onClick={() => captureCustomEventWithPageData('chat_on_the_web_click')}
                 >
                     <div className="flex items-center justify-center">Chat on the web</div>
                 </Link>

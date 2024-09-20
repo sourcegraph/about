@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { ContentSection, CodyPartners, Layout, TwoColumnSection, Video } from '../components'
 import { CodeSearchCard } from '../components/Code-search/CodeSearchCard'
 import { TelemetryProps } from '../telemetry'
+import {captureCustomEventWithPageData} from '../lib/utils'
 
 const testimonials = [
     {
@@ -306,7 +307,11 @@ const CodeSearchHero: FunctionComponent = () => (
                     codebases of any scale and with any number of code hosts.
                 </h3>
                 <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
-                    <Link href="/contact/request-info" className="btn btn-primary">
+                    <Link 
+                        href="/contact/request-info" 
+                        className="btn btn-primary"
+                        onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click')}
+                    >
                         Book a demo
                     </Link>
                     <Link

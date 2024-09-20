@@ -213,7 +213,7 @@ const HeaderContent: FunctionComponent<
                 onClick={() => handleOpenModal('login_click', false)}
                 id="topnav"
                 href="https://sourcegraph.com/sign-in?returnTo=/cody/manage"
-                title="Get started with Cody"
+                title="Login to Cody dashboard"
                 className={`lg:btn-sm order-3 py-3 px-5 lg:order-1 lg:px-0 ${getButtonClasses(dark, isMobile)}`}
                 type="button"
             >

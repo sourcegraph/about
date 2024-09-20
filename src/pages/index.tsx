@@ -324,6 +324,7 @@ const Home: FunctionComponent = () => {
                                     href="/contact/request-info"
                                     title="Get Cody for Enterprise"
                                     className="btn btn-secondary-dark w-full px-6 py-2 text-center md:w-auto"
+                                    onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click', 'bottom')}
                                 >
                                     Book a demo
                                 </Link>
@@ -435,7 +436,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
                             title="Book a demo"
                             className="btn btn-secondary mb-4 w-full max-w-[356px] px-5 sm:mb-12 sm:w-fit sm:px-6"
                             type="button"
-                            onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click')}
+                            onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click', 'top')}
                         >
                             <div className="flex items-center justify-center">Book a demo</div>
                         </Link>

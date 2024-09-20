@@ -8,6 +8,7 @@ import { TrendingUp } from 'lucide-react'
 import InformationCircleOutlineIcon from 'mdi-react/InformationCircleOutlineIcon'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { captureCustomEventWithPageData } from '../lib/utils'
 // import { MdOutlineTrendingUp } from 'react-icons/md'
 
 import {
@@ -110,6 +111,7 @@ const ContactUsButton: FunctionComponent<{ className?: string; href: string; tit
         data-button-style={buttonStyle.outline}
         data-button-location={buttonLocation.bodyDemo}
         data-button-type="cta"
+        onClick={() => captureCustomEventWithPageData('contact_sales_pricing_click')}
     >
         {title}
     </Link>
