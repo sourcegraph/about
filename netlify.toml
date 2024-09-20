@@ -25,6 +25,10 @@
 [[redirects]]
   from = "/app"
   to = "/cody"
+  
+[[redirects]]
+  from = "/get-cody"
+  to = "/cody"
 
 [[redirects]]
   from = "/own"
@@ -242,6 +246,14 @@
 [[redirects]]
   from = "/cloud"
   to = "/enterprise"
+
+[[redirects]]
+  from = "/case-studies/customer-story/casestudycontent"
+  to = "/case-studies"
+
+[[redirects]]
+  from = "/docs/extensions"
+  to = "/docs"
 
 # ========== END INDIVIDUAL REDIRECTS ==========
 
