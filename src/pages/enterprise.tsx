@@ -23,6 +23,7 @@ import { WriteCodeFasterSection } from '../components/Enterprise/WriteCodeFaster
 import { breakpoints } from '../data/breakpoints'
 import { buttonLocation, buttonStyle } from '../data/tracking'
 import { useWindowWidth } from '../hooks/windowWidth'
+import { captureCustomEventWithPageData } from '../lib/utils'
 
 const Enterprise: FunctionComponent = () => {
     const windowWidth = useWindowWidth()
@@ -89,6 +90,7 @@ const Enterprise: FunctionComponent = () => {
                                     data-button-style={buttonStyle.primary}
                                     data-button-location={buttonLocation}
                                     data-button-type="cta"
+                                    onClick={() => captureCustomEventWithPageData('start_enterprise_trial_click')}
                                 >
                                     Start your free trial
                                 </Link>
