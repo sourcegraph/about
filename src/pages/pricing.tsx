@@ -63,7 +63,10 @@ const GetStartedButton: FunctionComponent<{ className?: string; title?: string }
 }) => {
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal('pricing')
+    const handleOpenModal = (): void => {
+        captureCustomEventWithPageData('get_cody_onpage_click')
+        openModal('pricing')
+    }
 
     return (
         <button
@@ -83,7 +86,10 @@ const GetProButton: FunctionComponent<{ className?: string; title?: string }> = 
 }) => {
     const { openModal } = useAuthModal()
 
-    const handleOpenModal = (): void => openModal('cody', 'pro', true)
+    const handleOpenModal = (): void => {
+        captureCustomEventWithPageData('get_cody_onpage_click')
+        openModal('cody', 'pro', true)
+    }
     return (
         <button
             title={title}
