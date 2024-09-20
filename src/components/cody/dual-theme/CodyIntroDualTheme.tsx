@@ -3,9 +3,9 @@ import React, { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 import { CaptureResult} from 'posthog-js'
-
-import { ContentSection } from '../../ContentSection'
 import { captureCustomEventWithPageData } from '../../../lib/utils'
+import { ContentSection } from '../../ContentSection'
+
 
 interface CodyIntroDualThemeProps {
     isLight?: boolean
