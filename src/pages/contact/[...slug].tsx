@@ -25,9 +25,9 @@ const ContactPage: NextPage<ContactPageProps> = ({
     const slugName = router?.query?.slug ? router.query.slug[0] : null
 
     useEffect(() => {
-        if (formSubmitted && slugName === 'request-info') {
-            captureCustomEventWithPageData('contact_us_submit', undefined, true)
-        }
+        // if (formSubmitted && slugName === 'request-info') {
+        //     captureCustomEventWithPageData('contact_us_submit', undefined, true)
+        // }
     }, [formSubmitted, slugName])
 
     return (
@@ -59,7 +59,10 @@ const ContactPage: NextPage<ContactPageProps> = ({
                                 chiliPiper={false}
                                 bookIt={true}
                                 {...(form_submission_source && { form_submission_source })}
-                                onFormSubmitted={() => setFormSubmitted(true)}
+                                onFormSubmitted={() => {
+                                    setFormSubmitted(true)
+                                    captureCustomEventWithPageData('contact_us_submit', undefined, true)
+                                }}
                             />
                         </div>
                     </div>
