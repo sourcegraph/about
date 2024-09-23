@@ -1,7 +1,7 @@
-import { type FunctionComponent, useState } from 'react'
+import { type FunctionComponent, useState, useRef, useEffect } from 'react'
 
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid'
 import classNames from 'classnames'
+import { ChevronDown, ChevronUp } from 'lucide-react'
 
 import { ContentSection } from '..'
 
@@ -11,6 +11,9 @@ interface CodyIdeProps {
 
 export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) => {
     const [isExpanded, setIsExpanded] = useState(false)
+    const [isAnimating, setIsAnimating] = useState(false)
+    const contentRef = useRef<HTMLDivElement>(null)
+    const [contentHeight, setContentHeight] = useState(0)
 
     const allIdes = [
         { name: 'VS Code', icon: 'vs_code.svg' },
@@ -30,18 +33,38 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
 
     const visibleIdes = isExpanded ? allIdes : allIdes.slice(0, 4)
 
+    useEffect(() => {
+        if (contentRef.current) {
+            setContentHeight(contentRef.current.scrollHeight)
+        }
+    }, [isExpanded])
+
+    // Handle the animation end for smoothness
+    useEffect(() => {
+        if (isAnimating) {
+            const timeout = setTimeout(() => {
+                setIsAnimating(false)
+            }, 500) // Match the duration of the transition
+            return () => clearTimeout(timeout)
+        }
+    }, [isAnimating])
+
+    const handleToggle = (): void => {
+        setIsAnimating(true)
+        setIsExpanded(!isExpanded)
+    }
     return (
         <ContentSection
             parentClassName="!py-0"
             className={classNames('flex w-full flex-col items-center md:flex-col', {
-                'mb-[0] mt-[64px] gap-x-0 md:mt-[55px] md:gap-x-12 md:pl-[148.5px] md:pr-0': isLight,
+                'mb-[0] mt-16 gap-x-0 md:my-24 md:gap-x-12 md:pr-0': isLight,
                 'mt-16 gap-x-12 gap-y-6 md:mt-14 md:pr-8 ': !isLight,
             })}
         >
             <h4
                 className={classNames('mb-6 whitespace-nowrap', {
                     'text-gray-200': !isLight,
-                    'text-[#0F111A]': isLight,
+                    'text-gray-700': isLight,
                 })}
             >
                 Cody is available for:
@@ -53,22 +76,30 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                 })}
             >
                 <div
-                    className={classNames('flex flex-wrap items-center justify-center', {
-                        'w-full gap-x-6 gap-y-8': !isLight,
-                        'w-auto gap-x-[24px] gap-y-4 md:gap-x-[32px]': isLight,
-                    })}
+                    // eslint-disable-next-line react/forbid-dom-props
+                    style={{
+                        maxHeight: isExpanded ? `${contentHeight}px` : '200px',
+                        transition: 'max-height 0.5s ease',
+                        overflow: 'hidden',
+                    }}
                 >
-                    {visibleIdes.map(ide => (
-                        <div
-                            key={ide.name}
-                            className={classNames('flex items-center gap-x-4 md:px-6', { 'py-[12px]': isLight })}
-                        >
-                            <img
-                                className="h-[45px] w-[45px]"
-                                src={`/icons/IDEs/${ide.icon}`}
-                                alt={`${ide.name} IDE Marketplace`}
-                            />
-                            <div className={classNames({ 'w-[110px]': isLight })}>
+                    <div
+                        ref={contentRef}
+                        className={classNames('flex flex-wrap items-center justify-center gap-x-6', {
+                            'w-full gap-y-8': !isLight,
+                            'w-auto gap-y-4 md:gap-x-24': isLight,
+                        })}
+                    >
+                        {visibleIdes.map(ide => (
+                            <div
+                                key={ide.name}
+                                className={classNames('flex items-center gap-x-4', { 'py-3': isLight })}
+                            >
+                                <img
+                                    className="h-[45px] w-[45px]"
+                                    src={`/icons/IDEs/${ide.icon}`}
+                                    alt={`${ide.name} IDE Marketplace`}
+                                />
                                 <h4
                                     className={classNames({
                                         'text-gray-200': !isLight,
@@ -78,24 +109,25 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                                     {ide.name}
                                 </h4>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
+
                 <button
                     type="button"
-                    onClick={() => setIsExpanded(!isExpanded)}
-                    className={classNames('mt-4 flex items-center pb-4 md:pb-0', {
-                        'text-gray-200': !isLight,
-                        'text-[#0F111A]': isLight,
+                    onClick={handleToggle}
+                    className={classNames('flex items-center  md:pb-0', {
+                        'mt-4 pb-4 text-gray-200': !isLight,
+                        'mt-6 text-gray-700 md:pb-4': isLight,
                     })}
                 >
                     {isExpanded ? (
                         <>
-                            Show less <ChevronUpIcon className="ml-1 h-5 w-5" />
+                            Show less <ChevronUp size={20} className="ml-1" />
                         </>
                     ) : (
                         <>
-                            Show more <ChevronDownIcon className="ml-1 h-5 w-5" />
+                            Show more <ChevronDown size={20} className="ml-1" />
                         </>
                     )}
                 </button>

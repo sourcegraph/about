@@ -1,24 +1,19 @@
 import { FunctionComponent, useState, useEffect } from 'react'
 
 import classNames from 'classnames'
+import { Expand, ShieldCheck, Cloud, ChevronRightIcon } from 'lucide-react'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { posthog } from 'posthog-js'
 
-import {
-    Layout,
-    HubSpotForm,
-    Modal,
-    CodyCta,
-    CodyIde,
-    CodyAutocomplete,
-    CodyChat,
-    CodyImageTab,
-    CodyPartners,
-} from '../components'
+import { Layout, HubSpotForm, Modal, CodyIde, CodyPartners, ContentSection, Badge } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
-import { CodyChooseLlmDualTheme } from '../components/cody/dual-theme/CodyChooseLlmDualTheme'
+import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/FullWidthTabsCarousel'
+import CodyPlan from '../components/cody/CodyPlan'
+import CodyTwoColumnSection from '../components/cody/CodyTwoColumnSection'
 import { CodyIntroDualTheme } from '../components/cody/dual-theme/CodyIntroDualTheme'
 import { HowCodyWorks } from '../components/cody/HowCodyWorks'
+import { EnterpriseGradeSection } from '../components/Enterprise/EnterpriseGradeSection'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
@@ -26,26 +21,104 @@ import { captureCustomEventWithPageData } from '../lib/utils'
 
 import styles from '../styles/CustomHubspotForm.module.scss'
 
-const IMAGE_TAB_CONTENT = [
+const optimizedPoweritems = [
+    { label: 'Claude 3.5 Sonnet', iconUrl: '/assets/cody/anthropic-icon.svg' },
+    { label: 'Claude 3 Opus', iconUrl: '/assets/cody/anthropic-icon.svg' },
+    { label: 'GPT-4o', iconUrl: '/assets/cody/chat-gpt-icon.svg' },
+    { label: 'Gemini 1.5 Pro', iconUrl: '/assets/cody/google-gemini-icon.svg' },
+    { label: 'OpenAI o1-preview', iconUrl: '/assets/cody/chat-gpt-icon.svg' },
+    { label: 'OpenAI o1-mini', iconUrl: '/assets/cody/chat-gpt-icon.svg' },
+]
+const optimizedSpeed = [
+    { label: 'Gemini 1.5 Flash', iconUrl: '/assets/cody/google-gemini-icon.svg' },
+    { label: 'Claude 3 Haiku', iconUrl: '/assets/cody/anthropic-icon.svg' },
+    { label: 'Mixtral 8x7B', iconUrl: '/assets/cody/chat-gpt-icon.svg' },
+]
+
+const items = [
     {
-        header: 'Explain code or entire repositories',
-        description: 'Get up to speed on new projects quickly',
-        imageSrc: { mobile: '/cody/explain-code.png', desktop: '/cody/explain-code.svg' },
+        title: 'Autocompletes',
+        text: (
+            <div>
+                <img
+                    src="/assets/cody/fullWidthTabPaceholder.png"
+                    className="max-h-[534px] max-w-[738px]"
+                    alt="autocompletes"
+                />
+            </div>
+        ),
     },
     {
-        header: 'Generate unit tests in seconds',
-        description: 'Spend more time writing new code',
-        imageSrc: { mobile: '/cody/generate-unit-tests.png', desktop: '/cody/generate-unit-tests.svg' },
+        title: 'Edits',
+        text: (
+            <div>
+                <img
+                    src="/assets/cody/fullWidthTabPaceholder.png"
+                    className="max-h-[534px] max-w-[738px]"
+                    alt="edits"
+                />
+            </div>
+        ),
     },
     {
-        header: 'Describe code smells',
-        description: 'Optimize your code for best practices',
-        imageSrc: { mobile: '/cody/describe-code-smell.png', desktop: '/cody/describe-code-smell.svg' },
+        title: 'Prompts (unit tests)',
+        text: (
+            <div>
+                <img
+                    src="/assets/cody/fullWidthTabPaceholder.png"
+                    className="max-h-[534px] max-w-[738px]"
+                    alt="prompts"
+                />
+            </div>
+        ),
+    },
+]
+
+const securityCardFeatures = [
+    {
+        icon: <Expand size={24} />,
+        heading: 'Scalable to 500,000+ repositories',
+        paragraph: 'Deploy Cody to your entire codebase for scalable context fetching.',
     },
     {
-        header: 'Define your own custom prompts',
-        description: 'Customize Cody for your workflow',
-        imageSrc: { mobile: '/cody/define-custom-command.png', desktop: '/cody/define-custom-command.svg' },
+        icon: <ShieldCheck size={24} />,
+        heading: 'Privacy and Security',
+        paragraph: 'Provided LLMs do not retain your data or train on your code. Cody is SOC 2 Type 2 compliant.',
+    },
+    {
+        icon: <Cloud size={24} />,
+        heading: 'Flexible deployment',
+        paragraph: 'Let us host in our single-tenant cloud, or self-host Cody on-premises or in your own VPC.',
+    },
+]
+
+const singleViewCardContent = [
+    {
+        imgSrc: '/assets/cody/authorPlaceholder.png',
+        description: `There’s no other program that walks you through exactly what you need to know to start an online
+store fast, written by someone who has built several 7-figure ecommerce businesses from scratch.
+What’s more, everything has been broken down in step-by-step detail with real action plans
+including finding your niche.`,
+        author: 'Name',
+        username: 'username',
+    },
+    {
+        imgSrc: '/assets/cody/authorPlaceholder.png',
+        description: `There’s no other program that walks you through exactly what you need to know to start an online
+store fast, written by someone who has built several 7-figure ecommerce businesses from scratch.
+What’s more, everything has been broken down in step-by-step detail with real action plans
+including finding your niche.`,
+        author: 'Name',
+        username: 'username',
+    },
+    {
+        imgSrc: '/assets/cody/authorPlaceholder.png',
+        description: `There’s no other program that walks you through exactly what you need to know to start an online
+store fast, written by someone who has built several 7-figure ecommerce businesses from scratch.
+What’s more, everything has been broken down in step-by-step detail with real action plans
+including finding your niche.`,
+        author: 'Name',
+        username: 'username',
     },
 ]
 
@@ -56,8 +129,8 @@ const CodyPage: FunctionComponent = () => {
     const router = useRouter()
     const { pathname } = router
     const { openModal } = useAuthModal()
-    const [title, setTitle ] = useState('');
-    const [titleSize, setTitleSize ] = useState('');
+    const [title, setTitle] = useState('')
+    const [titleSize, setTitleSize] = useState('')
     const [description, setDescription] = useState('')
     const [descriptionSize, setDescriptionSize] = useState('')
 
@@ -69,30 +142,38 @@ const CodyPage: FunctionComponent = () => {
 
     useEffect(() => {
         posthog.onFeatureFlags(() => {
-            const featureFlag = posthog.getFeatureFlag('cody-page-messaging-test');
+            const featureFlag = posthog.getFeatureFlag('cody-page-messaging-test')
             if (featureFlag === 'test-most-informed') {
-                setTitle('The most informed Code AI');
-                setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster')
-                setTitleSize('text-[40px] text-4xl sm:text-8xl')
+                setTitle('The AI assistant with context of your codebase, docs, tickets, and the web')
+                setDescription(
+                    'Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster'
+                )
+                setTitleSize('text-4xl sm:text-6xl')
                 setDescriptionSize('md:text-xl')
             } else if (featureFlag === 'test-models-context') {
-                setTitle('Coding assistant with the latest AI and the most context');
-                setDescription('Cody uses context of your codebase, docs, tickets, and the web for faster development and accurate code-gen')
-                setTitleSize('text-[40px] text-4xl sm:text-6xl')
+                setTitle('Coding assistant with the latest AI and the most context')
+                setDescription(
+                    'Cody uses context of your codebase, docs, tickets, and the web for faster development and accurate code-gen'
+                )
+                setTitleSize('text-4xl sm:text-6xl')
                 setDescriptionSize('md:text-xl')
             } else if (featureFlag === 'test-multiple-contexts') {
-                setTitle('The AI assistant with context of your codebase, docs, tickets, and the web');
-                setDescription('Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster')
-                setTitleSize('text-[34px] text-4xl sm:text-8xl')
+                setTitle('Code more, type less')
+                setDescription(
+                    'Cody is an AI coding assistant that uses advanced search and codebase context to help you understand, write, and fix code faster'
+                )
+                setTitleSize('text-4xl sm:text-6xl')
                 setDescriptionSize('md:text-xl')
             } else {
-                setTitle('Code more, type less');
-                setDescription('Cody is an AI coding assistant that uses advanced search and codebase context to help you understand, write, and fix code faster')
-                setTitleSize('text-[52px] text-4xl sm:text-8xl')
+                setTitle('The AI assistant with context of your codebase, docs, tickets, and the web')
+                setDescription(
+                    'Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster'
+                )
+                setTitleSize('text-4xl sm:text-6xl')
                 setDescriptionSize('md:text-xl')
             }
-        });
-    }, []);
+        })
+    }, [])
 
     return (
         <Layout
@@ -103,60 +184,355 @@ const CodyPage: FunctionComponent = () => {
                 image: 'https://sourcegraph.com/cody/cody-og.png',
             }}
             displayChildrenUnderNav={true}
+            childrenClassName="!-mt-[152px]"
             className="relative w-full !overflow-hidden bg-gray-50"
         >
-            <div className="relative md:pt-10">
-                <div className="sg-bg-gradient-cody-light-mobile-hero !absolute top-[310px] z-[10] h-[650px] w-[1000px] md:relative md:hidden md:bg-none" />
-                {title && description && 
-                    <CodyIntroDualTheme
-                        isLight={true}
-                        title={title}
-                        description={description}
-                        titleSize={titleSize}
-                        descriptionSize={descriptionSize}
-                        handleOpenModal={handleOpenModal}
-                        wrapperClassName="relative z-[20] md:z-0"
-                    />
-                }
+            <div className="relative">
+                <div className="absolute hidden h-[1px] w-full bg-black opacity-[13%] xl:flex" />
+                <div className="absolute bottom-0 hidden h-[1px] w-full bg-black opacity-[13%] xl:flex" />
+                <ContentSection className="relative" parentClassName="!py-0">
+                    <div className="sg-bg-IDE hidden h-[53px] items-center border border-[#E6E6E7] pl-[22px] xl:flex">
+                        <img src="/assets/cody/ide-menu-dots.svg" alt="" aria-hidden={true} />
+                    </div>
+                    <div className="relative flex h-full">
+                        <div className="relative hidden xl:flex">
+                            <div className="absolute left-[100px] hidden h-[741px] w-[1px] bg-black opacity-[13%] xl:flex" />
+                            <div className="absolute -right-[2px] hidden h-[741px] w-[1px] bg-black opacity-[13%] xl:flex" />
+                            <div className="sg-bg-IDE hidden h-[687px] w-[42px] items-center border border-[#E6E6E7] xl:flex" />
 
-                <p className="pt-32 text-center text-base font-normal uppercase leading-[27px] text-gray-400">
-                    Over 2.5M engineers use Sourcegraph
-                </p>
-
-                <CodyPartners isLight={true} className="!pt-0 !pb-[32px] md:pb-0" />
+                            <div className="relative pl-7 pt-7">
+                                <div className="absolute -top-[52px] hidden h-[342px] w-[1px] bg-black opacity-[13%] xl:flex" />
+                                <div className="absolute hidden h-[1px] w-[354px] bg-black opacity-[13%] xl:flex" />
+                                <div className="">
+                                    <div className="ide flex w-[398px] flex-col">
+                                        <div className="relative flex w-[372px] items-center justify-between border-y border-l border-black/[0.13] bg-white bg-gray-50">
+                                            <div className="flex items-center opacity-[50%]">
+                                                <img src="/assets/cody/chat-icon.svg" alt="" aria-hidden={true} />
+                                                <img src="/assets/cody/clock-icon.svg" alt="" aria-hidden={true} />
+                                                <img src="/assets/cody/notes-icon.svg" alt="" aria-hidden={true} />
+                                            </div>
+                                            <img
+                                                src="/assets/cody/user-icon.svg"
+                                                className="opacity-[50%]"
+                                                alt=""
+                                                aria-hidden={true}
+                                            />
+                                        </div>
+                                        <div className="relative border-l border-black/[0.13] bg-gray-50 p-3">
+                                            <div className="flex items-center justify-start gap-1.5 bg-gray-50">
+                                                <img
+                                                    src="/assets/cody/quin-avatar-icon.svg"
+                                                    alt=""
+                                                    aria-hidden={true}
+                                                />
+                                                <p className="mb-0 text-sm font-medium">Quinn Slack</p>
+                                            </div>
+                                            <div className="sg-IDE-editor mt-2 flex flex-col gap-1.5">
+                                                <div className="flex items-center gap-1 px-2 pt-2 pb-6">
+                                                    <IDEBadge
+                                                        text="ecommerce/checkout"
+                                                        className="!bg-[#DBE2F0]/[0.32] !p-1.5 !text-sm tracking-tight !text-[#181B26]"
+                                                        src="/assets/cody/github-icon.svg"
+                                                    />
+                                                    <IDEBadge
+                                                        text="File.svelte"
+                                                        className="!bg-[#DBE2F0]/[0.32] !p-1.5 !text-sm tracking-tight !text-[#181B26]"
+                                                        src="/assets/cody/svelte-icon.svg"
+                                                    />
+                                                    <div className="h-5 w-[3px] bg-black" />
+                                                </div>
+                                                <div className="flex items-center justify-between gap-1 border-t border-[#E6EBF2]">
+                                                    <div className="flex">
+                                                        <img
+                                                            src="/assets/cody/at-icon.svg"
+                                                            className="ml-1"
+                                                            alt=""
+                                                            aria-hidden={true}
+                                                        />
+                                                        <img
+                                                            src="/assets/cody/notes-icon.svg"
+                                                            alt=""
+                                                            aria-hidden={true}
+                                                        />
+                                                        <div className="ml-4 flex items-center gap-1.5">
+                                                            <img
+                                                                src="/assets/cody/anthropic-icon.svg"
+                                                                alt=""
+                                                                aria-hidden={true}
+                                                            />
+                                                            <p className="mb-0 text-[13px] leading-4 tracking-tight text-[#1D212F]">
+                                                                Claude 3.5 Sonnet
+                                                            </p>
+                                                            <img
+                                                                src="/assets/cody/chevrons-up-down-icon.svg"
+                                                                alt=""
+                                                                aria-hidden={true}
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <img
+                                                        className="mr-1"
+                                                        src="/assets/cody/submit-icon.svg"
+                                                        alt=""
+                                                        aria-hidden={true}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="relative flex">
+                                            <div className="absolute -left-[152px] h-[1px] w-[265px] bg-black opacity-[13%]" />
+                                            <IDEBadge
+                                                text="Claude 3 Opus"
+                                                className="sg-badge-pill sg-badge-pill-bg absolute top-[3px] left-[90px] !px-3 !py-1 !text-black"
+                                                src="/assets/cody/anthropic-icon.svg"
+                                            />
+                                            <IDEBadge
+                                                text="OpenAI o1"
+                                                className="sg-badge-pill sg-badge-pill-bg absolute top-11 right-[70px] !px-3 !py-1 !text-black"
+                                                src="/assets/cody/chat-gpt-icon.svg"
+                                            />
+                                            <IDEBadge
+                                                text="Gemini 1.5 Pro"
+                                                className="sg-badge-pill sg-badge-pill-bg absolute top-[57px] right-[195px] !px-3 !py-1 !text-black"
+                                                src="/assets/cody/google-gemini-icon.svg"
+                                            />
+                                            <IDEBadge
+                                                text="Mixtral 8x22B"
+                                                className="sg-badge-pill sg-badge-pill-bg absolute top-24 right-[70px] !px-3 !py-1 !text-black"
+                                                src="/assets/cody/mistral-icon.svg"
+                                            />
+                                        </div>
+                                        <div className="relative left-[31px] top-[140px] flex  flex-col gap-1.5">
+                                            <div className="relative">
+                                                <div className="absolute right-[30px] h-[1px] w-[272px] bg-black opacity-[13%]" />
+                                                <CodyAbility
+                                                    src="/assets/cody/pencil-line-icon.svg"
+                                                    title="Edit Code"
+                                                    subTitle="Run on a file or selection to modify code"
+                                                />
+                                                <div className="absolute bottom-0 h-[1px] w-[314px] bg-black opacity-[13%]" />
+                                            </div>
+                                            <div className="relative">
+                                                <div className="absolute h-[1px] w-[244px] bg-black opacity-[13%]" />
+                                                <CodyAbility
+                                                    src="/assets/cody/file-question-icon.svg"
+                                                    title="Explain Code"
+                                                    subTitle="Understand the open project or file better"
+                                                />
+                                                <div className="absolute bottom-0 right-[30px] h-[1px] w-[428px] bg-black opacity-[13%]" />
+                                            </div>
+                                            <div className="relative">
+                                                <div className="absolute h-[1px] w-[368px] bg-black opacity-[13%]" />
+                                                <CodyAbility
+                                                    src="/assets/cody/open-book-icon.svg"
+                                                    title="Document Code"
+                                                    subTitle="Add comments to file or selection"
+                                                />
+                                                <div className="absolute bottom-0 h-[1px] w-[277px] bg-black opacity-[13%]" />
+                                            </div>
+                                            <div className="relative">
+                                                <div className="absolute h-[1px] w-[368px] bg-black opacity-[13%]" />
+                                                <CodyAbility
+                                                    src="/assets/cody/hammer-icon.svg"
+                                                    title="Generate Unit Tests"
+                                                    subTitle="Create tests for the open file"
+                                                />
+                                                <div className="absolute bottom-0 h-[1px] w-[368px] bg-black opacity-[13%]" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='xl:bg-start w-[812px] overflow-hidden bg-none xl:border-b xl:border-r xl:border-[#DBE2F0] xl:bg-[url("/assets/cody/syntax-highlighter-bg.svg")] xl:bg-cover'>
+                            <div className="relative max-w-[812px]">
+                                <div className="max-w-[749px] xl:pl-20 xl:pr-0">
+                                    {title && description && (
+                                        <CodyIntroDualTheme
+                                            isLight={true}
+                                            title={title}
+                                            description={description}
+                                            titleSize={titleSize}
+                                            descriptionSize={descriptionSize}
+                                            handleOpenModal={handleOpenModal}
+                                            wrapperClassName="relative z-[20] md:z-0"
+                                            isVariant={true}
+                                        />
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ContentSection>
+            </div>
+            <div className="pt-[104px] md:pt-24">
+                <CodyPartners isLight={true} className="!pt-0 !pb-16 md:!pb-24" />
             </div>
 
-            <CodyChat isLight={true} />
+            <ContentSection className="mt-16 rounded-3xl border border-[#E4E9F4] bg-white px-6 py-16 md:mt-0 md:px-16">
+                <div className="bg-white">
+                    <div className="text-gray-700 md:max-w-[632px] md:pl-6">
+                        <h2 className="pb-10">Developer chat with the most powerful models and context.</h2>
+                        <h5 className="text-gray-700 opacity-70">
+                            Best models and context power Cody's chat. With chat-oriented programming, you can solve
+                            your hardest engineering problems.
+                        </h5>
+                    </div>
+                    <div className="mt-14 h-[581px] max-h-[581px] w-full max-w-[1152px] overflow-hidden rounded-2xl md:h-full md:rounded-none">
+                        <img
+                            src="/assets/cody/placeholder-chat.svg"
+                            className="h-full w-full object-cover md:h-auto md:w-auto"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </ContentSection>
 
             <CodyIde isLight={true} />
 
-            <CodyImageTab
-                icon="/cody/commands-brand-icon.svg"
-                headerText="Generate, test, and fix code with prompts"
-                description={
-                    <h3 className="mb-0 px-6 pt-[18px] text-[#343A4D]">
-                        Run Cody's one-click prompts or create your own custom prompts to execute AI workflows.
-                    </h3>
-                }
-                tabContent={IMAGE_TAB_CONTENT}
-                isLight={true}
+            <ContentSection parentClassName="py-16 md:!py-28">
+                <CodyTwoColumnSection
+                    subTitle="The best models"
+                    title="Cody uses the latest AI models. Never settle for last-gen."
+                    description="Cody gives you access to the best and latest LLMs. Choose the best one for your use
+                    cases, optimized for speed or power."
+                    extraContent={
+                        <>
+                            <div>
+                                <div className="mb-4 mt-10 text-base font-medium tracking-tight md:mt-[13px]">
+                                    Optimized for Power
+                                </div>
+                                <div className="mb-10 flex max-w-[556px] flex-row flex-wrap gap-4">
+                                    {optimizedPoweritems.map(item => (
+                                        <div key={item.label} className="flex flex-row gap-x-1">
+                                            <IDEBadge
+                                                text={item.label}
+                                                className="w-fit !rounded-[10px] !border !border-[#E4E9F4] !bg-gray-100 !px-3 !py-1 !font-sans !text-sm !font-normal  !text-black"
+                                                src={item.iconUrl}
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                            <div>
+                                <div className="mb-4 text-base font-medium">Optimized for Speed</div>
+                                <div className="flex max-w-[556px] flex-row flex-wrap gap-4">
+                                    {optimizedSpeed.map(item => (
+                                        <div key={item.label} className="flex flex-row gap-x-1">
+                                            <IDEBadge
+                                                text={item.label}
+                                                className="w-fit !rounded-[10px] !border !border-[#E4E9F4] !bg-gray-100 !px-3 !py-1 !font-sans !text-sm !font-normal !text-black"
+                                                src={item.iconUrl}
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </>
+                    }
+                    imgSrc="/assets/cody/placeholder-cody-models.svg"
+                />
+            </ContentSection>
+            <ContentSection parentClassName="!py-0">
+                <div className="rounded-2xl border border-[#E4E9F4] bg-white px-6 pt-16 pb-5 md:px-20">
+                    <img src="/assets/cody/cody-leidos.svg" alt="leidos logo" className="h-[54.91px] w-[171.471px]" />
+                    <p
+                        className={classNames(
+                            'mt-[70px] mb-6 h-min max-w-[780px] text-[35px] font-normal leading-[43.75px] tracking-tight text-gray-700'
+                        )}
+                    >
+                        “Generative AI is a fast-moving field, and the best model that's out there today may not be the
+                        best model tomorrow…using Cody means we can avoid that LLM lock-in.”
+                    </p>
+                    <div className="mb-[119px] flex h-min w-full flex-col md:mb-0">
+                        <div>
+                            <p className="mb-0 text-base leading-6 tracking-[-0.25px] text-gray-500">Rob Linger</p>
+                            <p className="mb-0 text-sm leading-[21px] text-gray-700">AI Software Architect, Leidos</p>
+                        </div>
+                    </div>
+                </div>
+            </ContentSection>
+            <ContentSection parentClassName="py-16 md:!py-28">
+                <CodyTwoColumnSection
+                    subTitle="The best context"
+                    title="The most contextually-accurate code gen, using your entire codebase and more."
+                    description="Cody uses industry-leading code search to retrieve code context from your entire
+                                    remote codebase. Ask Cody about any repository without limits."
+                    extraContent={
+                        <div className="mt-10">
+                            <Link
+                                href="/blog/how-cody-understands-your-codebase"
+                                title="Case study"
+                                className="btn btn-link btn-link-icon p-0 text-right font-semibold !-tracking-[0.25px] md:mx-0 md:text-left"
+                            >
+                                Read about how Cody understands your entire codebase
+                                <ChevronRightIcon className="link-icon" />
+                            </Link>
+                        </div>
+                    }
+                    imgSrc="/assets/cody/placeholder-cody-models.svg"
+                />
+            </ContentSection>
+            <ContentSection parentClassName="py-16 md:!py-28">
+                <CodyTwoColumnSection
+                    leftClassName="!mb-[8px]"
+                    title="Development context requires more than just code. "
+                    description="Cody integrates with Notion, Jira, Linear, and more. Use non-code context to write code that understands-and meets-all of your requirements."
+                    imgSrc="/assets/cody/placeholder-cody-models.svg"
+                />
+            </ContentSection>
+
+            <ContentSection parentClassName="py-16 md:!py-24">
+                <div className="flex flex-col gap-6 md:flex-row">
+                    {singleViewCardContent.map(item => (
+                        <div
+                            key={item.username}
+                            className="flex flex-col rounded-[10px] border border-[#E4E9F4] px-[15px] py-[15px]"
+                        >
+                            <div className="flex flex-row items-center gap-2.5">
+                                <img src={item.imgSrc} className="h-[40px] w-[40px]" alt="" />
+                                <div className="flex flex-col">
+                                    <div className="text-base text-violet-500">{item.author}</div>
+                                    <div className="text-sm text-gray-500">@{item.username}</div>
+                                </div>
+                            </div>
+                            <div className="pt-2.5 pb-2.5 text-lg tracking-tight text-gray-700">{item.description}</div>
+                        </div>
+                    ))}
+                </div>
+            </ContentSection>
+            <ContentSection parentClassName="!py-16 lg:!py-24">
+                <FullWidthTabsCarousel
+                    darkMode={false}
+                    items={items}
+                    parentSectionClassName="!items-start"
+                    content={ContentEnum.Media}
+                    overline={true}
+                    autoAdvance={false}
+                    subtitle="Code completions, code edits, and customizable prompts use Cody’s best models + extensive context to deliver the most accurate results."
+                    cta={false}
+                    title="Upgrade your IDE with powerful AI features"
+                    isVariant={true}
+                />
+            </ContentSection>
+
+            <HowCodyWorks isLight={true} isVariant={true} />
+            <div className="mx-auto max-w-screen-xl !px-6 pt-24 md:pb-4 xl:!px-0">
+                <BentoWithMockup isVariantImage={true} isVariantTitle={true} href="/resources/gartner-mq" />
+            </div>
+
+            <EnterpriseGradeSection
+                parentClassName="!border-0 !bg-none"
+                customHeader="AI at Enterprise scale"
+                description="Cody scales from single developers to the largest enterprises, with flexible deployment and support for enterprise security and compliance."
+                securityCardItems={securityCardFeatures}
+                isCustomSecondLevelContent={true}
+                className="!border-0 !bg-none"
             />
 
-            <CodyAutocomplete isLight={true} wrapperClassName="z-[20] md:z-0 !mt-24" />
-
-            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
-                <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
-            </div>
-
-            <div className="py-8">
-                <CodyChooseLlmDualTheme isLight={true} />
-            </div>
-
-            <HowCodyWorks isLight={true} />
-
-            {/* <SourcePoweredDualTheme isLight={true} /> */}
-
-            <CodyCta source="Cody page" isCodyPage={true} isLight={true} />
+            <ContentSection>
+                <CodyPlan />
+            </ContentSection>
 
             <Modal
                 open={isContactModalOpen}
@@ -183,5 +559,34 @@ const CodyPage: FunctionComponent = () => {
         </Layout>
     )
 }
+
+const IDEBadge: FunctionComponent<{ src: string; className: string; text: string }> = ({
+    src,
+    text,
+    className,
+}): JSX.Element => (
+    <Badge
+        text={text}
+        className={className}
+        size="small"
+        iconPosition="start"
+        icon={<img src={src} alt="" aria-hidden={true} />}
+    />
+)
+
+const CodyAbility: FunctionComponent<{ src: string; className?: string; title: string; subTitle: string }> = ({
+    src,
+    title,
+    subTitle,
+    className,
+}): JSX.Element => (
+    <div className={classNames('flex w-[368px] gap-3 bg-white px-3 py-2', className)}>
+        <img src={src} alt="" aria-hidden={true} />
+        <div className="flex flex-col gap-[2px] text-base text-[#181B26]">
+            <div className="mb-0 font-semibold opacity-60">{title}</div>
+            <div className="mb-0 font-normal opacity-70">{subTitle}</div>
+        </div>
+    </div>
+)
 
 export default CodyPage

@@ -1,4 +1,4 @@
-import { ElementType, FunctionComponent } from 'react'
+import { ElementType, FunctionComponent, isValidElement, ReactElement, ReactNode } from 'react'
 
 import classNames from 'classnames'
 
@@ -20,7 +20,8 @@ interface Badge {
         | 'dark-blue'
         | 'violet-outlined'
     link?: string
-    icon?: ElementType
+    icon?: ElementType | ReactElement
+    iconPosition?: 'start' | 'end'
     onClick?: () => void
     checked?: boolean
     circle?: boolean
@@ -49,13 +50,23 @@ export const Badge: FunctionComponent<Badge> = ({
     color = 'light-gray',
     link,
     icon,
+    iconPosition = 'end',
     onClick,
     checked,
     circle,
     breakWords,
     className,
 }) => {
-    const Icon: ElementType = icon || 'div'
+    const renderIcon = (): ReactNode => {
+        if (isValidElement(icon)) {
+            return icon
+        }
+        if (typeof icon === 'function') {
+            const Icon = icon
+            return <Icon className="ml-1 inline" size={size === 'small' ? 12 : 14} />
+        }
+        return null
+    }
 
     const colors = {
         'light-gray': {
@@ -144,7 +155,7 @@ export const Badge: FunctionComponent<Badge> = ({
     }
 
     const styles = classNames(
-        'inline font-mono align-middle font-medium',
+        'inline font-mono align-middle font-medium flex items-center gap-1 w-fit',
         sizes[size],
         colors[color].base,
         {
@@ -154,6 +165,7 @@ export const Badge: FunctionComponent<Badge> = ({
             'cursor-pointer transition-all ease-out': !!onClick,
             'rounded-full': circle,
             'rounded-md': !circle,
+            'flex-row-reverse': iconPosition === 'start',
         },
         breakWords ? 'break-words' : 'whitespace-nowrap'
     )
@@ -161,7 +173,7 @@ export const Badge: FunctionComponent<Badge> = ({
     return link ? (
         <a href={link} className={classNames('no-underline', styles, className)} tabIndex={0}>
             {text}
-            {icon && <Icon className="ml-1 inline" size={size === 'small' ? 12 : 14} />}
+            {icon && renderIcon()}
         </a>
     ) : (
         <div
@@ -172,7 +184,7 @@ export const Badge: FunctionComponent<Badge> = ({
             role={onClick ? 'button' : undefined}
         >
             {text}
-            {icon && <Icon className="ml-1 inline" size={size === 'small' ? 12 : 14} />}
+            {icon && renderIcon()}
         </div>
     )
 }

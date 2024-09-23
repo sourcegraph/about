@@ -7,7 +7,8 @@ export const BentoWithMockup: FunctionComponent<{
     href?: string
     isDarkBorder?: boolean
     isVariantTitle?: boolean
-}> = ({ href, isVariantTitle, isDarkBorder }) => (
+    isVariantImage?: boolean
+}> = ({ href, isVariantTitle, isDarkBorder, isVariantImage }) => (
     <div
         className={classNames('flex flex-col overflow-hidden rounded-2xl bg-violet-700 md:flex-row', [
             { 'border border-gray-500': isDarkBorder },
@@ -37,10 +38,18 @@ export const BentoWithMockup: FunctionComponent<{
                 )}
             </div>
         </div>
-        <div className="relative flex h-[330px] w-full items-end justify-end overflow-hidden md:h-auto md:w-auto">
+        <div
+            className={classNames('relative flex h-[330px] w-full  overflow-hidden md:h-auto md:w-auto', {
+                'items-end justify-end': !isVariantImage,
+                'justify-center md:items-end': isVariantImage,
+            })}
+        >
             <img
                 src="/assets/resources/reportMockup.svg"
-                className="absolute bottom-0 -right-[114px] h-[330px] min-h-[330px] w-[458px]  min-w-[458px] md:relative md:right-0 md:h-min md:min-h-min md:w-auto md:min-w-full"
+                className={classNames(
+                    ' h-[330px] min-h-[330px] w-[458px] min-w-[458px] md:relative md:right-0 md:h-min md:min-h-min md:w-auto md:min-w-full',
+                    { 'absolute bottom-0 -right-[114px]': !isVariantImage, relative: isVariantImage }
+                )}
             />
         </div>
     </div>
