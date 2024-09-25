@@ -209,7 +209,7 @@ const DevStarterPackModal: FunctionComponent = () => {
 
     const handleClose = (): void => {
         if (dialogRef.current) {
-            ;(dialogRef.current as HTMLDialogElement)?.close?.()
+            ;(dialogRef.current as DialogElement)?.close?.()
         }
     }
 
