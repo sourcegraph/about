@@ -1,0 +1,5 @@
+{
+  "codeConnect": {
+    "include": ["/**/*.{tsx,jsx}"]
+  }
+}
