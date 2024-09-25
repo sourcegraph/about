@@ -216,7 +216,7 @@ const DevStarterPackModal: FunctionComponent = () => {
     return (
         <dialog
             ref={dialogRef}
-            className="relative rounded-lg bg-white px-4 pb-4 pt-5 text-left transition-all sm:my-40 sm:w-full sm:max-w-xl sm:p-16"
+            className="relative rounded-lg bg-white px-4 py-8 text-left transition-all sm:my-40 sm:w-full sm:max-w-xl sm:p-16"
         >
             <div>
                 <div className="mx-auto flex aspect-video w-32 items-center justify-center rounded-md bg-[#0D121A]">
@@ -225,8 +225,8 @@ const DevStarterPackModal: FunctionComponent = () => {
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <div className="mt-3 text-center sm:mt-7">
-                    <h2 className="text-gray-900 flex items-center justify-center gap-x-2 text-2xl font-semibold leading-6">
+                <div className="mt-5 text-center sm:mt-7">
+                    <h2 className="text-gray-900 flex flex-col items-center justify-center gap-2 text-2xl font-semibold leading-6 sm:flex-row">
                         Dev Starter Pack{' '}
                         <span className="inline-flex items-center rounded-full bg-vermillion-100 px-2 py-1 text-xs font-medium text-vermillion-500 ring-1 ring-inset ring-vermillion-500/10">
                             Activated!
@@ -234,7 +234,7 @@ const DevStarterPackModal: FunctionComponent = () => {
                     </h2>
 
                     <div className="mt-4">
-                        <p className="text-balance text-sm text-gray-500">
+                        <p className="text-balance text-xs text-gray-500 sm:text-sm">
                             Cody has unmatched context and the latest AI models. Supercharge your coding with AI
                             autocomplete, chat, inline edits, Smart Apply, and more.
                         </p>
@@ -243,7 +243,7 @@ const DevStarterPackModal: FunctionComponent = () => {
             </div>
 
             <div className="mt-5 sm:mt-6">
-                <div className="mb-4 rounded bg-gray-100 p-2 text-center font-mono text-lg tracking-tighter">
+                <div className="mb-4 rounded bg-gray-100 p-2 text-center font-mono text-sm tracking-tighter sm:text-lg">
                     1 free month of Cody Pro!
                 </div>
             </div>
