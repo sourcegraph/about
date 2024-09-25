@@ -199,7 +199,7 @@ const DevStarterPackModal: FunctionComponent = () => {
     const dialogRef = useRef<HTMLDialogElement>(null)
 
     // Define a type for the dialog element
-    type DialogElement = HTMLDialogElement & { showModal: () => void }
+    type DialogElement = HTMLDialogElement & { showModal: () => void; close: () => void }
 
     useEffect(() => {
         if (router.query.ref === 'devstarterpack' && dialogRef.current) {
