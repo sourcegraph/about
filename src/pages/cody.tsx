@@ -238,13 +238,16 @@ const DevStarterPackModal: FunctionComponent = () => {
                             Cody has unmatched context and the latest AI models. Supercharge your coding with AI
                             autocomplete, chat, inline edits, Smart Apply, and more.
                         </p>
+                        <p className="text-balance text-xs text-gray-500 sm:text-sm font-bold">
+                            Get 1 free month of Cody Pro! Use the code below:
+                        </p>
                     </div>
                 </div>
             </div>
 
             <div className="mt-5 sm:mt-6">
                 <div className="mb-4 rounded bg-gray-100 p-2 text-center font-mono text-sm tracking-tighter sm:text-lg">
-                    1 free month of Cody Pro!
+                    DevStarterPack
                 </div>
             </div>
 
