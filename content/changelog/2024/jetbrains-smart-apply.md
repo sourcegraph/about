@@ -13,6 +13,7 @@ description: "Smart Apply is now available for JetBrains, allowing users to take
 tags: [JetBrains, Enterprise, Cody]
 
 version: [v7.0.0]
+versionIcon: /assets/changelog/jetbrains.svg
 
 slug: 'jetbrains-smart-apply'
 

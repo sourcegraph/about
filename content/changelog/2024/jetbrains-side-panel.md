@@ -13,6 +13,7 @@ description: "In our quest for consistency across how you use Cody, JetBrains us
 tags: [JetBrains, Enterprise, Cody]
 
 version: [v7.0.0]
+versionIcon: /assets/changelog/jetbrains.svg
 
 slug: 'jetbrains-side-panel'
 
