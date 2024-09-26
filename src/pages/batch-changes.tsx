@@ -224,8 +224,9 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
 
             {/* Use Cases */}
             <ContentSection parentClassName="!py-24">
-                <h2 className="mb-8 text-center text-gray-700 md:mb-16">How developers are using Batch Changes </h2>
                 <Tabs
+                    titleClassName="mb-8 text-center text-gray-700 "
+                    title="How developers are using Batch Changes"
                     isWideSpacing={true}
                     tabs={[
                         {
@@ -281,10 +282,10 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
                 </div>
             </ContentSection>
             <ContactUsCta
-            buttonClassNames="!max-w-full"
-            parentClassNames="mdi:!py-24 mdi:!px-0 !px-6 !py-8"
-            className="px-14 py-16"
-        />
+                buttonClassNames="!max-w-full"
+                parentClassNames="mdi:!py-24 mdi:!px-0 !px-6 !py-8"
+                className="px-14 py-16"
+            />
         </Layout>
     )
 }
