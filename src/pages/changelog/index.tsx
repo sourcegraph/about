@@ -163,6 +163,11 @@ const Changelog: NextPage<any> = ({ posts, allPosts }) => {
                                             onClick={() => toggleVersion(post?.version?.[0] ?? '')}
                                             className="flex items-center justify-center rounded-md bg-gray-200 px-2 py-1"
                                         >
+                                            {post.versionIcon && <img
+                                                className="mx-auto mr-1 h-4 w-4"
+                                                src={post.versionIcon}
+                                                aria-hidden="true"
+                                            />}
                                             <span className="text-center font-sans text-sm font-normal leading-[150%] tracking-[0px] text-gray-500">
                                                 {post?.version?.[0] ?? ''}
                                             </span>
