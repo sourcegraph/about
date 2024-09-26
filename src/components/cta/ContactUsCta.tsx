@@ -47,7 +47,7 @@ export const ContactUsCta: FunctionComponent<ContactUsCtaProps> = ({
                     </button>
                 ) : (
                     <Link
-                        className="btn btn-primary-dark w-full sm:w-[140px]  md:w-auto"
+                        className="btn btn-primary-dark w-full sm:w-auto"
                         href="/contact/request-info"
                         title="Book a demo"
                         data-button-style={buttonStyle.primary}

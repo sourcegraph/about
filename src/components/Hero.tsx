@@ -28,6 +28,7 @@ interface Hero extends Background {
     productUpperCase?: boolean
     columnClassName?: string
     contentSectionClassName?: string
+    rightColumnClassName?: string
 }
 
 export const Hero: FunctionComponent<Omit<Hero, 'children' | 'illustration'>> = ({
@@ -50,6 +51,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'children' | 'illustration'>> = 
     centerContent = false,
     className,
     rightColumn,
+    rightColumnClassName,
 }) => {
     let illustration: Background['illustration']
     if (product && product !== 'sourcegraph cloud') {
@@ -65,7 +67,7 @@ export const Hero: FunctionComponent<Omit<Hero, 'children' | 'illustration'>> = 
         >
             {backButton && <BackButton href={backButton.link} text={backButton.text} />}
 
-            <div className="flex flex-col-reverse">
+            <div className={classNames('flex flex-col-reverse', rightColumnClassName)}>
                 <h1
                     className={classNames(titleClassName, 'whitespace-pre-line', {
                         'mx-auto text-center': centerContent,

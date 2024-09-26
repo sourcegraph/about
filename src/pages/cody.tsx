@@ -8,7 +8,7 @@ import { posthog } from 'posthog-js'
 
 import { Layout, HubSpotForm, Modal, CodyIde, CodyPartners, ContentSection, Badge } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
-import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/FullWidthTabsCarousel'
+import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarousel'
 import CodyPlan from '../components/cody/CodyPlan'
 import CodyTwoColumnSection from '../components/cody/CodyTwoColumnSection'
 import { CodyIntroDualTheme } from '../components/cody/dual-theme/CodyIntroDualTheme'
@@ -189,7 +189,7 @@ const CodyPage: FunctionComponent = () => {
         >
             <div className="relative">
                 <div className="absolute hidden h-[1px] w-full bg-black opacity-[13%] xl:flex" />
-                <div className="absolute bottom-0 hidden h-[1px] w-full bg-black opacity-[13%] xl:flex" />
+                <div className="absolute bottom-[2px] hidden h-[1px] w-full bg-black opacity-[13%] xl:flex" />
                 <ContentSection className="relative" parentClassName="!py-0">
                     <div className="sg-bg-IDE hidden h-[53px] items-center border border-[#E6E6E7] pl-[22px] xl:flex">
                         <img src="/assets/cody/ide-menu-dots.svg" alt="" aria-hidden={true} />
@@ -198,7 +198,7 @@ const CodyPage: FunctionComponent = () => {
                         <div className="relative hidden xl:flex">
                             <div className="absolute left-[100px] hidden h-[741px] w-[1px] bg-black opacity-[13%] xl:flex" />
                             <div className="absolute -right-[2px] hidden h-[741px] w-[1px] bg-black opacity-[13%] xl:flex" />
-                            <div className="sg-bg-IDE hidden h-[687px] w-[42px] items-center border border-[#E6E6E7] xl:flex" />
+                            <div className="sg-bg-IDE relative -top-[2px] hidden h-[687px] w-[42px] items-center border border-[#E6E6E7] xl:flex" />
 
                             <div className="relative pl-7 pt-7">
                                 <div className="absolute -top-[52px] hidden h-[342px] w-[1px] bg-black opacity-[13%] xl:flex" />
@@ -344,7 +344,7 @@ const CodyPage: FunctionComponent = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='xl:bg-start w-[812px] overflow-hidden bg-none xl:border-b xl:border-r xl:border-[#DBE2F0] xl:bg-[url("/assets/cody/syntax-highlighter-bg.svg")] xl:bg-cover'>
+                        <div className='xl:bg-start relative -top-[2px] w-[812px] overflow-hidden bg-none xl:border-b xl:border-r xl:border-[#DBE2F0] xl:bg-[url("/assets/cody/syntax-highlighter-bg.svg")] xl:bg-cover'>
                             <div className="relative max-w-[812px]">
                                 <div className="max-w-[749px] xl:pl-20 xl:pr-0">
                                     {title && description && (
@@ -434,7 +434,7 @@ const CodyPage: FunctionComponent = () => {
                 />
             </ContentSection>
             <ContentSection parentClassName="!py-0">
-                <div className="rounded-2xl border border-[#E4E9F4] bg-white px-6 pt-16 pb-5 md:px-20">
+                <div className="rounded-2xl border border-[#E4E9F4] bg-white px-6 py-16 md:px-20">
                     <img src="/assets/cody/cody-leidos.svg" alt="leidos logo" className="h-[54.91px] w-[171.471px]" />
                     <p
                         className={classNames(

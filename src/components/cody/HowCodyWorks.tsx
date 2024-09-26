@@ -10,23 +10,24 @@ export const HowCodyWorks: FunctionComponent<{ isLight: boolean; isVariant: bool
     isVariant,
 }) => (
     <ContentSection
-        parentClassName="!py-16 md:!py-28 "
+        parentClassName="!py-0"
         className={classNames(
-            'flex h-auto  max-w-[1280px] flex-col justify-between overflow-hidden rounded-2xl border px-6 px-0  md:my-0 md:flex-row md:justify-between md:gap-2 md:border-1 md:pl-16 md:pr-[82.04px]',
+            'flex h-auto max-w-[1280px]  flex-col justify-between gap-y-10 overflow-hidden rounded-2xl border  md:my-0 md:flex-row md:justify-between md:gap-2 md:border-1 md:pl-16 md:pr-[82.04px]',
             {
                 'border-[#343A4D] bg-violet-700': !isLight,
                 'border-gray-200 bg-[#FFF] md:flex': isLight,
                 'pb-[92px] md:h-[414px]': !isVariant,
-                'flex !items-center pb-24 md:h-[458px] md:pb-0': isVariant,
+                'flex !items-center pb-[71px] md:h-[458px] md:pb-0': isVariant,
             }
         )}
     >
         <div
-            className={classNames('w-full text-white md:h-full md:max-w-[541px]', {
-                'py-16': !isLight,
-                'pb-16 pt-[84px]': isLight,
-                'flex flex-col justify-center !pb-[39px] !pt-10 md:!pb-16 md:!pt-0': isVariant,
-            })}
+            className={classNames(
+                'flex w-full flex-col justify-center px-6 pt-10 text-white md:h-full md:max-w-[541px] md:px-0 md:pt-0',
+                {
+                    'flex flex-col justify-center': isVariant,
+                }
+            )}
         >
             <h2
                 className={classNames('pb-4', {
@@ -38,10 +39,10 @@ export const HowCodyWorks: FunctionComponent<{ isLight: boolean; isVariant: bool
                 Works where your team works
             </h2>
             <p
-                className={classNames('text-2xl leading-[30px] -tracking-[0.25px]', {
+                className={classNames('mb-0 h-[156px] text-2xl leading-[30px] -tracking-[0.25px] md:h-auto', {
                     'text-gray-200': !isLight,
                     'text-[#000]': isLight,
-                    'md:min-h-auto min-h-[156px] !text-xl !text-gray-500': isVariant,
+                    '!text-xl !text-gray-500': isVariant,
                 })}
             >
                 Cody integrates with code from any code host at massive scale. Use it with any programming language or

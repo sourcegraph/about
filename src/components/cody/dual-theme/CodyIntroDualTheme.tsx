@@ -42,12 +42,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
         >
             {(!isVariant && title) ?? <span>Code more, type&nbsp;less</span>}
 
-            {isVariant && (
-                <>
-                    <span className="hidden md:block">{title}</span>
-                    <span className="md:hidden">The most informed Code AI</span>
-                </>
-            )}
+            {isVariant && <span>{title}</span>}
         </h1>
 
         <p
