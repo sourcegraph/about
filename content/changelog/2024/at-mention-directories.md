@@ -9,6 +9,7 @@ description: "Alongside files and repos Cody now lets developers @-mention direc
 tags: [Enterprise, VS Code, JetBrains]
 
 version: [v5.7.0]
+versionIcon: /assets/changelog/cody.svg
 
 slug: 'at-mention-directories'
 

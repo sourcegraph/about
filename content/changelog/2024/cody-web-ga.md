@@ -13,6 +13,7 @@ description: "The core experience of using Cody is alongside your code in your I
 tags: [Enterprise, Cody, Cody Web]
 
 version: [v5.7.0]
+versionIcon: /assets/changelog/cody.svg
 
 slug: 'cody-web-ga'
 

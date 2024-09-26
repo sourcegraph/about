@@ -13,6 +13,7 @@ description: "Cody is built on model interoperability and we aim to provide acce
 tags: [Enterprise, VS Code, JetBrains]
 
 version: [v5.7.0]
+versionIcon: /assets/changelog/cody.svg
 
 slug: 'default-enterprise-models'
 
