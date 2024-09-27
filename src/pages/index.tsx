@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { posthog } from 'posthog-js'
 
 import { ContentSection, Layout, CodyPartners } from '../components'
-import { BentoWithMockup } from '../components/bentoWithMockup'
 import HomeHero2024 from '../components/Home/HomeHero2024'
 import { Icon } from '../components/icon'
 import ReadCaseStudyLink from '../components/ReadCaseStudyLink'
