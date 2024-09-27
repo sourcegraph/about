@@ -8,7 +8,7 @@ import { posthog } from 'posthog-js'
 
 import { Layout, HubSpotForm, Modal, CodyIde, CodyPartners, ContentSection, Badge } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
-import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarouselDesign'
+import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarousel'
 import CodyPlan from '../components/cody/CodyPlan'
 import CodyTwoColumnSection from '../components/cody/CodyTwoColumnSection'
 import { CodyIntroDualTheme } from '../components/cody/dual-theme/CodyIntroDualTheme'

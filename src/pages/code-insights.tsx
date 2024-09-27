@@ -12,7 +12,7 @@ import {
     TwoColumnSection,
     Video,
 } from '../components'
-import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarouselDesign'
+import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarousel'
 import { CodeInsightExample } from '../components/CodeInsights/CodeInsightsExamples'
 import {
     ALPINE_VERSIONS_INSIGHT,
