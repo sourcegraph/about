@@ -8,6 +8,7 @@ publishDate: 2024-08-21T10:00-02:00
 description: "You can now control which parts of a multi-line edit to accept with more granularity. When you ask Cody to edit a block of code, the presented diff will be split into discrete code blocks, and you can accept or reject each diff separately."
 tags: [Cody, VS Code]
 version: [v1.32]
+versionIcon: /assets/changelog/vscode.svg
 slug: 'accept-reject-block-diffs'
 published: true
 relatedTopics:

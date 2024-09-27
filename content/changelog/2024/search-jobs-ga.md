@@ -14,6 +14,7 @@ description: "Search Jobs are now generally available, allowing for search queri
 tags: [Enterprise, Code Search]
 
 version: [v5.7.0]
+versionIcon: /assets/changelog/sourcegraph.svg
 
 slug: 'search-jobs-ga'
 

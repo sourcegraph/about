@@ -59,6 +59,7 @@ export interface FrontMatter {
     style?: string
     audioSrc?: string
     version?: string[]
+    versionIcon?: string
 }
 
 export interface PostComponentProps {
