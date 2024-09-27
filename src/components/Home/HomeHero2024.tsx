@@ -88,7 +88,7 @@ const HomeHero2024: FunctionComponent = () => {
                 </div>
 
                 {/* images ---------------------------------------------------- */}
-                <div className="relative mx-auto mt-10 max-w-4xl sm:mb-48 md:mb-32">
+                <div className="relative mx-auto mt-10 max-w-4xl sm:mb-48 md:mb-40">
                     {/* cody */}
                     <div className="relative -translate-x-2 lg:translate-x-0">
                         <Image

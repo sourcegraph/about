@@ -50,7 +50,7 @@ const TwoColumnTestimonialCard: React.FC<TwoColumnTestimonialCardProps> = ({
         ])}
     >
         {title && <div className={titleClassName}>{title}</div>}
-        <div className="grid grid-cols-1 gap-[30px] md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
             <ClientTestimonialCard
                 clientImgSrc={leftClientImgSrc}
                 clientName={leftClientName}
@@ -82,21 +82,22 @@ const ClientTestimonialCard: FunctionComponent<ClientTestimonialCardProps> = ({
     <div
         className={classNames('flex flex-col rounded-[10px] border-1 border-gray-200 bg-white', {
             'gap-2.5 px-[15px] pt-[15px] pb-[25px]': isWideSpacing,
-            'gap-4 p-5': !isWideSpacing,
+            'gap-4 p-6': !isWideSpacing,
         })}
     >
-        <div className="flex">
+        <div className="flex items-center gap-3">
             <img
-                className={`mr-[10px] h-[40px] w-[40px] ${roundedImage && 'rounded-full'}`}
+                className={`h-10 w-10 ${roundedImage && 'rounded-full'}`}
                 src={clientImgSrc}
                 alt="Completions Brand Icon"
             />
-            <div className="flex flex-col">
-                <p className="mb-0 text-base tracking-tight text-violet-500">{clientName}</p>
-                <p className="mb-0 text-sm text-gray-500">{clientTitle}</p>
+            <div className="">
+                <p className="mb-0 text-base tracking-tight text-violet-700">{clientName}</p>
+                <p className="mb-0 text-xs text-gray-500">{clientTitle}</p>
             </div>
         </div>
-        <p className="mb-0 text-lg !-tracking-[0.25px] text-gray-700">{testimony}</p>
+
+        <p className="mb-0 text-gray-600">{testimony}</p>
     </div>
 )
 
