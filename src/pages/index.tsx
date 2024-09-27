@@ -250,7 +250,7 @@ const Home: FunctionComponent = () => {
                             />
                             <h3 className="mt-4 text-lg md:text-3xl">Find and fix code</h3>
                             <p className="mt-2 mb-0 text-gray-500">
-                                Find what you need in milliseconds across all of your code–no matter where it lives.
+                                Find what you need in milliseconds across all of your code-no matter where it lives.
                             </p>
                         </div>
 
