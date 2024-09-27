@@ -7,6 +7,7 @@ import { posthog } from 'posthog-js'
 
 import { ContentSection, Layout, CodyPartners } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
+import HomeHero2024 from '../components/Home/HomeHero2024'
 import { Icon } from '../components/icon'
 import ReadCaseStudyLink from '../components/ReadCaseStudyLink'
 import TwoColumnTestimonialCard from '../components/TwoColumnTestimonialCard'
@@ -46,19 +47,19 @@ const Home: FunctionComponent = () => {
             meta={{
                 title: 'Sourcegraph | Code Intelligence Platform',
                 description:
-                    'Sourcegraph’s code intelligence platform makes it easy for devs to write, fix, and maintain code with Cody, the AI coding assistant, and Code Search.',
+                    "Sourcegraph's code intelligence platform makes it easy for devs to write, fix, and maintain code with Cody, the AI coding assistant, and Code Search.",
             }}
             heroAndHeaderClassName=""
             headerColorTheme="white"
             customDark={false}
-            hero={<HomeHero onOpenModal={handleOpenModal} />}
+            hero={<HomeHero2024 />}
             className="relative w-full !overflow-hidden bg-gray-50"
             displayChildrenUnderNav={false}
         >
             <div className="oveflow-hidden relative w-full bg-gray-50">
                 <ContentSection parentClassName="!py-0" className="flex flex-col items-center justify-center">
-                    <p className="text-center text-base font-normal uppercase leading-[27px] text-gray-400">
-                        Over 2.5M engineers use Sourcegraph
+                    <p className="mg:text-base text-center font-mono text-sm text-gray-400">
+                        Trusted by the world's largest dev teams
                     </p>
                 </ContentSection>
 
@@ -324,7 +325,9 @@ const Home: FunctionComponent = () => {
                                     href="/contact/request-info"
                                     title="Get Cody for Enterprise"
                                     className="btn btn-secondary-dark w-full px-6 py-2 text-center md:w-auto"
-                                    onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click', 'bottom')}
+                                    onClick={() =>
+                                        captureCustomEventWithPageData('contact_sales_onpage_click', 'bottom')
+                                    }
                                 >
                                     Book a demo
                                 </Link>
@@ -349,22 +352,22 @@ const Home: FunctionComponent = () => {
 }
 
 const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
-    const [abTest, setAbTest] = useState('');
+    const [abTest, setAbTest] = useState('')
 
     useEffect(() => {
         posthog.onFeatureFlags(() => {
-            const featureFlag = posthog.getFeatureFlag('platform-messaging-test');
+            const featureFlag = posthog.getFeatureFlag('platform-messaging-test')
             if (featureFlag === 'test-hard-eng-probs') {
-                setAbTest('test-hard-eng-probs');
+                setAbTest('test-hard-eng-probs')
             } else if (featureFlag === 'test-operate-at-scale') {
-                setAbTest('test-operate-at-scale');
+                setAbTest('test-operate-at-scale')
             } else if (featureFlag === 'test-elevate-engineering') {
-                setAbTest('test-elevate-engineering');
+                setAbTest('test-elevate-engineering')
             } else {
-                setAbTest('control');
+                setAbTest('control')
             }
-        });
-    }, []);
+        })
+    }, [])
     return (
         <ContentSection
             className="relative mt-2 flex items-center justify-center"
@@ -375,13 +378,12 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
                     {abTest === 'control' && (
                         <>
                             <h1 className="w-full text-center text-5xl sm:text-7xl">
-                                Understand and write code{' '}
-                                <span className="sg-gradient-text">blazingly fast</span>
+                                Understand and write code <span className="sg-gradient-text">blazingly fast</span>
                             </h1>
 
                             <p className="mt-6 text-xl text-gray-400">
-                                Sourcegraph allows developers to rapidly search, write, and understand code by bringing insights
-                                from their entire codebase right into the editor.
+                                Sourcegraph allows developers to rapidly search, write, and understand code by bringing
+                                insights from their entire codebase right into the editor.
                             </p>
                         </>
                     )}
@@ -389,12 +391,13 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
                     {abTest === 'test-hard-eng-probs' && (
                         <>
                             <h1 className="w-full text-center text-5xl sm:text-7xl">
-                                <span className="sg-gradient-text">Code Intelligence</span> that solves the{' '}
-                                hardest engineering problems
+                                <span className="sg-gradient-text">Code Intelligence</span> that solves the hardest
+                                engineering problems
                             </h1>
 
                             <p className="mt-6 text-xl text-gray-400">
-                                Sourcegraph has the most scalable code search and the AI assistant with the most extensive developer context to help build and ship faster.
+                                Sourcegraph has the most scalable code search and the AI assistant with the most
+                                extensive developer context to help build and ship faster.
                             </p>
                         </>
                     )}
@@ -402,11 +405,13 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
                     {abTest === 'test-operate-at-scale' && (
                         <>
                             <h1 className="w-full text-center text-5xl md:text-7xl">
-                                <span className="sg-gradient-text">Code Intelligence</span> for engineering teams operating at scale
+                                <span className="sg-gradient-text">Code Intelligence</span> for engineering teams
+                                operating at scale
                             </h1>
 
                             <p className="mt-6 text-xl text-gray-400">
-                                Sourcegraph has the most scalable code search and the AI assistant with the most extensive developer context to help build and ship faster.
+                                Sourcegraph has the most scalable code search and the AI assistant with the most
+                                extensive developer context to help build and ship faster.
                             </p>
                         </>
                     )}
@@ -414,11 +419,14 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
                     {abTest === 'test-elevate-engineering' && (
                         <>
                             <h1 className="w-full text-center text-5xl sm:text-7xl">
-                                <span className="sg-gradient-text">Contextual AI</span> and <span className="sg-gradient-text">scalable search</span> to elevate your engineering team
+                                <span className="sg-gradient-text">Contextual AI</span> and{' '}
+                                <span className="sg-gradient-text">scalable search</span> to elevate your engineering
+                                team
                             </h1>
 
                             <p className="mt-6 text-xl text-gray-400">
-                                Sourcegraph helps developers working in complex environments navigate, understand, and write code faster.
+                                Sourcegraph helps developers working in complex environments navigate, understand, and
+                                write code faster.
                             </p>
                         </>
                     )}
@@ -431,6 +439,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
                         >
                             Download the AI coding assistant
                         </button>
+
                         <Link
                             href="/contact/request-info"
                             title="Book a demo"
