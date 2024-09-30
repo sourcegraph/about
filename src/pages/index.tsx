@@ -11,6 +11,7 @@ import { Icon } from '../components/icon'
 import ReadCaseStudyLink from '../components/ReadCaseStudyLink'
 import { useAuthModal } from '../context/AuthModalContext'
 import { captureCustomEventWithPageData } from '../lib/utils'
+import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarousel'
 
 interface HomeHeroProps {
     onOpenModal: (pagePosition: string) => void
@@ -117,6 +118,24 @@ const Home: FunctionComponent = () => {
                         <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
                     </div>
                 </div> */}
+
+                {/* productivity ----------------------------------------------------------------- */}
+                <ContentSection parentClassName="!py-16 lg:!py-24">
+                    <FullWidthTabsCarousel
+                        darkMode={false}
+                        items={items}
+                        content={ContentEnum.Media}
+                        overlineText={<span className="lg:hidden">How engineering teams use Code Insights</span>}
+                        overline={true}
+                        cta={false}
+                        title={
+                            <>
+                                <span className="hidden lg:block">How engineering teams use Code Insights</span>
+                                <span className="lg:hidden">Track migrations, adoption, and deprecations</span>
+                            </>
+                        }
+                    />
+                </ContentSection>
 
                 {/* cody ----------------------------------------------------------------- */}
                 <div className="mt-40">
@@ -385,6 +404,58 @@ const Home: FunctionComponent = () => {
                 </div>
             </div>
         </Layout>
+    )
+}
+
+const ProductivitySection: FunctionComponent = () => {
+    const items = [
+        {
+            title: 'Track migrations, adoption, and deprecations',
+            text: 'hi',
+        },
+        {
+            title: 'Detect and track versions of languages or packages',
+            text: 'hi',
+        },
+        {
+            title: 'Ensure removal of security vulnerabilities',
+            text: 'hi',
+        },
+        {
+            title: 'Find vulnerable OpenSSL versions in the Python Ecosystem',
+            text: 'hi',
+        },
+        {
+            title: 'Understand code by team',
+            text: 'hi',
+        },
+        {
+            title: 'Track code smells and health',
+            text: 'hi',
+        },
+        {
+            title: 'Visualize configurations and services',
+            text: 'hi',
+        },
+    ]
+
+    return (
+        <ContentSection parentClassName="!py-16 lg:!py-24">
+            <FullWidthTabsCarousel
+                darkMode={false}
+                items={items}
+                content={ContentEnum.Media}
+                overlineText={<span className="lg:hidden">How engineering teams use Code Insights</span>}
+                overline={true}
+                cta={false}
+                title={
+                    <>
+                        <span className="hidden lg:block">How engineering teams use Code Insights</span>
+                        <span className="lg:hidden">Track migrations, adoption, and deprecations</span>
+                    </>
+                }
+            />
+        </ContentSection>
     )
 }
 

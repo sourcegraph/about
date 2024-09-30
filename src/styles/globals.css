@@ -30,16 +30,6 @@
         @apply font-sans text-base font-normal tracking-normal antialiased;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-feature-settings: 'ss07', 'ss03', 'cv01', 'cv03', 'cv04', 'cv05', 'cv08', 'cv09', 'cv11', 'cv12', 'cv13',
-            'zero';
-    }
-
     h1 {
         @apply font-sans text-6xl font-semibold tracking-tighter md:tracking-tighter;
     }
