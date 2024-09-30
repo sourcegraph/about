@@ -76,7 +76,7 @@ const Home: FunctionComponent = () => {
                 {/* solve hard software problems ----------------------------------------------- */}
                 <div className="mt-14">
                     <div className="mx-auto max-w-7xl rounded-2xl border border-gray-200 bg-white py-20 px-10">
-                        <div className="flex flex-col items-center justify-center">
+                        <div className="text-center">
                             <p className="mg:text-base text-center font-mono text-lg text-gray-400">
                                 Solve hard software problems
                             </p>
@@ -120,22 +120,9 @@ const Home: FunctionComponent = () => {
                 </div> */}
 
                 {/* productivity ----------------------------------------------------------------- */}
-                <ContentSection parentClassName="!py-16 lg:!py-24">
-                    <FullWidthTabsCarousel
-                        darkMode={false}
-                        items={items}
-                        content={ContentEnum.Media}
-                        overlineText={<span className="lg:hidden">How engineering teams use Code Insights</span>}
-                        overline={true}
-                        cta={false}
-                        title={
-                            <>
-                                <span className="hidden lg:block">How engineering teams use Code Insights</span>
-                                <span className="lg:hidden">Track migrations, adoption, and deprecations</span>
-                            </>
-                        }
-                    />
-                </ContentSection>
+                <div className="mx-auto mt-40 max-w-7xl">
+                    <ProductivitySection />
+                </div>
 
                 {/* cody ----------------------------------------------------------------- */}
                 <div className="mt-40">
@@ -185,7 +172,7 @@ const Home: FunctionComponent = () => {
 
                                 <Icon fill="none" iconNode={iconDefinition} size={40} color="url(#grad1)" />
 
-                                <h3 className="mt-4 text-lg md:text-3xl">Solve hard problems with chat</h3>
+                                <h3 className="mt-4 text-lg md:text-2xl">Solve hard problems with chat</h3>
                                 <p className="mt-2 mb-0 text-gray-500">
                                     Chat with Cody to quickly generate and edit code, using latest-gen AI models plus
                                     extensive codebase context for fast and accurate results.
@@ -199,7 +186,7 @@ const Home: FunctionComponent = () => {
                                     src="/home/branded-icons/commands-brand-icon.svg"
                                     alt="Completions Brand Icon"
                                 />
-                                <h3 className="mt-4 text-lg md:text-3xl">Automate workflows with prompts</h3>
+                                <h3 className="mt-4 text-lg md:text-2xl">Automate workflows with prompts</h3>
                                 <p className="mt-2 mb-0 text-gray-500">
                                     Build and customize prompts for automating common tasks and reducing toil. Generate
                                     unit tests, modernize code, document code, and more.
@@ -215,7 +202,7 @@ const Home: FunctionComponent = () => {
                                     src="/home/branded-icons/completions-brand-icon.svg"
                                     alt="Completions Brand Icon"
                                 />
-                                <h3 className="mt-4 text-lg md:text-3xl">Code faster with autocomplete</h3>
+                                <h3 className="mt-4 text-lg md:text-2xl">Code faster with autocomplete</h3>
                                 <p className="mt-2 mb-0 text-gray-500">
                                     Cody completes single lines or whole functions, in any programming language,
                                     configuration file, or docs.
@@ -288,7 +275,7 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/code-search-icon.svg"
                                 alt="Code Search Icon"
                             />
-                            <h3 className="mt-4 text-lg md:text-3xl">Find and fix code</h3>
+                            <h3 className="mt-4 text-lg md:text-2xl">Find and fix code</h3>
                             <p className="mt-2 mb-0 text-gray-500">
                                 Find what you need in milliseconds across all of your code-no matter where it lives.
                             </p>
@@ -311,7 +298,7 @@ const Home: FunctionComponent = () => {
                                     src="/home/branded-icons/batch-changes-icon.svg"
                                     alt="Batch Changes Icon"
                                 />
-                                <h3 className="mt-4 text-lg md:text-3xl">Automate large-scale code changes</h3>
+                                <h3 className="mt-4 text-lg md:text-2xl">Automate large-scale code changes</h3>
                                 <p className="mt-2 mb-0 text-gray-500">
                                     Find and make changes across your codebase in one go, whether a version change or a
                                     vulnerability fix.
@@ -325,7 +312,7 @@ const Home: FunctionComponent = () => {
                                     src="/home/branded-icons/Code-insights-icon.svg"
                                     alt="Code Insights Icon"
                                 />
-                                <h3 className="mt-4 text-lg md:text-3xl">Track trends in your codebase</h3>
+                                <h3 className="mt-4 text-lg md:text-2xl">Track trends in your codebase</h3>
                                 <p className="mt-2 mb-0 text-gray-500">
                                     Transform your code into a queryable database to create custom dashboards in
                                     seconds.
@@ -335,7 +322,8 @@ const Home: FunctionComponent = () => {
                     </div>
                 </div>
 
-                <div className="mt-48">
+                {/* testimonial --------------------------------------------------------- */}
+                {/* <div className="mx-auto mt-48 max-w-7xl">
                     <div className="sg-reviews flex flex-col gap-6 rounded-none px-6 py-[73px] text-white md:flex-row md:gap-16 md:rounded-2xl md:px-20 md:py-16">
                         <div className="flex flex-col gap-4 p-5 md:p-0">
                             <div className="flex flex-col">
@@ -353,52 +341,57 @@ const Home: FunctionComponent = () => {
                             href="https://sourcegraph.com/case-studies/lyft-monolith-to-microservices"
                         />
                     </div>
-                </div>
+                </div> */}
 
-                <div className="mx-6 grid grid-cols-1 gap-6 py-16 md:mx-0 md:grid-cols-2 md:py-24">
-                    <div className="hover:cta-free-cody relative overflow-hidden rounded-2xl border-1 border-gray-200 bg-white">
-                        <div className="cta-top-border absolute left-0 right-0 top-0 rounded-t-2xl" />
-                        <div className=" px-14 py-16">
-                            <h2 className="mb-4 text-gray-700">Get started with Cody</h2>
-                            <p className="mb-0 text-lg text-gray-500">
-                                Use Cody for free in your IDE, no credit card required.
-                            </p>
-                            <div className="mt-6 flex flex-wrap gap-2">
-                                <button
-                                    type="button"
-                                    className={classNames('btn btn-primary w-full md:w-auto')}
-                                    title="free cody"
-                                    onClick={() => handleOpenModal('bottom')}
-                                >
-                                    Download Cody for free
-                                </button>
+                {/* call to actions ------------------------------------------------------- */}
+                <div className="mx-auto mt-10 max-w-7xl">
+                    <div className="mx-6 grid grid-cols-1 gap-6 py-16 md:mx-0 md:grid-cols-2 md:py-24">
+                        <div className="hover:cta-free-cody relative overflow-hidden rounded-2xl border-1 border-gray-200 bg-white">
+                            <div className="cta-top-border absolute left-0 right-0 top-0 rounded-t-2xl" />
+                            <div className=" px-14 py-16">
+                                <h2 className="mb-4 text-gray-700">Get started with Cody</h2>
+                                <p className="mb-0 text-lg text-gray-500">
+                                    Use Cody for free in your IDE, no credit card required.
+                                </p>
+                                <div className="mt-6 flex flex-wrap gap-2">
+                                    <button
+                                        type="button"
+                                        className={classNames('btn btn-primary w-full md:w-auto')}
+                                        title="free cody"
+                                        onClick={() => handleOpenModal('bottom')}
+                                    >
+                                        Download Cody for free
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="cta-home rounded-2xl px-14 py-16 text-white">
-                        <h2 className="mb-[10px]">Cody Enterprise</h2>
-                        <p className="mb-0 text-lg text-[#FFFFFFCC]">
-                            Cody Enterprise provides additional security, scalability, and control for your
-                            organization. Unlimited usage and context search for your entire codebase.
-                        </p>
-                        <div className="mt-8 flex flex-col items-center gap-4 md:flex-row">
-                            <Link
-                                href="/contact/request-info"
-                                title="Get Cody for Enterprise"
-                                className="btn btn-secondary-dark w-full px-6 py-2 text-center md:w-auto"
-                                onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click', 'bottom')}
-                            >
-                                Book a demo
-                            </Link>
-                            <Link
-                                href="/pricing"
-                                title="See pricing"
-                                className="btn btn-link-dark md:btn-link-icon w-full rounded-[5px] px-6 text-center md:w-auto"
-                            >
-                                See pricing
-                                <ChevronRightIcon className="link-icon hidden md:block" />
-                            </Link>
+                        <div className="cta-home rounded-2xl px-14 py-16 text-white">
+                            <h2 className="mb-[10px]">Cody Enterprise</h2>
+                            <p className="mb-0 text-lg text-[#FFFFFFCC]">
+                                Cody Enterprise provides additional security, scalability, and control for your
+                                organization. Unlimited usage and context search for your entire codebase.
+                            </p>
+                            <div className="mt-8 flex flex-col items-center gap-4 md:flex-row">
+                                <Link
+                                    href="/contact/request-info"
+                                    title="Get Cody for Enterprise"
+                                    className="btn btn-secondary-dark w-full px-6 py-2 text-center md:w-auto"
+                                    onClick={() =>
+                                        captureCustomEventWithPageData('contact_sales_onpage_click', 'bottom')
+                                    }
+                                >
+                                    Book a demo
+                                </Link>
+                                <Link
+                                    href="/pricing"
+                                    title="See pricing"
+                                    className="btn btn-link-dark md:btn-link-icon w-full rounded-[5px] px-6 text-center md:w-auto"
+                                >
+                                    See pricing
+                                    <ChevronRightIcon className="link-icon hidden md:block" />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -410,52 +403,38 @@ const Home: FunctionComponent = () => {
 const ProductivitySection: FunctionComponent = () => {
     const items = [
         {
-            title: 'Track migrations, adoption, and deprecations',
+            title: 'Quickly find and fix the code behind bugs and regressions',
             text: 'hi',
         },
         {
-            title: 'Detect and track versions of languages or packages',
+            title: 'Automate toilsome tasks like documentation and unit testing',
             text: 'hi',
         },
         {
-            title: 'Ensure removal of security vulnerabilities',
-            text: 'hi',
-        },
-        {
-            title: 'Find vulnerable OpenSSL versions in the Python Ecosystem',
-            text: 'hi',
-        },
-        {
-            title: 'Understand code by team',
-            text: 'hi',
-        },
-        {
-            title: 'Track code smells and health',
-            text: 'hi',
-        },
-        {
-            title: 'Visualize configurations and services',
+            title: 'Explain code and dependencies in seconds with AI',
             text: 'hi',
         },
     ]
 
     return (
-        <ContentSection parentClassName="!py-16 lg:!py-24">
+        <>
+            <div className="text-center">
+                <p className="mg:text-base text-center font-mono text-lg text-gray-400">
+                    Increase engineering productivity
+                </p>
+                <h2 className="text-balance mt-2 text-center text-2xl font-medium sm:text-4xl">
+                    Enable developers to code more and toil less
+                </h2>
+            </div>
+
             <FullWidthTabsCarousel
                 darkMode={false}
                 items={items}
                 content={ContentEnum.Media}
-                overlineText={<span className="lg:hidden">How engineering teams use Code Insights</span>}
-                overline={true}
+                overline={false}
                 cta={false}
-                title={
-                    <>
-                        <span className="hidden lg:block">How engineering teams use Code Insights</span>
-                        <span className="lg:hidden">Track migrations, adoption, and deprecations</span>
-                    </>
-                }
             />
-        </ContentSection>
+        </>
     )
 }
 
