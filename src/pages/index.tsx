@@ -9,7 +9,6 @@ import { ContentSection, Layout, CodyPartners } from '../components'
 import HomeHero2024 from '../components/Home/HomeHero2024'
 import { Icon } from '../components/icon'
 import ReadCaseStudyLink from '../components/ReadCaseStudyLink'
-import TwoColumnTestimonialCard from '../components/TwoColumnTestimonialCard'
 import { useAuthModal } from '../context/AuthModalContext'
 import { captureCustomEventWithPageData } from '../lib/utils'
 
