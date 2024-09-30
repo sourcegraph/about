@@ -66,6 +66,7 @@ No analysis is complete without showing off specific examples, so let's examine 
 ### Question
 
 **What LLMs does Cody support?**
+
 Repo: ([sourcegraph/cody](https://github.com/sourcegraph/cody))
 
 ### Cody with 10k context window
@@ -84,6 +85,7 @@ Repo: ([sourcegraph/cody](https://github.com/sourcegraph/cody))
 ### Question
 
 **How does the cody webview communicate with the extension host?**
+
 Repo: ([sourcegraph/cody](https://github.com/sourcegraph/cody))
 
 ### Cody with 10k context window
@@ -101,6 +103,7 @@ Repo: ([sourcegraph/cody](https://github.com/sourcegraph/cody))
 ### Question
 
 **Does Cody implement nearest neighbor search over embeddings vectors? If so, how?**
+
 Repo: ([sourcegraph/cody](https://github.com/sourcegraph/cody))
 
 ### Cody with 10k context window
@@ -120,7 +123,9 @@ Most examples in our dataset improved with the addition of long context. However
 ### Question
 
 **Where is the Cody context API defined?**
+
 Repo: ([sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph))
+
 Note: The above repo is private.
 
 ### Cody with regular-context LLM
@@ -138,7 +143,9 @@ Note: The above repo is private.
 ### Question
 
 **How is code navigation implemented?**
+
 Repo: ([sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph))
+
 Note: The above repo is private.
 
 ### Cody with regular-context LLM
