@@ -82,7 +82,7 @@ const ClientTestimonialCard: FunctionComponent<ClientTestimonialCardProps> = ({
     <div
         className={classNames('flex flex-col rounded-[10px] border-1 border-gray-200 bg-white', {
             'gap-2.5 px-[15px] pt-[15px] pb-[25px]': isWideSpacing,
-            'gap-4 p-6': !isWideSpacing,
+            'gap-4 p-7': !isWideSpacing,
         })}
     >
         <div className="flex items-center gap-3">

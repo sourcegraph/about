@@ -11,8 +11,6 @@ import { Icon } from '../components/icon'
 import ReadCaseStudyLink from '../components/ReadCaseStudyLink'
 import TwoColumnTestimonialCard from '../components/TwoColumnTestimonialCard'
 import { useAuthModal } from '../context/AuthModalContext'
-import { breakpoints } from '../data/breakpoints'
-import { useWindowWidth } from '../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../lib/utils'
 
 interface HomeHeroProps {
@@ -20,10 +18,6 @@ interface HomeHeroProps {
 }
 
 const Home: FunctionComponent = () => {
-    const windowWidth = useWindowWidth()
-    const isMobile = windowWidth < breakpoints.md
-    const isDesktop = windowWidth > breakpoints.lg
-
     const { openModal } = useAuthModal()
 
     const iconDefinition: [keyof ReactSVG, Record<string, string>][] = [
@@ -67,17 +61,20 @@ const Home: FunctionComponent = () => {
 
                 {/* coding is complex --------------------------------------------------------- */}
                 <div className="mt-48 text-center">
-                    <h2 className="text-3xl font-medium sm:text-5xl md:text-7xl">Coding is complex</h2>
+                    <h2 className="text-balance mx-auto max-w-3xl text-3xl font-medium sm:text-5xl md:text-6xl">
+                        Make working in sprawling codebases{' '}
+                        <span className="sg-gradient-text font-bold">delightful</span>
+                    </h2>
 
-                    <p className="text-balance mx-auto mt-5 max-w-xl text-center text-sm text-gray-500 sm:text-base md:text-xl lg:mt-8 lg:max-w-2xl">
-                        Growing codebases and sprawling dependencies make writing code complex and toilsome. Sourcegraph
-                        helps developers spend more time doing what they love:{' '}
+                    <p className="text-balance mt-4 text-center text-sm text-gray-500 sm:text-base md:text-xl lg:mt-8">
+                        Growing codebases and dependencies make writing code complex. <br />
+                        Sourcegraph helps developers spend more time doing what they love:{' '}
                         <span className="font-bold">writing code</span>.
                     </p>
                 </div>
 
                 {/* solve hard software problems ----------------------------------------------- */}
-                <div className="mt-10">
+                <div className="mt-14">
                     <div className="mx-auto max-w-7xl rounded-2xl border border-gray-200 bg-white py-20 px-10">
                         <div className="flex flex-col items-center justify-center">
                             <p className="mg:text-base text-center font-mono text-lg text-gray-400">
@@ -86,6 +83,32 @@ const Home: FunctionComponent = () => {
                             <h2 className="text-balance mx-auto mt-2 max-w-xl text-center text-2xl font-medium sm:text-4xl">
                                 Take the pain out of working in complex enterprise codebases
                             </h2>
+                        </div>
+
+                        <div className="relative mt-12 flex overflow-hidden rounded-2xl border border-gray-200 bg-white px-6 pt-8 md:px-10">
+                            <h3 className="mt-4 text-lg md:text-3xl">
+                                Find reusable code implementations across your entire codebase
+                            </h3>
+
+                            <div className="hidden lg:block">
+                                <img
+                                    className="relative h-full w-full translate-y-1"
+                                    src="/home/code-search.svg"
+                                    alt="Find reusable code"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="mt-4 grid grid-cols-2 grid-rows-2 gap-4">
+                            <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
+                                Get answers about unfamiliar code without leaving your editor
+                            </div>
+                            <div className="col-start-1 row-start-2 rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
+                                Simplify large and tedious projects like code migrations using AI
+                            </div>
+                            <div className="col-start-2 row-span-2 rounded-2xl bg-gray-100 bg-white px-6 py-8 md:px-10">
+                                LYFT
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -97,7 +120,7 @@ const Home: FunctionComponent = () => {
                 </div> */}
 
                 {/* cody ----------------------------------------------------------------- */}
-                <div className="mt-48">
+                <div className="mt-40">
                     <div className="mx-auto max-w-7xl">
                         {/* header */}
                         <div className="flex items-center justify-center gap-4">
@@ -128,7 +151,7 @@ const Home: FunctionComponent = () => {
                         </div>
 
                         {/* Chat + Prompts sections */}
-                        <div className="mt-10 grid gap-2 md:grid-cols-2">
+                        <div className="mt-10 grid gap-4 md:grid-cols-2">
                             {/* chat */}
                             <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
                                 <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
@@ -167,7 +190,7 @@ const Home: FunctionComponent = () => {
                         </div>
 
                         {/* completions */}
-                        <div className="relative mt-2 flex overflow-hidden rounded-2xl border border-gray-200 bg-white">
+                        <div className="relative mt-4 flex overflow-hidden rounded-2xl border border-gray-200 bg-white">
                             <div className="flex flex-col justify-center px-6 py-8 md:px-10">
                                 <img
                                     className="h-[40px] w-[40px]"
@@ -194,7 +217,7 @@ const Home: FunctionComponent = () => {
                 </div>
 
                 {/* only margin top 20 here because the twocolumntestimonial card has its own padding for some reason */}
-                <div className="mx-auto mt-20 max-w-7xl">
+                {/* <div className="mx-auto mt-10 max-w-7xl">
                     <TwoColumnTestimonialCard
                         leftClientImgSrc="/home/reviews1.svg"
                         rightClientImgSrc="/home/reviews2.png"
@@ -206,10 +229,10 @@ const Home: FunctionComponent = () => {
                         rightClientTitle="Senior Web Engineer, HashiCorp"
                         isVariantStyle={true}
                     />
-                </div>
+                </div> */}
 
                 {/* code search ----------------------------------------------------------------- */}
-                <div className="mt-48">
+                <div className="mt-40">
                     <div className="mx-auto max-w-7xl">
                         {/* header */}
                         <div className="flex items-center justify-center gap-4">
@@ -241,7 +264,7 @@ const Home: FunctionComponent = () => {
                         </div>
 
                         {/* Find and fix code */}
-                        <div className="mt-10 rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
+                        <div className="relative mt-10 overflow-hidden rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
                             <img
                                 className="h-10 w-10"
                                 src="/home/branded-icons/code-search-icon.svg"
@@ -251,10 +274,18 @@ const Home: FunctionComponent = () => {
                             <p className="mt-2 mb-0 text-gray-500">
                                 Find what you need in milliseconds across all of your code-no matter where it lives.
                             </p>
+
+                            <img
+                                className="absolute -top-5 right-12 w-[450px]"
+                                src="/home/code-graph-home.svg"
+                                alt="Code graph"
+                                height={500}
+                                width={500}
+                            />
                         </div>
 
                         {/* Code Search sections */}
-                        <div className="mt-2 grid gap-2 md:grid-cols-2">
+                        <div className="mt-4 grid gap-4 md:grid-cols-2">
                             {/* Automate large-scale changes */}
                             <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
                                 <img
@@ -345,13 +376,10 @@ const Home: FunctionComponent = () => {
                             <Link
                                 href="/pricing"
                                 title="See pricing"
-                                className={classNames(
-                                    'btn btn-link-dark w-full rounded-[5px] px-6 text-center md:w-auto',
-                                    !isMobile ? 'btn-link-icon' : ''
-                                )}
+                                className="btn btn-link-dark md:btn-link-icon w-full rounded-[5px] px-6 text-center md:w-auto"
                             >
                                 See pricing
-                                {!isMobile && <ChevronRightIcon className="link-icon" />}
+                                <ChevronRightIcon className="link-icon hidden md:block" />
                             </Link>
                         </div>
                     </div>
