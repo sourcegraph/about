@@ -6,12 +6,11 @@ import Link from 'next/link'
 import { posthog } from 'posthog-js'
 
 import { ContentSection, Layout, CodyPartners } from '../components'
+import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarousel'
 import HomeHero2024 from '../components/Home/HomeHero2024'
 import { Icon } from '../components/icon'
-import ReadCaseStudyLink from '../components/ReadCaseStudyLink'
 import { useAuthModal } from '../context/AuthModalContext'
 import { captureCustomEventWithPageData } from '../lib/utils'
-import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarousel'
 
 interface HomeHeroProps {
     onOpenModal: (pagePosition: string) => void
