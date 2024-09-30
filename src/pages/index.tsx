@@ -49,16 +49,18 @@ const Home: FunctionComponent = () => {
             displayChildrenUnderNav={false}
         >
             <div className="oveflow-hidden relative w-full bg-gray-50">
+                {/* partners ----------------------------------------------------------------- */}
+                {/* ------------------------------------------------------------------------------- */}
                 <p className="mg:text-base text-center font-mono text-sm text-gray-400">
                     Trusted by the world's largest dev teams
                 </p>
 
-                {/* partners ----------------------------------------------------------------- */}
                 <div className="flex items-center">
                     <CodyPartners isLight={true} className="!pb-4 pt-4" />
                 </div>
 
                 {/* coding is complex --------------------------------------------------------- */}
+                {/* ------------------------------------------------------------------------------- */}
                 <div className="mt-48 text-center">
                     <h2 className="text-balance mx-auto max-w-3xl text-3xl font-medium sm:text-5xl md:text-6xl">
                         Make working in sprawling codebases{' '}
@@ -73,41 +75,45 @@ const Home: FunctionComponent = () => {
                 </div>
 
                 {/* solve hard software problems ----------------------------------------------- */}
-                <div className="mt-14">
-                    <div className="mx-auto max-w-7xl rounded-2xl border border-gray-200 bg-white py-20 px-10">
-                        <div className="text-center">
-                            <p className="mg:text-base text-center font-mono text-lg text-gray-400">
-                                Solve hard software problems
-                            </p>
-                            <h2 className="text-balance mx-auto mt-2 max-w-xl text-center text-2xl font-medium sm:text-4xl">
+                {/* ------------------------------------------------------------------------------- */}
+                <div className="mx-auto mt-14 max-w-7xl">
+                    <div className="relative mt-12 flex gap-8 overflow-hidden rounded-2xl border border-gray-200 bg-white px-6 pt-8 md:px-10">
+                        <div className="pt-12">
+                            <p className="font-mono text-gray-400">Solve hard software problems</p>
+                            <h2 className="text-balance mx-auto mt-2 text-2xl font-medium">
                                 Take the pain out of working in complex enterprise codebases
                             </h2>
                         </div>
 
-                        <div className="relative mt-12 flex overflow-hidden rounded-2xl border border-gray-200 bg-white px-6 pt-8 md:px-10">
-                            <h3 className="mt-4 text-lg md:text-3xl">
-                                Find reusable code implementations across your entire codebase
-                            </h3>
+                        <div className="hidden lg:block">
+                            <img
+                                className="relative h-full w-full translate-y-1"
+                                src="/home/code-search.svg"
+                                alt="Find reusable code"
+                            />
+                        </div>
+                    </div>
 
-                            <div className="hidden lg:block">
-                                <img
-                                    className="relative h-full w-full translate-y-1"
-                                    src="/home/code-search.svg"
-                                    alt="Find reusable code"
-                                />
-                            </div>
+                    <div className="mt-4 grid grid-cols-3 gap-4">
+                        <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
+                            <img className="h-4 w-4" src="/home/icons/code-reuse.svg" alt="Code reuse" />
+                            <h3 className="mt-3 text-lg text-gray-500">
+                                Get answers about unfamiliar code without leaving your editor
+                            </h3>
                         </div>
 
-                        <div className="mt-4 grid grid-cols-2 grid-rows-2 gap-4">
-                            <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
-                                Get answers about unfamiliar code without leaving your editor
-                            </div>
-                            <div className="col-start-1 row-start-2 rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
+                        <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
+                            <img className="h-4 w-4" src="/home/icons/code-reuse.svg" alt="Code reuse" />
+                            <h3 className="mt-3 text-lg text-gray-500">
+                                Find reusable code implementations from across your entire codebase
+                            </h3>
+                        </div>
+
+                        <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
+                            <img className="h-4 w-4" src="/home/icons/sparkle.svg" alt="Sparkle" />
+                            <h3 className="mt-3 text-lg text-gray-500">
                                 Simplify large and tedious projects like code migrations using AI
-                            </div>
-                            <div className="col-start-2 row-span-2 rounded-2xl bg-gray-100 bg-white px-6 py-8 md:px-10">
-                                LYFT
-                            </div>
+                            </h3>
                         </div>
                     </div>
                 </div>
@@ -119,11 +125,13 @@ const Home: FunctionComponent = () => {
                 </div> */}
 
                 {/* productivity ----------------------------------------------------------------- */}
+                {/* ------------------------------------------------------------------------------- */}
                 <div className="mx-auto mt-40 max-w-7xl">
                     <ProductivitySection />
                 </div>
 
                 {/* cody ----------------------------------------------------------------- */}
+                {/* ------------------------------------------------------------------------------- */}
                 <div className="mt-40">
                     <div className="mx-auto max-w-7xl">
                         {/* header */}
@@ -236,6 +244,7 @@ const Home: FunctionComponent = () => {
                 </div> */}
 
                 {/* code search ----------------------------------------------------------------- */}
+                {/* ------------------------------------------------------------------------------- */}
                 <div className="mt-40">
                     <div className="mx-auto max-w-7xl">
                         {/* header */}
@@ -280,7 +289,7 @@ const Home: FunctionComponent = () => {
                             </p>
 
                             <img
-                                className="absolute -top-5 right-12 w-[450px]"
+                                className="absolute -top-5 right-12 hidden w-[450px] lg:block"
                                 src="/home/code-graph-home.svg"
                                 alt="Code graph"
                                 height={500}
@@ -322,6 +331,7 @@ const Home: FunctionComponent = () => {
                 </div>
 
                 {/* testimonial --------------------------------------------------------- */}
+                {/* ------------------------------------------------------------------------------- */}
                 {/* <div className="mx-auto mt-48 max-w-7xl">
                     <div className="sg-reviews flex flex-col gap-6 rounded-none px-6 py-[73px] text-white md:flex-row md:gap-16 md:rounded-2xl md:px-20 md:py-16">
                         <div className="flex flex-col gap-4 p-5 md:p-0">
@@ -343,6 +353,7 @@ const Home: FunctionComponent = () => {
                 </div> */}
 
                 {/* call to actions ------------------------------------------------------- */}
+                {/* ------------------------------------------------------------------------------- */}
                 <div className="mx-auto mt-10 max-w-7xl">
                     <div className="mx-6 grid grid-cols-1 gap-6 py-16 md:mx-0 md:grid-cols-2 md:py-24">
                         <div className="hover:cta-free-cody relative overflow-hidden rounded-2xl border-1 border-gray-200 bg-white">
