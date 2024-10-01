@@ -180,8 +180,8 @@ const Home: FunctionComponent = () => {
                 {/* only margin top 20 here because the twocolumntestimonial card has its own padding for some reason */}
                 <div className="mx-auto max-w-7xl">
                     <TwoColumnTestimonialCard
-                        leftClientImgSrc="/home/reviews1.svg"
-                        rightClientImgSrc="/home/reviews2.png"
+                        leftClientImgSrc="/home/testimonials/vito b profile.svg"
+                        rightClientImgSrc="/home/testimonials/kevin c profile.svg"
                         rightTestimony="Sourcegraph empowers developers at Yelp to ship code faster and more reliably than ever before."
                         leftTestimony="Sourcegraph is extremely valuable for what we do. It enables us to easily clean up deprecated APIs and estimate the risks of our API's evolution."
                         leftClientName="Vito Baggiolini"
