@@ -9,7 +9,6 @@ import { ContentSection, Layout, CodyPartners } from '../components'
 import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarousel'
 import HomeHero2024 from '../components/Home/HomeHero2024'
 import { Icon } from '../components/icon'
-import TwoColumnTestimonialCard from '../components/TwoColumnTestimonialCard'
 import { useAuthModal } from '../context/AuthModalContext'
 import { captureCustomEventWithPageData } from '../lib/utils'
 
@@ -178,8 +177,32 @@ const Home: FunctionComponent = () => {
                 {/* two testimonials ----------------------------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}
                 {/* only margin top 20 here because the twocolumntestimonial card has its own padding for some reason */}
-                <div className="mx-auto max-w-7xl">
-                    <TwoColumnTestimonialCard
+                <div className="mx-auto mt-28 max-w-7xl">
+                    <div className="grid gap-4 md:grid-cols-2">
+                        <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-8">
+                            <p className="mb-0">
+                                "Sourcegraph is extremely valuable for what we do. It enables us to easily clean up
+                                deprecated APIs and estimate the risks of our API's evolution."
+                            </p>
+
+                            <div className="mt-4">
+                                <div className="font-semibold text-blurple-500">Vito Baggiolini</div>
+                                <div className="text-sm">Senior Software Engineer, CERN</div>
+                            </div>
+                        </div>
+                        <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-8">
+                            <p className="mb-0">
+                                "Sourcegraph empowers developers at Yelp to ship code faster and more reliably than ever
+                                before."
+                            </p>
+
+                            <div className="mt-4">
+                                <div className="font-semibold text-blurple-500">Kevin Chen</div>
+                                <div className="text-sm">Software Engineer, Yelp</div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <TwoColumnTestimonialCard
                         leftClientImgSrc="/home/testimonials/vito b profile.svg"
                         rightClientImgSrc="/home/testimonials/kevin c profile.svg"
                         rightTestimony="Sourcegraph empowers developers at Yelp to ship code faster and more reliably than ever before."
@@ -189,7 +212,7 @@ const Home: FunctionComponent = () => {
                         rightClientName="Kevin Chen"
                         rightClientTitle="Software Engineer, Yelp"
                         isVariantStyle={true}
-                    />
+                    /> */}
                 </div>
 
                 {/* cody ----------------------------------------------------------------- */}
