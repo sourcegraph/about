@@ -187,7 +187,7 @@ const Home: FunctionComponent = () => {
 
                             <div className="mt-4">
                                 <div className="font-semibold text-blurple-500">Vito Baggiolini</div>
-                                <div className="text-sm">Senior Software Engineer, CERN</div>
+                                <div className="text-sm opacity-70">Senior Software Engineer, CERN</div>
                             </div>
                         </div>
                         <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-8">
@@ -198,7 +198,7 @@ const Home: FunctionComponent = () => {
 
                             <div className="mt-4">
                                 <div className="font-semibold text-blurple-500">Kevin Chen</div>
-                                <div className="text-sm">Software Engineer, Yelp</div>
+                                <div className="text-sm opacity-70">Software Engineer, Yelp</div>
                             </div>
                         </div>
                     </div>
