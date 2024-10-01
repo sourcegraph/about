@@ -188,21 +188,21 @@ const CodyPage: FunctionComponent = () => {
             className="relative w-full !overflow-hidden bg-gray-50"
         >
             <div className="relative">
-                <div className="absolute hidden h-[1px] w-full bg-black opacity-[13%] xl:flex" />
-                <div className="absolute bottom-[2px] hidden h-[1px] w-full bg-black opacity-[13%] xl:flex" />
+                <div className="absolute hidden h-[1px] w-full bg-gray-200 xl:flex" />
+                <div className="absolute bottom-[2px] hidden h-[1px] w-full bg-gray-200 xl:flex" />
                 <ContentSection className="relative" parentClassName="!py-0">
                     <div className="sg-bg-IDE hidden h-[53px] items-center border border-[#E6E6E7] pl-[22px] xl:flex">
                         <img src="/assets/cody/ide-menu-dots.svg" alt="" aria-hidden={true} />
                     </div>
                     <div className="relative flex h-full">
                         <div className="relative hidden xl:flex">
-                            <div className="absolute left-[100px] hidden h-[741px] w-[1px] bg-black opacity-[13%] xl:flex" />
-                            <div className="absolute -right-[2px] hidden h-[741px] w-[1px] bg-black opacity-[13%] xl:flex" />
+                            <div className="absolute left-[100px] hidden h-[741px] w-[1px] bg-gray-200 xl:flex" />
+                            <div className="absolute -right-[2px] z-50 hidden h-[741px] w-[1px] bg-gray-200 xl:flex" />
                             <div className="sg-bg-IDE relative -top-[2px] hidden h-[687px] w-[42px] items-center border border-[#E6E6E7] xl:flex" />
 
                             <div className="relative pl-7 pt-7">
-                                <div className="absolute -top-[52px] hidden h-[342px] w-[1px] bg-black opacity-[13%] xl:flex" />
-                                <div className="absolute hidden h-[1px] w-[354px] bg-black opacity-[13%] xl:flex" />
+                                <div className="absolute -top-[52px] hidden h-[342px] w-[1px] bg-gray-200 xl:flex" />
+                                <div className="absolute hidden h-[1px] w-[354px] bg-gray-200 xl:flex" />
                                 <div className="">
                                     <div className="ide flex w-[398px] flex-col">
                                         <div className="relative flex w-[372px] items-center justify-between border-y border-l border-black/[0.13] bg-white bg-gray-50">
@@ -231,12 +231,12 @@ const CodyPage: FunctionComponent = () => {
                                                 <div className="flex items-center gap-1 px-2 pt-2 pb-6">
                                                     <IDEBadge
                                                         text="ecommerce/checkout"
-                                                        className="!bg-[#DBE2F0]/[0.32] !p-1.5 !text-sm tracking-tight !text-[#181B26]"
+                                                        className="!bg-[#DBE2F0]/[0.32] !p-1.5 !font-sans !text-sm !font-medium tracking-tight !text-[#181B26]"
                                                         src="/assets/cody/github-icon.svg"
                                                     />
                                                     <IDEBadge
                                                         text="File.svelte"
-                                                        className="!bg-[#DBE2F0]/[0.32] !p-1.5 !text-sm tracking-tight !text-[#181B26]"
+                                                        className="!bg-[#DBE2F0]/[0.32] !p-1.5 !font-sans !text-sm !font-medium tracking-tight !text-[#181B26]"
                                                         src="/assets/cody/svelte-icon.svg"
                                                     />
                                                     <div className="h-5 w-[3px] bg-black" />
@@ -280,7 +280,7 @@ const CodyPage: FunctionComponent = () => {
                                             </div>
                                         </div>
                                         <div className="relative flex">
-                                            <div className="absolute -left-[152px] h-[1px] w-[265px] bg-black opacity-[13%]" />
+                                            <div className="absolute -left-[152px] h-[1px] w-[265px] bg-gray-200" />
                                             <IDEBadge
                                                 text="Claude 3 Opus"
                                                 className="sg-badge-pill sg-badge-pill-bg absolute top-[3px] left-[90px] !px-3 !py-1 !text-black"
@@ -304,40 +304,40 @@ const CodyPage: FunctionComponent = () => {
                                         </div>
                                         <div className="relative left-[31px] top-[140px] flex  flex-col gap-1.5">
                                             <div className="relative">
-                                                <div className="absolute right-[30px] h-[1px] w-[272px] bg-black opacity-[13%]" />
+                                                <div className="absolute right-[30px] h-[1px] w-[272px] bg-gray-200" />
                                                 <CodyAbility
                                                     src="/assets/cody/pencil-line-icon.svg"
                                                     title="Edit Code"
                                                     subTitle="Run on a file or selection to modify code"
                                                 />
-                                                <div className="absolute bottom-0 h-[1px] w-[314px] bg-black opacity-[13%]" />
+                                                <div className="absolute bottom-0 h-[1px] w-[314px] bg-gray-200" />
                                             </div>
                                             <div className="relative">
-                                                <div className="absolute h-[1px] w-[244px] bg-black opacity-[13%]" />
+                                                <div className="absolute h-[1px] w-[244px] bg-gray-200" />
                                                 <CodyAbility
                                                     src="/assets/cody/file-question-icon.svg"
                                                     title="Explain Code"
                                                     subTitle="Understand the open project or file better"
                                                 />
-                                                <div className="absolute bottom-0 right-[30px] h-[1px] w-[428px] bg-black opacity-[13%]" />
+                                                <div className="absolute bottom-0 right-[30px] h-[1px] w-[428px] bg-gray-200" />
                                             </div>
                                             <div className="relative">
-                                                <div className="absolute h-[1px] w-[368px] bg-black opacity-[13%]" />
+                                                <div className="absolute h-[1px] w-[368px] bg-gray-200" />
                                                 <CodyAbility
                                                     src="/assets/cody/open-book-icon.svg"
                                                     title="Document Code"
                                                     subTitle="Add comments to file or selection"
                                                 />
-                                                <div className="absolute bottom-0 h-[1px] w-[277px] bg-black opacity-[13%]" />
+                                                <div className="absolute bottom-0 h-[1px] w-[277px] bg-gray-200" />
                                             </div>
                                             <div className="relative">
-                                                <div className="absolute h-[1px] w-[368px] bg-black opacity-[13%]" />
+                                                <div className="absolute h-[1px] w-[368px] bg-gray-200" />
                                                 <CodyAbility
                                                     src="/assets/cody/hammer-icon.svg"
                                                     title="Generate Unit Tests"
                                                     subTitle="Create tests for the open file"
                                                 />
-                                                <div className="absolute bottom-0 h-[1px] w-[368px] bg-black opacity-[13%]" />
+                                                <div className="absolute bottom-0 h-[1px] w-[368px] bg-gray-200" />
                                             </div>
                                         </div>
                                     </div>
@@ -582,7 +582,7 @@ const CodyAbility: FunctionComponent<{ src: string; className?: string; title: s
 }): JSX.Element => (
     <div className={classNames('flex w-[368px] gap-3 bg-white px-3 py-2', className)}>
         <img src={src} alt="" aria-hidden={true} />
-        <div className="flex flex-col gap-[2px] text-base text-[#181B26]">
+        <div className="flex flex-col gap-[2px] text-[13px] text-[#181B26]">
             <div className="mb-0 font-semibold opacity-60">{title}</div>
             <div className="mb-0 font-normal opacity-70">{subTitle}</div>
         </div>
