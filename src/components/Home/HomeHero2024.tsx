@@ -33,27 +33,27 @@ const HomeHero2024: FunctionComponent = () => {
     }
 
     return (
-        <div className="relative py-10 px-6 md:py-20 lg:py-28">
+        <div className="relative py-10 md:py-20 lg:px-6 lg:py-28">
             {/* absolutely positioned items --------------------------------------- */}
             <Image
                 src="/home/hero/left-context-tiles.svg"
                 alt="left-context-tiles"
                 width={600}
                 height={600}
-                className="pointer-events-none absolute top-0 left-0 -translate-x-10 opacity-30 2xl:opacity-100"
+                className="pointer-events-none absolute top-0 left-0 -translate-x-48 opacity-30 2xl:opacity-100"
             />
             <Image
                 src="/home/hero/right-context-tiles.svg"
                 alt="right-context-tiles"
                 width={600}
                 height={600}
-                className="pointer-events-none absolute top-0 right-0 hidden translate-x-10 opacity-30 md:block 2xl:opacity-100"
+                className="pointer-events-none absolute top-0 right-0 hidden translate-x-48 opacity-30 md:block 2xl:opacity-100"
             />
 
             {/* content */}
             <div className="relative mx-auto max-w-7xl">
                 {/* title ---------------------------------------------------- */}
-                <h1 className="w-full text-center text-3xl font-medium sm:text-5xl md:text-7xl 2xl:text-[4rem]">
+                <h1 className="text-center text-5xl lg:text-6xl">
                     <span className="sg-gradient-text font-bold">Code Intelligence</span> for untangling
                     <br className="hidden md:inline-block" /> big, messy codebases
                 </h1>
@@ -69,7 +69,7 @@ const HomeHero2024: FunctionComponent = () => {
                 <div className="mx-auto mt-5 flex flex-col items-center justify-center gap-x-2 gap-y-2 sm:flex-row lg:mt-8">
                     <button
                         type="button"
-                        className="btn btn-primary w-full bg-blurple-600 px-5 text-sm sm:w-auto sm:px-6 md:py-3 md:text-base"
+                        className="btn btn-primary w-full md:w-auto"
                         onClick={() => handleOpenModal('top')}
                     >
                         <span className="hidden md:inline">Download the AI coding assistant</span>
@@ -79,7 +79,7 @@ const HomeHero2024: FunctionComponent = () => {
                     <Link
                         href="/contact/request-info"
                         title="Book a demo"
-                        className="btn btn-secondary w-full px-5 text-sm sm:w-auto sm:px-6 md:py-3 md:text-base"
+                        className="btn btn-secondary w-full md:w-auto"
                         type="button"
                         onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click', 'top')}
                     >
@@ -88,7 +88,7 @@ const HomeHero2024: FunctionComponent = () => {
                 </div>
 
                 {/* images ---------------------------------------------------- */}
-                <div className="relative mx-auto mt-10 max-w-4xl sm:mb-48 md:mb-40">
+                <div className="relative mx-auto mt-14 max-w-4xl sm:mb-48 md:mb-40">
                     {/* cody */}
                     <div className="relative -translate-x-2 lg:translate-x-0">
                         <Image

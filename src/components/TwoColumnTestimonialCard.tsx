@@ -50,7 +50,7 @@ const TwoColumnTestimonialCard: React.FC<TwoColumnTestimonialCardProps> = ({
         ])}
     >
         {title && <div className={titleClassName}>{title}</div>}
-        <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <ClientTestimonialCard
                 clientImgSrc={leftClientImgSrc}
                 clientName={leftClientName}

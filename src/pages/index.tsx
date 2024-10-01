@@ -9,6 +9,7 @@ import { ContentSection, Layout, CodyPartners } from '../components'
 import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarousel'
 import HomeHero2024 from '../components/Home/HomeHero2024'
 import { Icon } from '../components/icon'
+import TwoColumnTestimonialCard from '../components/TwoColumnTestimonialCard'
 import { useAuthModal } from '../context/AuthModalContext'
 import { captureCustomEventWithPageData } from '../lib/utils'
 
@@ -61,16 +62,17 @@ const Home: FunctionComponent = () => {
 
                 {/* coding is complex --------------------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}
-                <div className="mt-48 text-center">
-                    <h2 className="text-balance mx-auto max-w-3xl text-3xl font-medium sm:text-5xl md:text-6xl">
-                        Make working in sprawling codebases{' '}
-                        <span className="sg-gradient-text font-bold">delightful</span>
-                    </h2>
+                <div className="mt-28 text-center">
+                    <h1 className="text-balance mx-auto max-w-3xl">
+                        Make coding <span className="sg-gradient-text font-bold">delightful</span>, even in sprawling
+                        codebases
+                    </h1>
 
                     <p className="text-balance mt-4 text-center text-sm text-gray-500 sm:text-base md:text-xl lg:mt-8">
-                        Growing codebases and dependencies make writing code complex. <br />
-                        Sourcegraph helps developers spend more time doing what they love:{' '}
-                        <span className="font-bold">writing code</span>.
+                        Growing code and dependencies make dev work complex.
+                        <br />
+                        Sourcegraph helps developers spend more time doing what they love:
+                        <span className="font-bold"> writing code</span>.
                     </p>
                 </div>
 
@@ -78,40 +80,45 @@ const Home: FunctionComponent = () => {
                 {/* ------------------------------------------------------------------------------- */}
                 <div className="mx-auto mt-14 max-w-7xl">
                     <div className="relative mt-12 flex gap-8 overflow-hidden rounded-2xl border border-gray-200 bg-white px-6 pt-8 md:px-10">
-                        <div className="pt-12">
+                        <div className="max-w-lg pt-5 pb-12 lg:pt-8 lg:pb-0">
                             <p className="font-mono text-gray-400">Solve hard software problems</p>
-                            <h2 className="text-balance mx-auto mt-2 text-2xl font-medium">
-                                Take the pain out of working in complex enterprise codebases
+                            <h2 className="text-balance mx-auto mt-2 font-medium">
+                                Take the pain out of working in complex enterprise environments
                             </h2>
                         </div>
 
-                        <div className="hidden lg:block">
+                        <div className="hidden min-h-[200px] lg:block">
                             <img
+                                className="absolute -top-2/3 right-12 hidden w-[650px] lg:block"
+                                src="/home/screens/code graph with gradient.svg"
+                                alt="Code graph"
+                            />
+                            {/* <img
                                 className="relative h-full w-full translate-y-1"
                                 src="/home/code-search.svg"
                                 alt="Find reusable code"
-                            />
+                                height={500}
+                                width={500}
+                            /> */}
                         </div>
                     </div>
 
-                    <div className="mt-4 grid grid-cols-3 gap-4">
+                    <div className="mt-4 grid gap-4 lg:grid-cols-3">
                         <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
-                            <img className="h-4 w-4" src="/home/icons/code-reuse.svg" alt="Code reuse" />
-                            <h3 className="mt-3 text-lg text-gray-500">
+                            <img className="h-4 w-4" src="/home/icons/chat.svg" alt="Chat icon" />
+                            <h3 className="mt-3 text-lg">
                                 Get answers about unfamiliar code without leaving your editor
                             </h3>
                         </div>
 
                         <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
                             <img className="h-4 w-4" src="/home/icons/code-reuse.svg" alt="Code reuse" />
-                            <h3 className="mt-3 text-lg text-gray-500">
-                                Find reusable code implementations from across your entire codebase
-                            </h3>
+                            <h3 className="mt-3 text-lg">Find reusable code implementations across every repository</h3>
                         </div>
 
                         <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
                             <img className="h-4 w-4" src="/home/icons/sparkle.svg" alt="Sparkle" />
-                            <h3 className="mt-3 text-lg text-gray-500">
+                            <h3 className="mt-3 text-lg">
                                 Simplify large and tedious projects like code migrations using AI
                             </h3>
                         </div>
@@ -124,15 +131,70 @@ const Home: FunctionComponent = () => {
                     </div>
                 </div> */}
 
+                {/* lyft testimonial ----------------------------------------------------------------- */}
+                {/* ------------------------------------------------------------------------------- */}
+                <div className="mx-auto mt-28 max-w-5xl">
+                    <div className="rounded-2xl border border-gray-200 bg-blurple-100/50 px-6 py-10 md:px-10">
+                        <img className="h-10 w-10" src="/home/icons/lyft.svg" alt="Lyft logo" />
+
+                        <p className="mt-4">
+                            “With the help of Sourcegraph, we were able to quickly look at all clients of an API and
+                            remove unused attributes...simplifying our APIs and speeding up developer iteration time.”
+                        </p>
+
+                        <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                            <div className="text-sm opacity-70">
+                                <div className="font-medium">Justin Phillips</div>
+                                <div>Software Engineer, Lyft</div>
+                            </div>
+
+                            <div>
+                                <Link
+                                    className="btn btn-sm btn-secondary whitespace-nowrap border border-blurple-500 px-10"
+                                    href="https://sourcegraph.com/case-studies/lyft-monolith-to-microservices"
+                                >
+                                    Read the case study
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 {/* productivity ----------------------------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}
-                <div className="mx-auto mt-40 max-w-7xl">
+                <div className="mx-auto mt-28 max-w-7xl">
+                    <div className="text-center">
+                        <p className="mg:text-base text-center font-mono text-lg text-gray-400">
+                            Increase engineering productivity
+                        </p>
+                        <h2 className="text-balance mt-2 text-center text-2xl font-medium sm:text-4xl">
+                            Enable developers to code more and toil less
+                        </h2>
+                    </div>
+
                     <ProductivitySection />
+                </div>
+
+                {/* two testimonials ----------------------------------------------------------------- */}
+                {/* ------------------------------------------------------------------------------- */}
+                {/* only margin top 20 here because the twocolumntestimonial card has its own padding for some reason */}
+                <div className="mx-auto max-w-7xl">
+                    <TwoColumnTestimonialCard
+                        leftClientImgSrc="/home/reviews1.svg"
+                        rightClientImgSrc="/home/reviews2.png"
+                        rightTestimony="Sourcegraph empowers developers at Yelp to ship code faster and more reliably than ever before."
+                        leftTestimony="Sourcegraph is extremely valuable for what we do. It enables us to easily clean up deprecated APIs and estimate the risks of our API's evolution."
+                        leftClientName="Vito Baggiolini"
+                        leftClientTitle="Senior Software Engineer, CERN"
+                        rightClientName="Kevin Chen"
+                        rightClientTitle="Software Engineer, Yelp"
+                        isVariantStyle={true}
+                    />
                 </div>
 
                 {/* cody ----------------------------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}
-                <div className="mt-40">
+                <div className="mt-28">
                     <div className="mx-auto max-w-7xl">
                         {/* header */}
                         <div className="flex items-center justify-center gap-4">
@@ -165,7 +227,7 @@ const Home: FunctionComponent = () => {
                         {/* Chat + Prompts sections */}
                         <div className="mt-10 grid gap-4 md:grid-cols-2">
                             {/* chat */}
-                            <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
+                            <div className="rounded-2xl border border-gray-200 bg-white px-6 py-10 md:px-10">
                                 <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
                                         <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="100%">
@@ -179,7 +241,7 @@ const Home: FunctionComponent = () => {
 
                                 <Icon fill="none" iconNode={iconDefinition} size={40} color="url(#grad1)" />
 
-                                <h3 className="mt-4 text-lg md:text-2xl">Solve hard problems with chat</h3>
+                                <h2 className="mt-4 text-2xl lg:text-3xl">Solve hard problems with chat</h2>
                                 <p className="mt-2 mb-0 text-gray-500">
                                     Chat with Cody to quickly generate and edit code, using latest-gen AI models plus
                                     extensive codebase context for fast and accurate results.
@@ -187,13 +249,13 @@ const Home: FunctionComponent = () => {
                             </div>
 
                             {/* prompts */}
-                            <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
+                            <div className="rounded-2xl border border-gray-200 bg-white px-6 py-10 md:px-10">
                                 <img
                                     className="h-10 w-10"
                                     src="/home/branded-icons/commands-brand-icon.svg"
                                     alt="Completions Brand Icon"
                                 />
-                                <h3 className="mt-4 text-lg md:text-2xl">Automate workflows with prompts</h3>
+                                <h2 className="mt-4 text-2xl lg:text-3xl">Automate workflows with prompts</h2>
                                 <p className="mt-2 mb-0 text-gray-500">
                                     Build and customize prompts for automating common tasks and reducing toil. Generate
                                     unit tests, modernize code, document code, and more.
@@ -209,7 +271,7 @@ const Home: FunctionComponent = () => {
                                     src="/home/branded-icons/completions-brand-icon.svg"
                                     alt="Completions Brand Icon"
                                 />
-                                <h3 className="mt-4 text-lg md:text-2xl">Code faster with autocomplete</h3>
+                                <h2 className="mt-4 text-2xl lg:text-3xl">Code faster with autocomplete</h2>
                                 <p className="mt-2 mb-0 text-gray-500">
                                     Cody completes single lines or whole functions, in any programming language,
                                     configuration file, or docs.
@@ -228,24 +290,9 @@ const Home: FunctionComponent = () => {
                     </div>
                 </div>
 
-                {/* only margin top 20 here because the twocolumntestimonial card has its own padding for some reason */}
-                {/* <div className="mx-auto mt-10 max-w-7xl">
-                    <TwoColumnTestimonialCard
-                        leftClientImgSrc="/home/reviews1.svg"
-                        rightClientImgSrc="/home/reviews2.png"
-                        rightTestimony="By its nature and capabilities, Sourcegraph can be a tool to reduce friction, speed up feedback loops, and improve developer velocity."
-                        leftTestimony="Sourcegraph is extremely valuable for what we do. It enables us to easily clean up deprecated APIs and estimate the risks of our API's evolution."
-                        leftClientName="Vito Baggiolini"
-                        leftClientTitle="Senior Software Engineer, CERN"
-                        rightClientName="Bryce Kalow"
-                        rightClientTitle="Senior Web Engineer, HashiCorp"
-                        isVariantStyle={true}
-                    />
-                </div> */}
-
                 {/* code search ----------------------------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}
-                <div className="mt-40">
+                <div className="mt-28">
                     <div className="mx-auto max-w-7xl">
                         {/* header */}
                         <div className="flex items-center justify-center gap-4">
@@ -277,36 +324,40 @@ const Home: FunctionComponent = () => {
                         </div>
 
                         {/* Find and fix code */}
-                        <div className="relative mt-10 overflow-hidden rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
-                            <img
-                                className="h-10 w-10"
-                                src="/home/branded-icons/code-search-icon.svg"
-                                alt="Code Search Icon"
-                            />
-                            <h3 className="mt-4 text-lg md:text-2xl">Find and fix code</h3>
-                            <p className="mt-2 mb-0 text-gray-500">
-                                Find what you need in milliseconds across all of your code-no matter where it lives.
-                            </p>
+                        <div className="relative mt-10 flex min-h-[220px] gap-10 overflow-hidden rounded-2xl border border-gray-200 bg-white px-6 pb-8 pt-8 md:px-10 lg:pt-4 lg:pb-0">
+                            <div className="lg:pt-12">
+                                <img
+                                    className="h-8 w-8"
+                                    src="/home/branded-icons/code-search-icon.svg"
+                                    alt="Completions Brand Icon"
+                                />
+                                <h2 className="mt-4 text-2xl lg:text-3xl">Find and fix code</h2>
+                                <p className="mt-2 mb-0 text-gray-500">
+                                    Find what you need in milliseconds across all of your code-no matter where it lives.
+                                </p>
+                            </div>
 
-                            <img
-                                className="absolute -top-5 right-12 hidden w-[450px] lg:block"
-                                src="/home/code-graph-home.svg"
-                                alt="Code graph"
-                                height={500}
-                                width={500}
-                            />
+                            <div className="flex-grow">
+                                <img
+                                    className="hidden w-[750px] lg:block"
+                                    src="/home/screens/find reusable implementations.svg"
+                                    alt="Find reusable implementations"
+                                    height={600}
+                                    width={600}
+                                />
+                            </div>
                         </div>
 
                         {/* Code Search sections */}
                         <div className="mt-4 grid gap-4 md:grid-cols-2">
                             {/* Automate large-scale changes */}
-                            <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
+                            <div className="rounded-2xl border border-gray-200 bg-white px-6 py-10 md:px-10">
                                 <img
-                                    className="h-10 w-10"
+                                    className="h-8 w-8"
                                     src="/home/branded-icons/batch-changes-icon.svg"
                                     alt="Batch Changes Icon"
                                 />
-                                <h3 className="mt-4 text-lg md:text-2xl">Automate large-scale code changes</h3>
+                                <h2 className="mt-4 text-2xl lg:text-3xl">Automate large-scale code changes</h2>
                                 <p className="mt-2 mb-0 text-gray-500">
                                     Find and make changes across your codebase in one go, whether a version change or a
                                     vulnerability fix.
@@ -314,13 +365,13 @@ const Home: FunctionComponent = () => {
                             </div>
 
                             {/* Track trends */}
-                            <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
+                            <div className="rounded-2xl border border-gray-200 bg-white px-6 py-10 md:px-10">
                                 <img
-                                    className="h-10 w-10"
+                                    className="h-8 w-8"
                                     src="/home/branded-icons/Code-insights-icon.svg"
                                     alt="Code Insights Icon"
                                 />
-                                <h3 className="mt-4 text-lg md:text-2xl">Track trends in your codebase</h3>
+                                <h2 className="mt-4 text-2xl lg:text-3xl">Track trends in your codebase</h2>
                                 <p className="mt-2 mb-0 text-gray-500">
                                     Transform your code into a queryable database to create custom dashboards in
                                     seconds.
@@ -414,29 +465,20 @@ const ProductivitySection: FunctionComponent = () => {
     const items = [
         {
             title: 'Quickly find and fix the code behind bugs and regressions',
-            text: 'hi',
+            text: <img className="w-full" src="/home/screens/find regressions.svg" alt="Find regressions" />,
         },
         {
             title: 'Automate toilsome tasks like documentation and unit testing',
-            text: 'hi',
+            text: <img className="w-full" src="/home/screens/automate toilsome tasks.svg" alt="Find regressions" />,
         },
         {
             title: 'Explain code and dependencies in seconds with AI',
-            text: 'hi',
+            text: <img className="w-full" src="/home/screens/explain code.svg" alt="Find regressions" />,
         },
     ]
 
     return (
-        <>
-            <div className="text-center">
-                <p className="mg:text-base text-center font-mono text-lg text-gray-400">
-                    Increase engineering productivity
-                </p>
-                <h2 className="text-balance mt-2 text-center text-2xl font-medium sm:text-4xl">
-                    Enable developers to code more and toil less
-                </h2>
-            </div>
-
+        <div className="mx-auto max-w-5xl">
             <FullWidthTabsCarousel
                 darkMode={false}
                 items={items}
@@ -444,7 +486,7 @@ const ProductivitySection: FunctionComponent = () => {
                 overline={false}
                 cta={false}
             />
-        </>
+        </div>
     )
 }
 
