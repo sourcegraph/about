@@ -8,6 +8,9 @@ const nextConfig = {
   productionBrowserSourceMaps: true,
   reactStrictMode: true,
   pageExtensions: ['tsx'],
+  images: {
+    unoptimized: true,
+  },
   transpilePackages: ['lucide-react'],
   webpack(config, options) {
     const { isServer } = options
