@@ -4,10 +4,11 @@ authors:
   - name: Alex Isken
     url: https://x.com/AlexanderIsken
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.png
-publishDate: 2024-09-18T10:00-02:00
+publishDate: 2024-10-02T10:00-02:00
 description: "OpenAI just unveiled its latest models, 01-preview and o1-mini, which offer enhanced reasoning capabilities for tackling complex tasks. Both models are now available in Cody as a limited release."
 tags: [Cody, VS Code, Chat]
 version: [v1.36]
+versionIcon: /assets/changelog/vscode.svg
 slug: 'o1-waitlist'
 published: true
 relatedTopics:
