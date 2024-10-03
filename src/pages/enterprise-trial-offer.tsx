@@ -7,6 +7,7 @@ import { ChooseYourLlmSection } from '../components/Enterprise/ChooseYourLlmSect
 import { EnterpriseGradeSection } from '../components/Enterprise/EnterpriseGradeSection'
 import { ProcessTable } from '../components/Enterprise/ProcessTable'
 import { UniversalSection } from '../components/Enterprise/UniversalSection'
+import { captureCustomEventWithPageData } from '../lib/utils'
 
 const EnterpriseTrialOffer: FunctionComponent = () => {
     const formContainerRef = useRef<HTMLDivElement>(null)
@@ -79,7 +80,10 @@ const EnterpriseTrialOffer: FunctionComponent = () => {
                                                 chiliPiper={false}
                                                 bookIt={true}
                                                 form_submission_source="cody-enterprise-trial"
-                                                onFormSubmitted={() => setFormSubmitted(true)}
+                                                onFormSubmitted={() => {
+                                                    setFormSubmitted(true)
+                                                    captureCustomEventWithPageData('contact_us_submit', undefined, true)
+                                                }}
                                             />
                                         </div>
                                     </div>
