@@ -4,7 +4,7 @@ authors:
   - name: Kelvin Yap
     url: https://x.com/kelvinyap
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/kelvin_avatar.png
-publishDate: 2024-10-02T17:49-07:00
+publishDate: 2024-10-03T17:56-07:00
 description: "Smart Apply now supports the executing of commands in the terminal, allowing users to execute a suggestion Cody provides with the simple click of a button."
 tags: [Cody, VS Code]
 version: [v1.36]

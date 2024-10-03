@@ -4,7 +4,7 @@ authors:
   - name: Kelvin Yap
     url: https://x.com/kelvinyap
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/kelvin_avatar.png
-publishDate: 2024-10-02T22:44-07:00
+publishDate: 2024-10-03T16:56-07:00
 description: "Single job pods for native Kubernetes Executors have been the default method for the past couple of releases, and based off positive feedback we are now removing multiple job pod configurations as a configuration option."
 tags: [Code Search, Enterprise]
 version: [v5.8.0]
