@@ -129,51 +129,12 @@ const CodyPage: FunctionComponent = () => {
     const router = useRouter()
     const { pathname } = router
     const { openModal } = useAuthModal()
-    const [title, setTitle] = useState('')
-    const [titleSize, setTitleSize] = useState('')
-    const [description, setDescription] = useState('')
-    const [descriptionSize, setDescriptionSize] = useState('')
 
     const source = pathname.slice(1) || 'about-home'
     const handleOpenModal = (pagePosition: string): void => {
         captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
         openModal(source)
     }
-
-    useEffect(() => {
-        posthog.onFeatureFlags(() => {
-            const featureFlag = posthog.getFeatureFlag('cody-page-messaging-test')
-            if (featureFlag === 'test-most-informed') {
-                setTitle('The AI assistant with context of your codebase, docs, tickets, and the web')
-                setDescription(
-                    'Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster'
-                )
-                setTitleSize('text-4xl sm:text-6xl')
-                setDescriptionSize('md:text-xl')
-            } else if (featureFlag === 'test-models-context') {
-                setTitle('Coding assistant with the latest AI and the most context')
-                setDescription(
-                    'Cody uses context of your codebase, docs, tickets, and the web for faster development and accurate code-gen'
-                )
-                setTitleSize('text-4xl sm:text-6xl')
-                setDescriptionSize('md:text-xl')
-            } else if (featureFlag === 'test-multiple-contexts') {
-                setTitle('Code more, type less')
-                setDescription(
-                    'Cody is an AI coding assistant that uses advanced search and codebase context to help you understand, write, and fix code faster'
-                )
-                setTitleSize('text-4xl sm:text-6xl')
-                setDescriptionSize('md:text-xl')
-            } else {
-                setTitle('The AI assistant with context of your codebase, docs, tickets, and the web')
-                setDescription(
-                    'Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster'
-                )
-                setTitleSize('text-4xl sm:text-6xl')
-                setDescriptionSize('md:text-xl')
-            }
-        })
-    }, [])
 
     return (
         <Layout
@@ -347,18 +308,16 @@ const CodyPage: FunctionComponent = () => {
                         <div className='xl:bg-start relative -top-[2px] w-[812px] overflow-hidden bg-none xl:border-b xl:border-r xl:border-[#DBE2F0] xl:bg-[url("/assets/cody/syntax-highlighter-bg.svg")] xl:bg-cover'>
                             <div className="relative max-w-[812px]">
                                 <div className="max-w-[749px] xl:pl-20 xl:pr-0">
-                                    {title && description && (
-                                        <CodyIntroDualTheme
-                                            isLight={true}
-                                            title={title}
-                                            description={description}
-                                            titleSize={titleSize}
-                                            descriptionSize={descriptionSize}
-                                            handleOpenModal={handleOpenModal}
-                                            wrapperClassName="relative z-[20] md:z-0"
-                                            isVariant={true}
-                                        />
-                                    )}
+                                    <CodyIntroDualTheme
+                                        isLight={true}
+                                        title="The most informed Code AI"
+                                        description="Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster"
+                                        titleSize="text-4xl sm:text-6xl"
+                                        descriptionSize="md:text-xl"
+                                        handleOpenModal={handleOpenModal}
+                                        wrapperClassName="relative z-[20] md:z-0"
+                                        isVariant={true}
+                                    />
                                 </div>
                             </div>
                         </div>
