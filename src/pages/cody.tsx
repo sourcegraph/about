@@ -1,10 +1,9 @@
-import { FunctionComponent, useState, useEffect } from 'react'
+import { FunctionComponent, useState } from 'react'
 
 import classNames from 'classnames'
 import { Expand, ShieldCheck, Cloud, ChevronRightIcon } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { posthog } from 'posthog-js'
 
 import { Layout, HubSpotForm, Modal, CodyIde, CodyPartners, ContentSection, Badge } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
