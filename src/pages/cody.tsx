@@ -37,25 +37,25 @@ const optimizedSpeed = [
 
 const items = [
     {
-        title: 'Autocompletes',
+        title: 'Autocomplete',
         text: (
             <div>
                 <img
                     src="/assets/cody/fullWidthTabPaceholder.png"
                     className="max-h-[534px] max-w-[738px]"
-                    alt="autocompletes"
+                    alt="Autocomplete"
                 />
             </div>
         ),
     },
     {
-        title: 'Edits',
+        title: 'Edit',
         text: (
             <div>
                 <img
                     src="/assets/cody/fullWidthTabPaceholder.png"
                     className="max-h-[534px] max-w-[738px]"
-                    alt="edits"
+                    alt="Inline editing"
                 />
             </div>
         ),
@@ -67,7 +67,7 @@ const items = [
                 <img
                     src="/assets/cody/fullWidthTabPaceholder.png"
                     className="max-h-[534px] max-w-[738px]"
-                    alt="prompts"
+                    alt="Prompts (unit tests)"
                 />
             </div>
         ),
