@@ -343,12 +343,17 @@ const CodyPage: FunctionComponent = () => {
                             your hardest engineering problems.
                         </h5>
                     </div>
-                    <div className="mt-14 h-[581px] max-h-[581px] w-full max-w-[1152px] overflow-hidden rounded-2xl md:h-full md:rounded-none">
-                        <img
-                            src="/assets/cody/placeholder-chat.svg"
-                            className="h-full w-full object-cover md:h-auto md:w-auto"
-                            alt=""
-                        />
+                    <div className="mt-14 w-full max-w-[1152px] overflow-hidden rounded-2xl md:h-full md:rounded-none">
+                        <video
+                            src="https://storage.googleapis.com/sourcegraph-assets/cody/website-october-2024/cody-chop.mp4"
+                            className="aspect-video rounded-2xl"
+                            autoPlay={true}
+                            loop={true}
+                            muted={true}
+                            playsInline={true}
+                        >
+                            <track kind="captions" srcLang="en" label="English" />
+                        </video>
                     </div>
                 </div>
             </ContentSection>
