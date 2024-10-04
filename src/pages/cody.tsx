@@ -39,36 +39,51 @@ const items = [
     {
         title: 'Autocomplete',
         text: (
-            <div>
-                <img
-                    src="/assets/cody/fullWidthTabPaceholder.png"
-                    className="max-h-[534px] max-w-[738px]"
-                    alt="Autocomplete"
-                />
+            <div className="min-h-[555px] max-w-[738px]">
+                <video
+                    src="https://storage.googleapis.com/sourcegraph-assets/cody/website-october-2024/cody-autocomplete.mp4"
+                    className="rounded-2xl"
+                    autoPlay={true}
+                    loop={true}
+                    muted={true}
+                    playsInline={true}
+                >
+                    <track kind="captions" srcLang="en" label="English" />
+                </video>
             </div>
         ),
     },
     {
         title: 'Edit',
         text: (
-            <div>
-                <img
-                    src="/assets/cody/fullWidthTabPaceholder.png"
-                    className="max-h-[534px] max-w-[738px]"
-                    alt="Inline editing"
-                />
+            <div className="min-h-[555px] max-w-[738px]">
+                <video
+                    src="https://storage.googleapis.com/sourcegraph-assets/cody/website-october-2024/cody-edits.mp4"
+                    className="rounded-2xl"
+                    autoPlay={true}
+                    loop={true}
+                    muted={true}
+                    playsInline={true}
+                >
+                    <track kind="captions" srcLang="en" label="English" />
+                </video>
             </div>
         ),
     },
     {
         title: 'Prompts (unit tests)',
         text: (
-            <div>
-                <img
-                    src="/assets/cody/fullWidthTabPaceholder.png"
-                    className="max-h-[534px] max-w-[738px]"
-                    alt="Prompts (unit tests)"
-                />
+            <div className="min-h-[555px] max-w-[738px]">
+                <video
+                    src="https://storage.googleapis.com/sourcegraph-assets/cody/website-october-2024/cody-unit-tests.mp4"
+                    className="rounded-2xl"
+                    autoPlay={true}
+                    loop={true}
+                    muted={true}
+                    playsInline={true}
+                >
+                    <track kind="captions" srcLang="en" label="English" />
+                </video>
             </div>
         ),
     },
@@ -380,7 +395,7 @@ const CodyPage: FunctionComponent = () => {
                             </div>
                         </>
                     }
-                    imgSrc="/assets/cody/placeholder-cody-models.svg"
+                    imgSrc="https://storage.googleapis.com/sourcegraph-assets/cody/website-october-2024/llm-dropdown-options.png"
                 />
             </ContentSection>
             <ContentSection parentClassName="!py-0">
@@ -420,7 +435,7 @@ const CodyPage: FunctionComponent = () => {
                             </Link>
                         </div>
                     }
-                    imgSrc="/assets/cody/placeholder-cody-models.svg"
+                    videoSrc="https://storage.googleapis.com/sourcegraph-assets/cody/website-october-2024/cody-remote-context.mp4"
                 />
             </ContentSection>
             <ContentSection parentClassName="py-16 md:!py-28">
@@ -436,14 +451,13 @@ const CodyPage: FunctionComponent = () => {
                 <div className="grid gap-4 md:grid-cols-3">
                     {singleViewCardContent.map(item => (
                         <div
-                            key={item.username}
+                            key={item.author}
                             className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-8"
                         >
                             <p className="mb-0">{item.description}</p>
 
                             <div className="mt-4">
                                 <div className="font-semibold text-blurple-500">{item.author}</div>
-                                <div className="text-sm opacity-70">{item.username}</div>
                             </div>
                         </div>
                     ))}

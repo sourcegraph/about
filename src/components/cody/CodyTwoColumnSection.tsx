@@ -9,9 +9,10 @@ const CodyTwoColumnSection: FunctionComponent<{
     description: string
     subTitle?: string
     extraContent?: ReactNode
-    imgSrc: string
+    imgSrc?: string
+    videoSrc?: string
     leftClassName?: string
-}> = ({ title, description, subTitle, extraContent, imgSrc, leftClassName }) => (
+}> = ({ title, description, subTitle, extraContent, imgSrc, videoSrc, leftClassName }) => (
     <TwoColumnSection
         className="!mt-0"
         centerContent={false}
@@ -25,7 +26,19 @@ const CodyTwoColumnSection: FunctionComponent<{
         }
         rightColumn={
             <div className="mt-0 h-auto max-h-[700px] w-full overflow-hidden rounded-none md:h-full md:rounded-2xl lg:max-w-[628px]">
-                <img src={imgSrc} className="h-full w-full md:h-auto lg:w-auto" alt="" />
+                {videoSrc ? (
+                    <video
+                        src={videoSrc}
+                        autoPlay={true}
+                        loop={true}
+                        muted={true}
+                        className="h-full w-full md:h-auto lg:w-auto"
+                    >
+                        <track kind="captions" srcLang="en" label="English" />
+                    </video>
+                ) : (
+                    <img src={imgSrc} className="h-full w-full rounded-2xl md:h-auto lg:w-auto" alt="" />
+                )}
             </div>
         }
     />
