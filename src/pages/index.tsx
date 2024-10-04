@@ -77,7 +77,7 @@ const Home: FunctionComponent = () => {
 
                 {/* solve hard software problems ----------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}
-                <div className="mx-auto mt-14 max-w-7xl">
+                <div className="mx-auto mt-14 max-w-6xl">
                     <div className="relative mt-12 flex gap-8 overflow-hidden rounded-2xl border border-gray-200 bg-white px-6 pt-8 md:px-10">
                         <div className="max-w-lg pt-5 pb-12 lg:pt-8 lg:pb-0">
                             <p className="font-mono text-gray-400">Solve hard software problems</p>
@@ -88,7 +88,7 @@ const Home: FunctionComponent = () => {
 
                         <div className="hidden min-h-[200px] lg:block">
                             <img
-                                className="absolute -top-2/3 right-12 hidden w-[650px] lg:block"
+                                className="absolute -top-2/3 hidden w-[650px] lg:block"
                                 src="/home/screens/code graph with gradient.svg"
                                 alt="Code graph"
                             />
@@ -102,7 +102,7 @@ const Home: FunctionComponent = () => {
                         </div>
                     </div>
 
-                    <div className="mt-4 grid gap-4 lg:grid-cols-3">
+                    <div className="mt-6 grid gap-4 lg:grid-cols-3">
                         <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-10">
                             <img className="h-4 w-4" src="/home/icons/chat.svg" alt="Chat icon" />
                             <h3 className="mt-3 text-lg">
@@ -161,7 +161,7 @@ const Home: FunctionComponent = () => {
 
                 {/* productivity ----------------------------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}
-                <div className="mx-auto mt-28 max-w-7xl">
+                <div className="mx-auto mt-28 max-w-6xl">
                     <div className="text-center">
                         <p className="mg:text-base text-center font-mono text-lg text-gray-400">
                             Increase engineering productivity
@@ -177,7 +177,7 @@ const Home: FunctionComponent = () => {
                 {/* two testimonials ----------------------------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}
                 {/* only margin top 20 here because the twocolumntestimonial card has its own padding for some reason */}
-                <div className="mx-auto mt-28 max-w-7xl">
+                <div className="mx-auto mt-28 max-w-6xl">
                     <div className="grid gap-4 md:grid-cols-2">
                         <div className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-8">
                             <p className="mb-0">
@@ -218,7 +218,7 @@ const Home: FunctionComponent = () => {
                 {/* cody ----------------------------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}
                 <div className="mt-28">
-                    <div className="mx-auto max-w-7xl">
+                    <div className="mx-auto max-w-6xl">
                         {/* header */}
                         <div className="flex items-center justify-center gap-4">
                             <img
@@ -226,7 +226,7 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/cody-squircle.svg"
                                 alt="Cody Product logo"
                             />
-                            <h2 className="text-3xl font-medium sm:text-5xl md:text-7xl">Cody</h2>
+                            <h2 className="text-3xl font-medium sm:text-5xl md:text-6xl">Cody</h2>
                         </div>
 
                         {/* description */}
@@ -248,7 +248,7 @@ const Home: FunctionComponent = () => {
                         </div>
 
                         {/* Chat + Prompts sections */}
-                        <div className="mt-10 grid gap-4 md:grid-cols-2">
+                        <div className="mt-10 grid gap-6 md:grid-cols-2">
                             {/* chat */}
                             <div className="rounded-2xl border border-gray-200 bg-white px-6 py-10 md:px-10">
                                 <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
@@ -287,7 +287,7 @@ const Home: FunctionComponent = () => {
                         </div>
 
                         {/* completions */}
-                        <div className="relative mt-4 flex overflow-hidden rounded-2xl border border-gray-200 bg-white">
+                        <div className="relative mt-6 flex overflow-hidden rounded-2xl border border-gray-200 bg-white">
                             <div className="flex flex-col justify-center px-6 py-8 md:px-10">
                                 <img
                                     className="h-[40px] w-[40px]"
@@ -316,7 +316,7 @@ const Home: FunctionComponent = () => {
                 {/* code search ----------------------------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}
                 <div className="mt-28">
-                    <div className="mx-auto max-w-7xl">
+                    <div className="mx-auto max-w-6xl">
                         {/* header */}
                         <div className="flex items-center justify-center gap-4">
                             <img
@@ -324,7 +324,7 @@ const Home: FunctionComponent = () => {
                                 src="/home/branded-icons/Code-Search-squircle.svg"
                                 alt="Code Search Product logo"
                             />
-                            <h2 className="text-3xl font-medium sm:text-5xl md:text-7xl">Code Search</h2>
+                            <h2 className="text-3xl font-medium sm:text-5xl md:text-6xl">Code Search</h2>
                         </div>
 
                         {/* description */}
@@ -372,7 +372,7 @@ const Home: FunctionComponent = () => {
                         </div>
 
                         {/* Code Search sections */}
-                        <div className="mt-4 grid gap-4 md:grid-cols-2">
+                        <div className="mt-6 grid gap-4 md:grid-cols-2">
                             {/* Automate large-scale changes */}
                             <div className="rounded-2xl border border-gray-200 bg-white px-6 py-10 md:px-10">
                                 <img
@@ -428,7 +428,7 @@ const Home: FunctionComponent = () => {
 
                 {/* call to actions ------------------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}
-                <div className="mx-auto mt-10 max-w-7xl">
+                <div className="mx-auto mt-10 max-w-6xl">
                     <div className="mx-6 grid grid-cols-1 gap-6 py-16 md:mx-0 md:grid-cols-2 md:py-24">
                         <div className="hover:cta-free-cody relative overflow-hidden rounded-2xl border-1 border-gray-200 bg-white">
                             <div className="cta-top-border absolute left-0 right-0 top-0 rounded-t-2xl" />
@@ -539,7 +539,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
                 <div className="mx-auto flex flex-col items-center pb-4 pt-4 md:w-[680px] md:pb-[26px] md:pt-20">
                     {abTest === 'control' && (
                         <>
-                            <h1 className="w-full text-center text-5xl sm:text-7xl">
+                            <h1 className="w-full text-center text-5xl sm:text-6xl">
                                 Understand and write code <span className="sg-gradient-text">blazingly fast</span>
                             </h1>
 
@@ -552,7 +552,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
 
                     {abTest === 'test-hard-eng-probs' && (
                         <>
-                            <h1 className="w-full text-center text-5xl sm:text-7xl">
+                            <h1 className="w-full text-center text-5xl sm:text-6xl">
                                 <span className="sg-gradient-text">Code Intelligence</span> that solves the hardest
                                 engineering problems
                             </h1>
@@ -566,7 +566,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
 
                     {abTest === 'test-operate-at-scale' && (
                         <>
-                            <h1 className="w-full text-center text-5xl md:text-7xl">
+                            <h1 className="w-full text-center text-5xl md:text-6xl">
                                 <span className="sg-gradient-text">Code Intelligence</span> for engineering teams
                                 operating at scale
                             </h1>
@@ -580,7 +580,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
 
                     {abTest === 'test-elevate-engineering' && (
                         <>
-                            <h1 className="w-full text-center text-5xl sm:text-7xl">
+                            <h1 className="w-full text-center text-5xl sm:text-6xl">
                                 <span className="sg-gradient-text">Contextual AI</span> and{' '}
                                 <span className="sg-gradient-text">scalable search</span> to elevate your engineering
                                 team
