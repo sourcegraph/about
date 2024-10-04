@@ -95,30 +95,21 @@ const securityCardFeatures = [
 const singleViewCardContent = [
     {
         imgSrc: '/assets/cody/authorPlaceholder.png',
-        description: `There’s no other program that walks you through exactly what you need to know to start an online
-store fast, written by someone who has built several 7-figure ecommerce businesses from scratch.
-What’s more, everything has been broken down in step-by-step detail with real action plans
-including finding your niche.`,
-        author: 'Name',
-        username: 'username',
+        description:
+            "I'm loving Cody! Got Pro after 15 minutes of trying it out, cancelled GitHub Copilot and never looked back (or for the alternative). Worth every penny!",
+        author: 'Darko Kuzmanovic',
     },
     {
         imgSrc: '/assets/cody/authorPlaceholder.png',
-        description: `There’s no other program that walks you through exactly what you need to know to start an online
-store fast, written by someone who has built several 7-figure ecommerce businesses from scratch.
-What’s more, everything has been broken down in step-by-step detail with real action plans
-including finding your niche.`,
-        author: 'Name',
-        username: 'username',
+        description:
+            'Unlimited Claude 3 Opus / Claude 3.5 Sonnet when every other service rate limits. And all for a super low monthly price.',
+        author: 'Lachlan Ross',
     },
     {
         imgSrc: '/assets/cody/authorPlaceholder.png',
-        description: `There’s no other program that walks you through exactly what you need to know to start an online
-store fast, written by someone who has built several 7-figure ecommerce businesses from scratch.
-What’s more, everything has been broken down in step-by-step detail with real action plans
-including finding your niche.`,
-        author: 'Name',
-        username: 'username',
+        description:
+            "This is by far the best AI code assistant I have been working with. The most important thing is that it doesn't get in the way and you can choose between different models without having to rely on only one…",
+        author: 'Andrea Tomasini',
     },
 ]
 
@@ -442,20 +433,18 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection parentClassName="py-16 md:!py-24">
-                <div className="flex flex-col gap-6 md:flex-row">
+                <div className="grid gap-4 md:grid-cols-3">
                     {singleViewCardContent.map(item => (
                         <div
                             key={item.username}
-                            className="flex flex-col rounded-[10px] border border-[#E4E9F4] px-[15px] py-[15px]"
+                            className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-8"
                         >
-                            <div className="flex flex-row items-center gap-2.5">
-                                <img src={item.imgSrc} className="h-[40px] w-[40px]" alt="" />
-                                <div className="flex flex-col">
-                                    <div className="text-base text-violet-500">{item.author}</div>
-                                    <div className="text-sm text-gray-500">@{item.username}</div>
-                                </div>
+                            <p className="mb-0">{item.description}</p>
+
+                            <div className="mt-4">
+                                <div className="font-semibold text-blurple-500">{item.author}</div>
+                                <div className="text-sm opacity-70">{item.username}</div>
                             </div>
-                            <div className="pt-2.5 pb-2.5 text-lg tracking-tight text-gray-700">{item.description}</div>
                         </div>
                     ))}
                 </div>
