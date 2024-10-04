@@ -539,7 +539,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
                 <div className="mx-auto flex flex-col items-center pb-4 pt-4 md:w-[680px] md:pb-[26px] md:pt-20">
                     {abTest === 'control' && (
                         <>
-                            <h1 className="w-full text-center text-5xl sm:text-6xl">
+                            <h1 className="w-full text-center text-5xl sm:text-7xl">
                                 Understand and write code <span className="sg-gradient-text">blazingly fast</span>
                             </h1>
 
@@ -566,7 +566,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
 
                     {abTest === 'test-operate-at-scale' && (
                         <>
-                            <h1 className="w-full text-center text-5xl md:text-6xl">
+                            <h1 className="w-full text-center text-5xl md:text-7xl">
                                 <span className="sg-gradient-text">Code Intelligence</span> for engineering teams
                                 operating at scale
                             </h1>
@@ -580,7 +580,7 @@ const HomeHero: FunctionComponent<HomeHeroProps> = ({ onOpenModal }) => {
 
                     {abTest === 'test-elevate-engineering' && (
                         <>
-                            <h1 className="w-full text-center text-5xl sm:text-6xl">
+                            <h1 className="w-full text-center text-5xl sm:text-7xl">
                                 <span className="sg-gradient-text">Contextual AI</span> and{' '}
                                 <span className="sg-gradient-text">scalable search</span> to elevate your engineering
                                 team
