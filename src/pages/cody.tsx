@@ -358,7 +358,7 @@ const CodyPage: FunctionComponent = () => {
                     extraContent={
                         <>
                             <div>
-                                <div className="mb-4 mt-10 text-base font-medium tracking-tight md:mt-[13px]">
+                                <div className="mb-4 mt-10 text-base font-medium tracking-tight">
                                     Optimized for Power
                                 </div>
                                 <div className="mb-10 flex max-w-[556px] flex-row flex-wrap gap-4">
