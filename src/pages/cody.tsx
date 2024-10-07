@@ -476,7 +476,7 @@ const CodyPage: FunctionComponent = () => {
                             key={item.author}
                             className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-8"
                         >
-                            <p className="mb-0">{item.description}</p>
+                            <p className="mb-0">"{item.description}"</p>
 
                             <div className="mt-4">
                                 <div className="font-semibold text-blurple-500">{item.author}</div>
