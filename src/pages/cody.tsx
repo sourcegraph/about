@@ -354,8 +354,8 @@ const CodyPage: FunctionComponent = () => {
                     </div>
                     <div className="mt-14 w-full max-w-[1152px] overflow-hidden rounded-2xl md:h-full md:rounded-none">
                         <video
-                            src="https://storage.googleapis.com/sourcegraph-assets/cody/website-october-2024/cody-chop.mp4"
-                            className="aspect-video rounded-2xl"
+                            src="https://storage.googleapis.com/sourcegraph-assets/cody/website-october-2024/cody-chop-2.mp4"
+                            className="rounded-2xl"
                             autoPlay={true}
                             loop={true}
                             muted={true}
@@ -457,7 +457,7 @@ const CodyPage: FunctionComponent = () => {
                     leftClassName="!mb-[8px]"
                     title="Development context requires more than just code. "
                     description="Cody integrates with Notion, Jira, Linear, and more. Use non-code context to write code that understands-and meets-all of your requirements."
-                    imgSrc="/assets/cody/placeholder-cody-models.svg"
+                    imgSrc="https://storage.googleapis.com/sourcegraph-assets/cody/website-october-2024/openctx.png"
                 />
             </ContentSection>
 
