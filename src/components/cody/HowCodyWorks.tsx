@@ -5,50 +5,56 @@ import classNames from 'classnames'
 import { ContentSection } from '..'
 import { DevPlatformsSection } from '../Enterprise/DevPlatformsSection'
 
-export const HowCodyWorks: FunctionComponent<{ isLight: boolean }> = ({ isLight = false }) => (
+export const HowCodyWorks: FunctionComponent<{ isLight: boolean; isVariant: boolean }> = ({
+    isLight = false,
+    isVariant,
+}) => (
     <ContentSection
-        parentClassName="!py-0 !px-0"
+        parentClassName="!py-0"
         className={classNames(
-            'flex h-auto max-w-[1280px] flex-col justify-between overflow-hidden border-y px-6 px-0 md:my-24 md:h-[414px] md:flex-row md:justify-between md:gap-2 md:rounded-2xl md:border-1 md:pl-16 md:pr-[82.04px]',
-            { 'border-[#343A4D] bg-violet-700': !isLight, 'hidden border-gray-200 bg-[#FFF] md:flex': isLight }
+            'flex h-auto max-w-[1280px]  flex-col justify-between gap-y-10 overflow-hidden rounded-2xl border  md:my-0 md:flex-row md:justify-between md:gap-2 md:border-1 md:pl-16 md:pr-[82.04px]',
+            {
+                'border-[#343A4D] bg-violet-700': !isLight,
+                'border-gray-200 bg-[#FFF] md:flex': isLight,
+                'pb-[92px] md:h-[414px]': !isVariant,
+                'flex !items-center pb-[71px] md:h-[458px] md:pb-0': isVariant,
+            }
         )}
     >
         <div
-            className={classNames('w-full text-white md:h-full md:max-w-[541px]', {
-                'py-16': !isLight,
-                'pb-16 pt-[84px]': isLight,
-            })}
+            className={classNames(
+                'flex w-full flex-col justify-center px-6 pt-10 text-white md:h-full md:max-w-[541px] md:px-0 md:pt-0',
+                {
+                    'flex flex-col justify-center': isVariant,
+                }
+            )}
         >
             <h2
                 className={classNames('pb-4', {
                     'text-white': !isLight,
                     'text-[#000]': isLight,
+                    '!pb-10': isVariant,
                 })}
             >
-                Works with your existing code hosts and IDEs
+                Works where your team works
             </h2>
             <p
-                className={classNames('text-2xl leading-[30px] -tracking-[0.25px]', {
+                className={classNames('mb-0 h-[156px] text-2xl leading-[30px] -tracking-[0.25px] md:h-auto', {
                     'text-gray-200': !isLight,
                     'text-[#000]': isLight,
+                    '!text-xl !text-gray-500': isVariant,
                 })}
             >
-                Cody lives in VS Code and JetBrains IDEs and works with code from any code host.
-            </p>
-            <p
-                className={classNames('text-2xl leading-[30px] -tracking-[0.25px]', {
-                    'text-gray-200': !isLight,
-                    'text-[#000]': isLight,
-                })}
-            >
-                Cody Enterprise integrates with all your code hosts for expanded codebase context and personalization.
+                Cody integrates with code from any code host at massive scale. Use it with any programming language or
+                framework, from your IDE of choice.
             </p>
         </div>
         <DevPlatformsSection
+            isVariant={isVariant}
             isLight={false}
-            setOneClassName="bottom-[42px] gap-[25.05px]"
-            setTwoClassName="gap-[25px] -top-[10px]"
-            setThreeClassName="bottom-[42px] gap-[25.05px]"
+            setOneClassName={isVariant ? 'md:bottom-[29px] gap-[25.05px]' : 'bottom-[42px] gap-[25.05px]'}
+            setTwoClassName={isVariant ? 'gap-[25px] top-[37px] md:top-[28px]' : 'gap-[25px] -top-[10px]'}
+            setThreeClassName={isVariant ? 'md:bottom-[20px] gap-[25.05px]' : 'bottom-[42px] gap-[25.05px]'}
         />
     </ContentSection>
 )

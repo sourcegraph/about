@@ -21,6 +21,8 @@ interface FullWidthTabsCarouselProps {
     overline?: boolean
     overlineText?: string | ReactNode
     subtitle?: string
+    parentSectionClassName?: string
+    isVariant?: boolean
 }
 export enum ContentEnum { // Ensure export if used in other files
     Media = 'media',
@@ -44,6 +46,8 @@ export const FullWidthTabsCarousel: FunctionComponent<FullWidthTabsCarouselProps
     overline = true,
     overlineText,
     subtitle,
+    isVariant,
+    parentSectionClassName,
 }) => {
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
@@ -103,11 +107,12 @@ export const FullWidthTabsCarousel: FunctionComponent<FullWidthTabsCarouselProps
                 darkMode={darkMode}
                 title={title}
                 subTitle={subtitle}
+                isVariant={isVariant}
             />
             <div
                 className={classNames(
-                    'grid grid-cols-1 items-center lg:grid-cols-2 lg:gap-8',
-                    autoAdvance ? 'justify-center' : 'flex-col py-0 lg:flex-row'
+                    'grid grid-cols-1 items-center justify-center lg:grid-cols-2 lg:gap-8',
+                    parentSectionClassName
                 )}
             >
                 {/* Mobile Image Caption (Button Label) */}
@@ -131,13 +136,7 @@ export const FullWidthTabsCarousel: FunctionComponent<FullWidthTabsCarouselProps
                 )}
 
                 {/* Web Indicators */}
-                <div
-                    className={`${
-                        carouselHook.autoAdvance
-                            ? 'm-0 hidden flex-col justify-between px-0 lg:flex lg:gap-[18px]'
-                            : 'hidden h-[550px] lg:flex'
-                    } py-6 pl-14`}
-                >
+                <div className="m-0 hidden flex-col justify-between px-0 py-6 pl-14 lg:flex lg:gap-[18px]">
                     {carouselItems.map((item, index) => {
                         const itemClassName = getItemClassName(
                             item,
@@ -164,7 +163,8 @@ export const FullWidthTabsCarousel: FunctionComponent<FullWidthTabsCarouselProps
                                         !animateTransition &&
                                             item === carouselHook.carouselItems.currentItem &&
                                             'my-2 border-l-2 border-gray-300 pl-4',
-                                        darkMode ? 'text-white opacity-60' : 'text-gray-700'
+                                        darkMode ? 'text-white opacity-60' : 'text-gray-700',
+                                        isVariant && 'text-[32px]'
                                     )}
                                 >
                                     {item.title}
@@ -192,12 +192,11 @@ export const FullWidthTabsCarousel: FunctionComponent<FullWidthTabsCarouselProps
                             <div
                                 key={item.title}
                                 className={classNames(
-                                    'overflow-hidden transition-all duration-500 ease-in-out',
+                                    'flex justify-center overflow-hidden transition-all duration-500 ease-in-out md:rounded-xl',
                                     animateTransition && 'absolute',
                                     itemClassName
                                 )}
                             >
-                                {!autoAdvance && <h1 className="lg:mb-6">{item.title}</h1>}
                                 <div>{item.text}</div>
                             </div>
                         )
@@ -246,6 +245,7 @@ interface FullWidthTabsHeaderProps {
     title?: string | ReactNode
     subTitle?: string
     overlineText?: string | ReactNode
+    isVariant?: boolean
 }
 const FullWidthTabsHeader: FunctionComponent<FullWidthTabsHeaderProps> = ({
     darkMode,
@@ -254,9 +254,15 @@ const FullWidthTabsHeader: FunctionComponent<FullWidthTabsHeaderProps> = ({
     title,
     subTitle,
     overlineText,
+    isVariant,
 }) => (
     <div className={classNames('flex flex-row justify-center', darkMode ? 'text-white opacity-60' : 'text-gray-700')}>
-        <div className="mb-8 flex max-w-[632px] flex-col items-center !gap-0 lg:mb-16">
+        <div
+            className={classNames(
+                'mb-8 flex max-w-[632px] flex-col items-center !gap-0 lg:mb-16',
+                isVariant && 'md:!max-w-[800px]'
+            )}
+        >
             {overline && (
                 <h6
                     className={classNames(
@@ -270,7 +276,8 @@ const FullWidthTabsHeader: FunctionComponent<FullWidthTabsHeaderProps> = ({
             <h2
                 className={classNames(
                     'text-center md:mx-auto md:max-w-[493px]',
-                    darkMode ? 'text-white opacity-80' : 'text-gray-700'
+                    darkMode ? 'text-white opacity-80' : 'text-gray-700',
+                    isVariant && 'md:!max-w-[800px]'
                 )}
             >
                 {title}
@@ -279,7 +286,8 @@ const FullWidthTabsHeader: FunctionComponent<FullWidthTabsHeaderProps> = ({
                 <div
                     className={classNames(
                         'pt-4 text-center',
-                        darkMode ? 'text-white opacity-60' : 'text-gray-700 opacity-70'
+                        darkMode ? 'text-white opacity-60' : 'text-gray-700 opacity-70',
+                        isVariant ? 'text-xl md:max-w-[800px]' : 'text-base'
                     )}
                 >
                     {subTitle}
