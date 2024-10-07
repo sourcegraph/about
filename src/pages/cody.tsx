@@ -70,7 +70,7 @@ const items = [
         ),
     },
     {
-        title: 'Prompts (unit tests)',
+        title: 'Prompts',
         text: (
             <div className="min-h-[555px] max-w-[738px]">
                 <video
