@@ -329,7 +329,17 @@ const CodyPage: FunctionComponent = () => {
                     </div>
                 </ContentSection>
             </div>
-            <div className="pt-[104px] md:pt-24">
+
+            <ContentSection
+                parentClassName="!pt-[104px] md:!pt-24 !pb-4"
+                className="flex flex-col items-center justify-center"
+            >
+                <p className="text-center text-base font-normal uppercase leading-[27px] text-gray-400">
+                    Leading dev teams choose Cody for their coding assistant
+                </p>
+            </ContentSection>
+
+            <div>
                 <CodyPartners isLight={true} className="!pt-0 !pb-16 md:!pb-24" />
             </div>
 
@@ -451,7 +461,15 @@ const CodyPage: FunctionComponent = () => {
                 />
             </ContentSection>
 
-            <ContentSection parentClassName="py-16 md:!py-24">
+            <ContentSection
+                parentClassName="!pt-[104px] md:!pt-24 !pb-4"
+                className="flex flex-col items-center justify-center"
+            >
+                <p className="text-center text-base font-normal uppercase leading-[27px] text-gray-400">
+                    See why developers love using Cody
+                </p>
+            </ContentSection>
+            <ContentSection parentClassName="pb-16 md:!pb-24 !pt-0">
                 <div className="grid gap-4 md:grid-cols-3">
                     {singleViewCardContent.map(item => (
                         <div
@@ -467,6 +485,7 @@ const CodyPage: FunctionComponent = () => {
                     ))}
                 </div>
             </ContentSection>
+
             <ContentSection parentClassName="!py-16 lg:!py-24">
                 <FullWidthTabsCarousel
                     darkMode={false}
