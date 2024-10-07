@@ -86,7 +86,7 @@ export const EnterpriseGradeSection: FunctionComponent<EnterpriseGradeSectionPro
 
                 <div className="flex w-full rounded-2xl border border-[#E4E9F4] bg-gray-100 py-10 px-8 md:w-[40%] md:items-end">
                     <Link
-                        href=""
+                        href="/enterprise"
                         title="Case study"
                         className="btn btn-link btn-link-icon p-0 font-semibold !-tracking-[0.25px] md:mx-0 md:text-left md:text-right"
                     >
