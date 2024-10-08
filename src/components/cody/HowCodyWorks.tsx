@@ -45,8 +45,7 @@ export const HowCodyWorks: FunctionComponent<{ isLight: boolean; isVariant: bool
                     '!text-xl !text-gray-500': isVariant,
                 })}
             >
-                Cody integrates with code from any code host at massive scale. Use it with any programming language or
-                framework, from your IDE of choice.
+                You can use Cody with any programming language or framework, from your IDE of choice. It can work with codebase of any scale living on any code host.
             </p>
         </div>
         <DevPlatformsSection
