@@ -4,7 +4,7 @@ authors:
   - name: Kelvin Yap
     url: https://x.com/kelvinyap
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/kelvin_avatar.png
-publishDate: 2024-10-03T16:56-07:00
+publishDate: 2024-10-07T16:56-07:00
 description: "In the latest Sourcegraph release for Enterprise Cloud customers we've made improvements to the context fetched from @-mentioned repos, providing greater precision and increasing the likelihood Cody returns higher quality responses."
 tags: [Cody, Enterprise]
 version: [v5.8.0]
