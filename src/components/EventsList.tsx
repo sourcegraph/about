@@ -13,18 +13,6 @@ interface Event {
 const events: { upcoming: Event[], past: Event[] } = {
     upcoming: [
         {
-            title: 'Your Cody questions answered live!',
-            location: 'StreamYard',
-            date: '2024-09-18',
-            link: 'https://streamyard.com/watch/kQC2DSFWAx6r?v=2',
-        },
-        {
-            title: 'AI Dev Tools Night',
-            location: 'San Francisco, CA',
-            date: '2024-09-30',
-            link: 'https://lu.ma/mkjng0xx',
-        },
-        {
             title: 'designFAO',
             location: 'Portugal',
             date: '2024-10-11',
@@ -32,9 +20,15 @@ const events: { upcoming: Event[], past: Event[] } = {
         },
         {
             title: 'All Things Open',
-            location: 'Raleigh, NC USA',
+            location: 'Raleigh, NC',
             date: '2024-10-27',
             link: 'https://2024.allthingsopen.org/',
+        },
+        {
+            title: 'AI Dev Tools Night',
+            location: 'Austin, TX',
+            date: '2024-11-06',
+            link: 'https://lu.ma/qpic2p66',
         },
         {
             title: 'QCon SF',
@@ -50,6 +44,18 @@ const events: { upcoming: Event[], past: Event[] } = {
         },
     ],
     past: [
+        {
+            title: 'Your Cody questions answered live!',
+            location: 'StreamYard',
+            date: '2024-09-18',
+            link: 'https://streamyard.com/watch/kQC2DSFWAx6r?v=2',
+        },
+        {
+            title: 'AI Dev Tools Night',
+            location: 'San Francisco, CA',
+            date: '2024-09-30',
+            link: 'https://lu.ma/mkjng0xx',
+        },
         {
             title: 'Your Cody questions answered live!',
             location: 'StreamYard',
