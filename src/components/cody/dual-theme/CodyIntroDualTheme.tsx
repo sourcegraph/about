@@ -67,24 +67,24 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                     isLight ? 'btn-primary' : 'btn-primary-dark',
                     isVariant && 'md:!w-fit'
                 )}
-                title="Get Cody for free"
+                title="Download Cody for Free"
                 onClick={() => handleOpenModal('top')}
             >
                 <div className="flex items-center justify-center">
                     {!isVariant && <img src="/cody/cody-logo.svg" className="mr-2 h-[15px] w-[15px]" alt="Cody Logo" />}
-
-                    {isVariant ? 'Start using Cody in your IDE' : 'Download Cody for your IDE'}
+                    Download Cody for Free
+                    {/* {isVariant ? 'Start using Cody in your IDE' : 'Download Cody for your IDE'} */}
                     {isVariant && <ArrowUpRight className="ml-2 hidden md:flex" size={16} />}
                 </div>
             </button>
             <Link
-                href="https://sourcegraph.com/sign-in?returnTo=/cody/chat"
-                title="Chat on the web"
+                href="/enterprise-trial-offer?form_submission_source=cody-enterprise-trial"
+                title="Get a Cody Enterprise trial"
                 className={classNames('btn btn-secondary w-full px-6 py-2 lg:w-fit', isVariant && 'md:!w-fit')}
                 type="button"
                 onClick={() => captureCustomEventWithPageData('chat_on_the_web_click')}
             >
-                <div className="flex items-center justify-center">Chat on the web</div>
+                <div className="flex items-center justify-center">Get a Cody Enterprise trial</div>
             </Link>
         </div>
     </ContentSection>

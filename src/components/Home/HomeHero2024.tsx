@@ -72,18 +72,18 @@ const HomeHero2024: FunctionComponent = () => {
                         className="btn btn-primary w-full md:w-auto"
                         onClick={() => handleOpenModal('top')}
                     >
-                        <span className="hidden md:inline">Download Cody for Free</span>
+                        <span className="hidden md:inline">Download the AI coding assistant</span>
                         <span className="md:hidden">Download Cody</span>
                     </button>
 
                     <Link
-                        href="/enterprise-trial-offer?form_submission_source=cody-enterprise-trial"
-                        title="Get a Cody Enterprise trial"
+                        href="/contact/request-info"
+                        title="Book a demo"
                         className="btn btn-secondary w-full md:w-auto"
                         type="button"
                         onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click', 'top')}
                     >
-                        <div className="flex items-center justify-center">Get a Cody Enterprise trial</div>
+                        <div className="flex items-center justify-center">Book a demo</div>
                     </Link>
                 </div>
 
