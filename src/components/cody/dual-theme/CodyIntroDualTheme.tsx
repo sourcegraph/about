@@ -84,7 +84,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                 type="button"
                 onClick={() => captureCustomEventWithPageData('start_enterprise_trial_click')}
             >
-                <div className="flex items-center justify-center">Get a Cody Enterprise trial</div>
+                <div className="flex items-center justify-center">Request Cody Enterprise</div>
             </Link>
         </div>
     </ContentSection>
