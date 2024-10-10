@@ -1,5 +1,5 @@
 ---
-title: "Your Cody Questions Answered Live! - September 2024"
+title: "Your Cody questions answered live! - September 2024"
 authors:
   - name: Justin Dorfman
     url: https://x.com/jdorfman
