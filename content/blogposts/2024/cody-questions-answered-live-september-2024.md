@@ -17,7 +17,7 @@ On September 16, 2024, we hosted a livestream in Montreal for our biannual offsi
 ## Key highlights and new features
 
 1. Smart Apply: A new exciting feature improving code generation and editing capabilities, designed to streamline coding and boost developer productivity.
-2. New AI Models: Early access announced for OpenAI's o1 Preview and o1 Mini, promising enhanced performance and capabilities within the Cody ecosystem.
+2. New AI Models: Early access announced for OpenAI's o1-preview and o1-mini models, promising enhanced lgoic and reasoning capabilities within the Cody ecosystem.
 3. Cody Compose: An exciting upcoming feature enabling multi-file editing, which will greatly enhance Cody's versatility in complex coding scenarios.
 4. IDE Integrations: Announcement of soon-to-come Visual Studio integration, expanding Cody's reach to more developers.
 
