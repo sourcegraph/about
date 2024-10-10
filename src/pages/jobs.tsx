@@ -184,28 +184,20 @@ const CareersPage: FunctionComponent = () => {
 
             <div className="bg-violet-700">
                 <ContentSection parentClassName="!py-8" className="md:px-6">
-                    <h1 className="text-white">Globally remote, async first</h1>
+                    <h1 className="text-white">Global talent, local gatherings</h1>
                 </ContentSection>
             </div>
 
-            <ContentSection parentClassName="!pt-16">
+            <ContentSection parentClassName="!pt-20">
 
-                <div className="px-6">
-                    <h2 className="text-center">Better, together, wherever you are!</h2>
-
+                <div className="px-12">
                     <div className="mx-auto flex flex-col items-center m-12">
                         <div className="flex flex-col md:flex-row justify-between">
                             <p className="w-full md:w-[48%] mb-4 md:mb-0">
-                                Sourcegraph has been an all remote company since it's earliest days, and we now have
-                                teammates all over
-                                the world. Through this experience we’ve developed guidelines to encourage collaboration
-                                and thoughtful
-                                decision making that lead to a balanced workday and mindset.
+                            Sourcegraph has embraced a remote-first culture since our earliest days, attracting some of the world's brightest minds from San Francisco to Sydney, Tokyo to Oslo, and countless cities in between. Our global team thrives on collaboration without borders powered by a “document it or it didn't happen” mentality.
                             </p>
                             <p className="w-full md:w-[48%] mb-4 md:mb-0">
-                                We complement our remote culture with meaningful personal interactions. Our twice yearly
-                                all company trips, frequent in-person hackathons, and team meetups are designed to spark
-                                creativity, foster innovation, and strengthen bonds.
+                            We also know face-to-face interactions strengthen connections, spark creativity, and solve the toughest challenges for our customers. That's why we regularly bring our global team together through many in-person gatherings, like our twice yearly all-company offsite, frequent week-long hackathons, team meetups, community events, and more. 
                             </p>
                         </div>
                     </div>
