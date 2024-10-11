@@ -2,8 +2,9 @@
 set -euo pipefail
 
 friendly_size() {
+  local file="$1"
   # Workaround mac and linux file stat arg differences
-  local bytes=$(stat --format="%s" "$1" 2>/dev/null || stat -f "%z" "$1")
+  local bytes=$(stat --format="%s" "$file" 2>/dev/null || stat -f "%z" "$file")
   local size
 
   if (( bytes < 1024 )); then
