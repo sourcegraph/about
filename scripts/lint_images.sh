@@ -2,6 +2,7 @@
 set -euo pipefail
 
 friendly_size() {
+  # Workaround mac and linux file stat arg differences
   local bytes=$(stat --format="%s" "$1" 2>/dev/null || stat -f "%z" "$1")
   local size
 
