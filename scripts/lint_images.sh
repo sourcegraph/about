@@ -1,25 +1,22 @@
 #!/bin/bash
 set -euo pipefail
 
-friendly_size() {
+file_size() {
   local file="$1"
-  # Workaround mac and linux file stat arg differences
-  local bytes=$(stat --format="%s" "$file" 2>/dev/null || stat -f "%z" "$file")
-  local size
-
-  if (( bytes < 1024 )); then
-    size="${bytes} B"
-  elif (( bytes < 1048576 )); then
-    size=$(awk "BEGIN { printf \"%.2f KB\", $bytes / 1024 }")
-  else
-    size=$(awk "BEGIN { printf \"%.2f MB\", $bytes / 1048576 }")
-  fi
-
-  echo "$size"
+  # || for mac and linux stat arg differences
+  stat --format="%s" "$file" 2>/dev/null || stat -f "%z" "$file"
 }
 
-max_size=$((750 * 1024))  # 750kB in bytes
-failed_count=0
+friendly_size() {
+  local bytes="$1"
+  if (( bytes < 1048576 )); then
+    awk "BEGIN { printf \"%.2f KB\", $bytes / 1024 }"
+  else
+    awk "BEGIN { printf \"%.2f MB\", $bytes / 1048576 }"
+  fi
+}
+
+MAX_BYTES=$((750 * 1024))  # 750kB
 
 # We ignore all these files, because we wanted to introduce this linter to
 # prevent future badness without having to fix what's there first
@@ -93,43 +90,49 @@ old_files=(
   public/resources/forrester-whitepaper.svg
 )
 
-echo "🔎 Checking for embedded base64 encoded pngs..."
+failed_files_count=0
 
-while IFS= read -r svg_file; do
+while IFS= read -r file_name; do
+  ignored=false
+  failures=()
+
+  # Check if ignored file
+  if [[ " ${old_files[*]} " == *" $file_name "* ]]; then
+    ignored=true
+  fi
+
   # Check if the SVG mistakenly embeds a PNG file
-  if grep -q 'data:image/png;base64' "$svg_file"; then
-    if [[ " ${old_files[*]} " == *" $svg_file "* ]]; then
-      echo "Ignoring old file: $svg_file - contains base64 encoded png">&2
-      continue
-    fi
+  if grep -q 'data:image/png;base64' "$file_name"; then
+    failures+=("🖼️  contains base64 encoded png")
+  fi
 
-    echo "🖼️  $svg_file - contains base64 encoded png">&2
-    ((failed_count++))
+  # Check file size
+  file_size=$(file_size "$file_name")	
+  if (( file_size > MAX_BYTES )); then
+    failures+=("🐳 $(friendly_size "$file_size") larger than $(friendly_size "$MAX_BYTES")")
+  fi
+
+  if [ ${#failures[@]} -ne 0 ]; then
+      if [[ $ignored == "true" ]]; then
+        echo "${file_name} ignored failures:">&2
+      else
+        echo "${file_name} failed:">&2
+      fi
+
+    for failure in "${failures[@]}"; do
+      echo " ∟ $failure">&2
+    done
+
+    echo
+
+    if [[ $ignored != "true" ]]; then
+      ((failed_files_count++))
+    fi
   fi
 done < <(find "public" -type f -name '*.svg')
 
-
-echo
-echo "🔎 Checking for files that are too large..."
-
-while IFS= read -r svg_file; do
-  # Check if the file size exceeds 1MB
-  file_size=$(stat -f %z "$svg_file")	
-  if (( file_size > max_size )); then
-    if [[ " ${old_files[*]} " == *" $svg_file "* ]]; then
-      echo "Ignoring old file: $svg_file - $(friendly_size "$svg_file") larger than 750KB">&2
-      continue
-    fi
-
-    echo "🪝 $svg_file - $(friendly_size "$svg_file") larger than 750KB">&2
-    ((failed_count++))
-  fi
-done < <(find "public" -type f -name '*.svg')
-
-
-echo
-if (( failed_count > 0 )); then
-  echo "❌ $failed_count failures"
+if (( failed_files_count > 0 )); then
+  echo "❌ $failed_files_count failures"
   exit 1
 else
   echo "💃 All checks passed"
