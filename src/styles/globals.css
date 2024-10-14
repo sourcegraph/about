@@ -324,6 +324,28 @@
         -webkit-text-fill-color: transparent;
     }
 
+    .sg-demo-gradient {
+        background: linear-gradient(
+                176deg,
+                #f9fafb 46.16%,
+                rgba(249, 250, 251, 0.82) 88.29%,
+                rgba(249, 250, 251, 0.6) 100.28%
+            ),
+            linear-gradient(
+                90deg,
+                rgba(112, 72, 232, 0.7) 0%,
+                rgba(74, 193, 232, 0.7) 32.21%,
+                rgba(161, 18, 255, 0.7) 65.39%,
+                rgba(255, 85, 67, 0.7) 104.43%
+            ),
+            #f9fafb;
+    }
+
+    .sg-border-gradient-glow {
+        background-color: white;
+        box-shadow: 0px 10px 128px -3px rgba(255, 201, 201, 0.16), 0px 4px 48px 0px rgba(101, 101, 203, 0.24);
+    }
+
     /* ==================== Backgrounds ==================== */
 
     /* Dark Nebulous Backgrounds */
@@ -499,6 +521,16 @@
 
         box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
         border-radius: 8px;
+    }
+
+    .sg-contact-sales {
+        background: linear-gradient(
+            70deg,
+            rgba(209, 205, 246, 0.3) 2.41%,
+            rgba(215, 234, 247, 0.3) 24.26%,
+            rgba(240, 236, 251, 0.3) 64.43%,
+            rgba(250, 251, 252, 0.3) 99.25%
+        );
     }
 
     /* Cody */
@@ -925,25 +957,37 @@
     }
 
     .sg-bg-IDE {
-        background-image: linear-gradient(45deg, #f0f0f0 25%, transparent 25%, transparent 50%, #f0f0f0 50%, #f0f0f0 75%, transparent 75%, transparent);
+        background-image: linear-gradient(
+            45deg,
+            #f0f0f0 25%,
+            transparent 25%,
+            transparent 50%,
+            #f0f0f0 50%,
+            #f0f0f0 75%,
+            transparent 75%,
+            transparent
+        );
         background-size: 6px 6px;
     }
     .sg-IDE-editor {
         border-radius: var(--rounded-md, 6px);
-        border: 1px solid var(--color-border-active, #1C7ED6);
-        background: var(--color-input-background-active, #FFF);
-        box-shadow: 0px 0px 0px 4px var(--color-outline-primary, rgba(77, 171, 247, 0.40));
+        border: 1px solid var(--color-border-active, #1c7ed6);
+        background: var(--color-input-background-active, #fff);
+        box-shadow: 0px 0px 0px 4px var(--color-outline-primary, rgba(77, 171, 247, 0.4));
     }
 
     .sg-badge-pill-bg {
         border-radius: var(--_space-125, 10px);
-        border: 1px solid var(--Grayscale-200, #E4E9F4);
-        background: var(--lite-metallic-gradient-to-r, linear-gradient(89deg, #D1CDF6 0.8%, #D7EAF7 28.77%, #F0ECFB 57.58%, #FAFBFC 76.9%));
-        box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.10), 0px 2px 4px -2px rgba(0, 0, 0, 0.05);
+        border: 1px solid var(--Grayscale-200, #e4e9f4);
+        background: var(
+            --lite-metallic-gradient-to-r,
+            linear-gradient(89deg, #d1cdf6 0.8%, #d7eaf7 28.77%, #f0ecfb 57.58%, #fafbfc 76.9%)
+        );
+        box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.05);
     }
 
     .sg-badge-pill {
-        font-family: var(--font-Sans, "Inter");
+        font-family: var(--font-Sans, 'Inter');
         font-size: var(--font-size-sm, 14px);
         font-style: normal;
         font-weight: var(--font-weight-normal, 400);

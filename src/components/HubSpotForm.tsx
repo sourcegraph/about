@@ -65,6 +65,9 @@ interface CreateHubSpotFormProps {
     inlineMessage?: string
     chiliPiper?: boolean
     overrideInlineMessage?: boolean
+    customSubmitButton?: string
+    find?: (selector: string) => HTMLInputElement | null
+    append?: (element: HTMLElement | string) => void
 }
 
 export interface HubSpotFormProps {
@@ -83,6 +86,7 @@ export interface HubSpotFormProps {
     overrideFormShorten?: boolean
     form_submission_source?: string
     bookIt?: boolean
+    customSubmitButton?: string
 }
 
 interface ChiliPiperAPIProps {
@@ -240,6 +244,7 @@ function createHubSpotForm({
     onFormReady,
     onFormSubmitted,
     inlineMessage,
+    customSubmitButton,
     overrideInlineMessage,
 }: CreateHubSpotFormProps): void {
     const hbsptCreateForm = (): void => {
@@ -251,6 +256,16 @@ function createHubSpotForm({
             onFormReady: (form: CreateHubSpotFormProps) => {
                 if (onFormReady) {
                     onFormReady(form[0])
+                    if (customSubmitButton) {
+                        const submitButton = form.find?.('input[type="submit"]') as HTMLInputElement
+
+                        if (submitButton) {
+                            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                            // @ts-ignore
+                            submitButton.hide()
+                        }
+                        form.append?.(customSubmitButton)
+                    }
                 }
             },
             onFormSubmitted,
@@ -333,28 +348,36 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     chiliPiper,
     overrideFormShorten,
     form_submission_source,
+    customSubmitButton,
     bookIt = false,
 }) => {
     const router = useRouter()
 
-    const updateFormSubmissionSource = useCallback((newSource: string): void => {
-        const currentQuery = { ...router.query }
-        if (currentQuery.form_submission_source) {
-            return
-        }
+    const updateFormSubmissionSource = useCallback(
+        (newSource: string): void => {
+            const currentQuery = { ...router.query }
+            if (currentQuery.form_submission_source) {
+                return
+            }
 
-        currentQuery.form_submission_source = newSource
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        router.replace({
-            query: currentQuery,
-        }, undefined, { shallow: true })
-    },  [router])
+            currentQuery.form_submission_source = newSource
+            // eslint-disable-next-line @typescript-eslint/no-floating-promises
+            router.replace(
+                {
+                    query: currentQuery,
+                },
+                undefined,
+                { shallow: true }
+            )
+        },
+        [router]
+    )
 
     useEffect(() => {
         if (!router.isReady) {
             return
         }
-        
+
         const currentSlug = form_submission_source || ''
         if (currentSlug) {
             updateFormSubmissionSource(currentSlug)
@@ -413,6 +436,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
                 onFormSubmitted,
                 inlineMessage,
                 overrideInlineMessage,
+                customSubmitButton,
             })
 
             setFormCreated(true)
