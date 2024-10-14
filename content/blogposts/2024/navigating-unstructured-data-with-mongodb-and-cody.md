@@ -20,11 +20,11 @@ Different stakeholders want to use this data in different ways. For example, you
 
 How can you efficiently structure such a vast dataset, while ensuring that your queries are performant, accurate, and can scale as your dataset and use cases grow?
 
-[MongoDB](https://mdb.link/atlas-sourcegraph) is a time-tested powerhouse for handling unstructured, semi-structured, and fully structured data. In this post, we'll take a look at the MongoDB document model, how to query it, the challenges and strengths of working with unstructured data, and how an AI coding assistant like [Cody](https://sourcegraph.com/cody) can revolutionize your development workflow.
+[MongoDB](https://mdb.link/atlas-sourcegraph) is a time-tested powerhouse for handling unstructured, semi-structured, and fully structured data. In this post, we'll take a look at the MongoDB document model, how to query it, the challenges and strengths of working with unstructured data, and how an AI coding assistants like [Cody](https://sourcegraph.com/cody) can revolutionize your development workflow.
 
 ## The MongoDB document model
 
-MongoDB's [document model](https://mdb.link/document-database-sourcegraph)represents a substantial departure from traditional relational database systems. Instead of normalizing your data into tables, which can be difficult to scale and complex to query as your data needs change, MongoDB stores data in flexible, JSON-like documents called [BSON](https://mdb.link/bson-sourcegraph) (Binary JSON). This approach offers several advantages:
+MongoDB's [document model](https://mdb.link/document-database-sourcegraph) represents a substantial departure from traditional relational database systems. Instead of normalizing your data into tables, which can be difficult to scale and complex to query as your data needs change, MongoDB stores data in flexible, JSON-like documents called [BSON](https://mdb.link/bson-sourcegraph) (Binary JSON). This approach offers several advantages:
 
 1.  The schema is more flexible: Unlike rigid table structures in relational databases, MongoDB allows each document to have a unique structure. This is particularly useful for datasets where attributes may vary significantly between entries.
 
@@ -60,7 +60,7 @@ Let's look at a document from a sample movie database called [mflix](https://mdb
 }
 ```
 
-This single document encapsulates a wealth of information about the movie Inception, demonstrating the power and flexibility of MongoDB's document model. In a traditional RDBMS, this information would very likely be spread across multiple tables, such as movies, awards, actors, and so on. Combining all of these tables to get the above view would require a complex query consisting of multiple JOINs that could get computationally expensive. With MongoDB's query engine, you can access all of this data effortlessly. 
+This single document encapsulates a wealth of information about the movie *Inception*, demonstrating the power and flexibility of MongoDB's document model. In a traditional RDBMS, this information would very likely be spread across multiple tables, such as movies, awards, cast, and so on. Combining all of these tables to get the above view would require a complex query consisting of multiple JOINs that could get computationally expensive. With MongoDB's query engine, you can access all of this data effortlessly. 
 
 ### The power of MongoDB queries
 
@@ -85,7 +85,7 @@ For our first MongoDB query, let's write a function to retrieve a list of all th
 const results = await collection.find({ title: { $regex: ".*Cody.*" } }).toArray()
 ```
 
-We used the `.find()` method and searched the title key for a regular expression that contained the word "Cody." We got a few results back, such as Agent Cody Banks and Fetching Cody.
+We used the `.find()` method and searched the title key for a regular expression that contained the word "Cody." We got a few results back, such as *Agent Cody Banks* and *Fetching Cody*.
 
 Let's do a more complex query. I want to retrieve the list of movies with an IMDb rating greater than 9 that have only won a single award. I'll ask Cody to generate this query for us.
 
@@ -359,4 +359,4 @@ MongoDB's document model offers unparalleled flexibility when it comes to storin
 
 With practice and Cody by your side, you'll be writing sophisticated, performant queries that extract powerful insights from your data, no matter how unstructured or complex it may be.
 
-Want to learn more from MongoDB? Head to [Developer Center](https://mdb.link/sourcegraph-developer-center) to read their latest tutorials, or visit the [Developer Community](https://mdb.link/sourcegraph-forums) to see what other people are building.
+Want to learn more from MongoDB? Head to [Developer Center](https://mdb.link/sourcegraph-developer-center) to read their latest tutorials, or visit the [Developer Community](https://mdb.link/sourcegraph-forums) to see what other people are building. Want to chat about how to get the most out of Cody instead? Join our [Discord](https://discord.gg/sourcegraph-969688426372825169).
