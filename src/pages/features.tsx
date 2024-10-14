@@ -35,17 +35,11 @@ const CHAT_CONTENT = [
         imageAlt: 'Cody Chat Model Selection',
     },
     {
-        header: 'Reference your development artifacts',
+        header: 'Reference development artifacts and the web',
         description:
-            'Connect Cody to OpenCtx to @-mention non-code artifacts like Google Docs, Notion pages, Jira tickets, and Linear issues.',
+            '@-mention web URLs to pull live information like docs. You can also connect Cody to OpenCtx to @-mention non-code artifacts like Google Docs, Notion pages, Jira tickets, and Linear issues. ',
         imageSrc: '/assets/features/chat-reference-artifacts.png',
         imageAlt: 'Cody Chat Reference Artifacts',
-    },
-    {
-        header: 'Use information directly from the web',
-        description: '@-mention web URLs to pull live information, like docs, that can be used to answer questions.',
-        imageSrc: '/assets/features/web-urls.png',
-        imageAlt: 'Add web URLs to your chat',
     },
     {
         header: 'Run offline (Experimental)',
@@ -62,13 +56,6 @@ const PROMPTS_CONTENT = [
             'Generate unit tests for your code selection, adding to your existing test file or creating a new one, with consideration for your existing tests and test framework.',
         imageSrc: '/assets/features/cody-generate-unit-tests.png',
         imageAlt: 'Generate unit tests',
-    },
-    {
-        header: 'Explain code',
-        description:
-            'Explain code in simple language, walking through its inputs, outputs, purpose, and logic of the code.',
-        imageSrc: '/assets/features/cody-explain-code.png',
-        imageAlt: 'Explain code',
     },
     {
         header: 'Document code',
