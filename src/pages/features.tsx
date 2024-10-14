@@ -29,10 +29,10 @@ const CHAT_CONTENT = [
         imageAlt: 'Cody Chat Inline Edits',
     },
     {
-        header: 'Ask Cody to Fix',
-        description: 'For errors in your code, hit Ask Cody to Fix and Cody will propose a diff based on the error.',
-        imageSrc: '/assets/features/chat-ask-cody-to-fix.png',
-        imageAlt: 'Cody Chat Ask Cody to Fix',
+        header: 'Choose your favorite model',
+        description: 'Choose from model options optimized for speed versus accuracy.',
+        imageSrc: '/assets/features/chat-model-selection.png',
+        imageAlt: 'Cody Chat Model Selection',
     },
     {
         header: 'Reference your development artifacts',
@@ -48,31 +48,11 @@ const CHAT_CONTENT = [
         imageAlt: 'Add web URLs to your chat',
     },
     {
-        header: 'Choose your favorite model',
-        description: 'Choose from model options optimized for speed versus accuracy.',
-        imageSrc: '/assets/features/chat-model-selection.png',
-        imageAlt: 'Cody Chat Model Selection',
-    },
-    {
         header: 'Run offline (Experimental)',
         description: 'Connect to Ollama to run entirely offline. You can even code using AI on an airplane.',
         imageSrc: '/assets/features/cody-ollama.png',
         imageAlt: 'Run offline',
-    },
-    {
-        header: 'Context Filters',
-        description:
-            "Configure which repositories and file paths Cody can or can't send to the LLM and use as context.",
-        imageSrc: '/assets/features/cody-context-filters.png',
-        imageAlt: 'Context filters',
-    },
-    {
-        header: 'Guardrails for catching licensed code',
-        description:
-            'Cody verifies suggestions against a large corpus of public code and flags licensed code suggestions to the user.',
-        imageSrc: '/assets/features/cody-guardrails.png',
-        imageAlt: 'Guardrails',
-    },
+    }
 ]
 
 const PROMPTS_CONTENT = [
@@ -148,23 +128,11 @@ const CODE_SEARCH_CONTENT = [
         imageAlt: 'Branch search',
     },
     {
-        header: 'Keyword and regex search',
-        description: 'Search using keywords or using regular expressions.',
-        imageSrc: '/assets/features/regex-search.png',
-        imageAlt: 'Regular expression search',
-    },
-    {
         header: 'Diff and commit search',
         description:
             'Use diff and commit searches to find specific changes to your codebase. Filter by author and date.',
             imageSrc: '/assets/features/diff-search.png',
             imageAlt: 'Diff search',
-    },
-    {
-        header: 'Symbol search',
-        description: 'Search for symbols within your code, with support for 75+ languages.',
-        imageSrc: '/assets/features/symbol-search.png',
-        imageAlt: 'Symbol search',
     },
     {
         header: 'Search Jobs',
@@ -180,21 +148,6 @@ const CODE_SEARCH_CONTENT = [
         imageAlt: 'Code monitors',
     },
     {
-        header: 'Search contexts',
-        description: 'Create and share repository and file groupings for quick, scoped searches.',
-        imageSrc: '/assets/features/search-contexts.png',
-        imageAlt: 'Search contexts',
-    },
-    {
-        header: 'Saved searches',
-        description: 'Save searches that you come back to over time.',
-        imageSrc: '/assets/features/saved-searches.png',
-        imageAlt: 'Saved search',
-    },
-]
-
-const CODE_NAVIGATION_CONTENT = [
-    {
         header: 'Search-based code navigation',
         description:
             "Navigate code with Find 'references' and 'Go to definition,' supporting 40+ languages out-of-the-box.",
@@ -209,21 +162,6 @@ const CODE_NAVIGATION_CONTENT = [
         imageAlt: 'Precise code navigation'
     },
     {
-        header: 'Cross-repository code navigation',
-        description: 'Navigate dependencies of your code graph, even when they cross repositories.',
-        imageSrc: '/assets/features/cross-repo.png',
-        imageAlt: 'Cross-repository code navigation'
-    },
-    {
-        header: 'Code ownership data',
-        description: 'See CODEOWNERS data from the file navigation view.',
-        imageSrc: '/assets/features/code-ownership-data.png',
-        imageAlt: 'Code owners data'
-    },
-]
-
-const BATCH_CHANGES_CONTENT = [
-    {
         header: 'Change code everywhere',
         description: 'Write batch specs to make programmatic changes across multiple repositories.',
         imageSrc: '/assets/features/change-code-everywhere.png',
@@ -237,30 +175,11 @@ const BATCH_CHANGES_CONTENT = [
     },
 ]
 
-const CODE_INSIGHTS_CONTENT = [
-    {
-        header: 'Track trends about your code',
-        description: 'Visualize migrations, package usage, version adoption, code smells, or even codebase size.',
-        imageSrc: '/assets/features/track-trends-about-your-code.png',
-        imageAlt: 'Code Insights single visualization'
-    },
-    {
-        header: 'Visualize your codebase with dashboards',
-        description:
-            "Customize dashboards with multiple insights. Anything that's happening in your codebase can be visualized.",
-        imageSrc: '/assets/features/visualize-your-codebase-with-dashboards.png',
-        imageAlt: 'Code Insights dashboard',
-    },
-]
-
 const SECTIONS = [
     { id: 'chat', name: 'Chat', icon: '/assets/features/chat-brand-icon.svg', alt: 'Cody Chat' },
     { id: 'prompts', name: 'Prompts', icon: '/assets/features/commands-brand-icon.svg', alt: 'Cody Prompts' },
     { id: 'autocomplete', name: 'Autocomplete', icon: '/assets/features/completions-brand-icon.svg', alt: 'Cody Autocomplete' },
-    { id: 'code-search', name: 'Code Search', icon: '/assets/features/code-search.svg', alt: 'Code Search' },
-    { id: 'code-navigation', name: 'Code Navigation', icon: '/assets/features/code-navigation.svg', alt: 'Code Navigation' },
-    { id: 'batch-changes', name: 'Batch Changes', icon: '/assets/features/batch-changes.svg', alt: 'Batch Changes' },
-    { id: 'code-insights', name: 'Code Insights', icon: '/assets/features/code-insights.svg', alt: 'Code Insights' },
+    { id: 'search', name: 'Search', icon: '/assets/features/code-search.svg', alt: 'Search' },
 ]
 
 const CodyPage: FunctionComponent = () => {
@@ -397,12 +316,12 @@ const CodyPage: FunctionComponent = () => {
                 ))}
             </ContentSection>
 
-            {/* Code Search section */}
-            <div id="code-search" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
+            {/* Search section */}
+            <div id="search" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
                 <HeaderComponent
                     icon="/assets/features/code-search.svg"
-                    alt="Code Search"
-                    title="Code Search"
+                    alt="Search"
+                    title="Search"
                     isLight={isLight}
                     description="Search all of your code in one place. Sourcegraph indexes all your code hosts to a single server that you can search and navigate from the web."
                 />
@@ -413,66 +332,6 @@ const CodyPage: FunctionComponent = () => {
                 parentClassName={classNames('md:px-20')}
             >
                 {CODE_SEARCH_CONTENT.map(content => (
-                    <ContentCard key={content.header} content={content} />
-                ))}
-            </ContentSection>
-
-            {/* Code Navigation section */}
-            <div id="code-navigation" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
-                <HeaderComponent
-                    icon="/assets/features/code-navigation.svg"
-                    alt="Code Navigation"
-                    title="Code Navigation"
-                    isLight={isLight}
-                    description="Navigate through your full code graph on the web without pulling it to your local machine."
-                />
-            </div>
-
-            <ContentSection
-                className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
-                parentClassName={classNames('md:px-20')}
-            >
-                {CODE_NAVIGATION_CONTENT.map(content => (
-                    <ContentCard key={content.header} content={content} />
-                ))}
-            </ContentSection>
-
-            {/* Batch Changes section */}
-            <div id="batch-changes" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
-                <HeaderComponent
-                    icon="/assets/features/batch-changes.svg"
-                    alt="Batch Changes"
-                    title="Batch Changes"
-                    isLight={isLight}
-                    description="Automate and ship large-scale code changes to keep your code up to date, fix security issues, and pay down tech debt."
-                />
-            </div>
-
-            <ContentSection
-                className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
-                parentClassName={classNames('md:px-20')}
-            >
-                {BATCH_CHANGES_CONTENT.map(content => (
-                    <ContentCard key={content.header} content={content} />
-                ))}
-            </ContentSection>
-
-            {/* Code Insights section */}
-            <div id="code-insights" className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
-                <HeaderComponent
-                    icon="/assets/features/code-insights.svg"
-                    alt="Code Insights"
-                    title="Code Insights"
-                    isLight={isLight}
-                    description="Transform your code into a queryable database to create customizable, visual dashboards in seconds."
-                />
-            </div>
-
-            <ContentSection
-                className={classNames('grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:!py-0')}
-                parentClassName={classNames('md:px-20')}
-            >
-                {CODE_INSIGHTS_CONTENT.map(content => (
                     <ContentCard key={content.header} content={content} />
                 ))}
             </ContentSection>
