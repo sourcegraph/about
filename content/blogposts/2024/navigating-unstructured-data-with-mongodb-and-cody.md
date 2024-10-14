@@ -10,8 +10,8 @@ tags: [blog]
 slug: 'navigating-unstructured-data-with-mongodb-and-cody'
 published: true 
 description: "TBD"
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-better-faster-stronger/whats-new-in-cody-og.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-better-faster-stronger/whats-new-in-cody-og.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/navigating-unstructured-data-with-mongodb-and-cody/navigating-unstructured-data-with-mongodb-and-cody-og.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/navigating-unstructured-data-with-mongodb-and-cody/navigating-unstructured-data-with-mongodb-and-cody-og.png
 ---
 
 If you're a developer, you may have experienced the overwhelming responsibility of managing a large collection of information. For instance, imagine you have a database that holds tens of thousands of movies. Each movie has its own set of attributes, such as title, description, release year, cast, awards, and genre.
