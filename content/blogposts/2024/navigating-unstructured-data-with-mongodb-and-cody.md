@@ -1,6 +1,6 @@
 ---
 title: "Navigating unstructured data with MongoDB and Cody"
-publishDate: 2024-10-11T19:00-07:00
+publishDate: 2024-10-14T19:00-07:00
 authors:
   - name: Megan Grant
     url: https://x.com/MeganGrant333
@@ -9,7 +9,7 @@ authors:
 tags: [blog]
 slug: 'navigating-unstructured-data-with-mongodb-and-cody'
 published: true 
-description: "TBD"
+description: "Unlock the power of unstructured data with MongoDB and Cody. Learn how you can use Cody to help you write, debug, and understand MongoDB queries, aggregation pipelines, and more."
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/navigating-unstructured-data-with-mongodb-and-cody/navigating-unstructured-data-with-mongodb-and-cody-og.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/navigating-unstructured-data-with-mongodb-and-cody/navigating-unstructured-data-with-mongodb-and-cody-og.png
 ---
