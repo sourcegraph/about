@@ -4,12 +4,12 @@ authors:
   - name: Beyang Liu
     url: https://x.com/beyang
 publishDate: 2024-09-30T10:00-01:00
-description: "TBD"
+description: "Sourcegraph and Google team up to evaluate long-context models for code generation. Discover how Cody can leverage Gemini for better code assistance."
 tags: [blog]
 slug: 'towards-infinite-context-for-code'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/claude-3.5-sonnet-now-available-in-cody/claude-3.5-sonnet-hero.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/claude-3.5-sonnet-now-available-in-cody/claude-3.5-sonnet-hero.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/infinite-context-og.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/infinite-context-og.png
 ---
 
 Today's frontier models excel at using popular OSS libraries to build simple apps from scratch. But generating code for private codebases hits challenges around hallucinated APIs, subtly incorrect code, and wrong or misleading answers to technical questions.
