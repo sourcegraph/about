@@ -84,7 +84,7 @@ export const CaseStudy: FunctionComponent = () => (
                             </h1>
                         </ContentSection>
                         <ContentSection parentClassName="!py-0 !pt-16 !px-0">
-                            <div className="relative z-10 flex flex-col gap-10 rounded-lg border  border-[#E4E9F4] bg-white py-10 px-6 md:flex-row md:gap-8 md:px-12">
+                            <div className="relative z-10 flex flex-col gap-10 rounded-lg border  border-gray-200 bg-white py-10 px-6 md:flex-row md:gap-8 md:px-12">
                                 <div className="flex w-auto flex-row md:w-[243px]  md:flex-col md:gap-8">
                                     <img
                                         src="/case-studies/jon-kohler.png"
@@ -98,7 +98,7 @@ export const CaseStudy: FunctionComponent = () => (
                                         </p>
                                     </div>
                                 </div>
-                                <div className="flex flex-col gap-5 border-l-0 border-t-[2px] border-[#E4E9F4] px-8 py-6 md:border-t-0 md:border-l-[2px] md:py-0">
+                                <div className="flex flex-col gap-5 border-l-0 border-t-[2px] border-gray-200 px-8 py-6 md:border-t-0 md:border-l-[2px] md:py-0">
                                     <img
                                         src="/assets/customer-stories/nutanix.svg"
                                         className="h-[68px] w-[177px]"
@@ -214,7 +214,7 @@ export const CaseStudy: FunctionComponent = () => (
 
                 <div className="mb-12 py-0 px-6 md:py-1 md:px-10">
                     <Blockquote
-                        className="!my-0 w-full !border-l-[#E4E9F4] py-4 pl-6 !pr-0 text-2xl leading-[31.2px] text-gray-700 md:py-3"
+                        className="!my-0 w-full !border-l-gray-200 py-4 pl-6 !pr-0 text-2xl leading-[31.2px] text-gray-700 md:py-3"
                         leftBorderAccent={true}
                         quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much better than having to say, 'Well, boss, I think we got it all."
                     />

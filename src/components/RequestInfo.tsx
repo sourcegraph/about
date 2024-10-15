@@ -2,6 +2,7 @@ import { FunctionComponent, ReactNode, useEffect, useRef, useState } from 'react
 
 import classNames from 'classnames'
 import { Timer, ListChecks, Check } from 'lucide-react'
+import Link from 'next/link'
 
 import { captureCustomEventWithPageData } from '../lib/utils'
 
@@ -34,10 +35,10 @@ const RequestInfo: FunctionComponent<RequestInfoProps> = ({ meta, formId }) => {
             hero={
                 <ContentSection className="pt-[97px] lg:pt-28" parentClassName="pt-11 lg:pb-16 px-6 lg:px-20">
                     <div ref={formContainerRef}>
-                        <div className="relative mx-auto flex w-full flex-col pt-0 lg:flex-row lg:gap-[57px]">
-                            <div className="flex w-full max-w-[956px] flex-1 flex-col gap-y-20 lg:pt-0 lg:pr-0">
+                        <div className="relative mx-auto flex w-full flex-col pt-0 lg:flex-row lg:gap-[24px]">
+                            <div className="flex w-full max-w-[697px] flex-1 flex-col gap-y-20 lg:pt-0 lg:pr-0">
                                 <div>
-                                    <h1 className="mb-10 max-w-[524px] !text-5xl font-semibold text-gray-700 lg:!text-6xl lg:tracking-tighter">
+                                    <h1 className="mb-10 max-w-[524px] text-gray-700">
                                         Bring code intelligence to your organization
                                     </h1>
                                     <HeaderListTab contents={HeaderListTabItems} />
@@ -47,13 +48,11 @@ const RequestInfo: FunctionComponent<RequestInfoProps> = ({ meta, formId }) => {
                                     <CaseStudySection />
                                 </div>
                             </div>
-                            <div className="w-full py-16 lg:w-1/2 lg:max-w-lg lg:px-6 lg:py-12">
-                                <div className="sg-border-gradient-glow relative z-10 !rounded-3xl border border-[#E4E9F4] bg-white pl-0 pt-12 pr-0">
+                            <div className="w-full py-16 lg:h-fit lg:w-1/2 lg:max-w-lg lg:px-6 lg:py-12">
+                                <div className="sg-border-gradient-glow relative z-10 !rounded-3xl border border-gray-200 bg-white pl-0 pt-12 pr-0">
                                     <div className="flex flex-col items-center px-6 lg:px-12">
-                                        <h2 className="mb-3 text-[32px] !leading-[38.4px] text-gray-700">
-                                            Request demo
-                                        </h2>
-                                        <div className="text-center text-lg text-[#5E6E8C]">
+                                        <h2 className="mb-3 text-gray-700">Request demo</h2>
+                                        <div className="text-center text-base leading-[27px] text-gray-400 lg:leading-6">
                                             Fill out the form below and we’ll connect to discuss what Sourcegraph can do
                                             for your team.
                                         </div>
@@ -78,7 +77,7 @@ const RequestInfo: FunctionComponent<RequestInfoProps> = ({ meta, formId }) => {
                                             <div class="button-container">
                                             <button type="submit" class="custom-submit-button">
                                             <div class="custom-submit-button-div">
-                                                <div className="!text-white">Request your demo</div>
+                                                <div>Request your demo</div>
                                                 <img src="/assets/send.svg" />
                                             </div>
                                             </button>
@@ -98,7 +97,6 @@ const RequestInfo: FunctionComponent<RequestInfoProps> = ({ meta, formId }) => {
                     <CaseStudySection />
                 </div>
             </ContentSection>
-
             <ExpectationsSection items={expectationItems} />
             <LinksCardSection />
             <div className="sg-demo-gradient h-44 w-full" />
@@ -119,7 +117,7 @@ const HeaderListTab: FunctionComponent<HeaderListTabProps> = ({ contents }) => (
                     <div className="text-xl font-semibold leading-[26px] tracking-tight text-gray-700">
                         {content.header}
                     </div>
-                    <ul className="ml-0 list-inside pl-3 text-lg leading-[27px] text-gray-500">
+                    <ul className="ml-[12px] list-outside pl-3 text-lg leading-[27px] text-gray-500">
                         {content.listItems.map(listItem => (
                             <li key={listItem}>{listItem}</li>
                         ))}
@@ -140,7 +138,7 @@ interface SocialProofIconsProps {
 
 const SocialProofSection: FunctionComponent<SocialProofIconsProps> = ({ iconItems }) => (
     <div>
-        <div className="font-mono text-lg leading-[27px] tracking-normal text-[#5E6E8C]">
+        <div className="text-center font-mono text-lg leading-[27px] tracking-normal text-gray-400 lg:text-left">
             Trusted by dev teams at leading companies
         </div>
         <div className="mt-6 flex flex-row flex-wrap justify-center gap-8 lg:justify-start">
@@ -161,14 +159,14 @@ interface ExpectationsSectionProps {
 const ExpectationsSection: FunctionComponent<ExpectationsSectionProps> = ({ items }) => (
     <ContentSection parentClassName="!pb-16 lg:!pb-24 !pt-8 lg:!pt-16">
         <div className="flex flex-col gap-16 lg:items-center">
-            <h2 className="text-left text-[32px] leading-[38.4px] !tracking-tighter text-gray-700 lg:max-w-[400px] lg:max-w-full lg:text-center">
+            <h2 className="text-left text-gray-700 lg:max-w-[400px] lg:max-w-full lg:text-center">
                 What to expect from a Sourcegraph demo
             </h2>
             <div className="flex flex-col gap-10 lg:flex-row">
                 {items.map(item => (
                     <div key={item.id} className="flex flex-row gap-4">
                         <div>
-                            <Check className="text-gray-500" size={24} />
+                            <Check className="text-gray-500 lg:text-blue-400" size={24} />
                         </div>
                         <div className="text-xl leading-[26px] tracking-tight text-gray-700 lg:max-w-[305px]">
                             {item.label}
@@ -209,18 +207,14 @@ const LinksCardSection: FunctionComponent = () => {
                 {items.map(item => (
                     <div
                         key={item.label}
-                        className="flex flex-1 flex-col items-center gap-16 rounded-2xl border border-[#E4E9F4] bg-white py-12 px-10"
+                        className="flex flex-1 flex-col items-center gap-16 rounded-2xl border border-gray-200 bg-white py-12 px-10"
                     >
                         <div>
-                            <div className="mb-6 text-2xl font-semibold leading-[31.2px] tracking-tight text-gray-500">
-                                {item.label}
-                            </div>
-                            <div className="mb-8 text-xl leading-[26px] tracking-tight text-gray-500">
-                                {item.description}
-                            </div>
+                            <h4 className="mb-6 text-gray-500">{item.label}</h4>
+                            <h5 className="mb-8 text-gray-500">{item.description}</h5>
                             <ReadCaseStudyLink
                                 parentClassName="text-left"
-                                linkClassName="btn btn-link btn-link-icon lg:focus:ring-gray-300 p-0 text-right text-violet-500 lg:text-gray-700 font-semibold tracking-normal lg:mx-0 lg:text-left"
+                                linkClassName="btn btn-link btn-link-icon focus:ring-gray-300 p-0 text-right text-gray-700 font-semibold tracking-normal lg:mx-0 lg:text-left"
                                 href={item.href}
                                 linkLabel={item.linkLabel}
                                 openNewTab={true}
@@ -234,23 +228,25 @@ const LinksCardSection: FunctionComponent = () => {
 }
 
 const CaseStudySection: FunctionComponent = () => (
-    <div className="flex flex-col items-center gap-y-8 pt-16 lg:flex-row lg:flex-row lg:gap-y-0 lg:gap-x-5 lg:pt-0">
-        <img src="/assets/users-love-us.svg" className="h-[135px] w-[104px]" />
-        <div className="sg-contact-sales rounded-2xl border border-[#E4E9F4] py-10 px-8">
+    <div className="flex flex-col items-center gap-y-8 pt-16 lg:flex-row lg:items-start lg:gap-y-0 lg:gap-x-5 lg:pt-0">
+        <Link href="https://www.g2.com/products/sourcegraph/reviews" target="_blank">
+            <img src="/assets/users-love-us.webp" className="h-[135px] min-h-[135px] w-[104px] min-w-[104px]" />
+        </Link>
+        <div className="sg-contact-sales max-w-[573px] rounded-2xl border border-gray-200 py-16 pl-10 pr-16">
             <div className="flex flex-col">
-                <div className="mb-6 flex flex-col">
+                <div className="mb-8 text-2xl leading-[31.2px] tracking-tight text-gray-700">
+                    “Something that would've taken me multiple dev days was done in an hour with Cody.”
+                </div>
+                <div className="mb-10 flex flex-col">
                     <span className="text-base leading-6 text-gray-500">Brendan Doyle</span>
                     <span className="text-sm leading-[21px] tracking-normal text-gray-700">
                         Senior Software Engineer, Qualtrics
                     </span>
                 </div>
-                <div className="text-xl leading-[26px] tracking-tight text-gray-700">
-                    “Something that would've taken me multiple dev days was done in an hour with Cody.”
-                </div>
                 <div>
                     <ReadCaseStudyLink
                         openNewTab={true}
-                        parentClassName="text-right pt-10"
+                        parentClassName="text-left pt-0"
                         linkClassName="btn btn-link btn-link-icon p-0 text-right text-gray-700 font-semibold !tracking-tight lg:mx-0 lg:text-left focus:ring-gray-300"
                         href="https://sourcegraph.com/case-studies/qualtrics-speeds-up-unit-tests-and-code-understanding-with-cody"
                     />
@@ -266,7 +262,7 @@ const HeaderListTabItems = [
         header: 'Increase developer productivity',
         listItems: [
             'Write and edit code faster with the latest AI models',
-            'Pinpoint code behind bugs and regions with code search',
+            'Pinpoint code behind bugs and regressions with code search',
             'Automate day-to-day dev tasks like writing tests and documentation',
         ],
     },
@@ -284,27 +280,27 @@ const SocialProofIcons = [
     {
         id: 'Target Logo',
         src: '/assets/icons/target-logo.svg',
-        className: 'h-12 w-[34px]',
+        className: 'h-10 w-[29px]',
     },
     {
         id: 'Tesla Logo',
         src: '/assets/icons/tesla-logo.svg',
-        className: 'h-12 w-[153px]',
+        className: 'h-10 w-[125.714px]',
     },
     {
         id: 'Uber Logo',
         src: '/assets/icons/uber-logo.svg',
-        className: 'h-12 w-[72px]',
+        className: 'h-10 w-[59.048px]',
     },
     {
         id: 'Dropbox',
         src: '/assets/icons/dropbox-logo.svg',
-        className: 'h-12 w-[163px]',
+        className: 'h-10 w-[119.048px]',
     },
     {
         id: 'Leidos',
         src: '/assets/icons/leidos-light.svg',
-        className: 'h-12 w-[114px]',
+        className: 'h-10 w-[93.333px]',
     },
 ]
 

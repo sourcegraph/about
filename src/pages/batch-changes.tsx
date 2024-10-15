@@ -114,7 +114,7 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
             {/* Architecture */}
             <ContentSection
                 parentClassName="md:!py-24"
-                className="rounded-2xl border border-[#E4E9F4] bg-white px-10 py-6"
+                className="rounded-2xl border border-gray-200 bg-white px-10 py-6"
             >
                 <TwoColumnSection
                     centerContent={true}
@@ -166,7 +166,7 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
                     rightClientName="Trent Grover"
                     rightClientTitle="Director of Architecture: Client Technologies, Workiva"
                     roundedImage={true}
-                    className="sg-case-study !mb-0 md:rounded-2xl md:border md:border-[#E4E9F4]"
+                    className="sg-case-study !mb-0 md:rounded-2xl md:border md:border-gray-200"
                     title="Teams move faster with Batch Changes"
                     titleClassName="text-gray-700 font-semibold text-3xl mx-auto w-full text-center mb-16 tracking-tighter leading-9"
                     isWideSpacing={true}
@@ -191,7 +191,7 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
             {/* Track */}
             <ContentSection
                 parentClassName="!pt-24 md:!pb-0"
-                className="rounded-2xl border border-[#E4E9F4] bg-white px-10 py-6"
+                className="rounded-2xl border border-gray-200 bg-white px-10 py-6"
             >
                 <TwoColumnSection
                     centerContent={true}

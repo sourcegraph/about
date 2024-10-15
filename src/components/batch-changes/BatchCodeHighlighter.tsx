@@ -19,8 +19,8 @@ const BatchCodeHighlighter: FunctionComponent<BatchCodeHighlighterProps> = ({ ta
 
     const preClassName = tabNumber === 1 ? '!py-6' : '!py-4'
     return (
-        <div className="batch-code mt-6 overflow-hidden rounded-2xl border border border-black border-[#E4E9F4] md:mt-8">
-            <pre className={classNames(preClassName, 'line-numbers !bg-[#1F2A37] !text-sm')}>
+        <div className="batch-code mt-6 overflow-hidden rounded-2xl border border border-gray-200 md:mt-8">
+            <pre className={classNames(preClassName, 'line-numbers !bg-gray-600 !text-sm')}>
                 <code
                     className="language-yaml"
                     dangerouslySetInnerHTML={{

@@ -52,7 +52,7 @@ const EnterpriseTrialOffer: FunctionComponent = () => {
                                     }}
                                     authorPointer={false}
                                     leftBorderAccent={true}
-                                    borderLeftColor="border-l-[#E4E9F4]"
+                                    borderLeftColor="border-l-gray-200"
                                     displayLogoOnTop={true}
                                     quoteClassName="text-2xl text-gray-700 leading-[31.2px] tracking-tight"
                                     quote="I use Cody every day, all day long. No matter what I write, Cody helps improve it... you can make Cody explain things to you every step of the way."

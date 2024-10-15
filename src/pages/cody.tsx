@@ -343,7 +343,7 @@ const CodyPage: FunctionComponent = () => {
                 <CodyPartners isLight={true} className="!pt-0 !pb-16 md:!pb-24" />
             </div>
 
-            <ContentSection className="mt-16 rounded-3xl border border-[#E4E9F4] bg-white px-6 py-16 md:mt-0 md:px-16">
+            <ContentSection className="mt-16 rounded-3xl border border-gray-200 bg-white px-6 py-16 md:mt-0 md:px-16">
                 <div className="bg-white">
                     <div className="text-gray-700 md:max-w-[632px] md:pl-6">
                         <h2 className="pb-10">Developer chat with the most powerful models and context.</h2>
@@ -386,7 +386,7 @@ const CodyPage: FunctionComponent = () => {
                                         <div key={item.label} className="flex flex-row gap-x-1">
                                             <IDEBadge
                                                 text={item.label}
-                                                className="w-fit !rounded-[10px] !border !border-[#E4E9F4] !bg-gray-100 !px-3 !py-1 !font-sans !text-sm !font-normal  !text-black"
+                                                className="w-fit !rounded-[10px] !border !border-gray-200 !bg-gray-100 !px-3 !py-1 !font-sans !text-sm !font-normal  !text-black"
                                                 src={item.iconUrl}
                                             />
                                         </div>
@@ -400,7 +400,7 @@ const CodyPage: FunctionComponent = () => {
                                         <div key={item.label} className="flex flex-row gap-x-1">
                                             <IDEBadge
                                                 text={item.label}
-                                                className="w-fit !rounded-[10px] !border !border-[#E4E9F4] !bg-gray-100 !px-3 !py-1 !font-sans !text-sm !font-normal !text-black"
+                                                className="w-fit !rounded-[10px] !border !border-gray-200 !bg-gray-100 !px-3 !py-1 !font-sans !text-sm !font-normal !text-black"
                                                 src={item.iconUrl}
                                             />
                                         </div>
@@ -413,7 +413,7 @@ const CodyPage: FunctionComponent = () => {
                 />
             </ContentSection>
             <ContentSection parentClassName="!py-0">
-                <div className="rounded-2xl border border-[#E4E9F4] bg-white px-6 py-16 md:px-20">
+                <div className="rounded-2xl border border-gray-200 bg-white px-6 py-16 md:px-20">
                     <img src="/assets/cody/cody-leidos.svg" alt="leidos logo" className="h-[54.91px] w-[171.471px]" />
                     <p
                         className={classNames(
