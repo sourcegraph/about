@@ -53,7 +53,7 @@ export const ProcessTable: FunctionComponent = () => (
         parentClassName="pb-2.5 md:!pb-0 md:px-20 pt-8 md:!pt-8 !mt-2.5 md:!mt-0"
     >
         <h2 className="mb-8">What does the enterprise trial process look like?</h2>
-        <div className="grid grid-cols-1 gap-0 overflow-hidden rounded-2xl border border-[#E4E9F4] bg-white md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-0 overflow-hidden rounded-2xl border border-gray-200 bg-white md:grid-cols-4">
             {tabData.map(tab => (
                 <Tab key={tab.title} title={tab.title} icon={tab.icon} subTitle={tab.subTitle} items={tab.items} />
             ))}
