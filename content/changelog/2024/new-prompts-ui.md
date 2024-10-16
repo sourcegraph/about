@@ -17,7 +17,6 @@ Prompts are predefined, ready-to-use actions that you can run from the Cody side
 
 In this update, we've made improvements to the Cody sidebar, cleaning up the interface and making it easier to find and use prompts. The 'Chat' tab of the sidebar now shows a shortlist of your commonly-used prompts and commands. The 'Prompts & Commands' tab now shows a list of all available custom prompts, custom commands, and out-of-the-box commands.
 
-<br />
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-38-release/chat-tab.png"
   alt="Chat tab view"
