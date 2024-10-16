@@ -4,7 +4,7 @@ authors:
   - name: Alex Isken
     url: https://x.com/AlexanderIsken
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.png
-publishDate: 2024-10-16T10:00-02:00
+publishDate: 2024-10-15T10:00-02:00
 description: "Cody has a new, sleeker interface for selection prompts from the sidebar."
 tags: [Cody, VS Code]
 version: [v1.38]
