@@ -5,7 +5,7 @@ authors:
     url: https://x.com/AlexanderIsken
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.png
 publishDate: 2024-10-15T10:00-02:00
-description: "Cody has a new, sleeker interface for selection prompts from the sidebar."
+description: "Cody has a new interface for quickly selecting prompts and commands from the sidebar."
 tags: [Cody, VS Code]
 version: [v1.38]
 versionIcon: /assets/changelog/vscode.svg
@@ -21,7 +21,6 @@ In this update, we've made improvements to the Cody sidebar, cleaning up the int
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-38-release/chat-tab.png"
   alt="Chat tab view"
 />
-<br />
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-38-release/prompts-tab.png"
   alt="Prompts & Commands tab"
