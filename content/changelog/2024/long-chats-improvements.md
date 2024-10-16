@@ -1,5 +1,5 @@
 ---
-title: "Cody v1.38: Improved chat performance"
+title: "Improved chat performance & autocomplete provider update"
 authors:
   - name: Beatrix Woo
     url: https://x.com/3eatrix
