@@ -1,5 +1,5 @@
 ---
-title: "New, sleeker prompts UI"
+title: "New, sleeker prompts interface"
 authors:
   - name: Alex Isken
     url: https://x.com/AlexanderIsken
