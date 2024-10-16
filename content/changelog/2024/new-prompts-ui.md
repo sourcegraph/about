@@ -11,6 +11,11 @@ version: [v1.38]
 versionIcon: /assets/changelog/vscode.svg
 slug: 'new-prompts-ui'
 published: true
+relatedTopics:
+  - title: Read Cody docs
+    url: https://sourcegraph.com/docs/cody
+  - title: Download Cody for VS Code
+    url: https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai
 ---
 
 Prompts are predefined, ready-to-use actions that you can run from the Cody sidebar, which we [recently introduced in VS Code alongside the Prompt Library](https://sourcegraph.com/blog/cody-vscode-1-30-0-release).
