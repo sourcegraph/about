@@ -5,7 +5,7 @@ import { NextPage } from 'next'
 
 import { Layout, ContentSection, HubSpotForm, CodyPartners } from '../../components'
 import { BentoWithMockup } from '../../components/bentoWithMockup'
-import { NineCaseStudySection } from '../../components/Enterprise/NineCaseStudySection'
+import { CaseStudyBento } from '../../components/Enterprise/CaseStudyBento'
 import HomePageCta from '../../components/HomePageCta'
 import ReadCaseStudyLink from '../../components/ReadCaseStudyLink'
 import { captureCustomEventWithPageData } from '../../lib/utils'
@@ -70,7 +70,7 @@ export const CodeAiBuyersGuide: NextPage = () => {
                     <ul className="ml-[22px] text-lg leading-[27px] tracking-tight text-gray-700 lg:max-w-[577px]">
                         <li className="mb-1">How to navigate the rapidly evolving landscape of AI coding tools</li>
                         <li className="mb-1">
-                            Questions to ask when evaluation AI tools that best fit your teams' key needs and workflows
+                            Questions to ask when evaluating AI tools that best fit your teams' key needs and workflows
                         </li>
                         <li className="mb-1">
                             Practical tips for ensuring security when using AI tools with sensitive code
@@ -81,7 +81,7 @@ export const CodeAiBuyersGuide: NextPage = () => {
                         with the right AI tools.
                     </div>
                 </div>
-                <div ref={formContainerRef} className="w-full py-16 md:h-fit md:px-6 md:py-0">
+                <div ref={formContainerRef} className="w-full py-16 md:h-fit md:pl-6 md:py-0">
                     <div className="sg-border-gradient-glow relative z-10 !rounded-3xl border border-gray-200 bg-white pl-0 pt-12 pr-0">
                         <div className="flex flex-col items-center px-6 md:px-12">
                             <h2 className="mb-3 text-center text-gray-700">Get your Buyer’s Guide</h2>
@@ -109,7 +109,7 @@ export const CodeAiBuyersGuide: NextPage = () => {
             </ContentSection>
             <div className="mx-auto flex w-full !max-w-[1152px] flex-col items-center py-28">
                 <h2 className="max-w-[760px] text-center text-gray-700">
-                    See how Sourcegraph is helping leading enterprises unlock value with AI coding
+                    See how Sourcegraph helps leading enterprises unlock value with AI coding
                 </h2>
                 <div className="flex items-center">
                     <CodyPartners isLight={true} className="!pb-16 pt-16" />
@@ -122,7 +122,7 @@ export const CodeAiBuyersGuide: NextPage = () => {
                     openNewTab={true}
                 />
             </div>
-            <NineCaseStudySection
+            <CaseStudyBento
                 className="!max-w-[1152px]"
                 items={statistics}
                 description={

@@ -16,7 +16,7 @@ export const BentoWithMockup: FunctionComponent<{
     <div
         className={classNames('flex flex-col overflow-hidden rounded-2xl bg-violet-700 md:flex-row', [
             { 'border border-gray-500': isDarkBorder },
-            { 'sg-bentoMockup w-fit': isVariantStyle },
+            { 'light-metallic-gradient-to-r w-fit': isVariantStyle },
         ])}
     >
         <div className={classNames('h-full px-6 md:pl-16', [{ 'md:py-3': href }, { 'md:py-9': !href }])}>

@@ -2,8 +2,8 @@ import { FunctionComponent } from 'react'
 
 import { CodyPartners, Layout } from '../../components'
 import { ContactUsCta } from '../../components/cta/ContactUsCta'
+import { CaseStudyBento } from '../../components/Enterprise/CaseStudyBento'
 import { EnterpriseGradeSection } from '../../components/Enterprise/EnterpriseGradeSection'
-import { NineCaseStudySection } from '../../components/Enterprise/NineCaseStudySection'
 import { AutomationSection } from '../../components/solutions/AutomationSection'
 import { IntroCard } from '../../components/solutions/IntroCard'
 import { SearchDescriptionSection } from '../../components/solutions/SearchDescriptionSection'
@@ -68,7 +68,7 @@ const Bitbucket: FunctionComponent = () => (
             subTitleTextColor="!text-[#343A4D]"
         />
         <div className="!py-8 md:!py-24">
-            <NineCaseStudySection />
+            <CaseStudyBento />
         </div>
         <AutomationSection
             parentClassName="md:!px-10 md:!pb-0 overflow-hidden !px-6 !py-0"
