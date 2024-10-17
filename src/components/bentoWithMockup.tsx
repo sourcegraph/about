@@ -8,24 +8,38 @@ export const BentoWithMockup: FunctionComponent<{
     isDarkBorder?: boolean
     isVariantTitle?: boolean
     isVariantImage?: boolean
-}> = ({ href, isVariantTitle, isDarkBorder, isVariantImage }) => (
+    isVariantStyle?: boolean
+    label?: string
+    customTitle?: string
+    imgSrc?: string
+}> = ({ href, imgSrc, isVariantStyle, isVariantTitle, isDarkBorder, isVariantImage, label, customTitle }) => (
     <div
         className={classNames('flex flex-col overflow-hidden rounded-2xl bg-violet-700 md:flex-row', [
             { 'border border-gray-500': isDarkBorder },
+            { 'sg-bentoMockup w-fit': isVariantStyle },
         ])}
     >
         <div className={classNames('h-full px-6 md:pl-16', [{ 'md:py-3': href }, { 'md:py-9': !href }])}>
             <div className={classNames('w-full md:max-w-[738px]', { 'pt-11': href }, { 'py-11': !href })}>
-                <div className="mb-6 font-mono text-lg leading-[27px] text-[#A884F6]">Analyst Report</div>
+                <div
+                    className={classNames('mb-6 font-mono text-lg leading-[27px] text-[#A884F6]', {
+                        '!text-blurple-500': isVariantStyle,
+                    })}
+                >
+                    {label ?? 'Analyst Report'}
+                </div>
                 <div
                     className={classNames('text-5xl font-semibold leading-[48px] tracking-tighter text-white  ', [
                         { 'md:pr-[114px] md:text-[32px] md:leading-[38.4px]': isVariantTitle },
                         { 'md:text-6xl  md:leading-[57.6px] md:tracking-tightest': !isVariantTitle },
+                        { 'text-gray-700': isVariantStyle },
                     ])}
                 >
-                    {isVariantTitle
-                        ? 'Sourcegraph is named a Visionary in the 2024 Gartner® Magic Quadrant™ for AI Code Assistants'
-                        : '2024 Gartner® Magic Quadrant™ for AI Code Assistants'}
+                    {!customTitle &&
+                        (isVariantTitle
+                            ? 'Sourcegraph is named a Visionary in the 2024 Gartner® Magic Quadrant™ for AI Code Assistants'
+                            : '2024 Gartner® Magic Quadrant™ for AI Code Assistants')}
+                    {customTitle}
                 </div>
                 {href && (
                     <Link
@@ -45,7 +59,7 @@ export const BentoWithMockup: FunctionComponent<{
             })}
         >
             <img
-                src="/assets/resources/reportMockup.svg"
+                src={imgSrc ?? '/assets/resources/reportMockup.svg'}
                 className={classNames(
                     ' h-[330px] min-h-[330px] w-[458px] min-w-[458px] md:relative md:right-0 md:h-min md:min-h-min md:w-auto md:min-w-full',
                     { 'absolute bottom-0 -right-[114px]': !isVariantImage, relative: isVariantImage }

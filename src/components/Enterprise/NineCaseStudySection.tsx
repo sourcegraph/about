@@ -1,32 +1,65 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
+
+import classNames from 'classnames'
 
 import { ContentSection } from '..'
 import ReadCaseStudyLink from '../ReadCaseStudyLink'
 
-export const NineCaseStudySection: FunctionComponent = () => (
+interface NineCaseStudySectionProps {
+    imgSrc?: string
+    description?: ReactNode | string
+    href?: string
+    items?: { label: string; description: string }[]
+    linkLabel?: string
+    author?: string
+    className?: string
+}
+const defaultItems = [
+    { label: '$276K', description: 'Engineering time saved' },
+    { label: '1,200 hours', description: 'Estimated annual time savings' },
+]
+export const NineCaseStudySection: FunctionComponent<NineCaseStudySectionProps> = ({
+    imgSrc,
+    description,
+    linkLabel,
+    href,
+    items = defaultItems,
+    author,
+    className,
+}) => (
     <ContentSection
-        parentClassName="!py-0 md:px-[80px]"
-        className="flex max-w-[1280px] flex-col gap-16 rounded-2xl border-1 bg-violet-700 py-16 px-6 text-white md:flex-row md:gap-[160px] md:px-20"
+        parentClassName="!py-0 mx-auto"
+        className={classNames(
+            'flex flex-col gap-16 rounded-2xl border border-gray-200 bg-white py-16 px-6 text-white md:flex-row md:gap-16 md:px-14',
+            className
+        )}
     >
-        <div className="flex max-w-[511px] flex-col gap-[70px]">
-            <img src="/enterprise/nine.svg" className="w-[188px]" alt="" />
-            <p className="mb-0 text-[35px] font-normal leading-[43.75px] -tracking-[0.25px]">
-                Nine’s Platform Engineering team saved hundreds of hours and thousands of dollars by using Code Search
-                and Batch Changes for their CI/CD refactor.
-            </p>
+        <div className="flex flex-1 flex-col gap-14">
+            <img src={imgSrc ?? '/enterprise/nine.svg'} className="mt-[7px] mb-3.5 h-[27px] w-[114px]" alt="logo" />
+            <div>
+                {!description && (
+                    <h5 className="mb-0 text-gray-700">
+                        Nine’s Platform Engineering team saved hundreds of hours and thousands of dollars by using Code
+                        Search and Batch Changes for their CI/CD refactor.
+                    </h5>
+                )}
+                {description}
+                {author && <div className="mt-6 text-base text-gray-500">{author}</div>}
+            </div>
         </div>
-        <div className="relative flex max-w-[479px] flex-col gap-16">
-            <div>
-                <p className="mb-0  font-sans text-[75px] font-semibold leading-[93.75px]">$276K</p>
-                <h3 className="text-gray-200">Engineering time saved</h3>
-            </div>
-            <div>
-                <p className="mb-0 font-sans text-[75px] font-semibold leading-[93.75px]">1,200 hours</p>
-                <h3 className="text-gray-200">Estimated annual time savings</h3>
-            </div>
+        <div className="relative flex flex-1 flex-col gap-12">
+            {items.map(item => (
+                <div key={item.label} className="flex flex-col gap-2">
+                    <h1 className="mb-0 text-gray-700">{item.label}</h1>
+                    <h5 className="text-gray-500">{item.description}</h5>
+                </div>
+            ))}
             <ReadCaseStudyLink
-                linkClassName="btn btn-link-dark btn-link-icon p-0 text-left font-semibold !-tracking-[0.25px] md:text-center"
-                href="https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow"
+                linkClassName="btn btn-link-dark focus:ring-gray-300 btn-link-icon text-gray-700 p-0 text-left font-semibold md:text-center"
+                href={
+                    href ?? 'https://sourcegraph.com/case-studies/how-sourcegraph-transformed-nine-development-workflow'
+                }
+                linkLabel={linkLabel}
             />
         </div>
     </ContentSection>

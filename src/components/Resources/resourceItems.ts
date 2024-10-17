@@ -462,6 +462,16 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
+        title: 'Code: AI buyers guide whitepaper',
+        link: '/whitepapers/code-ai-buyers-guide',
+        contentType: 'whitepaper',
+        subjects: ['developer productivity'],
+        description: "Buyer's guide to AI Coding Tools",
+        publishDate: '2024-09-17T00:00:00Z',
+        keyword: ['code', 'guide', 'developer productivity'],
+    },
+    {
+        featured: false,
         title: 'Why Sourcegraph’s single-tenant cloud instance is the most secure way to deploy Sourcegraph',
         link: '/guides/single-tenant-cloud-instance-is-the-most-secure-way-to-deploy-Sourcegraph-nov2023.pdf',
         contentType: 'guide',
