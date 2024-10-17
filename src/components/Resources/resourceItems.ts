@@ -462,7 +462,7 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
-        title: 'Code: AI buyers guide whitepaper',
+        title: "Buyer's Guide to AI code assistants",
         link: '/whitepapers/code-ai-buyers-guide',
         contentType: 'whitepaper',
         subjects: ['developer productivity'],

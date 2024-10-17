@@ -136,10 +136,6 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
                 href: 'https://handbook.sourcegraph.com',
                 icon: <ExternalLinkIcon />,
             },
-            {
-                name: 'Sourcegraph strategy',
-                href: 'https://handbook.sourcegraph.com/company/strategy',
-            },
         ],
     },
 ]
