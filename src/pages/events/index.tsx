@@ -8,7 +8,6 @@ const EventsPage: FunctionComponent = () => (
         meta={{
             title: 'Sourcegraph Events',
             description: 'Join us for live events.',
-            image: 'https://sourcegraph.com/assets/events/ai-dev-tools-night.png',
         }}
         className="bg-gray-50"
     >
