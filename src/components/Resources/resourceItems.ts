@@ -463,12 +463,12 @@ export const resourceItems: Resource[] = [
     {
         featured: false,
         title: "Buyer's Guide to AI code assistants",
-        link: '/whitepapers/code-ai-buyers-guide',
-        contentType: 'whitepaper',
+        link: '/guides/code-ai-buyers-guide',
+        contentType: 'guide',
         subjects: ['developer productivity'],
         description: 'A guide to help you understand AI code assistants, their benefits, and features to look for.',
         publishDate: '2024-09-17T00:00:00Z',
-        keyword: ['code', 'guide', 'developer productivity'],
+        keyword: ['ai', 'guide', 'developer productivity'],
     },
     {
         featured: false,
