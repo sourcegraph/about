@@ -21,5 +21,7 @@ jobs:
           run_install: true
       - name: Lint
         run: pnpm run lint
+      - name: Lint Images
+        run: pnpm run lint:images
       - name: Build production-ready site
         run: pnpm run build

@@ -9,6 +9,7 @@
     "build": "pnpm run build:cache && pnpm run build:feed && next build && next export && next-sitemap",
     "start": "next start",
     "lint": "pnpm run eslint && pnpm run typecheck",
+    "lint:images": "scripts/lint_images.sh",
     "figma:publish": "pnpm run figma connect publish",
     "typecheck": "tsc -p .",
     "eslint": "eslint '**/*.{ts,tsx}'",
