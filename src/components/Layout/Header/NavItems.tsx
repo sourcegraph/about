@@ -9,7 +9,6 @@ import {
     HelpCircle,
     BookText,
     Newspaper,
-    Calendar,
     UsersRound,
     TestTube,
     HandshakeIcon,
