@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import { ContentSection } from '..'
 import ReadCaseStudyLink from '../ReadCaseStudyLink'
 
-interface NineCaseStudySectionProps {
+interface CaseStudyBentoProps {
     imgSrc?: string
     description?: ReactNode | string
     href?: string
@@ -18,7 +18,7 @@ const defaultItems = [
     { label: '$276K', description: 'Engineering time saved' },
     { label: '1,200 hours', description: 'Estimated annual time savings' },
 ]
-export const NineCaseStudySection: FunctionComponent<NineCaseStudySectionProps> = ({
+export const CaseStudyBento: FunctionComponent<CaseStudyBentoProps> = ({
     imgSrc,
     description,
     linkLabel,
@@ -35,7 +35,7 @@ export const NineCaseStudySection: FunctionComponent<NineCaseStudySectionProps> 
         )}
     >
         <div className="flex flex-1 flex-col gap-14">
-            <img src={imgSrc ?? '/enterprise/nine.svg'} className="mt-[7px] mb-3.5 h-[27px] w-[114px]" alt="logo" />
+            <img src={imgSrc ?? '/assets/icons/Nine-violet.svg'} className="h-12 w-[114px]" alt="logo" />
             <div>
                 {!description && (
                     <h5 className="mb-0 text-gray-700">

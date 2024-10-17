@@ -39,11 +39,11 @@
     }
 
     h3 {
-        @apply font-sans text-2xl font-normal leading-[1.3] tracking-tight;
+        @apply font-sans text-2xl font-semibold leading-[1.3] tracking-tight;
     }
 
     h4 {
-        @apply font-sans text-2xl font-semibold leading-[1.3] tracking-tight;
+        @apply font-sans text-xl font-semibold leading-[1.3] tracking-tight;
     }
 
     h5 {
@@ -350,6 +350,12 @@
 
     /* Dark Nebulous Backgrounds */
     /* TODO */
+
+    .light-metallic-gradient-to-r {
+        border-radius: 16px;
+        background: linear-gradient(87deg, #d1cdf6 1.77%, #d7eaf7 21.36%, #f0ecfb 98.54%);
+    }
+    
     .sg-bg-gradient-dark-nebulous-4 {
         background: radial-gradient(
                 67.89% 140.35% at 28.91% 4.07%,
