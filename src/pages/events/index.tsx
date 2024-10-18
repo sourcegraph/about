@@ -1,8 +1,7 @@
-import { FunctionComponent } from 'react'
+import type { FunctionComponent } from 'react'
 
 import { ContentSection, Layout } from '../../components'
 import EventsList from '../../components/EventsList'
-
 const EventsPage: FunctionComponent = () => (
     <Layout
         meta={{
@@ -53,16 +52,13 @@ const EventsPage: FunctionComponent = () => (
 
                         <div className="mt-4">
                             <h3>Schedule</h3>
-                            <p className="mt-4">👋 Welcome</p>
-                            
-<ul>
-    <li>6:00 - 6:20 pm: Food, drinks & networking</li>
-    <li>6:20 - 6:30 pm: Welcome & demo</li>
-    <li>6:30 - 8:00 pm: Talks</li>
-    <li>8:00 - 8:30 pm: Networking</li>
-</ul>
-
-
+                            <p className="mt-4">👋 Welcome</p>                            
+                            <ul>
+                                <li>6:00 - 6:20 pm: Food, drinks & networking</li>
+                                <li>6:20 - 6:30 pm: Welcome & demo</li>
+                                <li>6:30 - 8:00 pm: Talks</li>
+                                <li>8:00 - 8:30 pm: Networking</li>
+                            </ul>
                             <p className="mt-4">🎤 Talks</p>
                             <ul>
                                 <li>
