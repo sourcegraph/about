@@ -57,7 +57,7 @@ const icons = [
     },
     {
         src: '/assets/icons/lyft-logo.svg',
-        className: 'h-[35px]',
+        className: 'h-[35px] hidden md:block',
     },
     {
         src: '/assets/icons/amplitude-logo.svg',
@@ -70,14 +70,8 @@ export const LogoGrid: FunctionComponent = () => (
         {/* top row of 8 */}
         <div className="grid grid-cols-2 flex-wrap justify-center gap-x-14 gap-y-4 sm:grid-cols-3 md:flex">
             {icons.slice(0, 8).map((icon, index) => (
-                <div key={icon.src} className="flex items-center justify-center">
-                    <div className={classNames('flex w-auto items-center justify-center', icon.className)}>
-                        <img
-                            src={icon.src}
-                            alt={`Partner logo ${index + 1}`}
-                            className="opacity-85 max-h-full w-auto"
-                        />
-                    </div>
+                <div key={icon.src} className={classNames('flex w-auto items-center justify-center', icon.className)}>
+                    <img src={icon.src} alt={`Partner logo ${index + 1}`} className="opacity-85 max-h-full w-auto" />
                 </div>
             ))}
         </div>
@@ -85,14 +79,8 @@ export const LogoGrid: FunctionComponent = () => (
         {/* bottom row of 7 */}
         <div className="grid grid-cols-2 flex-wrap justify-center gap-x-14 gap-y-4 sm:grid-cols-3 md:flex">
             {icons.slice(8).map((icon, index) => (
-                <div key={icon.src} className="flex items-center justify-center">
-                    <div className={classNames('flex w-auto items-center justify-center', icon.className)}>
-                        <img
-                            src={icon.src}
-                            alt={`Partner logo ${index + 9}`}
-                            className="opacity-85 max-h-full w-auto"
-                        />
-                    </div>
+                <div key={icon.src} className={classNames('flex w-auto items-center justify-center', icon.className)}>
+                    <img src={icon.src} alt={`Partner logo ${index + 9}`} className="opacity-85 max-h-full w-auto" />
                 </div>
             ))}
         </div>
