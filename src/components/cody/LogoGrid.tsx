@@ -75,7 +75,7 @@ export const LogoGrid: FunctionComponent = () => (
                         <img
                             src={icon.src}
                             alt={`Partner logo ${index + 1}`}
-                            className="max-h-full w-auto opacity-60"
+                            className="opacity-85 max-h-full w-auto"
                         />
                     </div>
                 </div>
@@ -90,7 +90,7 @@ export const LogoGrid: FunctionComponent = () => (
                         <img
                             src={icon.src}
                             alt={`Partner logo ${index + 9}`}
-                            className="max-h-full w-auto opacity-60"
+                            className="opacity-85 max-h-full w-auto"
                         />
                     </div>
                 </div>
