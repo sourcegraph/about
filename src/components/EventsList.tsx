@@ -43,6 +43,12 @@ const events: { upcoming: Event[], past: Event[] } = {
             link: 'https://qconsf.com/',
         },
         {
+            title: 'AI Eng Talks ~ w/ Cloudflare, Sourcegraph & Jam.dev',
+            location: 'San Francisco, CA',
+            date: '2024-11-19',
+            link: 'https://lu.ma/AI-Talks',
+        },
+        {
             title: 'AWS re:Invent',
             location: 'Las Vegas, NV',
             date: '2024-12-26',
