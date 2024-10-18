@@ -24,7 +24,7 @@ const ContactPage: NextPage<ContactPageProps> = ({
     const [formSubmitted, setFormSubmitted] = useState(false)
     const router = useRouter()
     const slugName = router?.query?.slug ? router.query.slug[0] : null
-    const isRequestTrial = router.asPath.startsWith('/contact/request-trial')
+    const isRequestTrial = slugName === 'request-trial'
 
     useEffect(() => {
         // if (formSubmitted && slugName === 'request-info') {
@@ -85,7 +85,6 @@ const ContactPage: NextPage<ContactPageProps> = ({
                     meta={{
                         title: `Sourcegraph - ${title}`,
                         description,
-                        noindex: isRequestTrial,
                     }}
                     formId={formId}
                 />
