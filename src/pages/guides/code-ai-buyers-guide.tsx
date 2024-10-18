@@ -95,7 +95,7 @@ export const CodeAiBuyersGuide: NextPage = () => {
                             <HubSpotForm
                                 masterFormName="contactMulti"
                                 chiliPiper={false}
-                                bookIt={true}
+                                bookIt={false}
                                 formId="94289fb7-54e1-4ec4-a30d-62b4089d76fb"
                                 form_submission_source="code-ai-buyers-guide"
                                 onFormSubmitted={() => {
