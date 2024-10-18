@@ -7,12 +7,12 @@ import { Layout, Hero } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
 import { ContactUsCta } from '../components/cta/ContactUsCta'
 import { RequestDemoCta } from '../components/cta/RequestDemoCta'
+import { CaseStudyBento } from '../components/Enterprise/CaseStudyBento'
 import { ChooseYourLlmSection } from '../components/Enterprise/ChooseYourLlmSection'
 import { CompanyUsingCodySection } from '../components/Enterprise/CompanyUsingCodySection'
 import { EnterpriseGradeSection } from '../components/Enterprise/EnterpriseGradeSection'
 import { ImprovedVelocitySection } from '../components/Enterprise/ImprovedVelocitySection'
 import { MigrationsSection } from '../components/Enterprise/MigrationsSection'
-import { NineCaseStudySection } from '../components/Enterprise/NineCaseStudySection'
 import { NutanixCaseStudySection } from '../components/Enterprise/NutanixCaseStudySection'
 import { ScalableSection } from '../components/Enterprise/ScalableSection'
 import { SecureSection } from '../components/Enterprise/SecureSection'
@@ -123,7 +123,7 @@ const Enterprise: FunctionComponent = () => {
             <UniversalSection />
             <ChooseYourLlmSection />
             <ScalableSection />
-            <NineCaseStudySection />
+            <CaseStudyBento />
             <SecureSection />
             <NutanixCaseStudySection />
             <SecurityFeatureSection />

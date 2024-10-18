@@ -218,7 +218,7 @@ module.exports = {
         fadeInSlow: 'fadeIn 0.5s ease-in forwards',
         slideFadeIn: 'slideFadeIn 2s ease-in-out',
       },
-
+      
       dropShadow: {
         xl: `0px 0px 15px ${dlsColors.violet['400']}`,
         '2xl': `0px 0px 38px ${dlsColors.violet['400']}`,
