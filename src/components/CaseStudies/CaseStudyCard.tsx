@@ -107,6 +107,12 @@ export const CASESTUDIES: CaseStudy[] = [
         title: 'Thorn deprecates legacy code safely.',
         url: '/case-studies/we-are-thorn',
     },
+    {
+        name: 'Reddit',
+        logo: '/external-logos/reddit-logo.png',
+        title: 'Read how the Reddit team wrangles code across 2,000+ repos with the help of Sourcegraph',
+        url: 'https://www.reddit.com/r/RedditEng/comments/1bdtrjq/wrangling_2000_git_repos_at_reddit/',
+    },
 ]
 
 export const CaseStudyCard: FunctionComponent<{
