@@ -5,8 +5,9 @@ import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 import { posthog } from 'posthog-js'
 
-import { ContentSection, Layout, CodyPartners } from '../components'
+import { ContentSection, Layout } from '../components'
 import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarousel'
+import { LogoGrid } from '../components/cody/LogoGrid'
 import HomeHero2024 from '../components/Home/HomeHero2024'
 import HomePageCta from '../components/HomePageCta'
 import { Icon } from '../components/icon'
@@ -52,12 +53,20 @@ const Home: FunctionComponent = () => {
             <div className="oveflow-hidden relative w-full bg-gray-50">
                 {/* partners ----------------------------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}
-                <p className="mg:text-base text-center font-mono text-sm text-gray-400">
+                <p className="mg:text-base mb-6 text-center font-mono text-sm text-gray-400">
                     Trusted by the world's largest dev teams
                 </p>
 
-                <div className="flex items-center">
-                    <CodyPartners isLight={true} className="!pb-4 pt-4" />
+                <LogoGrid />
+
+                <div className="mg:text-base mt-8 flex items-center justify-center text-sm">
+                    <Link
+                        href="https://sourcegraph.com/case-studies"
+                        className="flex items-center gap-x-1.5 text-gray-400 hover:underline"
+                    >
+                        <span>Learn how teams are using Sourcegraph</span>
+                        <ChevronRightIcon className="link-icon h-4 w-4" />
+                    </Link>
                 </div>
 
                 {/* coding is complex --------------------------------------------------------- */}
