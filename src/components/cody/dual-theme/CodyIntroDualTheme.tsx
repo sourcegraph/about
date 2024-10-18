@@ -78,7 +78,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                 </div>
             </button>
             <Link
-                href="/enterprise-trial-offer?form_submission_source=cody-enterprise-trial"
+                href="/contact/request-info"
                 title="Request Cody Enterprise"
                 className={classNames('btn btn-secondary w-full px-6 py-2 lg:w-fit', isVariant && 'md:!w-fit')}
                 type="button"
