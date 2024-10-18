@@ -46,14 +46,14 @@ const CodyPlan: FunctionComponent = () => {
                 {items.map(item => (
                     <div
                         key={item.plan}
-                        className="max-w-[408px] rounded-2xl border border-[#E4E9F4] bg-white px-10 py-16"
+                        className="max-w-[408px] rounded-2xl border border-gray-200 bg-white px-10 py-16"
                     >
                         <div>
                             <h2 className="mb-[13px] !text-gray-700">{item.plan}</h2>
                             <div className="mb-[22px] min-h-[81px] max-w-[328px] text-lg text-gray-700 opacity-70">
                                 {item.description}
                             </div>
-                            <div className="border-t border-[#E4E9F4] pt-8">
+                            <div className="border-t border-gray-200 pt-8">
                                 <h1 className="pb-1 text-gray-500">{item.price}</h1>
                                 <div className="pb-2 text-sm text-gray-500">{item.rate}</div>
                             </div>

@@ -79,12 +79,12 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
             </button>
             <Link
                 href="/enterprise-trial-offer?form_submission_source=cody-enterprise-trial"
-                title="Get a Cody Enterprise trial"
+                title="Request Cody Enterprise"
                 className={classNames('btn btn-secondary w-full px-6 py-2 lg:w-fit', isVariant && 'md:!w-fit')}
                 type="button"
                 onClick={() => captureCustomEventWithPageData('start_enterprise_trial_click')}
             >
-                <div className="flex items-center justify-center">Get a Cody Enterprise trial</div>
+                <div className="flex items-center justify-center">Request Cody Enterprise</div>
             </Link>
         </div>
     </ContentSection>

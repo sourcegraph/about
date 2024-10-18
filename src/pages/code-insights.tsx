@@ -317,7 +317,7 @@ const codeOwnerShipIconDefinition: [keyof ReactSVG, Record<string, string>][] = 
     ],
 ]
 
-const borderClassName = 'border border-[#E4E9F4] !rounded-lg !mx-0 !my-0 !w-auto'
+const borderClassName = 'border border-gray-200 !rounded-lg !mx-0 !my-0 !w-auto'
 const tabsParentClassName = '!w-full lg:!max-w-[519px] justify-center md:flex-col'
 const tabMainClassName = 'mt-8 flex w-full flex-wrap justify-center gap-y-6 md:gap-y-2.5 md:gap-x-6'
 
@@ -389,7 +389,7 @@ const CodeInsightsPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder
                         Sourcegraph Code Search.
                     </p>
                 </div>
-                <div className="mb-4 max-h-[328px] max-w-[582px] overflow-hidden rounded-2xl border border-[#E4E9F4]">
+                <div className="mb-4 max-h-[328px] max-w-[582px] overflow-hidden rounded-2xl border border-gray-200">
                     <Video
                         source={{
                             mp4: 'code_insights/code-insights-720',

@@ -60,7 +60,7 @@ export const FullWidthTabsCarousel: FunctionComponent<FullWidthTabsCarouselProps
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg
     const activePaginationColor = darkMode ? 'bg-white' : 'bg-gray-700'
-    const inactivePaginationColor = darkMode ? 'bg-[#E4E9F4]' : 'bg-gray-300'
+    const inactivePaginationColor = darkMode ? 'bg-gray-200' : 'bg-gray-300'
 
     const getItemClassName = (
         item: CarouselItem,

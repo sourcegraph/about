@@ -9,7 +9,6 @@ import {
     HelpCircle,
     BookText,
     Newspaper,
-    Calendar,
     UsersRound,
     TestTube,
     HandshakeIcon,
@@ -121,16 +120,16 @@ const NAV_ITEMS: NavItem[] = [
         text: 'Resources',
         links: [
             {
-                text: 'Support forum',
+                text: 'Support Forum',
                 subText: 'Questions and feedback',
                 href: 'https://community.sourcegraph.com',
                 iconPosition: 'left',
                 icon: <HelpCircle className="h-[14px] w-[14px]" />,
             },
             {
-                text: 'Docs',
-                subText: 'Get started with our products',
-                href: 'https://docs.sourcegraph.com',
+                text: 'Resources',
+                subText: 'Videos, guides, content, and more',
+                href: 'https://sourcegraph.com/resources',
                 iconPosition: 'left',
                 icon: <BookText className="h-[14px] w-[14px]" />,
             },
@@ -142,11 +141,11 @@ const NAV_ITEMS: NavItem[] = [
                 icon: <Newspaper className="h-[14px] w-[14px]" />,
             },
             {
-                text: 'Events',
-                subText: 'Live and online meetups',
-                href: '/events',
+                text: 'Customer Stories',
+                subText: 'Success stories, case studies',
+                href: '/case-studies',
                 iconPosition: 'left',
-                icon: <Calendar className="h-[14px] w-[14px]" />,
+                icon: <HandshakeIcon className="h-[14px] w-[14px]" />,
             },
             {
                 text: 'Community',
@@ -154,13 +153,6 @@ const NAV_ITEMS: NavItem[] = [
                 href: '/community',
                 iconPosition: 'left',
                 icon: <UsersRound className="h-[14px] w-[14px]" />,
-            },
-            {
-                text: 'Customer Stories',
-                subText: 'Success stories, case studies',
-                href: '/case-studies',
-                iconPosition: 'left',
-                icon: <HandshakeIcon className="h-[14px] w-[14px]" />,
             },
             {
                 text: 'Sourcegraph Labs',
@@ -327,7 +319,7 @@ const NavItemMenu: React.FunctionComponent<
                                 >
                                     <div className={sectionHeaderClassName}>
                                         {link.sectionHeader}
-                                        <hr className={classNames(dividerClassName, 'mr-[6px] my-2')} />
+                                        <hr className={classNames(dividerClassName, 'my-2 mr-[6px]')} />
                                     </div>
                                 </div>
                             ) : (

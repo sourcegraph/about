@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from 'react'
+import { FunctionComponent, useEffect, useRef, useState } from 'react'
 
 import classNames from 'classnames'
 import { Expand, ShieldCheck, Cloud, ChevronRightIcon } from 'lucide-react'
@@ -343,7 +343,7 @@ const CodyPage: FunctionComponent = () => {
                 <CodyPartners isLight={true} className="!pt-0 !pb-16 md:!pb-24" />
             </div>
 
-            <ContentSection className="mt-16 rounded-3xl border border-[#E4E9F4] bg-white px-6 py-16 md:mt-0 md:px-16">
+            <ContentSection className="mt-16 rounded-3xl border border-gray-200 bg-white px-6 py-16 md:mt-0 md:px-16">
                 <div className="bg-white">
                     <div className="text-gray-700 md:max-w-[632px] md:pl-6">
                         <h2 className="pb-10">Developer chat with the most powerful models and context.</h2>
@@ -386,7 +386,7 @@ const CodyPage: FunctionComponent = () => {
                                         <div key={item.label} className="flex flex-row gap-x-1">
                                             <IDEBadge
                                                 text={item.label}
-                                                className="w-fit !rounded-[10px] !border !border-[#E4E9F4] !bg-gray-100 !px-3 !py-1 !font-sans !text-sm !font-normal  !text-black"
+                                                className="w-fit !rounded-[10px] !border !border-gray-200 !bg-gray-100 !px-3 !py-1 !font-sans !text-sm !font-normal  !text-black"
                                                 src={item.iconUrl}
                                             />
                                         </div>
@@ -400,7 +400,7 @@ const CodyPage: FunctionComponent = () => {
                                         <div key={item.label} className="flex flex-row gap-x-1">
                                             <IDEBadge
                                                 text={item.label}
-                                                className="w-fit !rounded-[10px] !border !border-[#E4E9F4] !bg-gray-100 !px-3 !py-1 !font-sans !text-sm !font-normal !text-black"
+                                                className="w-fit !rounded-[10px] !border !border-gray-200 !bg-gray-100 !px-3 !py-1 !font-sans !text-sm !font-normal !text-black"
                                                 src={item.iconUrl}
                                             />
                                         </div>
@@ -413,7 +413,7 @@ const CodyPage: FunctionComponent = () => {
                 />
             </ContentSection>
             <ContentSection parentClassName="!py-0">
-                <div className="rounded-2xl border border-[#E4E9F4] bg-white px-6 py-16 md:px-20">
+                <div className="rounded-2xl border border-gray-200 bg-white px-6 py-16 md:px-20">
                     <img src="/assets/cody/cody-leidos.svg" alt="leidos logo" className="h-[54.91px] w-[171.471px]" />
                     <p
                         className={classNames(
@@ -541,6 +541,8 @@ const CodyPage: FunctionComponent = () => {
                     </div>
                 </div>
             </Modal>
+
+            <DevStarterPackModal />
         </Layout>
     )
 }
@@ -573,5 +575,82 @@ const CodyAbility: FunctionComponent<{ src: string; className?: string; title: s
         </div>
     </div>
 )
+
+const DevStarterPackModal: FunctionComponent = () => {
+    const router = useRouter()
+    const dialogRef = useRef<HTMLDialogElement>(null)
+
+    // Define a type for the dialog element
+    type DialogElement = HTMLDialogElement & { showModal: () => void; close: () => void }
+
+    useEffect(() => {
+        if (router.query.ref === 'devstarterpack' && dialogRef.current) {
+            ;(dialogRef.current as DialogElement).showModal()
+        }
+    }, [router.query])
+
+    const handleClose = (): void => {
+        if (dialogRef.current) {
+            ;(dialogRef.current as DialogElement)?.close?.()
+        }
+    }
+
+    return (
+        <dialog
+            ref={dialogRef}
+            className="relative rounded-lg bg-white px-4 py-8 text-left transition-all sm:my-40 sm:w-full sm:max-w-xl sm:p-16"
+        >
+            <div>
+                <div className="mx-auto flex aspect-video w-32 items-center justify-center rounded-md bg-[#0D121A]">
+                    <video autoPlay={true} loop={false} muted={true} playsInline={true} className="h-24 w-24">
+                        <source src="/assets/cody/hiCodyDark.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div className="mt-5 text-center sm:mt-7">
+                    <h2 className="text-gray-900 flex flex-col items-center justify-center gap-2 text-2xl font-semibold leading-6 sm:flex-row">
+                        Dev Starter Pack{' '}
+                        <span className="inline-flex items-center rounded-full bg-vermillion-100 px-2 py-1 text-xs font-medium text-vermillion-500 ring-1 ring-inset ring-vermillion-500/10">
+                            Activated!
+                        </span>
+                    </h2>
+
+                    <div className="mt-4">
+                        <p className="text-balance text-xs text-gray-500 sm:text-sm">
+                            Cody has unmatched context and the latest AI models. Supercharge your coding with AI
+                            autocomplete, chat, inline edits, Smart Apply, and more.
+                        </p>
+                        <p className="text-balance text-xs font-bold text-gray-500 sm:text-sm">
+                            Get 1 free month of Cody Pro! Use the code below:
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="mt-5 sm:mt-6">
+                <div className="mb-4 rounded bg-gray-100 p-2 text-center font-mono text-sm tracking-tighter sm:text-lg">
+                    DevStarterPack
+                </div>
+            </div>
+
+            <div className="mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3">
+                <a
+                    href="https://accounts.sourcegraph.com/sign-in?redirect_to=%2Fcody%2Fsubscription%3FshowCouponCodeAtCheckout"
+                    className="inline-flex w-full justify-center rounded-md bg-blurple-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blurple-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blurple-600 sm:col-start-2"
+                >
+                    Redeem free month
+                </a>
+
+                <button
+                    type="button"
+                    onClick={handleClose}
+                    className="text-gray-900 mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-sm ring-1 ring-inset ring-gray-200 hover:bg-gray-50 sm:col-start-1 sm:mt-0"
+                >
+                    No thanks
+                </button>
+            </div>
+        </dialog>
+    )
+}
 
 export default CodyPage

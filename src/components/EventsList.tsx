@@ -25,6 +25,12 @@ const events: { upcoming: Event[], past: Event[] } = {
             link: 'https://2024.allthingsopen.org/',
         },
         {
+            title: 'Your Cody questions answered live!',
+            location: 'StreamYard',
+            date: '2024-11-01',
+            link: 'https://streamyard.com/watch/PP9kGxQSZEKX',
+        },
+        {
             title: 'AI Dev Tools Night',
             location: 'Austin, TX',
             date: '2024-11-06',
