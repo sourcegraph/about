@@ -81,7 +81,7 @@ export const CodeAiBuyersGuide: NextPage = () => {
                         with the right AI tools.
                     </div>
                 </div>
-                <div ref={formContainerRef} className="w-full py-16 md:h-fit md:pl-6 md:py-0">
+                <div ref={formContainerRef} className="w-full py-16 md:h-fit md:py-0 md:pl-6">
                     <div className="sg-border-gradient-glow relative z-10 !rounded-3xl border border-gray-200 bg-white pl-0 pt-12 pr-0">
                         <div className="flex flex-col items-center px-6 md:px-12">
                             <h2 className="mb-3 text-center text-gray-700">Get your Buyer’s Guide</h2>
@@ -98,6 +98,7 @@ export const CodeAiBuyersGuide: NextPage = () => {
                                 bookIt={false}
                                 formId="94289fb7-54e1-4ec4-a30d-62b4089d76fb"
                                 form_submission_source="code-ai-buyers-guide"
+                                overrideInlineMessage={false}
                                 onFormSubmitted={() => {
                                     setFormSubmitted(true)
                                 }}
