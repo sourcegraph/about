@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { ContentSection, HubSpotForm, Layout, Tabs } from '../components'
+import { captureCustomEventWithPageData } from '../lib/utils'
 
 import styles from '../styles/getStarted.module.scss'
 
@@ -138,6 +139,9 @@ const EnterPriseTrial: FunctionComponent = () => (
                     formId="e090296f-84f5-4bcb-9093-a533336841b4"
                     chiliPiper={false}
                     bookIt={true}
+                    onFormSubmitted={() => {
+                        captureCustomEventWithPageData('contact_us_submit', undefined, true)
+                    }}
                 />
             </div>
         </div>
