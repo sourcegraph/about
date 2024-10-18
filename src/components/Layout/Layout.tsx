@@ -17,6 +17,7 @@ interface LayoutProps {
         videoID?: string
         icon?: string
         canonical?: string
+        noindex?: boolean
     }
     children?: ReactNode
     minimal?: boolean
@@ -83,6 +84,9 @@ export const Layout: FunctionComponent<LayoutProps> = ({
             <Head>
                 <title>{meta.externalTitle || meta.title}</title>
                 <meta name="description" content={meta.externalDescription || meta.description} />
+
+                {/* Add this conditional rendering for noindex */}
+                {meta.noindex && <meta name="robots" content="noindex, nofollow" />}
 
                 <meta name="twitter:title" content={meta.title} />
                 <meta name="twitter:site" content="@sourcegraph" />
