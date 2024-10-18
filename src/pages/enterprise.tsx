@@ -85,14 +85,14 @@ const Enterprise: FunctionComponent = () => {
                             <div className="mx-auto flex w-[356px] flex-col items-center justify-center gap-6 sm:flex sm:w-auto  sm:flex-row  md:gap-4">
                                 <Link
                                     className="btn btn-primary w-full sm:w-auto"
-                                    href="/enterprise-trial-offer"
-                                    title="Start your free trial"
+                                    href="/contact/request-info"
+                                    title="Book a demo"
                                     data-button-style={buttonStyle.primary}
                                     data-button-location={buttonLocation}
                                     data-button-type="cta"
                                     onClick={() => captureCustomEventWithPageData('start_enterprise_trial_click')}
                                 >
-                                    Start your free trial
+                                    Book a demo
                                 </Link>
                                 <Link
                                     className="btn btn-secondary w-full items-center sm:w-auto"
