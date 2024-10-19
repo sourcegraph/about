@@ -15,6 +15,7 @@ declare global {
                     formId,
                     target,
                     formInstanceId,
+                    sfdcCampaignId,
                     onFormSubmit,
                     onFormSubmitted,
                     onFormReady,
@@ -49,6 +50,7 @@ interface HubSpotAPIProps {
     region?: string
     portalId: string
     formId: string
+    sfdcCampaignId?: string
     target: string
     formInstanceId?: string
     onFormSubmit?: (object: { data: { name: string; value: string }[] }) => void
@@ -60,6 +62,7 @@ interface HubSpotAPIProps {
 interface CreateHubSpotFormProps {
     [index: number]: HTMLFormElement
     formId: string
+    sfdcCampaignId?: string
     onFormReady?: ($form: HTMLFormElement) => void
     onFormSubmitted?: () => void
     inlineMessage?: string
@@ -87,6 +90,7 @@ export interface HubSpotFormProps {
     form_submission_source?: string
     bookIt?: boolean
     customSubmitButton?: string
+    sfdcCampaignId?: string
 }
 
 interface ChiliPiperAPIProps {
@@ -246,6 +250,7 @@ function createHubSpotForm({
     inlineMessage,
     customSubmitButton,
     overrideInlineMessage,
+    sfdcCampaignId,
 }: CreateHubSpotFormProps): void {
     const hbsptCreateForm = (): void => {
         const hubspotFormConfig: HubSpotAPIProps = {
@@ -270,7 +275,9 @@ function createHubSpotForm({
             },
             onFormSubmitted,
         }
-
+        if (sfdcCampaignId) {
+            hubspotFormConfig.sfdcCampaignId = sfdcCampaignId
+        }
         if (overrideInlineMessage) {
             hubspotFormConfig.inlineMessage = inlineMessage
         }
@@ -350,6 +357,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     form_submission_source,
     customSubmitButton,
     bookIt = false,
+    sfdcCampaignId,
 }) => {
     const router = useRouter()
 
@@ -437,6 +445,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
                 inlineMessage,
                 overrideInlineMessage,
                 customSubmitButton,
+                sfdcCampaignId,
             })
 
             setFormCreated(true)

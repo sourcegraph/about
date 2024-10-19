@@ -462,6 +462,16 @@ export const resourceItems: Resource[] = [
     },
     {
         featured: false,
+        title: "Buyer's Guide to AI code assistants",
+        link: '/guides/code-ai-buyers-guide',
+        contentType: 'guide',
+        subjects: ['developer productivity'],
+        description: 'A guide to help you understand AI code assistants, their benefits, and features to look for.',
+        publishDate: '2024-09-17T00:00:00Z',
+        keyword: ['ai', 'guide', 'developer productivity'],
+    },
+    {
+        featured: false,
         title: 'Why Sourcegraph’s single-tenant cloud instance is the most secure way to deploy Sourcegraph',
         link: '/guides/single-tenant-cloud-instance-is-the-most-secure-way-to-deploy-Sourcegraph-nov2023.pdf',
         contentType: 'guide',

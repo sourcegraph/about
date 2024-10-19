@@ -129,7 +129,7 @@ const NAV_ITEMS: NavItem[] = [
             {
                 text: 'Resources',
                 subText: 'Videos, guides, content, and more',
-                href: 'https://sourcegraph.com/resources',
+                href: '/resources',
                 iconPosition: 'left',
                 icon: <BookText className="h-[14px] w-[14px]" />,
             },

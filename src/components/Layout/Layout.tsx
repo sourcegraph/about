@@ -133,7 +133,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({
             {!props.hideHeader && (
                 <div className={classNames(props.heroAndHeaderClassName, 'pt-[147px] md:pt-[116px]')}>
                     <Header minimal={props.minimal} colorTheme={headerColorTheme || 'white'} navRef={navRef} />
-
+                    
                     {props.hero}
                 </div>
             )}
