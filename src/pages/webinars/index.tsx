@@ -32,9 +32,7 @@ const WebinarsPage: FunctionComponent = () => (
                 {/* left side */}
                 <div>
                     <h3 className="text-xl">
-                        July 30 10:00 PM PST{' '}
-                        <span className="mr-2 text-sm">(July 31 3pm-4pm AEDT / 1pm-2pm SGT / 10:30am-11:30am IST)</span>
-                        <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Live</span>
+                        <span className="rounded-lg bg-vermillion-300 px-2 py-1 text-xs text-white">On-Demand</span>
                     </h3>
                     <h2 className="mt-4">Advanced AI Coding Techniques</h2>
                     <p className="mt-6 text-lg text-gray-600">
@@ -67,9 +65,7 @@ const WebinarsPage: FunctionComponent = () => (
                 {/* left side */}
                 <div>
                     <h3 className="text-xl">
-                        July 16 10:00 PM PST{' '}
-                        <span className="mr-2 text-sm">(July 17 3pm-4pm AEDT / 1pm-2pm SGT / 10:30am-11:30am IST)</span>
-                        <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Live</span>
+                        <span className="rounded-lg bg-vermillion-300 px-2 py-1 text-xs text-white">On-Demand</span>
                     </h3>
                     <h2 className="mt-4">Getting Started with AI Coding</h2>
                     <p className="mt-6 text-lg text-gray-600">
@@ -97,6 +93,67 @@ const WebinarsPage: FunctionComponent = () => (
                 </div>
             </div>
         </ContentSection>
+
+        <ContentSection>
+            <div className="mt-10 flex flex-col gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12">
+                {/* left side */}
+                <div>
+                    <h3 className="text-xl">
+                        September 23rd{' '}
+                        <span className="rounded-lg bg-vermillion-300 px-2 py-1 text-xs text-white">On-Demand</span>
+                    </h3>
+                    <h2 className="mt-4">The Death of the Junior Developer Part 2</h2>
+                    <p className="mt-6 text-lg text-gray-600">
+                        Steve Yegge and Gene Kim dive into the rapidly changing world of software development and what
+                        that means for junior developers.
+                    </p>
+                </div>
+
+                {/* right side */}
+                <div className="relative h-0 w-full overflow-hidden rounded pb-[56.25%]">
+                    <iframe
+                        title="StreamYard Embed"
+                        src="https://streamyard.com/watch/nvBaD5eHADar?embed=true"
+                        width="100%"
+                        height="100%"
+                        frameBorder="0"
+                        allow="autoplay; fullscreen"
+                        className="absolute left-0 top-0 h-full w-full overflow-hidden"
+                    />
+                </div>
+            </div>
+        </ContentSection>
+
+        <ContentSection>
+            <div className="mt-10 flex flex-col gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12">
+                {/* left side */}
+                <div>
+                    <h3 className="text-xl">
+                        August 29th{' '}
+                        <span className="rounded-lg bg-vermillion-300 px-2 py-1 text-xs text-white">On-Demand</span>
+                    </h3>
+                    <h2 className="mt-4">Chat-Oriented Programming (CHOP) in Action</h2>
+                    <p className="mt-6 text-lg text-gray-600">
+                        Join our very own Ado Kukic as he breaks down the topic of Chat-Oriented Programming (CHOP) and
+                        shows it in action with a live coding session.
+                    </p>
+                </div>
+
+                {/* right side */}
+                <div className="relative h-0 w-full overflow-hidden rounded pb-[56.25%]">
+                    <iframe
+                        title="StreamYard Embed"
+                        src="https://streamyard.com/watch/p4vx8icVmgVW?embed=true"
+                        width="100%"
+                        height="100%"
+                        frameBorder="0"
+                        allow="autoplay; fullscreen"
+                        className="absolute left-0 top-0 h-full w-full overflow-hidden"
+                    />
+                </div>
+            </div>
+        </ContentSection>
+
         <ContentSection>
             <div className="mt-10 flex flex-col gap-10 rounded-lg border border-gray-200 bg-white px-10 py-12">
                 {/* left side */}
