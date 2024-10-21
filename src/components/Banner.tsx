@@ -12,15 +12,15 @@ import Link from 'next/link'
 export const Banner: FunctionComponent<{}> = () => (
     <div className="z-[1000] bg-black  px-4 lg:px-0">
         <Link
-            href="https://sourcegraph.com/blog/openai-o1-for-cody"
+            href="/guides/code-ai-buyers-guide?form_submission_source=code-ai-buyers-guide"
             className="btn btn-link-dark btn-link-icon transition-colorshover:text-white group flex w-full items-center justify-center bg-transparent !px-0 !py-3 text-sm text-gray-200 hover:no-underline focus:outline-none focus:ring-0"
             target="_blank"
         >
             <p className="mb-0 mr-2 text-center text-sm font-semibold">
-                Get on the waitlist for the new OpenAI o1-preview
+                Download our new Buyer's Guide to AI coding assistants
             </p>
             <span className="hidden translate-y-px text-violet-300 lg:inline-block">
-                <span>Get access</span>
+                {/* <span>Get access</span> */}
                 <ChevronRightIcon className="!mb-0 ml-0.5 inline -translate-y-px transition-transform group-hover:translate-x-2" />
             </span>
         </Link>
