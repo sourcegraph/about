@@ -3,9 +3,7 @@ import { FunctionComponent, useState, useEffect, FC } from 'react'
 import classNames from 'classnames'
 import { Link as ScrollLink } from 'react-scroll'
 
-import { Layout, HubSpotForm, Modal, CodyCta, ContentSection } from '../components'
-
-import styles from '../styles/CustomHubspotForm.module.scss'
+import { Layout, CodyCta, ContentSection } from '../components'
 
 const CHAT_CONTENT = [
     {
@@ -170,7 +168,6 @@ const SECTIONS = [
 ]
 
 const CodyPage: FunctionComponent = () => {
-    const [isContactModalOpen, setIsContactModalOpen] = useState(false)
     const isLight = true
     const [activeSection, setActiveSection] = useState('')
 
@@ -324,28 +321,6 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             <CodyCta source="Cody page" isCodyPage={true} isLight={true} />
-            <Modal
-                open={isContactModalOpen}
-                handleClose={() => setIsContactModalOpen(false)}
-                modalBackdropClassName="cody-contact-modal"
-                modalClassName="bg-[#632590] border border-opacity-20 border-white px-6 py-[64px] md:px-[80px] md:py-[96px]"
-            >
-                <div className="flex flex-col gap-8 md:flex-row md:gap-10">
-                    <div className="min-w-[200px] max-w-[513px]">
-                        <h2 className="text-white">Get Cody where you work</h2>
-                        <p className="mt-4 text-lg text-gray-200">
-                            Cody for Enterprise provides context-aware answers based on your own private codebase.
-                            Contact us through the form to learn more.
-                        </p>
-                    </div>
-                    <div className={classNames('md:min-w-[400px] xl:min-w-[554px]', styles.codyForm)}>
-                        <HubSpotForm
-                            formId="05e46684-9fbc-4c4d-b010-f661f247c4c6"
-                            inlineMessage="Thank you! We'll get back to you soon"
-                        />
-                    </div>
-                </div>
-            </Modal>
         </Layout>
     )
 }
