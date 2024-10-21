@@ -18,6 +18,12 @@ interface CaseStudy {
 // TODO: This data will eventually live in our CMS
 export const CASESTUDIES: CaseStudy[] = [
     {
+        name: '1Password',
+        logo: '/case-studies/1password-logo.png',
+        title: '1Password uses Code Search and Cody to increase productivity while working in a distributed codebase.',
+        url: '/case-studies/1password-increases-productivity-in-a-distributed-codebase',
+    },
+    {
         name: 'Qualtrics',
         logo: '/case-studies/qualtrics-logo.png',
         title: 'Qualtrics uses Cody to speed up code understanding and write unit tests in minutes.',
