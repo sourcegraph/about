@@ -1,6 +1,5 @@
 import { FunctionComponent, ReactSVG, useState, useEffect } from 'react'
 
-import classNames from 'classnames'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 import { posthog } from 'posthog-js'
@@ -353,6 +352,7 @@ const Home: FunctionComponent = () => {
 
                 {/* call to actions ------------------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}
+                {/* Remove Duplicate CTA, see HomepageCTA on line 329
                 <div className="mx-auto mt-10 max-w-6xl">
                     <div className="mx-6 grid grid-cols-1 gap-6 py-16 md:mx-0 md:grid-cols-2 md:py-24">
                         <div className="hover:cta-free-cody relative overflow-hidden rounded-2xl border-1 border-gray-200 bg-white">
@@ -404,6 +404,7 @@ const Home: FunctionComponent = () => {
                         </div>
                     </div>
                 </div>
+                */}
             </div>
         </Layout>
     )
