@@ -12,7 +12,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/upgraded-3.5-s
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/upgraded-3.5-sonnet/upgraded-claude-3.5-sonnet-og.png
 ---
 
-Anthropic [just released](https://www.anthropic.com/news/3-5-models-and-computer-use) a new, upgraded version Claude 3.5 Sonnet, their most powerful language model. Anthropic notes that this upgraded model version has significant gains over its predecessor in coding, making it a perfect candidate to bring to Cody.
+Anthropic [just released](https://www.anthropic.com/news/3-5-models-and-computer-use) a new, upgraded version of Claude 3.5 Sonnet, their most powerful language model. Anthropic notes that this upgraded model version has significant gains over its predecessor in coding, making it a perfect candidate to bring to Cody.
 
 Most impressively, Anthropic notes that the new Claude 3.5 Sonnet model scores 49.0% on [SWE-bench Verified](https://www.swebench.com/) compared to the prior version's score of 33.4%.
 
