@@ -66,7 +66,7 @@ export const CaseStudy: FunctionComponent = () => (
         hero={
             <Hero
                 backButton={{
-                    text: 'customer stories',
+                    text: 'Customer stories',
                     link: '/case-studies',
                 }}
                 variant="transparent"

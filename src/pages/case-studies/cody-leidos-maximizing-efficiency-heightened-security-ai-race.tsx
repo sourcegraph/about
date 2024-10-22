@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactNode } from 'react'
 
-import { Badge, Blockquote, ContentSection, Hero, Layout } from '../../components'
+import { Blockquote, ContentSection, Hero, Layout } from '../../components'
 import MoreCaseStudies from '../../components/CaseStudies/MoreCaseStudies'
 import SidebarCta from '../../components/SidebarCta'
 
@@ -17,16 +17,10 @@ const Leidos: FunctionComponent = () => (
         hero={
             <Hero
                 className="relative"
-                backButton={{ text: 'Back to Resources', link: '/case-studies' }}
+                backButton={{ text: 'Customer stories', link: '/case-studies' }}
                 variant="white"
                 title={
                     <ContentSection parentClassName="!px-0 !py-0">
-                        <Badge
-                            color="violet"
-                            text="CUSTOMER STORIES"
-                            size="small"
-                            className="relative -top-[24px] z-10 md:-top-[5px]"
-                        />
                         <h1 className="relative -top-3 z-10 pb-16 md:-top-[2px] lg:w-[949px]">
                             Cody + Leidos: Maximizing efficiency with heightened security in the AI race
                         </h1>
@@ -53,7 +47,7 @@ const Leidos: FunctionComponent = () => (
         <ContentSection>
             <div className="mx-auto flex w-full flex-col-reverse gap-x-12 md:flex-row">
                 <div>
-                    <div className="sticky top-[54px] w-full md:w-[378px]">
+                    <div className="sticky top-[118px] w-full md:w-[378px]">
                         <SidebarContent
                             title="75% reduction in time spent answering questions"
                             content="Senior Leidos engineers reduced time spent answering teammates' questions from 8 hours per week to 2 hours per week thanks to the “Ask Cody first” policy."

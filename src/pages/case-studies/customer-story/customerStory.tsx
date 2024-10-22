@@ -33,8 +33,8 @@ const CustomerStory: FunctionComponent<CustomerStoryProps> = ({
             <div className="mx-auto flex w-full flex-col-reverse gap-x-12 !pt-12 md:flex-row">
                 {/* Sidebar */}
                 <div className="pt-6">
-                    <div className="sticky top-[72px] flex w-full flex-col gap-16 pb-12 md:w-[378px] md:pb-0">
-                        {sidebarContentItems?.map((item, index) => (
+                    <div className="sticky top-[118px] flex w-full flex-col gap-16 pb-12 md:w-[378px] md:pb-0">
+                        {sidebarContentItems?.map(item => (
                             <SidebarContent key={item.title} title={item.title} content={item.content} />
                         ))}
 

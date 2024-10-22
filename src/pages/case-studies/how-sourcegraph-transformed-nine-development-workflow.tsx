@@ -2,7 +2,7 @@ import { FunctionComponent, ReactNode } from 'react'
 
 import Link from 'next/link'
 
-import { Badge, Blockquote, ContentSection, Hero, Layout } from '../../components'
+import { Blockquote, ContentSection, Hero, Layout } from '../../components'
 import MoreCaseStudies from '../../components/CaseStudies/MoreCaseStudies'
 import SidebarCta from '../../components/SidebarCta'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
@@ -20,18 +20,12 @@ export const CaseStudy: FunctionComponent = () => (
             <Hero
                 className="relative"
                 backButton={{
-                    text: 'Back to Resources',
+                    text: 'Customer stories',
                     link: '/case-studies',
                 }}
                 variant="white"
                 title={
                     <ContentSection parentClassName="!px-0 !py-0">
-                        <Badge
-                            color="violet"
-                            text="CUSTOMER STORIES"
-                            size="small"
-                            className="relative -top-[24px] z-10 md:-top-[5px]"
-                        />
                         <h1 className="relative -top-3 z-10 pb-16 md:-top-[2px] lg:w-[949px]">
                             Empowering productivity, enhancing security: How Sourcegraph transformed Nine’s development
                             workflow
@@ -59,7 +53,7 @@ export const CaseStudy: FunctionComponent = () => (
         <ContentSection className="mt-[48px] px-1 lg:mt-[26.75px]" parentClassName="!py-0 relative z-10">
             <div className="mx-auto flex w-full flex-col-reverse gap-x-12 md:flex-row">
                 <div>
-                    <div className="sticky top-[54px] w-full md:w-[378px]">
+                    <div className="sticky top-[118px] w-full md:w-[378px]">
                         <SidebarContent
                             title="$276K saved"
                             content="$276K saved in trial period: Nine's Platform Engineering team saved an estimated
