@@ -2,7 +2,7 @@ import { FunctionComponent, ReactNode } from 'react'
 
 import Link from 'next/link'
 
-import { Badge, Blockquote, ContentSection, Hero, Layout } from '../../components'
+import { Blockquote, ContentSection, Hero, Layout } from '../../components'
 import MoreCaseStudies from '../../components/CaseStudies/MoreCaseStudies'
 import SidebarCta from '../../components/SidebarCta'
 import { buttonLocation, buttonStyle } from '../../data/tracking'
@@ -21,18 +21,12 @@ const Qualtrics: FunctionComponent = () => (
             <Hero
                 className="relative"
                 backButton={{
-                    text: 'Back to Resources',
+                    text: 'Customer stories',
                     link: '/case-studies',
                 }}
                 variant="white"
                 title={
                     <ContentSection parentClassName="!px-0 !py-0">
-                        <Badge
-                            color="violet"
-                            text="CUSTOMER STORIES"
-                            size="small"
-                            className="relative -top-[24px] z-10 md:-top-[5px]"
-                        />
                         <h1 className="relative -top-3 z-10 pb-16 md:-top-[2px] lg:w-[949px]">
                             Qualtrics speeds up unit test creation and understanding code with Cody
                         </h1>
@@ -59,7 +53,7 @@ const Qualtrics: FunctionComponent = () => (
         <ContentSection>
             <div className="mx-auto flex w-full flex-col-reverse gap-x-12 md:flex-row">
                 <div>
-                    <div className="sticky top-[54px] w-full md:w-[378px]">
+                    <div className="sticky top-[118px] w-full md:w-[378px]">
                         <SidebarContent
                             title="28% fewer trips out of the IDE"
                             content="Qualtrics engineers report leaving their IDE to browse the web 28% less often using Cody."
