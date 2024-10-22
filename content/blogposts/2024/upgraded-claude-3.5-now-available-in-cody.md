@@ -16,7 +16,7 @@ Anthropic [just released](https://www.anthropic.com/news/3-5-models-and-computer
 
 Most impressively, Anthropic notes that the new Claude 3.5 Sonnet model scores 49.0% on [SWE-bench Verified](https://www.swebench.com/) compared to the prior version's score of 33.4%.
 
-[Cody](https://sourcegraph.com/cody), our AI coding assistant, prioritizes offering devs the best and latest models. The AI space is a fast-moving field, and prioritizing model interoperability lets Cody continuously improve as new models come to market.
+[Cody](https://sourcegraph.com/cody), our AI coding assistant, prioritizes offering devs the best and latest models. The AI space is a fast-moving field, and model interoperability lets Cody continuously improve as new models come to market.
 
 ## The upgraded Claude 3.5 Sonnet is now available for all useres
 
