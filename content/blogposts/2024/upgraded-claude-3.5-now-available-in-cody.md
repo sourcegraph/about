@@ -18,7 +18,7 @@ Most impressively, Anthropic notes that the new Claude 3.5 Sonnet model scores 4
 
 [Cody](https://sourcegraph.com/cody), our AI coding assistant, prioritizes offering devs the best and latest models. The AI space is a fast-moving field, and model interoperability lets Cody continuously improve as new models come to market.
 
-## The upgraded Claude 3.5 Sonnet is now available for all useres
+## Upgraded Claude 3.5 Sonnet is available for all Cody users
 
 The new version of Claude 3.5 Sonnet is now available for all Cody users, including Cody Free, Cody Pro, and Cody Enterprise. It's also the new default model, so if you were previously using the default model (the older 3.5 Sonnet), you should automatically be moved to the new version.
 
