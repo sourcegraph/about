@@ -27,4 +27,4 @@ The new version of Claude 3.5 Sonnet is now available for all Cody users, includ
   alt="3.5 Sonnet in the Cody model selector"
 />
 
-If you don’t yet have Cody, you can [get started for free](https://sourcegraph.com/cody). You can also find the Cody editor extensions in the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) and [JetBrains marketplace](https://plugins.jetbrains.com/plugin/9682-sourcegraph).
+If you don't yet have Cody, you can [get started for free](https://sourcegraph.com/cody). You can also find the Cody editor extensions in the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) and [JetBrains marketplace](https://plugins.jetbrains.com/plugin/9682-sourcegraph).
