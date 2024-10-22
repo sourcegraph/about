@@ -1,11 +1,11 @@
-import { FunctionComponent, useEffect, useRef, useState } from 'react'
+import { FunctionComponent, useEffect, useRef } from 'react'
 
 import classNames from 'classnames'
 import { Expand, ShieldCheck, Cloud, ChevronRightIcon } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { Layout, HubSpotForm, Modal, CodyIde, CodyPartners, ContentSection, Badge } from '../components'
+import { Layout, CodyIde, CodyPartners, ContentSection, Badge } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
 import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarousel'
 import CodyPlan from '../components/cody/CodyPlan'
@@ -17,8 +17,6 @@ import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../lib/utils'
-
-import styles from '../styles/CustomHubspotForm.module.scss'
 
 const optimizedPoweritems = [
     { label: 'Claude 3.5 Sonnet', iconUrl: '/assets/cody/anthropic-icon.svg' },
@@ -128,7 +126,6 @@ const singleViewCardContent = [
 ]
 
 const CodyPage: FunctionComponent = () => {
-    const [isContactModalOpen, setIsContactModalOpen] = useState(false)
     const windowWidth = useWindowWidth()
     const isMobile = windowWidth < breakpoints.lg
     const router = useRouter()
@@ -518,30 +515,6 @@ const CodyPage: FunctionComponent = () => {
             <ContentSection>
                 <CodyPlan />
             </ContentSection>
-
-            <Modal
-                open={isContactModalOpen}
-                handleClose={() => setIsContactModalOpen(false)}
-                modalBackdropClassName="cody-contact-modal"
-                modalClassName="bg-[#632590] border border-opacity-20 border-white px-6 py-[64px] md:px-[80px] md:py-[96px]"
-            >
-                <div className="flex flex-col gap-8 md:flex-row md:gap-10">
-                    <div className="min-w-[200px] max-w-[513px]">
-                        <h2 className="text-white">Get Cody where you work</h2>
-                        <p className="mt-4 text-lg text-gray-200">
-                            Cody for Enterprise provides context-aware answers based on your own private codebase.
-                            Contact us through the form to learn more.
-                        </p>
-                    </div>
-                    <div className={classNames('md:min-w-[400px] xl:min-w-[554px]', styles.codyForm)}>
-                        <HubSpotForm
-                            formId="05e46684-9fbc-4c4d-b010-f661f247c4c6"
-                            inlineMessage="Thank you! We'll get back to you soon"
-                        />
-                    </div>
-                </div>
-            </Modal>
-
             <DevStarterPackModal />
         </Layout>
     )
