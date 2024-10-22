@@ -12,7 +12,7 @@ const OnePassword: FunctionComponent = () => (
         meta={{
             title: '1Password increases developer productivity in a distributed codebase using Sourcegraph',
             description:
-                'Developers at 1Password use Code Search to make it easy to find code with a rapidly growing codebase and Cody to reduce toil of everyday tasks.',
+                'Developers at 1Password use Code Search to make it easy to find code within a rapidly growing codebase and Cody to reduce toil of everyday tasks.',
             image: '/case-studies/1password-og.png',
         }}
         className="relative"
@@ -63,7 +63,7 @@ const OnePassword: FunctionComponent = () => (
                 <div>
                     <div className="sticky top-[54px] w-full md:w-[378px]">
                         <SidebarContent
-                            title="7,000 hours per month"
+                            title="7 hours per month"
                             content="Estimated time saved by each developer using Code Search + Cody."
                         />
                         <SidebarContent
@@ -178,7 +178,7 @@ const OnePassword: FunctionComponent = () => (
                                         className="text-black underline"
                                     >
                                         Cody
-                                    </Link>{' '}
+                                    </Link>
                                     —our AI coding assistant—to their entire Engineering team to help developers with
                                     their everyday work. Developers were initially skeptical of broad claims about AI
                                     making them more productive, but since using Cody, they’ve found that it can
@@ -220,7 +220,7 @@ const OnePassword: FunctionComponent = () => (
                             <div className="w-full md:w-[90%] lg:w-[85%]">
                                 <p className="pb-2 text-lg">
                                     The team also uses code AI to take the toil out of making programmatic edits across
-                                    code. Benjamin Bruneau, senior developer, works on the design system team at
+                                    code. Benjamin Bruneau, Senior Developer, works on the design system team at
                                     1Password. As part of the design system, Benjamin frequently works on large schemas
                                     of nested JSON objects that contain tokenized values used throughout the 1Password
                                     application.
@@ -259,7 +259,7 @@ const OnePassword: FunctionComponent = () => (
                                 </p>
                                 <p className="pb-2 text-lg">
                                     Meanwhile, Cody helps developers understand what unfamiliar code does and even helps
-                                    them write code in languages they’re less practiced in. Developers can pull up a
+                                    them write code in languages they’re less practiced in. Developers can pull up
                                     code and ask Cody to explain exactly how it works, and then they can ask Cody to
                                     make a change in natural language, even if they might not be experts in that
                                     language.
