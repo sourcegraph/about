@@ -14,7 +14,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/upgraded-3.5
 
 Anthropic [just released](https://www.anthropic.com/news/3-5-models-and-computer-use) a new, upgraded version Claude 3.5 Sonnet, their most powerful language model. Anthropic notes that this upgraded model version has significant gains over its predecessor in coding, making it a perfect candidate to bring to Cody.
 
-Notably, the new Claude 3.5 Sonnet model scores 49.0% on SWE-be
+Most impressively, Anthropic notes that the new Claude 3.5 Sonnet model scores 49.0% on [SWE-bench Verified](https://www.swebench.com/) compared to the prior version's score of 33.4%.
 
 [Cody](https://sourcegraph.com/cody), our AI coding assistant, prioritizes offering devs the best and latest models. The AI space is a fast-moving field, and prioritizing model interoperability lets Cody continuously improve as new models come to market.
 
