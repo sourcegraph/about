@@ -20,7 +20,7 @@ Most impressively, Anthropic notes that the new Claude 3.5 Sonnet model scores 4
 
 ## Upgraded Claude 3.5 Sonnet is available for all Cody users
 
-The new version of Claude 3.5 Sonnet is now available for all Cody users, including Cody Free, Cody Pro, and Cody Enterprise. It's also the new default model, so if you were previously using the default model (the older 3.5 Sonnet), you should automatically be moved to the new version.
+The new version of Claude 3.5 Sonnet is now available for all Cody users, including Cody Free, Cody Pro, and Cody Enterprise. It's also the new default model, so if you were previously using the default model (the older 3.5 Sonnet), you should automatically be moved to the new version. If you don't see the model in the dropdown selector, restarting your editor and upgrading to the latest Cody version should fix it.
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/upgraded-3.5-sonnet/claude-3.5-cody.jpeg"
