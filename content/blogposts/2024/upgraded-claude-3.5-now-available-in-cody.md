@@ -4,12 +4,12 @@ authors:
   - name: Alex Isken
     url: https://x.com/alexanderisken
 publishDate: 2024-10-22T10:00-01:00
-description: "Anthropic’s new, upgraded version of Claude 3.5 Sonnet is now available now for all Cody users."
+description: "Anthropic’s new, upgraded version of Claude 3.5 Sonnet is available now for all Cody users."
 tags: [blog]
 slug: 'upgraded-claude-3.5-sonnet-available-in-cody'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/claude-3.5-sonnet-now-available-in-cody/claude-3.5-sonnet-hero.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/claude-3.5-sonnet-now-available-in-cody/claude-3.5-sonnet-hero.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/upgraded-3.5-sonnet/upgraded-claude-3.5-sonnet-og.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/upgraded-3.5-sonnet/upgraded-claude-3.5-sonnet-og.png
 ---
 
 Anthropic [just released](https://www.anthropic.com/news/3-5-models-and-computer-use) a new, upgraded version Claude 3.5 Sonnet, their most powerful language model. Anthropic notes that this upgraded model version has significant gains over its predecessor in coding, making it a perfect candidate to bring to Cody.
