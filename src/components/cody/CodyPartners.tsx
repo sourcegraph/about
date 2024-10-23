@@ -104,10 +104,10 @@ const lightThemeIcons = [
         src: '/assets/icons/dropbox-logo.svg',
         className: 'h-[48px] w-[163px] order-4 md:order-4 mx-6',
     },
-    {
-        src: '/assets/icons/stripe-violet.svg',
-        className: 'w-[85px] order-4 md:order-4 mx-6',
-    },
+    // {
+    //     src: '/assets/icons/stripe-violet.svg',
+    //     className: 'w-[85px] order-4 md:order-4 mx-6',
+    // },
     {
         src: '/home/carousel/palo-alto-logo.svg',
         className: 'h-[48px] w-[166px] order-5 md:order-5 mx-6',
