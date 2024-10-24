@@ -158,13 +158,13 @@ const CodyPage: FunctionComponent = () => {
                         src="/assets/cody/left-blob.svg"
                         alt=""
                         aria-hidden={true}
-                        className="absolute -left-[200px] h-[600px] w-[600px] lg:top-0 lg:-left-[300px] lg:-top-40 lg:h-[1200px] lg:w-[1200px]"
+                        className="absolute -left-[200px] h-[600px] w-[600px] lg:top-0 lg:-left-[500px] lg:-top-40 lg:h-[1200px] lg:w-[1200px]"
                     />
                     <img
                         src="/assets/cody/right-blob.svg"
                         alt=""
                         aria-hidden={true}
-                        className="absolute right-[-250px] top-[-250px] z-[99] h-[600px] w-[600px] md:right-[-250px] lg:-right-[700px] lg:-top-[550px] lg:h-[1500px] lg:w-[1500px]"
+                        className="absolute right-[-250px] top-[-250px] z-[99] h-[600px] w-[600px] md:right-[-350px] lg:-right-[700px] lg:-top-[550px] lg:h-[1500px] lg:w-[1500px]"
                     />
                 </div>
 
