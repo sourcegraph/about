@@ -90,7 +90,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
         </div>
 
         {/* testimonial */}
-        <div className="mt-10">
+        {/* <div className="mt-10">
             <div className="mx-auto flex max-w-md gap-x-4 rounded-lg bg-[#E9E7FA] p-5 text-left text-blurple-600">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path
@@ -116,6 +116,6 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                     <div className="mt-4 text-sm opacity-70">Brendan Doyle, Senior Software Engineer @ Qualtrics</div>
                 </div>
             </div>
-        </div>
+        </div> */}
     </ContentSection>
 )
