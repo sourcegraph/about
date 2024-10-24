@@ -121,7 +121,7 @@ const HEADER_CONTENT_THEME_CLASS: Record<
     >
 > = {
     white: {
-        container: '',
+        container: 'bg-gray-50',
         item: 'text-gray-500 hover:text-black active:border-none focus:ring-0',
         menu: 'bg-white border-gray-200',
         menuItem: 'text-gray-800',
