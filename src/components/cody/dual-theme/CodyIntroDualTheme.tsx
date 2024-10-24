@@ -91,7 +91,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
 
         {/* testimonial */}
         <div className="mt-10">
-            <div className="mx-auto flex max-w-md gap-x-4 rounded-lg bg-[#E9E7FA] p-5 text-left text-[#8552F3]">
+            <div className="mx-auto flex max-w-md gap-x-4 rounded-lg bg-[#E9E7FA] p-5 text-left text-blurple-600">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path
                         d="M2.50033 17.5002C5.00033 17.5002 8.33366 16.6669 8.33366 10.8336V4.1669C8.33366 3.12523 7.70366 2.48606 6.66699 2.50023H3.33366C2.29199 2.50023 1.66699 3.12523 1.66699 4.14356V9.1669C1.66699 10.2086 2.29199 10.8336 3.33366 10.8336C4.16699 10.8336 4.16699 10.8336 4.16699 11.6669V12.5002C4.16699 13.3336 3.33366 14.1669 2.50033 14.1669C1.66699 14.1669 1.66699 14.1736 1.66699 15.0261V16.6669C1.66699 17.5002 1.66699 17.5002 2.50033 17.5002Z"
@@ -110,7 +110,9 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                 </svg>
 
                 <div>
-                    <div>Something that would've taken me multiple dev days was done in an hour with Cody&hellip;</div>
+                    <div className="font-medium">
+                        Something that would've taken me multiple dev days was done in an hour with Cody&hellip;
+                    </div>
                     <div className="mt-4 text-sm opacity-70">Brendan Doyle, Senior Software Engineer @ Qualtrics</div>
                 </div>
             </div>

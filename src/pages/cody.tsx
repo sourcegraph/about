@@ -164,7 +164,7 @@ const CodyPage: FunctionComponent = () => {
                         src="/assets/cody/right-blob.svg"
                         alt=""
                         aria-hidden={true}
-                        className="absolute right-[-250px] top-[-250px] h-[600px] w-[600px] md:right-[-250px] lg:-right-[700px] lg:-top-[550px] lg:h-[1500px] lg:w-[1500px]"
+                        className="absolute right-[-250px] top-[-250px] z-[99] h-[600px] w-[600px] md:right-[-250px] lg:-right-[700px] lg:-top-[550px] lg:h-[1500px] lg:w-[1500px]"
                     />
                 </div>
 
