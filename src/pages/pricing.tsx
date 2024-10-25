@@ -356,7 +356,7 @@ const PricingPage: FunctionComponent = () => {
                                     price={<PriceItem amount={19} hasLimit={true} />}
                                     buttons={
                                         <ContactUsButton
-                                            href="/contact/pricing?form_submission_source=pricing-cody-enterprise"
+                                            href="/contact/request-info?form_submission_source=pricing-cody-enterprise"
                                             title="Contact sales"
                                             className="btn-secondary"
                                         />
@@ -415,7 +415,7 @@ const PricingPage: FunctionComponent = () => {
                                 price={<PriceItem amount={49} hasLimit={true} description="Scales with your team" />}
                                 buttons={
                                     <ContactUsButton
-                                        href="/contact/pricing?form_submission_source=pricing-enterprise"
+                                        href="/contact/request-info?form_submission_source=pricing-enterprise"
                                         title="Contact sales"
                                         className="btn-primary"
                                     />
@@ -479,7 +479,7 @@ const PricingPage: FunctionComponent = () => {
                                                 </div>
                                             </span>
                                             <ContactUsButton
-                                                href="/contact/pricing?form_submission_source=pricing-code-intelligence"
+                                                href="/contact/request-info?form_submission_source=pricing-code-intelligence"
                                                 title="Contact sales"
                                                 className="btn btn-primary w-full md:w-fit"
                                             />
