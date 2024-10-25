@@ -185,10 +185,7 @@ const CodyPage: FunctionComponent = () => {
                 </ContentSection>
             </div>
 
-            <ContentSection
-                parentClassName="!pt-[104px] md:!pt-24 !pb-4"
-                className="flex flex-col items-center justify-center"
-            >
+            <ContentSection parentClassName="!pt-4 !pb-4" className="flex flex-col items-center justify-center">
                 <p className="text-center text-base font-normal uppercase leading-[27px] text-gray-400">
                     Leading dev teams choose Cody for their coding assistant
                 </p>
