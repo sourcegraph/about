@@ -152,6 +152,9 @@ const CodyPage: FunctionComponent = () => {
             className="relative w-full !overflow-x-hidden bg-gray-50"
         >
             <div className="relative">
+                {/* gradient background */}
+                <div className="pointer-events-none absolute inset-0 -translate-y-32 bg-[linear-gradient(180deg,#E9EDFC_20%,#F9FAFB_90.4%)]" />
+
                 {/* blob gradients */}
                 <div className="pointer-events-none absolute inset-0">
                     <img
@@ -168,7 +171,7 @@ const CodyPage: FunctionComponent = () => {
                     />
                 </div>
 
-                <ContentSection parentClassName="!py-0">
+                <ContentSection parentClassName="relative !py-0">
                     <CodyIntroDualTheme
                         isLight={true}
                         title="The most informed Code AI"

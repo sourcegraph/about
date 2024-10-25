@@ -32,7 +32,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
 }) => (
     <ContentSection
         parentClassName="!py-0 !px-0"
-        className={classNames('pt-16 text-center md:mt-0 md:pt-[123px]', wrapperClassName)}
+        className={classNames('pt-16 text-center md:mt-0 md:py-[123px]', wrapperClassName)}
     >
         <h1
             className={classNames('mx-auto w-full font-semibold', titleSize || 'text-4xl sm:text-6xl', {
@@ -65,7 +65,9 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                 type="button"
                 className={classNames(
                     'btn w-full px-6 py-2 lg:w-fit',
-                    isLight ? 'btn-primary' : 'btn-primary-dark',
+                    isLight
+                        ? 'btn-primary bg-[linear-gradient(87deg,#270741_1.7%,#59136D_26.55%,#462390_51.83%,#270741_95.76%)]'
+                        : 'btn-primary-dark',
                     isVariant && 'md:!w-fit'
                 )}
                 title="Download Cody for Free"
