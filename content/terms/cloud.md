@@ -3,8 +3,6 @@ layout: markdown
 title: Terms of Service for Sourcegraph
 ---
 
-[![Short Banner_White](https://github.com/sourcegraph/about/assets/117413623/5386f5fd-08c4-4e9f-a4eb-60919d4fd0b2)](https://app.termscout.com/certify/sourcegraph-certified-contract#ccr-highlights)
-
 Last modified: February 15, 2024
 
 
