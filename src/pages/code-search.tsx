@@ -63,11 +63,7 @@ export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({ telemetryRec
     >
         {/* partners ----------------------------------------------------------------- */}
         {/* ------------------------------------------------------------------------------- */}
-        <div className="pt-16 pb-16">
-            <p className="mg:text-base mb-6 text-center font-mono text-sm text-gray-400">
-                Trusted by the world's largest dev teams
-            </p>
-
+        <div className="py-16">
             <LogoGrid mainLogo="sofi" />
         </div>
 

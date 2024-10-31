@@ -50,12 +50,6 @@ const Home: FunctionComponent = () => {
             displayChildrenUnderNav={false}
         >
             <div className="oveflow-hidden relative w-full bg-gray-50">
-                {/* partners ----------------------------------------------------------------- */}
-                {/* ------------------------------------------------------------------------------- */}
-                <p className="mg:text-base mb-6 text-center font-mono text-sm text-gray-400">
-                    Trusted by the world's largest dev teams
-                </p>
-
                 <LogoGrid />
 
                 {/* coding is complex --------------------------------------------------------- */}

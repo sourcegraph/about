@@ -337,7 +337,7 @@ const CodyPage: FunctionComponent = () => {
                 </p>
 
                 <div className="mt-4">
-                    <LogoGrid mainLogo="sofi" />
+                    <LogoGrid mainLogo="sofi" header={null} />
                 </div>
             </ContentSection>
 

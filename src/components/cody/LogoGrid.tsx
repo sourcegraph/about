@@ -76,9 +76,14 @@ const icons = [
 interface LogoGridProps {
     mainLogo?: 'stripe' | 'sofi'
     showCta?: boolean
+    header?: string | null
 }
 
-export const LogoGrid: FunctionComponent<LogoGridProps> = ({ mainLogo = 'stripe', showCta = true }) => {
+export const LogoGrid: FunctionComponent<LogoGridProps> = ({
+    mainLogo = 'stripe',
+    showCta = true,
+    header = "Trusted by the world's largest dev teams",
+}) => {
     // depending on the mainLogo, add the mainLogo as the 4th logo
     const iconsWithMainLogo =
         mainLogo === 'stripe'
@@ -87,8 +92,12 @@ export const LogoGrid: FunctionComponent<LogoGridProps> = ({ mainLogo = 'stripe'
 
     return (
         <div>
+            {/* header */}
+            {header && <p className="mg:text-base mb-6 text-center font-mono text-sm text-gray-400">{header}</p>}
+
+            {/* icon grid */}
             <div className="mx-auto max-w-7xl space-y-4 md:space-y-8">
-                {/* top row of 8 */}
+                {/* top icon row of 8 */}
                 <div className="grid grid-cols-2 flex-wrap justify-center gap-x-14 gap-y-4 sm:grid-cols-3 md:flex">
                     {iconsWithMainLogo.slice(0, 8).map((icon, index) => (
                         <div
@@ -104,7 +113,7 @@ export const LogoGrid: FunctionComponent<LogoGridProps> = ({ mainLogo = 'stripe'
                     ))}
                 </div>
 
-                {/* bottom row of 7 */}
+                {/* bottom icon row of 7 */}
                 <div className="grid grid-cols-2 flex-wrap justify-center gap-x-14 gap-y-4 sm:grid-cols-3 md:flex">
                     {iconsWithMainLogo.slice(8).map((icon, index) => (
                         <div
