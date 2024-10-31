@@ -5,6 +5,7 @@ export const primaryTopics = [
   'Enterprise',
   'Cody Web',
   'Code Search',
+  'Visual Studio',
 ]
 
 export const secondaryTopics = [

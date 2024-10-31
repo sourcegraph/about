@@ -24,7 +24,7 @@ published: true
 In our quest for consistency across how you use Cody, JetBrains users now get the same side panel experience found in Cody for VS Code and on the web. This update includes improvements such as:
 
 - **Chat lives directly in the side panel:** Chatting with Cody happens primarily in the side panel, with the option to open a dedicated chat window.
-- **Dedicated tabs in the side panel:** Toggle between chat, history, prompt library, setting, and account at the top of the sidebar, making it easier to navigate between commonly performed actions.
+- **Dedicated tabs in the side panel:** Toggle between chat, history, Prompt Library, setting, and account at the top of the sidebar, making it easier to navigate between commonly performed actions.
 <br />
 
 <Video
@@ -37,7 +37,7 @@ In our quest for consistency across how you use Cody, JetBrains users now get th
 />
 <br />
 
-- **Prompts are easier to discover and use:** The new prompts and prompt library appear underneath the chat, making it easier to use and create prompts while chatting with Cody.
+- **Prompts are easier to discover and use:** The new Prompts and Prompt Library appear underneath the chat, making it easier to use and create Prompts while chatting with Cody.
 <br />
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/changelog/jetbrains-side-panel/jb-prompt-discovery.png"
