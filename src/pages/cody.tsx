@@ -500,7 +500,13 @@ const CodyPage: FunctionComponent = () => {
 
             <HowCodyWorks isLight={true} isVariant={true} />
             <div className="mx-auto max-w-screen-xl !px-6 pt-24 md:pb-4 xl:!px-0">
-                <BentoWithMockup isVariantImage={true} isVariantTitle={true} href="/resources/gartner-mq" />
+                <BentoWithMockup
+                    isVariantStyle={true}
+                    label="Guide"
+                    customTitle="The ultimate Buyer’s Guide for AI coding tools"
+                    imgSrc="/assets/resources/guideMockup.svg"
+                />
+                {/* <BentoWithMockup isVariantImage={true} isVariantTitle={true} href="/resources/gartner-mq" /> */}
             </div>
 
             <EnterpriseGradeSection
