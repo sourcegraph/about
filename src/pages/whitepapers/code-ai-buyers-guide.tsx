@@ -3,11 +3,11 @@ import { useEffect, useRef, useState } from 'react'
 import classNames from 'classnames'
 import { NextPage } from 'next'
 
-import { Layout, ContentSection, HubSpotForm, CodyPartners } from '../../components'
+import { Layout, ContentSection, HubSpotForm } from '../../components'
 import { BentoWithMockup } from '../../components/bentoWithMockup'
+import { LogoGrid } from '../../components/cody/LogoGrid'
 import { CaseStudyBento } from '../../components/Enterprise/CaseStudyBento'
 import HomePageCta from '../../components/HomePageCta'
-import ReadCaseStudyLink from '../../components/ReadCaseStudyLink'
 import { captureCustomEventWithPageData } from '../../lib/utils'
 
 import styles from '../../styles/CustomHubspotForm.module.scss'
@@ -81,7 +81,7 @@ export const CodeAiBuyersGuide: NextPage = () => {
                         with the right AI tools.
                     </div>
                 </div>
-                <div ref={formContainerRef} className="w-full py-16 md:h-fit md:pl-6 md:py-0">
+                <div ref={formContainerRef} className="w-full py-16 md:h-fit md:py-0 md:pl-6">
                     <div className="sg-border-gradient-glow relative z-10 !rounded-3xl border border-gray-200 bg-white pl-0 pt-12 pr-0">
                         <div className="flex flex-col items-center px-6 md:px-12">
                             <h2 className="mb-3 text-center text-gray-700">Get your Buyer’s Guide</h2>
@@ -111,16 +111,10 @@ export const CodeAiBuyersGuide: NextPage = () => {
                 <h2 className="max-w-[760px] text-center text-gray-700">
                     See how Sourcegraph helps leading enterprises unlock value with AI coding
                 </h2>
-                <div className="flex items-center">
-                    <CodyPartners isLight={true} className="!pb-16 pt-16" />
+
+                <div className="mt-10">
+                    <LogoGrid mainLogo="sofi" header={null} />
                 </div>
-                <ReadCaseStudyLink
-                    parentClassName="text-left"
-                    linkClassName="btn btn-link btn-link-icon leading-6 focus:ring-gray-300 p-0 text-right text-gray-700 font-semibold tracking-normal lg:mx-0 lg:text-left"
-                    href="/case-studies"
-                    linkLabel="Read the customer stories"
-                    openNewTab={true}
-                />
             </div>
             <CaseStudyBento
                 className="!max-w-[1152px]"

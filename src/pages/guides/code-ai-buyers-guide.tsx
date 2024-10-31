@@ -3,11 +3,11 @@ import { useEffect, useRef, useState } from 'react'
 import classNames from 'classnames'
 import { NextPage } from 'next'
 
-import { Layout, ContentSection, HubSpotForm, CodyPartners } from '../../components'
+import { Layout, ContentSection, HubSpotForm } from '../../components'
 import { BentoWithMockup } from '../../components/bentoWithMockup'
+import { LogoGrid } from '../../components/cody/LogoGrid'
 import { CaseStudyBento } from '../../components/Enterprise/CaseStudyBento'
 import HomePageCta from '../../components/HomePageCta'
-import ReadCaseStudyLink from '../../components/ReadCaseStudyLink'
 import { captureCustomEventWithPageData } from '../../lib/utils'
 
 import styles from '../../styles/CustomHubspotForm.module.scss'
@@ -112,16 +112,10 @@ export const CodeAiBuyersGuide: NextPage = () => {
                 <h2 className="max-w-[760px] text-center text-gray-700">
                     See how Sourcegraph helps leading enterprises unlock value with AI coding
                 </h2>
-                <div className="flex items-center">
-                    <CodyPartners isLight={true} className="!pb-16 pt-16" />
+
+                <div className="mt-10">
+                    <LogoGrid mainLogo="sofi" header={null} />
                 </div>
-                <ReadCaseStudyLink
-                    parentClassName="text-left"
-                    linkClassName="btn btn-link btn-link-icon leading-6 focus:ring-gray-300 p-0 text-right text-gray-700 font-semibold tracking-normal lg:mx-0 lg:text-left"
-                    href="/case-studies"
-                    linkLabel="Read the customer stories"
-                    openNewTab={true}
-                />
             </div>
             <CaseStudyBento
                 className="!max-w-[1152px]"

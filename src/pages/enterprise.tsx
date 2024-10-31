@@ -5,11 +5,11 @@ import Link from 'next/link'
 
 import { Layout, Hero } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
+import { LogoGrid } from '../components/cody/LogoGrid'
 import { ContactUsCta } from '../components/cta/ContactUsCta'
 import { RequestDemoCta } from '../components/cta/RequestDemoCta'
 import { CaseStudyBento } from '../components/Enterprise/CaseStudyBento'
 import { ChooseYourLlmSection } from '../components/Enterprise/ChooseYourLlmSection'
-import { CompanyUsingCodySection } from '../components/Enterprise/CompanyUsingCodySection'
 import { EnterpriseGradeSection } from '../components/Enterprise/EnterpriseGradeSection'
 import { ImprovedVelocitySection } from '../components/Enterprise/ImprovedVelocitySection'
 import { MigrationsSection } from '../components/Enterprise/MigrationsSection'
@@ -111,7 +111,10 @@ const Enterprise: FunctionComponent = () => {
                 </div>
             }
         >
-            <CompanyUsingCodySection />
+            <div className="pt-16 pb-16">
+                <LogoGrid mainLogo="sofi" />
+            </div>
+
             <div className="relative z-10 mx-auto max-w-[1232px] px-6 md:px-0 md:pb-28">
                 <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
             </div>

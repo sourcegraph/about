@@ -4,7 +4,8 @@ import MagnifyIcon from 'mdi-react/MagnifyIcon'
 import NavigationIcon from 'mdi-react/NavigationIcon'
 import Link from 'next/link'
 
-import { CodyCta, CodyPartners, ContentSection, Layout } from '../../components'
+import { CodyCta, ContentSection, Layout } from '../../components'
+import { LogoGrid } from '../../components/cody/LogoGrid'
 import { CardSection, CardDescription, QualtricsCard } from '../../components/Solutions'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { captureCustomEventWithPageData } from '../../lib/utils'
@@ -87,8 +88,8 @@ const BuildUnitTestsPage: FunctionComponent = () => {
                 </CardDescription>
             </ContentSection>
 
-            <div className="flex items-center pt-16 pb-16">
-                <CodyPartners isLight={true} className="!pb-[8px] pt-[16px]" />
+            <div className="pt-16 pb-16">
+                <LogoGrid mainLogo="sofi" />
             </div>
 
             <ContentSection

@@ -50,23 +50,7 @@ const Home: FunctionComponent = () => {
             displayChildrenUnderNav={false}
         >
             <div className="oveflow-hidden relative w-full bg-gray-50">
-                {/* partners ----------------------------------------------------------------- */}
-                {/* ------------------------------------------------------------------------------- */}
-                <p className="mg:text-base mb-6 text-center font-mono text-sm text-gray-400">
-                    Trusted by the world's largest dev teams
-                </p>
-
                 <LogoGrid />
-
-                <div className="mg:text-base mt-8 flex items-center justify-center text-sm">
-                    <Link
-                        href="https://sourcegraph.com/case-studies"
-                        className="flex items-center gap-x-1.5 text-gray-400 hover:underline"
-                    >
-                        <span>Learn how teams are using Sourcegraph</span>
-                        <ChevronRightIcon className="link-icon h-4 w-4" />
-                    </Link>
-                </div>
 
                 {/* coding is complex --------------------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}

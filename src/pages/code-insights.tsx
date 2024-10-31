@@ -2,16 +2,7 @@ import { FunctionComponent, ReactSVG } from 'react'
 
 import { ChevronRightIcon, Target, Zap } from 'lucide-react'
 
-import {
-    CodyPartners,
-    ContentSection,
-    Hero,
-    Layout,
-    Tabs,
-    TemplateCodeBlock,
-    TwoColumnSection,
-    Video,
-} from '../components'
+import { ContentSection, Hero, Layout, Tabs, TemplateCodeBlock, TwoColumnSection, Video } from '../components'
 import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarousel'
 import { CodeInsightExample } from '../components/CodeInsights/CodeInsightsExamples'
 import {
@@ -24,6 +15,7 @@ import {
     SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA,
 } from '../components/CodeInsights/mock-data'
 import { CodeInsightExampleType } from '../components/CodeInsights/types'
+import { LogoGrid } from '../components/cody/LogoGrid'
 import { ContactUsCta } from '../components/cta/ContactUsCta'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { Icon } from '../components/icon'
@@ -363,14 +355,9 @@ const CodeInsightsPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder
             />
         }
     >
-        <ContentSection parentClassName="!py-16 lg:!py-28" className="flex flex-col items-center justify-center">
-            <p className="mb-[28px] text-center font-mono text-lg font-normal leading-[27px] text-gray-500/[0.7]">
-                Trusted by engineering teams worldwide
-            </p>
-            <div className="flex items-center pb-0">
-                <CodyPartners isLight={true} className="!pb-4 pt-4" />
-            </div>
-        </ContentSection>
+        <div className="pt-16 pb-16">
+            <LogoGrid mainLogo="sofi" />
+        </div>
 
         <ContentSection parentClassName="!py-0">
             <div className="flex flex-col items-center">

@@ -5,13 +5,14 @@ import { Expand, ShieldCheck, Cloud, ChevronRightIcon } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { Layout, CodyIde, CodyPartners, ContentSection, Badge } from '../components'
+import { Layout, CodyIde, ContentSection, Badge } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
 import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarousel'
 import CodyPlan from '../components/cody/CodyPlan'
 import CodyTwoColumnSection from '../components/cody/CodyTwoColumnSection'
 import { CodyIntroDualTheme } from '../components/cody/dual-theme/CodyIntroDualTheme'
 import { HowCodyWorks } from '../components/cody/HowCodyWorks'
+import { LogoGrid } from '../components/cody/LogoGrid'
 import { EnterpriseGradeSection } from '../components/Enterprise/EnterpriseGradeSection'
 import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
@@ -334,11 +335,11 @@ const CodyPage: FunctionComponent = () => {
                 <p className="text-center text-base font-normal uppercase leading-[27px] text-gray-400">
                     Leading dev teams choose Cody for their coding assistant
                 </p>
-            </ContentSection>
 
-            <div>
-                <CodyPartners isLight={true} className="!pt-0 !pb-16 md:!pb-24" />
-            </div>
+                <div className="mt-4">
+                    <LogoGrid mainLogo="sofi" header={null} />
+                </div>
+            </ContentSection>
 
             <ContentSection className="mt-16 rounded-3xl border border-gray-200 bg-white px-6 py-16 md:mt-0 md:px-16">
                 <div className="bg-white">

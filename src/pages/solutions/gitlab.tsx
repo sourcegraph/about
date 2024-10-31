@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
-import { CodyPartners, ContentSection, Layout } from '../../components'
+import { ContentSection, Layout } from '../../components'
+import { LogoGrid } from '../../components/cody/LogoGrid'
 import { ContactUsCta } from '../../components/cta/ContactUsCta'
 import ReadCaseStudyLink from '../../components/ReadCaseStudyLink'
 import { AutomationSection } from '../../components/solutions/AutomationSection'
@@ -45,9 +46,10 @@ const GitLab: FunctionComponent = () => (
             scaleMobileImage={true}
             alt="GitLab"
         />
-        <div className="flex items-center pt-16 pb-16">
-            <CodyPartners isLight={true} className="!pb-[8px] pt-[16px]" />
+        <div className="pt-16 pb-16">
+            <LogoGrid mainLogo="sofi" />
         </div>
+
         <SolutionExplanationSection
             title="Write code faster with AI in your GitLab environment"
             explanationCardData={explanationCardData}

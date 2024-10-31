@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 import { ContentSection, Hero, Layout, Tabs, TwoColumnSection, Video } from '../components'
 import BatchCodeHighlighter from '../components/batch-changes/BatchCodeHighlighter'
+import { LogoGrid } from '../components/cody/LogoGrid'
 import { ContactUsCta } from '../components/cta/ContactUsCta'
 import { StandardCallToAction } from '../components/cta/StandardCallToAction'
 import { Icon } from '../components/icon'
@@ -68,6 +69,10 @@ export const BatchChangesPage: FunctionComponent<TelemetryProps> = ({ telemetryR
                 />
             }
         >
+            <div className="pt-16 pb-16">
+                <LogoGrid mainLogo="sofi" />
+            </div>
+
             {/* Overview */}
             <ContentSection parentClassName="!pb-[16px]">
                 <div className="text-center">
