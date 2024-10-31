@@ -58,16 +58,6 @@ const Home: FunctionComponent = () => {
 
                 <LogoGrid />
 
-                <div className="mg:text-base mt-8 flex items-center justify-center text-sm">
-                    <Link
-                        href="https://sourcegraph.com/case-studies"
-                        className="flex items-center gap-x-1.5 text-gray-400 hover:underline"
-                    >
-                        <span>Learn how teams are using Sourcegraph</span>
-                        <ChevronRightIcon className="link-icon h-4 w-4" />
-                    </Link>
-                </div>
-
                 {/* coding is complex --------------------------------------------------------- */}
                 {/* ------------------------------------------------------------------------------- */}
                 <div className="mt-28 text-center">

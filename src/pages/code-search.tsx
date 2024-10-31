@@ -3,9 +3,10 @@ import { FunctionComponent } from 'react'
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
 import Link from 'next/link'
 
-import { ContentSection, CodyPartners, Layout, TwoColumnSection, Video } from '../components'
+import { ContentSection, Layout, TwoColumnSection, Video } from '../components'
 import { CodeSearchCard } from '../components/Code-search/CodeSearchCard'
-import {captureCustomEventWithPageData} from '../lib/utils'
+import { LogoGrid } from '../components/cody/LogoGrid'
+import { captureCustomEventWithPageData } from '../lib/utils'
 import { TelemetryProps } from '../telemetry'
 
 const testimonials = [
@@ -60,8 +61,14 @@ export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({ telemetryRec
         hero={<CodeSearchHero />}
         className="bg-gray-50"
     >
-        <div className="flex items-center pt-16 pb-16">
-            <CodyPartners isLight={true} className="!pb-[8px] pt-[16px]" />
+        {/* partners ----------------------------------------------------------------- */}
+        {/* ------------------------------------------------------------------------------- */}
+        <div className="pt-16 pb-16">
+            <p className="mg:text-base mb-6 text-center font-mono text-sm text-gray-400">
+                Trusted by the world's largest dev teams
+            </p>
+
+            <LogoGrid mainLogo="sofi" />
         </div>
 
         <ContentSection className="lg:pl-6" parentClassName="lg:!py-24">
@@ -214,10 +221,7 @@ export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({ telemetryRec
                                 vulnerabilities, and track code smells and health from visual dashboards.
                             </li>
                         </ul>
-                        <Link
-                            href="/code-insights"
-                            className="btn-link btn-link-icon font-semibold leading-[22.4px]"
-                        >
+                        <Link href="/code-insights" className="btn-link btn-link-icon font-semibold leading-[22.4px]">
                             Learn more about Code Insights <ChevronRightIcon className="link-icon" />
                         </Link>
                     </div>
@@ -307,8 +311,8 @@ const CodeSearchHero: FunctionComponent = () => (
                     codebases of any scale and with any number of code hosts.
                 </h3>
                 <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
-                    <Link 
-                        href="/contact/request-info" 
+                    <Link
+                        href="/contact/request-info"
                         className="btn btn-primary"
                         onClick={() => captureCustomEventWithPageData('contact_sales_onpage_click')}
                     >

@@ -1,6 +1,8 @@
 import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
+import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
+import Link from 'next/link'
 
 const stripeIcon = {
     src: '/assets/icons/stripe-violet.svg',
@@ -83,37 +85,50 @@ export const LogoGrid: FunctionComponent<LogoGridProps> = ({ mainLogo = 'stripe'
             : [...icons.slice(0, 3), sofiIcon, ...icons.slice(3)]
 
     return (
-        <div className="mx-auto max-w-7xl space-y-4 md:space-y-8">
-            {/* top row of 8 */}
-            <div className="grid grid-cols-2 flex-wrap justify-center gap-x-14 gap-y-4 sm:grid-cols-3 md:flex">
-                {iconsWithMainLogo.slice(0, 8).map((icon, index) => (
-                    <div
-                        key={icon.src}
-                        className={classNames('flex w-auto items-center justify-center', icon.className)}
-                    >
-                        <img
-                            src={icon.src}
-                            alt={`Partner logo ${index + 1}`}
-                            className="opacity-85 max-h-full w-auto"
-                        />
-                    </div>
-                ))}
+        <div>
+            <div className="mx-auto max-w-7xl space-y-4 md:space-y-8">
+                {/* top row of 8 */}
+                <div className="grid grid-cols-2 flex-wrap justify-center gap-x-14 gap-y-4 sm:grid-cols-3 md:flex">
+                    {iconsWithMainLogo.slice(0, 8).map((icon, index) => (
+                        <div
+                            key={icon.src}
+                            className={classNames('flex w-auto items-center justify-center', icon.className)}
+                        >
+                            <img
+                                src={icon.src}
+                                alt={`Partner logo ${index + 1}`}
+                                className="opacity-85 max-h-full w-auto"
+                            />
+                        </div>
+                    ))}
+                </div>
+
+                {/* bottom row of 7 */}
+                <div className="grid grid-cols-2 flex-wrap justify-center gap-x-14 gap-y-4 sm:grid-cols-3 md:flex">
+                    {iconsWithMainLogo.slice(8).map((icon, index) => (
+                        <div
+                            key={icon.src}
+                            className={classNames('flex w-auto items-center justify-center', icon.className)}
+                        >
+                            <img
+                                src={icon.src}
+                                alt={`Partner logo ${index + 9}`}
+                                className="opacity-85 max-h-full w-auto"
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
 
-            {/* bottom row of 7 */}
-            <div className="grid grid-cols-2 flex-wrap justify-center gap-x-14 gap-y-4 sm:grid-cols-3 md:flex">
-                {iconsWithMainLogo.slice(8).map((icon, index) => (
-                    <div
-                        key={icon.src}
-                        className={classNames('flex w-auto items-center justify-center', icon.className)}
-                    >
-                        <img
-                            src={icon.src}
-                            alt={`Partner logo ${index + 9}`}
-                            className="opacity-85 max-h-full w-auto"
-                        />
-                    </div>
-                ))}
+            {/* call to action */}
+            <div className="mg:text-base mt-8 flex items-center justify-center text-sm">
+                <Link
+                    href="https://sourcegraph.com/case-studies"
+                    className="flex items-center gap-x-1.5 text-gray-400 hover:underline"
+                >
+                    <span>Learn how teams are using Sourcegraph</span>
+                    <ChevronRightIcon className="link-icon h-4 w-4" />
+                </Link>
             </div>
         </div>
     )
