@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 export const BentoWithMockup: FunctionComponent<{
     href?: string
+    hrefLabel?: string
     isDarkBorder?: boolean
     isVariantTitle?: boolean
     isVariantImage?: boolean
@@ -12,7 +13,17 @@ export const BentoWithMockup: FunctionComponent<{
     label?: string
     customTitle?: string
     imgSrc?: string
-}> = ({ href, imgSrc, isVariantStyle, isVariantTitle, isDarkBorder, isVariantImage, label, customTitle }) => (
+}> = ({
+    href,
+    hrefLabel,
+    imgSrc,
+    isVariantStyle,
+    isVariantTitle,
+    isDarkBorder,
+    isVariantImage,
+    label,
+    customTitle,
+}) => (
     <div
         className={classNames('flex flex-col overflow-hidden rounded-2xl bg-violet-700 md:flex-row', [
             { 'border border-gray-500': isDarkBorder },
