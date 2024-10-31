@@ -7,7 +7,7 @@ authors:
 publishDate: 2024-10-30T17:30-07:00
 description: "Previously, Sourcegraph only supported enforcing username-based restrictions to individual files and folders based on the Perforce protections table. In this release, Sourcegraph now supports access control based on a user's IP address as well."
 tags: [Enterprise, Code Search]
-version: [5.9.0]
+version: [v5.9.0]
 versionIcon: /assets/changelog/sourcegraph.svg
 slug: 'perforce-ip-permissions'
 published: true

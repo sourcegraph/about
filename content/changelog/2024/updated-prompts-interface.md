@@ -7,7 +7,7 @@ authors:
 publishDate: 2024-10-30T17:31-07:00
 description: "Prompt and command use and discovery has been simplified in JetBrains and for Cody Enterprise users, and the chat window has been tidied up so that only Prompt drafts you own will appear in the UI."
 tags: [Cody, Enterprise, JetBrains]
-version: [5.9.0]
+version: [v5.9.0]
 versionIcon: /assets/changelog/sourcegraph.svg
 slug: 'updated-prompts-interface'
 published: true

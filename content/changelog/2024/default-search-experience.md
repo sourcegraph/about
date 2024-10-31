@@ -7,7 +7,7 @@ authors:
 publishDate: 2024-10-30T17:32-07:00
 description: "The new search experience launched in August is now the default experience for users, with the option to opt out back to the old view. The new search experience brings improvements in speed and simplifies the search and navigation process."
 tags: [Enterprise, Code Search, 5.9.0]
-version: [5.9.0]
+version: [v5.9.0]
 versionIcon: /assets/changelog/sourcegraph.svg
 slug: 'default-search-experience'
 published: true

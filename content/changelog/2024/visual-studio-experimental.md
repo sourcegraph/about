@@ -7,8 +7,8 @@ authors:
 publishDate: 2024-10-30T17:35-07:00
 description: "We now have an experimental version of Cody available for Visual Studio, allowing users access to Cody Chat. This is the first step in the journey towards general availability and we'd love to hear your feedback."
 tags: [Enterprise, Cody, Visual Studio]
-version: [5.9.0]
-versionIcon: /assets/changelog/sourcegraph.svg
+version: [v0.1.0]
+versionIcon: /assets/changelog/visualstudio.svg
 slug: 'visual-studio-experimental'
 published: true
 
