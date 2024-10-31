@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 import { captureCustomEventWithPageData } from '../lib/utils'
 
+import { LogoGrid } from './cody/LogoGrid'
 import { ContentSection } from './ContentSection'
 import { HubSpotForm } from './HubSpotForm'
 import { Layout } from './Layout/Layout'
@@ -44,7 +45,7 @@ const RequestInfo: FunctionComponent<RequestInfoProps> = ({ meta, formId }) => {
                                     <HeaderListTab contents={HeaderListTabItems} />
                                 </div>
                                 <div className="hidden gap-20 lg:flex lg:flex-col">
-                                    <SocialProofSection iconItems={SocialProofIcons} />
+                                    <LogoGrid mainLogo="sofi" showCta={false} />
                                     <CaseStudySection />
                                 </div>
                             </div>

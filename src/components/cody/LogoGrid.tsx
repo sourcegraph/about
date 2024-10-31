@@ -75,9 +75,10 @@ const icons = [
 
 interface LogoGridProps {
     mainLogo?: 'stripe' | 'sofi'
+    showCta?: boolean
 }
 
-export const LogoGrid: FunctionComponent<LogoGridProps> = ({ mainLogo = 'stripe' }) => {
+export const LogoGrid: FunctionComponent<LogoGridProps> = ({ mainLogo = 'stripe', showCta = true }) => {
     // depending on the mainLogo, add the mainLogo as the 4th logo
     const iconsWithMainLogo =
         mainLogo === 'stripe'
@@ -121,15 +122,17 @@ export const LogoGrid: FunctionComponent<LogoGridProps> = ({ mainLogo = 'stripe'
             </div>
 
             {/* call to action */}
-            <div className="mg:text-base mt-8 flex items-center justify-center text-sm">
-                <Link
-                    href="https://sourcegraph.com/case-studies"
-                    className="flex items-center gap-x-1.5 text-gray-400 hover:underline"
-                >
-                    <span>Learn how teams are using Sourcegraph</span>
-                    <ChevronRightIcon className="link-icon h-4 w-4" />
-                </Link>
-            </div>
+            {showCta && (
+                <div className="mg:text-base mt-8 flex items-center justify-center text-sm">
+                    <Link
+                        href="https://sourcegraph.com/case-studies"
+                        className="flex items-center gap-x-1.5 text-gray-400 hover:underline"
+                    >
+                        <span>Learn how teams are using Sourcegraph</span>
+                        <ChevronRightIcon className="link-icon h-4 w-4" />
+                    </Link>
+                </div>
+            )}
         </div>
     )
 }
