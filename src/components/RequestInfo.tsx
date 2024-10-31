@@ -94,7 +94,7 @@ const RequestInfo: FunctionComponent<RequestInfoProps> = ({ meta, formId }) => {
         >
             <ContentSection parentClassName="!my-0 !py-0 !pb-8 lg:hidden" className="!my-0 !py-0 ">
                 <div className="flex flex-col lg:hidden">
-                    <SocialProofSection iconItems={SocialProofIcons} />
+                    <LogoGrid mainLogo="sofi" showCta={false} />
                     <CaseStudySection />
                 </div>
             </ContentSection>
