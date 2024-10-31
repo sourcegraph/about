@@ -7,7 +7,7 @@ authors:
 publishDate: 2024-10-30T17:34-07:00
 description: "Prompts can now be promoted to show at the top of the Prompts list, allowing organizations to highlight specific Prompts that encourage best practices or are recommended to use."
 tags: [Enterprise, Cody, VS Code, Cody Web]
-version: [5.9.0]
+version: [v5.9.0]
 versionIcon: /assets/changelog/sourcegraph.svg
 slug: 'cody-promoted-prompts'
 published: true
