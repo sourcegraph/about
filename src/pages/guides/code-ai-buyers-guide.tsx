@@ -8,11 +8,14 @@ import { BentoWithMockup } from '../../components/bentoWithMockup'
 import { LogoGrid } from '../../components/cody/LogoGrid'
 import { CaseStudyBento } from '../../components/Enterprise/CaseStudyBento'
 import HomePageCta from '../../components/HomePageCta'
+import { useAuthModal } from '../../context/AuthModalContext'
 import { captureCustomEventWithPageData } from '../../lib/utils'
 
 import styles from '../../styles/CustomHubspotForm.module.scss'
 
 export const CodeAiBuyersGuide: NextPage = () => {
+    const { openModal } = useAuthModal()
+
     const meta = {
         title: 'Sourcegraph - Code AI Buyers Guide',
         description: "Buyer's guide to AI Coding Tools",
@@ -29,9 +32,12 @@ export const CodeAiBuyersGuide: NextPage = () => {
             formContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }
     }, [formSubmitted])
+
     const handleOpenModal = (pagePosition: string): void => {
         captureCustomEventWithPageData('get_cody_onpage_click', pagePosition)
+        openModal('home')
     }
+
     const statistics = [
         { label: '75%', description: 'reduction in time spent answering questions' },
         {
