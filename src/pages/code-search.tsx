@@ -53,7 +53,7 @@ const codeHosts = [
 export const CodeSearchPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => (
     <Layout
         meta={{
-            title: 'Sourcegraph | Code Search',
+            title: 'Code Search | Grok your entire codebase with Sourcegraph',
             description:
                 'Code Search helps devs explore their codebase, make large-scale migrations, and fix security issues faster—especially in large, distributed codebases.',
             image: 'https://sourcegraph.com/code-search/code-search-og.png',
