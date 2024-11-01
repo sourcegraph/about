@@ -274,7 +274,7 @@ const Leidos: FunctionComponent = () => (
                                         className="w-full pl-[46px] !pr-0"
                                         largeText={true}
                                         leftBorderAccent={true}
-                                        quote="I really can't express how blown away I am Cody. I can't go back to... whatever it was like before. I use Cody every day, all day long. No matter what I write, Cody helps improve it and it goes way beyond coding in some specific language, you can make Cody explain things to you every step of the way. Really, this is it, the future of coding."
+                                        quote="I really can't express how blown away I am with Cody. I can't go back to... whatever it was like before. I use Cody every day, all day long. No matter what I write, Cody helps improve it and it goes way beyond coding in some specific language, you can make Cody explain things to you every step of the way. Really, this is it, the future of coding."
                                         author={<span>Leidos Engineer</span>}
                                     />
                                 </div>
