@@ -35,6 +35,22 @@
   to = "https://sourcegraph.com/docs/own"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/resources/a-lp-how-sourcegraph-ai-platform-powers-cody"
+  to = "/blog/how-cody-understands-your-codebase"
+
+[[redirects]]
+  from = "/whitepaper/how-sourcegraph-ai-platform-powers-cody.pdf" 
+  to = "/blog/how-cody-understands-your-codebase"
+
+[[redirects]]
+  from = "/demo"
+  to = "/contact/request-info?form_submission_source=demo"
+
+[[redirects]]
+  from = "/get-cody"
+  to = "/cody"
 # ========== END SOURCEGRAPH REDIRECTS ==========
 
 # ========== HANDBOOK REDIRECTS ==========
