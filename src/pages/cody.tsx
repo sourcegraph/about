@@ -505,8 +505,9 @@ const CodyPage: FunctionComponent = () => {
                     label="Guide"
                     customTitle="The ultimate Buyer’s Guide for AI coding tools"
                     imgSrc="/assets/resources/guideMockup.svg"
+                    href="/guides/code-ai-buyers-guide?form_submission_source=code-ai-buyers-guide"
+                    hrefLabel="Get your free copy"
                 />
-                {/* <BentoWithMockup isVariantImage={true} isVariantTitle={true} href="/resources/gartner-mq" /> */}
             </div>
 
             <EnterpriseGradeSection

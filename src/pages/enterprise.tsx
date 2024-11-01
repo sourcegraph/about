@@ -113,7 +113,14 @@ const Enterprise: FunctionComponent = () => {
         >
             <CompanyUsingCodySection />
             <div className="relative z-10 mx-auto max-w-[1232px] px-6 md:px-0 md:pb-28">
-                <BentoWithMockup isVariantTitle={true} href="/resources/gartner-mq" />
+                <BentoWithMockup
+                    isVariantStyle={true}
+                    label="Guide"
+                    customTitle="The ultimate Buyer’s Guide for AI coding tools"
+                    imgSrc="/assets/resources/guideMockup.svg"
+                    href="/guides/code-ai-buyers-guide?form_submission_source=code-ai-buyers-guide"
+                    hrefLabel="Get your free copy"
+                />
             </div>
             <ImprovedVelocitySection />
             <WriteCodeFasterSection />
