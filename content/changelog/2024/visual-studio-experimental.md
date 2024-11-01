@@ -14,7 +14,7 @@ published: true
 
 ---
 
-We are excited to roll out an experimental version of Cody for Visual Studio! This is the first step in the journey to general availability and we’d love you [hear your feedback](https://community.sourcegraph.com/).
+We are excited to roll out an experimental version of Cody for Visual Studio! This is the first step in the journey to general availability and we’d love to [hear your feedback](https://community.sourcegraph.com/).
 
 <br />
 <Figure
