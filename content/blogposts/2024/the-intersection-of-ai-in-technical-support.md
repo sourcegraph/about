@@ -1,8 +1,19 @@
-# **The Intersection of AI in Technical Support: Insights from Sourcegraph Cody** 
+---
+title: "The Intersection of AI in Technical Support: Insights from Sourcegraph Cody"
+authors:
+  - name: Rakesh Joshi
+publishDate: 2024-11-04T10:00-01:00
+description: "LLMs are putting pressure on junior tech jobs. Learn how to stay ahead."
+tags: [blog]
+slug: 'the-intersection-of-ai-in-technical-support'
+published: true
+heroImage: https://storage.googleapis.com/sourcegraph-assets/sourcegraph-social-image.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/sourcegraph-social-image.png
+---
 
 In today’s rapidly evolving world of artificial intelligence (AI), the role of technical support engineers has expanded beyond traditional troubleshooting. As a senior support engineer with a focus on AI-driven tools like Sourcegraph Cody, I’ve witnessed firsthand how our work not only supports customers but also contributes to the broader AI ecosystem. This post explores the role AI plays in technical support and its impact on both support operations and the AI industry at large.
 
-## **The Role of AI in Technical Support with Sourcegraph Cody**
+## The Role of AI in Technical Support with Sourcegraph Cody
 
 Sourcegraph Cody is an advanced code intelligence platform powered by AI. It enhances developer productivity by enabling smart code search, navigation, and analysis. As support engineers, our mission is to ensure that customers can fully leverage Cody’s capabilities to streamline their workflows. Cody has been a game-changer—boosting the productivity of support teams and elevating the quality of service we provide to end users.
 
@@ -28,7 +39,7 @@ Cody dramatically accelerates the debugging process by enabling support engineer
 
 For new support engineers, understanding the codebase and internal processes can be a daunting task. Cody helps newcomers quickly familiarize themselves with the application code, learn support processes, and review existing issues. This streamlined learning curve speeds up onboarding, enabling new hires to contribute faster.
 
-## **The Broader Impact of AI-Driven Support on the AI Industry**
+## The Broader Impact of AI-Driven Support on the AI Industry
 
 The work of AI-focused support engineers at Sourcegraph Cody has a far-reaching impact on the AI industry. Here’s how:
 
@@ -48,6 +59,6 @@ As AI becomes more integrated into daily operations, ethical considerations take
 
 Insights gained from supporting tools like Cody are instrumental in shaping the future of AI in software development. By understanding the challenges developers face when using AI, support engineers can advocate for features and improvements that make AI more intuitive, reliable, and powerful. This feedback directly influences the direction of AI research and product development.
 
-## **Conclusion**
+## Conclusion
 
 The integration of AI in technical support, particularly through tools like Sourcegraph Cody, is transforming how support engineers work and, more broadly, how AI is being adopted in various industries. As support engineers, we’re not only ensuring seamless customer experiences but also contributing to the advancement of AI itself. Through proactive problem-solving, automation, and close collaboration with developers, we are shaping the future of AI-powered development and support.
