@@ -1,7 +1,5 @@
 import { FunctionComponent, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
-import Link from 'next/link'
-
 import {
     Layout,
     Filters,
@@ -13,6 +11,7 @@ import {
     useFilters,
     SearchInput,
 } from '../components'
+import { BentoWithMockup } from '../components/bentoWithMockup'
 import { TelemetryProps } from '../telemetry'
 
 const sortResources = (resources: Resource[]): Resource[] =>
@@ -154,18 +153,24 @@ const Resources: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => 
             heroAndHeaderClassName="sg-resource-hero"
             headerColorTheme="dark"
             hero={
-                <ContentSection
-                    parentClassName="relative !pt-0"
-                    className="pt-[72px] pb-[70px] text-center text-white md:pb-[30px]"
-                >
+                <ContentSection parentClassName="relative !pt-0" className="pt-[72px] text-center text-white">
                     <h1 className="pb-6 text-white">Resources</h1>
-                    <p className="mb-[101px] text-[18px] md:mb-[70px] md:text-[30px]">
-                        Videos, guides, customer stories, and more
-                    </p>
+                    <p className="text-[18px] md:text-[30px]">Videos, guides, customer stories, and more</p>
                 </ContentSection>
             }
         >
-            <ContentSection background="white" parentClassName="bg-gray-50 !pb-0">
+            <div className="mx-auto mb-20 max-w-screen-xl !px-6 xl:!px-0">
+                <BentoWithMockup
+                    isVariantStyle={true}
+                    label="Guide"
+                    customTitle="The ultimate Buyer’s Guide for AI coding tools"
+                    imgSrc="/assets/resources/guideMockup.svg"
+                    href="/guides/code-ai-buyers-guide?form_submission_source=code-ai-buyers-guide"
+                    hrefLabel="Get your free copy"
+                />
+            </div>
+
+            {/* <ContentSection background="white" parentClassName="bg-gray-50 !pb-0">
                 <div className="relative -top-[107px] -mb-[43px] -mt-[70px] flex max-w-[1280px] flex-col justify-between rounded-md border border-gray-500 bg-white px-[23px] py-[31px] shadow-sm md:-top-[84px] md:-mb-[84px] md:gap-x-[144px] lg:flex-row lg:px-[79px] lg:py-[63px]">
                     <div className="flex flex-shrink-0 flex-col items-center justify-center lg:items-start">
                         <p className="pb-1 text-center font-mono font-[500] capitalize lg:text-left">
@@ -192,10 +197,10 @@ const Resources: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) => 
                         className="btn btn-secondary mx-auto mt-8 w-fit px-6 py-2 text-center font-semibold lg:hidden"
                     >{`Read the ${featuredResource.contentType}`}</Link>
                 </div>
-            </ContentSection>
+            </ContentSection> */}
 
             <ContentSection
-                parentClassName="bg-gray-50 !pt-0"
+                parentClassName="bg-gray-50 !pt-5"
                 className="grid grid-cols-1 pb-4 md:mt-16 md:grid-cols-3 md:gap-x-[20px]"
             >
                 <div className="w-full md:max-w-[371px]">
