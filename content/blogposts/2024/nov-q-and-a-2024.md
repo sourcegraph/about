@@ -3,7 +3,7 @@ title: "Your Cody questions answered live! - November 2024 Recap"
 authors:
   - name: Justin Dorfman
     url: https://x.com/jdorfman
-publishDate: 2024-11-04T10:00-01:00
+publishDate: 2024-11-05T10:00-01:00
 description: "In our latest live Q&A session, Sourcegraph co-founders, along with the DevRel team, shared exciting updates and engaged with our amazing community."
 tags: [blog]
 slug: 'cody-questions-answered-live-november-2024'
