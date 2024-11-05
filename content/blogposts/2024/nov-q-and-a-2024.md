@@ -16,6 +16,14 @@ In [our latest live Q&A session](https://youtu.be/zJpnDI2RE0A?feature=shared), S
 
 ## Introducing Deep Cody: Enhanced Context Understanding
 
+<YouTube
+  id="zJpnDI2RE0A"
+  title="YK's demonstration of Deep Cody"
+  className="mb-4"
+  start={338}
+  showTitle={true}
+/>
+
 The highlight of the session was [YK's demonstration of Deep Cody](https://youtu.be/zJpnDI2RE0A?feature=shared&t=338), our experimental feature that represents a significant leap forward in AI-assisted coding. Deep Cody builds upon Cody's core strength – context understanding – by introducing advanced capabilities that allow it to:
 
 - Access additional context beyond the immediate codebase
@@ -79,11 +87,11 @@ This Q&A session showcased not just our technical progress but also the strength
 
 Whether you're maintaining legacy systems, working on large-scale applications, or simply looking to improve your development workflow, Cody is being built with your real-world needs in mind. We're excited to continue this journey with our community and look forward to sharing more updates in our next session.
 
-
 <YouTube
   id="zJpnDI2RE0A"
-  title="Your Cody questions answered live! - November 2024"
+  title="Your Cody questions answered live! - Full video"
   className="mb-4"
+  showTitle={true}
 />
 
 ---
