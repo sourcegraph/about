@@ -3,6 +3,7 @@ title: "Measuring the impact of AI coding tools"
 authors:
   - name: Raman Sharma
     url: https://x.com/rasharm_
+  - name: Aimee Menne
 publishDate: 2024-11-05T10:00-01:00
 description: "There is little doubt of AI’s promise to transform software development, but how can engineering teams measure the ROI of these tools? We explore ways to answer this question through productivity metrics, business impact, and developer satisfaction."
 tags: [blog]
