@@ -491,6 +491,14 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection parentClassName="!py-16 lg:!py-24">
+                <div className="text-center">
+                    <h2 className="mb-4">Upgrade your IDE with powerful AI features</h2>
+                    <p className="text-balance mx-auto mb-10 max-w-2xl text-gray-700 opacity-70">
+                        Code completions, code edits, and customizable prompts use Cody's best models + extensive
+                        context to deliver the most accurate results.
+                    </p>
+                </div>
+
                 <TimedCarousel items={items} />
 
                 {/* <FullWidthTabsCarousel
