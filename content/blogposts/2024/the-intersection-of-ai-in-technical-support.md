@@ -25,9 +25,14 @@ Cody enables us to shift from a reactive support model to a proactive one. By an
 
 Support engineers often perform repetitive tasks, such as running queries for debugging or monitoring applications. By using Cody, integrated with tools like Zendesk, Jira, etc(via OpenCtx), we can identify recurring patterns and automate these tasks. This not only reduces manual effort but also fosters continuous learning and efficiency improvements within our teams. For example, by integrating Jira with Cody, we can directly fetch in-depth bug/issue details, identify/isolate the recurring patterns, and figure out possible solutions. Here’s an example demonstrating Cody/Jira integration:
 
-
-
-https://github.com/user-attachments/assets/65acfc71-9dc6-4f38-97b9-cfdc8f22cae2
+<Video
+  source={{
+    mp4: 'blog/the-intersection-of-ai-in-technical-support/cody-for-support'
+  }}
+  controls={true}
+  loop={true}
+  title="Cody for Support"
+/>
 
 
 
