@@ -30,7 +30,7 @@ What sets Deep Cody apart is its ability to solve entire classes of previously c
 
 We're excited to announce [Cody support for Visual Studio](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-vs) is now available in preview for Windows users. This release continues our commitment to meeting developers where they work, regardless of their preferred IDE.
 
-### Prompts Library
+### Prompt Library
 
 The new prompts interface introduces shareable prompts, allowing teams to:
 
