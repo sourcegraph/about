@@ -18,6 +18,7 @@ import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../lib/utils'
+import TimedCarousel from '../components/Carousels/TimedCarousel'
 
 const optimizedPoweritems = [
     { label: 'Claude 3.5 Sonnet', iconUrl: '/assets/cody/anthropic-icon.svg' },
@@ -36,6 +37,8 @@ const optimizedSpeed = [
 const items = [
     {
         title: 'Autocomplete',
+        description:
+            'Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster',
         text: (
             <div className="min-h-[555px] max-w-[738px]">
                 <video
@@ -53,6 +56,8 @@ const items = [
     },
     {
         title: 'Edit',
+        description:
+            'Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster',
         text: (
             <div className="min-h-[555px] max-w-[738px]">
                 <video
@@ -70,6 +75,8 @@ const items = [
     },
     {
         title: 'Prompts',
+        description:
+            'Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster',
         text: (
             <div className="min-h-[555px] max-w-[738px]">
                 <video
@@ -485,7 +492,9 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection parentClassName="!py-16 lg:!py-24">
-                <FullWidthTabsCarousel
+                <TimedCarousel items={items} />
+
+                {/* <FullWidthTabsCarousel
                     darkMode={false}
                     items={items}
                     parentSectionClassName="!items-start"
@@ -496,7 +505,7 @@ const CodyPage: FunctionComponent = () => {
                     cta={false}
                     title="Upgrade your IDE with powerful AI features"
                     isVariant={true}
-                />
+                /> */}
             </ContentSection>
 
             <HowCodyWorks isLight={true} isVariant={true} />
