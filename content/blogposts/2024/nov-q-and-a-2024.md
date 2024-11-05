@@ -4,7 +4,7 @@ authors:
   - name: Justin Dorfman
     url: https://x.com/jdorfman
 publishDate: 2024-11-04T10:00-01:00
-description: "In our latest live Q&A session, Sourcegraph co-founders, along with the DevRel team, shared exciting updates and engaged with our amazing community. The session highlighted Cody's evolution and our commitment to building the most informed AI coding assistant for real-world development scenarios."
+description: "In our latest live Q&A session, Sourcegraph co-founders, along with the DevRel team, shared exciting updates and engaged with our amazing community."
 tags: [blog]
 slug: 'cody-questions-answered-live-november-2024'
 published: true
