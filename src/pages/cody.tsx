@@ -343,14 +343,18 @@ const CodyPage: FunctionComponent = () => {
 
             <ContentSection className="mt-16 rounded-3xl border border-gray-200 bg-white px-6 py-16 md:mt-0 md:px-16">
                 <div className="bg-white">
-                    <div className="text-gray-700 md:max-w-[632px] md:pl-6">
-                        <h2 className="pb-10">Developer chat with the most powerful models and context.</h2>
-                        <h5 className="text-gray-700 opacity-70">
-                            Best models and context power Cody's chat. With chat-oriented programming, you can solve
-                            your hardest engineering problems.
-                        </h5>
+                    <div className="text-gray-700">
+                        <h2 className="mb-3">Developer chat with the most powerful models and context.</h2>
+                        <p className="max-w-4xl text-gray-700 opacity-70">
+                            Experience best-in-class AI chat powered by top LLMs and deep code context. Cody enables{' '}
+                            <Link href="/blog/chat-oriented-programming-in-action">
+                                chat-oriented programming (CHOP)
+                            </Link>{' '}
+                            — a new paradigm for writing code through natural conversation with AI.
+                        </p>
                     </div>
-                    <div className="mt-14 w-full max-w-[1152px] overflow-hidden rounded-2xl md:h-full md:rounded-none">
+
+                    <div className="mt-10 w-full max-w-[1152px] overflow-hidden rounded-2xl md:h-full md:rounded-none">
                         <video
                             src="https://storage.googleapis.com/sourcegraph-assets/cody/website-october-2024/cody-chop-2.mp4"
                             className="rounded-2xl"
