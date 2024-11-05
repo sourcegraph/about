@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 
 import { Layout, CodyIde, ContentSection, Badge } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
-import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarousel'
+import TimedCarousel from '../components/Carousels/TimedCarousel'
 import CodyPlan from '../components/cody/CodyPlan'
 import CodyTwoColumnSection from '../components/cody/CodyTwoColumnSection'
 import { CodyIntroDualTheme } from '../components/cody/dual-theme/CodyIntroDualTheme'
@@ -18,7 +18,6 @@ import { useAuthModal } from '../context/AuthModalContext'
 import { breakpoints } from '../data/breakpoints'
 import { useWindowWidth } from '../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../lib/utils'
-import TimedCarousel from '../components/Carousels/TimedCarousel'
 
 const optimizedPoweritems = [
     { label: 'Claude 3.5 Sonnet', iconUrl: '/assets/cody/anthropic-icon.svg' },
