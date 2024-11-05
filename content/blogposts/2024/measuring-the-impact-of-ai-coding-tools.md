@@ -88,7 +88,7 @@ These are useful metrics to think about and go one step further than just time s
 * Since the measurement here is just lines of code, without any knowledge of the business problem the code was meant to solve, this could mean teams start optimizing for output and not outcomes
 * Similarly, a very intense session of Chat-Oriented Programming ([CHOP](https://sourcegraph.com/blog/chat-oriented-programming-in-action)) could produce very few lines of optimal code that provide a massive unlock for the business. However, going by this metric, it wouldn’t be seen as a successful output.
 
-## Impact: harder to measure but tied to what truly matters.
+## Impact: harder to measure but tied to what truly matters
 
 The next set of metrics are those aligned with the intended outcomes of the individual, team, or organization. How does an individual think of impact? What does success look like for them in their current project? Similarly, what is the intended outcome of a team project? By measuring the utility of a tool in the context of a business outcome (individual or team), its true value can be understood. While the actual "business outcome" could be different for different people, we have seen the following examples:
 
