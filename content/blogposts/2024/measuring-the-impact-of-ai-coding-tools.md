@@ -73,11 +73,11 @@ This measurement is very basic because it has the potential to both underestimat
 
 Regardless, it is a good starting point because it is easy to understand. The team at [1Password](https://sourcegraph.com/case-studies/1password-increases-productivity-in-a-distributed-codebase) found that using Sourcegraph saved every developer 7 hours per month.
 
-    > "Sometimes, if the right thing to do—like writing unit tests—is too hard, people won't do it. Cody's value is that it lets developers be their best selves while relieving the burden of repetitive tasks."
-    >
-    > — James Griffin-Allwood
-    >
-    > Staff Developer, 1Password
+    > Sometimes, if the right thing to do—like writing unit tests—is too hard, people won't do it. Cody's value is that it lets developers be their best selves while relieving the burden of repetitive tasks.
+
+<div align="center">
+  — James Griffin-Allwood, Staff Developer at 1Password
+</div>
 
 ### Productivity measure #2: Output produced
 
@@ -108,9 +108,12 @@ An underappreciated (but potentially revolutionary) aspect of using AI in coding
 
 [Leidos](https://sourcegraph.com/case-studies/cody-leidos-maximizing-efficiency-heightened-security-ai-race) often takes on customer projects related to the modernization and migration of legacy code. For example, migrating from Oracle to PostgreSQL once took a full sprint, if not longer. Cody got them 80% to 90% of the way there within minutes.
 
-    > "I really can't express how blown away I am with Cody. I can't go back to... whatever it was like before. I use Cody every day, all day long. No matter what I write, Cody helps improve it and it goes way beyond coding in some specific language, you can make Cody explain things to you every step of the way. Really, this is it, the future of coding."
-    >
-    > — Leidos Engineer
+    > I really can't express how blown away I am with Cody. I can't go back to... whatever it was like before. I use Cody every day, all day long. No matter what I write, Cody helps improve it and it goes way beyond coding in some specific language, you can make Cody explain things to you every step of the way. Really, this is it, the future of coding.
+
+<div align="center">
+  — Leidos Engineer
+</div>
+
 ## What about developer satisfaction?
 
 Almost all engineers and engineering leaders report that “developer satisfaction” is important to them.
@@ -121,11 +124,11 @@ Almost all engineers and engineering leaders report that “developer satisfacti
 
 Most developers believe a flow experience involves spending time coding (and not information gathering). In other words, the IDE is the flow zone. Engineers at [Qualtrics](https://sourcegraph.com/case-studies/qualtrics-speeds-up-unit-tests-and-code-understanding-with-cody) report having to leave their IDE to find information on the web 28% less often when using Cody, and they can understand code 25% faster.
 
-    > "One of the most daunting things as a junior engineer is working on a large, existing codebase. There is always a ton of domain knowledge about that code that's restricted to the people who wrote it, no matter how well it's documented. There are always nuances that only the code authors know. But if developers know how to prompt Cody, Cody can find context and explain the code to them."
-    >
-    > — Brendan Doyle,
-    >
-    > Senior Software Engineer, Qualtrics
+    > One of the most daunting things as a junior engineer is working on a large, existing codebase. There is always a ton of domain knowledge about that code that's restricted to the people who wrote it, no matter how well it's documented. There are always nuances that only the code authors know. But if developers know how to prompt Cody, Cody can find context and explain the code to them.
+
+<div align="center">
+  — Brendan Doyle, Senior Software Engineer at Qualtrics
+</div>
 
 Developer satisfaction, often based on self-reported data, is qualitative. However, it is still useful to run internal surveys among the tool's actual users to keep track of developer sentiment, discover qualitative insights about actual use case scenarios, and identify training needs for your teams.
 
