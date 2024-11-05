@@ -1,9 +1,9 @@
 ---
-title: "The Intersection of AI in Technical Support: Insights from Sourcegraph Cody"
+title: "The intersection of AI in technical support: insights from Sourcegraph Cody"
 authors:
   - name: Rakesh Joshi
-publishDate: 2024-11-04T10:00-01:00
-description: "LLMs are putting pressure on junior tech jobs. Learn how to stay ahead."
+publishDate: 2024-11-05T10:00-01:00
+description: "From debugging to onboarding, see how AI-powered tools like Cody are changing the game for support engineers."
 tags: [blog]
 slug: 'the-intersection-of-ai-in-technical-support'
 published: true
