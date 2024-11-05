@@ -8,8 +8,8 @@ description: "INSERT"
 tags: [blog]
 slug: "measuring-the-impact-of-ai-coding-tools"
 published: true
-heroImage: 
-socialImage: 
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/measuring-the-impact-of-ai-coding-tools/measuring-impact-og.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/measuring-the-impact-of-ai-coding-tools/measuring-impact-og.png
 --- 
 
 Every software engineering team is looking at AI tools for coding. In a [Stack Overflow survey](https://survey.stackoverflow.co/2024/ai/#sentiment-and-usage), 76% of developers reported they are either using or planning to use AI tools for development. However, with the pace of change in this space, many are already disillusioned with the tools they adopted during the early hype. There is little doubt of AI’s promise to transform software development. But how can engineering teams measure the ROI of these tools in a way that aligns with their priorities? These are just some of the questions we are getting from folks who are considering AI coding tools. So, we want to share a few things we learned from our work with some of the [most sophisticated software engineering teams](https://sourcegraph.com/case-studies) in the world.
@@ -111,7 +111,7 @@ An underappreciated (but potentially revolutionary) aspect of using AI in coding
     > "I really can't express how blown away I am with Cody. I can't go back to... whatever it was like before. I use Cody every day, all day long. No matter what I write, Cody helps improve it and it goes way beyond coding in some specific language, you can make Cody explain things to you every step of the way. Really, this is it, the future of coding."
     >
     > — Leidos Engineer
-    
+
 # What about developer satisfaction?
 
 Almost all engineers and engineering leaders report that “developer satisfaction” is important to them.
