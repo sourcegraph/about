@@ -1,7 +1,6 @@
-import { type FunctionComponent, useState, useRef, useEffect } from 'react'
+import { type FunctionComponent } from 'react'
 
 import classNames from 'classnames'
-import { ChevronDown, ChevronUp } from 'lucide-react'
 
 import { ContentSection } from '..'
 
@@ -10,13 +9,9 @@ interface CodyIdeProps {
 }
 
 export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) => {
-    const [isExpanded, setIsExpanded] = useState(false)
-    const [isAnimating, setIsAnimating] = useState(false)
-    const contentRef = useRef<HTMLDivElement>(null)
-    const [contentHeight, setContentHeight] = useState(0)
-
     const allIdes = [
         { name: 'VS Code', icon: 'vs_code.svg' },
+        { name: 'Visual Studio', icon: 'VisualStudio_icon.svg', isExperimental: true },
         { name: 'IntelliJ', icon: 'IntelliJ_IDEA_icon.svg' },
         { name: 'PyCharm', icon: 'PyCharm_icon.svg' },
         { name: 'GoLand', icon: 'GoLand_icon.svg' },
@@ -31,106 +26,58 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
         { name: 'RustRover', icon: 'RustRover_icon.svg' },
     ]
 
-    const visibleIdes = isExpanded ? allIdes : allIdes.slice(0, 4)
-
-    useEffect(() => {
-        if (contentRef.current) {
-            setContentHeight(contentRef.current.scrollHeight)
-        }
-    }, [isExpanded])
-
-    // Handle the animation end for smoothness
-    useEffect(() => {
-        if (isAnimating) {
-            const timeout = setTimeout(() => {
-                setIsAnimating(false)
-            }, 500) // Match the duration of the transition
-            return () => clearTimeout(timeout)
-        }
-    }, [isAnimating])
-
-    const handleToggle = (): void => {
-        setIsAnimating(true)
-        setIsExpanded(!isExpanded)
-    }
     return (
-        <ContentSection
-            parentClassName="!py-0"
-            className={classNames('flex w-full flex-col items-center md:flex-col', {
-                'mb-[0] mt-16 gap-x-0 md:my-24 md:gap-x-12 md:pr-0': isLight,
-                'mt-16 gap-x-12 gap-y-6 md:mt-14 md:pr-8 ': !isLight,
-            })}
-        >
-            <h4
-                className={classNames('mb-6 whitespace-nowrap', {
-                    'text-gray-200': !isLight,
-                    'text-gray-700': isLight,
-                })}
-            >
-                Cody is available for:
-            </h4>
-            <div
-                className={classNames('flex w-full flex-col items-center justify-center', {
-                    'gap-x-6 gap-y-8 py-6': !isLight,
-                    'md:gap-x-[47px]': isLight,
-                })}
-            >
-                <div
-                    // eslint-disable-next-line react/forbid-dom-props
-                    style={{
-                        maxHeight: isExpanded ? `${contentHeight}px` : '200px',
-                        transition: 'max-height 0.5s ease',
-                        overflow: 'hidden',
-                    }}
+        <ContentSection parentClassName="!py-0" className="mt-16">
+            <div className="mb-10 text-center">
+                <h3 className="mb-2 text-sm font-medium text-gray-500">IDE Support</h3>
+
+                <h2
+                    className={classNames('mb-4 whitespace-nowrap', {
+                        'text-gray-200': !isLight,
+                        'text-gray-700': isLight,
+                    })}
                 >
-                    <div
-                        ref={contentRef}
-                        className={classNames('flex flex-wrap items-center justify-center gap-x-6', {
-                            'w-full gap-y-8': !isLight,
-                            'w-auto gap-y-4 md:gap-x-24': isLight,
-                        })}
-                    >
-                        {visibleIdes.map(ide => (
-                            <div
-                                key={ide.name}
-                                className={classNames('flex items-center gap-x-4', { 'py-3': isLight })}
-                            >
+                    Cody works where you work
+                </h2>
+                <p className="text-gray-700 opacity-70">
+                    Use Cody in the IDE that you are most familiar with. Get chat, autocomplete, and inline edit without
+                    changing your workflow.
+                </p>
+            </div>
+
+            <div className="mx-auto max-w-xl">
+                <div className="grid grid-cols-2 overflow-hidden rounded-xl border border-gray-200 bg-white md:grid-cols-3 ">
+                    {allIdes.map((ide, index) => (
+                        <div
+                            key={ide.name}
+                            className={classNames(
+                                'relative flex items-center justify-center gap-x-4 border-r border-b border-gray-200 p-4',
+                                {
+                                    '-mr-px': (index + 1) % 3 === 0,
+                                    '-mb-px': index >= allIdes.length - 3,
+                                }
+                            )}
+                        >
+                            <div className="h-8 w-8">
                                 <img
-                                    className="h-[45px] w-[45px]"
+                                    className="aspect-square w-full"
                                     src={`/icons/IDEs/${ide.icon}`}
                                     alt={`${ide.name} IDE Marketplace`}
                                 />
-                                <h4
-                                    className={classNames({
-                                        'text-gray-200': !isLight,
-                                        'text-[#0F111A]': isLight,
-                                    })}
-                                >
-                                    {ide.name}
-                                </h4>
                             </div>
-                        ))}
-                    </div>
-                </div>
 
-                <button
-                    type="button"
-                    onClick={handleToggle}
-                    className={classNames('flex items-center  md:pb-0', {
-                        'mt-4 pb-4 text-gray-200': !isLight,
-                        'mt-6 text-gray-700 md:pb-4': isLight,
-                    })}
-                >
-                    {isExpanded ? (
-                        <>
-                            Show less <ChevronUp size={20} className="ml-1" />
-                        </>
-                    ) : (
-                        <>
-                            Show more <ChevronDown size={20} className="ml-1" />
-                        </>
-                    )}
-                </button>
+                            <div
+                                className={classNames('flex-grow text-sm', {
+                                    'text-gray-200': !isLight,
+                                    'text-[#0F111A]': isLight,
+                                })}
+                            >
+                                {ide.name}
+                                {ide.isExperimental && <div className="text-[9px] text-gray-400">Experimental</div>}
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </ContentSection>
     )
