@@ -38,10 +38,10 @@ const EventsPage: FunctionComponent = () => (
                         <div>
                             <h2 className="mt-4">AI Eng Talks ~ w/ Cloudflare, Sourcegraph & Jam.dev</h2>
 
-                            <p className="mt-4 text-lg text-gray-600">
-                            ​Come hang out at Cloudflare HQ in SF w/ 100+ engineers to hear talks about scaled engineering with AI.
-                            Expect lightning talks about the engineering future & what's already possible. No sales pitches, just technical talks.
-                            </p>
+                                <p className="mt-4 text-lg text-gray-600">
+                                        Come hang out at Cloudflare HQ in SF w/ 100+ engineers to hear talks about scaled engineering with AI.
+                                        Expect lightning talks about the engineering future & what's already possible. No sales pitches, just technical talks.
+                                </p>
                             <div className="mt-4">
                                 <h3>Location</h3>
                                 <p className="mt-4 text-sm text-gray-500">
