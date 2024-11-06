@@ -26,7 +26,7 @@ export default function TimedCarousel({ items, autoAdvance = true }: TimedCarous
         }, 5000)
 
         return () => clearInterval(timer)
-    }, [autoAdvance, items.length])
+    }, [autoAdvance, items.length, activeIndex])
 
     const handleItemClick = (index: number): void => {
         setActiveIndex(index)
@@ -75,8 +75,9 @@ function TimedProgressBar({ isActive, resetKey }: { isActive: boolean; resetKey:
     const [activeSegments, setActiveSegments] = useState(0)
 
     useEffect(() => {
+        setActiveSegments(0)
+        
         if (!isActive) {
-            setActiveSegments(0)
             return
         }
 
@@ -87,7 +88,7 @@ function TimedProgressBar({ isActive, resetKey }: { isActive: boolean; resetKey:
                 }
                 return current + 1
             })
-        }, 1000) // Updates every second
+        }, 1000)
 
         return () => clearInterval(timer)
     }, [isActive, resetKey])
