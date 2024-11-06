@@ -37,7 +37,7 @@ const items = [
     {
         title: 'Autocomplete',
         description:
-            'Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster',
+            'Code faster with real-time single and multi-line completions',
         text: (
             <div className="min-h-[555px] max-w-[738px]">
                 <video
@@ -54,9 +54,9 @@ const items = [
         ),
     },
     {
-        title: 'Edit',
+        title: 'Inline edits',
         description:
-            'Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster',
+            'Fix and refactor code with in-line edit commands',
         text: (
             <div className="min-h-[555px] max-w-[738px]">
                 <video
@@ -73,9 +73,9 @@ const items = [
         ),
     },
     {
-        title: 'Prompts',
+        title: 'Custom prompts',
         description:
-            'Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster',
+            'Automate your work—like writing docs and tests—with custom prompts',
         text: (
             <div className="min-h-[555px] max-w-[738px]">
                 <video
