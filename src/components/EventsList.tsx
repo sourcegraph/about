@@ -13,10 +13,22 @@ interface Event {
 const events: { upcoming: Event[], past: Event[] } = {
     upcoming: [
         {
+            title: 'Squire.ai Hackathon I - Null to Agent',
+            location: 'San Francisco, CA',
+            date: 'Sep 14-15 2024',
+            link: 'https://lu.ma/grccr844',
+        },
+        {
             title: 'designFAO',
             location: 'Portugal',
             date: '2024-10-11',
             link: 'https://friends.figma.com/events/details/figma-portugal-presents-designfao-partner-event-2/',
+        },
+        {
+            title: 'Gartner IT Symposium/Xpo™',
+            location: 'Orlando, FL',
+            date: 'Oct 21–24, 2024',
+            link: 'https://www.gartner.com/en/conferences/na/symposium-us/conference-resources/orlando',
         },
         {
             title: 'All Things Open',
