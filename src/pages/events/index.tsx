@@ -31,26 +31,26 @@ const EventsPage: FunctionComponent = () => (
                 {/* left side */}
                 <div>
                     <h3 className="text-xl">
-                        November 6th <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Upcoming</span>
+                        November 19th <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Upcoming</span>
                     </h3>
 
                     <div className="grid gap-y-5 gap-x-10 xl:grid-cols-2">
                         <div>
-                            <h2 className="mt-4">AI Dev Tools Night · Austin</h2>
+                            <h2 className="mt-4">AI Eng Talks ~ w/ Cloudflare, Sourcegraph & Jam.dev</h2>
 
                             <p className="mt-4 text-lg text-gray-600">
-                                Join us and learn about the latest advancements in AI, language models, and open source.
-                                This meetup is organized by developers for developers and sponsored by Sourcegraph and Wursta.
+                            ​Come hang out at Cloudflare HQ in SF w/ 100+ engineers to hear talks about scaled engineering with AI.
+                            Expect lightning talks about the engineering future & what's already possible. No sales pitches, just technical talks.
                             </p>
                             <div className="mt-4">
                                 <h3>Location</h3>
                                 <p className="mt-4 text-sm text-gray-500">
-                                1021 E 7th St, Austin, TX 78702
+                                101 Townsend St, San Francisco, CA 94107, USA
                                 </p>
                             </div>
                         </div>
 
-                        <div className="mt-4">
+                        {/* <div className="mt-4">
                             <h3>Schedule</h3>
                             <p className="mt-4">👋 Welcome</p>                            
                             <ul>
@@ -62,7 +62,7 @@ const EventsPage: FunctionComponent = () => (
                             <p className="mt-4">🎤 Talks</p>
                             <ul>
                                 <li>
-                                    We'll have great speakers from Google, Sourcegraph, Wursta, and more.
+                                    We'll have great speakers from ... and more.
                                 </li>
                             </ul>
 
@@ -71,14 +71,14 @@ const EventsPage: FunctionComponent = () => (
                                 <li>8:00 - 8:30 pm</li>
                                 <li>Yes, food and drinks will be served.</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
                 {/* right side */}
                 <iframe
                     title="AI Dev Tools Night"
-                    src="https://lu.ma/embed/event/evt-oNWrz0zs5J1JSlC/simple"
+                    src="https://lu.ma/embed/event/evt-qVXLRhOHIcPsY5m/simple"
                     width="100%"
                     height="640"
                     className="rounded-xl"
