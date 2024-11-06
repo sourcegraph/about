@@ -46,25 +46,27 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
             </div>
 
             <div className="mx-auto max-w-xl">
-                <div className="grid grid-cols-2 overflow-hidden rounded-xl border border-gray-200 bg-white md:grid-cols-3 ">
+                <div className="grid grid-cols-2 overflow-hidden rounded-xl border border-gray-200 bg-white md:grid-cols-6">
                     {allIdes.map((ide, index) => (
                         <div
                             key={ide.name}
                             className={classNames(
                                 'relative flex items-center justify-center gap-x-4 border-r border-b border-gray-200 p-4',
                                 {
-                                    '-mr-px': (index + 1) % 3 === 0,
+                                    '-mr-px': index === 1 || index >= 2 && (index - 1) % 3 === 0 ,
                                     '-mb-px': index >= allIdes.length - 3,
+                                    'col-span-3': index < 2,
+                                    'col-span-2': index >= 2,
                                 }
                             )}
                         >
-                            <div className="h-8 w-8">
-                                <img
-                                    className="aspect-square w-full"
-                                    src={`/icons/IDEs/${ide.icon}`}
-                                    alt={`${ide.name} IDE Marketplace`}
-                                />
-                            </div>
+                                <div className="h-8 w-8">
+                                    <img
+                                        className="aspect-square w-full"
+                                        src={`/icons/IDEs/${ide.icon}`}
+                                        alt={`${ide.name} IDE Marketplace`}
+                                    />
+                                </div>
 
                             <div
                                 className={classNames('flex-grow text-sm', {
