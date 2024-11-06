@@ -50,28 +50,13 @@ const EventsPage: FunctionComponent = () => (
                             </div>
                         </div>
 
-                        {/* <div className="mt-4">
+                        <div className="mt-4">
                             <h3>Schedule</h3>
                             <p className="mt-4">👋 Welcome</p>                            
                             <ul>
-                                <li>6:00 - 6:20 pm: Food, drinks & networking</li>
-                                <li>6:20 - 6:30 pm: Welcome & demo</li>
-                                <li>6:30 - 8:00 pm: Talks</li>
-                                <li>8:00 - 8:30 pm: Networking</li>
+                                <li>6:00 - 8:00 pm: Lightning talks, food, drinks & networking</li>
                             </ul>
-                            <p className="mt-4">🎤 Talks</p>
-                            <ul>
-                                <li>
-                                    We'll have great speakers from ... and more.
-                                </li>
-                            </ul>
-
-                            <p className="mt-4">🍕 Social hour</p>
-                            <ul>
-                                <li>8:00 - 8:30 pm</li>
-                                <li>Yes, food and drinks will be served.</li>
-                            </ul>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
 
