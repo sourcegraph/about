@@ -31,7 +31,7 @@ const EventsPage: FunctionComponent = () => (
                 {/* left side */}
                 <div>
                     <h3 className="text-xl">
-                        November 6th <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Upcoming</span>
+                        November 19th <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Upcoming</span>
                     </h3>
 
                     <div className="grid gap-y-5 gap-x-10 xl:grid-cols-2">
