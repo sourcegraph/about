@@ -4,10 +4,10 @@ import { CodyPartners, Layout } from '../../components'
 import { ContactUsCta } from '../../components/cta/ContactUsCta'
 import { CaseStudyBento } from '../../components/Enterprise/CaseStudyBento'
 import { EnterpriseGradeSection } from '../../components/Enterprise/EnterpriseGradeSection'
-import { AutomationSection } from '../../components/solutions/AutomationSection'
-import { IntroCard } from '../../components/solutions/IntroCard'
-import { SearchDescriptionSection } from '../../components/solutions/SearchDescriptionSection'
-import { SolutionExplanationSection } from '../../components/solutions/SolutionExplanationSection'
+import { AutomationSection } from '../../components/Solutions/AutomationSection'
+import { IntroCard } from '../../components/Solutions/IntroCard'
+import { SearchDescriptionSection } from '../../components/Solutions/SearchDescriptionSection'
+import { SolutionExplanationSection } from '../../components/Solutions/SolutionExplanationSection'
 
 const explanationCardData = [
     {
