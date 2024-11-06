@@ -13,6 +13,26 @@ interface Event {
 const events: { upcoming: Event[], past: Event[] } = {
     upcoming: [
         {
+            title: 'QCon SF',
+            location: 'San Francisco, CA',
+            date: '2024-11-18',
+            link: 'https://qconsf.com/',
+        },
+        {
+            title: 'AI Eng Talks ~ w/ Cloudflare, Sourcegraph & Jam.dev',
+            location: 'San Francisco, CA',
+            date: '2024-11-19',
+            link: 'https://lu.ma/AI-Talks',
+        },
+        {
+            title: 'AWS re:Invent',
+            location: 'Las Vegas, NV',
+            date: '2024-12-26',
+            link: 'https://reinvent.awsevents.com/',
+        },
+    ],
+    past: [
+        {
             title: 'designFAO',
             location: 'Portugal',
             date: '2024-10-11',
@@ -36,26 +56,6 @@ const events: { upcoming: Event[], past: Event[] } = {
             date: '2024-11-06',
             link: 'https://lu.ma/qpic2p66',
         },
-        {
-            title: 'QCon SF',
-            location: 'San Francisco, CA',
-            date: '2024-11-18',
-            link: 'https://qconsf.com/',
-        },
-        {
-            title: 'AI Eng Talks ~ w/ Cloudflare, Sourcegraph & Jam.dev',
-            location: 'San Francisco, CA',
-            date: '2024-11-19',
-            link: 'https://lu.ma/AI-Talks',
-        },
-        {
-            title: 'AWS re:Invent',
-            location: 'Las Vegas, NV',
-            date: '2024-12-26',
-            link: 'https://reinvent.awsevents.com/',
-        },
-    ],
-    past: [
         {
             title: 'Your Cody questions answered live!',
             location: 'StreamYard',
