@@ -36,16 +36,16 @@ const EventsPage: FunctionComponent = () => (
 
                     <div className="grid gap-y-5 gap-x-10 xl:grid-cols-2">
                         <div>
-                            <h2 className="mt-4">AI Dev Tools Night · Austin</h2>
+                            <h2 className="mt-4">AI Eng Talks w/ Cloudflare, Sourcegraph & Jam.dev</h2>
 
                             <p className="mt-4 text-lg text-gray-600">
                                 Join us and learn about the latest advancements in AI, language models, and open source.
-                                This meetup is organized by developers for developers and sponsored by Sourcegraph and Wursta.
+                                This meetup is organized by developers for developers.
                             </p>
                             <div className="mt-4">
                                 <h3>Location</h3>
                                 <p className="mt-4 text-sm text-gray-500">
-                                1021 E 7th St, Austin, TX 78702
+                                101 Townsend St, San Francisco, CA 94107, USA
                                 </p>
                             </div>
                         </div>
@@ -54,22 +54,7 @@ const EventsPage: FunctionComponent = () => (
                             <h3>Schedule</h3>
                             <p className="mt-4">👋 Welcome</p>                            
                             <ul>
-                                <li>6:00 - 6:20 pm: Food, drinks & networking</li>
-                                <li>6:20 - 6:30 pm: Welcome & demo</li>
-                                <li>6:30 - 8:00 pm: Talks</li>
-                                <li>8:00 - 8:30 pm: Networking</li>
-                            </ul>
-                            <p className="mt-4">🎤 Talks</p>
-                            <ul>
-                                <li>
-                                    We'll have great speakers from Google, Sourcegraph, Wursta, and more.
-                                </li>
-                            </ul>
-
-                            <p className="mt-4">🍕 Social hour</p>
-                            <ul>
-                                <li>8:00 - 8:30 pm</li>
-                                <li>Yes, food and drinks will be served.</li>
+                                <li>6:00 - 8:00 pm: Lighting talks, food, drinks, and networking</li>
                             </ul>
                         </div>
                     </div>
@@ -78,7 +63,7 @@ const EventsPage: FunctionComponent = () => (
                 {/* right side */}
                 <iframe
                     title="AI Dev Tools Night"
-                    src="https://lu.ma/embed/event/evt-oNWrz0zs5J1JSlC/simple"
+                    src="https://lu.ma/embed/event/evt-qVXLRhOHIcPsY5m/simple"
                     width="100%"
                     height="640"
                     className="rounded-xl"
