@@ -34,7 +34,7 @@ export default function TimedCarousel({ items, autoAdvance = true }: TimedCarous
     }
 
     return (
-        <div className="flex min-h-screen flex-col gap-6 lg:flex-row">
+        <div className="flex flex-col gap-6 lg:flex-row">
             <div className="w-full space-y-2 lg:w-1/2">
                 {items.map((item, index) => (
                     <button
@@ -76,7 +76,7 @@ function TimedProgressBar({ isActive, resetKey }: { isActive: boolean; resetKey:
 
     useEffect(() => {
         setActiveSegments(0)
-        
+
         if (!isActive) {
             return
         }
