@@ -187,4 +187,4 @@ We are excited about future improvements to long-context LLMs. In collaboration 
 
 There are still tradeoffs around latency and cost, but we expect these to improve over time. We will soon be rolling out ultra long context window models to a subset of our users and customers. Please get in touch if you would be interested in early access to this offering.
 
-As the landscape continues to evolve, Sourcegraph is excited to partner with Google in the development of long context models for real-world use cases in large-scale codebases. Big code is the code that makes the world go round and it represents the true "dragon of complexity" that modern software engineering will need to confront in the era of AI.
+As the landscape continues to evolve, Sourcegraph is excited to partner with Google in the evolution and usage of long context models for real-world use cases in large-scale codebases. Big code is the code that makes the world go round and it represents the true "dragon of complexity" that modern software engineering will need to confront in the era of AI.
