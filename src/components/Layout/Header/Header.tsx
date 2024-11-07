@@ -214,7 +214,7 @@ const HeaderContent: FunctionComponent<
                 id="topnav"
                 href="https://sourcegraph.com/sign-in?returnTo=/cody/manage"
                 title="Login to Cody dashboard"
-                className={`lg:btn-sm order-3 py-3 px-5 lg:order-1 lg:px-0 ${getButtonClasses(dark, isMobile)}`}
+                className="btn-link order-3 flex w-full justify-center py-3 px-5 !font-semibold !text-violet-700 md:text-sm lg:order-1 lg:px-0"
                 type="button"
             >
                 Login
