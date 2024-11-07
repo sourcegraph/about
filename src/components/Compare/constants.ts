@@ -208,11 +208,14 @@ export const copilotVsCody: CompareDataType = {
                     competitor: true,
                 }),
                 createAttribute({
-                    feature: 'Commands',
+                    feature: 'Prompts',
                     competitor: true,
                 }),
                 createAttribute({
-                    feature: 'Custom commands',
+                    feature: 'Custom prompts',
+                }),
+                createAttribute({
+                    feature: 'Prompt sharing',
                 }),
             ],
         },
@@ -229,14 +232,9 @@ export const copilotVsCody: CompareDataType = {
                 }),
                 createAttribute({
                     feature: 'Visual Studio',
-                    cody: false,
+                    cody: true,
                     competitor: true,
-                }),
-                createAttribute({
-                    feature: 'Other',
-                    competitor: true,
-                    cody_details: ['Neovim.'],
-                    competitor_details: ['Neovim.'],
+                    cody_details: ['Experimental'],
                 }),
             ],
         },
@@ -250,11 +248,12 @@ export const copilotVsCody: CompareDataType = {
                 }),
                 createAttribute({
                     feature: 'Autocomplete model (default)',
-                    cody: 'StarCoder',
+                    cody: 'DeepSeek-V2',
                     competitor: 'Codex',
                 }),
                 createAttribute({
                     feature: 'Choose your LLM',
+                    competitor: true,
                 }),
                 createAttribute({
                     feature: 'Bring your own LLM key',
@@ -322,10 +321,10 @@ export const codeiumVsCody: CompareDataType = {
                     competitor: true,
                 }),
                 createAttribute({
-                    feature: 'Commands',
+                    feature: 'Prompts',
                 }),
                 createAttribute({
-                    feature: 'Custom commands',
+                    feature: 'Custom prompts',
                 }),
             ],
         },
@@ -363,7 +362,7 @@ export const codeiumVsCody: CompareDataType = {
                 }),
                 createAttribute({
                     feature: 'Autocomplete model (default)',
-                    cody: 'StarCoder',
+                    cody: 'DeepSeek-V2',
                     competitor: 'Not disclosed',
                 }),
                 createAttribute({
@@ -429,10 +428,10 @@ export const amazonCodewhispererVsCody: CompareDataType = {
                     competitor_details: 'Preview',
                 }),
                 createAttribute({
-                    feature: 'Commands',
+                    feature: 'Prompts',
                 }),
                 createAttribute({
-                    feature: 'Custom commands',
+                    feature: 'Custom prompts',
                 }),
                 createAttribute({
                     feature: 'Security vulnerability scanning',
@@ -473,7 +472,7 @@ export const amazonCodewhispererVsCody: CompareDataType = {
                 }),
                 createAttribute({
                     feature: 'Autocomplete model (default)',
-                    cody: 'StarCoder',
+                    cody: 'DeepSeek-V2',
                     competitor: 'Not disclosed',
                 }),
                 createAttribute({
@@ -533,10 +532,10 @@ export const cursorVsCody: CompareDataType = {
                     competitor: true,
                 }),
                 createAttribute({
-                    feature: 'Commands',
+                    feature: 'Prompts',
                 }),
                 createAttribute({
-                    feature: 'Custom commands',
+                    feature: 'Custom prompts',
                 }),
             ],
         },
@@ -572,7 +571,7 @@ export const cursorVsCody: CompareDataType = {
                 }),
                 createAttribute({
                     feature: 'Autocomplete model (default)',
-                    cody: 'StarCoder',
+                    cody: 'DeepSeek-V2',
                     competitor: 'Proprietary',
                 }),
                 createAttribute({
@@ -641,11 +640,11 @@ export const tabnineVsCody: CompareDataType = {
                     competitor_details: 'Available for Pro and Enterprise users',
                 }),
                 createAttribute({
-                    feature: 'Commands',
+                    feature: 'Prompts',
                     competitor: true,
                 }),
                 createAttribute({
-                    feature: 'Custom commands',
+                    feature: 'Custom prompts',
                     competitor: true,
                 }),
             ],
@@ -684,7 +683,7 @@ export const tabnineVsCody: CompareDataType = {
                 }),
                 createAttribute({
                     feature: 'Autocomplete model (default)',
-                    cody: 'StarCoder',
+                    cody: 'DeepSeek-V2',
                     competitor: 'Proprietary',
                 }),
                 createAttribute({
@@ -748,10 +747,10 @@ export const continueVsCody: CompareDataType = {
                     competitor: true,
                 }),
                 createAttribute({
-                    feature: 'Commands',
+                    feature: 'Prompts',
                 }),
                 createAttribute({
-                    feature: 'Custom commands',
+                    feature: 'Custom prompts',
                 }),
             ],
         },
@@ -787,8 +786,8 @@ export const continueVsCody: CompareDataType = {
                 }),
                 createAttribute({
                     feature: 'Autocomplete model (default)',
-                    cody: 'StarCoder',
-                    competitor: 'StarCoder',
+                    cody: 'DeepSeek-V2',
+                    competitor: 'DeepSeek-V2',
                     competitor_details: '2B parameters via Ollama',
                 }),
                 createAttribute({
