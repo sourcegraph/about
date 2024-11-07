@@ -155,31 +155,26 @@ const CodyPage: FunctionComponent = () => {
                 {/* gradient background */}
                 <div className="pointer-events-none absolute inset-0 -translate-y-32 bg-[linear-gradient(180deg,#E9EDFC_20%,#F9FAFB_90.4%)]" />
 
-                {/* blob gradients */}
-                <div className="pointer-events-none absolute inset-0">
-                    <img
-                        src="/assets/cody/left-blob.svg"
-                        alt=""
-                        aria-hidden={true}
-                        className="absolute -left-[200px] h-[600px] w-[600px] lg:top-0 lg:-left-[500px] lg:-top-40 lg:h-[1200px] lg:w-[1200px]"
-                    />
-                    <img
-                        src="/assets/cody/right-blob.svg"
-                        alt=""
-                        aria-hidden={true}
-                        className="absolute right-[-250px] top-[-250px] z-[99] h-[600px] w-[600px] md:right-[-350px] lg:-right-[700px] lg:-top-[550px] lg:h-[1500px] lg:w-[1500px]"
-                    />
-                </div>
+                <ContentSection parentClassName="relative !py-0 !pb-24 md:!pb-0" className="relative">
+                    {/* blob gradients */}
+                    <div className="pointer-events-none absolute -right-14 -top-20 hidden lg:block">
+                        <img
+                            src="/assets/cody/cody-hero.svg"
+                            alt=""
+                            aria-hidden={true}
+                            className="lg:h-[620px] lg:w-[620px]"
+                        />
+                    </div>
 
-                <ContentSection parentClassName="relative !py-0">
                     <CodyIntroDualTheme
                         isLight={true}
                         title="The most informed Code AI"
                         description="Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster"
                         titleSize="text-4xl sm:text-6xl"
-                        descriptionSize="md:text-xl"
+                        descriptionSize="md:text-xl lg:!ml-0"
                         handleOpenModal={handleOpenModal}
-                        wrapperClassName="relative z-[20] md:z-0"
+                        wrapperClassName="relative z-[20] md:z-0 lg:!text-left text-center"
+                        buttonContainerClassName="lg:!justify-start !justify-center"
                         isVariant={true}
                     />
                 </ContentSection>

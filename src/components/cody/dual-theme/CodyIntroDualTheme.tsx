@@ -17,6 +17,7 @@ interface CodyIntroDualThemeProps {
     titleSize?: string
     descriptionSize?: string
     isVariant?: boolean
+    buttonContainerClassName?: string
 }
 
 export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
@@ -29,6 +30,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
     titleSize,
     descriptionSize,
     isVariant = false,
+    buttonContainerClassName,
 }) => (
     <ContentSection
         parentClassName="!py-0 !px-0"
@@ -60,7 +62,12 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
             {description ??
                 'Cody uses the latest models and all your development context to help you understand, write, and fix code faster.'}
         </p>
-        <div className="mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]">
+        <div
+            className={classNames(
+                'mx-auto flex flex-row flex-wrap justify-center gap-[8px] rounded-[6px]',
+                buttonContainerClassName
+            )}
+        >
             <button
                 type="button"
                 className={classNames(
