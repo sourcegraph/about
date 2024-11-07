@@ -36,8 +36,7 @@ const optimizedSpeed = [
 const items = [
     {
         title: 'Autocomplete',
-        description:
-            'Code faster with real-time single and multi-line completions',
+        description: 'Code faster with real-time single and multi-line completions',
         text: (
             <div className="min-h-[555px] max-w-[738px]">
                 <video
@@ -55,8 +54,7 @@ const items = [
     },
     {
         title: 'Inline edits',
-        description:
-            'Fix and refactor code with in-line edit commands',
+        description: 'Fix and refactor code with in-line edit commands',
         text: (
             <div className="min-h-[555px] max-w-[738px]">
                 <video
@@ -74,8 +72,7 @@ const items = [
     },
     {
         title: 'Custom prompts',
-        description:
-            'Automate your work—like writing docs and tests—with custom prompts',
+        description: 'Automate your work—like writing docs and tests—with custom prompts',
         text: (
             <div className="min-h-[555px] max-w-[738px]">
                 <video
@@ -319,14 +316,15 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection
-                parentClassName="!pt-[104px] md:!pt-24 !pb-4"
+                parentClassName="!pt-[104px] md:!pt-16 !pb-4"
                 className="flex flex-col items-center justify-center"
             >
                 <p className="text-center text-base font-normal uppercase leading-[27px] text-gray-400">
                     See why developers love using Cody
                 </p>
             </ContentSection>
-            <ContentSection parentClassName="pb-16 md:!pb-24 !pt-0">
+
+            <ContentSection parentClassName="pb-16 md:!pb-12 !pt-0">
                 <div className="grid gap-4 md:grid-cols-3">
                     {singleViewCardContent.map(item => (
                         <div
