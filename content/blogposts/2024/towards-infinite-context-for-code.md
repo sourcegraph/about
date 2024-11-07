@@ -16,6 +16,8 @@ Today's frontier models excel at using popular OSS libraries to build simple app
 
 Sourcegraph has pioneered the application of generative AI to enterprise codebases with Cody, the first AI coding assistant to incorporate code search and code intelligence into AI code generation. This focus has allowed us to deploy Cody to some of the leading enterprises, such as Palo Alto Networks and Leidos, which have massive codebases that power billions of dollars of revenue and digital infrastructure. One of the next frontiers we're examining is long context window models, which present an interesting set of questions for the next evolution of code AI. For instance, will long context models replace RAG in real-world coding settings? Let's take a deep dive and find out.
 
+<Alert type="info">Note: this post is about our experiments with long-context window models and covers some features that aren't yet available in Cody today.</Alert>
+
 ## Evaluation setup
 
 Sourcegraph is partnering with Google to evaluate how long-context window models perform in real-world coding scenarios. In this post, we focus on technical question answering as a key inner-loop development task. We find incorporating long context models into Cody improves 3 key quality metrics while reducing the rate of hallucination:
@@ -150,6 +152,6 @@ The final layer comprises long-range retrievers such as code search and code nav
 
 We are excited about future improvements to long-context LLMs. In collaboration with Google, our experiments show that long context window models enhance many of the core use cases that have emerged in AI-assisted software development. Code search and graph retrieval remains essential for large enterprise codebases, but longer context windows are a multiplier on the quality of the RAG engine, as more results can be considered. And for smaller codebases, stuffing the entire codebase into context may soon become a popular alternative to local context retrieval.
 
-There are still tradeoffs around latency and cost, but we expect these to improve over time. We will soon be rolling out ultra long context window models to a subset of our users and customers. Please get in touch if you would be interested in early access to this offering.
+There are still tradeoffs around latency and cost, but we expect these to improve over time and look forward to being able to soon roll out ultra long context window models to a subset of our users and customers.
 
 As the landscape continues to evolve, Sourcegraph is excited to partner with Google in the evolution and usage of long context models for real-world use cases in large-scale codebases. Big code is the code that makes the world go round and it represents the true "dragon of complexity" that modern software engineering will need to confront in the era of AI.
