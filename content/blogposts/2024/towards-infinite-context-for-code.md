@@ -3,7 +3,7 @@ title: "Toward infinite context for code"
 authors:
   - name: Beyang Liu
     url: https://x.com/beyang
-publishDate: 2024-09-30T10:00-01:00
+publishDate: 2024-11-07T10:00-01:00
 description: "Sourcegraph and Google team up to evaluate long-context models for code generation. Discover how Cody can leverage Gemini for better code assistance."
 tags: [blog]
 slug: 'towards-infinite-context-for-code'
