@@ -22,24 +22,26 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <p>
                     Copilot is an AI code assistant that offers autocomplete, chat, and commands. It has strong
                     autocomplete performance using the OpenAI Codex model, and it offers in-IDE and mobile chat with
-                    GPT-4. It also offers deep integration with the GitHub platform with Copilot Enterprise.
+                    GPT-4o. Copilot Chat also supports a number of the latest models, including Claude 3.5 Sonnet and
+                    Gemini 1.5 Pro. Lastly, it offers deep integration with the GitHub platform with Copilot Enterprise.
                 </p>
 
                 <p>
-                    Unfortunately, Copilot does not offer a standard free tier. Copilot is also limited in how it uses
-                    code context on its Individual and Business tiers; codebase personalization is limited to Copilot
-                    Enterprise, and codebase context is limited to code hosted in GitHub. However, Copilot Enterprise
-                    also requires a GitHub Enterprise Cloud subscription and is not available with their on-premise
-                    Enterprise offering.
+                    Copilot does not offer a standard free tier. Copilot also limits how much code from private
+                    codebases can be used as context; users on Individual and Business tiers are limited to 5 repos and
+                    50 repos, respectively. Also, only code hosted on GitHub can be used as context. Copilot Enterprise
+                    does not have a limit on the number of repos used as context, but it requires a GitHub Enterprise
+                    Cloud subscription and is not available with the on-premise Enterprise offering.
                 </p>
 
                 <p>
                     <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
-                    Copilot is a good choice for individuals who are willing to pay for a solution or for enterprises
-                    looking for a solution that is deeply embedded in the GitHub ecosystem. However, Cody is the better
-                    option for individuals who want a free AI code assistant that they can personalize using codebase
-                    context, or for users who would like to select which LLM they'd like to use. Cody is also a good
-                    option for enterprise users who want to personalize their AI with code from non-GitHub code hosts.
+                    Copilot is a good choice for enterprises that are exluclusively using GitHub as a code host and that
+                    are looking for a solution that is deeply embedded in the GitHub ecosystem. Cody is the
+                    better option for enterprises that want a solution that works with multiple code hosts, or for
+                    enterprises that want to bring their own model keys (such as via Amazon Bedrock) for enhanced
+                    security. Cody also provides a cheaper price point without a limit on the number of repositories
+                    that can be used as context.
                 </p>
             </CompareHero>
         }

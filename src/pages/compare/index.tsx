@@ -47,7 +47,7 @@ const ComparePage: FunctionComponent = () => (
                 <p className="mb-5 text-gray-500">
                     Copilot is an AI code assistant that offers autocomplete, chat, and commands. It has strong
                     autocomplete performance using the OpenAI Codex model, and it offers in-IDE and mobile chat with
-                    GPT-4.
+                    GPT-4o.
                 </p>
                 <Link className="btn btn-primary text-lg" href="/compare/copilot-vs-cody">
                     See full comparison
@@ -70,7 +70,7 @@ const ComparePage: FunctionComponent = () => (
                         Bring your own LLM key <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Visual Studio IDE support <MdClose className="inline-block h-6 w-6 fill-gray-200" />
+                        Visual Studio IDE support <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                 </ul>
             </div>
@@ -85,7 +85,7 @@ const ComparePage: FunctionComponent = () => (
                         <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Choose your LLM <MdClose className="h-6 w-6 fill-gray-200" />
+                        Choose your LLM <MdCheck className="h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
                         Bring your own LLM key <MdClose className="h-6 w-6 fill-gray-200" />
@@ -231,7 +231,7 @@ const ComparePage: FunctionComponent = () => (
                         Bring your own LLM key <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Commands <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                        Prompts <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
                         Fine-tuned LLM <MdClose className="inline-block h-6 w-6 fill-gray-200" />
@@ -251,7 +251,7 @@ const ComparePage: FunctionComponent = () => (
                         Bring your own LLM key <MdClose className="h-6 w-6 fill-gray-200" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Commands <MdClose className="h-6 w-6 fill-gray-200" />
+                        Prompts <MdClose className="h-6 w-6 fill-gray-200" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
                         Fine-tuned LLM <MdCheck className="h-6 w-6 fill-violet-400" />
@@ -283,10 +283,10 @@ const ComparePage: FunctionComponent = () => (
                         Bring your own LLM key <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Commands <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                        Prompts <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Visual Studio IDE support <MdClose className="inline-block h-6 w-6 fill-gray-200" />
+                        Visual Studio IDE support <MdCheck className="inline-block h-6 w-6 fill-gray-200" />
                     </li>
                 </ul>
             </div>
@@ -303,7 +303,7 @@ const ComparePage: FunctionComponent = () => (
                         Bring your own LLM key <MdClose className="h-6 w-6 fill-gray-200" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Commands <MdClose className="h-6 w-6 fill-gray-200" />
+                        Prompts <MdClose className="h-6 w-6 fill-gray-200" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
                         Visual Studio IDE support <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
@@ -329,7 +329,7 @@ const ComparePage: FunctionComponent = () => (
                         Free Plan <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Commands <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
+                        Prompts <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
                         Neovim <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
@@ -349,7 +349,7 @@ const ComparePage: FunctionComponent = () => (
                         Free Plan <MdCheck className="inline-block h-6 w-6 fill-violet-400" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
-                        Commands <MdClose className="inline-block h-6 w-6 fill-gray-200" />
+                        Prompts <MdClose className="inline-block h-6 w-6 fill-gray-200" />
                     </li>
                     <li className="mb-1.5 flex items-center justify-between">
                         Neovim <MdClose className="inline-block h-6 w-6 fill-gray-200" />
