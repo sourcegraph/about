@@ -155,9 +155,9 @@ const CodyPage: FunctionComponent = () => {
                 {/* gradient background */}
                 <div className="pointer-events-none absolute inset-0 -translate-y-32 bg-[linear-gradient(180deg,#E9EDFC_20%,#F9FAFB_90.4%)]" />
 
-                <ContentSection parentClassName="relative !py-0 !pb-24 md:!pb-0" className="relative">
+                <ContentSection parentClassName="relative !pt-4 md:!pt-0 !pb-24 md:!pb-0" className="relative">
                     {/* blob gradients */}
-                    <div className="pointer-events-none absolute -right-14 -top-20 hidden lg:block">
+                    <div className="pointer-events-none absolute -right-14 -top-14 hidden lg:block">
                         <img
                             src="/assets/cody/cody-hero.svg"
                             alt=""
