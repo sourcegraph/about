@@ -9,11 +9,12 @@ import {
     CodyChat,
     CodyPartners,
     CodyTestimonials,
-    Video,
     SourcegraphPowered,
     CodyAutocomplete,
 } from '../../components'
 import { BentoWithMockup } from '../../components/bentoWithMockup'
+import { CodyIntroDualTheme } from '../../components/cody/dual-theme/CodyIntroDualTheme'
+import { LogoGrid } from '../../components/cody/LogoGrid'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
@@ -68,57 +69,46 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
                     'Cody is the most powerful and accurate AI coding assistant for writing, fixing, and maintaining code.',
                 image: 'https://about.sourcegraph.com/cody/cody-og.png',
             }}
-            headerColorTheme="dark"
             displayChildrenUnderNav={true}
+            childrenClassName="!-mt-[152px]"
+            className="relative w-full !overflow-x-hidden bg-gray-50"
         >
-            {/* Hero Section */}
-            <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 md:mt-0 md:pt-[22px] md:pb-9">
-                <div className="flex flex-col items-center justify-between gap-y-6 px-6 lg:flex-row lg:gap-x-6 lg:gap-y-0">
-                    <div className="w-full md:max-w-[554px] lg:max-w-[616px]">
-                        <div className="center flex items-center gap-x-4">
-                            <h1 className="text-white">Meet Cody </h1>
-                            <img
-                                src="/cody/cody-logo.svg"
-                                className="h-[45px] w-[49px] md:h-[50px] md:w-[55px]"
-                                alt="Cody Logo"
-                            />
-                        </div>
-                        <div className="mx-auto w-full pt-6 text-[39px] font-semibold leading-[41px] tracking-[-1.17px] text-white md:text-[39px] md:leading-[47px]">
-                            The only AI coding assistant <br /> that knows your{' '}
-                            <span className="cody-heading bg-clip-text text-transparent"> entire codebase </span>
-                        </div>
-                        <h4 className="mt-6 max-w-[637px] !font-normal text-gray-200">
-                            Cody uses AI and deep understanding of your codebase to help you write and understand code
-                            faster
-                        </h4>
+            <div className="relative">
+                {/* gradient background */}
+                <div className="pointer-events-none absolute inset-0 -translate-y-32 bg-[linear-gradient(180deg,#E9EDFC_20%,#F9FAFB_90.4%)]" />
 
-                        <div className="mt-4 flex flex-wrap gap-2 sm:w-[512px]">
-                            <button
-                                type="button"
-                                className="btn btn-primary-dark"
-                                title="Download Sourcegraph"
-                                onClick={() => handleOpenModal('top')}
-                            >
-                                Get Cody for free
-                            </button>
-                        </div>
-                    </div>
-                    <div className="w-full">
-                        <Video
-                            host="self"
-                            loop={false}
-                            controls={true}
-                            autoPlay={false}
-                            thumbnail="https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase_SplashScreen.webp"
-                            title="Cody - the AI coding assistant that knows your entire codebase"
-                            source={{
-                                mp4: 'https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase',
-                                webm: 'https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase',
-                            }}
-                            className="w-full rounded-lg"
-                            telemetryRecorder={telemetryRecorder}
+                <ContentSection parentClassName="relative !pt-4 md:!pt-0 !pb-24 md:!pb-0" className="relative">
+                    {/* blob gradients */}
+                    <div className="pointer-events-none absolute -right-14 -top-14 hidden lg:block">
+                        <img
+                            src="/assets/cody/cody-hero.svg"
+                            alt=""
+                            aria-hidden={true}
+                            className="lg:h-[620px] lg:w-[620px]"
                         />
                     </div>
+
+                    <CodyIntroDualTheme
+                        isLight={true}
+                        title="The most informed Code AI"
+                        description="Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster"
+                        titleSize="text-4xl sm:text-6xl"
+                        descriptionSize="md:text-xl lg:!ml-0"
+                        handleOpenModal={handleOpenModal}
+                        wrapperClassName="relative z-[20] md:z-0 lg:!text-left text-center"
+                        buttonContainerClassName="lg:!justify-start !justify-center"
+                        isVariant={true}
+                    />
+                </ContentSection>
+            </div>
+
+            <ContentSection parentClassName="!pt-4 !pb-4" className="flex flex-col items-center justify-center">
+                <p className="text-center text-base font-normal uppercase leading-[27px] text-gray-400">
+                    Leading dev teams choose Cody for their coding assistant
+                </p>
+
+                <div className="mt-4">
+                    <LogoGrid mainLogo="sofi" header={null} />
                 </div>
             </ContentSection>
 
