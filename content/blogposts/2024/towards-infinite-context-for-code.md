@@ -63,103 +63,68 @@ We define helpfulness as `H_help = 100 * (1 - R_halluc) * H / C`. In other words
 
 No analysis is complete without showing off specific examples, so let's examine some:
 
-### Question
+### Question: "What LLMs does Cody support?"
 
-**What LLMs does Cody support?**
-
-Repo: ([sourcegraph/cody](https://github.com/sourcegraph/cody))
-
-### Cody with 10k context window
+Here's Cody's answer with a 10k context window for results fetched from [sourcegraph/cody](https://github.com/sourcegraph/cody):
 
 ![Answer to what LLMs does Cody support with 10k context window](https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/what-llm-does-cody-support-cody-with-10k.png)
 
-### Cody with 1M context window
+And here's Cody's answer with a 1M context window:
 
 ![Answer to what LLMs does Cody support with 1m context window](https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/what-llm-does-cody-support-with-1m-window.png)
 
-### Commentary
+The 1M context window provides a more comprehensive, authoritative answer. There is also less noise and irrelevant filler, as the model doesn't feel the need to attend to irrelevant facts in the absence of clearly relevant ones.
 
-* 1M context window provides a more comprehensive, authoritative answer
-* Also less noise and irrelevant filler, as the model doesn't feel the need to attend to irrelevant facts in the absence of clearly relevant ones
+### Question: "How does the cody webview communicate with the extension host?"
 
-### Question
-
-**How does the cody webview communicate with the extension host?**
-
-Repo: ([sourcegraph/cody](https://github.com/sourcegraph/cody))
-
-### Cody with 10k context window
+Here's Cody's answer with a 10k context window:
 
 ![Answer to how webview communicates with 10k context window](https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/cody-webview-10k-context.png)
 
-### Cody with 1M context window
+Here's the answer with a 1M context window:
 
 ![Answer to how webview communicates with 1m context window](https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/cody-webview-1m-context.png)
 
-### Commentary
+In this example, the answers are roughly comparable, but the answer from Gemini is more to the point. In general, Gemini seems very good about answering the user query directly, without elaborating on other context items that don't relate directly to the user question.
 
-* The answers are roughly comparable, but the answer from Gemini is more to the point. In general, Gemini seems very good about answering the user query directly, without elaborating on other context items that don't relate directly to the user question.
+### Question: "Does Cody implement nearest neighbor search over embeddings vectors? If so, how?"
 
-### Question
-
-**Does Cody implement nearest neighbor search over embeddings vectors? If so, how?**
-
-Repo: ([sourcegraph/cody](https://github.com/sourcegraph/cody))
-
-### Cody with 10k context window
+Here's Cody's answer with a 10k context window:
 
 ![Answer to nearest neighbor search with 10k context window](https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/nearest-neighbor-search-10k-context.png)
 
-### Cody with 1M context window
+And with a 1M context window:
 
 ![Answer to nearest neighbor search with 10k context window](https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/nearest-neighbor-search-1m-context.png)
 
-### Commentary
+In this example, the short-context window model is unsure of itself, because it has been prompted not to treat the provided context as authoritative.
 
-* In this example, the short-context window model is unsure of itself, because it has been prompted not to treat the provided context as authoritative
+Most examples in our dataset improved with the addition of long context. However, we did notice a class of examples where long context alone was insufficient. These examples came from larger codebases, where the size of the codebase greatly exceeded the context window size. Let's take a look at some of those.
 
-Most examples in our dataset improved with the addition of long context. However, we did notice a class of examples where long context alone was insufficient. These examples came from larger codebases, where the size of the codebase greatly exceeded the context window size.
+### Question: "Where is the Cody context API defined?"
 
-### Question
-
-**Where is the Cody context API defined?**
-
-Repo: ([sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph))
-
-Note: The above repo is private.
-
-### Cody with regular-context LLM
+Here, we take a look at a much larger repository, [sourcegraph/sourcegraph-public-snapshot](https://github.com/sourcegraph/sourcegraph-public-snapshot). Here's Cody's answer with a regular-context LLM:
 
 ![Answer to where is the Cody context API defined with regular context](https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/context-api-regular-context.png)
 
-### Cody with Gemini Flash Long Context and no global retrieval
+Here's Cody's response with Gemini Flash Long Context and no global retrieval:
 
 ![Answer to where is the Cody context API defined with long context](https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/context-api-long-context.png)
 
-### Commentary
+Here, the long context window model uses a large amount of context gathered from files in the neighborhood of the currently open file. Without the benefit of global retrieval, however, it misses relevant facts in a very distant part of the monorepo.
 
-* Long context window model misses relevant facts in a very distant part of the monorepo
+### Question: "How is code navigation implemented?"
 
-### Question
-
-**How is code navigation implemented?**
-
-Repo: ([sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph))
-
-Note: The above repo is private.
-
-### Cody with regular-context LLM
+Here's another example of a question asked over the scope of a large monorepo, [sourcegraph/sourcegraph-public-snapshot](https://github.com/sourcegraph/sourcegraph-public-snapshot). This is the Cody response with a regular-context LLM:
 
 ![Answer to how is code navigation implemented with regular context](https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/code-navigation-regular-context.png)
 
-### Cody with Gemini Flash Long Context and no global retrieval
+This is the Cody response with Gemini Flash Long Context and no global retrieval (two examples are shown where we've precached different subtrees of the monorepo):
 
 ![Answer to how is code navigation implemented with long context part 1](https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/code-navigation-long-context-part-1.png)
 ![Answer to how is code navigation implemented with long context part 2](https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/code-navigation-long-context-part-2.png)
 
-### Commentary
-
-* Here again, we're pulling facts from very disparate parts of the codebase, so the long-context caching approach we implemented (covered below) can only get part of the answer at a time. We show two examples where we've precached different subtrees of the monorepo.
+Here again, we're pulling facts from very disparate parts of the codebase, so the long-context caching approach we implemented (covered below) can only get part of the answer at a time.
 
 Our evaluations suggest long-context window models can match the use of local retrieval methods for codebases under 4MB entirely. But for larger codebases, the addition of global code search and code intelligence remains necessary for many common queries and use cases.
 
