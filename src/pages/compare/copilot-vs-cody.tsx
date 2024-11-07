@@ -22,7 +22,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <p>
                     Copilot is an AI code assistant that offers autocomplete, chat, and commands. It has strong
                     autocomplete performance using the OpenAI Codex model, and it offers in-IDE and mobile chat with
-                    GPT-4. Copilot Chat also supports a number of the latest models, including Claude 3.5 Sonnet and
+                    GPT-4o. Copilot Chat also supports a number of the latest models, including Claude 3.5 Sonnet and
                     Gemini 1.5 Pro. Lastly, it offers deep integration with the GitHub platform with Copilot Enterprise.
                 </p>
 
@@ -36,10 +36,10 @@ const CompareCopilotPage: FunctionComponent = () => (
 
                 <p>
                     <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
-                    Copilot is a good choice for enterprises who are exluclusively using GitHub as a code host and who
-                    are looking for a solution that is deeply embedded in the GitHub ecosystem. However, Cody is the
-                    better option for enterprises who want a solution that works with multiple code hosts, or for
-                    enterprises who want to bring their own model keys (such as via Amazon Bedrock) for enhanced
+                    Copilot is a good choice for enterprises that are exluclusively using GitHub as a code host and that
+                    are looking for a solution that is deeply embedded in the GitHub ecosystem. Cody is the
+                    better option for enterprises that want a solution that works with multiple code hosts, or for
+                    enterprises that want to bring their own model keys (such as via Amazon Bedrock) for enhanced
                     security. Cody also provides a cheaper price point without a limit on the number of repositories
                     that can be used as context.
                 </p>

@@ -210,6 +210,7 @@ export const copilotVsCody: CompareDataType = {
                 createAttribute({
                     feature: 'Prompts',
                     competitor: true,
+                    competitor_details: ['Called "Commands"'],
                 }),
                 createAttribute({
                     feature: 'Custom prompts',
@@ -259,9 +260,7 @@ export const copilotVsCody: CompareDataType = {
                     feature: 'Bring your own LLM key',
                 }),
                 createAttribute({
-                    feature: 'LLM hosting',
-                    cody: 'Cloud',
-                    competitor: 'Cloud',
+                    feature: 'Support for Amazon Bedrock, Azure OpenAI, and Google Coud Vertex AI',
                 }),
             ],
         },
@@ -270,9 +269,9 @@ export const copilotVsCody: CompareDataType = {
             attributes: [
                 createAttribute({
                     feature: 'Personalized responses using codebase context',
-                    cody_details: 'Available on all tiers. Enterprise tier supports all code hosts.',
+                    cody_details: 'Available on all tiers. Enterprise tier supports all code hosts and unlimited repositories.',
                     competitor: true,
-                    competitor_details: 'Enterprise tier only. Limited to code hosted on GitHub.',
+                    competitor_details: 'Limited to code hosted on GitHub. Business tier is limited to 50 repos.',
                 }),
                 createAttribute({
                     feature: 'Fine-tuned LLM',
@@ -287,8 +286,7 @@ export const copilotVsCody: CompareDataType = {
             attributes: [
                 createAttribute({
                     feature: 'Free tier offered',
-                    competitor: true,
-                    competitor_details: 'Free for students, teachers, and OSS maintainers',
+                    competitor_details: 'Pro tier is free for students, teachers, and OSS maintainers',
                 }),
                 createAttribute({
                     feature: 'Pro tier pricing for individuals',
