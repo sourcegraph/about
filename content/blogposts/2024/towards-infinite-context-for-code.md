@@ -74,6 +74,7 @@ Here's Cody's answer with a 10k context window for results fetched from [sourceg
 And here's Cody's answer with a 1M context window:
 
 ![Answer to what LLMs does Cody support with 1m context window](https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/what-llm-does-cody-support-with-1m-window.png)
+**Note: Gemini 1.5 was experimental at the time this image was generated and as of the training cutoff date of the model used**
 
 The 1M context window provides a more comprehensive, authoritative answer. There is also less noise and irrelevant filler, as the model doesn't feel the need to attend to irrelevant facts in the absence of clearly relevant ones.
 
