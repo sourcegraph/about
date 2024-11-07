@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 
 import { Layout, CodyIde, ContentSection, Badge } from '../components'
 import { BentoWithMockup } from '../components/bentoWithMockup'
-import { ContentEnum, FullWidthTabsCarousel } from '../components/Carousels/fullWidthTabsCarousel'
+import TimedCarousel from '../components/Carousels/TimedCarousel'
 import CodyPlan from '../components/cody/CodyPlan'
 import CodyTwoColumnSection from '../components/cody/CodyTwoColumnSection'
 import { CodyIntroDualTheme } from '../components/cody/dual-theme/CodyIntroDualTheme'
@@ -36,6 +36,8 @@ const optimizedSpeed = [
 const items = [
     {
         title: 'Autocomplete',
+        description:
+            'Code faster with real-time single and multi-line completions',
         text: (
             <div className="min-h-[555px] max-w-[738px]">
                 <video
@@ -52,7 +54,9 @@ const items = [
         ),
     },
     {
-        title: 'Edit',
+        title: 'Inline edits',
+        description:
+            'Fix and refactor code with in-line edit commands',
         text: (
             <div className="min-h-[555px] max-w-[738px]">
                 <video
@@ -69,7 +73,9 @@ const items = [
         ),
     },
     {
-        title: 'Prompts',
+        title: 'Custom prompts',
+        description:
+            'Automate your work—like writing docs and tests—with custom prompts',
         text: (
             <div className="min-h-[555px] max-w-[738px]">
                 <video
@@ -334,7 +340,17 @@ const CodyPage: FunctionComponent = () => {
             </ContentSection>
 
             <ContentSection parentClassName="!py-16 lg:!py-24">
-                <FullWidthTabsCarousel
+                <div className="text-center">
+                    <h2 className="mb-4">Upgrade your IDE with powerful AI features</h2>
+                    <p className="text-balance mx-auto mb-10 max-w-2xl text-gray-700 opacity-70">
+                        Code completions, code edits, and customizable prompts use Cody's best models + extensive
+                        context to deliver the most accurate results.
+                    </p>
+                </div>
+
+                <TimedCarousel items={items} />
+
+                {/* <FullWidthTabsCarousel
                     darkMode={false}
                     items={items}
                     parentSectionClassName="!items-start"
@@ -345,7 +361,7 @@ const CodyPage: FunctionComponent = () => {
                     cta={false}
                     title="Upgrade your IDE with powerful AI features"
                     isVariant={true}
-                />
+                /> */}
             </ContentSection>
 
             <HowCodyWorks isLight={true} isVariant={true} />
