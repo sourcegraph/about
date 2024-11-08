@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import { ContentSection, Layout, CodyCta, CodyIde } from '../../components'
+import CodyPlan from '../../components/cody/CodyPlan'
 import { CodyIntroDualTheme } from '../../components/cody/dual-theme/CodyIntroDualTheme'
 import { HowCodyWorks } from '../../components/cody/HowCodyWorks'
 import { LogoGrid } from '../../components/cody/LogoGrid'
@@ -9,7 +10,6 @@ import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../../lib/utils'
 import { TelemetryProps } from '../../telemetry'
-import CodyPlan from '../../components/cody/CodyPlan'
 
 declare global {
     interface Window {
