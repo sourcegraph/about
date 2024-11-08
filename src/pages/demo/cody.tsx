@@ -1,18 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import {
-    ContentSection,
-    Layout,
-    CodyImageTab,
-    CodyCta,
-    CodyIde,
-    CodyChat,
-    CodyPartners,
-    CodyTestimonials,
-    SourcegraphPowered,
-    CodyAutocomplete,
-} from '../../components'
-import { BentoWithMockup } from '../../components/bentoWithMockup'
+import { ContentSection, Layout, CodyCta } from '../../components'
 import { CodyIntroDualTheme } from '../../components/cody/dual-theme/CodyIntroDualTheme'
 import { LogoGrid } from '../../components/cody/LogoGrid'
 import { useAuthModal } from '../../context/AuthModalContext'
