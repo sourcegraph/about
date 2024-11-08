@@ -85,7 +85,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
     return (
         <Disclosure
             as="nav"
-            className={classNames('fixed top-0 left-0 right-0 z-[1030] transition', { 'bg-gray-50': sticky })}
+            className={classNames('fixed top-0 left-0 right-0 z-[1030] transition', { 'bg-gray-50': sticky || open })}
             ref={navRef}
         >
             {({ open, close }) => (
