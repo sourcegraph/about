@@ -8,7 +8,7 @@ interface CodyIdeProps {
     isLight?: boolean
 }
 
-export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) => {
+export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = true }) => {
     const allIdes = [
         { name: 'VS Code', icon: 'vs_code.svg' },
         { name: 'Visual Studio', icon: 'VisualStudio_icon.svg', isExperimental: true },

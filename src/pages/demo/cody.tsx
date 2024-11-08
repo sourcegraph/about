@@ -103,8 +103,8 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
             </div>
 
             <ContentSection parentClassName="!pt-4 !pb-4" className="flex flex-col items-center justify-center">
-                <p className="text-center text-base font-normal uppercase leading-[27px] text-gray-400">
-                    Leading dev teams choose Cody for their coding assistant
+                <p className="text-center text-base font-normal leading-[27px] text-gray-400">
+                    Trusted by the world's largest dev teams
                 </p>
 
                 <div className="mt-4">
@@ -112,32 +112,87 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
                 </div>
             </ContentSection>
 
-            <CodyAutocomplete />
+            <ContentSection parentClassName="!pt-36 !pb-20" className="flex flex-col items-center justify-center">
+                <h2 className="text-center">Make working in sprawling codebases delightful</h2>
+                <p className="text-balance mx-auto mt-4 max-w-2xl text-center text-lg text-gray-600">
+                    Growing code and dependencies make dev work complex. Cody helps developers spend more time doing
+                    what they love: writing code.
+                </p>
 
-            <CodyIde />
+                <div className="mx-auto mt-8 grid max-w-5xl gap-6 md:grid-cols-2">
+                    <div className="rounded-lg bg-white shadow">
+                        <img
+                            src="/assets/cody/solve-hard-software-problems.png"
+                            alt="Solve hard software problems"
+                            className="rounded-t-md"
+                        />
+                        <div className="p-7">
+                            <h3 className="text-xl">Solve hard software problems</h3>
+                            <p className="mt-2 text-sm text-gray-600">
+                                Cody uses the latest LLMs and all your development context to help you understand,
+                                write, and fix code faster
+                            </p>
+                        </div>
+                    </div>
 
-            <CodyChat />
+                    <div className="rounded-lg bg-white shadow">
+                        <img
+                            src="/assets/cody/increase-engineering-productivity.png"
+                            alt="Increase engineering productivity"
+                            className="rounded-t-md"
+                        />
+                        <div className="p-7">
+                            <h3 className="text-xl">Increase engineering productivity</h3>
+                            <p className="mt-2 text-sm text-gray-600">
+                                Cody uses the latest LLMs and all your development context to help you understand,
+                                write, and fix code faster
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </ContentSection>
 
-            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
-                <BentoWithMockup isDarkBorder={true} isVariantTitle={true} href="/resources/gartner-mq" />
-            </div>
+            <ContentSection parentClassName="!pt-20 !pb-20" className="flex flex-col items-center justify-center">
+                <h2 className="text-center text-3xl font-semibold">See why devs and their teams love using Cody</h2>
 
-            <CodyPartners isLight={false} className="!pb-[32px] md:pt-[96px] md:!pb-0" />
+                <div className="mx-auto mt-12 grid max-w-7xl grid-cols-1 gap-8 lg:grid-cols-3">
+                    <div className="rounded-2xl bg-white p-5 shadow md:p-8">
+                        <h3 className="text-xl font-semibold">Removing developer toil</h3>
+                        <p className="mt-4 text-gray-600">
+                            "There's a fatigue that sets in with unit tests that I previously had to overcome, but now
+                            Cody can simply set up the test cases for me."
+                        </p>
+                        <div className="mt-6">
+                            <div className="text-purple-600 font-medium">James Griffin-Allwood</div>
+                            <div className="text-sm text-gray-600">Staff Developer, 1Password</div>
+                        </div>
+                    </div>
 
-            <CodyTestimonials />
+                    <div className="rounded-2xl bg-white p-5 shadow md:p-8">
+                        <h3 className="text-xl font-semibold">Working with the best models</h3>
+                        <p className="mt-4 text-gray-600">
+                            "Cody's ability to switch backends, from Claude to GPT, is very attractive to us...aving a
+                            tool that can react to new LLMs quickly is important to us."
+                        </p>
+                        <div className="mt-6">
+                            <div className="text-purple-600 font-medium">Godwin Babu</div>
+                            <div className="text-sm text-gray-600">Sr. Manager of DevX, Qualtrics</div>
+                        </div>
+                    </div>
 
-            <CodyImageTab
-                icon="/cody/commands-brand-icon.svg"
-                headerText="Run custom and pre-built commands"
-                description={
-                    <h3 className="mb-0 pt-[18px] text-gray-200">
-                        Generate, test, and fix code with one-click commands.
-                    </h3>
-                }
-                tabContent={IMAGE_TAB_CONTENT}
-            />
-
-            <SourcegraphPowered />
+                    <div className="rounded-2xl bg-white p-5 shadow md:p-8">
+                        <h3 className="text-xl font-semibold">Spending time more efficiently</h3>
+                        <p className="mt-4 text-gray-600">
+                            "We have the freedom to move at the pace our customers need....It's not just about time
+                            savings. It's about how you're able to spend your time."
+                        </p>
+                        <div className="mt-6">
+                            <div className="text-purple-600 font-medium">Rob Linger</div>
+                            <div className="text-sm text-gray-600">AI Software Architect, Ledios</div>
+                        </div>
+                    </div>
+                </div>
+            </ContentSection>
 
             <CodyCta source="Cody page" isCodyPage={true} />
         </Layout>
