@@ -1,13 +1,15 @@
 import { FunctionComponent } from 'react'
 
-import { ContentSection, Layout, CodyCta } from '../../components'
+import { ContentSection, Layout, CodyCta, CodyIde } from '../../components'
 import { CodyIntroDualTheme } from '../../components/cody/dual-theme/CodyIntroDualTheme'
+import { HowCodyWorks } from '../../components/cody/HowCodyWorks'
 import { LogoGrid } from '../../components/cody/LogoGrid'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
 import { captureCustomEventWithPageData } from '../../lib/utils'
 import { TelemetryProps } from '../../telemetry'
+import CodyPlan from '../../components/cody/CodyPlan'
 
 declare global {
     interface Window {
@@ -183,6 +185,16 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
             </ContentSection>
 
             <CodyCta source="Cody page" isCodyPage={true} />
+
+            <CodyIde isLight={true} />
+
+            <div className="my-32">
+                <HowCodyWorks isLight={true} isVariant={false} />
+            </div>
+
+            <ContentSection parentClassName="!pt-10 !pb-32">
+                <CodyPlan />
+            </ContentSection>
         </Layout>
     )
 }
