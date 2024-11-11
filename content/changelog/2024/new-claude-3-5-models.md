@@ -6,7 +6,7 @@ authors:
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.png
 publishDate: 2024-11-11T10:00-02:00
 description: "Cody now supports the updated Claude 3.5 Sonnet and Claude 3.5 Haiku models across all plans."
-tags: [Enterprise, Cody, VS Code, JetBrains]
+tags: [Cody, VS Code, JetBrains]
 version: [v5.9.0]
 versionIcon: /assets/changelog/sourcegraph.svg
 slug: 'new-claude-3-5-models'
