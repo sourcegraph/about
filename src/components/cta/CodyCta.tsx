@@ -13,6 +13,10 @@ interface CodyCtaProps {
     source: string
     isLight?: boolean
     isVariantStyle?: boolean
+    codyTitle?: string
+    codyButtonText?: string
+    enterpriseTitle?: string
+    enterpriseLink?: string
 }
 
 export const CodyCta: FunctionComponent<CodyCtaProps> = ({
@@ -20,6 +24,10 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
     source,
     isLight = false,
     isVariantStyle,
+    codyTitle,
+    codyButtonText,
+    enterpriseTitle,
+    enterpriseLink,
 }) => {
     const { openModal } = useAuthModal()
 
@@ -61,13 +69,18 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
             className="btn btn-primary text-center"
             type="button"
         >
-            {isLight ? (
+            {codyButtonText && <span>{codyButtonText}</span>}
+
+            {!codyButtonText && (
                 <>
-                    <span className="hidden md:block">Download Cody for free</span>
-                    <span className="block md:hidden">Download Cody free</span>
+                    {!isLight && (
+                        <>
+                            <span className="hidden md:block">Download Cody for free</span>
+                            <span className="block md:hidden">Download Cody free</span>
+                        </>
+                    )}
+                    {isLight && <span>{isVariantStyle ? 'Start free' : 'Get Cody for free'}</span>}
                 </>
-            ) : (
-                <span>{isVariantStyle ? 'Start free' : 'Get Cody for free'}</span>
             )}
         </button>
     )
@@ -85,17 +98,19 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
         <ContentSection id="contact-form" parentClassName="!py-0" className={contentClassName}>
             <div
                 className={classNames(
-                    'hover:cta-free-cody relative overflow-hidden rounded-2xl border border-gray-200 bg-white px-14 py-16 md:w-1/2 md:p-16',
+                    'hover:cta-free-cody relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 md:w-1/2 md:p-14',
                     { 'border-opacity-25': !isVariantStyle }
                 )}
             >
                 <div className="bg-grad absolute right-0 top-0 h-[3px] w-full flex-1 bg-gradient-to-r from-blue-300 via-violet-400 to-vermillion-300" />
-                <h2 className={classNames('text-gray-700', { 'max-w-[444px]': isVariantStyle })}>{h2Content}</h2>
-                <h3 className={h3ClassName}>
+                <h2 className={classNames('text-gray-700', { 'max-w-[444px]': isVariantStyle })}>
+                    {codyTitle ?? h2Content}
+                </h2>
+                <p className="mb-0 mt-4 text-lg text-gray-500">
                     {isVariantStyle
                         ? 'Experience code intelligence with a free trial for you and your team, or search millions of open source repositories.'
                         : ' Use Cody for free in your IDE, no credit card required.'}
-                </h3>
+                </p>
                 <div
                     className={classNames('mt-6 flex flex-col flex-wrap gap-4 md:flex-row', {
                         'md:gap-6': isVariantStyle,
@@ -108,7 +123,11 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
                             className="btn btn-primary text-center"
                             href="/contact/request-info"
                         >
-                            <span>{isVariantStyle ? 'Start free' : 'Get Cody for free'}</span>
+                            {codyButtonText ? (
+                                <span>{codyButtonText}</span>
+                            ) : (
+                                <span>{isVariantStyle ? 'Start free' : 'Get Cody for free'}</span>
+                            )}
                         </Link>
                     ) : (
                         batchChangesButtonContent
@@ -123,7 +142,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
                             )}
                             data-button-type="cta"
                         >
-                            Book a demo
+                            {codyButtonText ? <span>{codyButtonText}</span> : <span>Book a demo</span>}
                         </Link>
                     )}
                 </div>
@@ -131,25 +150,26 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
 
             <div
                 className={classNames(
-                    'flex flex-col gap-4 rounded-2xl border border-white border-opacity-40 px-14 py-16 md:w-1/2 md:p-16',
+                    'flex flex-col gap-4 rounded-2xl border border-white border-opacity-40 p-8 md:w-1/2 md:p-14',
                     {
                         'bg-violet-700': isCodyPage,
                     }
                 )}
             >
-                <h2 className="text-white">{isVariantStyle ? 'Enterprise' : 'Cody Enterprise'}</h2>
-                <h3
-                    className={classNames('text-[18px] text-white text-opacity-80', {
-                        'leading-[27px] -tracking-[0.25px]': isCodyPage,
-                    })}
-                >
+                {enterpriseTitle && <h2 className="text-white">{enterpriseTitle}</h2>}
+                {!enterpriseTitle && (
+                    <h2 className="text-white">{isVariantStyle ? 'Enterprise' : 'Cody Enterprise'}</h2>
+                )}
+
+                <p className="mb-0 text-lg text-white">
                     {isVariantStyle
                         ? 'Enterprise provides additional security, scalability, and control for your organization. Unlimited usage and context-awareness of your entire codebase.'
                         : 'Cody Enterprise provides additional security, scalability, and control for your organization. Unlimited usage and context search for your entire codebase.'}
-                </h3>
+                </p>
+
                 <div className="flex max-w-[356px] flex-col flex-wrap gap-4 md:flex-row">
                     <Link
-                        href="/contact/request-info"
+                        href={enterpriseLink ?? '/contact/request-info'}
                         title="Get Cody for Enterprise"
                         className="btn btn-secondary-dark w-full px-6 py-2 text-center md:w-auto"
                     >

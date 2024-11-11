@@ -18,6 +18,7 @@ interface CodyIntroDualThemeProps {
     descriptionSize?: string
     isVariant?: boolean
     buttonContainerClassName?: string
+    enterpriseLink?: string
 }
 
 export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
@@ -31,6 +32,7 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
     descriptionSize,
     isVariant = false,
     buttonContainerClassName,
+    enterpriseLink,
 }) => (
     <ContentSection
         parentClassName="!py-0 !px-0"
@@ -87,8 +89,9 @@ export const CodyIntroDualTheme: FunctionComponent<CodyIntroDualThemeProps> = ({
                     {isVariant && <ArrowUpRight className="ml-2 hidden md:flex" size={16} />}
                 </div>
             </button>
+
             <Link
-                href="/contact/request-info"
+                href={enterpriseLink ?? '/contact/request-info'}
                 title="Request Cody Enterprise"
                 className={classNames('btn btn-secondary w-full px-6 py-2 lg:w-fit', isVariant && 'md:!w-fit')}
                 type="button"

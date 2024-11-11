@@ -1,19 +1,9 @@
 import { FunctionComponent } from 'react'
 
-import {
-    ContentSection,
-    Layout,
-    CodyImageTab,
-    CodyCta,
-    CodyIde,
-    CodyChat,
-    CodyPartners,
-    CodyTestimonials,
-    Video,
-    SourcegraphPowered,
-    CodyAutocomplete,
-} from '../../components'
-import { BentoWithMockup } from '../../components/bentoWithMockup'
+import { ContentSection, Layout, CodyCta, CodyIde } from '../../components'
+import CodyPlan from '../../components/cody/CodyPlan'
+import { CodyIntroDualTheme } from '../../components/cody/dual-theme/CodyIntroDualTheme'
+import { LogoGrid } from '../../components/cody/LogoGrid'
 import { useAuthModal } from '../../context/AuthModalContext'
 import { breakpoints } from '../../data/breakpoints'
 import { useWindowWidth } from '../../hooks/windowWidth'
@@ -68,88 +58,146 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
                     'Cody is the most powerful and accurate AI coding assistant for writing, fixing, and maintaining code.',
                 image: 'https://about.sourcegraph.com/cody/cody-og.png',
             }}
-            headerColorTheme="dark"
             displayChildrenUnderNav={true}
+            childrenClassName="!-mt-[152px]"
+            className="relative w-full !overflow-x-hidden bg-gray-50"
         >
-            {/* Hero Section */}
-            <ContentSection parentClassName="!py-0 !px-0" className="-mt-8 pt-0 md:mt-0 md:pt-[22px] md:pb-9">
-                <div className="flex flex-col items-center justify-between gap-y-6 px-6 lg:flex-row lg:gap-x-6 lg:gap-y-0">
-                    <div className="w-full md:max-w-[554px] lg:max-w-[616px]">
-                        <div className="center flex items-center gap-x-4">
-                            <h1 className="text-white">Meet Cody </h1>
-                            <img
-                                src="/cody/cody-logo.svg"
-                                className="h-[45px] w-[49px] md:h-[50px] md:w-[55px]"
-                                alt="Cody Logo"
-                            />
-                        </div>
-                        <div className="mx-auto w-full pt-6 text-[39px] font-semibold leading-[41px] tracking-[-1.17px] text-white md:text-[39px] md:leading-[47px]">
-                            The only AI coding assistant <br /> that knows your{' '}
-                            <span className="cody-heading bg-clip-text text-transparent"> entire codebase </span>
-                        </div>
-                        <h4 className="mt-6 max-w-[637px] !font-normal text-gray-200">
-                            Cody uses AI and deep understanding of your codebase to help you write and understand code
-                            faster
-                        </h4>
+            <div className="relative">
+                {/* gradient background */}
+                <div className="pointer-events-none absolute inset-0 -translate-y-32 bg-[linear-gradient(180deg,#E9EDFC_20%,#F9FAFB_90.4%)]" />
 
-                        <div className="mt-4 flex flex-wrap gap-2 sm:w-[512px]">
-                            <button
-                                type="button"
-                                className="btn btn-primary-dark"
-                                title="Download Sourcegraph"
-                                onClick={() => handleOpenModal('top')}
-                            >
-                                Get Cody for free
-                            </button>
+                <ContentSection parentClassName="relative !pt-4 md:!pt-0 !pb-24 md:!pb-0" className="relative">
+                    {/* blob gradients */}
+                    <div className="pointer-events-none absolute -right-14 -top-14 hidden lg:block">
+                        <img
+                            src="/assets/cody/cody-hero.svg"
+                            alt=""
+                            aria-hidden={true}
+                            className="lg:h-[620px] lg:w-[620px]"
+                        />
+                    </div>
+
+                    <CodyIntroDualTheme
+                        isLight={true}
+                        title="The most informed Code AI"
+                        description="Cody uses the latest LLMs and all your development context to help you understand, write, and fix code faster"
+                        titleSize="text-4xl sm:text-6xl"
+                        descriptionSize="md:text-xl lg:!ml-0"
+                        handleOpenModal={handleOpenModal}
+                        wrapperClassName="relative z-[20] md:z-0 lg:!text-left text-center"
+                        buttonContainerClassName="lg:!justify-start !justify-center"
+                        isVariant={true}
+                        enterpriseLink="/contact/request-info?form_submission_source=cody-demo-landing-page"
+                    />
+                </ContentSection>
+            </div>
+
+            <ContentSection parentClassName="!pt-4 !pb-4" className="flex flex-col items-center justify-center">
+                <p className="text-center text-base font-normal leading-[27px] text-gray-400">
+                    Trusted by the world's largest dev teams
+                </p>
+
+                <div className="mt-4">
+                    <LogoGrid mainLogo="sofi" header={null} />
+                </div>
+            </ContentSection>
+
+            <ContentSection parentClassName="!pt-36 !pb-20" className="flex flex-col items-center justify-center">
+                <h2 className="text-center">Make working in sprawling codebases delightful</h2>
+                <p className="text-balance mx-auto mt-4 max-w-2xl text-center text-lg text-gray-600">
+                    Growing code and dependencies make dev work complex. Cody helps developers spend more time doing
+                    what they love: writing code.
+                </p>
+
+                <div className="mx-auto mt-8 grid max-w-5xl gap-6 md:grid-cols-2">
+                    <div className="rounded-lg bg-white shadow">
+                        <img
+                            src="/assets/cody/solve-hard-software-problems.png"
+                            alt="Solve hard software problems"
+                            className="rounded-t-md"
+                        />
+                        <div className="p-7">
+                            <h3 className="text-xl">Solve hard software problems</h3>
+                            <p className="mt-2 text-sm text-gray-600">
+                                Cody uses the latest LLMs and all your development context to help you understand,
+                                write, and fix code faster
+                            </p>
                         </div>
                     </div>
-                    <div className="w-full">
-                        <Video
-                            host="self"
-                            loop={false}
-                            controls={true}
-                            autoPlay={false}
-                            thumbnail="https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase_SplashScreen.webp"
-                            title="Cody - the AI coding assistant that knows your entire codebase"
-                            source={{
-                                mp4: 'https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase',
-                                webm: 'https://storage.googleapis.com/sourcegraph-assets/website/video/Cody%20Page%20April%202024/Cody_the_AI_that_knows_your_codebase',
-                            }}
-                            className="w-full rounded-lg"
-                            telemetryRecorder={telemetryRecorder}
+
+                    <div className="rounded-lg bg-white shadow">
+                        <img
+                            src="/assets/cody/increase-engineering-productivity.png"
+                            alt="Increase engineering productivity"
+                            className="rounded-t-md"
                         />
+                        <div className="p-7">
+                            <h3 className="text-xl">Increase engineering productivity</h3>
+                            <p className="mt-2 text-sm text-gray-600">
+                                Cody uses the latest LLMs and all your development context to help you understand,
+                                write, and fix code faster
+                            </p>
+                        </div>
                     </div>
                 </div>
             </ContentSection>
 
-            <CodyAutocomplete />
+            <ContentSection parentClassName="!pt-20 !pb-20" className="flex flex-col items-center justify-center">
+                <h2 className="text-center text-3xl font-semibold">See why devs and their teams love using Cody</h2>
 
-            <CodyIde />
+                <div className="mx-auto mt-12 grid max-w-7xl grid-cols-1 gap-8 lg:grid-cols-3">
+                    <div className="rounded-2xl bg-white p-5 shadow md:p-8">
+                        <h3 className="text-xl font-semibold">Removing developer toil</h3>
+                        <p className="mt-4 text-gray-600">
+                            "There's a fatigue that sets in with unit tests that I previously had to overcome, but now
+                            Cody can simply set up the test cases for me."
+                        </p>
+                        <div className="mt-6">
+                            <div className="text-purple-600 font-medium">James Griffin-Allwood</div>
+                            <div className="text-sm text-gray-600">Staff Developer, 1Password</div>
+                        </div>
+                    </div>
 
-            <CodyChat />
+                    <div className="rounded-2xl bg-white p-5 shadow md:p-8">
+                        <h3 className="text-xl font-semibold">Working with the best models</h3>
+                        <p className="mt-4 text-gray-600">
+                            "Cody's ability to switch backends, from Claude to GPT, is very attractive to us... having a
+                            tool that can react to new LLMs quickly is important to us."
+                        </p>
+                        <div className="mt-6">
+                            <div className="text-purple-600 font-medium">Godwin Babu</div>
+                            <div className="text-sm text-gray-600">Sr. Manager of DevX, Qualtrics</div>
+                        </div>
+                    </div>
 
-            <div className="mx-auto max-w-screen-xl px-6 pt-24 md:px-0 md:pb-4">
-                <BentoWithMockup isDarkBorder={true} isVariantTitle={true} href="/resources/gartner-mq" />
-            </div>
+                    <div className="rounded-2xl bg-white p-5 shadow md:p-8">
+                        <h3 className="text-xl font-semibold">Spending time more efficiently</h3>
+                        <p className="mt-4 text-gray-600">
+                            "We have the freedom to move at the pace our customers need....It's not just about time
+                            savings. It's about how you're able to spend your time."
+                        </p>
+                        <div className="mt-6">
+                            <div className="text-purple-600 font-medium">Rob Linger</div>
+                            <div className="text-sm text-gray-600">AI Software Architect, Ledios</div>
+                        </div>
+                    </div>
+                </div>
+            </ContentSection>
 
-            <CodyPartners isLight={false} className="!pb-[32px] md:pt-[96px] md:!pb-0" />
-
-            <CodyTestimonials />
-
-            <CodyImageTab
-                icon="/cody/commands-brand-icon.svg"
-                headerText="Run custom and pre-built commands"
-                description={
-                    <h3 className="mb-0 pt-[18px] text-gray-200">
-                        Generate, test, and fix code with one-click commands.
-                    </h3>
-                }
-                tabContent={IMAGE_TAB_CONTENT}
+            <CodyCta
+                source="Cody page"
+                isCodyPage={true}
+                codyTitle="Get Cody for yourself"
+                codyButtonText="Download Cody for free"
+                enterpriseTitle="Get Cody for your team"
+                enterpriseLink="/contact/request-info?form_submission_source=cody-demo-landing-page"
             />
 
-            <SourcegraphPowered />
+            <CodyIde isLight={true} />
 
-            <CodyCta source="Cody page" isCodyPage={true} />
+            <ContentSection parentClassName="!pt-36 !pb-32">
+                <CodyPlan />
+            </ContentSection>
         </Layout>
     )
 }

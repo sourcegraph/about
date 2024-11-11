@@ -41,7 +41,7 @@ const CodyPlan: FunctionComponent = () => {
 
     return (
         <div>
-            <h2 className="mb-10 ml-6 text-gray-700">Choose the perfect plan for you or your team</h2>
+            <h2 className="mb-10 ml-6 text-gray-700 lg:text-center">Choose the perfect plan for you or your team</h2>
             <div className="flex flex-col flex-wrap gap-[27px] md:flex-row lg:flex-nowrap">
                 {items.map(item => (
                     <div

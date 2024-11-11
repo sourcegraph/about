@@ -8,7 +8,7 @@ interface CodyIdeProps {
     isLight?: boolean
 }
 
-export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) => {
+export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = true }) => {
     const allIdes = [
         { name: 'VS Code', icon: 'vs_code.svg' },
         { name: 'Visual Studio', icon: 'VisualStudio_icon.svg', isExperimental: true },
@@ -27,7 +27,7 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
     ]
 
     return (
-        <ContentSection parentClassName="!py-0" className="mt-16">
+        <ContentSection parentClassName="!py-0" className="mt-14">
             <div className="mb-10 text-center">
                 <h3 className="mb-2 text-sm font-medium text-gray-500">IDE Support</h3>
 
