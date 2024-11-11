@@ -32,7 +32,7 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                 <h3 className="mb-2 text-sm font-medium text-gray-500">IDE Support</h3>
 
                 <h2
-                    className={classNames('mb-4 whitespace-nowrap', {
+                    className={classNames('mb-4', {
                         'text-gray-200': !isLight,
                         'text-gray-700': isLight,
                     })}
@@ -51,7 +51,7 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = false }) =>
                         <div
                             key={ide.name}
                             className={classNames(
-                                'relative flex items-center justify-center gap-x-4 border-r border-b border-gray-200 p-4',
+                                'relative flex items-center gap-x-4 border-b border-gray-200 p-4 md:justify-center md:border-r',
                                 {
                                     '-mr-px': index === 1 || (index >= 2 && (index - 1) % 3 === 0),
                                     '-mb-px': index >= allIdes.length - 3,
