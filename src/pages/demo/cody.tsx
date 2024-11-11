@@ -162,7 +162,7 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
                     <div className="rounded-2xl bg-white p-5 shadow md:p-8">
                         <h3 className="text-xl font-semibold">Working with the best models</h3>
                         <p className="mt-4 text-gray-600">
-                            "Cody's ability to switch backends, from Claude to GPT, is very attractive to us...aving a
+                            "Cody's ability to switch backends, from Claude to GPT, is very attractive to us... having a
                             tool that can react to new LLMs quickly is important to us."
                         </p>
                         <div className="mt-6">
@@ -196,11 +196,7 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
 
             <CodyIde isLight={true} />
 
-            <div className="my-32">
-                <HowCodyWorks isLight={true} isVariant={false} />
-            </div>
-
-            <ContentSection parentClassName="!pt-10 !pb-32">
+            <ContentSection parentClassName="!pt-36 !pb-32">
                 <CodyPlan />
             </ContentSection>
         </Layout>
