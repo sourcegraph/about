@@ -27,14 +27,10 @@ The new version of Claude 3.5 Sonnet is now available for Cody Free and Cody Pro
   alt="3.5 Sonnet in the Cody model selector"
 />
 
-Cody Enterprise customers using [Cody Gateway](https://sourcegraph.com/docs/cody/core-concepts/cody-gateway) will automatically have access to the new version of 3.5 Sonnet when they upgrade to the latest Sourcegraph release coming next week. BYOK customers can use the new Sonnet version today by modifying their configuration to `claude-3-5-sonnet-20241022` or `claude-3-5-sonnet-v2@20241022` for Anthropic and Google Vertex AI, respectively. Please refer to the [detailed instructions](https://sourcegraph.com/docs/cody/clients/model-configuration) or reach out for assistance.
+Cody Enterprise customers using [Cody Gateway](https://sourcegraph.com/docs/cody/core-concepts/cody-gateway) will automatically have access to the new version of 3.5 Sonnet when they upgrade to the latest Sourcegraph release (v5.9 Patch 0) coming next week. BYOK customers can use the new Sonnet version today by modifying their configuration to `claude-3-5-sonnet-20241022` or `claude-3-5-sonnet-v2@20241022` for Anthropic and Google Vertex AI, respectively. Please refer to the [detailed instructions](https://sourcegraph.com/docs/cody/clients/model-configuration) or reach out for assistance.
 
 <Badge text="Sourcegraph Version Requirement" size="small" color="dark-gray" circle={true} />
 
-The upgraded Claude 3.5 Sonnet model is accessible starting from Sourcegraph version 5.9. Users on version 5.8.x or earlier will need to upgrade to 5.9 or later to access the new model.
-
-<Badge text="IDE Compatibility" size="small" color="dark-gray" circle={true} />
-
-The minimum required versions of supported IDEs (e.g., VS Code, JetBrains) that are compatible with the upgraded model. This will help users ensure their development environments are appropriately configured.
+Cody Enterprise customers will need to upgrade to Sourcegraph v5.9 Patch 0 to use the new Claude 3.5 Sonnet model.
 
 If you don't yet have Cody, you can [get started for free](https://sourcegraph.com/cody). You can also find the Cody editor extensions in the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) and [JetBrains marketplace](https://plugins.jetbrains.com/plugin/9682-sourcegraph).
