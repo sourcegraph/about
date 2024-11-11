@@ -185,7 +185,14 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
                 </div>
             </ContentSection>
 
-            <CodyCta source="Cody page" isCodyPage={true} />
+            <CodyCta
+                source="Cody page"
+                isCodyPage={true}
+                codyTitle="Get Cody for yourself"
+                codyButtonText="Download Cody for free"
+                enterpriseTitle="Get Cody for your team"
+                enterpriseLink="/contact/request-info?form_submission_source=cody-demo-landing-page"
+            />
 
             <CodyIde isLight={true} />
 
