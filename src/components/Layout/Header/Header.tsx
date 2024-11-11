@@ -68,7 +68,6 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
     // This listens for scroll events to handle the sticky nav
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true })
-
         return () => window.removeEventListener('scroll', handleScroll)
     })
 
