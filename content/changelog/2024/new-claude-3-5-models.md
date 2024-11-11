@@ -1,4 +1,3 @@
-
 ---
 title: "New Claude 3.5 Sonnet and Claude 3.5 Haiku are available in Cody"
 authors:
