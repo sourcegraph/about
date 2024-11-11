@@ -98,7 +98,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
         <ContentSection id="contact-form" parentClassName="!py-0" className={contentClassName}>
             <div
                 className={classNames(
-                    'hover:cta-free-cody relative overflow-hidden rounded-2xl border border-gray-200 bg-white px-14 py-16 md:w-1/2 md:p-16',
+                    'hover:cta-free-cody relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 md:w-1/2 md:p-14',
                     { 'border-opacity-25': !isVariantStyle }
                 )}
             >
@@ -150,7 +150,7 @@ export const CodyCta: FunctionComponent<CodyCtaProps> = ({
 
             <div
                 className={classNames(
-                    'flex flex-col gap-4 rounded-2xl border border-white border-opacity-40 px-14 py-16 md:w-1/2 md:p-16',
+                    'flex flex-col gap-4 rounded-2xl border border-white border-opacity-40 p-8 md:w-1/2 md:p-14',
                     {
                         'bg-violet-700': isCodyPage,
                     }
