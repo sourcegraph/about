@@ -88,6 +88,7 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
                         wrapperClassName="relative z-[20] md:z-0 lg:!text-left text-center"
                         buttonContainerClassName="lg:!justify-start !justify-center"
                         isVariant={true}
+                        enterpriseLink="/contact/request-info?form_submission_source=cody-demo-landing-page"
                     />
                 </ContentSection>
             </div>

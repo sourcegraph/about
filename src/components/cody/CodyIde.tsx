@@ -27,7 +27,7 @@ export const CodyIde: FunctionComponent<CodyIdeProps> = ({ isLight = true }) => 
     ]
 
     return (
-        <ContentSection parentClassName="!py-0" className="mt-16">
+        <ContentSection parentClassName="!py-0" className="mt-14">
             <div className="mb-10 text-center">
                 <h3 className="mb-2 text-sm font-medium text-gray-500">IDE Support</h3>
 
