@@ -27,7 +27,7 @@ const events: { upcoming: Event[], past: Event[] } = {
         {
             title: 'AWS re:Invent',
             location: 'Las Vegas, NV',
-            date: '2024-12-26',
+            date: '2024-12-06',
             link: 'https://reinvent.awsevents.com/',
         },
     ],
