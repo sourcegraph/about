@@ -20,4 +20,4 @@ Cody now supports the updated Claude 3.5 Sonnet and Claude 3.5 Haiku models acro
 
 [Anthropic notes](https://www.anthropic.com/news/3-5-models-and-computer-use) that the upgraded version of Claude 3.5 Sonnet has significant gains over its predecessor in coding. Claude 3.5 Haiku matches the performance of Claude 3 Opus on many evaluations at a similar speed to the previous generation of Haiku, meaning that users now get significant reasoning power with snappier responses.
 
-Cody users can access these models on the latest versions of the VS Code and JetBrains extentions. Cody Enterprise users can upgrade their instance to v5.9 or later and [make changes to their site admin configuration](https://sourcegraph.com/docs/cody/clients/model-configuration) to use the new models.
+Cody users can access these models on the latest versions of the VS Code and JetBrains extensions. Cody Enterprise users can upgrade their instance to v5.9 or later and [update their site admin configuration](https://sourcegraph.com/docs/cody/clients/model-configuration) to use the new models.
