@@ -176,7 +176,7 @@ const HeaderContent: FunctionComponent<
         close: () => void
         isKeyboardNavigation: boolean
     }
-> = ({ colorTheme, open, sticky, source, close, isKeyboardNavigation, ...props }) => {
+> = ({ colorTheme, open = false, sticky, source, close, isKeyboardNavigation, ...props }) => {
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (eventName: string, initiateOpenModal: boolean): void => {
