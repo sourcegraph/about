@@ -30,6 +30,12 @@ const events: { upcoming: Event[], past: Event[] } = {
             date: '2024-12-06',
             link: 'https://reinvent.awsevents.com/',
         },
+        {
+            title: 'Your Cody questions answered live! (December 2024)',
+            location: 'StreamYard',
+            date: '2024-12-10',
+            link: 'https://streamyard.com/watch/v8G25YeCgVEF',
+        },
     ],
     past: [
         {
