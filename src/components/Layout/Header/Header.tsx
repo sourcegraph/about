@@ -83,13 +83,13 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
     }, [])
 
     return (
-        <Disclosure
-            as="nav"
-            className={classNames('fixed top-0 left-0 right-0 z-[1030] transition', { 'bg-gray-50': sticky || open })}
-            ref={navRef}
-        >
+        <Disclosure as="nav" ref={navRef}>
             {({ open, close }) => (
-                <>
+                <div
+                    className={classNames('fixed top-0 left-0 right-0 z-[1030] transition', {
+                        'bg-gray-50': sticky || open,
+                    })}
+                >
                     {showBanner && <Banner />}
                     <HeaderContent
                         colorTheme={colorTheme}
@@ -100,7 +100,7 @@ export const Header: FunctionComponent<Props> = ({ minimal, colorTheme, navRef }
                         close={close}
                         isKeyboardNavigation={isKeyboardNavigation}
                     />
-                </>
+                </div>
             )}
         </Disclosure>
     )
@@ -176,7 +176,7 @@ const HeaderContent: FunctionComponent<
         close: () => void
         isKeyboardNavigation: boolean
     }
-> = ({ colorTheme, open = false, sticky, source, close, isKeyboardNavigation, ...props }) => {
+> = ({ colorTheme, open, sticky, source, close, isKeyboardNavigation, ...props }) => {
     const { openModal } = useAuthModal()
 
     const handleOpenModal = (eventName: string, initiateOpenModal: boolean): void => {
