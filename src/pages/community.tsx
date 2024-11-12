@@ -1,15 +1,15 @@
-import { FunctionComponent } from 'react'
+import type { FunctionComponent } from 'react'
 
-import { GetStaticProps } from 'next'
+import type { GetStaticProps } from 'next'
 import Link from 'next/link'
-import { FaDiscord, FaGithub } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 
 import { ContentSection, Layout } from '../components'
 import { PostsList } from '../components/Blog/PostsList'
 import EventsList from '../components/EventsList'
 import { buttonStyle, buttonLocation } from '../data/tracking'
 import { useLoadMoreAndSearch } from '../hooks/loadMoreAndSearch'
-import { Post, PostIndexComponentProps } from '../interfaces/posts'
+import type { Post, PostIndexComponentProps } from '../interfaces/posts'
 import { getAllPublishedBlogPosts } from '../lib'
 
 const socialMediaStyles = 'text-xl text-gray-400 hover:text-gray-300 transition-colors duration-300'
@@ -20,19 +20,17 @@ const expertsData = [
         role: 'Developer',
         image: '/community/kynlo_akari.jpeg',
         links: {
-            discord: 'https://discord.com/users/937994994868957184',
             github: 'https://github.com/Kynlos',
             twitter: 'https://twitter.com/Kynlos',
         },
     },
     {
-        name: 'Deepak Kumar',
-        role: 'Software Engineer',
-        image: '/community/deepak.jpeg',
+        name: 'David Ichim',
+        role: 'Web Developer',
+        image: '/community/david.jpeg',
         links: {
-            discord: 'https://discord.com/users/720294116885397635',
-            github: 'https://github.com/deepak2431',
-            twitter: 'https://twitter.com/deepakdk3478',
+            github: 'https://github.com/ichim-david',
+            twitter: 'https://x.com/pixl_dave',
         },
     },
     {
@@ -40,22 +38,17 @@ const expertsData = [
         role: 'Developer',
         image: '/community/tino.jpeg',
         links: {
-            discord: 'https://discord.com/users/518125939910115353',
             github: 'https://github.com/PriNova',
             twitter: 'https://twitter.com/PriNova75',
         },
     },
 ]
-
 const CommunityExpert: FunctionComponent<{ expert: typeof expertsData[0] }> = ({ expert }) => (
     <div className="flex w-full flex-col items-center">
         <img src={expert.image} alt="avatar" className="mb-4 h-12 w-12 rounded-full" />
         <h4 className="pb-1">{expert.name}</h4>
         <p className="text-grey-700 mb-5 text-sm leading-[19.88px]">{expert.role}</p>
         <div className="flex gap-4">
-            <a href={expert.links.discord}>
-                <FaDiscord className={socialMediaStyles} />
-            </a>
             <a href={expert.links.twitter}>
                 <img className={`h5 w-5 ${socialMediaStyles}`} src="/icons/x-logo.svg" alt="x-logo" />
             </a>
@@ -65,7 +58,6 @@ const CommunityExpert: FunctionComponent<{ expert: typeof expertsData[0] }> = ({
         </div>
     </div>
 )
-
 const Community: FunctionComponent<PostIndexComponentProps> = ({ posts, allPosts }) => {
     const { currentRecords, page, setPage, filteredRecords } = useLoadMoreAndSearch(allPosts, 1, posts, 2)
 
