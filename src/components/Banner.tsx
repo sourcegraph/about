@@ -12,7 +12,7 @@ import Link from 'next/link'
 export const Banner: FunctionComponent<{}> = () => (
     <div className="z-[1000] bg-black  px-4 lg:px-0">
         <Link
-            href="/guides/code-ai-buyers-guide?form_submission_source=code-ai-buyers-guide"
+            href="https://sourcegraph.registration.goldcast.io/events/b650937d-ba9f-40ce-9429-35c3539a5bb1?utm_medium=website&utm_source=website"
             className="btn btn-link-dark btn-link-icon transition-colorshover:text-white group flex w-full items-center justify-center bg-transparent !px-0 !py-3 text-sm text-gray-200 hover:no-underline focus:outline-none focus:ring-0"
             target="_blank"
         >

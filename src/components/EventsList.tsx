@@ -15,7 +15,7 @@ const allEvents: Event[] = [
         title: 'Virtual Code AI Summit',
         location: 'Online Event',
         date: '2024-12-12',
-        link: 'https://about.sourcegraph.com/code-ai-summit?utm_source=website&utm_medium=community&utm_campaign=code-ai-summit',
+        link: 'https://sourcegraph.registration.goldcast.io/events/b650937d-ba9f-40ce-9429-35c3539a5bb1?utm_medium=website&utm_source=website',
     },
     {
         title: 'QCon SF',
