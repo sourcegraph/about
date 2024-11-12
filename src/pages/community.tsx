@@ -1,15 +1,15 @@
-import { FunctionComponent } from 'react'
+import type { FunctionComponent } from 'react'
 
-import { GetStaticProps } from 'next'
+import type { GetStaticProps } from 'next'
 import Link from 'next/link'
-import { FaDiscord, FaGithub } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 
 import { ContentSection, Layout } from '../components'
 import { PostsList } from '../components/Blog/PostsList'
 import EventsList from '../components/EventsList'
 import { buttonStyle, buttonLocation } from '../data/tracking'
 import { useLoadMoreAndSearch } from '../hooks/loadMoreAndSearch'
-import { Post, PostIndexComponentProps } from '../interfaces/posts'
+import type { Post, PostIndexComponentProps } from '../interfaces/posts'
 import { getAllPublishedBlogPosts } from '../lib'
 
 const socialMediaStyles = 'text-xl text-gray-400 hover:text-gray-300 transition-colors duration-300'
