@@ -10,8 +10,8 @@ import Link from 'next/link'
 import { Layout, ContentSection, ContentPage } from '../../components'
 import { buttonStyle, buttonLocation } from '../../data/tracking'
 
-const title = 'Sourcegraph - Contact Sourcegraph'
-const description = 'Contact a real human being on our team.'
+const title = 'Contact Sourcegraph'
+const description = 'Get in touch with a member of our team.'
 
 const ContactHome: FunctionComponent = () => (
     <Layout
@@ -25,21 +25,8 @@ const ContactHome: FunctionComponent = () => (
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <section className="rounded-lg border-1 p-4">
                         <h4>Product support</h4>
-                        <p>For help using Sourcegraph:</p>
+                        <p>For help with Sourcegraph and Cody:</p>
                         <ul className="ml-0 list-none">
-                            <li>
-                                <a
-                                    href="https://github.com/sourcegraph/sourcegraph/issues"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    title="File a public issue"
-                                    data-button-style={buttonStyle.text}
-                                    data-button-location={buttonLocation.body}
-                                    data-button-type="cta"
-                                >
-                                    <GithubIcon className="inline" /> File a public issue
-                                </a>
-                            </li>
                             <li>
                                 <a
                                     href="mailto:support@sourcegraph.com"
@@ -50,7 +37,7 @@ const ContactHome: FunctionComponent = () => (
                                     data-button-location={buttonLocation.body}
                                     data-button-type="cta"
                                 >
-                                    <EmailIcon className="inline" /> Email support@sourcegraph.com
+                                    <EmailIcon className="inline" /> support@sourcegraph.com
                                 </a>
                             </li>
                         </ul>
