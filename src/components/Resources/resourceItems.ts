@@ -35,6 +35,17 @@ export interface Resource {
 export const resourceItems: Resource[] = [
     {
         featured: true,
+        title: 'Virtual Code AI Summit',
+        description:
+            'This one-day virtual event, hosted by Sourcegraph, is your chance to learn from industry leaders as they dive deep into how AI is transforming software development and solving complex code challenges.',
+        contentType: 'virtual event',
+        publishDate: '2024-12-12',
+        link: 'https://about.sourcegraph.com/code-ai-summit?utm_source=website&utm_medium=community&utm_campaign=code-ai-summit',
+        subjects: ['cody'],
+        keyword: ['code ai', 'virtual event', 'summit'],
+    },
+    {
+        featured: true,
         title: 'Big Code in the AI era',
         link: '/big-code/big-code-in-ai-era',
         contentType: 'guide',
