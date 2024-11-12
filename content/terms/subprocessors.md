@@ -23,6 +23,7 @@ Sourcegraph engages Subprocessors to perform the functions described in the tabl
 | Honeycomb                   | USA            | Processes any information sent for debugging purposes                                                            | Sourcegraph.com<br/>Cody                                    |
 | Sentry                   | USA            | Processes error data, which can include email addresses and other personal data, for debugging purposes                                                            | Sourcegraph.com<br/>Cody                                    |
 | Sparkpost                | USA            | Processes account verification and other service-related emails                                                                                                                                      | Sourcegraph Cloud<br/>Cody Pro                                  |
+| Cohere                   | Canada         | Processes user queries and code snippets submitted to Sourcegraph Cody                                                                                             | Cody (non-enterprise users)                        |
 </TableWrapper>
 
 <h2 id='sign-up'>Sign Up</h2>
