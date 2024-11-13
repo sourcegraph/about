@@ -12,12 +12,12 @@ import Link from 'next/link'
 export const Banner: FunctionComponent<{}> = () => (
     <div className="z-[1000] bg-black  px-4 lg:px-0">
         <Link
-            href="/guides/code-ai-buyers-guide?form_submission_source=code-ai-buyers-guide"
+            href="https://sourcegraph.registration.goldcast.io/events/b650937d-ba9f-40ce-9429-35c3539a5bb1?utm_medium=website&utm_source=website"
             className="btn btn-link-dark btn-link-icon transition-colorshover:text-white group flex w-full items-center justify-center bg-transparent !px-0 !py-3 text-sm text-gray-200 hover:no-underline focus:outline-none focus:ring-0"
             target="_blank"
         >
             <p className="mb-0 mr-2 text-center text-sm font-semibold">
-                Download our new Buyer's Guide to AI coding assistants
+                Register for the First Ever Virtual Code AI Summit! (Dec 12th)
             </p>
             <span className="hidden translate-y-px text-violet-300 lg:inline-block">
                 {/* <span>Get access</span> */}

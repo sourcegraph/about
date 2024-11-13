@@ -35,6 +35,17 @@ export interface Resource {
 export const resourceItems: Resource[] = [
     {
         featured: true,
+        title: 'Virtual Code AI Summit',
+        description:
+            'This one-day virtual event, hosted by Sourcegraph, is your chance to learn from industry leaders as they dive deep into how AI is transforming software development and solving complex code challenges.',
+        contentType: 'virtual event',
+        publishDate: '2024-12-12',
+        link: 'https://sourcegraph.registration.goldcast.io/events/b650937d-ba9f-40ce-9429-35c3539a5bb1?utm_medium=website&utm_source=website',
+        subjects: ['cody'],
+        keyword: ['code ai', 'virtual event', 'summit'],
+    },
+    {
+        featured: true,
         title: 'Big Code in the AI era',
         link: '/big-code/big-code-in-ai-era',
         contentType: 'guide',
