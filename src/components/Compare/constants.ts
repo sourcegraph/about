@@ -210,13 +210,17 @@ export const copilotVsCody: CompareDataType = {
                 createAttribute({
                     feature: 'Prompts',
                     competitor: true,
-                    competitor_details: ['Called "Commands"'],
+                    competitor_details: ['Commands'],
                 }),
                 createAttribute({
                     feature: 'Custom prompts',
                 }),
                 createAttribute({
-                    feature: 'Prompt sharing',
+                    feature: 'Prompt sharing for teams',
+                }),
+                createAttribute({
+                    feature: 'Inline edits',
+                    competitor: true,
                 }),
             ],
         },
