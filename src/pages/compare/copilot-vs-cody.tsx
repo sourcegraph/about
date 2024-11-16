@@ -27,13 +27,13 @@ const CompareCopilotPage: FunctionComponent = () => (
                 </p>
 
                 <p>
-                    Unfortunately, Copilot does not offer a standard free tier. Copilot is also limited in how it uses
-                    code context on its Individual and Business tiers; full codebase personalization is limited to
-                    Copilot Enterprise, and even then, codebase context is limited to code hosted in GitHub. Copilot
-                    Enterprise also requires a GitHub Enterprise Cloud subscription and is not available with their
-                    on-premise Enterprise offering. While Copilot does offer the choice between multiple chat models,
-                    users aren't able to host their own models, bring their own model keys, or connect to cloud
-                    providers like Amazon Bedrock and Azure OpenAI for a more private connection.
+                    Unfortunately, Copilot is limited in how it uses code context. Copilot Enterprise is able to use
+                    code context from an unlimited number of repositories, but it is limited to using code hosted in
+                    GitHub, specifically GitHub Enterprise Cloud (as Copilot Enterprise is not available for the
+                    self-hsoted GitHub offering). While Copilot does offer the choice between multiple chat models,
+                    users are limited to a select few models provided by GitHub directly. Enterprises aren't able to
+                    host their own models, bring their own model keys, or connect to cloud providers like Amazon Bedrock
+                    and Azure OpenAI for a more private connection.
                 </p>
 
                 <p>
@@ -41,9 +41,9 @@ const CompareCopilotPage: FunctionComponent = () => (
                     Copilot is a good choice for enterprises that are already using GitHub Enterprise Cloud and are
                     looking for a solution deeply embedded in the GitHub ecosystem. However, Cody is the better option
                     for enterprises that want their AI solution to utilize context from a full codebase spanning
-                    multiple code hosts. Cody is also a better option for enterprises looking for model flexibility,
-                    such as the ability to self-host models, bring their own model keys, or securely connect to an LLM
-                    via cloud provider services such as Amazon Bedrock.
+                    multiple code hosts, or for enterprises that want to connect to self-hosted code hosts. Cody is also
+                    a better option for model flexibility; it gives teams the options to self-host models, bring their
+                    own model keys, or securely connect to LLMs via cloud provider services such as Amazon Bedrock.
                 </p>
             </CompareHero>
         }
