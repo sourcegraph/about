@@ -237,11 +237,40 @@ export const copilotVsCody: CompareDataType = {
                 }),
                 createAttribute({
                     feature: 'Visual Studio',
-                    cody: true,
+                    cody_details: ["Experimental"],
                     competitor: true,
-                    cody_details: ['Experimental'],
                 }),
-            ],
+                createAttribute({
+                    feature: 'Eclipse',
+                    cody: false,
+                    cody_details: ["Coming soon"],
+                    competitor: false,
+                }),
+                createAttribute({
+                    feature: 'Web browser',
+                    competitor: true,
+                }),
+                createAttribute({
+                    feature: 'Mobile app',
+                    cody: false,
+                    competitor: true,
+                }),
+                createAttribute({
+                    feature: 'CLI',
+                    competitor: true,
+                }),
+                createAttribute({
+                    feature: 'API',
+                    cody: true,
+                    cody_details: ['Experimental'],
+                    competitor: false,
+                }),
+                createAttribute({
+                    feature: 'Other',
+                    cody: false,
+                    competitor: false,
+                }),
+            ],            
         },
         {
             selection: 'LLM / Model',
