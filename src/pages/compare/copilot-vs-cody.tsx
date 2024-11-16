@@ -22,7 +22,8 @@ const CompareCopilotPage: FunctionComponent = () => (
                 <p>
                     Copilot is an AI code assistant that offers autocomplete, chat, and commands. It has strong
                     autocomplete performance using the OpenAI Codex model, and it offers in-IDE and mobile chat with
-                    GPT-4o. It also offers deep integration with the GitHub platform with Copilot Enterprise.
+                    GPT-4o. It also offers deep integration with the GitHub platform with Copilot Enterprise (for teams
+                    using GitHub Enterprise Cloud).
                 </p>
 
                 <p>
@@ -37,11 +38,12 @@ const CompareCopilotPage: FunctionComponent = () => (
 
                 <p>
                     <strong className="inline-block rounded-sm bg-blue-100 px-2 py-1 text-blue-500">TL;DR:</strong>{' '}
-                    tl;dr Copilot is a good choice for enterprises looking for a solution deeply embedded in the GitHub
-                    ecosystem. However, Cody is the better option for enterprises that want their AI solution to utilize
-                    context from a full codebase spanning multiple code hosts. Cody is also a better option for
-                    enterprises looking for model flexibility, such as the ability to self-host models, bring their own
-                    model keys, or securely connect to an LLM via cloud provider services such as Amazon Bedrock.
+                    Copilot is a good choice for enterprises that are already using GitHub Enterprise Cloud and are
+                    looking for a solution deeply embedded in the GitHub ecosystem. However, Cody is the better option
+                    for enterprises that want their AI solution to utilize context from a full codebase spanning
+                    multiple code hosts. Cody is also a better option for enterprises looking for model flexibility,
+                    such as the ability to self-host models, bring their own model keys, or securely connect to an LLM
+                    via cloud provider services such as Amazon Bedrock.
                 </p>
             </CompareHero>
         }

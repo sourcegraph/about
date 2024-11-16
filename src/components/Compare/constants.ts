@@ -306,7 +306,7 @@ export const copilotVsCody: CompareDataType = {
                 createAttribute({
                     feature: 'Remote code context from your entire codebase',
                     cody_details: ['All code from any code host'],
-                    competitor: true,
+                    competitor: false,
                     competitor_details: ['Only GitHub code on Enterprise Cloud plans is supported'],
                 }),
                 createAttribute({
