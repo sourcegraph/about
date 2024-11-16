@@ -45,9 +45,9 @@ const ComparePage: FunctionComponent = () => (
             <div className="col-span mr-10 pb-5 pt-10">
                 <h2 className="mb-3 text-3xl">Cody vs GitHub Copilot</h2>
                 <p className="mb-5 text-gray-500">
-                    Copilot is an AI code assistant that offers autocomplete, chat, and commands. It has strong
-                    autocomplete performance using the OpenAI Codex model, and it offers in-IDE and mobile chat with
-                    GPT-4o.
+                    Copilot is an AI code assistant that offers autocomplete, chat, and commands, with strong
+                    autocomplete performance using the OpenAI Codex model. However, codebase awareness for chat is
+                    limited to code that lives in GitHub.
                 </p>
                 <Link className="btn btn-primary text-lg" href="/compare/copilot-vs-cody">
                     See full comparison
