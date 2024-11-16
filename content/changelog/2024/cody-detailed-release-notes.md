@@ -2,6 +2,7 @@
 title: "Improved Cody release updates"
 authors:
   - name: Kalan Chan
+  - avatar: https://storage.googleapis.com/sourcegraph-assets/blog/kalan_avatar.png
 publishDate: 2024-11-13T10:00-02:00
 description: "Cody releases will now have more thorough and detailed release notes."
 tags: [Cody, VS Code]
