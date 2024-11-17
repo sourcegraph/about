@@ -23,7 +23,7 @@ const CompareCopilotPage: FunctionComponent = () => (
                     Sourcegraph Cody and GitHub Copilot are AI code assistants optimized for different enterprise needs.
                     Cody excels in three key scenarios: (1) enterprises working with large, distributed codebases across
                     multiple code hosts, (2) organizations requiring precise, context-aware code generation and
-                    responses, and (3) teams needing flexibility in their AI infrastructure.
+                    responses, and (3) teams needing deeper, custom SDLC integrations from their code AI tooling.
                 </p>
 
                 <p>
@@ -36,10 +36,10 @@ const CompareCopilotPage: FunctionComponent = () => (
                 </p>
 
                 <p>
-                    GitHub Copilot is well-suited for organizations seeking basic autocomplete and chat functionality
-                    for small codebases hosted exclusively on GitHub Enterprise Cloud. While it integrates well with
+                    GitHub Copilot is optimized for organizations seeking basic autocomplete and chat functionality for
+                    small codebases hosted exclusively on GitHub Enterprise Cloud. While it integrates well with
                     GitHub's ecosystem, its context is limited to single repositories and GitHub-hosted code, and
-                    organizations cannot control their model infrastructure.
+                    organizations cannot adopt standardized prompts or control their model infrastructure.
                 </p>
 
                 <p>
