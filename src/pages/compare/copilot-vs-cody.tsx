@@ -41,8 +41,8 @@ const CompareCopilotPage: FunctionComponent = () => (
                     Copilot is a good choice for enterprises that are already using GitHub Enterprise Cloud and are
                     looking for a solution deeply embedded in the GitHub ecosystem. However, Cody is the better option
                     for enterprises that want their AI solution to utilize context from a full codebase spanning
-                    multiple code hosts, or for enterprises that want to connect to self-hosted code hosts. Cody is also
-                    a better option for model flexibility; it gives teams the options to self-host models, bring their
+                    multiple code hosts or for enterprises that want to connect to self-hosted code hosts. Cody is also
+                    a better option for model flexibility: it gives teams the option to self-host models, bring their
                     own model keys, or securely connect to LLMs via cloud provider services such as Amazon Bedrock.
                 </p>
             </CompareHero>
