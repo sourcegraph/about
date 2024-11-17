@@ -208,7 +208,7 @@ export const copilotVsCody: CompareDataType = {
                     competitor: true,
                 }),
                 createAttribute({
-                    feature: 'Custom and shareabl prompts',
+                    feature: 'Custom and shareable prompts',
                     competitor: false,
                 }),
                 createAttribute({
