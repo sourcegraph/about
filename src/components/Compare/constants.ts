@@ -210,13 +210,17 @@ export const copilotVsCody: CompareDataType = {
                 createAttribute({
                     feature: 'Prompts',
                     competitor: true,
-                    competitor_details: ['Called "Commands"'],
+                    competitor_details: ['Commands'],
                 }),
                 createAttribute({
                     feature: 'Custom prompts',
                 }),
                 createAttribute({
-                    feature: 'Prompt sharing',
+                    feature: 'Prompt sharing for teams',
+                }),
+                createAttribute({
+                    feature: 'Inline edits',
+                    competitor: true,
                 }),
             ],
         },
@@ -233,11 +237,40 @@ export const copilotVsCody: CompareDataType = {
                 }),
                 createAttribute({
                     feature: 'Visual Studio',
-                    cody: true,
-                    competitor: true,
                     cody_details: ['Experimental'],
+                    competitor: true,
                 }),
-            ],
+                createAttribute({
+                    feature: 'Eclipse',
+                    cody: false,
+                    cody_details: ['Coming soon'],
+                    competitor: false,
+                }),
+                createAttribute({
+                    feature: 'Web browser',
+                    competitor: true,
+                }),
+                createAttribute({
+                    feature: 'Mobile app',
+                    cody: false,
+                    competitor: true,
+                }),
+                createAttribute({
+                    feature: 'CLI',
+                    competitor: true,
+                }),
+                createAttribute({
+                    feature: 'API',
+                    cody: true,
+                    cody_details: ['Experimental'],
+                    competitor: false,
+                }),
+                createAttribute({
+                    feature: 'Other',
+                    cody: false,
+                    competitor: false,
+                }),
+            ],            
         },
         {
             selection: 'LLM / Model',
@@ -248,16 +281,15 @@ export const copilotVsCody: CompareDataType = {
                     competitor: 'GPT-4o',
                 }),
                 createAttribute({
-                    feature: 'Autocomplete model (default)',
-                    cody: 'DeepSeek-V2',
-                    competitor: 'Codex',
-                }),
-                createAttribute({
                     feature: 'Choose your LLM',
+                    cody_details: ['See docs for full list'],
                     competitor: true,
                 }),
                 createAttribute({
                     feature: 'Bring your own LLM key',
+                }),
+                createAttribute({
+                    feature: 'Self-hosted LLM support',
                 }),
                 createAttribute({
                     feature: 'Support for Amazon Bedrock, Azure OpenAI, and Google Coud Vertex AI',
@@ -265,19 +297,42 @@ export const copilotVsCody: CompareDataType = {
             ],
         },
         {
-            selection: 'Context and personalization',
+            selection: 'Context used for response personalization',
             attributes: [
                 createAttribute({
-                    feature: 'Personalized responses using codebase context',
-                    cody_details: 'Available on all tiers. Enterprise tier supports all code hosts and unlimited repositories.',
+                    feature: 'Local code context',
                     competitor: true,
-                    competitor_details: 'Limited to code hosted on GitHub. Business tier is limited to 50 repos.',
+                }),
+                createAttribute({
+                    feature: 'Remote code context from your entire codebase',
+                    cody_details: ['All code from any code host'],
+                    competitor: false,
+                    competitor_details: ['Only GitHub code on Enterprise Cloud plans is supported'],
+                }),
+                createAttribute({
+                    feature: 'Non-code context',
+                    cody_details: ['via OpenCtx'],
+                    competitor: true,
+                    competitor_details: ['Limited to supported Copilot extensions'],
                 }),
                 createAttribute({
                     feature: 'Fine-tuned LLM',
                     cody: false,
+                    competitor: false,
+                    competitor_details: 'Coming soon, autocomplete only',
+                }),
+            ],
+        },
+        {
+            selection: 'Deployment options',
+            attributes: [
+                createAttribute({
+                    feature: 'Self-hosted',
+                    competitor: false,
+                }),
+                createAttribute({
+                    feature: 'Cloud',
                     competitor: true,
-                    competitor_details: 'Enterprise tier only.',
                 }),
             ],
         },
