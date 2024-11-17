@@ -246,7 +246,8 @@ export const copilotVsCody: CompareDataType = {
                 createAttribute({
                     feature: 'CLI',
                     cody_details: ['Experimental'],
-                    competitor: true,
+                    competitor: false,
+                    competitor_details: ['Copilot CLI is for explaining terminal commands; it does not expose full chat functionality'],
                 }),
                 createAttribute({
                     feature: 'API',
@@ -266,7 +267,7 @@ export const copilotVsCody: CompareDataType = {
                 }),
                 createAttribute({
                     feature: 'Choose your LLM',
-                    cody_details: ['See docs for full list'],
+                    competitor_details: ['Currently limited to 3 other LLMs'],
                     competitor: true,
                 }),
                 createAttribute({
@@ -276,7 +277,7 @@ export const copilotVsCody: CompareDataType = {
                     feature: 'Self-hosted LLM support',
                 }),
                 createAttribute({
-                    feature: 'Support for Amazon Bedrock, Azure OpenAI, and Google Coud Vertex AI',
+                    feature: 'Support for Amazon Bedrock, Azure OpenAI, and Google Cloud Vertex AI',
                 }),
             ],
         },
