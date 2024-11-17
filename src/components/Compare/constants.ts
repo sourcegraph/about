@@ -245,6 +245,7 @@ export const copilotVsCody: CompareDataType = {
                 }),
                 createAttribute({
                     feature: 'CLI',
+                    cody_details: ['Experimental'],
                     competitor: true,
                 }),
                 createAttribute({
