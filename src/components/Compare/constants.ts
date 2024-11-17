@@ -237,13 +237,13 @@ export const copilotVsCody: CompareDataType = {
                 }),
                 createAttribute({
                     feature: 'Visual Studio',
-                    cody_details: ["Experimental"],
+                    cody_details: ['Experimental'],
                     competitor: true,
                 }),
                 createAttribute({
                     feature: 'Eclipse',
                     cody: false,
-                    cody_details: ["Coming soon"],
+                    cody_details: ['Coming soon'],
                     competitor: false,
                 }),
                 createAttribute({
