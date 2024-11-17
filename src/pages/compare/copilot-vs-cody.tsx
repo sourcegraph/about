@@ -28,12 +28,12 @@ const CompareCopilotPage: FunctionComponent = () => (
 
                 <p>
                     Unfortunately, Copilot is limited in how it uses code context. Copilot Enterprise is able to use
-                    code context from an unlimited number of repositories, but it is limited to using code hosted in
-                    GitHub, specifically GitHub Enterprise Cloud (as Copilot Enterprise is not available for the
-                    self-hsoted GitHub offering). While Copilot does offer the choice between multiple chat models,
-                    users are limited to a select few models provided by GitHub directly. Enterprises aren't able to
-                    host their own models, bring their own model keys, or connect to cloud providers like Amazon Bedrock
-                    and Azure OpenAI for a more private connection.
+                    code context from remote repositories, but it is limited to using code hosted in GitHub,
+                    specifically GitHub Enterprise Cloud (as Copilot Enterprise is not available for self-hosted
+                    GitHub). While Copilot does offer the choice between multiple chat models, users are limited to a
+                    select few models provided by GitHub directly. Enterprises aren't able to host their own models,
+                    bring their own model keys, or connect to cloud providers like Amazon Bedrock and Azure OpenAI for a
+                    more private connection.
                 </p>
 
                 <p>
