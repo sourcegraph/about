@@ -267,7 +267,7 @@ export const copilotVsCody: CompareDataType = {
                 }),
                 createAttribute({
                     feature: 'Choose your LLM',
-                    competitor_details: ['Limited options'],
+                    competitor_details: ['Currently limited to 3 other LLMs'],
                     competitor: true,
                 }),
                 createAttribute({
