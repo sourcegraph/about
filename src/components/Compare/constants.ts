@@ -208,15 +208,8 @@ export const copilotVsCody: CompareDataType = {
                     competitor: true,
                 }),
                 createAttribute({
-                    feature: 'Prompts',
-                    competitor: true,
-                    competitor_details: ['Commands'],
-                }),
-                createAttribute({
-                    feature: 'Custom prompts',
-                }),
-                createAttribute({
-                    feature: 'Prompt sharing for teams',
+                    feature: 'Custom and shareabl prompts',
+                    competitor: false,
                 }),
                 createAttribute({
                     feature: 'Inline edits',
@@ -242,17 +235,12 @@ export const copilotVsCody: CompareDataType = {
                 }),
                 createAttribute({
                     feature: 'Eclipse',
-                    cody: false,
-                    cody_details: ['Coming soon'],
+                    cody: true,
+                    cody_details: ['Experimental'],
                     competitor: false,
                 }),
                 createAttribute({
                     feature: 'Web browser',
-                    competitor: true,
-                }),
-                createAttribute({
-                    feature: 'Mobile app',
-                    cody: false,
                     competitor: true,
                 }),
                 createAttribute({
@@ -263,11 +251,6 @@ export const copilotVsCody: CompareDataType = {
                     feature: 'API',
                     cody: true,
                     cody_details: ['Experimental'],
-                    competitor: false,
-                }),
-                createAttribute({
-                    feature: 'Other',
-                    cody: false,
                     competitor: false,
                 }),
             ],            
@@ -304,22 +287,19 @@ export const copilotVsCody: CompareDataType = {
                     competitor: true,
                 }),
                 createAttribute({
-                    feature: 'Remote code context from your entire codebase',
-                    cody_details: ['All code from any code host'],
+                    feature: 'Multi-repository context',
                     competitor: false,
-                    competitor_details: ['Only GitHub code on Enterprise Cloud plans is supported'],
+                }),
+                createAttribute({
+                    feature: 'Support for remote context from GitLab and Bitbucket repositories',
+                    competitor: false,
+                    competitor_details: ['Remote context is limited to single repositories on GitHub Enterprise Cloud'],
                 }),
                 createAttribute({
                     feature: 'Non-code context',
                     cody_details: ['via OpenCtx'],
                     competitor: true,
                     competitor_details: ['Limited to supported Copilot extensions'],
-                }),
-                createAttribute({
-                    feature: 'Fine-tuned LLM',
-                    cody: false,
-                    competitor: false,
-                    competitor_details: 'Coming soon, autocomplete only',
                 }),
             ],
         },
