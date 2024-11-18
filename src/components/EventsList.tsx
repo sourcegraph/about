@@ -15,7 +15,7 @@ const events: { upcoming: Event[], past: Event[] } = {
         {
             title: 'QCon SF',
             location: 'San Francisco, CA',
-            date: '2024-11-18',
+            date: '2024-11-22',
             link: 'https://qconsf.com/',
         },
         {
@@ -33,7 +33,7 @@ const events: { upcoming: Event[], past: Event[] } = {
         {
             title: 'Your Cody questions answered live! (December 2024)',
             location: 'StreamYard',
-            date: '2024-12-10',
+            date: '2024-12-06',
             link: 'https://streamyard.com/watch/v8G25YeCgVEF',
         },
     ],
