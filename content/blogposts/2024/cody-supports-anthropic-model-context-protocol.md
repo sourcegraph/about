@@ -1,5 +1,5 @@
 ---
-title: "Cody Supports Additional Context Through Anthropic's Model Context Protocol"
+title: "Cody supports additional context through Anthropic's Model Context Protocol"
 authors:
   - name: Chris Sev
     url: https://x.com/chris__sev
@@ -31,7 +31,7 @@ To get started with MCP, you would create an MCP server that connects to the dat
 
 As launch partners with Anthropic, we've ensured that Cody can seamlessly integrate with MCP, bringing this additional context right into your editor where you need it most.
 
-## What Can You Bring Into Cody Using MCP?
+## What can you bring into Cody using MCP?
 
 Anthropic has released [several example MCP servers](https://github.com/modelcontextprotocol/example-servers) that show how we can create servers to connect to various data sources. Cody supports all of these example servers out of the box. Cody can also support your own MCP server, which we'll cover later.
 
@@ -51,7 +51,7 @@ The beauty of MCP lies in its universality. Once you build an MCP server, it bec
 2. Cody connects to this server through [OpenCtx](https://openctx.com), our open standard for external context.
 3. The context becomes available in your editor through Cody chat.
 
-## Trying Out the MCP to Cody Integration
+## Trying out the MCP to Cody integration
 
 To get started with MCP, let's clone Anthropic's example servers and try them out. Servers are stored locally on your computer and the Cody client will connect to them.
 
@@ -81,7 +81,7 @@ Now you can open Cody and you'll see the `example-servers/everything` server ava
   alt="Cody showing the Everything MCP server"
 />
 
-### The Postgres MCP Server
+### The Postgres MCP server
 
 You can try out the Postgres MCP server by updating your JSON settings to point to that example server.
 
@@ -104,7 +104,7 @@ Notice that we added a `mcp.provider.args` field that contains the connection st
   alt="Cody using Postgres"
 />
 
-## Building A Linear MCP Integration
+## Building a Linear MCP integration
 
 Want to create your own MCP server? Here's a quick tutorial to get you started. The Model Context Protocol team has created a [Python SDK](https://github.com/modelcontextprotocol/python-sdk) and a [TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) that make it easy to get started building your own context server.
 
@@ -226,7 +226,7 @@ Make sure to add your Linear API key to the `mcp.provider.args` field. Once you'
   alt="Cody showing the Linear MCP server"
 />
 
-## What's Next?
+## What's next?
 
 The combination of Anthropic's Model Context Protocol and Cody opens up endless possibilities for enhancing your development environment with relevant context. Whether you're building internal tools, accessing documentation, or connecting to external services, MCP provides a standardized way to bring that information right into your editor.
 
