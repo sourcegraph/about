@@ -27,7 +27,7 @@ Here's an example of Cody connecting to a Postgres database to write a Prisma qu
 
 MCP is Anthropic's new protocol that enables users to provide additional context to LLM-powered applications like [Claude.ai](https://claude.ai). **Think of it as a standardized way to feed external information into AI models**, making them more aware of your specific use case and environment.
 
-To get started with MCP, you would create an MCP server that connects to the data sources you want to use. Then you would create an MCP client that would connect to your server. The client could be Claude.ai.  connect Cody and your editor to your MCP server via [OpenCTX](https://openctx.com).
+To get started with MCP, you would create an MCP server that connects to the data sources you want to use. Then you would create an MCP client that would connect to your server. The client could be Claude.ai.  connect Cody and your editor to your MCP server via [OpenCtx](https://openctx.com).
 
 As launch partners with Anthropic, we've ensured that Cody can seamlessly integrate with MCP, bringing this additional context right into your editor where you need it most.
 
