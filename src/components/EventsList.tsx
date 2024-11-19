@@ -200,10 +200,10 @@ const EventsList = (): JSX.Element => {
                             content: (
                                 <ul className="ml-0 list-outside list-none text-center md:text-left">
                                     {upcomingEvents.map(event => {
-                                        const startDate = parseISO(event.date);
-                                        const endDate = parseISO(event.endDate);
+                                        const startDate = parseISO(event.date)
+                                        const endDate = parseISO(event.endDate)
 
-                                        const formattedDate = formatDateRange(startDate, endDate);
+                                        const formattedDate = formatDateRange(startDate, endDate)
 
                                         return (
                                             <li key={event.title} className="p-[25px]">
@@ -219,7 +219,7 @@ const EventsList = (): JSX.Element => {
                                                 )}
                                                 <p className="mb-0 text-base tracking-[-0.25px]">{event.location}</p>
                                             </li>
-                                        );
+                                        )
                                     })}
                                 </ul>
                             ),
@@ -258,30 +258,30 @@ export default EventsList
 
 const formatDateRange = (startDate: Date, endDate: Date): string => {
     if (isSameDay(startDate, endDate)) {
-        return format(startDate, 'MMMM d, yyyy');
+        return format(startDate, 'MMMM d, yyyy')
     }
     
-    const startMonth = format(startDate, 'MMMM');
-    const endMonth = format(endDate, 'MMMM'); // Changed to MMMM for full month name consistency
-    const startDay = format(startDate, 'd');
-    const endDay = format(endDate, 'd');
-    const year = format(startDate, 'yyyy');
+    const startMonth = format(startDate, 'MMMM')
+    const endMonth = format(endDate, 'MMMM') // Changed to MMMM for full month name consistency
+    const startDay = format(startDate, 'd')
+    const endDay = format(endDate, 'd')
+    const year = format(startDate, 'yyyy')
 
     if (startMonth === endMonth) {
-        return `${startMonth} ${startDay}-${endDay}, ${year}`;
+        return `${startMonth} ${startDay}-${endDay}, ${year}`
     }
     
-    return `${startMonth} ${startDay}–${endMonth} ${endDay}, ${year}`;
+    return `${startMonth} ${startDay}–${endMonth} ${endDay}, ${year}`
 }
 const filterEvents = (): { upcomingEvents: Event[]; pastEvents: Event[] } => {
-    const currentDate = new Date();
+    const currentDate = new Date()
     const upcomingEvents: Event[] = allEvents
         .filter(event => isAfter(parseISO(event.endDate), currentDate)) // Check endDate
-        .sort((a, b) => parseISO(a.date).getTime() - parseISO(b.date).getTime());
+        .sort((a, b) => parseISO(a.date).getTime() - parseISO(b.date).getTime())
 
     const pastEvents: Event[] = allEvents
         .filter(event => !isAfter(parseISO(event.endDate), currentDate)) // Check endDate
-        .sort((a, b) => parseISO(b.date).getTime() - parseISO(a.date).getTime());
+        .sort((a, b) => parseISO(b.date).getTime() - parseISO(a.date).getTime())
 
-    return { upcomingEvents, pastEvents };
+    return { upcomingEvents, pastEvents }
 }
