@@ -39,7 +39,6 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
             {
                 name: 'OpenCtx',
                 href: 'https://openctx.org/docs/clients/sourcegraph',
-                icon: <ExternalLinkIcon />,
             },
         ],
     },
@@ -98,17 +97,14 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
             {
                 name: 'Search public code',
                 href: '/search',
-                icon: <ExternalLinkIcon />,
             },
             {
                 name: 'Support forum',
                 href: 'https://community.sourcegraph.com',
-                icon: <ExternalLinkIcon />,
             },
             {
                 name: 'Sourcegraph Labs',
                 href: 'https://s0.dev',
-                icon: <ExternalLinkIcon />,
             },
         ],
     },
@@ -134,7 +130,6 @@ const FOOTER_LINK_SECTIONS: { name: string; items: LinkWithIcon[] }[] = [
             {
                 name: 'Handbook',
                 href: 'https://handbook.sourcegraph.com',
-                icon: <ExternalLinkIcon />,
             },
         ],
     },
