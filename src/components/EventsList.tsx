@@ -268,10 +268,10 @@ const formatDateRange = (startDate: Date, endDate: Date): string => {
     const year = format(startDate, 'yyyy')
 
     if (startMonth === endMonth) {
-        return `${startMonth} ${startDay}-${endDay}, ${year}`
+        return `${startMonth} ${startDay} - ${endDay}, ${year}`
     }
     
-    return `${startMonth} ${startDay}–${endMonth} ${endDay}, ${year}`
+    return `${startMonth} ${startDay} – ${endMonth} ${endDay}, ${year}`
 }
 const filterEvents = (): { upcomingEvents: Event[]; pastEvents: Event[] } => {
     const currentDate = new Date()
