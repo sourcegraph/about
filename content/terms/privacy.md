@@ -9,7 +9,7 @@ See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub
 
 At Sourcegraph, Inc. (**"Sourcegraph," "we," "our,"** or **"us"**), we value your privacy. This Privacy Policy explains how we collect, use, share and protect your personal information that we collect when you use our website and products (collectively, **“Services”**). This Privacy Policy does not apply to Customer Personal Data, which we process on behalf of customers to our business offerings. Our use of that data is instead governed by our customer agreements. By using our Service, you agree to the terms of this Privacy Policy and our <a href="/terms">Terms of Service</a>.
 
-Capitalized terms that are not defined in this Privacy Policy have the meaning given them in our <a href="/terms">Terms of Service</a>.
+Capitalized terms that are not defined in this Privacy Policy have the meaning given to them in our <a href="/terms">Terms of Service</a>.
 
 <span className="text-blurple-400">
 
