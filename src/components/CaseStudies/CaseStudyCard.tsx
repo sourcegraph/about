@@ -18,6 +18,12 @@ interface CaseStudy {
 // TODO: This data will eventually live in our CMS
 export const CASESTUDIES: CaseStudy[] = [
     {
+        name: 'Palo Alto Networks',
+        logo: '/home/carousel/palo-alto-logo.svg',
+        title: "Palo Alto Networks Boosts 2,000 Developers' Productivity Using AI Solutions from AWS, Anthropic, and Sourcegraph",
+        url: 'https://aws.amazon.com/partners/success/palo-alto-networks-anthropic-sourcegraph/',
+    },
+    {
         name: '1Password',
         logo: '/case-studies/1password-logo.png',
         title: '1Password uses Code Search and Cody to increase productivity while working in a distributed codebase.',
