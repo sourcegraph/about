@@ -31,45 +31,31 @@ const EventsPage: FunctionComponent = () => (
                 {/* left side */}
                 <div>
                     <h3 className="text-xl">
-                        November 19th <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Upcoming</span>
+                        December 6th <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Upcoming</span>
                     </h3>
 
                     <div className="grid gap-y-5 gap-x-10 xl:grid-cols-2">
                         <div>
-                            <h2 className="mt-4">AI Eng Talks w/ Cloudflare, Sourcegraph & Jam.dev</h2>
+                            <h2 className="mt-4">Your Cody questions answered live! (December 2024)</h2>
 
                             <p className="mt-4 text-lg text-gray-600">
-                                Join us and learn about the latest advancements in AI, language models, and open source.
-                                This meetup is organized by developers for developers.
+                            Join us for the 4th Cody Q&A with the cofounders of Sourcegraph, Quinn Slack (CEO) and Beyang Liu (CTO)!
                             </p>
-                            <div className="mt-4">
-                                <h3>Location</h3>
-                                <p className="mt-4 text-sm text-gray-500">
-                                101 Townsend St, San Francisco, CA 94107, USA
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="mt-4">
-                            <h3>Schedule</h3>
-                            <p className="mt-4">👋 Welcome</p>                            
-                            <ul>
-                                <li>6:00 - 8:00 pm: Lighting talks, food, drinks, and networking</li>
-                            </ul>
-                        </div>
+                            
+                        </div>  
                     </div>
                 </div>
-
                 {/* right side */}
-                <iframe
-                    title="AI Dev Tools Night"
-                    src="https://lu.ma/embed/event/evt-qVXLRhOHIcPsY5m/simple"
-                    width="100%"
-                    height="640"
-                    className="rounded-xl"
-                    allowFullScreen={false}
-                    aria-hidden={false}
-                />
+                <div>
+                    <a
+                        href="https://streamyard.com/watch/v8G25YeCgVEF"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block rounded-lg bg-violet-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-violet-500"
+                    >
+                        RSVP
+                    </a>
+                </div>
             </div>
         </ContentSection>
 
