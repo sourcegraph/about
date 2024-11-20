@@ -12,7 +12,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.1.0-og-image.png
 ---
 
-Today marks a significant milestone in AI-assisted development: [Anthropic](https://anthropic.com) has released their [Model Context Protocol (MCP)](https://github.com/modelcontextprotocol/spec), and Sourcegraph's Cody is one of the first tools to support it. This integration opens up new possiblities to get extra context into your editor.
+Today marks a significant milestone in AI-assisted development: [Anthropic](https://anthropic.com) has released [Model Context Protocol (MCP)](https://github.com/modelcontextprotocol/spec), an open standard for connecting AI models with external data. We're proud to announce that Sourcegraph is one of the first tools to support it. This integration opens up new possiblities to get extra context into your editor.
 
 For example, you can now get GitHub or Linear issues, connect to your Postgres database, and access internal documentation without leaving your IDE.
 
