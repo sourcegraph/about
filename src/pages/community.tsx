@@ -17,7 +17,7 @@ const socialMediaStyles = 'text-xl text-gray-400 hover:text-gray-300 transition-
 const expertsData = [
     {
         name: 'Kynlo Akari',
-        role: 'Developer',
+        role: 'Developer, ExtendCody',
         image: '/community/kynlo_akari.jpeg',
         links: {
             github: 'https://github.com/Kynlos',
@@ -25,17 +25,17 @@ const expertsData = [
         },
     },
     {
-        name: 'David Ichim',
-        role: 'Web Developer',
-        image: '/community/david.jpeg',
+        name: 'Thanh Doan',
+        role: 'Developer, Cody++',
+        image: '/community/thanh-doan.jpg',
         links: {
-            github: 'https://github.com/ichim-david',
-            twitter: 'https://x.com/pixl_dave',
+            github: 'https://github.com/mnismt',
+            twitter: 'https://x.com/leodoan_',
         },
     },
     {
         name: 'Tino Wening',
-        role: 'Developer',
+        role: 'Developer, CodyArchitect',
         image: '/community/tino.jpeg',
         links: {
             github: 'https://github.com/PriNova',
