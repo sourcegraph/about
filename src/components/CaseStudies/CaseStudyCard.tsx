@@ -18,6 +18,12 @@ interface CaseStudy {
 // TODO: This data will eventually live in our CMS
 export const CASESTUDIES: CaseStudy[] = [
     {
+        name: 'Coinbase',
+        logo: '/case-studies/coinbase-logo.png',
+        title: 'Coinbase developers improve productivity and satisfaction using Cody while meeting strict security requirements.',
+        url: '/case-studies/coinbase-speeds-up-financial-systems-innovation/',
+    },
+    {
         name: 'Palo Alto Networks',
         logo: '/home/carousel/palo-alto-logo.svg',
         title: "Palo Alto Networks Boosts 2,000 Developers' Productivity Using AI Solutions from AWS, Anthropic, and Sourcegraph",
