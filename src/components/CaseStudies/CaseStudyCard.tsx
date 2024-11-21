@@ -20,7 +20,7 @@ export const CASESTUDIES: CaseStudy[] = [
     {
         name: 'Palo Alto Networks',
         logo: '/home/carousel/palo-alto-logo.svg',
-        title: "Palo Alto Networks Boosts 2,000 Developers' Productivity Using AI Solutions from AWS, Anthropic, and Sourcegraph",
+        title: "Palo Alto Networks boosts productivity for 2,000 developers by up to 40% using a secure Sourcegraph deployment.",
         url: 'https://aws.amazon.com/partners/success/palo-alto-networks-anthropic-sourcegraph/',
     },
     {
