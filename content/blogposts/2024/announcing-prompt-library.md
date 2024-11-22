@@ -46,7 +46,7 @@ Let’s take a look at three realistic example use cases for the Prompt Library.
 
 ## 1. “Cody is not giving me code in the right language/framework version”
 
-Imagine you are working with a legacy Java application that uses an older version of the Spring framework. You might find that Cody is generating code snippets using a newer version of Spring, which is incompatible with your project. For instance, your project is using Spring 3.x, but Cody provides examples using Spring Boot 2.x features, which are not available in your current setup.
+Imagine you are working with a legacy Java application that uses an older version of the [Spring](https://spring.io/) framework. You might find that Cody is generating code snippets using a newer version of Spring, which is incompatible with your project. For instance, your project is using Spring 3.x, but Cody provides examples using Spring Boot 2.x features, which are not available in your current setup.
 
 ```java
 import org.springframework.web.bind.annotation.RestController;
