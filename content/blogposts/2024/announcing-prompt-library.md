@@ -40,7 +40,7 @@ Additionally, from the Prompt Library in the Sourcegraph web interface, you can 
 
 ![image.png](https://sourcegraph.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7ce844a-fe2e-4102-b77e-e852aee3841b%2F2a0e4315-7842-4859-9610-63400d467344%2Fimage.png?table=block&id=142a8e11-2658-803f-9899-ff4ee05310bc&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&width=2000&userId=&cache=v2)
 
-# Example Use Cases
+## Example Use Cases
 
 Let’s take a look at three realistic example use cases here.
 
