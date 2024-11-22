@@ -144,6 +144,6 @@ func TestAdd(t *testing.T) {
 
 By saving and sharing this prompt within your team, you ensure that Cody consistently generates tests in the correct format, saving time and reducing review cycles.
 
-# Learn more
+# Conclusion
 
 You can [learn more about this new feature on our docs.](https://sourcegraph.com/docs/cody/capabilities/commands)
