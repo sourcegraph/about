@@ -32,7 +32,7 @@ Let’s take a look at how it works:
 
 ## Using the created prompt in your editor
 
-You can go to Cody Chat, select your saved prompts, add any necessary details, and run them.
+Once you have a prompt created, you can use it via Cody Chat in your IDE. Select your saved prompts, add any necessary details, and run them.
 
 ![image.png](https://sourcegraph.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7ce844a-fe2e-4102-b77e-e852aee3841b%2Fc57ee65b-31cf-40de-841d-c53ceca0fa0d%2Fimage.png?table=block&id=142a8e11-2658-8099-8cf5-d613adaea23b&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&width=2000&userId=&cache=v2)
 
