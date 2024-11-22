@@ -96,7 +96,7 @@ This prompt can be shared with your colleagues to ensure consistent code style a
 
 ## 3. “Cody is not generating tests in the right format”
 
-Imagine you are working with Golang and need Cody to generate unit tests that comply with your team’s conventions. Your organization follows a specific structure for tests, including the use of table-driven tests and `require` from the `testify` package for assertions.
+Imagine you are working with [Golang](https://go.dev/) and need Cody to generate unit tests that comply with your team’s conventions. Your organization follows a specific structure for tests, including the use of table-driven tests and `require` from the `testify` package for assertions.
 
 However, Cody might provide a simple test that does not align with your standards:
 
