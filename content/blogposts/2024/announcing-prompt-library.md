@@ -18,7 +18,7 @@ Introducing **Prompt Library**: a new way to save and reuse frequently used prom
 
 Let’s take a look at how it works:
 ## Creating a new prompt
-1.	Go to Sourcegraph’s web interface.
+1.	Go to Sourcegraph’s [web interface](https://sourcegraph.com/search) and log in.
 
 2.	From the top menu, find **Tools** and then **Prompt Library**.
 
