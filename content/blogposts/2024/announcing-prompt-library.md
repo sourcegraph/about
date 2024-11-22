@@ -36,7 +36,7 @@ Once you have a prompt created, you can use it via Cody Chat in your IDE. Select
 
 ![image.png](https://sourcegraph.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7ce844a-fe2e-4102-b77e-e852aee3841b%2Fc57ee65b-31cf-40de-841d-c53ceca0fa0d%2Fimage.png?table=block&id=142a8e11-2658-8099-8cf5-d613adaea23b&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&width=2000&userId=&cache=v2)
 
-Alternatively, return to Prompt Library, find your prompt, and copy a permalink to share it with others.
+Additionally, from the Prompt Library in the Sourcegraph web interface, you can view your created prompts, and copy a permalink to share it with others.
 
 ![image.png](https://sourcegraph.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7ce844a-fe2e-4102-b77e-e852aee3841b%2F2a0e4315-7842-4859-9610-63400d467344%2Fimage.png?table=block&id=142a8e11-2658-803f-9899-ff4ee05310bc&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&width=2000&userId=&cache=v2)
 
