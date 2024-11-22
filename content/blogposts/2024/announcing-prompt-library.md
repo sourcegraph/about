@@ -42,7 +42,7 @@ Additionally, from the Prompt Library in the Sourcegraph web interface, you can 
 
 ## Example Use Cases
 
-Let’s take a look at three realistic example use cases here.
+Let’s take a look at three realistic example use cases for the Prompt Library.
 
 ## 1. “Cody is not giving me code in the right language/framework version”
 
