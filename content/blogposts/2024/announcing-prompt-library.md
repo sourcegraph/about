@@ -30,7 +30,7 @@ Let’s take a look at how it works:
 
 ![image.png](https://sourcegraph.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7ce844a-fe2e-4102-b77e-e852aee3841b%2F10c88996-bb30-4aca-b646-167003735728%2Fimage.png?table=block&id=142a8e11-2658-8014-a2a1-cae0d8dc95cd&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&width=2000&userId=&cache=v2)
 
-**Once created:**
+## Using the created prompt in your editor
 
 You can go to Cody Chat, select your saved prompts, add any necessary details, and run them.
 
