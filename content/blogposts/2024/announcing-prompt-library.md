@@ -1,5 +1,5 @@
 ---
-title: "Announcing Prompt Library"
+title: "Announcing Prompt Library: save, reuse, and share frequently used prompts for Cody"
 authors:
   - name: YK Sugi
     url: https://x.com/ykdojo
