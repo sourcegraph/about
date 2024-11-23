@@ -74,6 +74,8 @@ To address this, you can create a prompt in the Prompt Library that specifies th
 
 By sharing this prompt with your team, everyone can ensure that Cody generates code compatible with your legacy system.
 
+![java-example](https://file.notion.so/f/f/e7ce844a-fe2e-4102-b77e-e852aee3841b/ddee70bd-32db-4f1f-a6e2-71732edb5f33/java-example.gif?table=block&id=147a8e11-2658-8073-bea5-f77923ff3ab0&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&expirationTimestamp=1732473811197&signature=9-dXQi3oyIW4Z2YYSkQ8_u1NbJ1qPEFXrdtoXCaQJZk)
+
 ## 2. “Cody is not following my organization’s style guide”
 
 Suppose your organization has a specific Python coding style guide that mandates the use of snake_case for variable names and requires docstrings for all functions. However, Cody might generate code that doesn't adhere to these conventions, leading to inconsistencies in your codebase.
