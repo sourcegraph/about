@@ -12,7 +12,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/towards-infini
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/infinite-context-og.png
 ---
 
-As you work with [Cody](https://sourcegraph.com/cody), you might find yourself repeating the same prompt over and over again. Maybe you have an expert prompt engineer on your team that always knows just how to prompt to get the right outcome each time. Wouldn't it be great if you could automate common tasks and share them with your team?```
+As you work with [Cody](https://sourcegraph.com/cody), you might find yourself repeating the same prompt over and over again. Maybe you have an expert prompt engineer on your team that always knows just how to prompt to get the right outcome each time. Wouldn't it be great if you could automate common tasks and share them with your team?
 
 Introducing **Prompt Library**: a new way to save and reuse frequently used prompts, as well as share them within your organization or publicly.
 
