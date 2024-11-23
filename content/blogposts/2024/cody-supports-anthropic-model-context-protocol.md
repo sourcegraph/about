@@ -12,7 +12,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.1.0-og-image.png
 ---
 
-Today marks a significant milestone in AI-assisted development: [Anthropic](https://anthropic.com) has released [Model Context Protocol (MCP)](https://github.com/modelcontextprotocol/spec), an open standard for connecting AI models with external data. We're proud to announce that Sourcegraph is one of the first tools to support it. This integration opens up new possiblities to get extra context into your editor.
+Today marks a significant milestone in AI-assisted development: [Anthropic](https://anthropic.com) has released [Model Context Protocol (MCP)](https://modelcontextprotocol.io), an open standard for connecting AI models with external data. We're proud to announce that Sourcegraph is one of the first tools to support it. This integration opens up new possiblities to get extra context into your editor.
 
 For example, you can now get GitHub or Linear issues, connect to your Postgres database, and access internal documentation without leaving your IDE.
 
@@ -33,21 +33,22 @@ As launch partners with Anthropic, we've ensured that Cody can seamlessly integr
 
 ## What can you bring into Cody using MCP?
 
-Anthropic has released [several example MCP servers](https://github.com/modelcontextprotocol/example-servers) that show how we can create servers to connect to various data sources. Cody supports all of these example servers out of the box. Cody can also support your own MCP server, which we'll cover later.
+Anthropic has released [several example MCP servers](https://github.com/modelcontextprotocol/servers) that show how we can create servers to connect to various data sources. Cody supports all of these example servers out of the box. Cody can also support your own MCP server, which we'll cover later.
 
-- [Postgres](https://github.com/modelcontextprotocol/example-servers/tree/main/src/postgres) - Connect to your Postgres databases to query schema information and write optimized SQL
-- [Everything](https://github.com/modelcontextprotocol/example-servers/tree/main/src/everything) - A demo server showing MCP capabilities
-- [Google Drive](https://github.com/modelcontextprotocol/example-servers/tree/main/src/gdrive) - Search and access your Google Drive documents
-- [Giphy](https://github.com/modelcontextprotocol/example-servers/tree/main/src/giphy) - Search gifs
-- [Git](https://github.com/modelcontextprotocol/example-servers/tree/main/src/git) - Get git history and commit information
-- [HubSpot](https://github.com/modelcontextprotocol/example-servers/tree/main/src/hubspot) - Access your HubSpot CRM data
-- [OSAScript](https://github.com/modelcontextprotocol/example-servers/tree/main/src/osascript) - Execute AppleScript commands on macOS
-- [Puppeteer](https://github.com/modelcontextprotocol/example-servers/tree/main/src/puppeteer) - Control headless Chrome for web automation
-- [Spotify](https://github.com/modelcontextprotocol/example-servers/tree/main/src/spotify) - Access Spotify music data and playlists
+- [Brave Search](https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search) - Search the Brave search API
+- [Postgres](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres) - Connect to your Postgres databases to query schema information and write optimized SQL
+- [Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) - Access files on your local machine
+- [Everything](https://github.com/modelcontextprotocol/servers/tree/main/src/everything) - A demo server showing MCP capabilities
+- [Google Drive](https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive) - Search and access your Google Drive documents
+- [Google Maps](https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps) - Get directions and information about places
+- [Memo](https://github.com/modelcontextprotocol/servers/tree/main/src/memo) - Access your Memo notes
+- [Git](https://github.com/modelcontextprotocol/servers/tree/main/src/git) - Get git history and commit information
+- [Puppeteer](https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer) - Control headless Chrome for web automation
+- [SQLite](https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite) - Query SQLite databases
 
 The beauty of MCP lies in its universality. Once you build an MCP server, it becomes a source of context for multiple tools - not just Cody. Here's how it works:
 
-1. Your MCP server provides structured context through a [standardized protocol](https://turbo-tribble-5klz2wj.pages.github.io/spec/).
+1. Your MCP server provides structured context through a [standardized protocol](https://modelcontextprotocol.io).
 2. Cody connects to this server through [OpenCtx](https://openctx.com), our open standard for external context.
 3. The context becomes available in your editor through Cody chat.
 
@@ -55,7 +56,7 @@ The beauty of MCP lies in its universality. Once you build an MCP server, it bec
 
 To get started with MCP, let's clone Anthropic's example servers and try them out. Servers are stored locally on your computer and the Cody client will connect to them.
 
-1. Clone the [example-servers](https://github.com/modelcontextprotocol/example-servers) repository
+1. Clone the [example-servers](https://github.com/modelcontextprotocol/servers) repository
 2. Install the dependencies: `npm install`
 3. Build the project: `npm run build`
 
@@ -232,4 +233,4 @@ The combination of Anthropic's Model Context Protocol and Cody opens up endless 
 
 We're excited to see what the developer community builds with this integration. Have ideas for MCP servers? Share them with us! The future of context-aware coding is here, and it's more accessible than ever.
 
-Ready to try it out? Install [Cody](/cody) and check out [Anthropic's example MCP servers](https://github.com/modelcontextprotocol/example-servers) to get started. Happy coding!
+Ready to try it out? Install [Cody](/cody) and check out [Anthropic's example MCP servers](https://github.com/modelcontextprotocol/servers) to get started. Happy coding!
