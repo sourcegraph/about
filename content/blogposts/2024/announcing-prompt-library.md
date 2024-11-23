@@ -35,7 +35,7 @@ Let’s take a look at how it works.
 
 Once you have a prompt created, you can use it via Cody Chat in your IDE. Select your saved prompts, add any necessary details, and run them.
 
-![image.png](https://sourcegraph.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7ce844a-fe2e-4102-b77e-e852aee3841b%2Fc57ee65b-31cf-40de-841d-c53ceca0fa0d%2Fimage.png?table=block&id=142a8e11-2658-8099-8cf5-d613adaea23b&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&width=2000&userId=&cache=v2)
+![Using prompt library](https://file.notion.so/f/f/e7ce844a-fe2e-4102-b77e-e852aee3841b/45961939-b3a5-438b-95d1-77e135005db1/using-pl.gif?table=block&id=147a8e11-2658-800f-b04c-dcd3f9c80592&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&expirationTimestamp=1732472812322&signature=Zww2upTGabOQ-yhRfjGmsuqzyvei1hXvWWSW0WHG2Tk)
 
 Additionally, from the Prompt Library in the Sourcegraph web interface, you can view your created prompts, and copy a permalink to share it with others.
 
