@@ -97,6 +97,8 @@ To solve this, you can create a comprehensive prompt that instructs Cody to foll
 
 This prompt can be shared with your colleagues to ensure consistent code style across the team.
 
+![python-example](https://file.notion.so/f/f/e7ce844a-fe2e-4102-b77e-e852aee3841b/da64f380-c0a1-430e-ad91-509929afaf60/python.gif?table=block&id=147a8e11-2658-80f5-9c75-c461e977fbc3&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&expirationTimestamp=1732474434824&signature=T46br4Yrv88mLBzOLVJcwnJ07ZHG_X52FYKQ2IN-1Ns)
+
 ## 3. “Cody is not generating tests in the right format”
 
 Imagine you are working with [Golang](https://go.dev/) and need Cody to generate unit tests that comply with your team’s conventions. Your organization follows a specific structure for tests, including the use of table-driven tests and `require` from the `testify` package for assertions.
@@ -146,6 +148,8 @@ func TestAdd(t *testing.T) {
 ```
 
 By saving and sharing this prompt within your team, you ensure that Cody consistently generates tests in the correct format, saving time and reducing review cycles.
+
+![go-example](https://file.notion.so/f/f/e7ce844a-fe2e-4102-b77e-e852aee3841b/974c3762-8dd6-408a-ad8f-ce51157145e0/go.gif?table=block&id=147a8e11-2658-807d-a84d-d033f7afb43d&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&expirationTimestamp=1732474961601&signature=yQAomsHSnSVJ5fwXAodS2VgaYuenbLNdGM7g8rEnULU)
 
 # Conclusion
 
