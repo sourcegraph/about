@@ -16,7 +16,8 @@ As you work with [Cody](https://sourcegraph.com/cody), you might find yourself r
 
 Introducing **Prompt Library**: a new way to save and reuse frequently used prompts, as well as share them within your organization or publicly.
 
-Let’s take a look at how it works:
+Let’s take a look at how it works.
+
 ## Creating a new prompt
 1.	Go to Sourcegraph’s [web interface](https://sourcegraph.com/search) and log in.
 
