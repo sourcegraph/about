@@ -3,7 +3,7 @@ title: "Cody supports additional context through Anthropic's Model Context Proto
 authors:
   - name: Chris Sev
     url: https://x.com/chris__sev
-publishDate: 2024-11-17T10:00-01:00
+publishDate: 2024-11-25T10:00-01:00
 description: "Cody now supports Anthropic's Model Context Protocol, allowing you to bring external context into your editor."
 tags: [blog]
 slug: "cody-supports-anthropic-model-context-protocol"
