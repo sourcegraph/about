@@ -8,8 +8,8 @@ description: "Cody now supports Anthropic's Model Context Protocol, allowing you
 tags: [blog]
 slug: "cody-supports-anthropic-model-context-protocol"
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.1.0-og-image.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.1.0-og-image.png
+heroImage: https://sourcegraph.com/assets/cody/cody-modelcontextprotocol.png
+socialImage: https://sourcegraph.com/assets/cody/cody-modelcontextprotocol.png
 ---
 
 Today marks a significant milestone in AI-assisted development: [Anthropic](https://anthropic.com) has released [Model Context Protocol (MCP)](https://modelcontextprotocol.io), an open standard for connecting AI models with external data. We're proud to announce that Sourcegraph is one of the first tools to support it. This integration opens up new possiblities to get extra context into your editor.
