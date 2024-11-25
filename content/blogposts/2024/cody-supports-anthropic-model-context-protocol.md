@@ -67,7 +67,7 @@ Add the following to your VS Code JSON settings:
 ```json
 {
   "openctx.providers": {
-    "https://openctx.org/npm/@openctx/mcp": {
+    "https://openctx.org/npm/@openctx/provider-modelcontextprotocol": {
       "nodeCommand": "node",
       "mcp.provider.uri": "file:///PATH_TO_YOUR_EXAMPLE_SERVERS_FOLDER/example-servers/everything/build/index.js"
     }
@@ -89,7 +89,7 @@ You can try out the Postgres MCP server by updating your JSON settings to point 
 ```json
 {
   "openctx.providers": {
-    "https://openctx.org/npm/@openctx/mcp": {
+    "https://openctx.org/npm/@openctx/provider-modelcontextprotocol": {
       "nodeCommand": "node",
       "mcp.provider.uri": "file:///PATH_TO_YOUR_EXAMPLE_SERVERS_FOLDER/example-servers/postgres/build/index.js",
       "mcp.provider.args": ["postgresql://root:@127.0.0.1:5433/my-database"]
@@ -211,7 +211,7 @@ Now that you have this new `index.js` file for your MCP server, connect it to Co
 ```json
 {
   "openctx.providers": {
-    "https://openctx.org/npm/@openctx/mcp": {
+    "https://openctx.org/npm/@openctx/provider-modelcontextprotocol": {
       "nodeCommand": "node",
       "mcp.provider.uri": "file:///PATH_TO_YOUR_EXAMPLE_SERVERS_FOLDER/example-servers/linear/build/index.js",
       "mcp.provider.args": ["YOUR_LINEAR_API_KEY"]
