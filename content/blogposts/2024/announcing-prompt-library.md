@@ -185,4 +185,4 @@ Prompt Library is available starting today. Get started and create prompts for y
 
 If you haven't used Cody yet, you can learn more about it and download it from the [Cody website](https://sourcegraph.com/cody).
 
-You can also [learn more about this new feature on our docs.](https://sourcegraph.com/docs/cody/capabilities/commands)
+Finally, learn all about the various ways to use the Prompt Library from the [docs](https://sourcegraph.com/docs/cody/capabilities/commands). Want to share your Cody prompt library or prompting best practices? Join our [Discord](https://discord.gg/sourcegraph-969688426372825169) or [community forums](https://sourcegraph.com/community).
