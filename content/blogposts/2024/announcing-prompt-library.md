@@ -8,8 +8,8 @@ description: "Tired of typing the same prompts over and over again? Introducing 
 tags: [blog]
 slug: 'announcing-prompt-library'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/infinite-context-og.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/infinite-context-og.png
+heroImage: https://sourcegraph.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7ce844a-fe2e-4102-b77e-e852aee3841b%2F87d8cafe-a0b8-44d1-832e-d9b669500a52%2Fprompt_library.png?table=block&id=14aa8e11-2658-805e-aad5-de39beb3a918&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&width=2000&userId=&cache=v2
+socialImage: https://sourcegraph.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7ce844a-fe2e-4102-b77e-e852aee3841b%2F87d8cafe-a0b8-44d1-832e-d9b669500a52%2Fprompt_library.png?table=block&id=14aa8e11-2658-805e-aad5-de39beb3a918&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&width=2000&userId=&cache=v2
 ---
 
 Through our customers' case studies and our conversations with them, we've discovered that engineering teams that adopt AI in their workflow tend to be about 30 to 40% more productive than the ones that do not. This may seem like a no-brainer, but changing a team's culture and letting them get over the mental hurdle of incorporating AI in their workflow is a significant challenge for many.
