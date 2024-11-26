@@ -3,7 +3,7 @@ title: "Announcing Prompt Library: save, reuse, and share frequently used prompt
 authors:
   - name: YK Sugi
     url: https://x.com/ykdojo
-publishDate: 2024-11-25T10:00-01:00
+publishDate: 2024-11-26T10:00-01:00
 description: "Tired of typing the same prompts over and over again? Introducing Prompt Library. Save, reuse, and share prompts with your team."
 tags: [blog]
 slug: 'announcing-prompt-library'
