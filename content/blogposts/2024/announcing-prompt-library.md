@@ -151,6 +151,32 @@ By saving and sharing this prompt within your team, you ensure that Cody consist
 
 ![go-example](https://file.notion.so/f/f/e7ce844a-fe2e-4102-b77e-e852aee3841b/974c3762-8dd6-408a-ad8f-ce51157145e0/go.gif?table=block&id=147a8e11-2658-807d-a84d-d033f7afb43d&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&expirationTimestamp=1732474961601&signature=yQAomsHSnSVJ5fwXAodS2VgaYuenbLNdGM7g8rEnULU)
 
+## 4. “I want new engineers on my team to be able to be onboarded quickly.”
+
+Suppose your project is fairly complex and you found a prompt that is helpful for new engineers on your team to learn about how it works and how to set it up.
+
+If that's the case, then you can put it in Prompt Library, share it with your coworkers, and even make it part of your onboarding flow.
+
+```
+@repo tell me about this project and how to set it up.
+```
+
+![onboarding-example](https://file.notion.so/f/f/e7ce844a-fe2e-4102-b77e-e852aee3841b/ce36e74d-e976-4f59-b227-71df47666ed9/onboarding.gif?table=block&id=149a8e11-2658-80c0-8b38-def4f35f308f&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&expirationTimestamp=1732665510889&signature=95W_FadEgdWhwQXpDLNnvexya85rjpb4uDOgo9huzo4)
+
+## 5. “I found a useful prompt for understanding code and I want to share it with my team.”
+
+Cody can be an extremely useful tool not just for writing code, but also for reading and understanding existing code.
+
+Suppose that you came up with this prompt and you found it useful:
+
+```
+@currentFile can you explain how this file works, in particular for the method <replace this with the method name>?
+```
+
+Putting it in Prompt Library can encourage your team to use AI in a way that fits your particular organization's workflow.
+
+![explaining-file-method](https://file.notion.so/f/f/e7ce844a-fe2e-4102-b77e-e852aee3841b/850ae791-f44e-44e7-89ee-f8e06b1b7df4/explanation.gif?table=block&id=14aa8e11-2658-80f1-bd03-fd6951663937&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&expirationTimestamp=1732665988387&signature=1cHbcRcX7B8cp_XBJn9WTy-adAGsTLknevr0k1PQE64)
+
 # Conclusion
 
 You can [learn more about this new feature on our docs.](https://sourcegraph.com/docs/cody/capabilities/commands)
