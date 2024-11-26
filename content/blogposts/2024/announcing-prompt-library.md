@@ -20,7 +20,7 @@ In particular, we've heard from many customers and developers that their existin
 - Requires a steep learning curve for developers to be able to use it in a professional context.
 - Forces them to rewrite a long prompt over and over again that they already know works well.
 
-Today, we're introducing **Prompt Library** to tackle this problem. It will speed up AI adoption in your engineering team and it will encourage your team to share their knowledge about how to effectively use AI in your particular organization's workflow. That way, every single engineer in your team can get up to speed. Here's how it works:
+Today, we're introducing **Prompt Library** to tackle this problem. It will speed up AI adoption in your engineering organization and it will encourage your team to share their knowledge about how to effectively use AI across your specific workflows. That way, every single engineer on your team can quickly get up to speed and leverage AI in a uniform way. Here's how it works:
 
 ## Creating a new prompt
 1.	Go to Sourcegraph’s [web interface](https://sourcegraph.com/search) and log in.
