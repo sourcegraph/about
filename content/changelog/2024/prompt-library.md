@@ -39,5 +39,3 @@ With this update, you’ll find that the Prompt Library replaces the default and
 - Generate Unit Tests (This Prompt will now output code into the chat rather than creating a new file)
 
 All Cody Enterprise customers on the latest release have access to Prompts and Prompt Library. To create your organization’s first prompts, go to /prompts to get started.
-
-[Read the announcement blog post](https://sourcegraph.com/blog/announcing-prompt-library) to learn more.
