@@ -183,35 +183,15 @@ Putting it in Prompt Library can encourage your team to use AI in a way that fit
 
 If you're an engineering leader, say you'd like to promote more documentation throughout your codebase. You can now promote a documentation prompt that you or your team created so that it shows up at the top of your team's Prompt Library for easy access, encouraging better and more thorough codebase documentation
 
-"Please generate a docstring for the given Python function that adheres to our team's documentation standards. The docstring should include: 
+```
+Please generate a docstring for the given Python function that adheres to our team's documentation standards. The docstring should include: 
 
 1. A brief summary of the function's purpose.  
 2. A description of each parameter, including name, type, and purpose.  
 3. The return value, including its type and description.  
 4. Any raised exceptions, if applicable.  
 5. Example usage of the function, where relevant.
-
-**Example Format:**
-
-```python
-def example_function(param1: int, param2: str) -> bool:
-    \"\"\"Perform an example operation.
-
-    Args:
-        param1 (int): The first parameter, which represents [describe purpose].
-        param2 (str): The second parameter, used for [describe purpose].
-
-    Returns:
-        bool: True if [describe condition], otherwise False.
-
-    Raises:
-        ValueError: If [describe error condition].
-
-    Example:
-        result = example_function(42, "example")
-        print(result)  # Expected output: True
-    \"\"\"
-```"
+```
 
 ![documentation-example](https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/docstring.gif)
 
