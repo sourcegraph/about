@@ -183,6 +183,6 @@ Putting it in Prompt Library can encourage your team to use AI in a way that fit
 
 Prompt Library is available starting today. Get started and create prompts for your use cases by visiting the [Prompt Library](https://sourcegraph.com/prompts) section of your Sourcegraph instance.
 
-If you haven't used Cody yet, you can learn more about it and download it from the [Cody website](https://sourcegraph.com/cody).
+If you haven't used Cody yet, you can learn more about it and download it for the IDE of your choice at [cody.dev](https://sourcegraph.com/cody).
 
 Finally, learn all about the various ways to use the Prompt Library from the [docs](https://sourcegraph.com/docs/cody/capabilities/commands). Want to share your Cody prompt library or prompting best practices? Join our [Discord](https://discord.gg/sourcegraph-969688426372825169) or [community forums](https://sourcegraph.com/community).
