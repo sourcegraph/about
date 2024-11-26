@@ -8,8 +8,8 @@ description: "Tired of typing the same prompts over and over again? Introducing 
 tags: [blog]
 slug: 'announcing-prompt-library'
 published: true
-heroImage: https://sourcegraph.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7ce844a-fe2e-4102-b77e-e852aee3841b%2F87d8cafe-a0b8-44d1-832e-d9b669500a52%2Fprompt_library.png?table=block&id=14aa8e11-2658-805e-aad5-de39beb3a918&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&width=2000&userId=&cache=v2
-socialImage: https://sourcegraph.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7ce844a-fe2e-4102-b77e-e852aee3841b%2F87d8cafe-a0b8-44d1-832e-d9b669500a52%2Fprompt_library.png?table=block&id=14aa8e11-2658-805e-aad5-de39beb3a918&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&width=2000&userId=&cache=v2
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/hero.webp
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/hero.webp
 ---
 
 Through our customers' case studies and our conversations with them, we've discovered that engineering teams that adopt AI in their workflow tend to be about 30 to 40% more productive than the ones that do not. This may seem like a no-brainer, but changing a team's culture and letting them get over the mental hurdle of incorporating AI in their workflow is a significant challenge for many.
@@ -26,23 +26,23 @@ Today, we're introducing **Prompt Library** to tackle this problem. It will spee
 
 2.	From the top menu, find **Tools** and then **Prompt Library**.
 
-![image.png](https://sourcegraph.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7ce844a-fe2e-4102-b77e-e852aee3841b%2F9a4e60f9-d0d6-4555-8dec-1c1e666d6985%2Fimage.png?table=block&id=142a8e11-2658-8080-b8bb-e21b5d503124&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&width=2000&userId=&cache=v2)
+![1-sourcegraph-web.webp](https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/1-sourcegraph-web.webp)
 
 3.	Click **Create new prompt**, set the prompt name, description, and the prompt itself, then click **Create prompt**.
 
-![image.png](https://sourcegraph.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7ce844a-fe2e-4102-b77e-e852aee3841b%2Fb793b037-8544-49a5-beae-5db4b070fff0%2Fimage.png?table=block&id=142a8e11-2658-8085-9d3f-d2abd19566be&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&width=2000&userId=&cache=v2)
+![2-prompt-library.webp](https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/2-prompt-library.webp)
 
-![image.png](https://sourcegraph.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7ce844a-fe2e-4102-b77e-e852aee3841b%2F10c88996-bb30-4aca-b646-167003735728%2Fimage.png?table=block&id=142a8e11-2658-8014-a2a1-cae0d8dc95cd&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&width=2000&userId=&cache=v2)
+![3-prompt-library-new.webp](https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/3-prompt-library-new.webp)
 
 ## Using the created prompt in your editor
 
 Once you have a prompt created, you can use it via Cody Chat in your IDE. Select your saved prompts, add any necessary details, and run them.
 
-![Using prompt library](https://file.notion.so/f/f/e7ce844a-fe2e-4102-b77e-e852aee3841b/45961939-b3a5-438b-95d1-77e135005db1/using-pl.gif?table=block&id=147a8e11-2658-800f-b04c-dcd3f9c80592&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&expirationTimestamp=1732472812322&signature=Zww2upTGabOQ-yhRfjGmsuqzyvei1hXvWWSW0WHG2Tk)
+![Using prompt library GIF](https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/5-using-pl.gif)
 
 Additionally, from the Prompt Library in the Sourcegraph web interface, you can view your created prompts, and copy a permalink to share it with others.
 
-![image.png](https://sourcegraph.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7ce844a-fe2e-4102-b77e-e852aee3841b%2F2a0e4315-7842-4859-9610-63400d467344%2Fimage.png?table=block&id=142a8e11-2658-803f-9899-ff4ee05310bc&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&width=2000&userId=&cache=v2)
+![6-prompt-library.webp](https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/6-prompt-library.webp)
 
 ## Example Use Cases
 
@@ -77,7 +77,7 @@ To address this, you can create a prompt in the Prompt Library that specifies th
 
 By sharing this prompt with your team, everyone can ensure that Cody generates code compatible with your legacy system.
 
-![java-example](https://file.notion.so/f/f/e7ce844a-fe2e-4102-b77e-e852aee3841b/ddee70bd-32db-4f1f-a6e2-71732edb5f33/java-example.gif?table=block&id=147a8e11-2658-8073-bea5-f77923ff3ab0&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&expirationTimestamp=1732473811197&signature=9-dXQi3oyIW4Z2YYSkQ8_u1NbJ1qPEFXrdtoXCaQJZk)
+![java-example](https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/7-java-example.gif)
 
 ## 2. “Cody is not following my organization’s style guide”
 
@@ -100,7 +100,7 @@ To solve this, you can create a comprehensive prompt that instructs Cody to foll
 
 This prompt can be shared with your colleagues to ensure consistent code style across the team.
 
-![python-example](https://file.notion.so/f/f/e7ce844a-fe2e-4102-b77e-e852aee3841b/da64f380-c0a1-430e-ad91-509929afaf60/python.gif?table=block&id=147a8e11-2658-80f5-9c75-c461e977fbc3&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&expirationTimestamp=1732474434824&signature=T46br4Yrv88mLBzOLVJcwnJ07ZHG_X52FYKQ2IN-1Ns)
+![python-example](https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/8-python.gif)
 
 ## 3. “Cody is not generating tests in the right format”
 
@@ -152,7 +152,7 @@ func TestAdd(t *testing.T) {
 
 By saving and sharing this prompt within your team, you ensure that Cody consistently generates tests in the correct format, saving time and reducing review cycles.
 
-![go-example](https://file.notion.so/f/f/e7ce844a-fe2e-4102-b77e-e852aee3841b/974c3762-8dd6-408a-ad8f-ce51157145e0/go.gif?table=block&id=147a8e11-2658-807d-a84d-d033f7afb43d&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&expirationTimestamp=1732474961601&signature=yQAomsHSnSVJ5fwXAodS2VgaYuenbLNdGM7g8rEnULU)
+![go-example](https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/9-go.gif)
 
 ## 4. “I want new engineers on my team to be able to be onboarded quickly.”
 
@@ -164,7 +164,7 @@ If that's the case, then you can put it in Prompt Library, share it with your co
 @repo tell me about this project and how to set it up.
 ```
 
-![onboarding-example](https://file.notion.so/f/f/e7ce844a-fe2e-4102-b77e-e852aee3841b/ce36e74d-e976-4f59-b227-71df47666ed9/onboarding.gif?table=block&id=149a8e11-2658-80c0-8b38-def4f35f308f&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&expirationTimestamp=1732665510889&signature=95W_FadEgdWhwQXpDLNnvexya85rjpb4uDOgo9huzo4)
+![onboarding-example](https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/10-onboarding.gif)
 
 ## 5. “I found a useful prompt for understanding code and I want to share it with my team.”
 
@@ -178,7 +178,7 @@ Suppose that you came up with this prompt and you found it useful:
 
 Putting it in Prompt Library can encourage your team to use AI in a way that fits your particular organization's workflow.
 
-![explaining-file-method](https://file.notion.so/f/f/e7ce844a-fe2e-4102-b77e-e852aee3841b/850ae791-f44e-44e7-89ee-f8e06b1b7df4/explanation.gif?table=block&id=14aa8e11-2658-80f1-bd03-fd6951663937&spaceId=e7ce844a-fe2e-4102-b77e-e852aee3841b&expirationTimestamp=1732665988387&signature=1cHbcRcX7B8cp_XBJn9WTy-adAGsTLknevr0k1PQE64)
+![explaining-file-method](https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/11-explanation.gif)
 
 # Conclusion
 
