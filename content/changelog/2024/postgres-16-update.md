@@ -5,7 +5,7 @@ authors:
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/jacob_avatar.png
 publishDate: 2024-11-25T10:00-02:00
 description: "Self-hosted customers using the provided Sourcegraph Postgres image will be upgraded to Postgres 16."
-tags: [Enterprise, 5.10]
+tags: [Enterprise]
 version: [v5.10]
 versionIcon: /assets/changelog/sourcegraph.svg
 slug: 'postgres-16-update'
@@ -23,4 +23,4 @@ If you are using Sourcegraph’s released Postgres images, these images will be 
 
 We strongly recommend that you consider this downtime prior to upgrading to ensure minimal disruption to your users. We also strongly recommend creating a backup of your database before the upgrade process.
 
-For more detailed information, please refer to our technical changelog or contact your Sourcegraph Support representative.
+For more detailed information, please refer to our [technical changelog](https://sourcegraph.com/docs/technical-changelog) or contact your Sourcegraph Support representative.

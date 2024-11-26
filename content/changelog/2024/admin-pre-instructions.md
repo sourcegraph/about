@@ -6,7 +6,7 @@ authors:
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.png
 publishDate: 2024-11-25T10:00-02:00
 description: "You can now define standardized pre-instructions for Cody to determine how it answers questions or which questions it will answer."
-tags: [Cody, Enterprise, 5.10]
+tags: [Cody, Enterprise]
 version: [v5.10]
 versionIcon: /assets/changelog/sourcegraph.svg
 slug: 'admin-pre-instructions'

@@ -5,8 +5,8 @@ authors:
     url: https://x.com/AlexanderIsken
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.png
 publishDate: 2024-11-25T10:00-02:00
-description: "You can now define standardized pre-instructions for Cody to determine how it answers questions or which questions it will answer."
-tags: [Cody, Enterprise, 5.10]
+description: "Cody Enterprise users can now swap between multiple model options from their IDE, and admins can define available models."
+tags: [Cody, Enterprise]
 version: [v5.10]
 versionIcon: /assets/changelog/sourcegraph.svg
 slug: 'enterprise-model-selection'

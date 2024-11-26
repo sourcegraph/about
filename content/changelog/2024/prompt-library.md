@@ -6,7 +6,7 @@ authors:
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.png
 publishDate: 2024-11-25T10:00-02:00
 description: "The new Prompt Library lets Cody users build and share custom Prompts, accelerating your everyday work with reusable building blocks."
-tags: [Cody, Enterprise, 5.10]
+tags: [Cody, Enterprise]
 version: [v5.10]
 versionIcon: /assets/changelog/sourcegraph.svg
 slug: 'prompt-library'
@@ -18,7 +18,7 @@ relatedTopics:
     url: https://sourcegraph.com/docs/cody/capabilities/commands
 ---
 
-While Cody’s autocomplete and chat functions speed up the inner dev loop, we’ve consistently heard from engineering leaders that they want more customizable ways to promote code AI best practices across their organization. Organizations that widely adopt LLM tools report better unit test and documentation coverage, not to mention faster issue-to-PR times. One Sourcegraph customer, 1Password, reports that unit tests that used to take a full day to write [now take 10 minutes](https://sourcegraph.com/case-studies/1password-increases-productivity-in-a-distributed-codebase). However, AI coding tools leave much to be desired:
+While Cody’s autocomplete and chat functions speed up the inner dev loop, we’ve consistently heard from engineering leaders that they want more customizable ways to promote code AI best practices across their organization. Organizations that widely adopt code AI tools report better unit test and documentation coverage, not to mention faster issue-to-PR times. One Sourcegraph customer, 1Password, reports that unit tests that used to take a full day to write [now take 10 minutes](https://sourcegraph.com/case-studies/1password-increases-productivity-in-a-distributed-codebase). However, AI coding tools leave much to be desired:
 
 - AI tools today require writing long and cumbersome prompts over and over again, which could have taken longer than writing the code itself
 - AI tools require users to go back and forth with the language model and clarify what they want, taking up valuable developer time
