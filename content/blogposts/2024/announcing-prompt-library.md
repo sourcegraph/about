@@ -12,11 +12,14 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/towards-infini
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/towards-infinite-context-for-code/infinite-context-og.png
 ---
 
-As you work with [Cody](https://sourcegraph.com/cody), you might find yourself repeating the same prompt over and over again. Maybe you have an expert prompt engineer on your team that always knows just how to prompt to get the right outcome each time. Wouldn't it be great if you could automate common tasks and share them with your team?
+Through our customers' case studies and our conversations with them, we've discovered that engineering teams that adopt AI in their workflow tend to be about 30 to 40% more productive than the ones that do not. This may seem like a no-brainer, but changing a team's culture and letting them get over the mental hurdle of incorporating AI in their workflow is a significant challenge for many.
 
-Introducing **Prompt Library**: a new way to save and reuse frequently used prompts, as well as share them within your organization or publicly.
+In particular, we've heard from many customers and developers that their existing AI tool:
+- Doesn't always generate code that makes sense in their particular codebase.
+- Hallucinates because it doesn't use proper relevant context from your codebase and more.
+- Requires a steep learning curve for developers to be able to use it in a professional context.
 
-Let’s take a look at how it works.
+Today, we're introducing **Prompt Library** to tackle this problem. It will speed up AI adoption in your engineering team and it will encourage your team to share their knowledge about how to effectively use AI in your particular organization's workflow. That way, every single engineer in your team can get up to speed. Here's how it works:
 
 ## Creating a new prompt
 1.	Go to Sourcegraph’s [web interface](https://sourcegraph.com/search) and log in.
