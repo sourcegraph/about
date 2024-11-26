@@ -9,7 +9,7 @@ tags: [Cody, Enterprise]
 version: [v5.10]
 versionIcon: /assets/changelog/sourcegraph.svg
 slug: 'prompt-library'
-published: true
+published: false
 relatedTopics:
   - title: Cody docs
     url: https://sourcegraph.com/docs/cody
