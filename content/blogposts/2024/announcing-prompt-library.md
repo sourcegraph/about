@@ -3,7 +3,7 @@ title: "Announcing Prompt Library: save, reuse, and share frequently used prompt
 authors:
   - name: YK Sugi
     url: https://x.com/ykdojo
-publishDate: 2024-11-25T10:00-01:00
+publishDate: 2024-11-26T10:00-01:00
 description: "Tired of typing the same prompts over and over again? Introducing Prompt Library. Save, reuse, and share prompts with your team."
 tags: [blog]
 slug: 'announcing-prompt-library'
@@ -20,7 +20,7 @@ In particular, we've heard from many customers and developers that their existin
 - Requires a steep learning curve for developers to be able to use it in a professional context.
 - Forces them to rewrite a long prompt over and over again that they already know works well.
 
-Today, we're introducing **Prompt Library** to tackle this problem. It will speed up AI adoption in your engineering team and it will encourage your team to share their knowledge about how to effectively use AI in your particular organization's workflow. That way, every single engineer in your team can get up to speed. Here's how it works:
+Today, we're introducing **Prompt Library** to tackle this problem. It will speed up AI adoption in your engineering organization and it will encourage your team to share their knowledge about how to effectively use AI across your specific workflows. That way, every single engineer on your team can quickly get up to speed and leverage AI in a uniform way. Here's how it works:
 
 ## Creating a new prompt
 1.	Go to Sourcegraph’s [web interface](https://sourcegraph.com/search) and log in.
@@ -181,8 +181,8 @@ Putting it in Prompt Library can encourage your team to use AI in a way that fit
 
 # Conclusion
 
-Prompt Library is available starting today. Get started by heading over to [Sourcegraph Cody's web UI](https://sourcegraph.com/cody/chat).
+Prompt Library is available starting today. Get started and create prompts for your use cases by visiting the [Prompt Library](https://sourcegraph.com/prompts) section of your Sourcegraph instance.
 
-If you haven't used Cody yet, you can learn more about it and download it from the [Cody website](https://sourcegraph.com/cody).
+If you haven't used Cody yet, you can learn more about it and download it for the IDE of your choice at [cody.dev](https://sourcegraph.com/cody).
 
-You can also [learn more about this new feature on our docs.](https://sourcegraph.com/docs/cody/capabilities/commands)
+Finally, learn all about the various ways to use the Prompt Library from the [docs](https://sourcegraph.com/docs/cody/capabilities/commands). Want to share your Cody prompt library or prompting best practices? Join our [Discord](https://discord.gg/sourcegraph-969688426372825169) or [community forums](https://sourcegraph.com/community).
