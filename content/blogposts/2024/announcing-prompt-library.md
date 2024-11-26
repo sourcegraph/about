@@ -182,4 +182,8 @@ Putting it in Prompt Library can encourage your team to use AI in a way that fit
 
 # Conclusion
 
-You can [learn more about this new feature on our docs.](https://sourcegraph.com/docs/cody/capabilities/commands)
+Prompt Library is available starting today. Get started by heading over to [Sourcegraph Cody's web UI](https://sourcegraph.com/cody/chat).
+
+If you haven't used Cody yet, you can learn more about it and download it from the [Cody website](https://sourcegraph.com/cody).
+
+You can also [learn more about this new feature on our docs.](https://sourcegraph.com/docs/cody/capabilities/commands)
