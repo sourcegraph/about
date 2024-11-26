@@ -15,9 +15,10 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/prompt-libra
 Through our customers' case studies and our conversations with them, we've discovered that engineering teams that adopt AI in their workflow tend to be about 30 to 40% more productive than the ones that do not. This may seem like a no-brainer, but changing a team's culture and letting them get over the mental hurdle of incorporating AI in their workflow is a significant challenge for many.
 
 In particular, we've heard from many customers and developers that their existing AI tool:
-- Doesn't always generate code that makes sense in their particular codebase.
+- Doesn't always generate code that follows their coding conventions and guidelines.
 - Hallucinates because it doesn't use proper relevant context from your codebase and more.
 - Requires a steep learning curve for developers to be able to use it in a professional context.
+- Forces them to rewrite a long prompt over and over again that they already know works well.
 
 Today, we're introducing **Prompt Library** to tackle this problem. It will speed up AI adoption in your engineering team and it will encourage your team to share their knowledge about how to effectively use AI in your particular organization's workflow. That way, every single engineer in your team can get up to speed. Here's how it works:
 
