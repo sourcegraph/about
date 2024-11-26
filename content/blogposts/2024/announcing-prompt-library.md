@@ -30,8 +30,6 @@ Today, we're introducing **Prompt Library** to tackle this problem. It will spee
 
 3.	Click **Create new prompt**, set the prompt name, description, and the prompt itself, then click **Create prompt**.
 
-![2-prompt-library.webp](https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/2-prompt-library.webp)
-
 ![3-prompt-library-new.webp](https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/3-prompt-library-new.webp)
 
 ## Using the created prompt in your editor
