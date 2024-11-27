@@ -2,12 +2,12 @@
 title: "Experimental support for Cody in Eclipse IDE"
 authors:
   - name: Alex Isken
-    avatar: https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.jpeg
+    avatar: https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.png
 publishDate: 2024-11-27T10:00-02:00
 description: "Cody is now available for the Eclipse IDE as an experimental plugin. We’d love your feedback!"
 tags: [Cody, Eclipse]
 version: [v0.4.16]
-versionIcon: /assets/changelog/sourcegraph.svg
+versionIcon: /assets/changelog/eclipse.svg
 slug: 'cody-eclipse-experimental'
 published: true
 relatedTopics:
