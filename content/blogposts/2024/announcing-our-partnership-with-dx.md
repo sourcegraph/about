@@ -4,7 +4,7 @@ authors:
   - name: Alex Isken
     url: https://x.com/Alexanderisken
 publishDate: 2024-12-04T10:00-01:00
-description: "We’re partnering with DX, the engineering intelligence platform, to help teams understand how Sourcegraph can empower their developers."
+description: "We’re partnering with DX, the engineering intelligence platform, to help teams better measure the impact of code AI."
 tags: [blog]
 slug: 'announcing-our-partnership-with-dx'
 published: true
