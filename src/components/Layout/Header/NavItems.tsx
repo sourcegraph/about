@@ -208,19 +208,36 @@ export const NavItems: React.FunctionComponent<Props> = ({ close, linkElement: L
         <nav className="flex flex-col gap-4 pl-3 pb-1 lg:flex-row lg:pl-0 lg:pb-0">
             {NAV_ITEMS.map(item =>
                 'href' in item ? (
-                    <LinkElement
-                        id={item.id ?? 'topnav'}
-                        key={item.text}
-                        href={item.href}
-                        className={classNames('flex items-center', classes.item)}
-                        aria-current={isCurrentLink(item.href) ? 'page' : undefined}
-                        close={close}
-                    >
-                        {item.text}
-                        {item.badgeText && (
-                            <Badge className="ml-2" size="small" text={item.badgeText} color="blurple" />
-                        )}
-                    </LinkElement>
+                    item.text === 'Docs' ? (
+                        <a
+                            id={item.id ?? 'topnav'}
+                            key={item.text}
+                            href={item.href}
+                            className={classNames('flex items-center', classes.item)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={close}
+                        >
+                            {item.text}
+                            {item.badgeText && (
+                                <Badge className="ml-2" size="small" text={item.badgeText} color="blurple" />
+                            )}
+                        </a>
+                    ) : (
+                        <LinkElement
+                            id={item.id ?? 'topnav'}
+                            key={item.text}
+                            href={item.href}
+                            className={classNames('flex items-center', classes.item)}
+                            aria-current={isCurrentLink(item.href) ? 'page' : undefined}
+                            close={close}
+                        >
+                            {item.text}
+                            {item.badgeText && (
+                                <Badge className="ml-2" size="small" text={item.badgeText} color="blurple" />
+                            )}
+                        </LinkElement>
+                    )
                 ) : (
                     <NavItemMenu
                         id={item.id ?? 'topnav'}
