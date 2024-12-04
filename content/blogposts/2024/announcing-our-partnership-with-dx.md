@@ -16,7 +16,7 @@ Software development becomes more complex every year. Enterprise developers deal
  
 Sourcegraph is built to help enterprise developers work more effectively in these large, complex codebases. Our platform helps developers search, understand, and write code, accelerating the inner development loop. Understanding the exact impact of Sourcegraph is critical for engineering leaders among our customers, including the leaders at Booking.com, who use Sourcegraph’s AI code assistant to speed up their developer workflows. 
 
-While Sourcegraph offers our own in-product analytics, we want to help our customers get an even broader, unbiased view of the impact our platform has on overall developer productivity and satisfaction. To that end, we’re excited to announce our partnership with [DX](https://getdx.com/). DX is an engineering intelligence platform that gives engineering leads and platform teams the data they need to take the right actions to drive higher ROI per developer. Together with DX, we’re excited to help engineering leaders get a third-party assessment of the impact of Sourcegraph and how it empowers their dev teams.
+While Sourcegraph offers our own in-product analytics, we understand our customers may desire an unbiased view of the impact our platform has on overall developer productivity and satisfaction. To that end, we’re excited to announce our partnership with [DX](https://getdx.com/). DX is an engineering intelligence platform that gives engineering leads and platform teams the data they need to take the right actions to drive higher ROI per developer. Together with DX, we’re excited to help engineering leaders get a third-party assessment of the impact of Sourcegraph and how it empowers their dev teams.
 
 ## Partnering with DX
 
