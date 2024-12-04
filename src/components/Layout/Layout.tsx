@@ -93,6 +93,8 @@ export const Layout: FunctionComponent<LayoutProps> = ({
                 <meta name="twitter:description" content={meta.description} />
                 <meta name="twitter:creator" content="@sourcegraph" />
 
+                <meta name="google-site-verification" content="wZHQLmMyQgFVR6sIrtrIrfd2uHkK-PDifTfYBEtsWrs" />
+
                 {meta.videoID ? (
                     <>
                         <meta name="twitter:player" content={videoMeta.embedURL} />
