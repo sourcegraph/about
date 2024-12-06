@@ -31,15 +31,15 @@ const EventsPage: FunctionComponent = () => (
                 {/* left side */}
                 <div>
                     <h3 className="text-xl">
-                        December 6th <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Upcoming</span>
+                        December 12th <span className="rounded-lg bg-violet-400 px-2 py-1 text-xs text-white">Upcoming</span>
                     </h3>
 
                     <div className="grid gap-y-5 gap-x-10 xl:grid-cols-2">
                         <div>
-                            <h2 className="mt-4">Your Cody questions answered live! (December 2024)</h2>
+                            <h2 className="mt-4">Virtual Code AI Summit</h2>
 
                             <p className="mt-4 text-lg text-gray-600">
-                            Join us for the 4th Cody Q&A with the cofounders of Sourcegraph, Quinn Slack (CEO) and Beyang Liu (CTO)!
+                            Featuring speakers from Google, Anthropic, Booking.com, Palo Alto Networks, Sourcegraph and more
                             </p>
                             
                         </div>  
@@ -48,12 +48,12 @@ const EventsPage: FunctionComponent = () => (
                 {/* right side */}
                 <div>
                     <a
-                        href="https://streamyard.com/watch/v8G25YeCgVEF"
+                        href="https://sourcegraph.registration.goldcast.io/events/b650937d-ba9f-40ce-9429-35c3539a5bb1?utm_medium=website&utm_source=website"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block rounded-lg bg-violet-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-violet-500"
                     >
-                        RSVP
+                        Learn more
                     </a>
                 </div>
             </div>
