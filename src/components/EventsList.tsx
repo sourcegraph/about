@@ -191,7 +191,6 @@ const EventsList = (): JSX.Element => {
                         passion for code with you.
                     </p>
                 </div>
-
                 <Tabs
                     tabs={[
                         {
@@ -201,7 +200,7 @@ const EventsList = (): JSX.Element => {
                                 <ul className="ml-0 list-outside list-none text-center md:text-left">
                                     {upcomingEvents.length === 0 ? (
                                         <li className="p-[25px]">
-                                            <p className="text-lg">We are out of events! Have you <a href="https://ato.cody.dev/">played this game</a> yet?</p>
+                                            <p className="text-lg">We are out of events! Have you <a href="https://ato.cody.dev/" target='_blank' rel="noreferrer">played this game</a> yet?</p>
                                         </li>
                                     ) : (
                                         upcomingEvents.map(event => {
