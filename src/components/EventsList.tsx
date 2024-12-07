@@ -191,7 +191,6 @@ const EventsList = (): JSX.Element => {
                         passion for code with you.
                     </p>
                 </div>
-
                 <Tabs
                     tabs={[
                         {
@@ -199,33 +198,37 @@ const EventsList = (): JSX.Element => {
                             title: 'Upcoming',
                             content: (
                                 <ul className="ml-0 list-outside list-none text-center md:text-left">
-                                    {upcomingEvents.map(event => {
-                                        const startDate = parseISO(event.date)
-                                        const endDate = parseISO(event.endDate)
+                                    {upcomingEvents.length === 0 ? (
+                                        <li className="p-[25px]">
+                                            <p className="text-lg">We are out of events! Have you <a href="https://ato.cody.dev/" target='_blank' rel="noreferrer">played this game</a> yet?</p>
+                                        </li>
+                                    ) : (
+                                        upcomingEvents.map(event => {
+                                            const startDate = parseISO(event.date)
+                                            const endDate = parseISO(event.endDate)
+                                            const formattedDate = formatDateRange(startDate, endDate)
 
-                                        const formattedDate = formatDateRange(startDate, endDate)
-
-                                        return (
-                                            <li key={event.title} className="p-[25px]">
-                                                <h6>{formattedDate}</h6>
-                                                {event.link ? (
-                                                    <h4>
-                                                        <a href={event.link} target="_blank" rel="noopener noreferrer">
-                                                            {event.title}
-                                                        </a>
-                                                    </h4>
-                                                ) : (
-                                                    <h4>{event.title}</h4>
-                                                )}
-                                                <p className="mb-0 text-base tracking-[-0.25px]">{event.location}</p>
-                                            </li>
-                                        )
-                                    })}
+                                            return (
+                                                <li key={event.title} className="p-[25px]">
+                                                    <h6>{formattedDate}</h6>
+                                                    {event.link ? (
+                                                        <h4>
+                                                            <a href={event.link} target="_blank" rel="noopener noreferrer">
+                                                                {event.title}
+                                                            </a>
+                                                        </h4>
+                                                    ) : (
+                                                        <h4>{event.title}</h4>
+                                                    )}
+                                                    <p className="mb-0 text-base tracking-[-0.25px]">{event.location}</p>
+                                                </li>
+                                            )
+                                        })
+                                    )}
                                 </ul>
                             ),
                             className: 'pt-0 w-full text-2xl leading-[34px] pb-4',
-                        },
-                        {
+                        },                        {
                             key: 'past_events',
                             title: 'Past',
                             content: (
