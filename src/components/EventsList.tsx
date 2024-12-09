@@ -12,6 +12,13 @@ interface Event {
 
 const allEvents: Event[] = [
     {
+        title: 'Gartner Application Innovation & Business Solutions Summit',
+        location: 'Las Vegas, NV',
+        date: '2025-06-03',
+        endDate: '2025-06-05',
+        link: 'https://www.gartner.com/en/conferences/na/applications-us',
+    },
+    {
         title: 'Virtual Code AI Summit',
         location: 'Online Event',
         date: '2024-12-12',
