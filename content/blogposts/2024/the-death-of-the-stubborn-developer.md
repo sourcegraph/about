@@ -1,5 +1,5 @@
 ---
-title: "The Death of the Stubborn Developer"
+title: "The death of the stubborn developer"
 authors:
   - name: Steve Yegge
     url: https://x.com/Steve_Yegge
