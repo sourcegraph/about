@@ -8,8 +8,8 @@ description: "How stubborn developers are getting left behind by refusing to ado
 tags: [blog]
 slug: 'the-death-of-the-stubborn-developer'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/death-of-the-junior-developer-hero.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/the-death-of-the-junior-developer/death-of-the-junior-developer-hero.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/2024/the-death-of-the-stubborn-developer.jpg
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/2024/the-death-of-the-stubborn-developer.jpg
 ---
 
 I wrote a blog post back in May called [The Death of the Junior Developer](https://sourcegraph.com/blog/the-death-of-the-junior-developer). It made people [mad](https://www.youtube.com/watch?v=_cgONVgHzRw&t=3s). My thesis has since been corroborated by a bunch of big companies, and it is also happening in other industries, not just software. It is a real, actual problem, despite being quite inconvenient for almost everyone involved.
