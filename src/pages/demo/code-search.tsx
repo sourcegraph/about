@@ -27,8 +27,8 @@ const testimonials = [
         role: 'Platform Engineer',
         companyName: 'Nine',
         comment: [
-            'Sourcegraph helped me answer a question in like 5 seconds flat this afternoon.',
-            'Normally I probably would have bugged a bunch of people, but the overview of “here is that snippet, and the list of repos using it” made it self-served.',
+            '"Sourcegraph helped me answer a question in like 5 seconds flat this afternoon. ',
+            'Normally I probably would have bugged a bunch of people, but the overview of “here is that snippet, and the list of repos using it” made it self-served."',
         ],
     },
     {
@@ -37,7 +37,7 @@ const testimonials = [
         role: 'Software Engineer',
         companyName: 'Workiva',
         comment: [
-            'Updating all of our repositories with Batch Changes saves time, is less error-prone, and gives us confidence that everything is going to plan.',
+            '"Updating all of our repositories with Batch Changes saves time, is less error-prone, and gives us confidence that everything is going to plan."',
         ],
     },
     {
@@ -46,8 +46,8 @@ const testimonials = [
         role: 'Applications and Services Section Leader',
         companyName: 'CERN',
         comment: [
-            'Sourcegraph lets us make informed decisions on how to evolve our codebase.',
-            'For example, a library owner knows exactly how all other developers use their API, and can therefore make educated decisions on how to evolve it.',
+            '"Sourcegraph lets us make informed decisions on how to evolve our codebase. ',
+            'For example, a library owner knows exactly how all other developers use their API, and can therefore make educated decisions on how to evolve it."',
         ],
     },
 ]
@@ -308,10 +308,10 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
 
             <ContentSection parentClassName="!py-12" className="w-full lg:pl-6">
                 <h2 className="mb-8 text-center text-gray-700">See why devs and their teams love using Code Search</h2>
-                <div className="flex w-full flex-col items-start justify-between gap-y-[30px] gap-x-0 gap-y-6 md:flex-row md:gap-x-[30px]">
+                <div className="grid w-full flex-col items-start justify-between gap-y-[30px] gap-x-0 gap-y-6 md:flex-row md:gap-x-[30px] lg:grid-cols-3">
                     {testimonials.map(testimonial => (
                         <div
-                            className="rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-8"
+                            className="h-full rounded-2xl border border-gray-200 bg-white px-6 py-8 md:px-8"
                             key={testimonial.name}
                         >
                             <p className="mb-0">{testimonial.comment}</p>
