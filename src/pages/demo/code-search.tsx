@@ -139,7 +139,7 @@ const DemoCodyPage: FunctionComponent<TelemetryProps> = ({ telemetryRecorder }) 
                                             chiliPiper={false}
                                             bookIt={true}
                                             formId="255d54c8-65db-435e-b131-d8dc4ab9ea96"
-                                            form_submission_source="demo/code-search"
+                                            form_submission_source="demo-code-search"
                                             onFormSubmitted={() => {
                                                 setFormSubmitted(true)
                                                 captureCustomEventWithPageData('contact_us_submit', undefined, true)
