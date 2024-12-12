@@ -81,7 +81,7 @@ const SecurityPage: FunctionComponent = () => (
                                             Instances are updated for security patches as needed, according to
                                             Sourcegraph's{' '}
                                             <Link
-                                                href="https://handbook.sourcegraph.com/departments/engineering/dev/policies/vulnerability-management-policy/"
+                                                href="https://www.notion.so/sourcegraph/Vulnerability-Management-Policy-6c5dbd3be6b24d7787e5b6512450c306"
                                                 title="Vulnerability Management Policy"
                                                 className="text-black underline"
                                                 target="_blank"
@@ -113,11 +113,11 @@ const SecurityPage: FunctionComponent = () => (
                                             Service, application, and access logs are stored centrally by Sourcegraph
                                             and monitored.You can find more details in our{' '}
                                             <Link
-                                                href="https://handbook.sourcegraph.com/departments/security/security-incident-response/"
-                                                title="Incident Response Policy"
+                                                href="https://www.notion.so/sourcegraph/Security-Incident-Response-Policy-1537d1e4212d4c288f4b4bb4a7118578"
+                                                title="Security Incident Response Policy"
                                                 className="text-black underline"
                                             >
-                                                Incident Response Policy.
+                                                SecurityIncident Response Policy.
                                             </Link>
                                         </li>
                                         <li>
@@ -168,7 +168,7 @@ const SecurityPage: FunctionComponent = () => (
                                         <li>
                                             Enterprise customers can configure Sourcegraph to{' '}
                                             <Link
-                                                href="https://sourcegraph.com/docs/admin/repo/permissions"
+                                                href="https://sourcegraph.com/docs/admin/permissions"
                                                 title="enforce repository permissions"
                                                 className="text-black underline"
                                                 target="_blank"
@@ -250,24 +250,19 @@ const SecurityPage: FunctionComponent = () => (
                                             utilizing distroless Docker images and a secure software supply-chain.
                                         </li>
                                         <li>
-                                            We publish signatures and Software Bill-of-Materials (SBOM) for our
+                                            We publish signed Software Bill-of-Materials (SBOM) for our
                                             container images, allowing customers to verify the security of our products
-                                            for themselves.
+                                            for themselves. To access these, see {' '}
+                                            <Link
+                                                href="https://sourcegraph.com/docs/cli/how-tos/fetch_sboms"
+                                                title="How to fetch SBOMs for Sourcegraph"
+                                                className="text-black underline"
+                                                target="_blank"
+                                            >
+                                                How to fetch SBOMs for Sourcegraph.
+                                            </Link>
                                         </li>
                                     </ul>
-
-                                    <h3 className="mt-6">Software Bill of Materials and OSS usage</h3>
-                                    <p className="mt-4">
-                                        A full list of tools and licenses can be found{' '}
-                                        <Link
-                                            href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/third-party-licenses"
-                                            title="here"
-                                            className="text-black underline"
-                                            target="_blank"
-                                        >
-                                            here.
-                                        </Link>
-                                    </p>
                                 </div>
                             ),
                         },
