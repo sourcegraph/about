@@ -117,7 +117,7 @@ const SecurityPage: FunctionComponent = () => (
                                                 title="Security Incident Response Policy"
                                                 className="text-black underline"
                                             >
-                                                SecurityIncident Response Policy.
+                                                Security Incident Response Policy.
                                             </Link>
                                         </li>
                                         <li>
