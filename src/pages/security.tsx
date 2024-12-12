@@ -117,7 +117,7 @@ const SecurityPage: FunctionComponent = () => (
                                                 title="Security Incident Response Policy"
                                                 className="text-black underline"
                                             >
-                                                SecurityIncident Response Policy.
+                                                Security Incident Response Policy.
                                             </Link>
                                         </li>
                                         <li>
@@ -252,15 +252,16 @@ const SecurityPage: FunctionComponent = () => (
                                         <li>
                                             We publish signed Software Bill-of-Materials (SBOM) for our
                                             container images, allowing customers to verify the security of our products
-                                            for themselves. To access these, see {' '}
+                                            for themselves. See{' '}
                                             <Link
                                                 href="https://sourcegraph.com/docs/cli/how-tos/fetch_sboms"
                                                 title="How to fetch SBOMs for Sourcegraph"
                                                 className="text-black underline"
                                                 target="_blank"
                                             >
-                                                How to fetch SBOMs for Sourcegraph.
+                                                How to fetch SBOMs for Sourcegraph
                                             </Link>
+                                            {' '}for more details.
                                         </li>
                                     </ul>
                                 </div>
