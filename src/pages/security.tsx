@@ -252,7 +252,7 @@ const SecurityPage: FunctionComponent = () => (
                                         <li>
                                             We publish signed Software Bill-of-Materials (SBOM) for our
                                             container images, allowing customers to verify the security of our products
-                                            for themselves. See{' '}for more details.
+                                            for themselves. See{' '}
                                             <Link
                                                 href="https://sourcegraph.com/docs/cli/how-tos/fetch_sboms"
                                                 title="How to fetch SBOMs for Sourcegraph"
@@ -261,6 +261,7 @@ const SecurityPage: FunctionComponent = () => (
                                             >
                                                 How to fetch SBOMs for Sourcegraph.
                                             </Link>
+                                            for more details.
                                         </li>
                                     </ul>
                                 </div>
