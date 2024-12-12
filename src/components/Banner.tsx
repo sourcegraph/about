@@ -17,7 +17,7 @@ export const Banner: FunctionComponent<{}> = () => (
             target="_blank"
         >
             <p className="mb-0 mr-2 text-center text-sm font-semibold">
-                Register for the first ever Virtual Code AI Summit! (Dec 12th)
+                Access the sessions from our recent Virtual Code AI Summit
             </p>
             <span className="hidden translate-y-px text-violet-300 lg:inline-block">
                 {/* <span>Get access</span> */}
