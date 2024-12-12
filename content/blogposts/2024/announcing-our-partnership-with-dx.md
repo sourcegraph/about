@@ -28,11 +28,11 @@ Like Sourcegraph, DX is committed to helping reduce engineering toil and increas
 
 Booking.com is already seeing the benefits of bringing Sourcegraph together with DX. Their engineering leadership team looked to quantify the impact that [Sourcegraph’s AI code assistant](https://sourcegraph.com/cody) was having on their software development teams, and they were able to use DX to measure output, time savings, and satisfaction of Sourcegraph users.
 
-Here’s an overview of what Booking saw in their data:
+Here’s an overview of what Booking.com saw in their data:
 
 - Daily active users of Sourcegraph had a 16% higher PR merge rate than non-users
-- At the current levels of adoption and utilization, Sourcegraph is saving 50,000+ dev hours on an annualized basis, with an opportunity to recoup 25,000+ hours of additional time savings.
-- Dev Satisfaction with Sourcegraph increased by 31.3% over a 6-month period, a testament to recent product enhancements
+- Dev Satisfaction with Sourcegraph increased by 15 percentage points over a 6-month period, a testament to recent product enhancements
+- Developers using Sourcegraph are saving significant time on tedious work, freeing up capacity for ambitious projects
 
 After [posting about their 90%+ participation rate](https://www.linkedin.com/posts/beganovicemir_at-bookingcom-weve-recently-closed-our-activity-7262478689274118148-pjFB?utm_source=share&utm_medium=member_desktop), Bruno Passos, Group Product Manager on Booking’s Developer Experience team, shared with us that “Using DX to quantify the impact of Sourcegraph has given us confidence in the outcomes it’s driving for our developers. Not only did it confirm that Sourcegraph is helping us ship faster, but these insights are helping us refine and guide our continued rollout.”
 
