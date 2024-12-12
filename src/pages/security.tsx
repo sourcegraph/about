@@ -259,9 +259,9 @@ const SecurityPage: FunctionComponent = () => (
                                                 className="text-black underline"
                                                 target="_blank"
                                             >
-                                                How to fetch SBOMs for Sourcegraph.
+                                                How to fetch SBOMs for Sourcegraph
                                             </Link>
-                                            for more details.
+                                            {' '}for more details.
                                         </li>
                                     </ul>
                                 </div>
