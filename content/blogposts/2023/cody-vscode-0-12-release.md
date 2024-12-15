@@ -62,7 +62,7 @@ In cases where autocompletions don't automatically trigger, you can now request 
 
 ### New sign in experience
 
-For new users, you can now sign in to Cody directly using a Github, Gitlab or Google account:
+For new users, you can now sign in to Cody directly using a GitHub, GitLab or Google account:
 
 <img alt="Screenshot of the new sign in page" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/sign-in.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:246}} />
 

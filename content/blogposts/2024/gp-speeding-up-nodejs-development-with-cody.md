@@ -310,7 +310,7 @@ On the left side of VS Code in the Cody tab, you’ll see a  "Generate Unit Test
   src="https://storage.cloud.google.com/sourcegraph-assets/blog/speeding-up-your-node-development-w-cody/image4.png"
 />
 
-With the initial test cases created,I can still edit and add additional test cases according to my needs. Cody makes it easier for me to kickstart my unit testing. The end-to-end testing of the app can be done using any API Client of your choice and the complete code of this app can be found on [Github](https://github.com/oluwatobiisaiah/multimedia-app)
+With the initial test cases created,I can still edit and add additional test cases according to my needs. Cody makes it easier for me to kickstart my unit testing. The end-to-end testing of the app can be done using any API Client of your choice and the complete code of this app can be found on [GitHub](https://github.com/oluwatobiisaiah/multimedia-app)
 
 ## Other use cases Cody in speeding up your Node.js development
 
