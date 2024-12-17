@@ -1,9 +1,5 @@
 import { FunctionComponent } from 'react'
 
-import { FaRegClock } from 'react-icons/fa'
-import { FiAward } from 'react-icons/fi'
-import { MdOutlineFactCheck } from 'react-icons/md'
-
 import { Layout } from '../components'
 import ServicesHero from '../components/Services/ServicesHero'
 
