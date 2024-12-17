@@ -130,7 +130,7 @@ const ServicesPage: FunctionComponent = () => (
                             fits your unique environment and business needs.
                         </p>
                         <a
-                            href="https://www.figma.com/design/r4nOVsKcJ9tmPm3TenJKnx/Sourcegraph-Professional-Services-Offerings?node-id=23-530&node-type=canvas&t=hlMcxyph4Lv5C5ic-0"
+                            href="https://2762526.fs1.hubspotusercontent-na1.net/hubfs/2762526/Implementation%20Services.pdf"
                             className="text-blue-600 hover:text-blue-800"
                         >
                             Learn more →
@@ -159,7 +159,7 @@ const ServicesPage: FunctionComponent = () => (
                             more personalized support services, and priority support.
                         </p>
                         <a
-                            href="https://www.figma.com/design/r4nOVsKcJ9tmPm3TenJKnx/Sourcegraph-Professional-Services-Offerings?node-id=1401-318&node-type=frame&t=hlMcxyph4Lv5C5ic-0"
+                            href="https://2762526.fs1.hubspotusercontent-na1.net/hubfs/2762526/Premium%20Support%20Services.pdf"
                             className="text-blue-600 hover:text-blue-800"
                         >
                             Learn more →
@@ -189,7 +189,7 @@ const ServicesPage: FunctionComponent = () => (
                             success with our platform.
                         </p>
                         <a
-                            href="https://www.figma.com/design/r4nOVsKcJ9tmPm3TenJKnx/Sourcegraph-Professional-Services-Offerings?node-id=1401-622&node-type=canvas&t=hlMcxyph4Lv5C5ic-0"
+                            href="https://2762526.fs1.hubspotusercontent-na1.net/hubfs/2762526/Resident%20Architect%20Services.pdf"
                             className="text-blue-600 hover:text-blue-800"
                         >
                             Learn more →
@@ -219,7 +219,7 @@ const ServicesPage: FunctionComponent = () => (
                             matters most.
                         </p>
                         <a
-                            href="https://www.figma.com/design/r4nOVsKcJ9tmPm3TenJKnx/Sourcegraph-Professional-Services-Offerings?node-id=173-105&node-type=canvas&t=hlMcxyph4Lv5C5ic-0"
+                            href="https://2762526.fs1.hubspotusercontent-na1.net/hubfs/2762526/Managed%20Services.pdf"
                             className="text-blue-600 hover:text-blue-800"
                         >
                             Learn more →
