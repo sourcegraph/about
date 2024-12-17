@@ -128,6 +128,8 @@ const ServicesPage: FunctionComponent = () => (
                         <a
                             href="https://2762526.fs1.hubspotusercontent-na1.net/hubfs/2762526/Implementation%20Services.pdf"
                             className="text-blue-600 hover:text-blue-800"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             Learn more →
                         </a>
@@ -157,6 +159,8 @@ const ServicesPage: FunctionComponent = () => (
                         <a
                             href="https://2762526.fs1.hubspotusercontent-na1.net/hubfs/2762526/Premium%20Support%20Services.pdf"
                             className="text-blue-600 hover:text-blue-800"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             Learn more →
                         </a>
@@ -187,6 +191,8 @@ const ServicesPage: FunctionComponent = () => (
                         <a
                             href="https://2762526.fs1.hubspotusercontent-na1.net/hubfs/2762526/Resident%20Architect%20Services.pdf"
                             className="text-blue-600 hover:text-blue-800"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             Learn more →
                         </a>
@@ -217,6 +223,8 @@ const ServicesPage: FunctionComponent = () => (
                         <a
                             href="https://2762526.fs1.hubspotusercontent-na1.net/hubfs/2762526/Managed%20Services.pdf"
                             className="text-blue-600 hover:text-blue-800"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             Learn more →
                         </a>
