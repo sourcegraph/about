@@ -34,6 +34,16 @@ export interface Resource {
  */
 export const resourceItems: Resource[] = [
     {
+        featured: false,
+        title: 'Coinbase developers improve productivity and satisfaction using Cody while meeting strict security requirements.',
+        link: '/case-studies/coinbase-speeds-up-financial-systems-innovation/',
+        contentType: 'customer story',
+        subjects: ['developer productivity', 'code security'],
+        description: 'Coinbase developers improve productivity and satisfaction using Cody while meeting strict security requirements.',
+        publishDate: '2023-01-01T00:00:00Z',
+        keyword: ['Coinbase', 'Cody', 'developer productivity', 'security'],
+    },
+    {
         featured: true,
         title: 'Virtual Code AI Summit',
         description:
