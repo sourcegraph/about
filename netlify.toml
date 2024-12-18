@@ -51,6 +51,11 @@
 [[redirects]]
   from = "/get-cody"
   to = "/cody"
+
+[[redirects]]
+  from = "/terms/cloud"
+  to = "/terms"
+  
 # ========== END SOURCEGRAPH REDIRECTS ==========
 
 # ========== HANDBOOK REDIRECTS ==========
