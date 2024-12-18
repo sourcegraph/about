@@ -3,6 +3,7 @@ import { FunctionComponent, ReactNode, useEffect, useRef, useState } from 'react
 import classNames from 'classnames'
 import { Timer, ListChecks, Check } from 'lucide-react'
 import Link from 'next/link'
+import Script from 'next/script'
 
 import { captureCustomEventWithPageData } from '../lib/utils'
 
@@ -21,12 +22,21 @@ interface RequestInfoProps {
 const RequestInfo: FunctionComponent<RequestInfoProps> = ({ meta, formId }) => {
     const formContainerRef = useRef<HTMLDivElement>(null)
     const [formSubmitted, setFormSubmitted] = useState(false)
+    const [stackAdaptReady, setStackAdaptReady] = useState(false)
 
     useEffect(() => {
         if (formSubmitted && formContainerRef.current) {
             formContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }
-    }, [formSubmitted])
+        // Fire StackAdapt conversion when form is submitted and script is ready
+        if (formSubmitted && stackAdaptReady && typeof window !== 'undefined') {
+            if (window.saq) {
+                window.saq('conv', 'NVzOKkqz7PghcmmSeXTHWq')
+            } else {
+                console.warn('window.saq not found, StackAdapt tracking failed')
+            }
+        }
+    }, [formSubmitted, stackAdaptReady])
 
     return (
         <Layout
@@ -34,62 +44,76 @@ const RequestInfo: FunctionComponent<RequestInfoProps> = ({ meta, formId }) => {
             className="bg-gray-50"
             heroAndHeaderClassName="!pt-0"
             hero={
-                <ContentSection className="pt-[97px] lg:pt-28" parentClassName="pt-11 lg:pb-16 px-6 lg:px-20">
-                    <div ref={formContainerRef}>
-                        <div className="relative mx-auto flex w-full flex-col pt-0 lg:flex-row lg:gap-[24px]">
-                            <div className="flex w-full max-w-[697px] flex-1 flex-col gap-y-20 lg:pt-0 lg:pr-0">
-                                <div>
-                                    <h1 className="mb-10 max-w-[524px] text-gray-700">
-                                        Bring code intelligence to your organization
-                                    </h1>
-                                    <HeaderListTab contents={HeaderListTabItems} />
-                                </div>
-                                <div className="hidden gap-20 lg:flex lg:flex-col">
-                                    <LogoGrid mainLogo="sofi" showCta={false} />
-                                    <CaseStudySection />
-                                </div>
-                            </div>
-                            <div className="w-full py-16 lg:h-fit lg:w-1/2 lg:max-w-lg lg:px-6 lg:py-12">
-                                <div className="sg-border-gradient-glow relative z-10 !rounded-3xl border border-gray-200 bg-white pl-0 pt-12 pr-0">
-                                    <div className="flex flex-col items-center px-6 lg:px-12">
-                                        <h2 className="mb-3 text-gray-700">Request demo</h2>
-                                        <div className="text-center text-base leading-[27px] text-gray-400 lg:leading-6">
-                                            Fill out the form below and we’ll connect to discuss what Sourcegraph can do
-                                            for your team.
-                                        </div>
+                <>
+                    <Script
+                        id="stackadapt-script"
+                        strategy="lazyOnload"
+                        onReady={() => setStackAdaptReady(true)}
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                                console.log('StackAdapt script content executing');
+                                !function(s,a,e,v,n,t,z){if(s.saq)return;n=s.saq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!s._saq)s._saq=n;n.push=n;n.loaded=!0;n.version='1.0';n.queue=[];t=a.createElement(e);t.async=!0;t.src=v;z=a.getElementsByTagName(e)[0];z.parentNode.insertBefore(t,z)}(window,document,'script','https://tags.srv.stackadapt.com/events.js');
+                                console.log('StackAdapt script initialization complete');
+                            `,
+                        }}
+                    />
+                    <ContentSection className="pt-[97px] lg:pt-28" parentClassName="pt-11 lg:pb-16 px-6 lg:px-20">
+                        <div ref={formContainerRef}>
+                            <div className="relative mx-auto flex w-full flex-col pt-0 lg:flex-row lg:gap-[24px]">
+                                <div className="flex w-full max-w-[697px] flex-1 flex-col gap-y-20 lg:pt-0 lg:pr-0">
+                                    <div>
+                                        <h1 className="mb-10 max-w-[524px] text-gray-700">
+                                            Bring code intelligence to your organization
+                                        </h1>
+                                        <HeaderListTab contents={HeaderListTabItems} />
                                     </div>
-                                    <div
-                                        className={classNames(
-                                            'mt-8 pl-6 pr-0 pb-[48px] lg:pl-12 lg:pr-[21px]',
-                                            styles.requestInfoForm
-                                        )}
-                                    >
-                                        <HubSpotForm
-                                            masterFormName="contactMulti"
-                                            chiliPiper={false}
-                                            bookIt={true}
-                                            formId={formId}
-                                            form_submission_source="request-info"
-                                            onFormSubmitted={() => {
-                                                setFormSubmitted(true)
-                                                captureCustomEventWithPageData('contact_us_submit', undefined, true)
-                                            }}
-                                            customSubmitButton='
-                                            <div class="button-container">
-                                            <button type="submit" class="custom-submit-button">
-                                            <div class="custom-submit-button-div">
-                                                <div>Request your demo</div>
-                                                <img src="/assets/send.svg" />
+                                    <div className="hidden gap-20 lg:flex lg:flex-col">
+                                        <LogoGrid mainLogo="sofi" showCta={false} />
+                                        <CaseStudySection />
+                                    </div>
+                                </div>
+                                <div className="w-full py-16 lg:h-fit lg:w-1/2 lg:max-w-lg lg:px-6 lg:py-12">
+                                    <div className="sg-border-gradient-glow relative z-10 !rounded-3xl border border-gray-200 bg-white pl-0 pt-12 pr-0">
+                                        <div className="flex flex-col items-center px-6 lg:px-12">
+                                            <h2 className="mb-3 text-gray-700">Request demo</h2>
+                                            <div className="text-center text-base leading-[27px] text-gray-400 lg:leading-6">
+                                                Fill out the form below and we’ll connect to discuss what Sourcegraph
+                                                can do for your team.
                                             </div>
-                                            </button>
-                                            </div>'
-                                        />
+                                        </div>
+                                        <div
+                                            className={classNames(
+                                                'mt-8 pl-6 pr-0 pb-[48px] lg:pl-12 lg:pr-[21px]',
+                                                styles.requestInfoForm
+                                            )}
+                                        >
+                                            <HubSpotForm
+                                                masterFormName="contactMulti"
+                                                chiliPiper={false}
+                                                bookIt={true}
+                                                formId={formId}
+                                                form_submission_source="request-info"
+                                                onFormSubmitted={() => {
+                                                    setFormSubmitted(true)
+                                                    captureCustomEventWithPageData('contact_us_submit', undefined, true)
+                                                }}
+                                                customSubmitButton='
+                                                <div class="button-container">
+                                                <button type="submit" class="custom-submit-button">
+                                                <div class="custom-submit-button-div">
+                                                    <div>Request your demo</div>
+                                                    <img src="/assets/send.svg" />
+                                                </div>
+                                                </button>
+                                                </div>'
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </ContentSection>
+                    </ContentSection>
+                </>
             }
         >
             <ContentSection parentClassName="!my-0 !py-0 !pb-8 lg:hidden" className="!my-0 !py-0 ">
