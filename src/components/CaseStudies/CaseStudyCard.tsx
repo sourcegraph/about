@@ -24,6 +24,12 @@ export const CASESTUDIES: CaseStudy[] = [
         url: '/case-studies/coinbase-speeds-up-financial-systems-innovation/',
     },
     {
+        name: 'Booking.com',
+        logo: '/case-studies/booking-logo.svg',
+        title: 'Booking.com reports a measurable impact of developer productivity, time savings, and employee satisfaction by utilizing Sourcegraph.',
+        url: '/blog/announcing-our-partnership-with-dx',
+    },
+    {
         name: 'Palo Alto Networks',
         logo: '/home/carousel/palo-alto-logo.svg',
         title: 'Palo Alto Networks boosts productivity for 2,000 developers by up to 40% using a secure Sourcegraph deployment.',
