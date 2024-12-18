@@ -5,7 +5,7 @@ authors:
     url: https://x.com/kelvinyap
     avatar: https://storage.googleapis.com/sourcegraph-assets/blog/kelvin_avatar.png
 publishDate: 2024-12-18T19:10-08:00
-description: "Cody Enterprise users can now tag prompts they create, making it easier to group, organize, and filter prompts for easier discovery in the Prompt Library."
+description: "Cody now supports Gemini 2.0 Flash Experimental for chat, Google’s model that outperforms Gemini 1.5 Pro on key benchmarks with promising improvements across developer-related benchmarks."
 tags: [Cody, Enterprise, VS Code, JetBrains, Cody Web]
 version: [v5.11.0]
 slug: 'gemini-flash-experimental'
