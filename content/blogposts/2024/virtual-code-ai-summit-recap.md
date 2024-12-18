@@ -41,7 +41,7 @@ AI-powered tools like **Sourcegraph’s Cody** became integral to Booking’s de
 
 Similarly, **Leidos**, a leader in government contracting, shared how AI is uniquely suited to address the challenges of working with **real government codebases**, which often involve massive monoliths, decades of technical debt, and high-security constraints.
 
-As Leidos’ Chief AI Officer noted during his session:
+As Leidos’ Chief AI Officer Ron Keesing noted during his session:
 
 > *AI helps us parse through codebases that would take humans weeks or months to untangle. With AI, discovery, navigation, and modernization become significantly faster and safer.*
 
