@@ -67,15 +67,6 @@ const LEADERS: {
         linkedin: 'https://www.linkedin.com/in/aimee-menne-8343487/',
     },
     {
-        name: 'Raman Sharma',
-        image: '/staff/raman-sharma.png',
-        title: 'Chief Marketing Officer',
-        bio: 'https://handbook.sourcegraph.com/team/#raman-sharma',
-        github: 'https://github.com/creativefisher',
-        linkedin: 'https://www.linkedin.com/in/ramansharma',
-        twitter: 'https://twitter.com/rasharm',
-    },
-    {
         name: 'Brock Perko',
         image: '/staff/brock-perko.png',
         title: 'VP Sales',
