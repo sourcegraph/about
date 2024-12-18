@@ -13,7 +13,9 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/virtual-code
 
 > 2025 is gonna be a year of agents. I'm more bullish on it than ever.
 
-Alex Albert, Anthropic
+<div>
+  <small>-Alex Albert, Anthropic</small>
+</div>
 
 The first-ever [Virtual Code AI Summit](https://events.codeaisummit.com/) brought together some of the sharpest minds in software engineering, AI, and developer productivity and showcased how enterprises are adopting AI tools to manage growing code complexity, accelerate workflows, and fundamentally change the role of developers.
 
@@ -27,7 +29,7 @@ Read on to get a deeper look at these key insights and what they mean for the fu
 
 [VIEW SUMMIT RECORDINGS ->](https://events.codeaisummit.com/)
 
-## **AI is an essential developer assistant, not a replacement**
+## AI is an essential developer assistant, not a replacement
 
 One resounding theme throughout the summit was that AI tools and coding assistants are best used as **force multipliers**, not replacements for human developers. Leaders across companies emphasized how AI enables engineers to work faster, offloading repetitive or low-value tasks.
 
@@ -45,7 +47,7 @@ As Leidos’ Chief AI Officer noted during his session:
 
 The takeaway is clear: teams that integrate AI into their workflows experience real productivity boosts, while developers who resist risk being left behind.
 
-## **Building AI coding agents to automate repetitive work**
+## Building AI coding agents to automate repetitive work
 
 One of the most exciting trends discussed at the summit was the rise of **AI coding agents**—automated tools designed to handle well-defined, repetitive tasks across the development lifecycle.
 
@@ -61,7 +63,7 @@ Quinn Slack summarized the opportunity:
 
 The success of these agents stems from their **specificity**—automating narrow, repetitive tasks rather than attempting to replace end-to-end workflows. Enterprises that embrace this mindset are unlocking massive time savings while improving code quality and consistency.
 
-## **Expanding AI’s role across the software development lifecycle**
+## Expanding AI’s role across the software development lifecycle
 
 While code AI adoption has largely focused on coding and code review, the summit revealed how AI is expanding its impact across the **entire software development lifecycle (SDLC)**.
 
@@ -75,7 +77,7 @@ Gunjan Patel of **Palo Alto Networks** offered a vision of AI as a partner, help
 
 From CI/CD pipelines to security scanning to bug triage, AI is poised to deliver **compounded productivity gains** across every phase of the SDLC. The future isn’t just about coding faster—it’s about automating workflows, improving quality, and enabling developers to focus on creative, complex challenges.
 
-## **The path forward: AI-augmented teams tackling bigger problems**
+## The path forward: AI-augmented teams tackling bigger problems
 
 The Virtual Code AI Summit made one thing clear: the future of software development belongs to **AI-augmented teams**. AI coding assistants and agents are eliminating toil, streamlining complex tasks, and giving developers the tools to solve problems at scale.
 
