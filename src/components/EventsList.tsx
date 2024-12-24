@@ -12,6 +12,13 @@ interface Event {
 
 const allEvents: Event[] = [
     {
+        title: 'AI Dev Tools Night @ Cloudflare HQ',
+        location: 'San Francisco, CA',
+        date: '2025-01-07',
+        endDate: '2025-01-07',
+        link: 'https://lu.ma/aidev',
+    },
+    {
         title: 'Gartner Application Innovation & Business Solutions Summit',
         location: 'Las Vegas, NV',
         date: '2025-06-03',
