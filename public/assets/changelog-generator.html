@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog Markdown Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        form {
+            display: grid;
+            gap: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            white-space: pre-wrap;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        #copyButton {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Changelog Markdown Generator</h1>
+    <form id="changelogForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required placeholder="Changelog post title here.">
+
+        <label for="authorName">Author Name:</label>
+        <input type="text" id="authorName" list="authorList" required>
+        <datalist id="authorList">
+            <option value="Alex Isken">
+            <option value="Justin Dorfman">
+            <option value="Maedah Batool">
+            <option value="Kelvin Yap">
+        </datalist>
+
+        <label for="authorUrl">Author URL:</label>
+        <input type="text" id="authorUrl" required>
+
+        <label for="avatar">Avatar URL:</label>
+        <input type="text" id="avatar" required>
+
+        <label for="publishDate">Publish Date:</label>
+        <input type="datetime-local" id="publishDate" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" required placeholder="Enter a brief meta description of the Changelog post."></textarea>
+
+        <label for="tags">Tags (comma-separated):</label>
+        <input type="text" id="tags" required placeholder="blog, cody">
+
+        <label for="version">Version:</label>
+        <input type="text" id="version" required placeholder="v1.24.3">
+
+        <label for="slug">Slug:</label>
+        <input type="text" id="slug" required placeholder="changelog-post-slug">
+
+        <label for="content">Content:</label>
+        <textarea id="content" required></textarea>
+
+        <button type="submit">Generate Markdown</button>
+    </form>
+
+    <div id="output"></div>
+    <button id="copyButton">Copy Markdown</button>
+
+    <script>
+        // Set default publish date to today
+        document.addEventListener('DOMContentLoaded', function() {
+            const now = new Date();
+            const offset = now.getTimezoneOffset() * 60000;
+            const localISOTime = (new Date(now - offset)).toISOString().slice(0, 16);
+            document.getElementById('publishDate').value = localISOTime;
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const authorData = {
+                "Justin Dorfman": {
+                    url: 'https://x.com/jdorfman',
+                    avatar: 'https://storage.googleapis.com/sourcegraph-assets/blog/justin_avatar.png'
+                },
+                "Alex Isken": {
+                    url: 'https://x.com/alex_miller_',
+                    avatar: 'https://storage.googleapis.com/sourcegraph-assets/blog/alex_avatar.png'
+                },
+                "Maedah Batool": {
+                    url: 'https://x.com/maedah_',
+                    avatar: 'https://storage.googleapis.com/sourcegraph-assets/blog/maedah_avatar.png'
+                },
+                "Kelvin Yap": {
+                    url: 'https://x.com/kelvin_',
+                    avatar: 'https://storage.googleapis.com/sourcegraph-assets/blog/kelvin_avatar.png'
+                }
+            };
+
+            document.getElementById('authorName').addEventListener('change', function() {
+                const selectedAuthor = this.value;
+                if (authorData[selectedAuthor]) {
+                    document.getElementById('authorUrl').value = authorData[selectedAuthor].url;
+                    document.getElementById('avatar').value = authorData[selectedAuthor].avatar;
+                }
+            });
+        });
+
+        document.getElementById('changelogForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const title = document.getElementById('title').value;
+            const authorName = document.getElementById('authorName').value;
+            const authorUrl = document.getElementById('authorUrl').value;
+            const avatar = document.getElementById('avatar').value;
+            const publishDate = new Date(document.getElementById('publishDate').value);
+            const description = document.getElementById('description').value;
+            const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim());
+            const version = document.getElementById('version').value;
+            const slug = document.getElementById('slug').value;
+            const content = document.getElementById('content').value;
+
+            const offset = publishDate.getTimezoneOffset();
+            const offsetHours = Math.abs(Math.floor(offset / 60)).toString().padStart(2, '0');
+            const offsetMinutes = (Math.abs(offset) % 60).toString().padStart(2, '0');
+            const offsetSign = offset > 0 ? '-' : '+';
+            const formattedDate = `${publishDate.toISOString().slice(0, 16)}${offsetSign}${offsetHours}:${offsetMinutes}`;
+
+            const markdown = `---
+title: "${title}"
+authors:
+  - name: ${authorName}
+    url: ${authorUrl}
+    avatar: ${avatar}
+publishDate: ${formattedDate}
+description: "${description}"
+tags: [${tags.join(', ')}]
+version: [${version}]
+slug: '${slug}'
+published: true
+
+---
+
+${content}`;
+            document.getElementById('output').textContent = markdown;
+            document.getElementById('copyButton').style.display = 'block';
+        });
+
+        document.getElementById('copyButton').addEventListener('click', function() {
+            const outputText = document.getElementById('output').textContent;
+            navigator.clipboard.writeText(outputText).then(function() {
+                alert('Markdown copied to clipboard!');
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        });
+    </script>
+    <footer>
+        <p style="font-size: 0.8em; color: #ccc;">Created using Cody & CHOP | Last updated: 2024-09-06</p>
+    </footer>
+</body>
+</html>
