@@ -6,7 +6,7 @@ title: Terms of Service for Sourcegraph
 Last modified: February 15, 2024
 
 
-See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:terms/cloud.md+type:diff&patternType=standard&sm=0&groupBy=author) since the [previous version](/terms/archives/cloud/2023-10-10/) (Cloud) or the [previous version](/terms/archives/self-hosted/2023-12-01) (Self-Hosted) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
+See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:terms/cloud.md+type:diff&patternType=standard&sm=0&groupBy=author) since the [previous version](/terms/archives/cloud/2023-10-10/) (Cloud) or the [previous version](/terms/archives/self-hosted/2023-06-28) (Self-Hosted) or visit our [archives](https://github.com/sourcegraph/about/tree/main/content/terms/archives).
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of Sourcegraph.
 
