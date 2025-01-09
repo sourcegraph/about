@@ -64,8 +64,8 @@ const icons = [
         className: 'h-[35px]',
     },
     {
-        src: '/assets/icons/lyft-logo.svg',
-        className: 'h-[35px] hidden md:block',
+        src: '/assets/icons/NIH-Violet.svg',
+        className: 'h-[30px] hidden md:block',
     },
     {
         src: '/assets/icons/amplitude-logo.svg',
