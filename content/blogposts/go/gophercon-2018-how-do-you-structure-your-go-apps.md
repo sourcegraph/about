@@ -72,7 +72,7 @@ However, there are some issues with the group by function approach. For example,
 
 - [Modular](https://sourcegraph.com/github.com/katzien/go-structure-examples@master/-/tree/modular)
   - Beers, reviews and storage
-    - Everything is grouped logically, but it’s still hard to decide which packages should be reused or when to make a new package.
+    - Everything is grouped logically, but it's still hard to decide which packages should be reused or when to make a new package.
 
 <Figure 
   alt="Group by module" 
@@ -82,14 +82,14 @@ However, there are some issues with the group by function approach. For example,
 There's a different approach that we can try - Grouping by context or also known as Domain Driven Development.
 
 ## Domain Driven Development
-Domain driven development works by first establishing your domain and business logic. It makes you think about the domain you’re dealing with and the business logic in your app before you even write a single line of code. Next, you’ll define bounded contexts which help you decide what has to be consistent and what can develop independently.
+Domain driven development works by first establishing your domain and business logic. It makes you think about the domain you're dealing with and the business logic in your app before you even write a single line of code. Next, you'll define bounded contexts which help you decide what has to be consistent and what can develop independently.
 
 We can use the demo project to better understand each of the building blocks of the system:
 
 - Context: beer tasting.
   - Drinking the beer and wanting to review it has a specific meaning. It may have ABV that matters whereas the barcode does not matter. If we had an additional context like a beer manufacturer they would care about the barcode.
 - Language: beer, review, storage
-  - It’s important to define the language used in the codebase. All stakeholders should know they can use. Developers, customer service, or the sales team.
+  - It's important to define the language used in the codebase. All stakeholders should know they can use. Developers, customer service, or the sales team.
 - Entities: Beer, review
   - Entities are an abstract concept that can then have instances. A customer, an order, a blog post are all entities that can be instantiated.
 - Value Objects: Brewery, Author
@@ -128,9 +128,9 @@ In the demo application we end up with the following architecture:
   src="https://user-images.githubusercontent.com/4897310/44753500-8920fb80-aadb-11e8-8243-f2ebd1f0a4d7.png"
 />
 
-A huge benefit of this structure that becomes more visible in larger projects, is how it is very easy to extend it’s functionality without affecting multiple parts of the codebase. For example, you want to create an RPC version of the API. You would add it to the `pkg` directory and implement the interfaces.
+A huge benefit of this structure that becomes more visible in larger projects, is how it is very easy to extend it's functionality without affecting multiple parts of the codebase. For example, you want to create an RPC version of the API. You would add it to the `pkg` directory and implement the interfaces.
 
 ## Pulling it all together
-The convention seems to be putting your binaries in a separate top-level `cmd` directory. If your project is large and has non-Go assets, use a `pkg`/subdirectory to separate your Go code. It’s also favorable to group by context instead of functionality to the issues mentioned in other design patterns.
+The convention seems to be putting your binaries in a separate top-level `cmd` directory. If your project is large and has non-Go assets, use a `pkg`/subdirectory to separate your Go code. It's also favorable to group by context instead of functionality to the issues mentioned in other design patterns.
 
-Although there is no single success formula, it’s helpful to know all of the possible approaches and practice implementing the various architectures to become more comfortable.
+Although there is no single success formula, it's helpful to know all of the possible approaches and practice implementing the various architectures to become more comfortable.

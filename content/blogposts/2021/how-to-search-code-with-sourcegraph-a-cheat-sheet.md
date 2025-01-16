@@ -14,7 +14,7 @@ This cheat sheet style guide can help you get up to speed with Sourcegraph comma
 
 You can use these commands on either [Sourcegraph.com](https://sourcegraph.com/search) or your own [Sourcegraph instance](https://docs.sourcegraph.com/admin/install).
 
-## Searching an organization’s repository
+## Searching an organization's repository
 
 By default, Sourcegraph lets you search globally, providing you with results from all the repositories you have access to. This includes all currently indexed open source repositories. The `repo` command lets you dial down to the single repository level.
 

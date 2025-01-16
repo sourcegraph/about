@@ -22,7 +22,7 @@ We are excited to announce the latest release of Sourcegraph's Cody plugin for J
 
 ### Claude 3 support for Pro users
 
-Pro users can now take advantage of the newest Claude 3 AI models. We’ve added both Sonnet and Opus! Choosing these offers even more advanced and contextually aware code suggestions, especially if you’re using Claude 3 Opus. 
+Pro users can now take advantage of the newest Claude 3 AI models. We've added both Sonnet and Opus! Choosing these offers even more advanced and contextually aware code suggestions, especially if you're using Claude 3 Opus. 
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains-5-4-358-release/image_001.png)
 
@@ -85,7 +85,7 @@ See the [changelog](https://github.com/sourcegraph/jetbrains/releases/tag/v5.4.3
 
 ## Thank you
 
-Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 As always, we value your feedback in [Discord](https://discord.com/servers/sourcegraph-969688426372825169). Happy Codying!
 

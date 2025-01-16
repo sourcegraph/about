@@ -21,7 +21,7 @@ published: true
 
 ---
 
-Code Monitors are user-defined queries that alert users whenever a new search result or change appears, and they can trigger actions to run automatically via email, Slack notification, or  webhook. Slack notifications were made generally available in [July’s release](https://sourcegraph.com/blog/release/july-2024), and in this month’s release we are now making webhooks generally available.
+Code Monitors are user-defined queries that alert users whenever a new search result or change appears, and they can trigger actions to run automatically via email, Slack notification, or  webhook. Slack notifications were made generally available in [July's release](https://sourcegraph.com/blog/release/july-2024), and in this month's release we are now making webhooks generally available.
 
 You can configure a Code Monitor to send webhook notifications by first creating a webhook receiver that accepts an HTTP POST request with the contents of the webhook notification. Then create or edit an existing Code Monitor and select “Call a webhook”, pasting the webhook URL into the appropriate “Webhook URL” field and saving the Code Monitor.
 

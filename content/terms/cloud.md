@@ -21,7 +21,7 @@ Thank you for using Sourcegraph! This page lays out the basic terms and conditio
 
   - **Sourcegraph**: These terms apply to Cody and code search for hosted and self-hosted instances. Read on.
 
-  - **[Government](/terms/gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you’re using our software as an employee or contractor of the U.S. Government, our [Supplemental Terms for U.S. Government Users](/terms/gov) apply. Those terms and conditions supplement these terms and conditions.
+  - **[Government](/terms/gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you're using our software as an employee or contractor of the U.S. Government, our [Supplemental Terms for U.S. Government Users](/terms/gov) apply. Those terms and conditions supplement these terms and conditions.
 </div>
 
 PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION. THE AGREEMENT CONTAINS A MANDATORY INDIVIDUAL ARBITRATION AND CLASS ACTION/JURY TRIAL WAIVER PROVISION THAT REQUIRES THE USE OF ARBITRATION ON AN INDIVIDUAL BASIS TO RESOLVE DISPUTES, RATHER THAN JURY TRIALS OR CLASS ACTIONS.
@@ -67,7 +67,7 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
       
       <tr>
         <td>6. <a href="#6-confidentiality">Confidentiality</a></td>
-        <td>The parties’ respective confidentiality obligations</td>
+        <td>The parties' respective confidentiality obligations</td>
       </tr>
       
       <tr>
@@ -97,7 +97,7 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
       
       <tr>
         <td>12. <a href="#12-indemnification">Indemnification</a></td>
-        <td>The parties’ respective indemnification obligations</td>
+        <td>The parties' respective indemnification obligations</td>
       </tr>
       
       <tr>
@@ -146,7 +146,7 @@ As used on this page, the following terms have the following specific meanings:
 
 1.11 “**User Content**” means your content that you upload into the Services, such as profile information, proprietary Code, comments, text, and reviews, including submitted queries ("Inputs") and responses received and completions generationed ("Outputs"), but does not include any open source Code (as defined by the Open Source Initiative at [https://opensource.org/osd](https://opensource.org/osd)).
 
-1.12 **“You”** refers to the individual person, company, or organization that is using the Site or Services, that accesses an Account, or that directs the use of the Account. If you’re entering into the Agreement on behalf of your company or organization including its affiliates and subsidiaries (your **“Organization”**), then (i) your acceptance of this Agreement binds that Organization, (ii) you represent and warrant that you’re authorized to bind that Organization to the Agreement, and (iii) references to “you” will mean you and that Organization.
+1.12 **“You”** refers to the individual person, company, or organization that is using the Site or Services, that accesses an Account, or that directs the use of the Account. If you're entering into the Agreement on behalf of your company or organization including its affiliates and subsidiaries (your **“Organization”**), then (i) your acceptance of this Agreement binds that Organization, (ii) you represent and warrant that you're authorized to bind that Organization to the Agreement, and (iii) references to “you” will mean you and that Organization.
 
 <span className="text-blurple-400">
   ## 2. Account terms
@@ -158,11 +158,11 @@ As used on this page, the following terms have the following specific meanings:
 
 2.1 **Account Responsibility and Security.**
 
-1. **Generally**. If you’re entering into the Agreement on behalf of your Organization, your Organization has administrative control of all Accounts tied to the Organization. Only you may use your Account, and a single Account may not be shared by multiple people. You are, or your Organization is, fully responsible for your Account and all User Content posted under it.
+1. **Generally**. If you're entering into the Agreement on behalf of your Organization, your Organization has administrative control of all Accounts tied to the Organization. Only you may use your Account, and a single Account may not be shared by multiple people. You are, or your Organization is, fully responsible for your Account and all User Content posted under it.
 
 2. **Age Limitation**. In order to create an Account or use our Services, you must be at least eighteen (18) years old and, in any event, we do not permit any users under thirteen (13) years old to use our Services for any purpose. If we discover that an Account is being used by a user under thirteen (13) years old, we will terminate that Account immediately without notice to you.
 
-3. **Security**. You’re responsible for the security of your Account when using our Services. While we may offer tools to help you maintain your Account’s security, these are not guaranteed to work. Accordingly:
+3. **Security**. You're responsible for the security of your Account when using our Services. While we may offer tools to help you maintain your Account's security, these are not guaranteed to work. Accordingly:
 
    (i) you are responsible for all User Content posted under your Account (even if you didn't post it);
 
@@ -177,7 +177,7 @@ As used on this page, the following terms have the following specific meanings:
 </span>
 
 <span className="text-gray-400">
-  *__Short version__: You’re allowed to use the services for any reasonable purpose (e.g. don’t use it to host illegal content). We – like most sites – collect usage data about your use of the services (e.g., click rates and other metadata) and use it to run our business. If you give us a great idea about how to improve our services, we can use it.*
+  *__Short version__: You're allowed to use the services for any reasonable purpose (e.g. don't use it to host illegal content). We – like most sites – collect usage data about your use of the services (e.g., click rates and other metadata) and use it to run our business. If you give us a great idea about how to improve our services, we can use it.*
 </span>
 
 3.1 **License from Us to You**.
@@ -189,7 +189,7 @@ As used on this page, the following terms have the following specific meanings:
 1. **Minimum Supported Version for Self-Hosted Instances**. We support the current major version of the Software and the immediately preceding major version (N minus 1) ("Supported Versions"). You must ensure that Your installed version of the Software is within this supported range for self-hosted instances.
 2. **Conditions for non-supported Self-Hosted Instances**. If Your installed version falls behind the supported range, the following conditions apply: (i) We will not release fixes or features to unsupported versions; (ii) If You contact us regarding issues on an unsupported version, we will provide documentation and guidance to update the Software to a supported version, but will not provide direct issue resolution for non-Supported Versions; (iii) Our Service Level Agreements (SLAs) and support commitments only apply to Supported Versions. Continuing to use a non-Supported version constitutes an acknowledgement and acceptance of these conditions. 
 
-3. **No Sensitive Data**. You acknowledge and agree that, (i) the Services are not designed to store Sensitive Data (as defined below), and (ii) you will not use the Services to store Sensitive Data. “Sensitive Data” means: (i) special categories of data enumerated in European Union Regulation 2016/679, Article 9(1) or any successor legislation; (ii) protected health information as defined in HIPAA; (iii) payment cardholder information or financial account information, including bank account numbers or other personally identifiable financial information; (iv) social security numbers, driver’s license numbers, or other government identification numbers; (v) private encryption keys, passwords, or other credentials; (vi) other information subject to regulation or protection under specific laws such as the Children’s Online Privacy Protection Act or Gramm-Leach-Bliley Act (“GLBA”) or related rules or regulations; or (vii) any data similar to the above protected under applicable laws. You acknowledge that the Services and related features are not intended to meet any legal obligations for these uses, including HIPAA and GLBA requirements and that we are not a Business Associate as defined under HIPAA. Therefore, notwithstanding anything else in this Agreement, we have no liability for Sensitive Data processed in connection with your use of the Services.
+3. **No Sensitive Data**. You acknowledge and agree that, (i) the Services are not designed to store Sensitive Data (as defined below), and (ii) you will not use the Services to store Sensitive Data. “Sensitive Data” means: (i) special categories of data enumerated in European Union Regulation 2016/679, Article 9(1) or any successor legislation; (ii) protected health information as defined in HIPAA; (iii) payment cardholder information or financial account information, including bank account numbers or other personally identifiable financial information; (iv) social security numbers, driver's license numbers, or other government identification numbers; (v) private encryption keys, passwords, or other credentials; (vi) other information subject to regulation or protection under specific laws such as the Children's Online Privacy Protection Act or Gramm-Leach-Bliley Act (“GLBA”) or related rules or regulations; or (vii) any data similar to the above protected under applicable laws. You acknowledge that the Services and related features are not intended to meet any legal obligations for these uses, including HIPAA and GLBA requirements and that we are not a Business Associate as defined under HIPAA. Therefore, notwithstanding anything else in this Agreement, we have no liability for Sensitive Data processed in connection with your use of the Services.
 
 3.2 **User Content** **License from You to Us**.
 
@@ -225,12 +225,12 @@ We collect Usage Data derived from your use of the Services to develop, improve,
 </span>
 
 <span className="text-gray-400">
-  *__Short version__:  Our privacy and security documents tell you what you need to know about how we use any personal data you provide to us. While no one can guarantee that your information won't be subject to a security breach, we’ve instituted safeguards to protect your information.*
+  *__Short version__:  Our privacy and security documents tell you what you need to know about how we use any personal data you provide to us. While no one can guarantee that your information won't be subject to a security breach, we've instituted safeguards to protect your information.*
 </span>
 
 We have implemented commercially reasonable technical and organizational measures designed to secure information you provide us from accidental loss and from unauthorized access, use, alteration or disclosure  in accordance with our [Security Exhibit](https://about.sourcegraph.com/security-exhibit.pdf)) for generally available products available to customers who have signed an Order Form with us. 
 
-If you are an Organization established in the European Economic Area, the United Kingdom or Switzerland, or otherwise obliged to comply with the General Data Protection Regulation, we will process Customer Personal Data, as defined in and available at https://about.sourcegraph.com/dpa.pdf ("DPA") in accordance with our DPA, which will be incorporated by reference into the terms of this Agreement. If incorporated, the DPA represents the complete agreement between the Parties as to Sourcegraph's processing of Customer Personal Data and controls to the extent there may be a conflict between the DPA and any other document (including this Agreement or the Documentation). All other user personal information that Sourcegraph collects and processes in connection with the Services will be used in accordance with Sourcegraph’s Privacy Policy available at https://about.sourcegraph.com/terms/privacy. The Privacy Policy does not apply to Customer Personal Data.
+If you are an Organization established in the European Economic Area, the United Kingdom or Switzerland, or otherwise obliged to comply with the General Data Protection Regulation, we will process Customer Personal Data, as defined in and available at https://about.sourcegraph.com/dpa.pdf ("DPA") in accordance with our DPA, which will be incorporated by reference into the terms of this Agreement. If incorporated, the DPA represents the complete agreement between the Parties as to Sourcegraph's processing of Customer Personal Data and controls to the extent there may be a conflict between the DPA and any other document (including this Agreement or the Documentation). All other user personal information that Sourcegraph collects and processes in connection with the Services will be used in accordance with Sourcegraph's Privacy Policy available at https://about.sourcegraph.com/terms/privacy. The Privacy Policy does not apply to Customer Personal Data.
 
 <span className="text-blurple-400">
   ## 6. Confidentiality
@@ -247,9 +247,9 @@ If you are an Organization established in the European Economic Area, the United
 1. was or becomes publicly known through no fault of the receiving party;
 2. was rightfully known or becomes rightfully known to the receiving party without confidential restriction from a third-party that has a right to disclose it;
 3. is approved by the disclosing party for disclosure without restriction in a written document or electronic record; or
-4. the receiving party independently develops without access to or use of the other party’s Confidential Information.
+4. the receiving party independently develops without access to or use of the other party's Confidential Information.
 
-6.3 **Restrictions on Use and Disclosure**. Neither party will use the other party’s Confidential Information except as permitted under this Agreement. Each party agrees to maintain in confidence and protect the other party’s Confidential Information using at least the same degree of care as it uses for its own information of a similar nature, but in any event at least a reasonable degree of care. Each party agrees to take all reasonable precautions to prevent any unauthorized disclosure of the other party’s Confidential Information, including, without limitation, disclosing such Confidential Information only to its employees, independent contractors, consultants, and legal and financial advisors (collectively, **“Representatives”**) who (i) have a need to know such information, and (ii) are subject to confidentiality obligations at least as protective of the Confidential Information as the terms of this Agreement. Each party is responsible for all acts and omissions of its Representatives. The foregoing obligations will not restrict either party from disclosing Confidential Information of the other party if required by any governmental body, so long as, to the extent allowed under applicable law, the party required to make the disclosure gives reasonable notice to the other party to enable it to contest the requirement. The restrictions set forth in this Section will survive the termination or expiration of this Agreement. The terms of this Section 6 supersede any non-disclosure or confidentiality agreement entered into by the parties prior to the effective date of this Agreement.
+6.3 **Restrictions on Use and Disclosure**. Neither party will use the other party's Confidential Information except as permitted under this Agreement. Each party agrees to maintain in confidence and protect the other party's Confidential Information using at least the same degree of care as it uses for its own information of a similar nature, but in any event at least a reasonable degree of care. Each party agrees to take all reasonable precautions to prevent any unauthorized disclosure of the other party's Confidential Information, including, without limitation, disclosing such Confidential Information only to its employees, independent contractors, consultants, and legal and financial advisors (collectively, **“Representatives”**) who (i) have a need to know such information, and (ii) are subject to confidentiality obligations at least as protective of the Confidential Information as the terms of this Agreement. Each party is responsible for all acts and omissions of its Representatives. The foregoing obligations will not restrict either party from disclosing Confidential Information of the other party if required by any governmental body, so long as, to the extent allowed under applicable law, the party required to make the disclosure gives reasonable notice to the other party to enable it to contest the requirement. The restrictions set forth in this Section will survive the termination or expiration of this Agreement. The terms of this Section 6 supersede any non-disclosure or confidentiality agreement entered into by the parties prior to the effective date of this Agreement.
 
 <span className="text-blurple-400">
   ## 7. Term; termination
@@ -272,7 +272,7 @@ If you are an Organization established in the European Economic Area, the United
 </span>
 
 <span className="text-gray-400">
-  *__Short version__: You’re responsible for any fees associated with your use of Sourcegraph. Your subscription will automatically renew, unless an Order Form states otherwise.*
+  *__Short version__: You're responsible for any fees associated with your use of Sourcegraph. Your subscription will automatically renew, unless an Order Form states otherwise.*
 </span>
 
 8.1 **Pricing**. You are responsible for paying any applicable fees as set forth on our [Pricing and Payment Terms](/pricing) or in an Order Form and applicable taxes associated with the Services in a timely manner with a valid payment method. You are also responsible for paying any governmental taxes imposed on your use of the Software, including, but not limited to, sales, use, or value-added taxes.  Unless otherwise stated in an Order Form, you will pay all invoices within thirty (30) days of receipt. You agree that we may charge for any such fees owed. You are required to keep your billing information current.
@@ -286,7 +286,7 @@ If you are an Organization established in the European Economic Area, the United
 </span>
 
 <span className="text-gray-400">
-  *__Short version__: If you think we (or a user of the services) is infringing your copyrights, let us know and we’ll handle it in compliance with law.*
+  *__Short version__: If you think we (or a user of the services) is infringing your copyrights, let us know and we'll handle it in compliance with law.*
 </span>
 
 We respect the intellectual property of others and ask that you do too. We reserve the right to delete or disable content alleged to be infringing and terminate accounts of repeat infringers. If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement and is accessible via the Services, please notify our copyright agent as set forth in the DMCA. For your complaint to be valid under the DMCA, you must provide the following information in writing:
@@ -308,7 +308,7 @@ Tel.        (650) 273-5591
 Email:      legal@sourcegraph.com
 ```
 
-UNDER FEDERAL LAW, IF YOU KNOWINGLY MISREPRESENT THAT ONLINE MATERIAL IS INFRINGING, YOU MAY BE SUBJECT TO CRIMINAL PROSECUTION FOR PERJURY AND CIVIL PENALTIES, INCLUDING MONETARY DAMAGES, COURT COSTS, AND ATTORNEYS’ FEES.
+UNDER FEDERAL LAW, IF YOU KNOWINGLY MISREPRESENT THAT ONLINE MATERIAL IS INFRINGING, YOU MAY BE SUBJECT TO CRIMINAL PROSECUTION FOR PERJURY AND CIVIL PENALTIES, INCLUDING MONETARY DAMAGES, COURT COSTS, AND ATTORNEYS' FEES.
 
 Please note that this procedure is exclusively for notifying us that your copyrighted material has been infringed. The preceding requirements are intended to comply with our rights and obligations under the DMCA, including 17 U.S.C. §512(c), but do not constitute legal advice. It may be advisable to contact an attorney regarding your rights and obligations under the DMCA and other applicable laws.
 
@@ -338,7 +338,7 @@ CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCL
 
 EACH PARTY WILL BE LIABLE TO THE OTHER PARTY FOR DIRECT DAMAGES ONLY. THE FOLLOWING TYPES OF DAMAGES WILL BE EXCLUDED: INDIRECT DAMAGES, CONSEQUENTIAL DAMAGES, SPECIAL DAMAGES, PUNITIVE DAMAGES, LOST PROFITS, LOST REPUTATION, AND COST OF REPLACEMENT SERVICES.
 
-EXCEPT FOR EXCLUDED CATEGORIES, GROSS NEGLIGENCE AND WILLFUL MISCONDUCT, OR WHERE PROHIBITED BY LAW, NEITHER PARTY’S TOTAL LIABILITY TO THE OTHER (AGGREGATED ACROSS ALL CLAIMS) WILL EXCEED YOUR ANNUAL LICENSE FEE IN THE SUBSCRIPTION YEAR IN WHICH THE UNDERLYING CLAIM AROSE. IF YOU HAVE SIGNED AN ORDER FORM WITH US, EXCLUDED CATEGORIES ARE: IP INDEMNIFICATION AS DESCRIBED IN SECTION 12.2.
+EXCEPT FOR EXCLUDED CATEGORIES, GROSS NEGLIGENCE AND WILLFUL MISCONDUCT, OR WHERE PROHIBITED BY LAW, NEITHER PARTY'S TOTAL LIABILITY TO THE OTHER (AGGREGATED ACROSS ALL CLAIMS) WILL EXCEED YOUR ANNUAL LICENSE FEE IN THE SUBSCRIPTION YEAR IN WHICH THE UNDERLYING CLAIM AROSE. IF YOU HAVE SIGNED AN ORDER FORM WITH US, EXCLUDED CATEGORIES ARE: IP INDEMNIFICATION AS DESCRIBED IN SECTION 12.2.
 
 <span className="text-blurple-400">
   ## 12. Indemnification
@@ -348,18 +348,18 @@ EXCEPT FOR EXCLUDED CATEGORIES, GROSS NEGLIGENCE AND WILLFUL MISCONDUCT, OR WHER
   *__Short version__: Each of us agrees to defend the other against third-party lawsuits that result from matters under our respective responsibility.*
 </span>
 
-12.1 **By You**. You agree to defend us from and against any third-party claims, proceedings, and demands resulting from: (a) an allegation that Your use of the Services or Documentation other than in accordance with this Agreement infringes or misappropriates such third-party’s intellectual property rights; and (b) User Content other than Outputs.
+12.1 **By You**. You agree to defend us from and against any third-party claims, proceedings, and demands resulting from: (a) an allegation that Your use of the Services or Documentation other than in accordance with this Agreement infringes or misappropriates such third-party's intellectual property rights; and (b) User Content other than Outputs.
 
 12.2 **By Sourcegraph**. We agree to defend you from and against any third-party claims, proceedings, and demands alleging that your use of the Services or Documentation in accordance with this Agreement infringes or misappropriates such third-party's intellectual property rights  and indemnify you for any resulting damages, attorney's fees, and costs, provided that (i) your use conforms with the Agreement and Documentation and does not arise from a violation of your obligations under this Agreement, (ii) the claim does not arise from any modification, combination, or development of the Services not performed by us, and (iii) you are using our latest version including any filters provided by the Services.
 
-12.3 **Procedure**. Each party must give the other prompt written notice of any defense or indemnity sought and reasonable cooperation in the defense. The defending party will have sole control of the defense and settlement, provided that neither party may enter into a settlement placing any material obligation of any kind, including any admission of liability or payment of any amount, on the other party without the other party’s prior written approval, not to be unreasonably withheld, conditioned, or delayed.
+12.3 **Procedure**. Each party must give the other prompt written notice of any defense or indemnity sought and reasonable cooperation in the defense. The defending party will have sole control of the defense and settlement, provided that neither party may enter into a settlement placing any material obligation of any kind, including any admission of liability or payment of any amount, on the other party without the other party's prior written approval, not to be unreasonably withheld, conditioned, or delayed.
 
 <span className="text-blurple-400">
   ## 13. Export Controls
 </span>
 
 <span className="text-gray-400">
-  *__Short version__: The services are located in the US (where we’re located). Don’t use them if you’re located in an embargoed country.*
+  *__Short version__: The services are located in the US (where we're located). Don't use them if you're located in an embargoed country.*
 </span>
 
 13.1 **Export Controls**. The Services and the underlying information and technology may not be downloaded or otherwise exported or re-exported (a) into (or to a national or resident of) any country to which the U.S. has embargoed goods; or (b) to anyone on the U.S. Treasury Department's list of Specially Designated Nationals or the U.S. Commerce Department's Table of Deny Orders. By downloading or using the Services, you are agreeing to the foregoing and you represent and warrant that you are not located in, under the control of, or a national or resident of any such country or on any such list and you agree to comply with all export laws and other applicable laws.
@@ -369,7 +369,7 @@ EXCEPT FOR EXCLUDED CATEGORIES, GROSS NEGLIGENCE AND WILLFUL MISCONDUCT, OR WHER
 </span>
 
 <span className="text-gray-400">
-  *__Short version__: If you're based in California like we are, the agreement is governed by California law, and all disputes must be brought there; otherwise, the Agreement is governed by New York law and disputes must be brought in New York. If you have a claim against us, you’ll work with us to arbitrate it on an individual basis instead of via class action or jury trial.*
+  *__Short version__: If you're based in California like we are, the agreement is governed by California law, and all disputes must be brought there; otherwise, the Agreement is governed by New York law and disputes must be brought in New York. If you have a claim against us, you'll work with us to arbitrate it on an individual basis instead of via class action or jury trial.*
 </span>
 
 14.1 **Governing Law**. The Agreement will be interpreted according to the laws of the jurisdiction stated below (“**Governing Jurisdiction**”). Notwithstanding the applicable Governing Jurisdiction, any arbitration conducted pursuant to the terms of these Terms shall be governed by the Federal Arbitration Act (9 U.S.C. §§ 1-16). The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded. You agree to submit to the personal jurisdiction of the federal and state courts located in the forum stated below (“**Forum**”) for any actions for which we retain the right to seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation or violation of a our copyrights, trademarks, trade secrets, patents, or other intellectual property or proprietary rights, as set forth in the Arbitration provision below, including any provisional relief required to prevent irreparable harm. You agree that the Forum stated below is the proper forum for any appeals of an arbitration award or for trial court proceedings if the arbitration provision below is found to be unenforceable.
@@ -400,7 +400,7 @@ EXCEPT FOR EXCLUDED CATEGORIES, GROSS NEGLIGENCE AND WILLFUL MISCONDUCT, OR WHER
   ## 15. Miscellaneous
 </span>
 
-15.1 **Notices and Electronic Communications**. We may provide you with (and you hereby consent to our provision of) notices, including those regarding changes to our terms and conditions, by email, regular mail, or postings on the Services. Notice will be deemed given twenty-four hours after email is sent, unless we’re notified that the email address is invalid. Alternatively, we may give you legal notice by mail to a postal address, if provided by you through the Services. In such case, notice will be deemed given three days after the date of mailing. Notice posted on the Services is deemed given five (5) days following the initial posting. We reserve the right to determine the form and means of providing notifications to our users, provided that you may opt out of certain means of notification as described in the Agreement. We are not responsible for any automatic filtering you or your network provider may apply to email notifications we send to the email address you provide us.
+15.1 **Notices and Electronic Communications**. We may provide you with (and you hereby consent to our provision of) notices, including those regarding changes to our terms and conditions, by email, regular mail, or postings on the Services. Notice will be deemed given twenty-four hours after email is sent, unless we're notified that the email address is invalid. Alternatively, we may give you legal notice by mail to a postal address, if provided by you through the Services. In such case, notice will be deemed given three days after the date of mailing. Notice posted on the Services is deemed given five (5) days following the initial posting. We reserve the right to determine the form and means of providing notifications to our users, provided that you may opt out of certain means of notification as described in the Agreement. We are not responsible for any automatic filtering you or your network provider may apply to email notifications we send to the email address you provide us.
 
 15.2 **Updates and Modifications**.  If you have signed an Order Form with us, the terms in effect as of your Order Date will apply to your Term. For all users who have not signed an Order Form, we may, in our sole discretion, modify or update these Terms from time to time, in which case we will update the 'last modified' date at the top of this page, and your continued use of the Services after any such change constitutes your acceptance of the new Terms of Service. 
 

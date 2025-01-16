@@ -30,7 +30,7 @@ In theory, it should be relatively straightforward to create a script to modify 
 
 The challenge is to find a tool capable of doing both an intelligent *search & replace* but also monitoring for introduced changes until they finally merge. Not easy. Luckily, we recently discovered the **Batch Changes** feature in [Sourcegraph](https://sourcegraph.com/) (Sourcegraph is the code intelligence tool we use daily to support our [Standards Adoption Tool](https://medium.com/typeforms-engineering-blog/adoption-of-engineering-standards-at-typeform-f17f2b61bd39#8301)).
 
-Here at Typeform, we own more than four hundred active git repositories, and with this size, we need to be able to perform batch changes. Especially for the teams focused on supporting other teams like Architecture, Developer Tools, DevOps, Security, or Quality. Let’s dive in our first use case using Batch Changes:
+Here at Typeform, we own more than four hundred active git repositories, and with this size, we need to be able to perform batch changes. Especially for the teams focused on supporting other teams like Architecture, Developer Tools, DevOps, Security, or Quality. Let's dive in our first use case using Batch Changes:
 
 ## **Modifying 271 CI Pipelines with Bruno**
 
@@ -47,23 +47,23 @@ className="max-w-md text-center"
 
 >***1. Hi, Bruno. Tell us a little bit about your role at Typeform.***
 >
->I am a Senior DevOps Engineer. I joined the company in July 2021. Our team’s mission is to keep improving resilience, efficiency, automation, monitoring, and the overall availability of Typeform products. Our primary responsibility is to manage the platform infrastructure, which includes working with multiple Kubernetes clusters, different types of data storage, and other AWS services.
+>I am a Senior DevOps Engineer. I joined the company in July 2021. Our team's mission is to keep improving resilience, efficiency, automation, monitoring, and the overall availability of Typeform products. Our primary responsibility is to manage the platform infrastructure, which includes working with multiple Kubernetes clusters, different types of data storage, and other AWS services.
 >
 >***2. What project did you work on that required changes in many repositories?***
 >
 >We currently use GitHub actions with self-hosted runners as our main (CI/CD) platform to automate our build, test, and deployment pipelines. Recently, to support ephemeral (i.e., single job) runners and enable auto-scaling for our self-hosted runners, we had to make some changes to the base docker image used for the runners.
 >
->We wanted to shift our pipelines to the new runners incrementally, ensuring every pipeline on every repository worked without issues and avoiding interrupting developers’ workflows. It was essential for us to that Developers keep deploying to production multiple times a day while we were pushing those changes.
+>We wanted to shift our pipelines to the new runners incrementally, ensuring every pipeline on every repository worked without issues and avoiding interrupting developers' workflows. It was essential for us to that Developers keep deploying to production multiple times a day while we were pushing those changes.
 >
->The solution with Sourcegraph was to trigger a batch change that updated every label on every workflow to start pointing to the new ephemeral runners. Since we had different labels, Sourcegraph allowed us to search for the runs-on key on all the workflow’s YAML files and then just append the ephemeral suffix.
+>The solution with Sourcegraph was to trigger a batch change that updated every label on every workflow to start pointing to the new ephemeral runners. Since we had different labels, Sourcegraph allowed us to search for the runs-on key on all the workflow's YAML files and then just append the ephemeral suffix.
 >
->Here’s an example of one of the changes in one of the changesets for this batch change:
+>Here's an example of one of the changes in one of the changesets for this batch change:
 
 <Figure
 src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-typeform-003.png"
 />
 
->*And here’s the spec we used for the batch change:*
+>*And here's the spec we used for the batch change:*
 
 ```yml
 name: migrate-gha-runners-to-ephemeral
@@ -98,7 +98,7 @@ steps:
 
 >***3. How did Sourcegraph Batch Changes help to achieve your goal?***
 >
->We created a **Batch Change** that made 271 changesets. We could easily track which Pull Requests failed the workflow on GitHub Actions. We tackled the ones that failed individually and applied the required fixes on the workflow or the runner’s base docker image. The ones that passed were merged by the service owners.
+>We created a **Batch Change** that made 271 changesets. We could easily track which Pull Requests failed the workflow on GitHub Actions. We tackled the ones that failed individually and applied the required fixes on the workflow or the runner's base docker image. The ones that passed were merged by the service owners.
 >
 >We were able to track the overall progress by checking just one dashboard. In just 48 hours, more than 55% of the pull requests were already merged. We were able to apply all the changesets and complete the migration to the new ephemeral runners in less than a week. Doing this change across all the organization's repositories would be hard to track without a tool like Sourcegraph.
 
@@ -110,7 +110,7 @@ src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-t
 >
 >In the past, for similar situations, we would use [auto-pr](https://github.com/getyourguide/auto-pr/#auto-pr).
 >
->However, dealing with permissions across repositories, taking care of the different scenarios for a specific change, and keeping track of the pull requests’ progress were the most significant pain points. Sourcegraph solved these three issues for us.
+>However, dealing with permissions across repositories, taking care of the different scenarios for a specific change, and keeping track of the pull requests' progress were the most significant pain points. Sourcegraph solved these three issues for us.
 
 Our second experience with the Batch Changes feature was led by David Salvador:
 
@@ -133,11 +133,11 @@ src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-t
 >
 >***2. What was the project you were working on that required changes in many repositories?***
 >
->All of Typeform’s repositories have a GitHub Action that performs secrets detection: it checks whether a secret (API token, password, key, etc.) has been uploaded to the git repository. For this, we use a wrapper of the open-source tool [Gitleaks](https://github.com/zricethezav/gitleaks).
+>All of Typeform's repositories have a GitHub Action that performs secrets detection: it checks whether a secret (API token, password, key, etc.) has been uploaded to the git repository. For this, we use a wrapper of the open-source tool [Gitleaks](https://github.com/zricethezav/gitleaks).
 >
->The secrets detection check runs using a set of custom rules maintained by the Security team ([read more on the blog](https://medium.com/typeforms-engineering-blog/prevent-secrets-leaks-at-scale-in-repositories-e785b96e8244)). Even though the rules have gone through several tuning iterations, every once in a while, a false positive might appear. The secrets detection check identifies something as a secret, but it’s not. To not interrupt the developer’s flow, we added an easy way to exclude false positives from the check. Every repository has a _.gitleaks.toml_file where files, paths, commits, and certain regular expressions can be added to exclude such false positives.
+>The secrets detection check runs using a set of custom rules maintained by the Security team ([read more on the blog](https://medium.com/typeforms-engineering-blog/prevent-secrets-leaks-at-scale-in-repositories-e785b96e8244)). Even though the rules have gone through several tuning iterations, every once in a while, a false positive might appear. The secrets detection check identifies something as a secret, but it's not. To not interrupt the developer's flow, we added an easy way to exclude false positives from the check. Every repository has a _.gitleaks.toml_file where files, paths, commits, and certain regular expressions can be added to exclude such false positives.
 >
->We are currently using Gitleaks version 7. The Security team wanted to update it to version 8. However, version 8’s allowlist file has some incompatibilities with version 7. All the existing allowlist files in all Typeform’s organizations with such incompatibilities must be updated. This change impacted 44 files across the organization.
+>We are currently using Gitleaks version 7. The Security team wanted to update it to version 8. However, version 8's allowlist file has some incompatibilities with version 7. All the existing allowlist files in all Typeform's organizations with such incompatibilities must be updated. This change impacted 44 files across the organization.
 >
 >***3. How did Sourcegraph Batch Changes help to achieve your goal?***
 >
@@ -149,7 +149,7 @@ src="https://storage.googleapis.com/sourcegraph-assets/blog/blog-batch-changes-t
 
 ## What is next?
 
-We don’t have many cases for a batch change yet, but we have already received the following request from the Frontend Architecture team to use the tool to update the tracing library on all frontends.
+We don't have many cases for a batch change yet, but we have already received the following request from the Frontend Architecture team to use the tool to update the tracing library on all frontends.
 
 Overall, pushing changes in a batch is an opportunity to transform the organization faster in companies with many repositories. We found Sourcegraph Batch Changes an excellent tool to offer to our engineering enablers to transform the organization planned and consistently.
 

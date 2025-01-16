@@ -99,7 +99,7 @@ So Generics can give us powerful building blocks to share code and build program
 
 But every language change has a cost. With any change to the language, we need to talk about _maximizing the benefit and minimizing the cost._
 
-In Go, we’ve aimed to reduce complexity through independent, orthogonal
+In Go, we've aimed to reduce complexity through independent, orthogonal
 language features that can be combined freely. We reduce complexity by
 making the individual features simple, and we maximize the benefit of the
 features by permitting their free combination. We want to do the same with generics.

@@ -6,7 +6,7 @@ authors:
     url: https://x.com/jdorfman
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
-description: "This month’s release supports rendering Jupyter Notebooks and Mermaid diagrams in the Code Search file view. It also introduces support for GPT-4o and larger context windows for Cody Enterprise."
+description: "This month's release supports rendering Jupyter Notebooks and Mermaid diagrams in the Code Search file view. It also introduces support for GPT-4o and larger context windows for Cody Enterprise."
 tags: [blog, release]
 slug: "release/june-2024"
 published: true
@@ -28,7 +28,7 @@ changelogItems:
 ---
 
 <br />
-Code Search is your single search engine for finding and navigating _all_ your code, so this month, we’re upgrading the file view to support rendering even more file types you may have in your codebase. 
+Code Search is your single search engine for finding and navigating _all_ your code, so this month, we're upgrading the file view to support rendering even more file types you may have in your codebase. 
 
 This update also enables two [recently announced](https://sourcegraph.com/blog/cody-enterprise-june-2024) Cody Enterprise features: GPT-4o support and increased context windows for better codebase awareness.
 <br />
@@ -38,7 +38,7 @@ This update also enables two [recently announced](https://sourcegraph.com/blog/c
 <br />
 The Code Search file view now supports rendering Jupyter Notebooks (`.ipynb` files) and Mermaid diagrams (within `.md` files). 
 
-Jupyter Notebook files were previously rendered as JSON, but they’ll now render as rich text and media right in the file view, similar to how they’re rendered in the native Jupyter application.
+Jupyter Notebook files were previously rendered as JSON, but they'll now render as rich text and media right in the file view, similar to how they're rendered in the native Jupyter application.
 
 <br />
 <Video
@@ -64,7 +64,7 @@ Jupyter Notebook files were previously rendered as JSON, but they’ll now rende
 ### GPT-4o support for Cody chat and commands
 
 <br />
-You can now use GPT-4o as your LLM for powering Cody chat and commands. GPT-4o is OpenAI’s latest model, and it’s two times faster than GPT-4 Turbo while performing better in general reasoning benchmarks. 
+You can now use GPT-4o as your LLM for powering Cody chat and commands. GPT-4o is OpenAI's latest model, and it's two times faster than GPT-4 Turbo while performing better in general reasoning benchmarks. 
 
  [Read the docs](https://sourcegraph.com/docs/cody/core-concepts/cody-gateway#configuring-custom-models) for information on configuring your model selection. You can also try out GPT-4o and compare it against other models using the [LLM Litmus Test](https://s0.dev/).
  <br />
@@ -76,7 +76,7 @@ Cody has increased context window limits for both inputs and outputs. These chan
 
 * You can now push way more context into Cody, including @-mentioning multiple large files, so that you can ask questions about larger amounts of code
 * You can have much longer back-and-forth chats with Cody before it starts to forget the context from earlier in the conversation
-* Cody’s outputs should not cut off mid-message anymore
+* Cody's outputs should not cut off mid-message anymore
 
 <br />
 For BYOK customers, increasing context limits may increase LLM costs. [Read the docs](https://sourcegraph.com/docs/cody/clients/enable-cody-enterprise#smart-context-window) for more information on this feature and how to set your own context limits.

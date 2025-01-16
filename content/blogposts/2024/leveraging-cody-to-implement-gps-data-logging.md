@@ -14,11 +14,11 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/leveraging-c
 
 <Alert type="secondary">This is a guest blog post from our community. <a href="https://discord.com/servers/sourcegraph-969688426372825169" target="_blank">Join our Discord</a> to meet the author and connect with other developers passionate about Code Search and AI!</Alert>
 
-Hello, my name is Charles Goode and I’m an electrical engineering major at Kennesaw State University. I’m here to tell you about Kennesaw Motorsports and to walk you through how I completed my first project on the team with the help of [Cody](https://sourcegraph.com/cody). 
+Hello, my name is Charles Goode and I'm an electrical engineering major at Kennesaw State University. I'm here to tell you about Kennesaw Motorsports and to walk you through how I completed my first project on the team with the help of [Cody](https://sourcegraph.com/cody). 
 
 ## Kennesaw Motorsports
 
-[Kennesaw Motorsports](https://www.ksumotorsports.com/) is a college competition team where students from various majors come together with one mission: _to build race cars_. Each year, we build two formula-style vehicles to compete in a competition held by the Society of Automotive Engineers, known as [Formula SAE](https://en.wikipedia.org/wiki/Formula_SAE). Each team is evaluated by industry professionals on presentation, design, cost, and performance to give future engineers the experience they can’t get in the classroom.
+[Kennesaw Motorsports](https://www.ksumotorsports.com/) is a college competition team where students from various majors come together with one mission: _to build race cars_. Each year, we build two formula-style vehicles to compete in a competition held by the Society of Automotive Engineers, known as [Formula SAE](https://en.wikipedia.org/wiki/Formula_SAE). Each team is evaluated by industry professionals on presentation, design, cost, and performance to give future engineers the experience they can't get in the classroom.
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/leveraging-cody-to-implement-gps-data-logging/image_001.jpeg)
 

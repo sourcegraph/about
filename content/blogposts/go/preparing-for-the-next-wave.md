@@ -11,7 +11,7 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/40NFOZBGkgG6IyKoMgQIGg/c162
 published: true
 ---
 
-Go has enjoyed success as a language for writing services and command line applications.  But that success has largely been contained to Open Source enthusiasts and startups.  In this talk I’ll discuss the next wave of developers coming to Go, and what we need to do to be ready for them.
+Go has enjoyed success as a language for writing services and command line applications.  But that success has largely been contained to Open Source enthusiasts and startups.  In this talk I'll discuss the next wave of developers coming to Go, and what we need to do to be ready for them.
 
 Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us know on Twitter ([@sourcegraph](https://twitter.com/sourcegraph)) if we missed anything. All content is from the talk; any mistakes or misrepresentations are our fault, not the speaker's.
 

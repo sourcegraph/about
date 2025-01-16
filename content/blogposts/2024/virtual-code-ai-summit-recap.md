@@ -23,7 +23,7 @@ Across sessions led by experts from Booking.com, Stripe, Palo Alto Networks, Net
 
 1. **AI is an essential assistant, not a replacement**—empowering developers to focus on high-value work.
 2. **Automation with AI coding agents** is already saving enterprises thousands of hours annually.
-3. **AI’s role is expanding across the entire software development lifecycle**, from debugging to migrations to personalized tooling.
+3. **AI's role is expanding across the entire software development lifecycle**, from debugging to migrations to personalized tooling.
 
 Read on to get a deeper look at these key insights and what they mean for the future of software development. Or, if you want to see all the recordings, click below to access the sessions.
 
@@ -35,13 +35,13 @@ One resounding theme throughout the summit was that AI tools and coding assistan
 
 Bruno Passos, Group Product Manager at **Booking.com**, described the mindset shift needed for widespread adoption:
 
-> *This isn’t about replacing developers. It’s a super assistant—someone over your shoulder, pointing out the good, the bad, and helping you move forward faster.*
+> *This isn't about replacing developers. It's a super assistant—someone over your shoulder, pointing out the good, the bad, and helping you move forward faster.*
 
-AI-powered tools like **Sourcegraph’s Cody** became integral to Booking’s development workflows, improving **merge request speeds** by up to 40% for power users. The impact wasn’t limited to junior engineers; senior developers also found that AI helped them focus on bigger, more complex (and interesting) challenges.
+AI-powered tools like **Sourcegraph's Cody** became integral to Booking's development workflows, improving **merge request speeds** by up to 40% for power users. The impact wasn't limited to junior engineers; senior developers also found that AI helped them focus on bigger, more complex (and interesting) challenges.
 
 Similarly, **Leidos**, a leader in government contracting, shared how AI is uniquely suited to address the challenges of working with **real government codebases**, which often involve massive monoliths, decades of technical debt, and high-security constraints.
 
-As Leidos’ Chief AI Officer Ron Keesing noted during his session:
+As Leidos' Chief AI Officer Ron Keesing noted during his session:
 
 > *AI helps us parse through codebases that would take humans weeks or months to untangle. With AI, discovery, navigation, and modernization become significantly faster and safer.*
 
@@ -63,19 +63,19 @@ Quinn Slack summarized the opportunity:
 
 The success of these agents stems from their **specificity**—automating narrow, repetitive tasks rather than attempting to replace end-to-end workflows. Enterprises that embrace this mindset are unlocking massive time savings while improving code quality and consistency.
 
-## Expanding AI’s role across the software development lifecycle
+## Expanding AI's role across the software development lifecycle
 
 While code AI adoption has largely focused on coding and code review, the summit revealed how AI is expanding its impact across the **entire software development lifecycle (SDLC)**.
 
 Adam Berry, now at **Netflix**, emphasized the untapped potential in areas like **observability, debugging, and DevOps automation**:
 
-> *We’re just scratching the surface. AI tools that triage logs, reduce noise, and provide contextual insights will lift cognitive load and free teams to focus on higher-value work.*
+> *We're just scratching the surface. AI tools that triage logs, reduce noise, and provide contextual insights will lift cognitive load and free teams to focus on higher-value work.*
 
 Gunjan Patel of **Palo Alto Networks** offered a vision of AI as a partner, helping teams tackle large-scale challenges—like replatforming legacy systems—and even enabling hyper-personalized developer tooling:
 
 > *AI is democratizing software creation. Tools like Sourcegraph make it possible to build custom solutions that meet your exact needs, tailored to your workflows.*
 
-From CI/CD pipelines to security scanning to bug triage, AI is poised to deliver **compounded productivity gains** across every phase of the SDLC. The future isn’t just about coding faster—it’s about automating workflows, improving quality, and enabling developers to focus on creative, complex challenges.
+From CI/CD pipelines to security scanning to bug triage, AI is poised to deliver **compounded productivity gains** across every phase of the SDLC. The future isn't just about coding faster—it's about automating workflows, improving quality, and enabling developers to focus on creative, complex challenges.
 
 ## The path forward: AI-augmented teams tackling bigger problems
 
@@ -83,7 +83,7 @@ The Virtual Code AI Summit made one thing clear: the future of software developm
 
 Quinn Slack captured this shift perfectly:
 
-> *We’re automating the low-level tasks nobody likes doing, so developers can focus on what humans do best—solving big, meaningful problems.*
+> *We're automating the low-level tasks nobody likes doing, so developers can focus on what humans do best—solving big, meaningful problems.*
 
 From government agencies modernizing decades-old systems to tech leaders accelerating developer workflows, the potential of AI to reshape software development is **limitless**. The organizations that measure impact rigorously, build trust with AI tools, and embrace automation will lead the way.
 

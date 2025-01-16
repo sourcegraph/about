@@ -17,7 +17,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 
 Building software is complex, and a good AI coding assistant needs to fit seamlessly into your development workflow without adding to that complexity. It should always be available when you need it and be intuitive to use to reduce your everyday toil.
 
-This means that Cody needs to provide a familiar experience wherever you use it: in any number of IDEs or on the web. We’re rolling out a new Cody sidebar experience using WebViews for VS Code, and it is available today for Free and Pro users (and coming soon for Enterprise users).
+This means that Cody needs to provide a familiar experience wherever you use it: in any number of IDEs or on the web. We're rolling out a new Cody sidebar experience using WebViews for VS Code, and it is available today for Free and Pro users (and coming soon for Enterprise users).
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-28-release/new-cody-sidebar-2.png"
@@ -40,7 +40,7 @@ See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.2
 
 ## Thank you
 
-Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 We value your feedback in our [support forum](https://community.sourcegraph.com/c/cody/5), [Discord](https://discord.com/servers/sourcegraph-969688426372825169), and [GitHub](https://github.com/sourcegraph/cody). Happy Codying!
 

@@ -74,7 +74,7 @@ You have now created a mutually authenticated connection.
 
 ### TLS vs. PKI
 
-TLS is easy, but Private Key Infrastructure (PKI) is hard. Go provides the good interfaces to set this up, though. In real systems, managing all of these systems and private keys is the _really_ hard part. It’s also the most important part to understand and do right.
+TLS is easy, but Private Key Infrastructure (PKI) is hard. Go provides the good interfaces to set this up, though. In real systems, managing all of these systems and private keys is the _really_ hard part. It's also the most important part to understand and do right.
 
 ### CSRs
 
@@ -86,7 +86,7 @@ In Go, you can create a certificate request to perform this. The CA will sign it
 
 In a hypothetical scenario where two services are running in GCE, one running foo.com and bar.com, the CA has a problem knowing whether or not foo.com is **actually** foo.com or instead is bar.com pretending to be foo.com when a signing request comes from it.
 
-In GCE, metadata exists to provide a JWT token (which we won’t go into too much detail here), essentially it is a signed document by GCE itself vouching that the request came from GCE itself including metadata like the instance name, etc. Thus, when a CSR is sent, the CA can verify the request came from the platform you claim to be running on. On the side of the CA, we parse the CSR and pull the JWT and get the instance ID. This allows the CA to make intelligent decisions about whether or not to approve the CSR.
+In GCE, metadata exists to provide a JWT token (which we won't go into too much detail here), essentially it is a signed document by GCE itself vouching that the request came from GCE itself including metadata like the instance name, etc. Thus, when a CSR is sent, the CA can verify the request came from the platform you claim to be running on. On the side of the CA, we parse the CSR and pull the JWT and get the instance ID. This allows the CA to make intelligent decisions about whether or not to approve the CSR.
 
 ### Certificate revocation lists
 
@@ -102,14 +102,14 @@ On slide 49, we demonstrate in Go how `OCSPStable` in the `Certificate` exists t
 
 Rotating a CA is more complex than rotating client certificates. Cloud providers will terminate TLS for you using Server Name Identification (SNI). SNI solves the issue of a server fronting multiple servers being able to provide the right certificate. Imagine one server such as Cloudflare existing in front of many servers behind it, all using TLS. The server in front will want to provide the certificate of the server it is proxying traffic for, not the certificate of itself (when you visit a website, it should present the certificate of the website not e.g. Cloudflare in front).
 
-Go can be very flexible about how you validate certificates, which is great. SNI itself, though, is a wild ride. The government of Kazakhstan actually uses SNI to block accessing websites, among other crazy things like asking people to install their CA certificate which is dangerous. Cloudflare is one of the companies with _encrypted SNI_ trying to solve this. For more details, look up Let’s Encrypt SNI challenge issues, domain fronting, and encrypted SNI which has no Go support currently.
+Go can be very flexible about how you validate certificates, which is great. SNI itself, though, is a wild ride. The government of Kazakhstan actually uses SNI to block accessing websites, among other crazy things like asking people to install their CA certificate which is dangerous. Cloudflare is one of the companies with _encrypted SNI_ trying to solve this. For more details, look up Let's Encrypt SNI challenge issues, domain fronting, and encrypted SNI which has no Go support currently.
 
 ### Certificate-based authorization
 
 In the same way a client may want to authenticate servers, a client may want to treat clients differently based on access. For example, a green key accessing a database but an orange key having read-only access. On slide 58 we demonstrate a way you can do this based on which certificate was provided to perform authorization.
 
 ### Hardware keys
-Hardware bound keys are a lot of fun, too. Hardware in your computer can be used to store private keys. Security keys do this. Hardware bound keys work by storing the private key in the hardware. From user-land, you cannot interact with it in any way. An API exposes a signing request to state “don’t give me the private key, but use the private key on this device to sign this” -- in the case of an attack the attacker must use the kernel API instead of being able to say you have no idea where the private key now is as a file if your system is compromised.
+Hardware bound keys are a lot of fun, too. Hardware in your computer can be used to store private keys. Security keys do this. Hardware bound keys work by storing the private key in the hardware. From user-land, you cannot interact with it in any way. An API exposes a signing request to state “don't give me the private key, but use the private key on this device to sign this” -- in the case of an attack the attacker must use the kernel API instead of being able to say you have no idea where the private key now is as a file if your system is compromised.
 
 In Go, a `Certificate` has a `PrivateKey` field which can be used to implement conditional interfaces, such as providing it an `ECDSAKey` which will use an interface method to perform ECDSA.
 

@@ -1,6 +1,6 @@
 ---
 title: "Strange Loop 2019 - Learning to Love JavaScript"
-description: "JavaScript is an imperfect programming language. It’s weakly-typed, scoping rules and type coercion can make difficult-to-diagnose bugs, and cross-browser compatibility sometimes feels like a pipe dream. But does it matter? In this talk, I’ll argue that judging the merits of JavaScript solely as a programming language is missing the point, and to accurately weigh its place in the world, you must consider JavaScript beyond types, scope, and syntax. You’ll walk away with a deeper appreciation for the feat of human cooperation that is the World Wide Web, and how JavaScript became one of the Web’s most important threads."
+description: "JavaScript is an imperfect programming language. It's weakly-typed, scoping rules and type coercion can make difficult-to-diagnose bugs, and cross-browser compatibility sometimes feels like a pipe dream. But does it matter? In this talk, I'll argue that judging the merits of JavaScript solely as a programming language is missing the point, and to accurately weigh its place in the world, you must consider JavaScript beyond types, scope, and syntax. You'll walk away with a deeper appreciation for the feat of human cooperation that is the World Wide Web, and how JavaScript became one of the Web's most important threads."
 authors:
   - name: Brian Sewell
     url: https://www.linkedin.com/in/brian-sewell-9973b796/
@@ -28,7 +28,7 @@ published: true
 
 ## Overview
 
-JavaScript is an imperfect programming language. It’s weakly-typed, scoping rules and type coercion can make difficult-to-diagnose bugs, and cross-browser compatibility sometimes feels like a pipe dream. But does it matter? In this talk, I’ll argue that judging the merits of JavaScript solely as a programming language is missing the point, and to accurately weigh its place in the world, you must consider JavaScript beyond types, scope, and syntax. You’ll walk away with a deeper appreciation for the feat of human cooperation that is the World Wide Web, and how JavaScript became one of the Web’s most important threads.
+JavaScript is an imperfect programming language. It's weakly-typed, scoping rules and type coercion can make difficult-to-diagnose bugs, and cross-browser compatibility sometimes feels like a pipe dream. But does it matter? In this talk, I'll argue that judging the merits of JavaScript solely as a programming language is missing the point, and to accurately weigh its place in the world, you must consider JavaScript beyond types, scope, and syntax. You'll walk away with a deeper appreciation for the feat of human cooperation that is the World Wide Web, and how JavaScript became one of the Web's most important threads.
 
 ---
 

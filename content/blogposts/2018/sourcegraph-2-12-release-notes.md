@@ -15,7 +15,7 @@ We are building [the best code search and browsing tool for your team](/) to hel
 
 Our announcement this month that [Sourcegraph is now open source](https://handbook.sourcegraph.com/community/faq) is one way we will get there even faster.
 
-Here’s new, what’s changed, and what’s fixed in Sourcegraph 2.12.
+Here's new, what's changed, and what's fixed in Sourcegraph 2.12.
 
 - [Build and publish your own Sourcegraph extensions](https://docs.sourcegraph.com/extensions/authoring) (like the [Codecov Sourcegraph extension](https://twitter.com/sourcegraph/status/1038200208138502144))
 

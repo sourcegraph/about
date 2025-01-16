@@ -40,7 +40,7 @@ How quickly can you understand the code when you read through it? How quickly ca
 
 * Code should be boring
 
-Code should be boring here refers to boring in the sense that everything about the codebase is obvious. It’s not about writing fancy but about writing for others to understand. It is important that we understand the code might be used by people with little or no experience.
+Code should be boring here refers to boring in the sense that everything about the codebase is obvious. It's not about writing fancy but about writing for others to understand. It is important that we understand the code might be used by people with little or no experience.
 
 * Self Similar code 
 
@@ -266,7 +266,7 @@ return func(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-If an endpoint has its own request and response types, usually they’re only useful for that particular handler. If that’s the case, you can define them inside the function. This declutters your package space and allows you to name these kinds of types the same, instead of having to think up handler-specific versions.
+If an endpoint has its own request and response types, usually they're only useful for that particular handler. If that's the case, you can define them inside the function. This declutters your package space and allows you to name these kinds of types the same, instead of having to think up handler-specific versions.
 
 Although it is very common to put the request and response type in the package space, putting them inside a little closure environment as shown in the code snippet above helps you in decluttering.
 

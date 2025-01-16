@@ -112,7 +112,7 @@ Let's see what this batch change would look like. Sourcegraph's Batch Changes ar
 * Steps to execute to generate the diff
 * A pull request template
 
-Here’s an example of a batch change spec for adding `catalog-info.yaml` files to your repositories:
+Here's an example of a batch change spec for adding `catalog-info.yaml` files to your repositories:
 
 ```yml
 name: generate-catalog-infos-for-backstage

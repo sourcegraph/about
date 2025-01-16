@@ -20,7 +20,7 @@ Brian is a co-founder at Spectrum, a platform for building communities online. H
 
 Two side of the gap, one side being actually developing the project and the other side is designing and architecture.  Our tools make a difference\* The Gap exist for a reason and that is to“close the gap”
 
-* Designers love nudging pixel and selecting colors and it is a problem that design tools(sketch and photoshop) don’t infer the end product.
+* Designers love nudging pixel and selecting colors and it is a problem that design tools(sketch and photoshop) don't infer the end product.
 * Design tools make an illusion that are too imprecise for development tools
 * Development tools are declarative and precise
 

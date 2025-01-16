@@ -20,10 +20,10 @@ With Cody, you can make high-quality contributions to open source projects more 
 
 * **Document code:** Cody can generate documentation comments for the code you have selected. 
 * **Explain code:** Cody can generate clear and concise documentation for code. 
-* **Generate unit tests:** Cody can generate unit tests for your code, which can help you ensure that the project’s code is working as expected.
+* **Generate unit tests:** Cody can generate unit tests for your code, which can help you ensure that the project's code is working as expected.
 * **And much more**: Code autocomplete, code smells, custom commands, and other features to help you be more productive.
 
-Before starting with contributions to a project, it is important to learn what the project does. The [Cody Web App](https://sourcegraph.com/cody) and supported IDE extensions ([VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai), [JetBrains](https://plugins.jetbrains.com/plugin/9682-sourcegraph-cody--code-search), [Neovim](https://github.com/sourcegraph/sg.nvim)) allow you to ask questions about specific repositories. For example, you can choose [Hugging Face’s Transformers repo](https://sourcegraph.com/github.com/huggingface/transformers) and ask what it does, what the tech stack is, who the contributors are, etc.
+Before starting with contributions to a project, it is important to learn what the project does. The [Cody Web App](https://sourcegraph.com/cody) and supported IDE extensions ([VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai), [JetBrains](https://plugins.jetbrains.com/plugin/9682-sourcegraph-cody--code-search), [Neovim](https://github.com/sourcegraph/sg.nvim)) allow you to ask questions about specific repositories. For example, you can choose [Hugging Face's Transformers repo](https://sourcegraph.com/github.com/huggingface/transformers) and ask what it does, what the tech stack is, who the contributors are, etc.
 
 ![Ask Cody a question](https://storage.googleapis.com/sourcegraph-assets/blog/hacktoberfest-2023-blog-image3.png)
 <center>Ask Cody a question</center>
@@ -87,12 +87,12 @@ Apache StreamPipes is looking to [implement unit tests](https://github.com/apach
 
 ### Respect the maintainers
 
-**Please ensure you don’t overwhelm maintainers with pull requests they aren’t looking for.** If they have an issue that Cody can help you help them with, go for it! 
+**Please ensure you don't overwhelm maintainers with pull requests they aren't looking for.** If they have an issue that Cody can help you help them with, go for it! 
 
 
 ### Conclusion
 
-Hacktoberfest is a great way to contribute to open source and learn new things. But it can also be scary, especially if you're new to open source. Cody AI can help you make awesome Hacktoberfest contributions by unblocking you when you’re jumping into new projects, trying to understand legacy code, or taking on tricky problems.
+Hacktoberfest is a great way to contribute to open source and learn new things. But it can also be scary, especially if you're new to open source. Cody AI can help you make awesome Hacktoberfest contributions by unblocking you when you're jumping into new projects, trying to understand legacy code, or taking on tricky problems.
 
 Don't forget to have fun! Hacktoberfest is a great opportunity to learn and connect with other developers from around the world. Here are some projects looking for help:
 

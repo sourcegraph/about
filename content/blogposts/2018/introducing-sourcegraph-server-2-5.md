@@ -66,7 +66,7 @@ Code intelligence makes reviewing and navigating code easier with go-to-definiti
 
 ### Massive-scale code search
 
-For [cluster deployments](https://docs.sourcegraph.com/admin/install/cluster), we’ve shipped a hybrid search backend that offers blazing-fast searches over 10,000+ repositories, on the order of hundreds of milliseconds, while still giving you up-to-date results without any indexing delay. It intelligently merges results from indexed search and on-the-fly search, giving you the best of both worlds.
+For [cluster deployments](https://docs.sourcegraph.com/admin/install/cluster), we've shipped a hybrid search backend that offers blazing-fast searches over 10,000+ repositories, on the order of hundreds of milliseconds, while still giving you up-to-date results without any indexing delay. It intelligently merges results from indexed search and on-the-fly search, giving you the best of both worlds.
 
 Hybrid search is enabled by default in Sourcegraph cluster deployments. See "[Indexed search](https://docs.sourcegraph.com/admin/search#indexed-search)" for instructions on how to enable it in single-Docker-image deployments.
 
@@ -80,7 +80,7 @@ Search scopes are now accessible on every page to more easily filter your search
 
 ### Search scope pages
 
-We’ve added search scope pages to more easily share search scopes among team members. Add the `id` and `description` fields to the `search.scopes` config option to get a page that automatically filters your search to the specified scope. We’ve also added public search scope pages for popular groups of repositories on Sourcegraph.com, including the [top 1000 Rust crates](https://sourcegraph.com/search/scope/crates), [100 most depended-upon npm packages](https://sourcegraph.com/search/scope/npm), [core Ethereum code](https://sourcegraph.com/search/scope/ethereum), and [Go code by the Go team](https://sourcegraph.com/search/scope/goteam).
+We've added search scope pages to more easily share search scopes among team members. Add the `id` and `description` fields to the `search.scopes` config option to get a page that automatically filters your search to the specified scope. We've also added public search scope pages for popular groups of repositories on Sourcegraph.com, including the [top 1000 Rust crates](https://sourcegraph.com/search/scope/crates), [100 most depended-upon npm packages](https://sourcegraph.com/search/scope/npm), [core Ethereum code](https://sourcegraph.com/search/scope/ethereum), and [Go code by the Go team](https://sourcegraph.com/search/scope/goteam).
 
 Have an idea for a search scope that would be useful to your community? Tweet us [@sourcegraph](https://twitter.com/sourcegraph).
 

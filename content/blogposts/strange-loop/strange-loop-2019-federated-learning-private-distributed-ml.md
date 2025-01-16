@@ -75,7 +75,7 @@ The loss curve for the above algorithm looks like this.
 
 ![Loss curve](/blog/strange-loop-2019/fed-learning-5.jpeg)
 
-The grey lines are the model on each node. They get better (or worse) during a round because they’re learning the peculiarities of a small set of data, which may or may not generalize to the test set.
+The grey lines are the model on each node. They get better (or worse) during a round because they're learning the peculiarities of a small set of data, which may or may not generalize to the test set.
 
 The orange line is from a node that trains just as often but refuses to communicate with the server. It gets better as well but not by much because overall, it's been trained on much less data. The green line is the one we care about - we can see that it improves without transferring any data.
 

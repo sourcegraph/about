@@ -29,14 +29,14 @@ It's a lot of repetitive boilerplate.
 ## Why do REST APIs suck?
 
 * Streaming is difficult (nigh-impossible in some languages)
-* Bi-directional streaming isn’t possible at all
-* Operations are difficult to model (e.g. ‘restart the machine’)
-* Inefficient (textual representations aren’t optimal for networks)
-* Your internal services aren’t RESTful anyways, they’re just HTTP endpoints
+* Bi-directional streaming isn't possible at all
+* Operations are difficult to model (e.g. ‘restart the machine')
+* Inefficient (textual representations aren't optimal for networks)
+* Your internal services aren't RESTful anyways, they're just HTTP endpoints
 * Hard to get many resources in a single request (GraphQL)
 * No formal (machine-readable) API contract
   * Corollary: writing client libraries requires humans
-       * Corollary: humans are expensive and don’t like writing client libraries
+       * Corollary: humans are expensive and don't like writing client libraries
 
 
 
@@ -184,7 +184,7 @@ of the other problems with HTTP/JSON (performance,
 streaming, modeling)
 * Swagger definitions are cumbersome and incredibly
 verbose. Compared to writing grpc protobuf definitions,
-they’re a gigantic pain
+they're a gigantic pain
 
 ### gRPC compared to Thrift
 
@@ -315,7 +315,7 @@ core”
 
 * Originally pioneered by a team at Google
 * Next generation version of an internal Google project
-called ‘stubby’
+called ‘stubby'
 * Now a F/OSS project with a completely open spec and
 contributors from many companies
   * Development is still primarily executed by Google devs

@@ -24,7 +24,7 @@ Aaron Schlesinger ([@arschles](https://twitter.com/arschles)) is a Microsoft Azu
 
 Having come from an background in functionally rooted languages such as Scala and F#, Aaron has seen the benefits of functional paradigms and wants to help the Go community be of aware of how to combine them- when appropriate -with the simplicity and speed of Go we've all come to love.
 
-Aaron’s talk covered a few functional paradigms with examples of how to practically apply them in Go. _Pure functions_ are helpful for encapsulating external state that would often be held in global variables, make isolated testing easier, and help prevent insidious concurrency issues. _Optionals_ can act as containers that encapsulate return values and prevent `nil` pointer panics.
+Aaron's talk covered a few functional paradigms with examples of how to practically apply them in Go. _Pure functions_ are helpful for encapsulating external state that would often be held in global variables, make isolated testing easier, and help prevent insidious concurrency issues. _Optionals_ can act as containers that encapsulate return values and prevent `nil` pointer panics.
 
 To learn more about these functional terms and more, check out Aaron's [go-functional/core](https://github.com/go-functional/core) repository for extended definitions and examples.
 

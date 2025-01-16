@@ -14,7 +14,7 @@ published: true
 
 ---
 
-The Prompt Library is a great way for users within an organization to share, discover, and use prompts while working with Cody chat. We’ve introduced a new concept to Prompts called Promoted Prompts which allows admins to highlight Prompts to users that appear at the top of a Prompt list, directing users to use specific Prompts that encourage best practices within the organization.
+The Prompt Library is a great way for users within an organization to share, discover, and use prompts while working with Cody chat. We've introduced a new concept to Prompts called Promoted Prompts which allows admins to highlight Prompts to users that appear at the top of a Prompt list, directing users to use specific Prompts that encourage best practices within the organization.
 
 Admins can promote a Prompt by checking the `Promoted` box in the Prompt edit screen.
 

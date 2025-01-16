@@ -99,7 +99,7 @@ vim moby.txt
 time ./words moby.txt
 181275 words - on average takes 2 seconds
 
-Let’s compare that to unix’s wc -w
+Let's compare that to unix's wc -w
 
 time wc -w moby.txt
 0.002 seconds
@@ -236,7 +236,7 @@ Solution:
 ### Using more than one CPU
 We saw from the previous trace that the program is running sequentially and not taking advantage of the other CPU's on this machine.
 
-Mandelbrot generation is known as embarrassingly_parallel. Each pixel is independent of any other, they could all be computed in parallel. So, let’s try that.
+Mandelbrot generation is known as embarrassingly_parallel. Each pixel is independent of any other, they could all be computed in parallel. So, let's try that.
 
 ```text
 % go build mandelbrot.go
@@ -254,9 +254,9 @@ Now the algorithm runs on a multiple chunks but we have gasps.
 
 ### Batching up work
 
-Using one goroutine per pixel was too fine grained. There wasn't’t enough work to justify the cost of the goroutine.
+Using one goroutine per pixel was too fine grained. There wasn't't enough work to justify the cost of the goroutine.
 
-Instead, let’s try processing one row per goroutine.
+Instead, let's try processing one row per goroutine.
 
 ```bash
 % go build mandelbrot.go
@@ -269,7 +269,7 @@ user    0m1.907s
 sys     0m0.025s
 ```
 
-This looks like a good improvement, we almost halved the runtime of the program. Let’s look at the trace.
+This looks like a good improvement, we almost halved the runtime of the program. Let's look at the trace.
 
 We have 1000 goroutines but we have 1000 time more work to do.
 

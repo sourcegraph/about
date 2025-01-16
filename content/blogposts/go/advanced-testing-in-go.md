@@ -37,9 +37,9 @@ Testable code:
 - How to write code that can be tested well and easily
 - Just as important as writing good tests is
   writing code that can be tested well
-- Many developers that tell me “this can’t be tested” aren’t wrong, they
+- Many developers that tell me “this can't be tested” aren't wrong, they
   just wrote the code in a way that made it so. We very rarely see cases
-  at HashiCorp that truly can’t be tested [well].
+  at HashiCorp that truly can't be tested [well].
 - Rewriting existing code to be testable is a pain, but worth it
 
 The topics in this talk cover both of these parts. From here on out, we're just going to dive into a bunch of test examples. Topics are roughly ordered from "beginner" topics to "advanced" topics at the end.
@@ -198,7 +198,7 @@ func testTempFile(t *testing.T) string {
 - Never return errors. Just pass in \*testing.T and fail.
 - By not returning errors, usage is much prettier, since you don't have a bunch of visual overhead from error handling code in your tests
   since error checking is gone.
-- Used to make tests clear on what they’re testing vs what is boilerplate
+- Used to make tests clear on what they're testing vs what is boilerplate
 - Call `t.Helper()` for cleaner failure output (Go 1.9)
 
 ```go
@@ -256,7 +256,7 @@ This will be a little controversial. Some experienced Go devs disagree with this
 ## Package/functions
 
 - Break down functionality into packages/functions judiciously
-- NOTE: Don’t overdo it. Do it where it makes sense.
+- NOTE: Don't overdo it. Do it where it makes sense.
 - Doing this correctly will aid testing while also improving organization.
   Over-doing it will complicate testing and readability.
 - Qualitative, but practice will make perfect.
@@ -264,7 +264,7 @@ This will be a little controversial. Some experienced Go devs disagree with this
   exported functions, the exported API.
 - We treat unexported functions/structs as implementation details: they
   are a means to an end. As long as we test the end and it behaves within
-  spec, the means don’t matter.
+  spec, the means don't matter.
 - Some people take this too far and choose to only integration/
   acceptance test, the ultimate “test the end, ignore the means.” We
   disagree with this approach.
@@ -279,7 +279,7 @@ This will be a little controversial. Some experienced Go devs disagree with this
 
 ## Networking
 
-If you're testing networking, make a real network connection. Don’t mock `net.Conn`, no point.
+If you're testing networking, make a real network connection. Don't mock `net.Conn`, no point.
 
 ```go
 // Error checking omitted for brevity
@@ -381,7 +381,7 @@ You have two options:
 
 - Actually executing the subprocess is nice
 - Guard the test for the existence of the binary
-- Make sure side effects don’t affect any other test
+- Make sure side effects don't affect any other test
 
 ```go
 var testHasGit bool
@@ -401,7 +401,7 @@ func TestGitGetter(t *testing.T) {
 
 ### Subprocessing: mock
 
-- You still actually execute, but you’re executing a mock!
+- You still actually execute, but you're executing a mock!
 - Make the \*exec.Cmd configurable, pass in a custom one
 - Found this in the stdlib, it is how they test os/exec!
 - How HashiCorp tests go-plugin and more
@@ -550,7 +550,7 @@ func TestThing(t *testing.T) {
 }
 ```
 
-- We don’t use “fake time”
+- We don't use “fake time”
 - We just have a multiplier available that we can  
   set to increase timeouts
 - We have a lot of eventual behavior in our systems and we haven't had a
@@ -585,10 +585,10 @@ func TestThing(t *testing.T) {
 }
 ```
 
-- Don’t do it. Run multiple processes.
+- Don't do it. Run multiple processes.
 - Makes test failures uncertain: is it due to pure logic but, or race?
 - OR: Run tests both with `-parallel=1` and `-parallel=N`
-- We’ve preferred to just not use parallelization. We use multiple
+- We've preferred to just not use parallelization. We use multiple
   processes and unit tests specifically written to test for races.
 - Except: really, really slow tests.
 - Consul tests make use of Parallel because they actually create a Consul

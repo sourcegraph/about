@@ -10,12 +10,12 @@ This document outlines the basic terms and conditions that apply to Sourcegraph'
 ## Managed Services
 
 ### Description of Managed Services Offering
-Sourcegraph management of self-hosted customer instances. Use of Managed Services will typically entail badged and/or VPN access for the Sourcegraph team to oversee management of existing customer’s instances. This service will:
+Sourcegraph management of self-hosted customer instances. Use of Managed Services will typically entail badged and/or VPN access for the Sourcegraph team to oversee management of existing customer's instances. This service will:
 - Provide dedicated experts with deep technical and infrastructure knowledge
 - Reduce resource burden by offloading maintenance of self-hosted Sourcegraph instances, providing quarterly instance tuning, and handling ongoing maintenance, upgrades, migration, configuration, and infrastructure related projects
 
 ### Scope of Managed Services
-Managed Services will provide dedicated Sourcegraph experts with direct access to a customer’s self-hosted instance. These experts will complete the following tasks according to the access they are granted.
+Managed Services will provide dedicated Sourcegraph experts with direct access to a customer's self-hosted instance. These experts will complete the following tasks according to the access they are granted.
 - Complete regular and recurring upgrades of the instance at an agreed upon cadence.
 - Perform quarterly system health checks to identify any areas for improvements, and oversee any updates to accomplish those improvements.
 - Build and maintain custom configurations of the underlying infrastructure and Sourcegraph features being used.
@@ -26,7 +26,7 @@ Managed Services will provide dedicated Sourcegraph experts with direct access t
 ### Access and Responsibilities
 The work completed by Managed Services will be aligned with the access the Sourcegraph team is given.
 
-At a bare minimum, the Managed Services team will need admin access to the customer’s self-hosted Sourcegraph UI and CLI. Granting the team direct access to the underlying infrastructure will unlock the ability to directly complete additional tasks related to implementing infrastructure improvements, building custom infrastructure configurations, building out any infrastructure related to feature add-ons (i.e. Executors), and more. Any tasks that require expanded system access that the Managed Services team is not granted will still need to be performed by someone at the customer organization that has the ability to do so.
+At a bare minimum, the Managed Services team will need admin access to the customer's self-hosted Sourcegraph UI and CLI. Granting the team direct access to the underlying infrastructure will unlock the ability to directly complete additional tasks related to implementing infrastructure improvements, building custom infrastructure configurations, building out any infrastructure related to feature add-ons (i.e. Executors), and more. Any tasks that require expanded system access that the Managed Services team is not granted will still need to be performed by someone at the customer organization that has the ability to do so.
 
 Because of this, the Managed Services team will need a primary point of contact at the customer who will:
 - Assist with the coordination of tasks that need to be completed by members of the organization.

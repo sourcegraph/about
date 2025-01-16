@@ -34,7 +34,7 @@ Sourcegraph 3.37 is now available! For this release, we introduced:
 
 [Code Insights](https://docs.sourcegraph.com/code_insights) is now generally available. Code Insights transforms any search query into customizable, visual dashboards in seconds. Code Insights reveals high-level information about your codebase, based on both how your code changes over time and its current state.
 
-If you’re already using Sourcegraph, upgrade to 3.37 for a limited trial of Code Insights or reach out to your account team to purchase access to the full version.
+If you're already using Sourcegraph, upgrade to 3.37 for a limited trial of Code Insights or reach out to your account team to purchase access to the full version.
 
 <div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
   <iframe

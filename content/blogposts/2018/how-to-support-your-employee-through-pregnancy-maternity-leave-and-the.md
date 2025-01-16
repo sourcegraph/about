@@ -23,11 +23,11 @@ Today was my first day back to work at [Sourcegraph](https://sourcegraph.com) af
 
 3. Get necessary props: There are numerous props that can make pregnancy way more comfortable for your employee and help them maintain productivity. E.g.: A standing desk with foot pad helps against back pain. An ergonomic mouse will prevent carpal tunnel (a common issue during pregnancy), etc.
 
-4. Offer prenatal benefits: Prenatal yoga/aquatics class are often only offered around noon/early afternoon. Let your employee go to them and have benefits to pay for these classes. It’s a win-win: Your employee will have a healthier pregnancy, experience less issues, stay productive and motivated.
+4. Offer prenatal benefits: Prenatal yoga/aquatics class are often only offered around noon/early afternoon. Let your employee go to them and have benefits to pay for these classes. It's a win-win: Your employee will have a healthier pregnancy, experience less issues, stay productive and motivated.
 
 5. Your employee has the right to take up to 4 weeks pregnancy related disability leave before the due date in California. Make sure they feel safe enough to take this leave without worrying about their job/position/career development. The last pregnancy month is the hardest.
 
-6. Respect your employee’s wish to work until they feel ready to take their leave. I was able and wanting to work up to 3 days before giving birth due to an “easy” pregnancy with no complications. I’m glad I got to work so long, though I know other moms-to-be need the time off due to more difficult pregnancies. It was great that my team was supportive of my decision, didn't make me feel uncomfortable or was judgmental about my choice. Every pregnancy is different and every welcome back from maternity leave should be, too.
+6. Respect your employee's wish to work until they feel ready to take their leave. I was able and wanting to work up to 3 days before giving birth due to an “easy” pregnancy with no complications. I'm glad I got to work so long, though I know other moms-to-be need the time off due to more difficult pregnancies. It was great that my team was supportive of my decision, didn't make me feel uncomfortable or was judgmental about my choice. Every pregnancy is different and every welcome back from maternity leave should be, too.
 
 7. After birth: A no-brainer, but FYI: Your employee just created a little miracle (or maybe even more than one)! Rejoice and welcome the new life with a thoughtful gift that will help the new parents: baby clothes/props are great and also something nice for the new mama like a beautiful flower bouquet**!
 
@@ -41,7 +41,7 @@ Today was my first day back to work at [Sourcegraph](https://sourcegraph.com) af
 
 11. Once you welcome the employee back from maternity leave and they go back to work, plan together how the first weeks will look like to help their transition back to the original workflow. Temporary part time work or 4 days work week can help adding back the full time work to the new full time parent situation.
 
-12. Encourage them to block time in their calendar for pumping sessions. Not pumping enough at work can lead to painful mastitis, engorgement and a significant drop of their breast milk production, so things you don’t want your employee to be worrying about while working.
+12. Encourage them to block time in their calendar for pumping sessions. Not pumping enough at work can lead to painful mastitis, engorgement and a significant drop of their breast milk production, so things you don't want your employee to be worrying about while working.
 
 13. Help where you can: Some companies are able to offer their employees “baby cash” to help them purchase baby gear. Sleep deprived parents also are very appreciative of companies that subsidize night doulas or rent out a Snoo to help sleep train the baby.
 

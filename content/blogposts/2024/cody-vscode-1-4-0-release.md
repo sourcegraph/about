@@ -19,7 +19,7 @@ Cody for VS Code v1.4.0 is now available and includes a completely reworked Gene
 
 ## Generate Unit Tests: File creation
 
-We’ve redeveloped the Generate Unit Tests command so instead of outputting the test code into chat it now uses the LLM to automatically find or generate the matching unit test file, and streams the result directly into the file. No more copy and pasting from chat.
+We've redeveloped the Generate Unit Tests command so instead of outputting the test code into chat it now uses the LLM to automatically find or generate the matching unit test file, and streams the result directly into the file. No more copy and pasting from chat.
 
 <Video
   source={{
@@ -32,7 +32,7 @@ We’ve redeveloped the Generate Unit Tests command so instead of outputting the
 
 ## Edit: Keyboard shortcut hints
 
-There are two new keyboard shortcuts when you’re in an editor: Alt/Opt+K to Edit, and Alt/Opt+L to Chat. You can also now enable hints for these commands in the settings menu:
+There are two new keyboard shortcuts when you're in an editor: Alt/Opt+K to Edit, and Alt/Opt+L to Chat. You can also now enable hints for these commands in the settings menu:
 
 <Video
   source={{
@@ -92,7 +92,7 @@ After a number of optimizations in autocomplete logic, and improved traffic rout
 
 ## Autocomplete: Easier access to settings
 
-We’ve added a settings button for autocomplete, providing quicker access to your Cody autocomplete settings. There’s also a new setting for disabling completions in code comments.
+We've added a settings button for autocomplete, providing quicker access to your Cody autocomplete settings. There's also a new setting for disabling completions in code comments.
 
 <Video
   source={{
@@ -104,7 +104,7 @@ We’ve added a settings button for autocomplete, providing quicker access to yo
 
 ## Autocomplete: Improved multi-line completion quality
 
-We’ve changed the multi-line suggestion algorithm to reduce lower quality completions. Multi-line completions are now only generated for the following file types: c, cpp, csharp, css, dart, elixir, go, html, java, javascript, javascriptreact, php, python, rust, svelte, typescript, typescriptreact, vue.
+We've changed the multi-line suggestion algorithm to reduce lower quality completions. Multi-line completions are now only generated for the following file types: c, cpp, csharp, css, dart, elixir, go, html, java, javascript, javascriptreact, php, python, rust, svelte, typescript, typescriptreact, vue.
 
 
 ## Changelog
@@ -114,7 +114,7 @@ See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.4
 
 ## Thank you
 
-Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 As always, we value your feedback in [Discord](https://discord.com/servers/sourcegraph-969688426372825169) and [GitHub](https://github.com/sourcegraph/cody/issues/new/choose). Happy Codying!
 

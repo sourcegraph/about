@@ -172,7 +172,7 @@ These charts are another way to compare the performance of the implemantations s
 
 ![Ajmani-9](//images.contentful.com/le3mxztn6yoo/6JcrlbxMsgQQoCYOWA6uOC/374cb81475b49e86a1095e6f3926f34f/Screen_Shot_2017-11-05_at_6.42.16_PM.png)
 
-The left-hand chart shows the throughput of each implementation when running with 6 CPU's, and the right shows their latency distributions. The whole-kitchen locking has much lower throughput and much higher latency than our ideal implementation. The fine-grain locking implementation does better, peaking at around 1000 lattes per second due the the structural limits we saw earlier. We overcome this structural limit by adding more coffee machines. With two of each machine, we achieve ideal performance. Doubling again to four of each machine gains us nothing, since we’ve already maxed out our 6 CPU's. Now, our CPU's are the limiting factor, so to increase performance further, we’ll need more CPU's.
+The left-hand chart shows the throughput of each implementation when running with 6 CPU's, and the right shows their latency distributions. The whole-kitchen locking has much lower throughput and much higher latency than our ideal implementation. The fine-grain locking implementation does better, peaking at around 1000 lattes per second due the the structural limits we saw earlier. We overcome this structural limit by adding more coffee machines. With two of each machine, we achieve ideal performance. Doubling again to four of each machine gains us nothing, since we've already maxed out our 6 CPU's. Now, our CPU's are the limiting factor, so to increase performance further, we'll need more CPU's.
 
 So far, we've simulated a shared kitchen, where each person making coffee takes turns using a shared set of machines. However, we usually see a small number of baristas operating the machines, which is more efficient. The next simulation is a coffee assembly line, where one person operates each machine.
 
@@ -210,7 +210,7 @@ The grinder receives new orders on the orders channel, grinds the beans, and pas
 ![Ajmani-10](//images.contentful.com/le3mxztn6yoo/3hW6CAFiWsiaucickKY6G6/c696e28c310cefaeb4ddcc1d7ebf2fe2/Screen_Shot_2017-11-05_at_6.42.38_PM.png)
 
 When we look at the performance of this pipeline, it looks a lot like the fine-grain locking implementation. the latency is identical, but the throughput is slightly less until we reach 6 CPU's.
-The latency is the time it takes to run each of the 4 stages, so it makes sense that that would remain the same in the locking and pipeline implementations. But the pipeline’s throughput is less because it is not utilizing the three contended machines as efficiently.
+The latency is the time it takes to run each of the 4 stages, so it makes sense that that would remain the same in the locking and pipeline implementations. But the pipeline's throughput is less because it is not utilizing the three contended machines as efficiently.
 
 The real world analogy:
 Consider what happens when the person using the grinder finishes grinding the beans.  In the locking implementation, the person steps away and waits for the espresso machine, and someone else can use the grinder.
@@ -225,11 +225,11 @@ Sameer tested pipelines with buffer size 1 and size 10. Their lines are overlapp
 
 ![Ajmani-12](//images.contentful.com/le3mxztn6yoo/4IcTrvh78I04gKcqUqI0cQ/c8003aa4361820d8d0bb51e7f45dd991/Screen_Shot_2017-11-05_at_6.42.56_PM.png)
 
-What we see in these charts is that the differences between fine-grain locking and the various pipelines are all pretty minor. The two big gains came from structural changes. The first was moving from the whole-kitchen lock to fine-grain, per-machine locks. This reduced the time spent in any one critical section, so that more work could run in parallel. The second was recognizing when our existing resources were fully utilized and adding more capacity. This allowed us to max out our 6 CPU's. The CPU's are now our limiting resource, so if we want to get more throughput, we’ll need to add more CPU's to run our simulation.
+What we see in these charts is that the differences between fine-grain locking and the various pipelines are all pretty minor. The two big gains came from structural changes. The first was moving from the whole-kitchen lock to fine-grain, per-machine locks. This reduced the time spent in any one critical section, so that more work could run in parallel. The second was recognizing when our existing resources were fully utilized and adding more capacity. This allowed us to max out our 6 CPU's. The CPU's are now our limiting resource, so if we want to get more throughput, we'll need to add more CPU's to run our simulation.
 
 ![Ajmani-13](//images.contentful.com/le3mxztn6yoo/3vevQinLteSYUykY60qqmo/8fc797f91c0e10288cddb3c6305aa8a2/Screen_Shot_2017-11-05_at_6.43.03_PM.png)
 
-In preparing for this talk, Sameer tried many more scenarios than the ones shown so far. He tried changing the number of stages, changing their duration, and adding random noise. He also tried making the steam-milk stage run in parallel with the other stages. What’s remarkable is how little any of that mattered. Most changes had only small effects on performance, but the structural changes provided major gains.
+In preparing for this talk, Sameer tried many more scenarios than the ones shown so far. He tried changing the number of stages, changing their duration, and adding random noise. He also tried making the steam-milk stage run in parallel with the other stages. What's remarkable is how little any of that mattered. Most changes had only small effects on performance, but the structural changes provided major gains.
 
 The lesson of this talk is to identify and remove the structural barriers to parallelism in your system. Removing these barriers will help your system scale. In this situation, he did this by reducing the time spent in critical sections, and we did this again by adding more replicas of contended resources. He also did this with buffering, which allowed upstream pipeline stages to proceed without blocking on downstream stages. While these changes have benefits, remember that they also have costs, such as increased resource use. In doing these kinds of investigations, the Go execution tracer is an invaluable tool.
 

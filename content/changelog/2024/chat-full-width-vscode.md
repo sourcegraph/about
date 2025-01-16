@@ -18,6 +18,6 @@ relatedTopics:
     url: https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai
 ---
 
-We heard from users that the chat wasn’t using the full sidebar width, and the chat text was narrower than needed. We’ve updated this to make chat more space-efficient.
+We heard from users that the chat wasn't using the full sidebar width, and the chat text was narrower than needed. We've updated this to make chat more space-efficient.
 
 ![cody-chat-full-width](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-32-release/chat-width.png)

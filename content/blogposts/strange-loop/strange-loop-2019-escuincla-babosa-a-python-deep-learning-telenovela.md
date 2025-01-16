@@ -128,7 +128,7 @@ Text Generated: (30 epochs - Jane the Virgin - 5 SEASONS = 100 EPISODES)
 
 Text Generated: (30 epochs - Ugly Betty - 4 SEASONS - 85 EPISODES)
 
-"the graphics department is very unhappy. do not pull or bite their hair ahem let’s show softer side"
+"the graphics department is very unhappy. do not pull or bite their hair ahem let's show softer side"
 
 Text Generated: (30 epochs - Queen of the South - 4 SEASONS - 52 EPISODES)
 
@@ -136,7 +136,7 @@ Text Generated: (30 epochs - Queen of the South - 4 SEASONS - 52 EPISODES)
 
 Text Generated: (30 epochs - All)
 
-"i’m proof that surprise happen. even if you do not believe me. why would you? i am a woman after all"
+"i'm proof that surprise happen. even if you do not believe me. why would you? i am a woman after all"
 
 
 They're pretty good (particularly that last one), but Mesa asks what we could do to improve things further? Her first thought is to train individual models for each character and let let them interact, creating more interesting interactions. Another idea would be to expand her training dataset, finding similar enough inputs to her core example that they could still teach the model something. Finally, she could train models to specialize in specific plot arcs, such as lost love, amnesia, etc.

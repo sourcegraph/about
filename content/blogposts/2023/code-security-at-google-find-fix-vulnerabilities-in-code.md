@@ -37,7 +37,7 @@ The [Log4j "Log4Shell" incident (CVE-2021-44228)](https://about.sourcegraph.com/
 >
 > Internally at Google, we have a tool called Rosie that allows developers to make large scale changes to codebases owned by hundreds of different teams.
 
-Google devs frequently apply large-scale changes to fix security issues across Google's entire codebase. But at the time, no such tool existed inside most other companies or for the open-source universe. So, Google "recruited even more engineers from around Google to patch the world’s code the hard way," eventually patching 2,600 open-source projects.
+Google devs frequently apply large-scale changes to fix security issues across Google's entire codebase. But at the time, no such tool existed inside most other companies or for the open-source universe. So, Google "recruited even more engineers from around Google to patch the world's code the hard way," eventually patching 2,600 open-source projects.
 
 The 2017 blog post retelling the Operation Rosehub story ends with a plea for devs to pay "attention to the fact that the tools now exist for fixing software on a massive scale." (This is one of the inspirations for Sourcegraph [Batch Changes](https://about.sourcegraph.com/batch-changes) ([docs](https://docs.sourcegraph.com/batch_changes)), which helped many organizations [find and fix the recent Log4j issue](https://about.sourcegraph.com/blog/log4j-log4shell-0-day/#Automate-PRs-to-fixmitigate-the-log4j-0-day-across-all-your-code) across their entire codebase.)
 

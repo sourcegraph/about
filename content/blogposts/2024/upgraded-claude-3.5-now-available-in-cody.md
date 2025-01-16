@@ -4,7 +4,7 @@ authors:
   - name: Alex Isken
     url: https://x.com/alexanderisken
 publishDate: 2024-10-22T10:00-01:00
-description: "Anthropic’s new, upgraded version of Claude 3.5 Sonnet is available now for all Cody users."
+description: "Anthropic's new, upgraded version of Claude 3.5 Sonnet is available now for all Cody users."
 tags: [blog]
 slug: 'upgraded-claude-3.5-sonnet-available-in-cody'
 published: true

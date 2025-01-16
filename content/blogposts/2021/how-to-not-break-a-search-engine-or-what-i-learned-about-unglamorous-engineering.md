@@ -144,7 +144,7 @@ been catching bugs ever since.
 
 If unit testing is the appetizer and integration testing the main course, fuzz
 testing is the dessert. Fuzz testing would reveal rare, corner-case inputs that
-crash the server violently. They’re kind of fun to discover. I used the
+crash the server violently. They're kind of fun to discover. I used the
 excellent [dyukov/go-fuzz](https://github.com/dvyukov/go-fuzz) tool and found
 it's a breeze to set up.
 
@@ -208,7 +208,7 @@ There's unglamorous engineering in the software all around us. For all its lack
 of recognition, I wish we grasped its value a bit better. I'm reminded of a
 tweet by a former colleague who researched donations for open source projects:
 
-<blockquote className="twitter-tweet align-center" data-conversation="none"><p lang="en" dir="ltr">I can tell you from some informal interviews we did outside that paper, that people spend the money on gruntwork — the stuff that’s fun they’re more likely to do anyway, money or not.</p>&mdash; Bogdan Vasilescu (@b_vasilescu) <a href="https://twitter.com/b_vasilescu/status/1279199236094132227?ref_src=twsrc%5Etfw">July 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+<blockquote className="twitter-tweet align-center" data-conversation="none"><p lang="en" dir="ltr">I can tell you from some informal interviews we did outside that paper, that people spend the money on gruntwork — the stuff that's fun they're more likely to do anyway, money or not.</p>&mdash; Bogdan Vasilescu (@b_vasilescu) <a href="https://twitter.com/b_vasilescu/status/1279199236094132227?ref_src=twsrc%5Etfw">July 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 
 This suggests that gruntwork, if not glamorous, is certainly valuable (and
 perhaps, even disproportionately so). At the same time, I wouldn't necessarily

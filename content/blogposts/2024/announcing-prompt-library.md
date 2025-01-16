@@ -23,7 +23,7 @@ In particular, we've heard from many customers and developers that their existin
 Today, we're introducing **Prompt Library** to tackle this problem. It will speed up AI adoption in your engineering organization and it will encourage your team to share their knowledge about how to effectively use AI across your specific workflows. That way, every single engineer on your team can quickly get up to speed and leverage AI in a uniform way. Here's how it works:
 
 ## Creating a new prompt
-1.	Go to Sourcegraph’s [web interface](https://sourcegraph.com/search) and log in.
+1.	Go to Sourcegraph's [web interface](https://sourcegraph.com/search) and log in.
 
 2.	From the top menu, find **Tools** and then **Prompt Library**.
 
@@ -45,7 +45,7 @@ Additionally, from the Prompt Library in the Sourcegraph web interface, you can 
 
 ## Example Use Cases
 
-Let’s take a look at three realistic example use cases for the Prompt Library.
+Let's take a look at three realistic example use cases for the Prompt Library.
 
 ## 1. “Cody is not giving me code in the right language/framework version”
 
@@ -78,7 +78,7 @@ By sharing this prompt with your team, everyone can ensure that Cody generates c
 
 ![java-example](https://storage.googleapis.com/sourcegraph-assets/blog/prompt-library/7-java-example.gif)
 
-## 2. “Cody is not following my organization’s style guide”
+## 2. “Cody is not following my organization's style guide”
 
 Suppose your organization has a specific Python coding style guide that mandates the use of snake_case for variable names and requires docstrings for all functions. However, Cody might generate code that doesn't adhere to these conventions, leading to inconsistencies in your codebase.
 
@@ -103,7 +103,7 @@ This prompt can be shared with your colleagues to ensure consistent code style a
 
 ## 3. “Cody is not generating tests in the right format”
 
-Imagine you are working with [Golang](https://go.dev/) and need Cody to generate unit tests that comply with your team’s conventions. Your organization follows a specific structure for tests, including the use of table-driven tests and `require` from the `testify` package for assertions.
+Imagine you are working with [Golang](https://go.dev/) and need Cody to generate unit tests that comply with your team's conventions. Your organization follows a specific structure for tests, including the use of table-driven tests and `require` from the `testify` package for assertions.
 
 However, Cody might provide a simple test that does not align with your standards:
 

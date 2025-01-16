@@ -1,5 +1,5 @@
 ---
-title: '“I don’t like things that write code for me”: Dev Tool Time with Mitchell Hashimoto'
+title: '“I don't like things that write code for me”: Dev Tool Time with Mitchell Hashimoto'
 description: 'Mitchell Hashimoto, co-founder, CTO, and now individual contributor at HashiCorp, shares how reproducible environments with NixOS and an iPad fit into his developer workflow, and his sentiments about IDEs.'
 authors:
   - name: Scott Bailey
@@ -14,13 +14,13 @@ published: true
 
 When [Mitchell Hashimoto](https://twitter.com/mitchellh), co-founder, former CTO, and now engineer at HashiCorp, joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on July 21, 2021, he showed how the simplest and most complex dev tools can fit into a developer workflow.
 
-You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out Mitchell’s desk:
+You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let's check out Mitchell's desk:
 
-![Mitchell’s hardware setup](https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-mitchell-hashimoto-desk.jpeg)
+![Mitchell's hardware setup](https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-mitchell-hashimoto-desk.jpeg)
 
 ## Hardware setup
 
-Mitchell’s main computer is an [Apple iMac](https://www.apple.com/imac/), with an ergonomic keyboard from Microsoft and an Anker mouse.
+Mitchell's main computer is an [Apple iMac](https://www.apple.com/imac/), with an ergonomic keyboard from Microsoft and an Anker mouse.
 
 ### Other computers:
 
@@ -28,7 +28,7 @@ In a stack on the left, he keeps three different MacBooks of different ages and 
 
 - One older laptop used for testing
 - An official HashiCorp laptop for use on the go
-- A [MacBook Air](https://www.apple.com/macbook-air/) with Apple’s M1 silicon for personal use and testing
+- A [MacBook Air](https://www.apple.com/macbook-air/) with Apple's M1 silicon for personal use and testing
 
 Mitchell also has a stack of [Raspberry Pi](https://www.raspberrypi.org/) computers to the right of his iMac, which together run a HashiCorp stack.
 
@@ -49,7 +49,7 @@ Mitchell uses his iPad and Apple Pencil for a mix of personal and professional w
 
 Operating system and other software updates regularly break development environments. Mitchell avoids this recurring problem using NixOS in a VM running with [VMware Fusion](https://www.vmware.com/products/fusion.html).
 
-> “My biggest criticism about Nix is that their learning is like a sheer cliff. It’s the hardest learning curve of probably in tech I've ever learned.”
+> “My biggest criticism about Nix is that their learning is like a sheer cliff. It's the hardest learning curve of probably in tech I've ever learned.”
 
 Despite its difficult learning curve, NixOS makes the entire development environment reproducible and easy to change, knowing that you can always roll back to previous versions.
 
@@ -64,17 +64,17 @@ Within the NixOS VM, two other tools help Mitchell set and use packages and envi
 
 Neovim provides Mitchell with the straightforward editor experience he wants, and he uses a minimal number of plugins. Two plugins or features of Neovim he uses are:
 
-- [Neovim’s LSP support](https://github.com/neovim/nvim-lspconfig) provides dignostic errors and other LSP features
+- [Neovim's LSP support](https://github.com/neovim/nvim-lspconfig) provides dignostic errors and other LSP features
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) provides exceptional syntax highlighting
 
-> “I just don’t feel like I personally need an IDE experience ... I don’t like things that write code for me; I want to do it myself.”
+> “I just don't feel like I personally need an IDE experience ... I don't like things that write code for me; I want to do it myself.”
 
-You can check out Mitchell’s Vim config at [mitchell/vim-misc](https://github.com/mitchellh/vim-misc), and it’s mostly agnostic between Neovim and Vim.
+You can check out Mitchell's Vim config at [mitchell/vim-misc](https://github.com/mitchellh/vim-misc), and it's mostly agnostic between Neovim and Vim.
 
 ## Other tools
 
 - [i3](https://i3wm.org/) for window management in the NixOS VM
-- [Kitty](https://sw.kovidgoyal.net/kitty/) is Mitchell’s preferred terminal inside the VM
+- [Kitty](https://sw.kovidgoyal.net/kitty/) is Mitchell's preferred terminal inside the VM
 - [Slate](https://github.com/jigish/slate) for window management on Mac, mainly used for basic corners and splits
 - [Alfred](https://www.alfredapp.com/) for shortcuts and application launching
 

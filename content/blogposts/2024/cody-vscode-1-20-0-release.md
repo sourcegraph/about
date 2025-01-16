@@ -16,7 +16,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-20-release/cody-vscode-1.20-og-image.jpg
 ---
 
-[Cody for VS Code v1.20](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) is now available. This update makes big updates to Cody’s chat sidebar with a new UX, smarter context retrieval, and more intuitive ways to retry prompts with different contexts to get the results you’re looking for. We’re also introducing experimental support for OpenCtx context providers.
+[Cody for VS Code v1.20](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) is now available. This update makes big updates to Cody's chat sidebar with a new UX, smarter context retrieval, and more intuitive ways to retry prompts with different contexts to get the results you're looking for. We're also introducing experimental support for OpenCtx context providers.
 
 If you want to watch a walkthrough of the new features, check out our new YouTube video:
 
@@ -40,7 +40,7 @@ Since your first message to Cody anchors the conversation, you can return to the
 
 ## Smarter and more intuitive context retrieval
 
-We’re making the way Cody uses context more intuitive, user-friendly, and easily editable.
+We're making the way Cody uses context more intuitive, user-friendly, and easily editable.
 
 Previously, Cody automatically sourced its context. It would use your chat input to search against your open repository, find file chunks, and use those file chunks as context.
 
@@ -52,7 +52,7 @@ Now, Cody defaults to showing `@-mention` context chips for all the context it i
   caption="Example of context chips + a prompt"
 />
 
-You can delete these context chips if this isn’t the context you want to use. Submitting a chat with no context chips will direct Cody to use no codebase context. If you know the exact context you want Cody to use—like a specific file—you can `@-mention` it (or replace the existing context chips with your own).
+You can delete these context chips if this isn't the context you want to use. Submitting a chat with no context chips will direct Cody to use no codebase context. If you know the exact context you want Cody to use—like a specific file—you can `@-mention` it (or replace the existing context chips with your own).
 
 When you have both a repository and files @-mentioned, Cody will search the repository for context while prioritizing the mentioned files.
 
@@ -68,12 +68,12 @@ When you have both a repository and files @-mentioned, Cody will search the repo
 
 ## Retry prompts with new context
 
-Sometimes, Cody doesn’t answer chat correctly on the first attempt. In these cases, we want to make it easier to re-run prompts quickly with slight tweaks to context.
+Sometimes, Cody doesn't answer chat correctly on the first attempt. In these cases, we want to make it easier to re-run prompts quickly with slight tweaks to context.
 
-Now, when you chat with Cody, you’ll see buttons to retry prompts with different contexts:
+Now, when you chat with Cody, you'll see buttons to retry prompts with different contexts:
 
 * **Automatic code context** (Cody will search for its own context to use)
-* **Public knowledge only** (Cody will not use context; it’ll only use knowledge from the base model)
+* **Public knowledge only** (Cody will not use context; it'll only use knowledge from the base model)
 * **Choose file** (You can manually select a file to use as context)
 
 <Video
@@ -88,7 +88,7 @@ Now, when you chat with Cody, you’ll see buttons to retry prompts with differe
 
 We recently [announced OpenCtx](https://sourcegraph.com/blog/openctx-at-mentions-for-code-ai), an open standard for bringing contextual info about code into your dev tools. Using code AI with context from your other dev tools opens up all new possibilities and use cases for being more productive from your IDE.
 
-Today, we’re releasing experimental functionality to use OpenCtx context providers in Cody. You can now configure Cody to use context like:
+Today, we're releasing experimental functionality to use OpenCtx context providers in Cody. You can now configure Cody to use context like:
 
 * [Webpages (via URL)](https://openctx.org/docs/providers/web)
 * [Jira tickets](https://openctx.org/docs/providers/jira)
@@ -127,7 +127,7 @@ See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.2
 
 ## Thank you
 
-Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 We value your feedback in our [support forum](https://community.sourcegraph.com/c/cody/5), [Discord](https://discord.com/servers/sourcegraph-969688426372825169), and [GitHub](https://github.com/sourcegraph/cody/discussions). Happy Codying!
 

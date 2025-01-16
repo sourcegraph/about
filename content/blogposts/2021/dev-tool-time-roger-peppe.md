@@ -14,7 +14,7 @@ published: true
 
 Many devs, especially those who love Vim and Emacs, carefully fine-tune their editor, terminal, and even OS configurations so that their hands rarely leave the keyboard. Roger Peppé, Software Engineer at InfluxData, took a different path, driven by the simplicity and power of the [Acme text editor](http://acme.cat-v.org/) and mouse chording. When Rog joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on November 10, 2021, he demonstrated a different model of text editing, which will seem at once familiar and strange.
 
-You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out Rog’s fully standing desk setup:
+You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let's check out Rog's fully standing desk setup:
 
 ## Standing, rocking, clicking
 

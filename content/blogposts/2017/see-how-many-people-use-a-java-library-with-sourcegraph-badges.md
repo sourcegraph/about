@@ -15,11 +15,11 @@ published: true
 
 **Update (September 20, 2017):** Viewing a list of repositories that refer to another repository is currently disabled. It will be added back soon. Viewing function call sites across repositories is still supported.
 
-We’re excited to announce that **Sourcegraph “used by” badges** now support Java libraries. If you’re an open source author, these badges tell you how many other projects depend on your work. If you’re an open source user, the badges help you make an informed decision based on how many others are actually using and relying on a library.
+We're excited to announce that **Sourcegraph “used by” badges** now support Java libraries. If you're an open source author, these badges tell you how many other projects depend on your work. If you're an open source user, the badges help you make an informed decision based on how many others are actually using and relying on a library.
 
 ![](https://cdn-images-1.medium.com/max/800/1*d3pUuXjGPHqmW_Sz69Y19A.png)[![](https://cdn-images-1.medium.com/max/800/1*1dziZxK--_T9DmzYdGIIIA.png)](https://sourcegraph.com/github.com/junit-team/junit@cebbf5e15725b4dc247ac0557f6fa63f475b15af/-/blob/src/main/java/org/junit/Test.java#L66:19-66:23)JUnit is used by over 6 thousand open source projects.
 
-Our badges pull dependency information from the same global code graph that helps you make sense of code on [Sourcegraph.com](https://sourcegraph.com). Code is data, and we’re on a mission to make that data useful to programmers everywhere.
+Our badges pull dependency information from the same global code graph that helps you make sense of code on [Sourcegraph.com](https://sourcegraph.com). Code is data, and we're on a mission to make that data useful to programmers everywhere.
 
 ### How to add the badge
 

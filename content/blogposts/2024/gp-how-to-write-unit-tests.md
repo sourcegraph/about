@@ -19,9 +19,9 @@ Catching bugs late in the development process is frustrating and costly. As reno
 
 This guide on unit testing will explain why writing unit tests matters, discuss the different unit-test frameworks available, how unit-testing practices have evolved, and provide some pro tips for writing maintainable unit tests. It will also show how [Cody](https://sourcegraph.com/cody) can enhance the whole process.
 
-Now, let’s break down the details.
+Now, let's break down the details.
 
-Before we discuss the unit test framework, let’s understand why unit tests matter.
+Before we discuss the unit test framework, let's understand why unit tests matter.
 
 Unit testing is the practice of isolating individual units or functions of your code. A "**unit**" refers to the smallest testable part of an application, such as a function, method, or class.
 Testing at the unit level ensures that each "**unit**" of your software works correctly. If issues occur, they can be fixed early, saving time and resources.
@@ -117,7 +117,7 @@ As software development evolved, so did unit testing practices. From manual test
 
 5. **Modern era:** [AI-powered assistants](https://sourcegraph.com/blog/how-to-choose-the-ai-coding-assistant-that-works-best-for-your-engineering-team) like [Cody](https://sourcegraph.com/cody) are on the scene, providing automated unit tests, identifying edge cases, and streamlining development workflows.
 
-To effectively write good unit tests and maintain them, let’s look into the practical tips for creating effective and maintainable unit tests, including code snippets that demonstrate various scenarios (positive, negative, and edge cases)
+To effectively write good unit tests and maintain them, let's look into the practical tips for creating effective and maintainable unit tests, including code snippets that demonstrate various scenarios (positive, negative, and edge cases)
 
 ## How to write good and maintainable unit tests
 
@@ -182,7 +182,7 @@ To understand the result, unit test outcomes are categorized into two:
 
 - **Failed tests:** A failed test signals an issue that needs attention. Go provides detailed error messages pinpointing the exact failed assertion and the values involved.
 
-You can automate the entire manual process of writing unit tests and create a maintainable test using Cody; let’s see how Cody can optimize and simplify this process.
+You can automate the entire manual process of writing unit tests and create a maintainable test using Cody; let's see how Cody can optimize and simplify this process.
 
 ## Simplifying unit testing with Cody
 
@@ -239,7 +239,7 @@ Let's use a **Go word search program** as an example. It includes a function tha
 Once Cody is installed and set up in your development environment, you can leverage its capabilities to generate unit tests for this Go program.
 
 **Writing unit tests with Cody**
-Let’s generate unit tests for the **Go search program** described above in the code snippet by following these steps:
+Let's generate unit tests for the **Go search program** described above in the code snippet by following these steps:
 
 1. **Generate unit tests**: Open your Go program in your code editor where Cody is installed. Use Cody's **COMMANDS** in the editor, as shown below, to **Generate Unit Tests** for the `searchWords` function.
 

@@ -66,7 +66,7 @@ Watch the recording of the 3.14 release livestream with Product Manager Christin
 
 ## Faster syncing of GitLab and Bitbucket Server repository permissions
 
-Sourcegraph permissions syncing is now more sophisticated to better handle repository permissions at scale. Rather than updating a user’s permissions when they log in and potentially blocking them from seeing search results, Sourcegraph now syncs these permissions opportunistically, as part of a background service. Users are now able to see results from their search queries immediately. Currently, this improvement is supported for GitLab and Bitbucket Server, with GitHub and other code hosts coming soon. See the [documentation for more details](https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing).
+Sourcegraph permissions syncing is now more sophisticated to better handle repository permissions at scale. Rather than updating a user's permissions when they log in and potentially blocking them from seeing search results, Sourcegraph now syncs these permissions opportunistically, as part of a background service. Users are now able to see results from their search queries immediately. Currently, this improvement is supported for GitLab and Bitbucket Server, with GitHub and other code hosts coming soon. See the [documentation for more details](https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing).
 
 Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` in your site configuration settings.
 
@@ -89,7 +89,7 @@ It is now easier to sign in with the Sourcegraph browser extension or native int
 
 ## Deploy and scale Sourcegraph with Docker Compose
 
-Sourcegraph 3.14 introduces a new [docker-compose deployment model](https://docs.sourcegraph.com/admin/install/docker-compose). This is useful for organizations that want to scale Sourcegraph, but don’t use Kubernetes. For any customers running a single Docker container and have experienced instability or issues with scaling, Docker Compose is likely the right solution for you!
+Sourcegraph 3.14 introduces a new [docker-compose deployment model](https://docs.sourcegraph.com/admin/install/docker-compose). This is useful for organizations that want to scale Sourcegraph, but don't use Kubernetes. For any customers running a single Docker container and have experienced instability or issues with scaling, Docker Compose is likely the right solution for you!
 
 ## Campaigns are easier to create and manage and have reduced the load on code hosts
 

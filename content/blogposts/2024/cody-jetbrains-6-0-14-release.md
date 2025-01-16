@@ -28,10 +28,10 @@ These models are available for chat and commands for _all_ Cody users, including
 
 ## ICYMI: Cody Free is now 10x better with no limit on completions
 
-We recently [upgraded Cody’s free tier](https://sourcegraph.com/blog/making-cody-free-10x-better), and it now includes:
+We recently [upgraded Cody's free tier](https://sourcegraph.com/blog/making-cody-free-10x-better), and it now includes:
 
 * **Model choice with Claude 3.5 Sonnet**: Cody Free users can now choose which model to use, including Mixtral, Gemini 1.5, Claude 3 Haiku, and even Claude 3.5 Sonnet
-* **Unlimited code completions**: We’re scrapping the limit on code completions. Every tier of Cody, including Cody Free, now gets unlimited AI-generated autocomplete
+* **Unlimited code completions**: We're scrapping the limit on code completions. Every tier of Cody, including Cody Free, now gets unlimited AI-generated autocomplete
 * **10x more chats and commands**: You now get 200 chats and commands every month, up from 20
 
 These changes are live for all users. Cody Pro is still available for $9/month for devs wanting unlimited chat and commands plus access to the best flagship models.
@@ -47,9 +47,9 @@ Press <kbd>Shift</kbd> twice to open the Search Everywhere window. Then, type in
   alt="Search Everywhere for Cody actions"
 />
 
-## Updates to Cody’s UI hints
+## Updates to Cody's UI hints
 
-When you highlight a code selection, Cody provides an inline hint — `Ctrl + Alt + ↵ to Edit` — next to your selection. This hint is now shown _below_ the last line of the selection to be less intrusive. It also isn’t shown when you only select a single line of code, which prevents it from appearing when you’re not intentionally editing a code selection (such as when you use Find/Replace and highlight multiple single-line selections).
+When you highlight a code selection, Cody provides an inline hint — `Ctrl + Alt + ↵ to Edit` — next to your selection. This hint is now shown _below_ the last line of the selection to be less intrusive. It also isn't shown when you only select a single line of code, which prevents it from appearing when you're not intentionally editing a code selection (such as when you use Find/Replace and highlight multiple single-line selections).
 
 <Video
   source={{
@@ -69,7 +69,7 @@ You can also turn off this UI hint in the Cody settings.
 
 ## Better notifications when hitting rate limits
 
-We understand that hitting rate limits can be frustrating when reaching the limit isn’t made obvious. For clarity, we’ve added notifications in the status bar to indicate when you’ve hit the chat and command rate limit.
+We understand that hitting rate limits can be frustrating when reaching the limit isn't made obvious. For clarity, we've added notifications in the status bar to indicate when you've hit the chat and command rate limit.
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrains-6-0-14-release/rate-limit-notification.png"
@@ -78,9 +78,9 @@ We understand that hitting rate limits can be frustrating when reaching the limi
 
 ## 🧪 Experimental: Ollama model support
 
-You can now power Cody’s chat and commands off Ollama models running on your local machine. This lets you chat without sending messages over the internet to an LLM provider so that you can use Cody offline. You can code with an AI coding assistant wherever you are, even on an airplane!
+You can now power Cody's chat and commands off Ollama models running on your local machine. This lets you chat without sending messages over the internet to an LLM provider so that you can use Cody offline. You can code with an AI coding assistant wherever you are, even on an airplane!
 
-You’ll need to install Ollama and download a chat model such as CodeGemma or Llama3. [The README provides full setup instructions](https://sourcegraph.com/github.com/sourcegraph/jetbrains/-/blob/README.md#use-ollama-models-for-chat--commands). Ollama is currently supported on the Free and Pro tiers.
+You'll need to install Ollama and download a chat model such as CodeGemma or Llama3. [The README provides full setup instructions](https://sourcegraph.com/github.com/sourcegraph/jetbrains/-/blob/README.md#use-ollama-models-for-chat--commands). Ollama is currently supported on the Free and Pro tiers.
 
 <Video
   source={{
@@ -97,7 +97,7 @@ See the [changelog](https://github.com/sourcegraph/jetbrains/releases/tag/v6.0.1
 
 ## Thank you
 
-Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 As always, we value your feedback in our [support forum](https://community.sourcegraph.com/) and on [Discord](https://discord.com/servers/sourcegraph-969688426372825169). Happy Codying!
 

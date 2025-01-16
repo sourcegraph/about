@@ -16,11 +16,11 @@ We just wrapped up our Faster Autocomplete project and now Cody is faster and sm
 
 Cody is built on model interoperability and promises to always provide the best, latest-gen models for every given task to help speed up devs and reduce toil. This update delivers on that promise by bringing a cutting-edge model to autocomplete, speeding up completions while increasing quality and accuracy.
 
-The big benefits are a **350ms reduction in autocomplete speeds along with a 58% increase in the number of accepted characters per user**. Let’s dive into some numbers and see how these changes are going to help Cody help you write code faster.
+The big benefits are a **350ms reduction in autocomplete speeds along with a 58% increase in the number of accepted characters per user**. Let's dive into some numbers and see how these changes are going to help Cody help you write code faster.
 
 ## Speed Boost: 350ms Faster
 
-Cody’s response time is down by a whopping 350ms. This means that our P75 latency (the time it takes for 75% of completions to appear) has decreased by 350ms for single-line completions, which represents 87% of all suggestions. Single-line completions have gone from 900ms to 690ms.
+Cody's response time is down by a whopping 350ms. This means that our P75 latency (the time it takes for 75% of completions to appear) has decreased by 350ms for single-line completions, which represents 87% of all suggestions. Single-line completions have gone from 900ms to 690ms.
 
 - Single line: 900ms -> 690ms
 - 2-5 lines: 1100ms -> 850ms
@@ -67,12 +67,12 @@ The implementation of Smart Throttle contributed significantly to Cody's perform
 
 Not only is Cody faster, but it's also getting better at suggesting code you actually want to use. The DeepSeek-V2 model has significantly improved the quality of suggestions. 
 
-We’ve seen a **58% increase** in the number of accepted characters per user. This means that the suggestions provided by Cody are more likely to be relevant and accepted. In practical terms, if you're writing a 1000-line program, Cody is now potentially writing 580 of those lines for you, up from about 367 before.
+We've seen a **58% increase** in the number of accepted characters per user. This means that the suggestions provided by Cody are more likely to be relevant and accepted. In practical terms, if you're writing a 1000-line program, Cody is now potentially writing 580 of those lines for you, up from about 367 before.
 
 - Suggested characters per user increased from 1,600 to 2,500.
 - Accepted characters per user increased from 600 to 950.
 
-Here’s our analytics tracking suggested characters and accepted characters:
+Here's our analytics tracking suggested characters and accepted characters:
 
 <Figure 
     src="https://storage.googleapis.com/sourcegraph-assets/blog/faster-autocomplete/autocomplete-characters.png"
@@ -89,7 +89,7 @@ For 2-5 line completions:
 
 CAR is the percentage of suggested completions that are accepted by the user. It's calculated by dividing the number of accepted completions by the total number of suggested completions. 
 
-An improvement of 4.24% means that users are accepting a higher proportion of Cody’s multi-line suggestions.
+An improvement of 4.24% means that users are accepting a higher proportion of Cody's multi-line suggestions.
 
 ### 30-second Persistence Rate improved by 2.53%
 

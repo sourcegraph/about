@@ -48,7 +48,7 @@ Jason's team confronted these issues and boiled things down into 4 central quest
 1. Centralize their data layer, but let teams keep control?
 1. Design an approach that _improves_ error handling rather than maintaining the bad status quo or make it even worse?
 1. Make it so easy teams _want_ to switch?
-1. Build a service that can handle IBM’s scale? (half a dozen data centers around the world with millions of unique visitors)
+1. Build a service that can handle IBM's scale? (half a dozen data centers around the world with millions of unique visitors)
 
 ## Challenge 1: Centralize data, decentralize control
 

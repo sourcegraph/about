@@ -32,7 +32,7 @@ The one big drawback was that individual users wanted to be able to scope their 
 
 With the launch of search contexts, all users (not just admins) can create and view their own search contexts as well as use public contexts created by admins, their organization, or other users.<a href="#footnote-1"><sup>1</sup></a> Why is this useful? For teams, creating search contexts makes it easier to focus your searches on repos you care about. Let's say, for example, that you work on internal tools and have a set of repositories you primarily work in. By creating a search context with those repos, you can have your searches scoped to the repos relevant to your work, ensuring the most relevant search results.
 
-If you’re a team lead or manager, you can create contexts and share them with the team. For companies with a large collection of repositories, this can simplify the search experience and speed up developer workflows.
+If you're a team lead or manager, you can create contexts and share them with the team. For companies with a large collection of repositories, this can simplify the search experience and speed up developer workflows.
 
 If you're an individual developer, you can create contexts out of sets of repositories you use often.
 
@@ -52,7 +52,7 @@ You can access search contexts in two ways. First, after you create a context, i
 
 ## Performing the migration to search contexts
 
-To help you migrate from version contexts to search contexts, we’ve created an automatic migration that allows you to selectively migrate your version contexts [with the click of a button](https://docs.sourcegraph.com/admin/how-to/converting-version-contexts-to-search-contexts).
+To help you migrate from version contexts to search contexts, we've created an automatic migration that allows you to selectively migrate your version contexts [with the click of a button](https://docs.sourcegraph.com/admin/how-to/converting-version-contexts-to-search-contexts).
 
 To migrate from repogroups to search contexts, you can follow the migration steps in [repogroups to search contexts migration guide](https://docs.sourcegraph.com/code_search/how-to/convert_repository_groups_to_search_contexts).
 
@@ -62,12 +62,12 @@ You will not lose any data stored in the configuration as a result of the deprec
 
 ## Conclusion
 
-Give search contexts a try and we think you’ll love them. You can learn how to create your own search contexts [here](https://docs.sourcegraph.com/code_search/how-to/search_contexts).
+Give search contexts a try and we think you'll love them. You can learn how to create your own search contexts [here](https://docs.sourcegraph.com/code_search/how-to/search_contexts).
 
-Below are some contexts and ideas to get you started. Remember to take a look at the context filter to see the context you’re in.
+Below are some contexts and ideas to get you started. Remember to take a look at the context filter to see the context you're in.
 
 - [The latest Facebook Android SDK version](https://sourcegraph.com/search?q=context:%40benvenker/fb-android-sdk-v12.0.1+&patternType=literal_)
-- [Auth0’s .Net Core authentication library at main](https://sourcegraph.com/search?q=context:%40benvenker/auth0/asp.net-core-auth+&patternType=literal)
+- [Auth0's .Net Core authentication library at main](https://sourcegraph.com/search?q=context:%40benvenker/auth0/asp.net-core-auth+&patternType=literal)
 - [Search only PHP, Kotlin, and Python repos](https://sourcegraph.com/search?q=context:%40benvenker/langs+&patternType=literal)
 - A search context for your team, division, or business unit
 

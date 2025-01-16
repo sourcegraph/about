@@ -29,7 +29,7 @@ To overcome these issues, we decided that, before diving into the redesign, we s
 
 1. Modular CSS is enforced for new design system components.
 2. It works well with existing global styles and UI elements.
-3. We have a clear migration path that doesn’t interfere with feature development.
+3. We have a clear migration path that doesn't interfere with feature development.
 
 ## CSS Modules solution
 
@@ -62,7 +62,7 @@ This approach is designed to fix the problem of the global scope in CSS. Enginee
 [The Frontend Platform team](https://handbook.sourcegraph.com/departments/product-engineering/engineering/enablement/frontend-platform/) started the migration by manually converting global styles to CSS modules for a single, recently developed feature. We quickly noticed that despite some initial progress, we had some questions that slowed us down:
 
 1. How can we know whether CSS Modules are continuously used for new features added to the project?
-2. What’s our current progress? What percentage of global styles have already been converted to CSS Modules?
+2. What's our current progress? What percentage of global styles have already been converted to CSS Modules?
 3. Given the current rate of changes, how much time will it take to migrate all remaining styles to CSS Modules?
 
 We knew we could search the codebase manually for relevant files and make conclusions based on that, or we could write a script to do it for us. But an ideal solution would give a clear, at-a-glance indication of where we were at the moment, and be easy for us to maintain. Thankfully, another product team at Sourcegraph had developed the exact solution to our problem!
@@ -79,7 +79,7 @@ Code Insights entered Beta in August 2021, and we happily started using it to tr
 
 We used a few simple search queries to create the code insight, and immediately got answers to all the questions important for migration tracking in one picture. It was a crucial tool in communicating where we were with the migration progress to the engineering organization going forward. Code Insights can be especially helpful for platform teams like ours, which do a lot of invisible work and can struggle to make the case for dedicating time to initiatives like tackling tech debt. Being able to communicate progress visually to stakeholders outside engineering or in leadership is really persuasive. Teams that typically manage large parts of a codebase can find it difficult to get insight into what is happening, and Code Insights makes that really easy.
 
-The migration that we started working on didn’t have any hard deadlines, so getting sidetracked with new shiny initiatives was easy. Also, multiple modules were a bit harder to rewrite, and we subconsciously delayed refactoring them. These factors contributed to slowing down, but having a code insight as a map of planned work with a clear destination was motivating to push the migration to 100% completion. It kept reminding us that we were close to our goal and helped us close this chapter without any leftover work.
+The migration that we started working on didn't have any hard deadlines, so getting sidetracked with new shiny initiatives was easy. Also, multiple modules were a bit harder to rewrite, and we subconsciously delayed refactoring them. These factors contributed to slowing down, but having a code insight as a map of planned work with a clear destination was motivating to push the migration to 100% completion. It kept reminding us that we were close to our goal and helped us close this chapter without any leftover work.
 
 ## Migration execution challenges
 
@@ -120,7 +120,7 @@ Finding a React component file with the corresponding global-styles file is easy
 
 ### 2. Convert global styles file into a CSS module.
 
-It’s a multistep operation:
+It's a multistep operation:
 
 - First, get rid of the BEM notation used for CSS selectors and remove redundant nesting required to ensure selector uniqueness.
 
@@ -164,7 +164,7 @@ const classMapping = {
 
 To manipulate Typescript AST, we used [ts-morph](https://github.com/dsherret/ts-morph) — TypeScript Compiler API wrapper for static analysis and programmatic code changes. Relying on this package API, the codemod script iterates over all string literals in the React component AST and searches for global classes processed in the previous step.
 
-Here’s the AST generated for our small example. Explore it yourself using [AST Explorer](https://astexplorer.net/#/gist/eca630c9f5464e6b027ec13aac91711a/4295e325b8cdad474f9d4f559248f534e709356e).
+Here's the AST generated for our small example. Explore it yourself using [AST Explorer](https://astexplorer.net/#/gist/eca630c9f5464e6b027ec13aac91711a/4295e325b8cdad474f9d4f559248f534e709356e).
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/insights-dashboard-ast.png"

@@ -1,5 +1,5 @@
 ---
-title: "How we’re thinking about the levels of code AI"
+title: "How we're thinking about the levels of code AI"
 authors:
   - name: Quinn Slack
     url: https://handbook.sourcegraph.com/team/#quinn-slack

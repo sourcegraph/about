@@ -81,7 +81,7 @@ Campaigns are currently in beta. During the beta period, campaigns are free to u
 
 ## Faster syncing of GitHub repository permissions
 
-Sourcegraph 3.15 adds faster repository permissions syncing at scale for GitHub. This functionality was previously [introduced for GitLab and Bitbucket Server](https://about.sourcegraph.com/blog/sourcegraph-3.14#faster-syncing-of-gitlab-and-bitbucket-server-repository-permissions) in Sourcegraph 3.14. Rather than syncing a user’s permissions when they log in and potentially blocking them from seeing search results, Sourcegraph syncs these permissions asynchronously in the background, opportunistically refreshing them in a timely manner. See the [documentation for more details](https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing).
+Sourcegraph 3.15 adds faster repository permissions syncing at scale for GitHub. This functionality was previously [introduced for GitLab and Bitbucket Server](https://about.sourcegraph.com/blog/sourcegraph-3.14#faster-syncing-of-gitlab-and-bitbucket-server-repository-permissions) in Sourcegraph 3.14. Rather than syncing a user's permissions when they log in and potentially blocking them from seeing search results, Sourcegraph syncs these permissions asynchronously in the background, opportunistically refreshing them in a timely manner. See the [documentation for more details](https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing).
 
 Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` in your site configuration settings.
 
@@ -145,7 +145,7 @@ Additionally, it is now possible to log all search and GraphQL requests slower t
   <p style={{textAlign: 'center'}}><a href="https://youtu.be/Q2ZWPwMmbOI" target="_blank">View on YouTube</a></p>
 </div>
 
-The new `visibility:` search scope enables filtering based on a repository’s shared state on the code host. Scope options include any, public, or private, and defaults to `visibility:any` when the scope is not specified.
+The new `visibility:` search scope enables filtering based on a repository's shared state on the code host. Scope options include any, public, or private, and defaults to `visibility:any` when the scope is not specified.
 
 ## Getting started prompt contains more context
 

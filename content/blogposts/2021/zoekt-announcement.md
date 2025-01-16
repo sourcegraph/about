@@ -1,6 +1,6 @@
 ---
 title: 'Sourcegraph is accepting maintainership of Zoekt'
-description: 'Today, we’re announcing that Sourcegraph is accepting maintainership of Zoekt, the prominent open source code search engine, from its creator, Han-Wen Nienhuys. This commitment ties directly into our mission of bringing code search to every developer in the world.'
+description: 'Today, we're announcing that Sourcegraph is accepting maintainership of Zoekt, the prominent open source code search engine, from its creator, Han-Wen Nienhuys. This commitment ties directly into our mission of bringing code search to every developer in the world.'
 authors:
   - name: Beyang Liu
     url: https://twitter.com/beyang
@@ -20,13 +20,13 @@ We've maintained a fork of Zoekt and have made a number of upstream contribution
 
 On this occasion, readers might appreciate a quick backstory on how Zoekt was created. From Han-Wen:
 
-> In 2016, I started working for Shawn Pearce, Git-hacker extraordinaire. Shawn created Gerrit, the code review and Git hosting system. His vision was to make Gerrit into a self-contained set of open source developer tools (“Google devtools in a box”). The code-browsing experience on Gerrit was a bit primitive, and code search was non-existent. I was in the Google Munich office, and since Google’s Code Search team was also there, Shawn suggested that I pick their brains to see if I could build something for Gerrit.
+> In 2016, I started working for Shawn Pearce, Git-hacker extraordinaire. Shawn created Gerrit, the code review and Git hosting system. His vision was to make Gerrit into a self-contained set of open source developer tools (“Google devtools in a box”). The code-browsing experience on Gerrit was a bit primitive, and code search was non-existent. I was in the Google Munich office, and since Google's Code Search team was also there, Shawn suggested that I pick their brains to see if I could build something for Gerrit.
 
-> I had a lot of fun conversations with their tech lead, and I discovered how interesting search is as a technical problem. Together, we explored the substring search algorithm that Zoekt currently uses. I got the first prototype working, and when I saw how fast it was, I quickly got addicted. The tech lead tried to warn me: there is lots more to search than finding substrings (query parsing, ranking, tokenizing, indexing, etc.). He was right, of course, but when starting a new project, you can’t be too realistic: I’m a little lazy, so I only start things I think are easy. The skepticism only served to pique my enthusiasm, and within a couple of weeks I had a release ready.
+> I had a lot of fun conversations with their tech lead, and I discovered how interesting search is as a technical problem. Together, we explored the substring search algorithm that Zoekt currently uses. I got the first prototype working, and when I saw how fast it was, I quickly got addicted. The tech lead tried to warn me: there is lots more to search than finding substrings (query parsing, ranking, tokenizing, indexing, etc.). He was right, of course, but when starting a new project, you can't be too realistic: I'm a little lazy, so I only start things I think are easy. The skepticism only served to pique my enthusiasm, and within a couple of weeks I had a release ready.
 
-> Company priorities shifted, so after a few months, I had other tasks on my plate. Zoekt moved to become a 20% project. At the time, my wife lived in a different city during the week, so I would visit her one night per week (because I missed her). The train rides to and fro were perfect to work on Zoekt: I would think all week in the back of my mind about things to improve, and then during those train rides, I’d bang out the code.
+> Company priorities shifted, so after a few months, I had other tasks on my plate. Zoekt moved to become a 20% project. At the time, my wife lived in a different city during the week, so I would visit her one night per week (because I missed her). The train rides to and fro were perfect to work on Zoekt: I would think all week in the back of my mind about things to improve, and then during those train rides, I'd bang out the code.
 
-> It’s always gratifying to see your own code being useful to others, so I’m really happy with Sourcegraph's use of Zoekt, and I’m thrilled to see one of my dreams (indexing all of GitHub) come to fruition. I trust that it finds good stewardship in the hands of the team, as they have assured me it will continue to be runnable standalone, and continue to be developed as open source.
+> It's always gratifying to see your own code being useful to others, so I'm really happy with Sourcegraph's use of Zoekt, and I'm thrilled to see one of my dreams (indexing all of GitHub) come to fruition. I trust that it finds good stewardship in the hands of the team, as they have assured me it will continue to be runnable standalone, and continue to be developed as open source.
 
 You can hear Han-Wen tell more of the backstory in the [latest episode of the Sourcegraph Podcast](https://about.sourcegraph.com/podcast/han-wen-nienhuys/).
 

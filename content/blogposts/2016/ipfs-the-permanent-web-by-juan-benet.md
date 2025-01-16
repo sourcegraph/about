@@ -13,13 +13,13 @@ published: true
 
 
 
-[Juan Benet](http://juan.benet.ai/) ([@juanbenet](https://twitter.com/juanbenet)) spoke at the [Sourcegraph Hacker Meetup](http://www.meetup.com/Sourcegraph-Hacker-Meetup/) about his project, “IPFS: The Permanent Web” ([slides](https://speakerdeck.com/jbenet/ipfs-the-permanent-web-at-sourcegraph) and [video](https://www.youtube.com/watch?v=Fa4pckodM9g)). [IPFS](https://github.com/jbenet/ipfs) is a bold attempt at evolving the Internet’s infrastructure. Here’s how Juan describes it to [Sourcegraph](https://sourcegraph.com):
+[Juan Benet](http://juan.benet.ai/) ([@juanbenet](https://twitter.com/juanbenet)) spoke at the [Sourcegraph Hacker Meetup](http://www.meetup.com/Sourcegraph-Hacker-Meetup/) about his project, “IPFS: The Permanent Web” ([slides](https://speakerdeck.com/jbenet/ipfs-the-permanent-web-at-sourcegraph) and [video](https://www.youtube.com/watch?v=Fa4pckodM9g)). [IPFS](https://github.com/jbenet/ipfs) is a bold attempt at evolving the Internet's infrastructure. Here's how Juan describes it to [Sourcegraph](https://sourcegraph.com):
 
 > _IPFS is a global, versioned, peer-to-peer file system. It combines good ideas from_ [_Git_](http://git-scm.com/)_,_ [_BitTorrent_](http://en.wikipedia.org/wiki/BitTorrent)_,_ [_Kademlia_](http://en.wikipedia.org/wiki/Kademlia)_, and_ [_SFS_](http://en.wikipedia.org/wiki/Self-certifying_File_System)_. You can think of it like a single BitTorrent swarm, exchanging Git objects, making up the web. IPFS provides an interface much simpler than HTTP, but has permanence built in. You can also use it to mount the world at /ipfs._
 
 So far, IPFS has 2 implementations: [go-ipfs](https://github.com/jbenet/go-ipfs) and [node-ipfs](https://github.com/jbenet/node-ipfs).
 
-Let’s dig a bit deeper into IPFS and how it could be used.
+Let's dig a bit deeper into IPFS and how it could be used.
 
 <iframe width="640" height="480" src="https://www.youtube-nocookie.com/embed/Fa4pckodM9g"frameBorder="0"allowFullScreen></iframe>
 
@@ -41,7 +41,7 @@ But this file doesn't necessarily reside on the local disk. Instead, it exists i
 *   **signed**, so you can attest that you published a certain file at a certain path
 *   [**Merkle**](http://en.wikipedia.org/wiki/Merkle_tree)**-linked**, so you can version and back up everything, and so you can create a link structure like the web
 
-To achieve these goals, IPFS synthesizes many successful techniques from the last 15 years of distributed systems research. Central to the IPFS design is the [Merkle](http://en.wikipedia.org/wiki/Merkle_tree) DAG, a data structure that represents all the files. It’s like Git’s blob, tree, and commit, except IPFS has a more flexible model: you can define what your link structure is and how it works. This means you can implement Git on top, or a Blockchain like Bitcoin, or linked web pages.
+To achieve these goals, IPFS synthesizes many successful techniques from the last 15 years of distributed systems research. Central to the IPFS design is the [Merkle](http://en.wikipedia.org/wiki/Merkle_tree) DAG, a data structure that represents all the files. It's like Git's blob, tree, and commit, except IPFS has a more flexible model: you can define what your link structure is and how it works. This means you can implement Git on top, or a Blockchain like Bitcoin, or linked web pages.
 
 Juan also discussed a list of use cases for IPFS:
 
@@ -63,7 +63,7 @@ Juan also discussed a list of use cases for IPFS:
 
 ### Getting involved with IPFS
 
-IPFS is an open source, MIT-licensed project. You can use the ideas and the implementations for whatever you want. It’s still early, so the implementations are not complete. You should follow [@juanbenet](https://twitter.com/juanbenet) and check out the IPFS spec and open source implementations. Watch or star these repositories on GitHub to follow along:
+IPFS is an open source, MIT-licensed project. You can use the ideas and the implementations for whatever you want. It's still early, so the implementations are not complete. You should follow [@juanbenet](https://twitter.com/juanbenet) and check out the IPFS spec and open source implementations. Watch or star these repositories on GitHub to follow along:
 
 *   [ipfs protocol](https://github.com/jbenet/ipfs)
 *   [go-ipfs](https://github.com/jbenet/go-ipfs)
@@ -73,6 +73,6 @@ Also, you can join #ipfs on irc.freenode.org.
 
 ![0-RsrS68m6tNt9Yazz](//images.contentful.com/le3mxztn6yoo/1fNup8iuU2QgGIwAgW8Ewq/cbe19d0788e06e89350e22e06127fdc9/0-RsrS68m6tNt9Yazz.jpeg)
 
-Juan has a compelling vision for a future where the Internet is more efficient, robust, and safe. He has been thinking about these things for almost a decade, and he’s now turning all that thought into action. We’re excited to follow IPFS!
+Juan has a compelling vision for a future where the Internet is more efficient, robust, and safe. He has been thinking about these things for almost a decade, and he's now turning all that thought into action. We're excited to follow IPFS!
 
 ![0*WI7qlbYs2O4QSqhx](//images.contentful.com/le3mxztn6yoo/6gke9EbKuWSwk0iiGuKUmw/8fc034ccb6af29dbc49ace942faca848/0_WI7qlbYs2O4QSqhx.png)

@@ -10,9 +10,9 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/4.0/release.
 changelogItems:
 ---
 
-We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10<sup>11</sup> lines of code for the world's most demanding software teams. Now, we’re making Sourcegraph even smarter.
+We've spent 9 years building the underlying foundation of code search to be fast, secure, and scalable across ~10<sup>11</sup> lines of code for the world's most demanding software teams. Now, we're making Sourcegraph even smarter.
 
-Sourcegraph 4.0 includes over a dozen updates and new features, and it is the first step toward Sourcegraph becoming a [code intelligence platform](/blog/code-search-to-code-intelligence). A code intelligence platform indexes and understands all of your organization’s code, so instead of just *matching lines in code*, you can *answer questions and learn about code*. 
+Sourcegraph 4.0 includes over a dozen updates and new features, and it is the first step toward Sourcegraph becoming a [code intelligence platform](/blog/code-search-to-code-intelligence). A code intelligence platform indexes and understands all of your organization's code, so instead of just *matching lines in code*, you can *answer questions and learn about code*. 
 
 Today, we're also launching [Sourcegraph Cloud:](/blog/enterprise-cloud) secure, scalable, dedicated Sourcegraph instances on the cloud. Sourcegraph Cloud is the best way to start using Sourcegraph on your organization's code. [Sign up now](https://about.sourcegraph.com/get-started?t=enterprise) to experience Sourcegraph 4.0.
 
@@ -161,7 +161,7 @@ This feature requires admins to set up executors (much like CI agents), which So
 <Badge link="https://docs.sourcegraph.com/cloud" text="Admin" color="violet" size="small" />
 
 ####  Sourcegraph Cloud, our single-tenant cloud offering, is now generally available
-After almost a decade of developing self-hosted Sourcegraph, we’ve gained the trust of some of the most sophisticated companies and development teams in the world. Today—after years of building trust and engineering rigor—we are excited to move confidently to the cloud with a highly secure and scalable solution.
+After almost a decade of developing self-hosted Sourcegraph, we've gained the trust of some of the most sophisticated companies and development teams in the world. Today—after years of building trust and engineering rigor—we are excited to move confidently to the cloud with a highly secure and scalable solution.
 
 Dedicated, single-tenant Sourcegraph Cloud instances are now generally available and the best way for teams to use Sourcegraph. You can read more in our announcement blog [here](/blog/enterprise-cloud), or [sign up for a 15-day trial for your organization](https://about.sourcegraph.com/get-started?t=enterprise).
 
@@ -228,7 +228,7 @@ With in-product analytics, you can now report on:
 
 #### Easily export traces using OpenTelemetry
 
-[OpenTelemetry (OTEL)](https://opentelemetry.io/) is an open specification for exporting observability data. We’ve added OpenTelemetry support in Sourcegraph 4.0 so you can easily export tracing data from Sourcegraph into your preferred observability solution. This is a breaking change as we now require you to export tracing with the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/). This is deployed by default in all Sourcegraph deployment methods and replaces the Jaeger agents and collectors that was previously the default.
+[OpenTelemetry (OTEL)](https://opentelemetry.io/) is an open specification for exporting observability data. We've added OpenTelemetry support in Sourcegraph 4.0 so you can easily export tracing data from Sourcegraph into your preferred observability solution. This is a breaking change as we now require you to export tracing with the [OpenTelemetry collector](https://opentelemetry.io/docs/collector/). This is deployed by default in all Sourcegraph deployment methods and replaces the Jaeger agents and collectors that was previously the default.
 
 <a href="https://docs.sourcegraph.com/admin/observability/opentelemetry" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 
