@@ -94,7 +94,7 @@
     "rehype-slug": "^5.0.1",
     "remark-gfm": "^3.0.1",
     "rxjs": "^7.5.5",
-    "sharp": "^0.31.3",
+    "sharp": "^0.32.0",
     "shikiji": "0.7.x",
     "ts-loader": "^9.2.8",
     "ts-node": "^10.7.0",
