@@ -111,7 +111,7 @@
     "@types/d3-scale": "4.0.3",
     "@types/d3-time-format": "4.0.0",
     "@types/js-cookie": "3.0.3",
-    "@types/mapbox__rehype-prism": "0.8.0",
+    "@types/mapbox__rehype-prism": "0.8.3",
     "@types/mdx": "2.0.3",
     "@types/node": "18.7.18",
     "@types/prismjs": "1.26.0",
