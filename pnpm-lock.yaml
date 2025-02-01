@@ -247,8 +247,8 @@ devDependencies:
     specifier: ^9.4.4
     version: 9.5.4(@react-three/fiber@8.14.2)(konva@9.2.1)(react-dom@18.2.0)(react-konva@16.8.6)(react-native@0.72.4)(react-zdog@1.2.2)(react@18.2.0)(three@0.156.1)(zdog@1.1.3)
   react-twitch-embed:
-    specifier: ^3.0.1
-    version: 3.0.1(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^3.0.2
+    version: 3.0.2(react-dom@18.2.0)(react@18.2.0)
   sass:
     specifier: ^1.49.7
     version: 1.54.9
@@ -5745,6 +5745,7 @@ packages:
 
   /acorn-import-assertions@1.9.0(acorn@8.10.0):
     resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
+    deprecated: package has been renamed to acorn-import-attributes
     peerDependencies:
       acorn: ^8
     dependencies:
@@ -12423,8 +12424,8 @@ packages:
       refractor: 3.6.0
     dev: false
 
-  /react-twitch-embed@3.0.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ZjsLB3AVDQiGpL30u5TNq0CrBSuZXMvhbTgNSeQwoT9ehGud3R4LHxA5PZlt/TEquRVEsNNryLtQbXekk/kyUQ==}
+  /react-twitch-embed@3.0.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-LtkhajG0K7FkxP/TYmqwn7HucJPrFdpnqi6lGkXjPAoEozn8OF7IULdS73R1zXWLZELYOoVu+fa15Be3UIIrmA==}
     engines: {node: '>=8', npm: '>=5'}
     peerDependencies:
       react: ^18.2.0
@@ -13521,6 +13522,7 @@ packages:
 
   /sudo-prompt@9.2.1:
     resolution: {integrity: sha512-Mu7R0g4ig9TUuGSxJavny5Rv0egCEtpZRNMrZaYS1vxkiIxGiGUwoezU3LazIQ+KE04hTrTfNPgxU5gzi7F5Pw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dev: true
 
   /supports-color@5.5.0:

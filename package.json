@@ -133,7 +133,7 @@
     "prettier-plugin-tailwindcss": "^0.2.3",
     "react-icons": "^4.4.0",
     "react-spring": "^9.4.4",
-    "react-twitch-embed": "^3.0.1",
+    "react-twitch-embed": "^3.0.2",
     "sass": "^1.49.7",
     "start-server-and-test": "^1.15.2",
     "tailwindcss": "^3.1.7",
