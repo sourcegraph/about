@@ -125,7 +125,7 @@
     "eslint-config-next": "^13.1.2",
     "file-loader": "^6.2.0",
     "mdi-react": "9.0.0",
-    "next-sitemap": "^3.1.22",
+    "next-sitemap": "^3.1.55",
     "postcss": "^8.4.14",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.7.2",
