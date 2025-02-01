@@ -175,8 +175,8 @@ devDependencies:
     specifier: 4.0.3
     version: 4.0.3
   '@types/d3-time-format':
-    specifier: 4.0.0
-    version: 4.0.0
+    specifier: 4.0.3
+    version: 4.0.3
   '@types/js-cookie':
     specifier: 3.0.3
     version: 3.0.3
@@ -4893,8 +4893,8 @@ packages:
       '@types/d3-path': 1.0.9
     dev: false
 
-  /@types/d3-time-format@4.0.0:
-    resolution: {integrity: sha512-yjfBUe6DJBsDin2BMIulhSHmr5qNR5Pxs17+oW4DoVPyVIXZ+m6bs7j1UVKP08Emv6jRmYrYqxYzO63mQxy1rw==}
+  /@types/d3-time-format@4.0.3:
+    resolution: {integrity: sha512-5xg9rC+wWL8kdDj153qZcsJ0FWiFt0J5RB6LYUNZjwSnesfblqrI/bJ1wBdJ8OQfncgbJG5+2F+qfqnqyzYxyg==}
     dev: true
 
   /@types/d3-time@2.1.1:

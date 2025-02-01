@@ -109,7 +109,7 @@
     "@tailwindcss/typography": "^0.5.10",
     "@types/d3-format": "3.0.1",
     "@types/d3-scale": "4.0.3",
-    "@types/d3-time-format": "4.0.0",
+    "@types/d3-time-format": "4.0.3",
     "@types/js-cookie": "3.0.3",
     "@types/mapbox__rehype-prism": "0.8.0",
     "@types/mdx": "2.0.3",
