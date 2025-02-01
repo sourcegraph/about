@@ -23,7 +23,7 @@ dependencies:
     specifier: ^0.16.0
     version: 0.16.0
   '@types/react-syntax-highlighter':
-    specifier: ^15.5.13
+    specifier: 15.5.13
     version: 15.5.13
   '@visx/axis':
     specifier: ^2.12.2
@@ -169,28 +169,28 @@ devDependencies:
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.1.8)
   '@types/d3-format':
-    specifier: ^3.0.1
+    specifier: 3.0.1
     version: 3.0.1
   '@types/d3-scale':
-    specifier: ^4.0.3
+    specifier: 4.0.3
     version: 4.0.3
   '@types/d3-time-format':
-    specifier: ^4.0.0
+    specifier: 4.0.0
     version: 4.0.0
   '@types/js-cookie':
-    specifier: ^3.0.3
+    specifier: 3.0.3
     version: 3.0.3
   '@types/mapbox__rehype-prism':
-    specifier: ^0.8.0
+    specifier: 0.8.0
     version: 0.8.0
   '@types/mdx':
-    specifier: ^2.0.3
+    specifier: 2.0.3
     version: 2.0.3
   '@types/node':
     specifier: 18.7.18
     version: 18.7.18
   '@types/prismjs':
-    specifier: ^1.26.0
+    specifier: 1.26.0
     version: 1.26.0
   '@types/react':
     specifier: 18.0.20
@@ -199,7 +199,7 @@ devDependencies:
     specifier: ^18.0.6
     version: 18.0.6
   '@types/react-scroll':
-    specifier: ^1.8.10
+    specifier: 1.8.10
     version: 1.8.10
   '@types/uuid':
     specifier: 8.0.1
@@ -4957,12 +4957,12 @@ packages:
     resolution: {integrity: sha512-wLEm0QvaoawEDoTRwzTXp4b4jpwiJDvR5KMnFnVodm3scufTlBOWRD6N1OBf9TZMhjlNsSfcO5V+7AF4+Vy+9g==}
     dependencies:
       '@types/unist': 2.0.6
+    dev: false
 
   /@types/hast@3.0.3:
     resolution: {integrity: sha512-2fYGlaDy/qyLlhidX42wAH0KBi2TCjKMH8CHmBXgRlJ3Y+OXTiqsPQ6IWarZKwF1JoUcAJdPogv1d4b0COTpmQ==}
     dependencies:
-      '@types/unist': 2.0.6
-    dev: false
+      '@types/unist': 3.0.2
 
   /@types/http-errors@2.0.4:
     resolution: {integrity: sha512-D0CFMMtydbJAegzOyHjtiKPLlvnm3iTZyZRSZoLq2mRhDdmLfIWOCYPfQJ4cu2erKghU++QvjcUjp/5h7hESpA==}
@@ -5010,14 +5010,14 @@ packages:
   /@types/mapbox__rehype-prism@0.8.0:
     resolution: {integrity: sha512-C3Bucs6nlHJg0FKhKsN6cx3Mklh1Ah9trAl6VPH0PuSUH4QtOW4H1eF/70zKn3RdEen4nZ9D5wLL0O/eLSQ+zg==}
     dependencies:
-      '@types/hast': 2.3.4
+      '@types/hast': 3.0.3
       unified: 10.1.2
     dev: true
 
   /@types/mdast@3.0.10:
     resolution: {integrity: sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==}
     dependencies:
-      '@types/unist': 2.0.6
+      '@types/unist': 3.0.2
     dev: false
 
   /@types/mdast@4.0.3:
@@ -5146,7 +5146,6 @@ packages:
 
   /@types/unist@3.0.2:
     resolution: {integrity: sha512-dqId9J8K/vGi5Zr7oo212BGii5m3q5Hxlkwy3WpYuKPklmBEvsbMYYyLxAQpSffdLl/gdW0XUpKWFvYmyoWCoQ==}
-    dev: false
 
   /@types/uuid@8.0.1:
     resolution: {integrity: sha512-2kE8rEFgJpbBAPw5JghccEevQb0XVU0tewF/8h7wPQTeCtoJ6h8qmBIwuzUVm2MutmzC/cpCkwxudixoNYDp1A==}
@@ -5745,6 +5744,7 @@ packages:
 
   /acorn-import-assertions@1.9.0(acorn@8.10.0):
     resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
+    deprecated: package has been renamed to acorn-import-attributes
     peerDependencies:
       acorn: ^8
     dependencies:
@@ -13521,6 +13521,7 @@ packages:
 
   /sudo-prompt@9.2.1:
     resolution: {integrity: sha512-Mu7R0g4ig9TUuGSxJavny5Rv0egCEtpZRNMrZaYS1vxkiIxGiGUwoezU3LazIQ+KE04hTrTfNPgxU5gzi7F5Pw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dev: true
 
   /supports-color@5.5.0:
@@ -14014,7 +14015,7 @@ packages:
       is-buffer: 2.0.5
       is-plain-obj: 4.1.0
       trough: 2.1.0
-      vfile: 5.3.5
+      vfile: 5.3.7
 
   /unified@11.0.4:
     resolution: {integrity: sha512-apMPnyLjAX+ty4OrNap7yumyVAMlKx5IWU2wlzzUdYJO9A8f1p9m/gywF/GM2ZDFcjQPrx59Mc90KwmxsoklxQ==}
@@ -14308,7 +14309,7 @@ packages:
     resolution: {integrity: sha512-JDxPlTbZrZCQXogGheBHjbRWjESSPEak770XwWPfw5mTc1v1nWGLB/apzZxsx8a0SJVfF8HK8ql8RD308vXRUw==}
     dependencies:
       '@types/unist': 2.0.6
-      vfile: 5.3.5
+      vfile: 5.3.7
     dev: false
 
   /vfile-location@5.0.2:
@@ -14346,6 +14347,7 @@ packages:
       is-buffer: 2.0.5
       unist-util-stringify-position: 3.0.2
       vfile-message: 3.1.2
+    dev: false
 
   /vfile@5.3.7:
     resolution: {integrity: sha512-r7qlzkgErKjobAmyNIkkSpizsFPYiUPuJb5pNW1RB4JcYVZhs4lIbVqk8XPk033CV/1z8ss5pkax8SuhGpcG8g==}
@@ -14354,7 +14356,6 @@ packages:
       is-buffer: 2.0.5
       unist-util-stringify-position: 3.0.2
       vfile-message: 3.1.2
-    dev: false
 
   /vfile@6.0.1:
     resolution: {integrity: sha512-1bYqc7pt6NIADBJ98UiG0Bn/CHIVOoZ/IyEkqIruLg0mE1BKzkOXY2D6CSqQIcKqgadppE5lrxgWXJmXd7zZJw==}
