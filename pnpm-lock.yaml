@@ -14,8 +14,8 @@ dependencies:
     specifier: ^2.0.15
     version: 2.0.15(react@18.2.0)
   '@lucide/lab':
-    specifier: ^0.1.1
-    version: 0.1.1
+    specifier: ^0.1.2
+    version: 0.1.2
   '@popperjs/core':
     specifier: ^2.11.7
     version: 2.11.7
@@ -3795,8 +3795,8 @@ packages:
       unified: 10.1.2
     dev: false
 
-  /@lucide/lab@0.1.1:
-    resolution: {integrity: sha512-yv0QPDxfhzo0kYQSmA1KZzNgnzQZBcAkUs/ZEER0uyMCSQYQKCgZLWuxYOBr1EQ8TiBalmOO9JrOPryAY80kwA==}
+  /@lucide/lab@0.1.2:
+    resolution: {integrity: sha512-VprF2BJa7ZuTGOhUd5cf8tHJXyL63wdxcGieAiVVoR9hO0YmPsnZO0AGqDiX2/br+/MC6n8BoJcmPilltOXIJA==}
     dev: false
 
   /@mdx-js/mdx@2.1.3:
