@@ -91,7 +91,7 @@
     "react-syntax-highlighter": "^15.5.0",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-pretty-code": "^0.12.0",
-    "rehype-slug": "^5.0.1",
+    "rehype-slug": "^5.1.0",
     "remark-gfm": "^3.0.1",
     "rxjs": "^7.5.5",
     "sharp": "^0.31.3",
