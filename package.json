@@ -55,7 +55,7 @@
     "@headlessui/react": "^1.7.11",
     "@heroicons/react": "^2.0.15",
     "@lucide/lab": "^0.1.1",
-    "@popperjs/core": "^2.11.7",
+    "@popperjs/core": "^2.11.8",
     "@sourcegraph/telemetry": "^0.16.0",
     "@types/react-syntax-highlighter": "15.5.13",
     "@visx/axis": "^2.12.2",
