@@ -50,7 +50,7 @@
     "pnpm": "^8.1.1"
   },
   "dependencies": {
-    "@dotlottie/react-player": "^1.6.15",
+    "@dotlottie/react-player": "^1.6.19",
     "@figma/code-connect": "^1.1.3",
     "@headlessui/react": "^1.7.11",
     "@heroicons/react": "^2.0.15",
