@@ -120,7 +120,7 @@
     "@types/react-scroll": "1.8.10",
     "@types/uuid": "8.0.1",
     "autoprefixer": "^10.4.8",
-    "cypress": "13.2.0",
+    "cypress": "13.17.0",
     "eslint": "^8.32.0",
     "eslint-config-next": "^13.1.2",
     "file-loader": "^6.2.0",
