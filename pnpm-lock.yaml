@@ -131,8 +131,8 @@ dependencies:
     specifier: ^3.0.1
     version: 3.0.1
   rxjs:
-    specifier: ^7.5.5
-    version: 7.5.6
+    specifier: ^7.8.1
+    version: 7.8.1
   sharp:
     specifier: ^0.31.3
     version: 0.31.3
@@ -7647,7 +7647,7 @@ packages:
       eslint: 8.32.0
       eslint-etc: 5.2.0(eslint@8.32.0)(typescript@4.5.5)
       requireindex: 1.2.0
-      tslib: 2.4.0
+      tslib: 2.6.2
       tsutils: 3.21.0(typescript@4.5.5)
       typescript: 4.5.5
     transitivePeerDependencies:
@@ -7782,7 +7782,7 @@ packages:
       eslint-etc: 5.2.0(eslint@8.32.0)(typescript@4.5.5)
       requireindex: 1.2.0
       rxjs-report-usage: 1.0.6
-      tslib: 2.4.0
+      tslib: 2.6.2
       tsutils: 3.21.0(typescript@4.5.5)
       tsutils-etc: 1.4.1(tsutils@3.21.0)(typescript@4.5.5)
       typescript: 4.5.5
@@ -12852,12 +12852,6 @@ packages:
       - supports-color
     dev: true
 
-  /rxjs@7.5.6:
-    resolution: {integrity: sha512-dnyv2/YsXhnm461G+R/Pe5bWP41Nm6LBXEYWI6eiFP4fiwx6WRI/CD0zbdVAudd9xwLEF2IDcKXLHit0FYjUzw==}
-    dependencies:
-      tslib: 2.4.0
-    dev: false
-
   /rxjs@7.8.1:
     resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
     dependencies:
@@ -13857,9 +13851,6 @@ packages:
   /tslib@1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
-
-  /tslib@2.4.0:
-    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
