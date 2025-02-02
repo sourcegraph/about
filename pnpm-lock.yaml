@@ -11,8 +11,8 @@ dependencies:
     specifier: ^1.7.11
     version: 1.7.11(react-dom@18.2.0)(react@18.2.0)
   '@heroicons/react':
-    specifier: ^2.0.15
-    version: 2.0.15(react@18.2.0)
+    specifier: ^2.2.0
+    version: 2.2.0(react@18.2.0)
   '@lucide/lab':
     specifier: ^0.1.1
     version: 0.1.1
@@ -3349,10 +3349,10 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@heroicons/react@2.0.15(react@18.2.0):
-    resolution: {integrity: sha512-CZ2dGWgWG3/z5LEoD5D3MEr1syn45JM/OB2aDpw531Ryecgkz2V7TWQ808P0lva7zP003PVW6WlwbofsYyga3A==}
+  /@heroicons/react@2.2.0(react@18.2.0):
+    resolution: {integrity: sha512-LMcepvRaS9LYHJGsF0zzmgKCUim/X3N/DQKc4jepAXJ7l8QxJ1PmxJzqplF2Z3FE4PqBAIGyJAQ/w4B5dsqbtQ==}
     peerDependencies:
-      react: '>= 16'
+      react: '>= 16 || ^19.0.0-rc'
     dependencies:
       react: 18.2.0
     dev: false
