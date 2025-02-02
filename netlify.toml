@@ -203,6 +203,10 @@
   to = "/contact/request-info"
 
 [[redirects]]
+  from = "/get-started"
+  to = "/enterprise-trial-offer"
+
+[[redirects]]
   from = "/contact/product-specialist"
   to = "/contact/request-info"
 
