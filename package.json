@@ -106,7 +106,7 @@
     "@sourcegraph/eslint-config": "^0.33.0",
     "@sourcegraph/prettierrc": "^3.0.3",
     "@svgr/webpack": "^6.2.1",
-    "@tailwindcss/typography": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/d3-format": "3.0.4",
     "@types/d3-scale": "4.0.3",
     "@types/d3-time-format": "4.0.3",
