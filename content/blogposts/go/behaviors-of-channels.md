@@ -12,7 +12,7 @@ published: true
 description: 'dotGo 2017: Behaviors of Channels'
 ---
 
-I learned over time that it’s best to forget about how channels are structured and focus on how they behave. So now when it comes to channels, I think about one thing: signaling. A channel allows one goroutine to signal another goroutine about a particular event. Signaling is at the core of everything you should be doing with channels. Thinking of channels as a signaling mechanism will allow you to write better code with well defined and more precise behavior.
+I learned over time that it's best to forget about how channels are structured and focus on how they behave. So now when it comes to channels, I think about one thing: signaling. A channel allows one goroutine to signal another goroutine about a particular event. Signaling is at the core of everything you should be doing with channels. Thinking of channels as a signaling mechanism will allow you to write better code with well defined and more precise behavior.
 
 Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us know on Twitter ([@sourcegraph](https://twitter.com/sourcegraph)) if we missed anything. All content is from the talk; any mistakes or misrepresentations are our fault, not the speaker's.
 

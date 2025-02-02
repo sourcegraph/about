@@ -5,7 +5,7 @@ authors:
     url: https://x.com/rasharm_
   - name: Aimee Menne
 publishDate: 2024-11-05T10:00-01:00
-description: "There is little doubt of AI’s promise to transform software development, but how can engineering teams measure the ROI of these tools? We explore ways to answer this question through productivity metrics, business impact, and developer satisfaction."
+description: "There is little doubt of AI's promise to transform software development, but how can engineering teams measure the ROI of these tools? We explore ways to answer this question through productivity metrics, business impact, and developer satisfaction."
 tags: [blog]
 slug: "measuring-the-impact-of-ai-coding-tools"
 published: true
@@ -13,7 +13,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/measuring-the-
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/measuring-the-impact-of-ai-coding-tools/measuring-impact-og.png
 --- 
 
-Every software engineering team is looking at AI tools for coding. In a [Stack Overflow survey](https://survey.stackoverflow.co/2024/ai/#sentiment-and-usage), 76% of developers reported they are either using or planning to use AI tools for development. However, with the pace of change in this space, many are already disillusioned with the tools they adopted during the early hype. There is little doubt of AI’s promise to transform software development. But how can engineering teams measure the ROI of these tools in a way that aligns with their priorities? These are just some of the questions we are getting from folks who are considering AI coding tools. So, we want to share a few things we learned from our work with some of the [most sophisticated software engineering teams](https://sourcegraph.com/case-studies) in the world.
+Every software engineering team is looking at AI tools for coding. In a [Stack Overflow survey](https://survey.stackoverflow.co/2024/ai/#sentiment-and-usage), 76% of developers reported they are either using or planning to use AI tools for development. However, with the pace of change in this space, many are already disillusioned with the tools they adopted during the early hype. There is little doubt of AI's promise to transform software development. But how can engineering teams measure the ROI of these tools in a way that aligns with their priorities? These are just some of the questions we are getting from folks who are considering AI coding tools. So, we want to share a few things we learned from our work with some of the [most sophisticated software engineering teams](https://sourcegraph.com/case-studies) in the world.
 
 ## Measuring the value of developer tools
 
@@ -30,9 +30,9 @@ Any ROI measurement should encompass productivity, impact, *and* satisfaction.
 
 ## How does this change for AI developer tools?
 
-Traditionally, much of the conversation around developer productivity has been in an area referred to as the outer loop of software development—the set of activities that are more about planning, building, integrating, deploying, monitoring, etc. Traditional productivity measurement methods like [DORA](https://en.wikipedia.org/wiki/DevOps_Research_and_Assessment) (DevOps Research and Assessment) fall short due to this limited scope (focus mainly on deployment & operations efficiency, and not on coding). DORA can also lead to metrics manipulation and doesn’t account for the team makeup (size, skills, tenure) or project complexity.
+Traditionally, much of the conversation around developer productivity has been in an area referred to as the outer loop of software development—the set of activities that are more about planning, building, integrating, deploying, monitoring, etc. Traditional productivity measurement methods like [DORA](https://en.wikipedia.org/wiki/DevOps_Research_and_Assessment) (DevOps Research and Assessment) fall short due to this limited scope (focus mainly on deployment & operations efficiency, and not on coding). DORA can also lead to metrics manipulation and doesn't account for the team makeup (size, skills, tenure) or project complexity.
 
-The inner loop of software development - the part that deals with reading, understanding, and writing code - hasn’t traditionally received a ton of attention from developer productivity experts. This diagram from [a developer’s thoughts on developer productivity](https://sourcegraph.com/blog/developer-productivity-thoughts) is too good not to reproduce here:
+The inner loop of software development - the part that deals with reading, understanding, and writing code - hasn't traditionally received a ton of attention from developer productivity experts. This diagram from [a developer's thoughts on developer productivity](https://sourcegraph.com/blog/developer-productivity-thoughts) is too good not to reproduce here:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/measuring-the-impact-of-ai-coding-tools/dev-loops.png"
@@ -55,11 +55,11 @@ However, from our direct work with many such customers, we have learned that mos
 1. Time saved
 2. Output produced
 
-Any of these metrics, when taken together with other inputs like the size of the team, average developer compensation, etc., can provide reasonable estimates of the corresponding monetary impact. However, this write-up doesn’t go into those details, understanding fully well that all engineering teams are different.
+Any of these metrics, when taken together with other inputs like the size of the team, average developer compensation, etc., can provide reasonable estimates of the corresponding monetary impact. However, this write-up doesn't go into those details, understanding fully well that all engineering teams are different.
 
 ### Productivity measure #1: Time saved
 
-The “time saved” metric is the easiest starting point for evaluating the ROI of AI coding assistants but also the most basic because it lacks the context of **your** business, teams, and workflows. Every AI coding assistant on the market has established their own flavor of time savings metric based on the tool’s usage. It is easy to estimate how much time a developer would have spent simply “typing” the code that was generated by the tool. That essentially is the time saved. You can also look at these savings at a more granular level based on the type of interaction that produced the code and analyze where the savings are coming from:
+The “time saved” metric is the easiest starting point for evaluating the ROI of AI coding assistants but also the most basic because it lacks the context of **your** business, teams, and workflows. Every AI coding assistant on the market has established their own flavor of time savings metric based on the tool's usage. It is easy to estimate how much time a developer would have spent simply “typing” the code that was generated by the tool. That essentially is the time saved. You can also look at these savings at a more granular level based on the type of interaction that produced the code and analyze where the savings are coming from:
 
 * Accepting auto-complete suggestions
 * Applying chat responses
@@ -70,7 +70,7 @@ This time savings can easily be measured for an individual and, when aggregated 
 This measurement is very basic because it has the potential to both underestimate and overestimate the amount of savings:
 
 * Since it uses purely “code typing time” as the alternative to the AI coding assistant, it can massively underestimate the amount of time a developer would have had to spend just gathering context before writing code - reading docs, browsing code, coordinating with colleagues, etc. Many developers report that this “context gathering” is often the more time-consuming part of building software, and once this is done, the actual code writing is not that cumbersome.
-* The AI coding assistant has no context about a developer’s actual intentions or what business problems they are trying to solve. Its measurements are based on observing the micro-task that the developer actually ended up performing. Whether that task was the one they should have been performing, to begin with, or whether the code produced will create more work is never known.
+* The AI coding assistant has no context about a developer's actual intentions or what business problems they are trying to solve. Its measurements are based on observing the micro-task that the developer actually ended up performing. Whether that task was the one they should have been performing, to begin with, or whether the code produced will create more work is never known.
 
 Regardless, it is a good starting point because it is easy to understand. The team at [1Password](https://sourcegraph.com/case-studies/1password-increases-productivity-in-a-distributed-codebase) found that using Sourcegraph saved every developer 7 hours per month.
 
@@ -87,7 +87,7 @@ The second set of metrics is related to the “output” produced. In this case,
 These are useful metrics to think about and go one step further than just time savings. However, even here, there is potential for incorrect conclusions:
 
 * Since the measurement here is just lines of code, without any knowledge of the business problem the code was meant to solve, this could mean teams start optimizing for output and not outcomes
-* Similarly, a very intense session of Chat-Oriented Programming ([CHOP](https://sourcegraph.com/blog/chat-oriented-programming-in-action)) could produce very few lines of optimal code that provide a massive unlock for the business. However, going by this metric, it wouldn’t be seen as a successful output.
+* Similarly, a very intense session of Chat-Oriented Programming ([CHOP](https://sourcegraph.com/blog/chat-oriented-programming-in-action)) could produce very few lines of optimal code that provide a massive unlock for the business. However, going by this metric, it wouldn't be seen as a successful output.
 
 ## Impact: harder to measure but tied to what truly matters
 

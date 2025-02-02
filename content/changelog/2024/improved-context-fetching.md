@@ -14,7 +14,7 @@ published: true
 
 ---
 
-AI code assistants are only as good as the context they’re given, and Cody uses the context of your codebase as part of its prompt construction to deliver high quality responses to your chats (you can learn more about how Cody understands your codebase [here](https://sourcegraph.com/blog/how-cody-understands-your-codebase)). Cody allows users to @-mention specific repos, directories, and files in your prompts as context to provide greater precision and to increase the likelihood of higher quality responses, and in this release for Enterprise Cloud customers we’ve made improvements to how Cody handles and fetches context from @-mentioned repos.
+AI code assistants are only as good as the context they're given, and Cody uses the context of your codebase as part of its prompt construction to deliver high quality responses to your chats (you can learn more about how Cody understands your codebase [here](https://sourcegraph.com/blog/how-cody-understands-your-codebase)). Cody allows users to @-mention specific repos, directories, and files in your prompts as context to provide greater precision and to increase the likelihood of higher quality responses, and in this release for Enterprise Cloud customers we've made improvements to how Cody handles and fetches context from @-mentioned repos.
 
 ### High signal code snippets and files are now ranked higher and earlier to the LLM
 
@@ -27,7 +27,7 @@ When asking Cody a question and @-mentioning a repo, Cody searches the repo to d
 />
 <br />
 
-In the example above we want to understand what `chatcontroller` does but the key code snippets or files from `chatcontroller.ts` are buried below less relevant markdown files. We’ve implemented a proprietary re-ranker that sorts relevant context items higher and earlier to the LLM, resulting in a higher quality response.
+In the example above we want to understand what `chatcontroller` does but the key code snippets or files from `chatcontroller.ts` are buried below less relevant markdown files. We've implemented a proprietary re-ranker that sorts relevant context items higher and earlier to the LLM, resulting in a higher quality response.
 
 <br />
 <Figure

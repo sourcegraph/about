@@ -66,11 +66,11 @@ We are launching a preview of Sourcegraph Own as an experimental feature and wil
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 #### Improved code exploration experience
 
-In 5.0, we’re introducing a number of exciting code exploration experience improvements.
+In 5.0, we're introducing a number of exciting code exploration experience improvements.
 
 We shipped the CodeMirror editor as the default blob viewer. This new editor is much more efficient with large files, making it easier and faster than ever to explore code. It also has great extensibility potential, enabling us to ship more IDE-like code exploration features in the future.
 
-We've also enhanced the blob view by adding keyboard navigation. This means you can move around your codebase quickly and efficiently without ever taking your hands off the keyboard. We’ve also added keyboard shortcuts for switching between the code editor, files, and symbols trees. You can turn this on using the `blob-page-switch-areas-shortcuts` feature flag.
+We've also enhanced the blob view by adding keyboard navigation. This means you can move around your codebase quickly and efficiently without ever taking your hands off the keyboard. We've also added keyboard shortcuts for switching between the code editor, files, and symbols trees. You can turn this on using the `blob-page-switch-areas-shortcuts` feature flag.
 
 We're also shipping file and symbol trees with drastically improved accessibility and a slick browsing experience.
 
@@ -94,7 +94,7 @@ All of these improvements add up to a more streamlined, efficient, and powerful 
 <Badge link="/code-search" text="Code Search" color="cerise" size="small" />
 #### A completely re-imagined search input
 
-The search input has been redesigned to greatly improve usability. New contextual suggestions help users learn the Sourcegraph query language as they search. These powerful suggestions react to the user’s current query to suggest related filters. How suggestions are displayed has been unified across contexts and filters, and the history mode has been integrated directly into input. Finally, improved and expanded keyboard shortcuts also make navigation much easier.
+The search input has been redesigned to greatly improve usability. New contextual suggestions help users learn the Sourcegraph query language as they search. These powerful suggestions react to the user's current query to suggest related filters. How suggestions are displayed has been unified across contexts and filters, and the history mode has been integrated directly into input. Finally, improved and expanded keyboard shortcuts also make navigation much easier.
 
 <br/>
 <div className="mb-sm">
@@ -109,7 +109,7 @@ The search input has been redesigned to greatly improve usability. New contextua
 
 Previously, Sourcegraph ordered search results in a simple way that could make it hard to find the most relevant files. In version 5.0, we're releasing two significant improvements to search ranking:
 
-- Search results are no longer grouped by repository. Instead, we return the most relevant files first. This helps prevent users from requiring workarounds to find what they’re looking for, for example updating the search to exclude certain repositories.
+- Search results are no longer grouped by repository. Instead, we return the most relevant files first. This helps prevent users from requiring workarounds to find what they're looking for, for example updating the search to exclude certain repositories.
 - Search now incorporates a "file importance" score to help boost high-quality, commonly-used files. This score is based on the code dependency graph and is only available when precise code intelligence is enabled.
 <br/>
 
@@ -201,7 +201,7 @@ Gerrit connections now have their own dedicated code host connection option as o
 <Badge link="https://docs.sourcegraph.com/admin/external_service" text="Code Hosts" color="violet" size="small" />
 #### Improved support for the Azure DevOps code host
 
-Sourcegraph customers will now be able to bring their Azure DevOps repositories into their Sourcegraph instance. Sourcegraph will sync specified repositories from the customers’ Azure DevOps organizations or projects and also respect and enforce permissions from Azure DevOps, ensuring that only users with access rights to repositories are allowed to access them. Batch Changes will now also support Azure DevOps code hosts and repositories.
+Sourcegraph customers will now be able to bring their Azure DevOps repositories into their Sourcegraph instance. Sourcegraph will sync specified repositories from the customers' Azure DevOps organizations or projects and also respect and enforce permissions from Azure DevOps, ensuring that only users with access rights to repositories are allowed to access them. Batch Changes will now also support Azure DevOps code hosts and repositories.
 
 <a href="https://docs.sourcegraph.com/admin/external_service/azuredevops" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />
@@ -219,11 +219,11 @@ Now we use feedback from the code host to provide rate limiting using each indiv
 <Badge link="" text="Admin" color="violet" size="small" />
 #### Permissions center
 
-The permissions center brings new tools for site admins and users to understand their repository permissions. To ensure developers only see code they have access to, Sourcegraph syncs permissions directly from users’ various code hosts via a continuous background process.
+The permissions center brings new tools for site admins and users to understand their repository permissions. To ensure developers only see code they have access to, Sourcegraph syncs permissions directly from users' various code hosts via a continuous background process.
 
 Historically, debugging repository permissions was time-consuming, confusing, and often impossible, as admins were required to access the production DB to debug. The permission center is a new way for admins to understand and work with how permissions are handled across Sourcegraph storing authorization data, all powered by a more scalable database-backed architecture.
 
-The permission center provides a bird’s eye view of who can access code and why, what recently changed with permissions and when, how many permissions were added/removed,  and what's the reason for the permissions sync. It provides extensive observability and debugability for both the current and historical state of permissions within an instance.
+The permission center provides a bird's eye view of who can access code and why, what recently changed with permissions and when, how many permissions were added/removed,  and what's the reason for the permissions sync. It provides extensive observability and debugability for both the current and historical state of permissions within an instance.
 
 <a href="https://docs.sourcegraph.com/admin/permissions/syncing" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 <br />

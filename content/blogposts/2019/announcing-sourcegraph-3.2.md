@@ -27,7 +27,7 @@ description: 'Sourcegraph 3.2: (Mostly) no new features - Improved stability, se
 
 Seemingly small improvements can deliver huge productivity gains to engineers at companies such as Uber,  Lyft, and Yelp, which have hundreds or thousands of developers using Sourcegraph to search and navigate thousands of repositories every day.
 
-That’s why this release focuses on productivity and stability improvements that every Sourcegraph user can benefit from.
+That's why this release focuses on productivity and stability improvements that every Sourcegraph user can benefit from.
 
 - [Onboarding flow for site admins and users](#onboarding-flow-for-site-admins-and-users)
 - [Easier deployment to EC2 and DigitalOcean](#easier-deployment-to-ec2-and-digitalocean)
@@ -69,7 +69,7 @@ Users are guided through performing their first search and code navigation actio
 
 You can [run Sourcegraph locally with a single Docker command](https://docs.sourcegraph.com/#quickstart-guide), but what about when you want to share Sourcegraph with your team?
 
-We’ve made it easier to deploy Sourcegraph to your preferred cloud environments:
+We've made it easier to deploy Sourcegraph to your preferred cloud environments:
 
  - For AWS EC2: Use the [AWS EC2 Terraform plan](https://github.com/sourcegraph/deploy-sourcegraph-aws)
 - For DigitalOcean: Use the [Sourcegraph listing in the Digital Ocean marketplace](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) for 1-click deployments
@@ -87,7 +87,7 @@ The 3.3 release will bring even more documentation improvements such as a new th
 
 Parts of our codebase are undergoing a large scale refactor, enabling existing extensions to receive enhancements faster, while adding new integrations becomes easier and quicker.
 
-We’re also investing heavily in constantly running end-to-end tests to catch bugs sooner (when for example, a code host changes their DOM), and to ensure consistency of features across integrations such as cross repository jump-to-definition on GitHub, GitLab and BitBucket server.
+We're also investing heavily in constantly running end-to-end tests to catch bugs sooner (when for example, a code host changes their DOM), and to ensure consistency of features across integrations such as cross repository jump-to-definition on GitHub, GitLab and BitBucket server.
 
 Much of 3.2 is building the foundation upon which these improvements can be made and 3.3 is where the benefits of these changes will start to be seen.
 

@@ -4,7 +4,7 @@ authors:
   - name: Quinn Slack
     url: https://twitter.com/sqs
 publishDate: 2022-07-11T10:00-07:00
-description: 'As your company’s codebase grows, devs will start needing code search to understand, fix, and automate across the codebase. Here are a few questions you should ask yourself before deciding to build code search inside your company.'
+description: 'As your company's codebase grows, devs will start needing code search to understand, fix, and automate across the codebase. Here are a few questions you should ask yourself before deciding to build code search inside your company.'
 tags: [blog]
 slug: 'things-to-know-before-building-a-code-search-tool'
 published: true
@@ -44,13 +44,13 @@ And it's not just programming language support. Devs will want to know other kin
 
 Ever since Jeff Dean and others built the first version of [Google's internal code search tool](https://www.google.com/url?q=https://codesearchguide.org/story/google&sa=D&source=docs&ust=1657309582820490&usg=AOvVaw19e-PuQfxFkOchhiY-Eyn8) around 2005, the project has cost $100M+ in salaries  alone for the dozens of engineers building it (directly or indirectly). You could build one for less money, but it would be much worse. And then why build your own worse code search instead of using one that already exists and is better anyway?
 
-Even if you've built the first version of your own code search tool, you can't stop. Your organization and codebase grows, your preferred programming languages change and evolve, your code hosts change and deprecate APIs, and your devs' needs change in all kinds of unanticipated ways. If you think code search is important enough that it’s worth building your own, then you'll surely want to continue investing to keep improving it—but that's expensive.
+Even if you've built the first version of your own code search tool, you can't stop. Your organization and codebase grows, your preferred programming languages change and evolve, your code hosts change and deprecate APIs, and your devs' needs change in all kinds of unanticipated ways. If you think code search is important enough that it's worth building your own, then you'll surely want to continue investing to keep improving it—but that's expensive.
 
 Finally, focus is crucial. You want your devs solving the problems specific to your business, not problems that are similar across companies. Every company needs code search, for most of the same reasons, and those problems aren't specific to your business.
 
 ### If you still want to build your own code search tool…
 
-Over the years, we've discovered that companies who need code search also need the ability to understand, fix, and automate changes across their entire codebase, and we’ve built those capabilities too. If you still want to build your own code search tool, try some [existing code search tools](https://codesearchguide.org/tools) first. And then, if you still want to build your own, come talk to us! We've be en thinking about code search for almost 10 years by now, and we'd love to share pointers and hear how it's going. 
+Over the years, we've discovered that companies who need code search also need the ability to understand, fix, and automate changes across their entire codebase, and we've built those capabilities too. If you still want to build your own code search tool, try some [existing code search tools](https://codesearchguide.org/tools) first. And then, if you still want to build your own, come talk to us! We've be en thinking about code search for almost 10 years by now, and we'd love to share pointers and hear how it's going. 
 
 You can get a [live demo of Sourcegraph here](https://about.sourcegraph.com/demo).
 

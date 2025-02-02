@@ -70,7 +70,7 @@ Try it on Sourcegraph.com: search for [repogroup:sample x](https://sourcegraph.c
 
 ## Improved code view and hover tooltips
 
-Sourcegraph’s code view and tooltips were rewritten from the ground up to be smoother and to support more parts of the [Language Server Protocol](http://langserver.org/).
+Sourcegraph's code view and tooltips were rewritten from the ground up to be smoother and to support more parts of the [Language Server Protocol](http://langserver.org/).
 
 - "Go to definition" and other actions now only require a single click.
 - The hover now has a button to “Find implementations” of interfaces and concrete types (if supported by the language server).

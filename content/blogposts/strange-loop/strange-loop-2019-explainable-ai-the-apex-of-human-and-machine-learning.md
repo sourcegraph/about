@@ -76,7 +76,7 @@ XAI work is mostly focused on explanation but there are problems with explanatio
 
 ![miller](/blog/strange-loop-2019/miller.jpg)
 
-1. Explanation does not actually solve the problem. Explanations don’t prevent problems, they offer excuses as to why they happen
+1. Explanation does not actually solve the problem. Explanations don't prevent problems, they offer excuses as to why they happen
 1. Explanation is not really knowledge.
 interpretable > explainable
 1. Explanation makes 'inappropriate trust' worse.

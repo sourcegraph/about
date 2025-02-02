@@ -32,7 +32,7 @@ The `/doc` command now adds the generated documentation directly above your sele
 
  <img alt="Screenshot of an inline doc generation" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-14-release/inline-doc-2.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:628}} />
  
-We've also improved the `/doc` command’s underlying prompt so it now better matches your existing comment styles, generates more concise explanations, and better understands when to use a docstring-style API comment vs a plain code comment.
+We've also improved the `/doc` command's underlying prompt so it now better matches your existing comment styles, generates more concise explanations, and better understands when to use a docstring-style API comment vs a plain code comment.
 
 ## New custom command modes 
 
@@ -59,7 +59,7 @@ See the [changelog](https://github.com/sourcegraph/cody/blob/main/vscode/CHANGEL
 
 ### Thank you
 
-Cody is [open source](https://github.com/sourcegraph/cody), and wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody is [open source](https://github.com/sourcegraph/cody), and wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 ---
 

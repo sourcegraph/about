@@ -16,7 +16,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-22-release/cody-vscode-1.22-og-image.jpg
 ---
 
-[Cody for VS Code v1.22](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) is now available. This update supports two of Google’s latest Gemini 1.5 models, Flash and Pro. It also adds buttons for quickly adding the current codebase or file context to your chat and some UI tweaks to clearly show what files Cody is using as context.
+[Cody for VS Code v1.22](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) is now available. This update supports two of Google's latest Gemini 1.5 models, Flash and Pro. It also adds buttons for quickly adding the current codebase or file context to your chat and some UI tweaks to clearly show what files Cody is using as context.
 
 ## Support for Gemini 1.5 Flash + Gemini 1.5 Pro
 
@@ -43,9 +43,9 @@ Try them out, and let us know what you think!
 
 While using chat in Cody, you can prompt it to use specific context by typing @\<repository\> or @\<file\>. When you start a _new_ chat with Cody, your current repository and file are pre-populated in the chat window.
 
-We’re making it easier to add these @-mentions to the chat window for follow-up messages (or in case you accidentally delete them).
+We're making it easier to add these @-mentions to the chat window for follow-up messages (or in case you accidentally delete them).
 
-When you type `@` in the chat window, you’ll see “Repository“ and “Current File” in the dropdown. Clicking them adds the respective @-mentions to the chat.
+When you type `@` in the chat window, you'll see “Repository“ and “Current File” in the dropdown. Clicking them adds the respective @-mentions to the chat.
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-22-release/cody-context-buttons-2.png"
@@ -54,7 +54,7 @@ When you type `@` in the chat window, you’ll see “Repository“ and “Curre
 
 ## See the exact context used for follow-up messages
 
-When you start a new chat in Cody, you’ll see a message showing the context used to respond to the first question. For follow-up messages after that point, only _net-new_ context was shown as a line item in the chat previously.  The chat would actually use all previous and new contexts, but this wasn’t clear.
+When you start a new chat in Cody, you'll see a message showing the context used to respond to the first question. For follow-up messages after that point, only _net-new_ context was shown as a line item in the chat previously.  The chat would actually use all previous and new contexts, but this wasn't clear.
 
 Now, Cody shows net-new context and mentions that prior messages are also being used as context, making it more evident that prior context in a thread is preserved for follow-ups.
 
@@ -69,7 +69,7 @@ See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.2
 
 ## Thank you
 
-Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 We value your feedback in our [support forum](https://community.sourcegraph.com/c/cody/5), [Discord](https://discord.com/servers/sourcegraph-969688426372825169), and [GitHub](https://github.com/sourcegraph/cody/discussions). Happy Codying!
 

@@ -90,17 +90,17 @@ Sourcegraph 3.8 introduces out of the box access to monitoring tools for admins 
 
 ## Behind the scenes: Even more benchmarking, automated testing, and QA
 
-Over the last few releases we have worked on improving Sourcegraph’s performance at scale for customers with 30k+ repositories, and we continue to do so. With each major improvement we make to search, we’re now running even more extensive end-to-end load tests to verify our improvements. These load tests enable us to quickly gather and analyze approximately one million search API requests, and automatically generate reports we can interpret and learn from:
+Over the last few releases we have worked on improving Sourcegraph's performance at scale for customers with 30k+ repositories, and we continue to do so. With each major improvement we make to search, we're now running even more extensive end-to-end load tests to verify our improvements. These load tests enable us to quickly gather and analyze approximately one million search API requests, and automatically generate reports we can interpret and learn from:
 
 [search performance benchmarks](/blog/3.8-benchmarks.png "search performance benchmarks")
 
-We now have greater confidence rolling out search performance improvements. For example, in just the past two Sourcegraph releases we’ve used this same methodology to validate and roll out changes that have resulted in:
+We now have greater confidence rolling out search performance improvements. For example, in just the past two Sourcegraph releases we've used this same methodology to validate and roll out changes that have resulted in:
 
 - _v3.6.2 had a 20-99% improvement in text search performance_ ([full load test comparison](https://docs.google.com/spreadsheets/d/1X-9NcQ76AAVnnVNA0shAiiV6reehmLjeOTsqGv82-5c/edit#gid=1810392049)).
 
 - _v3.7.2 had a 20x improvement to symbol search performance on large instances_ ([full load test comparison](https://docs.google.com/spreadsheets/d/1oPzePjD8YLrnppLm3nk46h48_Cxipz4_QqRMBYaIOYQ/edit#gid=724417824)).
 
-We’ve also been hard at work automating even more of our internal testing and QA process that we perform as part of each release. If you haven’t upgraded recently and seen these major improvements, there is no better time than now!
+We've also been hard at work automating even more of our internal testing and QA process that we perform as part of each release. If you haven't upgraded recently and seen these major improvements, there is no better time than now!
 
 ## Quickly toggle the browser extension on/off
 

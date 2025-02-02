@@ -18,7 +18,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/jetbrains-5.
 
 ## Claude 3 Sonnet is the new default model for Cody Free users
 
-We’re expanding Claude 3 support! Claude 3 Sonnet is now the default model used for all chats and commands for Cody Free users (in addition to Claude 3 models being available for Cody Pro users).
+We're expanding Claude 3 support! Claude 3 Sonnet is now the default model used for all chats and commands for Cody Free users (in addition to Claude 3 models being available for Cody Pro users).
 
 According to Anthropic, Sonnet is as intelligent as Claude 2.0 while being roughly twice as fast, and Free users should see those speed improvements when chatting with Cody.
 
@@ -28,7 +28,7 @@ According to Anthropic, Sonnet is as intelligent as Claude 2.0 while being rough
 
 ## New chat export functionality
 
-You can now export your chat history from your JetBrains IDE, letting you save or share prompts you’ve used in the past.
+You can now export your chat history from your JetBrains IDE, letting you save or share prompts you've used in the past.
 
 You can do this from the Chat History panel. Select a chat log, then right-click -> `Export Chat As JSON`. Alternatively, hit `Export All Chats As JSON` at the bottom of the panel.
 
@@ -42,7 +42,7 @@ You can do this from the Chat History panel. Select a chat log, then right-click
 
 ## Improved autocomplete stability and formatting fixes
 
-We’ve fixed some common bugs with autocomplete, including issues where Cody would occasionally return [redundant](https://github.com/sourcegraph/jetbrains/issues/1133) or blank completions.
+We've fixed some common bugs with autocomplete, including issues where Cody would occasionally return [redundant](https://github.com/sourcegraph/jetbrains/issues/1133) or blank completions.
 
 Autocomplete is now more stable, with consistent suggestion formatting.
 
@@ -58,7 +58,7 @@ See the [changelog](https://github.com/sourcegraph/jetbrains/releases/tag/v5.5.2
 
 ## Thank you
 
-Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 As always, we value your feedback in our [support forum](https://community.sourcegraph.com/), [Discord](https://discord.com/servers/sourcegraph-969688426372825169) and [GitHub](https://github.com/sourcegraph/cody/discussions). Happy Codying!
 

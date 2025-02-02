@@ -68,7 +68,7 @@ PING 2600::(2600::) 56 data bytes
 
 What is NDP?
 
-* Effectively the IPv6 equivalent to IPv4’s ARP
+* Effectively the IPv6 equivalent to IPv4's ARP
 * Runs on top of IPv6 + ICMPv6 with link-local addresses: fe80::/10
 * Used to ask a network neighbor for its MAC address using IPv6 address
   * A: Who has “B”? Tell “A”.
@@ -78,7 +78,7 @@ What is NDP?
 
 ![image](https://user-images.githubusercontent.com/1646931/44633795-88099600-a944-11e8-9766-995897b0d9c9.png)
 
-IPv6 and NDP’s big advantage:
+IPv6 and NDP's big advantage:
 * DHCP is not usually necessary to configure globally-routable IPv6 addresses:
   * Stateless Address Autoconfiguration (SLAAC) via NDP
     * No DHCPv6 required whatsoever
@@ -178,7 +178,7 @@ default:
 ```
 
 
-Unmarshal the `ndp.Message` implementation: call into the type’s methods to do the rest of the work, skipping the header
+Unmarshal the `ndp.Message` implementation: call into the type's methods to do the rest of the work, skipping the header
 ```go
 // Unmarshal remaining bytes into correct ndp.Message type.
 if err := m.unmarshal(b[icmpLen:]); err != nil {
@@ -187,7 +187,7 @@ if err := m.unmarshal(b[icmpLen:]); err != nil {
 ```
 
 A couple of comments on the parsing logic:
-* Using `ndp.ParseMessage`, it’s easy to parse `ndp.Message` types
+* Using `ndp.ParseMessage`, it's easy to parse `ndp.Message` types
 * Concise API: one parsing function
 * Correctness and simplicity first, performance optimizations later
 
@@ -225,7 +225,7 @@ type NeighborSolicitation struct {
 Checking for IPv4 and IPv6 addresses:
 * net.IP can contain IPv4, IPv6, or totally invalid IP addresses
   * A combination of To4 and To16 methods determine the actual type
-  * Don't think this is the friendlies API. Something I’d love to see improved upon in Go 2
+  * Don't think this is the friendlies API. Something I'd love to see improved upon in Go 2
     * net.IP interface?  net.IPv4 and net.IPv6 types?
 
 `checkIPv6` function:
@@ -265,7 +265,7 @@ if err := checkIPv6(addr); err != nil {
 }
 ```
 
-To replace the structure while unmarshaling, (1) dereference the pointer and replace contents with completed structure. (2) Always make a copy of data from the input slice; don’t assume it’s safe to retain:
+To replace the structure while unmarshaling, (1) dereference the pointer and replace contents with completed structure. (2) Always make a copy of data from the input slice; don't assume it's safe to retain:
 
 ```go
 *ns = NeighborSolicitation{
@@ -289,7 +289,7 @@ Marshal an ndp.Message into binary, prepend ICMPv6 header
 
 ```go
 func MarshalMessage(m Message) ([]byte, error) {
-	// Call m’s marshal method
+	// Call m's marshal method
 
 	// Pack bytes into an ICMPv6 header
 }
@@ -324,7 +324,7 @@ func (ns *NeighborSolicitation) marshal() ([]byte, error) {
 	// Allocation
 }
 ```
-Don’t bother allocating memory until you've checked your inputs:
+Don't bother allocating memory until you've checked your inputs:
 ```go
 // Only accept IPv6 target.
 if err := checkIPv6(ns.TargetAddress); err != nil {
@@ -529,7 +529,7 @@ created by testing.(*T).Run
         /usr/local/go/src/testing/testing.go:824 +0x2e0
 ```
 
-Enter Dmitry Vyukov's `go-fuzz`. If you’re parsing raw bytes, there's a high potential for unexpected behavior:
+Enter Dmitry Vyukov's `go-fuzz`. If you're parsing raw bytes, there's a high potential for unexpected behavior:
 * Bad input causing application problems
 * Possibility of a panic taking down your program!
 
@@ -613,7 +613,7 @@ ICMPv6 networking packages in Go:
 
 Here's how you create a ICMPv6 listener (this is a privileged operation, usually requires root):
 ```go
-// Open raw ICMPv6 listener on eth0’s link-local address.
+// Open raw ICMPv6 listener on eth0's link-local address.
 addr := "fe80::7d64:35ff:fee7:cbc4%eth0"
 ic, err := icmp.ListenPacket("ip6:ipv6-icmp", addr)
 if err != nil {
@@ -728,7 +728,7 @@ ndp rs> router advertisement from: fe80::618:d6ff:fea1:ceb7:
         - source link-layer address: 04:18:d6:a1:ce:b7
 ```
 
-## Troubleshooting your ISP’s equipment with Go
+## Troubleshooting your ISP's equipment with Go
 
 You can also use Go to troubleshoot any difficulties your ISP has with IPv6.
 
@@ -748,12 +748,12 @@ ndp rs> router solicitation:
 ndp rs> sent 95 router solicitation(s)
 ```
 
-* No luck with tech support: “your WiFi router isn’t working”
+* No luck with tech support: “your WiFi router isn't working”
 * … a modem swap during an upgrade made the problem disappear
 
 ## Conclusions
 
-* IPv6 is great, check out ipv6-test.com to see if you’re using it
+* IPv6 is great, check out ipv6-test.com to see if you're using it
 * Network protocols are powerful building blocks
 * Go is an excellent language for exploring low-level network protocols
 * Build tools to solve real problems on your network!

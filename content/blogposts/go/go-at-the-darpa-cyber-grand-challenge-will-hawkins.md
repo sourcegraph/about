@@ -109,7 +109,7 @@ We had to capture traffic, filter it, and store it for later use. A lot of optio
     * NoSQL
 * Off-the-shelf? Custom?
 
-  * bash pipeline: `tcpdump ‘port 1993’ | sed | awk | … > file`
+  * bash pipeline: `tcpdump ‘port 1993' | sed | awk | … > file`
   * Custom program
       * C
       * C++

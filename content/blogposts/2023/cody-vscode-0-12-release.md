@@ -26,7 +26,7 @@ Unit test generation now better detects your testing framework, adds any depende
 
 ### Chat pre-instructions
 
-We’ve added a new `cody.chat.preInstruction` setting you can use instruct Cody at the beginning of every chat. For example, to have Cody output TypeScript you would set the pre-instruction to `Prefer TypeScript over JavaScript`:
+We've added a new `cody.chat.preInstruction` setting you can use instruct Cody at the beginning of every chat. For example, to have Cody output TypeScript you would set the pre-instruction to `Prefer TypeScript over JavaScript`:
 
 <img alt="Screenshot of chat output with a pre-instruction set" src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-0-12-release/pre-instructions.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:737}} />
 
@@ -46,7 +46,7 @@ The "New Custom Command…" menu has been updated and allows you to choose where
 
 ### Insert at cursor no longer replaces selection
 
-When you use the "Insert at Cursor" button in Cody’s chat view and have code selected in your editor, the code will be inserted before your selection instead of replacing the selected code.
+When you use the "Insert at Cursor" button in Cody's chat view and have code selected in your editor, the code will be inserted before your selection instead of replacing the selected code.
 
 ### New claude-instant-infill autocomplete model
 
@@ -54,7 +54,7 @@ We've migrated to an all-new `claude-instant-infill` autocomplete model that can
 
 ### Code graph context for autocomplete
 
-We've added experimental code graph context fetching support for autocomplete. This is a complete reimagining of context retrieval for autocomplete, and uses the underlying language server and temporal heuristics (recently viewed symbols) to populate the context for autocomplete suggestions. It’s currently supports JavaScript, TypeScript, and Go, and we'll be testing how it performs against embeddings and local keyword context.
+We've added experimental code graph context fetching support for autocomplete. This is a complete reimagining of context retrieval for autocomplete, and uses the underlying language server and temporal heuristics (recently viewed symbols) to populate the context for autocomplete suggestions. It's currently supports JavaScript, TypeScript, and Go, and we'll be testing how it performs against embeddings and local keyword context.
 
 ### Manually request an autocomplete
 
@@ -72,7 +72,7 @@ See the [changelog](https://github.com/sourcegraph/cody/blob/main/vscode/CHANGEL
 
 ### Thank you
 
-Cody is [open source](https://github.com/sourcegraph/cody), and wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody is [open source](https://github.com/sourcegraph/cody), and wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 <hr style={{marginTop:"2rem",marginBottom:"2rem"}} />
 

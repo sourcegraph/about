@@ -125,19 +125,19 @@ We introduced the smart search bar for plain text mode that provides syntax high
 
 ![performance-improvements-code-intel](/blog/3-16-ts-to-go-lsif.png "performance-improvements-code-intel")
 
-Our precise code intelligence backend has been rewritten from TypeScript to Go. This change is part of a larger effort to aggressively optimize conversion and querying of LSIF data, which will be more apparent in upcoming releases. Even with this initial improvement, we’re seeing improvements on precise code intelligence query performance. The following graph shows the five-run average duration of our [integration test](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) before and after the rewrite.
+Our precise code intelligence backend has been rewritten from TypeScript to Go. This change is part of a larger effort to aggressively optimize conversion and querying of LSIF data, which will be more apparent in upcoming releases. Even with this initial improvement, we're seeing improvements on precise code intelligence query performance. The following graph shows the five-run average duration of our [integration test](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) before and after the rewrite.
 
 ## Discover useful scopes with `repogroup` autocompletion
 
 ![Repogroup-autocompletion](https://sourcegraphstatic.com/repogroup_completion.gif)
 
-The `repogroup` filter is useful for creating collections of repositories to search over within Sourcegraph. However, there wasn’t an easy way for users to learn what `repogroups` were available. Now, Sourcegraph provides autocompletion to help you discover available options. This happens automatically when you start typing, or can be triggered using the ctrl-spacebar keyboard shortcut. Try it out in the new smart search bar for plain text mode or in interactive mode!
+The `repogroup` filter is useful for creating collections of repositories to search over within Sourcegraph. However, there wasn't an easy way for users to learn what `repogroups` were available. Now, Sourcegraph provides autocompletion to help you discover available options. This happens automatically when you start typing, or can be triggered using the ctrl-spacebar keyboard shortcut. Try it out in the new smart search bar for plain text mode or in interactive mode!
 
 ## Check syncing status of repository and user permissions
 
 ![repository-permissions](https://user-images.githubusercontent.com/2946214/82042090-dd1eaa00-96db-11ea-9fd7-99e0e82a3d0b.png)
 
-Sourcegraph 3.14 and 3.15 introduced a more performant background permissions syncing solution for Bitbucket Server, GitLab, and GitHub repository permissions. Sourcegraph 3.16 adds new permissions pages to user and repository settings when background permissions syncing is enabled. These pages allow admins to check the last time permissions were synced and manually trigger the syncing process for an immediate refresh to the user or repository’s permissions.
+Sourcegraph 3.14 and 3.15 introduced a more performant background permissions syncing solution for Bitbucket Server, GitLab, and GitHub repository permissions. Sourcegraph 3.16 adds new permissions pages to user and repository settings when background permissions syncing is enabled. These pages allow admins to check the last time permissions were synced and manually trigger the syncing process for an immediate refresh to the user or repository's permissions.
 
 Enable this feature by adding ` "permissions.backgroundSync": {"enabled": true}` in your site configuration settings.
 
@@ -145,13 +145,13 @@ Enable this feature by adding ` "permissions.backgroundSync": {"enabled": true}`
 
 ![usage-activity-histogram](/blog/3-16-activity-histogram.png "usage activity histogram")
 
-We want to better understand the activity of users on a Sourcegraph instance while still upholding our commitment to only collecting anonymized, aggregated, and non-specific information (see our [ping philosophy](https://handbook.sourcegraph.com/engineering/adding_ping_data#ping-philosophy)). Many admins have asked to better understand the engagement of users on their instances, and in Sourcegraph 3.16 we provide a way to export this data. We will be adding an activity histogram and other visualizations to the admin area in future releases. You may also opt to share this data with Sourcegraph to help us make product decisions that make Sourcegraph even better, and we’ll share the results with you.
+We want to better understand the activity of users on a Sourcegraph instance while still upholding our commitment to only collecting anonymized, aggregated, and non-specific information (see our [ping philosophy](https://handbook.sourcegraph.com/engineering/adding_ping_data#ping-philosophy)). Many admins have asked to better understand the engagement of users on their instances, and in Sourcegraph 3.16 we provide a way to export this data. We will be adding an activity histogram and other visualizations to the admin area in future releases. You may also opt to share this data with Sourcegraph to help us make product decisions that make Sourcegraph even better, and we'll share the results with you.
 
 ## Improvements to basic code intelligence for several languages
 
 The out-of-the-box search-based code intelligence was broken on indexed commits for Haskell, JSONNet, Kotlin, Scala, Swift, Thrift, and TypeScript for several releases. Our symbol indexer did not know how to extract symbols for these languages, even though our unindexed symbol service did. This has been fixed and users with code in these languages should expect to see code intelligence hovers for their code once again!
 
-Additionally, Cobol and Tcl have been added to our growing list of languages supported via Sourcegraph’s basic code intelligence. Every Sourcegraph instance comes enabled with basic code intelligence provided by search-based heuristics. For fast and precise code intelligence, see our [LSIF documentation](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence).
+Additionally, Cobol and Tcl have been added to our growing list of languages supported via Sourcegraph's basic code intelligence. Every Sourcegraph instance comes enabled with basic code intelligence provided by search-based heuristics. For fast and precise code intelligence, see our [LSIF documentation](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence).
 
 ## Changelog
 

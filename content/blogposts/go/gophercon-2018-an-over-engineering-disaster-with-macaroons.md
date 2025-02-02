@@ -55,7 +55,7 @@ func (a *API) Authenticate(req *http.Request) (*http.Request, error) {
 		return "", errors.New("unauthenticated")
 	}
 	if user != "" {
-		// If request was successfully authn’d, pass the user along.
+		// If request was successfully authn'd, pass the user along.
 		ctx = newContextWithUser(ctx, user)
 	}
 	return req.WithContext(ctx), nil
@@ -94,7 +94,7 @@ This approach seemed quite straightforward, however finding the right approach i
 ## Capability vs Identity
 
 - Capabilities is directly granting someone the capability to do something specific
-- Identity is asking who the entity is and then determining if they’re allowed to do that thing.
+- Identity is asking who the entity is and then determining if they're allowed to do that thing.
 
 ### Example
 
@@ -117,7 +117,7 @@ access decisions for interactions
 involving more than two principals,
 since required information is not
 retained across message sends.”
-Tyler Close, ACLs don’t
+Tyler Close, ACLs don't
 
 Identity is not ideal: it often depends on a Deputy to lookup a user, but that Deputy can get confused.
 

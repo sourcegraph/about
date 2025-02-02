@@ -8,7 +8,7 @@ tags: [
   "blog"
 ]
 slug: building-toward-the-sourcegraph-master-plan
-description: 'The pace at which humans can write code is the main thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer. One obstacle holding back progress is the software that billions of people use is being created by just 0.2% of the world’s population (those who can write code).'
+description: 'The pace at which humans can write code is the main thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer. One obstacle holding back progress is the software that billions of people use is being created by just 0.2% of the world's population (those who can write code).'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/ExRGBfWJBmAQqwwMWySMy/40d48f99e4561db3fea684ebef24a4ca/blog-chart--big.png
 published: true
 ---
@@ -18,7 +18,7 @@ published: true
 <div className="flex flex-column">
     <div className="pt3">
         <div className="ma0">
-            The pace at which humans can write code is the main thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer. <strong>One obstacle holding back progress is the software that billions of people use is being created by just 0.2% of the world’s population (those who can write code).</strong>
+            The pace at which humans can write code is the main thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer. <strong>One obstacle holding back progress is the software that billions of people use is being created by just 0.2% of the world's population (those who can write code).</strong>
         </div>
     </div>
     <div className="bg-white">
@@ -60,7 +60,7 @@ published: true
 
 <div>
     <div className="mv0">
-        We founded Sourcegraph to change the developer experience of building software, which has been poor, duplicative, manual, and single-player. As developers ourselves, we saw that the complexity and scale of code bases far exceeded the limits of developer tooling and collaboration. Working inside large tech companies and financial institutions, we needed better tools to edit, search, and review code in order to build higher-quality products more quickly. We were surprised that we couldn’t find a single product that understood how code works and how it all fits together.
+        We founded Sourcegraph to change the developer experience of building software, which has been poor, duplicative, manual, and single-player. As developers ourselves, we saw that the complexity and scale of code bases far exceeded the limits of developer tooling and collaboration. Working inside large tech companies and financial institutions, we needed better tools to edit, search, and review code in order to build higher-quality products more quickly. We were surprised that we couldn't find a single product that understood how code works and how it all fits together.
     </div>
 </div>
 
@@ -78,7 +78,7 @@ published: true
 
 <div>
     <h1 className="f3 mb3">
-        Now that billions of people have access to the Internet, think: what would the world look like if coding was more like reading and writing (which virtually everyone does)?  We think it will be a world full of new opportunities for all. In the meantime, we’re excited to help today’s developers build better software.
+        Now that billions of people have access to the Internet, think: what would the world look like if coding was more like reading and writing (which virtually everyone does)?  We think it will be a world full of new opportunities for all. In the meantime, we're excited to help today's developers build better software.
     </h1>
 </div>
 

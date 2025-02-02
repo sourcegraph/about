@@ -11,7 +11,7 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/40NFOZBGkgG6IyKoMgQIGg/c162
 published: true
 ---
 
-Go scheduler’s job is to distribute runnable goroutines over multiple worker OS threads that runs on one or more processors. With its work stealing strategy and spinning threads, it does a lot to minimize context switches and aim better CPU utilization. This talk will a dive into the runtime scheduler and all the additional flavors it implements to make your programs more performant.
+Go scheduler's job is to distribute runnable goroutines over multiple worker OS threads that runs on one or more processors. With its work stealing strategy and spinning threads, it does a lot to minimize context switches and aim better CPU utilization. This talk will a dive into the runtime scheduler and all the additional flavors it implements to make your programs more performant.
 
 --
 

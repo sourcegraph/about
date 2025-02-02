@@ -4,8 +4,8 @@ externalTitle: 'Code ownership: A new perspective'
 authors:
   - name: Nick Snyder
     url: https://twitter.com/nickdsnyder
-description: "We’re rethinking the way code ownership works at Sourcegraph and building a new tool that enables developers to subscribe to file changes in a Git repository."
-externalDescription: "We’re rethinking the way code ownership works at Sourcegraph and building a new tool that enables developers to subscribe to file changes in a Git repository."
+description: "We're rethinking the way code ownership works at Sourcegraph and building a new tool that enables developers to subscribe to file changes in a Git repository."
+externalDescription: "We're rethinking the way code ownership works at Sourcegraph and building a new tool that enables developers to subscribe to file changes in a Git repository."
 publishDate: 2020-10-05T10:00-07:00
 tags: [blog]
 slug: a-different-way-to-think-about-code-ownership
@@ -13,7 +13,7 @@ heroImage: https://sourcegraphstatic.com/blog/codenotify-survey-results.png
 published: true
 ---
 
-We’re [experimenting](https://github.com/sourcegraph/sourcegraph/pull/13838) with a new way to think about code ownership, and have built a new tool called [Codenotify](https://github.com/sourcegraph/codenotify). Codenotify enables developers to easily subscribe to file changes in a Git repository without creating the expectation that changes to those files are blocked on the subscriber’s review.
+We're [experimenting](https://github.com/sourcegraph/sourcegraph/pull/13838) with a new way to think about code ownership, and have built a new tool called [Codenotify](https://github.com/sourcegraph/codenotify). Codenotify enables developers to easily subscribe to file changes in a Git repository without creating the expectation that changes to those files are blocked on the subscriber's review.
 
 ## Defining the code ownership problem
 
@@ -22,8 +22,8 @@ We host all of [our code on GitHub](https://github.com/sourcegraph/), so up unti
 As our team has grown over the past year, I started to observe patterns in code ownership problems that made me think that the way we assigned code reviewers was flawed.
 
 - Pull requests that touched multiple files of different kinds and in multiple places would sometimes end up with a large list of automatically added reviews.
-- Reviewers wouldn’t review all the changes they were notified about because it wasn’t clear if their personal review was relevant (for example: they may have gotten notified because they are on the team that owns the code, but aren’t the best reviewer for that particular change).
-- Authors (especially newer teammates) were getting slowed down because it was not clear whether they needed to wait for all automatically added reviewers or not. This was exacerbated by the fact that some teammates used CODEOWNERS as a way to be notified of changes they cared about, even if they didn’t have the intention or ability to promptly review all those changes.
+- Reviewers wouldn't review all the changes they were notified about because it wasn't clear if their personal review was relevant (for example: they may have gotten notified because they are on the team that owns the code, but aren't the best reviewer for that particular change).
+- Authors (especially newer teammates) were getting slowed down because it was not clear whether they needed to wait for all automatically added reviewers or not. This was exacerbated by the fact that some teammates used CODEOWNERS as a way to be notified of changes they cared about, even if they didn't have the intention or ability to promptly review all those changes.
 
 My diagnosis was that there were two problems:
 
@@ -49,15 +49,15 @@ In the free-form comments, responders provided extra context about their support
 - "Replace with [OWNERS](https://chromium.googlesource.com/chromium/src/+/master/docs/code_reviews.md) (something people will actually update)"
 - "I think removing CODEOWNERS makes it more difficult for new developers without historical context to determine who the right reviewers are."
 
-It was clear we needed _something_, but CODEOWNERS didn’t do exactly what we needed and we didn’t have the ability to change its behavior.
+It was clear we needed _something_, but CODEOWNERS didn't do exactly what we needed and we didn't have the ability to change its behavior.
 
 ## Exploring alternatives
 
 There was enough evidence that a code ownership problem existed to justify exploring alternatives.
 
-I found [Fullstory’s blog post about how they ran into similar problems with CODEOWNERS and ended up creating a bot](https://bionic.fullstory.com/taming-github-codeowners-with-bots/). I would have loved to experiment with using their bot, but unfortunately it was not open source.
+I found [Fullstory's blog post about how they ran into similar problems with CODEOWNERS and ended up creating a bot](https://bionic.fullstory.com/taming-github-codeowners-with-bots/). I would have loved to experiment with using their bot, but unfortunately it was not open source.
 
-A few of our teammates, including myself, worked at Google so we were familiar with the [OWNERS](https://chromium.googlesource.com/chromium/src/+/master/docs/code_reviews.md) format used internally and in the Chromium project. This would have been an improvement over CODEOWNERS because multiple files are easier to maintain than a single large file and [Chromium’s implementation explicitly attempts to minimize the number of reviewers](https://chromium.googlesource.com/chromium/tools/depot_tools/+/master/owners.py#607), but I was worried this would continue to create a gatekeeper culture around modifying code.
+A few of our teammates, including myself, worked at Google so we were familiar with the [OWNERS](https://chromium.googlesource.com/chromium/src/+/master/docs/code_reviews.md) format used internally and in the Chromium project. This would have been an improvement over CODEOWNERS because multiple files are easier to maintain than a single large file and [Chromium's implementation explicitly attempts to minimize the number of reviewers](https://chromium.googlesource.com/chromium/tools/depot_tools/+/master/owners.py#607), but I was worried this would continue to create a gatekeeper culture around modifying code.
 
 I wanted a solution that would:
 

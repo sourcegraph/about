@@ -57,7 +57,7 @@ Autocomplete suggestions make it easier to use filters in your Sourcegraph searc
   <p style={{textAlign: 'center'}}><a href="https://vimeo.com/372226334/de668e24fa" target="_blank">View on Vimeo</a></p>
 </div>
 
-Sourcegraph users use the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension) to take advantage of go-to-definition and find references on their code hosts. GitLab recognizes the value this brings to developer productivity and has partnered with Sourcegraph to provide this functionality natively to all GitLab users. Read our [feature announcement](https://about.sourcegraph.com/blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence) and [GitLab’s post](https://about.gitlab.com/blog/2019/11/12/sourcegraph-code-intelligence-integration-for-gitlab/) about collaborating in the open.
+Sourcegraph users use the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension) to take advantage of go-to-definition and find references on their code hosts. GitLab recognizes the value this brings to developer productivity and has partnered with Sourcegraph to provide this functionality natively to all GitLab users. Read our [feature announcement](https://about.sourcegraph.com/blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence) and [GitLab's post](https://about.gitlab.com/blog/2019/11/12/sourcegraph-code-intelligence-integration-for-gitlab/) about collaborating in the open.
 
 Soon, GitLab.com users will be able to opt-in to native code intelligence for public repositories by enabling Sourcegraph in their user preferences. This feature is being rolled out incrementally to public projects on GitLab.com, and will first be available on the [GitLab repository](https://gitlab.com/gitlab-org/gitlab).
 
@@ -109,7 +109,7 @@ The Kubernetes [deployment manifest](https://github.com/sourcegraph/deploy-sourc
 
 ## Fully automated release testing process
 
-As part of Sourcegraph’s ongoing commitment to providing the highest quality, stable releases, our manual QA process has in the last two months been turned into a fully automated regression testing suite. We continue to aggressively invest in automated testing of Sourcegraph to provide extremely stable and reliable releases, and ultimately better features for our users. Look forward to reading more about this in an upcoming blogpost from Sourcegraph CTO, Beyang Liu, [on our blog](https://about.sourcegraph.com/blog/).
+As part of Sourcegraph's ongoing commitment to providing the highest quality, stable releases, our manual QA process has in the last two months been turned into a fully automated regression testing suite. We continue to aggressively invest in automated testing of Sourcegraph to provide extremely stable and reliable releases, and ultimately better features for our users. Look forward to reading more about this in an upcoming blogpost from Sourcegraph CTO, Beyang Liu, [on our blog](https://about.sourcegraph.com/blog/).
 
 ## Changelog
 

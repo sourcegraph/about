@@ -12,11 +12,11 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/batch-changes-
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/batch-changes-gitlab-sg-blog.png
 ---
 
-Large-scale migration efforts are challenging for even the most sophisticated organizations: how do you identify, track, update, and validate all of the changes that need to be made? Seemingly straightforward projects can become logistical nightmares. In this case, we’ll use the example of migrating to pnpm.  
+Large-scale migration efforts are challenging for even the most sophisticated organizations: how do you identify, track, update, and validate all of the changes that need to be made? Seemingly straightforward projects can become logistical nightmares. In this case, we'll use the example of migrating to pnpm.  
 
 For an organization with hundreds or thousands of repositories that use yarn or npm, the task of migrating to pnpm can take a lot of precious time and resources! Commands need to be run to install pnpm, substitute pnpm commands, re-import packages, commit the changes, and open merge requests. On top of this, you may need to manage rate limits at the code host which might slow you down when downloading the code, pushing commits, and opening merge requests. 
 
-Such a large migration project, which touches hundreds or thousands of repositories, could benefit from some automation and project management tools. The steps to perform the migration are similar for every repository, which makes the migration a _perfect_ candidate for Sourcegraph’s Batch Changes. In this post, we’ll show how you can make API calls to integrate Sourcegraph’s Batch Changes with GitLab Issues and Epics.
+Such a large migration project, which touches hundreds or thousands of repositories, could benefit from some automation and project management tools. The steps to perform the migration are similar for every repository, which makes the migration a _perfect_ candidate for Sourcegraph's Batch Changes. In this post, we'll show how you can make API calls to integrate Sourcegraph's Batch Changes with GitLab Issues and Epics.
 
 The combination of Batch Changes with project-management tools like Issues and Epics provide an effective way to not only jump-start such a massive migration project, but create a space for teams to collaborate when  handling the intricacies and nuances that inevitably arise once the work has begun.
 
@@ -47,7 +47,7 @@ Batch changes will:
 
 [GitLab Epics](https://docs.gitlab.com/ee/user/group/epics/) serve as the parent of one or more issues, and/or of one or more child epics.
 
-In our example today, we’ll use a parent epic to track the pnpm migration at the organization level, and we’ll create one issue per merge request to perform each repository-level pnpm migration.
+In our example today, we'll use a parent epic to track the pnpm migration at the organization level, and we'll create one issue per merge request to perform each repository-level pnpm migration.
 
 Sourcegraph Batch Changes, used in conjunction with GitLab Issues and Epics, allows an organization to programmatically and efficiently execute a large — or a not so large — migration project. 
 
@@ -95,7 +95,7 @@ This is the script that calls the GitLab API to create an Issue as part of a cha
 
 ### Dockerfiles
 
-The gitlab-script.Dockerfile and node-pnpm.Dockerfile are example Dockerfiles to demonstrate building containers to do specific tasks - in this case, one to copy the createIssue.js script, and another to install pnpm so that pnpm commands can be run in the container. You don’t _need_ these to run the batch spec file as-is, but you _will_ need to write similar Dockerfiles if you want to update the GitLab script, add additional packages to help with your migration needs, use a different version of pnpm, etc.
+The gitlab-script.Dockerfile and node-pnpm.Dockerfile are example Dockerfiles to demonstrate building containers to do specific tasks - in this case, one to copy the createIssue.js script, and another to install pnpm so that pnpm commands can be run in the container. You don't _need_ these to run the batch spec file as-is, but you _will_ need to write similar Dockerfiles if you want to update the GitLab script, add additional packages to help with your migration needs, use a different version of pnpm, etc.
 
 
 ## Putting it all together
@@ -119,10 +119,10 @@ Since we linked the issue in the merge request description of each changeset, Gi
 
 ### Tips
 
-This example was created as a minimum viable example to demonstrate this integration, and I’d like to give the following tips to anyone who tries to adapt it for their own use:
-* If it’s your first time using Batch Changes, run through our[ Quickstart guide](https://docs.sourcegraph.com/batch_changes/quickstart)
+This example was created as a minimum viable example to demonstrate this integration, and I'd like to give the following tips to anyone who tries to adapt it for their own use:
+* If it's your first time using Batch Changes, run through our[ Quickstart guide](https://docs.sourcegraph.com/batch_changes/quickstart)
 * Refer to the Batch Changes[ reference docs](https://docs.sourcegraph.com/batch_changes/references)
-* Don’t forget to set the required environment variables and[ executor secrets](https://docs.sourcegraph.com/admin/executors/executor_secrets)!
+* Don't forget to set the required environment variables and[ executor secrets](https://docs.sourcegraph.com/admin/executors/executor_secrets)!
 * Build any Docker images for amd64 architecture, which is what the executors need
 * Update the Ruby scripting of the first change step to do string replacement for “npm” or “yarn” commands to use the “pnpm” equivalents, according to your needs
 

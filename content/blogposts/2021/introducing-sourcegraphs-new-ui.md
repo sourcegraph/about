@@ -14,7 +14,7 @@ published: true
 
 ![Sourcegraph's new visual design and UI unveiled](https://sourcegraphstatic.com/blog/sourcegraph-new-visual-design-ui.jpg)
 
-Sourcegraph has grown rapidly in the last few years. We've made code search an indispensable tool at some of the world’s best-known companies. We've launched new features such as Code Monitoring and [Batch Changes](https://about.sourcegraph.com/blog/introducing-batch-changes/), fixed hundreds of bugs, introduced powerful new search capabilities, and many, many other features.
+Sourcegraph has grown rapidly in the last few years. We've made code search an indispensable tool at some of the world's best-known companies. We've launched new features such as Code Monitoring and [Batch Changes](https://about.sourcegraph.com/blog/introducing-batch-changes/), fixed hundreds of bugs, introduced powerful new search capabilities, and many, many other features.
 
 In the midst of all of this growth, we found that users were experiencing difficulties caused by our aging visual design language and that the design of major components was limiting our ability to advance Sourcegraph as a product.
 
@@ -35,8 +35,8 @@ And now, today––a few short months after beginning the project––we are p
 
 ![focus on code screenshot](https://sourcegraphstatic.com/blog/redesign/r_code.png)
 
-- Readability of code is paramount. To facilitate that, we’ve reduced non-essential UI elements to provide greater focus on the code itself.
-- Complicated interfaces can cause fatigue, so we've reduced UI elements overall and positioned the most important items so they’re unobtrusive and live exactly where they are needed.
+- Readability of code is paramount. To facilitate that, we've reduced non-essential UI elements to provide greater focus on the code itself.
+- Complicated interfaces can cause fatigue, so we've reduced UI elements overall and positioned the most important items so they're unobtrusive and live exactly where they are needed.
 
 ## Improved layouts
 

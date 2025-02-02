@@ -88,7 +88,7 @@ Things like direct instruction, vocalizing syntax aloud, and being provided exam
 
 2. This talk was about how to teach programming and shows that our current approach is broken.
 
-3. Not having a teacher in our programming education is fairly common, however, that's not really the most efficient way to learn. Don’t be afraid to try something different.
+3. Not having a teacher in our programming education is fairly common, however, that's not really the most efficient way to learn. Don't be afraid to try something different.
 
 4. Research shows that reading things aloud paired with expert explanations produces the greatest success.
 

@@ -24,7 +24,7 @@ tl;dr: Adding a GraphQL layer on top of everything else in your stack (on “the
 
 * GraphQL can be the shield around your application, allowing you to access but also protect the data: It affords normalization, sanitization (of inputs as well as outputs), and verification (of correctness on the way in and also out)
 
-*Examples*: A phone number can come in a ton of formats, but you want to operate in the same way. A script tag may or may not be allowable. A `new Date(‘2017-10’)` may need to be pre-processed. The type system can do this validation for you, so that your app can always get `+1 412 555 9911`.
+*Examples*: A phone number can come in a ton of formats, but you want to operate in the same way. A script tag may or may not be allowable. A `new Date(‘2017-10')` may need to be pre-processed. The type system can do this validation for you, so that your app can always get `+1 412 555 9911`.
 
 Concept: GraphQL Normalized Types (GNT). Inspired by gin and tonics, simple, consistent, reliable, always there for you. The whole idea of the GNTs is to be able to reuse certain types across applications, companies, etc. It is a type library.
 

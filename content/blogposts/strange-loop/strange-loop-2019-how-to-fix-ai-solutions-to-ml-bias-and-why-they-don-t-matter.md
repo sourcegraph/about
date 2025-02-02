@@ -44,7 +44,7 @@ Majority of the talk focuses on technical mitigations for bias in data and will 
 
 ## 1. The Problem
 
-Joyce tells a story from 1961 about a man called Clyde Ross who tried to buy a home in North Lawndale, Chicago. He was a veteran who after WW II had worked for 14 years before he and his wife tried to buy a house. Unfortunately, he gets into a predatory agreement where he pays his mortgage to his seller, but Ross doesn’t get any equity. And if he misses a single payment, he forfeits the property itself. He tried to leave and get new housing but discovered he could not because of redlining.  Redlining specifically affected people of color. Joyce tells another story from 2018 where Rachelle Faroud tried to but a house in Western Philadelphia again and again and was denied despite improving her social standing.
+Joyce tells a story from 1961 about a man called Clyde Ross who tried to buy a home in North Lawndale, Chicago. He was a veteran who after WW II had worked for 14 years before he and his wife tried to buy a house. Unfortunately, he gets into a predatory agreement where he pays his mortgage to his seller, but Ross doesn't get any equity. And if he misses a single payment, he forfeits the property itself. He tried to leave and get new housing but discovered he could not because of redlining.  Redlining specifically affected people of color. Joyce tells another story from 2018 where Rachelle Faroud tried to but a house in Western Philadelphia again and again and was denied despite improving her social standing.
 
 In 1968 the Fair Housing Act was passed to protect people from discrimination such as what Clyde Ross went through.
 
@@ -72,7 +72,7 @@ Knowing that the data is biased, how can we build algorithms that combat this bi
 ### 2.1 Adversarial de-biasing
 
 Joyce does a quick recap session on ML. In adversarial learning, let's build a model that predicts the label and the protected attribute.
-If we can successfully predict what we want but cannot predict this protected attribute, then I have not mistakenly encoded something that reveals the protected attribute. Predict both label and protected attribute (eg race/gender) then send back some negative signal along with the positive if it’s also the protected class.
+If we can successfully predict what we want but cannot predict this protected attribute, then I have not mistakenly encoded something that reveals the protected attribute. Predict both label and protected attribute (eg race/gender) then send back some negative signal along with the positive if it's also the protected class.
 
 ![9 Ad](/blog/strange-loop-2019/9-ad.jpg)
 ![10 Ad](/blog/strange-loop-2019/10-ad.jpg)
@@ -101,11 +101,11 @@ An auto-encoder takes in a representation of input and tries to find more useful
 The problem is that sometimes your neural network generates different latent representation of similar inputs. The variational auto-encoder corrects this. We try to make similar inputs are densely clustered in normal Gaussian distributions
 ![19 dud](/blog/strange-loop-2019/19-dud.jpg)
 
-You don’t need to know the exact bias; make sure you see equal representation of different kinds of inputs so it’s well represented (eg detecting women and POC faces)
+You don't need to know the exact bias; make sure you see equal representation of different kinds of inputs so it's well represented (eg detecting women and POC faces)
 
 ![20 dud](/blog/strange-loop-2019/20-dud.jpg)
 
-We are trying to have  maximize the probability of being able to reconstruct the input from the latent representation. We want to see equal representation of different kinds of inputs so it’s well represented (e.g. detecting women and POC faces)
+We are trying to have  maximize the probability of being able to reconstruct the input from the latent representation. We want to see equal representation of different kinds of inputs so it's well represented (e.g. detecting women and POC faces)
 ![21 dud](/blog/strange-loop-2019/21-dud.jpg)
 ![22 dud](/blog/strange-loop-2019/22-dud.jpg)
 

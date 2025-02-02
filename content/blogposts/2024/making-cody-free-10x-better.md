@@ -15,17 +15,17 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/making-cody-
 
 Every month, [Cody](https://sourcegraph.com/cody) helps devs all over the world write millions of lines of code, helping you stay in flow, read and write code faster, and ultimately build amazing software. 
 
-We love seeing all the cool things you’re doing with Cody. But when we looked at our data, we saw a problem that we didn’t love: too many devs were regularly hitting the Cody Free usage limitations. We also see incredible new models being released that our Cody Pro users love, but weren't available to Free users. Since we build Cody to be a tool to help _every_ dev, we made some changes that we think you'll like.
+We love seeing all the cool things you're doing with Cody. But when we looked at our data, we saw a problem that we didn't love: too many devs were regularly hitting the Cody Free usage limitations. We also see incredible new models being released that our Cody Pro users love, but weren't available to Free users. Since we build Cody to be a tool to help _every_ dev, we made some changes that we think you'll like.
 
 So today, we're excited to announce that we're making the Cody Free tier **10x better**: 
 
 * **Model choice with Claude 3.5 Sonnet:** Cody Free users can now choose which model to use, including Mixtral, Gemini 1.5, Claude 3 Haiku, and even Claude 3.5 Sonnet
-* **Unlimited code completions:** We’re scrapping the limit on code completions. Every tier of Cody, including Cody Free, now gets unlimited AI-generated autocomplete
+* **Unlimited code completions:** We're scrapping the limit on code completions. Every tier of Cody, including Cody Free, now gets unlimited AI-generated autocomplete
 * **10x more chats and commands:** You now get 200 chats and commands every month, up from 20
 
-Previously, Cody Free only offered Claude 3 Sonnet. We’re bringing the ability to hot-swap models from Cody Pro to our Free users, so you can choose the **best models** to fit your preferences. Whether you prefer a faster model or a larger, more capable model, Cody Free now has options for you.
+Previously, Cody Free only offered Claude 3 Sonnet. We're bringing the ability to hot-swap models from Cody Pro to our Free users, so you can choose the **best models** to fit your preferences. Whether you prefer a faster model or a larger, more capable model, Cody Free now has options for you.
 
-This change is **now live for all Cody users**, including VS Code, JetBrains, and [Cody web](https://sourcegraph.com/cody/chat) users. If you’re using Cody in your IDE, you can get these upgrades by updating to the latest extension version. If you don’t yet have Cody, you can [get started today](https://sourcegraph.com/cody).
+This change is **now live for all Cody users**, including VS Code, JetBrains, and [Cody web](https://sourcegraph.com/cody/chat) users. If you're using Cody in your IDE, you can get these upgrades by updating to the latest extension version. If you don't yet have Cody, you can [get started today](https://sourcegraph.com/cody).
 
 ## Want even more Cody?
 

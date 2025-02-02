@@ -42,7 +42,7 @@ Also often referred to as "reduced complexity", Go forgoes many of the complicat
 - Go has no classes; methods can be added to any type.
 - It has no inheritance; interfaces are implicitly satisfied.
 - Types stand alone by themselves; they just are and have no hierarchy.
-- Methods aren’t special; they’re just functions.
+- Methods aren't special; they're just functions.
 
 And of course, Go doesn't have generics.
 
@@ -107,13 +107,13 @@ Key takeaways:
 
 ## Premature Exportation
 
-Developers have a drive to taxonimize things and split them into the smallest possible pieces. This excessive over taxonification, in order to derive the smallest, DRYest piece of code can result in many small packages. This has a follow on effect: In order to make the package usable, most or all of the package’s content needs to be exported.
+Developers have a drive to taxonimize things and split them into the smallest possible pieces. This excessive over taxonification, in order to derive the smallest, DRYest piece of code can result in many small packages. This has a follow on effect: In order to make the package usable, most or all of the package's content needs to be exported.
 
 This anti-pattern often emerges when packages that are internal to a project are exported wholesale. Anyone that can view the project's source code can import these packages, even if the original authors aren't expecting it. The use of an `internal` directory can be used to signal intent that these packages are not meant for external consumption. If necessary external users can copy the code into their own projects, or start dialog with the maintainers of the project about their needs with the intent of making some are all of the features they need publicly available.
 
 Key takeaways:
 
-- Don’t export types, variables, function and constants until there is a need to do so.
+- Don't export types, variables, function and constants until there is a need to do so.
 - The DRYest, smallest, most segmented packages lead to the need to export everything.
 - Keep packages that are not meant for external consumption in an internal folder.
 
@@ -139,7 +139,7 @@ They all generate things. A better approach might be to create a `generate` pack
 Key takeaways:
 
 - Package names have semantic meaning.
-- Package names should describe the purpose of the package, not it’s contents.
+- Package names should describe the purpose of the package, not it's contents.
 - The only part of the package import path that matters is the right most name.
 - `util` says nothing about the purpose of a package beyond a grouping of bits.
 
@@ -182,8 +182,8 @@ Pointers aren't always faster, and they don't mean garbage won't be created. Tak
 Key takeaways:
 
 - Pointers are about the ownership of data.
-- They aren’t necessarily faster. Use benchmarks to prove that the additional overhead is worth it.
-- Remember one to the Go proverbs: Don’t communicate by sharing memory, share memory by communicating.
+- They aren't necessarily faster. Use benchmarks to prove that the additional overhead is worth it.
+- Remember one to the Go proverbs: Don't communicate by sharing memory, share memory by communicating.
 
 ## context.Value
 
@@ -218,7 +218,7 @@ There are some issues with it:
 - How do errors from the goroutine get communicated?
 - What if a synchronous API is needed?
 
-Most of these issues can be handled by making the Logs() function take additional parameters, or by making it a type and adding additional methods to that type. However it would still be an asynchronous API and it’s complexity will have grown.
+Most of these issues can be handled by making the Logs() function take additional parameters, or by making it a type and adding additional methods to that type. However it would still be an asynchronous API and it's complexity will have grown.
 
 This synchronous version that answers all of those questions:
 
@@ -244,7 +244,7 @@ func main() {
 }
 ```
 
-The `Reader` value is in control of the reading loop and error handling. It may be asynchronous under the hood but those channels aren't exposed. This synchronous API can be made asynchronous if and when it’s needed by it’s consumers.
+The `Reader` value is in control of the reading loop and error handling. It may be asynchronous under the hood but those channels aren't exposed. This synchronous API can be made asynchronous if and when it's needed by it's consumers.
 
 Key takeaways:
 
@@ -283,7 +283,7 @@ Key takeaways:
 
 - Handle unexpected cases and errors early and return often.
 - Keep common or happy paths de-dented.
-- When it’s not possible refactor and/or redesign.
+- When it's not possible refactor and/or redesign.
 
 ## Panic in a Lib
 
@@ -293,8 +293,8 @@ In Go, treating the error as a value and handling it is idiomatic.
 
 Key takeaways:
 
-- Return errors, don’t panic.
-- Only panic when an error can’t be handled directly or the handling can’t be delegated to the upstream caller.
+- Return errors, don't panic.
+- Only panic when an error can't be handled directly or the handling can't be delegated to the upstream caller.
 - This should only happen when the program cannot make any forward progress.
 
 ## Interface All The Things
@@ -303,15 +303,15 @@ Small, focused interfaces are the key to writing powerful and flexible go code. 
 
 Often, larger interfaces in codebases with 6 or even 12 methods tend to only have two implementations: the only concrete implementation, and a mock for the purposes of testing (worse, sometimes the tests the use these mocks really end up testing a set of mocks instead of the actual implementations)
 
-These large interfaces tend to be defined up-front. They aren’t discovered across implementations at a later date. Interfaces should be discovered from existing types and extracted out of them.
+These large interfaces tend to be defined up-front. They aren't discovered across implementations at a later date. Interfaces should be discovered from existing types and extracted out of them.
 
 The `io.Reader` and `io.Writer` interfaces weren't designed up front, they were discovered later. The network, file and other byte handling types shared a similar implementation. Out of those similarities the `io.Reader` and `io.Writer` interfaces were born.
 
 Key takeaways:
 
 - The bigger the interface, the weaker the abstraction.
-- Rethinking the abstraction and pivoting away from what is being done to how it’s being done can help. Though sometimes the inverse is true.
-- There are other ways to test things then mocking an interface. The `httptest.Server` type’s handlers and network servers are pretty easy to write in Go.
+- Rethinking the abstraction and pivoting away from what is being done to how it's being done can help. Though sometimes the inverse is true.
+- There are other ways to test things then mocking an interface. The `httptest.Server` type's handlers and network servers are pretty easy to write in Go.
 
 ## interface{}
 
@@ -323,7 +323,7 @@ What does the function Voila know about value “i”? To quote the Go proverbs:
 
 > _The empty interface says nothing._
 
-But Voila will need to resort to type assertions or switch statements to determine how “i” should be handled. The empty interface sidesteps static type checking and Voila can’t force any guarantees on the caller. If a case isn't written to handle it, it will have to rely on a generic fallback.
+But Voila will need to resort to type assertions or switch statements to determine how “i” should be handled. The empty interface sidesteps static type checking and Voila can't force any guarantees on the caller. If a case isn't written to handle it, it will have to rely on a generic fallback.
 
 Instead of using the empty interface, try to create an interface with a method that defines the behavior you need:
 

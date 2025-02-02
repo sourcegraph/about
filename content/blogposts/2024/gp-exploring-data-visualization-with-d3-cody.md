@@ -20,7 +20,7 @@ This article discusses data visualization using [D3.js](https://d3js.org/) and e
 
 ## Prerequisites
 
-This article will break down complex concepts to be easily understood. However, to properly follow through, you’ll need:
+This article will break down complex concepts to be easily understood. However, to properly follow through, you'll need:
 
 * [Node.js](https://nodejs.org) installed on your machine
 * Knowledge of [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -29,17 +29,17 @@ This article will break down complex concepts to be easily understood. However, 
 
 ## What is data visualization?
 
-Before we get into the technical aspects, it’s important to understand the concept of data visualization and why we visualize data. One way to convey data is to use text. However, there are situations where textual representation of data does not suffice. For example, showing the rank of some data in ascending order. In conveying data, the most important factor to consider is the comprehension of viewers or anyone who reads the data, which means a conscious effort must be adopted to convey data, through text or graphics. 
+Before we get into the technical aspects, it's important to understand the concept of data visualization and why we visualize data. One way to convey data is to use text. However, there are situations where textual representation of data does not suffice. For example, showing the rank of some data in ascending order. In conveying data, the most important factor to consider is the comprehension of viewers or anyone who reads the data, which means a conscious effort must be adopted to convey data, through text or graphics. 
 
 Data visualization refers to the graphical representation of data using visual elements, such as charts, graphs, maps, and tables. 
 
 ## D3.js 
 
-[D3.js](https://d3js.org/) (or simply D3, short for Data-Driven Documents) is an open source JavaScript library used to visualize data on the web. It is an extremely fast and flexible library. It allows you to express creativity in data visualization using HTML, CSS, and JavaScript (at the basic level). The term “Data-Driven Documents” means the visual elements are dynamically generated from the data provided, which makes D3 exciting to use. You provide the raw data and it generates the visual element. We’ll see how this works in a bit. 
+[D3.js](https://d3js.org/) (or simply D3, short for Data-Driven Documents) is an open source JavaScript library used to visualize data on the web. It is an extremely fast and flexible library. It allows you to express creativity in data visualization using HTML, CSS, and JavaScript (at the basic level). The term “Data-Driven Documents” means the visual elements are dynamically generated from the data provided, which makes D3 exciting to use. You provide the raw data and it generates the visual element. We'll see how this works in a bit. 
 
 ## Cody AI
 
-A key factor in choosing a library or tool in software development is ease of use, or how well it aids developers’ productivity. With Cody in the picture, this becomes less of a worry because it adds the missing piece to your development workflow. 
+A key factor in choosing a library or tool in software development is ease of use, or how well it aids developers' productivity. With Cody in the picture, this becomes less of a worry because it adds the missing piece to your development workflow. 
 
 [Cody](https://sourcegraph.com/cody) is an open-source coding AI assistant developed by Sourcegraph that aids your development process by providing context-aware solutions based on your codebase. It has features such as code autocomplete, AI-powered chat with multiple large language models (LLMs), provides explanations on your code, can help optimize code for best practices, and more. In this article, you will learn how Cody helps you enhance productivity when visualizing data with D3.js. 
 
@@ -69,7 +69,7 @@ D3.js allows developers to bind arbitrary data to the DOM, which makes it easy t
 
 ### Selecting elements
 
-The concept of selecting elements in D3.js isn’t so strange, especially from a JavaScript background. Selecting elements basically entails targeting the particular element you want to modify and visualize. 
+The concept of selecting elements in D3.js isn't so strange, especially from a JavaScript background. Selecting elements basically entails targeting the particular element you want to modify and visualize. 
 
 Suppose you want to visualize elements with the class `chartbox`, you simply use the `.chartbox` class selector, or a `div` element selector to select a `div` element. D3.js provides two methods of selecting elements; the `d3.select()` method and the `d3.selectAll` method. The `d3.select` method selects only the first matching element while `d3.selectAll` selects all matching instances in the DOM(from top to bottom). Consider the practical example below to learn more about how the select methods work:
 
@@ -87,7 +87,7 @@ Then I select the `h1` element with the `.select()` method:
 d3.select("h1").style("color", "red");
 ```
 
-Here’s the result:
+Here's the result:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with-d3-cody/image_001.png"
@@ -100,7 +100,7 @@ We see that only the first `h1` element is affected because we used the `.select
   caption="Using Cody's Edit Command"
 />
 
-And there! Come on, how interesting is this? I tell Cody to _change the method to .selectAll and the color to blue_, and then click on **accept** (since it’s precisely the change I want to make). Here’s the result:
+And there! Come on, how interesting is this? I tell Cody to _change the method to .selectAll and the color to blue_, and then click on **accept** (since it's precisely the change I want to make). Here's the result:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with-d3-cody/image_003.png"
@@ -110,7 +110,7 @@ There you go. It acts just as expected, targeting all instances of `h1`.
 
 ### Modifying elements
 
-The next step after the selection of elements is to modify them. Yes, you’ve targeted the element, what styles do you want to pass into it? How do you want it to behave? In the previous section, we saw how we could select elements in D3.js and then change the text color of those elements. When an element is selected, several operations can be performed on it, which entails what modifying elements is all about at the basic level. Here’s an example for your understanding:
+The next step after the selection of elements is to modify them. Yes, you've targeted the element, what styles do you want to pass into it? How do you want it to behave? In the previous section, we saw how we could select elements in D3.js and then change the text color of those elements. When an element is selected, several operations can be performed on it, which entails what modifying elements is all about at the basic level. Here's an example for your understanding:
 
 ```javascript
 d3.select("div")
@@ -122,7 +122,7 @@ d3.select("div")
 
 ### Joining data
 
-D3.js allows you to bind data from an array to a specified element using the `.join()` method. This method makes it easy to manipulate data and pass new values to an element. The `.join` method returns the updated version of the selected element. Let’s see how this works:
+D3.js allows you to bind data from an array to a specified element using the `.join()` method. This method makes it easy to manipulate data and pass new values to an element. The `.join` method returns the updated version of the selected element. Let's see how this works:
 
 ```javascript
 let codyFeatures = [
@@ -139,7 +139,7 @@ let codyFeatures = [
     .text((d) => d);
 ```
 
-Here, I created an array called `codyFeatures` which contains some features of Cody AI. Then I selected the first element with a class of `.cody`, passed the array as a parameter in the `.data` method, and used the `.join` method to bind the values of the array to the element (in this case, the `h1` element). In summary, I dynamically joined the array to the h1 element. Here’s how the result looks:
+Here, I created an array called `codyFeatures` which contains some features of Cody AI. Then I selected the first element with a class of `.cody`, passed the array as a parameter in the `.data` method, and used the `.join` method to bind the values of the array to the element (in this case, the `h1` element). In summary, I dynamically joined the array to the h1 element. Here's how the result looks:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with-d3-cody/image_004.png"
@@ -149,7 +149,7 @@ And there! We have our result just as expected.
 
 ## Visualizing data using charts
 
-Now that we’ve discussed the basic syntax and logic of D3.js. Let’s dive into using some of that logic to create charts to convey some textual data. Here, we want to convey data on a bar chart based on the value in an array of numbers. Let’s start by defining the width and height of our chart.  
+Now that we've discussed the basic syntax and logic of D3.js. Let's dive into using some of that logic to create charts to convey some textual data. Here, we want to convey data on a bar chart based on the value in an array of numbers. Let's start by defining the width and height of our chart.  
 
 ```javascript
 const width = 600;
@@ -162,7 +162,7 @@ We set our width to 600 so it contains the value of 9 numbers without compressio
 const values = [100, 90, 80, 60, 50, 40, 30, 20, 10];
 ```
  
-We now have the dimension of our chart set and our array of numbers defined. The next step will be to create our SVG container using the `d3.create()` method. SVG helps to visualize data by creating customizable containers. Let’s see how it is done: 
+We now have the dimension of our chart set and our array of numbers defined. The next step will be to create our SVG container using the `d3.create()` method. SVG helps to visualize data by creating customizable containers. Let's see how it is done: 
 
 ```javascript
 const svg = d3.create("svg")
@@ -184,7 +184,7 @@ After creating an SVG element here, we modify the element just like we discussed
     .attr("fill", "purple");
 ```
  
-This particular block of code utilizes all the concepts we discussed earlier — selecting elements, modifying elements, and binding elements. We start by selecting all the elements and then bind the values of the array so they correspond to each element. The `.enter()` method serves as a placeholder for data with no corresponding elements in the DOM. Next, we append the `rect` element to the SVG to convey a particular piece of data. Then we proceed to evenly space the bars and make sure the height of the bars is based on the values of the numbers. That is, the largest numbers represent the tallest bars. We set the color of the bars to purple(just because that’s the theme at Sourcegraph). 
+This particular block of code utilizes all the concepts we discussed earlier — selecting elements, modifying elements, and binding elements. We start by selecting all the elements and then bind the values of the array so they correspond to each element. The `.enter()` method serves as a placeholder for data with no corresponding elements in the DOM. Next, we append the `rect` element to the SVG to convey a particular piece of data. Then we proceed to evenly space the bars and make sure the height of the bars is based on the values of the numbers. That is, the largest numbers represent the tallest bars. We set the color of the bars to purple(just because that's the theme at Sourcegraph). 
 
 On a final bit, we append our SVG node to the DOM so it reflects on our browser.  
 
@@ -196,7 +196,7 @@ chart.append(svg.node());
 <div id="chart"></div> //html
 ```
 
-Here’s the full code: 
+Here's the full code: 
 
 ```javascript
 const width = 600; 
@@ -224,21 +224,21 @@ chart.append(svg.node());
 <div id="chart"></div>
 ```
 
-Here’s the result:
+Here's the result:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with-d3-cody/image_005.png"
 />
 
 
-Here, we see the chart is in descending order, just as we arranged the numbers in the array. How about toggling the codebase so our chart appears in ascending order? We can always call on our good old friend, Cody, to help. Let’s give it a try:
+Here, we see the chart is in descending order, just as we arranged the numbers in the array. How about toggling the codebase so our chart appears in ascending order? We can always call on our good old friend, Cody, to help. Let's give it a try:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with-d3-cody/image_006.gif"
   caption="Using Cody to arrange our chart in ascending order."
 />
 
-And there! I simply tell Cody to _modify this code so the chart appears in ascending order._ It takes in the highlighted piece of code as context and then provides a context-aware solution by rearranging the values of the numbers of the array. Let’s see how the result looks:
+And there! I simply tell Cody to _modify this code so the chart appears in ascending order._ It takes in the highlighted piece of code as context and then provides a context-aware solution by rearranging the values of the numbers of the array. Let's see how the result looks:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with-d3-cody/image_007.png"
@@ -252,7 +252,7 @@ When talking about appealing and eye-catching visualization, we must also talk a
 
 ### The `.transition()` method
 
-This handles the basic functionality of making elements move in D3.js. Without transitions, all elements appear instantaneously on your web browser when loaded or reloaded. Transitions give the flexibility to control the progression of elements on the browser. With the `.transition` method in D3.js, we can monitor the current state of elements and the target state. So, rather than only working with a single (final) state, we’re working with two states here. The element then moves in tune with the difference in values of the two states. We’ll see how that works in a bit. 
+This handles the basic functionality of making elements move in D3.js. Without transitions, all elements appear instantaneously on your web browser when loaded or reloaded. Transitions give the flexibility to control the progression of elements on the browser. With the `.transition` method in D3.js, we can monitor the current state of elements and the target state. So, rather than only working with a single (final) state, we're working with two states here. The element then moves in tune with the difference in values of the two states. We'll see how that works in a bit. 
 
 ### The `.duration()` method
 
@@ -260,7 +260,7 @@ The `.duration()` method is also important in making transitions at the basic le
 
 ### Adding animations 
 
-Having understood the basic concept of the `.transition()` and `.duration()` methods in D3.js, we can then add animation to our chart. First, we need to revisit our codebase and make a few changes to the properties so we have two states; the current state and the desired or target state. Let’s start by providing the width and height of the bars at the current state and then defining it at the target state. At the current state, we have:
+Having understood the basic concept of the `.transition()` and `.duration()` methods in D3.js, we can then add animation to our chart. First, we need to revisit our codebase and make a few changes to the properties so we have two states; the current state and the desired or target state. Let's start by providing the width and height of the bars at the current state and then defining it at the target state. At the current state, we have:
 
 ```javascript
 svg
@@ -274,7 +274,7 @@ svg
     .attr("height", 0); // height at current stage
 ```
 
-Here, we see that the width and height are set to 0, which means it doesn’t exist at the current stage. We can then set some values at the target stage like so:
+Here, we see that the width and height are set to 0, which means it doesn't exist at the current stage. We can then set some values at the target stage like so:
 
 ```javascript
 d3.selectAll("rect")
@@ -287,7 +287,7 @@ d3.selectAll("rect")
 
 In the above code, we select all the `rect` elements with the `selectAll` method, using the .`transition` method, and then set our duration to 2000ms which makes the animation run for 2 seconds. Then we proceed to set the styles of the bar at the target stage(remember we set the width and height to zero at the start stage). 
 
-Here’s the full code:
+Here's the full code:
 
 ```javascript
 // current stage
@@ -310,13 +310,13 @@ svg
     .attr("height", (d) => d);
 ```
 
-Here’s the result:
+Here's the result:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/gp-exploring-data-visualization-with-d3-cody/image_008.gif"
 />
 
-And there! We’ve added animation to our chart. Feel free to make some changes and explore!
+And there! We've added animation to our chart. Feel free to make some changes and explore!
 
 ## Conclusion
 

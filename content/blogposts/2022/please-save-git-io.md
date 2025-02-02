@@ -26,14 +26,14 @@ Git.io is widely used and extinguishing this service will result in hundreds of 
 - 704k+ code files mention git.io [according to GitHub search](https://github.com/search?q=git.io&type=code)
 - [Google reports](https://www.google.com/search?client=firefox-b-1-d&q=site%3Agit.io) 10,300+ results for `site:git.io`
 
-## What we’re doing
+## What we're doing
 
-When some friends and I first heard this news, we thought we had to do everything we could to save it. Sourcegraph agreed, so we’re urgently trying to do everything we can to save git.io:
+When some friends and I first heard this news, we thought we had to do everything we could to save it. Sourcegraph agreed, so we're urgently trying to do everything we can to save git.io:
 
 - Setting up a [Discord server / working group](https://discord.gg/MRJyav9GCf) to discuss what we can do to save it, including scraping as many git.io links as we can before the service is extinguished.
 - Creating a public data set of each URL -> it's redirect in an open source project so we can [work with Archive.org](https://tracker.archiveteam.org:1338/status) once we have the data, or set up a savegit.io domain if needed.
 
-We’re also trying[[0](https://twitter.com/beyang/status/1519017460623499267)][[1](https://twitter.com/slimsag/status/1519023870962929664)] to see if we can get in contact with folks over at GitHub to see if:
+We're also trying[[0](https://twitter.com/beyang/status/1519017460623499267)][[1](https://twitter.com/slimsag/status/1519023870962929664)] to see if we can get in contact with folks over at GitHub to see if:
 
 - GitHub can open-source the database to avoid a central point of failure
 - GitHub can transfer the data to the community so we can find alternative ways to keep it running
@@ -41,6 +41,6 @@ We’re also trying[[0](https://twitter.com/beyang/status/1519017460623499267)][
 
 ## How you can help
 
-If you think you can help out at all, please join the [Save git.io Discord group](https://discord.gg/MRJyav9GCf) where we’re coordinating, discussing scraping strategies, and more.
+If you think you can help out at all, please join the [Save git.io Discord group](https://discord.gg/MRJyav9GCf) where we're coordinating, discussing scraping strategies, and more.
 
-We’ve only got 3 days, please save git.io!
+We've only got 3 days, please save git.io!

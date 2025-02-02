@@ -15,7 +15,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrai
 ---
 
 <br />
-The [general availability of Cody for JetBrains IDEs](https://sourcegraph.com/blog/cody-for-jetbrains-is-generally-available) brought new features as well as performance and stability improvements, and in the months since GA we’ve been adding additional functionality to improve the day-to-day use of Cody for JetBrains users. Today’s update is the biggest one yet for JetBrains, and we’re excited to not only launch new UI improvements but also introduce a raft of new features that will feel intuitive and helpful as you work in your IDE.
+The [general availability of Cody for JetBrains IDEs](https://sourcegraph.com/blog/cody-for-jetbrains-is-generally-available) brought new features as well as performance and stability improvements, and in the months since GA we've been adding additional functionality to improve the day-to-day use of Cody for JetBrains users. Today's update is the biggest one yet for JetBrains, and we're excited to not only launch new UI improvements but also introduce a raft of new features that will feel intuitive and helpful as you work in your IDE.
 <br />
 
 ## Prompts and Prompt Library
@@ -30,7 +30,7 @@ Introduced in VS Code last month, prompts are the exciting evolution of commands
 />
 <br />
 
-Prompts can be created and discovered via the web UI in the new Prompt Library, making it easier to create, edit, share and discover prompts you’ve created or have been shared within your organization.
+Prompts can be created and discovered via the web UI in the new Prompt Library, making it easier to create, edit, share and discover prompts you've created or have been shared within your organization.
 <br />
 
 <Figure
@@ -63,12 +63,12 @@ Whenever Cody provides a code block as a suggestion in chat, press Apply, and Co
 ## Context Improvements
 
 <br />
-An AI code assistant is only as good as the context you provide it. In this JetBrains release we’ve made numerous changes to how you can work with the context you provide Cody, making it easier to understand what context Cody is or isn’t using and giving you more flexibility to choose what Cody uses.
+An AI code assistant is only as good as the context you provide it. In this JetBrains release we've made numerous changes to how you can work with the context you provide Cody, making it easier to understand what context Cody is or isn't using and giving you more flexibility to choose what Cody uses.
 
 **Support for more context types**
 
 <br />
-You can now add directories, web URLs, and code you’ve highlighted in the editor as context.
+You can now add directories, web URLs, and code you've highlighted in the editor as context.
 <br />
 
 <Figure
@@ -92,7 +92,7 @@ JetBrains users can now use the @ button at the bottom of the chat box to easily
 **Default context**
 
 <br />
-When you create a new chat, the current project and file you have open will be used as context by default and you’ll see them as ‘chips’ in the chat input. If you don’t want to use them as context it’s simple to delete the chips and just chat with the LLM.
+When you create a new chat, the current project and file you have open will be used as context by default and you'll see them as ‘chips' in the chat input. If you don't want to use them as context it's simple to delete the chips and just chat with the LLM.
 <br />
 
 **Try again with different context**
@@ -149,10 +149,10 @@ The new prompts and prompt library appear underneath the chat, making it easier 
 ## Updated chat experience
 
 <br />
-It’s common when working with AI that you sometimes don’t get the answer you need on the first try or need to continue a conversation to get the answer or code you want. With that in mind, we’ve improved the Cody chat experience in JetBrains to:
+It's common when working with AI that you sometimes don't get the answer you need on the first try or need to continue a conversation to get the answer or code you want. With that in mind, we've improved the Cody chat experience in JetBrains to:
 
-- **Edit and resubmit a previous chat:** We’ve improved the iterative chat experience for JetBrains users, who can now edit and resubmit a previous chat if they want a different response to their original prompt.
-- **Improved UI:** We’ve made it easier to distinguish between your prompts, the context from Sourcegraph, and the response from Cody.
+- **Edit and resubmit a previous chat:** We've improved the iterative chat experience for JetBrains users, who can now edit and resubmit a previous chat if they want a different response to their original prompt.
+- **Improved UI:** We've made it easier to distinguish between your prompts, the context from Sourcegraph, and the response from Cody.
 - **Easier code insertion options:** You can now Copy, Insert at Cursor, or Add to new file when you want to insert code that Cody provides in a chat response.
 
 <Video
@@ -168,13 +168,13 @@ It’s common when working with AI that you sometimes don’t get the answer you
 ### JetBrains compatibility notes
 
 <br />
-Users must be on JetBrains version 2023.2 or above in order to get these changes and future update. We’ll continue to support Cody in JetBrains versions below 2023.2 but only with critical bug fixes, and will not be adding new features or improvements to those older versions.
+Users must be on JetBrains version 2023.2 or above in order to get these changes and future update. We'll continue to support Cody in JetBrains versions below 2023.2 but only with critical bug fixes, and will not be adding new features or improvements to those older versions.
 <br />
 
 ## Thank you
 
 <br />
-This is a huge update for Cody for JetBrains and a sign of things to come. Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+This is a huge update for Cody for JetBrains and a sign of things to come. Cody wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 We value your feedback in our [**support forum**](https://community.sourcegraph.com/c/cody/5), [**Discord**](https://discord.com/servers/sourcegraph-969688426372825169), and [**GitHub**](https://github.com/sourcegraph/cody). Happy Codying!
 <br />

@@ -72,7 +72,7 @@ a model quickly.
 
 Finally, on Em's own project, some initial assumptions didn't turn out as expected.
 She thought you would want to use _all_ the data available, but at a certain point, she said, 
-“An algorithm that isn’t legible might as well be a random number generator” - that is, if someone 
+“An algorithm that isn't legible might as well be a random number generator” - that is, if someone 
 interacting with the art doesn't have a chance of "getting it", it might as well be random (thus, useless effort).
 
 So, she scoped down her focus. She also talked about the process of geofencing the area (difficult since she 

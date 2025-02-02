@@ -18,9 +18,9 @@ We are excited to announce Code Search now has read-only support for all `.ipynb
 
 Jupyter Notebook (formerly known as the IPython Notebook) is an interactive computational environment in which you can combine code execution, rich text, and rich media.
 
-Before this update, Sourcegraph rendered these files as JSON. Now, you can view rich text, and rich media directly in the file view. The only thing you won’t be able to do is execute code.
+Before this update, Sourcegraph rendered these files as JSON. Now, you can view rich text, and rich media directly in the file view. The only thing you won't be able to do is execute code.
 
-This update is available now on [sourcegraph.com/search](http://Sourcegraph.com/search), our public code search utility, and it’ll be coming soon to Sourcegraph Enterprise instances.
+This update is available now on [sourcegraph.com/search](http://Sourcegraph.com/search), our public code search utility, and it'll be coming soon to Sourcegraph Enterprise instances.
 
 <br/>
 
@@ -35,6 +35,6 @@ This update is available now on [sourcegraph.com/search](http://Sourcegraph.com/
 
 <br/>
 
-We are grateful for [Dyma Solovei](https://github.com/bevzzz)’s contribution. We can now close out this [~4-year-old issue](https://github.com/sourcegraph/sourcegraph/issues/10203). 
+We are grateful for [Dyma Solovei](https://github.com/bevzzz)'s contribution. We can now close out this [~4-year-old issue](https://github.com/sourcegraph/sourcegraph/issues/10203). 
 
 [Search for notebooks](https://sourcegraph.com/search?q=context:global+file:ipynb&patternType=keyword&sm=0) now!

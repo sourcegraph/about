@@ -10,7 +10,7 @@ heroImage: /blog/3.18-sourcegraph-health-notification.png
 published: true
 ---
 
-We continue to make improvements to Sourcegraph’s out-of-the-box instrumentation and monitoring. You can now configure critical alerts to go to Slack, PagerDuty, Opsgenie, webhooks, or email, so it's easier than ever before to get notified about critical issues.
+We continue to make improvements to Sourcegraph's out-of-the-box instrumentation and monitoring. You can now configure critical alerts to go to Slack, PagerDuty, Opsgenie, webhooks, or email, so it's easier than ever before to get notified about critical issues.
 
 Alerts are now delivered with detailed information and include links to potential solutions:
 

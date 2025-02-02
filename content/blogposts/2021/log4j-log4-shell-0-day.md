@@ -78,7 +78,7 @@ Here's a video walkthrough of how to use Batch Changes to fix/mitigate log4j vul
 
 ### To use Batch Changes on your organization's private code:
 
-This feature requires [a self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#getting-started) and is usually part of an enterprise plan. We’re giving out temporary license keys to use Batch Changes for log4j-related fixes. Email [log4j-incident-response-help@sourcegraph.com](mailto:log4j-incident-response-help@sourcegraph.com) and we'll reply quickly with a temporary key.
+This feature requires [a self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#getting-started) and is usually part of an enterprise plan. We're giving out temporary license keys to use Batch Changes for log4j-related fixes. Email [log4j-incident-response-help@sourcegraph.com](mailto:log4j-incident-response-help@sourcegraph.com) and we'll reply quickly with a temporary key.
 
 ## Track progress of applying fixes/mitigations for the log4j 0-day across all your code
 
@@ -94,7 +94,7 @@ Given any search query (such as the ones linked at the top of the post), you can
 
 ### To get this code insight on your organization's private code:
 
-1. This feature requires [a self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#getting-started) and is usually part of an enterprise plan. We’re giving out temporary license keys to use Code Insights for log4j-related fixes. Email [log4j-incident-response-help@sourcegraph.com](mailto:log4j-incident-response-help@sourcegraph.com) and we'll reply quickly with a temporary key.
+1. This feature requires [a self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#getting-started) and is usually part of an enterprise plan. We're giving out temporary license keys to use Code Insights for log4j-related fixes. Email [log4j-incident-response-help@sourcegraph.com](mailto:log4j-incident-response-help@sourcegraph.com) and we'll reply quickly with a temporary key.
 1. Go to **Insights > Create new insight > Create search insight**.
 1. Select the specific repositories in which to measure progress (or all repositories).
 1. Add the 3 data series shown in the screenshot above. The queries used above are defined as follows, but you can customize them as needed (using the query links at the start of this post for inspiration):

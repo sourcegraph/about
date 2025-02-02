@@ -66,7 +66,7 @@ Waldemar points out that there are other solutions to solve these problems, but 
 
 
 
-Waldemar emphasizes that this mode of guarantee may sound like a limitation, but that if we go back to the basics to the ‘End-To-End Argument in System Design’ under the section of delivery guarantees we can read that:
+Waldemar emphasizes that this mode of guarantee may sound like a limitation, but that if we go back to the basics to the ‘End-To-End Argument in System Design' under the section of delivery guarantees we can read that:
 
 
 

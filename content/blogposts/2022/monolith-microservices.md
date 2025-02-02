@@ -32,7 +32,7 @@ Here are five critical elements to a successful, large-scale architectural migra
 
 Identify a single team or person who will be responsible for driving the migration. A common choice is the leader of the developer experience team. This person must understand that the task at hand is not just a technical one, but one of stakeholder alignment and communication. They will be pushing changes that impact the work of many teams. It's important they are able and willing to help those teams understand the importance the change and enlist their cooperation in the effort.
 
-Tactically, it's important for the owner to identify all the stakeholders whose input is necessary as early as possible. This will ensure those stakeholders will support the effort as something they helped define, instead of something that feels like it’s being imposed on them without their input. The stakeholders list should include all the owners of the code that will need to be modified. The "find-references" feature of your editor or code browser is your friend in this endeavor!
+Tactically, it's important for the owner to identify all the stakeholders whose input is necessary as early as possible. This will ensure those stakeholders will support the effort as something they helped define, instead of something that feels like it's being imposed on them without their input. The stakeholders list should include all the owners of the code that will need to be modified. The "find-references" feature of your editor or code browser is your friend in this endeavor!
 
 ![Using Sourcegraph to find locations in code that will need to change](https://storage.googleapis.com/sourcegraph-assets/blog/monolith-microservices/image6.gif)
 
@@ -85,7 +85,7 @@ It's important the tool you use permits feedback and adjustments along the way, 
 
 ![Automating code changes](https://storage.googleapis.com/sourcegraph-assets/blog/monolith-microservices/image4.gif)
 
-<figcaption>In a microservices migration, it’s common to need to make simple changes to numerous places in the code. Automation can help with an otherwise tedious process, but it’s important to keep the human in the loop because the changes can sometimes be subtly different or can require conversations with the teams that own the code being updated.</figcaption>
+<figcaption>In a microservices migration, it's common to need to make simple changes to numerous places in the code. Automation can help with an otherwise tedious process, but it's important to keep the human in the loop because the changes can sometimes be subtly different or can require conversations with the teams that own the code being updated.</figcaption>
 <br />
 
 Here are the tools that we've seen used to shepherd such large-scale migrations:
@@ -96,12 +96,12 @@ Here are the tools that we've seen used to shepherd such large-scale migrations:
 
 ### 5. Track progress
 
-Finally, track progress toward your end goal. Engineering leaders, developers working in the codebase, and stakeholders from Product, Sales, and other departments will want to know how the migration is progressing, especially if it’s blocking other product development efforts they care about.
+Finally, track progress toward your end goal. Engineering leaders, developers working in the codebase, and stakeholders from Product, Sales, and other departments will want to know how the migration is progressing, especially if it's blocking other product development efforts they care about.
 
 You will want to track progress at two levels:
 
 1. Progress of every intermediate milestone, each of which may involve many code reviews that all of the teams affected by the changeset must approve.
-2. Progress toward the overall end goal, which may play out over the course of months or years. If you don’t clearly define this progress meter, you will waste a lot of time explaining and communicating progress to increasingly skeptical stakeholders.
+2. Progress toward the overall end goal, which may play out over the course of months or years. If you don't clearly define this progress meter, you will waste a lot of time explaining and communicating progress to increasingly skeptical stakeholders.
 
 ![Burndown chart](https://storage.googleapis.com/sourcegraph-assets/blog/monolith-microservices/image3.gif)
 

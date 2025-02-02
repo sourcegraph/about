@@ -6,7 +6,7 @@ publishDate: 2020-10-01T00:00
 tags: ['press']
 slug: big-code-survey-2020
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
-description: 'The Big Code survey shows 94% of software development professionals affected by big code. The data gathered serves to quantify Big Code’s complexity, understand its real impact on development and business outcomes, and identify what needs to be done so enterprises can succeed.'
+description: 'The Big Code survey shows 94% of software development professionals affected by big code. The data gathered serves to quantify Big Code's complexity, understand its real impact on development and business outcomes, and identify what needs to be done so enterprises can succeed.'
 published: true
 ---
 
@@ -19,9 +19,9 @@ SAN FRANCISCO, Oct. 01, 2020 (GLOBE NEWSWIRE) -- [Sourcegraph](https://about.sou
 - **Velocity.** Accelerated delivery cycles mean code is changing faster than ever, and being shipped virtually every day.
 - **Value.** The reimagination of business models and practices through high-quality software has greatly increased the value of code within the enterprise.
 
-The survey, conducted by [Dimensional Research](https://dimensionalresearch.com/), polled over 500 software development professionals across North America. The data gathered serves to quantify Big Code’s complexity, understand its real impact on development and business outcomes, and identify what needs to be done so enterprises can succeed.
+The survey, conducted by [Dimensional Research](https://dimensionalresearch.com/), polled over 500 software development professionals across North America. The data gathered serves to quantify Big Code's complexity, understand its real impact on development and business outcomes, and identify what needs to be done so enterprises can succeed.
 
-“Today’s massive codebases make it difficult for developers to discover, understand, and fix code because of the significant increase in its volume and complexity,” said Quinn Slack, co-founder and CEO of Sourcegraph. “It’s for this reason that Big Code is often compared to Big Data—both have the potential to disrupt teams, decrease productivity and quality, and make it harder for enterprises to stay competitive. Code shows no signs of slowing down, so it’s critical that developers have tools that empower them to navigate the challenges associated with Big Code.”
+“Today's massive codebases make it difficult for developers to discover, understand, and fix code because of the significant increase in its volume and complexity,” said Quinn Slack, co-founder and CEO of Sourcegraph. “It's for this reason that Big Code is often compared to Big Data—both have the potential to disrupt teams, decrease productivity and quality, and make it harder for enterprises to stay competitive. Code shows no signs of slowing down, so it's critical that developers have tools that empower them to navigate the challenges associated with Big Code.”
 
 ## Key survey findings include
 
@@ -46,7 +46,7 @@ Development teams need new tools to tackle Big Code
 
 **Download the full report here:** [The Emergence of Big Code - A 2020 Survey of Software Professionals](https://info.sourcegraph.com/emergence-of-big-code-2020-survey)
 
-Sourcegraph empowers developers to explore and better understand all code, everywhere, faster. Its Universal Code Search platform improves developer productivity with code navigation and contextual code intelligence across multiple languages and file formats, giving developers a single place to quickly locate the precise lines of code they need to do their job. Sourcegraph is currently being used by today’s leading development teams at Uber, Lyft, Yelp, Amazon, PayPal, Indeed, and many other top organizations.
+Sourcegraph empowers developers to explore and better understand all code, everywhere, faster. Its Universal Code Search platform improves developer productivity with code navigation and contextual code intelligence across multiple languages and file formats, giving developers a single place to quickly locate the precise lines of code they need to do their job. Sourcegraph is currently being used by today's leading development teams at Uber, Lyft, Yelp, Amazon, PayPal, Indeed, and many other top organizations.
 
 ## Helpful Links
 
@@ -59,7 +59,7 @@ Sourcegraph empowers developers to explore and better understand all code, every
 
 ## About Sourcegraph
 
-Sourcegraph Universal Code Search empowers all developers to explore, navigate, and better understand all code, everywhere, faster. Sourcegraph’s mission is to make it easier and faster for developers to work on solving problems. Sourcegraph is built for all companies, from startups needing a solid foundation for growth to enterprises with complex security, scaling, and deployment needs. The all-remote company is headquartered in San Francisco, CA and backed by Craft Ventures, Redpoint Ventures, and Goldcrest Capital – visit [sourcegraph.com/jobs](https://about.sourcegraph.com/jobs/) for career opportunities. Follow Sourcegraph on Twitter at [@sourcegraph](https://twitter.com/sourcegraph?lang=en) or visit [about.sourcegraph.com](https://about.sourcegraph.com/).
+Sourcegraph Universal Code Search empowers all developers to explore, navigate, and better understand all code, everywhere, faster. Sourcegraph's mission is to make it easier and faster for developers to work on solving problems. Sourcegraph is built for all companies, from startups needing a solid foundation for growth to enterprises with complex security, scaling, and deployment needs. The all-remote company is headquartered in San Francisco, CA and backed by Craft Ventures, Redpoint Ventures, and Goldcrest Capital – visit [sourcegraph.com/jobs](https://about.sourcegraph.com/jobs/) for career opportunities. Follow Sourcegraph on Twitter at [@sourcegraph](https://twitter.com/sourcegraph?lang=en) or visit [about.sourcegraph.com](https://about.sourcegraph.com/).
 
 ## Media contact
 

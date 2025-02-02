@@ -14,11 +14,11 @@ published: true
 
 
 
-At [Sourcegraph](https://sourcegraph.com/), we believe building for the future requires learning the lessons of the past. This is the first in a series of blog posts that cover historical anecdotes about software engineering that have inspired us as we build [tools for the modern developer](https://sourcegraph.com/). We’re sharing these, because we think they hold lessons that are still very relevant to writing software today.
+At [Sourcegraph](https://sourcegraph.com/), we believe building for the future requires learning the lessons of the past. This is the first in a series of blog posts that cover historical anecdotes about software engineering that have inspired us as we build [tools for the modern developer](https://sourcegraph.com/). We're sharing these, because we think they hold lessons that are still very relevant to writing software today.
 
 ### Tie-dye, lava lamps, and enterprise software
 
-In the 2nd season of _Mad Men,_ Don Draper’s “television expert” introduces the IBM System/360 to his boss. All work in the office stops. Everyone just stares at the giant calculator like it’s an alien. The cameo marks the System/360 as something of a cultural icon of the 1960s enterprise IT world. But it was much more than that. It was a monumental feat of engineering that ushered in a new era of computing.
+In the 2nd season of _Mad Men,_ Don Draper's “television expert” introduces the IBM System/360 to his boss. All work in the office stops. Everyone just stares at the giant calculator like it's an alien. The cameo marks the System/360 as something of a cultural icon of the 1960s enterprise IT world. But it was much more than that. It was a monumental feat of engineering that ushered in a new era of computing.
 
 ![1*O8716r4hduFUkb6tjAOR5A](//images.contentful.com/le3mxztn6yoo/3xizkAu6Gsu6ukwCCgUqSa/ab2af09166b2e09adfbcea9637293989/1_O8716r4hduFUkb6tjAOR5A.png)
 
@@ -42,7 +42,7 @@ One of the many third-party components built for the System/360
 
 ### Over budget, over time
 
-The IBM System/360 was one of the most expensive technology projects of its time. Development costs topped $5B — half the cost of the atomic bomb and twice IBM’s annual revenue at the time.
+The IBM System/360 was one of the most expensive technology projects of its time. Development costs topped $5B — half the cost of the atomic bomb and twice IBM's annual revenue at the time.
 
 > Development costs topped $5B — half the cost of the atomic bomb
 
@@ -50,21 +50,21 @@ Like many other engineering efforts of the past and present, the System/360 ran 
 
 The original 1964 budget for OS/360 was $25M, enough to fund a team of twelve “program designers” who led a team of sixty programmers in implementing 40 “functional segments” of code. By October 1965, the team had grown to 150 programmers and the expected shipping date had been delayed 6 months. By 1966, IBM had over 1,000 people working on the project. Between 1963 and 1966, more than 5,000 person-years were poured into the design, implementation, and documentation of OS/360\. Despite these resources, the project shipped over a year late — with bugs.
 
-Despite the colossal cost overrun, the System/360 became a success. By 1971, the System/360's annual sales reached $8.3B. Soon after, IBM eliminated all of its other computer lines and cornered the mainframe market with 70% of the market. Two decades later, over half of IBM’s revenue still came from System/360-related products. In addition to IBM’s windfall, tens of thousands of non-IBM programmers found employment through the 1960s and 70s working on third-party modules for the system.
+Despite the colossal cost overrun, the System/360 became a success. By 1971, the System/360's annual sales reached $8.3B. Soon after, IBM eliminated all of its other computer lines and cornered the mainframe market with 70% of the market. Two decades later, over half of IBM's revenue still came from System/360-related products. In addition to IBM's windfall, tens of thousands of non-IBM programmers found employment through the 1960s and 70s working on third-party modules for the system.
 
 ### What we can learn
 
-There are many lessons that you can take from the story of the System/360\. Many of them are eloquently described in Frederick Brooks, Jr.’s seminal book _The Mythical Man-Month_ (Brooks was the development lead of OS/360). Here are a few that we’ve taken away [at Sourcegraph](https://sourcegraph.com).
+There are many lessons that you can take from the story of the System/360\. Many of them are eloquently described in Frederick Brooks, Jr.'s seminal book _The Mythical Man-Month_ (Brooks was the development lead of OS/360). Here are a few that we've taken away [at Sourcegraph](https://sourcegraph.com).
 
 1.  **Reinventing the wheel is expensive.** It means not only wasting effort building something that already exists — it also means maintaining and supporting the different versions over time. A lot of software systems today still seem closer in spirit to the pre-System/360 systems, though these are being replaced by systems that are more modular and reuse code that has already been written.
 2.  **Modularity + understandable interfaces = software longevity.** Most software is short-lived, but define the right interfaces and help others build on top of them, and your code may last a lifetime.
 3.  **Development cost is a company-killer.** The System/360 was a success because its sales over time exceeded the wildest expectations. But its cost estimate was off by over 2 orders of magnitude. Most software projects will not generate such windfall revenues but will have to deal with underestimates of time and cost. Products and services that help development teams become more efficient may save entire companies from financial ruin.
 
-These lessons drive us in our mission to improve the current state of software development. We hope you’ll find them valuable in your life as a programmer, as well.
+These lessons drive us in our mission to improve the current state of software development. We hope you'll find them valuable in your life as a programmer, as well.
 
 Have another interesting computer history lesson to share? [Let us know!](https://twitter.com/sourcegraph)
 
-_Editor’s note: the original version of this article overstated the degree of speciation in the 1960s mainframe market. The language has been edited to clarify the transition between the pre- and post-System/360 world._
+_Editor's note: the original version of this article overstated the degree of speciation in the 1960s mainframe market. The language has been edited to clarify the transition between the pre- and post-System/360 world._
 
 ### About the author
 

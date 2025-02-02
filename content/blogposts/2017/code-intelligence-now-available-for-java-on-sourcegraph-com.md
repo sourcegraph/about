@@ -14,7 +14,7 @@ published: true
 
 
 
-Today, we’re enabling Code Intelligence on Sourcegraph.com for Java projects that use Maven. Our preview release of Java means you can jump to definition, find references, and hover over for docs on many of your favorite Java repositories — all without configuring a single editor plugin or cloning a single line of code to your local machine. Try it now on these repositories:
+Today, we're enabling Code Intelligence on Sourcegraph.com for Java projects that use Maven. Our preview release of Java means you can jump to definition, find references, and hover over for docs on many of your favorite Java repositories — all without configuring a single editor plugin or cloning a single line of code to your local machine. Try it now on these repositories:
 
 *   [Guava](https://sourcegraph.com/github.com/google/guava@379757e3b1c22fef4b19181e404c6abb7ad58d50/-/blob/guava/src/com/google/common/collect/ImmutableList.java#L80:38-80:40)
 *   [Apache Commons](https://sourcegraph.com/github.com/apache/commons-io@8b9fe1b01ce21003f6a6ff8391ad2a64f4d21030/-/blob/src/main/java/org/apache/commons/io/FilenameUtils.java#L82:14-82:27)
@@ -25,7 +25,7 @@ Today, we’re enabling Code Intelligence on Sourcegraph.com for Java projects t
 *   [Retrofit](https://sourcegraph.com/github.com/square/retrofit@39fcdb46e07f2f14319a4031d86bf8f3dbd1d405/-/blob/retrofit/src/main/java/retrofit2/Retrofit.java#L59:20-59:28)
 *   [Twilio Java Client](https://sourcegraph.com/github.com/twilio/twilio-java@34de1d5789022a8b1332464c689dd6ef2a2b597f/-/blob/src/main/java/com/twilio/Twilio.java#L1:1)
 
-This is a preview, so coverage isn’t perfect. Java repositories with `pom.xml` that build with `mvn install` (without additional steps) should now have Code Intelligence on Sourcegraph. Support is coming soon for Android and Gradle projects. We will be incredibly responsive to feedback, so please send us bug reports to [hi@sourcegraph.com](mailto:hi@sourcegraph.com).
+This is a preview, so coverage isn't perfect. Java repositories with `pom.xml` that build with `mvn install` (without additional steps) should now have Code Intelligence on Sourcegraph. Support is coming soon for Android and Gradle projects. We will be incredibly responsive to feedback, so please send us bug reports to [hi@sourcegraph.com](mailto:hi@sourcegraph.com).
 
 #### Code Intelligence superpowers
 
@@ -35,7 +35,7 @@ Cross-repository jump-to-definition lets you dive right into dependency source c
 
 [![](https://cdn-images-1.medium.com/max/1000/1*X-QMOEV8WaL-wcgJ9-SLDQ.png)](https://sourcegraph.com/github.com/square/okhttp@89621df62dda5cf73726ce2d5410c82c6f760f00/-/blob/okhttp-tests/src/main/java/okhttp3/AutobahnTester.java#L24:13-24:23)Seamless cross-repo jump-to-def
 
-Global usage examples show you how other repositories use a given class or method. They let you learn from the best examples in open source. And on private code, they let you see how code in other repositories (e.g., microservices) relies on the code you’re currently viewing.
+Global usage examples show you how other repositories use a given class or method. They let you learn from the best examples in open source. And on private code, they let you see how code in other repositories (e.g., microservices) relies on the code you're currently viewing.
 
 [![](https://cdn-images-1.medium.com/max/1000/1*i2SxWzW9rKWM6C9DzYjJjQ.png)](https://sourcegraph.com/github.com/junit-team/junit@cebbf5e15725b4dc247ac0557f6fa63f475b15af/-/blob/src/main/java/org/junit/Test.java#L66:19-66:23)Global usage examples
 

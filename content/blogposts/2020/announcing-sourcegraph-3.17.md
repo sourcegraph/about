@@ -57,7 +57,7 @@ The task of uploading and processing precise code intelligence bundles, which ha
   alt="Precise code intel index processing latency chart" 
 />
 
-We’ve also poured some love into the on-disk format of precise code intel bundles (each bundle is now 30-50% smaller than the previous release). This should be helpful in private instances with large, frequent index uploads and constrained disk, where frequent eviction of recent bundles was previously an issue.
+We've also poured some love into the on-disk format of precise code intel bundles (each bundle is now 30-50% smaller than the previous release). This should be helpful in private instances with large, frequent index uploads and constrained disk, where frequent eviction of recent bundles was previously an issue.
 
 <Figure 
   src="https://sourcegraphstatic.com/tidb-bundle-size.png" 
@@ -85,7 +85,7 @@ We’ve also poured some love into the on-disk format of precise code intel bund
 `}
 </style>
 
-We plan to continue on this path of performance improvements, and the next release will focus on processing multiple bundles concurrently in order to multiply the benefit of this release’s raw latency gains.
+We plan to continue on this path of performance improvements, and the next release will focus on processing multiple bundles concurrently in order to multiply the benefit of this release's raw latency gains.
 
 ### Automatic precise code intelligence
 
@@ -133,7 +133,7 @@ For more information, see the [Sourcegraph alerting documentation](https://docs.
 
 ### Gitolite exclude pattern
 
-The Gitolite `exclude` setting in the [Gitolite external service configuration](https://docs.sourcegraph.com/admin/external_service/gitolite#configuration) now supports a regular expression through the pattern field. Adding this regex support improves Gitolite’s pattern matching abilities.
+The Gitolite `exclude` setting in the [Gitolite external service configuration](https://docs.sourcegraph.com/admin/external_service/gitolite#configuration) now supports a regular expression through the pattern field. Adding this regex support improves Gitolite's pattern matching abilities.
 
 This is consistent with how we exclude in other external services, and is a replacement for the deprecated configuration.
 
@@ -164,7 +164,7 @@ We have added experimental support for detecting if your instance is over or und
 
 ### Notifications when Sourcegraph is out of date
 
-Sourcegraph now shows update notifications to site admins (at 1 month out-of-date), and to users (at 4 months out-of-date). This will help encourage admins to keep their Sourcegraph instance current with the latest bug fixes, security updates, and new features and functionalities. Keeping Sourcegraph current ensures that you don’t run into issues due to running on a stale version.
+Sourcegraph now shows update notifications to site admins (at 1 month out-of-date), and to users (at 4 months out-of-date). This will help encourage admins to keep their Sourcegraph instance current with the latest bug fixes, security updates, and new features and functionalities. Keeping Sourcegraph current ensures that you don't run into issues due to running on a stale version.
 
 These notifications start out as subtle informational alerts, and at 6+ months out-of-date, they will appear as red dismissible banners:
 

@@ -12,7 +12,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/ranking/page
 published: true
 ---
 
-Last week we announced that we are now [ranking search results](https://about.sourcegraph.com/blog/new-search-ranking) on [https://sourcegraph.com](https://sourcegraph.com) in order to prioritize _relevant_ as well as _reusable_ code. We consider this Sourcegraph’s code intelligence platform's first major victory of many, and a booming herald for a new era of code search.
+Last week we announced that we are now [ranking search results](https://about.sourcegraph.com/blog/new-search-ranking) on [https://sourcegraph.com](https://sourcegraph.com) in order to prioritize _relevant_ as well as _reusable_ code. We consider this Sourcegraph's code intelligence platform's first major victory of many, and a booming herald for a new era of code search.
 
 The effort to bring ranked results to our public instance was a concerted effort of four developers across two teams (Search and Code Intelligence), but it took only a week of wall-clock time to design, implement, and deploy. The speed at which we were able to deliver this feature speaks volumes about our core data architecture.
 

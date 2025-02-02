@@ -42,7 +42,7 @@ For example, you could input `/explain in French` or `/test generate 5 test case
 
 ## Experimental new chat UI
 
-We’ve been working on a whole new Cody chat experience, which can be enabled via the experimental setting `cody.experimental.chatPanel` to `enable`. It’s not ready for production use, but we’d love your feedback. It lets you open chats in an editor tab for more space, has a new panel icon, a dropdown menu to change the AI model, and the ability to pass context files using `@`. 
+We've been working on a whole new Cody chat experience, which can be enabled via the experimental setting `cody.experimental.chatPanel` to `enable`. It's not ready for production use, but we'd love your feedback. It lets you open chats in an editor tab for more space, has a new panel icon, a dropdown menu to change the AI model, and the ability to pass context files using `@`. 
 
 
 
@@ -58,7 +58,7 @@ Users can now select which context files are used for each chat question. A new 
 ![alt_text](https://storage.googleapis.com/sourcegraph-assets/blog/vscode-v0-16-release/image3.png "image_tooltip")
 
 
-<small><center>It’s like Twitter/X but for your files.</center></small><br />
+<small><center>It's like Twitter/X but for your files.</center></small><br />
 
 
 Users can now toggle on/off, adding codebase context for each question.  Only local files and embeddings are available as context at the moment.
@@ -67,7 +67,7 @@ Users can now toggle on/off, adding codebase context for each question.  Only lo
 
 ## New Cody natural language search panel 
 
-We found that some use Cody chat for “search” use cases and wind up with disappointing results. To solve this, we now build a local search index of a user’s open project and allow users to input a natural language search term and search for it within their project.
+We found that some use Cody chat for “search” use cases and wind up with disappointing results. To solve this, we now build a local search index of a user's open project and allow users to input a natural language search term and search for it within their project.
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/vscode-v0-16-release/image2.png)
 
@@ -79,7 +79,7 @@ See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v0.1
 
 ### Thank you
 
-Cody is [open source](https://github.com/sourcegraph/cody), and wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody is [open source](https://github.com/sourcegraph/cody), and wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 ---
 

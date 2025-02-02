@@ -12,7 +12,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/2024/cody-ques
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/2024/cody-questions-answered-live-september-2024.jpg
 ---
 
-On September 16, 2024, we hosted a livestream in Montreal for our biannual offsite, “Merge.” Director of DevRel Ado Kukic and co-founders Quinn Slack and Beyang Liu led our second “Your Cody Questions Answered Live!” showcasing Cody’s latest developments and future plans. If you missed it, watch it below. Here’s an overview of the discussion:
+On September 16, 2024, we hosted a livestream in Montreal for our biannual offsite, “Merge.” Director of DevRel Ado Kukic and co-founders Quinn Slack and Beyang Liu led our second “Your Cody Questions Answered Live!” showcasing Cody's latest developments and future plans. If you missed it, watch it below. Here's an overview of the discussion:
 
 ## Key highlights and new features
 

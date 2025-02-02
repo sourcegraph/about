@@ -10,7 +10,7 @@ Sourcegraph, Inc. (“Sourcegraph”) uses certain third party subprocessors (�
 
 Sourcegraph will update this page when engaging a new Subprocessor, and if you [subscribe for updates](#sign-up), Sourcegraph will notify you by email of changes to this page.
 
-Sourcegraph engages Subprocessors to perform the functions described in the table below. For Sourcegraph’s self-hosted product, personal data will only be processed to the extent such data is shared by Customer with Sourcegraph for the purpose of delivering support services.
+Sourcegraph engages Subprocessors to perform the functions described in the table below. For Sourcegraph's self-hosted product, personal data will only be processed to the extent such data is shared by Customer with Sourcegraph for the purpose of delivering support services.
 
 <TableWrapper>
 | Third-party Subprocessor | Location       | Service Provided                                                                                                                                                   | Applicable product                                 |

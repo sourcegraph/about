@@ -23,7 +23,7 @@ Leveraging AI to accelerate your workflow as a software engineer is no longer co
 
 ## Setting up Express with the help of Cody
 
-First, I’ll create an `app.ts` file in the src folder (you can decide to use any folder structure you like) and I’ll use [Cody](https://sourcegraph.com/cody) to  generate my `package.json` file with the prompt:  
+First, I'll create an `app.ts` file in the src folder (you can decide to use any folder structure you like) and I'll use [Cody](https://sourcegraph.com/cody) to  generate my `package.json` file with the prompt:  
 
 > Hey Cody, create a package.json content for my Express.js app using typescript with ts-node
 
@@ -33,11 +33,11 @@ Cody generates the package.json content for me, which I can further edit if need
   src="https://storage.googleapis.com/sourcegraph-assets/blog/speeding-up-your-nodejs-development-with-cody/image_001.png"
 />
 
-To continue with the server setup, I’ll also ask Cody to generate a simple Express server using this prompt:
+To continue with the server setup, I'll also ask Cody to generate a simple Express server using this prompt:
 
 > Hey Cody, can you generate a basic express server,that is exportable without .listen() for me?
 
-and we have our basic app. In this article, I will build a multimedia app that merges videos together, converts video to audio, generates a thumbnail for a video, and splits a video into smaller chunks based on specified duration. I’ll be making use of [ffmpeg](https://ffmpeg.org/) via the node fluent-ffmpeg package.
+and we have our basic app. In this article, I will build a multimedia app that merges videos together, converts video to audio, generates a thumbnail for a video, and splits a video into smaller chunks based on specified duration. I'll be making use of [ffmpeg](https://ffmpeg.org/) via the node fluent-ffmpeg package.
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/speeding-up-your-nodejs-development-with-cody/image_002.png"
@@ -47,7 +47,7 @@ PS: To make use of the fluent-ffmpeg package, you will need to have ffmpeg and f
 
 ## Advanced set up
 
-Another setup task that will really make you a productive developer is to write Bash scripts for repetitive tasks such as: creating controllers, routers, etc. In this case, I’ll use Cody to create a Bash script to automate repetitive tasks.
+Another setup task that will really make you a productive developer is to write Bash scripts for repetitive tasks such as: creating controllers, routers, etc. In this case, I'll use Cody to create a Bash script to automate repetitive tasks.
 
 > Hey Cody, Generate a bash script that creates a file and takes a flag or input to create files, e.g auth.controller.ts takes in the input such as "auth", it also generates router file in the same format in the folder named with the input name under the src folder
 
@@ -64,7 +64,7 @@ And you can make use of
 npm run makecontroller
 ```
 
-Here’s the Bash script Cody generated for me:
+Here's the Bash script Cody generated for me:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/speeding-up-your-nodejs-development-with-cody/image_003.png"
@@ -117,7 +117,7 @@ export const globalErrorHandler = async (
 };
 ```
 
-The next thing I’ll do is create a handler for 404 (Not Found) error, prompting Cody:
+The next thing I'll do is create a handler for 404 (Not Found) error, prompting Cody:
 
 > Can you create a handler that handles 404 error in my Express.js server?
 
@@ -286,7 +286,7 @@ export const ffmpegController = {
 };
 ```
 
-In the controller for merging videos, you’ll notice that the client app can only merge two videos which can be limiting. A user should be able to merge more than two videos together. I had an idea on how to approach the problem but the implementation was not flowing. With Cody, I highlighted the section I needed help with and  initiated a chat using <kbd>Cmd/Alt</kbd> + <kbd>L</kbd>  and Cody came to my rescue.
+In the controller for merging videos, you'll notice that the client app can only merge two videos which can be limiting. A user should be able to merge more than two videos together. I had an idea on how to approach the problem but the implementation was not flowing. With Cody, I highlighted the section I needed help with and  initiated a chat using <kbd>Cmd/Alt</kbd> + <kbd>L</kbd>  and Cody came to my rescue.
 
 <Figure
   src="https://storage.cloud.google.com/sourcegraph-assets/blog/speeding-up-your-node-development-w-cody/image5.png"
@@ -304,7 +304,7 @@ Documentation is an important aspect of software engineering, although it is alw
 
 Unit testing is another important part of software engineering, that can take time and sometimes can be boring. Again, Cody can help generate unit tests, here's how:
 
-On the left side of VS Code in the Cody tab, you’ll see a  "Generate Unit Test" command. Clicking it will task Cody with generating a Unit test for my merge video controller as shown:
+On the left side of VS Code in the Cody tab, you'll see a  "Generate Unit Test" command. Clicking it will task Cody with generating a Unit test for my merge video controller as shown:
 
 <Figure
   src="https://storage.cloud.google.com/sourcegraph-assets/blog/speeding-up-your-node-development-w-cody/image4.png"
@@ -320,7 +320,7 @@ Cody's capabilities go beyond generating code. It's a very powerful tool that ca
 src="https://storage.cloud.google.com/sourcegraph-assets/blog/speeding-up-your-node-development-w-cody/image6.png"
 />
 
-Finally , I’ll be creating a [custom command](https://sourcegraph.com/docs/cody/capabilities/commands#custom-commands) with Cody. This helps me to tailor Cody based on my project requirement, especially for recurring tasks like Integrating with your build system to suggest fixes for errors/warnings in the latest build, generating commit messages, etc.
+Finally , I'll be creating a [custom command](https://sourcegraph.com/docs/cody/capabilities/commands#custom-commands) with Cody. This helps me to tailor Cody based on my project requirement, especially for recurring tasks like Integrating with your build system to suggest fixes for errors/warnings in the latest build, generating commit messages, etc.
 
 For this sample app I will be creating custom commands to create template controller function in the fluent-ffmpeg.`controller.ts`, which enables me to easily add new controllers based on the style and format of previous controllers created in the file. To create this custom command I make use of <kbd>Cmd/Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>  and I made use of the prompt:
 

@@ -34,7 +34,7 @@ When I think of my own work as a developer, there isn't just one big loop, as pi
 
 ![developer inner loop and outer loop diagram](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/drive-download-20220509T174543Z-001/image3.svg)
 
-You enter the inner loop whenever you get "close to the source" in the development process. This happens at multiple points in the outer loop, such as when you’re:
+You enter the inner loop whenever you get "close to the source" in the development process. This happens at multiple points in the outer loop, such as when you're:
 
 - Onboarding to the code you're about to change.
 - Authoring a new feature or bug fix.
@@ -47,7 +47,7 @@ It's important to talk about the inner loop. It's the heart of software creation
 
 ### Picture 2: Reaching flow state
 
-Inside the inner loop is the golden state: [Flow](https://stackoverflow.blog/2018/09/10/developer-flow-state-and-its-impact-on-productivity/). Flow state is that state of focus and productivity that you attain when you're feeling inspired and motivated. It’s when you have "paged in" all the necessary context and can actually have fun. It's when you're _coding at the speed of thought_. The ideal path to Flow is represented in this first graph:
+Inside the inner loop is the golden state: [Flow](https://stackoverflow.blog/2018/09/10/developer-flow-state-and-its-impact-on-productivity/). Flow state is that state of focus and productivity that you attain when you're feeling inspired and motivated. It's when you have "paged in" all the necessary context and can actually have fun. It's when you're _coding at the speed of thought_. The ideal path to Flow is represented in this first graph:
 
 ![Developer productivity over time approaches a flow state limit if there are no interruptions.](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/drive-download-20220509T174543Z-001/Productivity-flow.svg)
 
@@ -76,7 +76,7 @@ In the physical world, velocity has two components: direction and speed. Analogo
 
 ![The software development odyssey](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/drive-download-20220509T174543Z-001/Programming%20odyssey.svg)
 
-The speed component indicates how quickly you're cycling through the inner loop. The more you reach flow state, the faster you iterate, and the sooner you’re able to ship your new feature or patch.
+The speed component indicates how quickly you're cycling through the inner loop. The more you reach flow state, the faster you iterate, and the sooner you're able to ship your new feature or patch.
 
 The directional component reflects the technical direction taken—whether you use library X or Y, for example. Picking a good direction might provide a critical shortcut. Picking a bad direction might mean you have to retrace your steps later.
 

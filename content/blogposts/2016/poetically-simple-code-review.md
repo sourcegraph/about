@@ -35,7 +35,7 @@ Save time and focus:
 [![](https://cdn-images-1.medium.com/max/800/1*JJqFwhtYfXFypwV1G7zevA.png)](https://docs.sourcegraph.com/integration/browser_extension?hl=en)
 
 Find refs globally.
-See where the code’s being used.
+See where the code's being used.
 Learn by example —
 
 ![1*L7rutXCP6us7mRu 5tEzGg](//images.contentful.com/le3mxztn6yoo/4Sx9KpIgEEkwOKECYGCKCg/e25a20e341684445c79c904bb11f40cc/1_L7rutXCP6us7mRu_5tEzGg.png)
@@ -45,8 +45,8 @@ is worth a thousand lines of
 documentation.
 
 Search across symbols
-when you’re looking for something,
-but it’s not onscreen:
+when you're looking for something,
+but it's not onscreen:
 
 ![1*vZYaY5vKIyyn5bwh4dE1Gw](//images.contentful.com/le3mxztn6yoo/57PgJfXJj2kiGwIUoGy0As/cfc16d9cee87e58c26b582616ce052eb/1_vZYaY5vKIyyn5bwh4dE1Gw.png)
 

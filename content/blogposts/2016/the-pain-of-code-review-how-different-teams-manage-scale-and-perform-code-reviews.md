@@ -59,7 +59,7 @@ Key insights:
 
 Key takeaway: the next evolution of code review tools should include more automated features that work at scale across different teams.
 
-We asked each person to share what their “ideal code review tool” might look like. Here’s what we heard.
+We asked each person to share what their “ideal code review tool” might look like. Here's what we heard.
 
 Key insights:
 

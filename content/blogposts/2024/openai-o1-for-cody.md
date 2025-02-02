@@ -16,7 +16,7 @@ Large language models (LLMs) like GPT-4o are excellent at predicting the next wo
 
 We are excited to collaborate with OpenAI to bring the OpenAI o1 family of models to Cody to help you write, understand, and debug code more effectively. OpenAI o1, as the name implies, brings enhanced reasoning capabilities allowing you to tackle more complex problems, generate more accurate and efficient code, and gain a deeper understanding of your codebase. Access to OpenAI o1 models, o1-preview and o1-mini, is available today in a limited release, allowing developers to explore its capabilities and provide feedback. 
 
-If you’re interested in getting access to the OpenAI o1 family of models with Cody, [download the Cody VS Code extension](https://sourcegraph.com/cody) and once installed, navigate to the model selection and click the "Join Waitlist" button.
+If you're interested in getting access to the OpenAI o1 family of models with Cody, [download the Cody VS Code extension](https://sourcegraph.com/cody) and once installed, navigate to the model selection and click the "Join Waitlist" button.
 
 ![Cody Dropdown Models](https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/cody-dropdown.png)
 
@@ -32,11 +32,11 @@ Another example can be seen below between GPT-4o and o1-preview. I asked both LL
 
 ![OpenAI o1 sentences example](https://storage.googleapis.com/sourcegraph-assets/blog/open-ai-o1/openai-o1-sentences.png)
 
-How can we apply this to our coding challenges? If you’ve been using AI coding assistants like Cody with other LLMs, you may have run into situations where Cody generated accurate-looking, but ultimately faulty code. This can usually be resolved with re-prompting and asking Cody to double-check its work, but with OpenAI o1, you should be able to get the right code from the get-go much more often and have greater confidence that the code generated is accurate. Let’s take a look at a few examples of where OpenAI o1 shines.
+How can we apply this to our coding challenges? If you've been using AI coding assistants like Cody with other LLMs, you may have run into situations where Cody generated accurate-looking, but ultimately faulty code. This can usually be resolved with re-prompting and asking Cody to double-check its work, but with OpenAI o1, you should be able to get the right code from the get-go much more often and have greater confidence that the code generated is accurate. Let's take a look at a few examples of where OpenAI o1 shines.
 
 ## OpenAI o1 for Algorithms
 
-What is programming if not the art of crafting instructions for machines to execute? Those instructions have to be very explicit. Your program will run the code you give it, exactly as you defined it, and this is where a ton of subtle bugs and issues can arise. LLMs are not immune from introducing both large and small bugs into code they generate. Let’s take a look at a fairly simple example to demonstrate how even seemingly straightforward tasks can lead to trouble if you’re not careful. 
+What is programming if not the art of crafting instructions for machines to execute? Those instructions have to be very explicit. Your program will run the code you give it, exactly as you defined it, and this is where a ton of subtle bugs and issues can arise. LLMs are not immune from introducing both large and small bugs into code they generate. Let's take a look at a fairly simple example to demonstrate how even seemingly straightforward tasks can lead to trouble if you're not careful. 
 
 The classic mathematical trick of getting any three unique digits to add up to 1089. You take a three digit number where all three digits are unique, for example 542, and reverse the digits to get a new three digit number, in our case 245. From there you subtract the smaller number from the bigger one, so 542 - 245 to get 297. Finally, you reverse this number and add it to itself, so you get 792 + 297 and that ends up equaling 1089. You can do this with any unique 3 digit number.
 
@@ -140,9 +140,9 @@ Which the OpenAI o1 properly added. This ensures that in the case where the init
 
 ## OpenAI o1 for Generating Tests
 
-Writing unit tests is critical but often overlooked by developers. LLMs are an awesome way to quickly generate unit tests for your code. But, you’d want to be able to rely on those tests. 
+Writing unit tests is critical but often overlooked by developers. LLMs are an awesome way to quickly generate unit tests for your code. But, you'd want to be able to rely on those tests. 
 
-Let’s say I have a function called `evaluateExpression(expr)` that takes in a mathematical expression as a string such as “1+1*1” and returns the computed value, which in this case would be 2. I asked GPT-4o to generate five examples of non-trivial expressions and to also provide the answer. The output is below.
+Let's say I have a function called `evaluateExpression(expr)` that takes in a mathematical expression as a string such as “1+1*1” and returns the computed value, which in this case would be 2. I asked GPT-4o to generate five examples of non-trivial expressions and to also provide the answer. The output is below.
 
 ```js
 console.log(evaluateExpression("7 + 3 * (10 / (12 / (3 + 1) - 1))")); // Output: 22
@@ -152,7 +152,7 @@ console.log(evaluateExpression("8 + 2 * 5 / (1 + 3 * 2 - 4)")); // Output: 10
 console.log(evaluateExpression("7 - 3 + 2 * (5 + 1)")); // Output: 16
 ```
 
-If we actually run this code, we’ll get the correct answers of 22, 14, 12, 11.3333, and 16. So the output that GPT-4o computed for two of the five examples was wrong. Asking the same of o1-preview, I get:
+If we actually run this code, we'll get the correct answers of 22, 14, 12, 11.3333, and 16. So the output that GPT-4o computed for two of the five examples was wrong. Asking the same of o1-preview, I get:
 
 ```js
 console.log(evaluateExpression("(2 + 3) * (7 - 2) / (1 + 1)")); // Output: 12.5

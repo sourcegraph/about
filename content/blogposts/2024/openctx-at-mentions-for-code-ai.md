@@ -12,7 +12,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/OpenCtx-May202
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/OpenCtx-May2024/openctx-og-image.png
 ---
 
-For devs, it’s quite annoying to switch among tons of different tools when coding: open the issue in Linear or Jira, jump into Figma, find the PR, look up the error on Sentry, check the traces on Jaeger, and so on.
+For devs, it's quite annoying to switch among tons of different tools when coding: open the issue in Linear or Jira, jump into Figma, find the PR, look up the error on Sentry, check the traces on Jaeger, and so on.
 
 A few months ago we set out to improve that with an experiment we call [OpenCtx](https://openctx.org) (Apache 2.0 OSS), a super simple standard for bringing tiny links and info chips from all these tools into anywhere you read code...
 
@@ -28,21 +28,21 @@ And in code search:
 
 <img src="https://storage.googleapis.com/sourcegraph-assets/openctx/screenshot-codesearch-grafana-v0.png" width="562" height="283" alt="See Prometheus dashboard links from Sourcegraph" style={{marginTop:"10px"}} />
 
-Yes, you *could* install editor extensions for all those tools in just the right way to get something similar in your editor, but that’ll be a lot of work and doesn’t help you in your code review tool. And even if *you* got it set up just right, good luck getting your entire team to do the same.
+Yes, you *could* install editor extensions for all those tools in just the right way to get something similar in your editor, but that'll be a lot of work and doesn't help you in your code review tool. And even if *you* got it set up just right, good luck getting your entire team to do the same.
 
 As we hacked on it and shared it with other devs and customers, we heard some things over and over again:
 
-- Pretty much every dev admits to sometimes being too lazy to check the expensive observability tools their company pays for when debugging an issue where they’d probably be helpful.
+- Pretty much every dev admits to sometimes being too lazy to check the expensive observability tools their company pays for when debugging an issue where they'd probably be helpful.
 - Most devs need to check their internal docs or ask someone on team chat to get the current way (not the deprecated way) to check user analytics or feature flag stats for a certain feature.
-- Most companies have some internal dev tools that are poorly integrated and will remain so because it’s not worth it to build good editor extensions for them.
+- Most companies have some internal dev tools that are poorly integrated and will remain so because it's not worth it to build good editor extensions for them.
 
-OpenCtx can help with all of these things by making other dev tools’ information visible right in the editor or code review.
+OpenCtx can help with all of these things by making other dev tools' information visible right in the editor or code review.
 
 (While it's still an experimental project, it's been heavily validated by devs and our customers, and we're working hard to ship an OpenCtx beta in Sourcegraph's [code search](https://sourcegraph.com/code-search) and [Cody](https://cody.dev) that you all will love.)
 
 # Next: @-mentions for code AI to consume
 
-But the problem's getting worse. Now it’s not just human devs who need to bop between all their dev tools. Code AI tools (like our [Cody](https://cody.dev)) also need to tap all these tools for context:
+But the problem's getting worse. Now it's not just human devs who need to bop between all their dev tools. Code AI tools (like our [Cody](https://cody.dev)) also need to tap all these tools for context:
 
 - To fix the damn bug, the code AI needs to see the error message from Sentry or Splunk or Datadog.
 - To build a new feature, the code AI needs to see the Linear or Jira or GitHub issue and the Figma mocks.

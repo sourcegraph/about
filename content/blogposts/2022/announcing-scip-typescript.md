@@ -16,7 +16,7 @@ published: true
 
 We are excited to announce the release of scip-typescript, a new indexer that allows you to navigate TypeScript and JavaScript codebases on Sourcegraph with compiler-accurate precision. Key features of scip-typescript include:
 
-- **Performance:** scip-typescript is almost as fast as the TypeScript typechecker, indexing 1k-5k lines per second depending on the usage of types in your codebase. If you’re migrating from lsif-node, our older TypeScript indexer, you can expect to see 3-10x speedups after migrating to scip-typescript.
+- **Performance:** scip-typescript is almost as fast as the TypeScript typechecker, indexing 1k-5k lines per second depending on the usage of types in your codebase. If you're migrating from lsif-node, our older TypeScript indexer, you can expect to see 3-10x speedups after migrating to scip-typescript.
 - **Cross-repository navigation:** scip-typescript is designed from the ground up to support navigating between multiple repositories. You can follow symbols between multiple TypeScript projects, or even between your codebase and package.json dependencies.
 - **Find implementations:** You can navigate from an interface, interface property, abstract class, or abstract method to its concrete implementations.
 
@@ -113,7 +113,7 @@ Our experience is that the `scip-typescript index` command is not always a bottl
 
 ## Cross-repository navigation
 
-The actions “Go to definition” and “Find references” work across your codebase and package.json dependencies. Try this out yourself by opening the [github.com/vendure-ecommerce/vendure repository](https://sourcegraph.com/github.com/vendure-ecommerce/vendure@0dfa9d0b4b7f9f6af1c6406d44b096543c28db3e/-/blob/packages/create/src/create-vendure-app.ts?L39:6&subtree=true#tab=references) and navigating to the definition of the `arguments()` method that’s defined by the `commander` npm package.
+The actions “Go to definition” and “Find references” work across your codebase and package.json dependencies. Try this out yourself by opening the [github.com/vendure-ecommerce/vendure repository](https://sourcegraph.com/github.com/vendure-ecommerce/vendure@0dfa9d0b4b7f9f6af1c6406d44b096543c28db3e/-/blob/packages/create/src/create-vendure-app.ts?L39:6&subtree=true#tab=references) and navigating to the definition of the `arguments()` method that's defined by the `commander` npm package.
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/navigate-to-arguments.png"
@@ -127,7 +127,7 @@ Likewise, trigger “Find references” on the `action()` method to get real-wor
   alt="Trigger Find references on action() method"
 />
 
-Observe that the results come from both GitHub repositories and npm packages. The code from npm packages is the same source code that’s typically installed under the `node_modules/` directory.
+Observe that the results come from both GitHub repositories and npm packages. The code from npm packages is the same source code that's typically installed under the `node_modules/` directory.
 
 Read more in our docs, [here](https://docs.sourcegraph.com/integration/npm), on how to set up the same npm package support on a self-hosted Sourcegraph instance.
 
@@ -166,8 +166,8 @@ Before creating scip-typescript, we used another TypeScript indexer called [lsif
 Follow the steps below to migrate from lsif-node to scip-typescript:
 
 - Replace usages of the `lsif-tsc -p ARGUMENTS` command with `scip-typescript index ARGUMENTS`. 
-- Upgrade to the latest version of the `src` command-line interface, which you can install via `yarn global add @sourcegraph/src`. It’s okay if the version of your `src` command-line interface does not match the version of your Sourcegraph instance.
+- Upgrade to the latest version of the `src` command-line interface, which you can install via `yarn global add @sourcegraph/src`. It's okay if the version of your `src` command-line interface does not match the version of your Sourcegraph instance.
 
 You can expect to see 3-10x speedup improvements by migrating to scip-typescript. The actual speedup varies from codebase to codebase. When we migrated from lsif-node to scip-typescript in the Sourcegraph codebase, the indexing job in our CI went from ~40 minutes (12 parallel jobs) down to ~5 minutes (1 job).
 
-Give scip-typescript a try and don’t hesitate to [open an issue](https://github.com/sourcegraph/lsif-typescript) if you have questions or need help.
+Give scip-typescript a try and don't hesitate to [open an issue](https://github.com/sourcegraph/lsif-typescript) if you have questions or need help.

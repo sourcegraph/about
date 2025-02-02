@@ -32,7 +32,7 @@ Quickly explore and better understand all the code everywhere with Sourcegraph U
 [**🏷 Campaign UI updates**](#custom-branch-names-and-github-labels-for-campaigns)<br />
 Custom branch names and GitHub labels
 
-[**📌 Changes to Sourcegraph’s upgrade policy**](#changes-to-sourcegraphs-upgrade-policy)<br />
+[**📌 Changes to Sourcegraph's upgrade policy**](#changes-to-sourcegraphs-upgrade-policy)<br />
 
 [**🛠 Customization settings**](#customization-settings)<br />
 
@@ -141,7 +141,7 @@ We added a new `content:` search keyword to help you search for patterns that mi
 - Users can now specify the branch name during campaign creation. When using the GraphQL API to create a campaign, the branch name is now required.
 - Campaign changesets now display labels from code hosts. GitHub labels are currently supported and Bitbucket Server labels are coming soon.
 
-## Changes to Sourcegraph’s upgrade policy
+## Changes to Sourcegraph's upgrade policy
 
 Our upgrade policy previously supported upgrades from two minor version increments. We have updated our policy to restrict upgrading to one minor version at a time (e.g., `3.12` -> `3.13`). Please reach out to support@sourcegraph.com if you would like assistance upgrading from a much older version of Sourcegraph. This [upgrade policy](https://docs.sourcegraph.com/#upgrading-sourcegraph) is now enforced by the `sourcegraph-frontend` on startup to prevent admins from mistakenly jumping too many versions.
 

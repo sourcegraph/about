@@ -14,15 +14,15 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-o
 socialImage: https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-og-image.jpg
 ---
 
-We’ve just released [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.8, with faster autocomplete, improved recipes (now commands), new chat layout, improved code smell detection, custom commands, and more.
+We've just released [Cody for VS Code](https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai) v0.8, with faster autocomplete, improved recipes (now commands), new chat layout, improved code smell detection, custom commands, and more.
 
-Here’s what’s new in v0.8, and a few of the improvements we’ve made since the [June release](https://about.sourcegraph.com/blog/cody-in-sourcegraph-5-1). 
+Here's what's new in v0.8, and a few of the improvements we've made since the [June release](https://about.sourcegraph.com/blog/cody-in-sourcegraph-5-1). 
 
 See [here](https://github.com/sourcegraph/cody/releases/tag/vscode-v0.8.0) for the full v0.8 release notes.
 
 ### Improved autocomplete
 
-This release builds on a number of autocomplete improvements we’ve made since June:
+This release builds on a number of autocomplete improvements we've made since June:
 
 * Reduced single-line completion p75 response time by 40% to &lt;1300ms
 * Autocomplete is now using Claude Instant 1.2
@@ -31,7 +31,7 @@ This release builds on a number of autocomplete improvements we’ve made since 
 
 ### New chat layout
 
-We’ve updated the chat layout to be more compact and focused on the conversation. The input now correctly handles multi-line wrapping, has a Commands button, and better supports high contrast themes:
+We've updated the chat layout to be more compact and focused on the conversation. The input now correctly handles multi-line wrapping, has a Commands button, and better supports high contrast themes:
 
 <img alt="Screenshot of new Cody v0.8 chat layout" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-new-chat-layout.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:263}} />
 
@@ -47,7 +47,7 @@ You can also invoke commands directly in your code editor using the new Cody com
 
 ### Code Actions support
 
-You can now ask Cody to fix and explain any problems highlighted by VS Code’s Code Actions:
+You can now ask Cody to fix and explain any problems highlighted by VS Code's Code Actions:
 
 <img alt="Screenshot of new Cody v0.8 Code Actions support" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-code-actions.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:373}} />
 
@@ -72,7 +72,7 @@ Custom Commands are defined in JSON and allow you to call out to CLI tools, writ
 
 ### Cody Code Lens (Experimental)
 
-The new Code Lens setting places a Cody button above every top-level function in a file, and let’s you run command commands on the block of code:
+The new Code Lens setting places a Cody button above every top-level function in a file, and let's you run command commands on the block of code:
 
 <img alt="Screenshot of new Cody v0.8 code lens" src="https://storage.googleapis.com/sourcegraph-assets/cody-vscode-0.8.0-code-lens.png" style={{marginTop:"1rem",marginBottom:"1.5rem",marginLeft:0,maxWidth:450}} />
 
@@ -88,7 +88,7 @@ See the [changelog](https://github.com/sourcegraph/cody/blob/main/vscode/CHANGEL
 
 ### Thank you
 
-Cody is [open source](https://github.com/sourcegraph/cody), and it wouldn’t be what it is without our amazing contributors. A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody is [open source](https://github.com/sourcegraph/cody), and it wouldn't be what it is without our amazing contributors. A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 <hr style={{marginTop:"2rem",marginBottom:"2rem"}}/>
 

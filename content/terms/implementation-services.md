@@ -39,7 +39,7 @@ Leading up to contract closure, the following items must be identified in order 
 - Timeline expectations
 
 #### Direct Access
-The implementation team will deploy sourcegraph either by working collaboratively with an organization's admin or independently via direct badged-access to the customer's environment. This will be dependent on the organization’s desire and ability to grant this access to the Sourcegraph team, and the level of access that can be granted. If your organization is interested in having Sourcegraph directly access your environment during an implementation, this should be discussed prior to purchasing the service.
+The implementation team will deploy sourcegraph either by working collaboratively with an organization's admin or independently via direct badged-access to the customer's environment. This will be dependent on the organization's desire and ability to grant this access to the Sourcegraph team, and the level of access that can be granted. If your organization is interested in having Sourcegraph directly access your environment during an implementation, this should be discussed prior to purchasing the service.
 
 #### Customizations and Implementation Services
 Implementation Services may include custom deployment related activities such as custom manifest, deployment script, or AMI creation. However, the service does not typically include any custom development for the given organization including but not necessarily limited to the creation of custom scripts, API extension, and additions or alterations to our standard codebase. If the customer would like to discuss using Implementation Services for work that is not within the standard scope of work, additional discussions will need to be held and adjustments to the contracts made.
@@ -83,27 +83,27 @@ The following represents the various roles and responsibilities of resources inv
   - Product and technical expert during the sales cycle, leading product demonstrations, technical solutioning, and trials for new prospective customers and opportunities within existing customers
   - Responsible for initiating discussions surrounding Implementation Services with prospective customers, handing off all necessary customer information to the Implementation Team, and introducing the Implementation Team to the customer at the appropriate time.
 - Technical Advisor
-  - Specialized technical expert focused on the customer’ experience and relationship post-sales
+  - Specialized technical expert focused on the customer' experience and relationship post-sales
   - Leading up to the closure of a deployment, the Implementation Team will pull in the Technical Advisor to begin planning of user onboarding, training, and enablement and prepare the Technical Advisor to take over technical ownership of the customer. 
 - Account Executive
   - Manages the commercial relationship with the customer, owns contracting, and ensures we are appropriately conveying the business value of Sourcegraph and our services.
 
 #### Customer Implementation Services Roles
 - Project Sponsor
-  - Customer leader directly invested and involved in the success of the Sourcegraph project and it’s distribution to users through the organization.
+  - Customer leader directly invested and involved in the success of the Sourcegraph project and it's distribution to users through the organization.
   - Generally serves as an escalation point, and requires high-level status reporting on the Sourcegraph implementation.
 - Sourcegraph Administrator
   - Individual directly responsible for deploying, installing, and configuring Sourcegraph.
 - Sourcegraph Administrator, Manager
-  - Oversees the allocation of the Sourcegraph Administrator’s time and availability with regards to the Sourcegraph implementation.
+  - Oversees the allocation of the Sourcegraph Administrator's time and availability with regards to the Sourcegraph implementation.
   - Often provides insight into organizational requirements and assists in any necessary cross-functional collaboration within the customer organization.
 - Project Manager
   - Responsible for tracking progress, delegating tasks, and managing communications related to the implementation on the customer side.
 - Infrastructure Team
-  - Manages the customer’s infrastructure resources.
+  - Manages the customer's infrastructure resources.
   - Responsible for allocating resources and provisioning the necessary infrastructure needed for the deployment of Sourcegraph within the organization.
 - Security Team
-  - Ensures Sourcegraph is deployed according to the customer’s internal security processes and requirements.
+  - Ensures Sourcegraph is deployed according to the customer's internal security processes and requirements.
 - Code Host Administrator 
   - Manages the code hosts that will be connected to the Sourcegraph instance. Often has deep technical knowledge of the code host and how the organization uses it. If certain tasks need to be performed within the given Code Host, this person will be responsible for doing so.
 

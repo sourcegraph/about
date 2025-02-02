@@ -80,7 +80,7 @@ ch := make(chan Task, 3)
 
 ### How blocking/unblocking works?
 
-Assume G1 keep sending and it takes a long time to process G2. When channel is full, G1’s execution is paused; how does pausing work?
+Assume G1 keep sending and it takes a long time to process G2. When channel is full, G1's execution is paused; how does pausing work?
 
 * It happens at the runtime scheduler.
 * Goroutines are user-space threads, created and managed by the Go runtime, not the OS. These are lightweight compared to OS threads w.r.t. research consumption and scheduling overhead.
@@ -93,7 +93,7 @@ Assume G1 keep sending and it takes a long time to process G2. When channel is f
 
 When a goroutine needs to be paused, chan calls into the scheduler to park G1, what scheduler does is to change G1 from running to waiting. And schedule another goroutine on the OS thread.
 
-* This is good for perf. We haven’t stopped the OS thread but scheduled another goroutine by context switching. This is not expensive.
+* This is good for perf. We haven't stopped the OS thread but scheduled another goroutine by context switching. This is not expensive.
 * We need to resume the paused goroutine once the channel is not full anymore.
 
 
@@ -103,7 +103,7 @@ When a goroutine needs to be paused, chan calls into the scheduler to park G1, w
 
 
 * Waiting goroutine struct has a pointer to the element it is waiting on.
-* G1 created a sudog for itself, puts it in the channel’s wait queue. Sudog will be used to resume the G1 in the future.
+* G1 created a sudog for itself, puts it in the channel's wait queue. Sudog will be used to resume the G1 in the future.
 * What G2 does when the channel is not full anymore is to pop off the sudog. G1 is set runnable again. The runtime schedules G1 again and G1 resumes.
 
 (Also explains the case what happens when G2 needs to be parked and resumed again.)
@@ -113,7 +113,7 @@ When a goroutine needs to be paused, chan calls into the scheduler to park G1, w
 
 ![Selection 063](//images.contentful.com/le3mxztn6yoo/31ysUHAcYMSIYke6koU8Qq/d9b30737dd4ba3dc8386e936f8c0def9/Selection_063.png)
 
-When G1 finally runs, it needs to acquire the lock. But the runtime is actually is so much smarter to make this less costly. Runtime can copy directly to the receiver stack. G1 writes directly to G2’s stack and doesn't have to acquire any locks.
+When G1 finally runs, it needs to acquire the lock. But the runtime is actually is so much smarter to make this less costly. Runtime can copy directly to the receiver stack. G1 writes directly to G2's stack and doesn't have to acquire any locks.
 
 On resuming, G2 does not need to acquire channel lock and manipulate the buffer. This also means one fewer memory copy.
 

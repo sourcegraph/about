@@ -29,7 +29,7 @@ Step 4: Tips for integrating automation into your code workflows
 
 Step 5: Follow best practices for maintaining and updating automation workflows
 
-Let’s get into the details.
+Let's get into the details.
 
 ## Step 1: Identify the repetitive tasks
 
@@ -49,10 +49,10 @@ Now that we have identified some examples of tasks that need to be automated let
 Selecting the right tools is essential for achieving effective automation. Identifying and choosing the best tools involves considering several important factors. These criteria can guarantee that the automation solutions are efficient, scalable, reliable, and adaptable to future needs. Evaluating each tool against these standards strengthens your automation strategy, enhancing productivity and operational excellence. Here are some of the criteria you should look out for when choosing the right automation tools:
 
 - **Compatibility**: Verify that the tool integrates well with your existing technology stack.
-- **Ease of use**: Look for user-friendly tools that require minimal setup and don’t have complex workflow.
-- **Scalability**: Go for tools that can grow with your project’s needs.
+- **Ease of use**: Look for user-friendly tools that require minimal setup and don't have complex workflow.
+- **Scalability**: Go for tools that can grow with your project's needs.
 - **Community support**: Choose tools with strong community or vendor support for troubleshooting and updates.
-- **Reliability**: Choose tools that won't let you down or don’t have a known number of issues. They should work and save you valuable time.
+- **Reliability**: Choose tools that won't let you down or don't have a known number of issues. They should work and save you valuable time.
 - **Customizability**: Look for tools you can adjust to fit your needs and confirm that they work just right for your projects.
 - **Integration capabilities**: Your tools should interact nicely with each other so that everything in your workflow connects in perfect harmony.
 - **Security**: Find safe automation tools to keep your work secure. Always choose tools that meet data privacy regulations and are ransomware-free.
@@ -71,7 +71,7 @@ Selecting the right tools is essential for achieving effective automation. Ident
 - [**Puppet**](https://puppet.com/docs/puppet/6/puppet_overview.html): An automation tool that manages infrastructure and application delivery, providing version control and audit capabilities.
 - [**Terraform**](https://www.terraform.io/): An infrastructure as a code tool that enables the management of cloud services through automation scripts, removing the struggle of using manual processes and configurations.
 
-While knowing the right criteria to check when choosing your automation tools is key to optimizing your workflow, understanding how to implement the tools is also very important. Let’s look at an example implementation using the custom command feature in Cody by Sourcegraph for automation.
+While knowing the right criteria to check when choosing your automation tools is key to optimizing your workflow, understanding how to implement the tools is also very important. Let's look at an example implementation using the custom command feature in Cody by Sourcegraph for automation.
 
 ## Step 3: Implement the automation tools (Cody custom commands)
 
@@ -79,7 +79,7 @@ While knowing the right criteria to check when choosing your automation tools is
 
 These commands allow you to run predefined actions with smart context-fetching anywhere in the editor. Like the autocomplete and chat feature in Cody, the commands feature will search for context in your codebase to provide more contextually aware and informed answers.
 
-Cody’s built-in commands can handle tasks like:
+Cody's built-in commands can handle tasks like:
 
 - `edit` - For editing, fixing, and generating new code.
 - `explain` - For explaining code.
@@ -92,7 +92,7 @@ You can also create custom commands with Cody, which will be the focus of the ne
 **Implementing custom commands with Cody VSCode extension**
 Setting up the Cody VSCode extension is straightforward. The illustration below shows how to create an account and install the extension in your VSCode code editor:
 
-1. If you don’t already have an account, go to the [Cody by Sourcegraph](https://sourcegraph.com/cody) website and sign up.
+1. If you don't already have an account, go to the [Cody by Sourcegraph](https://sourcegraph.com/cody) website and sign up.
 ![Sign up for a Cody account](https://storage.googleapis.com/sourcegraph-assets/blog/5-steps-to-automate-repetitive-tasks-in-software-development/image_001.png)
 
 2. To install the extension, click the VSCode icon in the dashboard area after signing up. It will automatically take you to the code editor to complete the installation process. Alternatively, you can open your code editor, click **View** from the top-level menu, select **Extensions**, and search for Cody AI. Install the extension and log in with the authentication method you used at sign-up.
@@ -100,7 +100,7 @@ Setting up the Cody VSCode extension is straightforward. The illustration below 
 
 > Support for the commands feature may vary by IDE extension. Read the [**feature parity reference to learn what commands are available in your IDE**](https://sourcegraph.com/docs/cody/clients/feature-reference#commands).
 
-Now that your setup is complete, you can create custom commands via the Cody extension. A good use case of custom commands is generating an open API specification for Swagger from the codebase using Cody’s custom commands. Here are the steps to follow to achieve that:
+Now that your setup is complete, you can create custom commands via the Cody extension. A good use case of custom commands is generating an open API specification for Swagger from the codebase using Cody's custom commands. Here are the steps to follow to achieve that:
 
 1. Clicking the **Custom Commands** button will prompt you to create a new reusable command or open the settings for Cody for your workspace or user account. Select **New Custom Command.** 
 ![Clicking the Custom Commands button to create a new command](https://storage.googleapis.com/sourcegraph-assets/blog/5-steps-to-automate-repetitive-tasks-in-software-development/image_003.png)
@@ -130,10 +130,10 @@ Now that you know one of Cody's automation techniques for open API specs generat
 
 ## Step 4: Integrate the automation into your code workflows
 
-As there isn’t a one-size-fits-all approach to automation and considering each person’s system is unique, here are some tips for integrating designed automation into your code workflow:
+As there isn't a one-size-fits-all approach to automation and considering each person's system is unique, here are some tips for integrating designed automation into your code workflow:
 
 1. **Start small, think big:** First, automate the most repetitive tasks. These are usually the low-hanging fruit that can be automated quickly and easily. Once these tasks run smoothly, gradually expand your automation efforts to include more complex processes till you achieve wider coverage. This step-by-step approach allows you or your team to adapt to new automation tools and techniques without getting overwhelmed.
-2. **Stay up to date:** Regularly update your automation scripts and tools. Automation technology continually evolves, with new features and security enhancements being released regularly. By keeping your tools and scripts up to date, you ensure you’re leveraging the latest advancements and maintaining a secure environment. Regular updates also help avoid potential vulnerabilities and compatibility issues interrupting your automated workflows.
+2. **Stay up to date:** Regularly update your automation scripts and tools. Automation technology continually evolves, with new features and security enhancements being released regularly. By keeping your tools and scripts up to date, you ensure you're leveraging the latest advancements and maintaining a secure environment. Regular updates also help avoid potential vulnerabilities and compatibility issues interrupting your automated workflows.
 3. **Create a feedback loop:** Establish a feedback loop with your team. Continuous feedback is essential for improving and enhancing your automation processes over time. Encourage team members to share their experiences, challenges, and suggestions for improvement. This collaborative approach encourages a culture of continuous improvement and innovation, guaranteeing that your automation strategies remain aligned with your organization's evolving needs.
 
 Next are some best practices for maintaining and updating these integrations over time to ensure workflow longevity.

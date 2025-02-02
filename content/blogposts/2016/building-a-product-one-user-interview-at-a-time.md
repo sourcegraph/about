@@ -8,16 +8,16 @@ tags: [
   "blog"
 ]
 slug: building-a-product-one-user-interview-at-a-time
-description: 'We’d like to open our doors and show how we improve Sourcegraph using user research — and share some things we’ve learned along the way.'
+description: 'We'd like to open our doors and show how we improve Sourcegraph using user research — and share some things we've learned along the way.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/4ERYZHPMN2EiaoYY6OAMA8/9b474c0c40dce4975c2052ece22b73f3/0_flB7naFAbUKi1z8a.png
 published: true
 ---
 
 
 
-**From the very beginning at** [**Sourcegraph**](https://sourcegraph.com)**, it’s been our goal to build a product so helpful that people could never go back to programming the old way.** Sourcegraph helps developers discover and understand code, and to address such a complex need requires us to deeply understand our users.
+**From the very beginning at** [**Sourcegraph**](https://sourcegraph.com)**, it's been our goal to build a product so helpful that people could never go back to programming the old way.** Sourcegraph helps developers discover and understand code, and to address such a complex need requires us to deeply understand our users.
 
-We’d like to open our doors and show how we improve [Sourcegraph](https://sourcegraph.com) using user research — and share some things we’ve learned along the way.
+We'd like to open our doors and show how we improve [Sourcegraph](https://sourcegraph.com) using user research — and share some things we've learned along the way.
 
 ### The setup
 
@@ -36,13 +36,13 @@ The first iteration of our user research station.
 
 _Is your product a vitamin or a painkiller?_
 
-This question is often used to identify the core value of a product and to understand the painpoints that a it addresses. It’s a great question to ask before you start your user research to help narrow your focus.
+This question is often used to identify the core value of a product and to understand the painpoints that a it addresses. It's a great question to ask before you start your user research to help narrow your focus.
 
-The first thing you need to do is to define your core thesis — How does the product resonate with users? What kinds of problems does it solve? What product areas need messaging clarification or education? What hypotheses need to be tested? While you want to answer _every_ question you have about your product, the reality is that you will probably only have time to interrogate one or two fundamental hypotheses in the span of a 1-hour conversation. Large corporate research is often plagued by a large number of stakeholders with different business needs that dilute the project’s focus and integrity, making it impossible to inform strategic decisions. If this happens to your team, you might as well have users take a Survey Monkey questionnaire for thin, broad insights.
+The first thing you need to do is to define your core thesis — How does the product resonate with users? What kinds of problems does it solve? What product areas need messaging clarification or education? What hypotheses need to be tested? While you want to answer _every_ question you have about your product, the reality is that you will probably only have time to interrogate one or two fundamental hypotheses in the span of a 1-hour conversation. Large corporate research is often plagued by a large number of stakeholders with different business needs that dilute the project's focus and integrity, making it impossible to inform strategic decisions. If this happens to your team, you might as well have users take a Survey Monkey questionnaire for thin, broad insights.
 
 #### Product refinement or rapid innovation?
 
-Your users won’t tell you how to build your product but with the right line of questioning, they can create a foundation of behavior to inform your product direction. As a developer, researcher, product manager, or combination of all three, your job is to package and prioritize your observations and to create solutions that anticipate future functional and emotional needs. As Henry Ford famously said, “If I had just listened to my customers I would have built a faster horse.” Our hypothesis was aimed at understanding the difference between how programmers currently search for code, and how they could potentially search for code and usage examples.
+Your users won't tell you how to build your product but with the right line of questioning, they can create a foundation of behavior to inform your product direction. As a developer, researcher, product manager, or combination of all three, your job is to package and prioritize your observations and to create solutions that anticipate future functional and emotional needs. As Henry Ford famously said, “If I had just listened to my customers I would have built a faster horse.” Our hypothesis was aimed at understanding the difference between how programmers currently search for code, and how they could potentially search for code and usage examples.
 
 #### Testing a new way of thinking
 
@@ -60,19 +60,19 @@ A user giving feedback at our old office.
 
 ### Recruiting your users
 
-If you’re new to user research, it may be a good exercise to interview people you already know. We started by reaching out to friends and colleagues who were familiar with Sourcegraph from the beginning. With a strong rapport already in place, it’s a great time to test out your interviewing skills and find what questions create meaningful feedback.
+If you're new to user research, it may be a good exercise to interview people you already know. We started by reaching out to friends and colleagues who were familiar with Sourcegraph from the beginning. With a strong rapport already in place, it's a great time to test out your interviewing skills and find what questions create meaningful feedback.
 
-In order to talk to users who had little to no experience with Sourcegraph, we reached out to qualified candidates over Twitter and started asking our friends to reach out to their friends and get feedback on Sourcegraph. If you don’t have a large list of friends to draw from, you can always reach out to other programmers on Hacker News or other programmer-friendly sites, although expect to compensate them for $25–75/hr for their time.
+In order to talk to users who had little to no experience with Sourcegraph, we reached out to qualified candidates over Twitter and started asking our friends to reach out to their friends and get feedback on Sourcegraph. If you don't have a large list of friends to draw from, you can always reach out to other programmers on Hacker News or other programmer-friendly sites, although expect to compensate them for $25–75/hr for their time.
 
 ### Discussion guide (~15 minutes)
 
-Getting to know each other: when a user comes into our office, we start the interview by asking very simple, open-ended questions to outline their current workflow for writing code. We take note of what software they use, their opinions on different coding strategies, and what projects they’re currently working on. We do this for two reasons: to help them feel comfortable in the interview and to create a baseline understanding of their workflow for later questioning.
+Getting to know each other: when a user comes into our office, we start the interview by asking very simple, open-ended questions to outline their current workflow for writing code. We take note of what software they use, their opinions on different coding strategies, and what projects they're currently working on. We do this for two reasons: to help them feel comfortable in the interview and to create a baseline understanding of their workflow for later questioning.
 
 ### Revealing the new product features (~30–45 minutes)
 
-After establishing a better understanding of a person’s profile and workflow, start diving into your product. Learning to interview well takes time to master but here are some tips to help frame your questions.
+After establishing a better understanding of a person's profile and workflow, start diving into your product. Learning to interview well takes time to master but here are some tips to help frame your questions.
 
-Be wary of leading questions that elicit untrue responses. Leading questions might sound like “would you say that…” or “do you like this feature?” They imply an answer that’s already been forecasted and don’t allow for true exploration of a topic. Your job isn’t to boost your ego but to understand the difference between what people do, and what they say they do.
+Be wary of leading questions that elicit untrue responses. Leading questions might sound like “would you say that…” or “do you like this feature?” They imply an answer that's already been forecasted and don't allow for true exploration of a topic. Your job isn't to boost your ego but to understand the difference between what people do, and what they say they do.
 
 Instead, try these open-ended prompts:
 
@@ -83,7 +83,7 @@ Instead, try these open-ended prompts:
 
 ### Wrap up (~5–10 minutes)
 
-_How would you describe Sourcegraph to a non-programmer friend? To a programmer friend? What about to family members who aren’t programmers?_
+_How would you describe Sourcegraph to a non-programmer friend? To a programmer friend? What about to family members who aren't programmers?_
 
 The wrap up questions are used to cover any additional topics or follow-up on any stories that sounded interesting during the interview. This is often a great time to read back through your notes and dive into topics that seemed tangential and became more important in retrospect.
 
@@ -91,7 +91,7 @@ The wrap up questions are used to cover any additional topics or follow-up on an
 
 You've completed your research, started to see patterns in the questions, and you feel like a pro interviewer. But what now?
 
-One of the hardest parts of research is framing the insights. It’s easy to have a knee-jerk reaction to what users tell you during the interview process. Your goal at the end of this research should be to identify the consistent behavioral themes.
+One of the hardest parts of research is framing the insights. It's easy to have a knee-jerk reaction to what users tell you during the interview process. Your goal at the end of this research should be to identify the consistent behavioral themes.
 
 ![0*WeoJcz19zALJSUsE](//images.contentful.com/le3mxztn6yoo/3425F3kYdOKQwwKqUYCgI6/cb544f55347e23ce2bd11427d12cc837/0_WeoJcz19zALJSUsE.png)
 
@@ -107,7 +107,7 @@ But often looks more like this:
 
 _research + insights = assumptions challenged, new questions raised_
 
-The overturned assumptions and new questions are the fuel for the next cycle of your product development. User research won’t give you the answers, but it will guide you to be sure you’re attempting to answer the right questions.
+The overturned assumptions and new questions are the fuel for the next cycle of your product development. User research won't give you the answers, but it will guide you to be sure you're attempting to answer the right questions.
 
 ### About the author
 

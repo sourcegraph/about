@@ -15,8 +15,8 @@ published: true
 **TL;DR: Sourcegraph experienced a security incident that allowed a single attacker to access some data on Sourcegraph.com. This was limited to:**
 
 - Paid customers: 
-  - The license key recipient’s name and email address. 
-  - A small subset of customers’ Sourcegraph license keys may have been accessed (note that license keys _do not_ enable access to Sourcegraph instances). We are reaching out directly to those who may have been impacted to rotate license keys. 
+  - The license key recipient's name and email address. 
+  - A small subset of customers' Sourcegraph license keys may have been accessed (note that license keys _do not_ enable access to Sourcegraph instances). We are reaching out directly to those who may have been impacted to rotate license keys. 
 - Community users: 
   - Sourcegraph account email addresses. No action is required. 
 
@@ -43,13 +43,13 @@ The spike in usage was ruled as isolated and inorganic and our security, enginee
 
 Our security team identified a code commit from July 14 where a site-admin access token was accidentally leaked in a pull request and was leveraged to impersonate a user to gain access to the administrative console of our system. 
 
-In the spirit of transparency, we want to share the full timeline of the incident and what we have done to resolve this incident, as well as additional steps we’re taking to prevent this kind of leak in the future.
+In the spirit of transparency, we want to share the full timeline of the incident and what we have done to resolve this incident, as well as additional steps we're taking to prevent this kind of leak in the future.
 
 ### Timeline
 
 On July 14, 2023 _(2023-07-14 22:01:00 UTC)_ a Sourcegraph engineer accidentally committed a code change that contained an active site-admin access token. The site-admin access token had broad privileges to view and modify account information on Sourcegraph.com.
 
-_Sourcegraph.com is an instance of Sourcegraph that contains public code only. It’s also used for authentication for free-tier Cody users. It is separate from all paid customer instances (both on-premises and cloud). The instance also hosts our license management for all customers._
+_Sourcegraph.com is an instance of Sourcegraph that contains public code only. It's also used for authentication for free-tier Cody users. It is separate from all paid customer instances (both on-premises and cloud). The instance also hosts our license management for all customers._
 
 Our internal control systems, including automated code analysis, failed to catch the access token being committed to the repository. 
 
@@ -59,7 +59,7 @@ On August 30, 2023 _(2023-08-30 06:47:59 UTC)_, using the leaked site-admin acce
 
 The malicious user continued to probe the system by changing their access from a site-admin to regular user multiple times.
 
-The malicious user, or someone connected to them, created a proxy app allowing users to directly call Sourcegraph’s APIs and leverage the underlying LLM. Users were instructed to create free Sourcegraph.com accounts, generate access tokens, and then request the malicious user to greatly increase their rate limit.
+The malicious user, or someone connected to them, created a proxy app allowing users to directly call Sourcegraph's APIs and leverage the underlying LLM. Users were instructed to create free Sourcegraph.com accounts, generate access tokens, and then request the malicious user to greatly increase their rate limit.
 
 On August 30 _(2023-08-30 13:25:54 UTC)_, the Sourcegraph security team identified the malicious site-admin user, revoked their access, and kicked off an internal investigation for both mitigation and next steps.
 
@@ -72,7 +72,7 @@ As more users discovered the proxy app, they created free Sourcegraph.com accoun
 The impact of the malicious user having admin access was limited to a subset of:
 
 - **Paid Customers**
-  - The license key recipient’s name and email address
+  - The license key recipient's name and email address
   - Sourcegraph license key
 
 <br/>
@@ -86,7 +86,7 @@ We have no indication that any of this data was viewed, modified, or copied, but
 
 Regarding paid customer license key exposure, we saw that the user accessed a page in the admin dashboard where they would have only seen the first 20 license key items. We were able to determine which items those were at the time of viewing because of stable sorting.
 
-**Important Note: Customers’ private data or code was not viewed during this incident. Customer private data and code resides in isolated environments and were therefore not impacted by this event.**
+**Important Note: Customers' private data or code was not viewed during this incident. Customer private data and code resides in isolated environments and were therefore not impacted by this event.**
 
 ### How we're mitigating
 
@@ -99,7 +99,7 @@ As soon as we understood the scope of the incident we took the following steps:
 
 Expanding our secret scanning through additional static analysis tests will ensure we can better detect and prevent this kind of leak in the future.
 
-If you’re a Community user, we know these rate limit reductions aren’t ideal for devs who are using Cody to help them write and understand code. This reduction will be short-term while we investigate the issue further.
+If you're a Community user, we know these rate limit reductions aren't ideal for devs who are using Cody to help them write and understand code. This reduction will be short-term while we investigate the issue further.
 
 ### Next steps
 

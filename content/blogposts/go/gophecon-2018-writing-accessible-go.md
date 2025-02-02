@@ -29,7 +29,7 @@ Julia spoke to the importance of writing code that was accessible to all develop
 
 ## Introduction
 
-Julia works on the Google open source team where she writes code for people who work on open source. She is also a stubborn person which means that she won’t settle and is constantly trying new things or looking for better ways to do things. At the same time, working to teach others to do the same.
+Julia works on the Google open source team where she writes code for people who work on open source. She is also a stubborn person which means that she won't settle and is constantly trying new things or looking for better ways to do things. At the same time, working to teach others to do the same.
 
 ## Her Disability
 
@@ -41,9 +41,9 @@ She decided there needed to be a way to still be productive when this happened. 
 
 ## What Is A Disability
 
-Julia is disabled and this is an uncomfortable thing to talk about. It’s important to understand what a disability is. The World Health Organization (WHO) defines a disability as:
+Julia is disabled and this is an uncomfortable thing to talk about. It's important to understand what a disability is. The World Health Organization (WHO) defines a disability as:
 
-_“complex phenomenon, reflecting the interaction between features of a person’s body and features of the society in which he or she lives.”_
+_“complex phenomenon, reflecting the interaction between features of a person's body and features of the society in which he or she lives.”_
 
 The definition is describing the idea of a “gap” between the person with the disability and the society in which they live in. It might not be well know but 15% of the world's population lives with a disability.
 
@@ -51,14 +51,14 @@ The definition is describing the idea of a “gap” between the person with the
 
 To show how cumbersome and difficult it is to use the voice over accessibility feature of the operating system, Julia provided a 40 second demo, in this demo we could here the code being said by the computer. It was slow and tedious. Especially since new lines were being spoken. From this tools perspective, a new line was a line of code. Starting from package main, with two imports and a main function, after 37 seconds the voice was finally talking about the code inside the main function.
 
-What we were listening to was also faster than normal and trust me, very annoying to listen to. What’s worse, is trying to debug code this way is very difficult. It could take a long time to identify you missed a comma or colon somewhere. In the end, the accessibility features she had access to was not enough to allow her to be effective reading and writing code.
+What we were listening to was also faster than normal and trust me, very annoying to listen to. What's worse, is trying to debug code this way is very difficult. It could take a long time to identify you missed a comma or colon somewhere. In the end, the accessibility features she had access to was not enough to allow her to be effective reading and writing code.
 
 ## Hard-Earned Lessons
 
 There are things that everyone can do that will make code easier to read for everyone. These suggestion do allow the voice overs to be more effective for those who need to use it.
 
 **Group code blocks logically**
-Less lines of code isn’t always more for readability. Sometimes doing less per line of code can help paint a better mental model of the logic.
+Less lines of code isn't always more for readability. Sometimes doing less per line of code can help paint a better mental model of the logic.
 
 **Keep names short**
 For anyone who is listening to code being read this is especially important. It allows for easier listening and navigating through the code.
@@ -70,20 +70,20 @@ A variable based on a vector type should ignore what type it is. A variable name
 This goes with making names meaningful but it also adds another component. One day she kept hearing the computer say, “jeet-hu”. She kept playing that over and over again, “jeet-hu”. Eventually she realized the word being said was “github”. The idea here is to be careful with concatenating words that the computer will have a hard time pronouncing.
 
 **Use new lines intentionally**
-When voice is your guide, a newline is a line of code. The word “newline” will be spoken. It’s important to treat newlines like new paragraphs. Be clear when things are changing (use a newline) or not.
+When voice is your guide, a newline is a line of code. The word “newline” will be spoken. It's important to treat newlines like new paragraphs. Be clear when things are changing (use a newline) or not.
 
 **Be Consistent**
-A team needs to decide on styles early, have them documents and follow them. If you find a better way to do something and change the style, change as much of the code base as possible to reflect the change. If not, someone new will start to see the different styles and won’t have the context to understand why. Most important, enforce the styles and teach to them during code reviews.
+A team needs to decide on styles early, have them documents and follow them. If you find a better way to do something and change the style, change as much of the code base as possible to reflect the change. If not, someone new will start to see the different styles and won't have the context to understand why. Most important, enforce the styles and teach to them during code reviews.
 
 ## Curb Cut Effect
 
-Why should anyone follow these guidelines Julia presented? You can’t have an attitude that since no one is disabled on your team, you don’t need to do this. The reality is you can’t always look at a person and know if they are disabled. There isn’t always an outward sign. This is a personal situation for the person, they may not want to talk about it.
+Why should anyone follow these guidelines Julia presented? You can't have an attitude that since no one is disabled on your team, you don't need to do this. The reality is you can't always look at a person and know if they are disabled. There isn't always an outward sign. This is a personal situation for the person, they may not want to talk about it.
 
-Disabilities are not always “on” situations. In the case of Julia, it is very much an “on/off” situation. Some days she is very productive and other days she isn’t. In the end, these guidelines will benefit everyone, not just those who are disabled.
+Disabilities are not always “on” situations. In the case of Julia, it is very much an “on/off” situation. Some days she is very productive and other days she isn't. In the end, these guidelines will benefit everyone, not just those who are disabled.
 
 Cities began to put in curb cuts with the pads at different intersections to help disabled people move around the cities. What the cities found out is, this change helped everyone. When something built for one population helps others this is called the Curb Cut Effect.
 
-Julia’s guidelines are really Code Curb Cuts, because they help everyone. Her guidelines:
+Julia's guidelines are really Code Curb Cuts, because they help everyone. Her guidelines:
 * Helps the code to be more maintainable
 * Helps with better onboarding
 * Helps make things more inclusive for all developers

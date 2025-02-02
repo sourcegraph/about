@@ -6,7 +6,7 @@ authors:
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
 publishDate: 2024-05-02T10:00-01:00
-description: "Cody for JetBrains v5.5.8 is now available! We’ve updated the multi-repo context selector, improved the extension stability for Apple silicon users, and increased the context windows for Cody's LLMs."
+description: "Cody for JetBrains v5.5.8 is now available! We've updated the multi-repo context selector, improved the extension stability for Apple silicon users, and increased the context windows for Cody's LLMs."
 tags: [blog]
 slug: "cody-jetbrains-5-5-8-release"
 published: true
@@ -24,7 +24,7 @@ You can now:
 
 - Select up to 10 repositories at the same time
 - Pick repositories from a populated list
-- See which Sourcegraph server you’re logged into from the UI
+- See which Sourcegraph server you're logged into from the UI
 
 <Video 
   source={{
@@ -37,7 +37,7 @@ You can now:
 
 ## Stability improvements for Apple silicon users
 
-We’ve fixed a bug where the extension would crash for Mac users with Apple silicon CPUs, particular users on M2 chipsets. Cody is now more stable for those users. 
+We've fixed a bug where the extension would crash for Mac users with Apple silicon CPUs, particular users on M2 chipsets. Cody is now more stable for those users. 
 
 If you continue running into any issues with Cody crashing, please [let us know](https://community.sourcegraph.com/).
 
@@ -57,7 +57,7 @@ We added a tooltip for new users to make it easier to get started with autocompl
 
 ## Expanded context windows for Free and Pro users
 
-JetBrains IDEs now support the expanded context windows we [recently introduced in VS Code](https://sourcegraph.com/blog/cody-vscode-1-14-0-release#bigger-and-better-context-windows-to-improve-chat). Free and Pro users can now push _way more context_ into Cody, so you can ask questions about larger amounts of code, include larger files in context, and have longer back-and-forth chat conversations without losing context. It also means you shouldn’t see Cody’s responses getting cut off mid-answer anymore.
+JetBrains IDEs now support the expanded context windows we [recently introduced in VS Code](https://sourcegraph.com/blog/cody-vscode-1-14-0-release#bigger-and-better-context-windows-to-improve-chat). Free and Pro users can now push _way more context_ into Cody, so you can ask questions about larger amounts of code, include larger files in context, and have longer back-and-forth chat conversations without losing context. It also means you shouldn't see Cody's responses getting cut off mid-answer anymore.
 
 
 ## Changelog
@@ -67,7 +67,7 @@ See the [changelog](https://github.com/sourcegraph/jetbrains/releases/tag/v5.5.8
 
 ## Thank you
 
-Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 As always, we value your feedback in our [support forum](https://community.sourcegraph.com/) and on [Discord](https://discord.com/servers/sourcegraph-969688426372825169). Happy Codying!
 

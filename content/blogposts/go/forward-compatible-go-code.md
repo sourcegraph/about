@@ -84,7 +84,7 @@ The second cause of forward incompatible Go code is because the toolchain change
 
 The development of the Go toolchain is a 6-month process where the first 3 months are spent developing new features, optimising performance, refactoring code, and generally making higher risk changes. The later 3 months are spent in a development freeze, where we focus on fixing bugs, improving documentation, and generally stabilising the toolchain.
 
-Throughout the entire development cycle, rigorous testing is performed. Every few days, a cut of the toolchain is used to build, run, and test an enormous suite consisting of over a million targets of Google’s production code. The chart above shows the number of regression failures discovered on this test suite over the 1.8 cycle.
+Throughout the entire development cycle, rigorous testing is performed. Every few days, a cut of the toolchain is used to build, run, and test an enormous suite consisting of over a million targets of Google's production code. The chart above shows the number of regression failures discovered on this test suite over the 1.8 cycle.
 
 ![Screen%20Shot%202017-07-13%20at%205.14.28%20PM](//images.contentful.com/le3mxztn6yoo/5Px529rC7uaIU2Gq2wok6S/e4c941caac1ba627e7619d1215044014/Screen_20Shot_202017-07-13_20at_205.14.28_20PM.png)
 

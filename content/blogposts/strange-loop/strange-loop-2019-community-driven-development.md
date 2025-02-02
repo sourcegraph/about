@@ -49,10 +49,10 @@ These hack events led again to Christine being burnt out. She wasn't meeting her
   * She started to create GitHub issues with verbiage that described the real-world need
 * Working together
   * Creation of a monthly virtual co-working night on Zoom
-  * Shout-outs for contribitors! It’s important/energizing to see the effect of the work as a whole
+  * Shout-outs for contribitors! It's important/energizing to see the effect of the work as a whole
   * She began to share previews of current/upcoming work on a regular interval
 * Shared Values and goals
- * Incorporated NSC’s values and mission in the project's Code Of Counduct
+ * Incorporated NSC's values and mission in the project's Code Of Counduct
  * Included all tech projects and tech volunteers at NSC, not just OSS contributors
  
  

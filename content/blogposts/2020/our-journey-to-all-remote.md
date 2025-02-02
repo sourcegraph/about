@@ -30,10 +30,10 @@ This experiment had two goals:
 1. Give San Francisco teammates more focus time to optimize productivity (e.g., fewer interruptions, skip the commute, etc.).
 2. Generate more empathy for distributed teammates by having San Francisco teammates rely solely on written communication and video chat instead of in-person conversations.
 
-After doing this a few times, we surveyed the team to see what everyone had learned. Here’s a summary of feedback we collected in early 2019:
+After doing this a few times, we surveyed the team to see what everyone had learned. Here's a summary of feedback we collected in early 2019:
 
 - Empathy
-    - Don’t be late for a video chat.
+    - Don't be late for a video chat.
     - Write down meeting notes so anyone who wasn't able to attend can catch up and participate in the conversation moving forward.
     - Have discussions and document decisions in public Slack channels or GitHub issues.
     - Use headphones for video calls to avoid echo.

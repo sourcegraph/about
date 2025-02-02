@@ -35,9 +35,9 @@ Investing in these big projects means growing our team. (In fact, 86% of our exp
 
 ## Why Sequoia?
 
-Sequoia really understands the power of search and the power of developers. They were early investors in Google, a search tool that most people didn’t know they needed until they tried it and then couldn’t live without it (which many developers say is also true about code search). They were also one of the few VC backers of GitHub. Sequoia sees the same opportunity in Sourcegraph.
+Sequoia really understands the power of search and the power of developers. They were early investors in Google, a search tool that most people didn't know they needed until they tried it and then couldn't live without it (which many developers say is also true about code search). They were also one of the few VC backers of GitHub. Sequoia sees the same opportunity in Sourcegraph.
 
-> “Sourcegraph’s Universal Code Search essentially serves as ‘Google for developers,’ empowering engineering teams to quickly traverse massive codebases and find and analyze the impact of specific lines of code. Sourcegraph is a must-have productivity tool for all developers and will become the system-of-intelligence for code.”
+> “Sourcegraph's Universal Code Search essentially serves as ‘Google for developers,' empowering engineering teams to quickly traverse massive codebases and find and analyze the impact of specific lines of code. Sourcegraph is a must-have productivity tool for all developers and will become the system-of-intelligence for code.”
 >
 > &mdash; Andrew Reed, Partner, Sequoia
 
@@ -47,11 +47,11 @@ I've known [Andrew Reed](https://twitter.com/andrew__reed?lang=en), the Sequoia 
 
 Our mission at Sourcegraph is to eventually make it so [everyone can code](https://handbook.sourcegraph.com/company/strategy). A world where everyone, not just ~0.1% of the world population, can code will see faster and more broadly beneficial technological progress. Right now, advancing our mission means building universal code search to solve the problems caused by [Big Code](https://about.sourcegraph.com/press-release/big-code-survey-2020/) (massive codebases, huge teams, growing complexity, etc.) so that all of today's developers can code much more effectively.
 
-As an independent, universal code search company, we’re committed to integrating with every other vendor's products based solely on what our customers and users need. We help resist lock-in to one single big tech vendor's developer ecosystem by, for example, searching code across all code hosts. Avoiding a dev tool monoculture is necessary to avoid technological stagnation.
+As an independent, universal code search company, we're committed to integrating with every other vendor's products based solely on what our customers and users need. We help resist lock-in to one single big tech vendor's developer ecosystem by, for example, searching code across all code hosts. Avoiding a dev tool monoculture is necessary to avoid technological stagnation.
 
 ## What's next
 
-With Sequoia’s help, we’ll continue to grow Sourcegraph, expand awareness of the [Big Code problem](https://about.sourcegraph.com/press-release/big-code-survey-2020/), and bring universal code search to more developers and companies. Thank you to all of our customers and users who have helped us get here!
+With Sequoia's help, we'll continue to grow Sourcegraph, expand awareness of the [Big Code problem](https://about.sourcegraph.com/press-release/big-code-survey-2020/), and bring universal code search to more developers and companies. Thank you to all of our customers and users who have helped us get here!
 
 (If you haven't yet tried Sourcegraph, [try Sourcegraph now](https://about.sourcegraph.com/)! It takes less than 5 minutes to set up and start searching your own code locally.)
 

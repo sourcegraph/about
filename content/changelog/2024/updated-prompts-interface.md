@@ -14,7 +14,7 @@ published: true
 
 ---
 
-Hot on the heels of the updates [we rolled out to VS Code](https://sourcegraph.com/changelog/new-prompts-ui), the improvements we’ve made to the Cody sidebar are now available for JetBrains and Cody Enterprise users. Prompt and command use and discovery has been simplified, and we’ve tidied up the display of draft Prompts so that only drafts you own will appear in the UI.
+Hot on the heels of the updates [we rolled out to VS Code](https://sourcegraph.com/changelog/new-prompts-ui), the improvements we've made to the Cody sidebar are now available for JetBrains and Cody Enterprise users. Prompt and command use and discovery has been simplified, and we've tidied up the display of draft Prompts so that only drafts you own will appear in the UI.
 
 <br />
 <Figure

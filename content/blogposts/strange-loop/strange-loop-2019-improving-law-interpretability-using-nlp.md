@@ -95,7 +95,7 @@ standard definitions
 last group
 
 ## Summary of talk
-* General approach to the analysis of legislation that doesn’t require a labelled training set
+* General approach to the analysis of legislation that doesn't require a labelled training set
   * Automate the extraction of rules
   * Identify entities that are responsible for compliance
   * Organize rules into homogeneous groups with respect to their impact on various entities

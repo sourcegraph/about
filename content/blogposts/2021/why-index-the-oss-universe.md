@@ -1,6 +1,6 @@
 ---
-title: Why we’re indexing the OSS universe
-description: 'We’ve indexed over 1M open source repositories on Sourcegraph cloud to bring code search to the open source universe and code literacy to a much wider set of people.'
+title: Why we're indexing the OSS universe
+description: 'We've indexed over 1M open source repositories on Sourcegraph cloud to bring code search to the open source universe and code literacy to a much wider set of people.'
 authors:
   - name: Beyang Liu
     url: https://twitter.com/beyang
@@ -14,7 +14,7 @@ published: true
 
 ![Why we're indexing the OSS universe graphic](/blog/blogIndexing1200x627.jpg)
 
-We’ve indexed over 1M open source repositories on Sourcegraph cloud to bring code search to the open source universe and code literacy to a much wider set of people. By the end of the year, we will have grown our index to include every open source repository with more than 1 star on GitHub, GitLab, and other code hosts.
+We've indexed over 1M open source repositories on Sourcegraph cloud to bring code search to the open source universe and code literacy to a much wider set of people. By the end of the year, we will have grown our index to include every open source repository with more than 1 star on GitHub, GitLab, and other code hosts.
 
 Guido van Rossum, the creator of Python, once said:
 
@@ -24,25 +24,25 @@ From the beginning, Sourcegraph set out to help more people understand code by m
 
 Our starting point is to make code easier to read for a wider set of developers. With the announcement of our [Series D funding](https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d-round/) last month, we promised to bring code search to every company building software and every dev in the world.
 
-This is why we're indexing the entire open source universe on Sourcegraph cloud, and we’re announcing our first big milestone: indexing over 1M of the most-starred repositories on GitHub, which encompasses every repository with more than 12 stars. We're prioritizing by quality, because when you're searching over code, you care about finding the best function or best usage example, not just some random code snippet. By the end of the year, we will have grown our index to include every open source repository with more than 1 star on GitHub and GitLab (that’s 5M+ repos).
+This is why we're indexing the entire open source universe on Sourcegraph cloud, and we're announcing our first big milestone: indexing over 1M of the most-starred repositories on GitHub, which encompasses every repository with more than 12 stars. We're prioritizing by quality, because when you're searching over code, you care about finding the best function or best usage example, not just some random code snippet. By the end of the year, we will have grown our index to include every open source repository with more than 1 star on GitHub and GitLab (that's 5M+ repos).
 
-We’re also making it easier for developers to search and understand their own code. In addition to setting up and managing a self-hosted Sourcegraph instance to search your own code, we’re launching a Public Beta for private code on Sourcegraph cloud. You can now connect Sourcegraph cloud to your private repositories to search and navigate your own public or private repositories on the cloud, making universal code search even more accessible to every dev. Try it for yourself by creating an account on Sourcegraph.com and adding your code.
+We're also making it easier for developers to search and understand their own code. In addition to setting up and managing a self-hosted Sourcegraph instance to search your own code, we're launching a Public Beta for private code on Sourcegraph cloud. You can now connect Sourcegraph cloud to your private repositories to search and navigate your own public or private repositories on the cloud, making universal code search even more accessible to every dev. Try it for yourself by creating an account on Sourcegraph.com and adding your code.
 
-While we’re focused on creating the best search experience for devs in the near-term, we’re looking forward to our [5-year vision](https://handbook.sourcegraph.com/company/strategy#5-year-vision) to make the universal code graph accessible to everyone.
+While we're focused on creating the best search experience for devs in the near-term, we're looking forward to our [5-year vision](https://handbook.sourcegraph.com/company/strategy#5-year-vision) to make the universal code graph accessible to everyone.
 
 ## Expanding code literacy
 
-As the world has transitioned to the digital era, our lives are increasingly dominated by the use of technology and software. Yet only [0.3% of the world’s population](https://www.future-processing.com/blog/how-many-developers-are-there-in-the-world-in-2019/#:~:text=Evans%20Data%20Corporation%20recently%20announced,currently%2026.9%20million%20developers%20worldwide) can read and write code. Similar to how literacy made it possible for more people to contribute and participate in shaping culture and society, code literacy is a gateway for involving more people and perspectives in shaping a world increasingly defined through software.
+As the world has transitioned to the digital era, our lives are increasingly dominated by the use of technology and software. Yet only [0.3% of the world's population](https://www.future-processing.com/blog/how-many-developers-are-there-in-the-world-in-2019/#:~:text=Evans%20Data%20Corporation%20recently%20announced,currently%2026.9%20million%20developers%20worldwide) can read and write code. Similar to how literacy made it possible for more people to contribute and participate in shaping culture and society, code literacy is a gateway for involving more people and perspectives in shaping a world increasingly defined through software.
 
-Code is inaccessible to most people not because it’s inherently difficult to read. It's easier and more straightforward than most human languages. But what's difficult is setting up an environment where it's easy to walk through the reference graph of code—it's as if you had to know how to spin up a web server just to make hyperlinks work on the web.
+Code is inaccessible to most people not because it's inherently difficult to read. It's easier and more straightforward than most human languages. But what's difficult is setting up an environment where it's easy to walk through the reference graph of code—it's as if you had to know how to spin up a web server just to make hyperlinks work on the web.
 
-Code search across the open source universe lowers that barrier to entry. Imagine being a new developer or someone just learning how to code and coming across a line of code you’ve never seen before. You search for that code on Sourcegraph and find every public reference—regardless of what repo or code host it lives in—and real life usage examples intelligently ranked by relevance. Code search opens up a much wider world of code to learn from and build with.
+Code search across the open source universe lowers that barrier to entry. Imagine being a new developer or someone just learning how to code and coming across a line of code you've never seen before. You search for that code on Sourcegraph and find every public reference—regardless of what repo or code host it lives in—and real life usage examples intelligently ranked by relevance. Code search opens up a much wider world of code to learn from and build with.
 
 And it's not just developers. We've already seen among our enterprise customers instances of non-developers using Sourcegraph to understand pieces of code that are relevant to them. Customer support engineers, product managers, and members of the sales and marketing team have opened up Sourcegraph to debug issues, understand how user metrics are being collected, and identify which engineering team to ask for further investigation. We think this is just the tip of the iceberg and a sign of the great potential of expanding code literacy.
 
 ## Supporting open source
 
-Indexing the open source universe doesn’t only benefit consumers of open source software. With massive adoption of OSS across different projects and products, universal code search can facilitate more community sharing and collaboration, and help authors and maintainers save time, gain greater project exposure, and see how their code is being used by others.
+Indexing the open source universe doesn't only benefit consumers of open source software. With massive adoption of OSS across different projects and products, universal code search can facilitate more community sharing and collaboration, and help authors and maintainers save time, gain greater project exposure, and see how their code is being used by others.
 
 > “The modern world is built on open source software, most of the critical apps and products we use daily won't exist without it. Sourcegraph indexing the entire open source code on the web feels like the "Google" of open source. Its code search tool is a massive leap for collaboration in the open source community. It will allow more people to explore projects, walk through large codebases with ease, even discover dependent projects. This is such a huge step forward!" - Segun Adebayo, Creator of Chakra UI
 
@@ -59,6 +59,6 @@ To support open source, we have to support maintainers. We think that indexing t
 
 Scaling universal code search to this size has been a massive and rewarding technical undertaking. As I noted in my last post, [The Future of Code Search](https://about.sourcegraph.com/blog/the-future-of-code-search/), “really good code search needs to index the complete world of knowledge the user is hoping to explore, and it needs to be really, really fast.”
 
-One of the ways in which we’re scaling Sourcegraph is by improving one of our upstream open source dependencies that handles indexing. We've written up a [blog post](https://about.sourcegraph.com/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/) describing how we were able to significantly reduce the memory usage of Zoekt, an open source trigram-based code search engine written by the brilliant Han-Wen Nienhuys (who will also be appearing on an upcoming episode of the Sourcegraph podcast). We plan to upstream this change and will talk more about how we plan to contribute to Zoekt in a future post.
+One of the ways in which we're scaling Sourcegraph is by improving one of our upstream open source dependencies that handles indexing. We've written up a [blog post](https://about.sourcegraph.com/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/) describing how we were able to significantly reduce the memory usage of Zoekt, an open source trigram-based code search engine written by the brilliant Han-Wen Nienhuys (who will also be appearing on an upcoming episode of the Sourcegraph podcast). We plan to upstream this change and will talk more about how we plan to contribute to Zoekt in a future post.
 
-In the meantime, try your first search on Sourcegraph.com and let us know what you think on [Twitter](https://twitter.com/sourcegraph). If you’re not sure where to start, check out our [docs](https://docs.sourcegraph.com/code_search).
+In the meantime, try your first search on Sourcegraph.com and let us know what you think on [Twitter](https://twitter.com/sourcegraph). If you're not sure where to start, check out our [docs](https://docs.sourcegraph.com/code_search).

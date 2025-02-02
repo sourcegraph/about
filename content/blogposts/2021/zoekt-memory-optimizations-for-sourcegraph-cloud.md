@@ -1,6 +1,6 @@
 ---
 title: A 5x reduction in RAM usage with Zoekt memory optimizations
-description: Here’s how we went from using 1400KB of RAM per repo to just 310KB without affecting latency.
+description: Here's how we went from using 1400KB of RAM per repo to just 310KB without affecting latency.
 authors:
   - name: Ryan Hitchman
 publishDate: 2021-08-19T00:00-07:00
@@ -15,7 +15,7 @@ published: true
 
 _Sourcegraph universal code search enables you to explore, navigate, and better understand all your code, faster._
 
-Recently, we've been working to scale Sourcegraph cloud’s index to [1 million open source repositories and beyond](https://about.sourcegraph.com/blog/why-index-the-oss-universe/). Part of that effort has been reducing the RAM usage for the [Zoekt](https://github.com/google/zoekt) (pronounced "zooked") servers responsible for handling most of our code searches.
+Recently, we've been working to scale Sourcegraph cloud's index to [1 million open source repositories and beyond](https://about.sourcegraph.com/blog/why-index-the-oss-universe/). Part of that effort has been reducing the RAM usage for the [Zoekt](https://github.com/google/zoekt) (pronounced "zooked") servers responsible for handling most of our code searches.
 
 Zoekt is a Go program created by Han-Wen Nienhuys that performs [trigram-based regex search](https://swtch.com/~rsc/regexp/regexp4.html), which means that it builds an inverted index mapping every three-letter sequence of characters, or trigram, to where it appears in a repository. Each entry in the list is called a posting, and the list itself is called a postings list. When searching for a string like `Errorf`, Zoekt will iterate through the postings lists for `Err` and `orf` to find offsets where an `Err` trigram is found three characters before an `orf` trigram. The locations and lengths of these postings lists on disk are kept in RAM, along with various other metadata, to make searches go faster. Determining that a repo has _no_ instances of a trigram that is required by the input lets the entire repository be skipped.
 
@@ -26,9 +26,9 @@ In the below image, the large purple area on the left is the RAM used by the 20 
   alt="RAM used by the 20 Zoekt replicas"
 />
 
-Here’s how we achieved a 5x reduction in memory usage with no measurable latency changes.
+Here's how we achieved a 5x reduction in memory usage with no measurable latency changes.
 
-## Step 1: Measure how a server’s RAM is being used
+## Step 1: Measure how a server's RAM is being used
 
 As a first optimization step, a test corpus was created from one of the Zoekt backend servers, and a memory profile was collected to measure precisely how a server's RAM was being consumed. The corpus has 19,000 different repos, 2.6 billion lines of code, and takes 166GB on disk. Go has [built-in profiling tools](https://golang.org/doc/diagnostics#profiling) with deep runtime integrations that make it easy to collect this information. The memory profile below shows 22GB of live objects on one server. The actual RAM usage of a Go program depends on how aggressive the garbage collector is. By default, it can use roughly twice as much memory as the size of the live objects, but you can set the `GOGC` environment variable to more aggressively reduce the maximum overhead. We run Zoekt with `GOGC=50` to reduce the likelihood that it will exceed its available memory.
 
@@ -131,7 +131,7 @@ func shrinkUint32Slice(a []uint32) []uint32 {
 }
 ```
 
-## Results and what’s next
+## Results and what's next
 
 <Figure
   src="/blog/4GB of live objects after, with all optimizations applied.png"
@@ -141,7 +141,7 @@ func shrinkUint32Slice(a []uint32) []uint32 {
 
 Putting it all together, the new memory profile looks like this: a 5x reduction overall, which means we can serve search queries for five times more repositories without requiring any more servers. We went from 1400KB of RAM per repo to 310KB with no measurable latency changes.
 
-In the future, even more of what’s currently loaded into RAM can be placed back onto the disk, using memory mappings to let the OS cache pages as necessary. Larger-scale architectural changes, like having an index cover multiple repositories, or having one large inverted index for each server, will reduce RAM usage even further. These complex changes require more careful planning, coding, and testing than the simple, targeted optimizations described above, but are the best way to escape from the local minima that repeated micro-optimizations can reach.
+In the future, even more of what's currently loaded into RAM can be placed back onto the disk, using memory mappings to let the OS cache pages as necessary. Larger-scale architectural changes, like having an index cover multiple repositories, or having one large inverted index for each server, will reduce RAM usage even further. These complex changes require more careful planning, coding, and testing than the simple, targeted optimizations described above, but are the best way to escape from the local minima that repeated micro-optimizations can reach.
 
 _Look out for Han-Wen Nienhuys, creator of Zoekt, in an upcoming episode of the [Sourcegraph podcast!](/podcast)_
 

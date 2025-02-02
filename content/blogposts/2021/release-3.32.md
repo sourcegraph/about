@@ -32,7 +32,7 @@ Sourcegraph 3.32 is now available! Here are some highlights from this release:
 
 ## Revisions sidebar
 
-In the left sidebar of your search results, you can now see both branches and tags associated with a repository you’re viewing. When you add a search literal, such as “auth,” the search term will persist across searches, allowing you to search quickly between branches or tags for that search term.
+In the left sidebar of your search results, you can now see both branches and tags associated with a repository you're viewing. When you add a search literal, such as “auth,” the search term will persist across searches, allowing you to search quickly between branches or tags for that search term.
 
 <div style={{textAlign:'center'}}><video autoPlay loop muted playsInline style={{width:'625px'}}>
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/3.32/search_revisions_sidebar.mp4" type="video/mp4" data-cookieconsent="ignore"/>
@@ -40,7 +40,7 @@ In the left sidebar of your search results, you can now see both branches and ta
 
 ## Search caching and improved back button behavior
 
-We’re now caching search results for an improved user experience. When you click into a file from the search results page and then navigate back, the results will now always appear in the same order they appeared previously.
+We're now caching search results for an improved user experience. When you click into a file from the search results page and then navigate back, the results will now always appear in the same order they appeared previously.
 
 ## LSIF data retention is now configurable via our UI
 

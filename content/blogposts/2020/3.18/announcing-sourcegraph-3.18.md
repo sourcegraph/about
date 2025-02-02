@@ -33,7 +33,7 @@ Our team has been hard at work continuing to improve Sourcegraph, so you can spe
 
 - [Small but useful improvements](/blog/small-but-useful-improvements)
 
-  By popular demand, we've added support for campaigns in GitLab. We’ve also improved in-product documentation for adding code hosts and repositories to Sourcegraph.
+  By popular demand, we've added support for campaigns in GitLab. We've also improved in-product documentation for adding code hosts and repositories to Sourcegraph.
 
 Check out the [changelog](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@master/-/blob/CHANGELOG.md) for all the details of what changed and why.
 

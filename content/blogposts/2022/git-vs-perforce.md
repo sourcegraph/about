@@ -30,12 +30,12 @@ We were itching to expand our limited Perforce support to become a truly univers
 
 # Git vs Perforce: why do companies use Perforce?
 
-Git has become the most common version control system in the last decade, but it’s not the only way. The biggest reasons companies might choose to use Perforce over Git include:
+Git has become the most common version control system in the last decade, but it's not the only way. The biggest reasons companies might choose to use Perforce over Git include:
 
 * **Handling large files:** Git works best with smaller files, which source code files usually are. Git LFS (Large File System) does provide support for larger files (Large File System), but it doesn't meet the needs of many organizations that deal with many large asset files (e.g., chunky 3D models and multimedia prevalent in gaming) and like to version them together with source.
-* **Centralization:** Perforce is **centralized** while Git is **decentralized**. With Git, every developer has a complete copy of the codebase locally. This is often an advantage, but not always. For example, it can be inefficient for large changes as every change has to be copied many times to each developer’s machine.
+* **Centralization:** Perforce is **centralized** while Git is **decentralized**. With Git, every developer has a complete copy of the codebase locally. This is often an advantage, but not always. For example, it can be inefficient for large changes as every change has to be copied many times to each developer's machine.
 
-The Perforce data model is very different from Git’s. You can find a good [introduction to how Perforce works](https://www.perforce.com/manuals/intro/) on the website.
+The Perforce data model is very different from Git's. You can find a good [introduction to how Perforce works](https://www.perforce.com/manuals/intro/) on the website.
 
 ## Solving scale
 
@@ -51,9 +51,9 @@ Out of the Salesforce-Sourcegraph partnership, p4-fusion was born.
 
 ## Performance at scale: Introducing p4-fusion
 
-[p4-fusion](https://github.com/salesforce/p4-fusion) is a CLI written in C++ that converts Perforce depots to Git repositories. An open source tool licensed under the BSD 3-Clause License, it’s a solution that mitigates all the git-p4.py performance issues we’ve encountered.
+[p4-fusion](https://github.com/salesforce/p4-fusion) is a CLI written in C++ that converts Perforce depots to Git repositories. An open source tool licensed under the BSD 3-Clause License, it's a solution that mitigates all the git-p4.py performance issues we've encountered.
 
-Production proven to handle depots over 1 TB in size, p4-fusion’s significant performance improvements are due to the P4API, custom Threadpool, and GitAPI components.
+Production proven to handle depots over 1 TB in size, p4-fusion's significant performance improvements are due to the P4API, custom Threadpool, and GitAPI components.
 
 We compared the performance of git-p4.py, the Sourcegraph-improved version of git-p4.py, and p4-fusion by converting over 3000 decently sized change lists (CLs) with each tool.
 
@@ -106,7 +106,7 @@ We compared the performance of git-p4.py, the Sourcegraph-improved version of gi
 
 Using p4-fusion, conversion time was reduced from 42 minutes to just under 30 seconds, a speed boost of nearly 100x.
 
-This meant that cloning Salesforce’s main Perforce branch could be done in 4 to 5 days instead of 16, and feature freeze branches between 30 minutes and 6 hours depending on size. Whereas the average time between a new CL being checked in and the CL appearing in Sourcegraph was previously 2 to 3 minutes, with p4-fusion the CL appears in 15 to 30 seconds.
+This meant that cloning Salesforce's main Perforce branch could be done in 4 to 5 days instead of 16, and feature freeze branches between 30 minutes and 6 hours depending on size. Whereas the average time between a new CL being checked in and the CL appearing in Sourcegraph was previously 2 to 3 minutes, with p4-fusion the CL appears in 15 to 30 seconds.
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/blog-perforce-salesforce-depot-101822.jpg)
 
@@ -132,7 +132,7 @@ ThreadPool is responsible for allocating the jobs on its various threads.
 
 ### GitAPI
 
-Finally, for each change list, the files are downloaded and the change list committed to the Git repository in sequence. GitAPI ensures that Git objects are created without any extra data processing, and skips writing the Git index to the disk entirely, solving the final disk I/O bottleneck of git-p4.py’s process and delivering the second largest boost to performance.
+Finally, for each change list, the files are downloaded and the change list committed to the Git repository in sequence. GitAPI ensures that Git objects are created without any extra data processing, and skips writing the Git index to the disk entirely, solving the final disk I/O bottleneck of git-p4.py's process and delivering the second largest boost to performance.
 
 See the [excellent p4-fusion README](https://sourcegraph.com/github.com/salesforce/p4-fusion@master/-/blob/README.md) for additional details, as well as documentation for how to use the tool yourself. It's worth checking out if you're doing a Perforce-to-Git migration or want to enable integrations for your Perforce depot from Git-oriented tooling.
 
@@ -142,7 +142,7 @@ Credit goes to [Twarit](https://twitter.com/twaritw) and his team, who are still
 
 We're excited about the scalability, speed, and reliability of p4-fusion, and particularly about having an effective way to convert Perforce depots into Git repositories while comprehensively indexing them. Devs at Salesforce can now directly search for potential issues using Sourcegraph, rather than wasting time going through change lists or using multiple tools to track down those issues.
 
-At Sourcegraph, we’re proud of the tools we have created for the developer community. But there is something special about building these tools in collaboration with our customers. We pride ourselves on being a developer-led, customer-centric organization. [Hit us up](https://discord.gg/n43FxnCdTz) if you'd like to chat about scalable code search, code intelligence, or making big codebases nicer to work in.
+At Sourcegraph, we're proud of the tools we have created for the developer community. But there is something special about building these tools in collaboration with our customers. We pride ourselves on being a developer-led, customer-centric organization. [Hit us up](https://discord.gg/n43FxnCdTz) if you'd like to chat about scalable code search, code intelligence, or making big codebases nicer to work in.
 
 ---
 <br />

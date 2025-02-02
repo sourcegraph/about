@@ -20,7 +20,7 @@ published: true
 
 My name is Joe Chen and I was on the Core Application team at Sourcegraph (before it split into Repo Management and Cloud SaaS––I'm on the latter at the time of writing). Our responsibility was to build and maintain the infrastructure of the Sourcegraph application for other teams. Some of our previous work includes licensing enforcement, background permissions syncing, and explicit permissions APIs.
 
-In April of 2020, we decided to tackle integration testing. Although integration testing wasn’t something any single team could own, it involved code-based infrastructure and naturally fell on the Core Application team.
+In April of 2020, we decided to tackle integration testing. Although integration testing wasn't something any single team could own, it involved code-based infrastructure and naturally fell on the Core Application team.
 
 The goal was to remove all existing backend-related end-to-end tests and reliably run their corresponding unit and/or integration tests as part of our CI pipeline on all branches––the end result being a more reliable, less flaky testing suite.
 

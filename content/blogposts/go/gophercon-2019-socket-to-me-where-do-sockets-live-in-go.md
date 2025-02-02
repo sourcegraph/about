@@ -89,7 +89,7 @@ An example of an application that needs to run multiple sockets on the same addr
 Much like how a DSL internet connection and telephone are able to use the same line without colliding by using different frequencies to ensure that internet browsing and phone calls can occur simultaneously, concurrent UDP and TCP packets are on different frequencies and are able to reach their intended, distinct sockets.
 
 ##### Same Sockets
-Cloudflare's Spectrum, a cloudflare proxy that allows customers to put TCP and UDP services behind cloudflare’s CDN, and Roughtime, a secure time protocol server, had a potential conflict if a customer wanted to run a UDP service on port 2002. Any attempts to create a UDP on port 2002 would fail due to the port collision. 
+Cloudflare's Spectrum, a cloudflare proxy that allows customers to put TCP and UDP services behind cloudflare's CDN, and Roughtime, a secure time protocol server, had a potential conflict if a customer wanted to run a UDP service on port 2002. Any attempts to create a UDP on port 2002 would fail due to the port collision. 
 
 Socket behavior can be modified through socket options. One such option is SO_REUSEADDR, it enables the ability for multiple sockets to bind to and share the same address. This option fixed the port collision issues Spectrum and Roughtime were facing.
 

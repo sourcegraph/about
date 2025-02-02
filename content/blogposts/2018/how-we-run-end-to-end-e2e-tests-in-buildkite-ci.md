@@ -5,8 +5,8 @@ authors:
   - name: Felix Becker
     url: https://github.com/felixfbecker
 publishDate: 2018-09-14T09:00-07:00
-description: Here’s how we run end-to-end tests, an important part of Sourcegraph’s testing infrastructure, in Buildkite CI. 
-externalDescription: Here’s how we run end-to-end tests, an important part of Sourcegraph’s testing infrastructure, in Buildkite CI. 
+description: Here's how we run end-to-end tests, an important part of Sourcegraph's testing infrastructure, in Buildkite CI. 
+externalDescription: Here's how we run end-to-end tests, an important part of Sourcegraph's testing infrastructure, in Buildkite CI. 
 tags: [
   "blog"
 ]
@@ -20,13 +20,13 @@ End-to-end tests are an important part of our testing infrastructure at Sourcegr
 ## A good end-to-end testing system
 
 When a commit causes an end-to-end test to fail, we need to make sure the developer who caused the failure is notified, has the confidence that the failed test identified a real problem and has enough insight into the issue to solve it. For example, we would want to show which **commit** caused the failure (including the message), **which test** is failing, and **why** it is failing.
-Before the redesign of our end-to-end testing system, we had a custom service that ran the test suite periodically and posted to a Slack channel when a run failed. This wasn’t a good experience for a number of reasons:
+Before the redesign of our end-to-end testing system, we had a custom service that ran the test suite periodically and posted to a Slack channel when a run failed. This wasn't a good experience for a number of reasons:
 
 * The failure could not be mapped back easily to a commit and author.
 * There was no UI to retry a run.
 * If the tests kept failing, the bot would keep spamming the Slack channel.
-* There wasn’t a good way to see if the end-to-end tests were already failing before.
-* The Slack UI wasn’t a good display for test results. For example, it couldn’t show CLI colors, and it wasn’t easy to add screenshots to a webhook payload.
+* There wasn't a good way to see if the end-to-end tests were already failing before.
+* The Slack UI wasn't a good display for test results. For example, it couldn't show CLI colors, and it wasn't easy to add screenshots to a webhook payload.
 * There was no clear way to run end-to-end tests on branches/PRs while still delivering notifications only to the relevant person.
 * Logs were not streamed.
 
@@ -89,7 +89,7 @@ For the actual tests, we use [Puppeteer](https://github.com/GoogleChrome/puppete
 
 Being run against an actual deployment, end-to-end tests are subject to latency, so most actions and assertions need to account for variable loading times. That means it is not possible to, for example, programmatically click an element and directly assert that the desired effect occurred. Adding an artificial timeout between the action and the assertion doesn't work well because the time that needs to be waited for can vary. If the delay is too short, then the test will fail when it should pass, but if the delay is too long then it slows down the entire test suite. A better approach is to retry every assertion a fixed number of times, with a small delay between every retry. The [`p-retry`](https://www.npmjs.com/package/p-retry) module from npm makes this very easy.
 
-Mocha’s `--retries` option is also helpful to prevent flakiness, but be aware that this might hide actual failures that only happen a fraction of the time.
+Mocha's `--retries` option is also helpful to prevent flakiness, but be aware that this might hide actual failures that only happen a fraction of the time.
 
 To make sure end-to-end tests are not accidentally broken, we use special CSS classes prefixed with `e2e` for elements that are asserted on in tests.
 
@@ -108,7 +108,7 @@ afterEach(function () {
 })
 ```
 
-In the pipeline, we defined that all .png files are uploaded as artifacts to Buildkite. We then use [Buildkite’s special ANSI escape sequence](https://buildkite.com/docs/pipelines/images-in-log-output) to make it display the screenshot right in the log output of the test failure.
+In the pipeline, we defined that all .png files are uploaded as artifacts to Buildkite. We then use [Buildkite's special ANSI escape sequence](https://buildkite.com/docs/pipelines/images-in-log-output) to make it display the screenshot right in the log output of the test failure.
 
 ![buildkitelog](//images.ctfassets.net/le3mxztn6yoo/2z90IVNXxWqQgGggq4sOeO/399539c22c100b1797fa71026114bdd8/Screen_Shot_2018-09-10_at_4.46.47_PM.png)
 

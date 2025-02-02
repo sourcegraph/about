@@ -60,11 +60,11 @@ Sourcegraph now supports multi-line searches by matching on `\n`, providing new 
 lang:python ^\s*@.*\n\s*def
 ```
 
-**Note:** multi-line search is currently only supported on indexed repositories (and, inherently, default branches). We’re [working to improve this](https://github.com/sourcegraph/sourcegraph/issues/4518).
+**Note:** multi-line search is currently only supported on indexed repositories (and, inherently, default branches). We're [working to improve this](https://github.com/sourcegraph/sourcegraph/issues/4518).
 
 ## Restrict search results to repositories with recent activity
 
-When you’re searching over 10,000+ repositories in an enterprise setting, it’s common to get results from old repositories with no active maintainers. You can now exclude repositories with no recent commits (to their default branch) with the beta `repohascommitafter` [search filter](https://docs.sourcegraph.com/code_search/reference/queries).
+When you're searching over 10,000+ repositories in an enterprise setting, it's common to get results from old repositories with no active maintainers. You can now exclude repositories with no recent commits (to their default branch) with the beta `repohascommitafter` [search filter](https://docs.sourcegraph.com/code_search/reference/queries).
 
 Examples:
 
@@ -142,7 +142,7 @@ User-level and organization-level saved searches are now separate. You can view 
 
 ## New `orgs` field to optimize repository syncing for GitHub organizations
 
-For customers using GitHub with 1,000+ repositories, Sourcegraph sometimes exceeds GitHub’s search API rate limit during syncing, and may result in an incomplete set of cloned repositories.
+For customers using GitHub with 1,000+ repositories, Sourcegraph sometimes exceeds GitHub's search API rate limit during syncing, and may result in an incomplete set of cloned repositories.
 
 To address this, a [new `orgs` field](https://docs.sourcegraph.com/admin/external_service/github#selecting-repositories-for-code-search) has been added for customers who want to sync all repositories for their organization. This uses a different GitHub API that is not subject to rate limiting.
 

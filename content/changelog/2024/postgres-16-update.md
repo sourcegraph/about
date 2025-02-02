@@ -17,9 +17,9 @@ relatedTopics:
     url: https://sourcegraph.com/docs/cody/enterprise/model-configuration
 ---
 
-Currently, Sourcegraph’s minimum required version of Postgres, the database management system used for all Sourcegraph instances, is Postgres 12. Postgres 12 is reaching end-of-life and will no longer be supported by Postgres. Because of this, Sourcegraph will be updating our minimum supported version to Postgres 16.
+Currently, Sourcegraph's minimum required version of Postgres, the database management system used for all Sourcegraph instances, is Postgres 12. Postgres 12 is reaching end-of-life and will no longer be supported by Postgres. Because of this, Sourcegraph will be updating our minimum supported version to Postgres 16.
 
-If you are using Sourcegraph’s released Postgres images, these images will be updated to Postgres 16 as part of the Sourcegraph 5.10 release and all near-term subsequent releases. With this update, Sourcegraph will experience a longer-than-average downtime at the time of the upgrade to version 5.10 or beyond. This downtime is proportional to the amount of code indexed in your instance and can range from approximately 15 minutes to a couple of hours. The downtime will only occur at the first upgrade to version 5.10 or beyond, and not during any subsequent upgrades.
+If you are using Sourcegraph's released Postgres images, these images will be updated to Postgres 16 as part of the Sourcegraph 5.10 release and all near-term subsequent releases. With this update, Sourcegraph will experience a longer-than-average downtime at the time of the upgrade to version 5.10 or beyond. This downtime is proportional to the amount of code indexed in your instance and can range from approximately 15 minutes to a couple of hours. The downtime will only occur at the first upgrade to version 5.10 or beyond, and not during any subsequent upgrades.
 
 We strongly recommend that you consider this downtime prior to upgrading to ensure minimal disruption to your users. We also strongly recommend creating a backup of your database before the upgrade process.
 

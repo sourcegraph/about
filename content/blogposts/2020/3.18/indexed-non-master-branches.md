@@ -57,6 +57,6 @@ Any `repo@revision` mentioned in a version context or in `search.index.branches`
 
 The same periodic process that cleans up old indexes and deleted repositories will also clean up deleted branches, so this gets cleaned up automatically.
 
-This scales with the number of _unique_ documents at a path. For example, if you index a branch A which only has one file different from your default branch, the index will only grow in size by one document. So in practice, most indexes won’t grow much by adding a branch. There is a limit of 64 indexed branches per repository.
+This scales with the number of _unique_ documents at a path. For example, if you index a branch A which only has one file different from your default branch, the index will only grow in size by one document. So in practice, most indexes won't grow much by adding a branch. There is a limit of 64 indexed branches per repository.
 
 GitHub issue: [#6728](https://github.com/sourcegraph/sourcegraph/issues/6728)

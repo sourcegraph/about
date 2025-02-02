@@ -4,7 +4,7 @@ authors:
   - name: Kelvin Yap
     url: https://x.com/KelvinYap
 publishDate: 2024-08-07T10:00-01:00
-description: "In this month’s release we’ve made significant improvements to the code search experience, introduced prompts and the Prompt Library, and made enterprise model selection available as EAP."
+description: "In this month's release we've made significant improvements to the code search experience, introduced prompts and the Prompt Library, and made enterprise model selection available as EAP."
 tags: [blog, release]
 slug: 'release/august-2024'
 published: true
@@ -13,7 +13,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post
 ---
 
 <br />
-In this month’s Sourcegraph release (5.6.0) we’ve made significant improvements to the code search experience including a new search experience, regex support for repo metadata, and saved searches improvements.
+In this month's Sourcegraph release (5.6.0) we've made significant improvements to the code search experience including a new search experience, regex support for repo metadata, and saved searches improvements.
 
 For Cody we are introducing the evolution of commands with prompts and Prompt Library, additional analytics improvements, and the launch of enterprise model selection as EAP.
 <br />
@@ -52,7 +52,7 @@ Saved searches let you save search queries that are useful, such as recent secur
 ### Improved UI
 
 <br />
-Previously saved searches were nested in a user or organization’s profile, and you had to visit your profile or the profile page of all orgs you’re in to view them. Now they are elevated to the top nav, making them easier to navigate to and use.
+Previously saved searches were nested in a user or organization's profile, and you had to visit your profile or the profile page of all orgs you're in to view them. Now they are elevated to the top nav, making them easier to navigate to and use.
 <br />
 
 <Figure
@@ -61,7 +61,7 @@ Previously saved searches were nested in a user or organization’s profile, and
 />
 <br />
 
-Saved searches can now be sorted by name or recently-updated, and we’ve added the ability to search your saved searches (very meta).
+Saved searches can now be sorted by name or recently-updated, and we've added the ability to search your saved searches (very meta).
 <br />
 
 <Figure
@@ -85,15 +85,15 @@ You can now transfer ownership of a saved search. Previously when a person left 
 ### Saved search drafts
 
 <br />
-You can now mark saved searches as a “draft”, letting other users know that a saved search isn’t quite ready to be used yet.
+You can now mark saved searches as a “draft”, letting other users know that a saved search isn't quite ready to be used yet.
 <br />
 
 ## Prompts and Prompt Library for VS Code
 
 <br />
-Cody currently offers users quick, ready-to-use commands for common actions to write, describe, fix, and smell code, as well as the ability to create their own custom commands tailored to your development workflow. We’ve heard from customers how valuable commands are and received lots of feedback on how to improve them.
+Cody currently offers users quick, ready-to-use commands for common actions to write, describe, fix, and smell code, as well as the ability to create their own custom commands tailored to your development workflow. We've heard from customers how valuable commands are and received lots of feedback on how to improve them.
 
-With that in mind we are excited to share the evolution of commands in Cody, beginning with VS Code: prompts. Prompts function the same as commands but have been renamed to easier understand their usefulness in the context of existing AI chat terminology. Prompts can be created and discovered via the web UI in the new Prompt Library, making it easier to create, edit, share, and discover prompts you’ve created or have been shared within your organization.
+With that in mind we are excited to share the evolution of commands in Cody, beginning with VS Code: prompts. Prompts function the same as commands but have been renamed to easier understand their usefulness in the context of existing AI chat terminology. Prompts can be created and discovered via the web UI in the new Prompt Library, making it easier to create, edit, share, and discover prompts you've created or have been shared within your organization.
 <br />
 
 <Figure
@@ -108,7 +108,7 @@ Prompts are releasing for VS Code today and will be coming to JetBrains IDEs soo
 ## Enterprise model selection (EAP)
 
 <br />
-Access to the latest and greatest models and avoiding ‘model lock-in’ is a core reason why customers choose to use Cody. For enterprise customers, we’re expanding Cody to be more flexible and allow admins to select multiple models from multiple providers, which end users can then choose from on-demand.
+Access to the latest and greatest models and avoiding ‘model lock-in' is a core reason why customers choose to use Cody. For enterprise customers, we're expanding Cody to be more flexible and allow admins to select multiple models from multiple providers, which end users can then choose from on-demand.
 
 Sourcegraph 5.6.0 includes our new enterprise model selection, released as Early Access and offers end-users the flexibility to use different models their admin provides access to for chat. For admins, this new model selection method not only allows them to define what models their end users can use, they can also select models from different provider methods too.
 
@@ -130,13 +130,13 @@ Admins can not only provide multiple model options to their users, but they can 
 />
 <br />
 
-Enterprise model selection is currently part of our Early Access Program (EAP) and will be available as the default model selection method for Enterprise customers later in the year. Existing customers who are interested to find out more should reach out to their account managers. If you’re not a customer but would like to learn more please [contact us](https://sourcegraph.com/contact/request-info?form_submission_source=request-info). 
+Enterprise model selection is currently part of our Early Access Program (EAP) and will be available as the default model selection method for Enterprise customers later in the year. Existing customers who are interested to find out more should reach out to their account managers. If you're not a customer but would like to learn more please [contact us](https://sourcegraph.com/contact/request-info?form_submission_source=request-info). 
 <br />
 
 ## Unified Cody sidebar for VS Code users
 
 <br />
-[Announced recently](https://sourcegraph.com/blog/cody-vscode-1-28-0-release) for Cody Free and Pro users on VS Code, the unified Cody sidebar is now available for Enterprise end users too. The new sidebar experience is aligned with our goal of making the Cody experience as familiar and consistent as possible, regardless of whether you’re using it on the web or across any of the IDEs we support.
+[Announced recently](https://sourcegraph.com/blog/cody-vscode-1-28-0-release) for Cody Free and Pro users on VS Code, the unified Cody sidebar is now available for Enterprise end users too. The new sidebar experience is aligned with our goal of making the Cody experience as familiar and consistent as possible, regardless of whether you're using it on the web or across any of the IDEs we support.
 
 The new UX updates include moving chat into the primary sidebar with the option to open a dedicated chat window with the “Move Chat to Editor Panel” button. Commands and the new prompts and Prompt Library are also available in the sidebar, with all functions quickly available at a glance.
 
@@ -152,7 +152,7 @@ This update will become the default interface everywhere Cody exists, starting w
 ## Cody analytics improvements
 
 <br />
-We’ve continued to refine the analytics UI following the improvements in the [last release](https://sourcegraph.com/blog/release/july-2024). The definitions now live in an information button to reduce clutter, and we've added an `All time` option to the time picker we introduced last month. This gives admins additional options to view data across a time period, and we’ve updated the chart styling to handle the greater density of data displayed.
+We've continued to refine the analytics UI following the improvements in the [last release](https://sourcegraph.com/blog/release/july-2024). The definitions now live in an information button to reduce clutter, and we've added an `All time` option to the time picker we introduced last month. This gives admins additional options to view data across a time period, and we've updated the chart styling to handle the greater density of data displayed.
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/release-post/august-2024/cody%20analytics.png"
@@ -163,7 +163,7 @@ We’ve continued to refine the analytics UI following the improvements in the [
 ## Regex search support for repo metadata
 
 <br />
-Repo metadata is a useful way Sourcegraph users add their business-specific information into the search query language. It allows tagging repos with arbitrary, code-adjacent metadata like ownership info, quality metrics, and third-party system IDs that can be searched, but it’s currently limited to searching with an exact key/value pair. In this month’s release we have added regex search support for repo metadata, enabling users to ingest semi-structured data and making it searchable by pattern.
+Repo metadata is a useful way Sourcegraph users add their business-specific information into the search query language. It allows tagging repos with arbitrary, code-adjacent metadata like ownership info, quality metrics, and third-party system IDs that can be searched, but it's currently limited to searching with an exact key/value pair. In this month's release we have added regex search support for repo metadata, enabling users to ingest semi-structured data and making it searchable by pattern.
 
 Learn more about regex search support [here](https://sourcegraph.com/docs/admin/repo/metadata).
 <br />
@@ -171,7 +171,7 @@ Learn more about regex search support [here](https://sourcegraph.com/docs/admin/
 ## Support for Perforce labels
 
 <br />
-Labels in Perforce are used to mark, record, and easily retrieve a set of file versions, and can be used to mark important file revisions such as a particular release or last known good build. Perforce labels can function in a similar way to git tags, and in this month’s Sourcegraph release certain labels can be mapped into git tags, making them available for filtering and searching within the UI.
+Labels in Perforce are used to mark, record, and easily retrieve a set of file versions, and can be used to mark important file revisions such as a particular release or last known good build. Perforce labels can function in a similar way to git tags, and in this month's Sourcegraph release certain labels can be mapped into git tags, making them available for filtering and searching within the UI.
 
 More information on support for Perforce labels can be found in our [docs](https://sourcegraph.com/docs/admin/repo/perforce#perforce-labels).
 <br />

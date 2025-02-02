@@ -2,7 +2,7 @@
 title: 'Dev Tool Time with Seth Vargo: Productivity hacks and .gitconfig tips'
 description: Check out the recording of our first episode of Dev Tool Time, in which Google Cloud Engineer Seth Vargo shares his tips for a productivity-optimized desk setup, efficient window management, and keyboard shortcuts.
 externalTitle: Productivity Hacks & .gitconfig Tips – Dev Tool Time
-externalDescription: We’re talking about setting up a new computer in record time on Dev Tool Time. Seth Vargo shares .gitconfig tips, favorite Mac window manager, and more.
+externalDescription: We're talking about setting up a new computer in record time on Dev Tool Time. Seth Vargo shares .gitconfig tips, favorite Mac window manager, and more.
 authors:
   - name: Vanesa Ortiz
     url: https://twitter.com/vanesacodes
@@ -18,9 +18,9 @@ Dev Tool Time is our bi-monthly virtual event series in which guest developers s
 
 Seth was generous in sharing his dev productivity secrets, including how to leverage keyboard shortcuts, a hack for setting up a new computer in record time, and his [.gitconfig](https://gist.github.com/sethvargo/d10a81f219f6469889269af2076b4d39) containing the [Git aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases) you need to become a Git ninja.
 
-He also talked about the importance of screen real estate and showed us his desk setup that’s optimized for productivity. Here is a summary of the setup and tools he mentioned:
+He also talked about the importance of screen real estate and showed us his desk setup that's optimized for productivity. Here is a summary of the setup and tools he mentioned:
 
-## Seth’s desk setup for productivity
+## Seth's desk setup for productivity
 
 ![Seth Vargo Desk Setup](https://sourcegraphstatic.com/SethVargo-DeskSetup.jpg)
 
@@ -32,7 +32,7 @@ This monitor comes with a built-in USB-C hub to charge his MacBook at 96 watts, 
 
 ### [Stream Deck](https://www.elgato.com/en/stream-deck)
 
-Each Stream Deck button is assigned to run something, for example one button shows his CPU usage, another the CI status when he’s running a build, while another sends him straight to his GitHub notifications. He loves that it’s highly customizable, adapts to the current app, integrates with a ton of community-built apps, accelerates his workflow, and adds a little fun factor.
+Each Stream Deck button is assigned to run something, for example one button shows his CPU usage, another the CI status when he's running a build, while another sends him straight to his GitHub notifications. He loves that it's highly customizable, adapts to the current app, integrates with a ton of community-built apps, accelerates his workflow, and adds a little fun factor.
 
 ![Seth Vargo Stream Deck](https://sourcegraphstatic.com/SethVargo-StreamDeck.jpg)
 
@@ -40,16 +40,16 @@ Each Stream Deck button is assigned to run something, for example one button sho
 
 This allows Seth to stream with his DSLR camera and he gets many compliments on how great his video quality is.
 
-Below is the rest of Seth’s kit:
+Below is the rest of Seth's kit:
 
 - [Blue Yeti Microphone](http://bluemic.com/)
 - Teleprompter
 - [RODE Shotgun Microphone](https://www.rode.com/microphones/videomicpro)
 - [Sony a6500 camera](https://www.sony.com/electronics/interchangeable-lens-cameras/ilce-6500-body-kit)
 
-## Seth’s key dev tools
+## Seth's key dev tools
 
-Seth’s workflow focuses aggressively on keyboard shortcuts and quick navigation between workspaces. He has a few tools that have become indispensable:
+Seth's workflow focuses aggressively on keyboard shortcuts and quick navigation between workspaces. He has a few tools that have become indispensable:
 
 ### [SizeUp window manager](https://www.irradiatedsoftware.com/sizeup/)
 
@@ -69,14 +69,14 @@ Seth makes heavy use of [Git aliases](https://git-scm.com/book/en/v2/Git-Basics-
 
 ### [Visual Studio Code](https://code.visualstudio.com/)
 
-Visual Studio Code is Seth’s favorite IDE, and his color scheme of choice is [Default Material Dark](https://marketplace.visualstudio.com/items?itemName=yuchiu2002.default-material-dark-theme). He uses the [Material Product Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons) theme for his icons. He also uses the [Go Plugin for VS Code](https://code.visualstudio.com/docs/languages/go) to help with auto-formatting, so he doesn’t have to worry about indentation or tabs versus spaces. These are his [VS Code configurations](https://gist.github.com/sethvargo/d565d2ce0bdd54c8248fcd4c808ca1a4).
+Visual Studio Code is Seth's favorite IDE, and his color scheme of choice is [Default Material Dark](https://marketplace.visualstudio.com/items?itemName=yuchiu2002.default-material-dark-theme). He uses the [Material Product Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons) theme for his icons. He also uses the [Go Plugin for VS Code](https://code.visualstudio.com/docs/languages/go) to help with auto-formatting, so he doesn't have to worry about indentation or tabs versus spaces. These are his [VS Code configurations](https://gist.github.com/sethvargo/d565d2ce0bdd54c8248fcd4c808ca1a4).
 
 > ### Words of Wisdom:
 >
 > _“Formatting is owned by the repository… the linting configuration is a property
 > of the repository not a property of the user.”_
 
-Seth also swears by [Cinch](https://www.irradiatedsoftware.com/cinch/), a mouse-based window manager, as well as [Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform) and [Cloud Code](https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode) plugins (although we didn’t get to cover the last two in the live stream).
+Seth also swears by [Cinch](https://www.irradiatedsoftware.com/cinch/), a mouse-based window manager, as well as [Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform) and [Cloud Code](https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode) plugins (although we didn't get to cover the last two in the live stream).
 
 <div style={{textAlign:'center', fontWeight: 'bold'}}>
 Join us on April 28th at 11am PT/ 2pm ET for <a href="http://info.sourcegraph.com/dev-tool-time">Dev Tool Time</a> with our next guest <a href="https://twitter.com/leahculver">Leah Culver</a>, iOS engineer at Twitter.

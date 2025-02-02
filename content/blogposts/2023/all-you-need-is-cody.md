@@ -4,7 +4,7 @@ authors:
   - name: Steve Yegge
     url: https://handbook.sourcegraph.com/team/#steve-yegge
 publishDate: 2023-06-28T10:00-07:00
-description: "Stevey’s “Cheating With Cody” blog series, Episode 3"
+description: "Stevey's “Cheating With Cody” blog series, Episode 3"
 tags: [blog]
 slug: 'all-you-need-is-cody'
 published: true

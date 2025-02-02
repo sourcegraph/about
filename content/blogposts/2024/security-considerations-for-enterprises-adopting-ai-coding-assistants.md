@@ -19,7 +19,7 @@ With over [76% of professional developers](https://survey.stackoverflow.co/2024/
 
 Enterprises often consider their codebase to be their crown jewel - the 0s and 1s that make their offerings differentiated and valuable, and it's imperative they protect it at all costs. This belief is at odds with how many AI coding assistants work, which use third-party model providers that have and can train on the code and data they are sent (prompts) to generate code suggestions and answers (results). The potential for a language model to intake enterprise code, use it to train models, and then suggest that code back to other developers and customers is a major concern for security teams. As a result, enterprises need assurances that their code and data are protected and won't be used to train models.
 
-With Cody Enterprise, customer code is never used for training purposes. Cody Enterprises’ provided models all operate under agreements between Sourcegraph and the model service providers to never retain or train on users’ code.
+With Cody Enterprise, customer code is never used for training purposes. Cody Enterprises' provided models all operate under agreements between Sourcegraph and the model service providers to never retain or train on users' code.
 
 Enterprises can rest assured that neither the prompts sent nor the results returned from a model provider while using Cody are used to customize or train models.
 
@@ -41,7 +41,7 @@ Cody Enterprise allays these concerns with a zero-retention guarantee that all c
 
 Enterprises can also take preventative measures in Cody Enterprise by utilizing Context Filters. This feature lets admins choose which repositories can and cannot be sent to third-party model providers as part of a prompt. This prevents sensitive code from being passed to providers and further minimizes the risk of unauthorized access and use.
 
-Cody Enterprise also supports the private and secure access of LLMs through managed services like Amazon Bedrock, Azure OpenAI, and Google’s Vertex AI, removing the reliance on third-party providers. This is particularly useful for enterprises who are existing customers of AWS, Azure, or GCP, who can securely connect to these models from within their existing environment and VPC.
+Cody Enterprise also supports the private and secure access of LLMs through managed services like Amazon Bedrock, Azure OpenAI, and Google's Vertex AI, removing the reliance on third-party providers. This is particularly useful for enterprises who are existing customers of AWS, Azure, or GCP, who can securely connect to these models from within their existing environment and VPC.
 
 ### Does the tool comply with our regulatory standards?
 

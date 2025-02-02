@@ -32,7 +32,7 @@ For all deployments, including Self-Hosted, Cloud, and Sourcegraph.com, Sourcegr
 - **Responses** are the outputs returned to you by Cody. 
 Sourcegraph uses Customer Content solely to provide the service and not for product improvement purposes.
 
-However, Sourcegraph does not collect or have access to User Prompts or Responses for customers with an enterprise license who bring their own LLM API key for a self-hosted deployment, as the software is hosted in the customer’s systems. 
+However, Sourcegraph does not collect or have access to User Prompts or Responses for customers with an enterprise license who bring their own LLM API key for a self-hosted deployment, as the software is hosted in the customer's systems. 
 
 ### VI. Full IP Indemnification
 Sourcegraph will indemnify you against any claims alleging that your use of Cody or any Cody outputs infringes third-party intellectual property rights in accordance with the indemnification terms in your agreement. Sourcegraph's indemnification obligation is uncapped if you have signed an Order Form with us and you use the most current version available and any filters provided by Sourcegraph.

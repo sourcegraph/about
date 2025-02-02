@@ -26,7 +26,7 @@ The chats sidebar now groups your chats by when they were last updated, so you c
   alt="Cody v1.2.0: updated chat list and a new history button"
 />
 
-We’ve also added a new Chat History button at the top of your chat tabs, so you can navigate between chats (and search chats) without opening the Cody sidebar:
+We've also added a new Chat History button at the top of your chat tabs, so you can navigate between chats (and search chats) without opening the Cody sidebar:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/vscode-v1-2-0-blog/image-002.png"
@@ -45,7 +45,7 @@ When executing a default command, you can see the underlying prompt instead of t
 
 ## Chat: Redesigned chat editing
 
-We’ve updated the chat interface to make it easier to edit chat messages or start a new chat quickly:
+We've updated the chat interface to make it easier to edit chat messages or start a new chat quickly:
 
 <Video
   source={{
@@ -55,9 +55,9 @@ We’ve updated the chat interface to make it easier to edit chat messages or st
   title="Chat: Redesigned chat editing"
 />
 
-You can now hit Enter to edit your message immediately without waiting for the stream to finish. This allows for quicker experimentation and iteration and less dependence on sending follow-up messages to clarify your question (which can also fill up your chat’s context window).
+You can now hit Enter to edit your message immediately without waiting for the stream to finish. This allows for quicker experimentation and iteration and less dependence on sending follow-up messages to clarify your question (which can also fill up your chat's context window).
 
-We’ve also fixed several chat editing bugs, including the ability to @-include files, run slash commands, and show the edit buttons more consistently in the transcript:
+We've also fixed several chat editing bugs, including the ability to @-include files, run slash commands, and show the edit buttons more consistently in the transcript:
 
 <Video
   source={{
@@ -69,7 +69,7 @@ We’ve also fixed several chat editing bugs, including the ability to @-include
 
 ## Chat: Improved context window handling
 
-We’ve made several changes to the handling of the context window behind chats:
+We've made several changes to the handling of the context window behind chats:
 
 * The allocation of the LLM context window used for transcript messages has been expanded, so chats are now better at remembering past contexts.
 * The context limit error-like notifications in chat have been removed while we investigate better ways of giving you visibility on what is included or excluded from context.
@@ -86,12 +86,12 @@ The action buttons that appear after performing a Cody code edit have been relab
 
 ## Custom command (beta) updates
 
-We’ve made some changes to custom commands:
+We've made some changes to custom commands:
 
 * Support for running custom edit commands from the chat window has been fixed.
 * Removed the `context.codebase` custom command property based on low usage.
 
-Please continue [sending us feedback](https://github.com/sourcegraph/cody/issues/new?assignees=&labels=clients%2Fvscode%2Cfeedback&projects=sourcegraph%2F387&template=feedback.yml&title=feedback%3A+) on custom commands while they’re in beta. Need some inspiration for custom commands? Make sure to check out [Codyception by Kynlo](https://cody.kynlo.co.uk/).
+Please continue [sending us feedback](https://github.com/sourcegraph/cody/issues/new?assignees=&labels=clients%2Fvscode%2Cfeedback&projects=sourcegraph%2F387&template=feedback.yml&title=feedback%3A+) on custom commands while they're in beta. Need some inspiration for custom commands? Make sure to check out [Codyception by Kynlo](https://cody.kynlo.co.uk/).
 
 
 ## Changelog

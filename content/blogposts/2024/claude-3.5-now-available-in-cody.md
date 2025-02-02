@@ -4,7 +4,7 @@ authors:
   - name: Alex Isken
     url: https://handbook.sourcegraph.com/team/#alex-isken
 publishDate: 2024-06-20T10:00-01:00
-description: "Anthropic’s latest model, Claude 3.5 Sonnet, is available now for Cody Pro. Upgrade to the latest extension version to get started."
+description: "Anthropic's latest model, Claude 3.5 Sonnet, is available now for Cody Pro. Upgrade to the latest extension version to get started."
 tags: [blog]
 slug: 'claude-3.5-sonnet-now-available-in-cody'
 published: true
@@ -12,13 +12,13 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/claude-3.5-son
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/claude-3.5-sonnet-now-available-in-cody/claude-3.5-sonnet-hero.png
 ---
 
-Today, Anthropic [announced](https://www.anthropic.com/news/claude-3-5-sonnet) their latest large language model: Claude 3.5 Sonnet. This model’s reasoning skills outperform Anthropic’s previous flagship model—Claude 3 Opus—while being roughly twice as fast.
+Today, Anthropic [announced](https://www.anthropic.com/news/claude-3-5-sonnet) their latest large language model: Claude 3.5 Sonnet. This model's reasoning skills outperform Anthropic's previous flagship model—Claude 3 Opus—while being roughly twice as fast.
 
-[Cody](https://sourcegraph.com/cody), our AI coding assistant, is built on the principle of choice, and we’re committed to bringing the **best models** and **best context** into your IDE with Cody. To that end, we’re making Claude 3.5 Sonnet available today in Cody Pro. Pro users can now hot-swap their model to 3.5 Sonnet for chat, commands, and code edits with unlimited usage.
+[Cody](https://sourcegraph.com/cody), our AI coding assistant, is built on the principle of choice, and we're committed to bringing the **best models** and **best context** into your IDE with Cody. To that end, we're making Claude 3.5 Sonnet available today in Cody Pro. Pro users can now hot-swap their model to 3.5 Sonnet for chat, commands, and code edits with unlimited usage.
 
 ## See Claude 3.5 Sonnet in action for coding tasks
 
-Anthropic’s [announcement blog](https://www.anthropic.com/news/claude-3-5-sonnet) cites impressive benchmarks for graduate-level reasoning and coding performance for Claude 3.5 Sonnet, even beating out Claude 3 Opus in both cases. Using [s0.dev](http://s0.dev/), we can see how 3.5 Sonnet compares against other high-intelligence models for coding questions using public repositories: 
+Anthropic's [announcement blog](https://www.anthropic.com/news/claude-3-5-sonnet) cites impressive benchmarks for graduate-level reasoning and coding performance for Claude 3.5 Sonnet, even beating out Claude 3 Opus in both cases. Using [s0.dev](http://s0.dev/), we can see how 3.5 Sonnet compares against other high-intelligence models for coding questions using public repositories: 
 
 <Video
   source={{
@@ -36,4 +36,4 @@ Claude 3.5 Sonnet is available today for Cody Pro, and you can get started with 
 
 Claude 3.5 Sonnet will also come to Cody Enterprise users in the next Sourcegraph release planned for July 10.
 
-If you don’t yet have Cody, you can [get started for free](https://sourcegraph.com/cody). If you want unlimited access to the latest models—including Claude 3.5 Sonnet—you can upgrade to Cody Pro for $9/month. 
+If you don't yet have Cody, you can [get started for free](https://sourcegraph.com/cody). If you want unlimited access to the latest models—including Claude 3.5 Sonnet—you can upgrade to Cody Pro for $9/month. 

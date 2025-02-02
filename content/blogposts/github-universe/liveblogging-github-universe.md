@@ -14,18 +14,18 @@ published: true
 
 
 
-Hi, we’re Sourcegraph, the [code search engine](https://sourcegraph.com) for Go and Java that lets you [jump to def and find refs across all your code on GitHub](https://docs.sourcegraph.com/integration/browser_extension). You may remember us from such developer conference liveblogs as [Gophercon](http://gophercon.sourcegraph.com/archive), FOSDEM, and [dotGo](http://dotgo.sourcegraph.com/archive).
+Hi, we're Sourcegraph, the [code search engine](https://sourcegraph.com) for Go and Java that lets you [jump to def and find refs across all your code on GitHub](https://docs.sourcegraph.com/integration/browser_extension). You may remember us from such developer conference liveblogs as [Gophercon](http://gophercon.sourcegraph.com/archive), FOSDEM, and [dotGo](http://dotgo.sourcegraph.com/archive).
 
-This year, we’re excited to announce we’re liveblogging GitHub Universe!
+This year, we're excited to announce we're liveblogging GitHub Universe!
 
 
 ![1*lutbfMDzzU8wJYIWvwV9kw](//images.contentful.com/le3mxztn6yoo/1Q4ROVk2SgUi0gCKO0WuAa/cd593adb777028731ef92f8f400721fc/1_lutbfMDzzU8wJYIWvwV9kw.png)
 
-That’s right — we’ll be writing up concise technical summaries of all the talks we can manage. For folks tuning in from home, it’s a great way to stay on top of conference proceedings efficiently throughout the day. For folks at the conference, it’s a great way to remind yourself of the key takeaways of each talk.
+That's right — we'll be writing up concise technical summaries of all the talks we can manage. For folks tuning in from home, it's a great way to stay on top of conference proceedings efficiently throughout the day. For folks at the conference, it's a great way to remind yourself of the key takeaways of each talk.
 
-The task of liveblogging such a large conference will be a big undertaking, but we’ll do our best. If you’re interested in helping out, [please let us know](https://twitter.com/sourcegraph) and we’ll send you instructions for contributing.
+The task of liveblogging such a large conference will be a big undertaking, but we'll do our best. If you're interested in helping out, [please let us know](https://twitter.com/sourcegraph) and we'll send you instructions for contributing.
 
-For those of you lucky enough to be at the conference, stop by and say hello! Look for the people wearing (and handing out) “Sourcegraph” T-shirts. And for those of you who are tuning in from home, keep your social media antenna pointed to [@sourcegraph](https://twitter.com/sourcegraph) and this blog post — we’ll link to all liveblog recaps here.
+For those of you lucky enough to be at the conference, stop by and say hello! Look for the people wearing (and handing out) “Sourcegraph” T-shirts. And for those of you who are tuning in from home, keep your social media antenna pointed to [@sourcegraph](https://twitter.com/sourcegraph) and this blog post — we'll link to all liveblog recaps here.
 
 So stay tuned for a fantastic conference with some great new tools and processes for software development. Or in the words of Steve Ballmer, “Developers! Developers! Developers! Developers!”
 
@@ -43,7 +43,7 @@ Developers, I say!
 *   Developing Open Source in Service to National Security
 *   The GitHub Flow
 *   YesSQL, process and tooling at scale
-*   gh-ost: GitHub’s online schema migrations tool for MySQL ([Shlomi Noach](https://github.com/shlomi-noach), [slides](https://speakerdeck.com/shlominoach/gh-ost-githubs-online-schema-migrations-for-mysql))
+*   gh-ost: GitHub's online schema migrations tool for MySQL ([Shlomi Noach](https://github.com/shlomi-noach), [slides](https://speakerdeck.com/shlominoach/gh-ost-githubs-online-schema-migrations-for-mysql))
 *   GitHub Workflow Improvements
 *   Pains & Gains: Six Short Stories
     ([Jason Chen](https://twitter.com/jhchen), author of [Quill](https://quilljs.com/), [slides](https://github.com/sourcegraph/github-universe-2016-slides/blob/master/OvercomingMaintainerDDoS_Jason_Chen.pdf))

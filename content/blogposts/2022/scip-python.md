@@ -41,7 +41,7 @@ Some of the key features of `scip-python` include:
 
 ### Cross-repository navigation
 
-When `scip-python` is run in a Python environment with your dependencies available it will generate stable references to your dependencies. For example, if you were using the `PyYAML` package’s `dump` function for the 6.0 release, `scip-python` would generate a symbol value of:
+When `scip-python` is run in a Python environment with your dependencies available it will generate stable references to your dependencies. For example, if you were using the `PyYAML` package's `dump` function for the 6.0 release, `scip-python` would generate a symbol value of:
 
 <pre>> scip-python python PyYAML 6.0 yaml/dump().</pre>
 
@@ -59,7 +59,7 @@ There are two primary supported cases right now for “Find Implementations” v
 
 The first case is to examine when and where some “BaseClass” is used as a parent class for another class. Instead of looking for references (which can show instantiation, `isinstance` checks and more) the user may view the “Implementations” in Sourcegraph. This will only show child class definitions in Sourcegraph.
 
-For a concrete example, see the rich package, where we’re viewing the `MarkdownElement`.
+For a concrete example, see the rich package, where we're viewing the `MarkdownElement`.
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/scip-python/class-markdownelement.png)
 
@@ -114,6 +114,6 @@ The indexing performance is varied across codebases, particularly depending on t
 
 ## Scip-python is available today
 
-Scip-python is available publicly today. If you’re a Sourcegraph user, you can implement scip-python to enable precise code navigation for your Python repositories. 
+Scip-python is available publicly today. If you're a Sourcegraph user, you can implement scip-python to enable precise code navigation for your Python repositories. 
 
-If you’re not a Sourcegraph user but are interested in trying it out for navigating Python code (or a [number of other languages](https://docs.sourcegraph.com/code_intelligence/references/indexers)), you can [install it locally for free](https://about.sourcegraph.com/get-started/), or [reach out to our team for a demo](https://about.sourcegraph.com/demo).
+If you're not a Sourcegraph user but are interested in trying it out for navigating Python code (or a [number of other languages](https://docs.sourcegraph.com/code_intelligence/references/indexers)), you can [install it locally for free](https://about.sourcegraph.com/get-started/), or [reach out to our team for a demo](https://about.sourcegraph.com/demo).

@@ -12,7 +12,7 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/4umPKXWx0kSeIgw0SKQw8e/265b
 published: true
 ---
 
-We’re excited to announce Sourcegraph 2.6, with tons of new features and improvements to help your team build better software. Search for and jump directly to symbols, search for the code you need more quickly, and set up Sourcegraph to search across all of your code--all available now. This release also comes with big improvements to configuration and authentication.
+We're excited to announce Sourcegraph 2.6, with tons of new features and improvements to help your team build better software. Search for and jump directly to symbols, search for the code you need more quickly, and set up Sourcegraph to search across all of your code--all available now. This release also comes with big improvements to configuration and authentication.
 
 Sourcegraph gives your team code search and intelligence across all of your code--even up to 10,000s of repositories. It runs securely in your own network, takes 5 minutes to install, and is free to use (with paid upgrades starting at $5/user/month).
 
@@ -57,7 +57,7 @@ Filtering with search scopes is now smarter and dynamic. After executing a searc
 
 ## More documentation for scaling and deployment
 
-We’ve added tons of information to the Sourcegraph cluster deployment documentation to better help you use Sourcegraph at your company. See the [cluster deployment documentation](https://docs.sourcegraph.com/admin/install/cluster) for information on managing and scaling your Sourcegraph cluster.
+We've added tons of information to the Sourcegraph cluster deployment documentation to better help you use Sourcegraph at your company. See the [cluster deployment documentation](https://docs.sourcegraph.com/admin/install/cluster) for information on managing and scaling your Sourcegraph cluster.
 
 
 ## Improvements to built-in authentication
@@ -69,7 +69,7 @@ It's now much easier to control access to your code on Sourcegraph. When using `
 
 ## Bitbucket Server support
 
-We’ve added native integration for [Bitbucket Server](https://www.atlassian.com/software/bitbucket/server) so you can get powerful code search over all your Bitbucket Server projects in minutes. Click **Add Bitbucket Server repositories** in the site config area, fill in the generated fields, and select which repositories to enable. [See the Bitbucket integration documentation](https://docs.sourcegraph.com/integration/bitbucket_server) for full instructions.
+We've added native integration for [Bitbucket Server](https://www.atlassian.com/software/bitbucket/server) so you can get powerful code search over all your Bitbucket Server projects in minutes. Click **Add Bitbucket Server repositories** in the site config area, fill in the generated fields, and select which repositories to enable. [See the Bitbucket integration documentation](https://docs.sourcegraph.com/integration/bitbucket_server) for full instructions.
 
 As always, in addition to natively supported code hosts (GitHub, GitLab, Gitolite etc.), Git repositories from any code host can be added.
 

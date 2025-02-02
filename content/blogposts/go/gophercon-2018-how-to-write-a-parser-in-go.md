@@ -164,7 +164,7 @@ Goyacc
 
 - Rob Pike https://talks.golang.org/2011/lex.slide
 - Fatih Arslan https://medium.com/@farslan/a-look-at-go-scanner-packages-11710c2655fc
-- Use a ‘lex’ port
+- Use a ‘lex' port
 - go/scanner
 - Hand-code
 

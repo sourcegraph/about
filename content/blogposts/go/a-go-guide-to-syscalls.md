@@ -1,5 +1,5 @@
 ---
-title: 'A Go Programmer’s Guide to Syscalls'
+title: 'A Go Programmer's Guide to Syscalls'
 authors:
   - name: Liz Rice
 publishDate: 2017-07-13T00:00-07:00
@@ -15,7 +15,7 @@ published: true
 Liveblog by Matt King
 
 ## Overview
-Even if you've never used Go’s syscall package - in fact even if you've only ever written “Hello, world” - you have definitely used syscalls. They provide the interface between your code and the operating system.
+Even if you've never used Go's syscall package - in fact even if you've only ever written “Hello, world” - you have definitely used syscalls. They provide the interface between your code and the operating system.
 
 Liz goes under the hood to explore what syscalls are, how they work, and how some common Go code makes of use of them. She covers what people mean when they talk about `strace` and `ptrace`, and looks at what syscalls have to do with privileges and permissions. She does all of this through a live demo by writing [strace from scratch](https://github.com/lizrice/strace-from-scratch).
 

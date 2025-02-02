@@ -52,7 +52,7 @@ With the latest [Sourcegraph for Chrome/Firefox](https://docs.sourcegraph.com/in
 
 ## Better repository syncing with code hosts
 
-We've made Sourcegraph better at keeping 10,000+ repositories up-to-date without overwhelming your code host, so you can search and browse all of your company’s latest code. Repository and Git metadata are updated at automatic intervals based on how frequently the repository changes. For frequently changing repositories, Git pushes to your code host are visible and searchable on Sourcegraph within seconds.
+We've made Sourcegraph better at keeping 10,000+ repositories up-to-date without overwhelming your code host, so you can search and browse all of your company's latest code. Repository and Git metadata are updated at automatic intervals based on how frequently the repository changes. For frequently changing repositories, Git pushes to your code host are visible and searchable on Sourcegraph within seconds.
 
 Sourcegraph also now tries harder to stay under your code host's API rate limit, and uses cached metadata if your code host's API is unreachable. This will help address the occasional reports from customers whose Sourcegraph instances exceeded the GitHub API rate limit.
 

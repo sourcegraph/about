@@ -51,4 +51,4 @@ Code ownership in Sourcegraph can drive better code and more efficient processes
 
 So, gear up to explore and experiment with the power of ownership at your fingertips. We are eagerly waiting for your feedback to continue building tools that meet your needs.
 
-To use the new code ownership features, you’ll first need to upgrade your instance to version 5.1, then [see the docs to get started](https://docs.sourcegraph.com/own).
+To use the new code ownership features, you'll first need to upgrade your instance to version 5.1, then [see the docs to get started](https://docs.sourcegraph.com/own).

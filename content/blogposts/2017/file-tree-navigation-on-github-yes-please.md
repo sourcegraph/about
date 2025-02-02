@@ -12,7 +12,7 @@ published: true
 ---
 
 
-We’ve added a file tree to GitHub so that you can quickly explore an entire repository and jump between files without taking your hands off the keyboard.
+We've added a file tree to GitHub so that you can quickly explore an entire repository and jump between files without taking your hands off the keyboard.
 
 Get started by downloading the [Sourcegraph for GitHub Chrome extension](https://docs.sourcegraph.com/integration/browser_extension?hl=en)
 
