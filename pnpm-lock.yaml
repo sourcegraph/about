@@ -151,8 +151,8 @@ dependencies:
 
 devDependencies:
   '@cypress/webpack-preprocessor':
-    specifier: ^5.12.0
-    version: 5.12.2(@babel/core@7.25.2)(@babel/preset-env@7.22.20)(babel-loader@8.3.0)(webpack@5.88.2)
+    specifier: ^5.17.1
+    version: 5.17.1(@babel/core@7.25.2)(@babel/preset-env@7.22.20)(babel-loader@8.3.0)(webpack@5.88.2)
   '@next/bundle-analyzer':
     specifier: ^12.3.0
     version: 12.3.0
@@ -3188,12 +3188,12 @@ packages:
       uuid: 8.3.2
     dev: true
 
-  /@cypress/webpack-preprocessor@5.12.2(@babel/core@7.25.2)(@babel/preset-env@7.22.20)(babel-loader@8.3.0)(webpack@5.88.2):
-    resolution: {integrity: sha512-t29wEFvI87IMnCd8taRunwStNsFjFWg138fGF0hPQOYgSj30fbzCEwFD9cAQLYMMcjjuXcnnw8yOfkzIZBBNVQ==}
+  /@cypress/webpack-preprocessor@5.17.1(@babel/core@7.25.2)(@babel/preset-env@7.22.20)(babel-loader@8.3.0)(webpack@5.88.2):
+    resolution: {integrity: sha512-FE/e8ikPc8z4EVopJCaior3RGy0jd2q9Xcp5NtiwNG4XnLfEnUFTZlAGwXe75sEh4fNMPrBJW1KIz77PX5vGAw==}
     peerDependencies:
       '@babel/core': ^7.0.1
       '@babel/preset-env': ^7.0.0
-      babel-loader: ^8.0.2
+      babel-loader: ^8.0.2 || ^9
       webpack: ^4 || ^5
     dependencies:
       '@babel/core': 7.25.2
