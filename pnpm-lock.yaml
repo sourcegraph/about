@@ -71,8 +71,8 @@ dependencies:
     specifier: ^4.2.2
     version: 4.2.2
   framer-motion:
-    specifier: ^10.16.5
-    version: 10.16.7(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^10.18.0
+    version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
   globby:
     specifier: ^11.1.0
     version: 11.1.0
@@ -7647,7 +7647,7 @@ packages:
       eslint: 8.32.0
       eslint-etc: 5.2.0(eslint@8.32.0)(typescript@4.5.5)
       requireindex: 1.2.0
-      tslib: 2.4.0
+      tslib: 2.6.2
       tsutils: 3.21.0(typescript@4.5.5)
       typescript: 4.5.5
     transitivePeerDependencies:
@@ -7782,7 +7782,7 @@ packages:
       eslint-etc: 5.2.0(eslint@8.32.0)(typescript@4.5.5)
       requireindex: 1.2.0
       rxjs-report-usage: 1.0.6
-      tslib: 2.4.0
+      tslib: 2.6.2
       tsutils: 3.21.0(typescript@4.5.5)
       tsutils-etc: 1.4.1(tsutils@3.21.0)(typescript@4.5.5)
       typescript: 4.5.5
@@ -8340,8 +8340,8 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: true
 
-  /framer-motion@10.16.7(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-iJrX0RXxbRI3qSvDjMIp0hj+Rq6eAx+GotpX8fnZhI88Texkhlj5QHifY4BdokCh4C0oYKPsyf0wL+kwM6/taw==}
+  /framer-motion@10.18.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-oGlDh1Q1XqYPksuTD/usb0I70hq95OUzmL9+6Zd+Hs4XV0oaISBa/UUMSjYiq6m8EUF32132mOJ8xVZS+I0S6w==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -13860,6 +13860,7 @@ packages:
 
   /tslib@2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+    dev: false
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
