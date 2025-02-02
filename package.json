@@ -56,7 +56,7 @@
     "@heroicons/react": "^2.0.15",
     "@lucide/lab": "^0.1.1",
     "@popperjs/core": "^2.11.7",
-    "@sourcegraph/telemetry": "^0.16.0",
+    "@sourcegraph/telemetry": "^0.18.0",
     "@types/react-syntax-highlighter": "15.5.13",
     "@visx/axis": "^2.12.2",
     "@visx/curve": "^2.1.0",
