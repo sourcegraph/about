@@ -34,7 +34,7 @@ We recently [upgraded Cody’s free tier](https://sourcegraph.com/blog/making-co
 * **Unlimited code completions**: We’re scrapping the limit on code completions. Every tier of Cody, including Cody Free, now gets unlimited AI-generated autocomplete
 * **10x more chats and commands**: You now get 200 chats and commands every month, up from 20
 
-These changes are live for all users. Cody Pro is still available for $9/month for devs wanting unlimited chat and commands plus access to the best flagship models.
+These changes are live for all users. Cody Pro is still available for $9/month for devs wanting increased chat and commands plus access to the best flagship models.
 
 ## Find Cody features using Search Everywhere
 
