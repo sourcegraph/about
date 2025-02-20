@@ -101,7 +101,7 @@
     "uuid": "^8.3.0"
   },
   "devDependencies": {
-    "@cypress/webpack-preprocessor": "^5.12.0",
+    "@cypress/webpack-preprocessor": "^5.17.1",
     "@next/bundle-analyzer": "^12.3.0",
     "@sourcegraph/eslint-config": "^0.33.0",
     "@sourcegraph/prettierrc": "^3.0.3",
