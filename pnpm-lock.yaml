@@ -20,8 +20,8 @@ dependencies:
     specifier: ^2.11.7
     version: 2.11.7
   '@sourcegraph/telemetry':
-    specifier: ^0.16.0
-    version: 0.16.0
+    specifier: ^0.18.0
+    version: 0.18.0
   '@types/react-syntax-highlighter':
     specifier: 15.5.13
     version: 15.5.13
@@ -4542,10 +4542,8 @@ packages:
     resolution: {integrity: sha512-FQ1/Ued4I02R0JkrHHofDN163juVxUnPALzfxPZrDZUHv+c3jHjfZhmTHEz+Wd+g3b7MFk0fkj36nZSnvPyU8A==}
     dev: true
 
-  /@sourcegraph/telemetry@0.16.0:
-    resolution: {integrity: sha512-/LTbGWwscy/iNOYc0JS2Sl5Q21WOaiIhABlGynwJLMfPYy0YoJQfEtrCEGTSYWY735dSdUBW3wcTgCOCz8EEjA==}
-    dependencies:
-      rxjs: 7.8.1
+  /@sourcegraph/telemetry@0.18.0:
+    resolution: {integrity: sha512-x9J6cwp1fVu4jAp7EL3H58TPjRz0rZ8lu2OFU1ccBNmEcJGrpfyaHCHmgXBVP0z9ppD79N1/GY0sVciW0luA/w==}
     dev: false
 
   /@storybook/channels@7.6.20:
@@ -12862,6 +12860,7 @@ packages:
     resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
     dependencies:
       tslib: 2.6.2
+    dev: true
 
   /sade@1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
