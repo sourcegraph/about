@@ -11,7 +11,7 @@ published: true
 
 Often, you need to understand the differences between code at different branches (especially for release branches that have diverged).
 
-In Sourcegraph 3.18, you can now search across multiple revisions of the same repository by listing multiple branch names (or other revision specifiers) separated by `:` in your query. So to search across multiple specific branches, you’d use something like `repo:myrepo@branch1:branch2:branch2`. To search all branches, use `repo:myrepo@*refs/heads/`.
+In Sourcegraph 3.18, you can now search across multiple revisions of the same repository by listing multiple branch names (or other revision specifiers) separated by `:` in your query. So to search across multiple specific branches, you'd use something like `repo:myrepo@branch1:branch2:branch2`. To search all branches, use `repo:myrepo@*refs/heads/`.
 
 For example, a search over Sourcegraph versions 3.16 & 3.17 would look something like this:
 

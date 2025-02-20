@@ -97,12 +97,12 @@ See the new [lsif.dev](https://lsif.dev/) site for list of languages with LSIF i
 
 Sourcegraph now reacts more quickly to changes in the external services you configure (such as the code hosts to mirror repositories from). For example, when you add a new code host to Sourcegraph, its repositories will become available more quickly for searching and browsing.
 
-(We made this improvement by applying external service updates in a streaming, not serial, fashion. Repositories are now added to Sourcegraph’s database and cloned immediately and one-by-one, instead of first loading the entire list of repositories from the code host and then syncing the entire list to the database. On large Sourcegraph instances that mirror 10,000s+ of repositories from code hosts, the first repositories will show up much more quickly than before.)
+(We made this improvement by applying external service updates in a streaming, not serial, fashion. Repositories are now added to Sourcegraph's database and cloned immediately and one-by-one, instead of first loading the entire list of repositories from the code host and then syncing the entire list to the database. On large Sourcegraph instances that mirror 10,000s+ of repositories from code hosts, the first repositories will show up much more quickly than before.)
 
 
 ## Export settings for easier bug reporting
 
-Sourcegraph settings and configuration can now be viewed on a single page for easier exporting when reporting a bug. To view, go to ‘Report a bug’ on the site admin side panel or navigate to `/site-admin/report-bug`.
+Sourcegraph settings and configuration can now be viewed on a single page for easier exporting when reporting a bug. To view, go to ‘Report a bug' on the site admin side panel or navigate to `/site-admin/report-bug`.
 
 Note that secrets and tokens are not automatically redacted. Please review the full settings export before sharing externally.
 
@@ -116,7 +116,7 @@ To enable better programmatic consumption of search results, Sourcegraph 3.9 int
 
 For Sourcegraph users and customers that deploy using Kubernetes, our [Kubernetes deployment](https://github.com/sourcegraph/deploy-sourcegraph) manifest for indexed-search pods has changed from a Deployment to a StatefulSet. This is to enable future work on horizontally scaling indexed search.
 
-To retain your existing indexes, follow the [migration guide](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#39). If you upgrade without following these instructions, Sourcegraph’s indexed search will be temporarily unavailable (and overall search performance will suffer) while your code is reindexed.
+To retain your existing indexes, follow the [migration guide](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#39). If you upgrade without following these instructions, Sourcegraph's indexed search will be temporarily unavailable (and overall search performance will suffer) while your code is reindexed.
 
 
 ## Changelog

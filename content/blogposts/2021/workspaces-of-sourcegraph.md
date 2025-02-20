@@ -194,7 +194,7 @@ In my editor I keep open every file (usually < 60) that I have interacted with w
 
 - Environment: tmux in a fullscreen Kitty window that covers everything
 - Editor: Neovim (sometimes VS Code with Vim keybindings for TypeScript/Rust)
-- Mode: 90% of the time it’s light with the Lucius colorscheme, 10% it’s dark with the VS Code dark colorscheme
+- Mode: 90% of the time it's light with the Lucius colorscheme, 10% it's dark with the VS Code dark colorscheme
 - Font: JetBrains Mono
 - Shell: zsh
 - Vim configuration: https://github.com/mrnugget/vimconfig

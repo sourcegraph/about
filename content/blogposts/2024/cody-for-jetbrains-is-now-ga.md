@@ -18,7 +18,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-for-jet
 
 Cody for JetBrains IDEs is now generally available for all users. It offers better performance, increased stability, and new features to help you stay in flow and reduce day-to-day toil in your workflow.
 
-The JetBrains extension now supports new commands, inline code edits, and all of Cody’s staple features like multi-line autocomplete, hot-swappable LLMs, and multi-repo context search.
+The JetBrains extension now supports new commands, inline code edits, and all of Cody's staple features like multi-line autocomplete, hot-swappable LLMs, and multi-repo context search.
 
 [Download Cody for JetBrains](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat) 
 
@@ -28,9 +28,9 @@ The JetBrains extension now supports new commands, inline code edits, and all of
 
 ## Better autocomplete with more hotkeys
 
-Cody provides multi-line autocomplete as you type. We’ve squashed some visual and performance bugs, and the autocomplete experience is much more polished.
+Cody provides multi-line autocomplete as you type. We've squashed some visual and performance bugs, and the autocomplete experience is much more polished.
 
-We’ve also added new hotkeys for using autocomplete:
+We've also added new hotkeys for using autocomplete:
 
 - <kbd>Tab</kbd> to accept a suggestion
 - <kbd>Alt + \[ </kbd> (Windows) or <kbd>Opt + \[</kbd> (macOS) to cycle suggestions
@@ -45,11 +45,11 @@ We’ve also added new hotkeys for using autocomplete:
 
 ## Chat with multi-repo context
 
-We’ve updated Cody’s sidebar chat interface and improved the UX for selecting repositories to use as context. 
+We've updated Cody's sidebar chat interface and improved the UX for selecting repositories to use as context. 
 
 You will now see an interface in the sidebar for selecting chat context, and you can toggle local project context on or off. 
 
-If you’re a Cody Enterprise user, you will also have the option of adding remote repositories from your Sourcegraph instance. You can type the name of your repos into this interface and select up to 10. Cody will search against those repos and retrieve relevant files to answer your chat prompts.
+If you're a Cody Enterprise user, you will also have the option of adding remote repositories from your Sourcegraph instance. You can type the name of your repos into this interface and select up to 10. Cody will search against those repos and retrieve relevant files to answer your chat prompts.
 
 <Video
   source={{
@@ -75,7 +75,7 @@ Cody Pro users can hot-swap between multiple of the latest models from the exten
 
 ## Refreshed commands to keep you in flow
 
-Cody has grown beyond the chat window and can now edit code directly in your files. We’ve used this functionality to rebuild Cody’s commands and split them into two categories: **edit commands** and **chat commands**.
+Cody has grown beyond the chat window and can now edit code directly in your files. We've used this functionality to rebuild Cody's commands and split them into two categories: **edit commands** and **chat commands**.
 
 Chat commands are the commands you are already using. They return outputs from Cody in the chat window. These are:
 
@@ -109,9 +109,9 @@ Learn more about the Edit Command with this [YouTube video walkthrough](https://
 
 ### Generate unit tests
 
-This command replaces Cody’s old unit testing command, which was limited to outputting test code in the chat window. Now, when you prompt Cody to generate unit tests, it will:
+This command replaces Cody's old unit testing command, which was limited to outputting test code in the chat window. Now, when you prompt Cody to generate unit tests, it will:
 
-* Determine if you’re using a test framework
+* Determine if you're using a test framework
 * Determine if you already have a test file created 
 * Insert new unit tests directly in the existing test file or create a new file if none exists
 
@@ -123,7 +123,7 @@ Try the new command in the Cody sidebar or with the <kbd>Shift + Ctrl + T</kbd> 
 
 ### Document code
 
-We’ve also rebuilt Cody’s documentation command, and Cody will insert docs directly into your file instead of generating docs in a sidebar chat window.
+We've also rebuilt Cody's documentation command, and Cody will insert docs directly into your file instead of generating docs in a sidebar chat window.
 
 You can trigger the documentation command with the <kbd>Shift + Ctrl + H</kbd> hotkey.
 
@@ -138,7 +138,7 @@ Learn to use the Document Code command with this [YouTube walkthrough](https://w
 
 ## GPT-4o support for Pro and Enterprise
 
-OpenAI’s latest model, [GPT-4o](https://openai.com/index/hello-gpt-4o/), is now available for Pro and Enterprise users. It’s two times faster than GPT-4 Turbo and beats its general reasoning benchmark scores.
+OpenAI's latest model, [GPT-4o](https://openai.com/index/hello-gpt-4o/), is now available for Pro and Enterprise users. It's two times faster than GPT-4 Turbo and beats its general reasoning benchmark scores.
 
 You can use GPT-4o for chat and commands, and the model's speed makes it an excellent option for code edit commands. Cody Pro users will see GPT-4o as an option in the LLM dropdown menu today. Cody Enterprise admins can choose GPT-4o as an option for their teams once they update their Sourcegraph instance to the latest version (coming later this week).
 
@@ -153,23 +153,23 @@ You can also try it in our [LLM Litmus Test](https://s0.dev/) at Sourcegraph Lab
 
 For anyone who missed it, we rolled out new context windows for Cody Free and Cody Pro users in [v5.5.8](https://sourcegraph.com/blog/cody-jetbrains-5-5-8-release). Cody now supports _way more context_ when used with Claude 3 models. This means a few things:
 
-- You send more context to Cody when asking questions. You can `@-mention` more and larger files that would’ve previously gone over the context limit
+- You send more context to Cody when asking questions. You can `@-mention` more and larger files that would've previously gone over the context limit
 - You can have far longer back-and-forth chats with Cody before it forgets the context from earlier in the conversation. Previously, Cody would tend to “forget” context early in a conversation when the total amount of context was too large
 
-We’ve also expanded Cody’s output token limit, meaning answers won’t get cut off mid-text anymore. You can read more about [context token limits in the docs](https://sourcegraph.com/docs/cody/core-concepts/token-limits).
+We've also expanded Cody's output token limit, meaning answers won't get cut off mid-text anymore. You can read more about [context token limits in the docs](https://sourcegraph.com/docs/cody/core-concepts/token-limits).
 
 ## Stability and performance improvements
 
-We’ve squashed some bugs and significantly improved the JetBrains extension's performance and stability. We expect all JetBrains users to feel these improvements, and Apple Silicon users will see much greater stability.
+We've squashed some bugs and significantly improved the JetBrains extension's performance and stability. We expect all JetBrains users to feel these improvements, and Apple Silicon users will see much greater stability.
 
 ## Thank you to our community
 
 **Thank you** to all of our JetBrains beta users. Your feedback has allowed us to bring the JetBrains extension to GA. We appreciate all of your thoughtful insights, requests, and support. 
 
-If you’re new to Cody, we’d love your feedback too! You can submit feedback along with questions and comments to [our support forum](https://community.sourcegraph.com).
+If you're new to Cody, we'd love your feedback too! You can submit feedback along with questions and comments to [our support forum](https://community.sourcegraph.com).
 
 ## Get started with Cody
 
 If you have an existing Free, Pro, or Enterprise account, you can [install Cody for JetBrains](https://plugins.jetbrains.com/plugin/9682-cody-ai-coding-assistant-with-autocomplete--chat). 
 
-If you don’t yet have a Cody account, [create one for free](https://sourcegraph.com/cody).
+If you don't yet have a Cody account, [create one for free](https://sourcegraph.com/cody).

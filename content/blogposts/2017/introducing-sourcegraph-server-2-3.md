@@ -12,7 +12,7 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/3xHwIft9qUqwqcYiYGamAu/c4db
 published: true
 ---
 
-Search code over all of your company's repositories, save and reuse common search queries and scopes, and do it all more quickly with style. This release also includes previews of diff/commit search and author/date filters, which help you debug issues and find usage examples in your company’s code.
+Search code over all of your company's repositories, save and reuse common search queries and scopes, and do it all more quickly with style. This release also includes previews of diff/commit search and author/date filters, which help you debug issues and find usage examples in your company's code.
 
 Sourcegraph gives the power of [great code search](https://docs.sourcegraph.com/code_search) to every developer at your company, so you can ship better code faster. It runs securely in your own network and is easy to install and upgrade.
 
@@ -30,7 +30,7 @@ Key highlights of Sourcegraph 2.3:
 * [Search and code intelligence on GitHub.com in Chrome/Firefox](#search-and-code-intelligence-on-githubcom-in-chromefirefox)
 * [Repository list page](#repository-list-page)
 * [Faster file tree](#faster-file-tree)
-* [Go to canonical URL ‘y’ hotkey](#go-to-canonical-url-y-hotkey)
+* [Go to canonical URL ‘y' hotkey](#go-to-canonical-url-y-hotkey)
 * [Enterprise improvements](#enterprise-improvements)
 * [Features in preview](#other-features-in-preview)
 
@@ -113,27 +113,27 @@ Click **Browse** in the navigation bar to view a list of all repositories on the
 Markdown files are now rendered. See an example [rendered public markdown file](https://sourcegraph.com/github.com/gorilla/mux/-/blob/README.md) on Sourcegraph.com. To view raw markdown, click the “View source” button on the top right of the code view.
 
 ## Faster file tree
-The file tree now only shows the siblings of the current file, so it’s much easier to use when you’re deep inside a repository. And it does the right thing if you navigate to parent directories using the breadcrumbs. Previously the file tree would always show the entire tree, but based on feedback, we think the new tree works better for both large and small repositories.
+The file tree now only shows the siblings of the current file, so it's much easier to use when you're deep inside a repository. And it does the right thing if you navigate to parent directories using the breadcrumbs. Previously the file tree would always show the entire tree, but based on feedback, we think the new tree works better for both large and small repositories.
 
-## Go to canonical URL ‘y’ hotkey
+## Go to canonical URL ‘y' hotkey
 Press the `y` key when viewing a file to go to its permanent, canonical URL, with the full 40-character Git commit SHA in the URL.
 
 ## Enterprise improvements
 Sourcegraph Enterprise customers get all of these improvements plus more, including code intelligence improvements and others detailed separately in the Enterprise release notes.
 
 ## Other features (in preview)
-We’re also excited to ship previews of other features, by popular demand. We expect these features to be out of preview for next month’s release. In the meantime, please try them, send feedback, and report issues.
+We're also excited to ship previews of other features, by popular demand. We expect these features to be out of preview for next month's release. In the meantime, please try them, send feedback, and report issues.
 
 ### Diff search
 You can now search over commit diffs using the `type:diff` operator in search queries. This is useful when debugging issues (“what changed about the parseDocument function?”) and finding usage examples (“show me a self-contained commit adding a new page to our web app”). [See a sample diff search](https://sourcegraph.com/search?q=r:moby/moby+type:diff+MarshalJSON+after:%221+month+ago%22&sq=) on a public repository on Sourcegraph.com.
 
-But that’s not all! For the intrepid, you can search within commit diffs on multiple branches by specifying them in a `repo:` field after the `@` sign. [See non-master-branch commits containing `const`](https://sourcegraph.com/search?q=r:Microsoft/vscode%24%40*refs/heads/:%5Erefs/heads/master+type:diff+const+after:%221+week+ago%22&sq=) in a public repository on Sourcegraph.com, for example. After the `@`, separate Git refs with `:`, specify Git ref globs by prefixing them with `*`, and exclude commits reachable from a ref by prefixing it with `^`. We’ll improve documentation as this feature nears release.
+But that's not all! For the intrepid, you can search within commit diffs on multiple branches by specifying them in a `repo:` field after the `@` sign. [See non-master-branch commits containing `const`](https://sourcegraph.com/search?q=r:Microsoft/vscode%24%40*refs/heads/:%5Erefs/heads/master+type:diff+const+after:%221+week+ago%22&sq=) in a public repository on Sourcegraph.com, for example. After the `@`, separate Git refs with `:`, specify Git ref globs by prefixing them with `*`, and exclude commits reachable from a ref by prefixing it with `^`. We'll improve documentation as this feature nears release.
 
 ### Commit search
 Like diff search above, but use `type:commit` to search inside commit *messages*. [See all commits mentioning “bug” or “fix”](https://sourcegraph.com/search?q=r:golang/go%24+type:commit+after:%221+month+ago%22+bug%7Cfix&sq=) in a public repository on Sourcegraph.com, for example.
 
 ### New search filters: author, committer, before, after, and commit message
-To go along with diff and commit search, we’ve added new search filters. While in preview, these filters only apply to `type:diff` and `type:commit` searches, not to normal file searches.
+To go along with diff and commit search, we've added new search filters. While in preview, these filters only apply to `type:diff` and `type:commit` searches, not to normal file searches.
 
 * `author:name` or `author:email@example.com` to show only diffs or commits authored by that user ([example](https://sourcegraph.com/search?q=repo:golang/go%24+author:bradfitz+type:commit+clarify&sq=))
 * `committer:name` or `committer:email@example.com` (same as above, but for the Git committer, which sometimes differs from the Git author)

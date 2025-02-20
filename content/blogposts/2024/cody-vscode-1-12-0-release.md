@@ -27,23 +27,23 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-
 
 ### Claude 3 Sonnet is the new default model for Cody Free users
 
-We’re rolling out Claude 3 to even more users! Claude 3 Sonnet is now the default model used for all chats and commands for Cody Free users.
+We're rolling out Claude 3 to even more users! Claude 3 Sonnet is now the default model used for all chats and commands for Cody Free users.
 
 [According to Anthropic](https://www.anthropic.com/news/claude-3-family), Sonnet is as intelligent as Claude 2.0 while being roughly twice as fast, and Free users should see those speed improvements when chatting with Cody.
 
 
 ### Reduced frequency of “Unfortunately….” responses in chat for Cody Enterprise 
 
-We saw an increasing number of Cody chat responses starting with “Unfortunately…” and we were able to tie that behavior back to Claude 2.1’s [more conservative approach](https://www.anthropic.com/news/claude-2-1-prompting) to answering questions. We’ve switched the default model for Cody Enterprise users to Claude 2.0 to counteract this. Impacted users should see a drastically reduced rate of “Unfortunately…” responses in chat going forward.
+We saw an increasing number of Cody chat responses starting with “Unfortunately…” and we were able to tie that behavior back to Claude 2.1's [more conservative approach](https://www.anthropic.com/news/claude-2-1-prompting) to answering questions. We've switched the default model for Cody Enterprise users to Claude 2.0 to counteract this. Impacted users should see a drastically reduced rate of “Unfortunately…” responses in chat going forward.
 
-This change will impact Cody Enterprise users who are running Sourcegraph Cloud and don’t have a model explicitly selected. We’ll also add the option to use Claude 3 models in Cody Enterprise in an upcoming release.
+This change will impact Cody Enterprise users who are running Sourcegraph Cloud and don't have a model explicitly selected. We'll also add the option to use Claude 3 models in Cody Enterprise in an upcoming release.
 
 
 ## Improvements to context handling
 
 ### Include larger files with line ranges
 
-Files that cause Cody’s context window to exceed our token limit couldn’t be added at all to query context (using @-mention) previously. Now you can specify line ranges by @-mentioning a file and appending a number range to the filename (e.g. @filepath/filename:1-10).  This should allow more flexibility for customizing Cody’s context, even when the full file exceeds the token limits.
+Files that cause Cody's context window to exceed our token limit couldn't be added at all to query context (using @-mention) previously. Now you can specify line ranges by @-mentioning a file and appending a number range to the filename (e.g. @filepath/filename:1-10).  This should allow more flexibility for customizing Cody's context, even when the full file exceeds the token limits.
 
 <Video 
   source={{
@@ -56,7 +56,7 @@ Files that cause Cody’s context window to exceed our token limit couldn’t be
 
 ### @-mention file lookups are now faster
 
-When you @-mention files to add them to Cody’s context window, the file lookup now respects `files.exclude`, `search.exclude`, and `.gitgnore` files. The file search is now much faster too (going from >1 second to &lt;100ms in our tests).
+When you @-mention files to add them to Cody's context window, the file lookup now respects `files.exclude`, `search.exclude`, and `.gitgnore` files. The file search is now much faster too (going from >1 second to &lt;100ms in our tests).
 
 <Video 
   source={{
@@ -68,7 +68,7 @@ When you @-mention files to add them to Cody’s context window, the file lookup
 
 ### Cody now tracks @-mentioned files against the max context window
 
-As you @-mention files, Cody will now track the number of characters in those files against the context window limit of our system. As you @-mention multiple files, Cody will calculate how many tokens of the context window are remaining. As the remaining context window shrinks, you’ll eventually see “File too large” errors when trying to @-mention more files.  Over the coming weeks we expect to drastically increase the available context window, stay tuned!
+As you @-mention files, Cody will now track the number of characters in those files against the context window limit of our system. As you @-mention multiple files, Cody will calculate how many tokens of the context window are remaining. As the remaining context window shrinks, you'll eventually see “File too large” errors when trying to @-mention more files.  Over the coming weeks we expect to drastically increase the available context window, stay tuned!
 
 
 ### Improved context quality for JS, TS, Python, and Go
@@ -97,7 +97,7 @@ See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.1
 
 ## Thank you
 
-Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 As always, we value your feedback in our [support forum](https://community.sourcegraph.com/), [Discord](https://discord.com/servers/sourcegraph-969688426372825169) and [GitHub](https://github.com/sourcegraph/cody/discussions). Happy Codying!
 

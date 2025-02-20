@@ -43,7 +43,7 @@ He then goes on to highlight aspects of Cloudflare's 0-RTT and how it differs fr
 So for the 0-RTT API, there are two important things the server needs:
 
 * To know what part of the data is 0-RTT
-* To know when it’s safe to use the 0-RTT data
+* To know when it's safe to use the 0-RTT data
 
 He goes over five possible options to handle these challenges using Go, explaining the downside of each:
 
@@ -98,12 +98,12 @@ He goes over five possible options to handle these challenges using Go, explaini
 Filippo goes into detail about these issues:
 
 - Don't use http timeout. If you get one thing from this talk, it must be that you can't use default timeouts!
-- Timeouts are server-wide, so you can’t change them based on path or authentication. This should be addressed in 1.10. Open proposal welcomes input: net/http: no way of manipulating timeouts in Handler - [https://github.com/golang/go/issues/16100](https://github.com/golang/go/issues/16100)
+- Timeouts are server-wide, so you can't change them based on path or authentication. This should be addressed in 1.10. Open proposal welcomes input: net/http: no way of manipulating timeouts in Handler - [https://github.com/golang/go/issues/16100](https://github.com/golang/go/issues/16100)
 - Do not confuse keep-alives with http timeout.
 
 ## Take away
 
-"We didn't’t break the Internet!"
+"We didn't't break the Internet!"
 
 This was a very detailed talk. Be sure not to miss watching the video of it when it comes out!
 

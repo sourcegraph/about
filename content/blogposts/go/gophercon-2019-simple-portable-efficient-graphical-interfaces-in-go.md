@@ -58,14 +58,14 @@ Features:
 - Only depends on lowest-level platform libraries.
   - Minimal dependency tree to keep things low level as possible.
 - GPU accelerated vector and text rendering.
-  - It’s super efficient
+  - It's super efficient
 - No garbage generated in drawing or layout code.
 - Cross platform (macOS, Linux, Windows, Android, iOS, tvOS, Webassembly).
 - Core is 100% Go. OS-specific native interfaces are optional.
 
 ### Immediate mode UI
 
-Some programs require you to maintain state for your widgetry. In Gio, you draw what you need to draw, you layout what you need to layout, and that’s it!
+Some programs require you to maintain state for your widgetry. In Gio, you draw what you need to draw, you layout what you need to layout, and that's it!
 
 - UI state is owned by the program. Even layout and widget tree.
 - No callbacks. Events are handled while drawing.
@@ -91,7 +91,7 @@ func main() {
 }
 ```
 
-This is odd, because you’re doing the event loop in your go routine.
+This is odd, because you're doing the event loop in your go routine.
 
 ### Hello, World
 
@@ -196,7 +196,7 @@ $GOBIN/gio -target js -o www helloworld.go
 Use a webserver or goexec to serve it:
 
 ```bash
-go run github.com/shurcooL/goexec ‘http.ListenAndServe(“:8080”, http.FileServer(http.Dir(“www”)))’
+go run github.com/shurcooL/goexec ‘http.ListenAndServe(“:8080”, http.FileServer(http.Dir(“www”)))'
 ```
 
 Compile directly with the Go tool or use the Gio tool to build as a web assembly module, but also add the necessary file to supply it to work in your browser.
@@ -363,7 +363,7 @@ pointer.HandlerOp{Key: c, Grab true/false}
 
 ## Layout
 
-If you have non-trivial setup, you need some way to lay them out - you don’t want to use absolute coordinates for each item. Layout assembly helps you structure your user interface. As a result of calling their layout, widgets will give you their own size.
+If you have non-trivial setup, you need some way to lay them out - you don't want to use absolute coordinates for each item. Layout assembly helps you structure your user interface. As a result of calling their layout, widgets will give you their own size.
 
 ### Constraints and dimensions
 
@@ -580,13 +580,13 @@ func (b *Button) Layout(queue input.Queue, ops *ui.Ops) {
 }
 ```
 
-Takes all available events, updates it’s own state, system can know whether the events belong to this button or not is you register the area rectangle arc with a handler.
+Takes all available events, updates it's own state, system can know whether the events belong to this button or not is you register the area rectangle arc with a handler.
 
 ### Window input queue
 
 <br />
 
-#### The Window’s Queue method returns an input.Queue for OS events.
+#### The Window's Queue method returns an input.Queue for OS events.
 
 ```go
 package app // import gioui.org/ui/app
@@ -633,7 +633,7 @@ distance := s.Scroll(cfg, queue, gesture.Vertical)
 
 ### Widgets - the Editor
 
-Complete implementation of a text area field. It’s a complicated widget, but is simple to use. You have to keep state somewhere, but you give it font and font size. Simply call the layout methods and
+Complete implementation of a text area field. It's a complicated widget, but is simple to use. You have to keep state somewhere, but you give it font and font size. Simply call the layout methods and
 
 #### Initialize the editor
 
@@ -668,4 +668,4 @@ Gio is:
 - Public domain source (UNLICENCE). Dual licenced MIT to please your lawyers.
   Most importantly, Gio needs your help to succeed!
 
-I want to bring Go from a place where GUI programming is a fringe activity to a state where it’s normal to use. Maybe in the future we can bring it to a place where you will choose Go for your GUI programming even if you aren’t interested in Go as a programming language, but because the tooling is so good.
+I want to bring Go from a place where GUI programming is a fringe activity to a state where it's normal to use. Maybe in the future we can bring it to a place where you will choose Go for your GUI programming even if you aren't interested in Go as a programming language, but because the tooling is so good.

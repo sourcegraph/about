@@ -30,7 +30,7 @@ Cody's chat can also be enabled for use in Code Search.
 
 With this GA announcement, Cody is officially ready for both personal and professional coding. Cody is available in two tiers: Cody Free and Cody Pro. Cody Free is identical to Cody Pro but has rate limits on use. Cody Pro will be free through the holidays until February 2024, after which it will be $9/month. A plan with enterprise-level features and context will be coming soon.
 
-**[Start using Cody for free today](https://sourcegraph.com/cody)**. If you’re already using Cody, make sure to update to the latest extension version to get the latest features.
+**[Start using Cody for free today](https://sourcegraph.com/cody)**. If you're already using Cody, make sure to update to the latest extension version to get the latest features.
 
 ## Context-enhanced code completions
 <br/>
@@ -44,13 +44,13 @@ Cody provides fast single and multi-line completions.
   title="Cody multiline autocomplete"
 />
 
-Cody's code completions differ from standard AI code completions through the use of an open source LLM enhanced with Cody's context engine. Specifically, we've found the type of context that helps a lot with completions is graph context. Graph context takes advantage of Sourcegraph’s expertise in parsing code and producing a graph that captures semantic understanding of your code. Pulling in this semantic code graph into context reduces the rate of common LLM hallucinations like type errors and imaginary function names.
+Cody's code completions differ from standard AI code completions through the use of an open source LLM enhanced with Cody's context engine. Specifically, we've found the type of context that helps a lot with completions is graph context. Graph context takes advantage of Sourcegraph's expertise in parsing code and producing a graph that captures semantic understanding of your code. Pulling in this semantic code graph into context reduces the rate of common LLM hallucinations like type errors and imaginary function names.
 
 By using the open source StarCoder LLM, we've been able to make completion latency very low. It also gives us access to signals such as token-level log probabilities, which we can incorporate into end-user signals.
 
-The combination of these qualities allows us to hit a Completion Acceptance Rate of 30% or higher, depending on the scenario. And we’re just getting started. Upcoming versions of Cody will integrate more of Sourcegraph's universal code graph into the context engine. Users of Cody will see these improvements in the coming weeks and months.
+The combination of these qualities allows us to hit a Completion Acceptance Rate of 30% or higher, depending on the scenario. And we're just getting started. Upcoming versions of Cody will integrate more of Sourcegraph's universal code graph into the context engine. Users of Cody will see these improvements in the coming weeks and months.
 
-As just one example of the work we’re doing to continue to improve quality, Cody will soon use deeper graph context to make autocomplete suggestions based on symbols defined elsewhere in your codebase. Here you can see the results of our internal testing of Cody (with deeper graph context) next to Copilot. Cody is able to reference the JavaScript `Person` interface to determine what variables to pass into the `personMessage` function.
+As just one example of the work we're doing to continue to improve quality, Cody will soon use deeper graph context to make autocomplete suggestions based on symbols defined elsewhere in your codebase. Here you can see the results of our internal testing of Cody (with deeper graph context) next to Copilot. Cody is able to reference the JavaScript `Person` interface to determine what variables to pass into the `personMessage` function.
 
 <Figure
     src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-is-generally-available/cody-person-interface.png"
@@ -180,7 +180,7 @@ Cody also enhances VS Code's Code Actions menu (triggered through the appearance
 
 The same context engine that powers Cody's code generation and question-answering capabilities is also used to provide natural language code search.
 
-One of the most frustrating things with traditional code search engines is the inability to find fuzzy or approximate matches to user queries that don't contain a precise string match. Regular expressions can help—but only to a point, and they come with their own bag of annoyances. Cody's natural language search box, still in beta, is a great tool for finding those pieces of code where you can't *quite* remember the function or file name. It’s based on the same expertise we’ve been building from our Code Search product for a decade; think of it as bringing the power of our enterprise-grade tools into your hands, no matter what size your engineering team is.
+One of the most frustrating things with traditional code search engines is the inability to find fuzzy or approximate matches to user queries that don't contain a precise string match. Regular expressions can help—but only to a point, and they come with their own bag of annoyances. Cody's natural language search box, still in beta, is a great tool for finding those pieces of code where you can't *quite* remember the function or file name. It's based on the same expertise we've been building from our Code Search product for a decade; think of it as bringing the power of our enterprise-grade tools into your hands, no matter what size your engineering team is.
 
 <Video controls
   source={{
@@ -194,7 +194,7 @@ We've intentionally made the UI of Cody's natural language search match that of 
 
 ## Thank you to our community
 
-We’d like to thank our many partners and collaborators.
+We'd like to thank our many partners and collaborators.
 
 - To the team at Anthropic, thank you for partnering with us as you build Claude and supporting us in figuring out how to tap it to its full potential. We \<3 long context windows!
 - To OpenAI, thank you for pushing the edge on code generation. GPT-4 is an amazing model, and we're looking forward to incorporating more multi-modal capabilities into Cody soon.

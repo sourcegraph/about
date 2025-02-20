@@ -14,21 +14,21 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/nativescript
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/nativescript-open-source-onboarding-blog-hs.jpg)
 
-From my experience working with open source projects over the years, I noticed many of them (including popular ones) don't have an onboarding process. I get it, it's a lot of work, and when you have 300+ issues to triage over the weekend, that’s the last thing on your mind.
+From my experience working with open source projects over the years, I noticed many of them (including popular ones) don't have an onboarding process. I get it, it's a lot of work, and when you have 300+ issues to triage over the weekend, that's the last thing on your mind.
 
 The team behind [NativeScript](https://nativescript.org/), on the other hand, has been hard at work onboarding developers who want to contribute to the project and ensuring that they do so in a scalable and consistent way.
 
-In this article, we’ll explore the project a little and look at how the onboarding process works because there are some broader lessons to learn for all of us working within open source software when it comes to community building and operational best practices.
+In this article, we'll explore the project a little and look at how the onboarding process works because there are some broader lessons to learn for all of us working within open source software when it comes to community building and operational best practices.
 
 ### What is NativeScript?
 
-At its core, NativeScript allows developers to directly access native platform APIs from JavaScript. Before NativeScript, this was a bit clunky, and it’s been a breath of fresh air to see just how streamlined the process can now be thanks to it. 
+At its core, NativeScript allows developers to directly access native platform APIs from JavaScript. Before NativeScript, this was a bit clunky, and it's been a breath of fresh air to see just how streamlined the process can now be thanks to it. 
 
 The resulting experience minimizes language switching and IDE jumping – a huge improvement for the developers who rely on these modalities.
 
 The project is part of the [OpenJS Foundation](https://openjsf.org/), the neutral home for JavaScript, and it finds itself in excellent company with some other awesome projects of various types. 
 
-When you look at the roadmap, it’s easy to see why this project has garnered its reputation. The continued effort to improve core underlying infrastructure is worth its weight in gold for anyone who wants to leverage JavaScript APIs to enhance their projects.
+When you look at the roadmap, it's easy to see why this project has garnered its reputation. The continued effort to improve core underlying infrastructure is worth its weight in gold for anyone who wants to leverage JavaScript APIs to enhance their projects.
 
 **_"The team has mentioned that having more hands-on sessions with regular contributors and maintainers would further improve the process because it helps to scale the understanding of the general process – which in turn speeds up the merging of contributions for future releases."_**
 
@@ -48,11 +48,11 @@ The reason for this is that it helps to be proactive about the code conventions 
 
 The team has mentioned that having more hands-on sessions with regular contributors and maintainers would further improve the process because it helps to scale the understanding of the general process – which in turn speeds up the merging of contributions for future releases. In addition, a recorded session would also help to disburse some of the key information more widely.
 
-**_"Unfortunately, those who don’t pay attention to these conventions make things much more difficult than they need to be."_**
+**_"Unfortunately, those who don't pay attention to these conventions make things much more difficult than they need to be."_**
 
 ### What Makes for a Successful Contribution?
 
-NativeScript has a wide range of use cases, and contributions that show a nuanced understanding of these are the most valuable. Typically this requires the contributor to take special care of the existing conditions in the code and leverage the functionality to create something new. Unfortunately, those who don’t pay attention to these conventions make things much more difficult than they need to be.
+NativeScript has a wide range of use cases, and contributions that show a nuanced understanding of these are the most valuable. Typically this requires the contributor to take special care of the existing conditions in the code and leverage the functionality to create something new. Unfortunately, those who don't pay attention to these conventions make things much more difficult than they need to be.
 
 Taking some time here to align a contribution with the existing code style is a surefire way to be helpful and useful – and it's something that is greatly appreciated by the NativeScript team.
 
@@ -78,7 +78,7 @@ _Thanks to the following people for helping with this post: Jory Burson, Nathan 
 
 #### About the author
 
-Justin Dorfman is Sourcegraph’s Open Source Program Manager and is responsible for
+Justin Dorfman is Sourcegraph's Open Source Program Manager and is responsible for
 fostering the adoption of code intelligence in the open source community. You can chat with Justin on Twitter [@jdorfman](https://twitter.com/jdorfman) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)
 
 ### More posts like this

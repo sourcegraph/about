@@ -14,7 +14,7 @@ published: true
 
 ---
 
-Prompts provide Cody users the ability to create and share actions that can be tailored specifically to their development workflow. In this month’s release, Enterprise users can now add tags to prompts, making it easier to group, organize, and filter prompts for easier discovery in the Prompt Library.
+Prompts provide Cody users the ability to create and share actions that can be tailored specifically to their development workflow. In this month's release, Enterprise users can now add tags to prompts, making it easier to group, organize, and filter prompts for easier discovery in the Prompt Library.
 
 <br />
 <Figure

@@ -33,7 +33,7 @@ We have made it easier for Cody Pro and Enterprise users to get assistance when 
 
 ## New debug options
 
-We've made it easier to generate and access Cody’s debug logs, allowing you to debug issues and more easily share that information with Sourcegraph’s support team. Please include logs in your bug reports when possible.
+We've made it easier to generate and access Cody's debug logs, allowing you to debug issues and more easily share that information with Sourcegraph's support team. Please include logs in your bug reports when possible.
 
 - Debug commands are now grouped in command palette under "Cody Debug"
 - Added an "Open Output Channel" sidebar menu item, that opens the VS Code output panel with "Cody by Sourcegraph" selected
@@ -70,7 +70,7 @@ For Cody Pro users, [GPT-4 Turbo](https://platform.openai.com/docs/models/gpt-4-
 
 ## Claude 3 Haiku is now available for Cody Pro 
 
-For Cody Pro users we've added Anthropic’s latest AI model, [Claude 3 Haiku](https://www.anthropic.com/news/claude-3-haiku), alongside Sonnet and Opus. This new model offers significantly faster speeds while maintaining quality and coherence. To start using Claude 3 Haiku start a new chat and select it from the list of models:
+For Cody Pro users we've added Anthropic's latest AI model, [Claude 3 Haiku](https://www.anthropic.com/news/claude-3-haiku), alongside Sonnet and Opus. This new model offers significantly faster speeds while maintaining quality and coherence. To start using Claude 3 Haiku start a new chat and select it from the list of models:
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1.10.0/claude3-haiku.png"
@@ -85,7 +85,7 @@ See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.8
 
 ## Thank you
 
-Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 As always, we value your feedback in [Discord](https://discord.com/servers/sourcegraph-969688426372825169) and [GitHub](https://github.com/sourcegraph/cody/issues/new/choose). Happy Codying!
 

@@ -14,7 +14,7 @@ published: true
 
 Our mission is to build [the best code search and browsing tool for your team](/) to help you write the highest quality software possible.
 
-Here’s new, what’s changed, and what’s fixed.
+Here's new, what's changed, and what's fixed.
 
 - [Simplified browser extension configuration](#simplified-browser-extension-configuration)
 
@@ -28,7 +28,7 @@ Ready to install or upgrade? [Get Sourcegraph 2.11.](https://docs.sourcegraph.co
 
 ## Simplified browser extension configuration
 
-The browser extension used to require manual configuration when being used with a private Sourcegraph server. With the latest release, the browser extension now only needs the URL for the Sourcegraph server it’s pointing to.
+The browser extension used to require manual configuration when being used with a private Sourcegraph server. With the latest release, the browser extension now only needs the URL for the Sourcegraph server it's pointing to.
 
 ![Simplified Browser Extension Configuration](//images.ctfassets.net/le3mxztn6yoo/1UabqJXkpyKU4QSa0KWoiM/19954ac186f24b0a0ae20bb0b3199c43/BrowserConfiguration.gif)
 

@@ -13,7 +13,7 @@ published: true
 description: 'Sourcegraph 3.3: Improving the user experience for site admins'
 ---
 
-We're excited to announce Sourcegraph 3.3. Sourcegraph is a code search and navigation tool (self-hosted, open source, and cross-repository). Read on for the details, and thanks to our customers and community for reporting issues and providing feedback. You’re helping to make each Sourcegraph release the best one yet!
+We're excited to announce Sourcegraph 3.3. Sourcegraph is a code search and navigation tool (self-hosted, open source, and cross-repository). Read on for the details, and thanks to our customers and community for reporting issues and providing feedback. You're helping to make each Sourcegraph release the best one yet!
 
 <div style={{paddingLeft: '2rem'}}>
 
@@ -33,7 +33,7 @@ When using code hosts other than GitHub.com.
 Fly around Swift code on Sourcegraph.com or your code host.
 
 [**🗄 Symbols for the current file**](#symbols-for-the-current-file)<br />
-The symbols sidebar is now scoped to the current file/directory you’re viewing.
+The symbols sidebar is now scoped to the current file/directory you're viewing.
 
 `{/*TODO(ryan): Show once 3.3 is available on DigitalOcean[**🚢 Deployments secure by default with TLS pre-configured**](#deployments)<br />AWS and DigitalOcean deployments with TLS via self-signed certs.*/}`
 
@@ -50,7 +50,7 @@ Your error and exception handling code, annotated with Sentry links.
 Every detail that changed in this release
 
 [**🎖️ Thank you**](#thank-you)<br />
-Sourcegraph couldn’t be what it is without the community.
+Sourcegraph couldn't be what it is without the community.
 
 </div>
 
@@ -65,7 +65,7 @@ Prior to 3.3, integrating with a code host and selecting which repositories to u
 ![Old Sourcegraph repository management flow](/blog/old-repository-sync.png)
 
 While it was simple, it presented some problems:
-Sourcegraph would fetch and list all repositories accessible to the token which often included both an account’s private repositories, as well as the repositories from associated GitHub organizations.
+Sourcegraph would fetch and list all repositories accessible to the token which often included both an account's private repositories, as well as the repositories from associated GitHub organizations.
 
 ### Why manual enabling and disabling was problematic
 
@@ -152,7 +152,7 @@ See it in action on [Sourcegraph.com](https://sourcegraph.com/github.com/googlep
 
 ## Symbols for the current file
 
-The symbols sidebar is now scoped to the current file/directory you’re viewing.
+The symbols sidebar is now scoped to the current file/directory you're viewing.
 
 ![File scoped symbols](/blog/file-scoped-symbols.png)
 
@@ -167,10 +167,10 @@ Using [regexps in search queries](https://docs.sourcegraph.com/code_search/refer
 Once a Sourcegraph instance is configured and ready for sharing, a site admin usually thinks:
 
 - _“What is the best way to run a trial of Sourcegraph in my team/org?”_
-- _“How can I best communicate the value of code search to developers who’ve not used it before?”_
+- _“How can I best communicate the value of code search to developers who've not used it before?”_
 - _“How can I make it easy for developers to compare Sourcegraph to our existing code search tool?”_
 
-To help make it easier for a site admin to introduce Sourcegraph into their development tools stack, we’ve created the following three resources:
+To help make it easier for a site admin to introduce Sourcegraph into their development tools stack, we've created the following three resources:
 
 [**1. How to run a Sourcegraph trial**](https://docs.sourcegraph.com/adopt/trial)<br />
 Give Sourcegraph the best chance of gaining traction by using our step-by-step guide for running a trial with your development team.

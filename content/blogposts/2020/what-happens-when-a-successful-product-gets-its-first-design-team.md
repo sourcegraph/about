@@ -64,7 +64,7 @@ We have introduced **new headers** that maintain consistent structure on all the
 
 ## Build and start using the component system
 
-Over the course of the last couple of months, we have also realized that, in order to produce the desired outcome at a satisfying pace and scale, we need to improve our design system. We have decided to apply the DRY (Don’t Repeat Yourself) code development principle to all our efforts. We have managed to achieve the following:
+Over the course of the last couple of months, we have also realized that, in order to produce the desired outcome at a satisfying pace and scale, we need to improve our design system. We have decided to apply the DRY (Don't Repeat Yourself) code development principle to all our efforts. We have managed to achieve the following:
 
 ### Align our design files with Storybook
 
@@ -111,6 +111,6 @@ A most recent example of the change that was proposed using this process is an u
   alt="Brand new component system illustration"
 />
 
-## What’s next?
+## What's next?
 
 We are planning to stay on this path of improving consistency and learnability. In the nearest future, our efforts will be focused on two big areas of our product - Sourcegraph extensions and the browser extension. We are very excited about the upcoming months and we would love you to share your feedback about all the changes that we are making. If you have any suggestions, please reach out to us at [@sourcegraph](https://twitter.com/sourcegraph) or by [filing an issue](https://github.com/sourcegraph/sourcegraph).

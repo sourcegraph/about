@@ -18,7 +18,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/cody-jetbrai
 
 ## Updates to shortcut hints
 
-We’ve made several changes to keyboard shortcut hints to make sure they’re helpful without being distracting.
+We've made several changes to keyboard shortcut hints to make sure they're helpful without being distracting.
 
 ### Shortcuts on startup
 
@@ -47,7 +47,7 @@ The post-edit UI now shows the keyboard shortcuts for each action.
 
 ### Removed inline edit command hints
 
-Previously, Cody displayed an Edit Code hint (`Ctrl + Alt + ↵ to Edit`) inline with any code you had highlighted. We heard your feedback that this shortcut was often distracting, so we’ve removed it.
+Previously, Cody displayed an Edit Code hint (`Ctrl + Alt + ↵ to Edit`) inline with any code you had highlighted. We heard your feedback that this shortcut was often distracting, so we've removed it.
 
 ## Context files are formatted for readability
 
@@ -74,7 +74,7 @@ See the [changelog](https://github.com/sourcegraph/jetbrains/releases/tag/v6.0.1
 
 ## Thank you
 
-Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 As always, we value your feedback in our [support forum](https://community.sourcegraph.com/) and on [Discord](https://discord.com/servers/sourcegraph-969688426372825169). Happy Codying!
 

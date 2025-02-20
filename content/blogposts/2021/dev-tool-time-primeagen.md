@@ -14,7 +14,7 @@ published: true
 
 As a popular Twitch streamer and Vim enthusiast, ThePrimeagen is known for his fast-paced tmux and Neovim-focused workflow, shifting quickly between windows, buffers, and code chunks. When he joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on October 27, 2021, he shared his approach to reducing cognitive overhead in his dev workflow and showed how his custom configurations make it easier to think less and do more.
 
-You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out ThePrimeagen’s desk setup:
+You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let's check out ThePrimeagen's desk setup:
 
 ## Hardware
 

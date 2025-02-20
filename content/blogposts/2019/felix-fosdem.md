@@ -27,7 +27,7 @@ Tooling has always been a focus for TypeScript and a large reason for its succes
 
 This presentation gives a tour and history of how TypeScript is able to provide the same great experience to many different clients through the tsserver and tsserver protocol, as well as how it influenced and fits into newer efforts like the Language Server Protocol.
 
-I showed how it can be used to provide code intelligence features like jump-to-definition and find-references at cross-repository scale, using some of TypeScript’s newest features like declaration maps and combining it with lesser-known interesting features of the JavaScript package management tooling.
+I showed how it can be used to provide code intelligence features like jump-to-definition and find-references at cross-repository scale, using some of TypeScript's newest features like declaration maps and combining it with lesser-known interesting features of the JavaScript package management tooling.
 
 At the end of this talk, you'll know how TypeScript tooling works under the hood and how it can be combined with other tools in the ecosystem to make developers more productive. The goal is to inspire innovation in the TypeScript tooling ecosystem by showing what is possible and how.
 

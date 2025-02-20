@@ -16,7 +16,7 @@ Docker announced that the Docker Hub and Docker Store (backed by the same Docker
 
 You may be thinking “I use Kubernetes, doesn't this only affect people executing `docker image pull`? Well yes, but that is what Kubernetes does when it doesn't find a requested image locally.
 
-Below is the advice we’ve given our customers to help them work around the outage and we encourage you to share this with anyone who uses Kubernetes to help them have an incident and outage free weekend.
+Below is the advice we've given our customers to help them work around the outage and we encourage you to share this with anyone who uses Kubernetes to help them have an incident and outage free weekend.
 
 ## Check your imagePullPolicy
 We use the imagePullPolicy [default value](https://kubernetes.io/docs/concepts/configuration/overview/#container-images) (IfNotPresent), meaning the image will not be pulled if available locally.
@@ -36,4 +36,4 @@ This reduces the chances of Kubernetes re-scheduling Pods onto different worker 
 ## Outages happen, all you can do is be prepared
 We hope this post has given you some ideas about how you can limit the impact the Docker Hub outage has on your Kubernetes and Docker deployments.
 
-We know this must be a stressful operation for Docker’s Ops folks and we wish them all the best!
+We know this must be a stressful operation for Docker's Ops folks and we wish them all the best!

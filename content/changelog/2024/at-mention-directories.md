@@ -17,9 +17,9 @@ published: true
 
 ---
 
-Cody chat lets developers @ mention specific repos or files as context in a prompt to improve the quality of the answer it provides. This works well for codebases made up of multiple repos or if you know the exact file you wish to work with, but we’ve heard feedback from users that quality of results suffered when working with larger, more complex repos like monorepos and you’re not sure of or need to reference more than one file.
+Cody chat lets developers @ mention specific repos or files as context in a prompt to improve the quality of the answer it provides. This works well for codebases made up of multiple repos or if you know the exact file you wish to work with, but we've heard feedback from users that quality of results suffered when working with larger, more complex repos like monorepos and you're not sure of or need to reference more than one file.
 
-We’re happy to announce an experimental feature that offers users the ability to mention directories when using Cody chat, starting with Enterprise users referencing remote repositories, and for open source repos when using Cody Web. Users can now define context for a prompt one level deeper than a repo without referencing specific files, improving the quality of answers Cody provides from the get-go.
+We're happy to announce an experimental feature that offers users the ability to mention directories when using Cody chat, starting with Enterprise users referencing remote repositories, and for open source repos when using Cody Web. Users can now define context for a prompt one level deeper than a repo without referencing specific files, improving the quality of answers Cody provides from the get-go.
 
 When using Cody Web, you can reference open source directories by selecting the Directories option:
 

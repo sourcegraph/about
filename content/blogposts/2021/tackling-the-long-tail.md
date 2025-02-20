@@ -25,7 +25,7 @@ our self-hosted customer deployments. [Sourcegraph is actually taking on maintai
 
 ## Why not just scale out?
 
-Naturally, Zoekt's size of the index scales with the size of the input data. Zoekt’s index is about 2–3 times larger
+Naturally, Zoekt's size of the index scales with the size of the input data. Zoekt's index is about 2–3 times larger
 than the input data. Some of that data, like the trigrams, is kept in memory. At the scale of the open source universe,
 it quickly becomes too costly to just scale out. Luckily, Zoekt still has a lot of untapped potential when it comes to
 more efficient data structures. For example, in
@@ -35,7 +35,7 @@ explained [how we changed one of Zoekt's core data structures to reduce memory b
 The core idea of this project is to merge the long tail of small, stale repositories into more efficient representations
 on disk and in memory. To understand the motivation behind this idea we have to first dive into Zoekt's data model.
 
-## Zoekt’s data model
+## Zoekt's data model
 
 Zoekt indexes repositories and stores the index in one or more files on disk. A repository contains a hierarchy of
 documents, such as source code, binaries, text files and so forth. At
@@ -55,7 +55,7 @@ on one of our production instances.
 
 75% of the shards in our sample are smaller than 2.1 MiB. Each shard contains, among other data, the trigrams we created
 during indexing. On
-startup, [Zoekt loads those trigrams into memory](https://sourcegraph.com/github.com/sourcegraph/zoekt@6a4adda/-/blob/read.go?L210). Trigrams for content and file names make up more than 70% of the heap of Zoekt’s web server. The more unique trigrams a shard
+startup, [Zoekt loads those trigrams into memory](https://sourcegraph.com/github.com/sourcegraph/zoekt@6a4adda/-/blob/read.go?L210). Trigrams for content and file names make up more than 70% of the heap of Zoekt's web server. The more unique trigrams a shard
 has, the more costly its in-memory representation is.
 
 The two charts below show the number of trigrams in a shard vs. the shard's size. Plot A shows that most shards have
@@ -90,7 +90,7 @@ The following diagram shows how the number of trigrams in a shard changes depend
 
 The distance between the two curves is a measure of the compression we can achieve.
 
-## What’s next?
+## What's next?
 
 We are currently working on adding support for compound shards to Zoekt. First experiments indicate that we can expect
 an overall reduction in memory of about 50% for a target compound shard size of 2 GiB. We will make sure to follow up

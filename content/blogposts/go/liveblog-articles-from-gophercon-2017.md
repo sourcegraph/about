@@ -15,9 +15,9 @@ published: true
 
 (See an overview of all GopherCon talks with links in this post).
 
-We’re excited to be the official live-blogging partner for GopherCon 2017!
+We're excited to be the official live-blogging partner for GopherCon 2017!
 
-That’s right — we’ll be writing up concise technical summaries of as many of the amazing talks by Go experts this year as we can. For folks tuning in from home, the liveblog will be a great way to stay on top of conference proceedings efficiently throughout the day. For folks at the conference, it’s a great way to remind yourself of the key takeaways of each talk.
+That's right — we'll be writing up concise technical summaries of as many of the amazing talks by Go experts this year as we can. For folks tuning in from home, the liveblog will be a great way to stay on top of conference proceedings efficiently throughout the day. For folks at the conference, it's a great way to remind yourself of the key takeaways of each talk.
 
 For those of you lucky enough to be at the conference, stop by and say hello (we are in a small table at the back of the main hall). And for those of you at home, keep your social media antenna pointed to [@sourcegraph](https://twitter.com/sourcegraph) or go to [https://about.sourcegraph.com/go](https://about.sourcegraph.com/go).
 

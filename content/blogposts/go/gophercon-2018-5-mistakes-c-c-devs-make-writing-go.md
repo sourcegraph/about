@@ -123,7 +123,7 @@ if err != nil {
 defer fp.Close()
 ```
 
-This snippet is guaranteed to work even if cases where there's a panic and it’s standard Go practice.
+This snippet is guaranteed to work even if cases where there's a panic and it's standard Go practice.
 
 So what's the problem? In very large files where resources cannot be tracked and freed properly, this becomes a problem.
 
@@ -182,7 +182,7 @@ The output from running the program shows there is no closing of files.
 Problems:
 
 - Deferred code never executes since the function has not returned
-- So memory clean up never happens and it’s use keeps piling up
+- So memory clean up never happens and it's use keeps piling up
 - Files will never be closed, therefore causing loss of data due to lack of flush.
 
 How do I fix this?
@@ -493,7 +493,7 @@ Advantages of Wrap and Cause funcs:
 - You can preserve the error context and pass to the calling program
 - Using the errors.Cause() function call we can determine what caused this error later in the program
 
-Nyah believes it’s a feature some developers my overlook but if used properly will give a better Go development experience.
+Nyah believes it's a feature some developers my overlook but if used properly will give a better Go development experience.
 
 Lessons learned:
 

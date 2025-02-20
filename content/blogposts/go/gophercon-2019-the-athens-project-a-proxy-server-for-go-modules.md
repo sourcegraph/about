@@ -34,7 +34,7 @@ Modules solved a lot, but _there's still work to do._
 
 ### How to break a Go app
 
-When you don’t have access to the Go modules you need for your app, everything falls apart. Here’s how that can happen:
+When you don't have access to the Go modules you need for your app, everything falls apart. Here's how that can happen:
 
 - `git push —delete origin v1.0.2`
 - Delete repo
@@ -61,7 +61,7 @@ It is 5 REST API endpoints:
    - `GET /bitbucket.com/my/other/module/@v/v1.0.0.info`
 5. Get module code frozen at a version, in a zip archive
    - `GET /repo.internal/my/third/module/@v/v1.0.0.zip`
-   - This is not a git tree, it’s source code frozen at a version
+   - This is not a git tree, it's source code frozen at a version
 
 ### The abstraction layer
 
@@ -79,7 +79,7 @@ It is 5 REST API endpoints:
 ## The Athens Solution
 
 - Implements the module API the same way that proxy.golang.org does
-- It’s an open source version of the Go proxy
+- It's an open source version of the Go proxy
 - You run it yourself, so you control it yourself
 - It will continue to work when GitHub or any other SPOF is down
 
@@ -92,6 +92,6 @@ It is 5 REST API endpoints:
 
 ## Decentralization
 
-- Keep in mind: APIs stay open because of participation - If we don’t use the API (cast our votes to keep it open), it may as well be closed - doesn't matter if there is only one implementation, it’s not - CALL: Go try Athens, go try Athens, get involved in the Athens community. - Make your stuff work with the rest of the ecosystem. - Benefits - Dependable builds - Keep our ecosystem growing at an amazing rate - Privacy benefits
+- Keep in mind: APIs stay open because of participation - If we don't use the API (cast our votes to keep it open), it may as well be closed - doesn't matter if there is only one implementation, it's not - CALL: Go try Athens, go try Athens, get involved in the Athens community. - Make your stuff work with the rest of the ecosystem. - Benefits - Dependable builds - Keep our ecosystem growing at an amazing rate - Privacy benefits
 - If you want to contribute to Athens - absolutely everybody is welcome! - # athens on Gophers Slack - We will help you get started into the community
 - To get inovled: - docs.gomods.io we have instructions on how to get started - Get it running locally with docker or using our binary - Come into the Athens channel on Gophers Slack - Get help submitting your first PR - Ask questions - Meet the community

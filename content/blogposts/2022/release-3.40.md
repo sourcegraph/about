@@ -30,7 +30,7 @@ changelogItems:
 </Alert>
 
 <Alert>
-  <strong>Update as of May 24:</strong> GitLab 15.0 no longer supports OAuth tokens that don’t expire, which can cause authorization between Sourcegraph and GitLab to fail. We are working to fix compatibility with GitLab 15.0 (and support expiring OAuth tokens) in an upcoming patch.
+  <strong>Update as of May 24:</strong> GitLab 15.0 no longer supports OAuth tokens that don't expire, which can cause authorization between Sourcegraph and GitLab to fail. We are working to fix compatibility with GitLab 15.0 (and support expiring OAuth tokens) in an upcoming patch.
 </Alert>
 
 Sourcegraph 3.40 is now available! Here are some highlights from this release:
@@ -41,7 +41,7 @@ Sourcegraph [dependencies search](https://docs.sourcegraph.com/code_search/how-t
 
 ## Local navigation for the top 8 languages is now faster and more accurate
 
-We [previously improved navigation speed for Java code](https://about.sourcegraph.com/blog/release/3.39/#Local-navigation-for-Java-code-is-now-faster-and-more-accurate) in Sourcegraph 3.39 by using [tree-sitter](https://tree-sitter.github.io/tree-sitter/). We’re now using tree-sitter for Go, C#, Python, JavaScript, TypeScript, C/C++, and Ruby as well. Hover tooltips for local variables in those languages will now populate far faster and the results will be more precise, so you can navigate through files quickly and with more confidence in the tooltip information.
+We [previously improved navigation speed for Java code](https://about.sourcegraph.com/blog/release/3.39/#Local-navigation-for-Java-code-is-now-faster-and-more-accurate) in Sourcegraph 3.39 by using [tree-sitter](https://tree-sitter.github.io/tree-sitter/). We're now using tree-sitter for Go, C#, Python, JavaScript, TypeScript, C/C++, and Ruby as well. Hover tooltips for local variables in those languages will now populate far faster and the results will be more precise, so you can navigate through files quickly and with more confidence in the tooltip information.
 
 ## Batch Changes on Bitbucket Cloud (experimental)
 

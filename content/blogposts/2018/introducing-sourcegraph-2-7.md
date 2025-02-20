@@ -32,7 +32,7 @@ Ready to install or upgrade? **[Install Sourcegraph 2.7](https://docs.sourcegrap
 
 ## From zero to code intelligence in seconds
 
-We’ve drastically simplified getting code intelligence up and running. When viewing a repository, the relevant language servers are now automatically enabled. For example, visiting a Go repository will now automatically download and run the Docker container for Go code intelligence. (This change does not affect cluster deployments.)
+We've drastically simplified getting code intelligence up and running. When viewing a repository, the relevant language servers are now automatically enabled. For example, visiting a Go repository will now automatically download and run the Docker container for Go code intelligence. (This change does not affect cluster deployments.)
 
 The new code intelligence admin panel allows you to view and manage language servers. It lets you enable, disable, update, and restart language servers at the click of a button. For cluster deployments, it shows the current status of language servers. Click **Code intelligence** in the site admin area to manage code intelligence.
 
@@ -44,7 +44,7 @@ You can now get code intelligence in Phabricator diffs. You can roll it out to y
 
 ## Diffs in Sourcegraph, with code intelligence
 
-You can now view and browse diffs with code intelligence directly in Sourcegraph. You can also view a repository’s Git branches, tags, and commits, and compare revisions. To view and browse a diff, click **Compare** and enter the relevant revisions or click a commit hash anywhere in the UI.
+You can now view and browse diffs with code intelligence directly in Sourcegraph. You can also view a repository's Git branches, tags, and commits, and compare revisions. To view and browse a diff, click **Compare** and enter the relevant revisions or click a commit hash anywhere in the UI.
 
 ![SourcegraphDiff](//images.ctfassets.net/le3mxztn6yoo/3nwI43eRv2E2CuEmU8iWeC/6b29190a669ee2fe5175741b25108b8f/SourcegraphDiff.png)
 
@@ -53,7 +53,7 @@ You can now view and browse diffs with code intelligence directly in Sourcegraph
 
 Sourcegraph can now answer "Which types implement this interface?" for any [extension](https://docs.sourcegraph.com/extensions) that supports the feature, for example Go. After clicking find references on an interface, click the **Implementations** tab in the references panel to view all implementations.
 
-We’ve also improved the references panel for all languages to also show the full docstring, all definitions, and external references grouped by calling repository.
+We've also improved the references panel for all languages to also show the full docstring, all definitions, and external references grouped by calling repository.
 
 ![Go Implementations](//images.ctfassets.net/le3mxztn6yoo/3IIFzwaA64EigaAkWiGk4C/42ce0b01c69af2d9853f274797e634dd/GoImplementations.png)
 

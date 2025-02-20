@@ -22,7 +22,7 @@ Today, we're announcing a major upgrade to Cody that achieves a best-in-class in
 
 Sourcegraph Code Search 5.2 features a number of admin usability improvements, including improved admin onboarding and troubleshooting features for repository syncing on very large codebases.
 
-Read on to learn more about what’s new. And, if you’d like to learn more about how we view the evolution of the code AI landscape, check out our other post: [How we’re thinking about the levels of Code AI](https://about.sourcegraph.com/blog/levels-of-code-ai).
+Read on to learn more about what's new. And, if you'd like to learn more about how we view the evolution of the code AI landscape, check out our other post: [How we're thinking about the levels of Code AI](https://about.sourcegraph.com/blog/levels-of-code-ai).
 
 ## Cody
 
@@ -34,7 +34,7 @@ Completion Acceptance Rate (CAR) has become a standard way to measure the qualit
 
 Cody's initial CAR in June was 15%. With the latest updates, Cody's daily CAR has reached as high as 30%. Cody autocomplete is also now much quicker, with P75 multiline latency improving from 3.4 seconds to 2.4 seconds and single-line latencies from 2.0 seconds to 1.1 seconds.
 
-A major factor in Cody’s improved performance comes from incorporating open source LLMs into Cody. Cody now uses the [StarCoder model](https://github.com/bigcode-project/starcoder) for the majority of its completions in the community edition. Cody’s StarCoder runs on [Fireworks](http://fireworks.ai/), a new platform that provides very fast inference for open source LLMs. Going forward, Cody for community users will make use of a combination of proprietary LLMs from Anthropic and open source models like StarCoder (the CAR we report comes from using Cody with StarCoder).
+A major factor in Cody's improved performance comes from incorporating open source LLMs into Cody. Cody now uses the [StarCoder model](https://github.com/bigcode-project/starcoder) for the majority of its completions in the community edition. Cody's StarCoder runs on [Fireworks](http://fireworks.ai/), a new platform that provides very fast inference for open source LLMs. Going forward, Cody for community users will make use of a combination of proprietary LLMs from Anthropic and open source models like StarCoder (the CAR we report comes from using Cody with StarCoder).
 
 Another factor driving improved CAR is that Cody now uses the [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) to determine when to trigger a completion and whether to generate a single-line or multi-line completion. Here's an example of where Cody opts for a one-shot multiline completion in contrast to another coding assistant that generates code line by line.
 
@@ -128,7 +128,7 @@ The `/doc` and `/test` commands have also been updated:
 
 The AI field is advancing at a breakneck pace, and that includes the development of new LLMs and models to support specific use cases. We see new LLMs emerge nearly every week, tuned for performance across a host of benchmarks. To provide the best possible code AI experience, we believe Cody needs to be universal, with support for plugging in the latest-and-greatest LLMs. 
 
-Cody now supports OpenAI models, and enterprise Cody users can choose from these models to power Cody’s chat and commands features:
+Cody now supports OpenAI models, and enterprise Cody users can choose from these models to power Cody's chat and commands features:
 
 - OpenAI GPT-3.5 Turbo
 - OpenAI GPT-4 
@@ -140,9 +140,9 @@ Cody now supports OpenAI models, and enterprise Cody users can choose from these
 
 ## Cody Enterprise users can bring their own LLM provider with Azure OpenAI and AWS Bedrock
 
-Alongside support for OpenAI models, users now have more choice in how they run the LLM powering Cody. Cody now supports both Azure OpenAI and AWS Bedrock hosted LLM services. Users can run either service from within their company’s own secure cloud VPC and configure Cody to talk to the LLM service.
+Alongside support for OpenAI models, users now have more choice in how they run the LLM powering Cody. Cody now supports both Azure OpenAI and AWS Bedrock hosted LLM services. Users can run either service from within their company's own secure cloud VPC and configure Cody to talk to the LLM service.
 
-By default, Cody accesses LLMs directly via Anthropic & OpenAI’s respective APIs (with 0 retention on both inputs and outputs). By configuring Cody to use Azure OpenAI or Bedrock instead, users can securely route requests from Cody to their own Azure & AWS accounts, plus control their own LLM costs directly.
+By default, Cody accesses LLMs directly via Anthropic & OpenAI's respective APIs (with 0 retention on both inputs and outputs). By configuring Cody to use Azure OpenAI or Bedrock instead, users can securely route requests from Cody to their own Azure & AWS accounts, plus control their own LLM costs directly.
 
 <a href="https://docs.sourcegraph.com/cody/overview/enable-cody-enterprise#azure-openai-span-class-badge-badge-experimental-experimental-span" className="not-italic flex items-center mb-sm">Docs<OpenInNewIcon className="ml-xxs" size={18} /></a>
 

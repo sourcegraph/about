@@ -22,9 +22,9 @@ Autocomplete has been overhauled with multiple under-the-hood changes, making it
 * Multi-line completions are significantly more accurate and relevant to the surrounding context
 * The average completion acceptance rate (CAR) for early users is up by >4%
 
-These updates are powered by several server-side and client-side optimizations. We’ve also updated the default autocomplete model from StarCoder to [DeepSeek-V2](https://huggingface.co/deepseek-ai/DeepSeek-V2), significantly improving responsiveness and accuracy.
+These updates are powered by several server-side and client-side optimizations. We've also updated the default autocomplete model from StarCoder to [DeepSeek-V2](https://huggingface.co/deepseek-ai/DeepSeek-V2), significantly improving responsiveness and accuracy.
 
-These updates are available now for Free and Pro users. We’ve rolled out some of these autocomplete updates to Enterprise users as well, but the most significant updates (including moving to DeepSeek-V2) will come to Enterprise users soon.
+These updates are available now for Free and Pro users. We've rolled out some of these autocomplete updates to Enterprise users as well, but the most significant updates (including moving to DeepSeek-V2) will come to Enterprise users soon.
 
 [Read more about the autocomplete updates](https://sourcegraph.com/blog/improving-cody-autocomplete-faster-smarter).
 
@@ -56,7 +56,7 @@ Huge _thank you_ to [Justin Milner](https://github.com/justinmilner1) for making
 
 ## Chat now uses the full sidebar width
 
-We heard from users that the chat wasn’t using the full sidebar width, and the chat text was narrower than needed. We’ve updated this to make chat more space-efficient.
+We heard from users that the chat wasn't using the full sidebar width, and the chat text was narrower than needed. We've updated this to make chat more space-efficient.
 
 <Figure
   src="https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-32-release/chat-width.png"
@@ -69,7 +69,7 @@ See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.3
 
 ## Thank you
 
-Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 We value your feedback in our [support forum](https://community.sourcegraph.com/c/cody/5), [Discord](https://discord.com/servers/sourcegraph-969688426372825169), and [GitHub](https://github.com/sourcegraph/cody). Happy Codying!
 

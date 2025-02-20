@@ -51,7 +51,7 @@ Sourcegraph couldn't be what it is without the community.
 
 Sourcegraph 3.11 introduces [structural search](https://docs.sourcegraph.com/code_search/reference/structural), a code-aware search syntax that can identify structural patterns in code. This enables advanced code search to specifically match patterns inside code structures such as function parameters and loop bodies.
 
-It can be awkward or difficult to match code blocks or nested expressions with regexp. To meet this challenge we’ve introduced a new and easier way to search code that operates more closely on the parse tree of the input using [Comby syntax](https://comby.dev/) for structural matching.
+It can be awkward or difficult to match code blocks or nested expressions with regexp. To meet this challenge we've introduced a new and easier way to search code that operates more closely on the parse tree of the input using [Comby syntax](https://comby.dev/) for structural matching.
 
 For example, this can be used to [find all the places that `fmt.Sprintf` are unnecessary](https://sourcegraph.com/search?q=repo:sourcegraph/sourcegraph%24+%27fmt.Sprintf%28%22:%5Bstr%5D%22%29%27&patternType=structural):
 
@@ -82,7 +82,7 @@ In the rare event that your Sourcegraph instance is misconfigured and causes the
 <Alert type="warning">
   <div>
     <strong>NOTE:</strong>
-    If you’re using the <code>CRITICAL_CONFIG_FILE</code> or <code>SITE_CONFIG_FILE</code> environment variables please see our <a href="https://docs.sourcegraph.com/admin/migration/3_11#management-console-removal">management console migration guide</a> for more details.
+    If you're using the <code>CRITICAL_CONFIG_FILE</code> or <code>SITE_CONFIG_FILE</code> environment variables please see our <a href="https://docs.sourcegraph.com/admin/migration/3_11#management-console-removal">management console migration guide</a> for more details.
   </div>
 </Alert>
 
@@ -140,7 +140,7 @@ This month we published a [new case study](https://about.sourcegraph.com/case-st
 
 ### See you at GitLab Commit 2020 in San Francisco
 
-Sourcegraph is sponsoring [GitLab Commit](https://about.gitlab.com/events/commit/) in San Francisco this January. We’re looking forward to speaking with GitLab users about the importance of [IDE quality code intelligence when browsing and reviewing code on GitLab](https://about.sourcegraph.com/blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence). We’d love to see you there! Come say hello and pick up some great swag at our booth on level 1.
+Sourcegraph is sponsoring [GitLab Commit](https://about.gitlab.com/events/commit/) in San Francisco this January. We're looking forward to speaking with GitLab users about the importance of [IDE quality code intelligence when browsing and reviewing code on GitLab](https://about.sourcegraph.com/blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence). We'd love to see you there! Come say hello and pick up some great swag at our booth on level 1.
 
 ![GitLab and Sourcegraph logos](/blog/gitlab-integration-banner-dark.png "GitLab and Sourcegraph logos")
 

@@ -21,7 +21,7 @@ Just one hour after Anthropic released Claude 3.5 Sonnet in June, we [released a
 
 ![Claude 3.5 Sonnet Picker](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-26-release/claude-3.5-sonnet-picker-1.png)
 
-This default change applies to new users only (but Claude 3.5 Sonnet is [available to both Cody Free and Cody Pro users](https://sourcegraph.com/blog/making-cody-free-10x-better)). If you’re already a Cody user, just select Claude 3.5 Sonnet from the model dropdown list.
+This default change applies to new users only (but Claude 3.5 Sonnet is [available to both Cody Free and Cody Pro users](https://sourcegraph.com/blog/making-cody-free-10x-better)). If you're already a Cody user, just select Claude 3.5 Sonnet from the model dropdown list.
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/cody-vscode-1-26-release/claude-3.5-sonnet-picker-2.png)
 
@@ -80,7 +80,7 @@ See the [changelog](https://github.com/sourcegraph/cody/releases/tag/vscode-v1.2
 
 ## Thank you
 
-Cody wouldn’t be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
+Cody wouldn't be what it is without our amazing contributors 💖 A big thank you to everyone who contributed, filed issues, and sent us feedback.
 
 We value your feedback in our [support forum](https://community.sourcegraph.com/c/cody/5), [Discord](https://discord.com/servers/sourcegraph-969688426372825169), and [GitHub](https://github.com/sourcegraph/cody). Happy Codying!
 

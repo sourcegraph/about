@@ -30,11 +30,11 @@ The Resident Architect will perform quarterly and monthly planning with the cust
 
 
 ### Direct Access
-The Resident Architect will perform the determined activities either by working collaboratively with an organization's admin or independently via direct badged-access to the customer's environment. This will be dependent on the organization’s desire and ability to grant this access to the Sourcegraph team, and the level of access that can be granted. Access is strongly recommended for this service. If your organization is interested in having Sourcegraph directly access your environment during an implementation, this should be discussed prior to purchasing the service.
+The Resident Architect will perform the determined activities either by working collaboratively with an organization's admin or independently via direct badged-access to the customer's environment. This will be dependent on the organization's desire and ability to grant this access to the Sourcegraph team, and the level of access that can be granted. Access is strongly recommended for this service. If your organization is interested in having Sourcegraph directly access your environment during an implementation, this should be discussed prior to purchasing the service.
 
 ### Consumption Rules
 The parties agree that the following rules shall apply to the consumption of hours set forth above:
-  - (a) Availability: Unless otherwise agreed by the parties in writing, Professional Services will be performed Monday through Friday, between the hours of 8:00 a.m. – 7:00 p.m. in the Customer’s local time zone. Work outside of the hours above, work on weekends or on local holidays must be pre-approved in writing by Sourcegraph.
+  - (a) Availability: Unless otherwise agreed by the parties in writing, Professional Services will be performed Monday through Friday, between the hours of 8:00 a.m. – 7:00 p.m. in the Customer's local time zone. Work outside of the hours above, work on weekends or on local holidays must be pre-approved in writing by Sourcegraph.
   - (b) Location: Professional Services will be performed at a remote location.
   - (c) Multiple Personnel: Sourcegraph may, at its sole discretion, choose to engage different consulting personnel for different portions of the Professional Services.
   - (d) Any hours set forth above not consumed during the Subscription Period will expire.

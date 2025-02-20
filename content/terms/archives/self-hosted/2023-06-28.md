@@ -20,11 +20,11 @@ Thank you for using Sourcegraph! This page lays out the basic terms and conditio
 
   - **A self-hosted Sourcegraph instance**: You're in the right place! Read on.
 
-  - **[Sourcegraph Cloud](/terms/cloud)**: If you’d like to use Sourcegraph Cloud (the public Sourcegraph instance that can be used to search, navigate, and analyze public code) rather than a self-hosted instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with Sourcegraph Cloud, please see our [Sourcegraph Cloud terms and conditions](/terms/cloud).
+  - **[Sourcegraph Cloud](/terms/cloud)**: If you'd like to use Sourcegraph Cloud (the public Sourcegraph instance that can be used to search, navigate, and analyze public code) rather than a self-hosted instance, or if you'd like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with Sourcegraph Cloud, please see our [Sourcegraph Cloud terms and conditions](/terms/cloud).
 
   - **[Sourcegraph OSS](https://github.com/sourcegraph/sourcegraph/blob/main/LICENSE.apache)**: It is possible to run a version of Sourcegraph without some Enterprise features from our open source code available at https://github.com/sourcegraph/sourcegraph. If you want to follow the instructions there to build and run Sourcegraph OSS from source, please see the open source license (Apache 2.0) at https://github.com/sourcegraph/sourcegraph/blob/main/LICENSE.apache.
 
-  - **[Government](/terms/gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you’re using our software as an employee or contractor of the U.S. Government, our [Supplemental Terms for U.S. Government Users](/terms/gov) apply. Those terms and conditions supplement these terms and conditions.
+  - **[Government](/terms/gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you're using our software as an employee or contractor of the U.S. Government, our [Supplemental Terms for U.S. Government Users](/terms/gov) apply. Those terms and conditions supplement these terms and conditions.
 </div>
 
 PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION. THE AGREEMENT CONTAINS A MANDATORY INDIVIDUAL ARBITRATION AND CLASS ACTION/JURY TRIAL WAIVER PROVISION THAT REQUIRES THE USE OF ARBITRATION ON AN INDIVIDUAL BASIS TO RESOLVE DISPUTES, RATHER THAN JURY TRIALS OR CLASS ACTIONS.
@@ -95,7 +95,7 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 
       <tr>
         <td>11. <a href="#11-indemnification">Indemnification</a></td>
-        <td>The parties’ respective indemnification obligations</td>
+        <td>The parties' respective indemnification obligations</td>
       </tr>
 
       <tr>
@@ -138,7 +138,7 @@ As used on this page, the following terms have the following specific meanings:
 
 1.8 “**Usage Data**” includes usage and operations information in connection with your use of the Service. 
 
-1.9 **“You”** refers to the individual person, company, or organization that is using the Software, that accesses an Instance, or that directs the use of the Instance. If you’re entering into the Agreement on behalf of your company or organization including its affiliates and subsidiaries (your **“Organization”**), then (i) your acceptance of this Agreement binds that Organization, (ii) you represent and warrant that you’re authorized to bind that company or organization to the Agreement, and (iii) references to “you” will mean you and your Organization.
+1.9 **“You”** refers to the individual person, company, or organization that is using the Software, that accesses an Instance, or that directs the use of the Instance. If you're entering into the Agreement on behalf of your company or organization including its affiliates and subsidiaries (your **“Organization”**), then (i) your acceptance of this Agreement binds that Organization, (ii) you represent and warrant that you're authorized to bind that company or organization to the Agreement, and (iii) references to “you” will mean you and your Organization.
 
 1.10 **“Your Code”** means the source code and all source code metadata (e.g. version control system (VCS) data) that you analyze via the Software.
 
@@ -152,18 +152,18 @@ As used on this page, the following terms have the following specific meanings:
 
 2.1 **Account Responsibility and Security.**
 
-1. **Generally**. If you’re entering into the Agreement on behalf of your Organization, your Organization has administrative control of all Instances tied to the Organization. You are or your Organization is fully responsible for your Instance and all Content posted under it.
+1. **Generally**. If you're entering into the Agreement on behalf of your Organization, your Organization has administrative control of all Instances tied to the Organization. You are or your Organization is fully responsible for your Instance and all Content posted under it.
 
 2. **Age Limitation**. In order to create an Instance, you must be at least eighteen (18) years old and we do not permit any users under thirteen (13) years old to use our Software for any purpose. If we discover that an Instance is being used by a user under thirteen (13) years old, we will notify you that the Instance must immediately be shut down.
 
-3. **Security**. You’re responsible for the security of your Instance when using our Software. While we may offer tools to help you maintain your Instance’s security, these are not guaranteed to work. You’re responsible for all Content posted on your Instance under your user account, even if you didn't post it. We have no liability of any kind for any loss or damage from your failure to secure your Instance.
+3. **Security**. You're responsible for the security of your Instance when using our Software. While we may offer tools to help you maintain your Instance's security, these are not guaranteed to work. You're responsible for all Content posted on your Instance under your user account, even if you didn't post it. We have no liability of any kind for any loss or damage from your failure to secure your Instance.
 
 <span className="text-blurple-400">
   ## 3. Acceptable use
 </span>
 
 <span className="text-gray-400">
-  *__Short version__: You’re allowed to use Sourcegraph for any reasonable purposes (e.g., don’t try to re-sell it, don’t violate your license, etc.). If you post any comments or other content, you’re responsible for it, and we have the right to display it to other users per your settings. If you give us a great idea about how to improve our services, we can use it.*
+  *__Short version__: You're allowed to use Sourcegraph for any reasonable purposes (e.g., don't try to re-sell it, don't violate your license, etc.). If you post any comments or other content, you're responsible for it, and we have the right to display it to other users per your settings. If you give us a great idea about how to improve our services, we can use it.*
 </span>
 
 3.1 **License from Us to You**. The source code for our Software is publicly available at https://github.com/sourcegraph. Your rights to access and use that code is covered by the software license in that repository.
@@ -178,7 +178,7 @@ As used on this page, the following terms have the following specific meanings:
 
 4. use any release of the Software that is more than one (1) version older than the then-most-current release of the Software.
 
-3.3 **No Sensitive Data**. You acknowledge and agree that, (i) the Software is not designed to store Sensitive Data (as defined below), and (ii) you will not use the Software to store Sensitive Data. “Sensitive Data” means: (i) special categories of data enumerated in European Union Regulation 2016/679, Article 9(1) or any successor legislation; (ii) protected health information as defined in HIPAA; (iii) payment cardholder information or financial account information, including bank account numbers or other personally identifiable financial information; (iv) social security numbers, driver’s license numbers, or other government identification numbers; (v) private encryption keys, passwords, or other credentials; (vi) other information subject to regulation or protection under specific laws such as the Children’s Online Privacy Protection Act or Gramm-Leach-Bliley Act (“GLBA”) or related rules or regulations; or (vi) any data similar to the above protected under applicable laws. You acknowledge that the Software and related features are not intended to meet any legal obligations for these uses, including HIPAA and GLBA requirements and that we are not a Business Associate as defined under HIPAA. Therefore, notwithstanding anything else in this Agreement, we have no liability for Sensitive Data processed in connection with your use of the Software.
+3.3 **No Sensitive Data**. You acknowledge and agree that, (i) the Software is not designed to store Sensitive Data (as defined below), and (ii) you will not use the Software to store Sensitive Data. “Sensitive Data” means: (i) special categories of data enumerated in European Union Regulation 2016/679, Article 9(1) or any successor legislation; (ii) protected health information as defined in HIPAA; (iii) payment cardholder information or financial account information, including bank account numbers or other personally identifiable financial information; (iv) social security numbers, driver's license numbers, or other government identification numbers; (v) private encryption keys, passwords, or other credentials; (vi) other information subject to regulation or protection under specific laws such as the Children's Online Privacy Protection Act or Gramm-Leach-Bliley Act (“GLBA”) or related rules or regulations; or (vi) any data similar to the above protected under applicable laws. You acknowledge that the Software and related features are not intended to meet any legal obligations for these uses, including HIPAA and GLBA requirements and that we are not a Business Associate as defined under HIPAA. Therefore, notwithstanding anything else in this Agreement, we have no liability for Sensitive Data processed in connection with your use of the Software.
 
 3.4 **Ownership of the Software**. The Software is owned and operated by Sourcegraph. All Content made available via the Software is owned by us or our licensors and is protected by intellectual property and other applicable laws. All of our trademarks, service marks, and trade names are proprietary to us or our affiliates.
 
@@ -207,7 +207,7 @@ We may collect Usage Data derived from your use of the Software to develop, impr
 </span>
 
 <span className="text-gray-400">
-  *__Short version__: Our privacy policy tells you what you need to know about how we use any personal information you provide to us. The internet is a dangerous place and, while we’ve instituted safeguards to protect your information, you understand that data breaches happen and we can’t guarantee perfect security.*
+  *__Short version__: Our privacy policy tells you what you need to know about how we use any personal information you provide to us. The internet is a dangerous place and, while we've instituted safeguards to protect your information, you understand that data breaches happen and we can't guarantee perfect security.*
 </span>
 
 Data security and user privacy are very, VERY important to us. Please read our [Privacy Policy](/terms/privacy) carefully for details relating to how we collect, use, and disclose personal information you provide to us in connection with your use of the Software.
@@ -219,7 +219,7 @@ As the Software is provided in the form of a self-hosted Instance, Sourcegraph w
 </span>
 
 <span className="text-gray-400">
-  *__Short version__: We will each protect the other party’s confidential information.*
+  *__Short version__: We will each protect the other party's confidential information.*
 </span>
 
 6.1 **Definition**. **"Confidential Information"** means all non-public information disclosed by us to you, or vice-versa, that is designated by the discloser as confidential or that reasonably should be considered confidential given the nature of the information or circumstances of its disclosure.
@@ -257,7 +257,7 @@ As the Software is provided in the form of a self-hosted Instance, Sourcegraph w
 </span>
 
 <span className="text-gray-400">
-  *__Short version__: You’re responsible for any fees associated with your use of Sourcegraph. Your subscription will automatically renew, unless an Order Form states otherwise.*
+  *__Short version__: You're responsible for any fees associated with your use of Sourcegraph. Your subscription will automatically renew, unless an Order Form states otherwise.*
 </span>
 
 8.1 **Pricing**. You are responsible for paying any applicable fees as set forth on our [Pricing and Payment Terms](/pricing) or in an Order Form and applicable taxes associated with the Software in a timely manner with a valid payment method. Unless otherwise stated in an Order Form, you will pay all invoices within thirty (30) days of receipt. You agree that we may charge for any such fees owed. You are required to keep your billing information current.
@@ -289,12 +289,12 @@ CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCL
 </span>
 
 <span className="text-gray-400">
-  *__Short version__: Each party’s liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us to access the software. Please read this section carefully.*
+  *__Short version__: Each party's liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us to access the software. Please read this section carefully.*
 </span>
 
 EACH PARTY WILL BE LIABLE TO THE OTHER PARTY FOR DIRECT DAMAGES ONLY. THE FOLLOWING TYPES OF DAMAGES WILL BE EXCLUDED: INDIRECT DAMAGES, CONSEQUENTIAL DAMAGES, SPECIAL DAMAGES, PUNITIVE DAMAGES, LOST PROFITS, LOST REPUTATION, AND COST OF REPLACEMENT SERVICES.
 
-EXCEPT FOR EXCLUDED CATEGORIES OR WHERE PROHIBITED BY LAW OR FEES OWED EXCEED THE BELOW LIMIT, NEITHER PARTY’S TOTAL LIABILITY TO THE OTHER (AGGREGATED ACROSS ALL CLAIMS) WILL EXCEED YOUR ANNUAL LICENSE FEE IN THE SUBSCRIPTION YEAR IN WHICH THE UNDERLYING CLAIM AROSE OR ONE HUNDRED DOLLARS ($100), WHICHEVER IS GREATER.  EXCLUDED CATEGORIES ARE IN THE FOLLOWING CATEGORIES FOR PAID SUBSCRIPTIONS: IP INDEMNIFICATION AS DESCRIBED IN SECTION 11.2.
+EXCEPT FOR EXCLUDED CATEGORIES OR WHERE PROHIBITED BY LAW OR FEES OWED EXCEED THE BELOW LIMIT, NEITHER PARTY'S TOTAL LIABILITY TO THE OTHER (AGGREGATED ACROSS ALL CLAIMS) WILL EXCEED YOUR ANNUAL LICENSE FEE IN THE SUBSCRIPTION YEAR IN WHICH THE UNDERLYING CLAIM AROSE OR ONE HUNDRED DOLLARS ($100), WHICHEVER IS GREATER.  EXCLUDED CATEGORIES ARE IN THE FOLLOWING CATEGORIES FOR PAID SUBSCRIPTIONS: IP INDEMNIFICATION AS DESCRIBED IN SECTION 11.2.
 
 <span className="text-blurple-400">
   ### **11. Indemnification**
@@ -304,28 +304,28 @@ EXCEPT FOR EXCLUDED CATEGORIES OR WHERE PROHIBITED BY LAW OR FEES OWED EXCEED TH
   *__Short version__: Each of us agrees to defend the other against third-party lawsuits that result from matters under our respective responsibility.*
 </span>
 
-11.1 **By You**. You agree to defend us from and against any third-party claims, proceedings, demands, and investigations and indemnify us for damages, attorney’s fees, and costs arising from Your Code or Content, your use of the Software in violation of the Agreement including any data or work transmitted or received by you, your violation of the Agreement or applicable laws, your infringement of any third-party intellectual property or other right of any person or entity, or any other party’s access and use of the Software with your unique username, password, or other appropriate security code.
+11.1 **By You**. You agree to defend us from and against any third-party claims, proceedings, demands, and investigations and indemnify us for damages, attorney's fees, and costs arising from Your Code or Content, your use of the Software in violation of the Agreement including any data or work transmitted or received by you, your violation of the Agreement or applicable laws, your infringement of any third-party intellectual property or other right of any person or entity, or any other party's access and use of the Software with your unique username, password, or other appropriate security code.
 
-11.2 **By Sourcegraph**. We agree to defend you from and against any third-party claims, proceedings, demands, and investigations and indemnify you for damages, attorney’s fees, and costs arising from your use of the Software or Documentation in accordance with this Agreement that infringes or misappropriates such third-party’s intellectual property rights, provided that (i) your use conforms with the Agreement and Documentation and does not arise from a violation of your obligations under this Agreement, (ii) your use is of the most current Software version, and (iii) the claim does not arise from Your Code or Content or any modification, combination, or development of the Software not performed by us.
+11.2 **By Sourcegraph**. We agree to defend you from and against any third-party claims, proceedings, demands, and investigations and indemnify you for damages, attorney's fees, and costs arising from your use of the Software or Documentation in accordance with this Agreement that infringes or misappropriates such third-party's intellectual property rights, provided that (i) your use conforms with the Agreement and Documentation and does not arise from a violation of your obligations under this Agreement, (ii) your use is of the most current Software version, and (iii) the claim does not arise from Your Code or Content or any modification, combination, or development of the Software not performed by us.
 
-11.3 **Procedure**. Each party must give the other prompt written notice of any defense or indemnity sought and reasonable cooperation in the defense. The defending party will have sole control of the defense and settlement, provided that neither party may enter into a settlement placing any material obligation of any kind, including any admission of liability or payment of any amount, on the other party without the other party’s prior written approval, not to be unreasonably withheld, conditioned, or delayed.
+11.3 **Procedure**. Each party must give the other prompt written notice of any defense or indemnity sought and reasonable cooperation in the defense. The defending party will have sole control of the defense and settlement, provided that neither party may enter into a settlement placing any material obligation of any kind, including any admission of liability or payment of any amount, on the other party without the other party's prior written approval, not to be unreasonably withheld, conditioned, or delayed.
 
 <span className="text-blurple-400">
   ### **12. Export controls**
 </span>
 
 <span className="text-gray-400">
-  *__Short version__: Don’t use our site or software if you’re located in an embargoed country.*
+  *__Short version__: Don't use our site or software if you're located in an embargoed country.*
 </span>
 
-The Software and the underlying information and technology may not be downloaded or otherwise exported or re-exported (a) into (or to a national or resident of) any country to which the U.S. has embargoed goods; or (b) to anyone on the U.S. Treasury Department’s list of Specially Designated Nationals or the U.S. Commerce Department’s Table of Deny Orders. By downloading or using the Software, you are agreeing to the foregoing and you represent and warrant that you are not located in, under the control of, or a national or resident of any such country or on any such list and you agree to comply with all export laws and other applicable laws.
+The Software and the underlying information and technology may not be downloaded or otherwise exported or re-exported (a) into (or to a national or resident of) any country to which the U.S. has embargoed goods; or (b) to anyone on the U.S. Treasury Department's list of Specially Designated Nationals or the U.S. Commerce Department's Table of Deny Orders. By downloading or using the Software, you are agreeing to the foregoing and you represent and warrant that you are not located in, under the control of, or a national or resident of any such country or on any such list and you agree to comply with all export laws and other applicable laws.
 
 <span className="text-blurple-400">
   ### **13. Governing law; arbitration; and class action/jury trial waiver**
 </span>
 
 <span className="text-gray-400">
-  *__Short version__: If you're based in California like we are, the agreement is governed by California law, and all disputes must be brought there; otherwise, the Agreement is governed by New York law and disputes must be brought in New York. If you have a claim against us, you’ll work with us to arbitrate it on an individual basis instead of via class action or jury trial.*
+  *__Short version__: If you're based in California like we are, the agreement is governed by California law, and all disputes must be brought there; otherwise, the Agreement is governed by New York law and disputes must be brought in New York. If you have a claim against us, you'll work with us to arbitrate it on an individual basis instead of via class action or jury trial.*
 </span>
 
 13.1 **Governing Law**. This Agreement will be interpreted according to the laws of the jurisdiction stated below (“**Governing Jurisdiction**”). Notwithstanding the applicable Governing Jurisdiction, any arbitration conducted pursuant to the terms of these Terms shall be governed by the Federal Arbitration Act (9 U.S.C. §§ 1-16). The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded. You agree to submit to the personal jurisdiction of the federal and state courts located in the forum stated below (“**Forum**”) for any actions for which we retain the right to seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation or violation of a our copyrights, trademarks, trade secrets, patents, or other intellectual property or proprietary rights, as set forth in the Arbitration provision below, including any provisional relief required to prevent irreparable harm. You agree that the Forum stated below is the proper forum for any appeals of an arbitration award or for trial court proceedings if the arbitration provision below is found to be unenforceable.
@@ -348,21 +348,21 @@ The Software and the underlying information and technology may not be downloaded
 
 <br />
 
-13.2 **Arbitration**. Read this section carefully because it requires the parties to arbitrate their disputes and limits the manner in which you can seek relief from us. For any dispute with us, you agree to first contact us at support@sourcegraph.com and attempt to resolve the dispute with us informally. In the unlikely event that we have not been able to resolve a dispute it has with you after sixty (60) days, we each agree to resolve any claim, dispute, or controversy (excluding any claims for injunctive or other equitable relief as provided below) arising out of or in connection with or relating to the Agreement, or the breach or alleged breach thereof, by binding arbitration by JAMS, under the Optional Expedited Arbitration Procedures then in effect for JAMS, except as provided herein. JAMS may be contacted at www.jamsadr.com. The arbitration will be conducted in Santa Clara County, California, unless we agree otherwise. If you are using the Software for commercial purposes, each party will be responsible for paying any JAMS filing, administrative and arbitrator fees in accordance with JAMS rules, and the award rendered by the arbitrator shall include costs of arbitration, reasonable attorneys’ fees and reasonable costs for expert and other witnesses. Any judgment on the award rendered by the arbitrator may be entered in any court of competent jurisdiction. Nothing in this section shall be deemed as preventing us from seeking injunctive or other equitable relief from the courts as necessary to prevent the actual or threatened infringement, misappropriation, or violation of our data security, intellectual property or other proprietary rights.
+13.2 **Arbitration**. Read this section carefully because it requires the parties to arbitrate their disputes and limits the manner in which you can seek relief from us. For any dispute with us, you agree to first contact us at support@sourcegraph.com and attempt to resolve the dispute with us informally. In the unlikely event that we have not been able to resolve a dispute it has with you after sixty (60) days, we each agree to resolve any claim, dispute, or controversy (excluding any claims for injunctive or other equitable relief as provided below) arising out of or in connection with or relating to the Agreement, or the breach or alleged breach thereof, by binding arbitration by JAMS, under the Optional Expedited Arbitration Procedures then in effect for JAMS, except as provided herein. JAMS may be contacted at www.jamsadr.com. The arbitration will be conducted in Santa Clara County, California, unless we agree otherwise. If you are using the Software for commercial purposes, each party will be responsible for paying any JAMS filing, administrative and arbitrator fees in accordance with JAMS rules, and the award rendered by the arbitrator shall include costs of arbitration, reasonable attorneys' fees and reasonable costs for expert and other witnesses. Any judgment on the award rendered by the arbitrator may be entered in any court of competent jurisdiction. Nothing in this section shall be deemed as preventing us from seeking injunctive or other equitable relief from the courts as necessary to prevent the actual or threatened infringement, misappropriation, or violation of our data security, intellectual property or other proprietary rights.
 
-13.3 **Class Action/Jury Trial Waiver**. WITH RESPECT TO ALL PERSONS AND ENTITIES, REGARDLESS OF WHETHER THEY HAVE OBTAINED OR USED THE SOFTWARE FOR PERSONAL, COMMERCIAL OR OTHER PURPOSES, ALL CLAIMS MUST BE BROUGHT IN THE PARTIES’ INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS ACTION, COLLECTIVE ACTION, PRIVATE ATTORNEY GENERAL ACTION OR OTHER REPRESENTATIVE PROCEEDING. THIS WAIVER APPLIES TO CLASS ARBITRATION, AND, UNLESS WE AGREE OTHERWISE, THE ARBITRATOR MAY NOT CONSOLIDATE MORE THAN ONE PERSON’S CLAIMS. YOU AGREE THAT, BY ENTERING INTO THE AGREEMENT, WE ARE EACH WAIVING THE RIGHT TO A TRIAL BY JURY OR TO PARTICIPATE IN A CLASS ACTION, COLLECTIVE ACTION, PRIVATE ATTORNEY GENERAL ACTION, OR OTHER REPRESENTATIVE PROCEEDING OF ANY KIND.
+13.3 **Class Action/Jury Trial Waiver**. WITH RESPECT TO ALL PERSONS AND ENTITIES, REGARDLESS OF WHETHER THEY HAVE OBTAINED OR USED THE SOFTWARE FOR PERSONAL, COMMERCIAL OR OTHER PURPOSES, ALL CLAIMS MUST BE BROUGHT IN THE PARTIES' INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS ACTION, COLLECTIVE ACTION, PRIVATE ATTORNEY GENERAL ACTION OR OTHER REPRESENTATIVE PROCEEDING. THIS WAIVER APPLIES TO CLASS ARBITRATION, AND, UNLESS WE AGREE OTHERWISE, THE ARBITRATOR MAY NOT CONSOLIDATE MORE THAN ONE PERSON'S CLAIMS. YOU AGREE THAT, BY ENTERING INTO THE AGREEMENT, WE ARE EACH WAIVING THE RIGHT TO A TRIAL BY JURY OR TO PARTICIPATE IN A CLASS ACTION, COLLECTIVE ACTION, PRIVATE ATTORNEY GENERAL ACTION, OR OTHER REPRESENTATIVE PROCEEDING OF ANY KIND.
 
 <span className="text-blurple-400">
   ### **14. Miscellaneous**
 </span>
 
-14.1 **Notices and Electronic Communications**. We may provide you with (and you hereby consent to our provision of) notices, including those regarding changes to our terms and conditions, by email, regular mail, or postings on the Site. Notice will be deemed given twenty-four hours after email is sent, unless we’re notified that the email address is invalid. Notice posted on the Site is deemed given five (5) days following the initial posting. We reserve the right to determine the form and means of providing notifications to our users, provided that you may opt out of certain means of notification as described in the Agreement. We are not responsible for any automatic filtering you or your network provider may apply to email notifications we send to the email address you provide us.
+14.1 **Notices and Electronic Communications**. We may provide you with (and you hereby consent to our provision of) notices, including those regarding changes to our terms and conditions, by email, regular mail, or postings on the Site. Notice will be deemed given twenty-four hours after email is sent, unless we're notified that the email address is invalid. Notice posted on the Site is deemed given five (5) days following the initial posting. We reserve the right to determine the form and means of providing notifications to our users, provided that you may opt out of certain means of notification as described in the Agreement. We are not responsible for any automatic filtering you or your network provider may apply to email notifications we send to the email address you provide us.
 
-14.2 **Updates and Modifications**. We may update the Agreement (including these Terms) from time to time. When we change the Agreement (including these Terms) in a material manner, we will update the ‘last modified’ date at the top of this page and notify you that material changes have been made to the Agreement. Your continued use of the Software after any such change constitutes your acceptance of the new Terms of Service, unless you have signed an Order Form with us where the terms in effect as of your Order Date will apply. If you have purchased a subscription to use the Software, any change to these Terms will be effective with respect to such Software upon the renewal of your subscription, unless otherwise stated in an Order Form.
+14.2 **Updates and Modifications**. We may update the Agreement (including these Terms) from time to time. When we change the Agreement (including these Terms) in a material manner, we will update the ‘last modified' date at the top of this page and notify you that material changes have been made to the Agreement. Your continued use of the Software after any such change constitutes your acceptance of the new Terms of Service, unless you have signed an Order Form with us where the terms in effect as of your Order Date will apply. If you have purchased a subscription to use the Software, any change to these Terms will be effective with respect to such Software upon the renewal of your subscription, unless otherwise stated in an Order Form.
 
 14.3 **U.S. Government End Users**. The Software and Documentation were developed by private financing and constitute a “Commercial Item,” as that term is defined at 48 C.F.R. § 2.101. The Software and Documentation consist of “Commercial Computer Software” and “Commercial Computer Software Documentation,” as such terms are used in 48 C.F.R. § 12.212. Consistent with 48 C.F.R. § 12.212 and 48 C.F.R. §§ 227.7202-1 through 227.7202-4, all U.S. Government End Users acquire only those rights in the Software and the Documentation that are specifically provided by this Agreement. Consistent with 48 C.F.R. § 12.211, all U.S. Government End Users acquire only technical data and the rights in that data customarily as specifically provided in this Agreement.
 
-14.4 **Waiver**. A party’s failure to exercise or enforce any right or provision of the Agreement will not constitute a waiver of such right or provision. Any waiver of any provision of the Agreement will be effective only if in writing and signed by the waiving party.
+14.4 **Waiver**. A party's failure to exercise or enforce any right or provision of the Agreement will not constitute a waiver of such right or provision. Any waiver of any provision of the Agreement will be effective only if in writing and signed by the waiving party.
 
 14.5 **Severability**. If any provision of the Agreement is held to be unlawful, void, or for any reason unenforceable, then that provision will be limited or eliminated from the Agreement to the minimum extent necessary and will not affect the validity and enforceability of any remaining provisions; except that in the event of unenforceability of the universal Class Action/Jury Trial Waiver, the entire arbitration agreement shall be unenforceable.
 
@@ -372,7 +372,7 @@ The Software and the underlying information and technology may not be downloaded
 
 14.8 **Headings**. The heading references herein are for convenience only, do not constitute a part of the Agreement, and will not be deemed to limit or affect any of the provisions hereof.
 
-14.9. **Marketing and Publicity**. Unless otherwise stated in an Order Form, we may freely refer to your Organization and your relationship with us in connection with publicizing and marketing our products and services, including using your Organization’s name and logo to identify your Organization as a customer and using product testimonials and quotes your Organization’s representatives may provide to us.
+14.9. **Marketing and Publicity**. Unless otherwise stated in an Order Form, we may freely refer to your Organization and your relationship with us in connection with publicizing and marketing our products and services, including using your Organization's name and logo to identify your Organization as a customer and using product testimonials and quotes your Organization's representatives may provide to us.
 
 14.10 **Entire Agreement**. This, including the agreements incorporated by reference, constitutes the entire agreement between you and us relating to the subject matter herein and will not be modified except in writing, signed by both parties, or by a change made by us as set forth in the Agreement.
 

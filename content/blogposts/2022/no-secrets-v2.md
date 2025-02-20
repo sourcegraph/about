@@ -54,7 +54,7 @@ _Thanks to the following people for helping with this post: Beyang Liu, André E
 
 #### About the author
 
-Justin Dorfman is Sourcegraph’s Open Source Program Manager and is responsible for
+Justin Dorfman is Sourcegraph's Open Source Program Manager and is responsible for
 fostering the adoption of code intelligence in the open source community. You can chat with Justin on Twitter [@jdorfman](https://twitter.com/jdorfman) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)
 
 ### More posts like this

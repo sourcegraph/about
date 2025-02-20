@@ -77,7 +77,7 @@ As we continue to make incremental improvements, Sourcegraph search is getting f
 - [Symbol search is now performant at scale (see above)](#symbol-search-performant-at-scale)
 - Searches making use of the `repohasfile:` filter are now faster.
 - The indexed-search code path, Zoekt, now runs garbage collections twice as frequently, which reduces Sourcegraph's memory consumption.
-- We’ve improved support for Unicode search results, so that [combined characters now highlight properly](https://github.com/sourcegraph/sourcegraph/issues/4791#issuecomment-510203777).
+- We've improved support for Unicode search results, so that [combined characters now highlight properly](https://github.com/sourcegraph/sourcegraph/issues/4791#issuecomment-510203777).
 
 ## More accurate TypeScript code intelligence
 
@@ -92,7 +92,7 @@ Out-of-the-box TypeScript code intelligence has been improved with an updated ct
 
 ## Improved efficiency of Git requests
 
-We now use Git protocol version 2 with compatible code hosts. This can significantly increase the efficiency and performance of a `git fetch` by reducing the amount of data transmitted over the wire, especially when Sourcegraph’s copy is only a few commits behind the remote (a common situation).
+We now use Git protocol version 2 with compatible code hosts. This can significantly increase the efficiency and performance of a `git fetch` by reducing the amount of data transmitted over the wire, especially when Sourcegraph's copy is only a few commits behind the remote (a common situation).
 
 As an illustrative example, when Git protocol version 2 is used, `git fetch` on an up-to-date clone of [Kubernetes](https://github.com/kubernetes/kubernetes) is up to 2x faster and consumes up to 4x less client CPU (averaged across 10 runs on a 2015 MacBook Pro).
 

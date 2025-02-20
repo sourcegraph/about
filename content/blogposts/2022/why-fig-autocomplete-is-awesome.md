@@ -14,15 +14,15 @@ published: true
 
 ![](https://storage.googleapis.com/sourcegraph-assets/blog/042122-fig-blog-post-screenshot-transparent-updated.png)
 
-We are really excited to announce our latest [integration with Fig](https://fig.io/manual/src)! For those of you who don’t know about Fig, it is a tool that adds IDE-style autocomplete to your existing terminal (currently on macOS.)
+We are really excited to announce our latest [integration with Fig](https://fig.io/manual/src)! For those of you who don't know about Fig, it is a tool that adds IDE-style autocomplete to your existing terminal (currently on macOS.)
 
-When I was onboarding at Sourcegraph one of my todos was to install and learn how to use `src`, a [command-line interface to Sourcegraph](https://docs.sourcegraph.com/cli). The installation was straightforward, but I couldn’t remember all of the different subcommands so I found myself typing `src --help` and [hitting the up arrow](https://www.commitstrip.com/en/2017/02/28/definitely-not-lazy/?) a lot.
+When I was onboarding at Sourcegraph one of my todos was to install and learn how to use `src`, a [command-line interface to Sourcegraph](https://docs.sourcegraph.com/cli). The installation was straightforward, but I couldn't remember all of the different subcommands so I found myself typing `src --help` and [hitting the up arrow](https://www.commitstrip.com/en/2017/02/28/definitely-not-lazy/?) a lot.
 
 Then I remembered Zeno Rocha [tweeting about Fig](https://twitter.com/zenorocha/status/1432709006854869002) and I thought this might be a good opportunity to write an integration. After demoing the proof of concept to my team I got a lot of great feedback and decided to make a [pull request](https://github.com/withfig/autocomplete/pull/1081) to Fig on GitHub.
 
-## Let’s see this in action!
+## Let's see this in action!
 
-I’m in the process of creating a budget for sponsoring the dependencies that Sourcegraph uses via Open Collective. Here is a real-world example of how I accomplish that.
+I'm in the process of creating a budget for sponsoring the dependencies that Sourcegraph uses via Open Collective. Here is a real-world example of how I accomplish that.
 
 <div style={{position: 'relative', paddingBottom: '51.13908872901679%', height: 0}}>
     <iframe
@@ -62,7 +62,7 @@ _Thanks to the following people for helping with this post: Rebecca Dodd, Eric F
 
 #### About the author
 
-Justin Dorfman is Sourcegraph’s Open Source Program Manager and is responsible for
+Justin Dorfman is Sourcegraph's Open Source Program Manager and is responsible for
 fostering the adoption of code intelligence in the open source community. You can chat with Justin on Twitter [@jdorfman](https://twitter.com/jdorfman) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)
 
 ### More posts like this

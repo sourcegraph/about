@@ -17,7 +17,7 @@ published: true
 
 She tells the story of Matt, a fifth grade history teacher who wrote some bacon-related code in Swift
 
-Lynn’s daughter has been coding since age 8 and taught Matt how to code.
+Lynn's daughter has been coding since age 8 and taught Matt how to code.
 
 Matt now teaches Java to 8th graders.
 
@@ -40,13 +40,13 @@ These are classic characteristics of an ideal Denial of Service attack scenarios
 
 At one point, Jason was spending all his time answering GitHub Issues instead of building new features.
 
-An obvious solution was just to spend less time on Issues, but that’s bad, because users feel ignored and post mean memes to your project.
+An obvious solution was just to spend less time on Issues, but that's bad, because users feel ignored and post mean memes to your project.
 
 An better strategy is to ask for clarification instead of trying to guess what an issue reporter is trying to say. “Can you elaborate? What did you mean by X?” This doesn't take a lot of your time, but shows that you are super responsive.
 
-Asking for clarification tells a user you are responsive to their needs, so they will in turn reciprocate by investing time into composing a more detailed description of their issue. If you’re lucky, they may even end up answering their own questions.
+Asking for clarification tells a user you are responsive to their needs, so they will in turn reciprocate by investing time into composing a more detailed description of their issue. If you're lucky, they may even end up answering their own questions.
 
-So if you’re unclear about something, “just ask for clarifications.”
+So if you're unclear about something, “just ask for clarifications.”
 
 ### Gregor Martynus of hood.ie: Growing a healthy community by dedicating space ([slides](https://github.com/sourcegraph/github-universe-2016-slides/blob/master/Dedicating%20Space%20-%20Gregor%20Martynus.pdf))
 
@@ -54,9 +54,9 @@ So if you’re unclear about something, “just ask for clarifications.”
 
 How can you get more people to become active contributors to your project?
 
-Thanks to GitHub, collaborating on code is easier than ever. But open source is intimidating. Lack of tooling is no longer the bottleneck. People issues are. If you aren’t good at fostering an inclusive, welcoming culture, you’re missing out on great potential contributors.
+Thanks to GitHub, collaborating on code is easier than ever. But open source is intimidating. Lack of tooling is no longer the bottleneck. People issues are. If you aren't good at fostering an inclusive, welcoming culture, you're missing out on great potential contributors.
 
-Hoodie is trying to be one of open source’s most diverse and inclusive communities. To foster this, they created a dedicated space for contributors and community members: [hoodie.camp](http://hoodie.camp). It’s built on top of the GitHub API.
+Hoodie is trying to be one of open source's most diverse and inclusive communities. To foster this, they created a dedicated space for contributors and community members: [hoodie.camp](http://hoodie.camp). It's built on top of the GitHub API.
 
 ### Bringing back open source projects to life, Enrique Mogollan, Software Engineer at Salesforce Desk
 
@@ -81,11 +81,11 @@ Even if a community is dormant, they can still be woken up and act as a team. Bi
 
 ![1*O9cLEjpyzkAXgqCBsLTkEA](//images.contentful.com/le3mxztn6yoo/6hf0VLR2gMcO2ySoCKk8WC/77e6591edde86e487d8c331e2a22bd1e/1_O9cLEjpyzkAXgqCBsLTkEA.jpeg)
 
-Open source is everywhere, but change is still frightening. Imagine you've discovered a great open source project, but it’s still unknown to the stakeholders in your org.
+Open source is everywhere, but change is still frightening. Imagine you've discovered a great open source project, but it's still unknown to the stakeholders in your org.
 
 > Fighting for open source is a lot like Street Fighter.
 
-How do you convince people? It’s like the Street Fighter Training Room. Show, don’t tell .The future is hard for people to see, so give them as many chances to interact and play around with the new thing.
+How do you convince people? It's like the Street Fighter Training Room. Show, don't tell .The future is hard for people to see, so give them as many chances to interact and play around with the new thing.
 
 **“Learn to block.”** Guard your lifebar. An open source library is going to some things well, other things poorly. Explain the tradeoffs before people point out the flaws. No solution is perfect.
 
@@ -95,4 +95,4 @@ How do you convince people? It’s like the Street Fighter Training Room. Show, 
 
 **“Learn to lose”** — failure is feedback. Learn from losses so you can win the next battles.
 
-**“It’s never Game Over.”** It’s only over when you quit trying.
+**“It's never Game Over.”** It's only over when you quit trying.

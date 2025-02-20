@@ -37,7 +37,7 @@ Sourcegraph provides visibility into massive codebases across every code host, a
 
 <br/>
 
-Sourcegraph 5.4.0 brings improvements to Code Search with a new search filter [rev:at.time()](https://sourcegraph.com/docs/code-search/queries#filters-all-searches) that provides point-in-time searching. This allows for searching a repo’s state at a specific timestamp rather than at a specific commit, branch, or tag.
+Sourcegraph 5.4.0 brings improvements to Code Search with a new search filter [rev:at.time()](https://sourcegraph.com/docs/code-search/queries#filters-all-searches) that provides point-in-time searching. This allows for searching a repo's state at a specific timestamp rather than at a specific commit, branch, or tag.
 
 The new filter works with both timestamps and natural language:
 
@@ -63,7 +63,7 @@ The new filter works with both timestamps and natural language:
 
 <br/>
 
-Code Insights chart drill-downs now use the new point-in-time search filter to more accurately represent the results that produced a data point on a chart. Previously a diff search was used to show the difference between a selected point in time on a chart and the one before it, but Code Insights can now show a repository’s state at that exact timestamp. This functionality is useful for searching large repositories or repositories with lots of history.
+Code Insights chart drill-downs now use the new point-in-time search filter to more accurately represent the results that produced a data point on a chart. Previously a diff search was used to show the difference between a selected point in time on a chart and the one before it, but Code Insights can now show a repository's state at that exact timestamp. This functionality is useful for searching large repositories or repositories with lots of history.
 
 <Video 
   source={{

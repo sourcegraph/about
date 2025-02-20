@@ -39,7 +39,7 @@ By default, Cody operates by routing requests through the [Cody Gateway](https:/
 
 ### Using Cody with Amazon Bedrock
 
-However, some security-conscious organizations are hesitant to process data in such a way, and that’s where Amazon Bedrock can alleviate such concerns. In this configuration, Cody doesn't talk to the Cody Gateway or Anthropic's APIs when using Cody with Amazon Bedrock. Instead, Cody sends requests to the Bedrock API endpoint within AWS utilizing the customer's own API keys.
+However, some security-conscious organizations are hesitant to process data in such a way, and that's where Amazon Bedrock can alleviate such concerns. In this configuration, Cody doesn't talk to the Cody Gateway or Anthropic's APIs when using Cody with Amazon Bedrock. Instead, Cody sends requests to the Bedrock API endpoint within AWS utilizing the customer's own API keys.
 
 This model offers two distinct differences for Cody customers:
 
@@ -56,4 +56,4 @@ The following diagram illustrates the data flow when using Cody with Amazon Bedr
 
 ### Getting started with Cody and Amazon Bedrock
 
-Cody with Amazon Bedrock lets organizations use AI coding assistants for their developers without sacrificing security or data control. If you’re interested in using Cody with Amazon Bedrock, [contact us about Cody Enterprise](https://sourcegraph.com/contact/request-info). If you're already a Cody Enterprise customer and you'd like to configure Amazon Bedrock for your account, you can [find instructions in the docs](https://sourcegraph.com/docs/cody/clients/enable-cody-enterprise#anthropic-claude-through-aws-bedrock) or contact your Technical Advisor.
+Cody with Amazon Bedrock lets organizations use AI coding assistants for their developers without sacrificing security or data control. If you're interested in using Cody with Amazon Bedrock, [contact us about Cody Enterprise](https://sourcegraph.com/contact/request-info). If you're already a Cody Enterprise customer and you'd like to configure Amazon Bedrock for your account, you can [find instructions in the docs](https://sourcegraph.com/docs/cody/clients/enable-cody-enterprise#anthropic-claude-through-aws-bedrock) or contact your Technical Advisor.

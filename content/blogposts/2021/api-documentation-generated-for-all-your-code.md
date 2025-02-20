@@ -26,7 +26,7 @@ In order to build awesome code search we've built a global graph of code that ha
 
 ## Vision
 
-If you develop in Go, Rust, or Zig you’re probably familiar with some sites that try to do this like [pkg.go.dev](https://pkg.go.dev), [docs.rs](<[https://docs.rs](https://docs.rs)>), etc. The benefit of Sourcegraph's API docs over these will in the future be:
+If you develop in Go, Rust, or Zig you're probably familiar with some sites that try to do this like [pkg.go.dev](https://pkg.go.dev), [docs.rs](<[https://docs.rs](https://docs.rs)>), etc. The benefit of Sourcegraph's API docs over these will in the future be:
 
 - Surfacing usage examples from open source code.
 - Providing a single tool that works across all code, using LSIF data to provide an experience tailored towards your languages of choice.

@@ -72,7 +72,7 @@ Deciding when to refactor involves evaluating the code's complexity, maintainabi
 
 Testing and validation ensure that refactoring and other changes do not break existing functionality. Writing tests for legacy code, especially code without tests, is vital for validating changes and preventing regressions. Different tests, such as unit tests, integration tests, and end-to-end tests, ensure code reliability.
 
-In addition to these strategies, leveraging tools like Cody can further simplify the process. Next, let’s explore how to use Cody to understand legacy code effectively.
+In addition to these strategies, leveraging tools like Cody can further simplify the process. Next, let's explore how to use Cody to understand legacy code effectively.
 
 ## How to use Cody to understand legacy code
 
@@ -88,7 +88,7 @@ With the above features, Cody helps software developers by providing insights in
 
 ### Using Cody: Practical example
 
-Now that we've covered the strategies for understanding legacy code, let’s take a look at Cody in action on some legacy code.
+Now that we've covered the strategies for understanding legacy code, let's take a look at Cody in action on some legacy code.
 
 To get started with Cody:
 
@@ -138,11 +138,11 @@ The snippet below is a code example of a legacy Python-based management system d
     inv.print_inventory()
 ```
 
-Using Cody’s chat feature, we can prompt it to understand the structure and flow of our Python-based management code base as shown below: 
+Using Cody's chat feature, we can prompt it to understand the structure and flow of our Python-based management code base as shown below: 
 
 ![Giving Cody a descriptive prompt to help understand the structure and flow of the code](https://storage.googleapis.com/sourcegraph-assets/blog/a_simpler_way_to_understand_legacy_code/image_003.png)
 
-Cody can also help with our example code base through refactoring, unit tests, and documentation. Let’s take a look at each of these.
+Cody can also help with our example code base through refactoring, unit tests, and documentation. Let's take a look at each of these.
 
 **Refactoring**
 Ordinarily, code refactors can be challenging, especially in a complex codebase. With Cody's `Commands` feature, we can identify code smells in our Python code. To do this, we select the `Find Code Smells` command by the left sidebar in the Cody tab:

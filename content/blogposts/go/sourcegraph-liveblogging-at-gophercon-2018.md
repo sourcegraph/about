@@ -15,7 +15,7 @@ published: true
 We are Sourcegraph, known
 to our Developers as "[a great source code browsing/discovery tool, especially for large codebase like k8s](https://twitter.com/VladimirVivien/status/1032099627078696960)", and "[like Google's internal code search but for rest of us](https://twitter.com/tsaha/status/1032016464583131136)". We help developers write better software by giving them IDE like features in code hosts such as GitHub and Bitbucket server, both for Open Source and private repositories.
 
-We're proud to once again be hosting the **official liveblog for GopherCon** so we’re looking for attendees who want to contribute. Is that you?
+We're proud to once again be hosting the **official liveblog for GopherCon** so we're looking for attendees who want to contribute. Is that you?
 
 <Figure 
   alt="GopherCon 2018 Banner. Gophers riding around on Go Karts. Cute!" 
@@ -28,7 +28,7 @@ Liveblogging is hugely beneficial for the presenters, the bloggers, and those re
 
 It's about capturing the most important parts of a talk so people from all around the world can follow along and learn.
 
-As a liveblogger for a talk, you'll get your own dedicated seat, and the task of summarizing the talk will help you process and more deeply understand the content. We’ll also tweet out a link to the liveblog post, crediting you and raising your profile to the thousands of developers who follow us on Twitter and the liveblog.
+As a liveblogger for a talk, you'll get your own dedicated seat, and the task of summarizing the talk will help you process and more deeply understand the content. We'll also tweet out a link to the liveblog post, crediting you and raising your profile to the thousands of developers who follow us on Twitter and the liveblog.
 
 ## How being a liveblogger works
 
@@ -41,7 +41,7 @@ As a liveblogger for a talk, you'll get your own dedicated seat, and the task of
 
 Contact me at [ryan@sourcegraph.com](mailto:ryan@sourcegraph.com) or tweet at [@sourcegraph](https://twitter.com/sourcegraph) and [@ryan_blunden](https://twitter.com/ryan_blunden), whatever is easiest.
 
-If you’re selected, I'll get in touch and give you instructions for how to make your post(s) as awesome as possible.
+If you're selected, I'll get in touch and give you instructions for how to make your post(s) as awesome as possible.
 
 ## Day 1
 
@@ -78,6 +78,6 @@ If you’re selected, I'll get in touch and give you instructions for how to mak
 - [ASSIGNED] The Importance of Beginners (Natalie Pistunovich)
 
 ## See you at GopherCon or online
-If you’re at GopherCon, I'd love to meet you and if you've got ideas for what we at Sourcegraph should be working on next to make your life as a developer better, then we'd love to hear it!
+If you're at GopherCon, I'd love to meet you and if you've got ideas for what we at Sourcegraph should be working on next to make your life as a developer better, then we'd love to hear it!
 
 For those of you at home, [follow us on Twitter](https://twitter.com/sourcegraph) or follow the posts at [https://about.sourcegraph.com/go](https://about.sourcegraph.com/go).
